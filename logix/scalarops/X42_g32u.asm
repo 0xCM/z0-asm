@@ -1,0 +1,10 @@
+; uint f42<uint>(uint a, uint b, uint c)
+; X42_g32u[7ff7c6b93490h, 7ff7c6b934a0h][16] = {0f 1f 44 00 00 41 33 c8 41 33 d0 23 d1 8b c2 c3}
+; Capture completion code, RET_SBB
+; 2020-01-24 02:54:49:045
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor ecx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c8}
+0008h xor edx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 d0}
+000bh and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}
+000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}

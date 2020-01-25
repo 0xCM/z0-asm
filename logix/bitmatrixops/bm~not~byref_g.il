@@ -1,0 +1,10 @@
+// Id := 100664104, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// ref BitMatrix<long> not<long>(in BitMatrix<long> A, ref BitMatrix<long> Z)
+// AggressiveInlining
+ref BitMatrix<long> not<long>(in BitMatrix<long> A, ref BitMatrix<long> Z)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call Z0.BitMatrix`1<T>& Z0.BitMatrix::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+    IL_0007: ret
+}

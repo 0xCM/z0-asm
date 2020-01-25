@@ -1,0 +1,14 @@
+// Id := 100663660, Name := System.Int64 Z0.math::xorsl(System.Int64,System.Byte)
+// long xorsl(long a, byte offset)
+// AggressiveInlining
+long xorsl(long a, byte offset)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.0
+    IL_0002: ldarg.1
+    IL_0003: ldc.i4.s 63
+    IL_0005: and
+    IL_0006: shl
+    IL_0007: xor
+    IL_0008: ret
+}

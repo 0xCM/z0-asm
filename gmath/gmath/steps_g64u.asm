@@ -1,0 +1,18 @@
+; void steps<ulong>(ulong first, ulong step, int count, ref ulong dst)
+; steps_g64u[7ff7c718c290h, 7ff7c718c2b8h][40] = {0f 1f 44 00 00 33 c0 45 85 c0 7e 1b 4c 63 d0 4f 8d 14 d1 4c 63 d8 4c 0f af da 4c 03 d9 4d 89 1a ff c0 41 3b c0 7c e5 c3}
+; Capture completion code, RET_SBB
+; 2020-01-24 01:44:38:220
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
+000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+000fh lea r10,[r9+r10*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 d1}
+0013h movsxd r11,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d8}
+0016h imul r11,rdx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4c 0f af da}
+001ah add r11,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 d9}
+001dh mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
+0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
