@@ -1,7 +1,7 @@
 ; Vector128<sbyte> veq(Vector128<sbyte> x, Vector128<sbyte> y)
-; veq_128x8i[7ff7c6bdaf60h, 7ff7c6bdaf76h][22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 74 00 c5 f9 11 01 48 8b c1 c3}
+; veq_128x8i[7ff7c71d56b0h, 7ff7c71d56c6h][22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 74 00 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:285
+; 2020-01-25 02:11:02:494
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

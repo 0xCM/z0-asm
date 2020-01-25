@@ -1,7 +1,7 @@
 ; Span<Int16> square<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
-; square_g16i[7ff7c719c830h, 7ff7c719c875h][69] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 23 4d 63 d1 4e 8d 14 52 4d 63 d9 4e 0f bf 1c 58 45 0f af db 4d 0f bf db 66 45 89 1a 41 ff c1 45 3b c8 7c dd 48 89 11 44 89 41 08 48 8b c1 c3}
+; square_g16i[7ff7c71af5f0h, 7ff7c71af635h][69] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 23 4d 63 d1 4e 8d 14 52 4d 63 d9 4e 0f bf 1c 58 45 0f af db 4d 0f bf db 66 45 89 1a 41 ff c1 45 3b c8 7c dd 48 89 11 44 89 41 08 48 8b c1 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:664
+; 2020-01-25 02:10:59:715
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}

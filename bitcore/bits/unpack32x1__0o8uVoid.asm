@@ -1,7 +1,7 @@
 ; void unpack32x1(uint src, Span<byte> dst)
-; unpack32x1__0o8uVoid[7ff7c6e676b0h, 7ff7c6e67729h][121] = {48 83 ec 28 90 48 8b 02 0f b7 d1 44 8b c2 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d1 49 89 10 c1 e9 10 0f b7 d1 48 83 c0 10 8b ca c4 c2 f3 f5 c9 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 20 0f b7 54 24 20 c4 c2 eb f5 d1 48 89 10 48 83 c4 28 c3 e8 02 85 16 5f cc 00 19 04 01 00 04 42 00 00 40}
+; unpack32x1__0o8uVoid[7ff7c6e7bf50h, 7ff7c6e7bfc9h][121] = {48 83 ec 28 90 48 8b 02 0f b7 d1 44 8b c2 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d1 49 89 10 c1 e9 10 0f b7 d1 48 83 c0 10 8b ca c4 c2 f3 f5 c9 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 20 0f b7 54 24 20 c4 c2 eb f5 d1 48 89 10 48 83 c4 28 c3 e8 62 3c 15 5f cc 00 19 04 01 00 04 42 00 00 40}
 ; Capture completion code, ZEDx6
-; 2020-01-24 01:44:31:601
+; 2020-01-25 02:10:51:899
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -30,7 +30,7 @@
 0061h mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 0064h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0068h ret                                     ; RET || C3 || encoded[1]{c3}
-0069h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 85 16 5f}
+0069h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 3c 15 5f}
 006eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 006fh add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
 0071h add al,1                                ; ADD AL, imm8 || 04 ib || encoded[2]{04 01}

@@ -1,7 +1,7 @@
 ; long sal(long src, byte offset)
-; sal_64i[7ff7c71866e0h, 7ff7c71866efh][15] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3}
+; sal_64i[7ff7c7199480h, 7ff7c719948fh][15] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:105
+; 2020-01-25 02:10:56:261
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

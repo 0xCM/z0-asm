@@ -1,7 +1,7 @@
 ; bit testc<long>(long a)
-; testc_g64i[7ff7c6ca0570h, 7ff7c6ca0589h][25] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 8b c0 48 83 f8 40 0f 94 c0 0f b6 c0 c3}
+; testc_g64i[7ff7c6ba6dc0h, 7ff7c6ba6dd9h][25] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 8b c0 48 83 f8 40 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:49:385
+; 2020-01-25 02:10:42:173
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h popcnt rax,rcx                          ; POPCNT r64, r/m64 || F3 REX.W 0F B8 /r || encoded[5]{f3 48 0f b8 c1}

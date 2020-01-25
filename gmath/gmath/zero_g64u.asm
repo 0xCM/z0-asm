@@ -1,7 +1,7 @@
 ; ulong zero<ulong>(ulong t)
-; zero_g64u[7ff7c7193260h, 7ff7c7193268h][8] = {0f 1f 44 00 00 33 c0 c3}
+; zero_g64u[7ff7c71a6020h, 7ff7c71a6028h][8] = {0f 1f 44 00 00 33 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:124
+; 2020-01-25 02:10:58:144
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}

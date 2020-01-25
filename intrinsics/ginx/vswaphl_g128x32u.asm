@@ -1,7 +1,7 @@
 ; Vector128<uint> vswaphl<uint>(Vector128<uint> x)
-; vswaphl_g128x32u[7ff7c6dc1df0h, 7ff7c6dc1e06h][22] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 70 c0 4e c5 f9 11 01 48 8b c1 c3}
+; vswaphl_g128x32u[7ff7c7202ca0h, 7ff7c7202cb6h][22] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 70 c0 4e c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:07:976
+; 2020-01-25 02:11:11:238
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

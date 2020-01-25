@@ -1,7 +1,7 @@
 ; Vector128<ulong> vmax(Vector128<ulong> x, Vector128<ulong> y)
-; vmax_128x64u[7ff7c6bd66c0h, 7ff7c6bd66e4h][36] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c5 ec 57 d2 c4 e3 6d 38 c9 00 48 b8}
+; vmax_128x64u[7ff7c71d21e0h, 7ff7c71d2204h][36] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c5 ec 57 d2 c4 e3 6d 38 c9 00 48 b8}
 ; Capture completion code, ZEDx6
-; 2020-01-24 18:44:59:033
+; 2020-01-25 02:11:02:172
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

@@ -1,7 +1,7 @@
 ; Vector512<uint> vmerge(Vector256<uint> x, Vector256<uint> y)
-; vmerge__256x32u[7ff7c6beac70h, 7ff7c6beaca3h][51] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 62 00 c5 fd 10 0a c4 c1 75 6a 08 c4 e3 7d 46 d1 20 c4 e3 7d 46 c1 31 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
+; vmerge__256x32u[7ff7c71df310h, 7ff7c71df343h][51] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 62 00 c5 fd 10 0a c4 c1 75 6a 08 c4 e3 7d 46 d1 20 c4 e3 7d 46 c1 31 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:01:900
+; 2020-01-25 02:11:04:281
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

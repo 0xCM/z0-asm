@@ -1,7 +1,7 @@
 ; Span<bit> vtestz<uint>(in Block128<uint> a, in Block128<uint> b, Span<bit> dst)
-; vtestz__b128x32u[7ff7c6fdc6a0h, 7ff7c6fdc71eh][126] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 09 45 33 d2 85 c0 7e 47 4d 63 da 4e 8d 1c 99 48 8b 32 41 8b fa c1 e7 02 48 63 ff 48 8d 34 be c5 fb f0 06 49 8b 30 41 8b fa c1 e7 02 48 63 ff 48 8d 34 be c5 fb f0 0e c4 e2 79 17 c1 40 0f 94 c6 40 0f b6 f6 41 89 33 41 ff c2 44 3b d0 7c b9 48 8b fb 49 8b f1 e8 7b 97 ec 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; vtestz__b128x32u[7ff7c7248dc0h, 7ff7c7248e3eh][126] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 09 45 33 d2 85 c0 7e 47 4d 63 da 4e 8d 1c 99 48 8b 32 41 8b fa c1 e7 02 48 63 ff 48 8d 34 be c5 fb f0 06 49 8b 30 41 8b fa c1 e7 02 48 63 ff 48 8d 34 be c5 fb f0 0e c4 e2 79 17 c1 40 0f 94 c6 40 0f b6 f6 41 89 33 41 ff c2 44 3b d0 7c b9 48 8b fb 49 8b f1 e8 5b d0 c5 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:15:407
+; 2020-01-25 02:11:17:184
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -40,7 +40,7 @@
 0068h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c b9}
 006ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 006dh mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
-0070h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 97 ec 5e}
+0070h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b d0 c5 5e}
 0075h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0077h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 007ah pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}

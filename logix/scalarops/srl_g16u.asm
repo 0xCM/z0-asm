@@ -1,7 +1,7 @@
 ; ushort srl<ushort>(ushort a, byte count)
-; srl_g16u[7ff7c6ca2eb0h, 7ff7c6ca2ec1h][17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e8 0f b7 c0 c3}
+; srl_g16u[7ff7c6cc1ff0h, 7ff7c6cc2001h][17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e8 0f b7 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:49:660
+; 2020-01-25 02:10:42:476
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

@@ -1,4 +1,4 @@
-// Id := 100665612, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// Id := 100665619, Name := System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<byte>(in byte src)
 // AggressiveInlining
 ref double float64<byte>(in byte src)

@@ -1,7 +1,7 @@
 ; Span<ushort> negate<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
-; negate_g16u[7ff7c719ab40h, 7ff7c719ab84h][68] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 1c 52 46 0f b7 14 50 41 f7 d2 41 ff c2 45 0f b7 d2 66 45 89 13 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 c3}
+; negate_g16u[7ff7c71ad900h, 7ff7c71ad944h][68] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 1c 52 46 0f b7 14 50 41 f7 d2 41 ff c2 45 0f b7 d2 66 45 89 13 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:611
+; 2020-01-25 02:10:59:611
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}

@@ -1,7 +1,7 @@
 ; byte bitclear<byte>(byte src, byte index, byte count)
-; bitclear_g8u[7ff7c6e7ddf0h, 7ff7c6e7de23h][51] = {0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 41 23 c0 0f b6 c0 c3}
+; bitclear_g8u[7ff7c6e923f0h, 7ff7c6e92423h][51] = {0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 41 23 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:990
+; 2020-01-25 02:10:53:526
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx ecx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c8}

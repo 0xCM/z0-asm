@@ -1,7 +1,7 @@
 ; Span<double> pow<double>(ReadOnlySpan<double> src, uint exp, Span<double> dst)
-; pow_g64f[7ff7c71aa980h, 7ff7c71aa9f4h][116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 15 e5 f4 5e c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; pow_g64f[7ff7c71bd730h, 7ff7c71bd7a4h][116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 65 b7 f3 5e c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:40:123
+; 2020-01-25 02:11:00:328
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
 0004h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
@@ -25,7 +25,7 @@
 0038h lea r15,[rdi+rax*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 3c c7}
 003ch vmovsd xmm0,qword ptr [rbp+rax*8]       ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c5 fb 10 44 c5 00}
 0042h vmovaps xmm1,xmm6                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ce}
-0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 e5 f4 5e}
+0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 b7 f3 5e}
 004bh vmovsd qword ptr [r15],xmm0             ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[5]{c4 c1 7b 11 07}
 0050h inc r14d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c6}
 0053h cmp r14d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b f3}

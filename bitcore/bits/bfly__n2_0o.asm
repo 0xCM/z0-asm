@@ -1,7 +1,7 @@
 ; ulong bfly(N2 n, ulong x)
-; bfly__n2_0o[7ff7c6e6f880h, 7ff7c6e6f8b4h][52] = {0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c2 48 8b c8 48 c1 e1 02 48 33 c8 48 c1 e8 02 48 33 c1 48 b9 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c1 48 33 c2 c3}
+; bfly__n2_0o[7ff7c6e843d0h, 7ff7c6e84404h][52] = {0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c2 48 8b c8 48 c1 e1 02 48 33 c8 48 c1 e8 02 48 33 c1 48 b9 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c1 48 33 c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:32:674
+; 2020-01-25 02:10:52:166
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,3c3c3c3c3c3c3c3ch               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 3c 3c 3c 3c 3c 3c 3c 3c}
 000fh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}

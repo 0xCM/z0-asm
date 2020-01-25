@@ -1,7 +1,7 @@
 ; double pow(double src, double exp)
-; pow_64f[7ff7c718b320h, 7ff7c718b332h][18] = {c5 f8 77 66 90 48 b8 e0 8e 0f 26 f8 7f 00 00 48 ff e0}
+; pow_64f[7ff7c719e140h, 7ff7c719e152h][18] = {c5 f8 77 66 90 48 b8 e0 8e 0f 26 f8 7f 00 00 48 ff e0}
 ; Capture completion code, ZEDx2_SBB
-; 2020-01-24 01:44:37:789
+; 2020-01-25 02:10:57:001
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,7ff8260f8ee0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 e0 8e 0f 26 f8 7f 00 00}

@@ -1,7 +1,7 @@
 ; sbyte modmul<sbyte>(sbyte a, sbyte b, sbyte m)
-; modmul_g8i[7ff7c71959f0h, 7ff7c7195a24h][52] = {50 0f 1f 40 00 48 0f be c1 48 0f be d2 49 0f be c8 48 63 c0 48 63 d2 48 0f af c2 48 63 c9 48 99 48 f7 f9 8b c2 89 44 24 04 48 0f be 44 24 04 48 83 c4 08 c3}
+; modmul_g8i[7ff7c71a87a0h, 7ff7c71a87d4h][52] = {50 0f 1f 40 00 48 0f be c1 48 0f be d2 49 0f be c8 48 63 c0 48 63 d2 48 0f af c2 48 63 c9 48 99 48 f7 f9 8b c2 89 44 24 04 48 0f be 44 24 04 48 83 c4 08 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:319
+; 2020-01-25 02:10:58:357
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}

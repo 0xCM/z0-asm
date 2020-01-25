@@ -1,7 +1,7 @@
 ; Span<sbyte> select<sbyte>(ReadOnlySpan<sbyte> a, ReadOnlySpan<sbyte> b, ReadOnlySpan<sbyte> c, Span<sbyte> dst)
-; select_g8i[7ff7c71a7670h, 7ff7c71a76e7h][119] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4a 49 63 f3 49 03 f2 49 63 fb 48 0f be 3c 3a 49 63 db 49 0f be 1c 18 49 63 eb 49 0f be 2c 29 48 0f be ff 48 0f be db 23 df 48 0f be db c4 e2 40 f2 fd 48 0f be ff 48 0f be db 0b fb 48 0f be ff 40 88 3e 41 ff c3 44 3b d8 7c b6 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_g8i[7ff7c71ba010h, 7ff7c71ba087h][119] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4a 49 63 f3 49 03 f2 49 63 fb 48 0f be 3c 3a 49 63 db 49 0f be 1c 18 49 63 eb 49 0f be 2c 29 48 0f be ff 48 0f be db 23 df 48 0f be db c4 e2 40 f2 fd 48 0f be ff 48 0f be db 0b fb 48 0f be ff 40 88 3e 41 ff c3 44 3b d8 7c b6 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:973
+; 2020-01-25 02:11:00:170
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}

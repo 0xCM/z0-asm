@@ -1,7 +1,7 @@
 ; vbsll__128x64u-imm13
-; vbsll__128x64u-imm13[7ff7c6ca1050h, 7ff7c6ca1064h][20] = {c5 f8 77 c5 f9 10 02 c5 f9 73 f8 0d c5 f9 11 01 48 8b c1 c3}
+; vbsll__128x64u-imm13[7ff7c7583190h, 7ff7c75831a4h][20] = {c5 f8 77 c5 f9 10 02 c5 f9 73 f8 0d c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:00:030
+; 2020-01-25 02:11:02:998
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
 0007h vpslldq xmm0,xmm0,0dh                   ; VPSLLDQ xmm1, xmm2, imm8 || VEX.128.66.0F.WIG 73 /7 ib || encoded[5]{c5 f9 73 f8 0d}

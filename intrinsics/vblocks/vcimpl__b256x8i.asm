@@ -1,7 +1,7 @@
 ; ref Block256<sbyte> vcimpl<sbyte>(in Block256<sbyte> a, in Block256<sbyte> b, in Block256<sbyte> c)
-; vcimpl__b256x8i[7ff7c6dfbeb0h, 7ff7c6dfbf30h][128] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 1f 45 03 ca 41 c1 f9 05 45 33 d2 45 85 c9 7e 56 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 ff f0 00 48 8b 02 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 ff f0 08 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 49 8b 00 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c b0 49 8b c0 c5 f8 77 c3}
+; vcimpl__b256x8i[7ff7c72394c0h, 7ff7c7239540h][128] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 1f 45 03 ca 41 c1 f9 05 45 33 d2 45 85 c9 7e 56 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 ff f0 00 48 8b 02 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 ff f0 08 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 49 8b 00 45 8b da 41 c1 e3 05 4d 63 db 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c b0 49 8b c0 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:724
+; 2020-01-25 02:11:16:049
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r9d,[r8+8]                          ; MOV r32, r/m32 || o32 8B /r || encoded[4]{45 8b 48 08}

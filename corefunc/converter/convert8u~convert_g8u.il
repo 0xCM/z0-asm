@@ -1,4 +1,4 @@
-// Id := 100666430, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
 // double convert<double>(byte src)
 // AggressiveInlining
 double convert<double>(byte src)

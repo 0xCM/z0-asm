@@ -1,7 +1,7 @@
 ; void bitchars<double>(double src, Span<Char> dst, int offset)
-; bitchars__0o_gChar_0oVoid[7ff7c6e7a2e0h, 7ff7c6e7a33ch][92] = {50 c5 f8 77 90 48 8b 02 c5 fb 11 04 24 48 8b 14 24 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 24 dc ed c8 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c4 08 c3}
+; bitchars__0o_gChar_0oVoid[7ff7c6e8ed10h, 7ff7c6e8ed6ch][92] = {50 c5 f8 77 90 48 8b 02 c5 fb 11 04 24 48 8b 14 24 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 51 1c 45 ba cf 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:895
+; 2020-01-25 02:10:53:394
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -17,7 +17,7 @@
 0024h movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0028h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 002bh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002eh mov r11,1c8eddc24adh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 24 dc ed c8 01 00 00}
+002eh mov r11,1cfba451c51h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 51 1c 45 ba cf 01 00 00}
 0038h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 003bh add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 003eh movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}

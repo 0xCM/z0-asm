@@ -1,7 +1,7 @@
 ; vbsll__256x32i-imm13
-; vbsll__256x32i-imm13[7ff7c6ca14c0h, 7ff7c6ca14d7h][23] = {c5 f8 77 c5 fd 10 02 c5 fd 73 f8 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbsll__256x32i-imm13[7ff7c75815c0h, 7ff7c75815d7h][23] = {c5 f8 77 c5 fd 10 02 c5 fd 73 f8 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:07:557
+; 2020-01-25 02:11:10:832
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
 0007h vpslldq ymm0,ymm0,0dh                   ; VPSLLDQ ymm1, ymm2, imm8 || VEX.256.66.0F.WIG 73 /7 ib || encoded[5]{c5 fd 73 f8 0d}

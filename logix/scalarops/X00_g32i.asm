@@ -1,7 +1,7 @@
 ; int f00<int>(int a, int b, int c)
-; X00_g32i[7ff7c6ca5570h, 7ff7c6ca5578h][8] = {0f 1f 44 00 00 33 c0 c3}
+; X00_g32i[7ff7c6cc42a0h, 7ff7c6cc42a8h][8] = {0f 1f 44 00 00 33 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:50:119
+; 2020-01-25 02:10:42:619
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}

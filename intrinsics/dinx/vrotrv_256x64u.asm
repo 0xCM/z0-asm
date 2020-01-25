@@ -1,7 +1,7 @@
 ; Vector256<ulong> vrotrv(Vector256<ulong> src, Vector256<ulong> counts)
-; vrotrv_256x64u[7ff7c6be3bc0h, 7ff7c6be3c0ah][74] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 7d 59 0c 24 c4 c1 7d 10 10 c5 f5 fb ca c5 fd 10 12 c4 e2 ed 47 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vrotrv_256x64u[7ff7c71d9490h, 7ff7c71d94dah][74] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 7d 59 0c 24 c4 c1 7d 10 10 c5 f5 fb ca c5 fd 10 12 c4 e2 ed 47 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:00:671
+; 2020-01-25 02:11:03:146
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

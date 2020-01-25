@@ -1,7 +1,7 @@
 ; bit gt<Int16>(Int16 a, Int16 b)
-; gt_g16i[7ff7c718d240h, 7ff7c718d256h][22] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9f c0 0f b6 c0 c3}
+; gt_g16i[7ff7c71a03f0h, 7ff7c71a0406h][22] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9f c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:38:312
+; 2020-01-25 02:10:57:351
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}

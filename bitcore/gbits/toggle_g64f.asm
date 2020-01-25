@@ -1,7 +1,7 @@
 ; double toggle<double>(double src, int pos)
-; toggle_g64f[7ff7c6e78710h, 7ff7c6e78736h][38] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8d 04 24 41 b8 01 00 00 00 8b ca 49 d3 e0 4c 31 00 c5 fb 10 04 24 48 83 c4 08 c3}
+; toggle_g64f[7ff7c6e8ceb0h, 7ff7c6e8ced6h][38] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8d 04 24 41 b8 01 00 00 00 8b ca 49 d3 e0 4c 31 00 c5 fb 10 04 24 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:794
+; 2020-01-25 02:10:53:304
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

@@ -1,7 +1,7 @@
 ; ulong rotl(ulong src, int shift, int width)
-; rotl_64u[7ff7c6e6da50h, 7ff7c6e6da6dh][29] = {0f 1f 44 00 00 48 8b c1 8b ca 4c 8b c8 49 d3 e1 44 2b c2 41 8b c8 48 d3 e8 49 0b c1 c3}
+; rotl_64u[7ff7c6e826b0h, 7ff7c6e826cdh][29] = {0f 1f 44 00 00 48 8b c1 8b ca 4c 8b c8 49 d3 e1 44 2b c2 41 8b c8 48 d3 e8 49 0b c1 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:32:561
+; 2020-01-25 02:10:52:090
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

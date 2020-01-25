@@ -1,7 +1,7 @@
 ; bit positive(sbyte a)
-; positive_8i[7ff7c71856c0h, 7ff7c71856d2h][18] = {0f 1f 44 00 00 48 0f be c1 85 c0 0f 9f c0 0f b6 c0 c3}
+; positive_8i[7ff7c7198320h, 7ff7c7198332h][18] = {0f 1f 44 00 00 48 0f be c1 85 c0 0f 9f c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:36:994
+; 2020-01-25 02:10:56:136
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}

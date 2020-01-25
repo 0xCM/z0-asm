@@ -1,7 +1,7 @@
 ; byte f1b<byte>(byte a, byte b, byte c)
-; X1B_g8u[7ff7c6b8f0d0h, 7ff7c6b8f0ffh][47] = {0f 1f 44 00 00 0f b6 c1 f7 d0 0f b6 c0 0f b6 d2 f7 d2 0f b6 d2 41 0f b6 c8 0f b6 c0 0f b6 c9 0f b6 c0 23 c1 c4 e2 70 f2 d2 0b c2 0f b6 c0 c3}
+; X1B_g8u[7ff7c6b9ecb0h, 7ff7c6b9ecdfh][47] = {0f 1f 44 00 00 0f b6 c1 f7 d0 0f b6 c0 0f b6 d2 f7 d2 0f b6 d2 41 0f b6 c8 0f b6 c0 0f b6 c9 0f b6 c0 23 c1 c4 e2 70 f2 d2 0b c2 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 02:54:48:173
+; 2020-01-25 02:10:40:943
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

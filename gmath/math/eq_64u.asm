@@ -1,7 +1,7 @@
 ; bit eq(ulong a, ulong b)
-; eq_64u[7ff7c71872c0h, 7ff7c71872cfh][15] = {0f 1f 44 00 00 48 3b ca 0f 94 c0 0f b6 c0 c3}
+; eq_64u[7ff7c719a0e0h, 7ff7c719a0efh][15] = {0f 1f 44 00 00 48 3b ca 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:178
+; 2020-01-25 02:10:56:377
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h sete al                                 ; SETE r/m8 || 0F 94 /r || encoded[3]{0f 94 c0}

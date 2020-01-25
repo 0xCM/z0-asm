@@ -1,7 +1,7 @@
 ; Int16 nor(Int16 a, Int16 b)
-; nor_16i[7ff7c7188590h, 7ff7c71885aah][26] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 0b c2 48 0f bf c0 f7 d0 48 0f bf c0 c3}
+; nor_16i[7ff7c719b3b0h, 7ff7c719b3cah][26] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 0b c2 48 0f bf c0 f7 d0 48 0f bf c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:305
+; 2020-01-25 02:10:56:573
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}

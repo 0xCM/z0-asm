@@ -1,7 +1,7 @@
 ; bit same<uint>(Vector128<uint> a, Vector128<uint> b)
-; same__128x32u[7ff7c6ce8970h, 7ff7c6ce8999h][41] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 76 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3}
+; same__128x32u[7ff7c6d07950h, 7ff7c6d07979h][41] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 76 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:56:439
+; 2020-01-25 02:10:48:148
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}

@@ -1,7 +1,7 @@
 ; ushort byteswap(ushort src)
-; byteswap_16u[7ff7c6e70830h, 7ff7c6e7084bh][27] = {0f 1f 44 00 00 0f b7 c1 8b d0 c1 fa 08 25 ff 00 00 00 c1 e0 08 0b d0 0f b7 c2 c3}
+; byteswap_16u[7ff7c6e85020h, 7ff7c6e8503bh][27] = {0f 1f 44 00 00 0f b7 c1 8b d0 c1 fa 08 25 ff 00 00 00 c1 e0 08 0b d0 0f b7 c2 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:822
+; 2020-01-25 02:10:52:245
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}

@@ -1,7 +1,7 @@
 ; long setnb<long>(long src, byte pos, bit value)
-; setnb__0o_0obit[7ff7c6e76710h, 7ff7c6e76738h][40] = {0f 1f 44 00 00 48 8b c1 0f b6 d2 41 b9 01 00 00 00 8b ca 49 d3 e1 49 f7 d9 8b ca 41 d3 e0 41 8b d0 49 23 c1 48 23 c2 c3}
+; setnb__0o_0obit[7ff7c6e8adb0h, 7ff7c6e8add8h][40] = {0f 1f 44 00 00 48 8b c1 0f b6 d2 41 b9 01 00 00 00 8b ca 49 d3 e1 49 f7 d9 8b ca 41 d3 e0 41 8b d0 49 23 c1 48 23 c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:33:681
+; 2020-01-25 02:10:53:206
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

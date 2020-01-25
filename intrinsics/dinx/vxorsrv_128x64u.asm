@@ -1,7 +1,7 @@
 ; Vector128<ulong> vxorsrv(Vector128<ulong> x, Vector128<ulong> counts)
-; vxorsrv_128x64u[7ff7c6be2c20h, 7ff7c6be2c43h][35] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c4 e2 f1 45 ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vxorsrv_128x64u[7ff7c71d8600h, 7ff7c71d8623h][35] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c4 e2 f1 45 ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:856
+; 2020-01-25 02:11:02:973
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

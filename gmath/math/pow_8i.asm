@@ -1,7 +1,7 @@
 ; sbyte pow(sbyte b, uint exp)
-; pow_8i[7ff7c7187740h, 7ff7c718777dh][61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f be c1 41 0f af c0 48 0f be c0 d1 ea 85 d2 74 11 4c 0f be c1 41 8b c8 41 0f af c8 48 0f be c9 eb d8 c3}
+; pow_8i[7ff7c719a560h, 7ff7c719a59dh][61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f be c1 41 0f af c0 48 0f be c0 d1 ea 85 d2 74 11 4c 0f be c1 41 8b c8 41 0f af c8 48 0f be c9 eb d8 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:207
+; 2020-01-25 02:10:56:453
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
 0007h jne short 000fh                         ; JNE rel8 || 75 cb || encoded[2]{75 06}

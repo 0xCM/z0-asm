@@ -1,7 +1,7 @@
 ; sbyte mod<sbyte>(sbyte a, sbyte m)
-; mod_g8i[7ff7c7195850h, 7ff7c7195865h][21] = {0f 1f 44 00 00 48 0f be c1 48 0f be ca 99 f7 f9 48 0f be c2 c3}
+; mod_g8i[7ff7c71a8600h, 7ff7c71a8615h][21] = {0f 1f 44 00 00 48 0f be c1 48 0f be ca 99 f7 f9 48 0f be c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:303
+; 2020-01-25 02:10:58:345
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}

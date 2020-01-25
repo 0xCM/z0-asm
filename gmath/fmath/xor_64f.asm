@@ -1,7 +1,7 @@
 ; double xor(double a, double b)
-; xor_64f[7ff7c718aa40h, 7ff7c718aa6bh][43] = {48 83 ec 18 c5 f8 77 c5 fb 11 44 24 10 48 8b 44 24 10 c5 fb 11 4c 24 08 48 33 44 24 08 48 89 04 24 c5 fb 10 04 24 48 83 c4 18 c3}
+; xor_64f[7ff7c719d860h, 7ff7c719d88bh][43] = {48 83 ec 18 c5 f8 77 c5 fb 11 44 24 10 48 8b 44 24 10 c5 fb 11 4c 24 08 48 33 44 24 08 48 89 04 24 c5 fb 10 04 24 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:37:753
+; 2020-01-25 02:10:56:982
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovsd qword ptr [rsp+10h],xmm0         ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 44 24 10}

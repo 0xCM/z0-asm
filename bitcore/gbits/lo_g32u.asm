@@ -1,7 +1,7 @@
 ; uint lo<uint>(uint src)
-; lo_g32u[7ff7c6e84630h, 7ff7c6e84649h][25] = {50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 8b 44 24 04 0f b7 c0 48 83 c4 08 c3}
+; lo_g32u[7ff7c6e98f30h, 7ff7c6e98f49h][25] = {50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 8b 44 24 04 0f b7 c0 48 83 c4 08 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:34:221
+; 2020-01-25 02:10:53:891
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}

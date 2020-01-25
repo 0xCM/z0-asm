@@ -1,7 +1,7 @@
 ; bit divides<int>(int a, int b)
-; divides_g32i[7ff7c7194610h, 7ff7c7194623h][19] = {0f 1f 44 00 00 8b c2 99 f7 f9 85 d2 0f 94 c0 0f b6 c0 c3}
+; divides_g32i[7ff7c71a73c0h, 7ff7c71a73d3h][19] = {0f 1f 44 00 00 8b c2 99 f7 f9 85 d2 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:228
+; 2020-01-25 02:10:58:274
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h cdq                                     ; CDQ || o32 99 || encoded[1]{99}

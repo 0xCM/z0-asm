@@ -1,7 +1,7 @@
 ; Vector128<sbyte> vsrl<sbyte>(Vector128<sbyte> x, byte count)
-; vsrl__128x8i[7ff7c6c130a0h, 7ff7c6c1312ah][138] = {50 c5 f8 77 90 c5 f9 10 02 c4 e2 79 20 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 41 0f b6 c0 c5 f9 6e c8 c5 fd d1 c1 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vsrl__128x8i[7ff7c71f8350h, 7ff7c71f83dah][138] = {50 c5 f8 77 90 c5 f9 10 02 c4 e2 79 20 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 41 0f b6 c0 c5 f9 6e c8 c5 fd d1 c1 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:06:171
+; 2020-01-25 02:11:09:811
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

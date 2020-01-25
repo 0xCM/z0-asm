@@ -1,7 +1,7 @@
 ; void vhi<Int16>(Vector256<Int16> src, out ulong x0, out ulong x1)
-; vhi~out__256x16i[7ff7c6ddbec0h, 7ff7c6ddbee4h][36] = {c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
+; vhi~out__256x16i[7ff7c7219e10h, 7ff7c7219e34h][36] = {c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:444
+; 2020-01-25 02:11:12:503
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

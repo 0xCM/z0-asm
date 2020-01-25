@@ -1,7 +1,7 @@
 ; ulong max(ulong a, ulong b)
-; max_64u[7ff7c7185120h, 7ff7c7185132h][18] = {0f 1f 44 00 00 48 3b ca 77 04 48 8b c2 c3 48 8b c1 c3}
+; max_64u[7ff7c7197d80h, 7ff7c7197d92h][18] = {0f 1f 44 00 00 48 3b ca 77 04 48 8b c2 c3 48 8b c1 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:36:958
+; 2020-01-25 02:10:56:107
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h ja short 000eh                          ; JA rel8 || 77 cb || encoded[2]{77 04}

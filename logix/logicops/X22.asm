@@ -1,7 +1,7 @@
 ; bit f22(bit a, bit b, bit c)
-; X22[7ff7c6a1f7e0h, 7ff7c6a1f7f4h][20] = {0f 1f 44 00 00 89 4c 24 08 8b c2 f7 d0 83 e0 01 41 23 c0 c3}
+; X22[7ff7c6a1d5c0h, 7ff7c6a1d5d4h][20] = {0f 1f 44 00 00 89 4c 24 08 8b c2 f7 d0 83 e0 01 41 23 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:42:864
+; 2020-01-25 02:10:36:830
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
 0009h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}

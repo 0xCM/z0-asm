@@ -1,7 +1,7 @@
 ; Vector128<ulong> lt<ulong>(Vector128<ulong> a, Vector128<ulong> b)
-; lt_g128x64u[7ff7c6ce8c20h, 7ff7c6ce8c46h][38] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c4 e3 7d 46 c8 03 48 b8}
+; lt_g128x64u[7ff7c6d08010h, 7ff7c6d08036h][38] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c4 e3 7d 46 c8 03 48 b8}
 ; Capture completion code, ZEDx6
-; 2020-01-24 02:54:56:456
+; 2020-01-25 02:10:48:163
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

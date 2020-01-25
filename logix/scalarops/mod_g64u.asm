@@ -1,7 +1,7 @@
 ; ulong mod<ulong>(ulong a, ulong b)
-; mod_g64u[7ff7c6ca43b0h, 7ff7c6ca43c4h][20] = {0f 1f 44 00 00 4c 8b c2 48 8b c1 33 d2 49 f7 f0 48 8b c2 c3}
+; mod_g64u[7ff7c6cc34e0h, 7ff7c6cc34f4h][20] = {0f 1f 44 00 00 4c 8b c2 48 8b c1 33 d2 49 f7 f0 48 8b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:50:068
+; 2020-01-25 02:10:42:555
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8,rdx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c2}
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

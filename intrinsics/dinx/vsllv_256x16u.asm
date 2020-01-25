@@ -1,7 +1,7 @@
 ; Vector256<ushort> vsllv(Vector256<ushort> src, Vector256<ushort> counts)
-; vsllv_256x16u[7ff7c6bdc3d0h, 7ff7c6bdc44ah][122] = {50 c5 f8 77 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 33 c9 c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 33 db c4 e3 7d 19 d2 01 c4 e2 7d 33 d2 c4 e2 75 47 cb c4 e2 7d 47 c2 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 f5 db ca c5 fd db c2 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vsllv_256x16u[7ff7c71d66f0h, 7ff7c71d676ah][122] = {50 c5 f8 77 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 33 c9 c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 33 db c4 e3 7d 19 d2 01 c4 e2 7d 33 d2 c4 e2 75 47 cb c4 e2 7d 47 c2 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 f5 db ca c5 fd db c2 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:375
+; 2020-01-25 02:11:02:597
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

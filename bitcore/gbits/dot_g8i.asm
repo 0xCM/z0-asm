@@ -1,7 +1,7 @@
 ; bit dot<sbyte>(sbyte x, sbyte y)
-; dot_g8i[7ff7c6e84110h, 7ff7c6e84130h][32] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 c2 48 0f be c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
+; dot_g8i[7ff7c6e98a10h, 7ff7c6e98a30h][32] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 c2 48 0f be c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:188
+; 2020-01-25 02:10:53:831
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}

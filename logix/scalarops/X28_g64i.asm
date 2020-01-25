@@ -1,7 +1,7 @@
 ; long f28<long>(long a, long b, long c)
-; X28_g64i[7ff7c6b90750h, 7ff7c6b9075fh][15] = {0f 1f 44 00 00 48 33 d1 49 23 d0 48 8b c2 c3}
+; X28_g64i[7ff7c6ba0330h, 7ff7c6ba033fh][15] = {0f 1f 44 00 00 48 33 d1 49 23 d0 48 8b c2 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 02:54:48:380
+; 2020-01-25 02:10:41:182
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rdx,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 d1}
 0008h and rdx,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 d0}

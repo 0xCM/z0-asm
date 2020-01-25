@@ -1,7 +1,7 @@
 ; Vector256<Int16> vsrlv(Vector256<Int16> src, Vector256<Int16> counts)
-; vsrlv_256x16i[7ff7c6be25c0h, 7ff7c6be2619h][89] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 23 c9 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 23 db c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 75 45 cb c4 e2 7d 45 c2 c5 f5 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_256x16i[7ff7c71d8290h, 7ff7c71d82e9h][89] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 23 c9 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 23 db c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 75 45 cb c4 e2 7d 45 c2 c5 f5 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:567
+; 2020-01-25 02:11:02:874
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

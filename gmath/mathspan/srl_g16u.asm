@@ -1,7 +1,7 @@
 ; Span<ushort> srl<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
-; srl_g16u[7ff7c71a8990h, 7ff7c71a89d7h][71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g16u[7ff7c71bb740h, 7ff7c71bb787h][71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:40:022
+; 2020-01-25 02:11:00:210
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

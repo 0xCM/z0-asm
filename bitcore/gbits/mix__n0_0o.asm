@@ -1,7 +1,7 @@
 ; ulong mix<ulong>(N0 parity, ulong x, ulong y)
-; mix__n0_0o[7ff7c6e84e10h, 7ff7c6e84e4bh][59] = {0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
+; mix__n0_0o[7ff7c6e99720h, 7ff7c6e9975bh][59] = {0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:34:245
+; 2020-01-25 02:10:53:916
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,5555555555555555h               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 55 55 55 55 55 55 55 55}
 000fh pext rax,rdx,rax                        ; PEXT r64a, r64b, r/m64 || VEX.LZ.F3.0F38.W1 F5 /r || encoded[5]{c4 e2 ea f5 c0}

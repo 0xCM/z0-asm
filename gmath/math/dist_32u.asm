@@ -1,7 +1,7 @@
 ; ulong dist(uint a, uint b)
-; dist_32u[7ff7c7188df0h, 7ff7c7188e03h][19] = {0f 1f 44 00 00 3b ca 73 05 2b d1 8b c2 c3 2b ca 8b c1 c3}
+; dist_32u[7ff7c719bc10h, 7ff7c719bc23h][19] = {0f 1f 44 00 00 3b ca 73 05 2b d1 8b c2 c3 2b ca 8b c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:371
+; 2020-01-25 02:10:56:633
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h jae short 000eh                         ; JAE rel8 || 73 cb || encoded[2]{73 05}

@@ -1,7 +1,7 @@
 ; byte between(byte src, byte k0, byte k1)
-; between_8u[7ff7c6e6f320h, 7ff7c6e6f347h][39] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 c3}
+; between_8u[7ff7c6e83f90h, 7ff7c6e83fb7h][39] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:620
+; 2020-01-25 02:10:52:142
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

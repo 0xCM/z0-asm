@@ -1,7 +1,7 @@
 ; bit dot<ulong>(ulong x, ulong y)
-; dot_g64u[7ff7c6e84200h, 7ff7c6e84218h][24] = {0f 1f 44 00 00 48 23 d1 33 c0 f3 48 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3}
+; dot_g64u[7ff7c6e98b00h, 7ff7c6e98b18h][24] = {0f 1f 44 00 00 48 23 d1 33 c0 f3 48 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:195
+; 2020-01-25 02:10:53:866
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and rdx,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d1}
 0008h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

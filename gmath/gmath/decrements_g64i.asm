@@ -1,7 +1,7 @@
 ; void decrements<long>(long first, int count, ref long dst)
-; decrements_g64i[7ff7c7190230h, 7ff7c7190252h][34] = {0f 1f 44 00 00 33 c0 85 d2 7e 16 4c 63 c8 4f 8d 14 c8 4c 8b d9 4d 2b d9 4d 89 1a ff c0 3b c2 7c ea c3}
+; decrements_g64i[7ff7c71a2fd0h, 7ff7c71a2ff2h][34] = {0f 1f 44 00 00 33 c0 85 d2 7e 16 4c 63 c8 4f 8d 14 c8 4c 8b d9 4d 2b d9 4d 89 1a ff c0 3b c2 7c ea c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:38:510
+; 2020-01-25 02:10:57:548
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}

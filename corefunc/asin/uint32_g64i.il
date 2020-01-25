@@ -1,4 +1,4 @@
-// Id := 100665608, Name := System.UInt32& Z0.AsIn::uint32<T>(T&)
+// Id := 100665615, Name := System.UInt32& Z0.AsIn::uint32<T>(T&)
 // ref uint uint32<long>(in long src)
 // AggressiveInlining
 ref uint uint32<long>(in long src)

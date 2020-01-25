@@ -1,7 +1,7 @@
 ; ref Block256<ulong> vselect<ulong>(in Block256<ulong> a, in Block256<ulong> b, in Block256<ulong> c, in Block256<ulong> dst)
-; vselect__b256x64u[7ff7c6df7690h, 7ff7c6df7711h][129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
+; vselect__b256x64u[7ff7c7234890h, 7ff7c7234911h][129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:556
+; 2020-01-25 02:11:15:884
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

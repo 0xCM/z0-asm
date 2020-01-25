@@ -1,7 +1,7 @@
 ; ref BitMatrix<long> identity<long>(in BitMatrix<long> A, ref BitMatrix<long> Z)
-; bm~identity~byref_g[7ff7c6b4fdc0h, 7ff7c6b4fe25h][101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 3a 91 37 4f 48 8b c6 48 83 c4 40 5e c3 e8 1c 2c 83 ff cc}
+; bm~identity~byref_g[7ff7c6b5f9b0h, 7ff7c6b5fa15h][101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 4a 95 36 4f 48 8b c6 48 83 c4 40 5e c3 e8 2c 30 84 ff cc}
 ; Capture completion code, INTRx2
-; 2020-01-24 02:54:44:596
+; 2020-01-25 02:10:37:797
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -24,10 +24,10 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a 91 37 4f}
+0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a 95 36 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c6382a40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c 2c 83 ff}
+005fh call 7ff7c63a2a40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c 30 84 ff}
 0064h int 3                                   ; INT3 || CC || encoded[1]{cc}

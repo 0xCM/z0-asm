@@ -1,7 +1,7 @@
 ; void split(ulong src, out ushort x0, out ushort x1, out ushort x2, out ushort x3)
-; split_64u[7ff7c6e6f260h, 7ff7c6e6f28bh][43] = {0f 1f 44 00 00 66 89 0a 48 8b c1 48 c1 e8 10 66 41 89 00 48 8b c1 48 c1 e8 20 66 41 89 01 48 c1 e9 30 48 8b 44 24 28 66 89 08 c3}
+; split_64u[7ff7c6e83ed0h, 7ff7c6e83efbh][43] = {0f 1f 44 00 00 66 89 0a 48 8b c1 48 c1 e8 10 66 41 89 00 48 8b c1 48 c1 e8 20 66 41 89 01 48 c1 e9 30 48 8b 44 24 28 66 89 08 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:616
+; 2020-01-25 02:10:52:139
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cx                            ; MOV r/m16, r16 || o16 89 /r || encoded[3]{66 89 0a}
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

@@ -1,7 +1,7 @@
 ; uint stitch(uint left, int ldx, uint right, int rdx)
-; stitch_32u[7ff7c6e66fa0h, 7ff7c6e66fbeh][30] = {0f 1f 44 00 00 8b c1 8b ca d3 e0 41 83 e1 1f 41 8b c9 41 d3 e8 41 0b c0 41 8b c9 d3 e8 c3}
+; stitch_32u[7ff7c6e7b7c0h, 7ff7c6e7b7deh][30] = {0f 1f 44 00 00 8b c1 8b ca d3 e0 41 83 e1 1f 41 8b c9 41 d3 e8 41 0b c0 41 8b c9 d3 e8 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:31:584
+; 2020-01-25 02:10:51:865
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

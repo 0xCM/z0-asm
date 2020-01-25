@@ -1,7 +1,7 @@
 ; ulong bitclear<ulong>(ulong src, byte index, byte count)
-; bitclear_g64u[7ff7c6e7ded0h, 7ff7c6e7defch][44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
+; bitclear_g64u[7ff7c6e928e0h, 7ff7c6e9290ch][44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:994
+; 2020-01-25 02:10:53:531
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c8}

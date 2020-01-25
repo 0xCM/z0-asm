@@ -1,7 +1,7 @@
 ; Int16 disable(Int16 src, int pos)
-; disable_16i[7ff7c6e70d60h, 7ff7c6e70d87h][39] = {0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 f7 d2 48 0f bf d2 48 0f bf c0 23 c2 48 0f bf c0 c3}
+; disable_16i[7ff7c6e85550h, 7ff7c6e85577h][39] = {0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 f7 d2 48 0f bf d2 48 0f bf c0 23 c2 48 0f bf c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:879
+; 2020-01-25 02:10:52:306
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}

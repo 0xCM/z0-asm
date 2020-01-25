@@ -1,7 +1,7 @@
 ; uint log2<ulong>(in ulong src)
-; log2_g64u[7ff7c6e84720h, 7ff7c6e8473ch][28] = {0f 1f 44 00 00 48 8b 01 48 85 c0 75 04 33 c0 eb 0a f3 48 0f bd c0 f7 d8 83 c0 3f c3}
+; log2_g64u[7ff7c6e99020h, 7ff7c6e9903ch][28] = {0f 1f 44 00 00 48 8b 01 48 85 c0 75 04 33 c0 eb 0a f3 48 0f bd c0 f7 d8 83 c0 3f c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:227
+; 2020-01-25 02:10:53:896
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}

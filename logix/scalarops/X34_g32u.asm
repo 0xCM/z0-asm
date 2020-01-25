@@ -1,7 +1,7 @@
 ; uint f34<uint>(uint a, uint b, uint c)
-; X34_g32u[7ff7c6b91e50h, 7ff7c6b91e62h][18] = {0f 1f 44 00 00 44 23 c2 41 8b c0 f7 d0 33 d1 23 c2 c3}
+; X34_g32u[7ff7c6ba1a40h, 7ff7c6ba1a52h][18] = {0f 1f 44 00 00 44 23 c2 41 8b c0 f7 d0 33 d1 23 c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:48:625
+; 2020-01-25 02:10:41:400
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and r8d,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{44 23 c2}
 0008h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}

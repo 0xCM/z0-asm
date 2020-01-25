@@ -1,7 +1,7 @@
 ; ref Block128<byte> vselect<byte>(in Block128<byte> a, in Block128<byte> b, in Block128<byte> c, in Block128<byte> dst)
-; vselect__b128x8u[7ff7c6df5960h, 7ff7c6df59eah][138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
+; vselect__b128x8u[7ff7c7232f60h, 7ff7c7232feah][138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:492
+; 2020-01-25 02:11:15:802
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

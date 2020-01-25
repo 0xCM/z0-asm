@@ -1,7 +1,7 @@
 ; Vector128<byte> vlo<byte>(Vector256<byte> src)
-; vlo__256x8u[7ff7c6dc8c60h, 7ff7c6dc8c7ah][26] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
+; vlo__256x8u[7ff7c7208930h, 7ff7c720894ah][26] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:08:381
+; 2020-01-25 02:11:11:670
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

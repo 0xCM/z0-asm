@@ -1,7 +1,7 @@
 ; uint rotr<uint>(uint src, int shift, int width)
-; rotr_g32u[7ff7c6e72c50h, 7ff7c6e72c6bh][27] = {0f 1f 44 00 00 8b c1 8b ca 44 8b c8 41 d3 e9 44 2b c2 41 8b c8 d3 e0 41 0b c1 c3}
+; rotr_g32u[7ff7c6e873e0h, 7ff7c6e873fbh][27] = {0f 1f 44 00 00 8b c1 8b ca 44 8b c8 41 d3 e9 44 2b c2 41 8b c8 d3 e0 41 0b c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:580
+; 2020-01-25 02:10:53:110
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

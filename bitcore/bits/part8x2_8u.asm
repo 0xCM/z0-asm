@@ -1,7 +1,7 @@
 ; void part8x2(byte src, ref byte dst)
-; part8x2_8u[7ff7c6e684a0h, 7ff7c6e684cfh][47] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 03 88 0a 8b c8 c1 e9 02 83 e1 03 88 4a 01 8b c8 c1 e9 04 83 e1 03 88 4a 02 c1 e8 06 83 e0 03 88 42 03 c3}
+; part8x2_8u[7ff7c6e7cee0h, 7ff7c6e7cf0fh][47] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 03 88 0a 8b c8 c1 e9 02 83 e1 03 88 4a 01 8b c8 c1 e9 04 83 e1 03 88 4a 02 c1 e8 06 83 e0 03 88 42 03 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:31:998
+; 2020-01-25 02:10:51:973
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}

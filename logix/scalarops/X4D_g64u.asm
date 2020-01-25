@@ -1,7 +1,7 @@
 ; ulong f4d<ulong>(ulong a, ulong b, ulong c)
-; X4D_g64u[7ff7c6b94c50h, 7ff7c6b94c70h][32] = {0f 1f 44 00 00 48 8b c1 49 23 c0 48 f7 d0 49 0b c8 48 f7 d1 48 23 c2 c4 e2 e8 f2 d1 48 0b c2 c3}
+; X4D_g64u[7ff7c6ba4850h, 7ff7c6ba4870h][32] = {0f 1f 44 00 00 48 8b c1 49 23 c0 48 f7 d0 49 0b c8 48 f7 d1 48 23 c2 c4 e2 e8 f2 d1 48 0b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:49:209
+; 2020-01-25 02:10:41:840
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}

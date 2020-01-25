@@ -1,7 +1,7 @@
 ; uint pop<uint>(uint x0, uint x1, uint x2, uint x3, uint x4, uint x5, uint x6, uint x7)
-; pop_g32u[7ff7c6e86600h, 7ff7c6e86666h][102] = {56 0f 1f 40 00 8b c1 8b d2 41 8b c8 45 8b c1 44 8b 4c 24 30 44 8b 54 24 38 44 8b 5c 24 40 8b 74 24 48 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
+; pop_g32u[7ff7c6e9b310h, 7ff7c6e9b376h][102] = {56 0f 1f 40 00 8b c1 8b d2 41 8b c8 45 8b c1 44 8b 4c 24 30 44 8b 54 24 38 44 8b 5c 24 40 8b 74 24 48 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:34:336
+; 2020-01-25 02:10:54:007
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

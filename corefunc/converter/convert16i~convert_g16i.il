@@ -1,4 +1,4 @@
-// Id := 100666394, Name := T Z0.Converter::convert<T>(System.Int16)
+// Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
 // double convert<double>(Int16 src)
 // AggressiveInlining
 double convert<double>(Int16 src)

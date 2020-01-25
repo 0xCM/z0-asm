@@ -1,7 +1,7 @@
 ; uint replicate(uint src, byte from, byte to, int reps)
-; replicate_32u[7ff7c6e6d630h, 7ff7c6e6d674h][68] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 44 8b c0 44 2b c2 c1 e0 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 33 d2 45 33 d2 45 85 c9 7e 18 41 8b ca 41 0f af c8 44 8b d8 41 d3 e3 41 0b d3 41 ff c2 45 3b d1 7c e8 8b c2 c3}
+; replicate_32u[7ff7c6e82290h, 7ff7c6e822d4h][68] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 44 8b c0 44 2b c2 c1 e0 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 33 d2 45 33 d2 45 85 c9 7e 18 41 8b ca 41 0f af c8 44 8b d8 41 d3 e3 41 0b d3 41 ff c2 45 3b d1 7c e8 8b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:32:528
+; 2020-01-25 02:10:52:072
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

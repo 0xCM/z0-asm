@@ -1,7 +1,7 @@
 ; Span<ushort> div<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
-; div_g16u[7ff7c7198d70h, 7ff7c7198dbeh][78] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 27 48 63 c6 49 8d 3c 43 41 0f b7 14 42 41 0f b7 1c 40 0f b7 c2 0f b7 c0 99 f7 fb 0f b7 c0 66 89 07 ff c6 41 3b f1 7c d9 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
+; div_g16u[7ff7c71abb20h, 7ff7c71abb6eh][78] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 27 48 63 c6 49 8d 3c 43 41 0f b7 14 42 41 0f b7 1c 40 0f b7 c2 0f b7 c0 99 f7 fb 0f b7 c0 66 89 07 ff c6 41 3b f1 7c d9 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:565
+; 2020-01-25 02:10:59:127
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}

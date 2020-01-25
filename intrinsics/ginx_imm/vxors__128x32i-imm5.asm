@@ -1,7 +1,7 @@
 ; vxors__128x32i-imm5
-; vxors__128x32i-imm5[7ff7c6ca28c0h, 7ff7c6ca28e9h][41] = {c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 05 c5 f8 28 d0 c5 e9 72 d2 05 c5 f1 ef ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vxors__128x32i-imm5[7ff7c7583830h, 7ff7c7583859h][41] = {c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 05 c5 f8 28 d0 c5 e9 72 d2 05 c5 f1 ef ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:06:742
+; 2020-01-25 02:11:10:069
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
 0007h vmovaps xmm1,xmm0                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 c8}

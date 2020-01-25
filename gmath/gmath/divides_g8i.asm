@@ -1,7 +1,7 @@
 ; bit divides<sbyte>(sbyte a, sbyte b)
-; divides_g8i[7ff7c7194550h, 7ff7c719456fh][31] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 48 0f be c8 8b c2 99 f7 f9 85 d2 0f 94 c0 0f b6 c0 c3}
+; divides_g8i[7ff7c71a7300h, 7ff7c71a731fh][31] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 48 0f be c8 8b c2 99 f7 f9 85 d2 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:223
+; 2020-01-25 02:10:58:268
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}

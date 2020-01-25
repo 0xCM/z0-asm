@@ -1,7 +1,7 @@
 ; sbyte min<sbyte>(sbyte a, sbyte b)
-; min_g8i[7ff7c718e390h, 7ff7c718e3ach][28] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 48 0f be c0 3b c2 7c 02 eb 02 8b d0 8b c2 c3}
+; min_g8i[7ff7c71a1130h, 7ff7c71a114ch][28] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 48 0f be c0 3b c2 7c 02 eb 02 8b d0 8b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:38:396
+; 2020-01-25 02:10:57:433
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}

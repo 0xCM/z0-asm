@@ -1,7 +1,7 @@
 ; Vector256<sbyte> vsllv(Vector256<sbyte> src, Vector256<sbyte> counts)
-; vsllv_256x8i[7ff7c6bdc100h, 7ff7c6bdc1dbh][219] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 20 c9 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 20 db c4 e3 7d 19 d2 01 c4 e2 7d 20 d2 c5 fc 28 e3 c4 e3 7d 19 cd 00 c4 e2 7d 23 ed c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 e4 01 c4 e2 7d 23 e4 c4 e2 55 47 db c4 e2 75 47 cc c5 e5 6b c9 c4 e3 fd 00 c9 d8 c5 fc 28 d8 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c5 fc 28 e2 c4 e3 7d 19 e4 00 c4 e2 7d 23 e4 c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 65 47 dc c4 e2 7d 47 c2 c5 e5 6b c0 c4 e3 fd 00 c0 d8 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsllv_256x8i[7ff7c71d6420h, 7ff7c71d64fbh][219] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 20 c9 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 20 db c4 e3 7d 19 d2 01 c4 e2 7d 20 d2 c5 fc 28 e3 c4 e3 7d 19 cd 00 c4 e2 7d 23 ed c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 e4 01 c4 e2 7d 23 e4 c4 e2 55 47 db c4 e2 75 47 cc c5 e5 6b c9 c4 e3 fd 00 c9 d8 c5 fc 28 d8 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c5 fc 28 e2 c4 e3 7d 19 e4 00 c4 e2 7d 23 e4 c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 65 47 dc c4 e2 7d 47 c2 c5 e5 6b c0 c4 e3 fd 00 c0 d8 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:360
+; 2020-01-25 02:11:02:588
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

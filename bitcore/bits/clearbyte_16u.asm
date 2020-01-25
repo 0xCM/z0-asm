@@ -1,7 +1,7 @@
 ; ushort clearbyte(ushort src, byte index)
-; clearbyte_16u[7ff7c6e6fdc0h, 7ff7c6e6fddch][28] = {0f 1f 44 00 00 8b c1 0f b6 ca ba ff 00 00 00 d3 e2 f7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
+; clearbyte_16u[7ff7c6e84910h, 7ff7c6e8492ch][28] = {0f 1f 44 00 00 8b c1 0f b6 ca ba ff 00 00 00 d3 e2 f7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:32:694
+; 2020-01-25 02:10:52:191
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

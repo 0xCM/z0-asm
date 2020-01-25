@@ -1,7 +1,7 @@
 ; bit odd<long>(long a)
-; odd_g64i[7ff7c7194bc0h, 7ff7c7194bcfh][15] = {0f 1f 44 00 00 f6 c1 01 0f 95 c0 0f b6 c0 c3}
+; odd_g64i[7ff7c71a7970h, 7ff7c71a797fh][15] = {0f 1f 44 00 00 f6 c1 01 0f 95 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:239
+; 2020-01-25 02:10:58:288
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test cl,1                               ; TEST r/m8, imm8 || F6 /0 ib || encoded[3]{f6 c1 01}
 0008h setne al                                ; SETNE r/m8 || 0F 95 /r || encoded[3]{0f 95 c0}

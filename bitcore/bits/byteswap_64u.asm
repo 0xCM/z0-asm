@@ -1,7 +1,7 @@
 ; ulong byteswap(ulong src)
-; byteswap_64u[7ff7c6e708a0h, 7ff7c6e70920h][128] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 38 0f b6 c0 48 8b d1 48 c1 ea 30 0f b6 d2 48 c1 e2 08 48 0b c2 48 8b d1 48 c1 ea 28 0f b6 d2 48 c1 e2 10 48 0b c2 48 8b d1 48 c1 ea 20 0f b6 d2 48 c1 e2 18 48 0b c2 48 8b d1 48 c1 ea 18 0f b6 d2 48 c1 e2 20 48 0b c2 48 8b d1 48 c1 ea 10 0f b6 d2 48 c1 e2 28 48 0b c2 48 8b d1 48 c1 ea 08 0f b6 d2 48 c1 e2 30 48 0b c2 0f b6 d1 48 c1 e2 38 48 0b c2 c3}
+; byteswap_64u[7ff7c6e85090h, 7ff7c6e85110h][128] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 38 0f b6 c0 48 8b d1 48 c1 ea 30 0f b6 d2 48 c1 e2 08 48 0b c2 48 8b d1 48 c1 ea 28 0f b6 d2 48 c1 e2 10 48 0b c2 48 8b d1 48 c1 ea 20 0f b6 d2 48 c1 e2 18 48 0b c2 48 8b d1 48 c1 ea 18 0f b6 d2 48 c1 e2 20 48 0b c2 48 8b d1 48 c1 ea 10 0f b6 d2 48 c1 e2 28 48 0b c2 48 8b d1 48 c1 ea 08 0f b6 d2 48 c1 e2 30 48 0b c2 0f b6 d1 48 c1 e2 38 48 0b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:32:827
+; 2020-01-25 02:10:52:247
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h shr rax,38h                             ; SHR r/m64, imm8 || REX.W C1 /5 ib || encoded[4]{48 c1 e8 38}

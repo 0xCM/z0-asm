@@ -1,7 +1,7 @@
 ; Int16 bitslice<Int16>(Int16 a, byte start, byte length)
-; bitslice_g16i[7ff7c6e82e50h, 7ff7c6e82e72h][34] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3}
+; bitslice_g16i[7ff7c6e97850h, 7ff7c6e97872h][34] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:34:140
+; 2020-01-25 02:10:53:776
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

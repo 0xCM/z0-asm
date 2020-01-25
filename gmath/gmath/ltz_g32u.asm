@@ -1,7 +1,7 @@
 ; uint ltz<uint>(uint a, uint b)
-; ltz_g32u[7ff7c718dc20h, 7ff7c718dc30h][16] = {0f 1f 44 00 00 3b ca 0f 92 c0 0f b6 c0 f7 d8 c3}
+; ltz_g32u[7ff7c71a09c0h, 7ff7c71a09d0h][16] = {0f 1f 44 00 00 3b ca 0f 92 c0 0f b6 c0 f7 d8 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:38:370
+; 2020-01-25 02:10:57:404
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h setb al                                 ; SETB r/m8 || 0F 92 /r || encoded[3]{0f 92 c0}

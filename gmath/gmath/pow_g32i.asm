@@ -1,7 +1,7 @@
 ; int pow<int>(int b, uint exp)
-; pow_g32i[7ff7c7196360h, 7ff7c7196389h][41] = {0f 1f 44 00 00 85 d2 75 07 b8 01 00 00 00 eb 18 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
+; pow_g32i[7ff7c71a9110h, 7ff7c71a9139h][41] = {0f 1f 44 00 00 85 d2 75 07 b8 01 00 00 00 eb 18 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:353
+; 2020-01-25 02:10:58:395
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
 0007h jne short 0010h                         ; JNE rel8 || 75 cb || encoded[2]{75 07}

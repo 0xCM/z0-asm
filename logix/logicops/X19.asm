@@ -1,7 +1,7 @@
 ; bit f19(bit a, bit b, bit c)
-; X19[7ff7c6a1f630h, 7ff7c6a1f647h][23] = {0f 1f 44 00 00 8b c2 41 33 c0 41 23 d0 23 d1 33 c2 f7 d0 83 e0 01 c3}
+; X19[7ff7c6a1d410h, 7ff7c6a1d427h][23] = {0f 1f 44 00 00 8b c2 41 33 c0 41 23 d0 23 d1 33 c2 f7 d0 83 e0 01 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 02:54:42:850
+; 2020-01-25 02:10:36:819
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h xor eax,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c0}

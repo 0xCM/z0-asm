@@ -1,7 +1,7 @@
 ; Vector128<ulong> lnot<ulong>(Vector128<ulong> a, Vector128<ulong> b)
-; lnot_g128x64u[7ff7c6ce55a0h, 7ff7c6ce55b9h][25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; lnot_g128x64u[7ff7c6d04580h, 7ff7c6d04599h][25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:55:573
+; 2020-01-25 02:10:47:834
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

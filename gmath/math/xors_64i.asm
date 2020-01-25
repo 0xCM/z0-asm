@@ -1,7 +1,7 @@
 ; long xors(long src, byte offset)
-; xors_64i[7ff7c7186c60h, 7ff7c7186c85h][37] = {0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 f8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3}
+; xors_64i[7ff7c7199a80h, 7ff7c7199aa5h][37] = {0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 f8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:138
+; 2020-01-25 02:10:56:339
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

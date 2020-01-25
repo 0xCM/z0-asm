@@ -1,7 +1,7 @@
 ; Span<uint> abs<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
-; abs_g32u[7ff7c719d340h, 7ff7c719d37bh][59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 45 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
+; abs_g32u[7ff7c71b0100h, 7ff7c71b013bh][59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 45 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:680
+; 2020-01-25 02:10:59:732
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}

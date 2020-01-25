@@ -1,7 +1,7 @@
 ; ulong gcd<ulong>(ulong a, ulong b)
-; gcd_g64u[7ff7c7195490h, 7ff7c71954c1h][49] = {0f 1f 44 00 00 4c 8b c2 48 8b d1 4d 85 c0 74 16 48 8b c2 33 d2 49 f7 f0 48 85 d2 75 04 49 8b c0 c3 49 87 d0 eb ea 4c 8b c2 eb f2 00 19 00 00 00 40}
+; gcd_g64u[7ff7c71a8240h, 7ff7c71a8271h][49] = {0f 1f 44 00 00 4c 8b c2 48 8b d1 4d 85 c0 74 16 48 8b c2 33 d2 49 f7 f0 48 85 d2 75 04 49 8b c0 c3 49 87 d0 eb ea 4c 8b c2 eb f2 00 19 00 00 00 40}
 ; Capture completion code, ZEDx6
-; 2020-01-24 01:44:39:270
+; 2020-01-25 02:10:58:316
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8,rdx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c2}
 0008h mov rdx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d1}

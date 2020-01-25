@@ -1,7 +1,7 @@
 ; bit testz(ulong a, ulong b)
-; testz_64u[7ff7c6bd86f0h, 7ff7c6bd8729h][57] = {48 83 ec 18 c5 f8 77 48 89 4c 24 10 48 8d 44 24 10 c4 e2 79 59 44 24 10 48 89 54 24 08 48 8d 44 24 08 c4 e2 79 59 4c 24 08 c4 e2 79 17 c1 0f 94 c0 0f b6 c0 48 83 c4 18 c3}
+; testz_64u[7ff7c71d31c0h, 7ff7c71d31f9h][57] = {48 83 ec 18 c5 f8 77 48 89 4c 24 10 48 8d 44 24 10 c4 e2 79 59 44 24 10 48 89 54 24 08 48 8d 44 24 08 c4 e2 79 59 4c 24 08 c4 e2 79 17 c1 0f 94 c0 0f b6 c0 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:149
+; 2020-01-25 02:11:02:295
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+10h],rcx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 10}

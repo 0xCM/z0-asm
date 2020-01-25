@@ -1,7 +1,7 @@
 ; Vector128<Int16> eval<Int16>(BinaryArithmeticKind:byte kind, Vector128<Int16> x, Vector128<Int16> y)
-; ba~eval__128x16i[7ff7c6cb72f0h, 7ff7c6cb73c3h][211] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 88 2f 88 c6 f7 7f 00 00 e8 5f f9 1e 5f 48 8b f8 40 88 77 08 48 b9 48 7f 34 c6 f7 7f 00 00 e8 89 7c 19 5f 48 8b c8 e8 11 74 d6 ff 8b f0 48 b9 50 58 58 c6 f7 7f 00 00 e8 30 f9 1e 5f 48 8b d8 b9 68 04 00 00 48 ba 00 d2 5a c6 f7 7f 00 00 e8 19 92 31 5f 48 8b e8 8b ce e8 ef 4b 6e ff 4c 8b c0 48 8b cd 48 8b d7 e8 89 cd 6b ff 48 8b d0 48 8b cb e8 56 7a 6d ff 48 8b cb e8 3e 45 16 5f cc}
+; ba~eval__128x16i[7ff7c6cd5fb0h, 7ff7c6cd6083h][211] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 bf 91 c6 f7 7f 00 00 e8 9f 0c 1d 5f 48 8b f8 40 88 77 08 48 b9 48 7f 36 c6 f7 7f 00 00 e8 c9 8f 17 5f 48 8b c8 e8 31 65 d4 ff 8b f0 48 b9 38 2a 5b c6 f7 7f 00 00 e8 70 0c 1d 5f 48 8b d8 b9 68 04 00 00 48 ba f0 17 81 c6 f7 7f 00 00 e8 59 a5 2f 5f 48 8b e8 8b ce e8 f7 60 d4 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c9 e0 6b ff 48 8b d0 48 8b cb e8 e6 77 6d ff 48 8b cb e8 7e 58 14 5f cc}
 ; Capture completion code, INTRx2
-; 2020-01-24 02:54:51:857
+; 2020-01-25 02:10:44:282
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -34,31 +34,31 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6882f88h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 88 2f 88 c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f f9 1e 5f}
+0052h mov rcx,7ff7c691bf70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 bf 91 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 0c 1d 5f}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
-0068h mov rcx,7ff7c6347f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 34 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 7c 19 5f}
+0068h mov rcx,7ff7c6367f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 36 c6 f7 7f 00 00}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 8f 17 5f}
 0077h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-007ah call 7ff7c6a1e780h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 74 d6 ff}
+007ah call 7ff7c6a1c560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 65 d4 ff}
 007fh mov esi,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f0}
-0081h mov rcx,7ff7c6585850h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 50 58 58 c6 f7 7f 00 00}
-008bh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 f9 1e 5f}
+0081h mov rcx,7ff7c65b2a38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 2a 5b c6 f7 7f 00 00}
+008bh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 0c 1d 5f}
 0090h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0093h mov ecx,468h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 68 04 00 00}
-0098h mov rdx,7ff7c65ad200h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 d2 5a c6 f7 7f 00 00}
-00a2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 92 31 5f}
+0098h mov rdx,7ff7c68117f0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba f0 17 81 c6 f7 7f 00 00}
+00a2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 a5 2f 5f}
 00a7h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00aah mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-00ach call 7ff7c639bf90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef 4b 6e ff}
+00ach call 7ff7c6a1c158h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 60 d4 ff}
 00b1h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b4h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b7h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bah call 7ff7c6374138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 cd 6b ff}
+00bah call 7ff7c6394138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 e0 6b ff}
 00bfh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c2h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c5h call 7ff7c638ee10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 7a 6d ff}
+00c5h call 7ff7c63ad860h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 77 6d ff}
 00cah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cdh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e 45 16 5f}
+00cdh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 58 14 5f}
 00d2h int 3                                   ; INT3 || CC || encoded[1]{cc}

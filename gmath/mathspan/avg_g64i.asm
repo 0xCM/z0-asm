@@ -1,7 +1,7 @@
 ; long avg<long>(ReadOnlySpan<long> src)
-; avg_g64i[7ff7c71ab930h, 7ff7c71ab96eh][62] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 70 1b 41 83 c0 01 70 15 44 3b c2 7c ec 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 c4 28 c3 e8 b3 42 e2 5e cc}
+; avg_g64i[7ff7c71be6e0h, 7ff7c71be71eh][62] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 70 1b 41 83 c0 01 70 15 44 3b c2 7c ec 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 c4 28 c3 e8 03 15 e1 5e cc}
 ; Capture completion code, ZEDx2_SBB
-; 2020-01-24 01:44:40:136
+; 2020-01-25 02:11:00:354
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -23,5 +23,5 @@
 0030h idiv r8                                 ; IDIV r/m64 || REX.W F7 /7 || encoded[3]{49 f7 f8}
 0033h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
-0038h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 42 e2 5e}
+0038h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 15 e1 5e}
 003dh int 3                                   ; INT3 || CC || encoded[1]{cc}

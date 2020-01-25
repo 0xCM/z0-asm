@@ -1,7 +1,7 @@
 ; Vector256<byte> vsllr<byte>(Vector256<byte> x, Vector256<byte> offset)
-; vsllr_g256x8u[7ff7c6c10460h, 7ff7c6c104c7h][103] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c9 00 c4 e3 7d 19 c2 00 c4 e2 7d 30 d2 c5 ed f1 d1 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c5 fd f1 c1 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vsllr_g256x8u[7ff7c71f5fe0h, 7ff7c71f6047h][103] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c9 00 c4 e3 7d 19 c2 00 c4 e2 7d 30 d2 c5 ed f1 d1 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c5 fd f1 c1 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:919
+; 2020-01-25 02:11:09:557
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

@@ -1,7 +1,7 @@
 ; bit gt<double>(double a, double b)
-; gt_g64f[7ff7c71aca30h, 7ff7c71aca40h][16] = {c5 f8 77 66 90 c5 f9 2e c1 0f 97 c0 0f b6 c0 c3}
+; gt_g64f[7ff7c71bf7e0h, 7ff7c71bf7f0h][16] = {c5 f8 77 66 90 c5 f9 2e c1 0f 97 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:40:597
+; 2020-01-25 02:11:00:510
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vucomisd xmm0,xmm1                      ; VUCOMISD xmm1, xmm2/m64 || VEX.LIG.66.0F.WIG 2E /r || encoded[4]{c5 f9 2e c1}

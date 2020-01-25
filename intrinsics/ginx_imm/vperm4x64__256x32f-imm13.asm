@@ -1,7 +1,7 @@
 ; vperm4x64__256x32f-imm13
-; vperm4x64__256x32f-imm13[7ff7c6ca6750h, 7ff7c6ca6768h][24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 01 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64__256x32f-imm13[7ff7c7582640h, 7ff7c7582658h][24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 01 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:059
+; 2020-01-25 02:11:12:094
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
 0007h vpermpd ymm0,ymm0,0dh                   ; VPERMPD ymm1, ymm2/m256, imm8 || VEX.256.66.0F3A.W1 01 /r ib || encoded[6]{c4 e3 fd 01 c0 0d}

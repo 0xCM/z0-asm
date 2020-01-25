@@ -1,7 +1,7 @@
 ; ushort gcd(ushort a, ushort b)
-; gcd_16u[7ff7c7189390h, 7ff7c71893b3h][35] = {0f 1f 44 00 00 0f b7 c2 85 c0 74 13 0f b7 c1 0f b7 ca 99 f7 f9 0f b7 d2 0f b7 c2 85 c0 75 ed 0f b7 c1 c3}
+; gcd_16u[7ff7c719c1b0h, 7ff7c719c1d3h][35] = {0f 1f 44 00 00 0f b7 c2 85 c0 74 13 0f b7 c1 0f b7 ca 99 f7 f9 0f b7 d2 0f b7 c2 85 c0 75 ed 0f b7 c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:406
+; 2020-01-25 02:10:56:666
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 0008h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}

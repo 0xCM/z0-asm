@@ -1,7 +1,7 @@
 ; bit lt<uint>(uint a, uint b)
-; lt_g32u[7ff7c718daa0h, 7ff7c718daaeh][14] = {0f 1f 44 00 00 3b ca 0f 92 c0 0f b6 c0 c3}
+; lt_g32u[7ff7c71a0840h, 7ff7c71a084eh][14] = {0f 1f 44 00 00 3b ca 0f 92 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:38:354
+; 2020-01-25 02:10:57:389
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h setb al                                 ; SETB r/m8 || 0F 92 /r || encoded[3]{0f 92 c0}

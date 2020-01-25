@@ -1,7 +1,7 @@
 ; long enable(long src, int pos)
-; enable_64i[7ff7c6e70bf0h, 7ff7c6e70c07h][23] = {0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3}
+; enable_64i[7ff7c6e853e0h, 7ff7c6e853f7h][23] = {0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:846
+; 2020-01-25 02:10:52:300
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}

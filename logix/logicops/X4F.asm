@@ -1,7 +1,7 @@
 ; bit f4f(bit a, bit b, bit c)
-; X4F[7ff7c6a1ffe0h, 7ff7c6a1fff9h][25] = {0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 8b c8 f7 d1 83 e1 01 23 d1 0b c2 c3}
+; X4F[7ff7c6a1ddc0h, 7ff7c6a1ddd9h][25] = {0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 8b c8 f7 d1 83 e1 01 23 d1 0b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:43:147
+; 2020-01-25 02:10:36:904
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

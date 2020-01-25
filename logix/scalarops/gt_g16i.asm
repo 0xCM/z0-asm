@@ -1,7 +1,7 @@
 ; Int16 gt<Int16>(Int16 a, Int16 b)
-; gt_g16i[7ff7c6ca2040h, 7ff7c6ca2063h][35] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff 7f 00 00 c3}
+; gt_g16i[7ff7c6cc1190h, 7ff7c6cc11b3h][35] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff 7f 00 00 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 02:54:49:620
+; 2020-01-25 02:10:42:430
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}

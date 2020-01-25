@@ -1,7 +1,7 @@
 ; bit vnonz(Vector128<double> src)
-; vnonz__128x64f[7ff7c6bd7230h, 7ff7c6bd724dh][29] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 0f 01 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c3}
+; vnonz__128x64f[7ff7c71d2a50h, 7ff7c71d2a6dh][29] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 0f 01 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:099
+; 2020-01-25 02:11:02:227
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}

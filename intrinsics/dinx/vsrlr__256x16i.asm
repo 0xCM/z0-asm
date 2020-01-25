@@ -1,7 +1,7 @@
 ; Vector256<Int16> vsrlr(Vector256<Int16> src, Int16 count)
-; vsrlr__256x16i[7ff7c6be1ee0h, 7ff7c6be1f00h][32] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlr__256x16i[7ff7c71d7bb0h, 7ff7c71d7bd0h][32] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:537
+; 2020-01-25 02:11:02:846
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movsx rax,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf c0}

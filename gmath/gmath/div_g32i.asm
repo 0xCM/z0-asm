@@ -1,7 +1,7 @@
 ; int div<int>(int a, int b)
-; div_g32i[7ff7c7194460h, 7ff7c719446fh][15] = {0f 1f 44 00 00 44 8b c2 8b c1 99 41 f7 f8 c3}
+; div_g32i[7ff7c71a7210h, 7ff7c71a721fh][15] = {0f 1f 44 00 00 44 8b c2 8b c1 99 41 f7 f8 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:215
+; 2020-01-25 02:10:58:261
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8d,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c2}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

@@ -1,7 +1,7 @@
 ; ushort neq<ushort>(ushort a, ushort b)
-; neq_g16u[7ff7c6ca1a60h, 7ff7c6ca1a84h][36] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 3b c2 0f 95 c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff ff 00 00 c3}
+; neq_g16u[7ff7c6cc0bb0h, 7ff7c6cc0bd4h][36] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 3b c2 0f 95 c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff ff 00 00 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:49:565
+; 2020-01-25 02:10:42:389
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}

@@ -1,7 +1,7 @@
 ; Vector128<long> vputcell<long>(long src, int index, Vector128<long> dst)
-; vputcell__128x64i[7ff7c6dc2cb0h, 7ff7c6dc2cf1h][65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 e8 fd 5c ff cc}
+; vputcell__128x64i[7ff7c7203ef0h, 7ff7c7203f31h][65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 a8 eb 19 ff cc}
 ; Capture completion code, INTRx2
-; 2020-01-24 18:45:08:013
+; 2020-01-25 02:11:11:283
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovupd xmm0,[r9]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 01}
@@ -17,5 +17,5 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c6392ad8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 fd 5c ff}
+003bh call 7ff7c63a2ad8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 eb 19 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}

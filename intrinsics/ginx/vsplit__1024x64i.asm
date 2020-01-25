@@ -1,7 +1,7 @@
 ; Pair<Vector512<long>> vsplit<long>(Vector1024<long> src)
-; vsplit__1024x64i[7ff7c6dd19f0h, 7ff7c6dd1b0eh][286] = {56 48 81 ec 80 01 00 00 c5 f8 77 48 8b f1 c5 fd 10 02 c5 fd 10 4a 20 c5 fd 10 52 40 c5 fd 10 5a 60 48 8d 94 24 00 01 00 00 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 94 24 00 01 00 00 c5 fd 11 02 c5 fd 11 4a 20 48 8d 94 24 40 01 00 00 c5 fd 11 12 c5 fd 11 5a 20 48 8d 8c 24 80 00 00 00 48 8d 94 24 00 01 00 00 41 b8 80 00 00 00 e8 cf 45 0d 5f 48 8d 14 24 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fa 7f 42 40 c5 fa 7f 42 50 c5 fa 7f 42 60 c5 fa 7f 42 70 48 8d 94 24 80 00 00 00 c5 fd 10 02 c5 fd 10 4a 20 48 8d 94 24 c0 00 00 00 c5 fd 10 12 c5 fd 10 5a 20 48 8d 14 24 c5 fd 11 02 c5 fd 11 4a 20 48 8d 54 24 40 c5 fd 11 12 c5 fd 11 5a 20 48 8b ce 48 8d 14 24 41 b8 80 00 00 00 e8 51 45 0d 5f 48 8b c6 c5 f8 77 48 81 c4 80 01 00 00 5e c3}
+; vsplit__1024x64i[7ff7c72112d0h, 7ff7c72113eeh][286] = {56 48 81 ec 80 01 00 00 c5 f8 77 48 8b f1 c5 fd 10 02 c5 fd 10 4a 20 c5 fd 10 52 40 c5 fd 10 5a 60 48 8d 94 24 00 01 00 00 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 94 24 00 01 00 00 c5 fd 11 02 c5 fd 11 4a 20 48 8d 94 24 40 01 00 00 c5 fd 11 12 c5 fd 11 5a 20 48 8d 8c 24 80 00 00 00 48 8d 94 24 00 01 00 00 41 b8 80 00 00 00 e8 ef 4c c9 5e 48 8d 14 24 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fa 7f 42 40 c5 fa 7f 42 50 c5 fa 7f 42 60 c5 fa 7f 42 70 48 8d 94 24 80 00 00 00 c5 fd 10 02 c5 fd 10 4a 20 48 8d 94 24 c0 00 00 00 c5 fd 10 12 c5 fd 10 5a 20 48 8d 14 24 c5 fd 11 02 c5 fd 11 4a 20 48 8d 54 24 40 c5 fd 11 12 c5 fd 11 5a 20 48 8b ce 48 8d 14 24 41 b8 80 00 00 00 e8 71 4c c9 5e 48 8b c6 c5 f8 77 48 81 c4 80 01 00 00 5e c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:08:559
+; 2020-01-25 02:11:11:842
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,180h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 80 01 00 00}
 0008h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -29,7 +29,7 @@
 0076h lea rcx,[rsp+80h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 80 00 00 00}
 007eh lea rdx,[rsp+100h]                      ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 94 24 00 01 00 00}
 0086h mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-008ch call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 45 0d 5f}
+008ch call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef 4c c9 5e}
 0091h lea rdx,[rsp]                           ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 14 24}
 0095h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0099h vmovdqu xmmword ptr [rdx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 02}
@@ -55,7 +55,7 @@
 00fdh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0100h lea rdx,[rsp]                           ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 14 24}
 0104h mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-010ah call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 45 0d 5f}
+010ah call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 4c c9 5e}
 010fh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0112h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0115h add rsp,180h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 80 01 00 00}

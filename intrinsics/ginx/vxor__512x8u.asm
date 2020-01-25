@@ -1,7 +1,7 @@
 ; Vector512<byte> vxor<byte>(in Vector512<byte> x, in Vector512<byte> y)
-; vxor__512x8u[7ff7c6c1bc40h, 7ff7c6c1bc71h][49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd ef c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 ef ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vxor__512x8u[7ff7c71ffaf0h, 7ff7c71ffb21h][49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd ef c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 ef ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:07:371
+; 2020-01-25 02:11:10:409
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

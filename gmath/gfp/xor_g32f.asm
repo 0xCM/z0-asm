@@ -1,7 +1,7 @@
 ; float xor<float>(float a, float b)
-; xor_g32f[7ff7c71ac440h, 7ff7c71ac46ah][42] = {48 83 ec 18 c5 f8 77 c5 fa 11 44 24 14 8b 44 24 14 c5 fa 11 4c 24 10 33 44 24 10 89 44 24 0c c5 fa 10 44 24 0c 48 83 c4 18 c3}
+; xor_g32f[7ff7c71bf1f0h, 7ff7c71bf21ah][42] = {48 83 ec 18 c5 f8 77 c5 fa 11 44 24 14 8b 44 24 14 c5 fa 11 4c 24 10 33 44 24 10 89 44 24 0c c5 fa 10 44 24 0c 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:40:561
+; 2020-01-25 02:11:00:494
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovss dword ptr [rsp+14h],xmm0         ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 14}

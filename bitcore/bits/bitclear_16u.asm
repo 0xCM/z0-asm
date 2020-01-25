@@ -1,7 +1,7 @@
 ; ushort bitclear(ushort src, byte index, byte count)
-; bitclear_16u[7ff7c6e6fc20h, 7ff7c6e6fc55h][53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b7 c0 41 23 c0 0f b7 c0 c3}
+; bitclear_16u[7ff7c6e84770h, 7ff7c6e847a5h][53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b7 c0 41 23 c0 0f b7 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:32:688
+; 2020-01-25 02:10:52:185
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c8}

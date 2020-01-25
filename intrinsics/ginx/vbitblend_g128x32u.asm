@@ -1,7 +1,7 @@
 ; Vector128<uint> vbitblend<uint>(Vector128<uint> x, Vector128<uint> y, Vector128<uint> mask)
-; vbitblend_g128x32u[7ff7c6bf97f0h, 7ff7c6bf981bh][43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_g128x32u[7ff7c71e5f50h, 7ff7c71e5f7bh][43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:005
+; 2020-01-25 02:11:08:632
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

@@ -1,7 +1,7 @@
 ; vxors__256x8i-imm5
-; vxors__256x8i-imm5[7ff7c6ca3170h, 7ff7c6ca3259h][233] = {48 83 ec 18 c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 05 c7 44 24 14 e0 00 00 00 48 8d 44 24 14 c4 e2 7d 78 54 24 14 c5 f5 db ca c5 fc 28 d0 c4 e3 7d 19 d3 00 c4 e2 79 20 e3 c4 e3 f9 16 d8 01 c4 e1 f9 6e d8 c4 e2 79 20 db c5 d4 57 ed c4 e3 55 38 e4 00 c4 e3 5d 38 db 01 c5 e5 71 d3 05 c4 e3 7d 19 d2 01 c4 e2 79 20 e2 c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 d4 57 ed c4 e3 55 38 e4 00 c4 e3 5d 38 d2 01 c5 ed 71 d2 05 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 ed db d4 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 64 24 0c c5 e5 db dc c5 ed db d4 c5 e5 67 d2 c4 e3 fd 00 d2 d8 c5 f5 ef ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vxors__256x8i-imm5[7ff7c7584150h, 7ff7c7584239h][233] = {48 83 ec 18 c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 05 c7 44 24 14 e0 00 00 00 48 8d 44 24 14 c4 e2 7d 78 54 24 14 c5 f5 db ca c5 fc 28 d0 c4 e3 7d 19 d3 00 c4 e2 79 20 e3 c4 e3 f9 16 d8 01 c4 e1 f9 6e d8 c4 e2 79 20 db c5 d4 57 ed c4 e3 55 38 e4 00 c4 e3 5d 38 db 01 c5 e5 71 d3 05 c4 e3 7d 19 d2 01 c4 e2 79 20 e2 c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 d4 57 ed c4 e3 55 38 e4 00 c4 e3 5d 38 d2 01 c5 ed 71 d2 05 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 ed db d4 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 64 24 0c c5 e5 db dc c5 ed db d4 c5 e5 67 d2 c4 e3 fd 00 d2 d8 c5 f5 ef ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:06:997
+; 2020-01-25 02:11:10:090
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

@@ -1,7 +1,7 @@
 ; ref Block256<long> vabs<long>(in Block256<long> a, in Block256<long> c)
-; vabs__b256x64i[7ff7c6de34b0h, 7ff7c6de3524h][116] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4a 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f5 73 d0 3f c5 ec 57 d2 c5 ed fb c9 c5 f5 ef c0 c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b9 48 8b c2 c5 f8 77 c3}
+; vabs__b256x64i[7ff7c7220aa0h, 7ff7c7220b14h][116] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4a 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f5 73 d0 3f c5 ec 57 d2 c5 ed fb c9 c5 f5 ef c0 c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b9 48 8b c2 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:13:579
+; 2020-01-25 02:11:14:881
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r8d,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 42 08}

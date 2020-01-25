@@ -1,7 +1,7 @@
 ; Vector256<sbyte> vblendp<sbyte>(Vector128<sbyte> x, Vector128<sbyte> y, Vector128<sbyte> spec)
-; vblendp__128x8i[7ff7c6c09290h, 7ff7c6c092e0h][80] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 c1 79 10 11 c4 e3 79 4c c1 20 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 10 12 c4 c1 79 10 18 c4 e3 69 4c cb 10 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vblendp__128x8i[7ff7c71f0660h, 7ff7c71f06b0h][80] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 c1 79 10 11 c4 e3 79 4c c1 20 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 10 12 c4 c1 79 10 18 c4 e3 69 4c cb 10 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:561
+; 2020-01-25 02:11:09:159
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

@@ -1,7 +1,7 @@
 ; ulong dist(ushort a, ushort b)
-; dist_16u[7ff7c7188d90h, 7ff7c7188dabh][27] = {0f 1f 44 00 00 0f b7 c9 0f b7 d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3}
+; dist_16u[7ff7c719bbb0h, 7ff7c719bbcbh][27] = {0f 1f 44 00 00 0f b7 c9 0f b7 d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:369
+; 2020-01-25 02:10:56:631
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}

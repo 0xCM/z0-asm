@@ -1,7 +1,7 @@
 ; uint log2(ulong src)
-; log2_64u[7ff7c6e71150h, 7ff7c6e7116bh][27] = {0f 1f 44 00 00 48 85 c9 75 04 33 c0 eb 0c 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f c3}
+; log2_64u[7ff7c6e85940h, 7ff7c6e8595bh][27] = {0f 1f 44 00 00 48 85 c9 75 04 33 c0 eb 0c 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:32:906
+; 2020-01-25 02:10:52:333
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test rcx,rcx                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c9}
 0008h jne short 000eh                         ; JNE rel8 || 75 cb || encoded[2]{75 04}

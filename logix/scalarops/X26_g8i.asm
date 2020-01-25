@@ -1,7 +1,7 @@
 ; sbyte f26<sbyte>(sbyte a, sbyte b, sbyte c)
-; X26_g8i[7ff7c6b902b0h, 7ff7c6b902e2h][50] = {0f 1f 44 00 00 48 0f be c1 48 0f be ca 23 c1 48 0f be c0 f7 d0 48 0f be c0 48 0f be d2 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 23 c2 48 0f be c0 c3}
+; X26_g8i[7ff7c6b9fe90h, 7ff7c6b9fec2h][50] = {0f 1f 44 00 00 48 0f be c1 48 0f be ca 23 c1 48 0f be c0 f7 d0 48 0f be c0 48 0f be d2 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 23 c2 48 0f be c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:48:343
+; 2020-01-25 02:10:41:141
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}

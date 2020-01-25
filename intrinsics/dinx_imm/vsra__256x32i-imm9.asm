@@ -1,7 +1,7 @@
 ; vsra__256x32i-imm9
-; vsra__256x32i-imm9[7ff7c6ca12a0h, 7ff7c6ca12b7h][23] = {c5 f8 77 c5 fd 10 02 c5 fd 72 e0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsra__256x32i-imm9[7ff7c75812a0h, 7ff7c75812b7h][23] = {c5 f8 77 c5 fd 10 02 c5 fd 72 e0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:445
+; 2020-01-25 02:11:02:684
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
 0007h vpsrad ymm0,ymm0,9                      ; VPSRAD ymm1, ymm2, imm8 || VEX.256.66.0F.WIG 72 /4 ib || encoded[5]{c5 fd 72 e0 09}

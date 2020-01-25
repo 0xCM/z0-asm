@@ -1,7 +1,7 @@
 ; Span<ushort> mod<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
-; mod_g16u[7ff7c71998d0h, 7ff7c7199922h][82] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 2b 48 63 c6 49 8d 3c 43 48 63 c6 41 0f b7 04 42 48 63 d6 41 0f b7 1c 50 0f b7 c0 33 d2 f7 f3 0f b7 c2 66 89 07 ff c6 41 3b f1 7c d5 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
+; mod_g16u[7ff7c71ac680h, 7ff7c71ac6d2h][82] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 2b 48 63 c6 49 8d 3c 43 48 63 c6 41 0f b7 04 42 48 63 d6 41 0f b7 1c 50 0f b7 c0 33 d2 f7 f3 0f b7 c2 66 89 07 ff c6 41 3b f1 7c d5 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:580
+; 2020-01-25 02:10:59:151
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}

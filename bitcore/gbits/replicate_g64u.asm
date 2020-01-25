@@ -1,7 +1,7 @@
 ; ulong replicate<ulong>(ulong src)
-; replicate_g64u[7ff7c6e71f80h, 7ff7c6e71fe0h][96] = {0f 1f 44 00 00 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f 44 0f b6 c0 b8 40 00 00 00 41 ff c0 99 41 f7 f8 ff c0 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 c3}
+; replicate_g64u[7ff7c6e86710h, 7ff7c6e86770h][96] = {0f 1f 44 00 00 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f 44 0f b6 c0 b8 40 00 00 00 41 ff c0 99 41 f7 f8 ff c0 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:33:502
+; 2020-01-25 02:10:53:056
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h lzcnt rax,rcx                           ; LZCNT r64, r/m64 || F3 REX.W 0F BD /r || encoded[5]{f3 48 0f bd c1}

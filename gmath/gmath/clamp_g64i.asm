@@ -1,7 +1,7 @@
 ; long clamp<long>(long a, long b)
-; clamp_g64i[7ff7c7193170h, 7ff7c7193183h][19] = {0f 1f 44 00 00 48 3b ca 7f 02 eb 03 48 8b ca 48 8b c1 c3}
+; clamp_g64i[7ff7c71a5f30h, 7ff7c71a5f43h][19] = {0f 1f 44 00 00 48 3b ca 7f 02 eb 03 48 8b ca 48 8b c1 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:117
+; 2020-01-25 02:10:58:136
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jg short 000ch                          ; JG rel8 || 7F cb || encoded[2]{7f 02}

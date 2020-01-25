@@ -1,7 +1,7 @@
 ; Vector256<byte> vbfly(N1 n, Vector256<byte> x)
-; vbfly__n1_256x8u[7ff7c6a25130h, 7ff7c6a251bdh][141] = {48 83 ec 18 c5 f8 77 c7 44 24 14 66 00 00 00 48 8d 44 24 14 c4 e2 7d 78 44 24 14 c4 c1 7d 10 08 c5 fc 28 d1 c5 fc 28 d8 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c7 44 24 10 fe 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 01 c7 44 24 0c 7f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c0 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vbfly__n1_256x8u[7ff7c71cd750h, 7ff7c71cd7ddh][141] = {48 83 ec 18 c5 f8 77 c7 44 24 14 66 00 00 00 48 8d 44 24 14 c4 e2 7d 78 44 24 14 c4 c1 7d 10 08 c5 fc 28 d1 c5 fc 28 d8 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c7 44 24 10 fe 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 01 c7 44 24 0c 7f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c0 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:58:721
+; 2020-01-25 02:11:01:734
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov dword ptr [rsp+14h],66h             ; MOV r/m32, imm32 || o32 C7 /0 id || encoded[8]{c7 44 24 14 66 00 00 00}

@@ -1,7 +1,7 @@
 ; int lsbpos<ushort>(ushort src)
-; lsbpos_g16u[7ff7c6e84c20h, 7ff7c6e84c38h][24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
+; lsbpos_g16u[7ff7c6e99530h, 7ff7c6e99548h][24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:234
+; 2020-01-25 02:10:53:903
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}

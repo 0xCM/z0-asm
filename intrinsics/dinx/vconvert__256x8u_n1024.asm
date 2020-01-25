@@ -1,7 +1,7 @@
 ; Vector1024<uint> vconvert(Vector256<byte> src, N1024 w, uint t)
-; vconvert__256x8u_n1024[7ff7c6bd5720h, 7ff7c6bd5785h][101] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 30 c9 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c4 e3 7d 19 ca 00 c4 e2 7d 33 d2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e3 7d 19 c3 00 c4 e2 7d 33 db c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c5 fd 11 11 c5 fd 11 49 20 c5 fd 11 59 40 c5 fd 11 41 60 48 8b c1 c5 f8 77 c3}
+; vconvert__256x8u_n1024[7ff7c71d1930h, 7ff7c71d1995h][101] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 30 c9 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c4 e3 7d 19 ca 00 c4 e2 7d 33 d2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e3 7d 19 c3 00 c4 e2 7d 33 db c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c5 fd 11 11 c5 fd 11 49 20 c5 fd 11 59 40 c5 fd 11 41 60 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:012
+; 2020-01-25 02:11:02:127
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

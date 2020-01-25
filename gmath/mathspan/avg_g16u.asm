@@ -1,7 +1,7 @@
 ; ushort avg<ushort>(ReadOnlySpan<ushort> src)
-; avg_g16u[7ff7c71ab310h, 7ff7c71ab35eh][78] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b7 0c 48 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff ff 00 00 77 05 48 83 c4 28 c3 e8 c3 48 e2 5e cc}
+; avg_g16u[7ff7c71be0c0h, 7ff7c71be10eh][78] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b7 0c 48 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff ff 00 00 77 05 48 83 c4 28 c3 e8 13 1b e1 5e cc}
 ; Capture completion code, ZEDx2_SBB
-; 2020-01-24 01:44:40:128
+; 2020-01-25 02:11:00:334
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -28,5 +28,5 @@
 0041h ja short 0048h                          ; JA rel8 || 77 cb || encoded[2]{77 05}
 0043h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
-0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 48 e2 5e}
+0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 1b e1 5e}
 004dh int 3                                   ; INT3 || CC || encoded[1]{cc}

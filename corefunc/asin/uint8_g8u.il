@@ -1,4 +1,4 @@
-// Id := 100665604, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<byte>(in byte src)
 // AggressiveInlining
 ref byte uint8<byte>(in byte src)

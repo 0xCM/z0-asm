@@ -1,7 +1,7 @@
 ; bit dot<ushort>(ushort x, ushort y)
-; dot_g16u[7ff7c6e84140h, 7ff7c6e8415dh][29] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 c2 0f b7 c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
+; dot_g16u[7ff7c6e98a40h, 7ff7c6e98a5dh][29] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 c2 0f b7 c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:34:190
+; 2020-01-25 02:10:53:833
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}

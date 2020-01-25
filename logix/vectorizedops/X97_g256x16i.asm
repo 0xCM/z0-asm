@@ -1,7 +1,7 @@
 ; Vector256<Int16> f97<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
-; X97_g256x16i[7ff7c6cd1cc0h, 7ff7c6cd1d11h][81] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c4 c1 7d 10 08 c4 c1 7d 10 11 c5 f5 db ca c5 f5 75 d1 c5 f5 ef ca c4 c1 7d 10 11 c5 fc 28 da c5 e5 db c0 c5 ed df c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; X97_g256x16i[7ff7c6cf0d80h, 7ff7c6cf0dd1h][81] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c4 c1 7d 10 08 c4 c1 7d 10 11 c5 f5 db ca c5 f5 75 d1 c5 f5 ef ca c4 c1 7d 10 11 c5 fc 28 da c5 e5 db c0 c5 ed df c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:53:145
+; 2020-01-25 02:10:46:360
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r8]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 00}

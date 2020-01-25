@@ -1,7 +1,7 @@
 ; void part64x1(ulong src, Span<bit> dst)
-; part64x1__0obitVoid[7ff7c6e683f0h, 7ff7c6e6844dh][93] = {48 83 ec 28 48 8b c1 4c 8b 02 8b 4a 08 48 c1 e1 02 48 c1 e9 03 48 81 f9 ff ff ff 7f 77 2f 33 d2 48 63 ca 4d 8d 0c c8 8b ca 4c 8b d0 49 d3 ea 48 b9 01 00 00 00 01 00 00 00 c4 e2 ab f5 c9 49 89 09 ff c2 83 fa 20 7c d8 48 83 c4 28 c3 e8 de 77 16 5f cc 00 19 04 01 00 04 42 00 00 40}
+; part64x1__0obitVoid[7ff7c6e7ce30h, 7ff7c6e7ce8dh][93] = {48 83 ec 28 48 8b c1 4c 8b 02 8b 4a 08 48 c1 e1 02 48 c1 e9 03 48 81 f9 ff ff ff 7f 77 2f 33 d2 48 63 ca 4d 8d 0c c8 8b ca 4c 8b d0 49 d3 ea 48 b9 01 00 00 00 01 00 00 00 c4 e2 ab f5 c9 49 89 09 ff c2 83 fa 20 7c d8 48 83 c4 28 c3 e8 9e 2d 15 5f cc 00 19 04 01 00 04 42 00 00 40}
 ; Capture completion code, ZEDx6
-; 2020-01-24 01:44:31:982
+; 2020-01-25 02:10:51:969
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0007h mov r8,[rdx]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 02}
@@ -24,7 +24,7 @@
 0046h jl short 0020h                          ; JL rel8 || 7C cb || encoded[2]{7c d8}
 0048h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
-004dh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de 77 16 5f}
+004dh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 2d 15 5f}
 0052h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0053h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
 0055h add al,1                                ; ADD AL, imm8 || 04 ib || encoded[2]{04 01}

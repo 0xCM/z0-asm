@@ -1,7 +1,7 @@
 ; byte clamp(byte src, byte max)
-; clamp_8u[7ff7c7188a90h, 7ff7c7188aa3h][19] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7f 01 c3 8b c2 c3}
+; clamp_8u[7ff7c719b8b0h, 7ff7c719b8c3h][19] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7f 01 c3 8b c2 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:344
+; 2020-01-25 02:10:56:611
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

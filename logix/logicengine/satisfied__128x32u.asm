@@ -1,7 +1,7 @@
 ; bit satisfied<uint>(ComparisonExpr<Vector128<uint>> expr, Vector128<uint> a, Vector128<uint> b)
-; satisfied__128x32u[7ff7c6e60b30h, 7ff7c6e60ba2h][114] = {57 56 53 48 83 ec 20 c5 f8 77 48 8b d9 48 8b f2 49 8b f8 48 b9 18 aa e5 c6 f7 7f 00 00 ba 02 00 00 00 e8 89 62 04 5f c5 f9 10 06 c5 f9 11 40 10 c5 f9 10 07 c5 f9 11 40 20 48 8b cb 48 8b d0 39 09 e8 b2 fb ff ff 48 8b cb e8 12 05 e9 ff c5 f9 10 40 08 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 48 83 c4 20 5b 5e 5f c3}
+; satisfied__128x32u[7ff7c6e70b30h, 7ff7c6e70ba2h][114] = {57 56 53 48 83 ec 20 c5 f8 77 48 8b d9 48 8b f2 49 8b f8 48 b9 68 d1 e6 c6 f7 7f 00 00 ba 02 00 00 00 e8 89 62 03 5f c5 f9 10 06 c5 f9 11 40 10 c5 f9 10 07 c5 f9 11 40 20 48 8b cb 48 8b d0 39 09 e8 02 fc ff ff 48 8b cb e8 02 f5 e9 ff c5 f9 10 40 08 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 48 83 c4 20 5b 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:57:192
+; 2020-01-25 02:10:51:443
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -10,9 +10,9 @@
 000ah mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 000dh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 0010h mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
-0013h mov rcx,7ff7c6e5aa18h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 18 aa e5 c6 f7 7f 00 00}
+0013h mov rcx,7ff7c6e6d168h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 d1 e6 c6 f7 7f 00 00}
 001dh mov edx,2                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 02 00 00 00}
-0022h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 62 04 5f}
+0022h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 62 03 5f}
 0027h vmovupd xmm0,[rsi]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 06}
 002bh vmovupd [rax+10h],xmm0                  ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[5]{c5 f9 11 40 10}
 0030h vmovupd xmm0,[rdi]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 07}
@@ -20,9 +20,9 @@
 0039h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
 003ch mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 003fh cmp [rcx],ecx                           ; CMP r/m32, r32 || o32 39 /r || encoded[2]{39 09}
-0041h call 7ff7c6e60728h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 fb ff ff}
+0041h call 7ff7c6e70778h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 fc ff ff}
 0046h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0049h call 7ff7c6cf1090h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 05 e9 ff}
+0049h call 7ff7c6d10080h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 f5 e9 ff}
 004eh vmovupd xmm0,[rax+8]                    ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c5 f9 10 40 08}
 0053h vxorps xmm1,xmm1,xmm1                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f0 57 c9}
 0057h vxorps xmm2,xmm2,xmm2                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e8 57 d2}

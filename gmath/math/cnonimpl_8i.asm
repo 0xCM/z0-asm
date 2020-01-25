@@ -1,7 +1,7 @@
 ; sbyte cnonimpl(sbyte a, sbyte b)
-; cnonimpl_8i[7ff7c7188030h, 7ff7c7188047h][23] = {0f 1f 44 00 00 48 0f be c2 48 0f be d1 c4 e2 78 f2 c2 48 0f be c0 c3}
+; cnonimpl_8i[7ff7c719ae50h, 7ff7c719ae67h][23] = {0f 1f 44 00 00 48 0f be c2 48 0f be d1 c4 e2 78 f2 c2 48 0f be c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:264
+; 2020-01-25 02:10:56:530
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c2}
 0009h movsx rdx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d1}

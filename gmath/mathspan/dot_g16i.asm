@@ -1,7 +1,7 @@
 ; Int16 dot<Int16>(ReadOnlySpan<Int16> lhs, ReadOnlySpan<Int16> rhs)
-; dot_g16i[7ff7c71a9e20h, 7ff7c71a9e68h][72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f bf 1c 51 4e 0f bf 14 52 4d 0f bf db 4d 0f bf db 4d 0f bf d2 45 0f af d3 45 03 c2 4d 0f bf c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
+; dot_g16i[7ff7c71bcbd0h, 7ff7c71bcc18h][72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f bf 1c 51 4e 0f bf 14 52 4d 0f bf db 4d 0f bf db 4d 0f bf d2 45 0f af d3 45 03 c2 4d 0f bf c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:40:084
+; 2020-01-25 02:11:00:297
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
 0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}

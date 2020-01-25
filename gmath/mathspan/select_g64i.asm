@@ -1,7 +1,7 @@
 ; Span<long> select<long>(ReadOnlySpan<long> a, ReadOnlySpan<long> b, ReadOnlySpan<long> c, Span<long> dst)
-; select_g64i[7ff7c71a79a0h, 7ff7c71a79ffh][95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_g64i[7ff7c71ba750h, 7ff7c71ba7afh][95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:987
+; 2020-01-25 02:11:00:187
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}

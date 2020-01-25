@@ -1,7 +1,7 @@
 ; ref Block256<ushort> vnot<ushort>(in Block256<ushort> a, in Block256<ushort> c)
-; vnot__b256x16u[7ff7c6dee9e0h, 7ff7c6deea43h][99] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7f f0 02 c5 fd 75 c8 c5 fd ef c1 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 c3}
+; vnot__b256x16u[7ff7c722bbd0h, 7ff7c722bc33h][99] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7f f0 02 c5 fd 75 c8 c5 fd ef c1 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:161
+; 2020-01-25 02:11:15:445
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r8d,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 42 08}

@@ -1,7 +1,7 @@
 ; ushort impl(ushort a, ushort b)
-; impl_16u[7ff7c7188200h, 7ff7c7188213h][19] = {0f 1f 44 00 00 0f b7 c2 f7 d0 0f b7 d1 0b c2 0f b7 c0 c3}
+; impl_16u[7ff7c719b020h, 7ff7c719b033h][19] = {0f 1f 44 00 00 0f b7 c2 f7 d0 0f b7 d1 0b c2 0f b7 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:278
+; 2020-01-25 02:10:56:549
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

@@ -1,4 +1,4 @@
-// Id := 100665606, Name := System.UInt16& Z0.AsIn::uint16<T>(T&)
+// Id := 100665613, Name := System.UInt16& Z0.AsIn::uint16<T>(T&)
 // ref ushort uint16<double>(in double src)
 // AggressiveInlining
 ref ushort uint16<double>(in double src)

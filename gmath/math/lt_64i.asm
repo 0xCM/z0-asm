@@ -1,7 +1,7 @@
 ; bit lt(long a, long b)
-; lt_64i[7ff7c7184e70h, 7ff7c7184e7fh][15] = {0f 1f 44 00 00 48 3b ca 0f 9c c0 0f b6 c0 c3}
+; lt_64i[7ff7c7197ad0h, 7ff7c7197adfh][15] = {0f 1f 44 00 00 48 3b ca 0f 9c c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:36:933
+; 2020-01-25 02:10:56:083
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h setl al                                 ; SETL r/m8 || 0F 9C /r || encoded[3]{0f 9c c0}

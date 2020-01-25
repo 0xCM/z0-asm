@@ -1,7 +1,7 @@
 ; vxorsl__256x8u-imm9
-; vxorsl__256x8u-imm9[7ff7c6ca4630h, 7ff7c6ca466ah][58] = {50 c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 fd db c2 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vxorsl__256x8u-imm9[7ff7c75854f0h, 7ff7c758552ah][58] = {50 c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 fd db c2 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:07:073
+; 2020-01-25 02:11:10:146
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

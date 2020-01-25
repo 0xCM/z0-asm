@@ -1,7 +1,7 @@
 ; long pow<long>(long b, uint exp)
-; pow_g64i[7ff7c71963e0h, 7ff7c719640bh][43] = {0f 1f 44 00 00 85 d2 75 07 b8 01 00 00 00 eb 1a b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
+; pow_g64i[7ff7c71a9190h, 7ff7c71a91bbh][43] = {0f 1f 44 00 00 85 d2 75 07 b8 01 00 00 00 eb 1a b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:356
+; 2020-01-25 02:10:58:405
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
 0007h jne short 0010h                         ; JNE rel8 || 75 cb || encoded[2]{75 07}

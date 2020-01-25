@@ -1,7 +1,7 @@
 ; uint pop<ulong>(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
-; pop_g64u[7ff7c6e86710h, 7ff7c6e8676bh][91] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b 5c 24 40 48 8b 74 24 48 f3 48 0f b8 c9 f3 48 0f b8 d2 03 d1 33 c9 f3 49 0f b8 c8 03 d1 33 c9 f3 49 0f b8 c9 03 d1 f3 48 0f b8 c0 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
+; pop_g64u[7ff7c6e9b420h, 7ff7c6e9b47bh][91] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b 5c 24 40 48 8b 74 24 48 f3 48 0f b8 c9 f3 48 0f b8 d2 03 d1 33 c9 f3 49 0f b8 c8 03 d1 33 c9 f3 49 0f b8 c9 03 d1 f3 48 0f b8 c0 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:34:341
+; 2020-01-25 02:10:54:011
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov rax,[rsp+30h]                       ; MOV r64, r/m64 || REX.W 8B /r || encoded[5]{48 8b 44 24 30}

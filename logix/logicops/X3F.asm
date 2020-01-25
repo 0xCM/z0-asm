@@ -1,7 +1,7 @@
 ; bit f3f(bit a, bit b, bit c)
-; X3F[7ff7c6a1fd00h, 7ff7c6a1fd14h][20] = {0f 1f 44 00 00 44 89 44 24 18 23 d1 8b c2 f7 d0 83 e0 01 c3}
+; X3F[7ff7c6a1dae0h, 7ff7c6a1daf4h][20] = {0f 1f 44 00 00 44 89 44 24 18 23 d1 8b c2 f7 d0 83 e0 01 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:42:904
+; 2020-01-25 02:10:36:880
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
 000ah and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}

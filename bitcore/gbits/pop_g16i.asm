@@ -1,7 +1,7 @@
 ; uint pop<Int16>(Int16 x0, Int16 x1, Int16 x2, Int16 x3, Int16 x4, Int16 x5, Int16 x6, Int16 x7)
-; pop_g16i[7ff7c6e86550h, 7ff7c6e865e4h][148] = {56 0f 1f 40 00 48 0f bf c1 48 63 c0 48 0f bf d2 48 63 d2 49 0f bf c8 48 63 c9 4d 0f bf c1 4d 63 c0 44 8b 4c 24 30 4d 0f bf c9 4d 63 c9 44 8b 54 24 38 4d 0f bf d2 4d 63 d2 44 8b 5c 24 40 4d 0f bf db 4d 63 db 8b 74 24 48 48 0f bf f6 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
+; pop_g16i[7ff7c6e9b260h, 7ff7c6e9b2f4h][148] = {56 0f 1f 40 00 48 0f bf c1 48 63 c0 48 0f bf d2 48 63 d2 49 0f bf c8 48 63 c9 4d 0f bf c1 4d 63 c0 44 8b 4c 24 30 4d 0f bf c9 4d 63 c9 44 8b 54 24 38 4d 0f bf d2 4d 63 d2 44 8b 5c 24 40 4d 0f bf db 4d 63 db 8b 74 24 48 48 0f bf f6 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:334
+; 2020-01-25 02:10:54:005
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}

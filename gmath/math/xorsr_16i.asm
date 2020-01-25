@@ -1,7 +1,7 @@
 ; Int16 xorsr(Int16 a, byte offset)
-; xorsr_16i[7ff7c7186ec0h, 7ff7c7186ed7h][23] = {0f 1f 44 00 00 48 0f bf c1 0f b6 ca 8b d0 d3 fa 33 c2 48 0f bf c0 c3}
+; xorsr_16i[7ff7c7199ce0h, 7ff7c7199cf7h][23] = {0f 1f 44 00 00 48 0f bf c1 0f b6 ca 8b d0 d3 fa 33 c2 48 0f bf c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:150
+; 2020-01-25 02:10:56:351
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

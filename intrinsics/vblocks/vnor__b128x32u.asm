@@ -1,7 +1,7 @@
 ; ref Block128<uint> vnor<uint>(in Block128<uint> a, in Block128<uint> b, in Block128<uint> c)
-; vnor__b128x32u[7ff7c6df1480h, 7ff7c6df14edh][109] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 46 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c0 49 8b c0 c3}
+; vnor__b128x32u[7ff7c722e690h, 7ff7c722e6fdh][109] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 46 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c0 49 8b c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:306
+; 2020-01-25 02:11:15:607
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r9d,[r8+8]                          ; MOV r32, r/m32 || o32 8B /r || encoded[4]{45 8b 48 08}

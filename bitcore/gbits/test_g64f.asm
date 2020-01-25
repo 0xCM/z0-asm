@@ -1,7 +1,7 @@
 ; bit test<double>(double src, byte pos)
-; test_g64f[7ff7c6e772f0h, 7ff7c6e77310h][32] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 0f b6 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
+; test_g64f[7ff7c6e8bd90h, 7ff7c6e8bdb0h][32] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 0f b6 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:744
+; 2020-01-25 02:10:53:256
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

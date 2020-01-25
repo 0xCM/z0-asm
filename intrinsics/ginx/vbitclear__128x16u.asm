@@ -1,7 +1,7 @@
 ; Vector128<ushort> vbitclear<ushort>(Vector128<ushort> src, byte start, byte count)
-; vbitclear__128x16u[7ff7c6bfc720h, 7ff7c6bfc776h][86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear__128x16u[7ff7c71e67f0h, 7ff7c71e6846h][86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:033
+; 2020-01-25 02:11:08:678
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

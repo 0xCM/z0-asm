@@ -1,7 +1,7 @@
 ; float enable<float>(float src, int pos)
-; enable_g32f[7ff7c6e84400h, 7ff7c6e8442ah][42] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 89 04 24 c5 fa 10 04 24 48 83 c4 08 c3}
+; enable_g32f[7ff7c6e98d00h, 7ff7c6e98d2ah][42] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 89 04 24 c5 fa 10 04 24 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:34:207
+; 2020-01-25 02:10:53:877
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

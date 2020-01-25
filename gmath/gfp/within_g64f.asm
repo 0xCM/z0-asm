@@ -1,7 +1,7 @@
 ; bit within<double>(double a, double b, double delta)
-; within_g64f[7ff7c71acc90h, 7ff7c71accbdh][45] = {c5 f8 77 66 90 c5 f9 2e c1 77 10 c5 f3 5c c8 c5 f9 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fb 5c c1 c5 f9 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
+; within_g64f[7ff7c71bfa40h, 7ff7c71bfa6dh][45] = {c5 f8 77 66 90 c5 f9 2e c1 77 10 c5 f3 5c c8 c5 f9 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fb 5c c1 c5 f9 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:40:676
+; 2020-01-25 02:11:00:616
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vucomisd xmm0,xmm1                      ; VUCOMISD xmm1, xmm2/m64 || VEX.LIG.66.0F.WIG 2E /r || encoded[4]{c5 f9 2e c1}

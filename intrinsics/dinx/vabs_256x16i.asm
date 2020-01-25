@@ -1,7 +1,7 @@
 ; Vector256<Int16> vabs(Vector256<Int16> src)
-; vabs_256x16i[7ff7c6bef3f0h, 7ff7c6bef405h][21] = {c5 f8 77 66 90 c4 e2 7d 1d 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vabs_256x16i[7ff7c71e2370h, 7ff7c71e2385h][21] = {c5 f8 77 66 90 c4 e2 7d 1d 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:02:204
+; 2020-01-25 02:11:04:559
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsw ymm0,[rdx]                       ; VPABSW ymm1, ymm2/m256 || VEX.256.66.0F38.WIG 1D /r || encoded[5]{c4 e2 7d 1d 02}

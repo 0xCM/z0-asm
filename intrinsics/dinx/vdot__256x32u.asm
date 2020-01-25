@@ -1,7 +1,7 @@
 ; ulong vdot(Vector256<uint> x, Vector256<uint> y)
-; vdot__256x32u[7ff7c6bf0440h, 7ff7c6bf046fh][47] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd f4 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
+; vdot__256x32u[7ff7c71e2fb0h, 7ff7c71e2fdfh][47] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd f4 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:02:281
+; 2020-01-25 02:11:04:636
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

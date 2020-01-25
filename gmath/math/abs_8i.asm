@@ -1,7 +1,7 @@
 ; sbyte abs(sbyte a)
-; abs_8i[7ff7c7188710h, 7ff7c7188727h][23] = {0f 1f 44 00 00 48 0f be c1 8b d0 c1 fa 07 03 c2 33 c2 48 0f be c0 c3}
+; abs_8i[7ff7c719b530h, 7ff7c719b547h][23] = {0f 1f 44 00 00 48 0f be c1 8b d0 c1 fa 07 03 c2 33 c2 48 0f be c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:318
+; 2020-01-25 02:10:56:584
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}

@@ -1,7 +1,7 @@
 ; sbyte disable<sbyte>(sbyte src, int pos)
-; disable_g8i[7ff7c6e83ac0h, 7ff7c6e83ae4h][36] = {0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 f7 d2 0f b6 d2 23 c2 48 0f be c0 c3}
+; disable_g8i[7ff7c6e987c0h, 7ff7c6e987e4h][36] = {0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 f7 d2 0f b6 d2 23 c2 48 0f be c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:176
+; 2020-01-25 02:10:53:815
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}

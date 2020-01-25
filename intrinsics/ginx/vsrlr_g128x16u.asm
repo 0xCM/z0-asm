@@ -1,7 +1,7 @@
 ; Vector128<ushort> vsrlr<ushort>(Vector128<ushort> x, Vector128<ushort> count)
-; vsrlr_g128x16u[7ff7c6c13a90h, 7ff7c6c13aaah][26] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 d1 c1 c5 f9 11 01 48 8b c1 c3}
+; vsrlr_g128x16u[7ff7c71f8d50h, 7ff7c71f8d6ah][26] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 d1 c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:06:195
+; 2020-01-25 02:11:09:837
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

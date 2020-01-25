@@ -1,7 +1,7 @@
 ; ulong rev(ulong src)
-; rev_64u[7ff7c6e6d840h, 7ff7c6e6d864h][36] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 20 8b d0 81 e2 aa aa aa aa d1 ea 25 55 55 55 55 d1 e0 0b c2 8b d0 81 e2 cc}
+; rev_64u[7ff7c6e824a0h, 7ff7c6e824c4h][36] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 20 8b d0 81 e2 aa aa aa aa d1 ea 25 55 55 55 55 d1 e0 0b c2 8b d0 81 e2 cc}
 ; Capture completion code, INTRx2
-; 2020-01-24 01:44:32:552
+; 2020-01-25 02:10:52:079
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h shr rax,20h                             ; SHR r/m64, imm8 || REX.W C1 /5 ib || encoded[4]{48 c1 e8 20}

@@ -1,7 +1,7 @@
 ; uint xorsr<uint>(uint a, byte offset)
-; xorsr_g32u[7ff7c718ccb0h, 7ff7c718ccc1h][17] = {0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 ea 33 c2 c3}
+; xorsr_g32u[7ff7c719fa50h, 7ff7c719fa61h][17] = {0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 ea 33 c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:38:261
+; 2020-01-25 02:10:57:304
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

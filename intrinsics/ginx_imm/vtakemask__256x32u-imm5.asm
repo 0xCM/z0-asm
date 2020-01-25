@@ -1,7 +1,7 @@
 ; vtakemask__256x32u-imm5
-; vtakemask__256x32u-imm5[7ff7c6ca64d0h, 7ff7c6ca64f1h][33] = {c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3}
+; vtakemask__256x32u-imm5[7ff7c7582240h, 7ff7c7582261h][33] = {c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:08:078
+; 2020-01-25 02:11:11:375
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
 0007h mov eax,2                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 02 00 00 00}

@@ -1,7 +1,7 @@
 ; bit positive(float a)
-; positive_32f[7ff7c71857f0h, 7ff7c7185804h][20] = {c5 f8 77 66 90 c5 f0 57 c9 c5 f8 2e c1 0f 97 c0 0f b6 c0 c3}
+; positive_32f[7ff7c7198450h, 7ff7c7198464h][20] = {c5 f8 77 66 90 c5 f0 57 c9 c5 f8 2e c1 0f 97 c0 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:37:005
+; 2020-01-25 02:10:56:152
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm1,xmm1,xmm1                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f0 57 c9}

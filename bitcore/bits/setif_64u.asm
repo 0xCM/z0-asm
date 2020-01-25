@@ -1,7 +1,7 @@
 ; ulong setif(ulong src, int srcpos, ulong dst, int dstpos)
-; setif_64u[7ff7c6e6dde0h, 7ff7c6e6de09h][41] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 8b c8 83 e1 01 85 c9 74 0f b8 01 00 00 00 41 8b c9 48 d3 e0 49 0b c0 c3 49 8b c0 c3}
+; setif_64u[7ff7c6e82a40h, 7ff7c6e82a69h][41] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 8b c8 83 e1 01 85 c9 74 0f b8 01 00 00 00 41 8b c9 48 d3 e0 49 0b c0 c3 49 8b c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:32:585
+; 2020-01-25 02:10:52:115
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

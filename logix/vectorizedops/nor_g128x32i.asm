@@ -1,7 +1,7 @@
 ; Vector128<int> nor<int>(Vector128<int> a, Vector128<int> b)
-; nor_g128x32i[7ff7c6ce4940h, 7ff7c6ce4962h][34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; nor_g128x32i[7ff7c6d03920h, 7ff7c6d03942h][34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:55:029
+; 2020-01-25 02:10:47:737
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

@@ -1,7 +1,7 @@
 ; ushort f58<ushort>(ushort a, ushort b, ushort c)
-; X58_g16u[7ff7c6b8cbb0h, 7ff7c6b8cbd4h][36] = {0f 1f 44 00 00 0f b7 c1 8b c8 0f b7 d2 0b d1 0f b7 d2 41 0f b7 c8 33 c1 0f b7 c0 0f b7 d2 23 c2 0f b7 c0 c3}
+; X58_g16u[7ff7c6b9cb90h, 7ff7c6b9cbb4h][36] = {0f 1f 44 00 00 0f b7 c1 8b c8 0f b7 d2 0b d1 0f b7 d2 41 0f b7 c8 33 c1 0f b7 c0 0f b7 d2 23 c2 0f b7 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:47:501
+; 2020-01-25 02:10:40:394
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}

@@ -1,7 +1,7 @@
 ; ushort broadcast(byte src, N16 w)
-; broadcast__0o_n16_0o[7ff7c6e700a0h, 7ff7c6e700c2h][34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 c5 c0 00 48 83 c4 08 c3}
+; broadcast__0o_n16_0o[7ff7c6e84bf0h, 7ff7c6e84c12h][34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 c5 c0 00 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:32:751
+; 2020-01-25 02:10:52:234
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

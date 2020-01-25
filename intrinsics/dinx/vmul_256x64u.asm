@@ -1,7 +1,7 @@
 ; Vector256<ulong> vmul(Vector256<ulong> x, Vector256<ulong> y)
-; vmul_256x64u[7ff7c6bf1120h, 7ff7c6bf1188h][104] = {50 c5 f8 77 90 b8 ff ff ff ff 48 89 04 24 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fc 28 d1 c5 ed 73 d2 20 c4 c1 7d 10 18 c5 fc 28 e3 c5 dd db e0 c5 f5 db c0 c5 ed f4 cc c5 f5 73 f1 20 c5 e5 73 d3 20 c5 ed f4 d3 c5 ed 73 f2 20 c5 f5 d4 ca c5 fd f4 c4 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vmul_256x64u[7ff7c71e3c90h, 7ff7c71e3cf8h][104] = {50 c5 f8 77 90 b8 ff ff ff ff 48 89 04 24 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fc 28 d1 c5 ed 73 d2 20 c4 c1 7d 10 18 c5 fc 28 e3 c5 dd db e0 c5 f5 db c0 c5 ed f4 cc c5 f5 73 f1 20 c5 e5 73 d3 20 c5 ed f4 d3 c5 ed 73 f2 20 c5 f5 d4 ca c5 fd f4 c4 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:02:351
+; 2020-01-25 02:11:04:713
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

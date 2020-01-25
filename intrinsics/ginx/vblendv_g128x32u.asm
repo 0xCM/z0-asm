@@ -1,7 +1,7 @@
 ; Vector128<uint> vblendv<uint>(Vector128<uint> x, Vector128<uint> y, Vector128<uint> spec)
-; vblendv_g128x32u[7ff7c6c0aac0h, 7ff7c6c0aae1h][33] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 c1 79 10 11 c4 e3 79 4c c1 20 c5 f9 11 01 48 8b c1 c3}
+; vblendv_g128x32u[7ff7c71f1680h, 7ff7c71f16a1h][33] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 c1 79 10 11 c4 e3 79 4c c1 20 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:603
+; 2020-01-25 02:11:09:204
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

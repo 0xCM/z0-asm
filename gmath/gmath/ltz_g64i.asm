@@ -1,7 +1,7 @@
 ; long ltz<long>(long a, long b)
-; ltz_g64i[7ff7c718dc90h, 7ff7c718dca2h][18] = {0f 1f 44 00 00 48 3b ca 0f 9c c0 0f b6 c0 48 f7 d8 c3}
+; ltz_g64i[7ff7c71a0a30h, 7ff7c71a0a42h][18] = {0f 1f 44 00 00 48 3b ca 0f 9c c0 0f b6 c0 48 f7 d8 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:38:374
+; 2020-01-25 02:10:57:409
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h setl al                                 ; SETL r/m8 || 0F 9C /r || encoded[3]{0f 9c c0}

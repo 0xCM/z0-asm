@@ -1,7 +1,7 @@
 ; Vector512<long> vblendp<long>(Vector512<long> x, Vector256<long> spec)
-; vblendp__512x64i[7ff7c6c091c0h, 7ff7c6c09205h][69] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 10 4a 20 c5 fc 28 d0 c5 fc 28 d9 c4 c1 7d 10 20 c4 e3 6d 4c d3 40 c4 c1 7d 10 18 c4 e2 65 29 e3 c5 e5 ef dc c4 e3 7d 4c c1 30 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
+; vblendp__512x64i[7ff7c71f0190h, 7ff7c71f01d5h][69] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 10 4a 20 c5 fc 28 d0 c5 fc 28 d9 c4 c1 7d 10 20 c4 e3 6d 4c d3 40 c4 c1 7d 10 18 c4 e2 65 29 e3 c5 e5 ef dc c4 e3 7d 4c c1 30 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:556
+; 2020-01-25 02:11:09:155
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

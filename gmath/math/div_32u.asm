@@ -1,7 +1,7 @@
 ; uint div(uint a, uint b)
-; div_32u[7ff7c7188f60h, 7ff7c7188f70h][16] = {0f 1f 44 00 00 44 8b c2 8b c1 33 d2 41 f7 f0 c3}
+; div_32u[7ff7c719bd80h, 7ff7c719bd90h][16] = {0f 1f 44 00 00 44 8b c2 8b c1 33 d2 41 f7 f0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:37:378
+; 2020-01-25 02:10:56:641
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8d,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c2}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

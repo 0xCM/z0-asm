@@ -1,7 +1,7 @@
 ; bit within(byte a, byte b, byte tolerance)
-; within_8u[7ff7c7185890h, 7ff7c71858b9h][41] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 41 0f b6 c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
+; within_8u[7ff7c71984f0h, 7ff7c7198519h][41] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 41 0f b6 c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:008
+; 2020-01-25 02:10:56:155
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

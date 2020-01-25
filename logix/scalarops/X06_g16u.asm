@@ -1,7 +1,7 @@
 ; ushort f06<ushort>(ushort a, ushort b, ushort c)
-; X06_g16u[7ff7c6ca5cf0h, 7ff7c6ca5d12h][34] = {0f 1f 44 00 00 0f b7 c1 f7 d0 0f b7 c0 0f b7 d2 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
+; X06_g16u[7ff7c6cc4a20h, 7ff7c6cc4a42h][34] = {0f 1f 44 00 00 0f b7 c1 f7 d0 0f b7 c0 0f b7 d2 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:50:195
+; 2020-01-25 02:10:42:690
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

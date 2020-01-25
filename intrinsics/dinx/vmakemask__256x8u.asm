@@ -1,7 +1,7 @@
 ; Vector256<byte> vmakemask(uint src, byte index)
-; vmakemask__256x8u[7ff7c6bedcc0h, 7ff7c6bedd34h][116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; vmakemask__256x8u[7ff7c71e1820h, 7ff7c71e1894h][116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:02:143
+; 2020-01-25 02:11:04:498
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

@@ -1,7 +1,7 @@
 ; uint f4a<uint>(uint a, uint b, uint c)
-; X4A_g32u[7ff7c6b94310h, 7ff7c6b94320h][16] = {0f 1f 44 00 00 41 0b d0 41 33 c8 23 d1 8b c2 c3}
+; X4A_g32u[7ff7c6ba4310h, 7ff7c6ba4320h][16] = {0f 1f 44 00 00 41 0b d0 41 33 c8 23 d1 8b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:49:166
+; 2020-01-25 02:10:41:787
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h or edx,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b d0}
 0008h xor ecx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c8}

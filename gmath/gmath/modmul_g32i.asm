@@ -1,7 +1,7 @@
 ; int modmul<int>(int a, int b, int m)
-; modmul_g32i[7ff7c7195f10h, 7ff7c7195f2ah][26] = {0f 1f 44 00 00 48 63 c1 48 63 d2 48 0f af c2 49 63 c8 48 99 48 f7 f9 8b c2 c3}
+; modmul_g32i[7ff7c71a8cc0h, 7ff7c71a8cdah][26] = {0f 1f 44 00 00 48 63 c1 48 63 d2 48 0f af c2 49 63 c8 48 99 48 f7 f9 8b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:325
+; 2020-01-25 02:10:58:364
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}

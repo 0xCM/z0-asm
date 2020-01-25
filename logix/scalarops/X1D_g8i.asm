@@ -1,7 +1,7 @@
 ; sbyte f1d<sbyte>(sbyte a, sbyte b, sbyte c)
-; X1D_g8i[7ff7c6b8f4d0h, 7ff7c6b8f510h][64] = {0f 1f 44 00 00 48 0f be c1 f7 d0 48 0f be c0 49 0f be c8 f7 d1 48 0f be c9 4c 0f be c2 48 0f be c0 41 23 c0 48 0f be c0 48 0f be d2 c4 e2 68 f2 d1 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
+; X1D_g8i[7ff7c6b9f0b0h, 7ff7c6b9f0f0h][64] = {0f 1f 44 00 00 48 0f be c1 f7 d0 48 0f be c0 49 0f be c8 f7 d1 48 0f be c9 4c 0f be c2 48 0f be c0 41 23 c0 48 0f be c0 48 0f be d2 c4 e2 68 f2 d1 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:48:209
+; 2020-01-25 02:10:40:984
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

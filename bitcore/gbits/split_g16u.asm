@@ -1,7 +1,7 @@
 ; void split<ushort>(ushort src, int index, out ushort x0, out ushort x1)
-; split_g16u[7ff7c6e767a0h, 7ff7c6e767d3h][51] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b d0 41 d3 fa 45 0f b7 d2 41 bb 01 00 00 00 8b ca 49 d3 e3 41 0f b7 d3 ff ca 23 c2 0f b7 c0 66 41 89 00 66 45 89 11 c3}
+; split_g16u[7ff7c6e8b240h, 7ff7c6e8b273h][51] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b d0 41 d3 fa 45 0f b7 d2 41 bb 01 00 00 00 8b ca 49 d3 e3 41 0f b7 d3 ff ca 23 c2 0f b7 c0 66 41 89 00 66 45 89 11 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:684
+; 2020-01-25 02:10:53:208
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

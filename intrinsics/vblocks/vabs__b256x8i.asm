@@ -1,7 +1,7 @@
 ; ref Block256<sbyte> vabs<sbyte>(in Block256<sbyte> a, in Block256<sbyte> c)
-; vabs__b256x8i[7ff7c6de2f20h, 7ff7c6de2f84h][100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 05 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7f f0 02 c4 e2 7d 1c c0 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 5e c3}
+; vabs__b256x8i[7ff7c7220520h, 7ff7c7220584h][100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 05 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7f f0 02 c4 e2 7d 1c c0 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 5e c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:13:567
+; 2020-01-25 02:11:14:812
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

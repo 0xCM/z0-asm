@@ -1,7 +1,7 @@
 ; bit f67(bit a, bit b, bit c)
-; X67[7ff7c6a20430h, 7ff7c6a20445h][21] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 44 89 44 24 18 33 c0 c3}
+; X67[7ff7c6a1e210h, 7ff7c6a1e225h][21] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 44 89 44 24 18 33 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:43:179
+; 2020-01-25 02:10:36:936
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
 0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}

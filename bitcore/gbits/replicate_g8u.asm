@@ -1,7 +1,7 @@
 ; ulong replicate<ulong>(byte src)
-; replicate_g8u[7ff7c6e720c0h, 7ff7c6e720f7h][55] = {0f 1f 44 00 00 0f b6 c9 b8 00 08 00 00 c4 e2 f8 f7 c1 48 8b d0 41 b8 01 00 00 00 41 8b c8 c1 e1 03 4c 8b c8 49 d3 e1 49 0b d1 41 ff c0 41 83 f8 08 7c e8 48 8b c2 c3}
+; replicate_g8u[7ff7c6e86850h, 7ff7c6e86887h][55] = {0f 1f 44 00 00 0f b6 c9 b8 00 08 00 00 c4 e2 f8 f7 c1 48 8b d0 41 b8 01 00 00 00 41 8b c8 c1 e1 03 4c 8b c8 49 d3 e1 49 0b d1 41 ff c0 41 83 f8 08 7c e8 48 8b c2 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:511
+; 2020-01-25 02:10:53:064
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h mov eax,800h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 00 08 00 00}

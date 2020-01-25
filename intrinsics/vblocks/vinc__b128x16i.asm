@@ -1,7 +1,7 @@
 ; ref Block128<Int16> vinc<Int16>(in Block128<Int16> a, in Block128<Int16> c)
-; vinc__b128x16i[7ff7c6de5bd0h, 7ff7c6de5c3eh][110] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 47 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fb f0 00 48 b8 59 54 2c e0 fe 01 00 00 c5 fb f0 08 c5 f9 fd c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fa 7f 00 41 ff c1 45 3b c8 7c bc 48 8b c2 c3}
+; vinc__b128x16i[7ff7c7222da0h, 7ff7c7222e0eh][110] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 47 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fb f0 00 48 b8 59 54 ab ba cf 01 00 00 c5 fb f0 08 c5 f9 fd c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fa 7f 00 41 ff c1 45 3b c8 7c bc 48 8b c2 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:13:655
+; 2020-01-25 02:11:15:051
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r8d,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 42 08}
@@ -20,7 +20,7 @@
 0030h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
 0033h lea rax,[rax+r10*2]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4a 8d 04 50}
 0037h vlddqu xmm0,xmmword ptr [rax]           ; VLDDQU xmm1, m128 || VEX.128.F2.0F.WIG F0 /r || encoded[4]{c5 fb f0 00}
-003bh mov rax,1fee02c5459h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 59 54 2c e0 fe 01 00 00}
+003bh mov rax,1cfbaab5459h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 59 54 ab ba cf 01 00 00}
 0045h vlddqu xmm1,xmmword ptr [rax]           ; VLDDQU xmm1, m128 || VEX.128.F2.0F.WIG F0 /r || encoded[4]{c5 fb f0 08}
 0049h vpaddw xmm0,xmm0,xmm1                   ; VPADDW xmm1, xmm2, xmm3/m128 || VEX.128.66.0F.WIG FD /r || encoded[4]{c5 f9 fd c1}
 004dh mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

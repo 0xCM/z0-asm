@@ -1,7 +1,7 @@
 ; byte avgz(byte a, byte b)
-; avgz_8u[7ff7c7188900h, 7ff7c7188919h][25] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b c8 23 ca 33 c2 d1 f8 03 c1 0f b6 c0 c3}
+; avgz_8u[7ff7c719b720h, 7ff7c719b739h][25] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b c8 23 ca 33 c2 d1 f8 03 c1 0f b6 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:335
+; 2020-01-25 02:10:56:602
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

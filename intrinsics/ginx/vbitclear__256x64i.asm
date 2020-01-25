@@ -1,7 +1,7 @@
 ; Vector256<long> vbitclear<long>(Vector256<long> src, byte start, byte count)
-; vbitclear__256x64i[7ff7c6bfdd00h, 7ff7c6bfdd52h][82] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear__256x64i[7ff7c71e71c0h, 7ff7c71e7212h][82] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:065
+; 2020-01-25 02:11:08:713
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

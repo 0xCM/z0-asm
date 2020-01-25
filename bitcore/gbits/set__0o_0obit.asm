@@ -1,7 +1,7 @@
 ; double set<double>(double src, int pos, bit value)
-; set__0o_0obit[7ff7c6e73440h, 7ff7c6e73495h][85] = {48 83 ec 18 c5 f8 77 8b ca 45 85 c0 74 26 c5 fb 11 44 24 10 48 8b 44 24 10 ba 01 00 00 00 48 d3 e2 48 0b c2 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3 c5 fb 11 04 24 48 8d 04 24 ba 01 00 00 00 48 d3 e2 48 f7 d2 48 21 10 c5 fb 10 04 24 48 83 c4 18 c3}
+; set__0o_0obit[7ff7c6e87ff0h, 7ff7c6e88045h][85] = {48 83 ec 18 c5 f8 77 8b ca 45 85 c0 74 26 c5 fb 11 44 24 10 48 8b 44 24 10 ba 01 00 00 00 48 d3 e2 48 0b c2 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3 c5 fb 11 04 24 48 8d 04 24 ba 01 00 00 00 48 d3 e2 48 f7 d2 48 21 10 c5 fb 10 04 24 48 83 c4 18 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:617
+; 2020-01-25 02:10:53:139
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

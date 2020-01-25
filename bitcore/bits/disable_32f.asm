@@ -1,7 +1,7 @@
 ; float disable(float src, int pos)
-; disable_32f[7ff7c6e70ea0h, 7ff7c6e70ec9h][41] = {c5 f8 77 66 90 c5 fa 11 44 24 08 48 8d 44 24 08 41 b8 01 00 00 00 8b ca 41 d3 e0 41 8b d0 f7 d2 21 10 c5 fa 10 44 24 08 c3}
+; disable_32f[7ff7c6e85690h, 7ff7c6e856b9h][41] = {c5 f8 77 66 90 c5 fa 11 44 24 08 48 8d 44 24 08 41 b8 01 00 00 00 8b ca 41 d3 e0 41 8b d0 f7 d2 21 10 c5 fa 10 44 24 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:32:887
+; 2020-01-25 02:10:52:313
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovss dword ptr [rsp+8],xmm0           ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 08}

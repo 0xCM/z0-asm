@@ -1,7 +1,7 @@
 ; uint pow(uint b, uint exp)
-; pow_32u[7ff7c71878c0h, 7ff7c71878e8h][40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
+; pow_32u[7ff7c719a6e0h, 7ff7c719a708h][40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:37:214
+; 2020-01-25 02:10:56:459
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
 0007h jne short 000fh                         ; JNE rel8 || 75 cb || encoded[2]{75 06}

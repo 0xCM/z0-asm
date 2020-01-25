@@ -1,7 +1,7 @@
 ; void split<ulong>(ulong src, int index, out ulong x0, out ulong x1)
-; split_g64u[7ff7c6e76830h, 7ff7c6e7685bh][43] = {0f 1f 44 00 00 48 8b c1 83 e2 3f 8b ca 4c 8b d0 49 d3 ea 41 bb 01 00 00 00 8b ca 49 d3 e3 49 ff cb 49 23 c3 49 89 00 4d 89 11 c3}
+; split_g64u[7ff7c6e8b2d0h, 7ff7c6e8b2fbh][43] = {0f 1f 44 00 00 48 8b c1 83 e2 3f 8b ca 4c 8b d0 49 d3 ea 41 bb 01 00 00 00 8b ca 49 d3 e3 49 ff cb 49 23 c3 49 89 00 4d 89 11 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:687
+; 2020-01-25 02:10:53:211
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h and edx,3fh                             ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e2 3f}

@@ -1,7 +1,7 @@
 ; void part27x3(uint src, in NatSpan<N9,byte> dst)
-; part27x3__0o_ns9x0oVoid[7ff7c6e6b3d0h, 7ff7c6e6b405h][53] = {0f 1f 44 00 00 48 8b 02 44 8b c1 49 b9 07 07 07 07 07 07 07 07 c4 42 bb f5 c1 4c 89 00 48 8b 02 48 83 c0 08 c1 e9 18 8b d1 c4 c2 eb f5 d1 0f b6 d2 66 89 10 c3}
+; part27x3__0o_ns9x0oVoid[7ff7c6e7ffc0h, 7ff7c6e7fff5h][53] = {0f 1f 44 00 00 48 8b 02 44 8b c1 49 b9 07 07 07 07 07 07 07 07 c4 42 bb f5 c1 4c 89 00 48 8b 02 48 83 c0 08 c1 e9 18 8b d1 c4 c2 eb f5 d1 0f b6 d2 66 89 10 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:32:403
+; 2020-01-25 02:10:52:017
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov r8d,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c1}

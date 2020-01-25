@@ -1,7 +1,7 @@
 ; rotr__128x8u-imm5
-; rotr__128x8u-imm5[7ff7c6e21330h, 7ff7c6e2138bh][91] = {50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 03 00 00 00 c5 f9 6e d0 c5 f1 f3 ca c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; rotr__128x8u-imm5[7ff7c6e31330h, 7ff7c6e3138bh][91] = {50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 03 00 00 00 c5 f9 6e d0 c5 f1 f3 ca c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:56:327
+; 2020-01-25 02:10:48:038
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

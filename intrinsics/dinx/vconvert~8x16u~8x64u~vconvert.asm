@@ -1,7 +1,7 @@
 ; Vector512<ulong> vconvert(in Block128<ushort> src, N512 w, ulong t)
-; vconvert~8x16u~8x64u~vconvert[7ff7c6bd4620h, 7ff7c6bd4649h][41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 34 02 48 83 c0 08 c4 e2 7d 34 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert~8x16u~8x64u~vconvert[7ff7c71d09c0h, 7ff7c71d09e9h][41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 34 02 48 83 c0 08 c4 e2 7d 34 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:58:958
+; 2020-01-25 02:11:02:061
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

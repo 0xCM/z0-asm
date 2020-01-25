@@ -1,7 +1,7 @@
 ; ulong f3d<ulong>(ulong a, ulong b, ulong c)
-; X3D_g64u[7ff7c6b92d30h, 7ff7c6b92d45h][21] = {0f 1f 44 00 00 48 33 d1 49 0b c8 48 8b c1 48 f7 d0 48 0b c2 c3}
+; X3D_g64u[7ff7c6ba2920h, 7ff7c6ba2935h][21] = {0f 1f 44 00 00 48 33 d1 49 0b c8 48 8b c1 48 f7 d0 48 0b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:48:979
+; 2020-01-25 02:10:41:565
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rdx,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 d1}
 0008h or rcx,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c8}

@@ -1,7 +1,7 @@
 ; Span<bit> vtestc<ulong>(in Block256<ulong> a, in Block256<ulong> b, Span<bit> dst)
-; vtestc__b256x64u[7ff7c6fdbac0h, 7ff7c6fdbb41h][129] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 09 45 33 d2 85 c0 7e 47 4d 63 da 4e 8d 1c 99 48 8b 32 41 8b fa c1 e7 02 48 63 ff 48 8d 34 fe c5 ff f0 06 49 8b 30 41 8b fa c1 e7 02 48 63 ff 48 8d 34 fe c5 ff f0 0e c4 e2 7d 17 c1 40 0f 92 c6 40 0f b6 f6 41 89 33 41 ff c2 44 3b d0 7c b9 48 8b fb 49 8b f1 e8 5b a3 ec 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; vtestc__b256x64u[7ff7c72481f0h, 7ff7c7248271h][129] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 09 45 33 d2 85 c0 7e 47 4d 63 da 4e 8d 1c 99 48 8b 32 41 8b fa c1 e7 02 48 63 ff 48 8d 34 fe c5 ff f0 06 49 8b 30 41 8b fa c1 e7 02 48 63 ff 48 8d 34 fe c5 ff f0 0e c4 e2 7d 17 c1 40 0f 92 c6 40 0f b6 f6 41 89 33 41 ff c2 44 3b d0 7c b9 48 8b fb 49 8b f1 e8 2b dc c5 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:15:385
+; 2020-01-25 02:11:17:167
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -40,7 +40,7 @@
 0068h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c b9}
 006ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 006dh mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
-0070h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b a3 ec 5e}
+0070h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b dc c5 5e}
 0075h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0077h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 007ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

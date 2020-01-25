@@ -1,7 +1,7 @@
 ; sbyte f0d<sbyte>(sbyte a, sbyte b, sbyte c)
-; X0D_g8i[7ff7c6ca6740h, 7ff7c6ca677ah][58] = {57 56 48 83 ec 28 8b f2 48 0f be c9 f7 d1 48 0f be f9 49 0f be c8 e8 f5 ff ee ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
+; X0D_g8i[7ff7c6cc5470h, 7ff7c6cc54aah][58] = {57 56 48 83 ec 28 8b f2 48 0f be c9 f7 d1 48 0f be f9 49 0f be c8 e8 b5 0e ee ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:50:281
+; 2020-01-25 02:10:42:795
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
@@ -10,7 +10,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 0012h movsx rcx,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be c8}
-0016h call 7ff7c6b96750h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 ff ee ff}
+0016h call 7ff7c6ba6340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 0e ee ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}

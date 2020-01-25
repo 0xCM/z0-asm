@@ -1,7 +1,7 @@
 ; Sign:int signum<Int16>(Int16 a)
-; signum_g16i[7ff7c71968c0h, 7ff7c71968d8h][24] = {0f 1f 44 00 00 48 0f bf c1 8b d0 f7 d2 ff c2 c1 ea 1f c1 f8 1f 0b c2 c3}
+; signum_g16i[7ff7c71a9670h, 7ff7c71a9688h][24] = {0f 1f 44 00 00 48 0f bf c1 8b d0 f7 d2 ff c2 c1 ea 1f c1 f8 1f 0b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:360
+; 2020-01-25 02:10:58:411
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}

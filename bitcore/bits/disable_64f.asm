@@ -1,7 +1,7 @@
 ; double disable(double src, int pos)
-; disable_64f[7ff7c6e70ee0h, 7ff7c6e70f0bh][43] = {c5 f8 77 66 90 c5 fb 11 44 24 08 48 8d 44 24 08 41 b8 01 00 00 00 8b ca 49 d3 e0 49 8b d0 48 f7 d2 48 21 10 c5 fb 10 44 24 08 c3}
+; disable_64f[7ff7c6e856d0h, 7ff7c6e856fbh][43] = {c5 f8 77 66 90 c5 fb 11 44 24 08 48 8d 44 24 08 41 b8 01 00 00 00 8b ca 49 d3 e0 49 8b d0 48 f7 d2 48 21 10 c5 fb 10 44 24 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:32:888
+; 2020-01-25 02:10:52:314
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovsd qword ptr [rsp+8],xmm0           ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 44 24 08}

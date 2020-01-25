@@ -1,7 +1,7 @@
 ; Vector256<sbyte> xornot<sbyte>(Vector256<sbyte> a, Vector256<sbyte> b)
-; xornot_g256x8i[7ff7c6cd65c0h, 7ff7c6cd65e5h][37] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 74 d1 c5 f5 ef ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; xornot_g256x8i[7ff7c6cf5670h, 7ff7c6cf5695h][37] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 74 d1 c5 f5 ef ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:53:740
+; 2020-01-25 02:10:46:758
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

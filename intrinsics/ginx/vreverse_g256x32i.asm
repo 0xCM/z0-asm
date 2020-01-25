@@ -1,7 +1,7 @@
 ; Vector256<int> vreverse<int>(Vector256<int> x)
-; vreverse_g256x32i[7ff7c6dd49f0h, 7ff7c6dd4a48h][88] = {56 48 83 ec 70 c5 f8 77 c5 f8 29 74 24 60 c5 f8 29 7c 24 50 48 8b f1 c5 fd 10 32 48 8d 4c 24 20 c4 e3 7d 19 f7 01 e8 5d 4c a1 ff c5 fd 10 44 24 20 c4 e3 4d 18 f7 01 c4 e2 7d 36 c6 c5 fd 11 06 48 8b c6 c5 f8 28 74 24 60 c5 f8 28 7c 24 50 c5 f8 77 48 83 c4 70 5e c3}
+; vreverse_g256x32i[7ff7c7214170h, 7ff7c72141c8h][88] = {56 48 83 ec 70 c5 f8 77 c5 f8 29 74 24 60 c5 f8 29 7c 24 50 48 8b f1 c5 fd 10 32 48 8d 4c 24 20 c4 e3 7d 19 f7 01 e8 7d c3 81 ff c5 fd 10 44 24 20 c4 e3 4d 18 f7 01 c4 e2 7d 36 c6 c5 fd 11 06 48 8b c6 c5 f8 28 74 24 60 c5 f8 28 7c 24 50 c5 f8 77 48 83 c4 70 5e c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:085
+; 2020-01-25 02:11:12:124
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,70h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 70}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -11,7 +11,7 @@
 0017h vmovupd ymm6,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 32}
 001bh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0020h vextractf128 xmm7,ymm6,1                ; VEXTRACTF128 xmm1/m128, ymm2, imm8 || VEX.256.66.0F3A.W0 19 /r ib || encoded[6]{c4 e3 7d 19 f7 01}
-0026h call 7ff7c67e9678h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 4c a1 ff}
+0026h call 7ff7c6a30518h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d c3 81 ff}
 002bh vmovupd ymm0,[rsp+20h]                  ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[6]{c5 fd 10 44 24 20}
 0031h vinsertf128 ymm6,ymm6,xmm7,1            ; VINSERTF128 ymm1, ymm2, xmm3/m128, imm8 || VEX.256.66.0F3A.W0 18 /r ib || encoded[6]{c4 e3 4d 18 f7 01}
 0037h vpermd ymm0,ymm0,ymm6                   ; VPERMD ymm1, ymm2, ymm3/m256 || VEX.256.66.0F38.W0 36 /r || encoded[5]{c4 e2 7d 36 c6}

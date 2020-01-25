@@ -1,7 +1,7 @@
 ; long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs)
-; dot_g64i[7ff7c71a9f70h, 7ff7c71a9fa9h][57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
+; dot_g64i[7ff7c71bcd20h, 7ff7c71bcd59h][57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:40:092
+; 2020-01-25 02:11:00:304
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
 0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}

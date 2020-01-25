@@ -1,7 +1,7 @@
 ; Span<ushort> srlv<ushort>(ReadOnlySpan<ushort> src, ReadOnlySpan<ushort> counts, Span<ushort> dst)
-; srlv_g16u[7ff7c71a8c90h, 7ff7c71a8cdah][74] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 4d 8b 00 45 33 db 45 85 c9 7e 26 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 0f b7 0c 48 0f b6 c9 0f b7 ff d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c da 4c 89 10 44 89 48 08 5e 5f c3}
+; srlv_g16u[7ff7c71bba40h, 7ff7c71bba8ah][74] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 4d 8b 00 45 33 db 45 85 c9 7e 26 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 0f b7 0c 48 0f b6 c9 0f b7 ff d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c da 4c 89 10 44 89 48 08 5e 5f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:40:036
+; 2020-01-25 02:11:00:229
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

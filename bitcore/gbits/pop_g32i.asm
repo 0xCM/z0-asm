@@ -1,7 +1,7 @@
 ; uint pop<int>(int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7)
-; pop_g32i[7ff7c6e86680h, 7ff7c6e866f4h][116] = {56 0f 1f 40 00 48 63 c1 48 63 d2 49 63 c8 4d 63 c1 44 8b 4c 24 30 4d 63 c9 44 8b 54 24 38 4d 63 d2 44 8b 5c 24 40 4d 63 db 8b 74 24 48 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
+; pop_g32i[7ff7c6e9b390h, 7ff7c6e9b404h][116] = {56 0f 1f 40 00 48 63 c1 48 63 d2 49 63 c8 4d 63 c1 44 8b 4c 24 30 4d 63 c9 44 8b 54 24 38 4d 63 d2 44 8b 5c 24 40 4d 63 db 8b 74 24 48 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:339
+; 2020-01-25 02:10:54:009
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsxd rax,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c1}

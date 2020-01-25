@@ -1,7 +1,7 @@
 ; bit test<float>(float src, byte pos)
-; test_g32f[7ff7c6e772b0h, 7ff7c6e772d0h][32] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
+; test_g32f[7ff7c6e8bd50h, 7ff7c6e8bd70h][32] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:743
+; 2020-01-25 02:10:53:255
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

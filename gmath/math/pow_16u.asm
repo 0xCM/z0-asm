@@ -1,7 +1,7 @@
 ; ushort pow(ushort b, uint exp)
-; pow_16u[7ff7c7187830h, 7ff7c718786bh][59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b7 c1 41 0f af c0 0f b7 c0 d1 ea 85 d2 74 10 44 0f b7 c1 41 8b c8 41 0f af c8 0f b7 c9 eb da c3}
+; pow_16u[7ff7c719a650h, 7ff7c719a68bh][59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b7 c1 41 0f af c0 0f b7 c0 d1 ea 85 d2 74 10 44 0f b7 c1 41 8b c8 41 0f af c8 0f b7 c9 eb da c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:211
+; 2020-01-25 02:10:56:456
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
 0007h jne short 000fh                         ; JNE rel8 || 75 cb || encoded[2]{75 06}

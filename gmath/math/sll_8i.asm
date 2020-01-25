@@ -1,7 +1,7 @@
 ; sbyte sll(sbyte src, byte offset)
-; sll_8i[7ff7c7186860h, 7ff7c7186873h][19] = {0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 e0 48 0f be c0 c3}
+; sll_8i[7ff7c7199600h, 7ff7c7199613h][19] = {0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 e0 48 0f be c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:37:114
+; 2020-01-25 02:10:56:275
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

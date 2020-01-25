@@ -1,7 +1,7 @@
 ; ushort blsic<ushort>(ushort src)
-; blsic_g16u[7ff7c6e83380h, 7ff7c6e83394h][20] = {0f 1f 44 00 00 0f b7 c1 8b d0 f7 d2 ff c8 0b c2 0f b7 c0 c3}
+; blsic_g16u[7ff7c6e97980h, 7ff7c6e97994h][20] = {0f 1f 44 00 00 0f b7 c1 8b d0 f7 d2 ff c8 0b c2 0f b7 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:148
+; 2020-01-25 02:10:53:783
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}

@@ -1,7 +1,7 @@
 ; bit testc<Int16>(Int16 a)
-; testc_g16i[7ff7c6ca04b0h, 7ff7c6ca04c8h][24] = {0f 1f 44 00 00 48 0f bf c1 f3 0f b8 c0 48 83 f8 10 0f 94 c0 0f b6 c0 c3}
+; testc_g16i[7ff7c6ba6d00h, 7ff7c6ba6d18h][24] = {0f 1f 44 00 00 48 0f bf c1 f3 0f b8 c0 48 83 f8 10 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:49:381
+; 2020-01-25 02:10:42:168
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h popcnt eax,eax                          ; POPCNT r32, r/m32 || o32 F3 0F B8 /r || encoded[4]{f3 0f b8 c0}

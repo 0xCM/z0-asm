@@ -1,7 +1,7 @@
 ; uint rank<ushort>(ushort src, int pos)
-; rank_g16u[7ff7c6e717a0h, 7ff7c6e717c3h][35] = {0f 1f 44 00 00 0f b7 c1 0f b6 d2 ff c2 0f b6 d2 c1 e2 08 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 f3 0f b8 c0 c3}
+; rank_g16u[7ff7c6e85f30h, 7ff7c6e85f53h][35] = {0f 1f 44 00 00 0f b7 c1 0f b6 d2 ff c2 0f b6 d2 c1 e2 08 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 f3 0f b8 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:484
+; 2020-01-25 02:10:53:002
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

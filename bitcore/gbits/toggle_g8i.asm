@@ -1,7 +1,7 @@
 ; sbyte toggle<sbyte>(sbyte src, int pos)
-; toggle_g8i[7ff7c6e78160h, 7ff7c6e78183h][35] = {0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 33 c2 48 0f be c0 48 0f be c0 c3}
+; toggle_g8i[7ff7c6e8cd00h, 7ff7c6e8cd23h][35] = {0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 33 c2 48 0f be c0 48 0f be c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:776
+; 2020-01-25 02:10:53:291
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}

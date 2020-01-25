@@ -1,7 +1,7 @@
 ; ConstQuad<byte> split(uint src, N4 n)
-; split__0o_n48u[7ff7c6e6ead0h, 7ff7c6e6eb28h][88] = {50 0f 1f 40 00 0f b6 c1 8b d1 c1 ea 08 0f b6 d2 44 8b c1 41 c1 e8 10 45 0f b6 c0 c1 e9 18 0f b6 c9 c6 04 24 00 c6 44 24 01 00 c6 44 24 02 00 c6 44 24 03 00 0f b6 c0 88 04 24 0f b6 c2 88 44 24 01 41 0f b6 c0 88 44 24 02 0f b6 c1 88 44 24 03 8b 04 24 48 83 c4 08 c3}
+; split__0o_n48u[7ff7c6e83740h, 7ff7c6e83798h][88] = {50 0f 1f 40 00 0f b6 c1 8b d1 c1 ea 08 0f b6 d2 44 8b c1 41 c1 e8 10 45 0f b6 c0 c1 e9 18 0f b6 c9 c6 04 24 00 c6 44 24 01 00 c6 44 24 02 00 c6 44 24 03 00 0f b6 c0 88 04 24 0f b6 c2 88 44 24 01 41 0f b6 c0 88 44 24 02 0f b6 c1 88 44 24 03 8b 04 24 48 83 c4 08 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:32:590
+; 2020-01-25 02:10:52:120
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}

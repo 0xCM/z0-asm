@@ -1,7 +1,7 @@
 ; Vector256<uint> vgather(N256 w, in ushort src, Vector256<uint> vidx)
-; vgather__n256_256x32u[7ff7c6bd1f30h, 7ff7c6bd1f4fh][31] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 f5 76 c9 c4 c2 75 90 14 40 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vgather__n256_256x32u[7ff7c71cf730h, 7ff7c71cf74fh][31] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 f5 76 c9 c4 c2 75 90 14 40 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:58:908
+; 2020-01-25 02:11:01:881
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r9]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 01}

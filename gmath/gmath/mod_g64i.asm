@@ -1,7 +1,7 @@
 ; long mod<long>(long a, long m)
-; mod_g64i[7ff7c7195970h, 7ff7c7195984h][20] = {0f 1f 44 00 00 4c 8b c2 48 8b c1 48 99 49 f7 f8 48 8b c2 c3}
+; mod_g64i[7ff7c71a8720h, 7ff7c71a8734h][20] = {0f 1f 44 00 00 4c 8b c2 48 8b c1 48 99 49 f7 f8 48 8b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:316
+; 2020-01-25 02:10:58:354
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8,rdx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c2}
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

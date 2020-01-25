@@ -1,7 +1,7 @@
 ; ulong dist(long a, long b)
-; dist_64i[7ff7c7188e20h, 7ff7c7188e38h][24] = {0f 1f 44 00 00 48 3b ca 7d 07 48 8b c2 48 2b c1 c3 48 2b ca 48 8b c1 c3}
+; dist_64i[7ff7c719bc40h, 7ff7c719bc58h][24] = {0f 1f 44 00 00 48 3b ca 7d 07 48 8b c2 48 2b c1 c3 48 2b ca 48 8b c1 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:37:372
+; 2020-01-25 02:10:56:634
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jge short 0011h                         ; JGE rel8 || 7D cb || encoded[2]{7d 07}

@@ -1,7 +1,7 @@
 ; vshuflo4x16__128x16i-imm9
-; vshuflo4x16__128x16i-imm9[7ff7c6caa100h, 7ff7c6caa114h][20] = {c5 f8 77 c5 f9 10 02 c5 fb 70 c0 09 c5 f9 11 01 48 8b c1 c3}
+; vshuflo4x16__128x16i-imm9[7ff7c75837c0h, 7ff7c75837d4h][20] = {c5 f8 77 c5 f9 10 02 c5 fb 70 c0 09 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:01:843
+; 2020-01-25 02:11:04:225
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
 0007h vpshuflw xmm0,xmm0,9                    ; VPSHUFLW xmm1, xmm2/m128, imm8 || VEX.128.F2.0F.WIG 70 /r ib || encoded[5]{c5 fb 70 c0 09}

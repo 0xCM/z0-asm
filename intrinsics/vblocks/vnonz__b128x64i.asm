@@ -1,7 +1,7 @@
 ; Span<bit> vnonz<long>(in Block128<long> a, Span<bit> dst)
-; vnonz__b128x64i[7ff7c6fd8c30h, 7ff7c6fd8ca1h][113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 f8 d1 ec 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; vnonz__b128x64i[7ff7c7245760h, 7ff7c72457d1h][113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 c8 06 c6 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:15:149
+; 2020-01-25 02:11:17:059
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -36,7 +36,7 @@
 005bh jl short 001fh                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 005dh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0060h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 d1 ec 5e}
+0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 06 c6 5e}
 0068h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 006dh pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}

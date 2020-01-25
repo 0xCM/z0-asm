@@ -1,7 +1,7 @@
 ; uint vtakemask<ushort>(Vector256<ushort> src)
-; vtakemask__256x16u[7ff7c6dc37b0h, 7ff7c6dc37c1h][17] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3}
+; vtakemask__256x16u[7ff7c72048d0h, 7ff7c72048e1h][17] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:08:037
+; 2020-01-25 02:11:11:319
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

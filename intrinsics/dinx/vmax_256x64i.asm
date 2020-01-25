@@ -1,7 +1,7 @@
 ; Vector256<long> vmax(Vector256<long> x, Vector256<long> y)
-; vmax_256x64i[7ff7c6bd6ad0h, 7ff7c6bd6afch][44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 fc 28 da c4 e2 75 37 cb c4 e3 6d 4c c0 10 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmax_256x64i[7ff7c71d2470h, 7ff7c71d249ch][44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 fc 28 da c4 e2 75 37 cb c4 e3 6d 4c c0 10 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:045
+; 2020-01-25 02:11:02:184
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

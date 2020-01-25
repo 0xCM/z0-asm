@@ -1,7 +1,7 @@
 ; ref Block256<long> vmax<long>(in Block256<long> a, in Block256<long> b, in Block256<long> c)
-; vmax__b256x64i[7ff7c6fd0c70h, 7ff7c6fd0cdfh][111] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 45 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 03 49 03 c3 c5 ff f0 00 48 8b 02 49 03 c3 c5 ff f0 08 c4 e2 7d 37 d1 c4 e3 75 4c c0 20 49 8b 00 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c c1 49 8b c0 c5 f8 77 c3}
+; vmax__b256x64i[7ff7c723d9e0h, 7ff7c723da4fh][111] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 45 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 03 49 03 c3 c5 ff f0 00 48 8b 02 49 03 c3 c5 ff f0 08 c4 e2 7d 37 d1 c4 e3 75 4c c0 20 49 8b 00 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c c1 49 8b c0 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:14:881
+; 2020-01-25 02:11:16:798
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov r9d,[r8+8]                          ; MOV r32, r/m32 || o32 8B /r || encoded[4]{45 8b 48 08}

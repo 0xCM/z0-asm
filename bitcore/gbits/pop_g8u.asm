@@ -1,7 +1,7 @@
 ; uint pop<byte>(byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7)
-; pop_g8u[7ff7c6e86380h, 7ff7c6e863fah][122] = {56 0f 1f 40 00 0f b6 c1 0f b6 d2 41 0f b6 c8 45 0f b6 c1 44 8b 4c 24 30 45 0f b6 c9 44 8b 54 24 38 45 0f b6 d2 44 8b 5c 24 40 45 0f b6 db 8b 74 24 48 40 0f b6 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
+; pop_g8u[7ff7c6e9ac90h, 7ff7c6e9ad0ah][122] = {56 0f 1f 40 00 0f b6 c1 0f b6 d2 41 0f b6 c8 45 0f b6 c1 44 8b 4c 24 30 45 0f b6 c9 44 8b 54 24 38 45 0f b6 d2 44 8b 5c 24 40 45 0f b6 db 8b 74 24 48 40 0f b6 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:34:328
+; 2020-01-25 02:10:53:997
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}

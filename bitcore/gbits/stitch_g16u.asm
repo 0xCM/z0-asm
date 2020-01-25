@@ -1,7 +1,7 @@
 ; ushort stitch<ushort>(ushort left, int ldx, ushort right, int rdx)
-; stitch_g16u[7ff7c6e768b0h, 7ff7c6e768dah][42] = {0f 1f 44 00 00 0f b7 c9 41 0f b7 c0 44 0f b7 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b7 c0 c3}
+; stitch_g16u[7ff7c6e8b350h, 7ff7c6e8b37ah][42] = {0f 1f 44 00 00 0f b7 c9 41 0f b7 c0 44 0f b7 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b7 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:33:696
+; 2020-01-25 02:10:53:214
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 0008h movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}

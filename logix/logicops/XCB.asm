@@ -1,7 +1,7 @@
 ; bit fcb(bit a, bit b, bit c)
-; XCB[7ff7c6a1d230h, 7ff7c6a1d241h][17] = {0f 1f 44 00 00 89 4c 24 08 44 89 44 24 18 8b c2 c3}
+; XCB[7ff7c6a1b700h, 7ff7c6a1b711h][17] = {0f 1f 44 00 00 89 4c 24 08 44 89 44 24 18 8b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:42:778
+; 2020-01-25 02:10:36:750
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
 0009h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}

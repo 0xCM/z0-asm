@@ -1,7 +1,7 @@
 ; long f2b<long>(long a, long b, long c)
-; X2B_g64i[7ff7c6b90ce0h, 7ff7c6b90d00h][32] = {0f 1f 44 00 00 48 8b c2 48 23 c1 48 f7 d0 48 0b d1 48 f7 d2 49 23 c0 c4 e2 b8 f2 d2 48 0b c2 c3}
+; X2B_g64i[7ff7c6ba08c0h, 7ff7c6ba08e0h][32] = {0f 1f 44 00 00 48 8b c2 48 23 c1 48 f7 d0 48 0b d1 48 f7 d2 49 23 c0 c4 e2 b8 f2 d2 48 0b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:48:498
+; 2020-01-25 02:10:41:243
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0008h and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}

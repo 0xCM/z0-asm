@@ -1,7 +1,7 @@
 ; Vector256<Int16> vbitclear<Int16>(Vector256<Int16> src, byte start, byte count)
-; vbitclear__256x16i[7ff7c6bfdb30h, 7ff7c6bfdb8ah][90] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear__256x16i[7ff7c71e6ff0h, 7ff7c71e704ah][90] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:054
+; 2020-01-25 02:11:08:704
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

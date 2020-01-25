@@ -1,7 +1,7 @@
 ; int ntz<ushort>(ushort src)
-; ntz_g16u[7ff7c6e84ff0h, 7ff7c6e85008h][24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
+; ntz_g16u[7ff7c6e99900h, 7ff7c6e99918h][24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:261
+; 2020-01-25 02:10:53:942
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}

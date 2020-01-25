@@ -1,7 +1,7 @@
 ; Vector128<sbyte> vgather(N128 w, in sbyte src, Vector128<sbyte> vidx)
-; vgather__n128_128x8i[7ff7c6bd0480h, 7ff7c6bd0515h][149] = {50 c5 f8 77 90 c4 c1 79 10 01 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 49 8b c0 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 c2 75 90 14 00 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather__n128_128x8i[7ff7c71ced70h, 7ff7c71cee05h][149] = {50 c5 f8 77 90 c4 c1 79 10 01 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 49 8b c0 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 c2 75 90 14 00 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:58:874
+; 2020-01-25 02:11:01:852
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

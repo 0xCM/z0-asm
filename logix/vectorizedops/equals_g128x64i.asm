@@ -1,7 +1,7 @@
 ; Vector128<long> equals<long>(Vector128<long> a, Vector128<long> b)
-; equals_g128x64i[7ff7c6ce8430h, 7ff7c6ce844bh][27] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 c3}
+; equals_g128x64i[7ff7c6d07820h, 7ff7c6d0783bh][27] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 02:54:56:429
+; 2020-01-25 02:10:48:138
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}

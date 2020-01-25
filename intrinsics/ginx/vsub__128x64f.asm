@@ -1,7 +1,7 @@
 ; Vector128<double> vsub<double>(double a, Vector128<double> x)
-; vsub__128x64f[7ff7c6dd9910h, 7ff7c6dd992ah][26] = {c5 f8 77 66 90 c5 fb 12 c1 c4 c1 79 10 08 c5 f9 5c c1 c5 f9 11 01 48 8b c1 c3}
+; vsub__128x64f[7ff7c7217860h, 7ff7c721787ah][26] = {c5 f8 77 66 90 c5 fb 12 c1 c4 c1 79 10 08 c5 f9 5c c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:312
+; 2020-01-25 02:11:12:381
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovddup xmm0,xmm1                      ; VMOVDDUP xmm1, xmm2/m64 || VEX.128.F2.0F.WIG 12 /r || encoded[4]{c5 fb 12 c1}

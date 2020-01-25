@@ -1,7 +1,7 @@
 ; bit vsame<ulong>(in Vector512<ulong> x, in Vector512<ulong> y)
-; vsame__512x64u[7ff7c6c00a20h, 7ff7c6c00ae2h][194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame__512x64u[7ff7c71e89f0h, 7ff7c71e8ab2h][194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:134
+; 2020-01-25 02:11:08:781
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 000ah vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

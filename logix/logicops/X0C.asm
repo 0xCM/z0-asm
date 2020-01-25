@@ -1,7 +1,7 @@
 ; bit f0c(bit a, bit b, bit c)
-; X0C[7ff7c6a1f3d0h, 7ff7c6a1f3e4h][20] = {0f 1f 44 00 00 44 89 44 24 18 8b c1 f7 d0 83 e0 01 23 c2 c3}
+; X0C[7ff7c6a1d1b0h, 7ff7c6a1d1c4h][20] = {0f 1f 44 00 00 44 89 44 24 18 8b c1 f7 d0 83 e0 01 23 c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:42:829
+; 2020-01-25 02:10:36:798
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
 000ah mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

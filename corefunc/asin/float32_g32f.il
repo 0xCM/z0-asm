@@ -1,4 +1,4 @@
-// Id := 100665611, Name := System.Single& Z0.AsIn::float32<T>(T&)
+// Id := 100665618, Name := System.Single& Z0.AsIn::float32<T>(T&)
 // ref float float32<float>(in float src)
 // AggressiveInlining
 ref float float32<float>(in float src)

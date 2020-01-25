@@ -1,7 +1,7 @@
 ; ushort replicate<ushort>(ushort src)
-; replicate_g16u[7ff7c6e71e80h, 7ff7c6e71eeah][106] = {0f 1f 44 00 00 0f b7 c9 8b c1 f3 0f bd c0 83 c0 f0 f7 d8 83 c0 0f 44 0f b6 c0 b8 10 00 00 00 41 ff c0 99 41 f7 f8 ff c0 8b c9 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 0f b7 c0 c3}
+; replicate_g16u[7ff7c6e86610h, 7ff7c6e8667ah][106] = {0f 1f 44 00 00 0f b7 c9 8b c1 f3 0f bd c0 83 c0 f0 f7 d8 83 c0 0f 44 0f b6 c0 b8 10 00 00 00 41 ff c0 99 41 f7 f8 ff c0 8b c9 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 0f b7 c0 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:33:497
+; 2020-01-25 02:10:53:051
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

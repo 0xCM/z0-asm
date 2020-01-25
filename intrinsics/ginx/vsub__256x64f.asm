@@ -1,7 +1,7 @@
 ; Vector256<double> vsub<double>(double a, Vector256<double> x)
-; vsub__256x64f[7ff7c6dda320h, 7ff7c6dda348h][40] = {50 c5 f8 77 90 c5 fb 11 0c 24 c4 e2 7d 19 04 24 c4 c1 7d 10 08 c5 fd 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vsub__256x64f[7ff7c7217e70h, 7ff7c7217e98h][40] = {50 c5 f8 77 90 c5 fb 11 0c 24 c4 e2 7d 19 04 24 c4 c1 7d 10 08 c5 fd 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:344
+; 2020-01-25 02:11:12:416
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

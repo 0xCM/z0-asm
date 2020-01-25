@@ -1,7 +1,7 @@
 ; byte cnonimpl<byte>(byte a, byte b)
-; cnonimpl_g8u[7ff7c6ca14e0h, 7ff7c6ca14f4h][20] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 c4 e2 68 f2 c0 0f b6 c0 c3}
+; cnonimpl_g8u[7ff7c6cc0220h, 7ff7c6cc0234h][20] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 c4 e2 68 f2 c0 0f b6 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 02:54:49:524
+; 2020-01-25 02:10:42:348
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

@@ -1,7 +1,7 @@
 ; double relerr(ComplexF64 lhs, ComplexF64 rhs)
-; relerr_ComplexF64_0o[7ff7c718b8e0h, 7ff7c718b977h][151] = {48 83 ec 28 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 10 c5 fb 10 01 c5 fb 10 0a c5 f8 28 d0 c5 eb 5c d1 c5 eb 5e d0 c5 fb 11 54 24 18 48 8b 44 24 18 48 89 44 24 20 48 8d 44 24 20 49 b8 ff ff ff ff ff ff ff 7f 4c 21 00 c5 fb 10 44 24 20 c5 fb 10 49 08 c5 fb 10 52 08 c5 f8 28 d9 c5 e3 5c da c5 e3 5e d9 c5 fb 11 5c 24 08 48 8b 44 24 08 48 89 44 24 10 48 8d 44 24 10 4c 21 00 c5 fb 10 4c 24 10 c5 f9 2e c1 77 09 c5 f8 28 c1 48 83 c4 28 c3 48 83 c4 28 c3}
+; relerr_ComplexF64_0o[7ff7c719e710h, 7ff7c719e7a7h][151] = {48 83 ec 28 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 10 c5 fb 10 01 c5 fb 10 0a c5 f8 28 d0 c5 eb 5c d1 c5 eb 5e d0 c5 fb 11 54 24 18 48 8b 44 24 18 48 89 44 24 20 48 8d 44 24 20 49 b8 ff ff ff ff ff ff ff 7f 4c 21 00 c5 fb 10 44 24 20 c5 fb 10 49 08 c5 fb 10 52 08 c5 f8 28 d9 c5 e3 5c da c5 e3 5e d9 c5 fb 11 5c 24 08 48 8b 44 24 08 48 89 44 24 10 48 8d 44 24 10 4c 21 00 c5 fb 10 4c 24 10 c5 f9 2e c1 77 09 c5 f8 28 c1 48 83 c4 28 c3 48 83 c4 28 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:37:813
+; 2020-01-25 02:10:57:008
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

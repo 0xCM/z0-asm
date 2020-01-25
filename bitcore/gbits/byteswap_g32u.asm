@@ -1,7 +1,7 @@
 ; uint byteswap<uint>(uint src)
-; byteswap_g32u[7ff7c6e83530h, 7ff7c6e83560h][48] = {0f 1f 44 00 00 8b c1 c1 e8 18 0f b6 c0 8b d1 c1 ea 10 0f b6 d2 c1 e2 08 0b c2 8b d1 c1 ea 08 0f b6 d2 c1 e2 10 0b c2 0f b6 d1 c1 e2 18 0b c2 c3}
+; byteswap_g32u[7ff7c6e97f30h, 7ff7c6e97f60h][48] = {0f 1f 44 00 00 8b c1 c1 e8 18 0f b6 c0 8b d1 c1 ea 10 0f b6 d2 c1 e2 08 0b c2 8b d1 c1 ea 08 0f b6 d2 c1 e2 10 0b c2 0f b6 d1 c1 e2 18 0b c2 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:156
+; 2020-01-25 02:10:53:790
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h shr eax,18h                             ; SHR r/m32, imm8 || o32 C1 /5 ib || encoded[3]{c1 e8 18}

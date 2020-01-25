@@ -1,7 +1,7 @@
 ; Vector128<sbyte> vblend<sbyte>(Vector128<sbyte> x, Vector128<sbyte> y, ushort spec)
-; vblend__128x8i[7ff7c6c07860h, 7ff7c6c078a9h][73] = {c5 f8 77 66 90 41 0f b7 c1 44 0f b6 c8 49 ba 80 80 80 80 80 80 80 80 c4 42 b3 f5 ca c4 c1 f9 6e c1 c1 e8 08 0f b6 c0 c4 c2 fb f5 c2 c4 e3 f9 22 c0 01 c5 f9 10 0a c4 c1 79 10 10 c4 e3 71 4c c2 00 c5 f9 11 01 48 8b c1 c3}
+; vblend__128x8i[7ff7c71eec40h, 7ff7c71eec89h][73] = {c5 f8 77 66 90 41 0f b7 c1 44 0f b6 c8 49 ba 80 80 80 80 80 80 80 80 c4 42 b3 f5 ca c4 c1 f9 6e c1 c1 e8 08 0f b6 c0 c4 c2 fb f5 c2 c4 e3 f9 22 c0 01 c5 f9 10 0a c4 c1 79 10 10 c4 e3 71 4c c2 00 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:05:494
+; 2020-01-25 02:11:09:092
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,r9w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c1}

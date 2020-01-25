@@ -1,7 +1,7 @@
 ; bit within<long>(long a, long b, long delta)
-; within_g64i[7ff7c718f350h, 7ff7c718f36fh][31] = {0f 1f 44 00 00 48 3b ca 7d 05 48 2b d1 eb 06 48 2b ca 48 8b d1 49 3b d0 0f 96 c0 0f b6 c0 c3}
+; within_g64i[7ff7c71a20f0h, 7ff7c71a210fh][31] = {0f 1f 44 00 00 48 3b ca 7d 05 48 2b d1 eb 06 48 2b ca 48 8b d1 49 3b d0 0f 96 c0 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:38:454
+; 2020-01-25 02:10:57:494
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jge short 000fh                         ; JGE rel8 || 7D cb || encoded[2]{7d 05}

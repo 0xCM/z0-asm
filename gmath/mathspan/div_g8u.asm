@@ -1,7 +1,7 @@
 ; Span<byte> div<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
-; div_g8u[7ff7c7198c90h, 7ff7c7198cddh][77] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 26 48 63 c6 49 8d 3c 03 41 0f b6 14 02 41 0f b6 1c 00 0f b6 c2 0f b6 c0 99 f7 fb 0f b6 c0 88 07 ff c6 41 3b f1 7c da 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
+; div_g8u[7ff7c71aba40h, 7ff7c71aba8dh][77] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 26 48 63 c6 49 8d 3c 03 41 0f b6 14 02 41 0f b6 1c 00 0f b6 c2 0f b6 c0 99 f7 fb 0f b6 c0 88 07 ff c6 41 3b f1 7c da 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:559
+; 2020-01-25 02:10:59:100
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}

@@ -1,7 +1,7 @@
 ; uint log2(uint src)
-; log2_32u[7ff7c6e71120h, 7ff7c6e71139h][25] = {0f 1f 44 00 00 85 c9 75 04 33 c0 eb 0b 33 c0 f3 0f bd c1 f7 d8 83 c0 1f c3}
+; log2_32u[7ff7c6e85910h, 7ff7c6e85929h][25] = {0f 1f 44 00 00 85 c9 75 04 33 c0 eb 0b 33 c0 f3 0f bd c1 f7 d8 83 c0 1f c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:32:905
+; 2020-01-25 02:10:52:332
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000dh                         ; JNE rel8 || 75 cb || encoded[2]{75 04}

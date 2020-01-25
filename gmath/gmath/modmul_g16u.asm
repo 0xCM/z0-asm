@@ -1,7 +1,7 @@
 ; ushort modmul<ushort>(ushort a, ushort b, ushort m)
-; modmul_g16u[7ff7c7195e40h, 7ff7c7195e6eh][46] = {50 0f 1f 40 00 0f b7 c1 0f b7 d2 41 0f b7 c8 8b c0 8b d2 48 0f af c2 8b c9 33 d2 48 f7 f1 8b c2 89 44 24 04 0f b7 44 24 04 48 83 c4 08 c3}
+; modmul_g16u[7ff7c71a87f0h, 7ff7c71a881eh][46] = {50 0f 1f 40 00 0f b7 c1 0f b7 d2 41 0f b7 c8 8b c0 8b d2 48 0f af c2 8b c9 33 d2 48 f7 f1 8b c2 89 44 24 04 0f b7 44 24 04 48 83 c4 08 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:39:321
+; 2020-01-25 02:10:58:360
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}

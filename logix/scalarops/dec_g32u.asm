@@ -1,7 +1,7 @@
 ; uint dec<uint>(uint a)
-; dec_g32u[7ff7c6ca4ea0h, 7ff7c6ca4eaah][10] = {0f 1f 44 00 00 ff c9 8b c1 c3}
+; dec_g32u[7ff7c6cc3fe0h, 7ff7c6cc3feah][10] = {0f 1f 44 00 00 ff c9 8b c1 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:50:094
+; 2020-01-25 02:10:42:593
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h dec ecx                                 ; DEC r/m32 || o32 FF /1 || encoded[2]{ff c9}
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

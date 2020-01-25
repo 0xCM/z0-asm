@@ -1,7 +1,7 @@
 ; ulong bitmap<ulong>(ulong src, ulong dst, byte count, byte index)
-; bitmap_g64u[7ff7c6e7e130h, 7ff7c6e7e180h][80] = {0f 1f 44 00 00 48 8b c1 45 0f b6 c0 41 8d 48 ff 41 ba 01 00 00 00 49 d3 e2 c4 c2 a8 f3 d2 45 0f b6 c9 41 83 e1 3f 41 8b c9 49 d3 e2 49 f7 d2 49 23 d2 41 ba 01 00 00 00 41 8b c8 49 d3 e2 c4 c2 b8 f3 d2 49 23 c0 41 8b c9 48 d3 e0 48 0b c2 c3}
+; bitmap_g64u[7ff7c6e92b40h, 7ff7c6e92b90h][80] = {0f 1f 44 00 00 48 8b c1 45 0f b6 c0 41 8d 48 ff 41 ba 01 00 00 00 49 d3 e2 c4 c2 a8 f3 d2 45 0f b6 c9 41 83 e1 3f 41 8b c9 49 d3 e2 49 f7 d2 49 23 d2 41 ba 01 00 00 00 41 8b c8 49 d3 e2 c4 c2 b8 f3 d2 49 23 c0 41 8b c9 48 d3 e0 48 0b c2 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:34:007
+; 2020-01-25 02:10:53:547
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}

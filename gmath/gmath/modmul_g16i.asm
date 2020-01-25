@@ -1,7 +1,7 @@
 ; Int16 modmul<Int16>(Int16 a, Int16 b, Int16 m)
-; modmul_g16i[7ff7c7195e90h, 7ff7c7195ec4h][52] = {50 0f 1f 40 00 48 0f bf c1 48 0f bf d2 49 0f bf c8 48 63 c0 48 63 d2 48 0f af c2 48 63 c9 48 99 48 f7 f9 8b c2 89 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3}
+; modmul_g16i[7ff7c71a8c40h, 7ff7c71a8c74h][52] = {50 0f 1f 40 00 48 0f bf c1 48 0f bf d2 49 0f bf c8 48 63 c0 48 63 d2 48 0f af c2 48 63 c9 48 99 48 f7 f9 8b c2 89 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:39:322
+; 2020-01-25 02:10:58:361
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}

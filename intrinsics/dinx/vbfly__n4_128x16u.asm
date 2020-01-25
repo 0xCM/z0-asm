@@ -1,7 +1,7 @@
 ; Vector128<ushort> vbfly(N4 n, Vector128<ushort> x)
-; vbfly__n4_128x16u[7ff7c6a24960h, 7ff7c6a249b8h][88] = {50 c5 f8 77 90 c7 44 24 04 f0 0f 00 00 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f8 28 d1 c5 f8 28 d8 c5 e9 db d3 c5 f8 28 da c5 e1 71 f3 04 c5 f8 28 e2 c5 d9 71 d4 04 c5 e1 ef dc c5 e9 ef d3 c5 e9 db c0 c5 f9 ef c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vbfly__n4_128x16u[7ff7c71cd040h, 7ff7c71cd098h][88] = {50 c5 f8 77 90 c7 44 24 04 f0 0f 00 00 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f8 28 d1 c5 f8 28 d8 c5 e9 db d3 c5 f8 28 da c5 e1 71 f3 04 c5 f8 28 e2 c5 d9 71 d4 04 c5 e1 ef dc c5 e9 ef d3 c5 e9 db c0 c5 f9 ef c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:58:705
+; 2020-01-25 02:11:01:720
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

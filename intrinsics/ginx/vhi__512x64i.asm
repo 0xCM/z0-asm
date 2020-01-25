@@ -1,7 +1,7 @@
 ; Vector256<long> vhi<long>(Vector512<long> src)
-; vhi__512x64i[7ff7c6ddc1d0h, 7ff7c6ddc1e8h][24] = {c5 f8 77 66 90 48 83 c2 20 c5 fd 10 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vhi__512x64i[7ff7c721a120h, 7ff7c721a138h][24] = {c5 f8 77 66 90 48 83 c2 20 c5 fd 10 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:12:516
+; 2020-01-25 02:11:12:564
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h add rdx,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c2 20}

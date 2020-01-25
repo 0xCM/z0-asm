@@ -1,7 +1,7 @@
 ; Vector256<byte> vnand(Vector256<byte> x, Vector256<byte> y)
-; vnand_256x8u[7ff7c6be8e40h, 7ff7c6be8e61h][33] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d db 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnand_256x8u[7ff7c71ddbe0h, 7ff7c71ddc01h][33] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d db 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:01:667
+; 2020-01-25 02:11:03:983
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

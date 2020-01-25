@@ -1,7 +1,7 @@
 ; byte bitmap<byte>(byte src, byte dst, byte count, byte index)
-; bitmap_g8u[7ff7c6e7dfc0h, 7ff7c6e7e027h][103] = {0f 1f 44 00 00 8b c1 0f b6 d2 41 0f b6 c8 ff c9 41 ba 01 00 00 00 49 d3 e2 c4 c2 f0 f3 d2 44 8b d1 45 0f b6 c9 41 83 e1 1f 41 8b c9 41 d3 e2 41 81 f2 ff ff 00 00 41 23 d2 0f b6 d2 41 0f b6 c8 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 0f b6 c9 0f b6 c0 23 c8 0f b6 c1 41 8b c9 d3 e0 0f b6 c0 0b c2 0f b6 c0 c3}
+; bitmap_g8u[7ff7c6e929d0h, 7ff7c6e92a37h][103] = {0f 1f 44 00 00 8b c1 0f b6 d2 41 0f b6 c8 ff c9 41 ba 01 00 00 00 49 d3 e2 c4 c2 f0 f3 d2 44 8b d1 45 0f b6 c9 41 83 e1 1f 41 8b c9 41 d3 e2 41 81 f2 ff ff 00 00 41 23 d2 0f b6 d2 41 0f b6 c8 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 0f b6 c9 0f b6 c0 23 c8 0f b6 c1 41 8b c9 d3 e0 0f b6 c0 0b c2 0f b6 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:34:001
+; 2020-01-25 02:10:53:539
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

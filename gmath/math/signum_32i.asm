@@ -1,7 +1,7 @@
 ; Sign:int signum(int src)
-; signum_32i[7ff7c7187a90h, 7ff7c7187aa4h][20] = {0f 1f 44 00 00 8b c1 f7 d0 ff c0 c1 e8 1f c1 f9 1f 0b c1 c3}
+; signum_32i[7ff7c719a8b0h, 7ff7c719a8c4h][20] = {0f 1f 44 00 00 8b c1 f7 d0 ff c0 c1 e8 1f c1 f9 1f 0b c1 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:37:223
+; 2020-01-25 02:10:56:471
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

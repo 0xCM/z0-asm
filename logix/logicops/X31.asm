@@ -1,7 +1,7 @@
 ; bit f31(bit a, bit b, bit c)
-; X31[7ff7c6a1fa90h, 7ff7c6a1faa9h][25] = {0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 0b d1 23 c2 c3}
+; X31[7ff7c6a1d870h, 7ff7c6a1d889h][25] = {0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 0b d1 23 c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:42:882
+; 2020-01-25 02:10:36:856
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

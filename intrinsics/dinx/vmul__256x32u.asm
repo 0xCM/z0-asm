@@ -1,7 +1,7 @@
 ; Vector512<ulong> vmul(Vector256<uint> x, Vector256<uint> y)
-; vmul__256x32u[7ff7c6bf10d0h, 7ff7c6bf1107h][55] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d f4 00 c5 fd 10 0a c4 e3 75 46 c9 03 c4 c1 7d 10 10 c4 e3 6d 46 d2 03 c5 f5 f4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vmul__256x32u[7ff7c71e3c40h, 7ff7c71e3c77h][55] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d f4 00 c5 fd 10 0a c4 e3 75 46 c9 03 c4 c1 7d 10 10 c4 e3 6d 46 d2 03 c5 f5 f4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:02:349
+; 2020-01-25 02:11:04:710
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

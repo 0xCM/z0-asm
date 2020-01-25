@@ -1,7 +1,7 @@
 ; Span<int> pow<int>(ReadOnlySpan<int> src, uint exp, Span<int> dst)
-; pow_g32i[7ff7c71aa750h, 7ff7c71aa7b4h][100] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 3f 4d 63 da 4a 8d 34 98 46 8b 1c 9a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 41 0f af db d1 ef 85 ff 74 06 45 0f af db eb ea 89 1e 41 ff c2 45 3b d1 7c c1 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
+; pow_g32i[7ff7c71bd500h, 7ff7c71bd564h][100] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 3f 4d 63 da 4a 8d 34 98 46 8b 1c 9a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 41 0f af db d1 ef 85 ff 74 06 45 0f af db eb ea 89 1e 41 ff c2 45 3b d1 7c c1 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:40:115
+; 2020-01-25 02:11:00:320
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}

@@ -1,7 +1,7 @@
 ; Span<ulong> clamp<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
-; clamp_g64u[7ff7c719a5c0h, 7ff7c719a60bh][75] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 24 4d 63 da 4b 8d 34 d8 4a 8b 3c d8 4e 8b 1c da 49 3b fb 77 02 eb 03 49 8b fb 48 89 3e 41 ff c2 45 3b d1 7c dc 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
+; clamp_g64u[7ff7c71ad380h, 7ff7c71ad3cbh][75] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 24 4d 63 da 4b 8d 34 d8 4a 8b 3c d8 4e 8b 1c da 49 3b fb 77 02 eb 03 49 8b fb 48 89 3e 41 ff c2 45 3b d1 7c dc 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:39:603
+; 2020-01-25 02:10:59:600
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}

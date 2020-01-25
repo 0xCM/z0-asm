@@ -1,7 +1,7 @@
 ; int mod(int a, int m)
-; mod_32i[7ff7c7189c00h, 7ff7c7189c11h][17] = {0f 1f 44 00 00 44 8b c2 8b c1 99 41 f7 f8 8b c2 c3}
+; mod_32i[7ff7c719ca20h, 7ff7c719ca31h][17] = {0f 1f 44 00 00 44 8b c2 8b c1 99 41 f7 f8 8b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 01:44:37:443
+; 2020-01-25 02:10:56:706
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov r8d,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c2}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

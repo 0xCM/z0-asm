@@ -1,7 +1,7 @@
 ; Span<bit> vnonz<Int16>(in Block256<Int16> a, Span<bit> dst)
-; vnonz__b256x16i[7ff7c6fd96b0h, 7ff7c6fd9729h][121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 73 c7 ec 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; vnonz__b256x16i[7ff7c7245de0h, 7ff7c7245e59h][121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 43 00 c6 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:15:163
+; 2020-01-25 02:11:17:070
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -37,7 +37,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 c7 ec 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 00 c6 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

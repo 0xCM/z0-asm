@@ -1,7 +1,7 @@
 ; bit vtestz(Vector256<ulong> src, Vector256<ulong> mask)
-; vtestz__256x64u[7ff7c6bd8ab0h, 7ff7c6bd8ac8h][24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vtestz__256x64u[7ff7c71d3580h, 7ff7c71d3598h][24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:44:59:170
+; 2020-01-25 02:11:02:351
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

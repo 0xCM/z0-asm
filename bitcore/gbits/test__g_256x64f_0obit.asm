@@ -1,7 +1,7 @@
 ; bit test<double>(in Block256<double> src, int index)
-; test__g_256x64f_0obit[7ff7c6e77f10h, 7ff7c6e77fd5h][197] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 40 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 c5 fb 10 04 d0 c5 fb 11 04 24 48 8b 04 24 8b 54 24 3a 0f b7 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
+; test__g_256x64f_0obit[7ff7c6e8cab0h, 7ff7c6e8cb75h][197] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 40 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 c5 fb 10 04 d0 c5 fb 11 04 24 48 8b 04 24 8b 54 24 3a 0f b7 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:33:763
+; 2020-01-25 02:10:53:279
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

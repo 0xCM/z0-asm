@@ -1,7 +1,7 @@
 ; ushort bitmap<ushort>(ushort src, ushort dst, byte count, byte index)
-; bitmap_g16u[7ff7c6e7e040h, 7ff7c6e7e0a8h][104] = {0f 1f 44 00 00 8b c1 0f b7 d2 45 0f b6 c0 41 8d 48 ff 41 ba 01 00 00 00 49 d3 e2 c4 c2 f0 f3 d2 44 8b d1 45 0f b6 c9 41 83 e1 1f 41 8b c9 41 d3 e2 41 81 f2 ff ff 00 00 41 23 d2 0f b7 d2 41 ba 01 00 00 00 41 8b c8 49 d3 e2 c4 c2 f0 f3 d2 0f b7 c9 0f b7 c0 23 c8 0f b7 c1 41 8b c9 d3 e0 0f b7 c0 0b c2 0f b7 c0 c3}
+; bitmap_g16u[7ff7c6e92a50h, 7ff7c6e92ab8h][104] = {0f 1f 44 00 00 8b c1 0f b7 d2 45 0f b6 c0 41 8d 48 ff 41 ba 01 00 00 00 49 d3 e2 c4 c2 f0 f3 d2 44 8b d1 45 0f b6 c9 41 83 e1 1f 41 8b c9 41 d3 e2 41 81 f2 ff ff 00 00 41 23 d2 0f b7 d2 41 ba 01 00 00 00 41 8b c8 49 d3 e2 c4 c2 f0 f3 d2 0f b7 c9 0f b7 c0 23 c8 0f b7 c1 41 8b c9 d3 e0 0f b7 c0 0b c2 0f b7 c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:34:003
+; 2020-01-25 02:10:53:543
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}

@@ -1,7 +1,7 @@
 ; uint rev<uint>(uint src)
-; rev_g32u[7ff7c6e721f0h, 7ff7c6e7220dh][29] = {0f 1f 44 00 00 8b c1 25 aa aa aa aa d1 e8 81 e1 55 55 55 55 d1 e1 0b c1 8b d0 81 e2 cc}
+; rev_g32u[7ff7c6e86980h, 7ff7c6e8699dh][29] = {0f 1f 44 00 00 8b c1 25 aa aa aa aa d1 e8 81 e1 55 55 55 55 d1 e1 0b c1 8b d0 81 e2 cc}
 ; Capture completion code, INTRx2
-; 2020-01-24 01:44:33:520
+; 2020-01-25 02:10:53:069
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,0aaaaaaaah                      ; AND EAX, imm32 || o32 25 id || encoded[5]{25 aa aa aa aa}

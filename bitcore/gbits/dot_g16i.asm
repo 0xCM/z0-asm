@@ -1,7 +1,7 @@
 ; bit dot<Int16>(Int16 x, Int16 y)
-; dot_g16i[7ff7c6e84170h, 7ff7c6e84190h][32] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 c2 48 0f bf c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
+; dot_g16i[7ff7c6e98a70h, 7ff7c6e98a90h][32] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 c2 48 0f bf c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3}
 ; Capture completion code, RET_SBB
-; 2020-01-24 01:44:34:191
+; 2020-01-25 02:10:53:835
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}

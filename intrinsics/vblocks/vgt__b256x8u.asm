@@ -1,7 +1,7 @@
 ; ref Block256<byte> vgt<byte>(in Block256<byte> a, in Block256<byte> b, in Block256<byte> c)
-; vgt__b256x8u[7ff7c6fd7130h, 7ff7c6fd71c3h][147] = {50 c5 f8 77 90 41 8b 40 08 44 8b c8 41 c1 f9 1f 41 83 e1 1f 41 03 c1 c1 f8 05 45 33 c9 85 c0 7e 67 4c 8b 11 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7f f0 02 4c 8b 12 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7f f0 0a c7 44 24 04 80 00 00 00 4c 8d 54 24 04 c4 e2 7d 78 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 fd 64 c1 4d 8b 10 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 44 3b c8 7c 99 49 8b c0 c5 f8 77 48 83 c4 08 c3}
+; vgt__b256x8u[7ff7c7243e90h, 7ff7c7243f23h][147] = {50 c5 f8 77 90 41 8b 40 08 44 8b c8 41 c1 f9 1f 41 83 e1 1f 41 03 c1 c1 f8 05 45 33 c9 85 c0 7e 67 4c 8b 11 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7f f0 02 4c 8b 12 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7f f0 0a c7 44 24 04 80 00 00 00 4c 8d 54 24 04 c4 e2 7d 78 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 fd 64 c1 4d 8b 10 45 8b d9 41 c1 e3 05 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 44 3b c8 7c 99 49 8b c0 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 18:45:15:085
+; 2020-01-25 02:11:17:011
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

@@ -1,7 +1,7 @@
 ; long f2f<long>(long a, long b, long c)
-; X2F_g64i[7ff7c6b91360h, 7ff7c6b91375h][21] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 48 f7 d2 49 23 d0 48 0b c2 c3}
+; X2F_g64i[7ff7c6ba1350h, 7ff7c6ba1365h][21] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 48 f7 d2 49 23 d0 48 0b c2 c3}
 ; Capture completion code, RET_ZEDx3
-; 2020-01-24 02:54:48:570
+; 2020-01-25 02:10:41:322
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}

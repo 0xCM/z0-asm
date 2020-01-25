@@ -1,7 +1,7 @@
 ; byte scatter<byte>(byte src, byte mask)
-; scatter_g8u[7ff7c6e72cb0h, 7ff7c6e72cc7h][23] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 7b f5 c2 0f b6 c0 c3}
+; scatter_g8u[7ff7c6e87440h, 7ff7c6e87457h][23] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 7b f5 c2 0f b6 c0 c3}
 ; Capture completion code, RET_ZED_SBB
-; 2020-01-24 01:44:33:583
+; 2020-01-25 02:10:53:114
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

@@ -1,7 +1,7 @@
 ; double convert<double>(byte src)
-; convert8u~convert_g8u[7ff7c7180e00h, 7ff7c7180e11h][17] = {c5 f8 77 66 90 0f b6 c1 c5 f8 57 c0 c5 fb 2a c0 c3}
+; convert8u~convert_g8u[7ff7c7194060h, 7ff7c7194071h][17] = {c5 f8 77 66 90 0f b6 c1 c5 f8 57 c0 c5 fb 2a c0 c3}
 ; Capture completion code, RET_INTR
-; 2020-01-24 01:44:34:659
+; 2020-01-25 02:10:54:321
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
