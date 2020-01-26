@@ -32,9 +32,9 @@ ushort impl<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664024, Name := T Z0.gmath::impl<T>(T,T)
-// Int16 impl<Int16>(Int16 a, Int16 b)
+// short impl<short>(short a, short b)
 // AggressiveInlining
-Int16 impl<Int16>(Int16 a, Int16 b)
+short impl<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

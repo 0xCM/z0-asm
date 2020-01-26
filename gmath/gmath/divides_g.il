@@ -203,9 +203,9 @@ bit divides<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
-// bit divides<Int16>(Int16 a, Int16 b)
+// bit divides<short>(short a, short b)
 // AggressiveInlining
-bit divides<Int16>(Int16 a, Int16 b)
+bit divides<short>(short a, short b)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

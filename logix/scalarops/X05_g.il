@@ -32,9 +32,9 @@ ushort f05<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664584, Name := T Z0.Logix.ScalarOps::f05<T>(T,T,T)
-// Int16 f05<Int16>(Int16 a, Int16 b, Int16 c)
+// short f05<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f05<Int16>(Int16 a, Int16 b, Int16 c)
+short f05<short>(short a, short b, short c)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.0

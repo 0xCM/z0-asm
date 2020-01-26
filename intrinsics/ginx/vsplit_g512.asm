@@ -38,7 +38,7 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Pair<Vector256<Int16>> vsplit<Int16>(Vector512<Int16> src)
+; Pair<Vector256<short>> vsplit<short>(Vector512<short> src)
 ; vsplit__g512x16i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 10 4a 20 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

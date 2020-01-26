@@ -36,9 +36,9 @@ ushort xors(ushort a, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663649, Name := System.Int16 Z0.math::xors(System.Int16,System.Byte)
-// Int16 xors(Int16 a, byte offset)
+// short xors(short a, byte offset)
 // AggressiveInlining
-Int16 xors(Int16 a, byte offset)
+short xors(short a, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: conv.u2

@@ -59,9 +59,9 @@ Vector512<ushort> veq<ushort>(in Vector512<ushort> x, in Vector512<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665474, Name := Z0.Vector512`1<T> Z0.ginx::veq<T>(Z0.Vector512`1<T>&,Z0.Vector512`1<T>&)
-// Vector512<Int16> veq<Int16>(in Vector512<Int16> x, in Vector512<Int16> y)
+// Vector512<short> veq<short>(in Vector512<short> x, in Vector512<short> y)
 // AggressiveInlining
-Vector512<Int16> veq<Int16>(in Vector512<Int16> x, in Vector512<Int16> y)
+Vector512<short> veq<short>(in Vector512<short> x, in Vector512<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldfld System.Runtime.Intrinsics.Vector256`1<T> Z0.Vector512`1<T>::Lo

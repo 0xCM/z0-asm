@@ -32,9 +32,9 @@ bit ispow2<ushort>(ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
-// bit ispow2<Int16>(Int16 src)
+// bit ispow2<short>(short src)
 // AggressiveInlining
-bit ispow2<Int16>(Int16 src)
+bit ispow2<short>(short src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.UInt64 zfunc::convert<T,System.UInt64>(T)

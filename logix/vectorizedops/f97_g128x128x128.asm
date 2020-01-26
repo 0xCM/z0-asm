@@ -71,7 +71,7 @@
 004ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> f97<Int16>(Vector128<Int16> a, Vector128<Int16> b, Vector128<Int16> c)
+; Vector128<short> f97<short>(Vector128<short> a, Vector128<short> b, Vector128<short> c)
 ; f97_g128x16i[78] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 75 c8 c5 f9 ef c1 c4 c1 79 10 08 c4 c1 79 10 11 c5 f1 db ca c5 f1 75 d1 c5 f1 ef ca c4 c1 79 10 11 c5 f8 28 da c5 e1 db c0 c5 e9 df c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

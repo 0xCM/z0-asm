@@ -119,9 +119,9 @@ BinaryPred<ushort> lookup<ushort>(ComparisonKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664035, Name := Z0.Logix.BinaryPred`1<T> Z0.Logix.PredicateApi::lookup<T>(Z0.ComparisonKind)
-// BinaryPred<Int16> lookup<Int16>(ComparisonKind:byte kind)
+// BinaryPred<short> lookup<short>(ComparisonKind:byte kind)
 // IL
-BinaryPred<Int16> lookup<Int16>(ComparisonKind:byte kind)
+BinaryPred<short> lookup<short>(ComparisonKind:byte kind)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

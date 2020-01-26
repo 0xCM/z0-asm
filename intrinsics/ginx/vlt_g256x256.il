@@ -32,9 +32,9 @@ Vector256<ushort> vlt<ushort>(Vector256<ushort> x, Vector256<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665489, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vlt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vlt<Int16>(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vlt<short>(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vlt<Int16>(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vlt<short>(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

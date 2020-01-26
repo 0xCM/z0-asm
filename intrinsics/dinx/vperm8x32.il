@@ -25,9 +25,9 @@ Vector256<sbyte> vperm8x32(Vector256<sbyte> src, Vector256<uint> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663875, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
-// Vector256<Int16> vperm8x32(Vector256<Int16> src, Vector256<uint> spec)
+// Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
 // AggressiveInlining
-Vector256<Int16> vperm8x32(Vector256<Int16> src, Vector256<uint> spec)
+Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> zfunc::v32u<System.Int16>(System.Runtime.Intrinsics.Vector256`1<System.Int16>)

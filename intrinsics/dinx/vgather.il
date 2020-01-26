@@ -115,9 +115,9 @@ Vector128<ushort> vgather(N128 w, in ushort src, Vector128<ushort> vidx)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664902, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vgather(Z0.N128,System.Int16&,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vgather(N128 w, in Int16 src, Vector128<Int16> vidx)
+// Vector128<short> vgather(N128 w, in short src, Vector128<short> vidx)
 // AggressiveInlining
-Vector128<Int16> vgather(N128 w, in Int16 src, Vector128<Int16> vidx)
+Vector128<short> vgather(N128 w, in short src, Vector128<short> vidx)
 {
     IL_0000: ldarg.1
     IL_0001: call System.UInt32& Z0.AsIn::uint32<System.Int16>(System.Int16&)
@@ -262,9 +262,9 @@ Vector256<byte> vgather(N256 w, in byte src, Vector256<byte> vidx)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664907, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vgather(Z0.N256,System.Int16&,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vgather(N256 w, in Int16 src, Vector256<Int16> vidx)
+// Vector256<short> vgather(N256 w, in short src, Vector256<short> vidx)
 // AggressiveInlining
-Vector256<Int16> vgather(N256 w, in Int16 src, Vector256<Int16> vidx)
+Vector256<short> vgather(N256 w, in short src, Vector256<short> vidx)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldarg.1

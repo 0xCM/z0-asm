@@ -41,9 +41,9 @@ Pair<Vector512<ushort>> vsplit<ushort>(Vector1024<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665226, Name := Z0.Pair`1<Z0.Vector512`1<T>> Z0.ginx::vsplit<T>(Z0.Vector1024`1<T>)
-// Pair<Vector512<Int16>> vsplit<Int16>(Vector1024<Int16> src)
+// Pair<Vector512<short>> vsplit<short>(Vector1024<short> src)
 // AggressiveInlining
-Pair<Vector512<Int16>> vsplit<Int16>(Vector1024<Int16> src)
+Pair<Vector512<short>> vsplit<short>(Vector1024<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.Vector512`1<T> Z0.ginx::vlo<T>(Z0.Vector1024`1<T>)

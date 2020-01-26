@@ -92,9 +92,9 @@ void steps<ushort>(ushort first, ushort step, int count, ref ushort dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
-// void steps<Int16>(Int16 first, Int16 step, int count, ref Int16 dst)
+// void steps<short>(short first, short step, int count, ref short dst)
 // AggressiveInlining
-void steps<Int16>(Int16 first, Int16 step, int count, ref Int16 dst)
+void steps<short>(short first, short step, int count, ref short dst)
 {
     IL_0000: ldc.i4.0
     IL_0001: stloc.0

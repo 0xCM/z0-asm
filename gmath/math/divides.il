@@ -27,9 +27,9 @@ bit divides(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663373, Name := Z0.bit Z0.math::divides(System.Int16,System.Int16)
-// bit divides(Int16 a, Int16 b)
+// bit divides(short a, short b)
 // AggressiveInlining
-bit divides(Int16 a, Int16 b)
+bit divides(short a, short b)
 {
     IL_0000: ldarg.1
     IL_0001: ldarg.0

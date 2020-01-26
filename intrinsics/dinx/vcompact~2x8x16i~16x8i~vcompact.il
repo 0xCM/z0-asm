@@ -1,7 +1,7 @@
 // Id := 100664751, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N128,System.SByte)
-// Vector128<sbyte> vcompact(Vector128<Int16> x, Vector128<Int16> y, N128 w, sbyte t)
+// Vector128<sbyte> vcompact(Vector128<short> x, Vector128<short> y, N128 w, sbyte t)
 // AggressiveInlining
-Vector128<sbyte> vcompact(Vector128<Int16> x, Vector128<Int16> y, N128 w, sbyte t)
+Vector128<sbyte> vcompact(Vector128<short> x, Vector128<short> y, N128 w, sbyte t)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -50,9 +50,9 @@ ushort parse<ushort>(string src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
-// Int16 parse<Int16>(string src)
+// short parse<short>(string src)
 // AggressiveInlining
-Int16 parse<Int16>(string src)
+short parse<short>(string src)
 {
     IL_0000: ldarg.0
     IL_0001: ldloca.s V_0

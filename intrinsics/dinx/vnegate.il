@@ -68,9 +68,9 @@ Vector256<byte> vnegate(Vector256<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663584, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vnegate(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vnegate(Vector256<Int16> src)
+// Vector256<short> vnegate(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vnegate(Vector256<Int16> src)
+Vector256<short> vnegate(Vector256<short> src)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<System.Int16>
@@ -177,9 +177,9 @@ Vector128<byte> vnegate(Vector128<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663576, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vnegate(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vnegate(Vector128<Int16> src)
+// Vector128<short> vnegate(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vnegate(Vector128<Int16> src)
+Vector128<short> vnegate(Vector128<short> src)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<System.Int16>

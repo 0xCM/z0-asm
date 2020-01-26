@@ -98,7 +98,7 @@
 0052h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0053h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<bit> neq<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<bit> dst)
+; Span<bit> neq<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> dst)
 ; neq_g16i[86] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 2f 4d 63 da 4b 8d 34 98 4a 0f bf 3c 58 4e 0f bf 1c 5a 48 0f bf ff 48 0f bf ff 41 3b fb 41 0f 95 c3 45 0f b6 db 44 89 1e 41 ff c2 45 3b d1 7c d1 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

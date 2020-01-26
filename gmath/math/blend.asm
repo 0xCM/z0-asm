@@ -29,7 +29,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 blend(Int16 a, Int16 b, Int16 mask)
+; short blend(short a, short b, short mask)
 ; blend_16i[36] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 d0 48 0f bf d2 49 0f bf c8 23 d1 48 0f bf d2 33 c2 48 0f bf c0 c3}
 ; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

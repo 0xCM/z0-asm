@@ -44,9 +44,9 @@ uint vpop<ushort>(Vector128<ushort> x, Vector128<ushort> y, Vector128<ushort> z)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665333, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// uint vpop<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<Int16> z)
+// uint vpop<short>(Vector128<short> x, Vector128<short> y, Vector128<short> z)
 // AggressiveInlining
-uint vpop<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<Int16> z)
+uint vpop<short>(Vector128<short> x, Vector128<short> y, Vector128<short> z)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.UInt64> zfunc::v64u<T>(System.Runtime.Intrinsics.Vector128`1<T>)

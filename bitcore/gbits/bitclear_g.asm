@@ -53,7 +53,7 @@
 002fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 bitclear<Int16>(Int16 src, byte index, byte count)
+; short bitclear<short>(short src, byte index, byte count)
 ; bitclear_g16i[53] = {0f 1f 44 00 00 48 0f bf c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 41 23 c0 48 0f bf c0 c3}
 ; Capture completion code = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

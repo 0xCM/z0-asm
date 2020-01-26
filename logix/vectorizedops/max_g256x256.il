@@ -32,9 +32,9 @@ Vector256<ushort> max<ushort>(Vector256<ushort> a, Vector256<ushort> b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664279, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> max<Int16>(Vector256<Int16> a, Vector256<Int16> b)
+// Vector256<short> max<short>(Vector256<short> a, Vector256<short> b)
 // AggressiveInlining
-Vector256<Int16> max<Int16>(Vector256<Int16> a, Vector256<Int16> b)
+Vector256<short> max<short>(Vector256<short> a, Vector256<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -134,9 +134,9 @@ Span<ushort> srlv<ushort>(ReadOnlySpan<ushort> src, ReadOnlySpan<ushort> counts,
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664181, Name := System.Span`1<T> Z0.mathspan::srlv<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
-// Span<Int16> srlv<Int16>(ReadOnlySpan<Int16> src, ReadOnlySpan<Int16> counts, Span<Int16> dst)
+// Span<short> srlv<short>(ReadOnlySpan<short> src, ReadOnlySpan<short> counts, Span<short> dst)
 // AggressiveInlining
-Span<Int16> srlv<Int16>(ReadOnlySpan<Int16> src, ReadOnlySpan<Int16> counts, Span<Int16> dst)
+Span<short> srlv<short>(ReadOnlySpan<short> src, ReadOnlySpan<short> counts, Span<short> dst)
 {
     IL_0000: ldarga.s dst
     IL_0002: call System.Int32 System.Span`1<T>::get_Length()

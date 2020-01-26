@@ -29,9 +29,9 @@ Sign:int signum<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663998, Name := Z0.Sign Z0.gmath::signum<T>(T)
-// Sign:int signum<Int16>(Int16 a)
+// Sign:int signum<short>(short a)
 // AggressiveInlining
-Sign:int signum<Int16>(Int16 a)
+Sign:int signum<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.Sign Z0.gmath::signum_u<T>(T)

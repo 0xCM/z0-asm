@@ -35,9 +35,9 @@ Vector256<ushort> select<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vecto
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664280, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> select<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+// Vector256<short> select<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 // AggressiveInlining
-Vector256<Int16> select<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+Vector256<short> select<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

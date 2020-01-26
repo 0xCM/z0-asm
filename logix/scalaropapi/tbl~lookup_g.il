@@ -1187,9 +1187,9 @@ TernaryOp<ushort> lookup<ushort>(TernaryBitLogicKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664051, Name := Z0.TernaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.TernaryBitLogicKind)
-// TernaryOp<Int16> lookup<Int16>(TernaryBitLogicKind:byte kind)
+// TernaryOp<short> lookup<short>(TernaryBitLogicKind:byte kind)
 // IL
-TernaryOp<Int16> lookup<Int16>(TernaryBitLogicKind:byte kind)
+TernaryOp<short> lookup<short>(TernaryBitLogicKind:byte kind)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

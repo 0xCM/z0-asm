@@ -119,9 +119,9 @@ bit eval<ushort>(ComparisonKind:byte kind, ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664034, Name := Z0.bit Z0.Logix.PredicateApi::eval<T>(Z0.ComparisonKind,T,T)
-// bit eval<Int16>(ComparisonKind:byte kind, Int16 a, Int16 b)
+// bit eval<short>(ComparisonKind:byte kind, short a, short b)
 // IL
-bit eval<Int16>(ComparisonKind:byte kind, Int16 a, Int16 b)
+bit eval<short>(ComparisonKind:byte kind, short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

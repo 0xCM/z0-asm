@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<byte>(byte src)
-; bitseq_g8u[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 37 c6 f7 7f 00 00 ba 08 00 00 00 e8 85 db fd 5e 48 83 c0 10 ba 08 00 00 00 45 33 c0 44 0f b6 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 08 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g8u[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 36 c6 f7 7f 00 00 ba 08 00 00 00 e8 a5 d4 fd 5e 48 83 c0 10 ba 08 00 00 00 45 33 c0 44 0f b6 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 08 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -10,9 +10,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c637ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 37 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c636ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 36 c6 f7 7f 00 00}
 0021h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 db fd 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 d4 fd 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -38,7 +38,7 @@
 0072h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ushort>(ushort src)
-; bitseq_g16u[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 37 c6 f7 7f 00 00 ba 10 00 00 00 e8 f5 da fd 5e 48 83 c0 10 ba 10 00 00 00 45 33 c0 44 0f b7 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 10 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g16u[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 36 c6 f7 7f 00 00 ba 10 00 00 00 e8 15 d4 fd 5e 48 83 c0 10 ba 10 00 00 00 45 33 c0 44 0f b7 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 10 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -48,9 +48,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c637ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 37 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c636ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 36 c6 f7 7f 00 00}
 0021h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 da fd 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 d4 fd 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -76,7 +76,7 @@
 0072h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<uint>(uint src)
-; bitseq_g32u[111] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 37 c6 f7 7f 00 00 ba 20 00 00 00 e8 65 da fd 5e 48 83 c0 10 ba 20 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 44 8b d7 41 d3 ea 41 83 e2 01 45 88 11 41 ff c0 41 83 f8 20 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g32u[111] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 36 c6 f7 7f 00 00 ba 20 00 00 00 e8 85 d3 fd 5e 48 83 c0 10 ba 20 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 44 8b d7 41 d3 ea 41 83 e2 01 45 88 11 41 ff c0 41 83 f8 20 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -86,9 +86,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c637ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 37 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c636ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 36 c6 f7 7f 00 00}
 0021h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 da fd 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 d3 fd 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -113,7 +113,7 @@
 006eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ulong>(ulong src)
-; bitseq_g64u[114] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 48 8b fa 48 b9 10 ea 37 c6 f7 7f 00 00 ba 40 00 00 00 e8 d4 d9 fd 5e 48 83 c0 10 ba 40 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 4c 8b d7 49 d3 ea 41 8b ca 83 e1 01 41 88 09 41 ff c0 41 83 f8 40 7c df 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g64u[114] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 48 8b fa 48 b9 10 ea 36 c6 f7 7f 00 00 ba 40 00 00 00 e8 f4 d2 fd 5e 48 83 c0 10 ba 40 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 4c 8b d7 49 d3 ea 41 8b ca 83 e1 01 41 88 09 41 ff c0 41 83 f8 40 7c df 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -123,9 +123,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-0018h mov rcx,7ff7c637ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 37 c6 f7 7f 00 00}
+0018h mov rcx,7ff7c636ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 36 c6 f7 7f 00 00}
 0022h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-0027h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 d9 fd 5e}
+0027h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 d2 fd 5e}
 002ch add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 0030h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
 0035h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}

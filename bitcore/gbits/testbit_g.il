@@ -164,9 +164,9 @@ bit testbit<ushort>(ushort src, int pos)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
-// bit testbit<Int16>(Int16 src, int pos)
+// bit testbit<short>(short src, int pos)
 // AggressiveInlining
-bit testbit<Int16>(Int16 src, int pos)
+bit testbit<short>(short src, int pos)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

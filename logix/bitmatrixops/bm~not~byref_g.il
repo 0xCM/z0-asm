@@ -32,9 +32,9 @@ ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664104, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// ref BitMatrix<Int16> not<Int16>(in BitMatrix<Int16> A, ref BitMatrix<Int16> Z)
+// ref BitMatrix<short> not<short>(in BitMatrix<short> A, ref BitMatrix<short> Z)
 // AggressiveInlining
-ref BitMatrix<Int16> not<Int16>(in BitMatrix<Int16> A, ref BitMatrix<Int16> Z)
+ref BitMatrix<short> not<short>(in BitMatrix<short> A, ref BitMatrix<short> Z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

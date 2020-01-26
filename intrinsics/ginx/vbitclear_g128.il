@@ -62,9 +62,9 @@ Vector128<ushort> vbitclear<ushort>(Vector128<ushort> src, byte start, byte coun
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665591, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbitclear<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte,System.Byte)
-// Vector128<Int16> vbitclear<Int16>(Vector128<Int16> src, byte start, byte count)
+// Vector128<short> vbitclear<short>(Vector128<short> src, byte start, byte count)
 // AggressiveInlining
-Vector128<Int16> vbitclear<Int16>(Vector128<Int16> src, byte start, byte count)
+Vector128<short> vbitclear<short>(Vector128<short> src, byte start, byte count)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: stloc.0

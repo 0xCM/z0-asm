@@ -32,9 +32,9 @@ BitMatrix<ushort> or<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664115, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::or<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// BitMatrix<Int16> or<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B)
+// BitMatrix<short> or<short>(in BitMatrix<short> A, in BitMatrix<short> B)
 // AggressiveInlining
-BitMatrix<Int16> or<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B)
+BitMatrix<short> or<short>(in BitMatrix<short> A, in BitMatrix<short> B)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

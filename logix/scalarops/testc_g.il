@@ -44,9 +44,9 @@ bit testc<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664544, Name := Z0.bit Z0.Logix.ScalarOps::testc<T>(T)
-// bit testc<Int16>(Int16 a)
+// bit testc<short>(short a)
 // AggressiveInlining
-bit testc<Int16>(Int16 a)
+bit testc<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call System.UInt32 Z0.gbits::pop<T>(T)

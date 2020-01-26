@@ -32,9 +32,9 @@ ref sbyte int8<ushort>(in ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665610, Name := System.SByte& Z0.AsIn::int8<T>(T&)
-// ref sbyte int8<Int16>(in Int16 src)
+// ref sbyte int8<short>(in short src)
 // AggressiveInlining
-ref sbyte int8<Int16>(in Int16 src)
+ref sbyte int8<short>(in short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)

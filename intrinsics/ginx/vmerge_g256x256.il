@@ -206,9 +206,9 @@ Vector512<ushort> vmerge<ushort>(Vector256<ushort> x, Vector256<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665207, Name := Z0.Vector512`1<T> Z0.ginx::vmerge<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector512<Int16> vmerge<Int16>(Vector256<Int16> x, Vector256<Int16> y)
+// Vector512<short> vmerge<short>(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector512<Int16> vmerge<Int16>(Vector256<Int16> x, Vector256<Int16> y)
+Vector512<short> vmerge<short>(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

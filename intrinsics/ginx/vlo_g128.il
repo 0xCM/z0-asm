@@ -44,9 +44,9 @@ Vector128<ushort> vlo<ushort>(Vector128<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665197, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vlo<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vlo<Int16>(Vector128<Int16> src)
+// Vector128<short> vlo<short>(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vlo<Int16>(Vector128<Int16> src)
+Vector128<short> vlo<short>(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.UInt64> zfunc::v64u<T>(System.Runtime.Intrinsics.Vector128`1<T>)

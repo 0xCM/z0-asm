@@ -32,7 +32,7 @@
 000ch mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 promote<Int16>(bit src)
+; short promote<short>(bit src)
 ; promote_gbit[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 7f 00 00 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

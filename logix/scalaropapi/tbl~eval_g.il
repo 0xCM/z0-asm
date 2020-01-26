@@ -1472,9 +1472,9 @@ ushort eval<ushort>(TernaryBitLogicKind:byte kind, ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664045, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
-// Int16 eval<Int16>(TernaryBitLogicKind:byte kind, Int16 a, Int16 b, Int16 c)
+// short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
 // IL
-Int16 eval<Int16>(TernaryBitLogicKind:byte kind, Int16 a, Int16 b, Int16 c)
+short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

@@ -23,9 +23,9 @@ bit positive(byte a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663760, Name := Z0.bit Z0.math::positive(System.Int16)
-// bit positive(Int16 a)
+// bit positive(short a)
 // AggressiveInlining
-bit positive(Int16 a)
+bit positive(short a)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.0

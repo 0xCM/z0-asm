@@ -56,9 +56,9 @@ bit test<ushort>(in Block256<ushort> src, int index)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663679, Name := Z0.bit Z0.gbits::test<T>(Z0.Block256`1<T>&,System.Int32)
-// bit test<Int16>(in Block256<Int16> src, int index)
+// bit test<short>(in Block256<short> src, int index)
 // AggressiveInlining
-bit test<Int16>(in Block256<Int16> src, int index)
+bit test<short>(in Block256<short> src, int index)
 {
     IL_0000: ldarg.1
     IL_0001: call Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)

@@ -119,9 +119,9 @@ ushort eval<ushort>(ComparisonKind:byte kind, ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664044, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
-// Int16 eval<Int16>(ComparisonKind:byte kind, Int16 a, Int16 b)
+// short eval<short>(ComparisonKind:byte kind, short a, short b)
 // IL
-Int16 eval<Int16>(ComparisonKind:byte kind, Int16 a, Int16 b)
+short eval<short>(ComparisonKind:byte kind, short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

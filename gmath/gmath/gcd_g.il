@@ -200,9 +200,9 @@ ushort gcd<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663972, Name := T Z0.gmath::gcd<T>(T,T)
-// Int16 gcd<Int16>(Int16 a, Int16 b)
+// short gcd<short>(short a, short b)
 // AggressiveInlining
-Int16 gcd<Int16>(Int16 a, Int16 b)
+short gcd<short>(short a, short b)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

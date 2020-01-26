@@ -1,8 +1,8 @@
-bm~true_g8u_8u    56 48 83 ec 30 48 8b f1 b9 ff 00 00 00 88 4c 24 28 48 8b ce 0f b6 54 24 28 e8 92 ad fe ff 48 8b c6 48 83 c4 30 5e c3
-bm~true_g8i_8i    56 48 83 ec 20 48 8b f1 ba ff ff ff ff 48 8b ce e8 eb d8 fe ff 48 8b c6 48 83 c4 20 5e c3
-bm~true_g16u_16u  56 48 83 ec 30 48 8b f1 b9 ff ff 00 00 66 89 4c 24 28 48 8b ce 0f b7 54 24 28 e8 71 e5 fe ff 48 8b c6 48 83 c4 30 5e c3
-bm~true_g16i_16i  56 48 83 ec 20 48 8b f1 ba ff ff ff ff 48 8b ce e8 93 f7 fe ff 48 8b c6 48 83 c4 20 5e c3
-bm~true_g32u_32u  56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 03 05 ff ff 48 8b c6 48 83 c4 20 5e c3
-bm~true_g32i_32i  56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 d3 20 ff ff 48 8b c6 48 83 c4 20 5e c3
-bm~true_g64u_64u  56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 c6 25 ff ff 48 8b c6 48 83 c4 20 5e c3
-bm~true_g64i_64i  56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 26 32 ff ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g8u_8u    56 48 83 ec 30 48 8b f1 b9 ff 00 00 00 88 4c 24 28 48 8b ce 0f b6 54 24 28 e8 62 ad fe ff 48 8b c6 48 83 c4 30 5e c3
+bm~true_g8i_8i    56 48 83 ec 20 48 8b f1 ba ff ff ff ff 48 8b ce e8 8b e1 fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g16u_16u  56 48 83 ec 30 48 8b f1 b9 ff ff 00 00 66 89 4c 24 28 48 8b ce 0f b7 54 24 28 e8 31 e5 fe ff 48 8b c6 48 83 c4 30 5e c3
+bm~true_g16i_16i  56 48 83 ec 20 48 8b f1 ba ff ff ff ff 48 8b ce e8 0b f6 fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g32u_32u  56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 c3 04 ff ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g32i_32i  56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 93 20 ff ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g64u_64u  56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 86 25 ff ff 48 8b c6 48 83 c4 20 5e c3
+bm~true_g64i_64i  56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 e6 31 ff ff 48 8b c6 48 83 c4 20 5e c3

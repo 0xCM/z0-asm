@@ -32,9 +32,9 @@ ref float float32<ushort>(in ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665618, Name := System.Single& Z0.AsIn::float32<T>(T&)
-// ref float float32<Int16>(in Int16 src)
+// ref float float32<short>(in short src)
 // AggressiveInlining
-ref float float32<Int16>(in Int16 src)
+ref float float32<short>(in short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)

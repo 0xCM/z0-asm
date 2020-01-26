@@ -29,7 +29,7 @@
 0019h movsxd rax,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c1}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong dist(Int16 a, Int16 b)
+; ulong dist(short a, short b)
 ; dist_16i[29] = {0f 1f 44 00 00 48 0f bf c9 48 0f bf d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

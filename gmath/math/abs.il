@@ -17,9 +17,9 @@ sbyte abs(sbyte a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663304, Name := System.Int16 Z0.math::abs(System.Int16)
-// Int16 abs(Int16 a)
+// short abs(short a)
 // AggressiveInlining
-Int16 abs(Int16 a)
+short abs(short a)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

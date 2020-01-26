@@ -45,9 +45,9 @@ byte gcd(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663389, Name := System.Int16 Z0.math::gcd(System.Int16,System.Int16)
-// Int16 gcd(Int16 a, Int16 b)
+// short gcd(short a, short b)
 // AggressiveInlining
-Int16 gcd(Int16 a, Int16 b)
+short gcd(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Int16 Z0.math::abs(System.Int16)

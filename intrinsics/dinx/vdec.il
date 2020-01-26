@@ -25,9 +25,9 @@ Vector128<byte> vdec(Vector128<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663497, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vdec(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vdec(Vector128<Int16> src)
+// Vector128<short> vdec(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vdec(Vector128<Int16> src)
+Vector128<short> vdec(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N128 zfunc::get_n128()
@@ -131,9 +131,9 @@ Vector256<byte> vdec(Vector256<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663505, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vdec(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vdec(Vector256<Int16> src)
+// Vector256<short> vdec(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vdec(Vector256<Int16> src)
+Vector256<short> vdec(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N256 zfunc::get_n256()

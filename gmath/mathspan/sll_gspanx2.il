@@ -113,9 +113,9 @@ Span<ushort> sll<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664182, Name := System.Span`1<T> Z0.mathspan::sll<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
-// Span<Int16> sll<Int16>(ReadOnlySpan<Int16> src, byte count, Span<Int16> dst)
+// Span<short> sll<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
 // AggressiveInlining
-Span<Int16> sll<Int16>(ReadOnlySpan<Int16> src, byte count, Span<Int16> dst)
+Span<short> sll<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
 {
     IL_0000: ldarga.s dst
     IL_0002: call System.Int32 System.Span`1<T>::get_Length()

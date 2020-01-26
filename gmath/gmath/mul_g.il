@@ -32,9 +32,9 @@ ushort mul<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663989, Name := T Z0.gmath::mul<T>(T,T)
-// Int16 mul<Int16>(Int16 a, Int16 b)
+// short mul<short>(short a, short b)
 // AggressiveInlining
-Int16 mul<Int16>(Int16 a, Int16 b)
+short mul<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

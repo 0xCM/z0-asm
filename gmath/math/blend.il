@@ -29,9 +29,9 @@ byte blend(byte a, byte b, byte mask)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663588, Name := System.Int16 Z0.math::blend(System.Int16,System.Int16,System.Int16)
-// Int16 blend(Int16 a, Int16 b, Int16 mask)
+// short blend(short a, short b, short mask)
 // AggressiveInlining
-Int16 blend(Int16 a, Int16 b, Int16 mask)
+short blend(short a, short b, short mask)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

@@ -38,9 +38,9 @@ ushort f13<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664598, Name := T Z0.Logix.ScalarOps::f13<T>(T,T,T)
-// Int16 f13<Int16>(Int16 a, Int16 b, Int16 c)
+// short f13<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f13<Int16>(Int16 a, Int16 b, Int16 c)
+short f13<short>(short a, short b, short c)
 {
     IL_0000: ldarg.1
     IL_0001: ldarg.0

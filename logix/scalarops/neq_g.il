@@ -35,9 +35,9 @@ ushort neq<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664561, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
-// Int16 neq<Int16>(Int16 a, Int16 b)
+// short neq<short>(short a, short b)
 // AggressiveInlining
-Int16 neq<Int16>(Int16 a, Int16 b)
+short neq<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

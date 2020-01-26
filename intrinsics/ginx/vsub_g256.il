@@ -38,9 +38,9 @@ Vector256<ushort> vsub<ushort>(ushort a, Vector256<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665164, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vsub<T>(T,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vsub<Int16>(Int16 a, Vector256<Int16> x)
+// Vector256<short> vsub<short>(short a, Vector256<short> x)
 // AggressiveInlining
-Vector256<Int16> vsub<Int16>(Int16 a, Vector256<Int16> x)
+Vector256<short> vsub<short>(short a, Vector256<short> x)
 {
     IL_0000: call Z0.N256 zfunc::get_n256()
     IL_0005: ldarg.0

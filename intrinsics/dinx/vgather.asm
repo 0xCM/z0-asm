@@ -110,7 +110,7 @@
 0050h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vgather(N128 w, in Int16 src, Vector128<Int16> vidx)
+; Vector128<short> vgather(N128 w, in short src, Vector128<short> vidx)
 ; vgather_n128_0o_128x16i[85] = {50 c5 f8 77 90 c4 c1 79 10 01 c4 e2 7d 33 c0 c5 f5 76 c9 c4 c2 75 90 14 40 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -342,7 +342,7 @@
 0138h add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 013ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vgather(N256 w, in Int16 src, Vector256<Int16> vidx)
+; Vector256<short> vgather(N256 w, in short src, Vector256<short> vidx)
 ; vgather_n256_0o_256x16i[178] = {50 c5 f8 77 90 c4 c1 7d 10 01 c4 e3 7d 19 c0 00 49 8b c0 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 40 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c4 c1 7d 10 09 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 c2 6d 90 1c 48 c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -466,7 +466,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vgather(N256 w, in long src, Vector256<long> vidx, byte scale)
-; vgather_n256_0o_256x64i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 9e 95 1b ff 48 8b c6 48 83 c4 20 5e c3}
+; vgather_n256_0o_256x64i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 ae 91 1a ff 48 8b c6 48 83 c4 20 5e c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -477,14 +477,14 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c63aa5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 95 1b ff}
+001dh call 7ff7c639a5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae 91 1a ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vgather(N256 w, in ulong src, Vector256<long> vidx, byte scale)
-; vgather_n256_0o_256x64i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 66 95 1b ff 48 8b c6 48 83 c4 20 5e c3}
+; vgather_n256_0o_256x64i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 76 91 1a ff 48 8b c6 48 83 c4 20 5e c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -495,14 +495,14 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c63aa5b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 95 1b ff}
+001dh call 7ff7c639a5b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 91 1a ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vgather(N256 w, in ulong src, Vector128<int> vidx, byte scale)
-; vgather_n256_0o_128x32i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 f6 94 1b ff 48 8b c6 48 83 c4 20 5e c3}
+; vgather_n256_0o_128x32i_0o[43] = {56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 06 91 1a ff 48 8b c6 48 83 c4 20 5e c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -513,7 +513,7 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c63aa588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 94 1b ff}
+001dh call 7ff7c639a588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 91 1a ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

@@ -41,9 +41,9 @@ ushort f40<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664643, Name := T Z0.Logix.ScalarOps::f40<T>(T,T,T)
-// Int16 f40<Int16>(Int16 a, Int16 b, Int16 c)
+// short f40<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f40<Int16>(Int16 a, Int16 b, Int16 c)
+short f40<short>(short a, short b, short c)
 {
     IL_0000: ldarg.2
     IL_0001: call T Z0.Logix.ScalarOps::not<T>(T)

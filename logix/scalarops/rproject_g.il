@@ -32,9 +32,9 @@ ushort right<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664552, Name := T Z0.Logix.ScalarOps::right<T>(T,T)
-// Int16 right<Int16>(Int16 a, Int16 b)
+// short right<short>(short a, short b)
 // AggressiveInlining
-Int16 right<Int16>(Int16 a, Int16 b)
+short right<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

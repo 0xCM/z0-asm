@@ -35,9 +35,9 @@ ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664112, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// ref BitMatrix<Int16> and<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+// ref BitMatrix<short> and<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 // AggressiveInlining
-ref BitMatrix<Int16> and<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+ref BitMatrix<short> and<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

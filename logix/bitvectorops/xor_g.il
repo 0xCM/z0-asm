@@ -32,9 +32,9 @@ BitVector<ushort> xor<ushort>(BitVector<ushort> x, BitVector<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664149, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::xor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> xor<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+// BitVector<short> xor<short>(BitVector<short> x, BitVector<short> y)
 // AggressiveInlining
-BitVector<Int16> xor<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+BitVector<short> xor<short>(BitVector<short> x, BitVector<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

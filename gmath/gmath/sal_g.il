@@ -32,9 +32,9 @@ ushort sal<ushort>(ushort src, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664058, Name := T Z0.gmath::sal<T>(T,System.Byte)
-// Int16 sal<Int16>(Int16 src, byte offset)
+// short sal<short>(short src, byte offset)
 // AggressiveInlining
-Int16 sal<Int16>(Int16 src, byte offset)
+short sal<short>(short src, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

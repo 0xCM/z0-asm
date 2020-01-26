@@ -44,9 +44,9 @@ Vector256<ushort> vbitblend<ushort>(Vector256<ushort> x, Vector256<ushort> y, Ve
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665590, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vbitblend<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vbitblend<Int16>(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> mask)
+// Vector256<short> vbitblend<short>(Vector256<short> x, Vector256<short> y, Vector256<short> mask)
 // AggressiveInlining
-Vector256<Int16> vbitblend<Int16>(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> mask)
+Vector256<short> vbitblend<short>(Vector256<short> x, Vector256<short> y, Vector256<short> mask)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

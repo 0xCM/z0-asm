@@ -23,9 +23,9 @@ byte srl(byte src, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663636, Name := System.Int16 Z0.math::srl(System.Int16,System.Byte)
-// Int16 srl(Int16 src, byte offset)
+// short srl(short src, byte offset)
 // AggressiveInlining
-Int16 srl(Int16 src, byte offset)
+short srl(short src, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

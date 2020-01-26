@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<int> vconvert(in Block64<Int16> src, N128 w, int t)
+; Vector128<int> vconvert(in Block64<short> src, N128 w, int t)
 ; vconvert~4x16i~4x32i~vconvert[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 23 00 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

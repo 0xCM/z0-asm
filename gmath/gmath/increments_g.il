@@ -80,9 +80,9 @@ void increments<ushort>(int count, ref ushort dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664127, Name := System.Void Z0.gmath::increments<T>(System.Int32,T&)
-// void increments<Int16>(int count, ref Int16 dst)
+// void increments<short>(int count, ref short dst)
 // AggressiveInlining
-void increments<Int16>(int count, ref Int16 dst)
+void increments<short>(int count, ref short dst)
 {
     IL_0000: ldc.i4.0
     IL_0001: stloc.0

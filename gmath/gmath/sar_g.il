@@ -32,9 +32,9 @@ ushort sar<ushort>(ushort src, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
-// Int16 sar<Int16>(Int16 src, byte offset)
+// short sar<short>(short src, byte offset)
 // AggressiveInlining
-Int16 sar<Int16>(Int16 src, byte offset)
+short sar<short>(short src, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -41,9 +41,9 @@ Pair<Vector256<ushort>> vsplit<ushort>(Vector512<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665225, Name := Z0.Pair`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.ginx::vsplit<T>(Z0.Vector512`1<T>)
-// Pair<Vector256<Int16>> vsplit<Int16>(Vector512<Int16> src)
+// Pair<Vector256<short>> vsplit<short>(Vector512<short> src)
 // AggressiveInlining
-Pair<Vector256<Int16>> vsplit<Int16>(Vector512<Int16> src)
+Pair<Vector256<short>> vsplit<short>(Vector512<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vlo<T>(Z0.Vector512`1<T>)

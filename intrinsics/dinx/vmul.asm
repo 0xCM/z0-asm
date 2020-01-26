@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
+; Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
 ; vmul_128x8i_128x8i[103] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 20 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 c4 c1 79 10 08 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 fd d5 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -41,7 +41,7 @@
 0023h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<int> vmul(Vector128<Int16> x, Vector128<Int16> y)
+; Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
 ; vmul_128x16i_128x16i[40] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 7d 23 c0 c4 c1 79 10 08 c4 e2 7d 23 c9 c4 e2 7d 40 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -111,7 +111,7 @@
 003ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector512<Int16> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
+; Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
 ; vmul_256x8i_256x8i[81] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 20 c9 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c5 fd 10 12 c4 e3 7d 19 d3 00 c4 e2 7d 20 db c4 e3 7d 19 d2 01 c4 e2 7d 20 d2 c5 f5 d5 cb c5 fd d5 c2 c5 fd 11 09 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -180,7 +180,7 @@
 0050h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0053h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector512<int> vmul(Vector256<Int16> x, Vector256<Int16> y)
+; Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
 ; vmul_256x16i_256x16i[84] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 23 c9 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 23 db c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 75 40 cb c4 e2 7d 40 c2 c5 fd 11 09 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

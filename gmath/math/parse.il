@@ -23,9 +23,9 @@ bit parse(string src, out byte dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663778, Name := Z0.bit Z0.math::parse(System.String,System.Int16&)
-// bit parse(string src, out Int16 dst)
+// bit parse(string src, out short dst)
 // AggressiveInlining
-bit parse(string src, out Int16 dst)
+bit parse(string src, out short dst)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -35,9 +35,9 @@ ushort bitclear<ushort>(ushort src, byte index, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
-// Int16 bitclear<Int16>(Int16 src, byte index, byte count)
+// short bitclear<short>(short src, byte index, byte count)
 // AggressiveInlining
-Int16 bitclear<Int16>(Int16 src, byte index, byte count)
+short bitclear<short>(short src, byte index, byte count)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -38,9 +38,9 @@ Vector128<ushort> vsub<ushort>(ushort a, Vector128<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665162, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vsub<T>(T,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vsub<Int16>(Int16 a, Vector128<Int16> x)
+// Vector128<short> vsub<short>(short a, Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> vsub<Int16>(Int16 a, Vector128<Int16> x)
+Vector128<short> vsub<short>(short a, Vector128<short> x)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldarg.0

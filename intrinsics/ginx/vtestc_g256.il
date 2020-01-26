@@ -44,9 +44,9 @@ bit vtestc<ushort>(Vector256<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665523, Name := Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// bit vtestc<Int16>(Vector256<Int16> src)
+// bit vtestc<short>(Vector256<short> src)
 // AggressiveInlining
-bit vtestc<Int16>(Vector256<Int16> src)
+bit vtestc<short>(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N256 zfunc::get_n256()

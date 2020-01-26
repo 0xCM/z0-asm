@@ -73,7 +73,7 @@
 0036h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 f97<Int16>(Int16 a, Int16 b, Int16 c)
+; short f97<short>(short a, short b, short c)
 ; X97_g16i[75] = {0f 1f 44 00 00 48 0f bf c2 49 0f bf c8 44 8b c1 41 33 c0 f7 d0 48 0f bf c0 48 0f bf d2 44 8b c1 41 23 d0 f7 d2 48 0f bf d2 44 8b c1 48 0f bf c0 41 23 c0 48 0f bf c0 c4 e2 70 f2 d2 48 0f bf d2 48 0f bf c0 0b c2 48 0f bf c0 c3}
 ; Capture completion code = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

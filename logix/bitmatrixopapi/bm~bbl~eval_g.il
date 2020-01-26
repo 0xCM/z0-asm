@@ -221,9 +221,9 @@ BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664017, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
-// BitMatrix<Int16> eval<Int16>(BinaryBitLogicKind:byte kind, BitMatrix<Int16> A, BitMatrix<Int16> B)
+// BitMatrix<short> eval<short>(BinaryBitLogicKind:byte kind, BitMatrix<short> A, BitMatrix<short> B)
 // IL
-BitMatrix<Int16> eval<Int16>(BinaryBitLogicKind:byte kind, BitMatrix<Int16> A, BitMatrix<Int16> B)
+BitMatrix<short> eval<short>(BinaryBitLogicKind:byte kind, BitMatrix<short> A, BitMatrix<short> B)
 {
     IL_0000: ldarg.0
     IL_0001: switch(IL_0051,IL_0057,IL_00D9,IL_0093,IL_00C5,IL_009D,IL_007F,IL_006B,IL_0075,IL_0089,IL_00B1,IL_00BB,IL_00A7,IL_00CF,IL_0061,IL_004B)

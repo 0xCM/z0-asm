@@ -23,9 +23,9 @@ bit vtestc(Vector128<byte> src, Vector128<byte> mask)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664654, Name := Z0.bit Z0.dinx::vtestc(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// bit vtestc(Vector128<Int16> src, Vector128<Int16> mask)
+// bit vtestc(Vector128<short> src, Vector128<short> mask)
 // AggressiveInlining
-bit vtestc(Vector128<Int16> src, Vector128<Int16> mask)
+bit vtestc(Vector128<short> src, Vector128<short> mask)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -219,9 +219,9 @@ bit vtestc(Vector256<byte> src, Vector256<byte> mask)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664669, Name := Z0.bit Z0.dinx::vtestc(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// bit vtestc(Vector256<Int16> src, Vector256<Int16> mask)
+// bit vtestc(Vector256<short> src, Vector256<short> mask)
 // AggressiveInlining
-bit vtestc(Vector256<Int16> src, Vector256<Int16> mask)
+bit vtestc(Vector256<short> src, Vector256<short> mask)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

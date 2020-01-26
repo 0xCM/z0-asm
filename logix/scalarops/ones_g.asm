@@ -20,7 +20,7 @@
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 ones<Int16>()
+; short ones<short>()
 ; ones[11] = {0f 1f 44 00 00 b8 ff 7f 00 00 c3}
 ; Capture completion code = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

@@ -32,9 +32,9 @@ ushort add<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663937, Name := T Z0.gmath::add<T>(T,T)
-// Int16 add<Int16>(Int16 a, Int16 b)
+// short add<short>(short a, short b)
 // AggressiveInlining
-Int16 add<Int16>(Int16 a, Int16 b)
+short add<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

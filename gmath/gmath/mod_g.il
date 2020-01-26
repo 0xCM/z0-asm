@@ -200,9 +200,9 @@ ushort mod<ushort>(ushort a, ushort m)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
-// Int16 mod<Int16>(Int16 a, Int16 m)
+// short mod<short>(short a, short m)
 // AggressiveInlining
-Int16 mod<Int16>(Int16 a, Int16 m)
+short mod<short>(short a, short m)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

@@ -35,9 +35,9 @@ ushort modmul<ushort>(ushort a, ushort b, ushort m)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
-// Int16 modmul<Int16>(Int16 a, Int16 b, Int16 m)
+// short modmul<short>(short a, short b, short m)
 // AggressiveInlining
-Int16 modmul<Int16>(Int16 a, Int16 b, Int16 m)
+short modmul<short>(short a, short b, short m)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

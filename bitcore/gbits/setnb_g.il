@@ -92,9 +92,9 @@ ushort setnb<ushort>(ushort src, byte pos, bit value)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
-// Int16 setnb<Int16>(Int16 src, byte pos, bit value)
+// short setnb<short>(short src, byte pos, bit value)
 // AggressiveInlining
-Int16 setnb<Int16>(Int16 src, byte pos, bit value)
+short setnb<short>(short src, byte pos, bit value)
 {
     IL_0000: ldloca.s V_3
     IL_0002: initobj T

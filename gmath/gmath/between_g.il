@@ -35,9 +35,9 @@ bit between<ushort>(ushort x, ushort min, ushort max)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664079, Name := Z0.bit Z0.gmath::between<T>(T,T,T)
-// bit between<Int16>(Int16 x, Int16 min, Int16 max)
+// bit between<short>(short x, short min, short max)
 // AggressiveInlining
-bit between<Int16>(Int16 x, Int16 min, Int16 max)
+bit between<short>(short x, short min, short max)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

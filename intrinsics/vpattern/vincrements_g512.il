@@ -248,9 +248,9 @@ Vector512<ushort> vincrements<ushort>(N512 w)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666398, Name := Z0.Vector512`1<T> Z0.VPattern::vincrements<T>(Z0.N512)
-// Vector512<Int16> vincrements<Int16>(N512 w)
+// Vector512<short> vincrements<short>(N512 w)
 // AggressiveInlining
-Vector512<Int16> vincrements<Int16>(N512 w)
+Vector512<short> vincrements<short>(N512 w)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

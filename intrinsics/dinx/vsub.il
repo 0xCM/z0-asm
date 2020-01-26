@@ -21,9 +21,9 @@ Vector128<sbyte> vsub(Vector128<sbyte> x, Vector128<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663600, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsub(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vsub(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vsub(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vsub(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vsub(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -109,9 +109,9 @@ Vector256<sbyte> vsub(Vector256<sbyte> x, Vector256<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663608, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsub(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vsub(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vsub(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vsub(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vsub(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

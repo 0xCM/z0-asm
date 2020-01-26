@@ -83,9 +83,9 @@ BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, ComparisonKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664092, Name := Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
-// BinaryOp<Vector256<Int16>> lookup<Int16>(N256 w, ComparisonKind:byte kind)
+// BinaryOp<Vector256<short>> lookup<short>(N256 w, ComparisonKind:byte kind)
 // IL
-BinaryOp<Vector256<Int16>> lookup<Int16>(N256 w, ComparisonKind:byte kind)
+BinaryOp<Vector256<short>> lookup<short>(N256 w, ComparisonKind:byte kind)
 {
     IL_0000: ldarg.1
     IL_0001: ldc.i4.1

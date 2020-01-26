@@ -29,9 +29,9 @@ bit positive<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
-// bit positive<Int16>(Int16 a)
+// bit positive<short>(short a)
 // AggressiveInlining
-bit positive<Int16>(Int16 a)
+bit positive<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.bit Z0.gmath::positive_u<T>(T)

@@ -35,9 +35,9 @@ ushort ones<ushort>()
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664532, Name := T Z0.Logix.ScalarOps::ones<T>()
-// Int16 ones<Int16>()
+// short ones<short>()
 // AggressiveInlining
-Int16 ones<Int16>()
+short ones<short>()
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

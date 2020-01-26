@@ -29,9 +29,9 @@ ushort avg<ushort>(ReadOnlySpan<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664186, Name := T Z0.mathspan::avg<T>(System.ReadOnlySpan`1<T>)
-// Int16 avg<Int16>(ReadOnlySpan<Int16> src)
+// short avg<short>(ReadOnlySpan<short> src)
 // AggressiveInlining
-Int16 avg<Int16>(ReadOnlySpan<Int16> src)
+short avg<short>(ReadOnlySpan<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call T Z0.mathspan::avg_u<T>(System.ReadOnlySpan`1<T>)

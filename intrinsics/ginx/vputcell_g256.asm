@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vputcell<byte>(byte src, int index, Vector256<byte> dst)
-; vputcell__g0o_0o_256x8u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 9d db 18 ff cc}
+; vputcell__g0o_0o_256x8u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 7d d9 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -18,11 +18,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d db 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d d9 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vputcell<sbyte>(sbyte src, int index, Vector256<sbyte> dst)
-; vputcell__g0o_0o_256x8i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 3d db 18 ff cc}
+; vputcell__g0o_0o_256x8i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 1d d9 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -40,11 +40,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d db 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d d9 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vputcell<ushort>(ushort src, int index, Vector256<ushort> dst)
-; vputcell__g0o_0o_256x16u[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 dc da 18 ff cc}
+; vputcell__g0o_0o_256x16u[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 bc d8 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -62,11 +62,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc da 18 ff}
+003fh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc d8 17 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vputcell<Int16>(Int16 src, int index, Vector256<Int16> dst)
-; vputcell__g0o_0o_256x16i[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 7c da 18 ff cc}
+; Vector256<short> vputcell<short>(short src, int index, Vector256<short> dst)
+; vputcell__g0o_0o_256x16i[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 5c d8 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -84,11 +84,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c da 18 ff}
+003fh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c d8 17 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vputcell<uint>(uint src, int index, Vector256<uint> dst)
-; vputcell__g0o_0o_256x32u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 1d da 18 ff cc}
+; vputcell__g0o_0o_256x32u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 fd d7 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -106,11 +106,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d da 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd d7 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vputcell<int>(int src, int index, Vector256<int> dst)
-; vputcell__g0o_0o_256x32i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 bd d9 18 ff cc}
+; vputcell__g0o_0o_256x32i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 9d d7 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -128,11 +128,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd d9 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d d7 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vputcell<ulong>(ulong src, int index, Vector256<ulong> dst)
-; vputcell__g0o_0o_256x64u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 5d d9 18 ff cc}
+; vputcell__g0o_0o_256x64u[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 3d d7 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -150,11 +150,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d d9 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d d7 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vputcell<long>(long src, int index, Vector256<long> dst)
-; vputcell__g0o_0o_256x64i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 fd d8 18 ff cc}
+; vputcell__g0o_0o_256x64i[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 dd d6 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -172,11 +172,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd d8 18 ff}
+003eh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd d6 17 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vputcell<float>(float src, int index, Vector256<float> dst)
-; vputcell__g0o_0o_256x32f[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 9c d8 18 ff cc}
+; vputcell__g0o_0o_256x32f[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 7c d6 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -194,11 +194,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c d8 18 ff}
+003fh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c d6 17 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vputcell<double>(double src, int index, Vector256<double> dst)
-; vputcell__g0o_0o_256x64f[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 3c d8 18 ff cc}
+; vputcell__g0o_0o_256x64f[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 1c d6 17 ff cc}
 ; Capture completion code = INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -216,5 +216,5 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c63b2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c d8 18 ff}
+003fh call 7ff7c63a2a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c d6 17 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}

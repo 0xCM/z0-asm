@@ -11,7 +11,7 @@
 0011h mov eax,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 08 00 00 00}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int ntz(Int16 src)
+; int ntz(short src)
 ; ntz_16i[24] = {0f 1f 44 00 00 48 0f bf c1 85 c0 74 05 f3 0f bc c0 c3 b8 10 00 00 00 c3}
 ; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

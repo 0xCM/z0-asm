@@ -26,9 +26,9 @@ ushort identity<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664048, Name := T Z0.gmath::identity<T>(T)
-// Int16 identity<Int16>(Int16 a)
+// short identity<short>(short a)
 // AggressiveInlining
-Int16 identity<Int16>(Int16 a)
+short identity<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: ret

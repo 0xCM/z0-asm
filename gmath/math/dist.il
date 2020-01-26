@@ -39,9 +39,9 @@ ulong dist(sbyte a, sbyte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663357, Name := System.UInt64 Z0.math::dist(System.Int16,System.Int16)
-// ulong dist(Int16 a, Int16 b)
+// ulong dist(short a, short b)
 // AggressiveInlining
-ulong dist(Int16 a, Int16 b)
+ulong dist(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

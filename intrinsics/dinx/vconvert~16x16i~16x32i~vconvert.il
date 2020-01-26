@@ -1,7 +1,7 @@
 // Id := 100664747, Name := Z0.Vector512`1<System.Int32> Z0.dinx::vconvert(Z0.Block128`1<System.Int16>&,Z0.N512,System.Int32)
-// Vector512<int> vconvert(in Block128<Int16> src, N512 w, int t)
+// Vector512<int> vconvert(in Block128<short> src, N512 w, int t)
 // AggressiveInlining
-Vector512<int> vconvert(in Block128<Int16> src, N512 w, int t)
+Vector512<int> vconvert(in Block128<short> src, N512 w, int t)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Int16& Z0.Block128`1<System.Int16>::get_Head()

@@ -77,9 +77,9 @@ Vector128<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector128<ushort> a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664077, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> eval<Int16>(UnaryBitLogicKind:byte kind, Vector128<Int16> a)
+// Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
 // IL
-Vector128<Int16> eval<Int16>(UnaryBitLogicKind:byte kind, Vector128<Int16> a)
+Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
 {
     IL_0000: ldarg.0
     IL_0001: switch(IL_0026,IL_0018,IL_001F,IL_002D)

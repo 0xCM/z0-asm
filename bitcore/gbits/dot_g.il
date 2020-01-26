@@ -38,9 +38,9 @@ bit dot<ushort>(ushort x, ushort y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
-// bit dot<Int16>(Int16 x, Int16 y)
+// bit dot<short>(short x, short y)
 // AggressiveInlining
-bit dot<Int16>(Int16 x, Int16 y)
+bit dot<short>(short x, short y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

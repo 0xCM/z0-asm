@@ -23,9 +23,9 @@ byte cnonimpl(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663516, Name := System.Int16 Z0.math::cnonimpl(System.Int16,System.Int16)
-// Int16 cnonimpl(Int16 a, Int16 b)
+// short cnonimpl(short a, short b)
 // AggressiveInlining
-Int16 cnonimpl(Int16 a, Int16 b)
+short cnonimpl(short a, short b)
 {
     IL_0000: ldarg.1
     IL_0001: ldarg.0

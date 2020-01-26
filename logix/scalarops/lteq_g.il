@@ -35,9 +35,9 @@ ushort lteq<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664563, Name := T Z0.Logix.ScalarOps::lteq<T>(T,T)
-// Int16 lteq<Int16>(Int16 a, Int16 b)
+// short lteq<short>(short a, short b)
 // AggressiveInlining
-Int16 lteq<Int16>(Int16 a, Int16 b)
+short lteq<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

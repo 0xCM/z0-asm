@@ -50,9 +50,9 @@ ref Block256<ushort> vxornot<ushort>(in Block256<ushort> a, in Block256<ushort> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666814, Name := Z0.Block256`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vxornot<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,Z0.Block256`1<T>&)
-// ref Block256<Int16> vxornot<Int16>(in Block256<Int16> a, in Block256<Int16> b, in Block256<Int16> c)
+// ref Block256<short> vxornot<short>(in Block256<short> a, in Block256<short> b, in Block256<short> c)
 // AggressiveInlining
-ref Block256<Int16> vxornot<Int16>(in Block256<Int16> a, in Block256<Int16> b, in Block256<Int16> c)
+ref Block256<short> vxornot<short>(in Block256<short> a, in Block256<short> b, in Block256<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -35,9 +35,9 @@ ushort fma<ushort>(ushort x, ushort y, ushort z)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663969, Name := T Z0.gmath::fma<T>(T,T,T)
-// Int16 fma<Int16>(Int16 x, Int16 y, Int16 z)
+// short fma<short>(short x, short y, short z)
 // AggressiveInlining
-Int16 fma<Int16>(Int16 x, Int16 y, Int16 z)
+short fma<short>(short x, short y, short z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

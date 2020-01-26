@@ -251,9 +251,9 @@ Vector128<ushort> vblendv<ushort>(Vector128<ushort> x, Vector128<ushort> y, Vect
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665466, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vblendv<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vblendv<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<Int16> spec)
+// Vector128<short> vblendv<short>(Vector128<short> x, Vector128<short> y, Vector128<short> spec)
 // AggressiveInlining
-Vector128<Int16> vblendv<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<Int16> spec)
+Vector128<short> vblendv<short>(Vector128<short> x, Vector128<short> y, Vector128<short> spec)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

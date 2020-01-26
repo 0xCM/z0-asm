@@ -33,9 +33,9 @@ Vector256<sbyte> vconcat(Vector128<sbyte> lo, Vector128<sbyte> hi)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663688, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vconcat(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector256<Int16> vconcat(Vector128<Int16> lo, Vector128<Int16> hi)
+// Vector256<short> vconcat(Vector128<short> lo, Vector128<short> hi)
 // AggressiveInlining
-Vector256<Int16> vconcat(Vector128<Int16> lo, Vector128<Int16> hi)
+Vector256<short> vconcat(Vector128<short> lo, Vector128<short> hi)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<System.Int16>

@@ -47,9 +47,9 @@ Span<ushort> and<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<us
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664168, Name := System.Span`1<T> Z0.mathspan::and<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
-// Span<Int16> and<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<Int16> dst)
+// Span<short> and<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 // AggressiveInlining
-Span<Int16> and<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<Int16> dst)
+Span<short> and<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

@@ -29,9 +29,9 @@ ushort negate<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664575, Name := T Z0.Logix.ScalarOps::negate<T>(T)
-// Int16 negate<Int16>(Int16 a)
+// short negate<short>(short a)
 // AggressiveInlining
-Int16 negate<Int16>(Int16 a)
+short negate<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call T Z0.gmath::negate<T>(T)

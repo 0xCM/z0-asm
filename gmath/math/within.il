@@ -33,9 +33,9 @@ bit within(byte a, byte b, byte tolerance)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663770, Name := Z0.bit Z0.math::within(System.Int16,System.Int16,System.Int16)
-// bit within(Int16 a, Int16 b, Int16 tolerance)
+// bit within(short a, short b, short tolerance)
 // AggressiveInlining
-bit within(Int16 a, Int16 b, Int16 tolerance)
+bit within(short a, short b, short tolerance)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

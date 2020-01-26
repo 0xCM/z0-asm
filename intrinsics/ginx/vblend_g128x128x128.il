@@ -35,9 +35,9 @@ Vector128<ushort> vblend<ushort>(Vector128<ushort> x, Vector128<ushort> y, Vecto
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665454, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vblend<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<Int16> vblend<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<byte> spec)
+// Vector128<short> vblend<short>(Vector128<short> x, Vector128<short> y, Vector128<byte> spec)
 // AggressiveInlining
-Vector128<Int16> vblend<Int16>(Vector128<Int16> x, Vector128<Int16> y, Vector128<byte> spec)
+Vector128<short> vblend<short>(Vector128<short> x, Vector128<short> y, Vector128<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

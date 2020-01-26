@@ -98,7 +98,7 @@
 0051h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<Int16> cnonimpl<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<Int16> dst)
+; Span<short> cnonimpl<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 ; cnonimpl_g16i[87] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 30 4d 63 da 4f 8d 1c 58 49 63 f2 48 0f bf 34 70 49 63 fa 48 0f bf 3c 7a 48 0f bf f6 c4 e2 40 f2 f6 48 0f bf f6 66 41 89 33 41 ff c2 45 3b d1 7c d0 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

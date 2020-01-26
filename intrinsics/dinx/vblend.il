@@ -24,9 +24,9 @@ Vector128<sbyte> vblend(Vector128<sbyte> x, Vector128<sbyte> y, Vector128<byte> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664514, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vblend(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<Int16> vblend(Vector128<Int16> x, Vector128<Int16> y, Vector128<byte> spec)
+// Vector128<short> vblend(Vector128<short> x, Vector128<short> y, Vector128<byte> spec)
 // AggressiveInlining
-Vector128<Int16> vblend(Vector128<Int16> x, Vector128<Int16> y, Vector128<byte> spec)
+Vector128<short> vblend(Vector128<short> x, Vector128<short> y, Vector128<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -127,9 +127,9 @@ Vector256<sbyte> vblend(Vector256<sbyte> x, Vector256<sbyte> y, Vector256<byte> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664522, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vblend(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
-// Vector256<Int16> vblend(Vector256<Int16> x, Vector256<Int16> y, Vector256<byte> spec)
+// Vector256<short> vblend(Vector256<short> x, Vector256<short> y, Vector256<byte> spec)
 // AggressiveInlining
-Vector256<Int16> vblend(Vector256<Int16> x, Vector256<Int16> y, Vector256<byte> spec)
+Vector256<short> vblend(Vector256<short> x, Vector256<short> y, Vector256<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

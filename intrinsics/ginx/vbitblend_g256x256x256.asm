@@ -50,7 +50,7 @@
 002ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vbitblend<Int16>(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> mask)
+; Vector256<short> vbitblend<short>(Vector256<short> x, Vector256<short> y, Vector256<short> mask)
 ; vbitblend_g256x16i[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd ef c1 c4 c1 7d 10 09 c5 fd db c1 c5 fd 10 0a c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

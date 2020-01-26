@@ -29,9 +29,9 @@ Vector256<ushort> negate<ushort>(Vector256<ushort> a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664272, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::negate<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> negate<Int16>(Vector256<Int16> a)
+// Vector256<short> negate<short>(Vector256<short> a)
 // AggressiveInlining
-Vector256<Int16> negate<Int16>(Vector256<Int16> a)
+Vector256<short> negate<short>(Vector256<short> a)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vnegate<T>(System.Runtime.Intrinsics.Vector256`1<T>)

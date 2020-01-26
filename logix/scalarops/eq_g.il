@@ -35,9 +35,9 @@ ushort equals<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664560, Name := T Z0.Logix.ScalarOps::equals<T>(T,T)
-// Int16 equals<Int16>(Int16 a, Int16 b)
+// short equals<short>(short a, short b)
 // AggressiveInlining
-Int16 equals<Int16>(Int16 a, Int16 b)
+short equals<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

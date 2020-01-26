@@ -82,7 +82,7 @@
 00a8h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 00ach ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vsrlv(Vector128<Int16> src, Vector128<Int16> counts)
+; Vector128<short> vsrlv(Vector128<short> src, Vector128<short> counts)
 ; vsrlv_128x16i[56] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 7d 23 c0 c4 c1 79 10 08 c4 e2 7d 23 c9 c4 e2 7d 45 c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 6b c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -283,7 +283,7 @@
 012ah add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 012eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vsrlv(Vector256<Int16> src, Vector256<Int16> counts)
+; Vector256<short> vsrlv(Vector256<short> src, Vector256<short> counts)
 ; vsrlv_256x16i[89] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 23 c9 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 c1 7d 10 10 c4 e3 7d 19 d3 00 c4 e2 7d 23 db c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c4 e2 75 45 cb c4 e2 7d 45 c2 c5 f5 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

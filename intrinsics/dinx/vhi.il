@@ -10,9 +10,9 @@ Vector128<byte> vhi(Vector256<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663708, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector128<Int16> vhi(Vector256<Int16> src)
+// Vector128<short> vhi(Vector256<short> src)
 // AggressiveInlining
-Vector128<Int16> vhi(Vector256<Int16> src)
+Vector128<short> vhi(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1
@@ -140,9 +140,9 @@ Vector128<byte> vhi(Vector128<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663698, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vhi(Vector128<Int16> src)
+// Vector128<short> vhi(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vhi(Vector128<Int16> src)
+Vector128<short> vhi(Vector128<short> src)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldarg.0

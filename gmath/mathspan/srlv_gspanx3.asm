@@ -91,7 +91,7 @@
 0048h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<Int16> srlv<Int16>(ReadOnlySpan<Int16> src, ReadOnlySpan<Int16> counts, Span<Int16> dst)
+; Span<short> srlv<short>(ReadOnlySpan<short> src, ReadOnlySpan<short> counts, Span<short> dst)
 ; srlv_g16i[77] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 4d 8b 00 45 33 db 45 85 c9 7e 29 49 63 cb 49 8d 34 4a 48 0f bf 3c 4a 49 0f bf 0c 48 0f b6 c9 48 0f bf ff d3 ef 48 0f bf cf 66 89 0e 41 ff c3 45 3b d9 7c d7 4c 89 10 44 89 48 08 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

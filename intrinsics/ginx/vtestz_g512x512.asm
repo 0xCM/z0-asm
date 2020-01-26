@@ -71,7 +71,7 @@
 0039h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit vtestz<Int16>(in Vector512<Int16> src, in Vector512<Int16> mask)
+; bit vtestz<short>(in Vector512<short> src, in Vector512<short> mask)
 ; vtestz__g512x16i_512x16i[61] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 94 c0 0f b6 c0 85 c0 74 1b c5 fd 10 41 20 c5 fd 10 4a 20 c4 e2 7d 17 c1 0f 94 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

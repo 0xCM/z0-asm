@@ -178,7 +178,7 @@
 00afh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 00b3h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vgather<Int16>(ReadOnlySpan<Int16> src, Vector256<Int16> vidx)
+; Vector256<short> vgather<short>(ReadOnlySpan<short> src, Vector256<short> vidx)
 ; vgather__gspan0o_256x16i[180] = {50 c5 f8 77 90 48 8b 02 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 48 8b d0 c4 e2 7d 33 c0 c5 ed 76 d2 c4 e2 6d 90 1c 42 c4 e3 7d 19 d8 00 c4 e3 7d 19 da 01 c7 44 24 04 ff ff 00 00 48 8d 54 24 04 c4 e2 79 58 5c 24 04 c5 f9 db c3 c5 e9 db d3 c4 e2 79 2b c2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 e2 6d 90 1c 48 c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

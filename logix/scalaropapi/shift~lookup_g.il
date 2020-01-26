@@ -104,9 +104,9 @@ Shifter<ushort> lookup<ushort>(ShiftOpKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664047, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
-// Shifter<Int16> lookup<Int16>(ShiftOpKind:byte kind)
+// Shifter<short> lookup<short>(ShiftOpKind:byte kind)
 // IL
-Shifter<Int16> lookup<Int16>(ShiftOpKind:byte kind)
+Shifter<short> lookup<short>(ShiftOpKind:byte kind)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

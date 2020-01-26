@@ -32,9 +32,9 @@ Vector256<ushort> xnor<ushort>(Vector256<ushort> a, Vector256<ushort> b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664256, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::xnor<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> xnor<Int16>(Vector256<Int16> a, Vector256<Int16> b)
+// Vector256<short> xnor<short>(Vector256<short> a, Vector256<short> b)
 // AggressiveInlining
-Vector256<Int16> xnor<Int16>(Vector256<Int16> a, Vector256<Int16> b)
+Vector256<short> xnor<short>(Vector256<short> a, Vector256<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

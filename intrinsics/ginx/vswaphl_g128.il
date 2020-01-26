@@ -44,9 +44,9 @@ Vector128<ushort> vswaphl<ushort>(Vector128<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665263, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vswaphl<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vswaphl<Int16>(Vector128<Int16> x)
+// Vector128<short> vswaphl<short>(Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> vswaphl<Int16>(Vector128<Int16> x)
+Vector128<short> vswaphl<short>(Vector128<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.UInt64> zfunc::v64u<T>(System.Runtime.Intrinsics.Vector128`1<T>)

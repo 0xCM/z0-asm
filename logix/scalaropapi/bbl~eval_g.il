@@ -233,9 +233,9 @@ ushort eval<ushort>(BinaryBitLogicKind:byte kind, ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664042, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
-// Int16 eval<Int16>(BinaryBitLogicKind:byte kind, Int16 a, Int16 b)
+// short eval<short>(BinaryBitLogicKind:byte kind, short a, short b)
 // IL
-Int16 eval<Int16>(BinaryBitLogicKind:byte kind, Int16 a, Int16 b)
+short eval<short>(BinaryBitLogicKind:byte kind, short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: switch(IL_0053,IL_005B,IL_00C3,IL_008B,IL_00B3,IL_0093,IL_007B,IL_006B,IL_0073,IL_0083,IL_00A3,IL_00AB,IL_009B,IL_00BB,IL_0063,IL_004B)

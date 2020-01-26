@@ -29,9 +29,9 @@ Vector256<ushort> not<ushort>(Vector256<ushort> a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664250, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::not<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> not<Int16>(Vector256<Int16> a)
+// Vector256<short> not<short>(Vector256<short> a)
 // AggressiveInlining
-Vector256<Int16> not<Int16>(Vector256<Int16> a)
+Vector256<short> not<short>(Vector256<short> a)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vnot<T>(System.Runtime.Intrinsics.Vector256`1<T>)

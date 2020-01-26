@@ -27,9 +27,9 @@ byte min(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663736, Name := System.Int16 Z0.math::min(System.Int16,System.Int16)
-// Int16 min(Int16 a, Int16 b)
+// short min(short a, short b)
 // AggressiveInlining
-Int16 min(Int16 a, Int16 b)
+short min(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

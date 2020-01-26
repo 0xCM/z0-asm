@@ -1,7 +1,7 @@
 // Id := 100664882, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<byte> vpackus(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<byte> vpackus(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<byte> vpackus(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<byte> vpackus(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -119,9 +119,9 @@ Vector128<ushort> vpackus_alt(Vector128<uint> x, Vector128<uint> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664888, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<byte> vpackus(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<byte> vpackus(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<byte> vpackus(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<byte> vpackus(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

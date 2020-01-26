@@ -146,9 +146,9 @@ ref ushort parse<ushort>(ReadOnlySpan<Char> src, int offset, out ushort dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref Int16& parse<Int16>(ReadOnlySpan<Char> src, int offset, out Int16 dst)
+// ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
 // AggressiveInlining
-ref Int16& parse<Int16>(ReadOnlySpan<Char> src, int offset, out Int16 dst)
+ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src

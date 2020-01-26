@@ -83,9 +83,9 @@ Vector256<ushort> eval<ushort>(ComparisonKind:byte kind, Vector256<ushort> a, Ve
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> eval<Int16>(ComparisonKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+// Vector256<short> eval<short>(ComparisonKind:byte kind, Vector256<short> a, Vector256<short> b)
 // IL
-Vector256<Int16> eval<Int16>(ComparisonKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+Vector256<short> eval<short>(ComparisonKind:byte kind, Vector256<short> a, Vector256<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

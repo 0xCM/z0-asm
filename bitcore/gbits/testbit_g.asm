@@ -29,7 +29,7 @@
 000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testbit<Int16>(Int16 src, int pos)
+; bit testbit<short>(short src, int pos)
 ; testbit_g16i[19] = {0f 1f 44 00 00 48 0f bf c1 0f a3 d0 0f 92 c0 0f b6 c0 c3}
 ; Capture completion code = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

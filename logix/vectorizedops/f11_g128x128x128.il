@@ -32,9 +32,9 @@ Vector128<ushort> f11<ushort>(Vector128<ushort> a, Vector128<ushort> b, Vector12
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664229, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::f11<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> f11<Int16>(Vector128<Int16> a, Vector128<Int16> b, Vector128<Int16> c)
+// Vector128<short> f11<short>(Vector128<short> a, Vector128<short> b, Vector128<short> c)
 // AggressiveInlining
-Vector128<Int16> f11<Int16>(Vector128<Int16> a, Vector128<Int16> b, Vector128<Int16> c)
+Vector128<short> f11<short>(Vector128<short> a, Vector128<short> b, Vector128<short> c)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.1

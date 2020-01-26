@@ -74,9 +74,9 @@ uint pop<ushort>(ushort x0, ushort x1, ushort x2, ushort x3, ushort x4, ushort x
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663656, Name := System.UInt32 Z0.gbits::pop<T>(T,T,T,T,T,T,T,T)
-// uint pop<Int16>(Int16 x0, Int16 x1, Int16 x2, Int16 x3, Int16 x4, Int16 x5, Int16 x6, Int16 x7)
+// uint pop<short>(short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7)
 // AggressiveInlining
-uint pop<Int16>(Int16 x0, Int16 x1, Int16 x2, Int16 x3, Int16 x4, Int16 x5, Int16 x6, Int16 x7)
+uint pop<short>(short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7)
 {
     IL_0000: ldarg.0
     IL_0001: call System.UInt64 zfunc::convert<T,System.UInt64>(T)

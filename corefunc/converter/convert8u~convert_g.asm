@@ -21,7 +21,7 @@
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 convert<Int16>(byte src)
+; short convert<short>(byte src)
 ; convert8u~convert_g8u[13] = {0f 1f 44 00 00 0f b6 c1 48 0f bf c0 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

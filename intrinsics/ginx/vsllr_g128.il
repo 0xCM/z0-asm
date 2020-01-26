@@ -32,9 +32,9 @@ Vector128<ushort> vsllr<ushort>(Vector128<ushort> x, ushort offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665384, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vsllr<T>(System.Runtime.Intrinsics.Vector128`1<T>,T)
-// Vector128<Int16> vsllr<Int16>(Vector128<Int16> x, Int16 offset)
+// Vector128<short> vsllr<short>(Vector128<short> x, short offset)
 // AggressiveInlining
-Vector128<Int16> vsllr<Int16>(Vector128<Int16> x, Int16 offset)
+Vector128<short> vsllr<short>(Vector128<short> x, short offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

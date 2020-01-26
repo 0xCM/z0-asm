@@ -50,9 +50,9 @@ ref Block128<ushort> vxornot<ushort>(in Block128<ushort> a, in Block128<ushort> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666813, Name := Z0.Block128`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vxornot<T>(Z0.Block128`1<T>&,Z0.Block128`1<T>&,Z0.Block128`1<T>&)
-// ref Block128<Int16> vxornot<Int16>(in Block128<Int16> a, in Block128<Int16> b, in Block128<Int16> c)
+// ref Block128<short> vxornot<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c)
 // AggressiveInlining
-ref Block128<Int16> vxornot<Int16>(in Block128<Int16> a, in Block128<Int16> b, in Block128<Int16> c)
+ref Block128<short> vxornot<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

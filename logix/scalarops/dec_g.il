@@ -29,9 +29,9 @@ ushort dec<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664577, Name := T Z0.Logix.ScalarOps::dec<T>(T)
-// Int16 dec<Int16>(Int16 a)
+// short dec<short>(short a)
 // AggressiveInlining
-Int16 dec<Int16>(Int16 a)
+short dec<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call T Z0.gmath::dec<T>(T)

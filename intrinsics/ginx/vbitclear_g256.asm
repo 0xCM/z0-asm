@@ -83,7 +83,7 @@
 0054h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vbitclear<Int16>(Vector256<Int16> src, byte start, byte count)
+; Vector256<short> vbitclear<short>(Vector256<short> src, byte start, byte count)
 ; vbitclear__g256x16i_0o_0o[90] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

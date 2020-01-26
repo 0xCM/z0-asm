@@ -200,9 +200,9 @@ ushort pow<ushort>(ushort b, uint exp)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
-// Int16 pow<Int16>(Int16 b, uint exp)
+// short pow<short>(short b, uint exp)
 // AggressiveInlining
-Int16 pow<Int16>(Int16 b, uint exp)
+short pow<short>(short b, uint exp)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

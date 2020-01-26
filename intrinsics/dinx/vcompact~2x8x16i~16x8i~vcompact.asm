@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<sbyte> vcompact(Vector128<Int16> x, Vector128<Int16> y, N128 w, sbyte t)
+; Vector128<sbyte> vcompact(Vector128<short> x, Vector128<short> y, N128 w, sbyte t)
 ; vcompact~2x8x16i~16x8i~vcompact[26] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 63 c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

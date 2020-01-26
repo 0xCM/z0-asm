@@ -95,7 +95,7 @@
 001ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vnand(Vector128<Int16> x, Vector128<Int16> y)
+; Vector128<short> vnand(Vector128<short> x, Vector128<short> y)
 ; vnand_128x16i[30] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 db 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -213,7 +213,7 @@
 001dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vnand(Vector256<Int16> x, Vector256<Int16> y)
+; Vector256<short> vnand(Vector256<short> x, Vector256<short> y)
 ; vnand_256x16i[33] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d db 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

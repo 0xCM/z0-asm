@@ -71,9 +71,9 @@ byte pow(byte b, uint exp)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663466, Name := System.Int16 Z0.math::pow(System.Int16,System.UInt32)
-// Int16 pow(Int16 b, uint exp)
+// short pow(short b, uint exp)
 // AggressiveInlining
-Int16 pow(Int16 b, uint exp)
+short pow(short b, uint exp)
 {
     IL_0000: ldarg.1
     IL_0001: brtrue.s IL_0005

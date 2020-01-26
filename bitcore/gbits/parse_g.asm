@@ -107,7 +107,7 @@
 005bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Int16& parse<Int16>(ReadOnlySpan<Char> src, int offset, out Int16 dst)
+; ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
 ; parse_gspan0o_0o_0o[96] = {56 0f 1f 40 00 8b 41 08 83 f8 10 7f 02 eb 05 b8 10 00 00 00 ff c8 4c 8b 09 66 41 c7 00 00 00 45 33 d2 3b d0 7f 35 48 63 ca 66 41 83 3c 49 31 75 21 4d 0f bf 18 be 01 00 00 00 41 8b ca d3 e6 48 0f bf ce 41 0b cb 48 0f bf c9 48 0f bf c9 66 41 89 08 ff c2 41 ff c2 3b d0 7e cb 49 8b c0 5e c3}
 ; Capture completion code = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

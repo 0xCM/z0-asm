@@ -32,9 +32,9 @@ ushort srl<ushort>(ushort a, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
-// Int16 srl<Int16>(Int16 a, byte count)
+// short srl<short>(short a, byte count)
 // AggressiveInlining
-Int16 srl<Int16>(Int16 a, byte count)
+short srl<short>(short a, byte count)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

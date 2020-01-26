@@ -62,7 +62,7 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector512<Int16> vblendp<Int16>(Vector512<Int16> x, Vector256<Int16> spec)
+; Vector512<short> vblendp<short>(Vector512<short> x, Vector256<short> spec)
 ; vblendp__g512x16i_256x16i[68] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 10 4a 20 c5 fc 28 d0 c5 fc 28 d9 c4 c1 7d 10 20 c4 e3 6d 4c d3 40 c4 c1 7d 10 18 c5 e5 75 e3 c5 e5 ef dc c4 e3 7d 4c c1 30 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

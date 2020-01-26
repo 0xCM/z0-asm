@@ -57,9 +57,9 @@ sbyte abs<sbyte>(sbyte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663936, Name := T Z0.gmath::abs<T>(T)
-// Int16 abs<Int16>(Int16 src)
+// short abs<short>(short src)
 // AggressiveInlining
-Int16 abs<Int16>(Int16 src)
+short abs<short>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

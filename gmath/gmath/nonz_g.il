@@ -29,9 +29,9 @@ bit nonz<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664110, Name := Z0.bit Z0.gmath::nonz<T>(T)
-// bit nonz<Int16>(Int16 a)
+// bit nonz<short>(short a)
 // AggressiveInlining
-bit nonz<Int16>(Int16 a)
+bit nonz<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.bit Z0.gmath::nonz_u<T>(T)

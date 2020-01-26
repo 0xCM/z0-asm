@@ -44,9 +44,9 @@ Vector256<ushort> vones<ushort>(N256 n, ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666403, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
-// Vector256<Int16> vones<Int16>(N256 n, Int16 t)
+// Vector256<short> vones<short>(N256 n, short t)
 // AggressiveInlining
-Vector256<Int16> vones<Int16>(N256 n, Int16 t)
+Vector256<short> vones<short>(N256 n, short t)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>

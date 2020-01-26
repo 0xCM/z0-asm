@@ -35,9 +35,9 @@ bit vsame<ushort>(Vector128<ushort> x, Vector128<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665516, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// bit vsame<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+// bit vsame<short>(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-bit vsame<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+bit vsame<short>(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

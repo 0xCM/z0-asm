@@ -32,9 +32,9 @@ ushort cimpl<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
-// Int16 cimpl<Int16>(Int16 a, Int16 b)
+// short cimpl<short>(short a, short b)
 // AggressiveInlining
-Int16 cimpl<Int16>(Int16 a, Int16 b)
+short cimpl<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -38,9 +38,9 @@ Vector128<ushort> true<ushort>(Vector128<ushort> x, Vector128<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664180, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> true<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> true<short>(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> true<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> true<short>(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldloca.s V_0

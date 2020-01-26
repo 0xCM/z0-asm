@@ -59,7 +59,7 @@
 0029h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 modmul<Int16>(Int16 a, Int16 b, Int16 m)
+; short modmul<short>(short a, short b, short m)
 ; modmul_g16i[52] = {50 0f 1f 40 00 48 0f bf c1 48 0f bf d2 49 0f bf c8 48 63 c0 48 63 d2 48 0f af c2 48 63 c9 48 99 48 f7 f9 8b c2 89 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3}
 ; Capture completion code = RET_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

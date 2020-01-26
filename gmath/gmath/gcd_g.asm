@@ -66,7 +66,7 @@
 0020h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 gcd<Int16>(Int16 a, Int16 b)
+; short gcd<short>(short a, short b)
 ; gcd_g16i[65] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 48 0f bf c0 8b c8 c1 f9 0f 03 c1 33 c1 48 0f bf c0 8b ca c1 f9 0f 03 d1 33 d1 48 0f bf ca 85 c9 74 16 99 f7 f9 48 0f bf c2 8b d1 8b c8 85 c9 75 03 8b c2 c3}
 ; Capture completion code = ZEDx6_RET
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

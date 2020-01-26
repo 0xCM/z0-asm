@@ -29,9 +29,9 @@ bit odd<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663965, Name := Z0.bit Z0.gmath::odd<T>(T)
-// bit odd<Int16>(Int16 a)
+// bit odd<short>(short a)
 // AggressiveInlining
-bit odd<Int16>(Int16 a)
+bit odd<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.bit Z0.gmath::odd_u<T>(T)

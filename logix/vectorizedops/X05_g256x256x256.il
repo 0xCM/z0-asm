@@ -32,9 +32,9 @@ Vector256<ushort> f05<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vector25
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664286, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::f05<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> f05<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+// Vector256<short> f05<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 // AggressiveInlining
-Vector256<Int16> f05<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+Vector256<short> f05<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.0

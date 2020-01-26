@@ -104,9 +104,9 @@ Shifter<Vector256<ushort>> lookup<ushort>(N256 w, ShiftOpKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664094, Name := Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
-// Shifter<Vector256<Int16>> lookup<Int16>(N256 w, ShiftOpKind:byte kind)
+// Shifter<Vector256<short>> lookup<short>(N256 w, ShiftOpKind:byte kind)
 // IL
-Shifter<Vector256<Int16>> lookup<Int16>(N256 w, ShiftOpKind:byte kind)
+Shifter<Vector256<short>> lookup<short>(N256 w, ShiftOpKind:byte kind)
 {
     IL_0000: ldarg.1
     IL_0001: ldc.i4.1

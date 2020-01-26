@@ -1,8 +1,8 @@
-dec_g256x8u   c5 f8 77 66 90 c5 fd 10 02 48 b8 e9 55 af dd fa 01 00 00 c5 ff f0 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x8i   c5 f8 77 66 90 c5 fd 10 02 48 b8 e9 55 af dd fa 01 00 00 c5 ff f0 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x16u  c5 f8 77 66 90 c5 fd 10 02 48 b8 69 54 af dd fa 01 00 00 c5 ff f0 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x16i  c5 f8 77 66 90 c5 fd 10 02 48 b8 69 54 af dd fa 01 00 00 c5 ff f0 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x32u  c5 f8 77 66 90 c5 fd 10 02 48 b8 09 54 af dd fa 01 00 00 c5 ff f0 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x32i  c5 f8 77 66 90 c5 fd 10 02 48 b8 09 54 af dd fa 01 00 00 c5 ff f0 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x64u  c5 f8 77 66 90 c5 fd 10 02 48 b8 39 55 af dd fa 01 00 00 c5 ff f0 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-dec_g256x64i  c5 f8 77 66 90 c5 fd 10 02 48 b8 39 55 af dd fa 01 00 00 c5 ff f0 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x8u   c5 f8 77 66 90 c5 fd 10 02 48 b8 e9 55 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x8i   c5 f8 77 66 90 c5 fd 10 02 48 b8 e9 55 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x16u  c5 f8 77 66 90 c5 fd 10 02 48 b8 69 54 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x16i  c5 f8 77 66 90 c5 fd 10 02 48 b8 69 54 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x32u  c5 f8 77 66 90 c5 fd 10 02 48 b8 09 54 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x32i  c5 f8 77 66 90 c5 fd 10 02 48 b8 09 54 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x64u  c5 f8 77 66 90 c5 fd 10 02 48 b8 39 55 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+dec_g256x64i  c5 f8 77 66 90 c5 fd 10 02 48 b8 39 55 e3 b1 e3 01 00 00 c5 ff f0 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -29,7 +29,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 vmovelo<Int16>(Vector128<Int16> src)
+; short vmovelo<short>(Vector128<short> src)
 ; vmovelo__g128x16i[18] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 48 0f bf c0 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

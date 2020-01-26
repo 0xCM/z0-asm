@@ -18,7 +18,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f0d<sbyte>(sbyte a, sbyte b, sbyte c)
-; X0D_g8i[58] = {57 56 48 83 ec 28 8b f2 48 0f be c9 f7 d1 48 0f be f9 49 0f be c8 e8 75 92 ff ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
+; X0D_g8i[58] = {57 56 48 83 ec 28 8b f2 48 0f be c9 f7 d1 48 0f be f9 49 0f be c8 e8 85 92 ff ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -28,7 +28,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 0012h movsx rcx,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be c8}
-0016h call 7ff7c6ce65a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 92 ff ff}
+0016h call 7ff7c6cf7340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 92 ff ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -62,8 +62,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 f0d<Int16>(Int16 a, Int16 b, Int16 c)
-; X0D_g16i[58] = {57 56 48 83 ec 28 8b f2 48 0f bf c9 f7 d1 48 0f bf f9 49 0f bf c8 e8 e5 93 ff ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 0f bf d7 23 c2 48 0f bf c0 48 83 c4 28 5e 5f c3}
+; short f0d<short>(short a, short b, short c)
+; X0D_g16i[58] = {57 56 48 83 ec 28 8b f2 48 0f bf c9 f7 d1 48 0f bf f9 49 0f bf c8 e8 f5 93 ff ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 0f bf d7 23 c2 48 0f bf c0 48 83 c4 28 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -73,7 +73,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f9}
 0012h movsx rcx,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf c8}
-0016h call 7ff7c6ce67c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 93 ff ff}
+0016h call 7ff7c6cf7560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 93 ff ff}
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -99,7 +99,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f0d<int>(int a, int b, int c)
-; X0D_g32i[31] = {57 56 48 83 ec 28 8b f2 8b f9 f7 d7 41 8b c8 e8 fc 93 ff ff 0b c6 23 c7 48 83 c4 28 5e 5f c3}
+; X0D_g32i[31] = {57 56 48 83 ec 28 8b f2 8b f9 f7 d7 41 8b c8 e8 0c 94 ff ff 0b c6 23 c7 48 83 c4 28 5e 5f c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -108,7 +108,7 @@
 0008h mov edi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f9}
 000ah not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
 000ch mov ecx,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c8}
-000fh call 7ff7c6ce6860h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 93 ff ff}
+000fh call 7ff7c6cf7600h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c 94 ff ff}
 0014h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0016h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0018h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -129,7 +129,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f0d<long>(long a, long b, long c)
-; X0D_g64i[36] = {57 56 48 83 ec 28 48 8b f2 48 8b f9 48 f7 d7 49 8b c8 e8 29 94 ff ff 48 0b c6 48 23 c7 48 83 c4 28 5e 5f c3}
+; X0D_g64i[36] = {57 56 48 83 ec 28 48 8b f2 48 8b f9 48 f7 d7 49 8b c8 e8 39 94 ff ff 48 0b c6 48 23 c7 48 83 c4 28 5e 5f c3}
 ; Capture completion code = RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -138,7 +138,7 @@
 0009h mov rdi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f9}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
 000fh mov rcx,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c8}
-0012h call 7ff7c6ce6900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 94 ff ff}
+0012h call 7ff7c6cf76a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 94 ff ff}
 0017h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 001ah and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}

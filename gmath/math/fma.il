@@ -27,9 +27,9 @@ byte fma(byte x, byte y, byte z)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663381, Name := System.Int16 Z0.math::fma(System.Int16,System.Int16,System.Int16)
-// Int16 fma(Int16 x, Int16 y, Int16 z)
+// short fma(short x, short y, short z)
 // AggressiveInlining
-Int16 fma(Int16 x, Int16 y, Int16 z)
+short fma(short x, short y, short z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

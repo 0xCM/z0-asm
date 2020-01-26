@@ -248,9 +248,9 @@ Vector256<ushort> vincrements<ushort>(N256 w)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666397, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vincrements<T>(Z0.N256)
-// Vector256<Int16> vincrements<Int16>(N256 w)
+// Vector256<short> vincrements<short>(N256 w)
 // AggressiveInlining
-Vector256<Int16> vincrements<Int16>(N256 w)
+Vector256<short> vincrements<short>(N256 w)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

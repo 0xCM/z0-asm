@@ -100,7 +100,7 @@
 0053h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vgather<Int16>(ReadOnlySpan<Int16> src, Vector128<Int16> vidx)
+; Vector128<short> vgather<short>(ReadOnlySpan<short> src, Vector128<short> vidx)
 ; vgather__gspan0o_128x16i[88] = {50 c5 f8 77 90 48 8b 02 c4 c1 79 10 00 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 40 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

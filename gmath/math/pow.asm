@@ -47,7 +47,7 @@
 0038h jmp short 0014h                         ; JMP rel8 || EB cb || encoded[2]{eb da}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 pow(Int16 b, uint exp)
+; short pow(short b, uint exp)
 ; pow_16i[61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f bf c1 41 0f af c0 48 0f bf c0 d1 ea 85 d2 74 11 4c 0f bf c1 41 8b c8 41 0f af c8 48 0f bf c9 eb d8 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

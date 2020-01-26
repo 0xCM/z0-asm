@@ -27,9 +27,9 @@ bit vnonz(Vector128<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664634, Name := Z0.bit Z0.dinx::vnonz(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// bit vnonz(Vector128<Int16> src)
+// bit vnonz(Vector128<short> src)
 // AggressiveInlining
-bit vnonz(Vector128<Int16> src)
+bit vnonz(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0
@@ -167,9 +167,9 @@ bit vnonz(Vector256<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664644, Name := Z0.bit Z0.dinx::vnonz(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// bit vnonz(Vector256<Int16> src)
+// bit vnonz(Vector256<short> src)
 // AggressiveInlining
-bit vnonz(Vector256<Int16> src)
+bit vnonz(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

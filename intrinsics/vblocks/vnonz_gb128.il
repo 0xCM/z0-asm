@@ -119,9 +119,9 @@ Span<bit> vnonz<ushort>(in Block128<ushort> a, Span<bit> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666841, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block128`1<T>&,System.Span`1<Z0.bit>)
-// Span<bit> vnonz<Int16>(in Block128<Int16> a, Span<bit> dst)
+// Span<bit> vnonz<short>(in Block128<short> a, Span<bit> dst)
 // AggressiveInlining
-Span<bit> vnonz<Int16>(in Block128<Int16> a, Span<bit> dst)
+Span<bit> vnonz<short>(in Block128<short> a, Span<bit> dst)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldloca.s V_3

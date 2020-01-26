@@ -29,9 +29,9 @@ Vector128<ushort> vdec<ushort>(Vector128<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665141, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vdec<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vdec<Int16>(Vector128<Int16> src)
+// Vector128<short> vdec<short>(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vdec<Int16>(Vector128<Int16> src)
+Vector128<short> vdec<short>(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vdec_u<T>(System.Runtime.Intrinsics.Vector128`1<T>)

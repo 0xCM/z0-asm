@@ -191,9 +191,9 @@ Vector128<ushort> vhi<ushort>(Vector256<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665185, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vhi<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector128<Int16> vhi<Int16>(Vector256<Int16> src)
+// Vector128<short> vhi<short>(Vector256<short> src)
 // AggressiveInlining
-Vector128<Int16> vhi<Int16>(Vector256<Int16> src)
+Vector128<short> vhi<short>(Vector256<short> src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

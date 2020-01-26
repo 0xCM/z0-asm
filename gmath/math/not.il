@@ -51,9 +51,9 @@ byte not(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663556, Name := System.Int16 Z0.math::not(System.Int16)
-// Int16 not(Int16 src)
+// short not(short src)
 // AggressiveInlining
-Int16 not(Int16 src)
+short not(short src)
 {
     IL_0000: ldarg.0
     IL_0001: not

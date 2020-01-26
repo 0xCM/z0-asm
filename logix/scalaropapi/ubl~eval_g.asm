@@ -62,7 +62,7 @@
 0020h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 eval<Int16>(UnaryBitLogicKind:byte kind, Int16 a)
+; short eval<short>(UnaryBitLogicKind:byte kind, short a)
 ; ubl~eval_g8u[35] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 13 40 80 fe 02 75 20 48 0f bf c2 48 83 c4 28 5b 5d 5e 5f c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

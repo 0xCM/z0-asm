@@ -71,7 +71,7 @@
 003dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<Int16> not<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+; Span<short> not<short>(ReadOnlySpan<short> src, Span<short> dst)
 ; not_g16i[65] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1f 4d 63 d1 4e 8d 1c 52 4e 0f bf 14 50 41 f7 d2 4d 0f bf d2 66 45 89 13 41 ff c1 45 3b c8 7c e1 48 89 11 44 89 41 08 48 8b c1 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

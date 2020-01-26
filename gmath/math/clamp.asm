@@ -23,7 +23,7 @@
 0010h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 clamp(Int16 src, Int16 max)
+; short clamp(short src, short max)
 ; clamp_16i[21] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 7f 01 c3 8b c2 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

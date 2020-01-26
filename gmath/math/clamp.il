@@ -27,9 +27,9 @@ byte clamp(byte src, byte max)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663341, Name := System.Int16 Z0.math::clamp(System.Int16,System.Int16)
-// Int16 clamp(Int16 src, Int16 max)
+// short clamp(short src, short max)
 // AggressiveInlining
-Int16 clamp(Int16 src, Int16 max)
+short clamp(short src, short max)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

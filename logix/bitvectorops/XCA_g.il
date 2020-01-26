@@ -35,9 +35,9 @@ BitVector<ushort> select<ushort>(BitVector<ushort> x, BitVector<ushort> y, BitVe
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664159, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> select<Int16>(BitVector<Int16> x, BitVector<Int16> y, BitVector<Int16> z)
+// BitVector<short> select<short>(BitVector<short> x, BitVector<short> y, BitVector<short> z)
 // AggressiveInlining
-BitVector<Int16> select<Int16>(BitVector<Int16> x, BitVector<Int16> y, BitVector<Int16> z)
+BitVector<short> select<short>(BitVector<short> x, BitVector<short> y, BitVector<short> z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

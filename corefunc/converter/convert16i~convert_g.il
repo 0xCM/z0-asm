@@ -1,7 +1,7 @@
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// byte convert<byte>(Int16 src)
+// byte convert<byte>(short src)
 // AggressiveInlining
-byte convert<byte>(Int16 src)
+byte convert<byte>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -63,9 +63,9 @@ byte convert<byte>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// sbyte convert<sbyte>(Int16 src)
+// sbyte convert<sbyte>(short src)
 // AggressiveInlining
-sbyte convert<sbyte>(Int16 src)
+sbyte convert<sbyte>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -127,9 +127,9 @@ sbyte convert<sbyte>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// ushort convert<ushort>(Int16 src)
+// ushort convert<ushort>(short src)
 // AggressiveInlining
-ushort convert<ushort>(Int16 src)
+ushort convert<ushort>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -191,9 +191,9 @@ ushort convert<ushort>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// Int16 convert<Int16>(Int16 src)
+// short convert<short>(short src)
 // AggressiveInlining
-Int16 convert<Int16>(Int16 src)
+short convert<short>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -255,9 +255,9 @@ Int16 convert<Int16>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// uint convert<uint>(Int16 src)
+// uint convert<uint>(short src)
 // AggressiveInlining
-uint convert<uint>(Int16 src)
+uint convert<uint>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -319,9 +319,9 @@ uint convert<uint>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// int convert<int>(Int16 src)
+// int convert<int>(short src)
 // AggressiveInlining
-int convert<int>(Int16 src)
+int convert<int>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -383,9 +383,9 @@ int convert<int>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// ulong convert<ulong>(Int16 src)
+// ulong convert<ulong>(short src)
 // AggressiveInlining
-ulong convert<ulong>(Int16 src)
+ulong convert<ulong>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -447,9 +447,9 @@ ulong convert<ulong>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// long convert<long>(Int16 src)
+// long convert<long>(short src)
 // AggressiveInlining
-long convert<long>(Int16 src)
+long convert<long>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -511,9 +511,9 @@ long convert<long>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// float convert<float>(Int16 src)
+// float convert<float>(short src)
 // AggressiveInlining
-float convert<float>(Int16 src)
+float convert<float>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
@@ -575,9 +575,9 @@ float convert<float>(Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666401, Name := T Z0.Converter::convert<T>(System.Int16)
-// double convert<double>(Int16 src)
+// double convert<double>(short src)
 // AggressiveInlining
-double convert<double>(Int16 src)
+double convert<double>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

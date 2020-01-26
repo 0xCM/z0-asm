@@ -32,9 +32,9 @@ ref BitMatrix<ushort> identity<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ush
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664106, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::identity<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// ref BitMatrix<Int16> identity<Int16>(in BitMatrix<Int16> A, ref BitMatrix<Int16> Z)
+// ref BitMatrix<short> identity<short>(in BitMatrix<short> A, ref BitMatrix<short> Z)
 // AggressiveInlining
-ref BitMatrix<Int16> identity<Int16>(in BitMatrix<Int16> A, ref BitMatrix<Int16> Z)
+ref BitMatrix<short> identity<short>(in BitMatrix<short> A, ref BitMatrix<short> Z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

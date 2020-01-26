@@ -47,9 +47,9 @@ Span<bit> lt<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<bit> d
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664162, Name := System.Span`1<Z0.bit> Z0.mathspan::lt<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
-// Span<bit> lt<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<bit> dst)
+// Span<bit> lt<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> dst)
 // AggressiveInlining
-Span<bit> lt<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<bit> dst)
+Span<bit> lt<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> dst)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

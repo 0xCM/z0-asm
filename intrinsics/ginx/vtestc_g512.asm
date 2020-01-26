@@ -143,7 +143,7 @@
 009ch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit vtestc<Int16>(Vector512<Int16> src)
+; bit vtestc<short>(Vector512<short> src)
 ; vtestc__g512x16i[158] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 09 c5 fc 28 d0 c4 e2 7d 17 ca 0f 92 c0 0f b6 c0 85 c0 74 14 c5 fd 10 49 20 c4 e2 7d 17 c8 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

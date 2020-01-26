@@ -53,9 +53,9 @@ ref Block256<ushort> vselect<ushort>(in Block256<ushort> a, in Block256<ushort> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666816, Name := Z0.Block256`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vselect<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,Z0.Block256`1<T>&,Z0.Block256`1<T>&)
-// ref Block256<Int16> vselect<Int16>(in Block256<Int16> a, in Block256<Int16> b, in Block256<Int16> c, in Block256<Int16> dst)
+// ref Block256<short> vselect<short>(in Block256<short> a, in Block256<short> b, in Block256<short> c, in Block256<short> dst)
 // AggressiveInlining
-ref Block256<Int16> vselect<Int16>(in Block256<Int16> a, in Block256<Int16> b, in Block256<Int16> c, in Block256<Int16> dst)
+ref Block256<short> vselect<short>(in Block256<short> a, in Block256<short> b, in Block256<short> c, in Block256<short> dst)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

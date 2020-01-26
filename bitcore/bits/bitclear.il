@@ -71,9 +71,9 @@ ushort bitclear(ushort src, byte index, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663337, Name := System.Int16 Z0.Bits::bitclear(System.Int16,System.Byte,System.Byte)
-// Int16 bitclear(Int16 src, byte index, byte count)
+// short bitclear(short src, byte index, byte count)
 // AggressiveInlining
-Int16 bitclear(Int16 src, byte index, byte count)
+short bitclear(short src, byte index, byte count)
 {
     IL_0000: ldc.i4 65535
     IL_0005: ldarg.2

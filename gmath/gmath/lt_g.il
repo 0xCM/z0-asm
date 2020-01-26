@@ -32,9 +32,9 @@ bit lt<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664093, Name := Z0.bit Z0.gmath::lt<T>(T,T)
-// bit lt<Int16>(Int16 a, Int16 b)
+// bit lt<short>(short a, short b)
 // AggressiveInlining
-bit lt<Int16>(Int16 a, Int16 b)
+bit lt<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

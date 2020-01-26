@@ -77,7 +77,7 @@
 0044h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 dot<Int16>(ReadOnlySpan<Int16> lhs, ReadOnlySpan<Int16> rhs)
+; short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
 ; dot_g16i[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f bf 1c 51 4e 0f bf 14 52 4d 0f bf db 4d 0f bf db 4d 0f bf d2 45 0f af d3 45 03 c2 4d 0f bf c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

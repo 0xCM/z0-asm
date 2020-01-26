@@ -188,9 +188,9 @@ ushort clamp<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
-// Int16 clamp<Int16>(Int16 a, Int16 b)
+// short clamp<short>(short a, short b)
 // AggressiveInlining
-Int16 clamp<Int16>(Int16 a, Int16 b)
+short clamp<short>(short a, short b)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

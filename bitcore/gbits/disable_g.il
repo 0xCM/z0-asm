@@ -200,9 +200,9 @@ ushort disable<ushort>(ushort src, int pos)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663631, Name := T Z0.gbits::disable<T>(T,System.Int32)
-// Int16 disable<Int16>(Int16 src, int pos)
+// short disable<short>(short src, int pos)
 // AggressiveInlining
-Int16 disable<Int16>(Int16 src, int pos)
+short disable<short>(short src, int pos)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

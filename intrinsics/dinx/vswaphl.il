@@ -21,9 +21,9 @@ Vector128<byte> vswaphl(Vector128<byte> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663970, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vswaphl(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vswaphl(Vector128<Int16> x)
+// Vector128<short> vswaphl(Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> vswaphl(Vector128<Int16> x)
+Vector128<short> vswaphl(Vector128<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.s 78
@@ -100,9 +100,9 @@ Vector256<sbyte> vswaphl(Vector256<sbyte> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663978, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vswaphl(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vswaphl(Vector256<Int16> x)
+// Vector256<short> vswaphl(Vector256<short> x)
 // AggressiveInlining
-Vector256<Int16> vswaphl(Vector256<Int16> x)
+Vector256<short> vswaphl(Vector256<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

@@ -77,9 +77,9 @@ Vector256<ushort> eval<ushort>(BinaryArithmeticKind:byte kind, Vector256<ushort>
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664088, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryArithmeticKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> eval<Int16>(BinaryArithmeticKind:byte kind, Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> eval<short>(BinaryArithmeticKind:byte kind, Vector256<short> x, Vector256<short> y)
 // IL
-Vector256<Int16> eval<Int16>(BinaryArithmeticKind:byte kind, Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> eval<short>(BinaryArithmeticKind:byte kind, Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

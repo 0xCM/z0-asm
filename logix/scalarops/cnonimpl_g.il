@@ -32,9 +32,9 @@ ushort cnonimpl<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664558, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
-// Int16 cnonimpl<Int16>(Int16 a, Int16 b)
+// short cnonimpl<short>(short a, short b)
 // AggressiveInlining
-Int16 cnonimpl<Int16>(Int16 a, Int16 b)
+short cnonimpl<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -47,9 +47,9 @@ ref Block256<ushort> vnot<ushort>(in Block256<ushort> a, in Block256<ushort> c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666806, Name := Z0.Block256`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vnot<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&)
-// ref Block256<Int16> vnot<Int16>(in Block256<Int16> a, in Block256<Int16> c)
+// ref Block256<short> vnot<short>(in Block256<short> a, in Block256<short> c)
 // AggressiveInlining
-ref Block256<Int16> vnot<Int16>(in Block256<Int16> a, in Block256<Int16> c)
+ref Block256<short> vnot<short>(in Block256<short> a, in Block256<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

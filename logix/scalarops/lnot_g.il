@@ -32,9 +32,9 @@ ushort lnot<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664553, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
-// Int16 lnot<Int16>(Int16 a, Int16 b)
+// short lnot<short>(short a, short b)
 // AggressiveInlining
-Int16 lnot<Int16>(Int16 a, Int16 b)
+short lnot<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

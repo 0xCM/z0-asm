@@ -26,7 +26,7 @@
 000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitVector<Int16> false<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+; BitVector<short> false<short>(BitVector<short> x, BitVector<short> y)
 ; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
 ; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

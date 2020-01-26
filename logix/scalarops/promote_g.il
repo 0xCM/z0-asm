@@ -47,9 +47,9 @@ ushort promote<ushort>(bit src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664543, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
-// Int16 promote<Int16>(bit src)
+// short promote<short>(bit src)
 // AggressiveInlining
-Int16 promote<Int16>(bit src)
+short promote<short>(bit src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Boolean Z0.bit::op_Implicit(Z0.bit)

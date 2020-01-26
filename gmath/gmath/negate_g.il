@@ -29,9 +29,9 @@ ushort negate<ushort>(ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663992, Name := T Z0.gmath::negate<T>(T)
-// Int16 negate<Int16>(Int16 src)
+// short negate<short>(short src)
 // AggressiveInlining
-Int16 negate<Int16>(Int16 src)
+short negate<short>(short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T Z0.gmath::negate_u<T>(T)

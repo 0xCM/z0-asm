@@ -23,9 +23,9 @@ bit vtestznc(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664696, Name := Z0.bit Z0.dinx::vtestznc(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// bit vtestznc(Vector128<Int16> x, Vector128<Int16> y)
+// bit vtestznc(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-bit vtestznc(Vector128<Int16> x, Vector128<Int16> y)
+bit vtestznc(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -143,9 +143,9 @@ bit vtestznc(Vector256<byte> x, Vector256<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664706, Name := Z0.bit Z0.dinx::vtestznc(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// bit vtestznc(Vector256<Int16> x, Vector256<Int16> y)
+// bit vtestznc(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-bit vtestznc(Vector256<Int16> x, Vector256<Int16> y)
+bit vtestznc(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

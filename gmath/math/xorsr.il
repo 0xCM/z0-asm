@@ -23,9 +23,9 @@ sbyte xorsr(sbyte a, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663664, Name := System.Int16 Z0.math::xorsr(System.Int16,System.Byte)
-// Int16 xorsr(Int16 a, byte offset)
+// short xorsr(short a, byte offset)
 // AggressiveInlining
-Int16 xorsr(Int16 a, byte offset)
+short xorsr(short a, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -35,7 +35,7 @@
 005fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0060h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Block128<Int16> vabs<Int16>(in Block128<Int16> a, in Block128<Int16> c)
+; ref Block128<short> vabs<short>(in Block128<short> a, in Block128<short> c)
 ; vabs_gb128x16i_128x16i[93] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 36 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 03 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7b f0 02 c4 e2 79 1d c0 4c 8b d1 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c d0 48 8b c2 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

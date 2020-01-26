@@ -17,12 +17,12 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte rotl<sbyte>(sbyte a, byte count)
-; rotl_g8i[33] = {0f 1f 44 00 00 48 0f be c9 0f b6 d2 48 b8 20 9b ce c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
+; rotl_g8i[33] = {0f 1f 44 00 00 48 0f be c9 0f b6 d2 48 b8 a8 a8 cf c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
 ; Capture completion code = ZEDx6_000
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-000ch mov rax,7ff7c6ce9b20h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 20 9b ce c6 f7 7f 00 00}
+000ch mov rax,7ff7c6cfa8a8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 a8 a8 cf c6 f7 7f 00 00}
 0016h jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 0019h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 001bh add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -46,13 +46,13 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 rotl<Int16>(Int16 a, byte count)
-; rotl_g16i[33] = {0f 1f 44 00 00 48 0f bf c9 0f b6 d2 48 b8 30 9b ce c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
+; short rotl<short>(short a, byte count)
+; rotl_g16i[33] = {0f 1f 44 00 00 48 0f bf c9 0f b6 d2 48 b8 b8 a8 cf c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
 ; Capture completion code = ZEDx6_000
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-000ch mov rax,7ff7c6ce9b30h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 30 9b ce c6 f7 7f 00 00}
+000ch mov rax,7ff7c6cfa8b8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 b8 a8 cf c6 f7 7f 00 00}
 0016h jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 0019h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 001bh add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -69,11 +69,11 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int rotl<int>(int a, byte count)
-; rotl_g32i[29] = {0f 1f 44 00 00 0f b6 d2 48 b8 40 9b ce c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
+; rotl_g32i[29] = {0f 1f 44 00 00 0f b6 d2 48 b8 c8 a8 cf c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
 ; Capture completion code = ZEDx6_000
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-0008h mov rax,7ff7c6ce9b40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 40 9b ce c6 f7 7f 00 00}
+0008h mov rax,7ff7c6cfa8c8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 c8 a8 cf c6 f7 7f 00 00}
 0012h jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 0015h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0017h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -90,11 +90,11 @@
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long rotl<long>(long a, byte count)
-; rotl_g64i[29] = {0f 1f 44 00 00 0f b6 d2 48 b8 50 9b ce c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
+; rotl_g64i[29] = {0f 1f 44 00 00 0f b6 d2 48 b8 d8 a8 cf c6 f7 7f 00 00 48 ff e0 00 00 00 19 00 00 00 40}
 ; Capture completion code = ZEDx6_000
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-0008h mov rax,7ff7c6ce9b50h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 50 9b ce c6 f7 7f 00 00}
+0008h mov rax,7ff7c6cfa8d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 d8 a8 cf c6 f7 7f 00 00}
 0012h jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 0015h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0017h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}

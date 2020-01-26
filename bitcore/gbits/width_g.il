@@ -170,9 +170,9 @@ int width<ushort>(ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663699, Name := System.Int32 Z0.gbits::width<T>(T)
-// int width<Int16>(Int16 src)
+// int width<short>(short src)
 // AggressiveInlining
-int width<Int16>(Int16 src)
+int width<short>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

@@ -26,9 +26,9 @@ ushort minval<ushort>(ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663948, Name := T Z0.gmath::minval<T>(T)
-// Int16 minval<Int16>(Int16 t)
+// short minval<short>(short t)
 // AggressiveInlining
-Int16 minval<Int16>(Int16 t)
+short minval<short>(short t)
 {
     IL_0000: call T zfunc::minval<T>()
     IL_0005: ret

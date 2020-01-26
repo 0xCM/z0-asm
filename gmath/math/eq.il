@@ -23,9 +23,9 @@ bit eq(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663680, Name := Z0.bit Z0.math::eq(System.Int16,System.Int16)
-// bit eq(Int16 a, Int16 b)
+// bit eq(short a, short b)
 // AggressiveInlining
-bit eq(Int16 a, Int16 b)
+bit eq(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

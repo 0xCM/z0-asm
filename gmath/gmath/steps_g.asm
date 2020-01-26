@@ -77,7 +77,7 @@
 003bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void steps<Int16>(Int16 first, Int16 step, int count, ref Int16 dst)
+; void steps<short>(short first, short step, int count, ref short dst)
 ; steps_g16i[63] = {56 0f 1f 40 00 33 c0 45 85 c0 7e 31 48 0f bf d2 48 0f bf c9 4c 63 d0 4f 8d 14 51 4c 0f bf d8 8b f2 44 0f af de 4d 0f bf db 8b f1 44 03 de 4d 0f bf db 66 45 89 1a ff c0 41 3b c0 7c d7 5e c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

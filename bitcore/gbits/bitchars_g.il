@@ -35,9 +35,9 @@ Span<Char> bitchars<ushort>(Span<ushort> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663607, Name := System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<Char> bitchars<Int16>(Span<Int16> src, int maxlen)
+// Span<Char> bitchars<short>(Span<short> src, int maxlen)
 // AggressiveInlining
-Span<Char> bitchars<Int16>(Span<Int16> src, int maxlen)
+Span<Char> bitchars<short>(Span<short> src, int maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)

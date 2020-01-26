@@ -35,9 +35,9 @@ Vector128<ushort> nand<ushort>(Vector128<ushort> a, Vector128<ushort> b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664184, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::nand<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> nand<Int16>(Vector128<Int16> a, Vector128<Int16> b)
+// Vector128<short> nand<short>(Vector128<short> a, Vector128<short> b)
 // AggressiveInlining
-Vector128<Int16> nand<Int16>(Vector128<Int16> a, Vector128<Int16> b)
+Vector128<short> nand<short>(Vector128<short> a, Vector128<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

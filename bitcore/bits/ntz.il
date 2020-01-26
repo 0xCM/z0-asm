@@ -13,9 +13,9 @@ int ntz(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663437, Name := System.Int32 Z0.Bits::ntz(System.Int16)
-// int ntz(Int16 src)
+// int ntz(short src)
 // AggressiveInlining
-int ntz(Int16 src)
+int ntz(short src)
 {
     IL_0000: ldarg.0
     IL_0001: brfalse.s IL_000A

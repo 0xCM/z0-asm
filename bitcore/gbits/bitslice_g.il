@@ -35,9 +35,9 @@ ushort bitslice<ushort>(ushort a, byte start, byte length)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
-// Int16 bitslice<Int16>(Int16 a, byte start, byte length)
+// short bitslice<short>(short a, byte start, byte length)
 // AggressiveInlining
-Int16 bitslice<Int16>(Int16 a, byte start, byte length)
+short bitslice<short>(short a, byte start, byte length)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

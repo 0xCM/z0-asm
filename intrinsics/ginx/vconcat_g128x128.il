@@ -224,9 +224,9 @@ Vector256<ushort> vconcat<ushort>(Vector128<ushort> lo, Vector128<ushort> hi)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665181, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vconcat<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector256<Int16> vconcat<Int16>(Vector128<Int16> lo, Vector128<Int16> hi)
+// Vector256<short> vconcat<short>(Vector128<short> lo, Vector128<short> hi)
 // AggressiveInlining
-Vector256<Int16> vconcat<Int16>(Vector128<Int16> lo, Vector128<Int16> hi)
+Vector256<short> vconcat<short>(Vector128<short> lo, Vector128<short> hi)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

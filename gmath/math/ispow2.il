@@ -31,9 +31,9 @@ bit ispow2(byte x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663409, Name := Z0.bit Z0.math::ispow2(System.Int16)
-// bit ispow2(Int16 x)
+// bit ispow2(short x)
 // AggressiveInlining
-bit ispow2(Int16 x)
+bit ispow2(short x)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

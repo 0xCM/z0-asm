@@ -15,9 +15,9 @@ ref Block128<sbyte> vabs<sbyte>(in Block128<sbyte> a, in Block128<sbyte> c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666791, Name := Z0.Block128`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vabs<T>(Z0.Block128`1<T>&,Z0.Block128`1<T>&)
-// ref Block128<Int16> vabs<Int16>(in Block128<Int16> a, in Block128<Int16> c)
+// ref Block128<short> vabs<short>(in Block128<short> a, in Block128<short> c)
 // AggressiveInlining
-ref Block128<Int16> vabs<Int16>(in Block128<Int16> a, in Block128<Int16> c)
+ref Block128<short> vabs<short>(in Block128<short> a, in Block128<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -29,9 +29,9 @@ Vector256<byte> vmerge(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663745, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmerge(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector256<Int16> vmerge(Vector128<Int16> x, Vector128<Int16> y)
+// Vector256<short> vmerge(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector256<Int16> vmerge(Vector128<Int16> x, Vector128<Int16> y)
+Vector256<short> vmerge(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -179,9 +179,9 @@ Vector512<byte> vmerge(Vector256<byte> x, Vector256<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663753, Name := Z0.Vector512`1<System.Int16> Z0.dinx::vmerge(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector512<Int16> vmerge(Vector256<Int16> x, Vector256<Int16> y)
+// Vector512<short> vmerge(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector512<Int16> vmerge(Vector256<Int16> x, Vector256<Int16> y)
+Vector512<short> vmerge(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

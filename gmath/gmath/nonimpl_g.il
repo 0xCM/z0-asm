@@ -32,9 +32,9 @@ ushort nonimpl<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
-// Int16 nonimpl<Int16>(Int16 a, Int16 b)
+// short nonimpl<short>(short a, short b)
 // AggressiveInlining
-Int16 nonimpl<Int16>(Int16 a, Int16 b)
+short nonimpl<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

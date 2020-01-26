@@ -50,9 +50,9 @@ Span<ushort> select<ushort>(ReadOnlySpan<ushort> a, ReadOnlySpan<ushort> b, Read
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
-// Span<Int16> select<Int16>(ReadOnlySpan<Int16> a, ReadOnlySpan<Int16> b, ReadOnlySpan<Int16> c, Span<Int16> dst)
+// Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnlySpan<short> c, Span<short> dst)
 // AggressiveInlining
-Span<Int16> select<Int16>(ReadOnlySpan<Int16> a, ReadOnlySpan<Int16> b, ReadOnlySpan<Int16> c, Span<Int16> dst)
+Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnlySpan<short> c, Span<short> dst)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

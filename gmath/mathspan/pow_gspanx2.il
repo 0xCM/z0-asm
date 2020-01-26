@@ -113,9 +113,9 @@ Span<ushort> pow<ushort>(ReadOnlySpan<ushort> src, uint exp, Span<ushort> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
-// Span<Int16> pow<Int16>(ReadOnlySpan<Int16> src, uint exp, Span<Int16> dst)
+// Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
 // AggressiveInlining
-Span<Int16> pow<Int16>(ReadOnlySpan<Int16> src, uint exp, Span<Int16> dst)
+Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
 {
     IL_0000: ldarga.s dst
     IL_0002: call System.Int32 System.Span`1<T>::get_Length()

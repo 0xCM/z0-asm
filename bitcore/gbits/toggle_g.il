@@ -200,9 +200,9 @@ ushort toggle<ushort>(ushort src, int pos)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
-// Int16 toggle<Int16>(Int16 src, int pos)
+// short toggle<short>(short src, int pos)
 // AggressiveInlining
-Int16 toggle<Int16>(Int16 src, int pos)
+short toggle<short>(short src, int pos)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

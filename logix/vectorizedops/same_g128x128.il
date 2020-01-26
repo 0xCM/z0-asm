@@ -35,9 +35,9 @@ bit same<ushort>(Vector128<ushort> a, Vector128<ushort> b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664208, Name := Z0.bit Z0.Logix.VectorizedOps::same<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// bit same<Int16>(Vector128<Int16> a, Vector128<Int16> b)
+// bit same<short>(Vector128<short> a, Vector128<short> b)
 // AggressiveInlining
-bit same<Int16>(Vector128<Int16> a, Vector128<Int16> b)
+bit same<short>(Vector128<short> a, Vector128<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

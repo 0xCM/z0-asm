@@ -35,9 +35,9 @@ ushort xorsl(ushort a, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663657, Name := System.Int16 Z0.math::xorsl(System.Int16,System.Byte)
-// Int16 xorsl(Int16 a, byte offset)
+// short xorsl(short a, byte offset)
 // AggressiveInlining
-Int16 xorsl(Int16 a, byte offset)
+short xorsl(short a, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

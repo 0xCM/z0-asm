@@ -10,7 +10,7 @@
 0012h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vsign(Vector128<Int16> lhs, Vector128<Int16> rhs)
+; Vector128<short> vsign(Vector128<short> lhs, Vector128<short> rhs)
 ; vsign_128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 09 00 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -44,7 +44,7 @@
 0015h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vsign(Vector256<Int16> lhs, Vector256<Int16> rhs)
+; Vector256<short> vsign(Vector256<short> lhs, Vector256<short> rhs)
 ; vsign_256x16i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 09 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

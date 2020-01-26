@@ -32,9 +32,9 @@ bit eq<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664082, Name := Z0.bit Z0.gmath::eq<T>(T,T)
-// bit eq<Int16>(Int16 a, Int16 b)
+// bit eq<short>(short a, short b)
 // AggressiveInlining
-bit eq<Int16>(Int16 a, Int16 b)
+bit eq<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

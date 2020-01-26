@@ -23,7 +23,7 @@
 0018h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vblendv(Vector128<Int16> x, Vector128<Int16> y, Vector128<Int16> spec)
+; Vector128<short> vblendv(Vector128<short> x, Vector128<short> y, Vector128<short> spec)
 ; vblendv_128x16i[28] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 09 c4 c3 79 4c 00 10 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -145,7 +145,7 @@
 001bh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vblendv(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> spec)
+; Vector256<short> vblendv(Vector256<short> x, Vector256<short> y, Vector256<short> spec)
 ; vblendv_256x16i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 09 c4 c3 7d 4c 00 10 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

@@ -56,7 +56,7 @@
 0034h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> f19<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+; Vector256<short> f19<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 ; X19_g256x16i[56] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c4 c1 7d 10 08 c4 c1 7d 10 11 c5 f5 db ca c5 fd 10 12 c5 ed db c9 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

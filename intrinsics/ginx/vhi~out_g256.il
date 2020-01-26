@@ -38,9 +38,9 @@ void vhi<ushort>(Vector256<ushort> src, out ulong x0, out ulong x1)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665186, Name := System.Void Z0.ginx::vhi<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.UInt64&,System.UInt64&)
-// void vhi<Int16>(Vector256<Int16> src, out ulong x0, out ulong x1)
+// void vhi<short>(Vector256<short> src, out ulong x0, out ulong x1)
 // AggressiveInlining
-void vhi<Int16>(Vector256<Int16> src, out ulong x0, out ulong x1)
+void vhi<short>(Vector256<short> src, out ulong x0, out ulong x1)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<System.UInt64> zfunc::v64u<T>(System.Runtime.Intrinsics.Vector256`1<T>)

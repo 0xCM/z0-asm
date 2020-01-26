@@ -130,7 +130,7 @@
 0077h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pop<Int16>(Int16 x0, Int16 x1, Int16 x2, Int16 x3, Int16 x4, Int16 x5, Int16 x6, Int16 x7)
+; uint pop<short>(short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7)
 ; pop_g16i[148] = {56 0f 1f 40 00 48 0f bf c1 48 63 c0 48 0f bf d2 48 63 d2 49 0f bf c8 48 63 c9 4d 0f bf c1 4d 63 c0 44 8b 4c 24 30 4d 0f bf c9 4d 63 c9 44 8b 54 24 38 4d 0f bf d2 4d 63 d2 44 8b 5c 24 40 4d 0f bf db 4d 63 db 8b 74 24 48 48 0f bf f6 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
 ; Capture completion code = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

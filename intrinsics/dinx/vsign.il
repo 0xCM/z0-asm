@@ -10,9 +10,9 @@ Vector128<sbyte> vsign(Vector128<sbyte> lhs, Vector128<sbyte> rhs)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663593, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsign(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vsign(Vector128<Int16> lhs, Vector128<Int16> rhs)
+// Vector128<short> vsign(Vector128<short> lhs, Vector128<short> rhs)
 // AggressiveInlining
-Vector128<Int16> vsign(Vector128<Int16> lhs, Vector128<Int16> rhs)
+Vector128<short> vsign(Vector128<short> lhs, Vector128<short> rhs)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -43,9 +43,9 @@ Vector256<sbyte> vsign(Vector256<sbyte> lhs, Vector256<sbyte> rhs)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663596, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsign(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vsign(Vector256<Int16> lhs, Vector256<Int16> rhs)
+// Vector256<short> vsign(Vector256<short> lhs, Vector256<short> rhs)
 // AggressiveInlining
-Vector256<Int16> vsign(Vector256<Int16> lhs, Vector256<Int16> rhs)
+Vector256<short> vsign(Vector256<short> lhs, Vector256<short> rhs)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

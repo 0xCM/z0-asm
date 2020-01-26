@@ -47,9 +47,9 @@ Vector128<ushort> vshuf16x8<ushort>(Vector128<ushort> src, Vector128<byte> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665260, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vshuf16x8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<Int16> vshuf16x8<Int16>(Vector128<Int16> src, Vector128<byte> spec)
+// Vector128<short> vshuf16x8<short>(Vector128<short> src, Vector128<byte> spec)
 // AggressiveInlining
-Vector128<Int16> vshuf16x8<Int16>(Vector128<Int16> src, Vector128<byte> spec)
+Vector128<short> vshuf16x8<short>(Vector128<short> src, Vector128<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.Byte> zfunc::v8u<T>(System.Runtime.Intrinsics.Vector128`1<T>)

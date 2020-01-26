@@ -47,9 +47,9 @@ ref Block128<ushort> vinc<ushort>(in Block128<ushort> a, in Block128<ushort> c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666795, Name := Z0.Block128`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vinc<T>(Z0.Block128`1<T>&,Z0.Block128`1<T>&)
-// ref Block128<Int16> vinc<Int16>(in Block128<Int16> a, in Block128<Int16> c)
+// ref Block128<short> vinc<short>(in Block128<short> a, in Block128<short> c)
 // AggressiveInlining
-ref Block128<Int16> vinc<Int16>(in Block128<Int16> a, in Block128<Int16> c)
+ref Block128<short> vinc<short>(in Block128<short> a, in Block128<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -21,9 +21,9 @@ byte square(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663484, Name := System.Int16 Z0.math::square(System.Int16)
-// Int16 square(Int16 src)
+// short square(short src)
 // AggressiveInlining
-Int16 square(Int16 src)
+short square(short src)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

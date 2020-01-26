@@ -43,9 +43,9 @@ Vector128<sbyte> vsrlr(Vector128<sbyte> src, Vector128<sbyte> count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664387, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsrlr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vsrlr(Vector128<Int16> src, Vector128<Int16> count)
+// Vector128<short> vsrlr(Vector128<short> src, Vector128<short> count)
 // AggressiveInlining
-Vector128<Int16> vsrlr(Vector128<Int16> src, Vector128<Int16> count)
+Vector128<short> vsrlr(Vector128<short> src, Vector128<short> count)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -173,9 +173,9 @@ Vector256<byte> vsrlr(Vector256<byte> src, Vector128<byte> count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664395, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsrlr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector256<Int16> vsrlr(Vector256<Int16> src, Vector128<Int16> count)
+// Vector256<short> vsrlr(Vector256<short> src, Vector128<short> count)
 // AggressiveInlining
-Vector256<Int16> vsrlr(Vector256<Int16> src, Vector128<Int16> count)
+Vector256<short> vsrlr(Vector256<short> src, Vector128<short> count)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -265,9 +265,9 @@ Vector128<byte> vsrlr(Vector128<byte> src, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664403, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsrlr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Int16)
-// Vector128<Int16> vsrlr(Vector128<Int16> src, Int16 count)
+// Vector128<short> vsrlr(Vector128<short> src, short count)
 // AggressiveInlining
-Vector128<Int16> vsrlr(Vector128<Int16> src, Int16 count)
+Vector128<short> vsrlr(Vector128<short> src, short count)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N128 zfunc::get_n128()
@@ -369,9 +369,9 @@ Vector256<byte> vsrlr(Vector256<byte> src, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664411, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsrlr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Int16)
-// Vector256<Int16> vsrlr(Vector256<Int16> src, Int16 count)
+// Vector256<short> vsrlr(Vector256<short> src, short count)
 // AggressiveInlining
-Vector256<Int16> vsrlr(Vector256<Int16> src, Int16 count)
+Vector256<short> vsrlr(Vector256<short> src, short count)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N128 zfunc::get_n128()

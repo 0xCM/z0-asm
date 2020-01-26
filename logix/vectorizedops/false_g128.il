@@ -32,9 +32,9 @@ Vector128<ushort> false<ushort>(Vector128<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664175, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> false<Int16>(Vector128<Int16> x)
+// Vector128<short> false<short>(Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> false<Int16>(Vector128<Int16> x)
+Vector128<short> false<short>(Vector128<short> x)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>

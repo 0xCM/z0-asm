@@ -230,9 +230,9 @@ Vector128<ushort> vunits<ushort>(N128 w, ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666405, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vunits<T>(Z0.N128,T)
-// Vector128<Int16> vunits<Int16>(N128 w, Int16 t)
+// Vector128<short> vunits<short>(N128 w, short t)
 // AggressiveInlining
-Vector128<Int16> vunits<Int16>(N128 w, Int16 t)
+Vector128<short> vunits<short>(N128 w, short t)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

@@ -32,9 +32,9 @@ ref Vector128<ushort> vgeneric<ushort>(in Vector128<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665511, Name := System.Runtime.Intrinsics.Vector128`1<T>& Z0.As::vgeneric<T>(System.Runtime.Intrinsics.Vector128`1<System.Byte>&)
-// ref Vector128<Int16> vgeneric<Int16>(in Vector128<byte> src)
+// ref Vector128<short> vgeneric<short>(in Vector128<byte> src)
 // AggressiveInlining
-ref Vector128<Int16> vgeneric<Int16>(in Vector128<byte> src)
+ref Vector128<short> vgeneric<short>(in Vector128<byte> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.Byte>& zfunc::mutable<System.Runtime.Intrinsics.Vector128`1<System.Byte>>(System.Runtime.Intrinsics.Vector128`1<System.Byte>&)

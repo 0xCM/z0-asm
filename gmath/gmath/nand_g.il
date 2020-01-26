@@ -32,9 +32,9 @@ ushort nand<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664027, Name := T Z0.gmath::nand<T>(T,T)
-// Int16 nand<Int16>(Int16 a, Int16 b)
+// short nand<short>(short a, short b)
 // AggressiveInlining
-Int16 nand<Int16>(Int16 a, Int16 b)
+short nand<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

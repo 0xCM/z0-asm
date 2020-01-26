@@ -86,9 +86,9 @@ void decrements<ushort>(ushort first, int count, ref ushort dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664126, Name := System.Void Z0.gmath::decrements<T>(T,System.Int32,T&)
-// void decrements<Int16>(Int16 first, int count, ref Int16 dst)
+// void decrements<short>(short first, int count, ref short dst)
 // AggressiveInlining
-void decrements<Int16>(Int16 first, int count, ref Int16 dst)
+void decrements<short>(short first, int count, ref short dst)
 {
     IL_0000: ldc.i4.0
     IL_0001: stloc.0

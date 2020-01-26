@@ -191,9 +191,9 @@ ushort convert<ushort>(uint src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666417, Name := T Z0.Converter::convert<T>(System.UInt32)
-// Int16 convert<Int16>(uint src)
+// short convert<short>(uint src)
 // AggressiveInlining
-Int16 convert<Int16>(uint src)
+short convert<short>(uint src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

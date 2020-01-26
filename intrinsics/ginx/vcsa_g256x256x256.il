@@ -83,9 +83,9 @@ Vector512<ushort> vcsa<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vector2
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665139, Name := Z0.Vector512`1<T> Z0.ginx::vcsa<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector512<Int16> vcsa<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+// Vector512<short> vcsa<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 // AggressiveInlining
-Vector512<Int16> vcsa<Int16>(Vector256<Int16> a, Vector256<Int16> b, Vector256<Int16> c)
+Vector512<short> vcsa<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

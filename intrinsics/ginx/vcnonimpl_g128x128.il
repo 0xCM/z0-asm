@@ -32,9 +32,9 @@ Vector128<ushort> vcnonimpl<ushort>(Vector128<ushort> x, Vector128<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665286, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vcnonimpl<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vcnonimpl<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vcnonimpl<short>(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vcnonimpl<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vcnonimpl<short>(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -32,9 +32,9 @@ ulong dist<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663955, Name := System.UInt64 Z0.gmath::dist<T>(T,T)
-// ulong dist<Int16>(Int16 a, Int16 b)
+// ulong dist<short>(short a, short b)
 // AggressiveInlining
-ulong dist<Int16>(Int16 a, Int16 b)
+ulong dist<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -35,9 +35,9 @@ ref BitMatrix<ushort> nonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushor
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664134, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::nonimpl<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// ref BitMatrix<Int16> nonimpl<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+// ref BitMatrix<short> nonimpl<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 // AggressiveInlining
-ref BitMatrix<Int16> nonimpl<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+ref BitMatrix<short> nonimpl<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

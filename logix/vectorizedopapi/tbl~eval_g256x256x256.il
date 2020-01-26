@@ -44,9 +44,9 @@ Vector256<ushort> eval<ushort>(TernaryBitLogicKind:byte kind, Vector256<ushort> 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664084, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> eval<Int16>(TernaryBitLogicKind:byte kind, Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> z)
+// Vector256<short> eval<short>(TernaryBitLogicKind:byte kind, Vector256<short> x, Vector256<short> y, Vector256<short> z)
 // IL
-Vector256<Int16> eval<Int16>(TernaryBitLogicKind:byte kind, Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> z)
+Vector256<short> eval<short>(TernaryBitLogicKind:byte kind, Vector256<short> x, Vector256<short> y, Vector256<short> z)
 {
     IL_0000: call Z0.N256 zfunc::get_n256()
     IL_0005: ldarg.0

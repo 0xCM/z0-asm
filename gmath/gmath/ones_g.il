@@ -35,9 +35,9 @@ ushort ones<ushort>(ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663947, Name := T Z0.gmath::ones<T>(T)
-// Int16 ones<Int16>(Int16 t)
+// short ones<short>(short t)
 // AggressiveInlining
-Int16 ones<Int16>(Int16 t)
+short ones<short>(short t)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

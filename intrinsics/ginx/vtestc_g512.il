@@ -50,9 +50,9 @@ bit vtestc<ushort>(Vector512<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665524, Name := Z0.bit Z0.ginx::vtestc<T>(Z0.Vector512`1<T>)
-// bit vtestc<Int16>(Vector512<Int16> src)
+// bit vtestc<short>(Vector512<short> src)
 // AggressiveInlining
-bit vtestc<Int16>(Vector512<Int16> src)
+bit vtestc<short>(Vector512<short> src)
 {
     IL_0000: ldarga.s src
     IL_0002: call Z0.N512 zfunc::get_n512()

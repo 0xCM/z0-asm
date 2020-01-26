@@ -35,9 +35,9 @@ bit vsame<ushort>(in Vector512<ushort> x, in Vector512<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665518, Name := Z0.bit Z0.ginx::vsame<T>(Z0.Vector512`1<T>&,Z0.Vector512`1<T>&)
-// bit vsame<Int16>(in Vector512<Int16> x, in Vector512<Int16> y)
+// bit vsame<short>(in Vector512<short> x, in Vector512<short> y)
 // AggressiveInlining
-bit vsame<Int16>(in Vector512<Int16> x, in Vector512<Int16> y)
+bit vsame<short>(in Vector512<short> x, in Vector512<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

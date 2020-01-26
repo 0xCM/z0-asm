@@ -68,7 +68,7 @@
 0038h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 003bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 setnb<Int16>(Int16 src, byte pos, bit value)
+; short setnb<short>(short src, byte pos, bit value)
 ; setnb_g0o_0o_bit[57] = {0f 1f 44 00 00 8b c1 0f b6 ca 41 b9 01 00 00 00 41 d3 e1 49 0f bf c9 f7 d9 4c 0f bf c9 0f b6 ca 41 d3 e0 49 0f bf d0 48 0f bf c0 41 23 c1 48 0f bf c0 23 c2 48 0f bf c0 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

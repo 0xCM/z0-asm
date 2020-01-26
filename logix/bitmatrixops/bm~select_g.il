@@ -35,9 +35,9 @@ BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B,
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664141, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::select<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// BitMatrix<Int16> select<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, in BitMatrix<Int16> C)
+// BitMatrix<short> select<short>(in BitMatrix<short> A, in BitMatrix<short> B, in BitMatrix<short> C)
 // AggressiveInlining
-BitMatrix<Int16> select<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, in BitMatrix<Int16> C)
+BitMatrix<short> select<short>(in BitMatrix<short> A, in BitMatrix<short> B, in BitMatrix<short> C)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

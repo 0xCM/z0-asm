@@ -37,7 +37,7 @@
 0035h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vmerge(Vector128<Int16> x, Vector128<Int16> y)
+; Vector256<short> vmerge(Vector128<short> x, Vector128<short> y)
 ; vmerge_128x16i_128x16i[57] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f8 28 da c5 f1 61 cb c5 f9 69 c2 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -185,7 +185,7 @@
 002fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector512<Int16> vmerge(Vector256<Int16> x, Vector256<Int16> y)
+; Vector512<short> vmerge(Vector256<short> x, Vector256<short> y)
 ; vmerge_256x16i_256x16i[51] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 61 00 c5 fd 10 0a c4 c1 75 69 08 c4 e3 7d 46 d1 20 c4 e3 7d 46 c1 31 c5 fd 11 11 c5 fd 11 41 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

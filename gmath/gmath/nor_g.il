@@ -32,9 +32,9 @@ ushort nor<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664033, Name := T Z0.gmath::nor<T>(T,T)
-// Int16 nor<Int16>(Int16 a, Int16 b)
+// short nor<short>(short a, short b)
 // AggressiveInlining
-Int16 nor<Int16>(Int16 a, Int16 b)
+short nor<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

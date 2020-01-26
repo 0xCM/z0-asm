@@ -26,7 +26,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 convert<Int16>(double src)
+; short convert<short>(double src)
 ; convert64f~convert_g64f[18] = {c5 f8 77 66 90 c5 fb 2c c0 48 0f be c0 48 0f bf c0 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

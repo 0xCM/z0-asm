@@ -38,9 +38,9 @@ Vector256<ushort> vblend<ushort>(Vector256<ushort> x, Vector256<ushort> y, uint 
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665457, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vblend<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.UInt32)
-// Vector256<Int16> vblend<Int16>(Vector256<Int16> x, Vector256<Int16> y, uint spec)
+// Vector256<short> vblend<short>(Vector256<short> x, Vector256<short> y, uint spec)
 // AggressiveInlining
-Vector256<Int16> vblend<Int16>(Vector256<Int16> x, Vector256<Int16> y, uint spec)
+Vector256<short> vblend<short>(Vector256<short> x, Vector256<short> y, uint spec)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -104,7 +104,7 @@
 004ch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<Int16> div<Int16>(ReadOnlySpan<Int16> l, ReadOnlySpan<Int16> r, Span<Int16> dst)
+; Span<short> div<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 ; div_g16i[81] = {57 56 53 66 90 4c 8b 12 4d 8b 00 4d 8b 19 45 8b 49 08 33 f6 45 85 c9 7e 2a 48 63 c6 49 8d 3c 43 49 0f bf 14 42 49 0f bf 1c 40 48 0f bf c2 48 0f bf c0 99 f7 fb 48 0f bf c0 66 89 07 ff c6 41 3b f1 7c d6 4c 89 19 44 89 49 08 48 8b c1 5b 5e 5f c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}

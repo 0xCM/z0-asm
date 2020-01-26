@@ -21,9 +21,9 @@ Vector128<sbyte> vadd(Vector128<sbyte> x, Vector128<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663461, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vadd(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vadd(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vadd(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vadd(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vadd(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -109,9 +109,9 @@ Vector256<sbyte> vadd(Vector256<sbyte> x, Vector256<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663469, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vadd(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vadd(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vadd(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vadd(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vadd(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -215,9 +215,9 @@ Vector512<sbyte> vadd(in Vector512<sbyte> x, in Vector512<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663477, Name := Z0.Vector512`1<System.Int16> Z0.dinx::vadd(Z0.Vector512`1<System.Int16>,Z0.Vector512`1<System.Int16>&)
-// Vector512<Int16> vadd(Vector512<Int16> x, in Vector512<Int16> y)
+// Vector512<short> vadd(Vector512<short> x, in Vector512<short> y)
 // AggressiveInlining
-Vector512<Int16> vadd(Vector512<Int16> x, in Vector512<Int16> y)
+Vector512<short> vadd(Vector512<short> x, in Vector512<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldfld System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.Vector512`1<System.Int16>::Lo

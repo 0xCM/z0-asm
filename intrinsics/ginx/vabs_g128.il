@@ -68,9 +68,9 @@ Vector128<sbyte> vabs<sbyte>(Vector128<sbyte> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665127, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vabs<Int16>(Vector128<Int16> x)
+// Vector128<short> vabs<short>(Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> vabs<Int16>(Vector128<Int16> x)
+Vector128<short> vabs<short>(Vector128<short> x)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

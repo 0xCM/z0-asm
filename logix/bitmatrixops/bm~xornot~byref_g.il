@@ -35,9 +35,9 @@ ref BitMatrix<ushort> xornot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664140, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::xornot<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// ref BitMatrix<Int16> xornot<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+// ref BitMatrix<short> xornot<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 // AggressiveInlining
-ref BitMatrix<Int16> xornot<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B, ref BitMatrix<Int16> Z)
+ref BitMatrix<short> xornot<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

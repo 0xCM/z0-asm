@@ -23,9 +23,9 @@ bit nonzero(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663750, Name := Z0.bit Z0.math::nonzero(System.Int16)
-// bit nonzero(Int16 src)
+// bit nonzero(short src)
 // AggressiveInlining
-bit nonzero(Int16 src)
+bit nonzero(short src)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.0

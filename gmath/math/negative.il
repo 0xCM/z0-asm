@@ -11,9 +11,9 @@ bit negative(sbyte x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663743, Name := Z0.bit Z0.math::negative(System.Int16)
-// bit negative(Int16 x)
+// bit negative(short x)
 // AggressiveInlining
-bit negative(Int16 x)
+bit negative(short x)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.0

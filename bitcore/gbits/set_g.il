@@ -77,9 +77,9 @@ void set<ushort>(in Block256<ushort> src, int index, bit value)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663672, Name := System.Void Z0.gbits::set<T>(Z0.Block256`1<T>&,System.Int32,Z0.bit)
-// void set<Int16>(in Block256<Int16> src, int index, bit value)
+// void set<short>(in Block256<short> src, int index, bit value)
 // AggressiveInlining
-void set<Int16>(in Block256<Int16> src, int index, bit value)
+void set<short>(in Block256<short> src, int index, bit value)
 {
     IL_0000: ldarg.1
     IL_0001: call Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)

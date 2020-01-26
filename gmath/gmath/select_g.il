@@ -134,9 +134,9 @@ ushort select<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664049, Name := T Z0.gmath::select<T>(T,T,T)
-// Int16 select<Int16>(Int16 a, Int16 b, Int16 c)
+// short select<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 select<Int16>(Int16 a, Int16 b, Int16 c)
+short select<short>(short a, short b, short c)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

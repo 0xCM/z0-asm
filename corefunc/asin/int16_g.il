@@ -1,7 +1,7 @@
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<byte>(in byte src)
+// ref short int16<byte>(in byte src)
 // AggressiveInlining
-ref Int16& int16<byte>(in byte src)
+ref short int16<byte>(in byte src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -10,9 +10,9 @@ ref Int16& int16<byte>(in byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<sbyte>(in sbyte src)
+// ref short int16<sbyte>(in sbyte src)
 // AggressiveInlining
-ref Int16& int16<sbyte>(in sbyte src)
+ref short int16<sbyte>(in sbyte src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -21,9 +21,9 @@ ref Int16& int16<sbyte>(in sbyte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<ushort>(in ushort src)
+// ref short int16<ushort>(in ushort src)
 // AggressiveInlining
-ref Int16& int16<ushort>(in ushort src)
+ref short int16<ushort>(in ushort src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -32,9 +32,9 @@ ref Int16& int16<ushort>(in ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<Int16>(in Int16 src)
+// ref short int16<short>(in short src)
 // AggressiveInlining
-ref Int16& int16<Int16>(in Int16 src)
+ref short int16<short>(in short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -43,9 +43,9 @@ ref Int16& int16<Int16>(in Int16 src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<uint>(in uint src)
+// ref short int16<uint>(in uint src)
 // AggressiveInlining
-ref Int16& int16<uint>(in uint src)
+ref short int16<uint>(in uint src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -54,9 +54,9 @@ ref Int16& int16<uint>(in uint src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<int>(in int src)
+// ref short int16<int>(in int src)
 // AggressiveInlining
-ref Int16& int16<int>(in int src)
+ref short int16<int>(in int src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -65,9 +65,9 @@ ref Int16& int16<int>(in int src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<ulong>(in ulong src)
+// ref short int16<ulong>(in ulong src)
 // AggressiveInlining
-ref Int16& int16<ulong>(in ulong src)
+ref short int16<ulong>(in ulong src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -76,9 +76,9 @@ ref Int16& int16<ulong>(in ulong src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<long>(in long src)
+// ref short int16<long>(in long src)
 // AggressiveInlining
-ref Int16& int16<long>(in long src)
+ref short int16<long>(in long src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -87,9 +87,9 @@ ref Int16& int16<long>(in long src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<float>(in float src)
+// ref short int16<float>(in float src)
 // AggressiveInlining
-ref Int16& int16<float>(in float src)
+ref short int16<float>(in float src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)
@@ -98,9 +98,9 @@ ref Int16& int16<float>(in float src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
-// ref Int16& int16<double>(in double src)
+// ref short int16<double>(in double src)
 // AggressiveInlining
-ref Int16& int16<double>(in double src)
+ref short int16<double>(in double src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)

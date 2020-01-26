@@ -32,9 +32,9 @@ BitVector<ushort> false<ushort>(BitVector<ushort> x, BitVector<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664144, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::false<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> false<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+// BitVector<short> false<short>(BitVector<short> x, BitVector<short> y)
 // AggressiveInlining
-BitVector<Int16> false<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+BitVector<short> false<short>(BitVector<short> x, BitVector<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

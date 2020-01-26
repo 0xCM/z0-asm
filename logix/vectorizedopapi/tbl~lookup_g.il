@@ -371,9 +371,9 @@ TernaryOp<Vector256<ushort>> lookup<ushort>(N256 w, TernaryBitLogicKind:byte kin
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664098, Name := Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
-// TernaryOp<Vector256<Int16>> lookup<Int16>(N256 w, TernaryBitLogicKind:byte kind)
+// TernaryOp<Vector256<short>> lookup<short>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
-TernaryOp<Vector256<Int16>> lookup<Int16>(N256 w, TernaryBitLogicKind:byte kind)
+TernaryOp<Vector256<short>> lookup<short>(N256 w, TernaryBitLogicKind:byte kind)
 {
     IL_0000: ldarg.1
     IL_0001: ldc.i4.1

@@ -27,9 +27,9 @@ byte sar(byte src, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663620, Name := System.Int16 Z0.math::sar(System.Int16,System.Byte)
-// Int16 sar(Int16 src, byte offset)
+// short sar(short src, byte offset)
 // AggressiveInlining
-Int16 sar(Int16 src, byte offset)
+short sar(short src, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

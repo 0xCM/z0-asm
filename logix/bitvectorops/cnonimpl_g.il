@@ -32,9 +32,9 @@ BitVector<ushort> cnonimpl<ushort>(BitVector<ushort> x, BitVector<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664158, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::cnonimpl<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> cnonimpl<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+// BitVector<short> cnonimpl<short>(BitVector<short> x, BitVector<short> y)
 // AggressiveInlining
-BitVector<Int16> cnonimpl<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+BitVector<short> cnonimpl<short>(BitVector<short> x, BitVector<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

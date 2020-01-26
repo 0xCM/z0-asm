@@ -41,7 +41,7 @@
 001eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void vlo<Int16>(Vector256<Int16> src, out ulong x0, out ulong x1)
+; void vlo<short>(Vector256<short> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x16i_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

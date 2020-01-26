@@ -13,9 +13,9 @@ bit neq(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663688, Name := Z0.bit Z0.math::neq(System.Int16,System.Int16)
-// bit neq(Int16 a, Int16 b)
+// bit neq(short a, short b)
 // AggressiveInlining
-bit neq(Int16 a, Int16 b)
+bit neq(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

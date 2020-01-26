@@ -37,9 +37,9 @@ bit between(sbyte t, sbyte min, sbyte max)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663672, Name := Z0.bit Z0.math::between(System.Int16,System.Int16,System.Int16)
-// bit between(Int16 t, Int16 min, Int16 max)
+// bit between(short t, short min, short max)
 // AggressiveInlining
-bit between(Int16 t, Int16 min, Int16 max)
+bit between(short t, short min, short max)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

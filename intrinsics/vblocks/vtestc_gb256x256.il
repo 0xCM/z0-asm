@@ -128,9 +128,9 @@ Span<bit> vtestc<ushort>(in Block256<ushort> a, in Block256<ushort> b, Span<bit>
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666844, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
-// Span<bit> vtestc<Int16>(in Block256<Int16> a, in Block256<Int16> b, Span<bit> dst)
+// Span<bit> vtestc<short>(in Block256<short> a, in Block256<short> b, Span<bit> dst)
 // AggressiveInlining
-Span<bit> vtestc<Int16>(in Block256<Int16> a, in Block256<Int16> b, Span<bit> dst)
+Span<bit> vtestc<short>(in Block256<short> a, in Block256<short> b, Span<bit> dst)
 {
     IL_0000: call Z0.N256 zfunc::get_n256()
     IL_0005: ldloca.s V_3

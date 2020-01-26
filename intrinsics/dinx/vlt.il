@@ -36,9 +36,9 @@ Vector128<byte> vlt(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664586, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vlt(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vlt(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vlt(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vlt(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vlt(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -158,9 +158,9 @@ Vector256<byte> vlt(Vector256<byte> x, Vector256<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664594, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vlt(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vlt(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vlt(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vlt(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vlt(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

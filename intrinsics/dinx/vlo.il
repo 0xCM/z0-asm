@@ -21,9 +21,9 @@ Vector128<byte> vlo(Vector256<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663733, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vlo(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector128<Int16> vlo(Vector256<Int16> src)
+// Vector128<short> vlo(Vector256<short> src)
 // AggressiveInlining
-Vector128<Int16> vlo(Vector256<Int16> src)
+Vector128<short> vlo(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.0

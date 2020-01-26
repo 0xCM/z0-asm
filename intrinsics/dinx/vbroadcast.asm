@@ -110,7 +110,7 @@
 001ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vbroadcast(N128 n, Int16 src)
+; Vector128<short> vbroadcast(N128 n, short src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 79 44 24 18 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -208,7 +208,7 @@
 001dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vbroadcast(N256 n, Int16 src)
+; Vector256<short> vbroadcast(N256 n, short src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 79 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

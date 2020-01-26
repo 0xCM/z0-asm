@@ -29,9 +29,9 @@ ushort convert<ushort>(float src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666409, Name := T Z0.Converter::convert<T>(System.Single)
-// Int16 convert<Int16>(float src)
+// short convert<short>(float src)
 // AggressiveInlining
-Int16 convert<Int16>(float src)
+short convert<short>(float src)
 {
     IL_0000: ldarg.0
     IL_0001: call T Z0.Converter::convert_u<T>(System.Single)

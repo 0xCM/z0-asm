@@ -53,7 +53,7 @@
 002ch add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vsub<Int16>(Int16 a, Vector256<Int16> x)
+; Vector256<short> vsub<short>(short a, Vector256<short> x)
 ; vsub__g0o_256x16i[50] = {50 c5 f8 77 90 48 0f bf c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c4 c1 7d 10 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

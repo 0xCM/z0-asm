@@ -23,9 +23,9 @@ Vector128<sbyte> vreverse(Vector128<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663883, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vreverse(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vreverse(Vector128<Int16> src)
+// Vector128<short> vreverse(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vreverse(Vector128<Int16> src)
+Vector128<short> vreverse(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.s 27
@@ -118,9 +118,9 @@ Vector256<sbyte> vreverse(Vector256<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663891, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vreverse(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vreverse(Vector256<Int16> src)
+// Vector256<short> vreverse(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vreverse(Vector256<Int16> src)
+Vector256<short> vreverse(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int16>)

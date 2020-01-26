@@ -25,9 +25,9 @@ Vector128<byte> vnot(Vector128<byte> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664133, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vnot(Vector128<Int16> x)
+// Vector128<short> vnot(Vector128<short> x)
 // AggressiveInlining
-Vector128<Int16> vnot(Vector128<Int16> x)
+Vector128<short> vnot(Vector128<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0
@@ -127,9 +127,9 @@ Vector256<byte> vnot(Vector256<byte> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664141, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vnot(Vector256<Int16> x)
+// Vector256<short> vnot(Vector256<short> x)
 // AggressiveInlining
-Vector256<Int16> vnot(Vector256<Int16> x)
+Vector256<short> vnot(Vector256<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

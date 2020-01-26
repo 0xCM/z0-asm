@@ -32,9 +32,9 @@ BitMatrix<ushort> xor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664119, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::xor<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
-// BitMatrix<Int16> xor<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B)
+// BitMatrix<short> xor<short>(in BitMatrix<short> A, in BitMatrix<short> B)
 // AggressiveInlining
-BitMatrix<Int16> xor<Int16>(in BitMatrix<Int16> A, in BitMatrix<Int16> B)
+BitMatrix<short> xor<short>(in BitMatrix<short> A, in BitMatrix<short> B)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

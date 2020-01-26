@@ -221,9 +221,9 @@ BitVector<ushort> evalspec<ushort>(BinaryBitLogicKind:byte kind, BitVector<ushor
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664022, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> evalspec<Int16>(BinaryBitLogicKind:byte kind, BitVector<Int16> x, BitVector<Int16> y)
+// BitVector<short> evalspec<short>(BinaryBitLogicKind:byte kind, BitVector<short> x, BitVector<short> y)
 // IL
-BitVector<Int16> evalspec<Int16>(BinaryBitLogicKind:byte kind, BitVector<Int16> x, BitVector<Int16> y)
+BitVector<short> evalspec<short>(BinaryBitLogicKind:byte kind, BitVector<short> x, BitVector<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: switch(IL_0050,IL_0058,IL_00B4,IL_0088,IL_00A4,IL_008A,IL_0078,IL_0068,IL_0070,IL_0080,IL_0094,IL_009C,IL_008C,IL_00AC,IL_0060,IL_0048)

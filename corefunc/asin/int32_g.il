@@ -32,9 +32,9 @@ ref int int32<ushort>(in ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665614, Name := System.Int32& Z0.AsIn::int32<T>(T&)
-// ref int int32<Int16>(in Int16 src)
+// ref int int32<short>(in short src)
 // AggressiveInlining
-ref int int32<Int16>(in Int16 src)
+ref int int32<short>(in short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)

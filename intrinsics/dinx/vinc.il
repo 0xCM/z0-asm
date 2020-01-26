@@ -25,9 +25,9 @@ Vector128<byte> vinc(Vector128<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663533, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vinc(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vinc(Vector128<Int16> src)
+// Vector128<short> vinc(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vinc(Vector128<Int16> src)
+Vector128<short> vinc(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N128 zfunc::get_n128()
@@ -131,9 +131,9 @@ Vector256<byte> vinc(Vector256<byte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663541, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vinc(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vinc(Vector256<Int16> src)
+// Vector256<short> vinc(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vinc(Vector256<Int16> src)
+Vector256<short> vinc(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N256 zfunc::get_n256()

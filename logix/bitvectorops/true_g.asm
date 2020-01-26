@@ -26,7 +26,7 @@
 000dh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitVector<Int16> true<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+; BitVector<short> true<short>(BitVector<short> x, BitVector<short> y)
 ; true_g[19] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3}
 ; Capture completion code = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

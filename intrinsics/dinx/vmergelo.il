@@ -21,9 +21,9 @@ Vector128<byte> vmergelo(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663777, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmergelo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vmergelo(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vmergelo(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vmergelo(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vmergelo(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -117,9 +117,9 @@ Vector256<sbyte> vmergelo(Vector256<sbyte> x, Vector256<sbyte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663785, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmergelo(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vmergelo(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vmergelo(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vmergelo(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vmergelo(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4 216

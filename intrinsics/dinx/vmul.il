@@ -1,7 +1,7 @@
 // Id := 100663547, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
-// Vector256<Int16> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
+// Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
-Vector256<Int16> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
+Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N256 zfunc::get_n256()
@@ -37,9 +37,9 @@ Vector256<ushort> vmul(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663549, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector256<int> vmul(Vector128<Int16> x, Vector128<Int16> y)
+// Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector256<int> vmul(Vector128<Int16> x, Vector128<Int16> y)
+Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N256 zfunc::get_n256()
@@ -121,9 +121,9 @@ Vector256<ulong> vmul(Vector128<uint> x, Vector128<uint> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663553, Name := Z0.Vector512`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
-// Vector512<Int16> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
+// Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
-Vector512<Int16> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
+Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N512 zfunc::get_n512()
@@ -247,9 +247,9 @@ Vector512<uint> vmul(Vector256<ushort> x, Vector256<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663556, Name := Z0.Vector512`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector512<int> vmul(Vector256<Int16> x, Vector256<Int16> y)
+// Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector512<int> vmul(Vector256<Int16> x, Vector256<Int16> y)
+Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N512 zfunc::get_n512()

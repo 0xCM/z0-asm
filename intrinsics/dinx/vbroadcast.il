@@ -81,9 +81,9 @@ Vector128<byte> vbroadcast(N128 n, byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663632, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vbroadcast(Z0.N128,System.Int16)
-// Vector128<Int16> vbroadcast(N128 n, Int16 src)
+// Vector128<short> vbroadcast(N128 n, short src)
 // AggressiveInlining
-Vector128<Int16> vbroadcast(N128 n, Int16 src)
+Vector128<short> vbroadcast(N128 n, short src)
 {
     IL_0000: ldarga.s src
     IL_0002: conv.u
@@ -169,9 +169,9 @@ Vector256<byte> vbroadcast(N256 n, byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663640, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vbroadcast(Z0.N256,System.Int16)
-// Vector256<Int16> vbroadcast(N256 n, Int16 src)
+// Vector256<short> vbroadcast(N256 n, short src)
 // AggressiveInlining
-Vector256<Int16> vbroadcast(N256 n, Int16 src)
+Vector256<short> vbroadcast(N256 n, short src)
 {
     IL_0000: ldarga.s src
     IL_0002: conv.u

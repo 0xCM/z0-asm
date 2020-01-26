@@ -44,9 +44,9 @@ Span<ushort> square<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
-// Span<Int16> square<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+// Span<short> square<short>(ReadOnlySpan<short> src, Span<short> dst)
 // AggressiveInlining
-Span<Int16> square<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+Span<short> square<short>(ReadOnlySpan<short> src, Span<short> dst)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

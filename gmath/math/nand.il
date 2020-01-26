@@ -23,9 +23,9 @@ byte nand(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663532, Name := System.Int16 Z0.math::nand(System.Int16,System.Int16)
-// Int16 nand(Int16 a, Int16 b)
+// short nand(short a, short b)
 // AggressiveInlining
-Int16 nand(Int16 a, Int16 b)
+short nand(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

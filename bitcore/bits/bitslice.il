@@ -25,9 +25,9 @@ byte bitslice(byte src, byte start, byte length)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663347, Name := System.Int16 Z0.Bits::bitslice(System.Int16,System.Byte,System.Byte)
-// Int16 bitslice(Int16 src, byte start, byte length)
+// short bitslice(short src, byte start, byte length)
 // AggressiveInlining
-Int16 bitslice(Int16 src, byte start, byte length)
+short bitslice(short src, byte start, byte length)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -32,9 +32,9 @@ ref ulong uint64<ushort>(in ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665617, Name := System.UInt64& Z0.AsIn::uint64<T>(T&)
-// ref ulong uint64<Int16>(in Int16 src)
+// ref ulong uint64<short>(in short src)
 // AggressiveInlining
-ref ulong uint64<Int16>(in Int16 src)
+ref ulong uint64<short>(in short src)
 {
     IL_0000: ldarg.0
     IL_0001: call T& Z0.AsIn::asRef<T>(T&)

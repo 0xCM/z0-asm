@@ -44,9 +44,9 @@ bit vtestc<ushort>(Vector128<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665522, Name := Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>)
-// bit vtestc<Int16>(Vector128<Int16> src)
+// bit vtestc<short>(Vector128<short> src)
 // AggressiveInlining
-bit vtestc<Int16>(Vector128<Int16> src)
+bit vtestc<short>(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.N128 zfunc::get_n128()

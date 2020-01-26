@@ -65,9 +65,9 @@ Vector256<ushort> vblendp<ushort>(Vector256<ushort> x, Vector128<ushort> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665465, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vblendp<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector256<Int16> vblendp<Int16>(Vector256<Int16> x, Vector128<Int16> spec)
+// Vector256<short> vblendp<short>(Vector256<short> x, Vector128<short> spec)
 // AggressiveInlining
-Vector256<Int16> vblendp<Int16>(Vector256<Int16> x, Vector128<Int16> spec)
+Vector256<short> vblendp<short>(Vector256<short> x, Vector128<short> spec)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vlo<T>(System.Runtime.Intrinsics.Vector256`1<T>)

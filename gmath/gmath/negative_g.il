@@ -209,9 +209,9 @@ bit negative<ushort>(ushort src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
-// bit negative<Int16>(Int16 src)
+// bit negative<short>(short src)
 // AggressiveInlining
-bit negative<Int16>(Int16 src)
+bit negative<short>(short src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

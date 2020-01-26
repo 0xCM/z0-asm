@@ -23,9 +23,9 @@ byte sub(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663492, Name := System.Int16 Z0.math::sub(System.Int16,System.Int16)
-// Int16 sub(Int16 a, Int16 b)
+// short sub(short a, short b)
 // AggressiveInlining
-Int16 sub(Int16 a, Int16 b)
+short sub(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

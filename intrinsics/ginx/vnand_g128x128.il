@@ -200,9 +200,9 @@ Vector128<ushort> vnand<ushort>(Vector128<ushort> x, Vector128<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665298, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vnand<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vnand<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vnand<short>(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vnand<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vnand<short>(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

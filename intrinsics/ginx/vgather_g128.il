@@ -38,9 +38,9 @@ Vector128<ushort> vgather<ushort>(ReadOnlySpan<ushort> src, Vector128<ushort> vi
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665550, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vgather<T>(System.ReadOnlySpan`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
-// Vector128<Int16> vgather<Int16>(ReadOnlySpan<Int16> src, Vector128<Int16> vidx)
+// Vector128<short> vgather<short>(ReadOnlySpan<short> src, Vector128<short> vidx)
 // AggressiveInlining
-Vector128<Int16> vgather<Int16>(ReadOnlySpan<Int16> src, Vector128<Int16> vidx)
+Vector128<short> vgather<short>(ReadOnlySpan<short> src, Vector128<short> vidx)
 {
     IL_0000: call Z0.N128 zfunc::get_n128()
     IL_0005: ldarg.0

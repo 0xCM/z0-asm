@@ -32,9 +32,9 @@ ushort xors<ushort>(ushort a, byte offset)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
-// Int16 xors<Int16>(Int16 a, byte offset)
+// short xors<short>(short a, byte offset)
 // AggressiveInlining
-Int16 xors<Int16>(Int16 a, byte offset)
+short xors<short>(short a, byte offset)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

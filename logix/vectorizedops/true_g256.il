@@ -38,9 +38,9 @@ Vector256<ushort> true<ushort>(Vector256<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664244, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> true<Int16>(Vector256<Int16> x)
+// Vector256<short> true<short>(Vector256<short> x)
 // AggressiveInlining
-Vector256<Int16> true<Int16>(Vector256<Int16> x)
+Vector256<short> true<short>(Vector256<short> x)
 {
     IL_0000: call Z0.N256 zfunc::get_n256()
     IL_0005: ldloca.s V_0

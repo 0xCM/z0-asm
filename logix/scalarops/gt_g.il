@@ -35,9 +35,9 @@ ushort gt<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664564, Name := T Z0.Logix.ScalarOps::gt<T>(T,T)
-// Int16 gt<Int16>(Int16 a, Int16 b)
+// short gt<short>(short a, short b)
 // AggressiveInlining
-Int16 gt<Int16>(Int16 a, Int16 b)
+short gt<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

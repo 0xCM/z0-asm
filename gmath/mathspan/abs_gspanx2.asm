@@ -74,7 +74,7 @@
 0039h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Span<Int16> abs<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+; Span<short> abs<short>(ReadOnlySpan<short> src, Span<short> dst)
 ; abs_g16i[75] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 28 4d 63 d1 4e 8d 1c 52 4e 0f bf 14 50 41 8b f2 c1 fe 0f 44 03 d6 44 33 d6 4d 0f bf d2 66 45 89 13 41 ff c1 45 3b c8 7c d8 48 89 11 44 89 41 08 48 8b c1 5e c3}
 ; Capture completion code = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

@@ -23,7 +23,7 @@
 0009h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitVector<Int16> right<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+; BitVector<short> right<short>(BitVector<short> x, BitVector<short> y)
 ; rproject_g[14] = {0f 1f 44 00 00 89 4c 24 08 48 0f bf c2 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

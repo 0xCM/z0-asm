@@ -74,7 +74,7 @@
 0065h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0069h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector512<Int16> vgt<Int16>(in Vector512<Int16> x, in Vector512<Int16> y)
+; Vector512<short> vgt<short>(in Vector512<short> x, in Vector512<short> y)
 ; vgt__g512x16i_512x16i[49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 65 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 65 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

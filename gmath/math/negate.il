@@ -23,9 +23,9 @@ byte negate(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663456, Name := System.Int16 Z0.math::negate(System.Int16)
-// Int16 negate(Int16 src)
+// short negate(short src)
 // AggressiveInlining
-Int16 negate(Int16 src)
+short negate(short src)
 {
     IL_0000: ldarg.0
     IL_0001: neg

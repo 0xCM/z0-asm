@@ -62,7 +62,7 @@
 0045h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0048h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vblend<Int16>(Vector128<Int16> x, Vector128<Int16> y, ushort spec)
+; Vector128<short> vblend<short>(Vector128<short> x, Vector128<short> y, ushort spec)
 ; vblend__g128x16i_128x16i_0o[73] = {c5 f8 77 66 90 41 0f b7 c1 44 0f b6 c8 49 ba 80 80 80 80 80 80 80 80 c4 42 b3 f5 ca c4 c1 f9 6e c1 c1 e8 08 0f b6 c0 c4 c2 fb f5 c2 c4 e3 f9 22 c0 01 c5 f9 10 0a c4 c1 79 10 10 c4 e3 71 4c c2 00 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

@@ -50,7 +50,7 @@
 002dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vmerge<Int16>(Vector128<Int16> x, Vector128<Int16> y)
+; Vector256<short> vmerge<short>(Vector128<short> x, Vector128<short> y)
 ; vmerge__g128x16i_128x16i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 61 d1 c5 f9 69 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

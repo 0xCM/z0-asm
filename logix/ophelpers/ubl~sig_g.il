@@ -47,9 +47,9 @@ string sig<ushort>(UnaryBitLogicKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664515, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.UnaryBitLogicKind)
-// string sig<Int16>(UnaryBitLogicKind:byte kind)
+// string sig<short>(UnaryBitLogicKind:byte kind)
 // AggressiveInlining
-string sig<Int16>(UnaryBitLogicKind:byte kind)
+string sig<short>(UnaryBitLogicKind:byte kind)
 {
     IL_0000: ldstr "{0}:{1}"
     IL_0005: ldarg.0

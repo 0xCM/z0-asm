@@ -21,7 +21,7 @@
 0011h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit vtestc(Vector128<Int16> src, Vector128<Int16> mask)
+; bit vtestc(Vector128<short> src, Vector128<short> mask)
 ; vtestc_128x16i_128x16i[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -209,7 +209,7 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit vtestc(Vector256<Int16> src, Vector256<Int16> mask)
+; bit vtestc(Vector256<short> src, Vector256<short> mask)
 ; vtestc_256x16i_256x16i[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

@@ -22,9 +22,9 @@ Vector128<sbyte> vperm16x8(Vector128<sbyte> src, Vector128<byte> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663799, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vperm16x8(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<Int16> vperm16x8(Vector128<Int16> src, Vector128<byte> spec)
+// Vector128<short> vperm16x8(Vector128<short> src, Vector128<byte> spec)
 // AggressiveInlining
-Vector128<Int16> vperm16x8(Vector128<Int16> src, Vector128<byte> spec)
+Vector128<short> vperm16x8(Vector128<short> src, Vector128<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.Byte> zfunc::v8u<System.Int16>(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
@@ -123,9 +123,9 @@ Vector256<sbyte> vperm16x8(Vector256<sbyte> src, Vector256<byte> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663807, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vperm16x8(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
-// Vector256<Int16> vperm16x8(Vector256<Int16> src, Vector256<byte> spec)
+// Vector256<short> vperm16x8(Vector256<short> src, Vector256<byte> spec)
 // AggressiveInlining
-Vector256<Int16> vperm16x8(Vector256<Int16> src, Vector256<byte> spec)
+Vector256<short> vperm16x8(Vector256<short> src, Vector256<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<System.Byte> zfunc::v8u<System.Int16>(System.Runtime.Intrinsics.Vector256`1<System.Int16>)

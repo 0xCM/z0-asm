@@ -32,9 +32,9 @@ ushort rotl<ushort>(ushort a, byte count)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664569, Name := T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
-// Int16 rotl<Int16>(Int16 a, byte count)
+// short rotl<short>(short a, byte count)
 // AggressiveInlining
-Int16 rotl<Int16>(Int16 a, byte count)
+short rotl<short>(short a, byte count)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

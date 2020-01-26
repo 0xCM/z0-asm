@@ -32,9 +32,9 @@ Vector256<ushort> vsrlv<ushort>(Vector256<ushort> x, Vector256<ushort> counts)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665421, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vsrlv<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vsrlv<Int16>(Vector256<Int16> x, Vector256<Int16> counts)
+// Vector256<short> vsrlv<short>(Vector256<short> x, Vector256<short> counts)
 // AggressiveInlining
-Vector256<Int16> vsrlv<Int16>(Vector256<Int16> x, Vector256<Int16> counts)
+Vector256<short> vsrlv<short>(Vector256<short> x, Vector256<short> counts)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

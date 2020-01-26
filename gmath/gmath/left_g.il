@@ -26,9 +26,9 @@ ushort left<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664044, Name := T Z0.gmath::left<T>(T,T)
-// Int16 left<Int16>(Int16 a, Int16 b)
+// short left<short>(short a, short b)
 // AggressiveInlining
-Int16 left<Int16>(Int16 a, Int16 b)
+short left<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ret

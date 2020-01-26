@@ -32,9 +32,9 @@ Vector256<ushort> vperm16x8<ushort>(Vector256<ushort> src, Vector256<byte> spec)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665230, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vperm16x8<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
-// Vector256<Int16> vperm16x8<Int16>(Vector256<Int16> src, Vector256<byte> spec)
+// Vector256<short> vperm16x8<short>(Vector256<short> src, Vector256<byte> spec)
 // AggressiveInlining
-Vector256<Int16> vperm16x8<Int16>(Vector256<Int16> src, Vector256<byte> spec)
+Vector256<short> vperm16x8<short>(Vector256<short> src, Vector256<byte> spec)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

@@ -44,9 +44,9 @@ Span<ushort> inc<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664156, Name := System.Span`1<T> Z0.mathspan::inc<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
-// Span<Int16> inc<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+// Span<short> inc<short>(ReadOnlySpan<short> src, Span<short> dst)
 // AggressiveInlining
-Span<Int16> inc<Int16>(ReadOnlySpan<Int16> src, Span<Int16> dst)
+Span<short> inc<short>(ReadOnlySpan<short> src, Span<short> dst)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj T

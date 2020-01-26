@@ -32,9 +32,9 @@ ushort div<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
-// Int16 div<Int16>(Int16 a, Int16 b)
+// short div<short>(short a, short b)
 // AggressiveInlining
-Int16 div<Int16>(Int16 a, Int16 b)
+short div<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

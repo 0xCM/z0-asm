@@ -146,7 +146,7 @@
 007bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 007ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Block128<Int16> vselect<Int16>(in Block128<Int16> a, in Block128<Int16> b, in Block128<Int16> c, in Block128<Int16> dst)
+; ref Block128<short> vselect<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c, in Block128<short> dst)
 ; vselect_gb128x16i_128x16i_128x16i_128x16i[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
 ; Capture completion code = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

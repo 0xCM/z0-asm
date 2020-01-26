@@ -10,9 +10,9 @@ Vector128<sbyte> vabs(Vector128<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663452, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vabs(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vabs(Vector128<Int16> src)
+// Vector128<short> vabs(Vector128<short> src)
 // AggressiveInlining
-Vector128<Int16> vabs(Vector128<Int16> src)
+Vector128<short> vabs(Vector128<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.UInt16> System.Runtime.Intrinsics.X86.Ssse3::Abs(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
@@ -61,9 +61,9 @@ Vector256<sbyte> vabs(Vector256<sbyte> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663456, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vabs(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vabs(Vector256<Int16> src)
+// Vector256<short> vabs(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vabs(Vector256<Int16> src)
+Vector256<short> vabs(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> System.Runtime.Intrinsics.X86.Avx2::Abs(System.Runtime.Intrinsics.Vector256`1<System.Int16>)

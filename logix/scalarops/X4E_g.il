@@ -38,9 +38,9 @@ ushort f4e<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664657, Name := T Z0.Logix.ScalarOps::f4e<T>(T,T,T)
-// Int16 f4e<Int16>(Int16 a, Int16 b, Int16 c)
+// short f4e<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f4e<Int16>(Int16 a, Int16 b, Int16 c)
+short f4e<short>(short a, short b, short c)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.0

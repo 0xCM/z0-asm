@@ -23,9 +23,9 @@ byte or(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663564, Name := System.Int16 Z0.math::or(System.Int16,System.Int16)
-// Int16 or(Int16 a, Int16 b)
+// short or(short a, short b)
 // AggressiveInlining
-Int16 or(Int16 a, Int16 b)
+short or(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -119,9 +119,9 @@ byte or(byte a, byte b, byte c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663572, Name := System.Int16 Z0.math::or(System.Int16,System.Int16,System.Int16)
-// Int16 or(Int16 a, Int16 b, Int16 c)
+// short or(short a, short b, short c)
 // AggressiveInlining
-Int16 or(Int16 a, Int16 b, Int16 c)
+short or(short a, short b, short c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

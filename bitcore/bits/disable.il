@@ -37,9 +37,9 @@ byte disable(byte src, int pos)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663387, Name := System.Int16 Z0.Bits::disable(System.Int16,System.Int32)
-// Int16 disable(Int16 src, int pos)
+// short disable(short src, int pos)
 // AggressiveInlining
-Int16 disable(Int16 src, int pos)
+short disable(short src, int pos)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

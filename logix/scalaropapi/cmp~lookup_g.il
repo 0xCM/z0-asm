@@ -119,9 +119,9 @@ BinaryOp<ushort> lookup<ushort>(ComparisonKind:byte kind)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664048, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
-// BinaryOp<Int16> lookup<Int16>(ComparisonKind:byte kind)
+// BinaryOp<short> lookup<short>(ComparisonKind:byte kind)
 // IL
-BinaryOp<Int16> lookup<Int16>(ComparisonKind:byte kind)
+BinaryOp<short> lookup<short>(ComparisonKind:byte kind)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

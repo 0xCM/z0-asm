@@ -23,9 +23,9 @@ Vector128<byte> vcimpl(Vector128<byte> x, Vector128<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664029, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vcimpl(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vcimpl(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vcimpl(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vcimpl(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vcimpl(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
@@ -119,9 +119,9 @@ Vector256<byte> vcimpl(Vector256<byte> x, Vector256<byte> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664037, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vcimpl(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vcimpl(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vcimpl(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vcimpl(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vcimpl(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int16>)

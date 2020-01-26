@@ -47,7 +47,7 @@
 001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void increments<Int16>(int count, ref Int16 dst)
+; void increments<short>(int count, ref short dst)
 ; increments_g32i[33] = {0f 1f 44 00 00 33 c0 85 c9 7e 15 4c 63 c0 4e 8d 04 42 4c 0f bf c8 66 45 89 08 ff c0 3b c1 7c eb c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

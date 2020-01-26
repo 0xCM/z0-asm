@@ -32,9 +32,9 @@ BitVector<ushort> xnor<ushort>(BitVector<ushort> x, BitVector<ushort> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664150, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::xnor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
-// BitVector<Int16> xnor<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+// BitVector<short> xnor<short>(BitVector<short> x, BitVector<short> y)
 // AggressiveInlining
-BitVector<Int16> xnor<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+BitVector<short> xnor<short>(BitVector<short> x, BitVector<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

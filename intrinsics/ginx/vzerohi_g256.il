@@ -44,9 +44,9 @@ Vector256<ushort> vzerohi<ushort>(Vector256<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665272, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vzerohi<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vzerohi<Int16>(Vector256<Int16> src)
+// Vector256<short> vzerohi<short>(Vector256<short> src)
 // AggressiveInlining
-Vector256<Int16> vzerohi<Int16>(Vector256<Int16> src)
+Vector256<short> vzerohi<short>(Vector256<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vlo<T>(System.Runtime.Intrinsics.Vector256`1<T>)

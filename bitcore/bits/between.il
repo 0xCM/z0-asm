@@ -35,9 +35,9 @@ byte between(byte src, byte k0, byte k1)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663311, Name := System.Int16 Z0.Bits::between(System.Int16,System.Byte,System.Byte)
-// Int16 between(Int16 src, byte k0, byte k1)
+// short between(short src, byte k0, byte k1)
 // AggressiveInlining
-Int16 between(Int16 src, byte k0, byte k1)
+short between(short src, byte k0, byte k1)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

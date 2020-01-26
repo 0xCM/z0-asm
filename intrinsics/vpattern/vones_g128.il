@@ -44,9 +44,9 @@ Vector128<ushort> vones<ushort>(N128 n, ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666402, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
-// Vector128<Int16> vones<Int16>(N128 n, Int16 t)
+// Vector128<short> vones<short>(N128 n, short t)
 // AggressiveInlining
-Vector128<Int16> vones<Int16>(N128 n, Int16 t)
+Vector128<short> vones<short>(N128 n, short t)
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>

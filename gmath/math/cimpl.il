@@ -24,9 +24,9 @@ byte cimpl(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663508, Name := System.Int16 Z0.math::cimpl(System.Int16,System.Int16)
-// Int16 cimpl(Int16 a, Int16 b)
+// short cimpl(short a, short b)
 // AggressiveInlining
-Int16 cimpl(Int16 a, Int16 b)
+short cimpl(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Int16 Z0.math::not(System.Int16)

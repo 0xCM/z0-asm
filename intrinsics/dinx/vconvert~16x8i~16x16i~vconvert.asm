@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vconvert(in Block128<sbyte> src, N256 w, Int16 t)
+; Vector256<short> vconvert(in Block128<sbyte> src, N256 w, short t)
 ; vconvert~16x8i~16x16i~vconvert[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 20 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

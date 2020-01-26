@@ -32,9 +32,9 @@ ushort f22<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664613, Name := T Z0.Logix.ScalarOps::f22<T>(T,T,T)
-// Int16 f22<Int16>(Int16 a, Int16 b, Int16 c)
+// short f22<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f22<Int16>(Int16 a, Int16 b, Int16 c)
+short f22<short>(short a, short b, short c)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.1

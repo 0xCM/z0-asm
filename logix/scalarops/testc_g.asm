@@ -32,7 +32,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<Int16>(Int16 a)
+; bit testc<short>(short a)
 ; testc_g16i[24] = {0f 1f 44 00 00 48 0f bf c1 f3 0f b8 c0 48 83 f8 10 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

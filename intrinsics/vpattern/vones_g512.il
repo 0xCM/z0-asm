@@ -44,9 +44,9 @@ Vector512<ushort> vones<ushort>(N512 n, ushort t)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666404, Name := Z0.Vector512`1<T> Z0.VPattern::vones<T>(Z0.N512,T)
-// Vector512<Int16> vones<Int16>(N512 n, Int16 t)
+// Vector512<short> vones<short>(N512 n, short t)
 // AggressiveInlining
-Vector512<Int16> vones<Int16>(N512 n, Int16 t)
+Vector512<short> vones<short>(N512 n, short t)
 {
     IL_0000: ldloca.s V_0
     IL_0002: dup

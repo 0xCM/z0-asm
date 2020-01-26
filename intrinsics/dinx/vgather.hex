@@ -16,7 +16,7 @@ vgather_n256_0o_256x16u     50 c5 f8 77 90 c4 c1 7d 10 01 c4 e3 7d 19 c0 00 49 8
 vgather_n256_0o_256x64i     c5 f8 77 66 90 c4 c1 7d 10 01 c5 f5 76 c9 c4 c2 f5 91 14 c0 c5 fd 11 11 48 8b c1 c5 f8 77 c3
 vgather_n256_0o_256x64u     c5 f8 77 66 90 c4 c1 7d 10 01 c5 f5 76 c9 c4 c2 f5 91 14 c0 c5 fd 11 11 48 8b c1 c5 f8 77 c3
 vgather_n256_0o_128x32u     c5 f8 77 66 90 c4 c1 79 10 01 c5 f5 76 c9 c4 c2 f5 90 14 c0 c5 fd 11 11 48 8b c1 c5 f8 77 c3
-vgather_n256_0o_256x64i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 9e 95 1b ff 48 8b c6 48 83 c4 20 5e c3
-vgather_n256_0o_256x64i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 66 95 1b ff 48 8b c6 48 83 c4 20 5e c3
-vgather_n256_0o_128x32i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 f6 94 1b ff 48 8b c6 48 83 c4 20 5e c3
+vgather_n256_0o_256x64i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 ae 91 1a ff 48 8b c6 48 83 c4 20 5e c3
+vgather_n256_0o_256x64i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 76 91 1a ff 48 8b c6 48 83 c4 20 5e c3
+vgather_n256_0o_128x32i_0o  56 48 83 ec 20 48 8b f1 49 8b c1 48 8b ce 49 8b d0 44 8b 4c 24 50 45 0f b6 c9 4c 8b c0 e8 06 91 1a ff 48 8b c6 48 83 c4 20 5e c3
 vgather_n256_0o_256x32u     c5 f8 77 66 90 c4 c1 7d 10 01 c5 f5 76 c9 c4 c2 75 90 14 40 c5 fd 11 11 48 8b c1 c5 f8 77 c3

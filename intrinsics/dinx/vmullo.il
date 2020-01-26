@@ -1,7 +1,7 @@
 // Id := 100663566, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmullo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<Int16> vmullo(Vector128<Int16> x, Vector128<Int16> y)
+// Vector128<short> vmullo(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
-Vector128<Int16> vmullo(Vector128<Int16> x, Vector128<Int16> y)
+Vector128<short> vmullo(Vector128<short> x, Vector128<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -43,9 +43,9 @@ Vector128<uint> vmullo(Vector128<uint> x, Vector128<uint> y)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663570, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmullo(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<Int16> vmullo(Vector256<Int16> x, Vector256<Int16> y)
+// Vector256<short> vmullo(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
-Vector256<Int16> vmullo(Vector256<Int16> x, Vector256<Int16> y)
+Vector256<short> vmullo(Vector256<short> x, Vector256<short> y)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

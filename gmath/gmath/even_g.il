@@ -32,9 +32,9 @@ bit even<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663966, Name := Z0.bit Z0.gmath::even<T>(T)
-// bit even<Int16>(Int16 a)
+// bit even<short>(short a)
 // AggressiveInlining
-bit even<Int16>(Int16 a)
+bit even<short>(short a)
 {
     IL_0000: ldarg.0
     IL_0001: call Z0.bit Z0.gmath::odd<T>(T)

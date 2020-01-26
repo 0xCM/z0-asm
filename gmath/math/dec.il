@@ -27,9 +27,9 @@ byte dec(byte src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663349, Name := System.Int16 Z0.math::dec(System.Int16)
-// Int16 dec(Int16 src)
+// short dec(short src)
 // AggressiveInlining
-Int16 dec(Int16 src)
+short dec(short src)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.1

@@ -191,9 +191,9 @@ bit vnonz<ushort>(Vector256<ushort> src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665508, Name := Z0.bit Z0.ginx::vnonz<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// bit vnonz<Int16>(Vector256<Int16> src)
+// bit vnonz<short>(Vector256<short> src)
 // AggressiveInlining
-bit vnonz<Int16>(Vector256<Int16> src)
+bit vnonz<short>(Vector256<short> src)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)

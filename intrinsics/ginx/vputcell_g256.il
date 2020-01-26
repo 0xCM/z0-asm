@@ -35,9 +35,9 @@ Vector256<ushort> vputcell<ushort>(ushort src, int index, Vector256<ushort> dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665266, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vputcell<T>(T,System.Int32,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vputcell<Int16>(Int16 src, int index, Vector256<Int16> dst)
+// Vector256<short> vputcell<short>(short src, int index, Vector256<short> dst)
 // AggressiveInlining
-Vector256<Int16> vputcell<Int16>(Int16 src, int index, Vector256<Int16> dst)
+Vector256<short> vputcell<short>(short src, int index, Vector256<short> dst)
 {
     IL_0000: ldarg.2
     IL_0001: ldarg.1

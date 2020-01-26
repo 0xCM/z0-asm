@@ -41,9 +41,9 @@ ushort f2d<ushort>(ushort a, ushort b, ushort c)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664624, Name := T Z0.Logix.ScalarOps::f2d<T>(T,T,T)
-// Int16 f2d<Int16>(Int16 a, Int16 b, Int16 c)
+// short f2d<short>(short a, short b, short c)
 // AggressiveInlining
-Int16 f2d<Int16>(Int16 a, Int16 b, Int16 c)
+short f2d<short>(short a, short b, short c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

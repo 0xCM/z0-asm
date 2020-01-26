@@ -233,9 +233,9 @@ Vector256<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, Vector256<ushort> a
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664082, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> eval<Int16>(BinaryBitLogicKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+// Vector256<short> eval<short>(BinaryBitLogicKind:byte kind, Vector256<short> a, Vector256<short> b)
 // IL
-Vector256<Int16> eval<Int16>(BinaryBitLogicKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+Vector256<short> eval<short>(BinaryBitLogicKind:byte kind, Vector256<short> a, Vector256<short> b)
 {
     IL_0000: ldarg.0
     IL_0001: switch(IL_0053,IL_005B,IL_00C3,IL_008B,IL_00B3,IL_0093,IL_007B,IL_006B,IL_0073,IL_0083,IL_00A3,IL_00AB,IL_009B,IL_00BB,IL_0063,IL_004B)

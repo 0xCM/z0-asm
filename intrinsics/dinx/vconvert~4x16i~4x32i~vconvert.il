@@ -1,7 +1,7 @@
 // Id := 100664733, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vconvert(Z0.Block64`1<System.Int16>&,Z0.N128,System.Int32)
-// Vector128<int> vconvert(in Block64<Int16> src, N128 w, int t)
+// Vector128<int> vconvert(in Block64<short> src, N128 w, int t)
 // AggressiveInlining
-Vector128<int> vconvert(in Block64<Int16> src, N128 w, int t)
+Vector128<int> vconvert(in Block64<short> src, N128 w, int t)
 {
     IL_0000: ldarg.0
     IL_0001: call System.Int16& Z0.Block64`1<System.Int16>::get_Head()

@@ -29,7 +29,7 @@
 000eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Int16 convert<Int16>(float src)
+; short convert<short>(float src)
 ; convert32f~convert_g32f[22] = {c5 f8 77 66 90 c5 fa 5a c0 c5 fb 2c c0 48 0f be c0 48 0f bf c0 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

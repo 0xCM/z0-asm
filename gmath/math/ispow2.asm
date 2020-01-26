@@ -21,7 +21,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit ispow2(Int16 x)
+; bit ispow2(short x)
 ; ispow2_16i[21] = {0f 1f 44 00 00 48 0f bf c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3}
 ; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}

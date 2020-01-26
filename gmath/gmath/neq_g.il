@@ -32,9 +32,9 @@ bit neq<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
-// bit neq<Int16>(Int16 a, Int16 b)
+// bit neq<short>(short a, short b)
 // AggressiveInlining
-bit neq<Int16>(Int16 a, Int16 b)
+bit neq<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

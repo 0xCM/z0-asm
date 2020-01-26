@@ -32,9 +32,9 @@ ushort or<ushort>(ushort a, ushort b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664547, Name := T Z0.Logix.ScalarOps::or<T>(T,T)
-// Int16 or<Int16>(Int16 a, Int16 b)
+// short or<short>(short a, short b)
 // AggressiveInlining
-Int16 or<Int16>(Int16 a, Int16 b)
+short or<short>(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

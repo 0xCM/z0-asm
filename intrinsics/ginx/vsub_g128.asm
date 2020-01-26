@@ -50,7 +50,7 @@
 0029h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vsub<Int16>(Int16 a, Vector128<Int16> x)
+; Vector128<short> vsub<short>(short a, Vector128<short> x)
 ; vsub__g0o_128x16i[47] = {50 c5 f8 77 90 48 0f bf c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f9 f9 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; Capture completion code = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}

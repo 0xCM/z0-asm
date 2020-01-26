@@ -50,9 +50,9 @@ ref Block128<ushort> vgt<ushort>(in Block128<ushort> a, in Block128<ushort> b, i
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100666839, Name := Z0.Block128`1<T>& modreq(System.Runtime.InteropServices.InAttribute) Z0.vblocks::vgt<T>(Z0.Block128`1<T>&,Z0.Block128`1<T>&,Z0.Block128`1<T>&)
-// ref Block128<Int16> vgt<Int16>(in Block128<Int16> a, in Block128<Int16> b, in Block128<Int16> c)
+// ref Block128<short> vgt<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c)
 // AggressiveInlining
-ref Block128<Int16> vgt<Int16>(in Block128<Int16> a, in Block128<Int16> b, in Block128<Int16> c)
+ref Block128<short> vgt<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

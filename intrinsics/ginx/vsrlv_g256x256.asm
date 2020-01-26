@@ -142,7 +142,7 @@
 0075h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0079h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<Int16> vsrlv<Int16>(Vector256<Int16> x, Vector256<Int16> counts)
+; Vector256<short> vsrlv<short>(Vector256<short> x, Vector256<short> counts)
 ; vsrlv_g256x16i[89] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 23 d2 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 e3 7d 19 cb 00 c4 e2 7d 23 db c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e2 6d 45 d3 c4 e2 7d 45 c1 c5 ed 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

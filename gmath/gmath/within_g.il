@@ -35,9 +35,9 @@ bit within<ushort>(ushort a, ushort b, ushort delta)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664117, Name := Z0.bit Z0.gmath::within<T>(T,T,T)
-// bit within<Int16>(Int16 a, Int16 b, Int16 delta)
+// bit within<short>(short a, short b, short delta)
 // AggressiveInlining
-bit within<Int16>(Int16 a, Int16 b, Int16 delta)
+bit within<short>(short a, short b, short delta)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

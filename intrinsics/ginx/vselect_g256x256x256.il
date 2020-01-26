@@ -44,9 +44,9 @@ Vector256<ushort> vselect<ushort>(Vector256<ushort> x, Vector256<ushort> y, Vect
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665336, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vselect<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vselect<Int16>(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> z)
+// Vector256<short> vselect<short>(Vector256<short> x, Vector256<short> y, Vector256<short> z)
 // AggressiveInlining
-Vector256<Int16> vselect<Int16>(Vector256<Int16> x, Vector256<Int16> y, Vector256<Int16> z)
+Vector256<short> vselect<short>(Vector256<short> x, Vector256<short> y, Vector256<short> z)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

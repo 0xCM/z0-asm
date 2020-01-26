@@ -35,7 +35,7 @@
 0017h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector128<Int16> vperm16x8<Int16>(Vector128<Int16> src, Vector128<byte> spec)
+; Vector128<short> vperm16x8<short>(Vector128<short> src, Vector128<byte> spec)
 ; vperm16x8__g128x16i_128x8u[27] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 00 c1 c5 f9 11 01 48 8b c1 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

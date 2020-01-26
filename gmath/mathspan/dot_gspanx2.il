@@ -122,9 +122,9 @@ ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
-// Int16 dot<Int16>(ReadOnlySpan<Int16> lhs, ReadOnlySpan<Int16> rhs)
+// short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
 // AggressiveInlining
-Int16 dot<Int16>(ReadOnlySpan<Int16> lhs, ReadOnlySpan<Int16> rhs)
+short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
 {
     IL_0000: ldarga.s lhs
     IL_0002: call System.Int32 System.ReadOnlySpan`1<T>::get_Length()

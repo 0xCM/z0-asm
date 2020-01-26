@@ -32,9 +32,9 @@ bit vtestc<ushort>(Vector256<ushort> src, Vector256<ushort> mask)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665520, Name := Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// bit vtestc<Int16>(Vector256<Int16> src, Vector256<Int16> mask)
+// bit vtestc<short>(Vector256<short> src, Vector256<short> mask)
 // AggressiveInlining
-bit vtestc<Int16>(Vector256<Int16> src, Vector256<Int16> mask)
+bit vtestc<short>(Vector256<short> src, Vector256<short> mask)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

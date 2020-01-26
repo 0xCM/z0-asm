@@ -35,9 +35,9 @@ Vector256<ushort> vswaphl<ushort>(Vector256<ushort> x)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100665264, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vswaphl<T>(System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<Int16> vswaphl<Int16>(Vector256<Int16> x)
+// Vector256<short> vswaphl<short>(Vector256<short> x)
 // AggressiveInlining
-Vector256<Int16> vswaphl<Int16>(Vector256<Int16> x)
+Vector256<short> vswaphl<short>(Vector256<short> x)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.0

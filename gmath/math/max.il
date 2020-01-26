@@ -27,9 +27,9 @@ byte max(byte a, byte b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663728, Name := System.Int16 Z0.math::max(System.Int16,System.Int16)
-// Int16 max(Int16 a, Int16 b)
+// short max(short a, short b)
 // AggressiveInlining
-Int16 max(Int16 a, Int16 b)
+short max(short a, short b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

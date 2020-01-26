@@ -188,9 +188,9 @@ ushort xor1<ushort>(ushort a)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664542, Name := T Z0.Logix.ScalarOps::xor1<T>(T)
-// Int16 xor1<Int16>(Int16 a)
+// short xor1<short>(short a)
 // AggressiveInlining
-Int16 xor1<Int16>(Int16 a)
+short xor1<short>(short a)
 {
     IL_0000: ldtoken T
     IL_0005: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
