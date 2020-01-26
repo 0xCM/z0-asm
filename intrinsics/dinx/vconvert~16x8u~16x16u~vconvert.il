@@ -10,3 +10,4 @@ Vector256<ushort> vconvert(in Block128<byte> src, N256 w, ushort t)
     IL_0010: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> zfunc::v16u<System.Int16>(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
     IL_0015: ret
 }
+------------------------------------------------------------------------------------------------------------------------

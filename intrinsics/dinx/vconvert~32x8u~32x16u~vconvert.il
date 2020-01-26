@@ -18,3 +18,4 @@ Vector512<ushort> vconvert(in Block256<byte> src, N512 w, ushort t)
     IL_0031: call Z0.Vector512`1<System.UInt16> Z0.Vector512`1<System.UInt16>::op_Implicit(System.ValueTuple`2<System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>>)
     IL_0036: ret
 }
+------------------------------------------------------------------------------------------------------------------------

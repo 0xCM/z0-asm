@@ -1,0 +1,8 @@
+dist_8u   0f 1f 44 00 00 0f b6 c9 0f b6 d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3
+dist_8i   0f 1f 44 00 00 48 0f be c9 48 0f be d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3
+dist_16i  0f 1f 44 00 00 48 0f bf c9 48 0f bf d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3
+dist_16u  0f 1f 44 00 00 0f b7 c9 0f b7 d2 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3
+dist_32i  0f 1f 44 00 00 3b ca 7d 06 2b d1 48 63 c2 c3 2b ca 48 63 c1 c3
+dist_32u  0f 1f 44 00 00 3b ca 73 05 2b d1 8b c2 c3 2b ca 8b c1 c3
+dist_64i  0f 1f 44 00 00 48 3b ca 7d 07 48 8b c2 48 2b c1 c3 48 2b ca 48 8b c1 c3
+dist_64u  0f 1f 44 00 00 48 3b ca 73 07 48 8b c2 48 2b c1 c3 48 2b ca 48 8b c1 c3

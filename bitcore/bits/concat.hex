@@ -1,0 +1,6 @@
+concat_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 c1 e2 08 0b c2 0f b7 c0 c3
+concat_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 c1 e2 10 0b c2 c3
+concat_32u  0f 1f 44 00 00 8b 01 8b 12 48 c1 e2 20 48 0b c2 c3
+concat_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 c1 e2 08 0b c2 41 0f b6 d0 c1 e2 10 0b c2 41 0f b6 d1 c1 e2 18 0b c2 c3
+concat_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 c1 e2 10 0b c2 41 0f b7 d0 0b c2 41 0f b7 d1 c1 e2 10 0b c2 c3
+concat_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 48 c1 e2 08 48 0b c2 41 0f b6 d0 48 c1 e2 10 48 0b c2 41 0f b6 d1 48 c1 e2 18 48 0b c2 8b 54 24 28 0f b6 d2 48 c1 e2 20 48 0b c2 8b 54 24 30 0f b6 d2 48 c1 e2 28 48 0b c2 8b 54 24 38 0f b6 d2 48 c1 e2 30 48 0b c2 8b 54 24 40 0f b6 d2 48 c1 e2 38 48 0b c2 c3

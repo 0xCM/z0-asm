@@ -1,0 +1,10 @@
+vtestc__g512x8u_512x8u    c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x8i_512x8i    c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x16u_512x16u  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x16i_512x16i  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x32u_512x32u  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x32i_512x32i  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x64u_512x64u  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x64i_512x64i  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 17 c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x32f_512x32f  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 0e c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 0e c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3
+vtestc__g512x64f_512x64f  c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 0f c1 0f 92 c0 0f b6 c0 85 c0 74 1a c5 fd 10 41 20 c5 fd 10 0a c4 e2 7d 0f c1 0f 92 c2 0f b6 d2 23 c2 c5 f8 77 c3 33 c0 c5 f8 77 c3

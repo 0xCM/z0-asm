@@ -1,7 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vconvert(in Block256<uint> src, N512 w, ulong t)
-; vconvert~8x32u~8x64u~vconvert[7ff7c71d0a00h, 7ff7c71d0a29h][41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 25 02 48 83 c0 10 c4 e2 7d 25 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; Capture completion code, RET_INTR
-; 2020-01-25 02:11:02:063
+; vconvert~8x32u~8x64u~vconvert[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 25 02 48 83 c0 10 c4 e2 7d 25 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

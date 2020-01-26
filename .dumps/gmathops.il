@@ -1,49 +1,5 @@
-// 2020-01-24 20:46:47:915
-// Id := 100664008, Name := System.Int64 Z0.gmathops::srl_d64i(System.Int64,System.Byte)
-// long srl_d64i(long lhs, byte offset)
-// IL
-long srl_d64i(long lhs, byte offset)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Int64 Z0.math::srl(System.Int64,System.Byte)
-    IL_0007: ret
-}
-
-// Id := 100664009, Name := System.Int64 Z0.gmathops::srl_g64i(System.Int64,System.Byte)
-// long srl_g64i(long lhs, byte offset)
-// IL
-long srl_g64i(long lhs, byte offset)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Int64 Z0.gmath::srl<System.Int64>(System.Int64,System.Byte)
-    IL_0007: ret
-}
-
-// Id := 100664010, Name := System.UInt64 Z0.gmathops::srl_d64u(System.UInt64,System.Byte)
-// ulong srl_d64u(ulong lhs, byte offset)
-// IL
-ulong srl_d64u(ulong lhs, byte offset)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.UInt64 Z0.math::srl(System.UInt64,System.Byte)
-    IL_0007: ret
-}
-
-// Id := 100664011, Name := System.UInt64 Z0.gmathops::srl_g64u(System.UInt64,System.Byte)
-// ulong srl_g64u(ulong lhs, byte offset)
-// IL
-ulong srl_g64u(ulong lhs, byte offset)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.UInt64 Z0.gmath::srl<System.UInt64>(System.UInt64,System.Byte)
-    IL_0007: ret
-}
-
-// Id := 100664012, Name := System.SByte Z0.gmathops::sub_d8i(System.SByte,System.SByte)
+// 2020-01-26 03:38:02:044
+// Id := 100664008, Name := System.SByte Z0.gmathops::sub_d8i(System.SByte,System.SByte)
 // sbyte sub_d8i(sbyte lhs, sbyte rhs)
 // IL
 sbyte sub_d8i(sbyte lhs, sbyte rhs)
@@ -54,7 +10,7 @@ sbyte sub_d8i(sbyte lhs, sbyte rhs)
     IL_0007: ret
 }
 
-// Id := 100664013, Name := System.SByte Z0.gmathops::sub_g8i(System.SByte,System.SByte)
+// Id := 100664009, Name := System.SByte Z0.gmathops::sub_g8i(System.SByte,System.SByte)
 // sbyte sub_g8i(sbyte lhs, sbyte rhs)
 // IL
 sbyte sub_g8i(sbyte lhs, sbyte rhs)
@@ -65,7 +21,7 @@ sbyte sub_g8i(sbyte lhs, sbyte rhs)
     IL_0007: ret
 }
 
-// Id := 100664014, Name := System.Byte Z0.gmathops::sub_d8u(System.Byte,System.Byte)
+// Id := 100664010, Name := System.Byte Z0.gmathops::sub_d8u(System.Byte,System.Byte)
 // byte sub_d8u(byte lhs, byte rhs)
 // IL
 byte sub_d8u(byte lhs, byte rhs)
@@ -76,7 +32,7 @@ byte sub_d8u(byte lhs, byte rhs)
     IL_0007: ret
 }
 
-// Id := 100664015, Name := System.Byte Z0.gmathops::sub_g8u(System.Byte,System.Byte)
+// Id := 100664011, Name := System.Byte Z0.gmathops::sub_g8u(System.Byte,System.Byte)
 // byte sub_g8u(byte lhs, byte rhs)
 // IL
 byte sub_g8u(byte lhs, byte rhs)
@@ -87,7 +43,7 @@ byte sub_g8u(byte lhs, byte rhs)
     IL_0007: ret
 }
 
-// Id := 100664016, Name := System.Int16 Z0.gmathops::sub_d16i(System.Int16,System.Int16)
+// Id := 100664012, Name := System.Int16 Z0.gmathops::sub_d16i(System.Int16,System.Int16)
 // Int16 sub_d16i(Int16 lhs, Int16 rhs)
 // IL
 Int16 sub_d16i(Int16 lhs, Int16 rhs)
@@ -98,7 +54,7 @@ Int16 sub_d16i(Int16 lhs, Int16 rhs)
     IL_0007: ret
 }
 
-// Id := 100664017, Name := System.Int16 Z0.gmathops::sub_g16i(System.Int16,System.Int16)
+// Id := 100664013, Name := System.Int16 Z0.gmathops::sub_g16i(System.Int16,System.Int16)
 // Int16 sub_g16i(Int16 lhs, Int16 rhs)
 // IL
 Int16 sub_g16i(Int16 lhs, Int16 rhs)
@@ -109,7 +65,7 @@ Int16 sub_g16i(Int16 lhs, Int16 rhs)
     IL_0007: ret
 }
 
-// Id := 100664018, Name := System.UInt16 Z0.gmathops::sub_d16u(System.UInt16,System.UInt16)
+// Id := 100664014, Name := System.UInt16 Z0.gmathops::sub_d16u(System.UInt16,System.UInt16)
 // ushort sub_d16u(ushort lhs, ushort rhs)
 // IL
 ushort sub_d16u(ushort lhs, ushort rhs)
@@ -120,7 +76,7 @@ ushort sub_d16u(ushort lhs, ushort rhs)
     IL_0007: ret
 }
 
-// Id := 100664019, Name := System.UInt16 Z0.gmathops::sub_g16u(System.UInt16,System.UInt16)
+// Id := 100664015, Name := System.UInt16 Z0.gmathops::sub_g16u(System.UInt16,System.UInt16)
 // ushort sub_g16u(ushort lhs, ushort rhs)
 // IL
 ushort sub_g16u(ushort lhs, ushort rhs)
@@ -131,7 +87,7 @@ ushort sub_g16u(ushort lhs, ushort rhs)
     IL_0007: ret
 }
 
-// Id := 100664020, Name := System.Int32 Z0.gmathops::sub_d32i(System.Int32,System.Int32)
+// Id := 100664016, Name := System.Int32 Z0.gmathops::sub_d32i(System.Int32,System.Int32)
 // int sub_d32i(int lhs, int rhs)
 // IL
 int sub_d32i(int lhs, int rhs)
@@ -142,7 +98,7 @@ int sub_d32i(int lhs, int rhs)
     IL_0007: ret
 }
 
-// Id := 100664021, Name := System.Int32 Z0.gmathops::sub_g32i(System.Int32,System.Int32)
+// Id := 100664017, Name := System.Int32 Z0.gmathops::sub_g32i(System.Int32,System.Int32)
 // int sub_g32i(int lhs, int rhs)
 // IL
 int sub_g32i(int lhs, int rhs)
@@ -153,7 +109,7 @@ int sub_g32i(int lhs, int rhs)
     IL_0007: ret
 }
 
-// Id := 100664022, Name := System.UInt32 Z0.gmathops::sub_d32u(System.UInt32,System.UInt32)
+// Id := 100664018, Name := System.UInt32 Z0.gmathops::sub_d32u(System.UInt32,System.UInt32)
 // uint sub_d32u(uint lhs, uint rhs)
 // IL
 uint sub_d32u(uint lhs, uint rhs)
@@ -164,7 +120,7 @@ uint sub_d32u(uint lhs, uint rhs)
     IL_0007: ret
 }
 
-// Id := 100664023, Name := System.UInt32 Z0.gmathops::sub_g32u(System.UInt32,System.UInt32)
+// Id := 100664019, Name := System.UInt32 Z0.gmathops::sub_g32u(System.UInt32,System.UInt32)
 // uint sub_g32u(uint lhs, uint rhs)
 // IL
 uint sub_g32u(uint lhs, uint rhs)
@@ -175,7 +131,7 @@ uint sub_g32u(uint lhs, uint rhs)
     IL_0007: ret
 }
 
-// Id := 100664024, Name := System.Int64 Z0.gmathops::sub_d64i(System.Int64,System.Int64)
+// Id := 100664020, Name := System.Int64 Z0.gmathops::sub_d64i(System.Int64,System.Int64)
 // long sub_d64i(long lhs, long rhs)
 // IL
 long sub_d64i(long lhs, long rhs)
@@ -186,7 +142,7 @@ long sub_d64i(long lhs, long rhs)
     IL_0007: ret
 }
 
-// Id := 100664025, Name := System.Int64 Z0.gmathops::sub_g64i(System.Int64,System.Int64)
+// Id := 100664021, Name := System.Int64 Z0.gmathops::sub_g64i(System.Int64,System.Int64)
 // long sub_g64i(long lhs, long rhs)
 // IL
 long sub_g64i(long lhs, long rhs)
@@ -197,7 +153,7 @@ long sub_g64i(long lhs, long rhs)
     IL_0007: ret
 }
 
-// Id := 100664026, Name := System.UInt64 Z0.gmathops::sub_d64u(System.UInt64,System.UInt64)
+// Id := 100664022, Name := System.UInt64 Z0.gmathops::sub_d64u(System.UInt64,System.UInt64)
 // ulong sub_d64u(ulong lhs, ulong rhs)
 // IL
 ulong sub_d64u(ulong lhs, ulong rhs)
@@ -208,7 +164,7 @@ ulong sub_d64u(ulong lhs, ulong rhs)
     IL_0007: ret
 }
 
-// Id := 100664027, Name := System.UInt64 Z0.gmathops::sub_g64u(System.UInt64,System.UInt64)
+// Id := 100664023, Name := System.UInt64 Z0.gmathops::sub_g64u(System.UInt64,System.UInt64)
 // ulong sub_g64u(ulong lhs, ulong rhs)
 // IL
 ulong sub_g64u(ulong lhs, ulong rhs)
@@ -219,7 +175,7 @@ ulong sub_g64u(ulong lhs, ulong rhs)
     IL_0007: ret
 }
 
-// Id := 100664028, Name := System.Single Z0.gmathops::sub_d32f(System.Single,System.Single)
+// Id := 100664024, Name := System.Single Z0.gmathops::sub_d32f(System.Single,System.Single)
 // float sub_d32f(float lhs, float rhs)
 // IL
 float sub_d32f(float lhs, float rhs)
@@ -230,7 +186,7 @@ float sub_d32f(float lhs, float rhs)
     IL_0007: ret
 }
 
-// Id := 100664029, Name := System.Single Z0.gmathops::sub_g32f(System.Single,System.Single)
+// Id := 100664025, Name := System.Single Z0.gmathops::sub_g32f(System.Single,System.Single)
 // float sub_g32f(float lhs, float rhs)
 // IL
 float sub_g32f(float lhs, float rhs)
@@ -241,7 +197,7 @@ float sub_g32f(float lhs, float rhs)
     IL_0007: ret
 }
 
-// Id := 100664030, Name := System.Double Z0.gmathops::sub_d64f(System.Double,System.Double)
+// Id := 100664026, Name := System.Double Z0.gmathops::sub_d64f(System.Double,System.Double)
 // double sub_d64f(double lhs, double rhs)
 // IL
 double sub_d64f(double lhs, double rhs)
@@ -252,7 +208,7 @@ double sub_d64f(double lhs, double rhs)
     IL_0007: ret
 }
 
-// Id := 100664031, Name := System.Double Z0.gmathops::sub_g64f(System.Double,System.Double)
+// Id := 100664027, Name := System.Double Z0.gmathops::sub_g64f(System.Double,System.Double)
 // double sub_g64f(double lhs, double rhs)
 // IL
 double sub_g64f(double lhs, double rhs)
@@ -263,7 +219,7 @@ double sub_g64f(double lhs, double rhs)
     IL_0007: ret
 }
 
-// Id := 100664032, Name := System.SByte Z0.gmathops::xor_d8i(System.SByte,System.SByte)
+// Id := 100664028, Name := System.SByte Z0.gmathops::xor_d8i(System.SByte,System.SByte)
 // sbyte xor_d8i(sbyte lhs, sbyte rhs)
 // IL
 sbyte xor_d8i(sbyte lhs, sbyte rhs)
@@ -274,7 +230,7 @@ sbyte xor_d8i(sbyte lhs, sbyte rhs)
     IL_0007: ret
 }
 
-// Id := 100664033, Name := System.SByte Z0.gmathops::xor_g8i(System.SByte,System.SByte)
+// Id := 100664029, Name := System.SByte Z0.gmathops::xor_g8i(System.SByte,System.SByte)
 // sbyte xor_g8i(sbyte lhs, sbyte rhs)
 // IL
 sbyte xor_g8i(sbyte lhs, sbyte rhs)
@@ -285,7 +241,7 @@ sbyte xor_g8i(sbyte lhs, sbyte rhs)
     IL_0007: ret
 }
 
-// Id := 100664034, Name := System.Byte Z0.gmathops::xor_d8u(System.Byte,System.Byte)
+// Id := 100664030, Name := System.Byte Z0.gmathops::xor_d8u(System.Byte,System.Byte)
 // byte xor_d8u(byte lhs, byte rhs)
 // IL
 byte xor_d8u(byte lhs, byte rhs)
@@ -296,7 +252,7 @@ byte xor_d8u(byte lhs, byte rhs)
     IL_0007: ret
 }
 
-// Id := 100664035, Name := System.Byte Z0.gmathops::xor_g8u(System.Byte,System.Byte)
+// Id := 100664031, Name := System.Byte Z0.gmathops::xor_g8u(System.Byte,System.Byte)
 // byte xor_g8u(byte lhs, byte rhs)
 // IL
 byte xor_g8u(byte lhs, byte rhs)
@@ -307,7 +263,7 @@ byte xor_g8u(byte lhs, byte rhs)
     IL_0007: ret
 }
 
-// Id := 100664036, Name := System.Int16 Z0.gmathops::xor_d16i(System.Int16,System.Int16)
+// Id := 100664032, Name := System.Int16 Z0.gmathops::xor_d16i(System.Int16,System.Int16)
 // Int16 xor_d16i(Int16 lhs, Int16 rhs)
 // IL
 Int16 xor_d16i(Int16 lhs, Int16 rhs)
@@ -318,7 +274,7 @@ Int16 xor_d16i(Int16 lhs, Int16 rhs)
     IL_0007: ret
 }
 
-// Id := 100664037, Name := System.Int16 Z0.gmathops::xor_g16i(System.Int16,System.Int16)
+// Id := 100664033, Name := System.Int16 Z0.gmathops::xor_g16i(System.Int16,System.Int16)
 // Int16 xor_g16i(Int16 lhs, Int16 rhs)
 // IL
 Int16 xor_g16i(Int16 lhs, Int16 rhs)
@@ -329,7 +285,7 @@ Int16 xor_g16i(Int16 lhs, Int16 rhs)
     IL_0007: ret
 }
 
-// Id := 100664038, Name := System.UInt16 Z0.gmathops::xor_d16u(System.UInt16,System.UInt16)
+// Id := 100664034, Name := System.UInt16 Z0.gmathops::xor_d16u(System.UInt16,System.UInt16)
 // ushort xor_d16u(ushort lhs, ushort rhs)
 // IL
 ushort xor_d16u(ushort lhs, ushort rhs)
@@ -340,7 +296,7 @@ ushort xor_d16u(ushort lhs, ushort rhs)
     IL_0007: ret
 }
 
-// Id := 100664039, Name := System.UInt16 Z0.gmathops::xor_g16u(System.UInt16,System.UInt16)
+// Id := 100664035, Name := System.UInt16 Z0.gmathops::xor_g16u(System.UInt16,System.UInt16)
 // ushort xor_g16u(ushort lhs, ushort rhs)
 // IL
 ushort xor_g16u(ushort lhs, ushort rhs)
@@ -351,7 +307,7 @@ ushort xor_g16u(ushort lhs, ushort rhs)
     IL_0007: ret
 }
 
-// Id := 100664040, Name := System.Int32 Z0.gmathops::xor_d32i(System.Int32,System.Int32)
+// Id := 100664036, Name := System.Int32 Z0.gmathops::xor_d32i(System.Int32,System.Int32)
 // int xor_d32i(int lhs, int rhs)
 // IL
 int xor_d32i(int lhs, int rhs)
@@ -362,7 +318,7 @@ int xor_d32i(int lhs, int rhs)
     IL_0007: ret
 }
 
-// Id := 100664041, Name := System.Int32 Z0.gmathops::xor_g32i(System.Int32,System.Int32)
+// Id := 100664037, Name := System.Int32 Z0.gmathops::xor_g32i(System.Int32,System.Int32)
 // int xor_g32i(int lhs, int rhs)
 // IL
 int xor_g32i(int lhs, int rhs)
@@ -373,7 +329,7 @@ int xor_g32i(int lhs, int rhs)
     IL_0007: ret
 }
 
-// Id := 100664042, Name := System.UInt32 Z0.gmathops::xor_d32u(System.UInt32,System.UInt32)
+// Id := 100664038, Name := System.UInt32 Z0.gmathops::xor_d32u(System.UInt32,System.UInt32)
 // uint xor_d32u(uint lhs, uint rhs)
 // IL
 uint xor_d32u(uint lhs, uint rhs)
@@ -384,7 +340,7 @@ uint xor_d32u(uint lhs, uint rhs)
     IL_0007: ret
 }
 
-// Id := 100664043, Name := System.UInt32 Z0.gmathops::xor_g32u(System.UInt32,System.UInt32)
+// Id := 100664039, Name := System.UInt32 Z0.gmathops::xor_g32u(System.UInt32,System.UInt32)
 // uint xor_g32u(uint lhs, uint rhs)
 // IL
 uint xor_g32u(uint lhs, uint rhs)
@@ -395,7 +351,7 @@ uint xor_g32u(uint lhs, uint rhs)
     IL_0007: ret
 }
 
-// Id := 100664044, Name := System.Int64 Z0.gmathops::xor_d64i(System.Int64,System.Int64)
+// Id := 100664040, Name := System.Int64 Z0.gmathops::xor_d64i(System.Int64,System.Int64)
 // long xor_d64i(long lhs, long rhs)
 // IL
 long xor_d64i(long lhs, long rhs)
@@ -406,7 +362,7 @@ long xor_d64i(long lhs, long rhs)
     IL_0007: ret
 }
 
-// Id := 100664045, Name := System.Int64 Z0.gmathops::xor_g64i(System.Int64,System.Int64)
+// Id := 100664041, Name := System.Int64 Z0.gmathops::xor_g64i(System.Int64,System.Int64)
 // long xor_g64i(long lhs, long rhs)
 // IL
 long xor_g64i(long lhs, long rhs)
@@ -417,7 +373,7 @@ long xor_g64i(long lhs, long rhs)
     IL_0007: ret
 }
 
-// Id := 100664046, Name := System.UInt64 Z0.gmathops::xor_d64u(System.UInt64,System.UInt64)
+// Id := 100664042, Name := System.UInt64 Z0.gmathops::xor_d64u(System.UInt64,System.UInt64)
 // ulong xor_d64u(ulong lhs, ulong rhs)
 // IL
 ulong xor_d64u(ulong lhs, ulong rhs)
@@ -428,7 +384,7 @@ ulong xor_d64u(ulong lhs, ulong rhs)
     IL_0007: ret
 }
 
-// Id := 100664047, Name := System.UInt64 Z0.gmathops::xor_g64u(System.UInt64,System.UInt64)
+// Id := 100664043, Name := System.UInt64 Z0.gmathops::xor_g64u(System.UInt64,System.UInt64)
 // ulong xor_g64u(ulong lhs, ulong rhs)
 // IL
 ulong xor_g64u(ulong lhs, ulong rhs)
@@ -436,50 +392,6 @@ ulong xor_g64u(ulong lhs, ulong rhs)
     IL_0000: ldarg.0
     IL_0001: ldarg.1
     IL_0002: call System.UInt64 Z0.gmath::xor<System.UInt64>(System.UInt64,System.UInt64)
-    IL_0007: ret
-}
-
-// Id := 100664048, Name := System.Single Z0.gmathops::xor_d32f(System.Single,System.Single)
-// float xor_d32f(float lhs, float rhs)
-// IL
-float xor_d32f(float lhs, float rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Single Z0.fmath::xor(System.Single,System.Single)
-    IL_0007: ret
-}
-
-// Id := 100664049, Name := System.Single Z0.gmathops::xor_g32f(System.Single,System.Single)
-// float xor_g32f(float lhs, float rhs)
-// IL
-float xor_g32f(float lhs, float rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Single Z0.gfp::xor<System.Single>(System.Single,System.Single)
-    IL_0007: ret
-}
-
-// Id := 100664050, Name := System.Double Z0.gmathops::xor_d64f(System.Double,System.Double)
-// double xor_d64f(double lhs, double rhs)
-// IL
-double xor_d64f(double lhs, double rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Double Z0.fmath::xor(System.Double,System.Double)
-    IL_0007: ret
-}
-
-// Id := 100664051, Name := System.Double Z0.gmathops::xor_g64f(System.Double,System.Double)
-// double xor_g64f(double lhs, double rhs)
-// IL
-double xor_g64f(double lhs, double rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Double Z0.gfp::xor<System.Double>(System.Double,System.Double)
     IL_0007: ret
 }
 
@@ -593,51 +505,7 @@ ulong or_g64u(ulong lhs, ulong rhs)
     IL_0007: ret
 }
 
-// Id := 100663890, Name := System.Single Z0.gmathops::or_d32f(System.Single,System.Single)
-// float or_d32f(float lhs, float rhs)
-// IL
-float or_d32f(float lhs, float rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Single Z0.fmath::or(System.Single,System.Single)
-    IL_0007: ret
-}
-
-// Id := 100663891, Name := System.Single Z0.gmathops::or_g32f(System.Single,System.Single)
-// float or_g32f(float lhs, float rhs)
-// IL
-float or_g32f(float lhs, float rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Single Z0.gfp::or<System.Single>(System.Single,System.Single)
-    IL_0007: ret
-}
-
-// Id := 100663892, Name := System.Double Z0.gmathops::or_d64f(System.Double,System.Double)
-// double or_d64f(double lhs, double rhs)
-// IL
-double or_d64f(double lhs, double rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Double Z0.fmath::or(System.Double,System.Double)
-    IL_0007: ret
-}
-
-// Id := 100663893, Name := System.Double Z0.gmathops::or_g64f(System.Double,System.Double)
-// double or_g64f(double lhs, double rhs)
-// IL
-double or_g64f(double lhs, double rhs)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Double Z0.gfp::or<System.Double>(System.Double,System.Double)
-    IL_0007: ret
-}
-
-// Id := 100663894, Name := Z0.Perm4L Z0.gmathops::perm4_assemble_id()
+// Id := 100663890, Name := Z0.Perm4L Z0.gmathops::perm4_assemble_id()
 // Perm4L:byte perm4_assemble_id()
 // IL
 Perm4L:byte perm4_assemble_id()
@@ -650,7 +518,7 @@ Perm4L:byte perm4_assemble_id()
     IL_0009: ret
 }
 
-// Id := 100663895, Name := Z0.Perm4L Z0.gmathops::perm4_assemble_rid()
+// Id := 100663891, Name := Z0.Perm4L Z0.gmathops::perm4_assemble_rid()
 // Perm4L:byte perm4_assemble_rid()
 // IL
 Perm4L:byte perm4_assemble_rid()
@@ -663,7 +531,7 @@ Perm4L:byte perm4_assemble_rid()
     IL_0009: ret
 }
 
-// Id := 100663896, Name := System.Boolean Z0.gmathops::positive_n8i(System.SByte)
+// Id := 100663892, Name := System.Boolean Z0.gmathops::positive_n8i(System.SByte)
 // bool positive_n8i(sbyte x)
 // IL
 bool positive_n8i(sbyte x)
@@ -674,7 +542,7 @@ bool positive_n8i(sbyte x)
     IL_0004: ret
 }
 
-// Id := 100663897, Name := System.Boolean Z0.gmathops::positive_g8i(System.SByte)
+// Id := 100663893, Name := System.Boolean Z0.gmathops::positive_g8i(System.SByte)
 // bool positive_g8i(sbyte x)
 // IL
 bool positive_g8i(sbyte x)
@@ -685,7 +553,7 @@ bool positive_g8i(sbyte x)
     IL_000B: ret
 }
 
-// Id := 100663898, Name := System.Boolean Z0.gmathops::positive_n8u(System.Byte)
+// Id := 100663894, Name := System.Boolean Z0.gmathops::positive_n8u(System.Byte)
 // bool positive_n8u(byte x)
 // IL
 bool positive_n8u(byte x)
@@ -696,7 +564,7 @@ bool positive_n8u(byte x)
     IL_0004: ret
 }
 
-// Id := 100663899, Name := System.Boolean Z0.gmathops::positive_g8u(System.Byte)
+// Id := 100663895, Name := System.Boolean Z0.gmathops::positive_g8u(System.Byte)
 // bool positive_g8u(byte x)
 // IL
 bool positive_g8u(byte x)
@@ -707,7 +575,7 @@ bool positive_g8u(byte x)
     IL_000B: ret
 }
 
-// Id := 100663900, Name := System.Boolean Z0.gmathops::positive_n16i(System.Int16)
+// Id := 100663896, Name := System.Boolean Z0.gmathops::positive_n16i(System.Int16)
 // bool positive_n16i(Int16 x)
 // IL
 bool positive_n16i(Int16 x)
@@ -718,7 +586,7 @@ bool positive_n16i(Int16 x)
     IL_0004: ret
 }
 
-// Id := 100663901, Name := System.Boolean Z0.gmathops::positive_g16i(System.Int16)
+// Id := 100663897, Name := System.Boolean Z0.gmathops::positive_g16i(System.Int16)
 // bool positive_g16i(Int16 x)
 // IL
 bool positive_g16i(Int16 x)
@@ -729,7 +597,7 @@ bool positive_g16i(Int16 x)
     IL_000B: ret
 }
 
-// Id := 100663902, Name := System.Boolean Z0.gmathops::positive_n16u(System.UInt16)
+// Id := 100663898, Name := System.Boolean Z0.gmathops::positive_n16u(System.UInt16)
 // bool positive_n16u(ushort x)
 // IL
 bool positive_n16u(ushort x)
@@ -740,7 +608,7 @@ bool positive_n16u(ushort x)
     IL_0004: ret
 }
 
-// Id := 100663903, Name := System.Boolean Z0.gmathops::positive_g16u(System.UInt16)
+// Id := 100663899, Name := System.Boolean Z0.gmathops::positive_g16u(System.UInt16)
 // bool positive_g16u(ushort x)
 // IL
 bool positive_g16u(ushort x)
@@ -751,7 +619,7 @@ bool positive_g16u(ushort x)
     IL_000B: ret
 }
 
-// Id := 100663904, Name := System.Boolean Z0.gmathops::positive_n32i(System.Int32)
+// Id := 100663900, Name := System.Boolean Z0.gmathops::positive_n32i(System.Int32)
 // bool positive_n32i(int x)
 // IL
 bool positive_n32i(int x)
@@ -762,7 +630,7 @@ bool positive_n32i(int x)
     IL_0004: ret
 }
 
-// Id := 100663905, Name := System.Boolean Z0.gmathops::positive_g32i(System.Int32)
+// Id := 100663901, Name := System.Boolean Z0.gmathops::positive_g32i(System.Int32)
 // bool positive_g32i(int x)
 // IL
 bool positive_g32i(int x)
@@ -773,7 +641,7 @@ bool positive_g32i(int x)
     IL_000B: ret
 }
 
-// Id := 100663906, Name := System.Boolean Z0.gmathops::positive_n32u(System.UInt32)
+// Id := 100663902, Name := System.Boolean Z0.gmathops::positive_n32u(System.UInt32)
 // bool positive_n32u(uint x)
 // IL
 bool positive_n32u(uint x)
@@ -784,7 +652,7 @@ bool positive_n32u(uint x)
     IL_0004: ret
 }
 
-// Id := 100663907, Name := System.Boolean Z0.gmathops::positive_g32u(System.UInt32)
+// Id := 100663903, Name := System.Boolean Z0.gmathops::positive_g32u(System.UInt32)
 // bool positive_g32u(uint x)
 // IL
 bool positive_g32u(uint x)
@@ -795,7 +663,7 @@ bool positive_g32u(uint x)
     IL_000B: ret
 }
 
-// Id := 100663908, Name := System.Boolean Z0.gmathops::positive_n64i(System.Int64)
+// Id := 100663904, Name := System.Boolean Z0.gmathops::positive_n64i(System.Int64)
 // bool positive_n64i(long x)
 // IL
 bool positive_n64i(long x)
@@ -807,7 +675,7 @@ bool positive_n64i(long x)
     IL_0005: ret
 }
 
-// Id := 100663909, Name := System.Boolean Z0.gmathops::positive_g64i(System.Int64)
+// Id := 100663905, Name := System.Boolean Z0.gmathops::positive_g64i(System.Int64)
 // bool positive_g64i(long x)
 // IL
 bool positive_g64i(long x)
@@ -818,7 +686,7 @@ bool positive_g64i(long x)
     IL_000B: ret
 }
 
-// Id := 100663910, Name := System.Boolean Z0.gmathops::positive_n64u(System.UInt64)
+// Id := 100663906, Name := System.Boolean Z0.gmathops::positive_n64u(System.UInt64)
 // bool positive_n64u(ulong x)
 // IL
 bool positive_n64u(ulong x)
@@ -830,7 +698,7 @@ bool positive_n64u(ulong x)
     IL_0005: ret
 }
 
-// Id := 100663911, Name := System.Boolean Z0.gmathops::positive_g64u(System.UInt64)
+// Id := 100663907, Name := System.Boolean Z0.gmathops::positive_g64u(System.UInt64)
 // bool positive_g64u(ulong x)
 // IL
 bool positive_g64u(ulong x)
@@ -841,7 +709,7 @@ bool positive_g64u(ulong x)
     IL_000B: ret
 }
 
-// Id := 100663912, Name := System.Boolean Z0.gmathops::positive_n32f(System.Single)
+// Id := 100663908, Name := System.Boolean Z0.gmathops::positive_n32f(System.Single)
 // bool positive_n32f(float x)
 // IL
 bool positive_n32f(float x)
@@ -852,7 +720,7 @@ bool positive_n32f(float x)
     IL_0008: ret
 }
 
-// Id := 100663913, Name := System.Boolean Z0.gmathops::positive_g32f(System.Single)
+// Id := 100663909, Name := System.Boolean Z0.gmathops::positive_g32f(System.Single)
 // bool positive_g32f(float x)
 // IL
 bool positive_g32f(float x)
@@ -863,7 +731,7 @@ bool positive_g32f(float x)
     IL_000B: ret
 }
 
-// Id := 100663914, Name := System.Boolean Z0.gmathops::positive_n64f(System.Double)
+// Id := 100663910, Name := System.Boolean Z0.gmathops::positive_n64f(System.Double)
 // bool positive_n64f(double x)
 // IL
 bool positive_n64f(double x)
@@ -874,7 +742,7 @@ bool positive_n64f(double x)
     IL_000C: ret
 }
 
-// Id := 100663915, Name := System.Boolean Z0.gmathops::positive_g64f(System.Double)
+// Id := 100663911, Name := System.Boolean Z0.gmathops::positive_g64f(System.Double)
 // bool positive_g64f(double x)
 // IL
 bool positive_g64f(double x)
@@ -885,7 +753,7 @@ bool positive_g64f(double x)
     IL_000B: ret
 }
 
-// Id := 100663916, Name := Z0.bit Z0.gmathops::ispow2_g16u(System.UInt16)
+// Id := 100663912, Name := Z0.bit Z0.gmathops::ispow2_g16u(System.UInt16)
 // bit ispow2_g16u(ushort a)
 // IL
 bit ispow2_g16u(ushort a)
@@ -895,7 +763,7 @@ bit ispow2_g16u(ushort a)
     IL_0006: ret
 }
 
-// Id := 100663917, Name := Z0.bit Z0.gmathops::ispow2_16u(System.UInt16)
+// Id := 100663913, Name := Z0.bit Z0.gmathops::ispow2_16u(System.UInt16)
 // bit ispow2_16u(ushort a)
 // IL
 bit ispow2_16u(ushort a)
@@ -905,7 +773,7 @@ bit ispow2_16u(ushort a)
     IL_0006: ret
 }
 
-// Id := 100663918, Name := System.SByte Z0.gmathops::pow_b8i(System.SByte,System.UInt32)
+// Id := 100663914, Name := System.SByte Z0.gmathops::pow_b8i(System.SByte,System.UInt32)
 // sbyte pow_b8i(sbyte b, uint exp)
 // IL
 sbyte pow_b8i(sbyte b, uint exp)
@@ -916,7 +784,7 @@ sbyte pow_b8i(sbyte b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663919, Name := System.SByte Z0.gmathops::pow_g8i(System.SByte,System.UInt32)
+// Id := 100663915, Name := System.SByte Z0.gmathops::pow_g8i(System.SByte,System.UInt32)
 // sbyte pow_g8i(sbyte b, uint exp)
 // IL
 sbyte pow_g8i(sbyte b, uint exp)
@@ -927,7 +795,7 @@ sbyte pow_g8i(sbyte b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663920, Name := System.Byte Z0.gmathops::pow_b8u(System.Byte,System.UInt32)
+// Id := 100663916, Name := System.Byte Z0.gmathops::pow_b8u(System.Byte,System.UInt32)
 // byte pow_b8u(byte b, uint exp)
 // IL
 byte pow_b8u(byte b, uint exp)
@@ -938,7 +806,7 @@ byte pow_b8u(byte b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663921, Name := System.Byte Z0.gmathops::pow_g8u(System.Byte,System.UInt32)
+// Id := 100663917, Name := System.Byte Z0.gmathops::pow_g8u(System.Byte,System.UInt32)
 // byte pow_g8u(byte b, uint exp)
 // IL
 byte pow_g8u(byte b, uint exp)
@@ -949,7 +817,7 @@ byte pow_g8u(byte b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663922, Name := System.Int16 Z0.gmathops::pow_b16i(System.Int16,System.UInt32)
+// Id := 100663918, Name := System.Int16 Z0.gmathops::pow_b16i(System.Int16,System.UInt32)
 // Int16 pow_b16i(Int16 b, uint exp)
 // IL
 Int16 pow_b16i(Int16 b, uint exp)
@@ -960,7 +828,7 @@ Int16 pow_b16i(Int16 b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663923, Name := System.Int16 Z0.gmathops::pow_g16i(System.Int16,System.UInt32)
+// Id := 100663919, Name := System.Int16 Z0.gmathops::pow_g16i(System.Int16,System.UInt32)
 // Int16 pow_g16i(Int16 b, uint exp)
 // IL
 Int16 pow_g16i(Int16 b, uint exp)
@@ -971,7 +839,7 @@ Int16 pow_g16i(Int16 b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663924, Name := System.UInt16 Z0.gmathops::pow_b16u(System.UInt16,System.UInt32)
+// Id := 100663920, Name := System.UInt16 Z0.gmathops::pow_b16u(System.UInt16,System.UInt32)
 // ushort pow_b16u(ushort b, uint exp)
 // IL
 ushort pow_b16u(ushort b, uint exp)
@@ -982,7 +850,7 @@ ushort pow_b16u(ushort b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663925, Name := System.UInt16 Z0.gmathops::pow_g16u(System.UInt16,System.UInt32)
+// Id := 100663921, Name := System.UInt16 Z0.gmathops::pow_g16u(System.UInt16,System.UInt32)
 // ushort pow_g16u(ushort b, uint exp)
 // IL
 ushort pow_g16u(ushort b, uint exp)
@@ -993,7 +861,7 @@ ushort pow_g16u(ushort b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663926, Name := System.Int32 Z0.gmathops::pow_b32i(System.Int32,System.UInt32)
+// Id := 100663922, Name := System.Int32 Z0.gmathops::pow_b32i(System.Int32,System.UInt32)
 // int pow_b32i(int b, uint exp)
 // IL
 int pow_b32i(int b, uint exp)
@@ -1004,7 +872,7 @@ int pow_b32i(int b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663927, Name := System.Int32 Z0.gmathops::pow_g32i(System.Int32,System.UInt32)
+// Id := 100663923, Name := System.Int32 Z0.gmathops::pow_g32i(System.Int32,System.UInt32)
 // int pow_g32i(int b, uint exp)
 // IL
 int pow_g32i(int b, uint exp)
@@ -1015,7 +883,7 @@ int pow_g32i(int b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663928, Name := System.UInt32 Z0.gmathops::pow_b32u(System.UInt32,System.UInt32)
+// Id := 100663924, Name := System.UInt32 Z0.gmathops::pow_b32u(System.UInt32,System.UInt32)
 // uint pow_b32u(uint b, uint exp)
 // IL
 uint pow_b32u(uint b, uint exp)
@@ -1026,7 +894,7 @@ uint pow_b32u(uint b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663929, Name := System.UInt32 Z0.gmathops::pow_g32u(System.UInt32,System.UInt32)
+// Id := 100663925, Name := System.UInt32 Z0.gmathops::pow_g32u(System.UInt32,System.UInt32)
 // uint pow_g32u(uint b, uint exp)
 // IL
 uint pow_g32u(uint b, uint exp)
@@ -1037,7 +905,7 @@ uint pow_g32u(uint b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663930, Name := System.Int64 Z0.gmathops::pow_b64i(System.Int64,System.UInt32)
+// Id := 100663926, Name := System.Int64 Z0.gmathops::pow_b64i(System.Int64,System.UInt32)
 // long pow_b64i(long b, uint exp)
 // IL
 long pow_b64i(long b, uint exp)
@@ -1048,7 +916,7 @@ long pow_b64i(long b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663931, Name := System.Int64 Z0.gmathops::pow_g64i(System.Int64,System.UInt32)
+// Id := 100663927, Name := System.Int64 Z0.gmathops::pow_g64i(System.Int64,System.UInt32)
 // long pow_g64i(long b, uint exp)
 // IL
 long pow_g64i(long b, uint exp)
@@ -1059,7 +927,7 @@ long pow_g64i(long b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663932, Name := System.UInt64 Z0.gmathops::pow_b64u(System.UInt64,System.UInt32)
+// Id := 100663928, Name := System.UInt64 Z0.gmathops::pow_b64u(System.UInt64,System.UInt32)
 // ulong pow_b64u(ulong b, uint exp)
 // IL
 ulong pow_b64u(ulong b, uint exp)
@@ -1070,7 +938,7 @@ ulong pow_b64u(ulong b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663933, Name := System.UInt64 Z0.gmathops::pow_g64u(System.UInt64,System.UInt32)
+// Id := 100663929, Name := System.UInt64 Z0.gmathops::pow_g64u(System.UInt64,System.UInt32)
 // ulong pow_g64u(ulong b, uint exp)
 // IL
 ulong pow_g64u(ulong b, uint exp)
@@ -1081,7 +949,7 @@ ulong pow_g64u(ulong b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663934, Name := System.Single Z0.gmathops::pow_d32f(System.Single,System.UInt32)
+// Id := 100663930, Name := System.Single Z0.gmathops::pow_d32f(System.Single,System.UInt32)
 // float pow_d32f(float b, uint exp)
 // IL
 float pow_d32f(float b, uint exp)
@@ -1094,7 +962,7 @@ float pow_d32f(float b, uint exp)
     IL_0009: ret
 }
 
-// Id := 100663935, Name := System.Single Z0.gmathops::pow_g32f(System.Single,System.UInt32)
+// Id := 100663931, Name := System.Single Z0.gmathops::pow_g32f(System.Single,System.UInt32)
 // float pow_g32f(float b, uint exp)
 // IL
 float pow_g32f(float b, uint exp)
@@ -1105,7 +973,7 @@ float pow_g32f(float b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663936, Name := System.Double Z0.gmathops::pow_d64f(System.Double,System.UInt32)
+// Id := 100663932, Name := System.Double Z0.gmathops::pow_d64f(System.Double,System.UInt32)
 // double pow_d64f(double b, uint exp)
 // IL
 double pow_d64f(double b, uint exp)
@@ -1118,7 +986,7 @@ double pow_d64f(double b, uint exp)
     IL_0009: ret
 }
 
-// Id := 100663937, Name := System.Double Z0.gmathops::pow_g64f(System.Double,System.UInt32)
+// Id := 100663933, Name := System.Double Z0.gmathops::pow_g64f(System.Double,System.UInt32)
 // double pow_g64f(double b, uint exp)
 // IL
 double pow_g64f(double b, uint exp)
@@ -1129,7 +997,7 @@ double pow_g64f(double b, uint exp)
     IL_0007: ret
 }
 
-// Id := 100663938, Name := System.SByte Z0.gmathops::sar_d8i(System.SByte,System.Byte)
+// Id := 100663934, Name := System.SByte Z0.gmathops::sar_d8i(System.SByte,System.Byte)
 // sbyte sar_d8i(sbyte lhs, byte offset)
 // IL
 sbyte sar_d8i(sbyte lhs, byte offset)
@@ -1140,7 +1008,7 @@ sbyte sar_d8i(sbyte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663939, Name := System.SByte Z0.gmathops::sar_g8i(System.SByte,System.Byte)
+// Id := 100663935, Name := System.SByte Z0.gmathops::sar_g8i(System.SByte,System.Byte)
 // sbyte sar_g8i(sbyte lhs, byte offset)
 // IL
 sbyte sar_g8i(sbyte lhs, byte offset)
@@ -1151,7 +1019,7 @@ sbyte sar_g8i(sbyte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663940, Name := System.Byte Z0.gmathops::sar_d8u(System.Byte,System.Byte)
+// Id := 100663936, Name := System.Byte Z0.gmathops::sar_d8u(System.Byte,System.Byte)
 // byte sar_d8u(byte lhs, byte offset)
 // IL
 byte sar_d8u(byte lhs, byte offset)
@@ -1162,7 +1030,7 @@ byte sar_d8u(byte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663941, Name := System.Byte Z0.gmathops::sar_g8u(System.Byte,System.Byte)
+// Id := 100663937, Name := System.Byte Z0.gmathops::sar_g8u(System.Byte,System.Byte)
 // byte sar_g8u(byte lhs, byte offset)
 // IL
 byte sar_g8u(byte lhs, byte offset)
@@ -1173,7 +1041,7 @@ byte sar_g8u(byte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663942, Name := System.Int16 Z0.gmathops::sar_d16i(System.Int16,System.Byte)
+// Id := 100663938, Name := System.Int16 Z0.gmathops::sar_d16i(System.Int16,System.Byte)
 // Int16 sar_d16i(Int16 lhs, byte offset)
 // IL
 Int16 sar_d16i(Int16 lhs, byte offset)
@@ -1184,7 +1052,7 @@ Int16 sar_d16i(Int16 lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663943, Name := System.Int16 Z0.gmathops::sar_g16i(System.Int16,System.Byte)
+// Id := 100663939, Name := System.Int16 Z0.gmathops::sar_g16i(System.Int16,System.Byte)
 // Int16 sar_g16i(Int16 lhs, byte offset)
 // IL
 Int16 sar_g16i(Int16 lhs, byte offset)
@@ -1195,7 +1063,7 @@ Int16 sar_g16i(Int16 lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663944, Name := System.UInt16 Z0.gmathops::sar_d16u(System.UInt16,System.Byte)
+// Id := 100663940, Name := System.UInt16 Z0.gmathops::sar_d16u(System.UInt16,System.Byte)
 // ushort sar_d16u(ushort lhs, byte offset)
 // IL
 ushort sar_d16u(ushort lhs, byte offset)
@@ -1206,7 +1074,7 @@ ushort sar_d16u(ushort lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663945, Name := System.UInt16 Z0.gmathops::sar_g16u(System.UInt16,System.Byte)
+// Id := 100663941, Name := System.UInt16 Z0.gmathops::sar_g16u(System.UInt16,System.Byte)
 // ushort sar_g16u(ushort lhs, byte offset)
 // IL
 ushort sar_g16u(ushort lhs, byte offset)
@@ -1217,7 +1085,7 @@ ushort sar_g16u(ushort lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663946, Name := System.Int32 Z0.gmathops::sar_d32i(System.Int32,System.Byte)
+// Id := 100663942, Name := System.Int32 Z0.gmathops::sar_d32i(System.Int32,System.Byte)
 // int sar_d32i(int lhs, byte offset)
 // IL
 int sar_d32i(int lhs, byte offset)
@@ -1228,7 +1096,7 @@ int sar_d32i(int lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663947, Name := System.Int32 Z0.gmathops::sar_g32i(System.Int32,System.Byte)
+// Id := 100663943, Name := System.Int32 Z0.gmathops::sar_g32i(System.Int32,System.Byte)
 // int sar_g32i(int lhs, byte offset)
 // IL
 int sar_g32i(int lhs, byte offset)
@@ -1239,7 +1107,7 @@ int sar_g32i(int lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663948, Name := System.UInt32 Z0.gmathops::sar_d32u(System.UInt32,System.Byte)
+// Id := 100663944, Name := System.UInt32 Z0.gmathops::sar_d32u(System.UInt32,System.Byte)
 // uint sar_d32u(uint lhs, byte offset)
 // IL
 uint sar_d32u(uint lhs, byte offset)
@@ -1250,7 +1118,7 @@ uint sar_d32u(uint lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663949, Name := System.UInt32 Z0.gmathops::sar_g32u(System.UInt32,System.Byte)
+// Id := 100663945, Name := System.UInt32 Z0.gmathops::sar_g32u(System.UInt32,System.Byte)
 // uint sar_g32u(uint lhs, byte offset)
 // IL
 uint sar_g32u(uint lhs, byte offset)
@@ -1261,7 +1129,7 @@ uint sar_g32u(uint lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663950, Name := System.Int64 Z0.gmathops::sar_d64i(System.Int64,System.Byte)
+// Id := 100663946, Name := System.Int64 Z0.gmathops::sar_d64i(System.Int64,System.Byte)
 // long sar_d64i(long lhs, byte offset)
 // IL
 long sar_d64i(long lhs, byte offset)
@@ -1272,7 +1140,7 @@ long sar_d64i(long lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663951, Name := System.Int64 Z0.gmathops::sar_g64i(System.Int64,System.Byte)
+// Id := 100663947, Name := System.Int64 Z0.gmathops::sar_g64i(System.Int64,System.Byte)
 // long sar_g64i(long lhs, byte offset)
 // IL
 long sar_g64i(long lhs, byte offset)
@@ -1283,7 +1151,7 @@ long sar_g64i(long lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663952, Name := System.UInt64 Z0.gmathops::sar_d64u(System.UInt64,System.Byte)
+// Id := 100663948, Name := System.UInt64 Z0.gmathops::sar_d64u(System.UInt64,System.Byte)
 // ulong sar_d64u(ulong lhs, byte offset)
 // IL
 ulong sar_d64u(ulong lhs, byte offset)
@@ -1294,7 +1162,7 @@ ulong sar_d64u(ulong lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663953, Name := System.UInt64 Z0.gmathops::sar_g64u(System.UInt64,System.Byte)
+// Id := 100663949, Name := System.UInt64 Z0.gmathops::sar_g64u(System.UInt64,System.Byte)
 // ulong sar_g64u(ulong lhs, byte offset)
 // IL
 ulong sar_g64u(ulong lhs, byte offset)
@@ -1305,7 +1173,7 @@ ulong sar_g64u(ulong lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663954, Name := System.UInt64 Z0.gmathops::select_1(System.UInt64,System.UInt64,System.UInt64)
+// Id := 100663950, Name := System.UInt64 Z0.gmathops::select_1(System.UInt64,System.UInt64,System.UInt64)
 // ulong select_1(ulong a, ulong b, ulong c)
 // IL
 ulong select_1(ulong a, ulong b, ulong c)
@@ -1317,7 +1185,7 @@ ulong select_1(ulong a, ulong b, ulong c)
     IL_0008: ret
 }
 
-// Id := 100663955, Name := System.UInt64 Z0.gmathops::select_2(System.UInt64,System.UInt64,System.UInt64)
+// Id := 100663951, Name := System.UInt64 Z0.gmathops::select_2(System.UInt64,System.UInt64,System.UInt64)
 // ulong select_2(ulong a, ulong b, ulong c)
 // IL
 ulong select_2(ulong a, ulong b, ulong c)
@@ -1329,7 +1197,7 @@ ulong select_2(ulong a, ulong b, ulong c)
     IL_0008: ret
 }
 
-// Id := 100663956, Name := Z0.Sign Z0.gmathops::signum_d8i(System.SByte)
+// Id := 100663952, Name := Z0.Sign Z0.gmathops::signum_d8i(System.SByte)
 // Sign:int signum_d8i(sbyte x)
 // IL
 Sign:int signum_d8i(sbyte x)
@@ -1339,7 +1207,7 @@ Sign:int signum_d8i(sbyte x)
     IL_0006: ret
 }
 
-// Id := 100663957, Name := Z0.Sign Z0.gmathops::signum_g8i(System.SByte)
+// Id := 100663953, Name := Z0.Sign Z0.gmathops::signum_g8i(System.SByte)
 // Sign:int signum_g8i(sbyte x)
 // IL
 Sign:int signum_g8i(sbyte x)
@@ -1349,7 +1217,7 @@ Sign:int signum_g8i(sbyte x)
     IL_0006: ret
 }
 
-// Id := 100663958, Name := Z0.Sign Z0.gmathops::signum_d8u(System.Byte)
+// Id := 100663954, Name := Z0.Sign Z0.gmathops::signum_d8u(System.Byte)
 // Sign:int signum_d8u(byte x)
 // IL
 Sign:int signum_d8u(byte x)
@@ -1359,7 +1227,7 @@ Sign:int signum_d8u(byte x)
     IL_0006: ret
 }
 
-// Id := 100663959, Name := Z0.Sign Z0.gmathops::signum_g8u(System.Byte)
+// Id := 100663955, Name := Z0.Sign Z0.gmathops::signum_g8u(System.Byte)
 // Sign:int signum_g8u(byte x)
 // IL
 Sign:int signum_g8u(byte x)
@@ -1369,7 +1237,7 @@ Sign:int signum_g8u(byte x)
     IL_0006: ret
 }
 
-// Id := 100663960, Name := Z0.Sign Z0.gmathops::signum_d16i(System.Int16)
+// Id := 100663956, Name := Z0.Sign Z0.gmathops::signum_d16i(System.Int16)
 // Sign:int signum_d16i(Int16 x)
 // IL
 Sign:int signum_d16i(Int16 x)
@@ -1379,7 +1247,7 @@ Sign:int signum_d16i(Int16 x)
     IL_0006: ret
 }
 
-// Id := 100663961, Name := Z0.Sign Z0.gmathops::signum_g16i(System.Int16)
+// Id := 100663957, Name := Z0.Sign Z0.gmathops::signum_g16i(System.Int16)
 // Sign:int signum_g16i(Int16 x)
 // IL
 Sign:int signum_g16i(Int16 x)
@@ -1389,7 +1257,7 @@ Sign:int signum_g16i(Int16 x)
     IL_0006: ret
 }
 
-// Id := 100663962, Name := Z0.Sign Z0.gmathops::signum_d16u(System.UInt16)
+// Id := 100663958, Name := Z0.Sign Z0.gmathops::signum_d16u(System.UInt16)
 // Sign:int signum_d16u(ushort x)
 // IL
 Sign:int signum_d16u(ushort x)
@@ -1399,7 +1267,7 @@ Sign:int signum_d16u(ushort x)
     IL_0006: ret
 }
 
-// Id := 100663963, Name := Z0.Sign Z0.gmathops::signum_g16u(System.UInt16)
+// Id := 100663959, Name := Z0.Sign Z0.gmathops::signum_g16u(System.UInt16)
 // Sign:int signum_g16u(ushort x)
 // IL
 Sign:int signum_g16u(ushort x)
@@ -1409,7 +1277,7 @@ Sign:int signum_g16u(ushort x)
     IL_0006: ret
 }
 
-// Id := 100663964, Name := Z0.Sign Z0.gmathops::signum_d32i(System.Int32)
+// Id := 100663960, Name := Z0.Sign Z0.gmathops::signum_d32i(System.Int32)
 // Sign:int signum_d32i(int x)
 // IL
 Sign:int signum_d32i(int x)
@@ -1419,7 +1287,7 @@ Sign:int signum_d32i(int x)
     IL_0006: ret
 }
 
-// Id := 100663965, Name := Z0.Sign Z0.gmathops::signum_g32i(System.Int32)
+// Id := 100663961, Name := Z0.Sign Z0.gmathops::signum_g32i(System.Int32)
 // Sign:int signum_g32i(int x)
 // IL
 Sign:int signum_g32i(int x)
@@ -1429,7 +1297,7 @@ Sign:int signum_g32i(int x)
     IL_0006: ret
 }
 
-// Id := 100663966, Name := Z0.Sign Z0.gmathops::signum_d32u(System.UInt32)
+// Id := 100663962, Name := Z0.Sign Z0.gmathops::signum_d32u(System.UInt32)
 // Sign:int signum_d32u(uint x)
 // IL
 Sign:int signum_d32u(uint x)
@@ -1439,7 +1307,7 @@ Sign:int signum_d32u(uint x)
     IL_0006: ret
 }
 
-// Id := 100663967, Name := Z0.Sign Z0.gmathops::signum_g32u(System.UInt32)
+// Id := 100663963, Name := Z0.Sign Z0.gmathops::signum_g32u(System.UInt32)
 // Sign:int signum_g32u(uint x)
 // IL
 Sign:int signum_g32u(uint x)
@@ -1449,7 +1317,7 @@ Sign:int signum_g32u(uint x)
     IL_0006: ret
 }
 
-// Id := 100663968, Name := Z0.Sign Z0.gmathops::signum_d64i(System.Int64)
+// Id := 100663964, Name := Z0.Sign Z0.gmathops::signum_d64i(System.Int64)
 // Sign:int signum_d64i(long x)
 // IL
 Sign:int signum_d64i(long x)
@@ -1459,7 +1327,7 @@ Sign:int signum_d64i(long x)
     IL_0006: ret
 }
 
-// Id := 100663969, Name := Z0.Sign Z0.gmathops::signum_g64i(System.Int64)
+// Id := 100663965, Name := Z0.Sign Z0.gmathops::signum_g64i(System.Int64)
 // Sign:int signum_g64i(long x)
 // IL
 Sign:int signum_g64i(long x)
@@ -1469,7 +1337,7 @@ Sign:int signum_g64i(long x)
     IL_0006: ret
 }
 
-// Id := 100663970, Name := Z0.Sign Z0.gmathops::signum_d64u(System.UInt64)
+// Id := 100663966, Name := Z0.Sign Z0.gmathops::signum_d64u(System.UInt64)
 // Sign:int signum_d64u(ulong x)
 // IL
 Sign:int signum_d64u(ulong x)
@@ -1479,7 +1347,7 @@ Sign:int signum_d64u(ulong x)
     IL_0006: ret
 }
 
-// Id := 100663971, Name := Z0.Sign Z0.gmathops::signum_g64u(System.UInt64)
+// Id := 100663967, Name := Z0.Sign Z0.gmathops::signum_g64u(System.UInt64)
 // Sign:int signum_g64u(ulong x)
 // IL
 Sign:int signum_g64u(ulong x)
@@ -1489,7 +1357,7 @@ Sign:int signum_g64u(ulong x)
     IL_0006: ret
 }
 
-// Id := 100663972, Name := Z0.Sign Z0.gmathops::signum_g32f(System.Single)
+// Id := 100663968, Name := Z0.Sign Z0.gmathops::signum_g32f(System.Single)
 // Sign:int signum_g32f(float x)
 // IL
 Sign:int signum_g32f(float x)
@@ -1499,7 +1367,7 @@ Sign:int signum_g32f(float x)
     IL_0006: ret
 }
 
-// Id := 100663973, Name := Z0.Sign Z0.gmathops::signum_d32f(System.Single)
+// Id := 100663969, Name := Z0.Sign Z0.gmathops::signum_d32f(System.Single)
 // Sign:int signum_d32f(float x)
 // IL
 Sign:int signum_d32f(float x)
@@ -1509,7 +1377,7 @@ Sign:int signum_d32f(float x)
     IL_0006: ret
 }
 
-// Id := 100663974, Name := Z0.Sign Z0.gmathops::signum_d64f(System.Double)
+// Id := 100663970, Name := Z0.Sign Z0.gmathops::signum_d64f(System.Double)
 // Sign:int signum_d64f(double x)
 // IL
 Sign:int signum_d64f(double x)
@@ -1519,7 +1387,7 @@ Sign:int signum_d64f(double x)
     IL_0006: ret
 }
 
-// Id := 100663975, Name := Z0.Sign Z0.gmathops::signum_g64f(System.Double)
+// Id := 100663971, Name := Z0.Sign Z0.gmathops::signum_g64f(System.Double)
 // Sign:int signum_g64f(double x)
 // IL
 Sign:int signum_g64f(double x)
@@ -1529,7 +1397,7 @@ Sign:int signum_g64f(double x)
     IL_0006: ret
 }
 
-// Id := 100663976, Name := System.SByte Z0.gmathops::square_d8i(System.SByte)
+// Id := 100663972, Name := System.SByte Z0.gmathops::square_d8i(System.SByte)
 // sbyte square_d8i(sbyte x)
 // IL
 sbyte square_d8i(sbyte x)
@@ -1539,7 +1407,7 @@ sbyte square_d8i(sbyte x)
     IL_0006: ret
 }
 
-// Id := 100663977, Name := System.SByte Z0.gmathops::square_g8i(System.SByte)
+// Id := 100663973, Name := System.SByte Z0.gmathops::square_g8i(System.SByte)
 // sbyte square_g8i(sbyte x)
 // IL
 sbyte square_g8i(sbyte x)
@@ -1549,7 +1417,7 @@ sbyte square_g8i(sbyte x)
     IL_0006: ret
 }
 
-// Id := 100663978, Name := System.Byte Z0.gmathops::square_d8u(System.Byte)
+// Id := 100663974, Name := System.Byte Z0.gmathops::square_d8u(System.Byte)
 // byte square_d8u(byte x)
 // IL
 byte square_d8u(byte x)
@@ -1559,7 +1427,7 @@ byte square_d8u(byte x)
     IL_0006: ret
 }
 
-// Id := 100663979, Name := System.Byte Z0.gmathops::square_g8u(System.Byte)
+// Id := 100663975, Name := System.Byte Z0.gmathops::square_g8u(System.Byte)
 // byte square_g8u(byte x)
 // IL
 byte square_g8u(byte x)
@@ -1569,7 +1437,7 @@ byte square_g8u(byte x)
     IL_0006: ret
 }
 
-// Id := 100663980, Name := System.Int16 Z0.gmathops::square_d16i(System.Int16)
+// Id := 100663976, Name := System.Int16 Z0.gmathops::square_d16i(System.Int16)
 // Int16 square_d16i(Int16 x)
 // IL
 Int16 square_d16i(Int16 x)
@@ -1579,7 +1447,7 @@ Int16 square_d16i(Int16 x)
     IL_0006: ret
 }
 
-// Id := 100663981, Name := System.Int16 Z0.gmathops::square_g16i(System.Int16)
+// Id := 100663977, Name := System.Int16 Z0.gmathops::square_g16i(System.Int16)
 // Int16 square_g16i(Int16 x)
 // IL
 Int16 square_g16i(Int16 x)
@@ -1589,7 +1457,7 @@ Int16 square_g16i(Int16 x)
     IL_0006: ret
 }
 
-// Id := 100663982, Name := System.UInt16 Z0.gmathops::square_d16u(System.UInt16)
+// Id := 100663978, Name := System.UInt16 Z0.gmathops::square_d16u(System.UInt16)
 // ushort square_d16u(ushort x)
 // IL
 ushort square_d16u(ushort x)
@@ -1599,7 +1467,7 @@ ushort square_d16u(ushort x)
     IL_0006: ret
 }
 
-// Id := 100663983, Name := System.UInt16 Z0.gmathops::square_g16u(System.UInt16)
+// Id := 100663979, Name := System.UInt16 Z0.gmathops::square_g16u(System.UInt16)
 // ushort square_g16u(ushort x)
 // IL
 ushort square_g16u(ushort x)
@@ -1609,7 +1477,7 @@ ushort square_g16u(ushort x)
     IL_0006: ret
 }
 
-// Id := 100663984, Name := System.Int32 Z0.gmathops::square_d32i(System.Int32)
+// Id := 100663980, Name := System.Int32 Z0.gmathops::square_d32i(System.Int32)
 // int square_d32i(int x)
 // IL
 int square_d32i(int x)
@@ -1619,7 +1487,7 @@ int square_d32i(int x)
     IL_0006: ret
 }
 
-// Id := 100663985, Name := System.Int32 Z0.gmathops::square_g32i(System.Int32)
+// Id := 100663981, Name := System.Int32 Z0.gmathops::square_g32i(System.Int32)
 // int square_g32i(int x)
 // IL
 int square_g32i(int x)
@@ -1629,7 +1497,7 @@ int square_g32i(int x)
     IL_0006: ret
 }
 
-// Id := 100663986, Name := System.UInt32 Z0.gmathops::square_d32u(System.UInt32)
+// Id := 100663982, Name := System.UInt32 Z0.gmathops::square_d32u(System.UInt32)
 // uint square_d32u(uint x)
 // IL
 uint square_d32u(uint x)
@@ -1639,7 +1507,7 @@ uint square_d32u(uint x)
     IL_0006: ret
 }
 
-// Id := 100663987, Name := System.UInt32 Z0.gmathops::square_g32u(System.UInt32)
+// Id := 100663983, Name := System.UInt32 Z0.gmathops::square_g32u(System.UInt32)
 // uint square_g32u(uint x)
 // IL
 uint square_g32u(uint x)
@@ -1649,7 +1517,7 @@ uint square_g32u(uint x)
     IL_0006: ret
 }
 
-// Id := 100663988, Name := System.Int64 Z0.gmathops::square_d64i(System.Int64)
+// Id := 100663984, Name := System.Int64 Z0.gmathops::square_d64i(System.Int64)
 // long square_d64i(long x)
 // IL
 long square_d64i(long x)
@@ -1659,7 +1527,7 @@ long square_d64i(long x)
     IL_0006: ret
 }
 
-// Id := 100663989, Name := System.Int64 Z0.gmathops::square_g64i(System.Int64)
+// Id := 100663985, Name := System.Int64 Z0.gmathops::square_g64i(System.Int64)
 // long square_g64i(long x)
 // IL
 long square_g64i(long x)
@@ -1669,7 +1537,7 @@ long square_g64i(long x)
     IL_0006: ret
 }
 
-// Id := 100663990, Name := System.UInt64 Z0.gmathops::square_d64u(System.UInt64)
+// Id := 100663986, Name := System.UInt64 Z0.gmathops::square_d64u(System.UInt64)
 // ulong square_d64u(ulong x)
 // IL
 ulong square_d64u(ulong x)
@@ -1679,7 +1547,7 @@ ulong square_d64u(ulong x)
     IL_0006: ret
 }
 
-// Id := 100663991, Name := System.UInt64 Z0.gmathops::square_g64u(System.UInt64)
+// Id := 100663987, Name := System.UInt64 Z0.gmathops::square_g64u(System.UInt64)
 // ulong square_g64u(ulong x)
 // IL
 ulong square_g64u(ulong x)
@@ -1689,7 +1557,7 @@ ulong square_g64u(ulong x)
     IL_0006: ret
 }
 
-// Id := 100663992, Name := System.Single Z0.gmathops::square_d32f(System.Single)
+// Id := 100663988, Name := System.Single Z0.gmathops::square_d32f(System.Single)
 // float square_d32f(float x)
 // IL
 float square_d32f(float x)
@@ -1699,7 +1567,7 @@ float square_d32f(float x)
     IL_0006: ret
 }
 
-// Id := 100663993, Name := System.Single Z0.gmathops::square_g32f(System.Single)
+// Id := 100663989, Name := System.Single Z0.gmathops::square_g32f(System.Single)
 // float square_g32f(float x)
 // IL
 float square_g32f(float x)
@@ -1709,7 +1577,7 @@ float square_g32f(float x)
     IL_0006: ret
 }
 
-// Id := 100663994, Name := System.Double Z0.gmathops::square_d64f(System.Double)
+// Id := 100663990, Name := System.Double Z0.gmathops::square_d64f(System.Double)
 // double square_d64f(double x)
 // IL
 double square_d64f(double x)
@@ -1719,7 +1587,7 @@ double square_d64f(double x)
     IL_0006: ret
 }
 
-// Id := 100663995, Name := System.Double Z0.gmathops::square_g64f(System.Double)
+// Id := 100663991, Name := System.Double Z0.gmathops::square_g64f(System.Double)
 // double square_g64f(double x)
 // IL
 double square_g64f(double x)
@@ -1729,7 +1597,7 @@ double square_g64f(double x)
     IL_0006: ret
 }
 
-// Id := 100663996, Name := System.SByte Z0.gmathops::srl_d8i(System.SByte,System.Byte)
+// Id := 100663992, Name := System.SByte Z0.gmathops::srl_d8i(System.SByte,System.Byte)
 // sbyte srl_d8i(sbyte lhs, byte offset)
 // IL
 sbyte srl_d8i(sbyte lhs, byte offset)
@@ -1740,7 +1608,7 @@ sbyte srl_d8i(sbyte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663997, Name := System.SByte Z0.gmathops::srl_g8i(System.SByte,System.Byte)
+// Id := 100663993, Name := System.SByte Z0.gmathops::srl_g8i(System.SByte,System.Byte)
 // sbyte srl_g8i(sbyte lhs, byte offset)
 // IL
 sbyte srl_g8i(sbyte lhs, byte offset)
@@ -1751,7 +1619,7 @@ sbyte srl_g8i(sbyte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663998, Name := System.Byte Z0.gmathops::srl_d8u(System.Byte,System.Byte)
+// Id := 100663994, Name := System.Byte Z0.gmathops::srl_d8u(System.Byte,System.Byte)
 // byte srl_d8u(byte lhs, byte offset)
 // IL
 byte srl_d8u(byte lhs, byte offset)
@@ -1762,7 +1630,7 @@ byte srl_d8u(byte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100663999, Name := System.Byte Z0.gmathops::srl_g8u(System.Byte,System.Byte)
+// Id := 100663995, Name := System.Byte Z0.gmathops::srl_g8u(System.Byte,System.Byte)
 // byte srl_g8u(byte lhs, byte offset)
 // IL
 byte srl_g8u(byte lhs, byte offset)
@@ -1773,7 +1641,7 @@ byte srl_g8u(byte lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664000, Name := System.Int16 Z0.gmathops::srl_d16i(System.Int16,System.Byte)
+// Id := 100663996, Name := System.Int16 Z0.gmathops::srl_d16i(System.Int16,System.Byte)
 // Int16 srl_d16i(Int16 lhs, byte offset)
 // IL
 Int16 srl_d16i(Int16 lhs, byte offset)
@@ -1784,7 +1652,7 @@ Int16 srl_d16i(Int16 lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664001, Name := System.Int16 Z0.gmathops::srl_g16i(System.Int16,System.Byte)
+// Id := 100663997, Name := System.Int16 Z0.gmathops::srl_g16i(System.Int16,System.Byte)
 // Int16 srl_g16i(Int16 lhs, byte offset)
 // IL
 Int16 srl_g16i(Int16 lhs, byte offset)
@@ -1795,7 +1663,7 @@ Int16 srl_g16i(Int16 lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664002, Name := System.UInt16 Z0.gmathops::srl_d16u(System.UInt16,System.Byte)
+// Id := 100663998, Name := System.UInt16 Z0.gmathops::srl_d16u(System.UInt16,System.Byte)
 // ushort srl_d16u(ushort lhs, byte offset)
 // IL
 ushort srl_d16u(ushort lhs, byte offset)
@@ -1806,7 +1674,7 @@ ushort srl_d16u(ushort lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664003, Name := System.UInt16 Z0.gmathops::srl_g16u(System.UInt16,System.Byte)
+// Id := 100663999, Name := System.UInt16 Z0.gmathops::srl_g16u(System.UInt16,System.Byte)
 // ushort srl_g16u(ushort lhs, byte offset)
 // IL
 ushort srl_g16u(ushort lhs, byte offset)
@@ -1817,7 +1685,7 @@ ushort srl_g16u(ushort lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664004, Name := System.Int32 Z0.gmathops::srl_d32i(System.Int32,System.Byte)
+// Id := 100664000, Name := System.Int32 Z0.gmathops::srl_d32i(System.Int32,System.Byte)
 // int srl_d32i(int lhs, byte offset)
 // IL
 int srl_d32i(int lhs, byte offset)
@@ -1828,7 +1696,7 @@ int srl_d32i(int lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664005, Name := System.Int32 Z0.gmathops::srl_g32i(System.Int32,System.Byte)
+// Id := 100664001, Name := System.Int32 Z0.gmathops::srl_g32i(System.Int32,System.Byte)
 // int srl_g32i(int lhs, byte offset)
 // IL
 int srl_g32i(int lhs, byte offset)
@@ -1839,7 +1707,7 @@ int srl_g32i(int lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664006, Name := System.UInt32 Z0.gmathops::srl_d32u(System.UInt32,System.Byte)
+// Id := 100664002, Name := System.UInt32 Z0.gmathops::srl_d32u(System.UInt32,System.Byte)
 // uint srl_d32u(uint lhs, byte offset)
 // IL
 uint srl_d32u(uint lhs, byte offset)
@@ -1850,7 +1718,7 @@ uint srl_d32u(uint lhs, byte offset)
     IL_0007: ret
 }
 
-// Id := 100664007, Name := System.UInt32 Z0.gmathops::srl_g32u(System.UInt32,System.Byte)
+// Id := 100664003, Name := System.UInt32 Z0.gmathops::srl_g32u(System.UInt32,System.Byte)
 // uint srl_g32u(uint lhs, byte offset)
 // IL
 uint srl_g32u(uint lhs, byte offset)
@@ -1858,6 +1726,50 @@ uint srl_g32u(uint lhs, byte offset)
     IL_0000: ldarg.0
     IL_0001: ldarg.1
     IL_0002: call System.UInt32 Z0.gmath::srl<System.UInt32>(System.UInt32,System.Byte)
+    IL_0007: ret
+}
+
+// Id := 100664004, Name := System.Int64 Z0.gmathops::srl_d64i(System.Int64,System.Byte)
+// long srl_d64i(long lhs, byte offset)
+// IL
+long srl_d64i(long lhs, byte offset)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Int64 Z0.math::srl(System.Int64,System.Byte)
+    IL_0007: ret
+}
+
+// Id := 100664005, Name := System.Int64 Z0.gmathops::srl_g64i(System.Int64,System.Byte)
+// long srl_g64i(long lhs, byte offset)
+// IL
+long srl_g64i(long lhs, byte offset)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Int64 Z0.gmath::srl<System.Int64>(System.Int64,System.Byte)
+    IL_0007: ret
+}
+
+// Id := 100664006, Name := System.UInt64 Z0.gmathops::srl_d64u(System.UInt64,System.Byte)
+// ulong srl_d64u(ulong lhs, byte offset)
+// IL
+ulong srl_d64u(ulong lhs, byte offset)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.UInt64 Z0.math::srl(System.UInt64,System.Byte)
+    IL_0007: ret
+}
+
+// Id := 100664007, Name := System.UInt64 Z0.gmathops::srl_g64u(System.UInt64,System.Byte)
+// ulong srl_g64u(ulong lhs, byte offset)
+// IL
+ulong srl_g64u(ulong lhs, byte offset)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.UInt64 Z0.gmath::srl<System.UInt64>(System.UInt64,System.Byte)
     IL_0007: ret
 }
 

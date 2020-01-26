@@ -1,0 +1,10 @@
+convert32u~convert_g32u  0f 1f 44 00 00 0f b6 c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 48 0f be c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 0f b7 c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 48 0f bf c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 8b c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 8b c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 8b c1 c3
+convert32u~convert_g32u  0f 1f 44 00 00 8b c1 c3
+convert32u~convert_g32u  c5 f8 77 66 90 c5 f8 57 c0 c5 fa 2a c1 c3
+convert32u~convert_g32u  c5 f8 77 66 90 8b c1 c5 f8 57 c0 c4 e1 fb 2a c0 c3

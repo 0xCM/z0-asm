@@ -1,8 +1,0 @@
-// Id := 100663957, Name := T Z0.gmath::minval<T>(T)
-// double minval<double>(double t)
-// AggressiveInlining
-double minval<double>(double t)
-{
-    IL_0000: call T zfunc::minval<T>()
-    IL_0005: ret
-}

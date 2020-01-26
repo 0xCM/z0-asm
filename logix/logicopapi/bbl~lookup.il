@@ -75,3 +75,4 @@ BinaryOp<bit> lookup(BinaryBitLogicKind:byte kind)
     IL_0121: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_0126: throw
 }
+------------------------------------------------------------------------------------------------------------------------

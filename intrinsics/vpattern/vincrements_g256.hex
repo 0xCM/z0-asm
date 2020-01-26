@@ -1,0 +1,8 @@
+vincrements~n256_g8x8u    c5 f8 77 66 90 48 b8 59 55 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g8x8i    c5 f8 77 66 90 48 b8 59 55 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g16x16u  c5 f8 77 66 90 48 b8 79 55 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g16x16i  c5 f8 77 66 90 48 b8 79 55 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g32x32u  c5 f8 77 66 90 48 b8 69 58 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g32x32i  c5 f8 77 66 90 48 b8 69 58 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g64x64u  c5 f8 77 66 90 48 b8 99 56 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vincrements~n256_g64x64i  c5 f8 77 66 90 48 b8 99 56 af dd fa 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

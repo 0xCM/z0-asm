@@ -1,0 +1,8 @@
+sll_g8u   0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 e0 0f b6 c0 c3
+sll_g8i   0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 e0 48 0f be c0 c3
+sll_g16u  0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e0 0f b7 c0 c3
+sll_g16i  0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 e0 48 0f bf c0 c3
+sll_g32u  0f 1f 44 00 00 8b c1 0f b6 ca d3 e0 c3
+sll_g32i  0f 1f 44 00 00 8b c1 0f b6 ca d3 e0 c3
+sll_g64u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3
+sll_g64i  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3

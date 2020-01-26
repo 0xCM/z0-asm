@@ -1,0 +1,8 @@
+not_g256x8u   c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x8i   c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x16u  c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x16i  c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x32u  c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x32i  c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x64u  c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+not_g256x64i  c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -75,3 +75,4 @@ bit eval(BinaryBitLogicKind:byte kind, bit a, bit b)
     IL_00D1: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_00D6: throw
 }
+------------------------------------------------------------------------------------------------------------------------

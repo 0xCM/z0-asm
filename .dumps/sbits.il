@@ -1,5 +1,5 @@
-// 2020-01-24 20:46:48:068
-// Id := 100664246, Name := System.Void Z0.OpCodes.sbits::split_g64(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
+// 2020-01-26 03:38:02:203
+// Id := 100664238, Name := System.Void Z0.OpCodes.sbits::split_g64(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
 // void split_g64(ulong src, int index, out ulong x0, out ulong x1)
 // IL
 void split_g64(ulong src, int index, out ulong x0, out ulong x1)
@@ -12,7 +12,7 @@ void split_g64(ulong src, int index, out ulong x0, out ulong x1)
     IL_0009: ret
 }
 
-// Id := 100664247, Name := System.Void Z0.OpCodes.sbits::split_64(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
+// Id := 100664239, Name := System.Void Z0.OpCodes.sbits::split_64(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
 // void split_64(ulong src, int index, out ulong x0, out ulong x1)
 // IL
 void split_64(ulong src, int index, out ulong x0, out ulong x1)
@@ -25,7 +25,7 @@ void split_64(ulong src, int index, out ulong x0, out ulong x1)
     IL_0009: ret
 }
 
-// Id := 100664248, Name := System.Void Z0.OpCodes.sbits::split_exact(System.UInt64,System.UInt32&,System.UInt32&)
+// Id := 100664240, Name := System.Void Z0.OpCodes.sbits::split_exact(System.UInt64,System.UInt32&,System.UInt32&)
 // void split_exact(ulong src, out uint x0, out uint x1)
 // IL
 void split_exact(ulong src, out uint x0, out uint x1)
@@ -37,7 +37,7 @@ void split_exact(ulong src, out uint x0, out uint x1)
     IL_0008: ret
 }
 
-// Id := 100664249, Name := System.UInt64 Z0.OpCodes.sbits::pow2_20()
+// Id := 100664241, Name := System.UInt64 Z0.OpCodes.sbits::pow2_20()
 // ulong pow2_20()
 // IL
 ulong pow2_20()
@@ -47,7 +47,7 @@ ulong pow2_20()
     IL_000A: ret
 }
 
-// Id := 100664250, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_20()
+// Id := 100664242, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_20()
 // ulong pow2m1_20()
 // IL
 ulong pow2m1_20()
@@ -57,7 +57,7 @@ ulong pow2m1_20()
     IL_000A: ret
 }
 
-// Id := 100664251, Name := System.UInt64 Z0.OpCodes.sbits::pow2_33()
+// Id := 100664243, Name := System.UInt64 Z0.OpCodes.sbits::pow2_33()
 // ulong pow2_33()
 // IL
 ulong pow2_33()
@@ -67,7 +67,7 @@ ulong pow2_33()
     IL_000A: ret
 }
 
-// Id := 100664252, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_33()
+// Id := 100664244, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_33()
 // ulong pow2m1_33()
 // IL
 ulong pow2m1_33()
@@ -77,7 +77,7 @@ ulong pow2m1_33()
     IL_000A: ret
 }
 
-// Id := 100664253, Name := System.UInt64 Z0.OpCodes.sbits::pow2_1()
+// Id := 100664245, Name := System.UInt64 Z0.OpCodes.sbits::pow2_1()
 // ulong pow2_1()
 // IL
 ulong pow2_1()
@@ -87,7 +87,7 @@ ulong pow2_1()
     IL_000A: ret
 }
 
-// Id := 100664254, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_1()
+// Id := 100664246, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_1()
 // ulong pow2m1_1()
 // IL
 ulong pow2m1_1()
@@ -97,7 +97,7 @@ ulong pow2m1_1()
     IL_000A: ret
 }
 
-// Id := 100664255, Name := System.UInt64 Z0.OpCodes.sbits::pow2_2()
+// Id := 100664247, Name := System.UInt64 Z0.OpCodes.sbits::pow2_2()
 // ulong pow2_2()
 // IL
 ulong pow2_2()
@@ -107,7 +107,7 @@ ulong pow2_2()
     IL_000A: ret
 }
 
-// Id := 100664256, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_2()
+// Id := 100664248, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_2()
 // ulong pow2m1_2()
 // IL
 ulong pow2m1_2()
@@ -117,7 +117,7 @@ ulong pow2m1_2()
     IL_000A: ret
 }
 
-// Id := 100664257, Name := System.UInt64 Z0.OpCodes.sbits::pow2_3()
+// Id := 100664249, Name := System.UInt64 Z0.OpCodes.sbits::pow2_3()
 // ulong pow2_3()
 // IL
 ulong pow2_3()
@@ -127,7 +127,7 @@ ulong pow2_3()
     IL_000A: ret
 }
 
-// Id := 100664258, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_3()
+// Id := 100664250, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_3()
 // ulong pow2m1_3()
 // IL
 ulong pow2m1_3()
@@ -137,7 +137,7 @@ ulong pow2m1_3()
     IL_000A: ret
 }
 
-// Id := 100664259, Name := System.UInt64 Z0.OpCodes.sbits::pow2_4()
+// Id := 100664251, Name := System.UInt64 Z0.OpCodes.sbits::pow2_4()
 // ulong pow2_4()
 // IL
 ulong pow2_4()
@@ -147,7 +147,7 @@ ulong pow2_4()
     IL_000A: ret
 }
 
-// Id := 100664260, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_4()
+// Id := 100664252, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_4()
 // ulong pow2m1_4()
 // IL
 ulong pow2m1_4()
@@ -157,7 +157,7 @@ ulong pow2m1_4()
     IL_000A: ret
 }
 
-// Id := 100664261, Name := System.UInt64 Z0.OpCodes.sbits::pow2_5()
+// Id := 100664253, Name := System.UInt64 Z0.OpCodes.sbits::pow2_5()
 // ulong pow2_5()
 // IL
 ulong pow2_5()
@@ -167,7 +167,7 @@ ulong pow2_5()
     IL_000A: ret
 }
 
-// Id := 100664262, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_5()
+// Id := 100664254, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_5()
 // ulong pow2m1_5()
 // IL
 ulong pow2m1_5()
@@ -177,7 +177,7 @@ ulong pow2m1_5()
     IL_000A: ret
 }
 
-// Id := 100664263, Name := System.UInt64 Z0.OpCodes.sbits::pow2_6()
+// Id := 100664255, Name := System.UInt64 Z0.OpCodes.sbits::pow2_6()
 // ulong pow2_6()
 // IL
 ulong pow2_6()
@@ -187,7 +187,7 @@ ulong pow2_6()
     IL_000A: ret
 }
 
-// Id := 100664264, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_6()
+// Id := 100664256, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_6()
 // ulong pow2m1_6()
 // IL
 ulong pow2m1_6()
@@ -197,7 +197,7 @@ ulong pow2m1_6()
     IL_000A: ret
 }
 
-// Id := 100664265, Name := System.UInt64 Z0.OpCodes.sbits::pow2_7()
+// Id := 100664257, Name := System.UInt64 Z0.OpCodes.sbits::pow2_7()
 // ulong pow2_7()
 // IL
 ulong pow2_7()
@@ -207,7 +207,7 @@ ulong pow2_7()
     IL_000A: ret
 }
 
-// Id := 100664266, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_7()
+// Id := 100664258, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_7()
 // ulong pow2m1_7()
 // IL
 ulong pow2m1_7()
@@ -217,7 +217,7 @@ ulong pow2m1_7()
     IL_000A: ret
 }
 
-// Id := 100664267, Name := System.UInt64 Z0.OpCodes.sbits::pow2_8()
+// Id := 100664259, Name := System.UInt64 Z0.OpCodes.sbits::pow2_8()
 // ulong pow2_8()
 // IL
 ulong pow2_8()
@@ -227,7 +227,7 @@ ulong pow2_8()
     IL_000A: ret
 }
 
-// Id := 100664268, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_8()
+// Id := 100664260, Name := System.UInt64 Z0.OpCodes.sbits::pow2m1_8()
 // ulong pow2m1_8()
 // IL
 ulong pow2m1_8()
@@ -237,7 +237,7 @@ ulong pow2m1_8()
     IL_000A: ret
 }
 
-// Id := 100664269, Name := System.UInt32 Z0.OpCodes.sbits::set_bit(System.UInt32,System.Byte,Z0.bit)
+// Id := 100664261, Name := System.UInt32 Z0.OpCodes.sbits::set_bit(System.UInt32,System.Byte,Z0.bit)
 // uint set_bit(uint src, byte pos, bit state)
 // IL
 uint set_bit(uint src, byte pos, bit state)
@@ -249,7 +249,7 @@ uint set_bit(uint src, byte pos, bit state)
     IL_0008: ret
 }
 
-// Id := 100664270, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_nb(System.UInt32,System.Byte,Z0.bit)
+// Id := 100664262, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_nb(System.UInt32,System.Byte,Z0.bit)
 // uint set_bit_nb(uint src, byte pos, bit state)
 // IL
 uint set_bit_nb(uint src, byte pos, bit state)
@@ -261,7 +261,7 @@ uint set_bit_nb(uint src, byte pos, bit state)
     IL_0008: ret
 }
 
-// Id := 100664271, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_on(System.UInt32,System.Byte)
+// Id := 100664263, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_on(System.UInt32,System.Byte)
 // uint set_bit_on(uint src, byte pos)
 // IL
 uint set_bit_on(uint src, byte pos)
@@ -273,7 +273,7 @@ uint set_bit_on(uint src, byte pos)
     IL_000C: ret
 }
 
-// Id := 100664272, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_off(System.UInt32,System.Byte)
+// Id := 100664264, Name := System.UInt32 Z0.OpCodes.sbits::set_bit_off(System.UInt32,System.Byte)
 // uint set_bit_off(uint src, byte pos)
 // IL
 uint set_bit_off(uint src, byte pos)

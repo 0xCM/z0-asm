@@ -1,0 +1,8 @@
+same__g128x8u_128x8u    c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 74 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x8i_128x8i    c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 74 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x16u_128x16u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 75 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x16i_128x16i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 75 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x32u_128x32u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 76 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x32i_128x32i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c5 f9 76 c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x64u_128x64u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 29 c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+same__g128x64i_128x64i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 29 c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3

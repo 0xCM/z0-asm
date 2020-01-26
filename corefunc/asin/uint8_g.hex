@@ -1,0 +1,10 @@
+uint8_g8u   0f 1f 44 00 00 48 8b c1 c3
+uint8_g8i   0f 1f 44 00 00 48 8b c1 c3
+uint8_g16u  0f 1f 44 00 00 48 8b c1 c3
+uint8_g16i  0f 1f 44 00 00 48 8b c1 c3
+uint8_g32u  0f 1f 44 00 00 48 8b c1 c3
+uint8_g32i  0f 1f 44 00 00 48 8b c1 c3
+uint8_g64u  0f 1f 44 00 00 48 8b c1 c3
+uint8_g64i  0f 1f 44 00 00 48 8b c1 c3
+uint8_g32f  0f 1f 44 00 00 48 8b c1 c3
+uint8_g64f  0f 1f 44 00 00 48 8b c1 c3

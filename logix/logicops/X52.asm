@@ -1,7 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
 ; bit f52(bit a, bit b, bit c)
-; X52[7ff7c6a1de50h, 7ff7c6a1de65h][21] = {0f 1f 44 00 00 41 23 d0 8b c2 f7 d0 83 e0 01 41 33 c8 23 c1 c3}
-; Capture completion code, RET_ZEDx3
-; 2020-01-25 02:10:36:907
+; X52[21] = {0f 1f 44 00 00 41 23 d0 8b c2 f7 d0 83 e0 01 41 33 c8 23 c1 c3}
+; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 d0}
 0008h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}

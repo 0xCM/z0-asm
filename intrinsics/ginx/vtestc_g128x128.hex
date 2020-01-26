@@ -1,0 +1,10 @@
+vtestc__g128x8u_128x8u    c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x8i_128x8i    c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x16u_128x16u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x16i_128x16i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x32u_128x32u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x32i_128x32i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x64u_128x64u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x64i_128x64i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 17 c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x32f_128x32f  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 0e c1 0f 92 c0 0f b6 c0 c3
+vtestc__g128x64f_128x64f  c5 f8 77 66 90 c5 f9 10 01 c5 f9 10 0a c4 e2 79 0f c1 0f 92 c0 0f b6 c0 c3

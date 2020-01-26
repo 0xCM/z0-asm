@@ -11,3 +11,4 @@ Vector128<byte> vcompact(Vector256<Int16> src, N128 w, byte t)
     IL_0011: call System.Runtime.Intrinsics.Vector128`1<System.Byte> zfunc::v8u<System.SByte>(System.Runtime.Intrinsics.Vector128`1<System.SByte>)
     IL_0016: ret
 }
+------------------------------------------------------------------------------------------------------------------------

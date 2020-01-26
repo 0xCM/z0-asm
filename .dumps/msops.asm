@@ -1,7 +1,7 @@
-; 2020-01-24 20:46:48:153
+------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> msand_32u(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs, Span<uint> dst)
-; msand_32u_32u_32u[7ff7c6a9ffc0h, 7ff7c6aa0007h][71] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 20 4d 63 da 4f 8d 1c 98 49 63 f2 8b 34 b0 49 63 fa 8b 3c ba 23 f7 41 89 33 41 ff c2 45 3b d1 7c e0 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; Capture completion code, MSDIAG
+; msand_32u_span0o_span0o_span0o[71] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 20 4d 63 da 4f 8d 1c 98 49 63 f2 8b 34 b0 49 63 fa 8b 3c ba 23 f7 41 89 33 41 ff c2 45 3b d1 7c e0 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
+; Capture completion code = MSDIAG
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -29,4 +29,3 @@
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------

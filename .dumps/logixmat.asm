@@ -1,7 +1,7 @@
-; 2020-01-24 20:46:48:374
+------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ulong> or_and_xor_bm(in BitMatrix<ulong> a, in BitMatrix<ulong> b, ref BitMatrix<ulong> C)
-; or_and_xor_bm_0o[7ff7c6ab0480h, 7ff7c6ab0573h][243] = {57 56 55 53 48 83 ec 58 c5 f8 77 48 8b 01 4c 8b 0a 4d 8b 10 45 33 db 33 f6 48 63 fe 48 c1 e7 03 48 8d 1c 38 49 8d 2c 39 c5 ff f0 03 c5 ff f0 4d 00 c5 fd db c1 49 03 fa c5 fe 7f 07 41 ff c3 83 c6 04 41 83 fb 10 7c d1 49 8b c0 48 8b 09 48 8b 12 48 8b 00 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 19 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 4c 03 d8 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b 00 33 d2 33 c9 4c 63 c9 4e 8d 0c c8 4d 8b d1 4d 8b d9 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 02 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c4 c1 7e 7f 01 ff c2 83 c1 04 83 fa 10 7c ad 49 8b c0 c5 f8 77 48 83 c4 58 5b 5d 5e 5f c3}
-; Capture completion code, MSDIAG
+; or_and_xor_bm_0o[243] = {57 56 55 53 48 83 ec 58 c5 f8 77 48 8b 01 4c 8b 0a 4d 8b 10 45 33 db 33 f6 48 63 fe 48 c1 e7 03 48 8d 1c 38 49 8d 2c 39 c5 ff f0 03 c5 ff f0 4d 00 c5 fd db c1 49 03 fa c5 fe 7f 07 41 ff c3 83 c6 04 41 83 fb 10 7c d1 49 8b c0 48 8b 09 48 8b 12 48 8b 00 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 19 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 4c 03 d8 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b 00 33 d2 33 c9 4c 63 c9 4e 8d 0c c8 4d 8b d1 4d 8b d9 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 02 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c4 c1 7e 7f 01 ff c2 83 c1 04 83 fa 10 7c ad 49 8b c0 c5 f8 77 48 83 c4 58 5b 5d 5e 5f c3}
+; Capture completion code = MSDIAG
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -76,10 +76,10 @@
 00f0h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00f1h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00f2h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ulong> nand_or_and_xor_bm(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> C)
-; nand_or_and_xor_bm_0o[7ff7c6ab09b0h, 7ff7c6ab0ae5h][309] = {57 56 55 53 48 83 ec 58 c5 f8 77 48 8b 01 4c 8b 0a 4d 8b 10 45 33 db 33 f6 48 63 fe 48 c1 e7 03 48 8d 1c 38 49 8d 2c 39 c5 ff f0 03 c5 ff f0 4d 00 c5 fd db c1 49 03 fa c5 fe 7f 07 41 ff c3 83 c6 04 41 83 fb 10 7c d1 49 8b c0 48 8b 09 4c 8b 0a 48 8b 00 45 33 d2 45 33 db 49 63 f3 48 c1 e6 03 48 8d 3c 31 49 8d 1c 31 c5 ff f0 07 c5 ff f0 0b c5 fd ef c1 48 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 04 41 83 fa 10 7c d1 49 8b 00 33 c9 45 33 c9 4d 63 d1 4e 8d 14 d0 4d 8b da 49 8b f2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 44 24 20 c5 ff f0 06 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c4 c1 7e 7f 02 ff c1 41 83 c1 04 83 f9 10 7c ad 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 4e 8d 14 d0 4d 63 d9 4e 8d 1c da 49 8b f3 c4 c1 7f f0 02 c5 ff f0 0e c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c4 c1 7e 7f 03 ff c1 41 83 c1 04 83 f9 10 7c c9 49 8b c0 c5 f8 77 48 83 c4 58 5b 5d 5e 5f c3}
-; Capture completion code, MSDIAG
+; nand_or_and_xor_bm_0o[309] = {57 56 55 53 48 83 ec 58 c5 f8 77 48 8b 01 4c 8b 0a 4d 8b 10 45 33 db 33 f6 48 63 fe 48 c1 e7 03 48 8d 1c 38 49 8d 2c 39 c5 ff f0 03 c5 ff f0 4d 00 c5 fd db c1 49 03 fa c5 fe 7f 07 41 ff c3 83 c6 04 41 83 fb 10 7c d1 49 8b c0 48 8b 09 4c 8b 0a 48 8b 00 45 33 d2 45 33 db 49 63 f3 48 c1 e6 03 48 8d 3c 31 49 8d 1c 31 c5 ff f0 07 c5 ff f0 0b c5 fd ef c1 48 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 04 41 83 fa 10 7c d1 49 8b 00 33 c9 45 33 c9 4d 63 d1 4e 8d 14 d0 4d 8b da 49 8b f2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 44 24 20 c5 ff f0 06 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c4 c1 7e 7f 02 ff c1 41 83 c1 04 83 f9 10 7c ad 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 4e 8d 14 d0 4d 63 d9 4e 8d 1c da 49 8b f3 c4 c1 7f f0 02 c5 ff f0 0e c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c4 c1 7e 7f 03 ff c1 41 83 c1 04 83 f9 10 7c c9 49 8b c0 c5 f8 77 48 83 c4 58 5b 5d 5e 5f c3}
+; Capture completion code = MSDIAG
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -173,30 +173,30 @@
 0132h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0133h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0134h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit comp1_logic(bit a, bit b)
-; comp1_logic_0o[7ff7c6ab0b20h, 7ff7c6ab0b2eh][14] = {0f 1f 44 00 00 8b c1 23 c2 33 d1 0b c2 c3}
-; Capture completion code, MSDIAG
+; comp1_logic_0o[14] = {0f 1f 44 00 00 8b c1 23 c2 33 d1 0b c2 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0009h xor edx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d1}
 000bh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; ulong comp1_scalar(ulong a, ulong b)
-; comp1_scalar_64u[7ff7c6ab0b40h, 7ff7c6ab0b52h][18] = {0f 1f 44 00 00 48 8b c1 48 23 c2 48 33 d1 48 0b c2 c3}
-; Capture completion code, MSDIAG
+; comp1_scalar_64u[18] = {0f 1f 44 00 00 48 8b c1 48 23 c2 48 33 d1 48 0b c2 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 000bh xor rdx,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 d1}
 000eh or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> comp1_v128(Vector128<ulong> a, Vector128<ulong> b)
-; comp1_v128_128x64u[7ff7c6ab0b70h, 7ff7c6ab0b9bh][43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 db c1 c5 f9 10 0a c4 c1 79 10 10 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code, MSDIAG
+; comp1_v128_128x64u[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 db c1 c5 f9 10 0a c4 c1 79 10 10 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -209,10 +209,10 @@
 0023h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0027h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> comp1_v256(Vector256<ulong> a, Vector256<ulong> b)
-; comp1_v256_256x64u[7ff7c6ab0bc0h, 7ff7c6ab0beeh][46] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 10 0a c4 c1 7d 10 10 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code, MSDIAG
+; comp1_v256_256x64u[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 10 0a c4 c1 7d 10 10 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -226,10 +226,10 @@
 0027h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 002ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit comp2_logic(bit a, bit b)
-; comp2_logic_0o[7ff7c6ab0c10h, 7ff7c6ab0c25h][21] = {0f 1f 44 00 00 8b c1 23 c2 33 ca 0b c1 23 c2 f7 d0 83 e0 01 c3}
-; Capture completion code, MSDIAG
+; comp2_logic_0o[21] = {0f 1f 44 00 00 8b c1 23 c2 33 ca 0b c1 23 c2 f7 d0 83 e0 01 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
@@ -239,10 +239,10 @@
 000fh not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0011h and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; ulong comp2_scalar(ulong a, ulong b)
-; comp2_scalar_64u[7ff7c6ab1040h, 7ff7c6ab1058h][24] = {0f 1f 44 00 00 48 8b c1 48 23 c2 48 33 ca 48 0b c1 48 23 c2 48 f7 d0 c3}
-; Capture completion code, MSDIAG
+; comp2_scalar_64u[24] = {0f 1f 44 00 00 48 8b c1 48 23 c2 48 33 ca 48 0b c1 48 23 c2 48 f7 d0 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
@@ -251,10 +251,10 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> comp2_v128(Vector128<ulong> a, Vector128<ulong> b)
-; comp2_v128_128x64u[7ff7c6ab1070h, 7ff7c6ab10ach][60] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 db c1 c5 f9 10 0a c4 c1 79 10 10 c5 f1 ef ca c5 f9 eb c1 c4 c1 79 10 08 c5 f1 db c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code, MSDIAG
+; comp2_v128_128x64u[60] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 db c1 c5 f9 10 0a c4 c1 79 10 10 c5 f1 ef ca c5 f9 eb c1 c4 c1 79 10 08 c5 f1 db c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -271,10 +271,10 @@
 0034h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0038h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 003bh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> comp2_v256(Vector256<ulong> a, Vector256<ulong> b)
-; comp2_v256_256x64u[7ff7c6ab10d0h, 7ff7c6ab1110h][64] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 10 0a c4 c1 7d 10 10 c5 f5 ef ca c5 fd eb c1 c4 c1 7d 10 08 c5 f5 db c0 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code, MSDIAG
+; comp2_v256_256x64u[64] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 10 0a c4 c1 7d 10 10 c5 f5 ef ca c5 fd eb c1 c4 c1 7d 10 08 c5 f5 db c0 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -292,10 +292,10 @@
 0039h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 003ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit comp3_logic(bit a, bit b)
-; comp3_logic_0o[7ff7c6ab1130h, 7ff7c6ab116ch][60] = {0f 1f 44 00 00 8b c1 23 c2 44 8b c1 44 33 c2 41 0b c0 23 c2 f7 d0 83 e0 01 44 8b c1 44 0b c2 41 f7 d0 41 83 e0 01 33 d1 f7 d2 83 e2 01 41 23 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
-; Capture completion code, MSDIAG
+; comp3_logic_0o[60] = {0f 1f 44 00 00 8b c1 23 c2 44 8b c1 44 33 c2 41 0b c0 23 c2 f7 d0 83 e0 01 44 8b c1 44 0b c2 41 f7 d0 41 83 e0 01 33 d1 f7 d2 83 e2 01 41 23 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
@@ -319,10 +319,10 @@
 0036h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0038h and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 003bh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; ulong comp3_scalar(ulong a, ulong b)
-; comp3_scalar_64u[7ff7c6ab1180h, 7ff7c6ab11b7h][55] = {0f 1f 44 00 00 48 8b c1 48 23 c2 4c 8b c1 4c 33 c2 49 0b c0 48 23 c2 48 f7 d0 4c 8b c1 4c 0b c2 49 f7 d0 48 33 d1 c4 c2 e8 f2 d0 48 23 c1 c4 e2 f0 f2 d2 48 0b c2 c3}
-; Capture completion code, MSDIAG
+; comp3_scalar_64u[55] = {0f 1f 44 00 00 48 8b c1 48 23 c2 4c 8b c1 4c 33 c2 49 0b c0 48 23 c2 48 f7 d0 4c 8b c1 4c 0b c2 49 f7 d0 48 33 d1 c4 c2 e8 f2 d0 48 23 c1 c4 e2 f0 f2 d2 48 0b c2 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
@@ -340,10 +340,10 @@
 002eh andn rdx,rcx,rdx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 f0 f2 d2}
 0033h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> comp3_v128(Vector128<ulong> a, Vector128<ulong> b)
-; comp3_v128_128x64u[7ff7c6ab11d0h, 7ff7c6ab1242h][114] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f8 28 da c5 f1 db cb c5 f8 28 d8 c5 f8 28 e2 c5 e1 ef dc c5 f1 eb cb c5 f8 28 da c5 e1 db c9 c5 f1 76 d9 c5 f1 ef cb c5 f8 28 d8 c5 f8 28 e2 c5 e1 eb dc c5 e1 76 e3 c5 e1 ef dc c5 f8 28 e0 c5 e9 ef d4 c5 e9 df d3 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code, MSDIAG
+; comp3_v128_128x64u[114] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f8 28 da c5 f1 db cb c5 f8 28 d8 c5 f8 28 e2 c5 e1 ef dc c5 f1 eb cb c5 f8 28 da c5 e1 db c9 c5 f1 76 d9 c5 f1 ef cb c5 f8 28 d8 c5 f8 28 e2 c5 e1 eb dc c5 e1 76 e3 c5 e1 ef dc c5 f8 28 e0 c5 e9 ef d4 c5 e9 df d3 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -374,10 +374,10 @@
 006ah vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 006eh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0071h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> comp3_v256(Vector256<ulong> a, Vector256<ulong> b)
-; comp3_v256_256x64u[7ff7c6ab1270h, 7ff7c6ab12e7h][119] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 fc 28 da c5 f5 db cb c5 fc 28 d8 c5 fc 28 e2 c5 e5 ef dc c5 f5 eb cb c5 fc 28 da c5 e5 db c9 c4 e2 75 29 d9 c5 f5 ef cb c5 fc 28 d8 c5 fc 28 e2 c5 e5 eb dc c4 e2 65 29 e3 c5 e5 ef dc c5 fc 28 e0 c5 ed ef d4 c5 ed df d3 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code, MSDIAG
+; comp3_v256_256x64u[119] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 fc 28 da c5 f5 db cb c5 fc 28 d8 c5 fc 28 e2 c5 e5 ef dc c5 f5 eb cb c5 fc 28 da c5 e5 db c9 c4 e2 75 29 d9 c5 f5 ef cb c5 fc 28 d8 c5 fc 28 e2 c5 e5 eb dc c4 e2 65 29 e3 c5 e5 ef dc c5 fc 28 e0 c5 ed ef d4 c5 ed df d3 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -409,4 +409,3 @@
 0070h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0073h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------

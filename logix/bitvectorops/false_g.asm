@@ -1,7 +1,70 @@
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<byte> false<byte>(BitVector<byte> x, BitVector<byte> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<sbyte> false<sbyte>(BitVector<sbyte> x, BitVector<sbyte> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<ushort> false<ushort>(BitVector<ushort> x, BitVector<ushort> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<Int16> false<Int16>(BitVector<Int16> x, BitVector<Int16> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<uint> false<uint>(BitVector<uint> x, BitVector<uint> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<int> false<int>(BitVector<int> x, BitVector<int> y)
+; false_g[16] = {0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}
+0009h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
+000dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+000fh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; BitVector<ulong> false<ulong>(BitVector<ulong> x, BitVector<ulong> y)
+; false_g[18] = {0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov [rsp+8],rcx                         ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 08}
+000ah mov [rsp+10h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 10}
+000fh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0011h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
 ; BitVector<long> false<long>(BitVector<long> x, BitVector<long> y)
-; false_g[7ff7c6b75cf0h, 7ff7c6b75d02h][18] = {0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 33 c0 c3}
-; Capture completion code, RET_ZEDx3
-; 2020-01-25 02:10:39:199
+; false_g[18] = {0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 33 c0 c3}
+; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+8],rcx                         ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 08}
 000ah mov [rsp+10h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 10}

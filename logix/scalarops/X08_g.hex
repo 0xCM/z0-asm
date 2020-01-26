@@ -1,0 +1,8 @@
+X08_g8u   0f 1f 44 00 00 0f b6 c1 f7 d0 0f b6 c0 0f b6 d2 23 c2 0f b6 c0 41 0f b6 d0 23 c2 0f b6 c0 c3
+X08_g8i   0f 1f 44 00 00 48 0f be c1 f7 d0 48 0f be c0 48 0f be d2 23 c2 48 0f be c0 49 0f be d0 23 c2 48 0f be c0 c3
+X08_g16u  0f 1f 44 00 00 0f b7 c1 f7 d0 0f b7 c0 0f b7 d2 23 c2 0f b7 c0 41 0f b7 d0 23 c2 0f b7 c0 c3
+X08_g16i  0f 1f 44 00 00 48 0f bf c1 f7 d0 48 0f bf c0 48 0f bf d2 23 c2 48 0f bf c0 49 0f bf d0 23 c2 48 0f bf c0 c3
+X08_g32u  0f 1f 44 00 00 8b c1 f7 d0 23 c2 41 23 c0 c3
+X08_g32i  0f 1f 44 00 00 8b c1 f7 d0 23 c2 41 23 c0 c3
+X08_g64u  0f 1f 44 00 00 48 8b c1 48 f7 d0 48 23 c2 49 23 c0 c3
+X08_g64i  0f 1f 44 00 00 48 8b c1 48 f7 d0 48 23 c2 49 23 c0 c3

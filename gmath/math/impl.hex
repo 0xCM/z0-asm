@@ -1,0 +1,8 @@
+impl_8i   0f 1f 44 00 00 48 0f be c2 f7 d0 48 0f be d1 0b c2 48 0f be c0 c3
+impl_8u   0f 1f 44 00 00 0f b6 c2 f7 d0 0f b6 d1 0b c2 0f b6 c0 c3
+impl_16i  0f 1f 44 00 00 48 0f bf c2 f7 d0 48 0f bf d1 0b c2 48 0f bf c0 c3
+impl_16u  0f 1f 44 00 00 0f b7 c2 f7 d0 0f b7 d1 0b c2 0f b7 c0 c3
+impl_32i  0f 1f 44 00 00 8b c2 f7 d0 0b c1 c3
+impl_32u  0f 1f 44 00 00 8b c2 f7 d0 0b c1 c3
+impl_64i  0f 1f 44 00 00 48 8b c2 48 f7 d0 48 0b c1 c3
+impl_64u  0f 1f 44 00 00 48 8b c2 48 f7 d0 48 0b c1 c3

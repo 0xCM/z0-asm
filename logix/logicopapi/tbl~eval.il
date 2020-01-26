@@ -507,3 +507,4 @@ bit eval(TernaryBitLogicKind:byte kind, bit a, bit b, bit c)
     IL_0519: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_051E: throw
 }
+------------------------------------------------------------------------------------------------------------------------

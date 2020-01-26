@@ -1,7 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
 ; bit f16(bit a, bit b, bit c)
-; X16[7ff7c6a1d390h, 7ff7c6a1d3aeh][30] = {0f 1f 44 00 00 8b c2 41 0b c0 f7 d0 83 e0 01 41 33 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
-; Capture completion code, RET_ZEDx3
-; 2020-01-25 02:10:36:815
+; X16[30] = {0f 1f 44 00 00 8b c2 41 0b c0 f7 d0 83 e0 01 41 33 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
+; Capture completion code = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h or eax,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c0}

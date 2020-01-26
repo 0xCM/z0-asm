@@ -1,0 +1,16 @@
+vcnonimpl_128x8i   c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x8u   c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x16i  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x16u  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x32i  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x32u  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x64i  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_128x64u  c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 df 02 c5 f9 11 01 48 8b c1 c3
+vcnonimpl_256x8i   c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x8u   c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x16i  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x16u  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x32i  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x32u  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x64i  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcnonimpl_256x64u  c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd df 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3

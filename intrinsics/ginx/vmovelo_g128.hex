@@ -1,0 +1,8 @@
+vmovelo__g128x8u   c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 0f b6 c0 c3
+vmovelo__g128x8i   c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 48 0f be c0 c3
+vmovelo__g128x16u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 0f b7 c0 c3
+vmovelo__g128x16i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 48 0f bf c0 c3
+vmovelo__g128x32u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
+vmovelo__g128x32i  c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
+vmovelo__g128x64u  c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3
+vmovelo__g128x64i  c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3

@@ -20,3 +20,4 @@ bit eval(UnaryBitLogicKind:byte kind, bit a)
     IL_0033: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_0038: throw
 }
+------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,4 @@
+ntz_g8u   0f 1f 44 00 00 0f b6 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 08 00 00 00 c3
+ntz_g16u  0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3
+ntz_g32u  0f 1f 44 00 00 33 c0 f3 0f bc c1 c3
+ntz_g64u  0f 1f 44 00 00 33 c0 f3 48 0f bc c1 c3

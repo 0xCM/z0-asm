@@ -27,3 +27,4 @@ UnaryOp<bit> lookup(UnaryBitLogicKind:byte kind)
     IL_0052: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_0057: throw
 }
+------------------------------------------------------------------------------------------------------------------------

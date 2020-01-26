@@ -9,3 +9,4 @@ Vector256<Int16> vconvert(in Block128<byte> src, N256 w, Int16 t)
     IL_000B: call System.Runtime.Intrinsics.Vector256`1<System.Int16> System.Runtime.Intrinsics.X86.Avx2::ConvertToVector256Int16(System.Byte*)
     IL_0010: ret
 }
+------------------------------------------------------------------------------------------------------------------------

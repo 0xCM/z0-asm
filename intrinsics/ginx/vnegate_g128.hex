@@ -1,0 +1,10 @@
+vnegate_g128x8u   c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c5 f9 f8 c1 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x8i   c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x16u  c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c5 f9 f9 c1 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x16i  c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x32u  c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c5 f9 fa c1 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x32i  c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x64u  c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x64i  c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x32f  c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3
+vnegate_g128x64f  c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3

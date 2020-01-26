@@ -1,7 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
 ; bit f30(bit a, bit b, bit c)
-; X30[7ff7c6a1d840h, 7ff7c6a1d854h][20] = {0f 1f 44 00 00 44 89 44 24 18 8b c2 f7 d0 83 e0 01 23 c1 c3}
-; Capture completion code, RET_SBB
-; 2020-01-25 02:10:36:854
+; X30[20] = {0f 1f 44 00 00 44 89 44 24 18 8b c2 f7 d0 83 e0 01 23 c1 c3}
+; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}

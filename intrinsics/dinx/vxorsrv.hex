@@ -1,0 +1,4 @@
+vxorsrv_128x32u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c4 e2 71 45 ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vxorsrv_128x64u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c4 e2 f1 45 ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vxorsrv_256x32u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c4 e2 75 45 ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vxorsrv_256x64u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c4 e2 f5 45 ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

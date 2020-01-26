@@ -1,0 +1,128 @@
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<byte>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<byte>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<sbyte>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<sbyte>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<ushort>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<ushort>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<Int16>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<Int16>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<uint>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<uint>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<int>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<int>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<ulong>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<ulong>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664519, Name := System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+// string sig<long>(ComparisonKind:byte kind)
+// AggressiveInlining
+string sig<long>(ComparisonKind:byte kind)
+{
+    IL_0000: ldstr "{0}:{1}"
+    IL_0005: ldarg.0
+    IL_0006: box Z0.ComparisonKind
+    IL_000B: ldtoken T
+    IL_0010: call System.Type System.Type::GetTypeFromHandle(System.RuntimeTypeHandle)
+    IL_0015: call Z0.PrimalKind Z0.DataTypeX::Kind(System.Type)
+    IL_001A: call System.String Z0.DataTypeX::Keyword(Z0.PrimalKind)
+    IL_001F: call System.String System.String::Format(System.String,System.Object,System.Object)
+    IL_0024: ret
+}
+------------------------------------------------------------------------------------------------------------------------

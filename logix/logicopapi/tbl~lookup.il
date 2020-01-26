@@ -402,3 +402,4 @@ TernaryOp<bit> lookup(TernaryBitLogicKind:byte kind)
     IL_0689: newobj System.Void System.NotSupportedException::.ctor(System.String)
     IL_068E: throw
 }
+------------------------------------------------------------------------------------------------------------------------

@@ -9,3 +9,4 @@ Vector128<long> vconvert(in Block64<uint> src, N128 w, ulong t)
     IL_000B: call System.Runtime.Intrinsics.Vector128`1<System.Int64> System.Runtime.Intrinsics.X86.Sse41::ConvertToVector128Int64(System.UInt32*)
     IL_0010: ret
 }
+------------------------------------------------------------------------------------------------------------------------

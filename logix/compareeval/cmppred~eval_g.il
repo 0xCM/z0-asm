@@ -1,7 +1,7 @@
 // Id := 100663451, Name := Z0.bit Z0.Logix.CompareEval::eval<T>(Z0.Logix.IComparisonPred`1<T>)
-// bit eval<double>(IComparisonPred<double> expr)
+// bit eval<ulong>(IComparisonPred<ulong> expr)
 // IL
-bit eval<double>(IComparisonPred<double> expr)
+bit eval<ulong>(IComparisonPred<ulong> expr)
 {
     IL_0000: ldarg.0
     IL_0001: callvirt Z0.ComparisonKind Z0.Logix.IComparisonExpr`1<T>::get_ComparisonKind()
@@ -16,3 +16,4 @@ bit eval<double>(IComparisonPred<double> expr)
     IL_0026: call Z0.bit Z0.Logix.PredicateApi::eval<T>(Z0.ComparisonKind,T,T)
     IL_002B: ret
 }
+------------------------------------------------------------------------------------------------------------------------

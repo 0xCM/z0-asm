@@ -1,5 +1,5 @@
-// 2020-01-24 20:46:47:998
-// Id := 100664210, Name := Z0.bit Z0.OpCodes.bitmask::testbit_8i(System.SByte,System.Int32)
+// 2020-01-26 03:38:02:115
+// Id := 100664202, Name := Z0.bit Z0.OpCodes.bitmask::testbit_8i(System.SByte,System.Int32)
 // bit testbit_8i(sbyte src, int pos)
 // IL
 bit testbit_8i(sbyte src, int pos)
@@ -10,7 +10,7 @@ bit testbit_8i(sbyte src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664211, Name := Z0.bit Z0.OpCodes.bitmask::testbit_d8u(System.Byte,System.Int32)
+// Id := 100664203, Name := Z0.bit Z0.OpCodes.bitmask::testbit_d8u(System.Byte,System.Int32)
 // bit testbit_d8u(byte src, int pos)
 // IL
 bit testbit_d8u(byte src, int pos)
@@ -21,7 +21,7 @@ bit testbit_d8u(byte src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664212, Name := Z0.bit Z0.OpCodes.bitmask::testbit_8u(System.Byte,System.Int32)
+// Id := 100664204, Name := Z0.bit Z0.OpCodes.bitmask::testbit_8u(System.Byte,System.Int32)
 // bit testbit_8u(byte src, int pos)
 // IL
 bit testbit_8u(byte src, int pos)
@@ -32,7 +32,7 @@ bit testbit_8u(byte src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664213, Name := Z0.bit Z0.OpCodes.bitmask::testbit_16i(System.Int16,System.Int32)
+// Id := 100664205, Name := Z0.bit Z0.OpCodes.bitmask::testbit_16i(System.Int16,System.Int32)
 // bit testbit_16i(Int16 src, int pos)
 // IL
 bit testbit_16i(Int16 src, int pos)
@@ -43,7 +43,7 @@ bit testbit_16i(Int16 src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664214, Name := Z0.bit Z0.OpCodes.bitmask::testbit_16u(System.UInt16,System.Int32)
+// Id := 100664206, Name := Z0.bit Z0.OpCodes.bitmask::testbit_16u(System.UInt16,System.Int32)
 // bit testbit_16u(ushort src, int pos)
 // IL
 bit testbit_16u(ushort src, int pos)
@@ -54,7 +54,7 @@ bit testbit_16u(ushort src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664215, Name := Z0.bit Z0.OpCodes.bitmask::testbit_32i(System.Int32,System.Int32)
+// Id := 100664207, Name := Z0.bit Z0.OpCodes.bitmask::testbit_32i(System.Int32,System.Int32)
 // bit testbit_32i(int src, int pos)
 // IL
 bit testbit_32i(int src, int pos)
@@ -65,7 +65,7 @@ bit testbit_32i(int src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664216, Name := Z0.bit Z0.OpCodes.bitmask::testbit_32u(System.UInt32,System.Int32)
+// Id := 100664208, Name := Z0.bit Z0.OpCodes.bitmask::testbit_32u(System.UInt32,System.Int32)
 // bit testbit_32u(uint src, int pos)
 // IL
 bit testbit_32u(uint src, int pos)
@@ -76,7 +76,7 @@ bit testbit_32u(uint src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664217, Name := Z0.bit Z0.OpCodes.bitmask::testbit_64i(System.Int64,System.Int32)
+// Id := 100664209, Name := Z0.bit Z0.OpCodes.bitmask::testbit_64i(System.Int64,System.Int32)
 // bit testbit_64i(long src, int pos)
 // IL
 bit testbit_64i(long src, int pos)
@@ -87,7 +87,7 @@ bit testbit_64i(long src, int pos)
     IL_0007: ret
 }
 
-// Id := 100664218, Name := Z0.bit Z0.OpCodes.bitmask::testbit_64u(System.UInt64,System.Int32)
+// Id := 100664210, Name := Z0.bit Z0.OpCodes.bitmask::testbit_64u(System.UInt64,System.Int32)
 // bit testbit_64u(ulong src, int pos)
 // IL
 bit testbit_64u(ulong src, int pos)

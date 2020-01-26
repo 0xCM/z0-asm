@@ -1,7 +1,7 @@
+------------------------------------------------------------------------------------------------------------------------
 ; bit f3e(bit a, bit b, bit c)
-; X3E[7ff7c6a1dab0h, 7ff7c6a1dac4h][20] = {0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 23 c0 33 d1 0b c2 c3}
-; Capture completion code, RET_SBB
-; 2020-01-25 02:10:36:879
+; X3E[20] = {0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 23 c0 33 d1 0b c2 c3}
+; Capture completion code = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}

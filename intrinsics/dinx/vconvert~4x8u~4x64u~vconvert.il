@@ -10,3 +10,4 @@ Vector256<ulong> vconvert(in Block32<byte> src, N256 w, ulong t)
     IL_0010: call System.Runtime.Intrinsics.Vector256`1<System.UInt64> zfunc::v64u<System.Int64>(System.Runtime.Intrinsics.Vector256`1<System.Int64>)
     IL_0015: ret
 }
+------------------------------------------------------------------------------------------------------------------------

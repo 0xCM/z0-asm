@@ -1,7 +1,7 @@
-; 2020-01-24 20:46:47:637
+------------------------------------------------------------------------------------------------------------------------
 ; void part63x3(ulong src, NatSpan<N21,byte> dst)
-; part63x3__0o_ns21x0oVoid[7ff7c68a0640h, 7ff7c68a069bh][91] = {0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff 7f 48 23 c1 48 8b 0a 49 b8 07 07 07 07 07 07 07 07 c4 42 fb f5 c0 4c 89 01 48 8b 0a 48 83 c1 08 4c 8b c0 49 c1 e8 18 49 b9 07 07 07 07 07 07 07 07 c4 42 bb f5 c1 4c 89 01 48 8b 12 48 83 c2 10 48 c1 e8 30 c4 c2 fb f5 c1 48 89 02 c3}
-; Capture completion code, MSDIAG
+; part63x3_0o_ns21x0oN21[91] = {0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff 7f 48 23 c1 48 8b 0a 49 b8 07 07 07 07 07 07 07 07 c4 42 fb f5 c0 4c 89 01 48 8b 0a 48 83 c1 08 4c 8b c0 49 c1 e8 18 49 b9 07 07 07 07 07 07 07 07 c4 42 bb f5 c1 4c 89 01 48 8b 12 48 83 c2 10 48 c1 e8 30 c4 c2 fb f5 c1 48 89 02 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 000fh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
@@ -22,10 +22,10 @@
 0052h pdep rax,rax,r9                         ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 c2 fb f5 c1}
 0057h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> bitgrid_vector256(BitGrid<byte> src, int block)
-; bitgrid_vector256__256x8u[7ff7c68a2e40h, 7ff7c68a2e61h][33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code, MSDIAG
+; bitgrid_vector256_BitGrid`1_0o[33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -37,10 +37,10 @@
 001ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; BitGrid256<N16,N16,ushort> transpose(BitGrid256<N16,N16,ushort> g)
-; transpose_0o[7ff7c68a4500h, 7ff7c68a476dh][621] = {c5 f8 77 66 90 c5 fc 57 c0 c5 fd 10 0a b8 07 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 00 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 00 c4 e3 7d 18 c2 01 b8 06 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 01 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 01 c4 e3 7d 18 c2 01 b8 05 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 02 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 02 c4 e3 7d 18 c2 01 b8 04 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 03 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 03 c4 e3 7d 18 c2 01 b8 03 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 04 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 04 c4 e3 7d 18 c2 01 b8 02 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 05 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 05 c4 e3 7d 18 c2 01 b8 01 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 06 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 06 c4 e3 7d 18 c2 01 33 c0 c5 f9 6e d0 c5 f5 f3 ca c5 fd d7 c1 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 c8 c5 f1 c4 ca 07 c4 e3 7d 18 c1 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c1 01 c5 f1 c4 c8 07 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code, MSDIAG
+; transpose_0o[621] = {c5 f8 77 66 90 c5 fc 57 c0 c5 fd 10 0a b8 07 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 00 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 00 c4 e3 7d 18 c2 01 b8 06 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 01 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 01 c4 e3 7d 18 c2 01 b8 05 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 02 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 02 c4 e3 7d 18 c2 01 b8 04 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 03 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 03 c4 e3 7d 18 c2 01 b8 03 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 04 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 04 c4 e3 7d 18 c2 01 b8 02 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 05 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 05 c4 e3 7d 18 c2 01 b8 01 00 00 00 c5 f9 6e d0 c5 f5 f3 d2 c5 fd d7 c2 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 d0 c5 e9 c4 d2 06 c4 e3 7d 18 c2 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c2 01 c5 e9 c4 d0 06 c4 e3 7d 18 c2 01 33 c0 c5 f9 6e d0 c5 f5 f3 ca c5 fd d7 c1 ba 55 55 55 55 c4 e2 7a f5 d2 0f b7 d2 c5 fc 28 c8 c5 f1 c4 ca 07 c4 e3 7d 18 c1 00 ba aa aa aa aa c4 e2 7a f5 c2 0f b7 c0 c4 e3 7d 19 c1 01 c5 f1 c4 c8 07 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; Capture completion code = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -177,10 +177,10 @@
 0266h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0269h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 026ch ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit read_bit_from_vector(in BitBlock<N23,byte> src)
-; read_bit_from_vector_0o[7ff7c68a5060h, 7ff7c68a5075h][21] = {0f 1f 44 00 00 48 8b 01 0f b6 00 0f b6 c0 c1 e8 03 83 e0 01 c3}
-; Capture completion code, MSDIAG
+; read_bit_from_vector_0o[21] = {0f 1f 44 00 00 48 8b 01 0f b6 00 0f b6 c0 c1 e8 03 83 e0 01 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h movzx eax,byte ptr [rax]                ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 00}
@@ -188,10 +188,10 @@
 000eh shr eax,3                               ; SHR r/m32, imm8 || o32 C1 /5 ib || encoded[3]{c1 e8 03}
 0011h and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; int segments()
-; segments__0o[7ff7c68a5090h, 7ff7c68a50c0h][48] = {48 83 ec 18 90 c6 44 24 10 00 48 8d 44 24 10 c6 00 00 c6 44 24 08 00 48 8d 44 24 08 c6 00 00 b8 01 00 00 00 83 c0 02 33 d2 03 c2 48 83 c4 18 c3}
-; Capture completion code, MSDIAG
+; segments[48] = {48 83 ec 18 90 c6 44 24 10 00 48 8d 44 24 10 c6 00 00 c6 44 24 08 00 48 8d 44 24 08 c6 00 00 b8 01 00 00 00 83 c0 02 33 d2 03 c2 48 83 c4 18 c3}
+; Capture completion code = MSDIAG
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov byte ptr [rsp+10h],0                ; MOV r/m8, imm8 || C6 /0 ib || encoded[5]{c6 44 24 10 00}
@@ -206,10 +206,10 @@
 0029h add eax,edx                             ; ADD r32, r/m32 || o32 03 /r || encoded[2]{03 c2}
 002bh add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; int count_segs()
-; count_segs__0o[7ff7c68a54e0h, 7ff7c68a5533h][83] = {48 83 ec 18 33 c0 48 89 44 24 10 48 89 44 24 08 48 8d 44 24 10 c6 00 00 48 8d 44 24 08 c6 00 00 33 c0 83 c0 4b 8b d0 c1 fa 1f 83 e2 03 03 d0 c1 fa 02 8b c8 c1 f9 1f 83 e1 03 03 c8 83 e1 fc 2b c1 75 04 33 c0 eb 05 b8 01 00 00 00 03 c2 48 83 c4 18 c3}
-; Capture completion code, MSDIAG
+; count_segs[83] = {48 83 ec 18 33 c0 48 89 44 24 10 48 89 44 24 08 48 8d 44 24 10 c6 00 00 48 8d 44 24 08 c6 00 00 33 c0 83 c0 4b 8b d0 c1 fa 1f 83 e2 03 03 d0 c1 fa 02 8b c8 c1 f9 1f 83 e1 03 03 c8 83 e1 fc 2b c1 75 04 33 c0 eb 05 b8 01 00 00 00 03 c2 48 83 c4 18 c3}
+; Capture completion code = MSDIAG
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0006h mov [rsp+10h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 10}
@@ -238,10 +238,10 @@
 004ch add eax,edx                             ; ADD r32, r/m32 || o32 03 /r || encoded[2]{03 c2}
 004eh add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit readbit_row_col_2(int n, ulong src, int row, int col)
-; readbit_row_col_2_32i[7ff7c68a5550h, 7ff7c68a5593h][67] = {0f 1f 44 00 00 48 89 54 24 10 41 0f af c8 41 03 c9 8b c1 c1 f8 1f 83 e0 3f 03 c1 c1 f8 06 48 8d 54 24 10 48 63 c0 48 8b 04 c2 8b d1 c1 fa 1f 83 e2 3f 03 d1 83 e2 c0 2b ca 0f b6 c9 48 d3 e8 83 e0 01 c3}
-; Capture completion code, MSDIAG
+; readbit_row_col_2_32i[67] = {0f 1f 44 00 00 48 89 54 24 10 41 0f af c8 41 03 c9 8b c1 c1 f8 1f 83 e0 3f 03 c1 c1 f8 06 48 8d 54 24 10 48 63 c0 48 8b 04 c2 8b d1 c1 fa 1f 83 e2 3f 03 d1 83 e2 c0 2b ca 0f b6 c9 48 d3 e8 83 e0 01 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 10}
 000ah imul ecx,r8d                            ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{41 0f af c8}
@@ -264,10 +264,10 @@
 003ch shr rax,cl                              ; SHR r/m64, CL || REX.W D3 /5 || encoded[3]{48 d3 e8}
 003fh and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 0042h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------
 ; bit readbit_g_position(in ulong src, int pos)
-; readbit_g_position_64u[7ff7c68a55b0h, 7ff7c68a55e2h][50] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 3f 03 c2 c1 f8 06 48 63 c0 48 8b 04 c1 8b ca c1 f9 1f 83 e1 3f 03 ca 83 e1 c0 2b d1 0f b6 ca 48 d3 e8 83 e0 01 c3}
-; Capture completion code, MSDIAG
+; readbit_g_position_64u[50] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 3f 03 c2 c1 f8 06 48 63 c0 48 8b 04 c1 8b ca c1 f9 1f 83 e1 3f 03 ca 83 e1 c0 2b d1 0f b6 ca 48 d3 e8 83 e0 01 c3}
+; Capture completion code = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h sar eax,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 1f}
@@ -286,4 +286,3 @@
 002bh shr rax,cl                              ; SHR r/m64, CL || REX.W D3 /5 || encoded[3]{48 d3 e8}
 002eh and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
-----------------------------------------------------------------------------------------------------------------------------------------------------------------

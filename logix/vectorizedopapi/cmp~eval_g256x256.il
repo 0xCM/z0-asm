@@ -1,0 +1,224 @@
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<byte> eval<byte>(ComparisonKind:byte kind, Vector256<byte> a, Vector256<byte> b)
+// IL
+Vector256<byte> eval<byte>(ComparisonKind:byte kind, Vector256<byte> a, Vector256<byte> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<sbyte> eval<sbyte>(ComparisonKind:byte kind, Vector256<sbyte> a, Vector256<sbyte> b)
+// IL
+Vector256<sbyte> eval<sbyte>(ComparisonKind:byte kind, Vector256<sbyte> a, Vector256<sbyte> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<ushort> eval<ushort>(ComparisonKind:byte kind, Vector256<ushort> a, Vector256<ushort> b)
+// IL
+Vector256<ushort> eval<ushort>(ComparisonKind:byte kind, Vector256<ushort> a, Vector256<ushort> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<Int16> eval<Int16>(ComparisonKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+// IL
+Vector256<Int16> eval<Int16>(ComparisonKind:byte kind, Vector256<Int16> a, Vector256<Int16> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<uint> eval<uint>(ComparisonKind:byte kind, Vector256<uint> a, Vector256<uint> b)
+// IL
+Vector256<uint> eval<uint>(ComparisonKind:byte kind, Vector256<uint> a, Vector256<uint> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<int> eval<int>(ComparisonKind:byte kind, Vector256<int> a, Vector256<int> b)
+// IL
+Vector256<int> eval<int>(ComparisonKind:byte kind, Vector256<int> a, Vector256<int> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<ulong> eval<ulong>(ComparisonKind:byte kind, Vector256<ulong> a, Vector256<ulong> b)
+// IL
+Vector256<ulong> eval<ulong>(ComparisonKind:byte kind, Vector256<ulong> a, Vector256<ulong> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100664080, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ComparisonKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Vector256<long> eval<long>(ComparisonKind:byte kind, Vector256<long> a, Vector256<long> b)
+// IL
+Vector256<long> eval<long>(ComparisonKind:byte kind, Vector256<long> a, Vector256<long> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.1
+    IL_0002: sub
+    IL_0003: switch(IL_001A,IL_0022,IL_0032,IL_002A)
+    IL_0018: br.s IL_0032
+    IL_001A: ldarg.1
+    IL_001B: ldarg.2
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::equals<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0021: ret
+    IL_0022: ldarg.1
+    IL_0023: ldarg.2
+    IL_0024: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::lt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0029: ret
+    IL_002A: ldarg.1
+    IL_002B: ldarg.2
+    IL_002C: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0031: ret
+    IL_0032: ldarg.0
+    IL_0033: call System.String Z0.Logix.OpHelpers::sig<T>(Z0.ComparisonKind)
+    IL_0038: newobj System.Void System.NotSupportedException::.ctor(System.String)
+    IL_003D: throw
+}
+------------------------------------------------------------------------------------------------------------------------

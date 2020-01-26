@@ -1,5 +1,5 @@
-// 2020-01-24 20:46:48:099
-// Id := 100664283, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq(System.Byte)
+// 2020-01-26 03:38:02:232
+// Id := 100664275, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq(System.Byte)
 // ReadOnlySpan<byte> bitseq(byte value)
 // IL
 ReadOnlySpan<byte> bitseq(byte value)
@@ -9,7 +9,7 @@ ReadOnlySpan<byte> bitseq(byte value)
     IL_0006: ret
 }
 
-// Id := 100664284, Name := System.Void Z0.OpCodes.bitstore::bitseq_8u(System.Byte,System.Span`1<System.Byte>)
+// Id := 100664276, Name := System.Void Z0.OpCodes.bitstore::bitseq_8u(System.Byte,System.Span`1<System.Byte>)
 // void bitseq_8u(byte value, Span<byte> dst)
 // IL
 void bitseq_8u(byte value, Span<byte> dst)
@@ -21,7 +21,7 @@ void bitseq_8u(byte value, Span<byte> dst)
     IL_0008: ret
 }
 
-// Id := 100664285, Name := System.Void Z0.OpCodes.bitstore::bitseq_16u(System.UInt16,System.Span`1<System.Byte>)
+// Id := 100664277, Name := System.Void Z0.OpCodes.bitstore::bitseq_16u(System.UInt16,System.Span`1<System.Byte>)
 // void bitseq_16u(ushort value, Span<byte> dst)
 // IL
 void bitseq_16u(ushort value, Span<byte> dst)
@@ -33,7 +33,7 @@ void bitseq_16u(ushort value, Span<byte> dst)
     IL_0008: ret
 }
 
-// Id := 100664286, Name := System.Void Z0.OpCodes.bitstore::bitseq_32u(System.UInt32,System.Span`1<System.Byte>)
+// Id := 100664278, Name := System.Void Z0.OpCodes.bitstore::bitseq_32u(System.UInt32,System.Span`1<System.Byte>)
 // void bitseq_32u(uint value, Span<byte> dst)
 // IL
 void bitseq_32u(uint value, Span<byte> dst)
@@ -45,7 +45,7 @@ void bitseq_32u(uint value, Span<byte> dst)
     IL_0008: ret
 }
 
-// Id := 100664287, Name := System.Void Z0.OpCodes.bitstore::bitseq_64u(System.UInt64,System.Span`1<System.Byte>)
+// Id := 100664279, Name := System.Void Z0.OpCodes.bitstore::bitseq_64u(System.UInt64,System.Span`1<System.Byte>)
 // void bitseq_64u(ulong value, Span<byte> dst)
 // IL
 void bitseq_64u(ulong value, Span<byte> dst)
@@ -57,7 +57,7 @@ void bitseq_64u(ulong value, Span<byte> dst)
     IL_0008: ret
 }
 
-// Id := 100664288, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq(System.Int32,System.Int32)
+// Id := 100664280, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq(System.Int32,System.Int32)
 // ReadOnlySpan<byte> bitseq(int offset, int count)
 // IL
 ReadOnlySpan<byte> bitseq(int offset, int count)
@@ -68,7 +68,7 @@ ReadOnlySpan<byte> bitseq(int offset, int count)
     IL_0007: ret
 }
 
-// Id := 100664289, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq8u(System.Byte)
+// Id := 100664281, Name := System.ReadOnlySpan`1<System.Byte> Z0.OpCodes.bitstore::bitseq8u(System.Byte)
 // ReadOnlySpan<byte> bitseq8u(byte src)
 // IL
 ReadOnlySpan<byte> bitseq8u(byte src)
@@ -78,7 +78,7 @@ ReadOnlySpan<byte> bitseq8u(byte src)
     IL_0006: ret
 }
 
-// Id := 100664290, Name := System.ReadOnlySpan`1<System.Char> Z0.OpCodes.bitstore::bitchars_8u(System.Byte)
+// Id := 100664282, Name := System.ReadOnlySpan`1<System.Char> Z0.OpCodes.bitstore::bitchars_8u(System.Byte)
 // ReadOnlySpan<Char> bitchars_8u(byte value)
 // IL
 ReadOnlySpan<Char> bitchars_8u(byte value)
@@ -88,7 +88,7 @@ ReadOnlySpan<Char> bitchars_8u(byte value)
     IL_0006: ret
 }
 
-// Id := 100664291, Name := System.Void Z0.OpCodes.bitstore::bitchars_8u(System.Byte,System.Span`1<System.Char>)
+// Id := 100664283, Name := System.Void Z0.OpCodes.bitstore::bitchars_8u(System.Byte,System.Span`1<System.Char>)
 // void bitchars_8u(byte value, Span<Char> dst)
 // IL
 void bitchars_8u(byte value, Span<Char> dst)
@@ -100,7 +100,7 @@ void bitchars_8u(byte value, Span<Char> dst)
     IL_0008: ret
 }
 
-// Id := 100664292, Name := System.Void Z0.OpCodes.bitstore::bitchars_16u(System.UInt16,System.Span`1<System.Char>)
+// Id := 100664284, Name := System.Void Z0.OpCodes.bitstore::bitchars_16u(System.UInt16,System.Span`1<System.Char>)
 // void bitchars_16u(ushort value, Span<Char> dst)
 // IL
 void bitchars_16u(ushort value, Span<Char> dst)
@@ -112,7 +112,7 @@ void bitchars_16u(ushort value, Span<Char> dst)
     IL_0008: ret
 }
 
-// Id := 100664293, Name := System.Void Z0.OpCodes.bitstore::bitchars_32u(System.UInt32,System.Span`1<System.Char>)
+// Id := 100664285, Name := System.Void Z0.OpCodes.bitstore::bitchars_32u(System.UInt32,System.Span`1<System.Char>)
 // void bitchars_32u(uint value, Span<Char> dst)
 // IL
 void bitchars_32u(uint value, Span<Char> dst)
@@ -124,7 +124,7 @@ void bitchars_32u(uint value, Span<Char> dst)
     IL_0008: ret
 }
 
-// Id := 100664294, Name := System.Void Z0.OpCodes.bitstore::bitchars_64u(System.UInt64,System.Span`1<System.Char>)
+// Id := 100664286, Name := System.Void Z0.OpCodes.bitstore::bitchars_64u(System.UInt64,System.Span`1<System.Char>)
 // void bitchars_64u(ulong value, Span<Char> dst)
 // IL
 void bitchars_64u(ulong value, Span<Char> dst)

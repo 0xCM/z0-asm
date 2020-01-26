@@ -1,1 +1,8 @@
-0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf0,0xf2,0xc2,0xc3
+nonimpl_g  0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 78 f2 c2 0f b6 c0 c3
+nonimpl_g  0f 1f 44 00 00 48 0f be c1 48 0f be d2 48 0f be c0 c4 e2 78 f2 c2 48 0f be c0 c3
+nonimpl_g  0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 c4 e2 78 f2 c2 0f b7 c0 c3
+nonimpl_g  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 48 0f bf c0 c4 e2 78 f2 c2 48 0f bf c0 c3
+nonimpl_g  0f 1f 44 00 00 c4 e2 70 f2 c2 c3
+nonimpl_g  0f 1f 44 00 00 c4 e2 70 f2 c2 c3
+nonimpl_g  0f 1f 44 00 00 c4 e2 f0 f2 c2 c3
+nonimpl_g  0f 1f 44 00 00 c4 e2 f0 f2 c2 c3

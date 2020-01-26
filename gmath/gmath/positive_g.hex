@@ -1,0 +1,8 @@
+positive_g8u   0f 1f 44 00 00 0f b6 c1 85 c0 0f 9f c0 0f b6 c0 c3
+positive_g8i   0f 1f 44 00 00 48 0f be c1 85 c0 0f 9f c0 0f b6 c0 c3
+positive_g16u  0f 1f 44 00 00 0f b7 c1 85 c0 0f 9f c0 0f b6 c0 c3
+positive_g16i  0f 1f 44 00 00 48 0f bf c1 85 c0 0f 9f c0 0f b6 c0 c3
+positive_g32u  0f 1f 44 00 00 85 c9 0f 95 c0 0f b6 c0 c3
+positive_g32i  0f 1f 44 00 00 85 c9 0f 9f c0 0f b6 c0 c3
+positive_g64u  0f 1f 44 00 00 48 85 c9 0f 95 c0 0f b6 c0 c3
+positive_g64i  0f 1f 44 00 00 48 85 c9 0f 9f c0 0f b6 c0 c3

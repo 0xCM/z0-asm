@@ -9,3 +9,4 @@ Vector128<int> vconvert(in Block32<byte> src, N128 w, int t)
     IL_000B: call System.Runtime.Intrinsics.Vector128`1<System.Int32> System.Runtime.Intrinsics.X86.Sse41::ConvertToVector128Int32(System.Byte*)
     IL_0010: ret
 }
+------------------------------------------------------------------------------------------------------------------------

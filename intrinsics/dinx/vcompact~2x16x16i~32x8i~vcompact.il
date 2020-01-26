@@ -10,3 +10,4 @@ Vector256<sbyte> vcompact(Vector256<Int16> x, Vector256<Int16> y, N256 w, sbyte 
     IL_000C: call System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vperm4x64(System.Runtime.Intrinsics.Vector256`1<System.SByte>,Z0.Perm4L)
     IL_0011: ret
 }
+------------------------------------------------------------------------------------------------------------------------

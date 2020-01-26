@@ -1,0 +1,8 @@
+bm~identity_g8u   57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 8d 1c 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g8i   57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 4d 1a 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g16u  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 0d 1a 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g16i  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 cd 19 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g32u  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 8d 19 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g32i  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 4d 19 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g64u  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 0d 19 32 5f 48 a5 48 8b c3 5b 5e 5f c3
+bm~identity_g64i  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 cd 18 32 5f 48 a5 48 8b c3 5b 5e 5f c3

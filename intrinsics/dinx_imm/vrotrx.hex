@@ -1,0 +1,6 @@
+vrotrx_128x64u_0o-imm5   c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 e9 73 d1 05 c5 f1 73 d9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f1 f3 cb c5 e9 eb c9 c5 f9 73 f8 08 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_128x64u_0o-imm9   c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 e9 73 d1 09 c5 f1 73 d9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f1 f3 cb c5 e9 eb c9 c5 f9 73 f8 08 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_128x64u_0o-imm13  c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 e9 73 d1 0d c5 f1 73 d9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f1 f3 cb c5 e9 eb c9 c5 f9 73 f8 08 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_256x64u_0o-imm5   c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 d1 05 c5 f5 73 d9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 f3 cb c5 ed eb c9 c5 fd 73 f8 08 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotrx_256x64u_0o-imm9   c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 d1 09 c5 f5 73 d9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 f3 cb c5 ed eb c9 c5 fd 73 f8 08 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotrx_256x64u_0o-imm13  c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 d1 0d c5 f5 73 d9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 f3 cb c5 ed eb c9 c5 fd 73 f8 08 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

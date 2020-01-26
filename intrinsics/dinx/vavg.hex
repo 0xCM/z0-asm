@@ -1,0 +1,4 @@
+vavg_128x8u   c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e0 00 c5 f9 11 01 48 8b c1 c3
+vavg_128x16u  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e3 00 c5 f9 11 01 48 8b c1 c3
+vavg_256x8u   c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vavg_256x16u  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

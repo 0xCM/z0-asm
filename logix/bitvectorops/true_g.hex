@@ -1,1 +1,8 @@
-0x0f,0x1f,0x44,0x00,0x00,0x48,0x89,0x4c,0x24,0x08,0x48,0x89,0x54,0x24,0x10,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff 00 00 00 c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff 00 00 c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 48 b8 ff ff ff ff ff ff ff ff c3
+true_g  0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 48 b8 ff ff ff ff ff ff ff ff c3

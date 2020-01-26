@@ -1,3 +1,15 @@
+// Id := 100664720, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vconvert(Z0.Block16`1<System.Byte>&,Z0.N128,System.Int64)
+// Vector128<long> vconvert(in Block16<byte> src, N128 w, long t)
+// AggressiveInlining
+Vector128<long> vconvert(in Block16<byte> src, N128 w, long t)
+{
+    IL_0000: ldarg.0
+    IL_0001: call System.Byte& Z0.Block16`1<System.Byte>::get_Head()
+    IL_0006: call System.Byte* zfunc::constptr<System.Byte>(System.Byte&)
+    IL_000B: call System.Runtime.Intrinsics.Vector128`1<System.Int64> System.Runtime.Intrinsics.X86.Sse41::ConvertToVector128Int64(System.Byte*)
+    IL_0010: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // Id := 100664721, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vconvert(Z0.Block16`1<System.Byte>&,System.Int32,Z0.N128,System.Int64)
 // Vector128<long> vconvert(in Block16<byte> src, int block, N128 w, long t)
 // AggressiveInlining
@@ -10,3 +22,4 @@ Vector128<long> vconvert(in Block16<byte> src, int block, N128 w, long t)
     IL_000C: call System.Runtime.Intrinsics.Vector128`1<System.Int64> System.Runtime.Intrinsics.X86.Sse41::ConvertToVector128Int64(System.Byte*)
     IL_0011: ret
 }
+------------------------------------------------------------------------------------------------------------------------

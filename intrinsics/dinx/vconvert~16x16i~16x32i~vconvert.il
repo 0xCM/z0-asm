@@ -16,3 +16,4 @@ Vector512<int> vconvert(in Block128<Int16> src, N512 w, int t)
     IL_0026: call Z0.Vector512`1<System.Int32> Z0.Vector512`1<System.Int32>::op_Implicit(System.ValueTuple`2<System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>>)
     IL_002B: ret
 }
+------------------------------------------------------------------------------------------------------------------------
