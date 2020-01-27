@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x8u_0o-imm5
-; vrotlx__g256x8u_0o-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x8u-imm5
+; vrotlx__g256x8u-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -20,8 +20,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x8u_0o-imm9
-; vrotlx__g256x8u_0o-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x8u-imm9
+; vrotlx__g256x8u-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -41,8 +41,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x8u_0o-imm13
-; vrotlx__g256x8u_0o-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x8u-imm13
+; vrotlx__g256x8u-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -62,8 +62,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x16u_0o-imm5
-; vrotlx__g256x16u_0o-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x16u-imm5
+; vrotlx__g256x16u-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -83,8 +83,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x16u_0o-imm9
-; vrotlx__g256x16u_0o-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x16u-imm9
+; vrotlx__g256x16u-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -104,8 +104,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x16u_0o-imm13
-; vrotlx__g256x16u_0o-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x16u-imm13
+; vrotlx__g256x16u-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -125,8 +125,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x32u_0o-imm5
-; vrotlx__g256x32u_0o-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x32u-imm5
+; vrotlx__g256x32u-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -146,8 +146,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x32u_0o-imm9
-; vrotlx__g256x32u_0o-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x32u-imm9
+; vrotlx__g256x32u-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -167,8 +167,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x32u_0o-imm13
-; vrotlx__g256x32u_0o-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x32u-imm13
+; vrotlx__g256x32u-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -188,8 +188,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x64u_0o-imm5
-; vrotlx__g256x64u_0o-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x64u-imm5
+; vrotlx__g256x64u-imm5[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 05 c5 f5 73 f9 08 b8 3b 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -209,8 +209,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x64u_0o-imm9
-; vrotlx__g256x64u_0o-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x64u-imm9
+; vrotlx__g256x64u-imm9[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 09 c5 f5 73 f9 08 b8 37 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -230,8 +230,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vrotlx__g256x64u_0o-imm13
-; vrotlx__g256x64u_0o-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vrotlx__g256x64u-imm13
+; vrotlx__g256x64u-imm13[66] = {c5 f8 77 c5 fd 10 02 c5 fc 28 c8 c5 ed 73 f1 0d c5 f5 73 f9 08 b8 33 00 00 00 c5 f9 6e d8 c5 f5 d3 cb c5 ed eb c9 c5 fd 73 d8 08 c5 f9 6e d0 c5 fd d3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; Capture completion code = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
