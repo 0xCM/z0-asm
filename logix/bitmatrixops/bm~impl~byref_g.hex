@@ -1,8 +1,8 @@
 bm~impl~byref_g  0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 f7 d2 48 0b c2 48 89 01 49 8b c0 c3
-bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 7a 6b fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 c2 85 fe ff 48 8b c6 48 83 c4 20 5e c3
 bm~impl~byref_g  c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3
-bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 f2 8a fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 4a 9f fe ff 48 8b c6 48 83 c4 20 5e c3
 bm~impl~byref_g  57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3
-bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 32 aa fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 52 ba fe ff 48 8b c6 48 83 c4 20 5e c3
 bm~impl~byref_g  57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3
-bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 ba c6 fe ff 48 8b c6 48 83 c4 20 5e c3
+bm~impl~byref_g  56 48 83 ec 20 49 8b f0 48 8b 09 48 8b 12 4c 8b 06 e8 42 d3 fe ff 48 8b c6 48 83 c4 20 5e c3

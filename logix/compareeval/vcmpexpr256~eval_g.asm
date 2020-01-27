@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; LiteralExpr<Vector256<ulong>> eval<ulong>(IComparisonExpr<Vector256<ulong>> expr)
-; vcmpexpr256~eval_gVector256`1[227] = {57 56 48 81 ec a8 00 00 00 c5 f8 77 c5 f8 29 b4 24 90 00 00 00 c5 f8 29 bc 24 80 00 00 00 48 8b f1 48 8b ce 49 bb 20 11 27 c6 f7 7f 00 00 39 09 ff 15 aa 87 3c ff 8b f8 48 8b ce 49 bb 28 11 27 c6 f7 7f 00 00 39 09 ff 15 9b 87 3c ff 48 8b c8 e8 33 c3 ff ff c5 fd 10 70 08 48 8b ce 49 bb 30 11 27 c6 f7 7f 00 00 c4 e3 7d 19 f7 01 39 09 ff 15 7b 87 3c ff 48 8b c8 e8 0b c3 ff ff c5 fd 10 40 08 48 8d 4c 24 60 8b d7 c4 e3 4d 18 f7 01 c5 fd 11 74 24 40 c5 fd 11 44 24 20 4c 8d 44 24 40 4c 8d 4c 24 20 e8 76 db e5 ff 48 b9 48 7f e9 c6 f7 7f 00 00 e8 b7 e2 ff 5e c5 fd 10 44 24 60 c5 fd 11 40 08 c5 f8 28 b4 24 90 00 00 00 c5 f8 28 bc 24 80 00 00 00 c5 f8 77 48 81 c4 a8 00 00 00 5e 5f c3}
+; vcmpexpr256~eval_gVector256`1[227] = {57 56 48 81 ec a8 00 00 00 c5 f8 77 c5 f8 29 b4 24 90 00 00 00 c5 f8 29 bc 24 80 00 00 00 48 8b f1 48 8b ce 49 bb 78 12 25 c6 f7 7f 00 00 39 09 ff 15 32 de ed fe 8b f8 48 8b ce 49 bb 80 12 25 c6 f7 7f 00 00 39 09 ff 15 23 de ed fe 48 8b c8 e8 b3 c5 ff ff c5 fd 10 70 08 48 8b ce 49 bb 88 12 25 c6 f7 7f 00 00 c4 e3 7d 19 f7 01 39 09 ff 15 03 de ed fe 48 8b c8 e8 8b c5 ff ff c5 fd 10 40 08 48 8d 4c 24 60 8b d7 c4 e3 4d 18 f7 01 c5 fd 11 74 24 40 c5 fd 11 44 24 20 4c 8d 44 24 40 4c 8d 4c 24 20 e8 86 6b fc ff 48 b9 00 f7 7e c7 f7 7f 00 00 e8 e7 37 b3 5e c5 fd 10 44 24 60 c5 fd 11 40 08 c5 f8 28 b4 24 90 00 00 00 c5 f8 28 bc 24 80 00 00 00 c5 f8 77 48 81 c4 a8 00 00 00 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -10,24 +10,24 @@
 0015h vmovaps [rsp+80h],xmm7                  ; VMOVAPS xmm2/m128, xmm1 || VEX.128.0F.WIG 29 /r || encoded[9]{c5 f8 29 bc 24 80 00 00 00}
 001eh mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0021h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0024h mov r11,7ff7c6271120h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 20 11 27 c6 f7 7f 00 00}
+0024h mov r11,7ff7c6251278h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 78 12 25 c6 f7 7f 00 00}
 002eh cmp [rcx],ecx                           ; CMP r/m32, r32 || o32 39 /r || encoded[2]{39 09}
-0030h call qword ptr [rip-0c37856h]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 aa 87 3c ff}
+0030h call qword ptr [rip-11221ceh]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 32 de ed fe}
 0036h mov edi,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f8}
 0038h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-003bh mov r11,7ff7c6271128h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 28 11 27 c6 f7 7f 00 00}
+003bh mov r11,7ff7c6251280h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 80 12 25 c6 f7 7f 00 00}
 0045h cmp [rcx],ecx                           ; CMP r/m32, r32 || o32 39 /r || encoded[2]{39 09}
-0047h call qword ptr [rip-0c37865h]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 9b 87 3c ff}
+0047h call qword ptr [rip-11221ddh]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 23 de ed fe}
 004dh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0050h call 7ff7c6ea4cc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 c3 ff ff}
+0050h call 7ff7c736fa18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 c5 ff ff}
 0055h vmovupd ymm6,[rax+8]                    ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c5 fd 10 70 08}
 005ah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-005dh mov r11,7ff7c6271130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 30 11 27 c6 f7 7f 00 00}
+005dh mov r11,7ff7c6251288h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 88 12 25 c6 f7 7f 00 00}
 0067h vextractf128 xmm7,ymm6,1                ; VEXTRACTF128 xmm1/m128, ymm2, imm8 || VEX.256.66.0F3A.W0 19 /r ib || encoded[6]{c4 e3 7d 19 f7 01}
 006dh cmp [rcx],ecx                           ; CMP r/m32, r32 || o32 39 /r || encoded[2]{39 09}
-006fh call qword ptr [rip-0c37885h]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 7b 87 3c ff}
+006fh call qword ptr [rip-11221fdh]           ; CALL r/m64 || FF /2 || encoded[6]{ff 15 03 de ed fe}
 0075h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0078h call 7ff7c6ea4cc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b c3 ff ff}
+0078h call 7ff7c736fa18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b c5 ff ff}
 007dh vmovupd ymm0,[rax+8]                    ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c5 fd 10 40 08}
 0082h lea rcx,[rsp+60h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 60}
 0087h mov edx,edi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d7}
@@ -36,9 +36,9 @@
 0095h vmovupd [rsp+20h],ymm0                  ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[6]{c5 fd 11 44 24 20}
 009bh lea r8,[rsp+40h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 40}
 00a0h lea r9,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 4c 24 20}
-00a5h call 7ff7c6d06560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 db e5 ff}
-00aah mov rcx,7ff7c6e97f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f e9 c6 f7 7f 00 00}
-00b4h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 e2 ff 5e}
+00a5h call 7ff7c733a040h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 6b fc ff}
+00aah mov rcx,7ff7c77ef700h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 00 f7 7e c7 f7 7f 00 00}
+00b4h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 37 b3 5e}
 00b9h vmovupd ymm0,[rsp+60h]                  ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[6]{c5 fd 10 44 24 60}
 00bfh vmovupd [rax+8],ymm0                    ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[5]{c5 fd 11 40 08}
 00c4h vmovaps xmm6,[rsp+90h]                  ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[9]{c5 f8 28 b4 24 90 00 00 00}

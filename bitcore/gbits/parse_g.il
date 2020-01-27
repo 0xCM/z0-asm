@@ -1,7 +1,7 @@
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref byte parse<byte>(ReadOnlySpan<Char> src, int offset, out byte dst)
+// ref byte parse<byte>(ReadOnlySpan<char> src, int offset, out byte dst)
 // AggressiveInlining
-ref byte parse<byte>(ReadOnlySpan<Char> src, int offset, out byte dst)
+ref byte parse<byte>(ReadOnlySpan<char> src, int offset, out byte dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -48,9 +48,9 @@ ref byte parse<byte>(ReadOnlySpan<Char> src, int offset, out byte dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref sbyte parse<sbyte>(ReadOnlySpan<Char> src, int offset, out sbyte dst)
+// ref sbyte parse<sbyte>(ReadOnlySpan<char> src, int offset, out sbyte dst)
 // AggressiveInlining
-ref sbyte parse<sbyte>(ReadOnlySpan<Char> src, int offset, out sbyte dst)
+ref sbyte parse<sbyte>(ReadOnlySpan<char> src, int offset, out sbyte dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -97,9 +97,9 @@ ref sbyte parse<sbyte>(ReadOnlySpan<Char> src, int offset, out sbyte dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref ushort parse<ushort>(ReadOnlySpan<Char> src, int offset, out ushort dst)
+// ref ushort parse<ushort>(ReadOnlySpan<char> src, int offset, out ushort dst)
 // AggressiveInlining
-ref ushort parse<ushort>(ReadOnlySpan<Char> src, int offset, out ushort dst)
+ref ushort parse<ushort>(ReadOnlySpan<char> src, int offset, out ushort dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -146,9 +146,9 @@ ref ushort parse<ushort>(ReadOnlySpan<Char> src, int offset, out ushort dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
+// ref short parse<short>(ReadOnlySpan<char> src, int offset, out short dst)
 // AggressiveInlining
-ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
+ref short parse<short>(ReadOnlySpan<char> src, int offset, out short dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -195,9 +195,9 @@ ref short parse<short>(ReadOnlySpan<Char> src, int offset, out short dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref uint parse<uint>(ReadOnlySpan<Char> src, int offset, out uint dst)
+// ref uint parse<uint>(ReadOnlySpan<char> src, int offset, out uint dst)
 // AggressiveInlining
-ref uint parse<uint>(ReadOnlySpan<Char> src, int offset, out uint dst)
+ref uint parse<uint>(ReadOnlySpan<char> src, int offset, out uint dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -244,9 +244,9 @@ ref uint parse<uint>(ReadOnlySpan<Char> src, int offset, out uint dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref int parse<int>(ReadOnlySpan<Char> src, int offset, out int dst)
+// ref int parse<int>(ReadOnlySpan<char> src, int offset, out int dst)
 // AggressiveInlining
-ref int parse<int>(ReadOnlySpan<Char> src, int offset, out int dst)
+ref int parse<int>(ReadOnlySpan<char> src, int offset, out int dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -293,9 +293,9 @@ ref int parse<int>(ReadOnlySpan<Char> src, int offset, out int dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref ulong parse<ulong>(ReadOnlySpan<Char> src, int offset, out ulong dst)
+// ref ulong parse<ulong>(ReadOnlySpan<char> src, int offset, out ulong dst)
 // AggressiveInlining
-ref ulong parse<ulong>(ReadOnlySpan<Char> src, int offset, out ulong dst)
+ref ulong parse<ulong>(ReadOnlySpan<char> src, int offset, out ulong dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -342,9 +342,9 @@ ref ulong parse<ulong>(ReadOnlySpan<Char> src, int offset, out ulong dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref long parse<long>(ReadOnlySpan<Char> src, int offset, out long dst)
+// ref long parse<long>(ReadOnlySpan<char> src, int offset, out long dst)
 // AggressiveInlining
-ref long parse<long>(ReadOnlySpan<Char> src, int offset, out long dst)
+ref long parse<long>(ReadOnlySpan<char> src, int offset, out long dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -391,9 +391,9 @@ ref long parse<long>(ReadOnlySpan<Char> src, int offset, out long dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref float parse<float>(ReadOnlySpan<Char> src, int offset, out float dst)
+// ref float parse<float>(ReadOnlySpan<char> src, int offset, out float dst)
 // AggressiveInlining
-ref float parse<float>(ReadOnlySpan<Char> src, int offset, out float dst)
+ref float parse<float>(ReadOnlySpan<char> src, int offset, out float dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src
@@ -440,9 +440,9 @@ ref float parse<float>(ReadOnlySpan<Char> src, int offset, out float dst)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100663652, Name := T& Z0.gbits::parse<T>(System.ReadOnlySpan`1<System.Char>,System.Int32,T&)
-// ref double parse<double>(ReadOnlySpan<Char> src, int offset, out double dst)
+// ref double parse<double>(ReadOnlySpan<char> src, int offset, out double dst)
 // AggressiveInlining
-ref double parse<double>(ReadOnlySpan<Char> src, int offset, out double dst)
+ref double parse<double>(ReadOnlySpan<char> src, int offset, out double dst)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: ldarga.s src

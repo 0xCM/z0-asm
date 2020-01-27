@@ -1,4 +1,4 @@
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<byte> vunits<byte>(N256 w, byte t)
 // AggressiveInlining
 Vector256<byte> vunits<byte>(N256 w, byte t)
@@ -75,7 +75,7 @@ Vector256<byte> vunits<byte>(N256 w, byte t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<sbyte> vunits<sbyte>(N256 w, sbyte t)
 // AggressiveInlining
 Vector256<sbyte> vunits<sbyte>(N256 w, sbyte t)
@@ -152,7 +152,7 @@ Vector256<sbyte> vunits<sbyte>(N256 w, sbyte t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<ushort> vunits<ushort>(N256 w, ushort t)
 // AggressiveInlining
 Vector256<ushort> vunits<ushort>(N256 w, ushort t)
@@ -229,7 +229,7 @@ Vector256<ushort> vunits<ushort>(N256 w, ushort t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<short> vunits<short>(N256 w, short t)
 // AggressiveInlining
 Vector256<short> vunits<short>(N256 w, short t)
@@ -306,7 +306,7 @@ Vector256<short> vunits<short>(N256 w, short t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<uint> vunits<uint>(N256 w, uint t)
 // AggressiveInlining
 Vector256<uint> vunits<uint>(N256 w, uint t)
@@ -383,7 +383,7 @@ Vector256<uint> vunits<uint>(N256 w, uint t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<int> vunits<int>(N256 w, int t)
 // AggressiveInlining
 Vector256<int> vunits<int>(N256 w, int t)
@@ -460,7 +460,7 @@ Vector256<int> vunits<int>(N256 w, int t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<ulong> vunits<ulong>(N256 w, ulong t)
 // AggressiveInlining
 Vector256<ulong> vunits<ulong>(N256 w, ulong t)
@@ -537,7 +537,7 @@ Vector256<ulong> vunits<ulong>(N256 w, ulong t)
     IL_011E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666406, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
+// Id := 100666405, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vunits<T>(Z0.N256,T)
 // Vector256<long> vunits<long>(N256 w, long t)
 // AggressiveInlining
 Vector256<long> vunits<long>(N256 w, long t)

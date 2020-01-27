@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; bm~rnot_g8u_8u[92] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 c2 1a ec ff 48 8b 06 48 8d 54 24 20 48 8b 12 48 8b 00 48 f7 d0 48 89 02 48 8b fb 48 8d 74 24 20 e8 31 a3 30 5f 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; bm~rnot_g8u_8u[92] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 9a 2c fe ff 48 8b 06 48 8d 54 24 20 48 8b 12 48 8b 00 48 f7 d0 48 89 02 48 8b fb 48 8d 74 24 20 e8 71 e6 ba 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -15,7 +15,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c6a5d600h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 1a ec ff}
+0029h call 7ff7c72da498h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 2c fe ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -24,7 +24,7 @@
 003fh mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 0042h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0045h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 a3 30 5f}
+004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 e6 ba 5e}
 004fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0051h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0054h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -34,7 +34,7 @@
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<sbyte> rnot<sbyte>(in BitMatrix<sbyte> A, in BitMatrix<sbyte> B)
-; bm~rnot_g8i_8i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 72 78 ec ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 72 78 ec ff 48 8b fb 48 8d 74 24 20 e8 b5 a2 30 5f 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; bm~rnot_g8i_8i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 5a 39 fe ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 5a 39 fe ff 48 8b fb 48 8d 74 24 20 e8 f5 e5 ba 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -49,14 +49,14 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c6a63430h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 78 ec ff}
+0029h call 7ff7c72db1d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 39 fe ff}
 002eh mov rcx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0e}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
-0039h call 7ff7c6a63440h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 78 ec ff}
+0039h call 7ff7c72db1e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 39 fe ff}
 003eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0041h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 a2 30 5f}
+0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 e5 ba 5e}
 004bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 004dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0050h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -66,7 +66,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; bm~rnot_g16u_16u[124] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 d2 7d ec ff 48 8b 06 48 8d 54 24 50 48 8b 12 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 48 8b fb 48 8d 74 24 50 e8 14 a2 30 5f 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; bm~rnot_g16u_16u[124] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 32 3c fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 48 8b fb 48 8d 74 24 50 e8 54 e5 ba 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -81,7 +81,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c6a63a10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 7d ec ff}
+0029h call 7ff7c72db530h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 3c fe ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -95,7 +95,7 @@
 005bh vmovdqu ymmword ptr [rdx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 02}
 005fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0062h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 a2 30 5f}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 e5 ba 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -106,7 +106,7 @@
 007bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<short> rnot<short>(in BitMatrix<short> A, in BitMatrix<short> B)
-; bm~rnot_g16i_16i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 a2 d2 ec ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 a2 d2 ec ff 48 8b fb 48 8d 74 24 20 e8 95 a1 30 5f 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; bm~rnot_g16i_16i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 5a 40 fe ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 5a 40 fe ff 48 8b fb 48 8d 74 24 20 e8 d5 e4 ba 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -121,14 +121,14 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c6a68f80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 d2 ec ff}
+0029h call 7ff7c72db9f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 40 fe ff}
 002eh mov rcx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0e}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
-0039h call 7ff7c6a68f90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 d2 ec ff}
+0039h call 7ff7c72dba08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 40 fe ff}
 003eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0041h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 a1 30 5f}
+0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 e4 ba 5e}
 004bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 004dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0050h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -138,7 +138,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; bm~rnot_g32u_32u[156] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 32 d4 ec ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 02 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 76 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 08 83 f9 04 7c bf 48 8b fb 48 8d 74 24 50 e8 d4 a0 30 5f 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; bm~rnot_g32u_32u[156] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 ca 40 fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 02 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 76 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 08 83 f9 04 7c bf 48 8b fb 48 8d 74 24 50 e8 14 e4 ba 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -153,7 +153,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c6a69190h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 d4 ec ff}
+0029h call 7ff7c72dbae8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca 40 fe ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -177,7 +177,7 @@
 007dh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c bf}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 a0 30 5f}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 e4 ba 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -188,7 +188,7 @@
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<int> rnot<int>(in BitMatrix<int> A, in BitMatrix<int> B)
-; bm~rnot_g32i_32i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 12 d9 ec ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 ea e0 ec ff 48 8b fb 48 8d 74 24 20 e8 55 a0 30 5f 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; bm~rnot_g32i_32i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 aa 41 fe ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 aa 41 fe ff 48 8b fb 48 8d 74 24 20 e8 95 e3 ba 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -203,14 +203,14 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c6a69730h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 d9 ec ff}
+0029h call 7ff7c72dbc88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa 41 fe ff}
 002eh mov rcx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0e}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
-0039h call 7ff7c6a69f18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea e0 ec ff}
+0039h call 7ff7c72dbc98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa 41 fe ff}
 003eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0041h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 a0 30 5f}
+0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 e3 ba 5e}
 004bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 004dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0050h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -220,7 +220,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; bm~rnot_g64u_64u[157] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 7a e2 ec ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 03 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 04 83 f9 10 7c be 48 8b fb 48 8d 74 24 50 e8 93 9f 30 5f 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; bm~rnot_g64u_64u[157] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 22 47 fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 03 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 04 83 f9 10 7c be 48 8b fb 48 8d 74 24 50 e8 d3 e2 ba 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -235,7 +235,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c6a6a118h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a e2 ec ff}
+0029h call 7ff7c72dc280h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 47 fe ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -259,7 +259,7 @@
 007eh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c be}
 0080h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0083h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 9f 30 5f}
+0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 e2 ba 5e}
 008dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0092h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -270,7 +270,7 @@
 009ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<long> rnot<long>(in BitMatrix<long> A, in BitMatrix<long> B)
-; bm~rnot_g64i_64i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 42 e8 ec ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 42 e8 ec ff 48 8b fb 48 8d 74 24 20 e8 15 9f 30 5f 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; bm~rnot_g64i_64i[88] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 c2 47 fe ff 48 8b 0e 48 8d 54 24 20 48 8b 12 e8 c2 47 fe ff 48 8b fb 48 8d 74 24 20 e8 55 e2 ba 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -285,14 +285,14 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c6a6a7a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 e8 ec ff}
+0029h call 7ff7c72dc3e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 47 fe ff}
 002eh mov rcx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0e}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
-0039h call 7ff7c6a6a7b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 e8 ec ff}
+0039h call 7ff7c72dc3f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 47 fe ff}
 003eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0041h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 9f 30 5f}
+0046h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 e2 ba 5e}
 004bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 004dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0050h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}

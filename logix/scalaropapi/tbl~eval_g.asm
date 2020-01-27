@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte eval<byte>(TernaryBitLogicKind:byte kind, byte a, byte b, byte c)
-; tbl~eval_g8u[2229] = {57 56 53 48 83 ec 30 8b f1 40 0f b6 ce ff c9 83 f9 5e 0f 87 9d 08 00 00 8b c9 48 8d 05 c7 08 00 00 8b 04 88 4c 8d 15 de ff ff ff 49 03 c2 ff e0 45 0f b6 c0 45 0f b6 c9 45 0b c1 41 0f b6 c8 0f b6 d2 0b ca f7 d1 0f b6 c1 e9 5c 08 00 00 41 0f b6 c0 44 0f b6 c2 41 0b c0 8b d0 f7 d2 0f b6 ca 45 0f b6 c9 41 23 c9 0f b6 c1 e9 3b 08 00 00 41 0f b6 c0 0f b6 d2 0b c2 44 8b c0 41 f7 d0 41 0f b6 c0 e9 23 08 00 00 0f b6 c2 45 0f b6 c9 41 0b c1 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c1 e9 03 08 00 00 41 0f b6 c1 0f b6 d2 0b c2 44 8b c8 41 f7 d1 41 0f b6 c1 e9 eb 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 45 0f b6 c9 45 33 c1 41 0f b6 c0 0f b6 c9 23 c8 0f b6 c1 e9 c5 07 00 00 41 0f b6 c0 45 0f b6 c1 41 23 c0 44 0f b6 c8 0f b6 d2 41 0b d1 8b ca f7 d1 0f b6 c1 e9 a4 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c9 45 0f b6 c9 41 23 c9 0f b6 c1 e9 81 07 00 00 41 0f b6 c0 45 0f b6 c9 41 33 c1 44 0f b6 c0 0f b6 d2 41 0b d0 8b ca f7 d1 0f b6 c1 e9 60 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c9 41 23 c9 0f b6 c1 e9 47 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 81 f0 ff 00 00 00 41 0f b6 c0 45 0f b6 c9 41 0b c1 0f b6 c0 0f b6 c9 23 c8 0f b6 c1 e9 17 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c1 e9 fe 06 00 00 0f b6 ca f7 d1 40 0f b6 f1 41 0f b6 c9 81 f1 ff 00 00 00 40 0f b6 f9 41 0f b6 c8 88 4c 24 28 48 8d 4c 24 28 e8 5b be ea ff 0f b6 08 e8 33 e8 fe ff 8b d8 8b cf e8 8a e7 fe ff 8b d0 8b cb e8 39 ce ea ff 8b c8 33 d2 e8 98 e7 fe ff 0f b6 d0 8b ce e8 0e a6 ff ff 0f b6 c0 e9 a0 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 5e f7 ff ff e9 8b 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 29 f7 ff ff e9 76 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 f4 f6 ff ff e9 61 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 bf f6 ff ff e9 4c 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 8a f6 ff ff e9 37 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 55 f6 ff ff e9 22 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 20 f6 ff ff e9 0d 06 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 eb f5 ff ff e9 f8 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 b6 f5 ff ff e9 e3 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 81 f5 ff ff e9 ce 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 4c f5 ff ff e9 b9 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 17 f5 ff ff e9 a4 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 e2 f4 ff ff e9 8f 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 a5 f4 ff ff e9 7a 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 70 f4 ff ff e9 65 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 3b f4 ff ff e9 50 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 06 f4 ff ff e9 3b 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 d1 f3 ff ff e9 26 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 9c f3 ff ff e9 11 05 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 67 f3 ff ff e9 fc 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 32 f3 ff ff e9 e7 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 fd f2 ff ff e9 d2 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 c8 f2 ff ff e9 bd 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 93 f2 ff ff e9 a8 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 5e f2 ff ff e9 93 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 29 f2 ff ff e9 7e 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 f4 f1 ff ff e9 69 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 bf f1 ff ff e9 54 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 8a f1 ff ff e9 3f 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 55 f1 ff ff e9 2a 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 20 f1 ff ff e9 15 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 eb f0 ff ff e9 00 04 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 b6 f0 ff ff e9 eb 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 81 f0 ff ff e9 d6 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 4c f0 ff ff e9 c1 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 17 f0 ff ff e9 ac 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 e2 ef ff ff e9 97 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 ad ef ff ff e9 82 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 78 ef ff ff e9 6d 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 43 ef ff ff e9 58 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 0e ef ff ff e9 43 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 d9 ee ff ff e9 2e 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 a4 ee ff ff e9 19 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 6f ee ff ff e9 04 03 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 3a ee ff ff e9 ef 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 fd ed ff ff e9 da 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 c8 ed ff ff e9 c5 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 93 ed ff ff e9 b0 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 5e ed ff ff e9 9b 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 29 ed ff ff e9 86 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 f4 ec ff ff e9 71 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 bf ec ff ff e9 5c 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 8a ec ff ff e9 47 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 55 ec ff ff e9 32 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 20 ec ff ff e9 1d 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 eb eb ff ff e9 08 02 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 b6 eb ff ff e9 f3 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 81 eb ff ff e9 de 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 4c eb ff ff e9 c9 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 17 eb ff ff e9 b4 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 e2 ea ff ff e9 9f 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 ad ea ff ff e9 8a 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 78 ea ff ff e9 75 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 43 ea ff ff e9 60 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 0e ea ff ff e9 4b 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 d9 e9 ff ff e9 36 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 a4 e9 ff ff e9 21 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 6f e9 ff ff e9 0c 01 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 3a e9 ff ff e9 f7 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 05 e9 ff ff e9 e2 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 d0 e8 ff ff e9 cd 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 9b e8 ff ff e9 b8 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 66 e8 ff ff e9 a3 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 31 e8 ff ff e9 8e 00 00 00 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 fc e7 ff ff eb 7c 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 ca e7 ff ff eb 6a 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 98 e7 ff ff eb 58 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 06 e4 ff ff eb 46 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 d4 e3 ff ff eb 34 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 a2 e3 ff ff eb 22 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 70 e3 ff ff eb 10 0f b6 ca 41 0f b6 d0 45 0f b6 c1 e8 3e e3 ff ff 0f b6 c0 48 83 c4 30 5b 5e 5f c3}
+; tbl~eval_g8u[466] = {57 56 53 48 83 ec 30 8b f1 40 0f b6 ce ff c9 83 f9 5e 0f 87 9d 08 00 00 8b c9 48 8d 05 c7 08 00 00 8b 04 88 4c 8d 15 de ff ff ff 49 03 c2 ff e0 45 0f b6 c0 45 0f b6 c9 45 0b c1 41 0f b6 c8 0f b6 d2 0b ca f7 d1 0f b6 c1 e9 5c 08 00 00 41 0f b6 c0 44 0f b6 c2 41 0b c0 8b d0 f7 d2 0f b6 ca 45 0f b6 c9 41 23 c9 0f b6 c1 e9 3b 08 00 00 41 0f b6 c0 0f b6 d2 0b c2 44 8b c0 41 f7 d0 41 0f b6 c0 e9 23 08 00 00 0f b6 c2 45 0f b6 c9 41 0b c1 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c1 e9 03 08 00 00 41 0f b6 c1 0f b6 d2 0b c2 44 8b c8 41 f7 d1 41 0f b6 c1 e9 eb 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 45 0f b6 c9 45 33 c1 41 0f b6 c0 0f b6 c9 23 c8 0f b6 c1 e9 c5 07 00 00 41 0f b6 c0 45 0f b6 c1 41 23 c0 44 0f b6 c8 0f b6 d2 41 0b d1 8b ca f7 d1 0f b6 c1 e9 a4 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c9 45 0f b6 c9 41 23 c9 0f b6 c1 e9 81 07 00 00 41 0f b6 c0 45 0f b6 c9 41 33 c1 44 0f b6 c0 0f b6 d2 41 0b d0 8b ca f7 d1 0f b6 c1 e9 60 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c9 41 23 c9 0f b6 c1 e9 47 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 81 f0 ff 00 00 00 41 0f b6 c0 45 0f b6 c9 41 0b c1 0f b6 c0 0f b6 c9 23 c8 0f b6 c1 e9 17 07 00 00 0f b6 c2 8b d0 f7 d2 0f b6 ca 45 0f b6 c0 41 23 c8 0f b6 c1 e9 fe 06 00 00 0f b6 ca f7 d1 40 0f b6 f1 41 0f b6 c9 81 f1 ff 00 00 00 40 0f b6 f9 41 0f b6 c8 88 4c 24 28 48 8d 4c 24 28 e8 c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -142,441 +142,10 @@
 01c3h movzx ecx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c8}
 01c7h mov [rsp+28h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 28}
 01cbh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-01d0h call 7ff7c6a5ea00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b be ea ff}
-01d5h movzx ecx,byte ptr [rax]                ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 08}
-01d8h call 7ff7c6ba13e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 e8 fe ff}
-01ddh mov ebx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d8}
-01dfh mov ecx,edi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b cf}
-01e1h call 7ff7c6ba1340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a e7 fe ff}
-01e6h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
-01e8h mov ecx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b cb}
-01eah call 7ff7c6a5f9f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 ce ea ff}
-01efh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-01f1h xor edx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d2}
-01f3h call 7ff7c6ba1360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 e7 fe ff}
-01f8h movzx edx,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d0}
-01fbh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-01fdh call 7ff7c6bad1e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e a6 ff ff}
-0202h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
-0205h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 a0 06 00 00}
-020ah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-020dh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0211h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0215h call 7ff7c6bb2348h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e f7 ff ff}
-021ah jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 8b 06 00 00}
-021fh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0222h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0226h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-022ah call 7ff7c6bb2328h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 f7 ff ff}
-022fh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 76 06 00 00}
-0234h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0237h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-023bh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-023fh call 7ff7c6bb2308h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 f6 ff ff}
-0244h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 61 06 00 00}
-0249h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-024ch movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0250h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0254h call 7ff7c6bb22e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf f6 ff ff}
-0259h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 4c 06 00 00}
-025eh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0261h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0265h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0269h call 7ff7c6bb22c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a f6 ff ff}
-026eh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 37 06 00 00}
-0273h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0276h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-027ah movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-027eh call 7ff7c6bb22a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 f6 ff ff}
-0283h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 22 06 00 00}
-0288h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-028bh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-028fh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0293h call 7ff7c6bb2288h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 f6 ff ff}
-0298h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 0d 06 00 00}
-029dh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-02a0h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-02a4h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-02a8h call 7ff7c6bb2268h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb f5 ff ff}
-02adh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 f8 05 00 00}
-02b2h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-02b5h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-02b9h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-02bdh call 7ff7c6bb2248h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 f5 ff ff}
-02c2h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 e3 05 00 00}
-02c7h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-02cah movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-02ceh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-02d2h call 7ff7c6bb2228h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f5 ff ff}
-02d7h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 ce 05 00 00}
-02dch movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-02dfh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-02e3h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-02e7h call 7ff7c6bb2208h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c f5 ff ff}
-02ech jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 b9 05 00 00}
-02f1h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-02f4h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-02f8h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-02fch call 7ff7c6bb21e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 f5 ff ff}
-0301h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 a4 05 00 00}
-0306h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0309h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-030dh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0311h call 7ff7c6bb21c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f4 ff ff}
-0316h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 8f 05 00 00}
-031bh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-031eh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0322h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0326h call 7ff7c6bb21a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 f4 ff ff}
-032bh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 7a 05 00 00}
-0330h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0333h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0337h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-033bh call 7ff7c6bb2180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 f4 ff ff}
-0340h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 65 05 00 00}
-0345h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0348h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-034ch movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0350h call 7ff7c6bb2160h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b f4 ff ff}
-0355h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 50 05 00 00}
-035ah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-035dh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0361h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0365h call 7ff7c6bb2140h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 f4 ff ff}
-036ah jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 3b 05 00 00}
-036fh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0372h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0376h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-037ah call 7ff7c6bb2120h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f3 ff ff}
-037fh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 26 05 00 00}
-0384h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0387h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-038bh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-038fh call 7ff7c6bb2100h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c f3 ff ff}
-0394h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 11 05 00 00}
-0399h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-039ch movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-03a0h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-03a4h call 7ff7c6bb20e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 f3 ff ff}
-03a9h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 fc 04 00 00}
-03aeh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-03b1h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-03b5h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-03b9h call 7ff7c6bb20c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 f3 ff ff}
-03beh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 e7 04 00 00}
-03c3h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-03c6h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-03cah movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-03ceh call 7ff7c6bb20a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f2 ff ff}
-03d3h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 d2 04 00 00}
-03d8h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-03dbh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-03dfh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-03e3h call 7ff7c6bb2080h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 f2 ff ff}
-03e8h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 bd 04 00 00}
-03edh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-03f0h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-03f4h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-03f8h call 7ff7c6bb2060h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 f2 ff ff}
-03fdh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 a8 04 00 00}
-0402h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0405h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0409h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-040dh call 7ff7c6bb2040h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e f2 ff ff}
-0412h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 93 04 00 00}
-0417h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-041ah movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-041eh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0422h call 7ff7c6bb2020h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 f2 ff ff}
-0427h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 7e 04 00 00}
-042ch movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-042fh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0433h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0437h call 7ff7c6bb2000h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 f1 ff ff}
-043ch jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 69 04 00 00}
-0441h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0444h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0448h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-044ch call 7ff7c6bb1fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf f1 ff ff}
-0451h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 54 04 00 00}
-0456h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0459h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-045dh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0461h call 7ff7c6bb1fc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a f1 ff ff}
-0466h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 3f 04 00 00}
-046bh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-046eh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0472h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0476h call 7ff7c6bb1fa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 f1 ff ff}
-047bh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 2a 04 00 00}
-0480h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0483h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0487h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-048bh call 7ff7c6bb1f80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 f1 ff ff}
-0490h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 15 04 00 00}
-0495h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0498h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-049ch movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-04a0h call 7ff7c6bb1f60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb f0 ff ff}
-04a5h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 00 04 00 00}
-04aah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-04adh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-04b1h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-04b5h call 7ff7c6bb1f40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 f0 ff ff}
-04bah jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 eb 03 00 00}
-04bfh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-04c2h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-04c6h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-04cah call 7ff7c6bb1f20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f0 ff ff}
-04cfh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 d6 03 00 00}
-04d4h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-04d7h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-04dbh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-04dfh call 7ff7c6bb1f00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c f0 ff ff}
-04e4h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 03 00 00}
-04e9h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-04ech movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-04f0h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-04f4h call 7ff7c6bb1ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 f0 ff ff}
-04f9h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 ac 03 00 00}
-04feh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0501h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0505h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0509h call 7ff7c6bb1ec0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ef ff ff}
-050eh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 97 03 00 00}
-0513h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0516h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-051ah movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-051eh call 7ff7c6bb1ea0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad ef ff ff}
-0523h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 82 03 00 00}
-0528h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-052bh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-052fh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0533h call 7ff7c6bb1e80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 ef ff ff}
-0538h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 6d 03 00 00}
-053dh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0540h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0544h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0548h call 7ff7c6bb1e60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 ef ff ff}
-054dh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 58 03 00 00}
-0552h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0555h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0559h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-055dh call 7ff7c6bb1e40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e ef ff ff}
-0562h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 43 03 00 00}
-0567h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-056ah movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-056eh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0572h call 7ff7c6bb1e20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 ee ff ff}
-0577h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 2e 03 00 00}
-057ch movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-057fh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0583h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0587h call 7ff7c6bb1e00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 ee ff ff}
-058ch jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 19 03 00 00}
-0591h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0594h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0598h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-059ch call 7ff7c6bb1de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f ee ff ff}
-05a1h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 04 03 00 00}
-05a6h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-05a9h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-05adh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-05b1h call 7ff7c6bb1dc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a ee ff ff}
-05b6h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 ef 02 00 00}
-05bbh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-05beh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-05c2h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-05c6h call 7ff7c6bb1d98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd ed ff ff}
-05cbh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 da 02 00 00}
-05d0h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-05d3h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-05d7h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-05dbh call 7ff7c6bb1d78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 ed ff ff}
-05e0h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 c5 02 00 00}
-05e5h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-05e8h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-05ech movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-05f0h call 7ff7c6bb1d58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 ed ff ff}
-05f5h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 b0 02 00 00}
-05fah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-05fdh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0601h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0605h call 7ff7c6bb1d38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e ed ff ff}
-060ah jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 9b 02 00 00}
-060fh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0612h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0616h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-061ah call 7ff7c6bb1d18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 ed ff ff}
-061fh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 86 02 00 00}
-0624h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0627h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-062bh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-062fh call 7ff7c6bb1cf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 ec ff ff}
-0634h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 71 02 00 00}
-0639h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-063ch movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0640h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0644h call 7ff7c6bb1cd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf ec ff ff}
-0649h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 5c 02 00 00}
-064eh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0651h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0655h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0659h call 7ff7c6bb1cb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a ec ff ff}
-065eh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 47 02 00 00}
-0663h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0666h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-066ah movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-066eh call 7ff7c6bb1c98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 ec ff ff}
-0673h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 32 02 00 00}
-0678h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-067bh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-067fh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0683h call 7ff7c6bb1c78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 ec ff ff}
-0688h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 1d 02 00 00}
-068dh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0690h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0694h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0698h call 7ff7c6bb1c58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb eb ff ff}
-069dh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 08 02 00 00}
-06a2h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-06a5h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-06a9h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-06adh call 7ff7c6bb1c38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 eb ff ff}
-06b2h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 f3 01 00 00}
-06b7h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-06bah movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-06beh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-06c2h call 7ff7c6bb1c18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 eb ff ff}
-06c7h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 de 01 00 00}
-06cch movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-06cfh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-06d3h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-06d7h call 7ff7c6bb1bf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c eb ff ff}
-06dch jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 c9 01 00 00}
-06e1h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-06e4h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-06e8h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-06ech call 7ff7c6bb1bd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 eb ff ff}
-06f1h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 b4 01 00 00}
-06f6h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-06f9h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-06fdh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0701h call 7ff7c6bb1bb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ea ff ff}
-0706h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 9f 01 00 00}
-070bh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-070eh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0712h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0716h call 7ff7c6bb1b98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad ea ff ff}
-071bh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 8a 01 00 00}
-0720h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0723h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0727h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-072bh call 7ff7c6bb1b78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 ea ff ff}
-0730h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 75 01 00 00}
-0735h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0738h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-073ch movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0740h call 7ff7c6bb1b58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 ea ff ff}
-0745h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 60 01 00 00}
-074ah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-074dh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0751h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0755h call 7ff7c6bb1b38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e ea ff ff}
-075ah jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 4b 01 00 00}
-075fh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0762h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0766h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-076ah call 7ff7c6bb1b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 e9 ff ff}
-076fh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 36 01 00 00}
-0774h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0777h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-077bh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-077fh call 7ff7c6bb1af8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 e9 ff ff}
-0784h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 21 01 00 00}
-0789h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-078ch movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0790h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0794h call 7ff7c6bb1ad8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f e9 ff ff}
-0799h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 0c 01 00 00}
-079eh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-07a1h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-07a5h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-07a9h call 7ff7c6bb1ab8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a e9 ff ff}
-07aeh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 f7 00 00 00}
-07b3h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-07b6h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-07bah movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-07beh call 7ff7c6bb1a98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 e9 ff ff}
-07c3h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 e2 00 00 00}
-07c8h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-07cbh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-07cfh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-07d3h call 7ff7c6bb1a78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d0 e8 ff ff}
-07d8h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 cd 00 00 00}
-07ddh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-07e0h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-07e4h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-07e8h call 7ff7c6bb1a58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b e8 ff ff}
-07edh jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 b8 00 00 00}
-07f2h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-07f5h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-07f9h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-07fdh call 7ff7c6bb1a38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 e8 ff ff}
-0802h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 a3 00 00 00}
-0807h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-080ah movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-080eh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0812h call 7ff7c6bb1a18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 e8 ff ff}
-0817h jmp near ptr 08aah                      ; JMP rel32 || E9 cd || encoded[5]{e9 8e 00 00 00}
-081ch movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-081fh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0823h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0827h call 7ff7c6bb19f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc e7 ff ff}
-082ch jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 7c}
-082eh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0831h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0835h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0839h call 7ff7c6bb19d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca e7 ff ff}
-083eh jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 6a}
-0840h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0843h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0847h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-084bh call 7ff7c6bb19b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 e7 ff ff}
-0850h jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 58}
-0852h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0855h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0859h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-085dh call 7ff7c6bb1638h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 e4 ff ff}
-0862h jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 46}
-0864h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0867h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-086bh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-086fh call 7ff7c6bb1618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 e3 ff ff}
-0874h jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 34}
-0876h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-0879h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-087dh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0881h call 7ff7c6bb15f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 e3 ff ff}
-0886h jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 22}
-0888h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-088bh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-088fh movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-0893h call 7ff7c6bb15d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 e3 ff ff}
-0898h jmp short 08aah                         ; JMP rel8 || EB cb || encoded[2]{eb 10}
-089ah movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-089dh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-08a1h movzx r8d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c1}
-08a5h call 7ff7c6bb15b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e e3 ff ff}
-08aah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
-08adh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
-08b1h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
-08b2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-08b3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
-08b4h ret                                     ; RET || C3 || encoded[1]{c3}
+01d0h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte eval<sbyte>(TernaryBitLogicKind:byte kind, sbyte a, sbyte b, sbyte c)
-; tbl~eval_g8u[746] = {57 56 53 48 83 ec 20 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 b8 08 00 00 8b c9 48 8d 05 e2 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0f be ce 48 0f be c7 0b c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 75 08 00 00 48 0f be c6 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c9 48 0f be c7 23 c8 48 0f be c1 e9 54 08 00 00 48 0f be c6 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c1 e9 3d 08 00 00 48 0f be c2 48 0f be d7 0b c2 8b c8 f7 d1 48 0f be c9 48 0f be c6 23 c8 48 0f be c1 e9 1c 08 00 00 48 0f be c7 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c1 e9 05 08 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c6 48 0f be d7 33 c2 48 0f be c0 48 0f be c9 23 c8 48 0f be c1 e9 dc 07 00 00 48 0f be c6 48 0f be cf 23 c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 bd 07 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c6 23 c8 48 0f be c9 48 0f be c7 23 c8 48 0f be c1 e9 98 07 00 00 48 0f be c6 48 0f be cf 33 c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 79 07 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c7 23 c8 48 0f be c1 e9 5e 07 00 00 48 0f be ca f7 d1 48 0f be d9 48 0f be ce e8 d2 fd ff ff 48 0f be c8 48 0f be d7 e8 cd f4 fe ff 48 0f be d0 8b cb e8 22 9c ff ff 48 0f be c0 e9 2a 07 00 00 48 0f be ca e8 a8 f6 fe ff 48 0f be d0 48 0f be ce e8 03 9c ff ff 48 0f be c0 e9 0b 07 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 b1 fc ff ff e9 f5 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 8b fc ff ff e9 df 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 65 fc ff ff e9 c9 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 3f fc ff ff e9 b3 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 19 fc ff ff e9 9d 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 f3 fb ff ff e9 87 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 cd fb ff ff e9 71 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 a7 fb ff ff e9 5b 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 81 fb ff ff e9 45 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 5b fb ff ff e9 2f 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 35 fb ff ff e9 19 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 0f fb ff ff e9 03 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 e9 fa ff ff e9 ed 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 c3}
+; tbl~eval_g8u[2261] = {57 56 53 48 83 ec 20 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 b8 08 00 00 8b c9 48 8d 05 e2 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0f be ce 48 0f be c7 0b c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 75 08 00 00 48 0f be c6 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c9 48 0f be c7 23 c8 48 0f be c1 e9 54 08 00 00 48 0f be c6 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c1 e9 3d 08 00 00 48 0f be c2 48 0f be d7 0b c2 8b c8 f7 d1 48 0f be c9 48 0f be c6 23 c8 48 0f be c1 e9 1c 08 00 00 48 0f be c7 48 0f be d2 0b c2 8b c8 f7 d1 48 0f be c1 e9 05 08 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c6 48 0f be d7 33 c2 48 0f be c0 48 0f be c9 23 c8 48 0f be c1 e9 dc 07 00 00 48 0f be c6 48 0f be cf 23 c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 bd 07 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c6 23 c8 48 0f be c9 48 0f be c7 23 c8 48 0f be c1 e9 98 07 00 00 48 0f be c6 48 0f be cf 33 c8 48 0f be c9 48 0f be d2 0b ca f7 d1 48 0f be c1 e9 79 07 00 00 48 0f be c2 8b d0 f7 d2 48 0f be ca 48 0f be c7 23 c8 48 0f be c1 e9 5e 07 00 00 48 0f be ca f7 d1 48 0f be d9 48 0f be ce e8 c2 fd ff ff 48 0f be c8 48 0f be d7 e8 65 0c 9d ff 48 0f be d0 8b cb e8 a2 ae ff ff 48 0f be c0 e9 2a 07 00 00 48 0f be ca e8 e8 09 9d ff 48 0f be d0 48 0f be ce e8 83 ae ff ff 48 0f be c0 e9 0b 07 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 a1 fc ff ff e9 f5 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 7b fc ff ff e9 df 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 55 fc ff ff e9 c9 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 2f fc ff ff e9 b3 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 09 fc ff ff e9 9d 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 e3 fb ff ff e9 87 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 bd fb ff ff e9 71 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 97 fb ff ff e9 5b 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 71 fb ff ff e9 45 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 4b fb ff ff e9 2f 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 25 fb ff ff e9 19 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 ff fa ff ff e9 03 06 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 d9 fa ff ff e9 ed 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 b3 fa ff ff e9 d7 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 8d fa ff ff e9 c1 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 67 fa ff ff e9 ab 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 41 fa ff ff e9 95 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 1b fa ff ff e9 7f 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 f5 f9 ff ff e9 69 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 cf f9 ff ff e9 53 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 a9 f9 ff ff e9 3d 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 83 f9 ff ff e9 27 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 5d f9 ff ff e9 11 05 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 37 f9 ff ff e9 fb 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 11 f9 ff ff e9 e5 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 eb f8 ff ff e9 cf 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 c5 f8 ff ff e9 b9 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 9f f8 ff ff e9 a3 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 79 f8 ff ff e9 8d 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 53 f8 ff ff e9 77 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 2d f8 ff ff e9 61 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 07 f8 ff ff e9 4b 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 e1 f7 ff ff e9 35 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 bb f7 ff ff e9 1f 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 95 f7 ff ff e9 09 04 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 6f f7 ff ff e9 f3 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 49 f7 ff ff e9 dd 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 23 f7 ff ff e9 c7 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 fd f6 ff ff e9 b1 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 d7 f6 ff ff e9 9b 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 b1 f6 ff ff e9 85 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 fb eb ff ff e9 6f 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 d5 eb ff ff e9 59 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 af eb ff ff e9 43 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 89 eb ff ff e9 2d 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 63 eb ff ff e9 17 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 3d eb ff ff e9 01 03 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 17 eb ff ff e9 eb 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 f1 ea ff ff e9 d5 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 cb ea ff ff e9 bf 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 a5 ea ff ff e9 a9 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 7f ea ff ff e9 93 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 59 ea ff ff e9 7d 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 33 ea ff ff e9 67 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 0d ea ff ff e9 51 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 e7 e9 ff ff e9 3b 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 c1 e9 ff ff e9 25 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 9b e9 ff ff e9 0f 02 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 75 e9 ff ff e9 f9 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 4f e9 ff ff e9 e3 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 29 e9 ff ff e9 cd 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 03 e9 ff ff e9 b7 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 dd e8 ff ff e9 a1 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 b7 e8 ff ff e9 8b 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 91 e8 ff ff e9 75 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 6b e8 ff ff e9 5f 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 45 e8 ff ff e9 49 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 1f e8 ff ff e9 33 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 f9 e7 ff ff e9 1d 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 d3 e7 ff ff e9 07 01 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 ad e7 ff ff e9 f1 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 87 e7 ff ff e9 db 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 61 e7 ff ff e9 c5 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 3b e7 ff ff e9 af 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 15 e7 ff ff e9 99 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 ef e6 ff ff e9 83 00 00 00 48 0f be ca 48 0f be d6 4c 0f be c7 e8 c9 e6 ff ff eb 70 48 0f be ca 48 0f be d6 4c 0f be c7 e8 a6 e6 ff ff eb 5d 48 0f be ca 48 0f be d6 4c 0f be c7 e8 83 e6 ff ff eb 4a 48 0f be ca 48 0f be d6 4c 0f be c7 e8 60 e6 ff ff eb 37 48 0f be ca 48 0f be d6 4c 0f be c7 e8 3d e6 ff ff eb 24 48 0f be ca 48 0f be d6 4c 0f be c7 e8 1a e6 ff ff eb 11 48 0f be ca 48 0f be d6 4c 0f be c7 e8 f7 e5 ff ff 48 0f be c0 48 83 c4 20 5b 5e 5f c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -691,94 +260,445 @@
 016fh not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 0171h movsx rbx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d9}
 0175h movsx rcx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ce}
-0179h call 7ff7c6bb37b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 fd ff ff}
+0179h call 7ff7c730c3b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 fd ff ff}
 017eh movsx rcx,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c8}
 0182h movsx rdx,dil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d7}
-0186h call 7ff7c6ba2eb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd f4 fe ff}
+0186h call 7ff7c6cdd260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 0c 9d ff}
 018bh movsx rdx,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d0}
 018fh mov ecx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b cb}
-0191h call 7ff7c6bad618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 9c ff ff}
+0191h call 7ff7c73074a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 ae ff ff}
 0196h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 019ah jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2a 07 00 00}
 019fh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-01a3h call 7ff7c6ba30b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 f6 fe ff}
+01a3h call 7ff7c6cdd000h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 09 9d ff}
 01a8h movsx rdx,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d0}
 01ach movsx rcx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ce}
-01b0h call 7ff7c6bad618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 9c ff ff}
+01b0h call 7ff7c73074a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 ae ff ff}
 01b5h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 01b9h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0b 07 00 00}
 01beh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 01c2h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 01c6h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-01cah call 7ff7c6bb36e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 fc ff ff}
+01cah call 7ff7c730c2e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 fc ff ff}
 01cfh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f5 06 00 00}
 01d4h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 01d8h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 01dch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-01e0h call 7ff7c6bb36d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b fc ff ff}
+01e0h call 7ff7c730c2d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b fc ff ff}
 01e5h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 df 06 00 00}
 01eah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 01eeh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 01f2h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-01f6h call 7ff7c6bb36c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 fc ff ff}
+01f6h call 7ff7c730c2c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 fc ff ff}
 01fbh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c9 06 00 00}
 0200h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 0204h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0208h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-020ch call 7ff7c6bb36b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f fc ff ff}
+020ch call 7ff7c730c2b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f fc ff ff}
 0211h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b3 06 00 00}
 0216h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 021ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 021eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-0222h call 7ff7c6bb36a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 fc ff ff}
+0222h call 7ff7c730c2a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 fc ff ff}
 0227h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9d 06 00 00}
 022ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 0230h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0234h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-0238h call 7ff7c6bb3690h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 fb ff ff}
+0238h call 7ff7c730c290h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 fb ff ff}
 023dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 87 06 00 00}
 0242h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 0246h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 024ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-024eh call 7ff7c6bb3680h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd fb ff ff}
+024eh call 7ff7c730c280h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd fb ff ff}
 0253h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 71 06 00 00}
 0258h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 025ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0260h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-0264h call 7ff7c6bb3670h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 fb ff ff}
+0264h call 7ff7c730c270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 fb ff ff}
 0269h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5b 06 00 00}
 026eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 0272h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0276h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-027ah call 7ff7c6bb3660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 fb ff ff}
+027ah call 7ff7c730c260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 fb ff ff}
 027fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 45 06 00 00}
 0284h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 0288h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 028ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-0290h call 7ff7c6bb3650h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b fb ff ff}
+0290h call 7ff7c730c250h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b fb ff ff}
 0295h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2f 06 00 00}
 029ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 029eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 02a2h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-02a6h call 7ff7c6bb3640h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 fb ff ff}
+02a6h call 7ff7c730c240h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 fb ff ff}
 02abh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 19 06 00 00}
 02b0h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 02b4h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 02b8h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-02bch call 7ff7c6bb3630h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f fb ff ff}
+02bch call 7ff7c730c230h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff fa ff ff}
 02c1h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 03 06 00 00}
 02c6h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 02cah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 02ceh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-02d2h call 7ff7c6bb3620h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 fa ff ff}
+02d2h call 7ff7c730c220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 fa ff ff}
 02d7h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ed 05 00 00}
 02dch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
 02e0h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 02e4h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
-02e8h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
+02e8h call 7ff7c730c210h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 fa ff ff}
+02edh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d7 05 00 00}
+02f2h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+02f6h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+02fah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+02feh call 7ff7c730c200h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d fa ff ff}
+0303h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 05 00 00}
+0308h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+030ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0310h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0314h call 7ff7c730c1f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 fa ff ff}
+0319h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ab 05 00 00}
+031eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0322h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0326h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+032ah call 7ff7c730c1e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 fa ff ff}
+032fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 95 05 00 00}
+0334h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0338h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+033ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0340h call 7ff7c730c1d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b fa ff ff}
+0345h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7f 05 00 00}
+034ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+034eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0352h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0356h call 7ff7c730c1c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 f9 ff ff}
+035bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 69 05 00 00}
+0360h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0364h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0368h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+036ch call 7ff7c730c1b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf f9 ff ff}
+0371h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 53 05 00 00}
+0376h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+037ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+037eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0382h call 7ff7c730c1a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 f9 ff ff}
+0387h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3d 05 00 00}
+038ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0390h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0394h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0398h call 7ff7c730c190h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 f9 ff ff}
+039dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 27 05 00 00}
+03a2h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+03a6h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+03aah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+03aeh call 7ff7c730c180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d f9 ff ff}
+03b3h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 11 05 00 00}
+03b8h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+03bch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+03c0h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+03c4h call 7ff7c730c170h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 f9 ff ff}
+03c9h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fb 04 00 00}
+03ceh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+03d2h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+03d6h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+03dah call 7ff7c730c160h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 f9 ff ff}
+03dfh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e5 04 00 00}
+03e4h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+03e8h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+03ech movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+03f0h call 7ff7c730c150h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb f8 ff ff}
+03f5h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 cf 04 00 00}
+03fah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+03feh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0402h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0406h call 7ff7c730c140h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f8 ff ff}
+040bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b9 04 00 00}
+0410h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0414h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0418h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+041ch call 7ff7c730c130h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f f8 ff ff}
+0421h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a3 04 00 00}
+0426h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+042ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+042eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0432h call 7ff7c730c120h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 f8 ff ff}
+0437h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8d 04 00 00}
+043ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0440h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0444h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0448h call 7ff7c730c110h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 f8 ff ff}
+044dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 77 04 00 00}
+0452h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0456h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+045ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+045eh call 7ff7c730c100h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d f8 ff ff}
+0463h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 61 04 00 00}
+0468h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+046ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0470h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0474h call 7ff7c730c0f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 f8 ff ff}
+0479h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 4b 04 00 00}
+047eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0482h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0486h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+048ah call 7ff7c730c0e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 f7 ff ff}
+048fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 35 04 00 00}
+0494h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0498h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+049ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+04a0h call 7ff7c730c0d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb f7 ff ff}
+04a5h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1f 04 00 00}
+04aah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+04aeh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+04b2h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+04b6h call 7ff7c730c0c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 f7 ff ff}
+04bbh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 09 04 00 00}
+04c0h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+04c4h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+04c8h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+04cch call 7ff7c730c0b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f f7 ff ff}
+04d1h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f3 03 00 00}
+04d6h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+04dah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+04deh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+04e2h call 7ff7c730c0a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 f7 ff ff}
+04e7h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 dd 03 00 00}
+04ech movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+04f0h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+04f4h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+04f8h call 7ff7c730c090h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 f7 ff ff}
+04fdh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c7 03 00 00}
+0502h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0506h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+050ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+050eh call 7ff7c730c080h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f6 ff ff}
+0513h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b1 03 00 00}
+0518h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+051ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0520h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0524h call 7ff7c730c070h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 f6 ff ff}
+0529h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9b 03 00 00}
+052eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0532h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0536h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+053ah call 7ff7c730c060h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 f6 ff ff}
+053fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 85 03 00 00}
+0544h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0548h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+054ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0550h call 7ff7c730b5c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb eb ff ff}
+0555h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 6f 03 00 00}
+055ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+055eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0562h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0566h call 7ff7c730b5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 eb ff ff}
+056bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 59 03 00 00}
+0570h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0574h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0578h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+057ch call 7ff7c730b5a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af eb ff ff}
+0581h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 43 03 00 00}
+0586h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+058ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+058eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0592h call 7ff7c730b590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 eb ff ff}
+0597h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2d 03 00 00}
+059ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+05a0h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+05a4h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+05a8h call 7ff7c730b580h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 eb ff ff}
+05adh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 17 03 00 00}
+05b2h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+05b6h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+05bah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+05beh call 7ff7c730b570h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d eb ff ff}
+05c3h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 01 03 00 00}
+05c8h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+05cch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+05d0h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+05d4h call 7ff7c730b560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 eb ff ff}
+05d9h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 eb 02 00 00}
+05deh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+05e2h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+05e6h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+05eah call 7ff7c730b550h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 ea ff ff}
+05efh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d5 02 00 00}
+05f4h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+05f8h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+05fch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0600h call 7ff7c730b540h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb ea ff ff}
+0605h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 bf 02 00 00}
+060ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+060eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0612h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0616h call 7ff7c730b530h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 ea ff ff}
+061bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a9 02 00 00}
+0620h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0624h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0628h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+062ch call 7ff7c730b520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f ea ff ff}
+0631h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 93 02 00 00}
+0636h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+063ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+063eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0642h call 7ff7c730b510h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 ea ff ff}
+0647h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7d 02 00 00}
+064ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0650h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0654h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0658h call 7ff7c730b500h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 ea ff ff}
+065dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 67 02 00 00}
+0662h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0666h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+066ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+066eh call 7ff7c730b4f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d ea ff ff}
+0673h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 51 02 00 00}
+0678h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+067ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0680h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0684h call 7ff7c730b4e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 e9 ff ff}
+0689h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3b 02 00 00}
+068eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0692h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0696h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+069ah call 7ff7c730b4d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 e9 ff ff}
+069fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 25 02 00 00}
+06a4h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+06a8h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+06ach movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+06b0h call 7ff7c730b4c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b e9 ff ff}
+06b5h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0f 02 00 00}
+06bah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+06beh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+06c2h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+06c6h call 7ff7c730b4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 e9 ff ff}
+06cbh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f9 01 00 00}
+06d0h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+06d4h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+06d8h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+06dch call 7ff7c730b4a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f e9 ff ff}
+06e1h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e3 01 00 00}
+06e6h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+06eah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+06eeh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+06f2h call 7ff7c730b490h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 e9 ff ff}
+06f7h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 cd 01 00 00}
+06fch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0700h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0704h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0708h call 7ff7c730b480h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 e9 ff ff}
+070dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b7 01 00 00}
+0712h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0716h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+071ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+071eh call 7ff7c730b470h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd e8 ff ff}
+0723h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a1 01 00 00}
+0728h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+072ch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0730h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0734h call 7ff7c730b460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 e8 ff ff}
+0739h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8b 01 00 00}
+073eh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0742h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0746h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+074ah call 7ff7c730b450h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 e8 ff ff}
+074fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 75 01 00 00}
+0754h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0758h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+075ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0760h call 7ff7c730b440h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b e8 ff ff}
+0765h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5f 01 00 00}
+076ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+076eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0772h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0776h call 7ff7c730b430h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 e8 ff ff}
+077bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 49 01 00 00}
+0780h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0784h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0788h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+078ch call 7ff7c730b420h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f e8 ff ff}
+0791h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 33 01 00 00}
+0796h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+079ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+079eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+07a2h call 7ff7c730b410h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 e7 ff ff}
+07a7h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1d 01 00 00}
+07ach movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+07b0h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+07b4h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+07b8h call 7ff7c730b400h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 e7 ff ff}
+07bdh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 07 01 00 00}
+07c2h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+07c6h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+07cah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+07ceh call 7ff7c730b3f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad e7 ff ff}
+07d3h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f1 00 00 00}
+07d8h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+07dch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+07e0h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+07e4h call 7ff7c730b3e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 e7 ff ff}
+07e9h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 db 00 00 00}
+07eeh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+07f2h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+07f6h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+07fah call 7ff7c730b3d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 e7 ff ff}
+07ffh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c5 00 00 00}
+0804h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0808h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+080ch movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0810h call 7ff7c730b3c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b e7 ff ff}
+0815h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 af 00 00 00}
+081ah movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+081eh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0822h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0826h call 7ff7c730b3b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 e7 ff ff}
+082bh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 99 00 00 00}
+0830h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0834h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0838h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+083ch call 7ff7c730b3a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef e6 ff ff}
+0841h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 83 00 00 00}
+0846h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+084ah movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+084eh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0852h call 7ff7c730b390h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 e6 ff ff}
+0857h jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 70}
+0859h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+085dh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0861h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0865h call 7ff7c730b380h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 e6 ff ff}
+086ah jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 5d}
+086ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0870h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0874h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+0878h call 7ff7c730b370h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 e6 ff ff}
+087dh jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 4a}
+087fh movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0883h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+0887h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+088bh call 7ff7c730b360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e6 ff ff}
+0890h jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 37}
+0892h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+0896h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+089ah movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+089eh call 7ff7c730b350h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d e6 ff ff}
+08a3h jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 24}
+08a5h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+08a9h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+08adh movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+08b1h call 7ff7c730b340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a e6 ff ff}
+08b6h jmp short 08c9h                         ; JMP rel8 || EB cb || encoded[2]{eb 11}
+08b8h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
+08bch movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
+08c0h movsx r8,dil                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c7}
+08c4h call 7ff7c730b330h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 e5 ff ff}
+08c9h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+08cdh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
+08d1h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
+08d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+08d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
+08d4h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort eval<ushort>(TernaryBitLogicKind:byte kind, ushort a, ushort b, ushort c)
-; tbl~eval_g8u[2093] = {57 56 53 48 83 ec 30 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 10 08 00 00 8b c9 48 8d 05 3a 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 0f b7 ce 0f b7 c7 0b c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 d3 07 00 00 0f b7 c6 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c9 0f b7 c7 23 c8 0f b7 c1 e9 b7 07 00 00 0f b7 c6 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c1 e9 a3 07 00 00 0f b7 c2 0f b7 d7 0b c2 8b c8 f7 d1 0f b7 c9 0f b7 c6 23 c8 0f b7 c1 e9 87 07 00 00 0f b7 c7 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c1 e9 73 07 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 0f b7 d7 33 c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 51 07 00 00 0f b7 c6 0f b7 cf 23 c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 37 07 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 23 c8 0f b7 c9 0f b7 c7 23 c8 0f b7 c1 e9 18 07 00 00 0f b7 c6 0f b7 cf 33 c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 fe 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c7 23 c8 0f b7 c1 e9 e7 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 35 ff ff 00 00 89 44 24 2c 0f b7 44 24 2c 0f b7 d7 0b c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 b7 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 23 c8 0f b7 c1 e9 a0 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c7 35 ff ff 00 00 89 44 24 28 0f b7 44 24 28 0f b7 d6 0b c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 70 06 00 00 0f b7 ca f7 d1 0f b7 c9 66 89 4c 24 20 48 8d 4c 24 20 e8 b7 08 eb ff 0f b7 18 0f b7 ce 0f b7 d7 e8 61 8a ff ff 8b d0 8b cb e8 b8 8a ff ff 0f b7 c0 e9 3a 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b1 fa ff ff e9 26 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 8d fa ff ff e9 12 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 69 fa ff ff e9 fe 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 45 fa ff ff e9 ea 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 21 fa ff ff e9 d6 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 fd f9 ff ff e9 c2 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d9 f9 ff ff e9 ae 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b5 f9 ff ff e9 9a 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 91 f9 ff ff e9 86 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 6d f9 ff ff e9 72 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 49 f9 ff ff e9 5e 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 25 f9 ff ff e9 4a 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f9 f8 ff ff e9 36 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d5 f8 ff ff e9 22 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b1 f8 ff ff e9 0e 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 8d f8 ff ff e9 fa 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 69 f8 ff ff e9 e6 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 45 f8 ff ff e9 d2 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 21 f8 ff ff e9 be 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 fd f7 ff ff e9 aa 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d9 f7 ff ff e9 96 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b5 f7 ff ff e9 82 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 91 f7 ff ff e9 6e 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 6d f7 ff ff e9 5a 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 49 f7 ff ff e9 46 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 25 f7 ff ff e9 32 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 01 f7 ff ff e9 1e 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 dd f6 ff ff e9 0a 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b9 f6 ff ff e9 f6 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 95 f6 ff ff e9 e2 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 71 f6 ff ff e9 ce 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 4d f6 ff ff e9 ba 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 29 f6 ff ff e9 a6 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 05 f6 ff ff e9 92 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e1 f5 ff ff e9 7e 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 bd f5 ff ff e9 6a 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 99 f5 ff ff e9 56 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 75 f5 ff ff e9 42 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 51 f5 ff ff e9 2e 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 2d f5 ff ff e9 1a 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 09 f5 ff ff e9 06 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e5 f4 ff ff e9 f2 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c1 f4 ff ff e9 de 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 9d f4 ff ff e9 ca 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 79 f4 ff ff e9 b6 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 55 f4 ff ff e9 a2 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 31 f4 ff ff e9 8e 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 0d f4 ff ff e9 7a 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e9 f3 ff ff e9 66 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c5 f3 ff ff e9 52 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a1 f3 ff ff e9 3e 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 7d f3 ff ff e9 2a 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 59 f3 ff ff e9 16 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 35 f3 ff ff e9 02 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 11 f3 ff ff e9 ee 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ed f2 ff ff e9 da 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c9 f2 ff ff e9 c6 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a5 f2 ff ff e9 b2 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 81 f2 ff ff e9 9e 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 5d f2 ff ff e9 8a 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 39 f2 ff ff e9 76 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 15 f2 ff ff e9 62 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f1 f1 ff ff e9 4e 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 cd f1 ff ff e9 3a 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a9 f1 ff ff e9 26 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 85 f1 ff ff e9 12 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 61 f1 ff ff e9 fe 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 3d f1 ff ff e9 ea 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 19 f1 ff ff e9 d6 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f5 f0 ff ff e9 c2 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d1 f0 ff ff e9 ae 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ad f0 ff ff e9 9a 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 89 f0 ff ff e9 86 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 65 f0 ff ff eb 75 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 44 f0 ff ff eb 64 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 23 f0 ff ff eb 53 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 52 e5 ff ff eb 42 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 31 e5 ff ff eb 31 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 10 e5 ff ff eb 20 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ef e4 ff ff eb 0f 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ce e4 ff ff 0f b7 c0 48 83 c4 30 5b 5e 5f c3}
+; tbl~eval_g8u[2093] = {57 56 53 48 83 ec 30 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 10 08 00 00 8b c9 48 8d 05 3a 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 0f b7 ce 0f b7 c7 0b c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 d3 07 00 00 0f b7 c6 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c9 0f b7 c7 23 c8 0f b7 c1 e9 b7 07 00 00 0f b7 c6 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c1 e9 a3 07 00 00 0f b7 c2 0f b7 d7 0b c2 8b c8 f7 d1 0f b7 c9 0f b7 c6 23 c8 0f b7 c1 e9 87 07 00 00 0f b7 c7 0f b7 d2 0b c2 8b c8 f7 d1 0f b7 c1 e9 73 07 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 0f b7 d7 33 c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 51 07 00 00 0f b7 c6 0f b7 cf 23 c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 37 07 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 23 c8 0f b7 c9 0f b7 c7 23 c8 0f b7 c1 e9 18 07 00 00 0f b7 c6 0f b7 cf 33 c8 0f b7 c9 0f b7 d2 0b ca f7 d1 0f b7 c1 e9 fe 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c7 23 c8 0f b7 c1 e9 e7 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 35 ff ff 00 00 89 44 24 2c 0f b7 44 24 2c 0f b7 d7 0b c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 b7 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c6 23 c8 0f b7 c1 e9 a0 06 00 00 0f b7 c2 8b d0 f7 d2 0f b7 ca 0f b7 c7 35 ff ff 00 00 89 44 24 28 0f b7 44 24 28 0f b7 d6 0b c2 0f b7 c0 0f b7 c9 23 c8 0f b7 c1 e9 70 06 00 00 0f b7 ca f7 d1 0f b7 c9 66 89 4c 24 20 48 8d 4c 24 20 e8 87 f3 99 ff 0f b7 18 0f b7 ce 0f b7 d7 e8 61 9c ff ff 8b d0 8b cb e8 b8 9c ff ff 0f b7 c0 e9 3a 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 91 fa ff ff e9 26 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 6d fa ff ff e9 12 06 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 49 fa ff ff e9 fe 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 25 fa ff ff e9 ea 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 01 fa ff ff e9 d6 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 dd f9 ff ff e9 c2 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b9 f9 ff ff e9 ae 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 95 f9 ff ff e9 9a 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 71 f9 ff ff e9 86 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 4d f9 ff ff e9 72 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 21 f9 ff ff e9 5e 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 fd f8 ff ff e9 4a 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d9 f8 ff ff e9 36 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b5 f8 ff ff e9 22 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 91 f8 ff ff e9 0e 05 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 6d f8 ff ff e9 fa 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 49 f8 ff ff e9 e6 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 25 f8 ff ff e9 d2 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 01 f8 ff ff e9 be 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 dd f7 ff ff e9 aa 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b9 f7 ff ff e9 96 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 95 f7 ff ff e9 82 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 71 f7 ff ff e9 6e 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 4d f7 ff ff e9 5a 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 29 f7 ff ff e9 46 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 05 f7 ff ff e9 32 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e1 f6 ff ff e9 1e 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 bd f6 ff ff e9 0a 04 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 99 f6 ff ff e9 f6 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 75 f6 ff ff e9 e2 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 51 f6 ff ff e9 ce 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 2d f6 ff ff e9 ba 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 09 f6 ff ff e9 a6 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e5 f5 ff ff e9 92 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c1 f5 ff ff e9 7e 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 9d f5 ff ff e9 6a 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 79 f5 ff ff e9 56 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 55 f5 ff ff e9 42 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 31 f5 ff ff e9 2e 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 0d f5 ff ff e9 1a 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 e9 f4 ff ff e9 06 03 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c5 f4 ff ff e9 f2 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a1 f4 ff ff e9 de 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 7d f4 ff ff e9 ca 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 59 f4 ff ff e9 b6 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 35 f4 ff ff e9 a2 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 11 f4 ff ff e9 8e 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ed f3 ff ff e9 7a 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 c9 f3 ff ff e9 66 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a5 f3 ff ff e9 52 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 81 f3 ff ff e9 3e 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 5d f3 ff ff e9 2a 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 39 f3 ff ff e9 16 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 15 f3 ff ff e9 02 02 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f1 f2 ff ff e9 ee 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 cd f2 ff ff e9 da 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 a9 f2 ff ff e9 c6 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 85 f2 ff ff e9 b2 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 61 f2 ff ff e9 9e 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 3d f2 ff ff e9 8a 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 19 f2 ff ff e9 76 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f5 f1 ff ff e9 62 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d1 f1 ff ff e9 4e 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ad f1 ff ff e9 3a 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 89 f1 ff ff e9 26 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 65 f1 ff ff e9 12 01 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 41 f1 ff ff e9 fe 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 1d f1 ff ff e9 ea 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f9 f0 ff ff e9 d6 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 d5 f0 ff ff e9 c2 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 b1 f0 ff ff e9 ae 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 8d f0 ff ff e9 9a 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 69 f0 ff ff e9 86 00 00 00 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 45 f0 ff ff eb 75 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 74 e5 ff ff eb 64 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 53 e5 ff ff eb 53 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 32 e5 ff ff eb 42 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 11 e5 ff ff eb 31 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 f0 e4 ff ff eb 20 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 cf e4 ff ff eb 0f 0f b7 ca 0f b7 d6 44 0f b7 c7 e8 ae e4 ff ff 0f b7 c0 48 83 c4 30 5b 5e 5f c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -932,420 +852,420 @@
 01b7h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 01bah mov [rsp+20h],cx                        ; MOV r/m16, r16 || o16 89 /r || encoded[5]{66 89 4c 24 20}
 01bfh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-01c4h call 7ff7c6a65590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 08 eb ff}
+01c4h call 7ff7c6cacc70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 f3 99 ff}
 01c9h movzx ebx,word ptr [rax]                ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 18}
 01cch movzx ecx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ce}
 01cfh movzx edx,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d7}
-01d2h call 7ff7c6bad748h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 8a ff ff}
+01d2h call 7ff7c7307558h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 9c ff ff}
 01d7h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
 01d9h mov ecx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b cb}
-01dbh call 7ff7c6bad7a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 8a ff ff}
+01dbh call 7ff7c73075b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 9c ff ff}
 01e0h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 01e3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3a 06 00 00}
 01e8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 01ebh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 01eeh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-01f2h call 7ff7c6bb47b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 fa ff ff}
+01f2h call 7ff7c730d3a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 fa ff ff}
 01f7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 26 06 00 00}
 01fch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 01ffh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0202h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0206h call 7ff7c6bb47a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d fa ff ff}
+0206h call 7ff7c730d398h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d fa ff ff}
 020bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 12 06 00 00}
 0210h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0213h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0216h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-021ah call 7ff7c6bb4798h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 fa ff ff}
+021ah call 7ff7c730d388h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 fa ff ff}
 021fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fe 05 00 00}
 0224h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0227h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 022ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-022eh call 7ff7c6bb4788h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 fa ff ff}
+022eh call 7ff7c730d378h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 fa ff ff}
 0233h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ea 05 00 00}
 0238h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 023bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 023eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0242h call 7ff7c6bb4778h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 fa ff ff}
+0242h call 7ff7c730d368h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 fa ff ff}
 0247h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d6 05 00 00}
 024ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 024fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0252h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0256h call 7ff7c6bb4768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f9 ff ff}
+0256h call 7ff7c730d358h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f9 ff ff}
 025bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c2 05 00 00}
 0260h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0263h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0266h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-026ah call 7ff7c6bb4758h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 f9 ff ff}
+026ah call 7ff7c730d348h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 f9 ff ff}
 026fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ae 05 00 00}
 0274h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0277h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 027ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-027eh call 7ff7c6bb4748h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 f9 ff ff}
+027eh call 7ff7c730d338h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 f9 ff ff}
 0283h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9a 05 00 00}
 0288h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 028bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 028eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0292h call 7ff7c6bb4738h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 f9 ff ff}
+0292h call 7ff7c730d328h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 f9 ff ff}
 0297h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 86 05 00 00}
 029ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 029fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 02a2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-02a6h call 7ff7c6bb4728h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f9 ff ff}
+02a6h call 7ff7c730d318h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d f9 ff ff}
 02abh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 72 05 00 00}
 02b0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 02b3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 02b6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-02bah call 7ff7c6bb4718h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 f9 ff ff}
+02bah call 7ff7c730d300h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 f9 ff ff}
 02bfh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5e 05 00 00}
 02c4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 02c7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 02cah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-02ceh call 7ff7c6bb4708h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 f9 ff ff}
+02ceh call 7ff7c730d2f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f8 ff ff}
 02d3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 4a 05 00 00}
 02d8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 02dbh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 02deh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-02e2h call 7ff7c6bb46f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 f8 ff ff}
+02e2h call 7ff7c730d2e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 f8 ff ff}
 02e7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 36 05 00 00}
 02ech movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 02efh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 02f2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-02f6h call 7ff7c6bb46e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 f8 ff ff}
+02f6h call 7ff7c730d2d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 f8 ff ff}
 02fbh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 22 05 00 00}
 0300h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0303h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0306h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-030ah call 7ff7c6bb46d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 f8 ff ff}
+030ah call 7ff7c730d2c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 f8 ff ff}
 030fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0e 05 00 00}
 0314h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0317h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 031ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-031eh call 7ff7c6bb46c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d f8 ff ff}
+031eh call 7ff7c730d2b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f8 ff ff}
 0323h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fa 04 00 00}
 0328h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 032bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 032eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0332h call 7ff7c6bb46b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 f8 ff ff}
+0332h call 7ff7c730d2a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 f8 ff ff}
 0337h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e6 04 00 00}
 033ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 033fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0342h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0346h call 7ff7c6bb46a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 f8 ff ff}
+0346h call 7ff7c730d290h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 f8 ff ff}
 034bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d2 04 00 00}
 0350h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0353h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0356h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-035ah call 7ff7c6bb4690h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 f8 ff ff}
+035ah call 7ff7c730d280h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 f8 ff ff}
 035fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 be 04 00 00}
 0364h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0367h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 036ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-036eh call 7ff7c6bb4680h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f7 ff ff}
+036eh call 7ff7c730d270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f7 ff ff}
 0373h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 aa 04 00 00}
 0378h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 037bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 037eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0382h call 7ff7c6bb4670h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 f7 ff ff}
+0382h call 7ff7c730d260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 f7 ff ff}
 0387h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 96 04 00 00}
 038ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 038fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0392h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0396h call 7ff7c6bb4660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 f7 ff ff}
+0396h call 7ff7c730d250h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 f7 ff ff}
 039bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 82 04 00 00}
 03a0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 03a3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 03a6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-03aah call 7ff7c6bb4650h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 f7 ff ff}
+03aah call 7ff7c730d240h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 f7 ff ff}
 03afh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 6e 04 00 00}
 03b4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 03b7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 03bah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-03beh call 7ff7c6bb4640h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f7 ff ff}
+03beh call 7ff7c730d230h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d f7 ff ff}
 03c3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5a 04 00 00}
 03c8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 03cbh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 03ceh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-03d2h call 7ff7c6bb4630h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 f7 ff ff}
+03d2h call 7ff7c730d220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 f7 ff ff}
 03d7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 46 04 00 00}
 03dch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 03dfh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 03e2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-03e6h call 7ff7c6bb4620h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 f7 ff ff}
+03e6h call 7ff7c730d210h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 f7 ff ff}
 03ebh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 32 04 00 00}
 03f0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 03f3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 03f6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-03fah call 7ff7c6bb4610h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 f7 ff ff}
+03fah call 7ff7c730d200h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 f6 ff ff}
 03ffh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1e 04 00 00}
 0404h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0407h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 040ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-040eh call 7ff7c6bb4600h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f6 ff ff}
+040eh call 7ff7c730d1f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd f6 ff ff}
 0413h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0a 04 00 00}
 0418h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 041bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 041eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0422h call 7ff7c6bb45f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 f6 ff ff}
+0422h call 7ff7c730d1e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 f6 ff ff}
 0427h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f6 03 00 00}
 042ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 042fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0432h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0436h call 7ff7c6bb45e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 f6 ff ff}
+0436h call 7ff7c730d1d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 f6 ff ff}
 043bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e2 03 00 00}
 0440h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0443h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0446h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-044ah call 7ff7c6bb45d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 f6 ff ff}
+044ah call 7ff7c730d1c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 f6 ff ff}
 044fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ce 03 00 00}
 0454h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0457h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 045ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-045eh call 7ff7c6bb45c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d f6 ff ff}
+045eh call 7ff7c730d1b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d f6 ff ff}
 0463h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ba 03 00 00}
 0468h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 046bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 046eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0472h call 7ff7c6bb45b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 f6 ff ff}
+0472h call 7ff7c730d1a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 f6 ff ff}
 0477h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a6 03 00 00}
 047ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 047fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0482h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0486h call 7ff7c6bb45a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 f6 ff ff}
+0486h call 7ff7c730d190h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 f5 ff ff}
 048bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 92 03 00 00}
 0490h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0493h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0496h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-049ah call 7ff7c6bb4590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 f5 ff ff}
+049ah call 7ff7c730d180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 f5 ff ff}
 049fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7e 03 00 00}
 04a4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 04a7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 04aah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-04aeh call 7ff7c6bb4580h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd f5 ff ff}
+04aeh call 7ff7c730d170h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d f5 ff ff}
 04b3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 6a 03 00 00}
 04b8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 04bbh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 04beh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-04c2h call 7ff7c6bb4570h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 f5 ff ff}
+04c2h call 7ff7c730d160h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 f5 ff ff}
 04c7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 56 03 00 00}
 04cch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 04cfh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 04d2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-04d6h call 7ff7c6bb4560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 f5 ff ff}
+04d6h call 7ff7c730d150h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 f5 ff ff}
 04dbh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 42 03 00 00}
 04e0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 04e3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 04e6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-04eah call 7ff7c6bb4550h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 f5 ff ff}
+04eah call 7ff7c730d140h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 f5 ff ff}
 04efh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2e 03 00 00}
 04f4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 04f7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 04fah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-04feh call 7ff7c6bb4540h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d f5 ff ff}
+04feh call 7ff7c730d130h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d f5 ff ff}
 0503h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1a 03 00 00}
 0508h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 050bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 050eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0512h call 7ff7c6bb4530h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 f5 ff ff}
+0512h call 7ff7c730d120h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 f4 ff ff}
 0517h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 06 03 00 00}
 051ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 051fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0522h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0526h call 7ff7c6bb4520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 f4 ff ff}
+0526h call 7ff7c730d110h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f4 ff ff}
 052bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f2 02 00 00}
 0530h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0533h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0536h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-053ah call 7ff7c6bb4510h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 f4 ff ff}
+053ah call 7ff7c730d100h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 f4 ff ff}
 053fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 de 02 00 00}
 0544h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0547h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 054ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-054eh call 7ff7c6bb4500h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d f4 ff ff}
+054eh call 7ff7c730d0f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d f4 ff ff}
 0553h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ca 02 00 00}
 0558h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 055bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 055eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0562h call 7ff7c6bb44f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 f4 ff ff}
+0562h call 7ff7c730d0e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 f4 ff ff}
 0567h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b6 02 00 00}
 056ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 056fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0572h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0576h call 7ff7c6bb44e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 f4 ff ff}
+0576h call 7ff7c730d0d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 f4 ff ff}
 057bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a2 02 00 00}
 0580h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0583h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0586h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-058ah call 7ff7c6bb44d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 f4 ff ff}
+058ah call 7ff7c730d0c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 f4 ff ff}
 058fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8e 02 00 00}
 0594h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0597h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 059ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-059eh call 7ff7c6bb44c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d f4 ff ff}
+059eh call 7ff7c730d0b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed f3 ff ff}
 05a3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7a 02 00 00}
 05a8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 05abh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 05aeh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-05b2h call 7ff7c6bb44b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 f3 ff ff}
+05b2h call 7ff7c730d0a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 f3 ff ff}
 05b7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 66 02 00 00}
 05bch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 05bfh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 05c2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-05c6h call 7ff7c6bb44a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f3 ff ff}
+05c6h call 7ff7c730d090h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 f3 ff ff}
 05cbh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 52 02 00 00}
 05d0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 05d3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 05d6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-05dah call 7ff7c6bb4490h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 f3 ff ff}
+05dah call 7ff7c730d080h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f3 ff ff}
 05dfh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3e 02 00 00}
 05e4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 05e7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 05eah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-05eeh call 7ff7c6bb4480h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d f3 ff ff}
+05eeh call 7ff7c730d070h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d f3 ff ff}
 05f3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2a 02 00 00}
 05f8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 05fbh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 05feh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0602h call 7ff7c6bb4470h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 f3 ff ff}
+0602h call 7ff7c730d060h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 f3 ff ff}
 0607h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 16 02 00 00}
 060ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 060fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0612h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0616h call 7ff7c6bb4460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 f3 ff ff}
+0616h call 7ff7c730d050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 f3 ff ff}
 061bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 02 02 00 00}
 0620h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0623h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0626h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-062ah call 7ff7c6bb4450h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 f3 ff ff}
+062ah call 7ff7c730d040h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 f2 ff ff}
 062fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ee 01 00 00}
 0634h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0637h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 063ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-063eh call 7ff7c6bb4440h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed f2 ff ff}
+063eh call 7ff7c730d030h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd f2 ff ff}
 0643h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 da 01 00 00}
 0648h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 064bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 064eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0652h call 7ff7c6bb4430h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 f2 ff ff}
+0652h call 7ff7c730d020h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 f2 ff ff}
 0657h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c6 01 00 00}
 065ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 065fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0662h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0666h call 7ff7c6bb4420h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 f2 ff ff}
+0666h call 7ff7c730d010h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 f2 ff ff}
 066bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b2 01 00 00}
 0670h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0673h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0676h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-067ah call 7ff7c6bb4410h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f2 ff ff}
+067ah call 7ff7c730d000h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 f2 ff ff}
 067fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9e 01 00 00}
 0684h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0687h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 068ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-068eh call 7ff7c6bb4400h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d f2 ff ff}
+068eh call 7ff7c730cff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d f2 ff ff}
 0693h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8a 01 00 00}
 0698h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 069bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 069eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-06a2h call 7ff7c6bb43f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 f2 ff ff}
+06a2h call 7ff7c730cfe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 f2 ff ff}
 06a7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 76 01 00 00}
 06ach movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 06afh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 06b2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-06b6h call 7ff7c6bb43e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 f2 ff ff}
+06b6h call 7ff7c730cfd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 f1 ff ff}
 06bbh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 62 01 00 00}
 06c0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 06c3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 06c6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-06cah call 7ff7c6bb43d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 f1 ff ff}
+06cah call 7ff7c730cfc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f1 ff ff}
 06cfh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 4e 01 00 00}
 06d4h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 06d7h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 06dah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-06deh call 7ff7c6bb43c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd f1 ff ff}
+06deh call 7ff7c730cfb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad f1 ff ff}
 06e3h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3a 01 00 00}
 06e8h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 06ebh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 06eeh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-06f2h call 7ff7c6bb43b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 f1 ff ff}
+06f2h call 7ff7c730cfa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 f1 ff ff}
 06f7h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 26 01 00 00}
 06fch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 06ffh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0702h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0706h call 7ff7c6bb43a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 f1 ff ff}
+0706h call 7ff7c730cf90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 f1 ff ff}
 070bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 12 01 00 00}
 0710h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0713h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0716h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-071ah call 7ff7c6bb4390h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 f1 ff ff}
+071ah call 7ff7c730cf80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 f1 ff ff}
 071fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fe 00 00 00}
 0724h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0727h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 072ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-072eh call 7ff7c6bb4380h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d f1 ff ff}
+072eh call 7ff7c730cf70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d f1 ff ff}
 0733h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ea 00 00 00}
 0738h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 073bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 073eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0742h call 7ff7c6bb4370h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 f1 ff ff}
+0742h call 7ff7c730cf60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 f0 ff ff}
 0747h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d6 00 00 00}
 074ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 074fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0752h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0756h call 7ff7c6bb4360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 f0 ff ff}
+0756h call 7ff7c730cf50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 f0 ff ff}
 075bh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c2 00 00 00}
 0760h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0763h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0766h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-076ah call 7ff7c6bb4350h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f0 ff ff}
+076ah call 7ff7c730cf40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 f0 ff ff}
 076fh jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ae 00 00 00}
 0774h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0777h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 077ah movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-077eh call 7ff7c6bb4340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad f0 ff ff}
+077eh call 7ff7c730cf30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d f0 ff ff}
 0783h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9a 00 00 00}
 0788h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 078bh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 078eh movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-0792h call 7ff7c6bb4330h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 f0 ff ff}
+0792h call 7ff7c730cf20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 f0 ff ff}
 0797h jmp near ptr 0822h                      ; JMP rel32 || E9 cd || encoded[5]{e9 86 00 00 00}
 079ch movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 079fh movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07a2h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07a6h call 7ff7c6bb4320h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 f0 ff ff}
+07a6h call 7ff7c730cf10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 f0 ff ff}
 07abh jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 75}
 07adh movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 07b0h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07b3h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07b7h call 7ff7c6bb4310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 f0 ff ff}
+07b7h call 7ff7c730c450h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 e5 ff ff}
 07bch jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 64}
 07beh movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 07c1h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07c4h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07c8h call 7ff7c6bb4300h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 f0 ff ff}
+07c8h call 7ff7c730c440h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 e5 ff ff}
 07cdh jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 53}
 07cfh movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 07d2h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07d5h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07d9h call 7ff7c6bb3840h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 e5 ff ff}
+07d9h call 7ff7c730c430h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 e5 ff ff}
 07deh jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 42}
 07e0h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 07e3h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07e6h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07eah call 7ff7c6bb3830h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 e5 ff ff}
+07eah call 7ff7c730c420h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 e5 ff ff}
 07efh jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 31}
 07f1h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 07f4h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 07f7h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-07fbh call 7ff7c6bb3820h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 e5 ff ff}
+07fbh call 7ff7c730c410h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 e4 ff ff}
 0800h jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 20}
 0802h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0805h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0808h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-080ch call 7ff7c6bb3810h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef e4 ff ff}
+080ch call 7ff7c730c400h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf e4 ff ff}
 0811h jmp short 0822h                         ; JMP rel8 || EB cb || encoded[2]{eb 0f}
 0813h movzx ecx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 ca}
 0816h movzx edx,si                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d6}
 0819h movzx r8d,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c7}
-081dh call 7ff7c6bb3800h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce e4 ff ff}
+081dh call 7ff7c730c3f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae e4 ff ff}
 0822h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0825h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0829h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -1354,7 +1274,7 @@
 082ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
-; tbl~eval_g8u[570] = {57 56 53 48 83 ec 20 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 b8 08 00 00 8b c9 48 8d 05 e2 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0f bf ce 48 0f bf c7 0b c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 75 08 00 00 48 0f bf c6 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c9 48 0f bf c7 23 c8 48 0f bf c1 e9 54 08 00 00 48 0f bf c6 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c1 e9 3d 08 00 00 48 0f bf c2 48 0f bf d7 0b c2 8b c8 f7 d1 48 0f bf c9 48 0f bf c6 23 c8 48 0f bf c1 e9 1c 08 00 00 48 0f bf c7 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c1 e9 05 08 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c6 48 0f bf d7 33 c2 48 0f bf c0 48 0f bf c9 23 c8 48 0f bf c1 e9 dc 07 00 00 48 0f bf c6 48 0f bf cf 23 c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 bd 07 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c6 23 c8 48 0f bf c9 48 0f bf c7 23 c8 48 0f bf c1 e9 98 07 00 00 48 0f bf c6 48 0f bf cf 33 c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 79 07 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c7 23 c8 48 0f bf c1 e9 5e 07 00 00 48 0f bf ca f7 d1 48 0f bf d9 48 0f bf ce e8 aa fa ff ff 48 0f bf c8 48 0f bf d7 e8 4d df fe ff 48 0f bf d0 8b cb e8 ca 7d ff ff 48 0f bf c0 e9 2a 07 00 00 48 0f bf ca e8 60 e0 fe ff 48 0f bf d0 48 0f bf ce e8 ab 7d ff ff 48 0f bf c0 e9 0b 07 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 81 f9 ff ff e9 f5 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 5b f9 ff ff e9 df 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 35 f9 ff ff e9 c9 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 0f f9 ff ff e9 b3 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 e9 f8 ff ff e9 9d 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 c3}
+; tbl~eval_g8u[834] = {57 56 53 48 83 ec 20 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 b8 08 00 00 8b c9 48 8d 05 e2 08 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0f bf ce 48 0f bf c7 0b c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 75 08 00 00 48 0f bf c6 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c9 48 0f bf c7 23 c8 48 0f bf c1 e9 54 08 00 00 48 0f bf c6 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c1 e9 3d 08 00 00 48 0f bf c2 48 0f bf d7 0b c2 8b c8 f7 d1 48 0f bf c9 48 0f bf c6 23 c8 48 0f bf c1 e9 1c 08 00 00 48 0f bf c7 48 0f bf d2 0b c2 8b c8 f7 d1 48 0f bf c1 e9 05 08 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c6 48 0f bf d7 33 c2 48 0f bf c0 48 0f bf c9 23 c8 48 0f bf c1 e9 dc 07 00 00 48 0f bf c6 48 0f bf cf 23 c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 bd 07 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c6 23 c8 48 0f bf c9 48 0f bf c7 23 c8 48 0f bf c1 e9 98 07 00 00 48 0f bf c6 48 0f bf cf 33 c8 48 0f bf c9 48 0f bf d2 0b ca f7 d1 48 0f bf c1 e9 79 07 00 00 48 0f bf c2 8b d0 f7 d2 48 0f bf ca 48 0f bf c7 23 c8 48 0f bf c1 e9 5e 07 00 00 48 0f bf ca f7 d1 48 0f bf d9 48 0f bf ce e8 72 fa ff ff 48 0f bf c8 48 0f bf d7 e8 25 e8 9c ff 48 0f bf d0 8b cb e8 02 8c ff ff 48 0f bf c0 e9 2a 07 00 00 48 0f bf ca e8 c8 e5 9c ff 48 0f bf d0 48 0f bf ce e8 e3 8b ff ff 48 0f bf c0 e9 0b 07 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 49 f9 ff ff e9 f5 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 23 f9 ff ff e9 df 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 fd f8 ff ff e9 c9 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 d7 f8 ff ff e9 b3 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 b1 f8 ff ff e9 9d 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 8b f8 ff ff e9 87 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 65 f8 ff ff e9 71 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 3f f8 ff ff e9 5b 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 19 f8 ff ff e9 45 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 f3 f7 ff ff e9 2f 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 cd f7 ff ff e9 19 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 a7 f7 ff ff e9 03 06 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 81 f7 ff ff e9 ed 05 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 5b f7 ff ff e9 d7 05 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 35 f7 ff ff e9 c1 05 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 0f f7 ff ff e9 ab 05 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 e9 f6 ff ff e9 95 05 00 00 48 0f bf ca 48 0f bf d6 4c 0f bf c7 e8 c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1469,54 +1389,114 @@
 016fh not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 0171h movsx rbx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d9}
 0175h movsx rcx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ce}
-0179h call 7ff7c6bb5a58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa fa ff ff}
+0179h call 7ff7c730e520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 fa ff ff}
 017eh movsx rcx,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c8}
 0182h movsx rdx,di                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d7}
-0186h call 7ff7c6ba3f08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d df fe ff}
+0186h call 7ff7c6cdd2e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 e8 9c ff}
 018bh movsx rdx,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d0}
 018fh mov ecx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b cb}
-0191h call 7ff7c6badd90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca 7d ff ff}
+0191h call 7ff7c73076c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 8c ff ff}
 0196h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 019ah jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2a 07 00 00}
 019fh movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-01a3h call 7ff7c6ba4038h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e0 fe ff}
+01a3h call 7ff7c6cdd0a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 e5 9c ff}
 01a8h movsx rdx,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d0}
 01ach movsx rcx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ce}
-01b0h call 7ff7c6badd90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab 7d ff ff}
+01b0h call 7ff7c73076c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 8b ff ff}
 01b5h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 01b9h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0b 07 00 00}
 01beh movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 01c2h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 01c6h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-01cah call 7ff7c6bb5980h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f9 ff ff}
+01cah call 7ff7c730e448h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 f9 ff ff}
 01cfh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f5 06 00 00}
 01d4h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 01d8h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 01dch movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-01e0h call 7ff7c6bb5970h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b f9 ff ff}
+01e0h call 7ff7c730e438h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 f9 ff ff}
 01e5h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 df 06 00 00}
 01eah movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 01eeh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 01f2h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-01f6h call 7ff7c6bb5960h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 f9 ff ff}
+01f6h call 7ff7c730e428h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f8 ff ff}
 01fbh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c9 06 00 00}
 0200h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 0204h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0208h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-020ch call 7ff7c6bb5950h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f f9 ff ff}
+020ch call 7ff7c730e418h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 f8 ff ff}
 0211h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b3 06 00 00}
 0216h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 021ah movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 021eh movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-0222h call 7ff7c6bb5940h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 f8 ff ff}
+0222h call 7ff7c730e408h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 f8 ff ff}
 0227h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9d 06 00 00}
 022ch movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
 0230h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0234h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
-0238h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
+0238h call 7ff7c730e3f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b f8 ff ff}
+023dh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 87 06 00 00}
+0242h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+0246h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+024ah movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+024eh call 7ff7c730e3e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 f8 ff ff}
+0253h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 71 06 00 00}
+0258h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+025ch movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+0260h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+0264h call 7ff7c730e3d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f f8 ff ff}
+0269h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5b 06 00 00}
+026eh movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+0272h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+0276h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+027ah call 7ff7c730e3c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 f8 ff ff}
+027fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 45 06 00 00}
+0284h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+0288h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+028ch movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+0290h call 7ff7c730e3b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 f7 ff ff}
+0295h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2f 06 00 00}
+029ah movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+029eh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+02a2h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+02a6h call 7ff7c730e3a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd f7 ff ff}
+02abh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 19 06 00 00}
+02b0h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+02b4h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+02b8h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+02bch call 7ff7c730e398h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 f7 ff ff}
+02c1h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 03 06 00 00}
+02c6h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+02cah movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+02ceh movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+02d2h call 7ff7c730e388h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f7 ff ff}
+02d7h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ed 05 00 00}
+02dch movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+02e0h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+02e4h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+02e8h call 7ff7c730e378h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b f7 ff ff}
+02edh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d7 05 00 00}
+02f2h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+02f6h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+02fah movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+02feh call 7ff7c730e368h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 f7 ff ff}
+0303h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 05 00 00}
+0308h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+030ch movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+0310h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+0314h call 7ff7c730e358h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f f7 ff ff}
+0319h jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ab 05 00 00}
+031eh movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+0322h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+0326h movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+032ah call 7ff7c730e348h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 f6 ff ff}
+032fh jmp near ptr 08c9h                      ; JMP rel32 || E9 cd || encoded[5]{e9 95 05 00 00}
+0334h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
+0338h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
+033ch movsx r8,di                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c7}
+0340h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint eval<uint>(TernaryBitLogicKind:byte kind, uint a, uint b, uint c)
-; tbl~eval_g8u[1202] = {57 56 48 83 ec 28 8b f9 8b f2 41 8b d0 45 8b c1 40 0f b6 cf ff c9 83 f9 5e 0f 87 0a 05 00 00 8b c9 48 8d 05 30 05 00 00 8b 04 88 4c 8d 0d de ff ff ff 49 03 c1 ff e0 41 0b d0 0b d6 8b c2 f7 d0 e9 dc 04 00 00 8b c2 8b d6 0b c2 f7 d0 41 23 c0 e9 cc 04 00 00 8b c2 8b d6 0b c2 f7 d0 e9 bf 04 00 00 8b c6 41 0b c0 f7 d0 23 c2 e9 b1 04 00 00 41 8b c0 44 8b c6 41 0b c0 f7 d0 e9 a1 04 00 00 8b c6 f7 d0 41 33 d0 23 c2 e9 93 04 00 00 8b c2 41 8b d0 23 c2 44 8b c6 41 0b c0 f7 d0 e9 7f 04 00 00 8b c6 f7 d0 23 c2 41 23 c0 e9 71 04 00 00 8b c2 41 33 c0 8b d6 0b c2 f7 d0 e9 61 04 00 00 8b c6 f7 d0 41 23 c0 e9 55 04 00 00 8b c6 f7 d0 8b ca f7 d1 41 0b c8 23 c1 e9 43 04 00 00 8b c6 f7 d0 44 8b c2 41 23 c0 e9 34 04 00 00 8b c6 f7 d0 41 8b c8 f7 d1 0b ca 23 c1 e9 22 04 00 00 8b c6 f7 d0 41 0b d0 23 c2 e9 14 04 00 00 8b c6 f7 d0 e9 0b 04 00 00 8b c2 41 0b c0 f7 d0 8b d6 23 c2 e9 fb 03 00 00 41 8b c0 0b c2 f7 d0 e9 ef 03 00 00 8b c2 f7 d0 8b d6 41 33 d0 23 c2 e9 df 03 00 00 8b c6 41 23 c0 0b c2 f7 d0 e9 d1 03 00 00 41 8b c0 f7 d0 44 8b c6 41 33 d0 23 c2 e9 bf 03 00 00 8b c6 23 c2 41 0b c0 f7 d0 e9 b1 03 00 00 8b c2 41 0b c0 f7 d0 41 33 d0 23 c6 c4 e2 48 f2 ca 0b c1 e9 99 03 00 00 8b c2 41 0b c0 41 23 d0 23 c6 c4 e2 48 f2 ca 0b c8 8b c1 f7 d0 e9 7f 03 00 00 8b c2 33 c6 8b d6 41 33 d0 23 c2 e9 6f 03 00 00 8b c2 41 33 c0 41 23 d0 8b ce 23 ca 33 c8 8b c1 f7 d0 e9 58 03 00 00 8b c2 23 c6 f7 d0 8b d6 41 33 d0 23 c2 e9 46 03 00 00 8b c6 f7 d0 f7 d2 41 23 c0 c4 62 38 f2 c2 41 0b c0 e9 30 03 00 00 41 8b c0 23 c6 f7 d0 44 8b c6 41 33 d0 23 c2 e9 1c 03 00 00 8b c6 f7 d0 41 f7 d0 23 c2 c4 c2 68 f2 d0 0b c2 e9 07 03 00 00 8b c2 41 0b c0 8b d6 33 c2 e9 f9 02 00 00 8b ca 41 0b c8 89 4c 24 20 48 8d 4c 24 20 e8 95 23 eb ff 8b 10 8b ce e8 e4 8d ea ff 8b c8 e8 05 a1 fe ff e9 d1 02 00 00 8b ce e8 f9 f5 ff ff e9 c5 02 00 00 8b ce e8 dd f5 ff ff e9 b9 02 00 00 8b ce e8 c1 f5 ff ff e9 ad 02 00 00 8b ce e8 a5 f5 ff ff e9 a1 02 00 00 8b ce e8 89 f5 ff ff e9 95 02 00 00 8b ce e8 6d f5 ff ff e9 89 02 00 00 8b ce e8 51 f5 ff ff e9 7d 02 00 00 8b ce e8 8d ea ff ff e9 71 02 00 00 8b ce e8 71 ea ff ff e9 65 02 00 00 8b ce e8 55 ea ff ff e9 59 02 00 00 8b ce e8 39 ea ff ff e9 4d 02 00 00 8b ce e8 1d ea ff ff e9 41 02 00 00 8b ce e8 01 ea ff ff e9 35 02 00 00 8b ce e8 e5 e9 ff ff e9 29 02 00 00 8b ce e8 c9 e9 ff ff e9 1d 02 00 00 8b ce e8 ad e9 ff ff e9 11 02 00 00 8b ce e8 91 e9 ff ff e9 05 02 00 00 8b ce e8 75 e9 ff ff e9 f9 01 00 00 8b ce e8 59 e9 ff ff e9 ed 01 00 00 8b ce e8 3d e9 ff ff e9 e1 01 00 00 8b ce e8 21 e9 ff ff e9 d5 01 00 00 8b ce e8 05 e9 ff ff e9 c9 01 00 00 8b ce e8 e9 e8 ff ff e9 bd 01 00 00 8b ce e8 cd e8 ff ff e9 b1 01 00 00 8b ce e8 b1 e8 ff ff e9 a5 01 00 00 8b ce e8 95 e8 ff ff e9 99 01 00 00 8b ce e8 79 e8 ff ff e9 8d 01 00 00 8b ce e8 5d e8 ff ff e9 81 01 00 00 8b ce e8 41 e8 ff ff e9 75 01 00 00 8b ce e8 25 e8 ff ff e9 69 01 00 00 8b ce e8 09 e8 ff ff e9 5d 01 00 00 8b ce e8 ed e7 ff ff e9 51 01 00 00 8b ce e8 d1 e7 ff ff e9 45 01 00 00 8b ce e8 b5 e7 ff ff e9 39 01 00 00 8b ce e8 99 e7 ff ff e9 2d 01 00 00 8b ce e8 7d e7 ff ff e9 21 01 00 00 8b ce e8 61 e7 ff ff e9 15 01 00 00 8b ce e8 45 e7 ff ff e9 09 01 00 00 8b ce e8 29 e7 ff ff e9 fd 00 00 00 8b ce e8 0d e7 ff ff e9 f1 00 00 00 8b ce e8 f1 e6 ff ff e9 e5 00 00 00 8b ce e8 d5 e6 ff ff e9 d9 00 00 00 8b ce e8 b9 e6 ff ff e9 cd 00 00 00 8b ce e8 9d e6 ff ff e9 c1 00 00 00 8b ce e8 81 e6 ff ff e9 b5 00 00 00 8b ce e8 65 e6 ff ff e9 a9 00 00 00 8b ce e8 49 e6 ff ff e9 9d 00 00 00 8b ce e8 2d e6 ff ff e9 91 00 00 00 8b ce e8 11 e6 ff ff e9 85 00 00 00 8b ce e8 f5 e5 ff ff eb 7c 8b ce e8 dc e5 ff ff eb 73 8b ce e8 c3}
+; tbl~eval_g8u[1321] = {57 56 48 83 ec 28 8b f9 8b f2 41 8b d0 45 8b c1 40 0f b6 cf ff c9 83 f9 5e 0f 87 0a 05 00 00 8b c9 48 8d 05 30 05 00 00 8b 04 88 4c 8d 0d de ff ff ff 49 03 c1 ff e0 41 0b d0 0b d6 8b c2 f7 d0 e9 dc 04 00 00 8b c2 8b d6 0b c2 f7 d0 41 23 c0 e9 cc 04 00 00 8b c2 8b d6 0b c2 f7 d0 e9 bf 04 00 00 8b c6 41 0b c0 f7 d0 23 c2 e9 b1 04 00 00 41 8b c0 44 8b c6 41 0b c0 f7 d0 e9 a1 04 00 00 8b c6 f7 d0 41 33 d0 23 c2 e9 93 04 00 00 8b c2 41 8b d0 23 c2 44 8b c6 41 0b c0 f7 d0 e9 7f 04 00 00 8b c6 f7 d0 23 c2 41 23 c0 e9 71 04 00 00 8b c2 41 33 c0 8b d6 0b c2 f7 d0 e9 61 04 00 00 8b c6 f7 d0 41 23 c0 e9 55 04 00 00 8b c6 f7 d0 8b ca f7 d1 41 0b c8 23 c1 e9 43 04 00 00 8b c6 f7 d0 44 8b c2 41 23 c0 e9 34 04 00 00 8b c6 f7 d0 41 8b c8 f7 d1 0b ca 23 c1 e9 22 04 00 00 8b c6 f7 d0 41 0b d0 23 c2 e9 14 04 00 00 8b c6 f7 d0 e9 0b 04 00 00 8b c2 41 0b c0 f7 d0 8b d6 23 c2 e9 fb 03 00 00 41 8b c0 0b c2 f7 d0 e9 ef 03 00 00 8b c2 f7 d0 8b d6 41 33 d0 23 c2 e9 df 03 00 00 8b c6 41 23 c0 0b c2 f7 d0 e9 d1 03 00 00 41 8b c0 f7 d0 44 8b c6 41 33 d0 23 c2 e9 bf 03 00 00 8b c6 23 c2 41 0b c0 f7 d0 e9 b1 03 00 00 8b c2 41 0b c0 f7 d0 41 33 d0 23 c6 c4 e2 48 f2 ca 0b c1 e9 99 03 00 00 8b c2 41 0b c0 41 23 d0 23 c6 c4 e2 48 f2 ca 0b c8 8b c1 f7 d0 e9 7f 03 00 00 8b c2 33 c6 8b d6 41 33 d0 23 c2 e9 6f 03 00 00 8b c2 41 33 c0 41 23 d0 8b ce 23 ca 33 c8 8b c1 f7 d0 e9 58 03 00 00 8b c2 23 c6 f7 d0 8b d6 41 33 d0 23 c2 e9 46 03 00 00 8b c6 f7 d0 f7 d2 41 23 c0 c4 62 38 f2 c2 41 0b c0 e9 30 03 00 00 41 8b c0 23 c6 f7 d0 44 8b c6 41 33 d0 23 c2 e9 1c 03 00 00 8b c6 f7 d0 41 f7 d0 23 c2 c4 c2 68 f2 d0 0b c2 e9 07 03 00 00 8b c2 41 0b c0 8b d6 33 c2 e9 f9 02 00 00 8b ca 41 0b c8 89 4c 24 20 48 8d 4c 24 20 e8 15 cf 99 ff 8b 10 8b ce e8 3c f5 9b ff 8b c8 e8 e5 ce 99 ff e9 d1 02 00 00 8b ce e8 b9 f5 ff ff e9 c5 02 00 00 8b ce e8 9d f5 ff ff e9 b9 02 00 00 8b ce e8 81 f5 ff ff e9 ad 02 00 00 8b ce e8 b5 ea ff ff e9 a1 02 00 00 8b ce e8 99 ea ff ff e9 95 02 00 00 8b ce e8 7d ea ff ff e9 89 02 00 00 8b ce e8 61 ea ff ff e9 7d 02 00 00 8b ce e8 45 ea ff ff e9 71 02 00 00 8b ce e8 29 ea ff ff e9 65 02 00 00 8b ce e8 0d ea ff ff e9 59 02 00 00 8b ce e8 f1 e9 ff ff e9 4d 02 00 00 8b ce e8 d5 e9 ff ff e9 41 02 00 00 8b ce e8 b9 e9 ff ff e9 35 02 00 00 8b ce e8 9d e9 ff ff e9 29 02 00 00 8b ce e8 81 e9 ff ff e9 1d 02 00 00 8b ce e8 65 e9 ff ff e9 11 02 00 00 8b ce e8 49 e9 ff ff e9 05 02 00 00 8b ce e8 2d e9 ff ff e9 f9 01 00 00 8b ce e8 11 e9 ff ff e9 ed 01 00 00 8b ce e8 f5 e8 ff ff e9 e1 01 00 00 8b ce e8 d9 e8 ff ff e9 d5 01 00 00 8b ce e8 bd e8 ff ff e9 c9 01 00 00 8b ce e8 a1 e8 ff ff e9 bd 01 00 00 8b ce e8 85 e8 ff ff e9 b1 01 00 00 8b ce e8 69 e8 ff ff e9 a5 01 00 00 8b ce e8 4d e8 ff ff e9 99 01 00 00 8b ce e8 31 e8 ff ff e9 8d 01 00 00 8b ce e8 15 e8 ff ff e9 81 01 00 00 8b ce e8 f9 e7 ff ff e9 75 01 00 00 8b ce e8 dd e7 ff ff e9 69 01 00 00 8b ce e8 c1 e7 ff ff e9 5d 01 00 00 8b ce e8 a5 e7 ff ff e9 51 01 00 00 8b ce e8 89 e7 ff ff e9 45 01 00 00 8b ce e8 6d e7 ff ff e9 39 01 00 00 8b ce e8 51 e7 ff ff e9 2d 01 00 00 8b ce e8 35 e7 ff ff e9 21 01 00 00 8b ce e8 19 e7 ff ff e9 15 01 00 00 8b ce e8 fd e6 ff ff e9 09 01 00 00 8b ce e8 e1 e6 ff ff e9 fd 00 00 00 8b ce e8 c5 e6 ff ff e9 f1 00 00 00 8b ce e8 a9 e6 ff ff e9 e5 00 00 00 8b ce e8 8d e6 ff ff e9 d9 00 00 00 8b ce e8 71 e6 ff ff e9 cd 00 00 00 8b ce e8 55 e6 ff ff e9 c1 00 00 00 8b ce e8 39 e6 ff ff e9 b5 00 00 00 8b ce e8 1d e6 ff ff e9 a9 00 00 00 8b ce e8 01 e6 ff ff e9 9d 00 00 00 8b ce e8 e5 e5 ff ff e9 91 00 00 00 8b ce e8 c9 e5 ff ff e9 85 00 00 00 8b ce e8 ad e5 ff ff eb 7c 8b ce e8 94 e5 ff ff eb 73 8b ce e8 7b e5 ff ff eb 6a 8b ce e8 62 e5 ff ff eb 61 8b ce e8 49 e5 ff ff eb 58 8b ce e8 30 e5 ff ff eb 4f 8b ce e8 17 e5 ff ff eb 46 8b ce e8 fe e4 ff ff eb 3d 8b ce e8 e5 e4 ff ff eb 34 8b ce e8 cc e4 ff ff eb 2b 8b ce e8 b3 e4 ff ff eb 22 8b ce e8 9a e4 ff ff eb 19 8b ce e8 81 e4 ff ff eb 10 8b ce e8 68 e4 ff ff eb 07 8b ce e8 4f e4 ff ff 90 48 83 c4 28 5e 5f c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1716,171 +1696,212 @@
 022ah or ecx,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c8}
 022dh mov [rsp+20h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 20}
 0231h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0236h call 7ff7c6a696b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 23 eb ff}
+0236h call 7ff7c6cacd30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 cf 99 ff}
 023bh mov edx,[rax]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 10}
 023dh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-023fh call 7ff7c6a60108h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 8d ea ff}
+023fh call 7ff7c6ccf360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c f5 9b ff}
 0244h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0246h call 7ff7c6ba1430h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 a1 fe ff}
+0246h call 7ff7c6cacd10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 ce 99 ff}
 024bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d1 02 00 00}
 0250h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0252h call 7ff7c6bb6930h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 f5 ff ff}
+0252h call 7ff7c730f3f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 f5 ff ff}
 0257h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c5 02 00 00}
 025ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-025eh call 7ff7c6bb6920h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f5 ff ff}
+025eh call 7ff7c730f3e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d f5 ff ff}
 0263h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b9 02 00 00}
 0268h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-026ah call 7ff7c6bb6910h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 f5 ff ff}
+026ah call 7ff7c730f3d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 f5 ff ff}
 026fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ad 02 00 00}
 0274h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0276h call 7ff7c6bb6900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 f5 ff ff}
+0276h call 7ff7c730e910h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 ea ff ff}
 027bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a1 02 00 00}
 0280h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0282h call 7ff7c6bb68f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 f5 ff ff}
+0282h call 7ff7c730e900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 ea ff ff}
 0287h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 95 02 00 00}
 028ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-028eh call 7ff7c6bb68e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f5 ff ff}
+028eh call 7ff7c730e8f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d ea ff ff}
 0293h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 89 02 00 00}
 0298h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-029ah call 7ff7c6bb68d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 f5 ff ff}
+029ah call 7ff7c730e8e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 ea ff ff}
 029fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7d 02 00 00}
 02a4h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02a6h call 7ff7c6bb5e18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d ea ff ff}
+02a6h call 7ff7c730e8d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 ea ff ff}
 02abh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 71 02 00 00}
 02b0h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02b2h call 7ff7c6bb5e08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 ea ff ff}
+02b2h call 7ff7c730e8c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 ea ff ff}
 02b7h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 65 02 00 00}
 02bch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02beh call 7ff7c6bb5df8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 ea ff ff}
+02beh call 7ff7c730e8b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d ea ff ff}
 02c3h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 59 02 00 00}
 02c8h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02cah call 7ff7c6bb5de8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 ea ff ff}
+02cah call 7ff7c730e8a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 e9 ff ff}
 02cfh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 4d 02 00 00}
 02d4h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02d6h call 7ff7c6bb5dd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d ea ff ff}
+02d6h call 7ff7c730e890h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 e9 ff ff}
 02dbh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 41 02 00 00}
 02e0h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02e2h call 7ff7c6bb5dc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 ea ff ff}
+02e2h call 7ff7c730e880h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 e9 ff ff}
 02e7h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 35 02 00 00}
 02ech mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02eeh call 7ff7c6bb5db8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 e9 ff ff}
+02eeh call 7ff7c730e870h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d e9 ff ff}
 02f3h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 29 02 00 00}
 02f8h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-02fah call 7ff7c6bb5da8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 e9 ff ff}
+02fah call 7ff7c730e860h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 e9 ff ff}
 02ffh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1d 02 00 00}
 0304h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0306h call 7ff7c6bb5d98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad e9 ff ff}
+0306h call 7ff7c730e850h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 e9 ff ff}
 030bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 11 02 00 00}
 0310h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0312h call 7ff7c6bb5d88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 e9 ff ff}
+0312h call 7ff7c730e840h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 e9 ff ff}
 0317h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 05 02 00 00}
 031ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-031eh call 7ff7c6bb5d78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 e9 ff ff}
+031eh call 7ff7c730e830h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d e9 ff ff}
 0323h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f9 01 00 00}
 0328h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-032ah call 7ff7c6bb5d68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 e9 ff ff}
+032ah call 7ff7c730e820h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 e9 ff ff}
 032fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ed 01 00 00}
 0334h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0336h call 7ff7c6bb5d58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d e9 ff ff}
+0336h call 7ff7c730e810h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 e8 ff ff}
 033bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e1 01 00 00}
 0340h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0342h call 7ff7c6bb5d48h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 e9 ff ff}
+0342h call 7ff7c730e800h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 e8 ff ff}
 0347h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d5 01 00 00}
 034ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-034eh call 7ff7c6bb5d38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 e9 ff ff}
+034eh call 7ff7c730e7f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd e8 ff ff}
 0353h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c9 01 00 00}
 0358h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-035ah call 7ff7c6bb5d28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 e8 ff ff}
+035ah call 7ff7c730e7e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 e8 ff ff}
 035fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 bd 01 00 00}
 0364h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0366h call 7ff7c6bb5d18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd e8 ff ff}
+0366h call 7ff7c730e7d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 e8 ff ff}
 036bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b1 01 00 00}
 0370h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0372h call 7ff7c6bb5d08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 e8 ff ff}
+0372h call 7ff7c730e7c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 e8 ff ff}
 0377h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a5 01 00 00}
 037ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-037eh call 7ff7c6bb5cf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 e8 ff ff}
+037eh call 7ff7c730e7b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d e8 ff ff}
 0383h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 99 01 00 00}
 0388h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-038ah call 7ff7c6bb5ce8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 e8 ff ff}
+038ah call 7ff7c730e7a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 e8 ff ff}
 038fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8d 01 00 00}
 0394h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0396h call 7ff7c6bb5cd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d e8 ff ff}
+0396h call 7ff7c730e790h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 e8 ff ff}
 039bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 81 01 00 00}
 03a0h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03a2h call 7ff7c6bb5cc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 e8 ff ff}
+03a2h call 7ff7c730e780h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 e7 ff ff}
 03a7h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 75 01 00 00}
 03ach mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03aeh call 7ff7c6bb5cb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 e8 ff ff}
+03aeh call 7ff7c730e770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd e7 ff ff}
 03b3h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 69 01 00 00}
 03b8h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03bah call 7ff7c6bb5ca8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 e8 ff ff}
+03bah call 7ff7c730e760h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 e7 ff ff}
 03bfh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5d 01 00 00}
 03c4h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03c6h call 7ff7c6bb5c98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed e7 ff ff}
+03c6h call 7ff7c730e750h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 e7 ff ff}
 03cbh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 51 01 00 00}
 03d0h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03d2h call 7ff7c6bb5c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 e7 ff ff}
+03d2h call 7ff7c730e740h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 e7 ff ff}
 03d7h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 45 01 00 00}
 03dch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03deh call 7ff7c6bb5c78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 e7 ff ff}
+03deh call 7ff7c730e730h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d e7 ff ff}
 03e3h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 39 01 00 00}
 03e8h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03eah call 7ff7c6bb5c68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 e7 ff ff}
+03eah call 7ff7c730e720h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 e7 ff ff}
 03efh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2d 01 00 00}
 03f4h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-03f6h call 7ff7c6bb5c58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d e7 ff ff}
+03f6h call 7ff7c730e710h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 e7 ff ff}
 03fbh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 21 01 00 00}
 0400h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0402h call 7ff7c6bb5c48h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 e7 ff ff}
+0402h call 7ff7c730e700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 e7 ff ff}
 0407h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 15 01 00 00}
 040ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-040eh call 7ff7c6bb5c38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 e7 ff ff}
+040eh call 7ff7c730e6f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd e6 ff ff}
 0413h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 09 01 00 00}
 0418h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-041ah call 7ff7c6bb5c28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 e7 ff ff}
+041ah call 7ff7c730e6e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 e6 ff ff}
 041fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fd 00 00 00}
 0424h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0426h call 7ff7c6bb5c18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d e7 ff ff}
+0426h call 7ff7c730e6d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 e6 ff ff}
 042bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f1 00 00 00}
 0430h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0432h call 7ff7c6bb5c08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 e6 ff ff}
+0432h call 7ff7c730e6c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 e6 ff ff}
 0437h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e5 00 00 00}
 043ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-043eh call 7ff7c6bb5bf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 e6 ff ff}
+043eh call 7ff7c730e6b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d e6 ff ff}
 0443h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d9 00 00 00}
 0448h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-044ah call 7ff7c6bb5be8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 e6 ff ff}
+044ah call 7ff7c730e6a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 e6 ff ff}
 044fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 cd 00 00 00}
 0454h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0456h call 7ff7c6bb5bd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d e6 ff ff}
+0456h call 7ff7c730e690h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 e6 ff ff}
 045bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 00 00 00}
 0460h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0462h call 7ff7c6bb5bc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 e6 ff ff}
+0462h call 7ff7c730e680h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 e6 ff ff}
 0467h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b5 00 00 00}
 046ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-046eh call 7ff7c6bb5bb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 e6 ff ff}
+046eh call 7ff7c730e670h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d e6 ff ff}
 0473h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a9 00 00 00}
 0478h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-047ah call 7ff7c6bb5ba8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 e6 ff ff}
+047ah call 7ff7c730e660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 e6 ff ff}
 047fh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9d 00 00 00}
 0484h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0486h call 7ff7c6bb5b98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d e6 ff ff}
+0486h call 7ff7c730e650h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 e5 ff ff}
 048bh jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 91 00 00 00}
 0490h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-0492h call 7ff7c6bb5b88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 e6 ff ff}
+0492h call 7ff7c730e640h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 e5 ff ff}
 0497h jmp near ptr 0521h                      ; JMP rel32 || E9 cd || encoded[5]{e9 85 00 00 00}
 049ch mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-049eh call 7ff7c6bb5b78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 e5 ff ff}
+049eh call 7ff7c730e630h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad e5 ff ff}
 04a3h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 7c}
 04a5h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-04a7h call 7ff7c6bb5b68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc e5 ff ff}
+04a7h call 7ff7c730e620h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 e5 ff ff}
 04ach jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 73}
 04aeh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-04b0h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
+04b0h call 7ff7c730e610h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b e5 ff ff}
+04b5h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 6a}
+04b7h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04b9h call 7ff7c730e600h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 e5 ff ff}
+04beh jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 61}
+04c0h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04c2h call 7ff7c730e5f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 e5 ff ff}
+04c7h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 58}
+04c9h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04cbh call 7ff7c730e5e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 e5 ff ff}
+04d0h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 4f}
+04d2h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04d4h call 7ff7c730e5d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 e5 ff ff}
+04d9h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 46}
+04dbh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04ddh call 7ff7c730e5c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe e4 ff ff}
+04e2h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 3d}
+04e4h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04e6h call 7ff7c730e5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 e4 ff ff}
+04ebh jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 34}
+04edh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04efh call 7ff7c730e5a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc e4 ff ff}
+04f4h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 2b}
+04f6h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+04f8h call 7ff7c730e590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 e4 ff ff}
+04fdh jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 22}
+04ffh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+0501h call 7ff7c730e580h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a e4 ff ff}
+0506h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 19}
+0508h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+050ah call 7ff7c730e570h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 e4 ff ff}
+050fh jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 10}
+0511h mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+0513h call 7ff7c730e560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 e4 ff ff}
+0518h jmp short 0521h                         ; JMP rel8 || EB cb || encoded[2]{eb 07}
+051ah mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
+051ch call 7ff7c730e550h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f e4 ff ff}
+0521h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0522h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0526h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+0527h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
+0528h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int eval<int>(TernaryBitLogicKind:byte kind, int a, int b, int c)
-; tbl~eval_g8u[216] = {57 56 53 48 83 ec 30 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 63 06 00 00 8b c9 48 8d 05 8a 06 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 0b f7 0b d6 8b c2 f7 d0 e9 35 06 00 00 8b c6 0b c2 f7 d0 8b cf 23 c1 e9 26 06 00 00 8b c6 0b c2 f7 d0 e9 1b 06 00 00 8b c2 8b d7 0b c2 f7 d0 8b ce 23 c1 e9 0a 06 00 00 8b c7 0b c2 f7 d0 e9 ff 05 00 00 8b c2 f7 d0 8b d6 8b cf 33 ca 23 c1 e9 ee 05 00 00 8b c6 8b cf 23 c8 0b ca 8b c1 f7 d0 e9 dd 05 00 00 8b c2 f7 d0 8b d6 23 c2 8b cf 23 c1 e9 cc 05 00 00 8b c6 8b cf 33 c8 0b ca 8b c1 f7 d0 e9 bb 05 00 00 8b c2 f7 d0 8b d7 23 c2 e9 ae 05 00 00 8b da f7 d3 8b ce e8 5c fe ff ff 0b c7 23 c3}
+; tbl~eval_g8u[216] = {57 56 53 48 83 ec 30 8b d9 41 8b f0 41 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 63 06 00 00 8b c9 48 8d 05 8a 06 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 0b f7 0b d6 8b c2 f7 d0 e9 35 06 00 00 8b c6 0b c2 f7 d0 8b cf 23 c1 e9 26 06 00 00 8b c6 0b c2 f7 d0 e9 1b 06 00 00 8b c2 8b d7 0b c2 f7 d0 8b ce 23 c1 e9 0a 06 00 00 8b c7 0b c2 f7 d0 e9 ff 05 00 00 8b c2 f7 d0 8b d6 8b cf 33 ca 23 c1 e9 ee 05 00 00 8b c6 8b cf 23 c8 0b ca 8b c1 f7 d0 e9 dd 05 00 00 8b c2 f7 d0 8b d6 23 c2 8b cf 23 c1 e9 cc 05 00 00 8b c6 8b cf 33 c8 0b ca 8b c1 f7 d0 e9 bb 05 00 00 8b c2 f7 d0 8b d7 23 c2 e9 ae 05 00 00 8b da f7 d3 8b ce e8 1c fe ff ff 0b c7 23 c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1961,12 +1982,12 @@
 00c9h mov ebx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b da}
 00cbh not ebx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d3}
 00cdh mov ecx,esi                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ce}
-00cfh call 7ff7c6bb7b10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c fe ff ff}
+00cfh call 7ff7c73105d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c fe ff ff}
 00d4h or eax,edi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c7}
 00d6h and eax,ebx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong eval<ulong>(TernaryBitLogicKind:byte kind, ulong a, ulong b, ulong c)
-; tbl~eval_g8u[1378] = {57 56 48 83 ec 28 8b f9 48 8b f2 49 8b d0 4d 8b c1 40 0f b6 cf ff c9 83 f9 5e 0f 87 bb 05 00 00 8b c9 48 8d 05 e7 05 00 00 8b 04 88 4c 8d 0d de ff ff ff 49 03 c1 ff e0 49 0b d0 48 0b d6 48 8b c2 48 f7 d0 e9 8a 05 00 00 48 8b c2 48 8b d6 48 0b c2 48 f7 d0 49 23 c0 e9 76 05 00 00 48 8b c2 48 8b d6 48 0b c2 48 f7 d0 e9 65 05 00 00 48 8b c6 49 0b c0 48 f7 d0 48 23 c2 e9 54 05 00 00 49 8b c0 4c 8b c6 49 0b c0 48 f7 d0 e9 43 05 00 00 48 8b c6 48 f7 d0 49 33 d0 48 23 c2 e9 32 05 00 00 48 8b c2 49 8b d0 48 23 c2 4c 8b c6 49 0b c0 48 f7 d0 e9 1b 05 00 00 48 8b c6 48 f7 d0 48 23 c2 49 23 c0 e9 0a 05 00 00 48 8b c2 49 33 c0 48 8b d6 48 0b c2 48 f7 d0 e9 f6 04 00 00 48 8b c6 48 f7 d0 49 23 c0 e9 e8 04 00 00 48 8b c6 48 f7 d0 48 8b ca 48 f7 d1 49 0b c8 48 23 c1 e9 d1 04 00 00 48 8b c6 48 f7 d0 4c 8b c2 49 23 c0 e9 c0 04 00 00 48 8b c6 48 f7 d0 49 8b c8 48 f7 d1 48 0b ca 48 23 c1 e9 a9 04 00 00 48 8b c6 48 f7 d0 49 0b d0 48 23 c2 e9 98 04 00 00 48 8b c6 48 f7 d0 e9 8d 04 00 00 48 8b c2 49 0b c0 48 f7 d0 48 8b d6 48 23 c2 e9 79 04 00 00 49 8b c0 48 0b c2 48 f7 d0 e9 6b 04 00 00 48 8b c2 48 f7 d0 48 8b d6 49 33 d0 48 23 c2 e9 57 04 00 00 48 8b c6 49 23 c0 48 0b c2 48 f7 d0 e9 46 04 00 00 49 8b c0 48 f7 d0 4c 8b c6 49 33 d0 48 23 c2 e9 32 04 00 00 48 8b c6 48 23 c2 49 0b c0 48 f7 d0 e9 21 04 00 00 48 8b c2 49 0b c0 48 f7 d0 49 33 d0 48 23 c6 c4 e2 c8 f2 ca 48 0b c1 e9 05 04 00 00 48 8b c2 49 0b c0 49 23 d0 48 23 c6 c4 e2 c8 f2 ca 48 0b c8 48 8b c1 48 f7 d0 e9 e6 03 00 00 48 8b c2 48 33 c6 48 8b d6 49 33 d0 48 23 c2 e9 d2 03 00 00 48 8b c2 49 33 c0 49 23 d0 48 8b ce 48 23 ca 48 33 c8 48 8b c1 48 f7 d0 e9 b5 03 00 00 48 8b c2 48 23 c6 48 f7 d0 48 8b d6 49 33 d0 48 23 c2 e9 9e 03 00 00 48 8b c6 48 f7 d0 48 f7 d2 49 23 c0 c4 62 b8 f2 c2 49 0b c0 e9 85 03 00 00 49 8b c0 48 23 c6 48 f7 d0 4c 8b c6 49 33 d0 48 23 c2 e9 6e 03 00 00 48 8b c6 48 f7 d0 49 f7 d0 48 23 c2 c4 c2 e8 f2 d0 48 0b c2 e9 55 03 00 00 48 8b c2 49 0b c0 48 8b d6 48 33 c2 e9 44 03 00 00 48 8b ca 49 0b c8 48 89 4c 24 20 48 8d 4c 24 20 e8 b4 62 ea ff 48 8b 10 48 8b ce e8 29 72 ea ff 48 8b c8 e8 81 62 ea ff e9 17 03 00 00 48 8b ce e8 a4 f8 ff ff e9 0a 03 00 00 48 8b ce e8 87 f8 ff ff e9 fd 02 00 00 48 8b ce e8 6a f8 ff ff e9 f0 02 00 00 48 8b ce e8 4d f8 ff ff e9 e3 02 00 00 48 8b ce e8 30 f8 ff ff e9 d6 02 00 00 48 8b ce e8 13 f8 ff ff e9 c9 02 00 00 48 8b ce e8 f6 f7 ff ff e9 bc 02 00 00 48 8b ce e8 d9 f7 ff ff e9 af 02 00 00 48 8b ce e8 bc f7 ff ff e9 a2 02 00 00 48 8b ce e8 9f f7 ff ff e9 95 02 00 00 48 8b ce e8 82 f7 ff ff e9 88 02 00 00 48 8b ce e8 65 f7 ff ff e9 7b 02 00 00 48 8b ce e8 48 f7 ff ff e9 6e 02 00 00 48 8b ce e8 2b f7 ff ff e9 61 02 00 00 48 8b ce e8 0e f7 ff ff e9 54 02 00 00 48 8b ce e8 f1 f6 ff ff e9 47 02 00 00 48 8b ce e8 d4 f6 ff ff e9 3a 02 00 00 48 8b ce e8 b7 f6 ff ff e9 2d 02 00 00 48 8b ce e8 9a f6 ff ff e9 20 02 00 00 48 8b ce e8 7d f6 ff ff e9 13 02 00 00 48 8b ce e8 60 f6 ff ff e9 06 02 00 00 48 8b ce e8 43 f6 ff ff e9 f9 01 00 00 48 8b ce e8 26 f6 ff ff e9 ec 01 00 00 48 8b ce e8 09 f6 ff ff e9 df 01 00 00 48 8b ce e8 ec f5 ff ff e9 d2 01 00 00 48 8b ce e8 cf f5 ff ff e9 c5 01 00 00 48 8b ce e8 b2 f5 ff ff e9 b8 01 00 00 48 8b ce e8 95 f5 ff ff e9 ab 01 00 00 48 8b ce e8 78 f5 ff ff e9 9e 01 00 00 48 8b ce e8 5b f5 ff ff e9 91 01 00 00 48 8b ce e8 3e f5 ff ff e9 84 01 00 00 48 8b ce e8 21 f5 ff ff e9 77 01 00 00 48 8b ce e8 04 f5 ff ff e9 6a 01 00 00 48 8b ce e8 e7 f4 ff ff e9 5d 01 00 00 48 8b ce e8 ca f4 ff ff e9 50 01 00 00 48 8b ce e8 ad f4 ff ff e9 43 01 00 00 48 8b ce e8 90 f4 ff ff e9 36 01 00 00 48 8b ce e8 73 f4 ff ff e9 29 01 00 00 48 8b ce e8 56 f4 ff ff e9 1c 01 00 00 48 8b ce e8 39 f4 ff ff e9 0f 01 00 00 48 8b ce e8 1c f4 ff ff e9 02 01 00 00 48 8b ce e8 ff f3 ff ff e9 f5 00 00 00 48 8b ce e8 e2 f3 ff ff e9 e8 00 00 00 48 8b ce e8 c5 f3 ff ff e9 db 00 00 00 48 8b ce e8 a8 f3 ff ff e9 ce 00 00 00 48 8b ce e8 8b f3 ff ff e9 c1 00 00 00 48 8b ce e8 6e f3 ff ff e9 b4 00 00 00 48 8b ce e8 51 f3 ff ff e9 a7 00 00 00 48 8b ce e8 34 f3 ff ff e9 9a 00 00 00 48 8b ce e8 17 f3 ff ff e9 8d 00 00 00 48 8b ce e8 fa f2 ff ff e9 80 00 00 00 48 8b ce e8 dd f2 ff ff eb 76 48 8b ce e8 c3}
+; tbl~eval_g8u[770] = {57 56 48 83 ec 28 8b f9 48 8b f2 49 8b d0 4d 8b c1 40 0f b6 cf ff c9 83 f9 5e 0f 87 bb 05 00 00 8b c9 48 8d 05 e7 05 00 00 8b 04 88 4c 8d 0d de ff ff ff 49 03 c1 ff e0 49 0b d0 48 0b d6 48 8b c2 48 f7 d0 e9 8a 05 00 00 48 8b c2 48 8b d6 48 0b c2 48 f7 d0 49 23 c0 e9 76 05 00 00 48 8b c2 48 8b d6 48 0b c2 48 f7 d0 e9 65 05 00 00 48 8b c6 49 0b c0 48 f7 d0 48 23 c2 e9 54 05 00 00 49 8b c0 4c 8b c6 49 0b c0 48 f7 d0 e9 43 05 00 00 48 8b c6 48 f7 d0 49 33 d0 48 23 c2 e9 32 05 00 00 48 8b c2 49 8b d0 48 23 c2 4c 8b c6 49 0b c0 48 f7 d0 e9 1b 05 00 00 48 8b c6 48 f7 d0 48 23 c2 49 23 c0 e9 0a 05 00 00 48 8b c2 49 33 c0 48 8b d6 48 0b c2 48 f7 d0 e9 f6 04 00 00 48 8b c6 48 f7 d0 49 23 c0 e9 e8 04 00 00 48 8b c6 48 f7 d0 48 8b ca 48 f7 d1 49 0b c8 48 23 c1 e9 d1 04 00 00 48 8b c6 48 f7 d0 4c 8b c2 49 23 c0 e9 c0 04 00 00 48 8b c6 48 f7 d0 49 8b c8 48 f7 d1 48 0b ca 48 23 c1 e9 a9 04 00 00 48 8b c6 48 f7 d0 49 0b d0 48 23 c2 e9 98 04 00 00 48 8b c6 48 f7 d0 e9 8d 04 00 00 48 8b c2 49 0b c0 48 f7 d0 48 8b d6 48 23 c2 e9 79 04 00 00 49 8b c0 48 0b c2 48 f7 d0 e9 6b 04 00 00 48 8b c2 48 f7 d0 48 8b d6 49 33 d0 48 23 c2 e9 57 04 00 00 48 8b c6 49 23 c0 48 0b c2 48 f7 d0 e9 46 04 00 00 49 8b c0 48 f7 d0 4c 8b c6 49 33 d0 48 23 c2 e9 32 04 00 00 48 8b c6 48 23 c2 49 0b c0 48 f7 d0 e9 21 04 00 00 48 8b c2 49 0b c0 48 f7 d0 49 33 d0 48 23 c6 c4 e2 c8 f2 ca 48 0b c1 e9 05 04 00 00 48 8b c2 49 0b c0 49 23 d0 48 23 c6 c4 e2 c8 f2 ca 48 0b c8 48 8b c1 48 f7 d0 e9 e6 03 00 00 48 8b c2 48 33 c6 48 8b d6 49 33 d0 48 23 c2 e9 d2 03 00 00 48 8b c2 49 33 c0 49 23 d0 48 8b ce 48 23 ca 48 33 c8 48 8b c1 48 f7 d0 e9 b5 03 00 00 48 8b c2 48 23 c6 48 f7 d0 48 8b d6 49 33 d0 48 23 c2 e9 9e 03 00 00 48 8b c6 48 f7 d0 48 f7 d2 49 23 c0 c4 62 b8 f2 c2 49 0b c0 e9 85 03 00 00 49 8b c0 48 23 c6 48 f7 d0 4c 8b c6 49 33 d0 48 23 c2 e9 6e 03 00 00 48 8b c6 48 f7 d0 49 f7 d0 48 23 c2 c4 c2 e8 f2 d0 48 0b c2 e9 55 03 00 00 48 8b c2 49 0b c0 48 8b d6 48 33 c2 e9 44 03 00 00 48 8b ca 49 0b c8 48 89 4c 24 20 48 8d 4c 24 20 e8 0c b4 99 ff 48 8b 10 48 8b ce e8 b1 d9 9b ff 48 8b c8 e8 d9 b3 99 ff e9 17 03 00 00 48 8b ce e8 54 f8 ff ff e9 0a 03 00 00 48 8b ce e8 37 f8 ff ff e9 fd 02 00 00 48 8b ce e8 1a f8 ff ff e9 f0 02 00 00 48 8b ce e8 fd f7 ff ff e9 e3 02 00 00 48 8b ce e8 e0 f7 ff ff e9 d6 02 00 00 48 8b ce e8 c3}
 ; Capture completion code = ZEDx6_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2166,174 +2187,33 @@
 0292h or rcx,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c8}
 0295h mov [rsp+20h],rcx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 20}
 029ah lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-029fh call 7ff7c6a5f198h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 62 ea ff}
+029fh call 7ff7c6cacdf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c b4 99 ff}
 02a4h mov rdx,[rax]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 10}
 02a7h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02aah call 7ff7c6a60118h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 72 ea ff}
+02aah call 7ff7c6ccf3a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 d9 9b ff}
 02afh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-02b2h call 7ff7c6a5f178h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 62 ea ff}
+02b2h call 7ff7c6cacdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 b3 99 ff}
 02b7h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 17 03 00 00}
 02bch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02bfh call 7ff7c6bb87a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 f8 ff ff}
+02bfh call 7ff7c7311258h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 f8 ff ff}
 02c4h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0a 03 00 00}
 02c9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02cch call 7ff7c6bb8798h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 f8 ff ff}
+02cch call 7ff7c7311248h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 f8 ff ff}
 02d1h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 fd 02 00 00}
 02d6h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02d9h call 7ff7c6bb8788h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a f8 ff ff}
+02d9h call 7ff7c7311238h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a f8 ff ff}
 02deh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f0 02 00 00}
 02e3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02e6h call 7ff7c6bb8778h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d f8 ff ff}
+02e6h call 7ff7c7311228h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f7 ff ff}
 02ebh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e3 02 00 00}
 02f0h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-02f3h call 7ff7c6bb8768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 f8 ff ff}
+02f3h call 7ff7c7311218h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 f7 ff ff}
 02f8h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d6 02 00 00}
 02fdh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0300h call 7ff7c6bb8758h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 f8 ff ff}
-0305h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c9 02 00 00}
-030ah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-030dh call 7ff7c6bb8748h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 f7 ff ff}
-0312h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 bc 02 00 00}
-0317h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-031ah call 7ff7c6bb8738h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 f7 ff ff}
-031fh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 af 02 00 00}
-0324h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0327h call 7ff7c6bb8728h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc f7 ff ff}
-032ch jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a2 02 00 00}
-0331h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0334h call 7ff7c6bb8718h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f f7 ff ff}
-0339h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 95 02 00 00}
-033eh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0341h call 7ff7c6bb8708h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 f7 ff ff}
-0346h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 88 02 00 00}
-034bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-034eh call 7ff7c6bb86f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 f7 ff ff}
-0353h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 7b 02 00 00}
-0358h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-035bh call 7ff7c6bb86e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 f7 ff ff}
-0360h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 6e 02 00 00}
-0365h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0368h call 7ff7c6bb86d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b f7 ff ff}
-036dh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 61 02 00 00}
-0372h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0375h call 7ff7c6bb86c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e f7 ff ff}
-037ah jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 54 02 00 00}
-037fh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0382h call 7ff7c6bb86b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 f6 ff ff}
-0387h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 47 02 00 00}
-038ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-038fh call 7ff7c6bb86a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 f6 ff ff}
-0394h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 3a 02 00 00}
-0399h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-039ch call 7ff7c6bb8698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 f6 ff ff}
-03a1h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 2d 02 00 00}
-03a6h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03a9h call 7ff7c6bb8688h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a f6 ff ff}
-03aeh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 20 02 00 00}
-03b3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03b6h call 7ff7c6bb8678h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d f6 ff ff}
-03bbh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 13 02 00 00}
-03c0h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03c3h call 7ff7c6bb8668h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 f6 ff ff}
-03c8h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 06 02 00 00}
-03cdh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03d0h call 7ff7c6bb8658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 f6 ff ff}
-03d5h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f9 01 00 00}
-03dah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03ddh call 7ff7c6bb8648h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 f6 ff ff}
-03e2h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ec 01 00 00}
-03e7h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03eah call 7ff7c6bb8638h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 f6 ff ff}
-03efh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 df 01 00 00}
-03f4h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-03f7h call 7ff7c6bb8628h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec f5 ff ff}
-03fch jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 d2 01 00 00}
-0401h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0404h call 7ff7c6bb8618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf f5 ff ff}
-0409h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c5 01 00 00}
-040eh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0411h call 7ff7c6bb8608h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 f5 ff ff}
-0416h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b8 01 00 00}
-041bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-041eh call 7ff7c6bb85f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 f5 ff ff}
-0423h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ab 01 00 00}
-0428h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-042bh call 7ff7c6bb85e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 f5 ff ff}
-0430h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9e 01 00 00}
-0435h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0438h call 7ff7c6bb85d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b f5 ff ff}
-043dh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 91 01 00 00}
-0442h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0445h call 7ff7c6bb85c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e f5 ff ff}
-044ah jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 84 01 00 00}
-044fh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0452h call 7ff7c6bb85b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 f5 ff ff}
-0457h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 77 01 00 00}
-045ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-045fh call 7ff7c6bb85a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 f5 ff ff}
-0464h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 6a 01 00 00}
-0469h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-046ch call 7ff7c6bb8598h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 f4 ff ff}
-0471h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 5d 01 00 00}
-0476h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0479h call 7ff7c6bb8588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca f4 ff ff}
-047eh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 50 01 00 00}
-0483h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0486h call 7ff7c6bb8578h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad f4 ff ff}
-048bh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 43 01 00 00}
-0490h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0493h call 7ff7c6bb8568h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 f4 ff ff}
-0498h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 36 01 00 00}
-049dh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04a0h call 7ff7c6bb8558h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 f4 ff ff}
-04a5h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 29 01 00 00}
-04aah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04adh call 7ff7c6bb8548h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 f4 ff ff}
-04b2h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 1c 01 00 00}
-04b7h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04bah call 7ff7c6bb8538h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 f4 ff ff}
-04bfh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 0f 01 00 00}
-04c4h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04c7h call 7ff7c6bb8528h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c f4 ff ff}
-04cch jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 02 01 00 00}
-04d1h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04d4h call 7ff7c6bb8518h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff f3 ff ff}
-04d9h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 f5 00 00 00}
-04deh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04e1h call 7ff7c6bb8508h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f3 ff ff}
-04e6h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 e8 00 00 00}
-04ebh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04eeh call 7ff7c6bb84f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f3 ff ff}
-04f3h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 db 00 00 00}
-04f8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-04fbh call 7ff7c6bb84e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 f3 ff ff}
-0500h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 ce 00 00 00}
-0505h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0508h call 7ff7c6bb84d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b f3 ff ff}
-050dh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 00 00 00}
-0512h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0515h call 7ff7c6bb84c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e f3 ff ff}
-051ah jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 b4 00 00 00}
-051fh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0522h call 7ff7c6bb84b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 f3 ff ff}
-0527h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 a7 00 00 00}
-052ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-052fh call 7ff7c6bb84a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 f3 ff ff}
-0534h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 9a 00 00 00}
-0539h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-053ch call 7ff7c6bb8498h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 f3 ff ff}
-0541h jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 8d 00 00 00}
-0546h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0549h call 7ff7c6bb8488h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa f2 ff ff}
-054eh jmp near ptr 05d3h                      ; JMP rel32 || E9 cd || encoded[5]{e9 80 00 00 00}
-0553h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0556h call 7ff7c6bb8478h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f2 ff ff}
-055bh jmp short 05d3h                         ; JMP rel8 || EB cb || encoded[2]{eb 76}
-055dh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0560h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
+0300h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long eval<long>(TernaryBitLogicKind:byte kind, long a, long b, long c)
-; tbl~eval_g8u[2025] = {57 56 53 48 83 ec 30 8b d9 49 8b f0 49 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 7b 07 00 00 8b c9 48 8d 05 a2 07 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0b f7 48 0b d6 48 8b c2 48 f7 d0 e9 49 07 00 00 48 8b c6 48 0b c2 48 f7 d0 48 8b cf 48 23 c1 e9 35 07 00 00 48 8b c6 48 0b c2 48 f7 d0 e9 27 07 00 00 48 8b c2 48 8b d7 48 0b c2 48 f7 d0 48 8b ce 48 23 c1 e9 10 07 00 00 48 8b c7 48 0b c2 48 f7 d0 e9 02 07 00 00 48 8b c2 48 f7 d0 48 8b d6 48 8b cf 48 33 ca 48 23 c1 e9 eb 06 00 00 48 8b c6 48 8b cf 48 23 c8 48 0b ca 48 8b c1 48 f7 d0 e9 d4 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 23 c2 48 8b cf 48 23 c1 e9 bd 06 00 00 48 8b c6 48 8b cf 48 33 c8 48 0b ca 48 8b c1 48 f7 d0 e9 a6 06 00 00 48 8b c2 48 f7 d0 48 8b d7 48 23 c2 e9 95 06 00 00 48 8b da 48 f7 d3 48 8b ce e8 c0 fe ff ff 48 0b c7 48 23 c3 e9 7c 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 23 c2 e9 6b 06 00 00 48 8b da 48 f7 d3 48 8b cf e8 96 fe ff ff 48 0b c6 48 23 c3 e9 52 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 0b d7 48 23 c2 e9 3e 06 00 00 48 8b c2 48 f7 d0 e9 33 06 00 00 48 8b c6 48 8b cf 48 0b c8 48 8b c1 48 f7 d0 48 23 c2 e9 1c 06 00 00 48 8b c7 48 8b ce 48 0b c8 48 8b c1 48 f7 d0 e9 08 06 00 00 48 8b c6 48 f7 d0 48 8b cf 48 33 ca 48 23 c1 e9 f4 05 00 00 48 8b c2 48 8b d7 48 23 d0 48 8b ce 48 0b ca 48 8b c1 48 f7 d0 e9 da 05 00 00 48 8b c7 48 f7 d0 48 8b ce 48 33 ca 48 23 c1 e9 c6 05 00 00 48 8b c2 48 8b d6 48 23 d0 48 8b cf 48 0b ca 48 8b c1 48 f7 d0 e9 ac 05 00 00 48 8b c6 48 0b c7 48 f7 d0 48 8b ce 4c 8b c7 49 33 c8 48 23 c2 c4 e2 e8 f2 d1 48 0b c2 e9 8a 05 00 00 48 8b c6 48 0b c7 48 8b ce 4c 8b c7 49 23 c8 48 23 c2 c4 e2 e8 f2 d1 48 0b d0 48 8b c2 48 f7 d0 e9 65 05 00 00 48 8b c6 48 33 c2 48 8b cf 48 33 ca 48 23 c1 e9 51 05 00 00 48 8b de 48 33 df 48 8b ce 48 8b c7 48 23 c8 48 89 4c 24 28 48 8b ca 48 8b 54 24 28 e8 f1 bd fe ff 48 8b d0 48 8b cb e8 26 4f ff ff 48 8b c8 e8 5e 57 ff ff e9 18 05 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a3 fb ff ff e9 05 05 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 80 fb ff ff e9 f2 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5d fb ff ff e9 df 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 3a fb ff ff e9 cc 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 17 fb ff ff e9 b9 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f4 fa ff ff e9 a6 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 d1 fa ff ff e9 93 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ae fa ff ff e9 80 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 8b fa ff ff e9 6d 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 68 fa ff ff e9 5a 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 45 fa ff ff e9 47 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 22 fa ff ff e9 34 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ff f9 ff ff e9 21 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 dc f9 ff ff e9 0e 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 b9 f9 ff ff e9 fb 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 96 f9 ff ff e9 e8 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 73 f9 ff ff e9 d5 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 50 f9 ff ff e9 c2 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 2d f9 ff ff e9 af 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 0a f9 ff ff e9 9c 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 e7 f8 ff ff e9 89 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 c4 f8 ff ff e9 76 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a1 f8 ff ff e9 63 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 7e f8 ff ff e9 50 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5b f8 ff ff e9 3d 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 38 f8 ff ff e9 2a 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 15 f8 ff ff e9 17 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f2 f7 ff ff e9 04 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 cf f7 ff ff e9 f1 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ac f7 ff ff e9 de 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 89 f7 ff ff e9 cb 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 66 f7 ff ff e9 b8 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 43 f7 ff ff e9 a5 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 20 f7 ff ff e9 92 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 fd f6 ff ff e9 7f 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 da f6 ff ff e9 6c 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ff ee ff ff e9 59 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 dc ee ff ff e9 46 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 b9 ee ff ff e9 33 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 96 ee ff ff e9 20 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 73 ee ff ff e9 0d 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 50 ee ff ff e9 fa 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 2d ee ff ff e9 e7 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 0a ee ff ff e9 d4 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 e7 ed ff ff e9 c1 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 c4 ed ff ff e9 ae 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a1 ed ff ff e9 9b 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 7e ed ff ff e9 88 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5b ed ff ff e9 75 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 38 ed ff ff e9 62 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 15 ed ff ff e9 4f 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f2 ec ff ff e9 3c 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 cf ec ff ff e9 29 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ac ec ff ff e9 16 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 89 ec ff ff e9 03 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 66 ec ff ff e9 f0 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 43 ec ff ff e9 dd 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 20 ec ff ff e9 ca 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 fd eb ff ff e9 b7 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 da eb ff ff e9 a4 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 b7 eb ff ff e9 91 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 94 eb ff ff e9 7e 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 71 eb ff ff eb 6e 48 8b ca 48 8b d6 4c 8b c7 e8 51 eb ff ff eb 5e 48 8b ca 48 8b d6 4c 8b c7 e8 31 eb ff ff eb 4e 48 8b ca 48 8b d6 4c 8b c7 e8 11 eb ff ff eb 3e 48 8b ca 48 8b d6 4c 8b c7 e8 f1 ea ff ff eb 2e 48 8b ca 48 8b d6 4c 8b c7 e8 d1 ea ff ff eb 1e 48 8b ca 48 8b d6 4c 8b c7 e8 b1 ea ff ff eb 0e 48 8b ca 48 8b d6 4c 8b c7 e8 91 ea ff ff 90 48 83 c4 30 5b 5e 5f c3 48 b9 38 2a 5b c6 f7 7f 00 00 e8 19 cd 2e 5f 48 8b f0 0f b6 cb e8 5e ea ff ff 48 8b d0 48 8b ce e8 4b 40 7f ff 48 8b ce e8 4b 19 26 5f cc 00 00 26 00 00 00 37 00 00 00 4b 00 00 00 59 00 00 00 70 00 00 00 7e 00 00 00 95 00 00 00 ac 00 00 00 c3}
+; tbl~eval_g8u[2025] = {57 56 53 48 83 ec 30 8b d9 49 8b f0 49 8b f9 0f b6 cb ff c9 83 f9 5e 0f 87 7b 07 00 00 8b c9 48 8d 05 a2 07 00 00 8b 04 88 4c 8d 05 df ff ff ff 49 03 c0 ff e0 48 0b f7 48 0b d6 48 8b c2 48 f7 d0 e9 49 07 00 00 48 8b c6 48 0b c2 48 f7 d0 48 8b cf 48 23 c1 e9 35 07 00 00 48 8b c6 48 0b c2 48 f7 d0 e9 27 07 00 00 48 8b c2 48 8b d7 48 0b c2 48 f7 d0 48 8b ce 48 23 c1 e9 10 07 00 00 48 8b c7 48 0b c2 48 f7 d0 e9 02 07 00 00 48 8b c2 48 f7 d0 48 8b d6 48 8b cf 48 33 ca 48 23 c1 e9 eb 06 00 00 48 8b c6 48 8b cf 48 23 c8 48 0b ca 48 8b c1 48 f7 d0 e9 d4 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 23 c2 48 8b cf 48 23 c1 e9 bd 06 00 00 48 8b c6 48 8b cf 48 33 c8 48 0b ca 48 8b c1 48 f7 d0 e9 a6 06 00 00 48 8b c2 48 f7 d0 48 8b d7 48 23 c2 e9 95 06 00 00 48 8b da 48 f7 d3 48 8b ce e8 70 fe ff ff 48 0b c7 48 23 c3 e9 7c 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 23 c2 e9 6b 06 00 00 48 8b da 48 f7 d3 48 8b cf e8 46 fe ff ff 48 0b c6 48 23 c3 e9 52 06 00 00 48 8b c2 48 f7 d0 48 8b d6 48 0b d7 48 23 c2 e9 3e 06 00 00 48 8b c2 48 f7 d0 e9 33 06 00 00 48 8b c6 48 8b cf 48 0b c8 48 8b c1 48 f7 d0 48 23 c2 e9 1c 06 00 00 48 8b c7 48 8b ce 48 0b c8 48 8b c1 48 f7 d0 e9 08 06 00 00 48 8b c6 48 f7 d0 48 8b cf 48 33 ca 48 23 c1 e9 f4 05 00 00 48 8b c2 48 8b d7 48 23 d0 48 8b ce 48 0b ca 48 8b c1 48 f7 d0 e9 da 05 00 00 48 8b c7 48 f7 d0 48 8b ce 48 33 ca 48 23 c1 e9 c6 05 00 00 48 8b c2 48 8b d6 48 23 d0 48 8b cf 48 0b ca 48 8b c1 48 f7 d0 e9 ac 05 00 00 48 8b c6 48 0b c7 48 f7 d0 48 8b ce 4c 8b c7 49 33 c8 48 23 c2 c4 e2 e8 f2 d1 48 0b c2 e9 8a 05 00 00 48 8b c6 48 0b c7 48 8b ce 4c 8b c7 49 23 c8 48 23 c2 c4 e2 e8 f2 d1 48 0b d0 48 8b c2 48 f7 d0 e9 65 05 00 00 48 8b c6 48 33 c2 48 8b cf 48 33 ca 48 23 c1 e9 51 05 00 00 48 8b de 48 33 df 48 8b ce 48 8b c7 48 23 c8 48 89 4c 24 28 48 8b ca 48 8b 54 24 28 e8 11 87 9c ff 48 8b d0 48 8b cb e8 86 5d ff ff 48 8b c8 e8 4e 67 ff ff e9 18 05 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 53 fb ff ff e9 05 05 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 30 fb ff ff e9 f2 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 0d fb ff ff e9 df 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ea fa ff ff e9 cc 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 c7 fa ff ff e9 b9 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a4 fa ff ff e9 a6 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 81 fa ff ff e9 93 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5e fa ff ff e9 80 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 3b fa ff ff e9 6d 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 18 fa ff ff e9 5a 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f5 f9 ff ff e9 47 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 d2 f9 ff ff e9 34 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 af f9 ff ff e9 21 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 8c f9 ff ff e9 0e 04 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 69 f9 ff ff e9 fb 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 46 f9 ff ff e9 e8 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 23 f9 ff ff e9 d5 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 00 f9 ff ff e9 c2 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 dd f8 ff ff e9 af 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ba f8 ff ff e9 9c 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 97 f8 ff ff e9 89 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 74 f8 ff ff e9 76 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 51 f8 ff ff e9 63 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 2e f8 ff ff e9 50 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 0b f8 ff ff e9 3d 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 e8 f7 ff ff e9 2a 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 c5 f7 ff ff e9 17 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a2 f7 ff ff e9 04 03 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 7f f7 ff ff e9 f1 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5c f7 ff ff e9 de 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 39 f7 ff ff e9 cb 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5e ef ff ff e9 b8 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 3b ef ff ff e9 a5 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 18 ef ff ff e9 92 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f5 ee ff ff e9 7f 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 d2 ee ff ff e9 6c 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 af ee ff ff e9 59 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 8c ee ff ff e9 46 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 69 ee ff ff e9 33 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 46 ee ff ff e9 20 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 23 ee ff ff e9 0d 02 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 00 ee ff ff e9 fa 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 dd ed ff ff e9 e7 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ba ed ff ff e9 d4 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 97 ed ff ff e9 c1 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 74 ed ff ff e9 ae 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 51 ed ff ff e9 9b 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 2e ed ff ff e9 88 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 0b ed ff ff e9 75 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 e8 ec ff ff e9 62 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 c5 ec ff ff e9 4f 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 a2 ec ff ff e9 3c 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 7f ec ff ff e9 29 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 5c ec ff ff e9 16 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 39 ec ff ff e9 03 01 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 16 ec ff ff e9 f0 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 f3 eb ff ff e9 dd 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 d0 eb ff ff e9 ca 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 ad eb ff ff e9 b7 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 8a eb ff ff e9 a4 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 67 eb ff ff e9 91 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 44 eb ff ff e9 7e 00 00 00 48 8b ca 48 8b d6 4c 8b c7 e8 21 eb ff ff eb 6e 48 8b ca 48 8b d6 4c 8b c7 e8 01 eb ff ff eb 5e 48 8b ca 48 8b d6 4c 8b c7 e8 e1 ea ff ff eb 4e 48 8b ca 48 8b d6 4c 8b c7 e8 c1 ea ff ff eb 3e 48 8b ca 48 8b d6 4c 8b c7 e8 a1 ea ff ff eb 2e 48 8b ca 48 8b d6 4c 8b c7 e8 81 ea ff ff eb 1e 48 8b ca 48 8b d6 4c 8b c7 e8 61 ea ff ff eb 0e 48 8b ca 48 8b d6 4c 8b c7 e8 41 ea ff ff 90 48 83 c4 30 5b 5e 5f c3 48 b9 a8 1b 68 c6 f7 7f 00 00 e8 19 42 b9 5e 48 8b f0 0f b6 cb e8 0e ea ff ff 48 8b d0 48 8b ce e8 f3 6f 08 ff 48 8b ce e8 4b 8e b0 5e cc 00 00 26 00 00 00 37 00 00 00 4b 00 00 00 59 00 00 00 70 00 00 00 7e 00 00 00 95 00 00 00 ac 00 00 00 c3}
 ; Capture completion code = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2414,7 +2294,7 @@
 00fah mov rbx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b da}
 00fdh not rbx                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d3}
 0100h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0103h call 7ff7c6bb97b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 fe ff ff}
+0103h call 7ff7c7312268h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 fe ff ff}
 0108h or rax,rdi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c7}
 010bh and rax,rbx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c3}
 010eh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 7c 06 00 00}
@@ -2426,7 +2306,7 @@
 0124h mov rbx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b da}
 0127h not rbx                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d3}
 012ah mov rcx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cf}
-012dh call 7ff7c6bb97b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 fe ff ff}
+012dh call 7ff7c7312268h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 fe ff ff}
 0132h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 0135h and rax,rbx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c3}
 0138h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 52 06 00 00}
@@ -2515,378 +2395,378 @@
 024dh mov [rsp+28h],rcx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 28}
 0252h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0255h mov rdx,[rsp+28h]                       ; MOV r64, r/m64 || REX.W 8B /r || encoded[5]{48 8b 54 24 28}
-025ah call 7ff7c6ba5840h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 bd fe ff}
+025ah call 7ff7c6cdac60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 87 9c ff}
 025fh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0262h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0265h call 7ff7c6bae980h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 4f ff ff}
+0265h call 7ff7c73082e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 5d ff ff}
 026ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-026dh call 7ff7c6baf1c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e 57 ff ff}
+026dh call 7ff7c7308cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 67 ff ff}
 0272h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 18 05 00 00}
 0277h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 027ah mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 027dh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0280h call 7ff7c6bb9618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 fb ff ff}
+0280h call 7ff7c73120c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 fb ff ff}
 0285h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 05 05 00 00}
 028ah mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 028dh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0290h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0293h call 7ff7c6bb9608h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 fb ff ff}
+0293h call 7ff7c73120b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 fb ff ff}
 0298h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 f2 04 00 00}
 029dh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02a0h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 02a3h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-02a6h call 7ff7c6bb95f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d fb ff ff}
+02a6h call 7ff7c73120a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d fb ff ff}
 02abh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 df 04 00 00}
 02b0h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02b3h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 02b6h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-02b9h call 7ff7c6bb95e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a fb ff ff}
+02b9h call 7ff7c7312098h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea fa ff ff}
 02beh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 cc 04 00 00}
 02c3h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02c6h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 02c9h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-02cch call 7ff7c6bb95d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 fb ff ff}
+02cch call 7ff7c7312088h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 fa ff ff}
 02d1h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 b9 04 00 00}
 02d6h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02d9h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 02dch mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-02dfh call 7ff7c6bb95c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 fa ff ff}
+02dfh call 7ff7c7312078h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 fa ff ff}
 02e4h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 a6 04 00 00}
 02e9h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02ech mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 02efh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-02f2h call 7ff7c6bb95b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 fa ff ff}
+02f2h call 7ff7c7312068h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 fa ff ff}
 02f7h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 93 04 00 00}
 02fch mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 02ffh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0302h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0305h call 7ff7c6bb95a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae fa ff ff}
+0305h call 7ff7c7312058h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e fa ff ff}
 030ah jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 80 04 00 00}
 030fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0312h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0315h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0318h call 7ff7c6bb9598h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b fa ff ff}
+0318h call 7ff7c7312048h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b fa ff ff}
 031dh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 6d 04 00 00}
 0322h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0325h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0328h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-032bh call 7ff7c6bb9588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 fa ff ff}
+032bh call 7ff7c7312038h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 fa ff ff}
 0330h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 5a 04 00 00}
 0335h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0338h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 033bh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-033eh call 7ff7c6bb9578h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 fa ff ff}
+033eh call 7ff7c7312028h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 f9 ff ff}
 0343h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 47 04 00 00}
 0348h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 034bh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 034eh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0351h call 7ff7c6bb9568h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 fa ff ff}
+0351h call 7ff7c7312018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 f9 ff ff}
 0356h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 34 04 00 00}
 035bh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 035eh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0361h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0364h call 7ff7c6bb9558h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff f9 ff ff}
+0364h call 7ff7c7312008h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af f9 ff ff}
 0369h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 21 04 00 00}
 036eh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0371h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0374h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0377h call 7ff7c6bb9548h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc f9 ff ff}
+0377h call 7ff7c7311ff8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c f9 ff ff}
 037ch jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 0e 04 00 00}
 0381h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0384h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0387h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-038ah call 7ff7c6bb9538h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 f9 ff ff}
+038ah call 7ff7c7311fe8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 f9 ff ff}
 038fh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 fb 03 00 00}
 0394h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0397h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 039ah mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-039dh call 7ff7c6bb9528h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 f9 ff ff}
+039dh call 7ff7c7311fd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 f9 ff ff}
 03a2h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 e8 03 00 00}
 03a7h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 03aah mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 03adh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-03b0h call 7ff7c6bb9518h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 f9 ff ff}
+03b0h call 7ff7c7311fc8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 f9 ff ff}
 03b5h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 d5 03 00 00}
 03bah mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 03bdh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 03c0h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-03c3h call 7ff7c6bb9508h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 f9 ff ff}
+03c3h call 7ff7c7311fb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 f9 ff ff}
 03c8h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 c2 03 00 00}
 03cdh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 03d0h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 03d3h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-03d6h call 7ff7c6bb94f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d f9 ff ff}
+03d6h call 7ff7c7311fa8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f8 ff ff}
 03dbh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 af 03 00 00}
 03e0h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 03e3h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 03e6h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-03e9h call 7ff7c6bb94e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a f9 ff ff}
+03e9h call 7ff7c7311f98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba f8 ff ff}
 03eeh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 9c 03 00 00}
 03f3h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 03f6h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 03f9h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-03fch call 7ff7c6bb94d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 f8 ff ff}
+03fch call 7ff7c7311f88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 f8 ff ff}
 0401h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 89 03 00 00}
 0406h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0409h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 040ch mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-040fh call 7ff7c6bb94c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 f8 ff ff}
+040fh call 7ff7c7311f78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 f8 ff ff}
 0414h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 76 03 00 00}
 0419h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 041ch mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 041fh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0422h call 7ff7c6bb94b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 f8 ff ff}
+0422h call 7ff7c7311f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 f8 ff ff}
 0427h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 63 03 00 00}
 042ch mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 042fh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0432h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0435h call 7ff7c6bb94a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e f8 ff ff}
+0435h call 7ff7c7311f58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e f8 ff ff}
 043ah jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 50 03 00 00}
 043fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0442h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0445h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0448h call 7ff7c6bb9498h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b f8 ff ff}
+0448h call 7ff7c7311f48h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b f8 ff ff}
 044dh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 3d 03 00 00}
 0452h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0455h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0458h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-045bh call 7ff7c6bb9488h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 f8 ff ff}
+045bh call 7ff7c7311f38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 f7 ff ff}
 0460h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 2a 03 00 00}
 0465h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0468h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 046bh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-046eh call 7ff7c6bb9478h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 f8 ff ff}
+046eh call 7ff7c7311f28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f7 ff ff}
 0473h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 17 03 00 00}
 0478h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 047bh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 047eh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0481h call 7ff7c6bb9468h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 f7 ff ff}
+0481h call 7ff7c7311f18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 f7 ff ff}
 0486h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 04 03 00 00}
 048bh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 048eh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0491h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0494h call 7ff7c6bb9458h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf f7 ff ff}
+0494h call 7ff7c7311f08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f f7 ff ff}
 0499h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 f1 02 00 00}
 049eh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 04a1h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 04a4h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-04a7h call 7ff7c6bb9448h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac f7 ff ff}
+04a7h call 7ff7c7311ef8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c f7 ff ff}
 04ach jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 de 02 00 00}
 04b1h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 04b4h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 04b7h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-04bah call 7ff7c6bb9438h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 f7 ff ff}
+04bah call 7ff7c7311ee8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 f7 ff ff}
 04bfh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 cb 02 00 00}
 04c4h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 04c7h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 04cah mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-04cdh call 7ff7c6bb9428h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 f7 ff ff}
+04cdh call 7ff7c7311720h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e ef ff ff}
 04d2h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 b8 02 00 00}
 04d7h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 04dah mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 04ddh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-04e0h call 7ff7c6bb9418h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 f7 ff ff}
+04e0h call 7ff7c7311710h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b ef ff ff}
 04e5h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 a5 02 00 00}
 04eah mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 04edh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 04f0h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-04f3h call 7ff7c6bb9408h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 f7 ff ff}
+04f3h call 7ff7c7311700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 ef ff ff}
 04f8h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 92 02 00 00}
 04fdh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0500h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0503h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0506h call 7ff7c6bb93f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f6 ff ff}
+0506h call 7ff7c73116f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 ee ff ff}
 050bh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 7f 02 00 00}
 0510h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0513h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0516h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0519h call 7ff7c6bb93e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da f6 ff ff}
+0519h call 7ff7c73116e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 ee ff ff}
 051eh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 6c 02 00 00}
 0523h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0526h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0529h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-052ch call 7ff7c6bb8c20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff ee ff ff}
+052ch call 7ff7c73116d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af ee ff ff}
 0531h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 59 02 00 00}
 0536h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0539h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 053ch mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-053fh call 7ff7c6bb8c10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc ee ff ff}
+053fh call 7ff7c73116c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c ee ff ff}
 0544h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 46 02 00 00}
 0549h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 054ch mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 054fh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0552h call 7ff7c6bb8c00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 ee ff ff}
+0552h call 7ff7c73116b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 ee ff ff}
 0557h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 33 02 00 00}
 055ch mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 055fh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0562h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0565h call 7ff7c6bb8bf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 ee ff ff}
+0565h call 7ff7c73116a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 ee ff ff}
 056ah jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 20 02 00 00}
 056fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0572h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0575h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0578h call 7ff7c6bb8be0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 ee ff ff}
+0578h call 7ff7c7311690h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 ee ff ff}
 057dh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 0d 02 00 00}
 0582h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0585h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0588h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-058bh call 7ff7c6bb8bd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 ee ff ff}
+058bh call 7ff7c7311680h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 ee ff ff}
 0590h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 fa 01 00 00}
 0595h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0598h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 059bh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-059eh call 7ff7c6bb8bc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d ee ff ff}
+059eh call 7ff7c7311670h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd ed ff ff}
 05a3h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 e7 01 00 00}
 05a8h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 05abh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 05aeh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-05b1h call 7ff7c6bb8bb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a ee ff ff}
+05b1h call 7ff7c7311660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba ed ff ff}
 05b6h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 d4 01 00 00}
 05bbh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 05beh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 05c1h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-05c4h call 7ff7c6bb8ba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 ed ff ff}
+05c4h call 7ff7c7311650h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 ed ff ff}
 05c9h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 c1 01 00 00}
 05ceh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 05d1h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 05d4h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-05d7h call 7ff7c6bb8b90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 ed ff ff}
+05d7h call 7ff7c7311640h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 ed ff ff}
 05dch jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 ae 01 00 00}
 05e1h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 05e4h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 05e7h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-05eah call 7ff7c6bb8b80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 ed ff ff}
+05eah call 7ff7c7311630h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 ed ff ff}
 05efh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 9b 01 00 00}
 05f4h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 05f7h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 05fah mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-05fdh call 7ff7c6bb8b70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e ed ff ff}
+05fdh call 7ff7c7311620h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e ed ff ff}
 0602h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 88 01 00 00}
 0607h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 060ah mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 060dh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0610h call 7ff7c6bb8b60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b ed ff ff}
+0610h call 7ff7c7311610h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b ed ff ff}
 0615h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 75 01 00 00}
 061ah mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 061dh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0620h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0623h call 7ff7c6bb8b50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 ed ff ff}
+0623h call 7ff7c7311600h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 ec ff ff}
 0628h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 62 01 00 00}
 062dh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0630h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0633h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0636h call 7ff7c6bb8b40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 ed ff ff}
+0636h call 7ff7c73115f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 ec ff ff}
 063bh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 4f 01 00 00}
 0640h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0643h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0646h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0649h call 7ff7c6bb8b30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 ec ff ff}
+0649h call 7ff7c73115e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 ec ff ff}
 064eh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 3c 01 00 00}
 0653h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0656h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0659h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-065ch call 7ff7c6bb8b20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf ec ff ff}
+065ch call 7ff7c73115d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f ec ff ff}
 0661h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 29 01 00 00}
 0666h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0669h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 066ch mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-066fh call 7ff7c6bb8b10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac ec ff ff}
+066fh call 7ff7c73115c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c ec ff ff}
 0674h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 16 01 00 00}
 0679h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 067ch mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 067fh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0682h call 7ff7c6bb8b00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 ec ff ff}
+0682h call 7ff7c73115b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 ec ff ff}
 0687h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 03 01 00 00}
 068ch mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 068fh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0692h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0695h call 7ff7c6bb8af0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 ec ff ff}
+0695h call 7ff7c73115a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 ec ff ff}
 069ah jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 f0 00 00 00}
 069fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 06a2h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 06a5h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-06a8h call 7ff7c6bb8ae0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 ec ff ff}
+06a8h call 7ff7c7311590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 eb ff ff}
 06adh jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 dd 00 00 00}
 06b2h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 06b5h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 06b8h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-06bbh call 7ff7c6bb8ad0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 ec ff ff}
+06bbh call 7ff7c7311580h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d0 eb ff ff}
 06c0h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 ca 00 00 00}
 06c5h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 06c8h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 06cbh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-06ceh call 7ff7c6bb8ac0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd eb ff ff}
+06ceh call 7ff7c7311570h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad eb ff ff}
 06d3h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 b7 00 00 00}
 06d8h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 06dbh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 06deh mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-06e1h call 7ff7c6bb8ab0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da eb ff ff}
+06e1h call 7ff7c7311560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a eb ff ff}
 06e6h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 a4 00 00 00}
 06ebh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 06eeh mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 06f1h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-06f4h call 7ff7c6bb8aa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 eb ff ff}
+06f4h call 7ff7c7311550h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 eb ff ff}
 06f9h jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 91 00 00 00}
 06feh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0701h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0704h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-0707h call 7ff7c6bb8a90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 eb ff ff}
+0707h call 7ff7c7311540h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 eb ff ff}
 070ch jmp near ptr 078fh                      ; JMP rel32 || E9 cd || encoded[5]{e9 7e 00 00 00}
 0711h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0714h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0717h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-071ah call 7ff7c6bb8a80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 eb ff ff}
+071ah call 7ff7c7311530h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 eb ff ff}
 071fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 6e}
 0721h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0724h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0727h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-072ah call 7ff7c6bb8a70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 eb ff ff}
+072ah call 7ff7c7311520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 eb ff ff}
 072fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 5e}
 0731h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0734h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0737h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-073ah call 7ff7c6bb8a60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 eb ff ff}
+073ah call 7ff7c7311510h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 ea ff ff}
 073fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 4e}
 0741h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0744h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0747h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-074ah call 7ff7c6bb8a50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 eb ff ff}
+074ah call 7ff7c7311500h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 ea ff ff}
 074fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 3e}
 0751h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0754h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0757h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-075ah call 7ff7c6bb8a40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 ea ff ff}
+075ah call 7ff7c73114f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 ea ff ff}
 075fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 2e}
 0761h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0764h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0767h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-076ah call 7ff7c6bb8a30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 ea ff ff}
+076ah call 7ff7c73114e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 ea ff ff}
 076fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 1e}
 0771h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0774h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0777h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-077ah call 7ff7c6bb8a20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 ea ff ff}
+077ah call 7ff7c73114d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 ea ff ff}
 077fh jmp short 078fh                         ; JMP rel8 || EB cb || encoded[2]{eb 0e}
 0781h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 0784h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
 0787h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
-078ah call 7ff7c6bb8a10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 ea ff ff}
+078ah call 7ff7c73114c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 ea ff ff}
 078fh nop                                     ; NOP || o32 90 || encoded[1]{90}
 0790h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0794h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
 0795h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0796h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0797h ret                                     ; RET || C3 || encoded[1]{c3}
-0798h mov rcx,7ff7c65b2a38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 2a 5b c6 f7 7f 00 00}
-07a2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 cd 2e 5f}
+0798h mov rcx,7ff7c6681ba8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 1b 68 c6 f7 7f 00 00}
+07a2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 42 b9 5e}
 07a7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
 07aah movzx ecx,bl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 cb}
-07adh call 7ff7c6bb8a00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e ea ff ff}
+07adh call 7ff7c73114b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e ea ff ff}
 07b2h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 07b5h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-07b8h call 7ff7c63adff8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b 40 7f ff}
+07b8h call 7ff7c6399aa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 6f 08 ff}
 07bdh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-07c0h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b 19 26 5f}
+07c0h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b 8e b0 5e}
 07c5h int 3                                   ; INT3 || CC || encoded[1]{cc}
 07c6h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 07c8h add es:[rax],al                         ; ADD r/m8, r8 || 00 /r || encoded[3]{26 00 00}
