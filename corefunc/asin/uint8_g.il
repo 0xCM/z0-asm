@@ -1,4 +1,4 @@
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<byte>(in byte src)
 // AggressiveInlining
 ref byte uint8<byte>(in byte src)
@@ -9,7 +9,7 @@ ref byte uint8<byte>(in byte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<sbyte>(in sbyte src)
 // AggressiveInlining
 ref byte uint8<sbyte>(in sbyte src)
@@ -20,7 +20,7 @@ ref byte uint8<sbyte>(in sbyte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<ushort>(in ushort src)
 // AggressiveInlining
 ref byte uint8<ushort>(in ushort src)
@@ -31,7 +31,7 @@ ref byte uint8<ushort>(in ushort src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<short>(in short src)
 // AggressiveInlining
 ref byte uint8<short>(in short src)
@@ -42,7 +42,7 @@ ref byte uint8<short>(in short src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<uint>(in uint src)
 // AggressiveInlining
 ref byte uint8<uint>(in uint src)
@@ -53,7 +53,7 @@ ref byte uint8<uint>(in uint src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<int>(in int src)
 // AggressiveInlining
 ref byte uint8<int>(in int src)
@@ -64,7 +64,7 @@ ref byte uint8<int>(in int src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<ulong>(in ulong src)
 // AggressiveInlining
 ref byte uint8<ulong>(in ulong src)
@@ -75,7 +75,7 @@ ref byte uint8<ulong>(in ulong src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<long>(in long src)
 // AggressiveInlining
 ref byte uint8<long>(in long src)
@@ -86,7 +86,7 @@ ref byte uint8<long>(in long src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<float>(in float src)
 // AggressiveInlining
 ref byte uint8<float>(in float src)
@@ -97,7 +97,7 @@ ref byte uint8<float>(in float src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665609, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
+// Id := 100665611, Name := System.Byte& Z0.AsIn::uint8<T>(T&)
 // ref byte uint8<double>(in double src)
 // AggressiveInlining
 ref byte uint8<double>(in double src)

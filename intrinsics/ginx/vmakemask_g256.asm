@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmakemask<byte>(uint src, byte index)
-; vmakemask__g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; vmakemask_g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -33,8 +33,8 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmakemask<ushort>(uint src, byte index)
-; vmakemask__g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; vmakemask_g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -66,8 +66,8 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmakemask<uint>(uint src, byte index)
-; vmakemask__g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; vmakemask_g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -99,8 +99,8 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmakemask<ulong>(uint src, byte index)
-; vmakemask__g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; vmakemask_g0o_0o[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

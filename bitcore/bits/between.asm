@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte between(sbyte src, byte k0, byte k1)
 ; between_8i[41] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 48 0f be d1 c4 e2 78 f7 c2 48 0f be c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -18,7 +18,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte between(byte src, byte k0, byte k1)
 ; between_8u[39] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -35,7 +35,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short between(short src, byte k0, byte k1)
 ; between_16i[41] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 48 0f bf d1 c4 e2 78 f7 c2 48 0f bf c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -52,7 +52,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort between(ushort src, byte k0, byte k1)
 ; between_16u[39] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 0f b7 d1 c4 e2 78 f7 c2 0f b7 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -69,7 +69,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint between(uint src, byte k0, byte k1)
 ; between_32u[33] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -84,7 +84,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int between(int src, byte k0, byte k1)
 ; between_32i[33] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -99,7 +99,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong between(ulong src, byte k0, byte k1)
 ; between_64u[33] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -114,7 +114,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long between(long src, byte k0, byte k1)
 ; between_64i[33] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -129,7 +129,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float between(float src, byte k0, byte k1)
 ; between_32f[55] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 41 0f b6 c8 0f b6 d2 2b ca ff c1 0f b6 c9 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 89 04 24 c5 fa 10 04 24 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -151,7 +151,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double between(double src, byte k0, byte k1)
 ; between_64f[61] = {48 83 ec 18 c5 f8 77 c5 fb 11 44 24 10 48 8b 44 24 10 41 0f b6 c8 0f b6 d2 2b ca ff c1 0f b6 c9 c1 e1 08 0b d1 0f b7 d2 c4 e2 e8 f7 c0 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovsd qword ptr [rsp+10h],xmm0         ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 44 24 10}

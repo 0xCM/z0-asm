@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> max<byte>(Vector256<byte> a, Vector256<byte> b)
 ; max_g256x8u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd de c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -14,7 +14,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> max<sbyte>(Vector256<sbyte> a, Vector256<sbyte> b)
 ; max_g256x8i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 3c c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -27,7 +27,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> max<ushort>(Vector256<ushort> a, Vector256<ushort> b)
 ; max_g256x16u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 3e c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> max<short>(Vector256<short> a, Vector256<short> b)
 ; max_g256x16i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd ee c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -53,7 +53,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> max<uint>(Vector256<uint> a, Vector256<uint> b)
 ; max_g256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 3f c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -66,7 +66,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> max<int>(Vector256<int> a, Vector256<int> b)
 ; max_g256x32i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 3d c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -77,21 +77,9 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; Vector256<ulong> max<ulong>(Vector256<ulong> a, Vector256<ulong> b)
-; max_g256x64u[24] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 28 d0 c5 fc 28 d9 48 b8}
-; Capture completion code = ZEDx6_000
-0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
-0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
-0009h vmovupd ymm1,[r8]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 08}
-000eh vmovaps ymm2,ymm0                       ; VMOVAPS ymm1, ymm2/m256 || VEX.256.0F.WIG 28 /r || encoded[4]{c5 fc 28 d0}
-0012h vmovaps ymm3,ymm1                       ; VMOVAPS ymm1, ymm2/m256 || VEX.256.0F.WIG 28 /r || encoded[4]{c5 fc 28 d9}
-0016h (bad)                                   ; <invalid> || <invalid> || encoded[2]{48 b8}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> max<long>(Vector256<long> a, Vector256<long> b)
 ; max_g256x64i[36] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 37 d1 c4 e3 75 4c c0 20 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

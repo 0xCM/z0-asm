@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vpart32x8x1(uint src)
 ; vpart32x8x1_0o[57] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c7 04 24 fe fe fe fe 48 8d 04 24 c4 e2 7d 58 0c 24 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

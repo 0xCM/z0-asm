@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> vselect<byte>(in Block128<byte> a, in Block128<byte> b, in Block128<byte> c, in Block128<byte> dst)
 ; vselect_gb128x8u_128x8u_128x8u_128x8u[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -52,7 +52,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<sbyte> vselect<sbyte>(in Block128<sbyte> a, in Block128<sbyte> b, in Block128<sbyte> c, in Block128<sbyte> dst)
 ; vselect_gb128x8i_128x8i_128x8i_128x8i[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -103,7 +103,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ushort> vselect<ushort>(in Block128<ushort> a, in Block128<ushort> b, in Block128<ushort> c, in Block128<ushort> dst)
 ; vselect_gb128x16u_128x16u_128x16u_128x16u[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -148,7 +148,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<short> vselect<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c, in Block128<short> dst)
 ; vselect_gb128x16i_128x16i_128x16i_128x16i[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -193,7 +193,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<uint> vselect<uint>(in Block128<uint> a, in Block128<uint> b, in Block128<uint> c, in Block128<uint> dst)
 ; vselect_gb128x32u_128x32u_128x32u_128x32u[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -238,7 +238,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<int> vselect<int>(in Block128<int> a, in Block128<int> b, in Block128<int> c, in Block128<int> dst)
 ; vselect_gb128x32i_128x32i_128x32i_128x32i[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -283,7 +283,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ulong> vselect<ulong>(in Block128<ulong> a, in Block128<ulong> b, in Block128<ulong> c, in Block128<ulong> dst)
 ; vselect_gb128x64u_128x64u_128x64u_128x64u[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -327,7 +327,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<long> vselect<long>(in Block128<long> a, in Block128<long> b, in Block128<long> c, in Block128<long> dst)
 ; vselect_gb128x64i_128x64i_128x64i_128x64i[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

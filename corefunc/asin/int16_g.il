@@ -1,4 +1,4 @@
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<byte>(in byte src)
 // AggressiveInlining
 ref short int16<byte>(in byte src)
@@ -9,7 +9,7 @@ ref short int16<byte>(in byte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<sbyte>(in sbyte src)
 // AggressiveInlining
 ref short int16<sbyte>(in sbyte src)
@@ -20,7 +20,7 @@ ref short int16<sbyte>(in sbyte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<ushort>(in ushort src)
 // AggressiveInlining
 ref short int16<ushort>(in ushort src)
@@ -31,7 +31,7 @@ ref short int16<ushort>(in ushort src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<short>(in short src)
 // AggressiveInlining
 ref short int16<short>(in short src)
@@ -42,7 +42,7 @@ ref short int16<short>(in short src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<uint>(in uint src)
 // AggressiveInlining
 ref short int16<uint>(in uint src)
@@ -53,7 +53,7 @@ ref short int16<uint>(in uint src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<int>(in int src)
 // AggressiveInlining
 ref short int16<int>(in int src)
@@ -64,7 +64,7 @@ ref short int16<int>(in int src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<ulong>(in ulong src)
 // AggressiveInlining
 ref short int16<ulong>(in ulong src)
@@ -75,7 +75,7 @@ ref short int16<ulong>(in ulong src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<long>(in long src)
 // AggressiveInlining
 ref short int16<long>(in long src)
@@ -86,7 +86,7 @@ ref short int16<long>(in long src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<float>(in float src)
 // AggressiveInlining
 ref short int16<float>(in float src)
@@ -97,7 +97,7 @@ ref short int16<float>(in float src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665610, Name := System.Int16& Z0.AsIn::int16<T>(T&)
+// Id := 100665612, Name := System.Int16& Z0.AsIn::int16<T>(T&)
 // ref short int16<double>(in double src)
 // AggressiveInlining
 ref short int16<double>(in double src)

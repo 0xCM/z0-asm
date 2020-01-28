@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte lo<byte>(byte src)
 ; lo_g8u[12] = {0f 1f 44 00 00 0f b6 c1 83 e0 0f c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h and eax,0fh                             ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 0f}
@@ -9,7 +9,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort lo<ushort>(ushort src)
 ; lo_g16u[25] = {50 0f 1f 40 00 0f b7 c1 0f b6 c0 88 44 24 04 0f b7 44 24 04 48 83 c4 08 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint lo<uint>(uint src)
 ; lo_g32u[25] = {50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 8b 44 24 04 0f b7 c0 48 83 c4 08 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -33,7 +33,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong lo<ulong>(ulong src)
 ; lo_g64u[19] = {50 0f 1f 40 00 89 4c 24 04 48 8b 44 24 04 48 83 c4 08 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov [rsp+4],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 04}

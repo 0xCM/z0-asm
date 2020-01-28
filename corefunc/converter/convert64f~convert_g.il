@@ -1,4 +1,4 @@
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // byte convert<byte>(double src)
 // AggressiveInlining
 byte convert<byte>(double src)
@@ -8,7 +8,7 @@ byte convert<byte>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // sbyte convert<sbyte>(double src)
 // AggressiveInlining
 sbyte convert<sbyte>(double src)
@@ -18,7 +18,7 @@ sbyte convert<sbyte>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // ushort convert<ushort>(double src)
 // AggressiveInlining
 ushort convert<ushort>(double src)
@@ -28,7 +28,7 @@ ushort convert<ushort>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // short convert<short>(double src)
 // AggressiveInlining
 short convert<short>(double src)
@@ -38,7 +38,7 @@ short convert<short>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // uint convert<uint>(double src)
 // AggressiveInlining
 uint convert<uint>(double src)
@@ -48,7 +48,7 @@ uint convert<uint>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // int convert<int>(double src)
 // AggressiveInlining
 int convert<int>(double src)
@@ -58,7 +58,7 @@ int convert<int>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // ulong convert<ulong>(double src)
 // AggressiveInlining
 ulong convert<ulong>(double src)
@@ -68,7 +68,7 @@ ulong convert<ulong>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // long convert<long>(double src)
 // AggressiveInlining
 long convert<long>(double src)
@@ -78,7 +78,7 @@ long convert<long>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // float convert<float>(double src)
 // AggressiveInlining
 float convert<float>(double src)
@@ -88,7 +88,7 @@ float convert<float>(double src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666419, Name := T Z0.Converter::convert<T>(System.Double)
+// Id := 100666421, Name := T Z0.Converter::convert<T>(System.Double)
 // double convert<double>(double src)
 // AggressiveInlining
 double convert<double>(double src)

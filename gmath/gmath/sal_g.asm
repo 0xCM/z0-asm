@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte sal<byte>(byte src, byte offset)
 ; sal_g8u[17] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 e0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte sal<sbyte>(sbyte src, byte offset)
 ; sal_g8i[19] = {0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 e0 48 0f be c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort sal<ushort>(ushort src, byte offset)
 ; sal_g16u[17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e0 0f b7 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short sal<short>(short src, byte offset)
 ; sal_g16i[19] = {0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 e0 48 0f bf c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -41,7 +41,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint sal<uint>(uint src, byte offset)
 ; sal_g32u[13] = {0f 1f 44 00 00 8b c1 0f b6 ca d3 e0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -50,7 +50,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int sal<int>(int src, byte offset)
 ; sal_g32i[13] = {0f 1f 44 00 00 8b c1 0f b6 ca d3 e0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -59,7 +59,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong sal<ulong>(ulong src, byte offset)
 ; sal_g64u[15] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -68,7 +68,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long sal<long>(long src, byte offset)
 ; sal_g64i[15] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}

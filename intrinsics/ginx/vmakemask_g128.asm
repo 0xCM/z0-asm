@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vmakemask<byte>(ushort src, byte index)
-; vmakemask__g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
-; Capture completion code = RET_INTR
+; vmakemask_g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -20,8 +20,8 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmakemask<ushort>(ushort src, byte index)
-; vmakemask__g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
-; Capture completion code = RET_INTR
+; vmakemask_g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -40,8 +40,8 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmakemask<uint>(ushort src, byte index)
-; vmakemask__g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
-; Capture completion code = RET_INTR
+; vmakemask_g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -60,8 +60,8 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmakemask<ulong>(ushort src, byte index)
-; vmakemask__g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
-; Capture completion code = RET_INTR
+; vmakemask_g0o_0o[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

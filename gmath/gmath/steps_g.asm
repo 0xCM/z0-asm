@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<byte>(byte first, byte step, int count, ref byte dst)
 ; steps_g8u[59] = {56 0f 1f 40 00 33 c0 45 85 c0 7e 2d 0f b6 d2 0f b6 c9 4c 63 d0 4d 03 d1 44 0f b6 d8 8b f2 44 0f af de 45 0f b6 db 8b f1 44 03 de 45 0f b6 db 45 88 1a ff c0 41 3b c0 7c d9 5e c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -27,7 +27,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst)
 ; steps_g8i[61] = {56 0f 1f 40 00 33 c0 45 85 c0 7e 2f 48 0f be d2 48 0f be c9 4c 63 d0 4d 03 d1 4c 0f be d8 8b f2 44 0f af de 4d 0f be db 8b f1 44 03 de 4d 0f be db 45 88 1a ff c0 41 3b c0 7c d9 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -53,7 +53,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<ushort>(ushort first, ushort step, int count, ref ushort dst)
 ; steps_g16u[61] = {56 0f 1f 40 00 33 c0 45 85 c0 7e 2f 0f b7 d2 0f b7 c9 4c 63 d0 4f 8d 14 51 44 0f b7 d8 8b f2 44 0f af de 45 0f b7 db 8b f1 44 03 de 45 0f b7 db 66 45 89 1a ff c0 41 3b c0 7c d7 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -79,7 +79,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<short>(short first, short step, int count, ref short dst)
 ; steps_g16i[63] = {56 0f 1f 40 00 33 c0 45 85 c0 7e 31 48 0f bf d2 48 0f bf c9 4c 63 d0 4f 8d 14 51 4c 0f bf d8 8b f2 44 0f af de 4d 0f bf db 8b f1 44 03 de 4d 0f bf db 66 45 89 1a ff c0 41 3b c0 7c d7 5e c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -105,7 +105,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<uint>(uint first, uint step, int count, ref uint dst)
 ; steps_g32u[40] = {0f 1f 44 00 00 33 c0 45 85 c0 7e 1b 4c 63 d0 4f 8d 14 91 44 8b d8 44 0f af da 44 03 d9 45 89 1a ff c0 41 3b c0 7c e5 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
@@ -123,7 +123,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<int>(int first, int step, int count, ref int dst)
 ; steps_g32i[40] = {0f 1f 44 00 00 33 c0 45 85 c0 7e 1b 4c 63 d0 4f 8d 14 91 44 8b d8 44 0f af da 44 03 d9 45 89 1a ff c0 41 3b c0 7c e5 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
@@ -141,7 +141,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<ulong>(ulong first, ulong step, int count, ref ulong dst)
 ; steps_g64u[40] = {0f 1f 44 00 00 33 c0 45 85 c0 7e 1b 4c 63 d0 4f 8d 14 d1 4c 63 d8 4c 0f af da 4c 03 d9 4d 89 1a ff c0 41 3b c0 7c e5 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
@@ -159,7 +159,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void steps<long>(long first, long step, int count, ref long dst)
 ; steps_g64i[40] = {0f 1f 44 00 00 33 c0 45 85 c0 7e 1b 4c 63 d0 4f 8d 14 d1 4c 63 d8 4c 0f af da 4c 03 d9 4d 89 1a ff c0 41 3b c0 7c e5 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}

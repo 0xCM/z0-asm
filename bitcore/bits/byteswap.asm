@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort byteswap(ushort src)
 ; byteswap_16u[27] = {0f 1f 44 00 00 0f b7 c1 8b d0 c1 fa 08 25 ff 00 00 00 c1 e0 08 0b d0 0f b7 c2 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
@@ -14,7 +14,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint byteswap(uint src)
 ; byteswap_32u[48] = {0f 1f 44 00 00 8b c1 c1 e8 18 0f b6 c0 8b d1 c1 ea 10 0f b6 d2 c1 e2 08 0b c2 8b d1 c1 ea 08 0f b6 d2 c1 e2 10 0b c2 0f b6 d1 c1 e2 18 0b c2 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h shr eax,18h                             ; SHR r/m32, imm8 || o32 C1 /5 ib || encoded[3]{c1 e8 18}
@@ -36,7 +36,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong byteswap(ulong src)
 ; byteswap_64u[128] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 38 0f b6 c0 48 8b d1 48 c1 ea 30 0f b6 d2 48 c1 e2 08 48 0b c2 48 8b d1 48 c1 ea 28 0f b6 d2 48 c1 e2 10 48 0b c2 48 8b d1 48 c1 ea 20 0f b6 d2 48 c1 e2 18 48 0b c2 48 8b d1 48 c1 ea 18 0f b6 d2 48 c1 e2 20 48 0b c2 48 8b d1 48 c1 ea 10 0f b6 d2 48 c1 e2 28 48 0b c2 48 8b d1 48 c1 ea 08 0f b6 d2 48 c1 e2 30 48 0b c2 0f b6 d1 48 c1 e2 38 48 0b c2 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h shr rax,38h                             ; SHR r/m64, imm8 || REX.W C1 /5 ib || encoded[4]{48 c1 e8 38}

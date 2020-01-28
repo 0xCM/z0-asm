@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f19<byte>(byte a, byte b, byte c)
 ; X19_g8u[53] = {0f 1f 44 00 00 0f b6 c2 45 0f b6 c8 41 33 c1 0f b6 c0 0f b6 d2 45 0f b6 c0 41 23 d0 0f b6 d2 0f b6 c9 23 d1 0f b6 d2 0f b6 c0 33 c2 0f b6 c0 f7 d0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h movzx r9d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c8}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f19<sbyte>(sbyte a, sbyte b, sbyte c)
 ; X19_g8i[62] = {0f 1f 44 00 00 48 0f be c2 4d 0f be c8 41 33 c1 48 0f be c0 48 0f be d2 4d 0f be c0 41 23 d0 48 0f be d2 48 0f be c9 23 d1 48 0f be d2 48 0f be c0 33 c2 48 0f be c0 f7 d0 48 0f be c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c2}
 0009h movsx r9,r8b                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be c8}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f19<ushort>(ushort a, ushort b, ushort c)
 ; X19_g16u[53] = {0f 1f 44 00 00 0f b7 c2 45 0f b7 c8 41 33 c1 0f b7 c0 0f b7 d2 45 0f b7 c0 41 23 d0 0f b7 d2 0f b7 c9 23 d1 0f b7 d2 0f b7 c0 33 c2 0f b7 c0 f7 d0 0f b7 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 0008h movzx r9d,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 c8}
@@ -67,7 +67,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short f19<short>(short a, short b, short c)
 ; X19_g16i[62] = {0f 1f 44 00 00 48 0f bf c2 4d 0f bf c8 41 33 c1 48 0f bf c0 48 0f bf d2 4d 0f bf c0 41 23 d0 48 0f bf d2 48 0f bf c9 23 d1 48 0f bf d2 48 0f bf c0 33 c2 48 0f bf c0 f7 d0 48 0f bf c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c2}
 0009h movsx r9,r8w                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf c8}
@@ -89,7 +89,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f19<uint>(uint a, uint b, uint c)
 ; X19_g32u[20] = {0f 1f 44 00 00 8b c2 41 33 c0 41 23 d0 23 d1 33 c2 f7 d0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h xor eax,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c0}
@@ -101,7 +101,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int f19<int>(int a, int b, int c)
 ; X19_g32i[20] = {0f 1f 44 00 00 8b c2 41 33 c0 41 23 d0 23 d1 33 c2 f7 d0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h xor eax,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c0}
@@ -113,7 +113,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f19<ulong>(ulong a, ulong b, ulong c)
 ; X19_g64u[24] = {0f 1f 44 00 00 48 8b c2 49 33 c0 49 23 d0 48 23 d1 48 33 c2 48 f7 d0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0008h xor rax,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c0}
@@ -125,7 +125,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long f19<long>(long a, long b, long c)
 ; X19_g64i[24] = {0f 1f 44 00 00 48 8b c2 49 33 c0 49 23 d0 48 23 d1 48 33 c2 48 f7 d0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0008h xor rax,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c0}

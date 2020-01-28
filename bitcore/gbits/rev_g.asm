@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte rev<byte>(byte src)
 ; rev_g8u[52] = {0f 1f 44 00 00 0f b6 c1 ba 02 08 20 80 48 0f af c2 48 ba 10 21 42 84 08 00 00 00 48 23 c2 48 ba 01 01 01 01 01 00 00 00 48 0f af c2 48 c1 e8 20 0f b6 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov edx,80200802h                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 02 08 20 80}
@@ -16,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort rev<ushort>(ushort src)
 ; rev_g16u[114] = {0f 1f 44 00 00 0f b7 c1 8b d0 c1 fa 08 0f b6 d2 b9 02 08 20 80 48 0f af d1 48 b9 10 21 42 84 08 00 00 00 48 23 d1 48 b9 01 01 01 01 01 00 00 00 48 0f af d1 48 c1 ea 20 0f b6 d2 0f b6 c0 b9 02 08 20 80 48 0f af c1 48 b9 10 21 42 84 08 00 00 00 48 23 c1 48 b9 01 01 01 01 01 00 00 00 48 0f af c1 48 c1 e8 20 0f b6 c0 c1 e0 08 0b c2 0f b7 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
@@ -46,7 +46,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rev<uint>(uint src)
 ; rev_g32u[29] = {0f 1f 44 00 00 8b c1 25 aa aa aa aa d1 e8 81 e1 55 55 55 55 d1 e1 0b c1 8b d0 81 e2 cc}
-; Capture completion code = INTRx2
+; TermCode = INTRx2
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,0aaaaaaaah                      ; AND EAX, imm32 || o32 25 id || encoded[5]{25 aa aa aa aa}
@@ -59,7 +59,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong rev<ulong>(ulong src)
 ; rev_g64u[36] = {0f 1f 44 00 00 48 8b c1 48 c1 e8 20 8b d0 81 e2 aa aa aa aa d1 ea 25 55 55 55 55 d1 e0 0b c2 8b d0 81 e2 cc}
-; Capture completion code = INTRx2
+; TermCode = INTRx2
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h shr rax,20h                             ; SHR r/m64, imm8 || REX.W C1 /5 ib || encoded[4]{48 c1 e8 20}

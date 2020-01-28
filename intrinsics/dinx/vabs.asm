@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vabs(Vector128<sbyte> src)
 ; vabs_128x8i[18] = {c5 f8 77 66 90 c4 e2 79 1c 02 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsb xmm0,[rdx]                       ; VPABSB xmm1, xmm2/m128 || VEX.128.66.0F38.WIG 1C /r || encoded[5]{c4 e2 79 1c 02}
@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vabs(Vector128<short> src)
 ; vabs_128x16i[18] = {c5 f8 77 66 90 c4 e2 79 1d 02 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsw xmm0,[rdx]                       ; VPABSW xmm1, xmm2/m128 || VEX.128.66.0F38.WIG 1D /r || encoded[5]{c4 e2 79 1d 02}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vabs(Vector128<int> src)
 ; vabs_128x32i[18] = {c5 f8 77 66 90 c4 e2 79 1e 02 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsd xmm0,[rdx]                       ; VPABSD xmm1, xmm2/m128 || VEX.128.66.0F38.WIG 1E /r || encoded[5]{c4 e2 79 1e 02}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vabs(Vector128<long> src)
 ; vabs_128x64i[42] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 73 d1 3f c5 e8 57 d2 c5 e9 fb c9 c5 f1 ef c0 c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -47,7 +47,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vabs(Vector256<sbyte> src)
 ; vabs_256x8i[21] = {c5 f8 77 66 90 c4 e2 7d 1c 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsb ymm0,[rdx]                       ; VPABSB ymm1, ymm2/m256 || VEX.256.66.0F38.WIG 1C /r || encoded[5]{c4 e2 7d 1c 02}
@@ -58,7 +58,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vabs(Vector256<short> src)
 ; vabs_256x16i[21] = {c5 f8 77 66 90 c4 e2 7d 1d 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsw ymm0,[rdx]                       ; VPABSW ymm1, ymm2/m256 || VEX.256.66.0F38.WIG 1D /r || encoded[5]{c4 e2 7d 1d 02}
@@ -69,7 +69,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vabs(Vector256<int> src)
 ; vabs_256x32i[21] = {c5 f8 77 66 90 c4 e2 7d 1e 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vpabsd ymm0,[rdx]                       ; VPABSD ymm1, ymm2/m256 || VEX.256.66.0F38.WIG 1E /r || encoded[5]{c4 e2 7d 1e 02}
@@ -80,7 +80,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vabs(Vector256<long> src)
 ; vabs_256x64i[45] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 d1 3f c5 ec 57 d2 c5 ed fb c9 c5 f5 ef c0 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

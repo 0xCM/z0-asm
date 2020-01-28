@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte eval<byte>(ShiftOpKind:byte kind, byte a, byte count)
 ; shift~eval_g8u[100] = {57 56 55 53 48 83 ec 28 8b f1 44 0f b6 ce 41 ff c9 41 83 f9 03 77 1a 45 8b d1 48 8d 0d 1f 01 00 00 42 8b 0c 91 48 8d 05 de ff ff ff 48 03 c8 ff e1 40 80 fe 08 0f 85 7f 00 00 00 0f b6 c2 45 0f b6 d0 41 8b ca 44 8b c8 41 d3 f9 41 8b ca f7 d9 83 c1 08 d3 e0 41 0b c1 0f b6 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort eval<ushort>(ShiftOpKind:byte kind, ushort a, byte count)
 ; shift~eval_g8u[100] = {57 56 55 53 48 83 ec 28 8b f1 44 0f b6 ce 41 ff c9 41 83 f9 03 77 1a 45 8b d1 48 8d 0d 1f 01 00 00 42 8b 0c 91 48 8d 05 de ff ff ff 48 03 c8 ff e1 40 80 fe 08 0f 85 7f 00 00 00 0f b7 c2 45 0f b6 d0 41 8b ca 44 8b c8 41 d3 f9 41 8b ca f7 d9 83 c1 10 d3 e0 41 0b c1 0f b7 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -79,7 +79,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint eval<uint>(ShiftOpKind:byte kind, uint a, byte count)
 ; shift~eval_g8u[71] = {57 56 55 53 48 83 ec 28 8b f1 44 0f b6 ce 41 ff c9 41 83 f9 03 77 19 41 8b c9 48 8d 05 df 00 00 00 8b 04 88 4c 8d 0d df ff ff ff 49 03 c1 ff e0 40 80 fe 08 75 44 41 0f b6 c8 d3 ca 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -110,7 +110,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong eval<ulong>(ShiftOpKind:byte kind, ulong a, byte count)
 ; shift~eval_g8u[73] = {57 56 55 53 48 83 ec 28 8b f1 44 0f b6 ce 41 ff c9 41 83 f9 03 77 19 41 8b c9 48 8d 05 e7 00 00 00 8b 04 88 4c 8d 0d df ff ff ff 49 03 c1 ff e0 40 80 fe 08 75 4c 41 0f b6 c8 48 d3 ca 48 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}

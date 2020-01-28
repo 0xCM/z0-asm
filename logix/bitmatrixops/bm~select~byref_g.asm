@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<byte> select<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, in BitMatrix<byte> C, ref BitMatrix<byte> Z)
 ; bm~select~byref_g[44] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 48 8b 00 48 8b 12 48 8b 09 48 23 d0 c4 e2 f8 f2 c1 48 0b c2 49 89 00 49 8b c1 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -18,8 +18,8 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<sbyte> select<sbyte>(in BitMatrix<sbyte> A, in BitMatrix<sbyte> B, in BitMatrix<sbyte> C, ref BitMatrix<sbyte> Z)
-; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 bf ef ff ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_ZEDx3
+; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 6f f3 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
@@ -27,7 +27,7 @@
 000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 000eh mov r8,[r8]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 00}
 0011h mov r9,[rsi]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 0e}
-0014h call 7ff7c72fb3a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf ef ff ff}
+0014h call 7ff7c7335478h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f f3 ff ff}
 0019h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0020h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -35,7 +35,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, in BitMatrix<ushort> C, ref BitMatrix<ushort> Z)
 ; bm~select~byref_g[126] = {48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 40 c5 ff f0 02 c5 fd 11 44 24 20 c5 ff f0 01 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 c4 c1 7e 7f 00 49 8b c1 c5 f8 77 48 83 c4 78 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,78h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 78}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -68,8 +68,8 @@
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<short> select<short>(in BitMatrix<short> A, in BitMatrix<short> B, in BitMatrix<short> C, ref BitMatrix<short> Z)
-; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 2f f2 ff ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_ZEDx3
+; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 4f f3 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
@@ -77,7 +77,7 @@
 000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 000eh mov r8,[r8]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 00}
 0011h mov r9,[rsi]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 0e}
-0014h call 7ff7c72fb708h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f f2 ff ff}
+0014h call 7ff7c7335548h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f f3 ff ff}
 0019h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0020h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<uint> select<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, in BitMatrix<uint> C, ref BitMatrix<uint> Z)
 ; bm~select~byref_g[179] = {57 56 55 53 48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 45 33 d2 45 33 db 49 63 f3 48 c1 e6 02 48 8d 3c 30 48 8d 1c 32 48 8d 2c 31 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 03 c5 fd 11 44 24 20 c5 ff f0 45 00 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 08 41 83 fa 04 0f 8c 79 ff ff ff 49 8b c1 c5 f8 77 48 83 c4 78 5b 5d 5e 5f c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -138,8 +138,8 @@
 00b2h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<int> select<int>(in BitMatrix<int> A, in BitMatrix<int> B, in BitMatrix<int> C, ref BitMatrix<int> Z)
-; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 cf f1 ff ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_ZEDx3
+; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 ef ee ff ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
@@ -147,7 +147,7 @@
 000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 000eh mov r8,[r8]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 00}
 0011h mov r9,[rsi]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 0e}
-0014h call 7ff7c72fb7d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf f1 ff ff}
+0014h call 7ff7c7335618h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef ee ff ff}
 0019h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0020h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -155,7 +155,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ulong> select<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, in BitMatrix<ulong> C, ref BitMatrix<ulong> Z)
 ; bm~select~byref_g[179] = {57 56 55 53 48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 45 33 d2 45 33 db 49 63 f3 48 c1 e6 03 48 8d 3c 30 48 8d 1c 32 48 8d 2c 31 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 03 c5 fd 11 44 24 20 c5 ff f0 45 00 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 04 41 83 fa 10 0f 8c 79 ff ff ff 49 8b c1 c5 f8 77 48 83 c4 78 5b 5d 5e 5f c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -208,8 +208,8 @@
 00b2h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<long> select<long>(in BitMatrix<long> A, in BitMatrix<long> B, in BitMatrix<long> C, ref BitMatrix<long> Z)
-; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 2f f1 ff ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_ZEDx3
+; bm~select~byref_g[34] = {56 48 83 ec 20 49 8b f1 48 8b 09 48 8b 12 4d 8b 00 4c 8b 0e e8 ef f2 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f1}
@@ -217,7 +217,7 @@
 000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 000eh mov r8,[r8]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 00}
 0011h mov r9,[rsi]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 0e}
-0014h call 7ff7c72fb868h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f f1 ff ff}
+0014h call 7ff7c7335b48h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef f2 ff ff}
 0019h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0020h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

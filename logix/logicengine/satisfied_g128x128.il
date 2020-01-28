@@ -1,7 +1,224 @@
 // Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<byte>(ComparisonExpr<Vector128<byte>> expr, Vector128<byte> a, Vector128<byte> b)
+// IL
+bit satisfied<byte>(ComparisonExpr<Vector128<byte>> expr, Vector128<byte> a, Vector128<byte> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<sbyte>(ComparisonExpr<Vector128<sbyte>> expr, Vector128<sbyte> a, Vector128<sbyte> b)
+// IL
+bit satisfied<sbyte>(ComparisonExpr<Vector128<sbyte>> expr, Vector128<sbyte> a, Vector128<sbyte> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<ushort>(ComparisonExpr<Vector128<ushort>> expr, Vector128<ushort> a, Vector128<ushort> b)
+// IL
+bit satisfied<ushort>(ComparisonExpr<Vector128<ushort>> expr, Vector128<ushort> a, Vector128<ushort> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<short>(ComparisonExpr<Vector128<short>> expr, Vector128<short> a, Vector128<short> b)
+// IL
+bit satisfied<short>(ComparisonExpr<Vector128<short>> expr, Vector128<short> a, Vector128<short> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<uint>(ComparisonExpr<Vector128<uint>> expr, Vector128<uint> a, Vector128<uint> b)
+// IL
+bit satisfied<uint>(ComparisonExpr<Vector128<uint>> expr, Vector128<uint> a, Vector128<uint> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<int>(ComparisonExpr<Vector128<int>> expr, Vector128<int> a, Vector128<int> b)
+// IL
+bit satisfied<int>(ComparisonExpr<Vector128<int>> expr, Vector128<int> a, Vector128<int> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // bit satisfied<ulong>(ComparisonExpr<Vector128<ulong>> expr, Vector128<ulong> a, Vector128<ulong> b)
 // IL
 bit satisfied<ulong>(ComparisonExpr<Vector128<ulong>> expr, Vector128<ulong> a, Vector128<ulong> b)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldc.i4.2
+    IL_0002: newarr System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0007: dup
+    IL_0008: ldc.i4.0
+    IL_0009: ldarg.1
+    IL_000A: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_000F: dup
+    IL_0010: ldc.i4.1
+    IL_0011: ldarg.2
+    IL_0012: stelem System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0017: callvirt System.Void Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::SetVars(System.Runtime.Intrinsics.Vector128`1<T>[])
+    IL_001C: ldarg.0
+    IL_001D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LogicEngine::eval<T>(Z0.Logix.IComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
+    IL_0022: stloc.0
+    IL_0023: ldloc.0
+    IL_0024: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
+    IL_0029: call Z0.N128 zfunc::get_n128()
+    IL_002E: ldloca.s V_1
+    IL_0030: initobj T
+    IL_0036: ldloc.1
+    IL_0037: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_003C: call Z0.bit Z0.ginx::vtestc<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0041: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// Id := 100663469, Name := Z0.bit Z0.Logix.LogicEngine::satisfied<T>(Z0.Logix.ComparisonExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// bit satisfied<long>(ComparisonExpr<Vector128<long>> expr, Vector128<long> a, Vector128<long> b)
+// IL
+bit satisfied<long>(ComparisonExpr<Vector128<long>> expr, Vector128<long> a, Vector128<long> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldc.i4.2

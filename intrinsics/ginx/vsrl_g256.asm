@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vsrl<byte>(Vector256<byte> x, byte count)
 ; vsrl__g256x8u_0o[79] = {50 c5 f8 77 90 48 8b c1 c5 fd 10 02 41 0f b6 c8 c5 f9 6e c9 c5 fd d3 c1 f7 d9 83 c1 08 0f b6 c9 f7 d9 83 c1 08 ba ff 00 00 00 d3 fa 0f b6 d2 88 54 24 04 48 8d 54 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -29,7 +29,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vsrl<sbyte>(Vector256<sbyte> x, byte count)
 ; vsrl__g256x8i_0o[197] = {50 c5 f8 77 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 41 0f b6 c0 c5 f9 6e d0 c5 f5 d1 ca c4 e3 7d 19 c0 01 c4 e2 79 20 d0 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c0 01 41 0f b6 c0 c5 f9 6e d0 c5 fd d1 c2 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca c5 fd db c2 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 7d 79 14 24 c5 f5 db ca c5 fd db c2 c5 f5 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -76,7 +76,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vsrl<ushort>(Vector256<ushort> x, byte count)
 ; vsrl__g256x16u_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d1 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -90,7 +90,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vsrl<short>(Vector256<short> x, byte count)
 ; vsrl__g256x16i_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d1 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -104,7 +104,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vsrl<uint>(Vector256<uint> x, byte count)
 ; vsrl__g256x32u_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d2 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -118,7 +118,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vsrl<int>(Vector256<int> x, byte count)
 ; vsrl__g256x32i_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d2 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -132,7 +132,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vsrl<ulong>(Vector256<ulong> x, byte count)
 ; vsrl__g256x64u_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d3 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -146,7 +146,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vsrl<long>(Vector256<long> x, byte count)
 ; vsrl__g256x64i_0o[32] = {c5 f8 77 66 90 c5 fd 10 02 41 0f b6 c0 c5 f9 6e c8 c5 fd d3 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

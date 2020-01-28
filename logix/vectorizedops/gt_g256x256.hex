@@ -4,5 +4,4 @@ gt_g256x16u  50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c7 44 24 04 00 80 00 00 4
 gt_g256x16i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 65 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 gt_g256x32u  50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c7 44 24 04 00 00 00 80 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 fd 66 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
 gt_g256x32i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 66 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-gt_g256x64u  50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 48 b8
 gt_g256x64i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 37 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
 ; bm~rnot~byref_g[24] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 8b 00 48 f7 d0 48 89 02 49 8b c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -12,14 +12,14 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<sbyte> rnot<sbyte>(in BitMatrix<sbyte> A, in BitMatrix<sbyte> B, ref BitMatrix<sbyte> Z)
-; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 35 35 fe ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_SBB
+; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 95 33 fe ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
 0008h mov rcx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0a}
 000bh mov rdx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 16}
-000eh call 7ff7c72db1e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 35 fe ff}
+000eh call 7ff7c7315178h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 33 fe ff}
 0013h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0016h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -27,7 +27,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
 ; bm~rnot~byref_g[59] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 49 8b c0 c5 f8 77 48 83 c4 38 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -46,14 +46,14 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<short> rnot<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
-; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 c5 3c fe ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_SBB
+; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 1d 3b fe ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
 0008h mov rcx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0a}
 000bh mov rdx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 16}
-000eh call 7ff7c72dba08h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 3c fe ff}
+000eh call 7ff7c7315990h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d 3b fe ff}
 0013h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0016h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
 ; bm~rnot~byref_g[91] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 76 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 08 83 f9 04 7c c2 49 8b c0 c5 f8 77 48 83 c4 38 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -90,14 +90,14 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<int> rnot<int>(in BitMatrix<int> A, in BitMatrix<int> B, ref BitMatrix<int> Z)
-; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 a5 3e fe ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_SBB
+; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 fd 3c fe ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
 0008h mov rcx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0a}
 000bh mov rdx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 16}
-000eh call 7ff7c72dbc98h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 3e fe ff}
+000eh call 7ff7c7315c20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd 3c fe ff}
 0013h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0016h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -105,7 +105,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
 ; bm~rnot~byref_g[92] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 04 83 f9 10 7c c1 49 8b c0 c5 f8 77 48 83 c4 38 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -134,14 +134,14 @@
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<long> rnot<long>(in BitMatrix<long> A, in BitMatrix<long> B, ref BitMatrix<long> Z)
-; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 4d 45 fe ff 48 8b c6 48 83 c4 20 5e c3}
-; Capture completion code = RET_SBB
+; bm~rnot~byref_g[28] = {56 48 83 ec 20 49 8b f0 48 8b 0a 48 8b 16 e8 ad 43 fe ff 48 8b c6 48 83 c4 20 5e c3}
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
 0008h mov rcx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 0a}
 000bh mov rdx,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 16}
-000eh call 7ff7c72dc3f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 45 fe ff}
+000eh call 7ff7c7316380h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad 43 fe ff}
 0013h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0016h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

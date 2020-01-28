@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack32x1(uint src, Span<byte> dst)
 ; unpack32x1_0o_span0o[105] = {48 83 ec 28 90 48 8b 02 0f b7 d1 44 8b c2 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d1 49 89 10 c1 e9 10 0f b7 d1 48 83 c0 10 8b ca c4 c2 f3 f5 c9 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 20 0f b7 54 24 20 c4 c2 eb f5 d1 48 89 10 48 83 c4 28 c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -33,7 +33,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack32x1(uint src, in Block256<byte> dst)
 ; unpack32x1_0o_256x8u[105] = {48 83 ec 28 90 48 8b 02 0f b7 d1 44 8b c2 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d1 49 89 10 c1 e9 10 0f b7 d1 48 83 c0 10 8b ca c4 c2 f3 f5 c9 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 20 0f b7 54 24 20 c4 c2 eb f5 d1 48 89 10 48 83 c4 28 c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -65,7 +65,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack32x1(uint src, ref ulong dst)
 ; unpack32x1_32u[100] = {50 0f 1f 40 00 0f b7 c1 44 8b c0 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 02 4c 8d 42 08 c1 f8 08 89 44 24 04 0f b7 44 24 04 c4 c2 fb f5 c1 49 89 00 c1 e9 10 0f b7 c1 48 83 c2 10 8b c8 c4 c2 f3 f5 c9 48 89 0a 48 83 c2 08 c1 f8 08 89 04 24 0f b7 04 24 c4 c2 fb f5 c1 48 89 02 48 83 c4 08 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}

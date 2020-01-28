@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<byte>(byte first, int count, ref byte dst)
 ; decrements_g8u[44] = {0f 1f 44 00 00 33 c0 85 d2 7e 20 0f b6 c9 4c 63 c8 4d 03 c8 44 0f b6 d0 44 8b d9 45 2b da 45 0f b6 d3 45 88 11 ff c0 3b c2 7c e3 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<sbyte>(sbyte first, int count, ref sbyte dst)
 ; decrements_g8i[45] = {0f 1f 44 00 00 33 c0 85 d2 7e 21 48 0f be c9 4c 63 c8 4d 03 c8 4c 0f be d0 44 8b d9 45 2b da 4d 0f be d3 45 88 11 ff c0 3b c2 7c e3 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -41,7 +41,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<ushort>(ushort first, int count, ref ushort dst)
 ; decrements_g16u[46] = {0f 1f 44 00 00 33 c0 85 d2 7e 22 0f b7 c9 4c 63 c8 4f 8d 0c 48 44 0f b7 d0 44 8b d9 45 2b da 45 0f b7 d3 66 45 89 11 ff c0 3b c2 7c e1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<short>(short first, int count, ref short dst)
 ; decrements_g16i[47] = {0f 1f 44 00 00 33 c0 85 d2 7e 23 48 0f bf c9 4c 63 c8 4f 8d 0c 48 4c 0f bf d0 44 8b d9 45 2b da 4d 0f bf d3 66 45 89 11 ff c0 3b c2 7c e1 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -81,7 +81,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<uint>(uint first, int count, ref uint dst)
 ; decrements_g32u[37] = {0f 1f 44 00 00 33 c0 85 d2 7e 19 4c 63 c8 4f 8d 0c 88 44 8b d0 44 8b d9 45 2b da 45 89 19 ff c0 3b c2 7c e7 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -99,7 +99,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<int>(int first, int count, ref int dst)
 ; decrements_g32i[37] = {0f 1f 44 00 00 33 c0 85 d2 7e 19 4c 63 c8 4f 8d 0c 88 44 8b d0 44 8b d9 45 2b da 45 89 19 ff c0 3b c2 7c e7 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -117,7 +117,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<ulong>(ulong first, int count, ref ulong dst)
 ; decrements_g64u[34] = {0f 1f 44 00 00 33 c0 85 d2 7e 16 4c 63 c8 4f 8d 14 c8 4c 8b d9 4d 2b d9 4d 89 1a ff c0 3b c2 7c ea c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -134,7 +134,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void decrements<long>(long first, int count, ref long dst)
 ; decrements_g64i[34] = {0f 1f 44 00 00 33 c0 85 d2 7e 16 4c 63 c8 4f 8d 14 c8 4c 8b d9 4d 2b d9 4d 89 1a ff c0 3b c2 7c ea c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}

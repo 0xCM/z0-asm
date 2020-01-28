@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f45<byte>(byte a, byte b, byte c)
 ; X45_g8u[43] = {0f 1f 44 00 00 41 0f b6 c0 f7 d0 0f b6 c0 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 0f b6 d2 0b d1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
@@ -18,8 +18,8 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f45<sbyte>(sbyte a, sbyte b, sbyte c)
-; X45_g8i[58] = {57 56 48 83 ec 28 8b f2 49 0f be c0 f7 d0 48 0f be f8 48 0f be c9 e8 f5 d5 fd ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
-; Capture completion code = RET_ZEDx3
+; X45_g8i[58] = {57 56 48 83 ec 28 8b f2 49 0f be c0 f7 d0 48 0f be f8 48 0f be c9 e8 a5 d5 fd ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3}
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
@@ -28,7 +28,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh movsx rdi,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f8}
 0012h movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
-0016h call 7ff7c730c3b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 d5 fd ff}
+0016h call 7ff7c73464c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 d5 fd ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f45<ushort>(ushort a, ushort b, ushort c)
 ; X45_g16u[53] = {50 0f 1f 40 00 41 0f b7 c0 f7 d0 0f b7 c0 0f b7 c9 81 f1 ff ff 00 00 89 4c 24 04 0f b7 4c 24 04 0f b7 d2 0b d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 48 83 c4 08 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
@@ -63,8 +63,8 @@
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short f45<short>(short a, short b, short c)
-; X45_g16i[58] = {57 56 48 83 ec 28 8b f2 49 0f bf c0 f7 d0 48 0f bf f8 48 0f bf c9 e8 b5 f6 fd ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 0f bf d7 23 c2 48 0f bf c0 48 83 c4 28 5e 5f c3}
-; Capture completion code = RET_ZEDx3
+; X45_g16i[58] = {57 56 48 83 ec 28 8b f2 49 0f bf c0 f7 d0 48 0f bf f8 48 0f bf c9 e8 6d f6 fd ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 0f bf d7 23 c2 48 0f bf c0 48 83 c4 28 5e 5f c3}
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
@@ -73,7 +73,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh movsx rdi,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f8}
 0012h movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
-0016h call 7ff7c730e520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 f6 fd ff}
+0016h call 7ff7c7348638h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f6 fd ff}
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -88,7 +88,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f45<uint>(uint a, uint b, uint c)
 ; X45_g32u[17] = {0f 1f 44 00 00 41 8b c0 f7 d0 f7 d1 0b d1 23 c2 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
@@ -98,15 +98,15 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f45<int>(int a, int b, int c)
-; X45_g32i[29] = {57 56 48 83 ec 28 8b f2 41 8b f8 f7 d7 e8 de 16 fe ff 0b c6 23 c7 48 83 c4 28 5e 5f c3}
-; Capture completion code = RET_ZEDx3
+; X45_g32i[29] = {57 56 48 83 ec 28 8b f2 41 8b f8 f7 d7 e8 ae 16 fe ff 0b c6 23 c7 48 83 c4 28 5e 5f c3}
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
 0008h mov edi,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b f8}
 000bh not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
-000dh call 7ff7c73105d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de 16 fe ff}
+000dh call 7ff7c734a700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae 16 fe ff}
 0012h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0014h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0016h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -116,7 +116,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f45<ulong>(ulong a, ulong b, ulong c)
 ; X45_g64u[21] = {0f 1f 44 00 00 49 8b c0 48 f7 d0 48 f7 d1 48 0b d1 48 23 c2 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
@@ -126,15 +126,15 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f45<long>(long a, long b, long c)
-; X45_g64i[33] = {57 56 48 83 ec 28 48 8b f2 49 8b f8 48 f7 d7 e8 04 33 fe ff 48 0b c6 48 23 c7 48 83 c4 28 5e 5f c3}
-; Capture completion code = RET_ZEDx3
+; X45_g64i[33] = {57 56 48 83 ec 28 48 8b f2 49 8b f8 48 f7 d7 e8 e4 32 fe ff 48 0b c6 48 23 c7 48 83 c4 28 5e 5f c3}
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 0009h mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
-000fh call 7ff7c7312268h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 33 fe ff}
+000fh call 7ff7c734c3a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 32 fe ff}
 0014h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 0017h and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001ah add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}

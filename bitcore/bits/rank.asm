@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rank(byte src, int pos)
 ; rank_8u[35] = {0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 f3 0f b8 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
@@ -16,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rank(ushort src, int pos)
 ; rank_16u[35] = {0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 0f b7 d1 c4 e2 78 f7 c2 0f b7 c0 f3 0f b8 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rank(uint src, int pos)
 ; rank_32u[29] = {0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 f3 0f b8 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
@@ -44,7 +44,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rank(ulong src, int pos)
 ; rank_64u[30] = {0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 f3 48 0f b8 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}

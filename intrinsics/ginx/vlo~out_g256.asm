@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<byte>(Vector256<byte> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x8u_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -15,7 +15,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<sbyte>(Vector256<sbyte> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x8i_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -29,7 +29,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<ushort>(Vector256<ushort> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x16u_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<short>(Vector256<short> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x16i_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -57,7 +57,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<uint>(Vector256<uint> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x32u_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -71,7 +71,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<int>(Vector256<int> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x32i_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<ulong>(Vector256<ulong> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x64u_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -99,7 +99,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<long>(Vector256<long> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x64i_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -113,7 +113,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<float>(Vector256<float> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x32f_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -127,7 +127,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void vlo<double>(Vector256<double> src, out ulong x0, out ulong x1)
 ; vlo~out__g256x64f_0o_0o[34] = {c5 f8 77 66 90 c5 fd 10 01 c5 fc 28 c8 c4 e1 f9 7e c8 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

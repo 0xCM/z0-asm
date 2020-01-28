@@ -1,5 +1,5 @@
-vreverse_g128x8u   c5 f8 77 66 90 c5 f9 10 02 48 b8 39 54 91 d2 3c 02 00 00 c5 fb f0 08 c4 e2 79 00 c1 c5 f9 11 01 48 8b c1 c3
-vreverse_g128x8i   c5 f8 77 66 90 c5 f9 10 02 48 b8 39 54 91 d2 3c 02 00 00 c5 fb f0 08 c4 e2 79 00 c1 c5 f9 11 01 48 8b c1 c3
+vreverse_g128x8u   c5 f8 77 66 90 c5 f9 10 02 48 b8 39 54 e4 26 d3 01 00 00 c5 fb f0 08 c4 e2 79 00 c1 c5 f9 11 01 48 8b c1 c3
+vreverse_g128x8i   c5 f8 77 66 90 c5 f9 10 02 48 b8 39 54 e4 26 d3 01 00 00 c5 fb f0 08 c4 e2 79 00 c1 c5 f9 11 01 48 8b c1 c3
 vreverse_g128x16u  c5 f8 77 66 90 c5 f9 10 02 c5 fb 70 c0 1b c5 fa 70 c0 1b c5 f9 70 c0 4e c5 f9 11 01 48 8b c1 c3
 vreverse_g128x16i  c5 f8 77 66 90 c5 f9 10 02 c5 fb 70 c0 1b c5 fa 70 c0 1b c5 f9 70 c0 4e c5 f9 11 01 48 8b c1 c3
 vreverse_g128x32u  c5 f8 77 66 90 c5 f9 10 02 c5 f9 70 c0 1b c5 f9 11 01 48 8b c1 c3

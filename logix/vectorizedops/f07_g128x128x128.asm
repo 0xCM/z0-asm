@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> f07<byte>(Vector128<byte> a, Vector128<byte> b, Vector128<byte> c)
 ; f07_g128x8u[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -17,7 +17,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> f07<sbyte>(Vector128<sbyte> a, Vector128<sbyte> b, Vector128<sbyte> c)
 ; f07_g128x8i[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -33,7 +33,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> f07<ushort>(Vector128<ushort> a, Vector128<ushort> b, Vector128<ushort> c)
 ; f07_g128x16u[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -49,7 +49,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> f07<short>(Vector128<short> a, Vector128<short> b, Vector128<short> c)
 ; f07_g128x16i[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -65,7 +65,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> f07<uint>(Vector128<uint> a, Vector128<uint> b, Vector128<uint> c)
 ; f07_g128x32u[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -81,7 +81,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> f07<int>(Vector128<int> a, Vector128<int> b, Vector128<int> c)
 ; f07_g128x32i[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -97,7 +97,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> f07<ulong>(Vector128<ulong> a, Vector128<ulong> b, Vector128<ulong> c)
 ; f07_g128x64u[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -113,7 +113,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> f07<long>(Vector128<long> a, Vector128<long> b, Vector128<long> c)
 ; f07_g128x64i[43] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 eb c0 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}

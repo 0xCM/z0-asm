@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref byte parse<byte>(ReadOnlySpan<char> src, int offset, out byte dst)
 ; parse_gspan0o_0o_0o[91] = {56 0f 1f 40 00 8b 41 08 83 f8 08 7f 02 eb 05 b8 08 00 00 00 ff c8 4c 8b 09 41 c6 00 00 45 33 d2 3b d0 7f 32 48 63 ca 66 41 83 3c 49 31 75 1e 45 0f b6 18 be 01 00 00 00 41 8b ca d3 e6 40 0f b6 ce 41 0b cb 0f b6 c9 0f b6 c9 41 88 08 ff c2 41 ff c2 3b d0 7e ce 49 8b c0 5e c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -37,7 +37,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref sbyte parse<sbyte>(ReadOnlySpan<char> src, int offset, out sbyte dst)
 ; parse_gspan0o_0o_0o[93] = {56 0f 1f 40 00 8b 41 08 83 f8 08 7f 02 eb 05 b8 08 00 00 00 ff c8 4c 8b 09 41 c6 00 00 45 33 d2 3b d0 7f 34 48 63 ca 66 41 83 3c 49 31 75 20 4d 0f be 18 be 01 00 00 00 41 8b ca d3 e6 48 0f be ce 41 0b cb 48 0f be c9 48 0f be c9 41 88 08 ff c2 41 ff c2 3b d0 7e cc 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -73,7 +73,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ushort parse<ushort>(ReadOnlySpan<char> src, int offset, out ushort dst)
 ; parse_gspan0o_0o_0o[93] = {56 0f 1f 40 00 8b 41 08 83 f8 10 7f 02 eb 05 b8 10 00 00 00 ff c8 4c 8b 09 66 41 c7 00 00 00 45 33 d2 3b d0 7f 32 48 63 ca 66 41 83 3c 49 31 75 1e 45 0f b7 18 be 01 00 00 00 41 8b ca d3 e6 0f b7 ce 41 0b cb 0f b7 c9 0f b7 c9 66 41 89 08 ff c2 41 ff c2 3b d0 7e ce 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -109,7 +109,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref short parse<short>(ReadOnlySpan<char> src, int offset, out short dst)
 ; parse_gspan0o_0o_0o[96] = {56 0f 1f 40 00 8b 41 08 83 f8 10 7f 02 eb 05 b8 10 00 00 00 ff c8 4c 8b 09 66 41 c7 00 00 00 45 33 d2 3b d0 7f 35 48 63 ca 66 41 83 3c 49 31 75 21 4d 0f bf 18 be 01 00 00 00 41 8b ca d3 e6 48 0f bf ce 41 0b cb 48 0f bf c9 48 0f bf c9 66 41 89 08 ff c2 41 ff c2 3b d0 7e cb 49 8b c0 5e c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -145,7 +145,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref uint parse<uint>(ReadOnlySpan<char> src, int offset, out uint dst)
 ; parse_gspan0o_0o_0o[81] = {56 0f 1f 40 00 8b 41 08 83 f8 20 7f 02 eb 05 b8 20 00 00 00 ff c8 4c 8b 09 33 c9 41 89 08 45 33 d2 3b d0 7f 27 48 63 ca 66 41 83 3c 49 31 75 13 45 8b 18 be 01 00 00 00 41 8b ca d3 e6 44 0b de 45 89 18 ff c2 41 ff c2 3b d0 7e d9 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -179,7 +179,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref int parse<int>(ReadOnlySpan<char> src, int offset, out int dst)
 ; parse_gspan0o_0o_0o[81] = {56 0f 1f 40 00 8b 41 08 83 f8 20 7f 02 eb 05 b8 20 00 00 00 ff c8 4c 8b 09 33 c9 41 89 08 45 33 d2 3b d0 7f 27 48 63 ca 66 41 83 3c 49 31 75 13 45 8b 18 be 01 00 00 00 41 8b ca d3 e6 44 0b de 45 89 18 ff c2 41 ff c2 3b d0 7e d9 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -213,7 +213,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ulong parse<ulong>(ReadOnlySpan<char> src, int offset, out ulong dst)
 ; parse_gspan0o_0o_0o[82] = {56 0f 1f 40 00 8b 41 08 83 f8 40 7f 02 eb 05 b8 40 00 00 00 ff c8 4c 8b 09 33 c9 49 89 08 45 33 d2 3b d0 7f 28 48 63 ca 66 41 83 3c 49 31 75 14 4d 8b 18 be 01 00 00 00 41 8b ca 48 d3 e6 4c 0b de 4d 89 18 ff c2 41 ff c2 3b d0 7e d8 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -247,7 +247,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref long parse<long>(ReadOnlySpan<char> src, int offset, out long dst)
 ; parse_gspan0o_0o_0o[82] = {56 0f 1f 40 00 8b 41 08 83 f8 40 7f 02 eb 05 b8 40 00 00 00 ff c8 4c 8b 09 33 c9 49 89 08 45 33 d2 3b d0 7f 28 48 63 ca 66 41 83 3c 49 31 75 14 4d 8b 18 be 01 00 00 00 41 8b ca 48 d3 e6 4c 0b de 4d 89 18 ff c2 41 ff c2 3b d0 7e d8 49 8b c0 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -281,7 +281,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref float parse<float>(ReadOnlySpan<char> src, int offset, out float dst)
 ; parse_gspan0o_0o_0o[114] = {56 48 83 ec 10 c5 f8 77 8b 41 08 83 f8 20 7f 02 eb 05 b8 20 00 00 00 ff c8 4c 8b 09 33 c9 41 89 08 45 33 d2 3b d0 7f 41 48 63 ca 66 41 83 3c 49 31 75 2d c4 c1 7a 10 00 c5 fa 11 44 24 0c 44 8b 5c 24 0c be 01 00 00 00 41 8b ca d3 e6 44 0b de 44 89 5c 24 08 c5 fa 10 44 24 08 c4 c1 7a 11 00 ff c2 41 ff c2 3b d0 7e bf 49 8b c0 48 83 c4 10 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,10h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 10}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -321,7 +321,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref double parse<double>(ReadOnlySpan<char> src, int offset, out double dst)
 ; parse_gspan0o_0o_0o[113] = {56 48 83 ec 10 c5 f8 77 8b 41 08 83 f8 40 7f 02 eb 05 b8 40 00 00 00 ff c8 4c 8b 09 33 c9 49 89 08 45 33 d2 3b d0 7f 40 48 63 ca 66 41 83 3c 49 31 75 2c c4 c1 7b 10 00 c5 fb 11 44 24 08 4c 8b 5c 24 08 be 01 00 00 00 41 8b ca 48 d3 e6 4c 0b de 4c 89 1c 24 c5 fb 10 04 24 c4 c1 7b 11 00 ff c2 41 ff c2 3b d0 7e c0 49 8b c0 48 83 c4 10 5e c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,10h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 10}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

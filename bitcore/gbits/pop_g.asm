@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<byte>(byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7)
 ; pop_g8u[122] = {56 0f 1f 40 00 0f b6 c1 0f b6 d2 41 0f b6 c8 45 0f b6 c1 44 8b 4c 24 30 45 0f b6 c9 44 8b 54 24 38 45 0f b6 d2 44 8b 5c 24 40 45 0f b6 db 8b 74 24 48 40 0f b6 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -42,7 +42,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<sbyte>(sbyte x0, sbyte x1, sbyte x2, sbyte x3, sbyte x4, sbyte x5, sbyte x6, sbyte x7)
 ; pop_g8i[148] = {56 0f 1f 40 00 48 0f be c1 48 63 c0 48 0f be d2 48 63 d2 49 0f be c8 48 63 c9 4d 0f be c1 4d 63 c0 44 8b 4c 24 30 4d 0f be c9 4d 63 c9 44 8b 54 24 38 4d 0f be d2 4d 63 d2 44 8b 5c 24 40 4d 0f be db 4d 63 db 8b 74 24 48 48 0f be f6 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -91,7 +91,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<ushort>(ushort x0, ushort x1, ushort x2, ushort x3, ushort x4, ushort x5, ushort x6, ushort x7)
 ; pop_g16u[121] = {56 0f 1f 40 00 0f b7 c1 0f b7 d2 41 0f b7 c8 45 0f b7 c1 44 8b 4c 24 30 45 0f b7 c9 44 8b 54 24 38 45 0f b7 d2 44 8b 5c 24 40 45 0f b7 db 8b 74 24 48 0f b7 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -132,7 +132,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<short>(short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7)
 ; pop_g16i[148] = {56 0f 1f 40 00 48 0f bf c1 48 63 c0 48 0f bf d2 48 63 d2 49 0f bf c8 48 63 c9 4d 0f bf c1 4d 63 c0 44 8b 4c 24 30 4d 0f bf c9 4d 63 c9 44 8b 54 24 38 4d 0f bf d2 4d 63 d2 44 8b 5c 24 40 4d 0f bf db 4d 63 db 8b 74 24 48 48 0f bf f6 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -181,7 +181,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<uint>(uint x0, uint x1, uint x2, uint x3, uint x4, uint x5, uint x6, uint x7)
 ; pop_g32u[102] = {56 0f 1f 40 00 8b c1 8b d2 41 8b c8 45 8b c1 44 8b 4c 24 30 44 8b 54 24 38 44 8b 5c 24 40 8b 74 24 48 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -218,7 +218,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<int>(int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7)
 ; pop_g32i[116] = {56 0f 1f 40 00 48 63 c1 48 63 d2 49 63 c8 4d 63 c1 44 8b 4c 24 30 4d 63 c9 44 8b 54 24 38 4d 63 d2 44 8b 5c 24 40 4d 63 db 8b 74 24 48 48 63 f6 f3 48 0f b8 c0 f3 48 0f b8 d2 03 c2 33 d2 f3 48 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movsxd rax,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c1}
@@ -259,7 +259,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<ulong>(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
 ; pop_g64u[91] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b 5c 24 40 48 8b 74 24 48 f3 48 0f b8 c9 f3 48 0f b8 d2 03 d1 33 c9 f3 49 0f b8 c8 03 d1 33 c9 f3 49 0f b8 c9 03 d1 f3 48 0f b8 c0 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov rax,[rsp+30h]                       ; MOV r64, r/m64 || REX.W 8B /r || encoded[5]{48 8b 44 24 30}
@@ -291,7 +291,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop<long>(long x0, long x1, long x2, long x3, long x4, long x5, long x6, long x7)
 ; pop_g64i[91] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b 5c 24 40 48 8b 74 24 48 f3 48 0f b8 c9 f3 48 0f b8 d2 03 d1 33 c9 f3 49 0f b8 c8 03 d1 33 c9 f3 49 0f b8 c9 03 d1 f3 48 0f b8 c0 03 c2 33 d2 f3 49 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d3 03 c2 33 d2 f3 48 0f b8 d6 03 c2 5e c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h mov rax,[rsp+30h]                       ; MOV r64, r/m64 || REX.W 8B /r || encoded[5]{48 8b 44 24 30}

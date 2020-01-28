@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort concat(byte x0, byte x1)
 ; concat_8u[20] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 c1 e2 08 0b c2 0f b7 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint concat(ushort x0, ushort x1)
 ; concat_16u[17] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 c1 e2 10 0b c2 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong concat(in uint x0, in uint x1)
 ; concat_32u[17] = {0f 1f 44 00 00 8b 01 8b 12 48 c1 e2 20 48 0b c2 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 01}
 0007h mov edx,[rdx]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 12}
@@ -32,7 +32,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint concat(byte x0, byte x1, byte x2, byte x3)
 ; concat_8u[35] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 c1 e2 08 0b c2 41 0f b6 d0 c1 e2 10 0b c2 41 0f b6 d1 c1 e2 18 0b c2 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -48,7 +48,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong concat(ushort x0, ushort x1, ushort x2, ushort x3)
 ; concat_16u[32] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 c1 e2 10 0b c2 41 0f b7 d0 0b c2 41 0f b7 d1 c1 e2 10 0b c2 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
@@ -63,7 +63,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong concat(byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7)
 ; concat_8u[97] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 48 c1 e2 08 48 0b c2 41 0f b6 d0 48 c1 e2 10 48 0b c2 41 0f b6 d1 48 c1 e2 18 48 0b c2 8b 54 24 28 0f b6 d2 48 c1 e2 20 48 0b c2 8b 54 24 30 0f b6 d2 48 c1 e2 28 48 0b c2 8b 54 24 38 0f b6 d2 48 c1 e2 30 48 0b c2 8b 54 24 40 0f b6 d2 48 c1 e2 38 48 0b c2 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}

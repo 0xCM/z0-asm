@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vsub<byte>(byte a, Vector256<byte> x)
 ; vsub__g0o_256x8u[48] = {50 c5 f8 77 90 0f b6 c2 88 44 24 04 48 8d 44 24 04 c4 e2 7d 78 44 24 04 c4 c1 7d 10 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -19,7 +19,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vsub<sbyte>(sbyte a, Vector256<sbyte> x)
 ; vsub__g0o_256x8i[49] = {50 c5 f8 77 90 48 0f be c2 88 44 24 04 48 8d 44 24 04 c4 e2 7d 78 44 24 04 c4 c1 7d 10 08 c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -37,7 +37,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vsub<ushort>(ushort a, Vector256<ushort> x)
 ; vsub__g0o_256x16u[49] = {50 c5 f8 77 90 0f b7 c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c4 c1 7d 10 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -55,7 +55,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vsub<short>(short a, Vector256<short> x)
 ; vsub__g0o_256x16i[50] = {50 c5 f8 77 90 48 0f bf c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c4 c1 7d 10 08 c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -73,7 +73,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vsub<uint>(uint a, Vector256<uint> x)
 ; vsub__g0o_256x32u[45] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c4 c1 7d 10 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -90,7 +90,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vsub<int>(int a, Vector256<int> x)
 ; vsub__g0o_256x32i[45] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c4 c1 7d 10 08 c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -107,7 +107,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vsub<ulong>(ulong a, Vector256<ulong> x)
 ; vsub__g0o_256x64u[43] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 7d 59 04 24 c4 c1 7d 10 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -124,7 +124,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vsub<long>(long a, Vector256<long> x)
 ; vsub__g0o_256x64i[43] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 7d 59 04 24 c4 c1 7d 10 08 c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -141,7 +141,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vsub<float>(float a, Vector256<float> x)
 ; vsub__g0o_256x32f[42] = {50 c5 f8 77 90 c5 fa 11 4c 24 04 c4 e2 7d 18 44 24 04 c4 c1 7d 10 08 c5 fc 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -157,7 +157,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vsub<double>(double a, Vector256<double> x)
 ; vsub__g0o_256x64f[40] = {50 c5 f8 77 90 c5 fb 11 0c 24 c4 e2 7d 19 04 24 c4 c1 7d 10 08 c5 fd 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

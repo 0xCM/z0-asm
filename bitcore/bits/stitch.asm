@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte stitch(byte left, int ldx, byte right, int rdx)
 ; stitch_8u[36] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e0 41 0f b6 d0 41 83 e1 1f 41 8b c9 d3 ea 0b c2 41 8b c9 d3 e8 0f b6 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -18,7 +18,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort stitch(ushort left, int ldx, ushort right, int rdx)
 ; stitch_16u[36] = {0f 1f 44 00 00 0f b7 c1 8b ca d3 e0 41 0f b7 d0 41 83 e1 1f 41 8b c9 d3 ea 0b c2 41 8b c9 d3 e8 0f b7 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -35,7 +35,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint stitch(uint left, int ldx, uint right, int rdx)
 ; stitch_32u[30] = {0f 1f 44 00 00 8b c1 8b ca d3 e0 41 83 e1 1f 41 8b c9 41 d3 e8 41 0b c0 41 8b c9 d3 e8 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -50,7 +50,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong stitch(ulong left, int ldx, ulong right, int rdx)
 ; stitch_64u[33] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e0 41 83 e1 3f 41 8b c9 49 d3 e8 49 0b c0 41 8b c9 48 d3 e8 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

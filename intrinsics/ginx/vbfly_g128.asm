@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vbfly<byte>(N16 n, Vector128<byte> x)
 ; vbfly__gn16_128x8u[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vbfly<ushort>(N16 n, Vector128<ushort> x)
 ; vbfly__gn16_128x16u[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vbfly<uint>(N16 n, Vector128<uint> x)
 ; vbfly__gn16_128x32u[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vbfly<ulong>(N16 n, Vector128<ulong> x)
 ; vbfly__gn16_128x64u[92] = {50 c5 f8 77 90 c4 c1 79 10 00 48 b8 00 00 ff ff ff ff 00 00 48 89 04 24 48 8d 04 24 c4 e2 79 59 0c 24 c5 f8 28 d0 c5 f8 28 d9 c5 e9 db d3 c5 f8 28 da c5 e1 73 f3 10 c5 f8 28 e2 c5 d9 73 d4 10 c5 e1 ef dc c5 e9 ef d3 c5 e9 db c9 c5 f1 ef c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

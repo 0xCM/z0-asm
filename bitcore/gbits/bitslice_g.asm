@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitslice<byte>(byte a, byte start, byte length)
 ; bitslice_g8u[32] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -15,7 +15,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte bitslice<sbyte>(sbyte a, byte start, byte length)
 ; bitslice_g8i[34] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f be c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -29,7 +29,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitslice<ushort>(ushort a, byte start, byte length)
 ; bitslice_g16u[32] = {0f 1f 44 00 00 0f b7 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short bitslice<short>(short a, byte start, byte length)
 ; bitslice_g16i[34] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -57,7 +57,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitslice<uint>(uint a, byte start, byte length)
 ; bitslice_g32u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
@@ -69,7 +69,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int bitslice<int>(int a, byte start, byte length)
 ; bitslice_g32i[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
@@ -81,7 +81,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitslice<ulong>(ulong a, byte start, byte length)
 ; bitslice_g64u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
@@ -93,7 +93,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long bitslice<long>(long a, byte start, byte length)
 ; bitslice_g64i[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}

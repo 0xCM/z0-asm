@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbroadcast(N256 w, byte lo, byte hi)
 ; vbroadcast_n256_0o_0o[73] = {50 c5 f8 77 90 41 0f b6 c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 41 0f b6 c1 88 04 24 48 8d 04 24 c4 e2 79 78 0c 24 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -24,7 +24,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbroadcast(N256 w, ushort lo, ushort hi)
 ; vbroadcast_n256_0o_0o[75] = {50 c5 f8 77 90 41 0f b7 c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 41 0f b7 c1 66 89 04 24 48 8d 04 24 c4 e2 79 79 0c 24 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -47,7 +47,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbroadcast(N256 w, uint lo, uint hi)
 ; vbroadcast_n256_0o_0o[67] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 44 89 0c 24 48 8d 04 24 c4 e2 79 58 0c 24 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -68,7 +68,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbroadcast(N256 w, ulong lo, ulong hi)
 ; vbroadcast_n256_0o_0o[72] = {48 83 ec 18 c5 f8 77 4c 89 44 24 10 48 8d 44 24 10 c4 e2 79 59 44 24 10 4c 89 4c 24 08 48 8d 44 24 08 c4 e2 79 59 4c 24 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+10h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 10}
@@ -88,7 +88,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vbroadcast(N128 n, sbyte src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 78 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -100,7 +100,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vbroadcast(N128 n, byte src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 78 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -112,7 +112,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vbroadcast(N128 n, short src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 79 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -124,7 +124,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vbroadcast(N128 n, ushort src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 79 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -136,7 +136,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vbroadcast(N128 n, int src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 58 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -148,7 +148,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vbroadcast(N128 n, uint src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 79 58 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -160,7 +160,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vbroadcast(N128 n, long src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 4c 89 44 24 18 48 8d 44 24 18 c4 e2 79 59 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 18}
@@ -172,7 +172,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vbroadcast(N128 n, ulong src)
 ; vbroadcast_n128_0o[30] = {c5 f8 77 66 90 4c 89 44 24 18 48 8d 44 24 18 c4 e2 79 59 44 24 18 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 18}
@@ -184,7 +184,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vbroadcast(N256 n, sbyte src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 78 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -197,7 +197,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbroadcast(N256 n, byte src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 78 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -210,7 +210,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vbroadcast(N256 n, short src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 79 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -223,7 +223,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbroadcast(N256 n, ushort src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 79 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -236,7 +236,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vbroadcast(N256 n, int src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 58 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -249,7 +249,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbroadcast(N256 n, uint src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 44 89 44 24 18 48 8d 44 24 18 c4 e2 7d 58 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8d                       ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 18}
@@ -262,7 +262,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vbroadcast(N256 n, long src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 4c 89 44 24 18 48 8d 44 24 18 c4 e2 7d 59 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 18}
@@ -275,7 +275,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbroadcast(N256 n, ulong src)
 ; vbroadcast_n256_0o[33] = {c5 f8 77 66 90 4c 89 44 24 18 48 8d 44 24 18 c4 e2 7d 59 44 24 18 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h mov [rsp+18h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 18}

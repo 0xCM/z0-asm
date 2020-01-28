@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte setif(byte src, int srcpos, byte dst, int dstpos)
 ; setif_8u[49] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 85 c0 74 19 41 0f b6 c0 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 0b c2 0f b6 c0 c3 41 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort setif(ushort src, int srcpos, ushort dst, int dstpos)
 ; setif_16u[50] = {0f 1f 44 00 00 0f b7 c1 8b ca d3 e8 83 e0 01 85 c0 74 1a 41 0f b7 c0 41 b8 01 00 00 00 41 8b c9 41 d3 e0 41 0f b7 d0 0b c2 0f b7 c0 c3 41 0f b7 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint setif(uint src, int srcpos, uint dst, int dstpos)
 ; setif_32u[36] = {0f 1f 44 00 00 8b c1 8b ca d3 e8 83 e0 01 85 c0 74 0e b8 01 00 00 00 41 8b c9 d3 e0 41 0b c0 c3 41 8b c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong setif(ulong src, int srcpos, ulong dst, int dstpos)
 ; setif_64u[41] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 8b c8 83 e1 01 85 c9 74 0f b8 01 00 00 00 41 8b c9 48 d3 e0 49 0b c0 c3 49 8b c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

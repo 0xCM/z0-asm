@@ -65,17 +65,6 @@ Vector256<int> gt<int>(Vector256<int> a, Vector256<int> b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // Id := 100664278, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-// Vector256<ulong> gt<ulong>(Vector256<ulong> a, Vector256<ulong> b)
-// AggressiveInlining
-Vector256<ulong> gt<ulong>(Vector256<ulong> a, Vector256<ulong> b)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vgt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
-    IL_0007: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// Id := 100664278, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::gt<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<long> gt<long>(Vector256<long> a, Vector256<long> b)
 // AggressiveInlining
 Vector256<long> gt<long>(Vector256<long> a, Vector256<long> b)

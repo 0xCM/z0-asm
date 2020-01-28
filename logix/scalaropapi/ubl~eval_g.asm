@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte eval<byte>(UnaryBitLogicKind:byte kind, byte a)
 ; ubl~eval_g8u[34] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 12 40 80 fe 02 75 1d 0f b6 c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte eval<sbyte>(UnaryBitLogicKind:byte kind, sbyte a)
 ; ubl~eval_g8u[35] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 13 40 80 fe 02 75 20 48 0f be c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort eval<ushort>(UnaryBitLogicKind:byte kind, ushort a)
 ; ubl~eval_g8u[34] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 12 40 80 fe 02 75 1d 0f b7 c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -64,7 +64,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short eval<short>(UnaryBitLogicKind:byte kind, short a)
 ; ubl~eval_g8u[35] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 13 40 80 fe 02 75 20 48 0f bf c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint eval<uint>(UnaryBitLogicKind:byte kind, uint a)
 ; ubl~eval_g8u[33] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 11 40 80 fe 02 75 18 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -106,7 +106,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int eval<int>(UnaryBitLogicKind:byte kind, int a)
 ; ubl~eval_g8u[33] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 11 40 80 fe 02 75 18 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -127,7 +127,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong eval<ulong>(UnaryBitLogicKind:byte kind, ulong a)
 ; ubl~eval_g8u[34] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 12 40 80 fe 02 75 1b 48 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -148,7 +148,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long eval<long>(UnaryBitLogicKind:byte kind, long a)
 ; ubl~eval_g8u[34] = {57 56 55 53 48 83 ec 28 8b f1 40 80 fe 01 74 12 40 80 fe 02 75 1b 48 8b c2 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}

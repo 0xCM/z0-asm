@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit testc(ulong a, ulong b)
 ; testc_64u[57] = {48 83 ec 18 c5 f8 77 48 89 4c 24 10 48 8d 44 24 10 c4 e2 79 59 44 24 10 48 89 54 24 08 48 8d 44 24 08 c4 e2 79 59 4c 24 08 c4 e2 79 17 c1 0f 92 c0 0f b6 c0 48 83 c4 18 c3}
-; Capture completion code = RET_INTR
+; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+10h],rcx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 4c 24 10}
@@ -18,7 +18,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit testc(ulong a)
 ; testc_64u[48] = {50 c5 f8 77 90 48 89 0c 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; Capture completion code = RET_INTRx2
+; TermCode = RET_INTRx2
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

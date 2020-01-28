@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(sbyte a, sbyte b, sbyte tolerance)
 ; within_8i[45] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 49 0f be c0 8b c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(byte a, byte b, byte tolerance)
 ; within_8u[41] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 41 0f b6 c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(short a, short b, short tolerance)
 ; within_16i[45] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 49 0f bf c0 8b c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
@@ -60,7 +60,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(ushort a, ushort b, ushort tolerance)
 ; within_16u[41] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 3b c2 7d 07 2b d0 48 63 ca eb 05 2b c2 48 63 c8 41 0f b7 c0 48 3b c8 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
@@ -79,7 +79,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(int a, int b, int tolerance)
 ; within_32i[34] = {0f 1f 44 00 00 3b ca 7d 07 2b d1 48 63 c2 eb 05 2b ca 48 63 c1 41 8b d0 48 3b c2 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h jge short 0010h                         ; JGE rel8 || 7D cb || encoded[2]{7d 07}
@@ -96,7 +96,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(uint a, uint b, uint tolerance)
 ; within_32u[32] = {0f 1f 44 00 00 3b ca 73 06 2b d1 8b c2 eb 04 2b ca 8b c1 41 8b d0 48 3b c2 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_SBB
+; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h jae short 000fh                         ; JAE rel8 || 73 cb || encoded[2]{73 06}
@@ -113,7 +113,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(long a, long b, long tolerance)
 ; within_64i[31] = {0f 1f 44 00 00 48 3b ca 7d 05 48 2b d1 eb 06 48 2b ca 48 8b d1 49 3b d0 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jge short 000fh                         ; JGE rel8 || 7D cb || encoded[2]{7d 05}
@@ -128,7 +128,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within(ulong a, ulong b, ulong tolerance)
 ; within_64u[31] = {0f 1f 44 00 00 48 3b ca 73 05 48 2b d1 eb 06 48 2b ca 48 8b d1 49 3b d0 0f 96 c0 0f b6 c0 c3}
-; Capture completion code = RET_ZED_SBB
+; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jae short 000fh                         ; JAE rel8 || 73 cb || encoded[2]{73 05}

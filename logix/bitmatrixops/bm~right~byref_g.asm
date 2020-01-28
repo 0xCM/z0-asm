@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<byte> right<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; bm~right~byref_g[97] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 1e 26 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 88 c0 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[97] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 0e 89 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 78 23 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -23,17 +23,17 @@
 0045h ja short 005bh                          ; JA rel8 || 77 cb || encoded[2]{77 14}
 0047h movsxd r8,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c1}
 004ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 26 a0 4f}
+004dh call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 89 b9 4e}
 0052h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0055h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0059h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-005bh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 c0 08 ff}
+005bh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 23 05 ff}
 0060h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<sbyte> right<sbyte>(in BitMatrix<sbyte> A, in BitMatrix<sbyte> B, ref BitMatrix<sbyte> Z)
-; bm~right~byref_g[97] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 9e 25 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 08 c0 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[97] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 8e 88 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 f8 22 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -55,17 +55,17 @@
 0045h ja short 005bh                          ; JA rel8 || 77 cb || encoded[2]{77 14}
 0047h movsxd r8,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c1}
 004ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 25 a0 4f}
+004dh call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 88 b9 4e}
 0052h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0055h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0059h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-005bh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 c0 08 ff}
+005bh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 22 05 ff}
 0060h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ushort> right<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; bm~right~byref_g[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 1b 25 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 85 bf 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 0b 88 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 75 22 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -88,17 +88,17 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b 25 a0 4f}
+0050h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b 88 b9 4e}
 0055h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0058h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
-005eh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 bf 08 ff}
+005eh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 22 05 ff}
 0063h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<short> right<short>(in BitMatrix<short> A, in BitMatrix<short> B, ref BitMatrix<short> Z)
-; bm~right~byref_g[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 9b 24 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 05 bf 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 8b 87 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 f5 21 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -121,17 +121,17 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b 24 a0 4f}
+0050h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b 87 b9 4e}
 0055h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0058h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
-005eh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 bf 08 ff}
+005eh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 21 05 ff}
 0063h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<uint> right<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 1a 24 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 84 be 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 0a 87 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 74 21 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -154,17 +154,17 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,2                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 02}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 24 a0 4f}
+0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 87 b9 4e}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 be 08 ff}
+005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 21 05 ff}
 0064h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<int> right<int>(in BitMatrix<int> A, in BitMatrix<int> B, ref BitMatrix<int> Z)
-; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 9a 23 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 04 be 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 8a 86 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 f4 20 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -187,17 +187,17 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,2                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 02}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 23 a0 4f}
+0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 86 b9 4e}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 be 08 ff}
+005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 20 05 ff}
 0064h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<ulong> right<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 1a 23 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 84 bd 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 0a 86 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 74 20 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -220,17 +220,17 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 23 a0 4f}
+0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 86 b9 4e}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 bd 08 ff}
+005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 20 05 ff}
 0064h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitMatrix<long> right<long>(in BitMatrix<long> A, in BitMatrix<long> B, ref BitMatrix<long> Z)
-; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 9a 22 a0 4f 48 8b c6 48 83 c4 40 5e c3 e8 04 bd 08 ff cc}
-; Capture completion code = INTRx2
+; bm~right~byref_g[101] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 8a 85 b9 4e 48 8b c6 48 83 c4 40 5e c3 e8 f4 1f 05 ff cc}
+; TermCode = INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
 0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -253,10 +253,10 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 22 a0 4f}
+0051h call 7ff815ec8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 85 b9 4e}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 bd 08 ff}
+005fh call 7ff7c63829c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 1f 05 ff}
 0064h int 3                                   ; INT3 || CC || encoded[1]{cc}

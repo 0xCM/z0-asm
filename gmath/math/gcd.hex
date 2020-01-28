@@ -1,8 +1,0 @@
-gcd_8i   0f 1f 44 00 00 48 0f be c1 8b c8 c1 f9 07 03 c1 33 c1 48 0f be c0 48 0f be d2 8b ca c1 f9 07 03 d1 33 d1 48 0f be ca 85 c9 74 16 99 f7 f9 48 0f be c2 8b d1 8b c8 85 c9 75 03 8b c2 c3
-gcd_8u   0f 1f 44 00 00 84 d2 74 10 0f b6 c1 0f b6 ca 99 f7 f9 0f b6 d2 84 d2 75 f0 0f b6 c1 c3
-gcd_16i  0f 1f 44 00 00 48 0f bf c1 8b c8 c1 f9 0f 03 c1 33 c1 48 0f bf c0 48 0f bf d2 8b ca c1 f9 0f 03 d1 33 d1 48 0f bf ca 85 c9 74 16 99 f7 f9 48 0f bf c2 8b d1 8b c8 85 c9 75 03 8b c2 c3
-gcd_16u  0f 1f 44 00 00 0f b7 c2 85 c0 74 13 0f b7 c1 0f b7 ca 99 f7 f9 0f b7 d2 0f b7 c2 85 c0 75 ed 0f b7 c1 c3
-gcd_32i  0f 1f 44 00 00 8b c1 c1 f8 1f 03 c8 33 c1 8b ca c1 f9 1f 44 8d 04 0a 41 33 c8 85 c9 74 0b 99 f7 f9 8b c1 8b ca 85 c9 75 f5 c3
-gcd_32u  8b c1 44 8b c2 45 85 c0 74 10 33 d2 41 f7 f0 41 8b c0 44 8b c2 45 85 c0 75 f0 c3
-gcd_64i  0f 1f 44 00 00 48 8b c1 48 c1 f8 3f 48 03 c8 48 33 c1 48 8b ca 48 c1 f9 3f 4c 8d 04 0a 49 33 c8 48 85 c9 74 10 48 99 48 f7 f9 48 8b c1 48 8b ca 48 85 c9 75 f0 c3
-gcd_64u  48 8b c1 4c 8b c2 4d 85 c0 74 10 33 d2 49 f7 f0 49 8b c0 4c 8b c2 4d 85 c0 75 f0 c3

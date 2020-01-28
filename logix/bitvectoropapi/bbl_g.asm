@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitVector<byte> x, BitVector<byte> y)
 ; bbl_g0o_8u_8u[131] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 3b 01 00 00 8b c0 48 8d 0d b8 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff 00 00 00 e9 10 01 00 00 33 c0 e9 09 01 00 00 0f b6 c2 41 0f b6 d0 44 0f b6 c0 41 23 d0 0f b6 c2 e9 f3 00 00 00 0f b6 c2 41 0f b6 d0 44 0f b6 c0 41 23 d0 8b c2 f7 d0 0f b6 c0 e9 d9 00 00 00 0f b6 c2 41 0f b6 d0 44 0f b6 c0 41 0b d0 0f b6 c2 e9 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -44,7 +44,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<sbyte> eval<sbyte>(BinaryBitLogicKind:byte kind, BitVector<sbyte> x, BitVector<sbyte> y)
 ; bbl_g0o_8i_8i[368] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 59 01 00 00 8b c0 48 8d 0d d8 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff ff ff ff e9 2e 01 00 00 33 c0 e9 27 01 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 23 d0 48 0f be c2 e9 0f 01 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 23 d0 8b c2 f7 d0 48 0f be c0 e9 f3 00 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 0b d0 48 0f be c2 e9 db 00 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 0b d0 8b c2 f7 d0 48 0f be c0 e9 bf 00 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 33 d0 48 0f be c2 e9 a7 00 00 00 48 0f be c2 49 0f be d0 4c 0f be c0 41 33 d0 8b c2 f7 d0 48 0f be c0 e9 8b 00 00 00 48 0f be c2 e9 82 00 00 00 49 0f be c0 eb 7c 48 0f be c2 44 8b c0 41 f7 d0 49 0f be c0 eb 6c 49 0f be c0 8b d0 f7 d2 48 0f be c2 eb 5e 48 0f be c2 49 0f be d0 4c 0f be c0 8b c2 f7 d0 41 0b c0 48 0f be c0 eb 45 48 0f be c2 49 0f be d0 4c 0f be c0 c4 e2 38 f2 c2 48 0f be c0 eb 2e 48 0f be c2 49 0f be d0 4c 0f be c0 41 8b c0 f7 d0 0b c2 48 0f be c0 eb 15 48 0f be c2 49 0f be c8 48 0f be c0 c4 e2 70 f2 c0 48 0f be c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -156,7 +156,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitVector<ushort> x, BitVector<ushort> y)
 ; bbl_g0o_16u_16u[131] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 3b 01 00 00 8b c0 48 8d 0d b8 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff ff 00 00 e9 10 01 00 00 33 c0 e9 09 01 00 00 0f b7 c2 41 0f b7 d0 44 0f b7 c0 41 23 d0 0f b7 c2 e9 f3 00 00 00 0f b7 c2 41 0f b7 d0 44 0f b7 c0 41 23 d0 8b c2 f7 d0 0f b7 c0 e9 d9 00 00 00 0f b7 c2 41 0f b7 d0 44 0f b7 c0 41 0b d0 0f b7 c2 e9 c3}
-; Capture completion code = RET_ZEDx3
+; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -199,7 +199,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<short> eval<short>(BinaryBitLogicKind:byte kind, BitVector<short> x, BitVector<short> y)
 ; bbl_g0o_16i_16i[368] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 59 01 00 00 8b c0 48 8d 0d d8 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff ff ff ff e9 2e 01 00 00 33 c0 e9 27 01 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 23 d0 48 0f bf c2 e9 0f 01 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 23 d0 8b c2 f7 d0 48 0f bf c0 e9 f3 00 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 0b d0 48 0f bf c2 e9 db 00 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 0b d0 8b c2 f7 d0 48 0f bf c0 e9 bf 00 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 33 d0 48 0f bf c2 e9 a7 00 00 00 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 33 d0 8b c2 f7 d0 48 0f bf c0 e9 8b 00 00 00 48 0f bf c2 e9 82 00 00 00 49 0f bf c0 eb 7c 48 0f bf c2 44 8b c0 41 f7 d0 49 0f bf c0 eb 6c 49 0f bf c0 8b d0 f7 d2 48 0f bf c2 eb 5e 48 0f bf c2 49 0f bf d0 4c 0f bf c0 8b c2 f7 d0 41 0b c0 48 0f bf c0 eb 45 48 0f bf c2 49 0f bf d0 4c 0f bf c0 c4 e2 38 f2 c2 48 0f bf c0 eb 2e 48 0f bf c2 49 0f bf d0 4c 0f bf c0 41 8b c0 f7 d0 0b c2 48 0f bf c0 eb 15 48 0f bf c2 49 0f bf c8 48 0f bf c0 c4 e2 70 f2 c0 48 0f bf c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -311,7 +311,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitVector<uint> x, BitVector<uint> y)
 ; bbl_g0o_32u_32u[202] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 b3 00 00 00 8b c0 48 8d 0d 30 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff ff ff ff e9 88 00 00 00 33 c0 e9 81 00 00 00 41 23 d0 8b c2 eb 7a 8b c2 41 8b d0 23 c2 f7 d0 eb 6f 8b c2 41 8b d0 0b c2 eb 66 8b c2 41 8b d0 0b c2 f7 d0 eb 5b 8b c2 41 8b d0 33 c2 eb 52 8b c2 41 8b d0 33 c2 f7 d0 eb 47 8b c2 eb 43 41 8b c0 eb 3e 8b c2 f7 d0 eb 38 41 8b c0 f7 d0 eb 31 8b c2 41 8b d0 44 8b c2 41 f7 d0 41 0b c0 eb 21 8b c2 41 8b d0 c4 e2 78 f2 c2 eb 15 8b c2 41 8b d0 f7 d0 0b c2 eb 0a 8b c2 41 8b c8 c4 e2 70 f2 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -394,7 +394,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<int> eval<int>(BinaryBitLogicKind:byte kind, BitVector<int> x, BitVector<int> y)
 ; bbl_g0o_32i_32i[202] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 b3 00 00 00 8b c0 48 8d 0d 30 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 b8 ff ff ff ff e9 88 00 00 00 33 c0 e9 81 00 00 00 41 23 d0 8b c2 eb 7a 8b c2 41 8b d0 23 c2 f7 d0 eb 6f 8b c2 41 8b d0 0b c2 eb 66 8b c2 41 8b d0 0b c2 f7 d0 eb 5b 8b c2 41 8b d0 33 c2 eb 52 8b c2 41 8b d0 33 c2 f7 d0 eb 47 8b c2 eb 43 41 8b c0 eb 3e 8b c2 f7 d0 eb 38 41 8b c0 f7 d0 eb 31 8b c2 41 8b d0 44 8b c2 41 f7 d0 41 0b c0 eb 21 8b c2 41 8b d0 c4 e2 78 f2 c2 eb 15 8b c2 41 8b d0 f7 d0 0b c2 eb 0a 8b c2 41 8b c8 c4 e2 70 f2 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -477,7 +477,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitVector<ulong> x, BitVector<ulong> y)
 ; bbl_g0o_64u_64u[237] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 d6 00 00 00 8b c0 48 8d 0d 50 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 48 b8 ff ff ff ff ff ff ff ff e9 a6 00 00 00 33 c0 e9 9f 00 00 00 49 23 d0 48 8b c2 e9 94 00 00 00 48 8b c2 49 8b d0 48 23 c2 48 f7 d0 e9 83 00 00 00 48 8b c2 49 8b d0 48 0b c2 eb 78 48 8b c2 49 8b d0 48 0b c2 48 f7 d0 eb 6a 48 8b c2 49 8b d0 48 33 c2 eb 5f 48 8b c2 49 8b d0 48 33 c2 48 f7 d0 eb 51 48 8b c2 eb 4c 49 8b c0 eb 47 48 8b c2 48 f7 d0 eb 3f 49 8b c0 48 f7 d0 eb 37 48 8b c2 49 8b d0 4c 8b c2 49 f7 d0 49 0b c0 eb 26 48 8b c2 49 8b d0 c4 e2 f8 f2 c2 eb 19 48 8b c2 49 8b d0 48 f7 d0 48 0b c2 eb 0b 48 8b c2 49 8b c8 c4 e2 f0 f2 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -560,7 +560,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<long> eval<long>(BinaryBitLogicKind:byte kind, BitVector<long> x, BitVector<long> y)
 ; bbl_g0o_64i_64i[237] = {57 56 55 53 48 83 ec 28 8b f1 40 0f b6 c6 83 f8 0f 0f 87 d6 00 00 00 8b c0 48 8d 0d 50 01 00 00 8b 0c 81 4c 8d 0d e0 ff ff ff 49 03 c9 ff e1 48 b8 ff ff ff ff ff ff ff ff e9 a6 00 00 00 33 c0 e9 9f 00 00 00 49 23 d0 48 8b c2 e9 94 00 00 00 48 8b c2 49 8b d0 48 23 c2 48 f7 d0 e9 83 00 00 00 48 8b c2 49 8b d0 48 0b c2 eb 78 48 8b c2 49 8b d0 48 0b c2 48 f7 d0 eb 6a 48 8b c2 49 8b d0 48 33 c2 eb 5f 48 8b c2 49 8b d0 48 33 c2 48 f7 d0 eb 51 48 8b c2 eb 4c 49 8b c0 eb 47 48 8b c2 48 f7 d0 eb 3f 49 8b c0 48 f7 d0 eb 37 48 8b c2 49 8b d0 4c 8b c2 49 f7 d0 49 0b c0 eb 26 48 8b c2 49 8b d0 c4 e2 f8 f2 c2 eb 19 48 8b c2 49 8b d0 48 f7 d0 48 0b c2 eb 0b 48 8b c2 49 8b c8 c4 e2 f0 f2 c0 48 83 c4 28 5b 5d 5e 5f c3}
-; Capture completion code = ZEDx6_RET
+; TermCode = ZEDx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
