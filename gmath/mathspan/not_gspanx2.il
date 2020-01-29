@@ -1,4 +1,4 @@
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> not<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
 // AggressiveInlining
 Span<byte> not<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
@@ -13,7 +13,7 @@ Span<byte> not<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> not<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> not<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
@@ -28,7 +28,7 @@ Span<sbyte> not<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> not<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> not<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
@@ -43,7 +43,7 @@ Span<ushort> not<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> not<short>(ReadOnlySpan<short> src, Span<short> dst)
 // AggressiveInlining
 Span<short> not<short>(ReadOnlySpan<short> src, Span<short> dst)
@@ -58,7 +58,7 @@ Span<short> not<short>(ReadOnlySpan<short> src, Span<short> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> not<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
 // AggressiveInlining
 Span<uint> not<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
@@ -73,7 +73,7 @@ Span<uint> not<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> not<int>(ReadOnlySpan<int> src, Span<int> dst)
 // AggressiveInlining
 Span<int> not<int>(ReadOnlySpan<int> src, Span<int> dst)
@@ -88,7 +88,7 @@ Span<int> not<int>(ReadOnlySpan<int> src, Span<int> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> not<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> not<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
@@ -103,7 +103,7 @@ Span<ulong> not<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664179, Name := System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::not<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> not<long>(ReadOnlySpan<long> src, Span<long> dst)
 // AggressiveInlining
 Span<long> not<long>(ReadOnlySpan<long> src, Span<long> dst)

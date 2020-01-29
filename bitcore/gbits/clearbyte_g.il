@@ -1,4 +1,4 @@
-// Id := 100663611, Name := T Z0.gbits::clearbyte<T>(T,System.Byte)
+// T Z0.gbits::clearbyte<T>(T,System.Byte)
 // byte clearbyte<byte>(byte src, byte index)
 // AggressiveInlining
 byte clearbyte<byte>(byte src, byte index)
@@ -57,7 +57,7 @@ byte clearbyte<byte>(byte src, byte index)
     IL_00C2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663611, Name := T Z0.gbits::clearbyte<T>(T,System.Byte)
+// T Z0.gbits::clearbyte<T>(T,System.Byte)
 // ushort clearbyte<ushort>(ushort src, byte index)
 // AggressiveInlining
 ushort clearbyte<ushort>(ushort src, byte index)
@@ -116,7 +116,7 @@ ushort clearbyte<ushort>(ushort src, byte index)
     IL_00C2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663611, Name := T Z0.gbits::clearbyte<T>(T,System.Byte)
+// T Z0.gbits::clearbyte<T>(T,System.Byte)
 // uint clearbyte<uint>(uint src, byte index)
 // AggressiveInlining
 uint clearbyte<uint>(uint src, byte index)
@@ -175,7 +175,7 @@ uint clearbyte<uint>(uint src, byte index)
     IL_00C2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663611, Name := T Z0.gbits::clearbyte<T>(T,System.Byte)
+// T Z0.gbits::clearbyte<T>(T,System.Byte)
 // ulong clearbyte<ulong>(ulong src, byte index)
 // AggressiveInlining
 ulong clearbyte<ulong>(ulong src, byte index)

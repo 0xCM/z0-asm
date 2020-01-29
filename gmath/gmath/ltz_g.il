@@ -1,4 +1,4 @@
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // byte ltz<byte>(byte a, byte b)
 // AggressiveInlining
 byte ltz<byte>(byte a, byte b)
@@ -19,7 +19,7 @@ byte ltz<byte>(byte a, byte b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // sbyte ltz<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte ltz<sbyte>(sbyte a, sbyte b)
@@ -40,7 +40,7 @@ sbyte ltz<sbyte>(sbyte a, sbyte b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // ushort ltz<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort ltz<ushort>(ushort a, ushort b)
@@ -61,7 +61,7 @@ ushort ltz<ushort>(ushort a, ushort b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // short ltz<short>(short a, short b)
 // AggressiveInlining
 short ltz<short>(short a, short b)
@@ -82,7 +82,7 @@ short ltz<short>(short a, short b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // uint ltz<uint>(uint a, uint b)
 // AggressiveInlining
 uint ltz<uint>(uint a, uint b)
@@ -103,7 +103,7 @@ uint ltz<uint>(uint a, uint b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // int ltz<int>(int a, int b)
 // AggressiveInlining
 int ltz<int>(int a, int b)
@@ -124,7 +124,7 @@ int ltz<int>(int a, int b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // ulong ltz<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong ltz<ulong>(ulong a, ulong b)
@@ -145,7 +145,7 @@ ulong ltz<ulong>(ulong a, ulong b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664094, Name := T Z0.gmath::ltz<T>(T,T)
+// T Z0.gmath::ltz<T>(T,T)
 // long ltz<long>(long a, long b)
 // AggressiveInlining
 long ltz<long>(long a, long b)

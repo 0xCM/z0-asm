@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vblendp<byte>(Vector256<byte> x, Vector256<byte> y, Vector256<byte> spec)
-; vblendp__g256x8u_256x8u_256x8u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x8u_v256x8u_v256x8u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -21,7 +21,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vblendp<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y, Vector256<sbyte> spec)
-; vblendp__g256x8i_256x8i_256x8i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x8i_v256x8i_v256x8i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -42,7 +42,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vblendp<ushort>(Vector256<ushort> x, Vector256<ushort> y, Vector256<ushort> spec)
-; vblendp__g256x16u_256x16u_256x16u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x16u_v256x16u_v256x16u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -63,7 +63,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vblendp<short>(Vector256<short> x, Vector256<short> y, Vector256<short> spec)
-; vblendp__g256x16i_256x16i_256x16i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x16i_v256x16i_v256x16i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vblendp<uint>(Vector256<uint> x, Vector256<uint> y, Vector256<uint> spec)
-; vblendp__g256x32u_256x32u_256x32u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x32u_v256x32u_v256x32u[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -105,7 +105,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vblendp<int>(Vector256<int> x, Vector256<int> y, Vector256<int> spec)
-; vblendp__g256x32i_256x32i_256x32i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x32i_v256x32i_v256x32i[69] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -126,7 +126,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vblendp<ulong>(Vector256<ulong> x, Vector256<ulong> y, Vector256<ulong> spec)
-; vblendp__g256x64u_256x64u_256x64u[70] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x64u_v256x64u_v256x64u[70] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -147,7 +147,7 @@
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vblendp<long>(Vector256<long> x, Vector256<long> y, Vector256<long> spec)
-; vblendp__g256x64i_256x64i_256x64i[70] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vblendp_gv256x64i_v256x64i_v256x64i[70] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 c1 7d 10 11 c4 e3 7d 4c c1 20 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd 10 12 c4 c1 7d 10 18 c4 e3 6d 4c cb 10 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

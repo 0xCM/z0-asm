@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f5c(bit a, bit b, bit c)
-; f5c_0e[25] = {0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
+; f5c_bit_bit_bit[25] = {0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}

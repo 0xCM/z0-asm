@@ -1,4 +1,4 @@
-// Id := 100663363, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.Bits::vbroadcast(System.Byte)
+// System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.Bits::vbroadcast(System.Byte)
 // Vector128<byte> vbroadcast(byte src)
 // AggressiveInlining
 Vector128<byte> vbroadcast(byte src)
@@ -9,7 +9,7 @@ Vector128<byte> vbroadcast(byte src)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663364, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.Bits::vbroadcast(System.UInt16)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.Bits::vbroadcast(System.UInt16)
 // Vector128<ushort> vbroadcast(ushort src)
 // AggressiveInlining
 Vector128<ushort> vbroadcast(ushort src)
@@ -20,7 +20,7 @@ Vector128<ushort> vbroadcast(ushort src)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663365, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.Bits::vbroadcast(System.UInt32)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.Bits::vbroadcast(System.UInt32)
 // Vector128<uint> vbroadcast(uint src)
 // AggressiveInlining
 Vector128<uint> vbroadcast(uint src)

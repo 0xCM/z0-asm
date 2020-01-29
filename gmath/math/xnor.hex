@@ -1,8 +1,8 @@
-xnor_8i   0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 c2 48 0f be c0 f7 d0 48 0f be c0 c3
-xnor_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 c2 0f b6 c0 f7 d0 0f b6 c0 c3
-xnor_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 c2 48 0f bf c0 f7 d0 48 0f bf c0 c3
-xnor_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 c2 0f b7 c0 f7 d0 0f b7 c0 c3
-xnor_32i  0f 1f 44 00 00 33 d1 8b c2 f7 d0 c3
-xnor_32u  0f 1f 44 00 00 33 d1 8b c2 f7 d0 c3
-xnor_64i  0f 1f 44 00 00 48 33 d1 48 8b c2 48 f7 d0 c3
-xnor_64u  0f 1f 44 00 00 48 33 d1 48 8b c2 48 f7 d0 c3
+xnor_8i_8i    0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 c2 48 0f be c0 f7 d0 48 0f be c0 c3
+xnor_8u_8u    0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 c2 0f b6 c0 f7 d0 0f b6 c0 c3
+xnor_16i_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 c2 48 0f bf c0 f7 d0 48 0f bf c0 c3
+xnor_16u_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 c2 0f b7 c0 f7 d0 0f b7 c0 c3
+xnor_32i_32i  0f 1f 44 00 00 33 d1 8b c2 f7 d0 c3
+xnor_32u_32u  0f 1f 44 00 00 33 d1 8b c2 f7 d0 c3
+xnor_64i_64i  0f 1f 44 00 00 48 33 d1 48 8b c2 48 f7 d0 c3
+xnor_64u_64u  0f 1f 44 00 00 48 33 d1 48 8b c2 48 f7 d0 c3

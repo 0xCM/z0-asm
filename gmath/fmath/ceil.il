@@ -1,4 +1,4 @@
-// Id := 100663832, Name := System.Single Z0.fmath::ceil(System.Single)
+// System.Single Z0.fmath::ceil(System.Single)
 // float ceil(float src)
 // AggressiveInlining
 float ceil(float src)
@@ -8,7 +8,7 @@ float ceil(float src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663833, Name := System.Double Z0.fmath::ceil(System.Double)
+// System.Double Z0.fmath::ceil(System.Double)
 // double ceil(double src)
 // AggressiveInlining
 double ceil(double src)

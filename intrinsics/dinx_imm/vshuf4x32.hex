@@ -1,12 +1,12 @@
-vshuf4x32_128x32i-imm5   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 05 c5 f9 11 01 48 8b c1 c3
-vshuf4x32_128x32i-imm9   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 09 c5 f9 11 01 48 8b c1 c3
-vshuf4x32_128x32i-imm13  c5 f8 77 c5 f9 10 02 c5 f9 70 c0 0d c5 f9 11 01 48 8b c1 c3
-vshuf4x32_128x32u-imm5   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 05 c5 f9 11 01 48 8b c1 c3
-vshuf4x32_128x32u-imm9   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 09 c5 f9 11 01 48 8b c1 c3
-vshuf4x32_128x32u-imm13  c5 f8 77 c5 f9 10 02 c5 f9 70 c0 0d c5 f9 11 01 48 8b c1 c3
-vshuf4x32_256x32i-imm5   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vshuf4x32_256x32i-imm9   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vshuf4x32_256x32i-imm13  c5 f8 77 c5 fd 10 02 c5 fd 70 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vshuf4x32_256x32u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vshuf4x32_256x32u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vshuf4x32_256x32u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 70 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v128x32i_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 05 c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v128x32i_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 09 c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v128x32i_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f9 70 c0 0d c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 05 c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f9 70 c0 09 c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f9 70 c0 0d c5 f9 11 01 48 8b c1 c3
+vshuf4x32_v256x32i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v256x32i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v256x32i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 70 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 70 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vshuf4x32_v256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 70 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3

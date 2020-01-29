@@ -1,4 +1,4 @@
-// Id := 100663458, Name := System.Void Z0.Bits::part9x3(System.UInt32,System.Byte&)
+// System.Void Z0.Bits::part9x3(System.UInt32,System.Byte&)
 // void part9x3(uint src, ref byte dst)
 // AggressiveInlining
 void part9x3(uint src, ref byte dst)
@@ -19,7 +19,7 @@ void part9x3(uint src, ref byte dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663459, Name := System.Void Z0.Bits::part9x3(System.UInt32,System.Span`1<System.Byte>)
+// System.Void Z0.Bits::part9x3(System.UInt32,System.Span`1<System.Byte>)
 // void part9x3(uint src, Span<byte> dst)
 // AggressiveInlining
 void part9x3(uint src, Span<byte> dst)

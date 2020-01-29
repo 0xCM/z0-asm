@@ -1,4 +1,4 @@
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // byte toggle<byte>(byte src, int pos)
 // AggressiveInlining
 byte toggle<byte>(byte src, int pos)
@@ -65,7 +65,7 @@ byte toggle<byte>(byte src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // sbyte toggle<sbyte>(sbyte src, int pos)
 // AggressiveInlining
 sbyte toggle<sbyte>(sbyte src, int pos)
@@ -132,7 +132,7 @@ sbyte toggle<sbyte>(sbyte src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // ushort toggle<ushort>(ushort src, int pos)
 // AggressiveInlining
 ushort toggle<ushort>(ushort src, int pos)
@@ -199,7 +199,7 @@ ushort toggle<ushort>(ushort src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // short toggle<short>(short src, int pos)
 // AggressiveInlining
 short toggle<short>(short src, int pos)
@@ -266,7 +266,7 @@ short toggle<short>(short src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // uint toggle<uint>(uint src, int pos)
 // AggressiveInlining
 uint toggle<uint>(uint src, int pos)
@@ -333,7 +333,7 @@ uint toggle<uint>(uint src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // int toggle<int>(int src, int pos)
 // AggressiveInlining
 int toggle<int>(int src, int pos)
@@ -400,7 +400,7 @@ int toggle<int>(int src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // ulong toggle<ulong>(ulong src, int pos)
 // AggressiveInlining
 ulong toggle<ulong>(ulong src, int pos)
@@ -467,7 +467,7 @@ ulong toggle<ulong>(ulong src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // long toggle<long>(long src, int pos)
 // AggressiveInlining
 long toggle<long>(long src, int pos)
@@ -534,7 +534,7 @@ long toggle<long>(long src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // float toggle<float>(float src, int pos)
 // AggressiveInlining
 float toggle<float>(float src, int pos)
@@ -601,7 +601,7 @@ float toggle<float>(float src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663687, Name := T Z0.gbits::toggle<T>(T,System.Int32)
+// T Z0.gbits::toggle<T>(T,System.Int32)
 // double toggle<double>(double src, int pos)
 // AggressiveInlining
 double toggle<double>(double src, int pos)

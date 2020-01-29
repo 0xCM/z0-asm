@@ -1,4 +1,4 @@
-// Id := 100663981, Name := System.UInt32 Z0.gmath::log2<T>()
+// System.UInt32 Z0.gmath::log2<T>()
 // uint log2<byte>()
 // AggressiveInlining
 uint log2<byte>()
@@ -43,7 +43,7 @@ uint log2<byte>()
     IL_008D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663981, Name := System.UInt32 Z0.gmath::log2<T>()
+// System.UInt32 Z0.gmath::log2<T>()
 // uint log2<ushort>()
 // AggressiveInlining
 uint log2<ushort>()
@@ -88,7 +88,7 @@ uint log2<ushort>()
     IL_008D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663981, Name := System.UInt32 Z0.gmath::log2<T>()
+// System.UInt32 Z0.gmath::log2<T>()
 // uint log2<uint>()
 // AggressiveInlining
 uint log2<uint>()
@@ -133,7 +133,7 @@ uint log2<uint>()
     IL_008D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663981, Name := System.UInt32 Z0.gmath::log2<T>()
+// System.UInt32 Z0.gmath::log2<T>()
 // uint log2<ulong>()
 // AggressiveInlining
 uint log2<ulong>()

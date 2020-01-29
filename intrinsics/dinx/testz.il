@@ -1,4 +1,4 @@
-// Id := 100664672, Name := Z0.bit Z0.dinx::testz(System.UInt64,System.UInt64)
+// Z0.bit Z0.dinx::testz(System.UInt64,System.UInt64)
 // bit testz(ulong a, ulong b)
 // AggressiveInlining
 bit testz(ulong a, ulong b)

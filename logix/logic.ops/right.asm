@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit right(bit a, bit b)
-; right_0e[12] = {0f 1f 44 00 00 89 4c 24 08 8b c2 c3}
+; right_bit_bit[12] = {0f 1f 44 00 00 89 4c 24 08 8b c2 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 08}

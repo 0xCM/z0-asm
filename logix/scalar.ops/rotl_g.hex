@@ -1,4 +1,4 @@
-rotl_g8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 08 d3 f8 41 0b c0 0f b6 c0 c3
-rotl_g16u  0f 1f 44 00 00 0f b7 c1 0f b6 d2 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 10 d3 f8 41 0b c0 0f b7 c0 c3
-rotl_g32u  0f 1f 44 00 00 8b c1 0f b6 ca d3 c0 c3
-rotl_g64u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 c0 c3
+rotl_g8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 08 d3 f8 41 0b c0 0f b6 c0 c3
+rotl_g16u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 d2 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 10 d3 f8 41 0b c0 0f b7 c0 c3
+rotl_g32u_8u  0f 1f 44 00 00 8b c1 0f b6 ca d3 c0 c3
+rotl_g64u_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 c0 c3

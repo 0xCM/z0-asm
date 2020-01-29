@@ -1,4 +1,4 @@
-// Id := 100663645, Name := System.Int32 Z0.gbits::lsbpos<T>(T)
+// System.Int32 Z0.gbits::lsbpos<T>(T)
 // int lsbpos<byte>(byte src)
 // AggressiveInlining
 int lsbpos<byte>(byte src)
@@ -8,7 +8,7 @@ int lsbpos<byte>(byte src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663645, Name := System.Int32 Z0.gbits::lsbpos<T>(T)
+// System.Int32 Z0.gbits::lsbpos<T>(T)
 // int lsbpos<ushort>(ushort src)
 // AggressiveInlining
 int lsbpos<ushort>(ushort src)
@@ -18,7 +18,7 @@ int lsbpos<ushort>(ushort src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663645, Name := System.Int32 Z0.gbits::lsbpos<T>(T)
+// System.Int32 Z0.gbits::lsbpos<T>(T)
 // int lsbpos<uint>(uint src)
 // AggressiveInlining
 int lsbpos<uint>(uint src)
@@ -28,7 +28,7 @@ int lsbpos<uint>(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663645, Name := System.Int32 Z0.gbits::lsbpos<T>(T)
+// System.Int32 Z0.gbits::lsbpos<T>(T)
 // int lsbpos<ulong>(ulong src)
 // AggressiveInlining
 int lsbpos<ulong>(ulong src)

@@ -1,4 +1,4 @@
-// Id := 100663834, Name := System.Single Z0.fmath::clamp(System.Single,System.Single)
+// System.Single Z0.fmath::clamp(System.Single,System.Single)
 // float clamp(float src, float max)
 // AggressiveInlining
 float clamp(float src, float max)
@@ -12,7 +12,7 @@ float clamp(float src, float max)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663835, Name := System.Double Z0.fmath::clamp(System.Double,System.Double)
+// System.Double Z0.fmath::clamp(System.Double,System.Double)
 // double clamp(double src, double max)
 // AggressiveInlining
 double clamp(double src, double max)

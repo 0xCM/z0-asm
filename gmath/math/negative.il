@@ -1,4 +1,4 @@
-// Id := 100663742, Name := Z0.bit Z0.math::negative(System.SByte)
+// Z0.bit Z0.math::negative(System.SByte)
 // bit negative(sbyte x)
 // AggressiveInlining
 bit negative(sbyte x)
@@ -10,7 +10,7 @@ bit negative(sbyte x)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663743, Name := Z0.bit Z0.math::negative(System.Int16)
+// Z0.bit Z0.math::negative(System.Int16)
 // bit negative(short x)
 // AggressiveInlining
 bit negative(short x)
@@ -22,7 +22,7 @@ bit negative(short x)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663744, Name := Z0.bit Z0.math::negative(System.Int32)
+// Z0.bit Z0.math::negative(System.Int32)
 // bit negative(int x)
 // AggressiveInlining
 bit negative(int x)
@@ -34,7 +34,7 @@ bit negative(int x)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663745, Name := Z0.bit Z0.math::negative(System.Int64)
+// Z0.bit Z0.math::negative(System.Int64)
 // bit negative(long x)
 // AggressiveInlining
 bit negative(long x)
@@ -47,7 +47,7 @@ bit negative(long x)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663746, Name := Z0.bit Z0.math::negative(System.Single)
+// Z0.bit Z0.math::negative(System.Single)
 // bit negative(float x)
 // AggressiveInlining
 bit negative(float x)
@@ -59,7 +59,7 @@ bit negative(float x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663747, Name := Z0.bit Z0.math::negative(System.Double)
+// Z0.bit Z0.math::negative(System.Double)
 // bit negative(double x)
 // AggressiveInlining
 bit negative(double x)

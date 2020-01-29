@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte blend(sbyte a, sbyte b, sbyte mask)
-; blend_8i[36] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 d0 48 0f be d2 49 0f be c8 23 d1 48 0f be d2 33 c2 48 0f be c0 c3}
+; blend_8i_8i_8i[36] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 d0 48 0f be d2 49 0f be c8 23 d1 48 0f be d2 33 c2 48 0f be c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -15,7 +15,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte blend(byte a, byte b, byte mask)
-; blend_8u[31] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 d0 0f b6 d2 41 0f b6 c8 23 d1 0f b6 d2 33 c2 0f b6 c0 c3}
+; blend_8u_8u_8u[31] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 d0 0f b6 d2 41 0f b6 c8 23 d1 0f b6 d2 33 c2 0f b6 c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -30,7 +30,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short blend(short a, short b, short mask)
-; blend_16i[36] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 d0 48 0f bf d2 49 0f bf c8 23 d1 48 0f bf d2 33 c2 48 0f bf c0 c3}
+; blend_16i_16i_16i[36] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 d0 48 0f bf d2 49 0f bf c8 23 d1 48 0f bf d2 33 c2 48 0f bf c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -45,7 +45,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort blend(ushort a, ushort b, ushort mask)
-; blend_16u[31] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 d0 0f b7 d2 41 0f b7 c8 23 d1 0f b7 d2 33 c2 0f b7 c0 c3}
+; blend_16u_16u_16u[31] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 d0 0f b7 d2 41 0f b7 c8 23 d1 0f b7 d2 33 c2 0f b7 c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -60,7 +60,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int blend(int a, int b, int mask)
-; blend_32i[15] = {0f 1f 44 00 00 33 d1 8b c2 41 23 c0 33 c1 c3}
+; blend_32i_32i_32i[15] = {0f 1f 44 00 00 33 d1 8b c2 41 23 c0 33 c1 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor edx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d1}
@@ -70,7 +70,7 @@
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint blend(uint a, uint b, uint mask)
-; blend_32u[15] = {0f 1f 44 00 00 33 d1 8b c2 41 23 c0 33 c1 c3}
+; blend_32u_32u_32u[15] = {0f 1f 44 00 00 33 d1 8b c2 41 23 c0 33 c1 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor edx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d1}
@@ -80,7 +80,7 @@
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long blend(long a, long b, long mask)
-; blend_64i[18] = {0f 1f 44 00 00 48 33 d1 48 8b c2 49 23 c0 48 33 c1 c3}
+; blend_64i_64i_64i[18] = {0f 1f 44 00 00 48 33 d1 48 8b c2 49 23 c0 48 33 c1 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rdx,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 d1}
@@ -90,7 +90,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong blend(ulong a, ulong b, ulong mask)
-; blend_64u[18] = {0f 1f 44 00 00 48 33 d1 48 8b c2 49 23 c0 48 33 c1 c3}
+; blend_64u_64u_64u[18] = {0f 1f 44 00 00 48 33 d1 48 8b c2 49 23 c0 48 33 c1 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rdx,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 d1}

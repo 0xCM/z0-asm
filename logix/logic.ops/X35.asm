@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f35(bit a, bit b, bit c)
-; X35[32] = {0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
+; X35_bit_bit_bit[32] = {0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}

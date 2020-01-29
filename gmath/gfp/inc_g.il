@@ -1,4 +1,4 @@
-// Id := 100663794, Name := T Z0.gfp::inc<T>(T)
+// T Z0.gfp::inc<T>(T)
 // float inc<float>(float src)
 // AggressiveInlining
 float inc<float>(float src)
@@ -33,7 +33,7 @@ float inc<float>(float src)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663794, Name := T Z0.gfp::inc<T>(T)
+// T Z0.gfp::inc<T>(T)
 // double inc<double>(double src)
 // AggressiveInlining
 double inc<double>(double src)

@@ -1,24 +1,24 @@
-vsll__g256x8u-imm5    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x8u-imm9    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x8u-imm13   50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x8i-imm5    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x8i-imm9    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x8i-imm13   50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsll__g256x16u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x16u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x16u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 71 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x16i-imm5   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x16i-imm9   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x16i-imm13  c5 f8 77 c5 fd 10 02 c5 fd 71 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 72 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32i-imm5   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32i-imm9   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x32i-imm13  c5 f8 77 c5 fd 10 02 c5 fd 72 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64i-imm5   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64i-imm9   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsll__g256x64i-imm13  c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x8u_8u-imm5    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x8u_8u-imm9    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x8u_8u-imm13   50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x8i_8u-imm5    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x8i_8u-imm9    50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x8i_8u-imm13   50 c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 4c 24 04 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsll_gv256x16u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x16u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x16u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 71 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x16i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x16i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 71 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x16i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 71 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 72 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 72 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x32i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 72 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 fd 73 f0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsll_gv256x64i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 fd 73 f0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3

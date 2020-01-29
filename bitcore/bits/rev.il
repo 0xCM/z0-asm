@@ -1,4 +1,4 @@
-// Id := 100663509, Name := System.Byte Z0.Bits::rev(System.Byte)
+// System.Byte Z0.Bits::rev(System.Byte)
 // byte rev(byte src)
 // AggressiveInlining
 byte rev(byte src)
@@ -18,7 +18,7 @@ byte rev(byte src)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663510, Name := System.UInt16 Z0.Bits::rev(System.UInt16)
+// System.UInt16 Z0.Bits::rev(System.UInt16)
 // ushort rev(ushort src)
 // AggressiveInlining
 ushort rev(ushort src)
@@ -33,7 +33,7 @@ ushort rev(ushort src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663511, Name := System.UInt32 Z0.Bits::rev(System.UInt32)
+// System.UInt32 Z0.Bits::rev(System.UInt32)
 // uint rev(uint x)
 // AggressiveInlining
 uint rev(uint x)
@@ -96,7 +96,7 @@ uint rev(uint x)
     IL_005D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663512, Name := System.UInt64 Z0.Bits::rev(System.UInt64)
+// System.UInt64 Z0.Bits::rev(System.UInt64)
 // ulong rev(ulong src)
 // AggressiveInlining
 ulong rev(ulong src)

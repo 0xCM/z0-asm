@@ -1,4 +1,4 @@
-// Id := 100663407, Name := Z0.bit Z0.math::ispow2(System.SByte)
+// Z0.bit Z0.math::ispow2(System.SByte)
 // bit ispow2(sbyte x)
 // AggressiveInlining
 bit ispow2(sbyte x)
@@ -14,7 +14,7 @@ bit ispow2(sbyte x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663408, Name := Z0.bit Z0.math::ispow2(System.Byte)
+// Z0.bit Z0.math::ispow2(System.Byte)
 // bit ispow2(byte x)
 // AggressiveInlining
 bit ispow2(byte x)
@@ -30,7 +30,7 @@ bit ispow2(byte x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663409, Name := Z0.bit Z0.math::ispow2(System.Int16)
+// Z0.bit Z0.math::ispow2(System.Int16)
 // bit ispow2(short x)
 // AggressiveInlining
 bit ispow2(short x)
@@ -46,7 +46,7 @@ bit ispow2(short x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663410, Name := Z0.bit Z0.math::ispow2(System.UInt16)
+// Z0.bit Z0.math::ispow2(System.UInt16)
 // bit ispow2(ushort x)
 // AggressiveInlining
 bit ispow2(ushort x)
@@ -62,7 +62,7 @@ bit ispow2(ushort x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663411, Name := Z0.bit Z0.math::ispow2(System.Int32)
+// Z0.bit Z0.math::ispow2(System.Int32)
 // bit ispow2(int x)
 // AggressiveInlining
 bit ispow2(int x)
@@ -78,7 +78,7 @@ bit ispow2(int x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663412, Name := Z0.bit Z0.math::ispow2(System.UInt32)
+// Z0.bit Z0.math::ispow2(System.UInt32)
 // bit ispow2(uint x)
 // AggressiveInlining
 bit ispow2(uint x)
@@ -94,7 +94,7 @@ bit ispow2(uint x)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663413, Name := Z0.bit Z0.math::ispow2(System.Int64)
+// Z0.bit Z0.math::ispow2(System.Int64)
 // bit ispow2(long x)
 // AggressiveInlining
 bit ispow2(long x)
@@ -112,7 +112,7 @@ bit ispow2(long x)
     IL_000F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663414, Name := Z0.bit Z0.math::ispow2(System.UInt64)
+// Z0.bit Z0.math::ispow2(System.UInt64)
 // bit ispow2(ulong x)
 // AggressiveInlining
 bit ispow2(ulong x)

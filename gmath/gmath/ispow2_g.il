@@ -1,4 +1,4 @@
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<byte>(byte src)
 // AggressiveInlining
 bit ispow2<byte>(byte src)
@@ -9,7 +9,7 @@ bit ispow2<byte>(byte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<sbyte>(sbyte src)
 // AggressiveInlining
 bit ispow2<sbyte>(sbyte src)
@@ -20,7 +20,7 @@ bit ispow2<sbyte>(sbyte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<ushort>(ushort src)
 // AggressiveInlining
 bit ispow2<ushort>(ushort src)
@@ -31,7 +31,7 @@ bit ispow2<ushort>(ushort src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<short>(short src)
 // AggressiveInlining
 bit ispow2<short>(short src)
@@ -42,7 +42,7 @@ bit ispow2<short>(short src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<uint>(uint src)
 // AggressiveInlining
 bit ispow2<uint>(uint src)
@@ -53,7 +53,7 @@ bit ispow2<uint>(uint src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<int>(int src)
 // AggressiveInlining
 bit ispow2<int>(int src)
@@ -64,7 +64,7 @@ bit ispow2<int>(int src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<ulong>(ulong src)
 // AggressiveInlining
 bit ispow2<ulong>(ulong src)
@@ -75,7 +75,7 @@ bit ispow2<ulong>(ulong src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663980, Name := Z0.bit Z0.gmath::ispow2<T>(T)
+// Z0.bit Z0.gmath::ispow2<T>(T)
 // bit ispow2<long>(long src)
 // AggressiveInlining
 bit ispow2<long>(long src)

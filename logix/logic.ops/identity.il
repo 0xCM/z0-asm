@@ -1,4 +1,4 @@
-// Id := 100664308, Name := Z0.bit Z0.Logix.LogicOps::identity(Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::identity(Z0.bit)
 // bit identity(bit a)
 // AggressiveInlining
 bit identity(bit a)

@@ -1,4 +1,4 @@
-// Id := 100663640, Name := T Z0.gbits::gather<T>(T,T)
+// T Z0.gbits::gather<T>(T,T)
 // byte gather<byte>(byte src, byte mask)
 // AggressiveInlining
 byte gather<byte>(byte src, byte mask)
@@ -63,7 +63,7 @@ byte gather<byte>(byte src, byte mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663640, Name := T Z0.gbits::gather<T>(T,T)
+// T Z0.gbits::gather<T>(T,T)
 // ushort gather<ushort>(ushort src, ushort mask)
 // AggressiveInlining
 ushort gather<ushort>(ushort src, ushort mask)
@@ -128,7 +128,7 @@ ushort gather<ushort>(ushort src, ushort mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663640, Name := T Z0.gbits::gather<T>(T,T)
+// T Z0.gbits::gather<T>(T,T)
 // uint gather<uint>(uint src, uint mask)
 // AggressiveInlining
 uint gather<uint>(uint src, uint mask)
@@ -193,7 +193,7 @@ uint gather<uint>(uint src, uint mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663640, Name := T Z0.gbits::gather<T>(T,T)
+// T Z0.gbits::gather<T>(T,T)
 // ulong gather<ulong>(ulong src, ulong mask)
 // AggressiveInlining
 ulong gather<ulong>(ulong src, ulong mask)

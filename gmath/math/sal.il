@@ -1,4 +1,4 @@
-// Id := 100663610, Name := System.SByte Z0.math::sal(System.SByte,System.Byte)
+// System.SByte Z0.math::sal(System.SByte,System.Byte)
 // sbyte sal(sbyte src, byte offset)
 // AggressiveInlining
 sbyte sal(sbyte src, byte offset)
@@ -12,7 +12,7 @@ sbyte sal(sbyte src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663611, Name := System.Byte Z0.math::sal(System.Byte,System.Byte)
+// System.Byte Z0.math::sal(System.Byte,System.Byte)
 // byte sal(byte src, byte offset)
 // AggressiveInlining
 byte sal(byte src, byte offset)
@@ -26,7 +26,7 @@ byte sal(byte src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663612, Name := System.Int16 Z0.math::sal(System.Int16,System.Byte)
+// System.Int16 Z0.math::sal(System.Int16,System.Byte)
 // short sal(short src, byte offset)
 // AggressiveInlining
 short sal(short src, byte offset)
@@ -40,7 +40,7 @@ short sal(short src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663613, Name := System.UInt16 Z0.math::sal(System.UInt16,System.Byte)
+// System.UInt16 Z0.math::sal(System.UInt16,System.Byte)
 // ushort sal(ushort src, byte offset)
 // AggressiveInlining
 ushort sal(ushort src, byte offset)
@@ -54,7 +54,7 @@ ushort sal(ushort src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663614, Name := System.Int32 Z0.math::sal(System.Int32,System.Byte)
+// System.Int32 Z0.math::sal(System.Int32,System.Byte)
 // int sal(int src, byte offset)
 // AggressiveInlining
 int sal(int src, byte offset)
@@ -67,7 +67,7 @@ int sal(int src, byte offset)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663615, Name := System.UInt32 Z0.math::sal(System.UInt32,System.Byte)
+// System.UInt32 Z0.math::sal(System.UInt32,System.Byte)
 // uint sal(uint src, byte offset)
 // AggressiveInlining
 uint sal(uint src, byte offset)
@@ -80,7 +80,7 @@ uint sal(uint src, byte offset)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663616, Name := System.Int64 Z0.math::sal(System.Int64,System.Byte)
+// System.Int64 Z0.math::sal(System.Int64,System.Byte)
 // long sal(long src, byte offset)
 // AggressiveInlining
 long sal(long src, byte offset)
@@ -93,7 +93,7 @@ long sal(long src, byte offset)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663617, Name := System.UInt64 Z0.math::sal(System.UInt64,System.Byte)
+// System.UInt64 Z0.math::sal(System.UInt64,System.Byte)
 // ulong sal(ulong src, byte offset)
 // AggressiveInlining
 ulong sal(ulong src, byte offset)

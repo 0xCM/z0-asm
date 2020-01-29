@@ -1,4 +1,4 @@
-// Id := 100663906, Name := System.Single Z0.fmath::pow(System.Single,System.Single)
+// System.Single Z0.fmath::pow(System.Single,System.Single)
 // float pow(float src, float exp)
 // AggressiveInlining
 float pow(float src, float exp)
@@ -9,7 +9,7 @@ float pow(float src, float exp)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663907, Name := System.Double Z0.fmath::pow(System.Double,System.Double)
+// System.Double Z0.fmath::pow(System.Double,System.Double)
 // double pow(double src, double exp)
 // AggressiveInlining
 double pow(double src, double exp)

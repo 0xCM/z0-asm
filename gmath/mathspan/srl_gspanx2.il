@@ -1,4 +1,4 @@
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<byte> srl<byte>(ReadOnlySpan<byte> src, byte count, Span<byte> dst)
 // AggressiveInlining
 Span<byte> srl<byte>(ReadOnlySpan<byte> src, byte count, Span<byte> dst)
@@ -36,7 +36,7 @@ Span<byte> srl<byte>(ReadOnlySpan<byte> src, byte count, Span<byte> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<sbyte> srl<sbyte>(ReadOnlySpan<sbyte> src, byte count, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> srl<sbyte>(ReadOnlySpan<sbyte> src, byte count, Span<sbyte> dst)
@@ -74,7 +74,7 @@ Span<sbyte> srl<sbyte>(ReadOnlySpan<sbyte> src, byte count, Span<sbyte> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<ushort> srl<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> srl<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
@@ -112,7 +112,7 @@ Span<ushort> srl<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<short> srl<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
 // AggressiveInlining
 Span<short> srl<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
@@ -150,7 +150,7 @@ Span<short> srl<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<uint> srl<uint>(ReadOnlySpan<uint> src, byte count, Span<uint> dst)
 // AggressiveInlining
 Span<uint> srl<uint>(ReadOnlySpan<uint> src, byte count, Span<uint> dst)
@@ -188,7 +188,7 @@ Span<uint> srl<uint>(ReadOnlySpan<uint> src, byte count, Span<uint> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<int> srl<int>(ReadOnlySpan<int> src, byte count, Span<int> dst)
 // AggressiveInlining
 Span<int> srl<int>(ReadOnlySpan<int> src, byte count, Span<int> dst)
@@ -226,7 +226,7 @@ Span<int> srl<int>(ReadOnlySpan<int> src, byte count, Span<int> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<ulong> srl<ulong>(ReadOnlySpan<ulong> src, byte count, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> srl<ulong>(ReadOnlySpan<ulong> src, byte count, Span<ulong> dst)
@@ -264,7 +264,7 @@ Span<ulong> srl<ulong>(ReadOnlySpan<ulong> src, byte count, Span<ulong> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664180, Name := System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::srl<T>(System.ReadOnlySpan`1<T>,System.Byte,System.Span`1<T>)
 // Span<long> srl<long>(ReadOnlySpan<long> src, byte count, Span<long> dst)
 // AggressiveInlining
 Span<long> srl<long>(ReadOnlySpan<long> src, byte count, Span<long> dst)

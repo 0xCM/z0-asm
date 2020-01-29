@@ -1,4 +1,4 @@
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // byte bitslice<byte>(byte a, byte start, byte length)
 // AggressiveInlining
 byte bitslice<byte>(byte a, byte start, byte length)
@@ -10,7 +10,7 @@ byte bitslice<byte>(byte a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // sbyte bitslice<sbyte>(sbyte a, byte start, byte length)
 // AggressiveInlining
 sbyte bitslice<sbyte>(sbyte a, byte start, byte length)
@@ -22,7 +22,7 @@ sbyte bitslice<sbyte>(sbyte a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // ushort bitslice<ushort>(ushort a, byte start, byte length)
 // AggressiveInlining
 ushort bitslice<ushort>(ushort a, byte start, byte length)
@@ -34,7 +34,7 @@ ushort bitslice<ushort>(ushort a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // short bitslice<short>(short a, byte start, byte length)
 // AggressiveInlining
 short bitslice<short>(short a, byte start, byte length)
@@ -46,7 +46,7 @@ short bitslice<short>(short a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // uint bitslice<uint>(uint a, byte start, byte length)
 // AggressiveInlining
 uint bitslice<uint>(uint a, byte start, byte length)
@@ -58,7 +58,7 @@ uint bitslice<uint>(uint a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // int bitslice<int>(int a, byte start, byte length)
 // AggressiveInlining
 int bitslice<int>(int a, byte start, byte length)
@@ -70,7 +70,7 @@ int bitslice<int>(int a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // ulong bitslice<ulong>(ulong a, byte start, byte length)
 // AggressiveInlining
 ulong bitslice<ulong>(ulong a, byte start, byte length)
@@ -82,7 +82,7 @@ ulong bitslice<ulong>(ulong a, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663624, Name := T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitslice<T>(T,System.Byte,System.Byte)
 // long bitslice<long>(long a, byte start, byte length)
 // AggressiveInlining
 long bitslice<long>(long a, byte start, byte length)

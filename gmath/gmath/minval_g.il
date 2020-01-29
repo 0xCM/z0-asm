@@ -1,4 +1,4 @@
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // byte minval<byte>(byte t)
 // AggressiveInlining
 byte minval<byte>(byte t)
@@ -7,7 +7,7 @@ byte minval<byte>(byte t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // sbyte minval<sbyte>(sbyte t)
 // AggressiveInlining
 sbyte minval<sbyte>(sbyte t)
@@ -16,7 +16,7 @@ sbyte minval<sbyte>(sbyte t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // ushort minval<ushort>(ushort t)
 // AggressiveInlining
 ushort minval<ushort>(ushort t)
@@ -25,7 +25,7 @@ ushort minval<ushort>(ushort t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // short minval<short>(short t)
 // AggressiveInlining
 short minval<short>(short t)
@@ -34,7 +34,7 @@ short minval<short>(short t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // uint minval<uint>(uint t)
 // AggressiveInlining
 uint minval<uint>(uint t)
@@ -43,7 +43,7 @@ uint minval<uint>(uint t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // int minval<int>(int t)
 // AggressiveInlining
 int minval<int>(int t)
@@ -52,7 +52,7 @@ int minval<int>(int t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // ulong minval<ulong>(ulong t)
 // AggressiveInlining
 ulong minval<ulong>(ulong t)
@@ -61,7 +61,7 @@ ulong minval<ulong>(ulong t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // long minval<long>(long t)
 // AggressiveInlining
 long minval<long>(long t)
@@ -70,7 +70,7 @@ long minval<long>(long t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // float minval<float>(float t)
 // AggressiveInlining
 float minval<float>(float t)
@@ -79,7 +79,7 @@ float minval<float>(float t)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663948, Name := T Z0.gmath::minval<T>(T)
+// T Z0.gmath::minval<T>(T)
 // double minval<double>(double t)
 // AggressiveInlining
 double minval<double>(double t)

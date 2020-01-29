@@ -1,4 +1,4 @@
-// Id := 100663385, Name := System.SByte Z0.Bits::disable(System.SByte,System.Int32)
+// System.SByte Z0.Bits::disable(System.SByte,System.Int32)
 // sbyte disable(sbyte src, int pos)
 // AggressiveInlining
 sbyte disable(sbyte src, int pos)
@@ -17,7 +17,7 @@ sbyte disable(sbyte src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663386, Name := System.Byte Z0.Bits::disable(System.Byte,System.Int32)
+// System.Byte Z0.Bits::disable(System.Byte,System.Int32)
 // byte disable(byte src, int pos)
 // AggressiveInlining
 byte disable(byte src, int pos)
@@ -36,7 +36,7 @@ byte disable(byte src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663387, Name := System.Int16 Z0.Bits::disable(System.Int16,System.Int32)
+// System.Int16 Z0.Bits::disable(System.Int16,System.Int32)
 // short disable(short src, int pos)
 // AggressiveInlining
 short disable(short src, int pos)
@@ -55,7 +55,7 @@ short disable(short src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663388, Name := System.UInt16 Z0.Bits::disable(System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::disable(System.UInt16,System.Int32)
 // ushort disable(ushort src, int pos)
 // AggressiveInlining
 ushort disable(ushort src, int pos)
@@ -74,7 +74,7 @@ ushort disable(ushort src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663389, Name := System.Int32 Z0.Bits::disable(System.Int32,System.Int32)
+// System.Int32 Z0.Bits::disable(System.Int32,System.Int32)
 // int disable(int src, int pos)
 // AggressiveInlining
 int disable(int src, int pos)
@@ -90,7 +90,7 @@ int disable(int src, int pos)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663390, Name := System.UInt32 Z0.Bits::disable(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::disable(System.UInt32,System.Int32)
 // uint disable(uint src, int pos)
 // AggressiveInlining
 uint disable(uint src, int pos)
@@ -106,7 +106,7 @@ uint disable(uint src, int pos)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663391, Name := System.Int64 Z0.Bits::disable(System.Int64,System.Int32)
+// System.Int64 Z0.Bits::disable(System.Int64,System.Int32)
 // long disable(long src, int pos)
 // AggressiveInlining
 long disable(long src, int pos)
@@ -123,7 +123,7 @@ long disable(long src, int pos)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663392, Name := System.UInt64 Z0.Bits::disable(System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::disable(System.UInt64,System.Int32)
 // ulong disable(ulong src, int pos)
 // AggressiveInlining
 ulong disable(ulong src, int pos)
@@ -140,7 +140,7 @@ ulong disable(ulong src, int pos)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663393, Name := System.Single Z0.Bits::disable(System.Single,System.Int32)
+// System.Single Z0.Bits::disable(System.Single,System.Int32)
 // float disable(float src, int pos)
 // AggressiveInlining
 float disable(float src, int pos)
@@ -165,7 +165,7 @@ float disable(float src, int pos)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663394, Name := System.Double Z0.Bits::disable(System.Double,System.Int32)
+// System.Double Z0.Bits::disable(System.Double,System.Int32)
 // double disable(double src, int pos)
 // AggressiveInlining
 double disable(double src, int pos)

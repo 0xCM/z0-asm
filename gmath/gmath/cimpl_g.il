@@ -1,4 +1,4 @@
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // byte cimpl<byte>(byte a, byte b)
 // AggressiveInlining
 byte cimpl<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte cimpl<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // sbyte cimpl<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte cimpl<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte cimpl<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // ushort cimpl<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort cimpl<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort cimpl<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // short cimpl<short>(short a, short b)
 // AggressiveInlining
 short cimpl<short>(short a, short b)
@@ -42,7 +42,7 @@ short cimpl<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // uint cimpl<uint>(uint a, uint b)
 // AggressiveInlining
 uint cimpl<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint cimpl<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // int cimpl<int>(int a, int b)
 // AggressiveInlining
 int cimpl<int>(int a, int b)
@@ -64,7 +64,7 @@ int cimpl<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // ulong cimpl<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong cimpl<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong cimpl<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := T Z0.gmath::cimpl<T>(T,T)
+// T Z0.gmath::cimpl<T>(T,T)
 // long cimpl<long>(long a, long b)
 // AggressiveInlining
 long cimpl<long>(long a, long b)

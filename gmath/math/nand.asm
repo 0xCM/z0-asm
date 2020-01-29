@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte nand(sbyte a, sbyte b)
-; nand_8i[26] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 c2 48 0f be c0 f7 d0 48 0f be c0 c3}
+; nand_8i_8i[26] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 c2 48 0f be c0 f7 d0 48 0f be c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -12,7 +12,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte nand(byte a, byte b)
-; nand_8u[22] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 23 c2 0f b6 c0 f7 d0 0f b6 c0 c3}
+; nand_8u_8u[22] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 23 c2 0f b6 c0 f7 d0 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -24,7 +24,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short nand(short a, short b)
-; nand_16i[26] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 c2 48 0f bf c0 f7 d0 48 0f bf c0 c3}
+; nand_16i_16i[26] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 c2 48 0f bf c0 f7 d0 48 0f bf c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -36,7 +36,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort nand(ushort a, ushort b)
-; nand_16u[22] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 c2 0f b7 c0 f7 d0 0f b7 c0 c3}
+; nand_16u_16u[22] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 c2 0f b7 c0 f7 d0 0f b7 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -48,7 +48,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int nand(int a, int b)
-; nand_32i[12] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 c3}
+; nand_32i_32i[12] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}
@@ -57,7 +57,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint nand(uint a, uint b)
-; nand_32u[12] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 c3}
+; nand_32u_32u[12] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}
@@ -66,7 +66,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long nand(long a, long b)
-; nand_64i[15] = {0f 1f 44 00 00 48 23 d1 48 8b c2 48 f7 d0 c3}
+; nand_64i_64i[15] = {0f 1f 44 00 00 48 23 d1 48 8b c2 48 f7 d0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and rdx,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d1}
@@ -75,7 +75,7 @@
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong nand(ulong a, ulong b)
-; nand_64u[15] = {0f 1f 44 00 00 48 23 d1 48 8b c2 48 f7 d0 c3}
+; nand_64u_64u[15] = {0f 1f 44 00 00 48 23 d1 48 8b c2 48 f7 d0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and rdx,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d1}

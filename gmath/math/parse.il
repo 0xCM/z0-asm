@@ -1,4 +1,4 @@
-// Id := 100663776, Name := Z0.bit Z0.math::parse(System.String,System.SByte&)
+// Z0.bit Z0.math::parse(System.String,System.SByte&)
 // bit parse(string src, out sbyte dst)
 // AggressiveInlining
 bit parse(string src, out sbyte dst)
@@ -10,7 +10,7 @@ bit parse(string src, out sbyte dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663777, Name := Z0.bit Z0.math::parse(System.String,System.Byte&)
+// Z0.bit Z0.math::parse(System.String,System.Byte&)
 // bit parse(string src, out byte dst)
 // AggressiveInlining
 bit parse(string src, out byte dst)
@@ -22,7 +22,7 @@ bit parse(string src, out byte dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663778, Name := Z0.bit Z0.math::parse(System.String,System.Int16&)
+// Z0.bit Z0.math::parse(System.String,System.Int16&)
 // bit parse(string src, out short dst)
 // AggressiveInlining
 bit parse(string src, out short dst)
@@ -34,7 +34,7 @@ bit parse(string src, out short dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663779, Name := Z0.bit Z0.math::parse(System.String,System.UInt16&)
+// Z0.bit Z0.math::parse(System.String,System.UInt16&)
 // bit parse(string src, out ushort dst)
 // AggressiveInlining
 bit parse(string src, out ushort dst)
@@ -46,7 +46,7 @@ bit parse(string src, out ushort dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663780, Name := Z0.bit Z0.math::parse(System.String,System.Int32&)
+// Z0.bit Z0.math::parse(System.String,System.Int32&)
 // bit parse(string src, out int dst)
 // AggressiveInlining
 bit parse(string src, out int dst)
@@ -58,7 +58,7 @@ bit parse(string src, out int dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663781, Name := Z0.bit Z0.math::parse(System.String,System.UInt32&)
+// Z0.bit Z0.math::parse(System.String,System.UInt32&)
 // bit parse(string src, out uint dst)
 // AggressiveInlining
 bit parse(string src, out uint dst)
@@ -70,7 +70,7 @@ bit parse(string src, out uint dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663782, Name := Z0.bit Z0.math::parse(System.String,System.Int64&)
+// Z0.bit Z0.math::parse(System.String,System.Int64&)
 // bit parse(string src, out long dst)
 // AggressiveInlining
 bit parse(string src, out long dst)
@@ -82,7 +82,7 @@ bit parse(string src, out long dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663783, Name := Z0.bit Z0.math::parse(System.String,System.UInt64&)
+// Z0.bit Z0.math::parse(System.String,System.UInt64&)
 // bit parse(string src, out ulong dst)
 // AggressiveInlining
 bit parse(string src, out ulong dst)
@@ -94,7 +94,7 @@ bit parse(string src, out ulong dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663784, Name := Z0.bit Z0.math::parse(System.String,System.Single&)
+// Z0.bit Z0.math::parse(System.String,System.Single&)
 // bit parse(string src, out float dst)
 // AggressiveInlining
 bit parse(string src, out float dst)
@@ -106,7 +106,7 @@ bit parse(string src, out float dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663785, Name := Z0.bit Z0.math::parse(System.String,System.Double&)
+// Z0.bit Z0.math::parse(System.String,System.Double&)
 // bit parse(string src, out double dst)
 // AggressiveInlining
 bit parse(string src, out double dst)

@@ -1,4 +1,4 @@
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // byte pow<byte>(byte b, uint exp)
 // AggressiveInlining
 byte pow<byte>(byte b, uint exp)
@@ -65,7 +65,7 @@ byte pow<byte>(byte b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // sbyte pow<sbyte>(sbyte b, uint exp)
 // AggressiveInlining
 sbyte pow<sbyte>(sbyte b, uint exp)
@@ -132,7 +132,7 @@ sbyte pow<sbyte>(sbyte b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // ushort pow<ushort>(ushort b, uint exp)
 // AggressiveInlining
 ushort pow<ushort>(ushort b, uint exp)
@@ -199,7 +199,7 @@ ushort pow<ushort>(ushort b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // short pow<short>(short b, uint exp)
 // AggressiveInlining
 short pow<short>(short b, uint exp)
@@ -266,7 +266,7 @@ short pow<short>(short b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // uint pow<uint>(uint b, uint exp)
 // AggressiveInlining
 uint pow<uint>(uint b, uint exp)
@@ -333,7 +333,7 @@ uint pow<uint>(uint b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // int pow<int>(int b, uint exp)
 // AggressiveInlining
 int pow<int>(int b, uint exp)
@@ -400,7 +400,7 @@ int pow<int>(int b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // ulong pow<ulong>(ulong b, uint exp)
 // AggressiveInlining
 ulong pow<ulong>(ulong b, uint exp)
@@ -467,7 +467,7 @@ ulong pow<ulong>(ulong b, uint exp)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663995, Name := T Z0.gmath::pow<T>(T,System.UInt32)
+// T Z0.gmath::pow<T>(T,System.UInt32)
 // long pow<long>(long b, uint exp)
 // AggressiveInlining
 long pow<long>(long b, uint exp)

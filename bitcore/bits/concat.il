@@ -1,4 +1,4 @@
-// Id := 100663369, Name := System.UInt16 Z0.Bits::concat(System.Byte,System.Byte)
+// System.UInt16 Z0.Bits::concat(System.Byte,System.Byte)
 // ushort concat(byte x0, byte x1)
 // AggressiveInlining
 ushort concat(byte x0, byte x1)
@@ -12,7 +12,7 @@ ushort concat(byte x0, byte x1)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663370, Name := System.UInt32 Z0.Bits::concat(System.UInt16,System.UInt16)
+// System.UInt32 Z0.Bits::concat(System.UInt16,System.UInt16)
 // uint concat(ushort x0, ushort x1)
 // AggressiveInlining
 uint concat(ushort x0, ushort x1)
@@ -25,7 +25,7 @@ uint concat(ushort x0, ushort x1)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663371, Name := System.UInt64 Z0.Bits::concat(System.UInt32&,System.UInt32&)
+// System.UInt64 Z0.Bits::concat(System.UInt32&,System.UInt32&)
 // ulong concat(in uint x0, in uint x1)
 // AggressiveInlining
 ulong concat(in uint x0, in uint x1)
@@ -42,7 +42,7 @@ ulong concat(in uint x0, in uint x1)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663372, Name := System.UInt32 Z0.Bits::concat(System.Byte,System.Byte,System.Byte,System.Byte)
+// System.UInt32 Z0.Bits::concat(System.Byte,System.Byte,System.Byte,System.Byte)
 // uint concat(byte x0, byte x1, byte x2, byte x3)
 // AggressiveInlining
 uint concat(byte x0, byte x1, byte x2, byte x3)
@@ -63,7 +63,7 @@ uint concat(byte x0, byte x1, byte x2, byte x3)
     IL_000F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663373, Name := System.UInt64 Z0.Bits::concat(System.UInt16,System.UInt16,System.UInt16,System.UInt16)
+// System.UInt64 Z0.Bits::concat(System.UInt16,System.UInt16,System.UInt16,System.UInt16)
 // ulong concat(ushort x0, ushort x1, ushort x2, ushort x3)
 // AggressiveInlining
 ulong concat(ushort x0, ushort x1, ushort x2, ushort x3)
@@ -83,7 +83,7 @@ ulong concat(ushort x0, ushort x1, ushort x2, ushort x3)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663374, Name := System.UInt64 Z0.Bits::concat(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
+// System.UInt64 Z0.Bits::concat(System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte,System.Byte)
 // ulong concat(byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7)
 // AggressiveInlining
 ulong concat(byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7)

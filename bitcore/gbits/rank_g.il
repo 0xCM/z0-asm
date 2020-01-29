@@ -1,4 +1,4 @@
-// Id := 100663659, Name := System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
+// System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
 // uint rank<byte>(byte src, int pos)
 // AggressiveInlining
 uint rank<byte>(byte src, int pos)
@@ -55,7 +55,7 @@ uint rank<byte>(byte src, int pos)
     IL_00B6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663659, Name := System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
+// System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
 // uint rank<ushort>(ushort src, int pos)
 // AggressiveInlining
 uint rank<ushort>(ushort src, int pos)
@@ -112,7 +112,7 @@ uint rank<ushort>(ushort src, int pos)
     IL_00B6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663659, Name := System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
+// System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
 // uint rank<uint>(uint src, int pos)
 // AggressiveInlining
 uint rank<uint>(uint src, int pos)
@@ -169,7 +169,7 @@ uint rank<uint>(uint src, int pos)
     IL_00B6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663659, Name := System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
+// System.UInt32 Z0.gbits::rank<T>(T,System.Int32)
 // uint rank<ulong>(ulong src, int pos)
 // AggressiveInlining
 uint rank<ulong>(ulong src, int pos)

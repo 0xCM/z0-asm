@@ -1,4 +1,4 @@
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // byte neq<byte>(byte a, byte b)
 // AggressiveInlining
 byte neq<byte>(byte a, byte b)
@@ -10,7 +10,7 @@ byte neq<byte>(byte a, byte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // sbyte neq<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte neq<sbyte>(sbyte a, sbyte b)
@@ -22,7 +22,7 @@ sbyte neq<sbyte>(sbyte a, sbyte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // ushort neq<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort neq<ushort>(ushort a, ushort b)
@@ -34,7 +34,7 @@ ushort neq<ushort>(ushort a, ushort b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // short neq<short>(short a, short b)
 // AggressiveInlining
 short neq<short>(short a, short b)
@@ -46,7 +46,7 @@ short neq<short>(short a, short b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // uint neq<uint>(uint a, uint b)
 // AggressiveInlining
 uint neq<uint>(uint a, uint b)
@@ -58,7 +58,7 @@ uint neq<uint>(uint a, uint b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // int neq<int>(int a, int b)
 // AggressiveInlining
 int neq<int>(int a, int b)
@@ -70,7 +70,7 @@ int neq<int>(int a, int b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // ulong neq<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong neq<ulong>(ulong a, ulong b)
@@ -82,7 +82,7 @@ ulong neq<ulong>(ulong a, ulong b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664556, Name := T Z0.Logix.ScalarOps::neq<T>(T,T)
+// T Z0.Logix.ScalarOps::neq<T>(T,T)
 // long neq<long>(long a, long b)
 // AggressiveInlining
 long neq<long>(long a, long b)

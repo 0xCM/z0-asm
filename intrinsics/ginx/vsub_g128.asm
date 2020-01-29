@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vsub<byte>(Vector128<byte> x, byte a)
-; vsub__g128x8u_8u[45] = {50 c5 f8 77 90 41 0f b6 c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x8u_8u[45] = {50 c5 f8 77 90 41 0f b6 c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -17,7 +17,7 @@
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vsub<sbyte>(Vector128<sbyte> x, sbyte a)
-; vsub__g128x8i_8i[45] = {50 c5 f8 77 90 49 0f be c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x8i_8i[45] = {50 c5 f8 77 90 49 0f be c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -34,7 +34,7 @@
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vsub<ushort>(Vector128<ushort> x, ushort a)
-; vsub__g128x16u_16u[46] = {50 c5 f8 77 90 41 0f b7 c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x16u_16u[46] = {50 c5 f8 77 90 41 0f b7 c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -51,7 +51,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vsub<short>(Vector128<short> x, short a)
-; vsub__g128x16i_16i[46] = {50 c5 f8 77 90 49 0f bf c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x16i_16i[46] = {50 c5 f8 77 90 49 0f bf c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -68,7 +68,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vsub<uint>(Vector128<uint> x, uint a)
-; vsub__g128x32u_32u[42] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x32u_32u[42] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -84,7 +84,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vsub<int>(Vector128<int> x, int a)
-; vsub__g128x32i_32i[42] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x32i_32i[42] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -100,7 +100,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vsub<ulong>(Vector128<ulong> x, ulong a)
-; vsub__g128x64u_64u[39] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x64u_64u[39] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -116,7 +116,7 @@
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vsub<long>(Vector128<long> x, long a)
-; vsub__g128x64i_64i[39] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x64i_64i[39] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -132,7 +132,7 @@
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vsub<float>(Vector128<float> x, float a)
-; vsub__g128x32f_32f[38] = {50 c5 f8 77 90 c5 fa 11 54 24 04 c4 e2 79 18 44 24 04 c5 f9 10 0a c5 f0 5c c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_gv128x32f_32f[38] = {50 c5 f8 77 90 c5 fa 11 54 24 04 c4 e2 79 18 44 24 04 c5 f9 10 0a c5 f0 5c c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -147,7 +147,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vsub<double>(Vector128<double> x, double a)
-; vsub__g128x64f_64f[25] = {c5 f8 77 66 90 c5 fb 12 c2 c5 f9 10 0a c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
+; vsub_gv128x64f_64f[25] = {c5 f8 77 66 90 c5 fb 12 c2 c5 f9 10 0a c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -159,7 +159,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vsub<byte>(byte a, Vector128<byte> x)
-; vsub__g8u_128x8u[45] = {50 c5 f8 77 90 0f b6 c2 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 c1 79 10 08 c5 f9 f8 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g8u_v128x8u[45] = {50 c5 f8 77 90 0f b6 c2 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 c1 79 10 08 c5 f9 f8 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -176,7 +176,7 @@
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vsub<sbyte>(sbyte a, Vector128<sbyte> x)
-; vsub__g8i_128x8i[46] = {50 c5 f8 77 90 48 0f be c2 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 c1 79 10 08 c5 f9 f8 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g8i_v128x8i[46] = {50 c5 f8 77 90 48 0f be c2 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 c1 79 10 08 c5 f9 f8 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -193,7 +193,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vsub<ushort>(ushort a, Vector128<ushort> x)
-; vsub__g16u_128x16u[46] = {50 c5 f8 77 90 0f b7 c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f9 f9 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g16u_v128x16u[46] = {50 c5 f8 77 90 0f b7 c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f9 f9 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -210,7 +210,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vsub<short>(short a, Vector128<short> x)
-; vsub__g16i_128x16i[47] = {50 c5 f8 77 90 48 0f bf c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f9 f9 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g16i_v128x16i[47] = {50 c5 f8 77 90 48 0f bf c2 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 c1 79 10 08 c5 f9 f9 c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -227,7 +227,7 @@
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vsub<uint>(uint a, Vector128<uint> x)
-; vsub__g32u_128x32u[42] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 c1 79 10 08 c5 f9 fa c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g32u_v128x32u[42] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 c1 79 10 08 c5 f9 fa c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -243,7 +243,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vsub<int>(int a, Vector128<int> x)
-; vsub__g32i_128x32i[42] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 c1 79 10 08 c5 f9 fa c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g32i_v128x32i[42] = {50 c5 f8 77 90 89 54 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 c1 79 10 08 c5 f9 fa c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -259,7 +259,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vsub<ulong>(ulong a, Vector128<ulong> x)
-; vsub__g64u_128x64u[40] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 79 59 04 24 c4 c1 79 10 08 c5 f9 fb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g64u_v128x64u[40] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 79 59 04 24 c4 c1 79 10 08 c5 f9 fb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -275,7 +275,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vsub<long>(long a, Vector128<long> x)
-; vsub__g64i_128x64i[40] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 79 59 04 24 c4 c1 79 10 08 c5 f9 fb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g64i_v128x64i[40] = {50 c5 f8 77 90 48 89 14 24 48 8d 04 24 c4 e2 79 59 04 24 c4 c1 79 10 08 c5 f9 fb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -291,7 +291,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vsub<float>(float a, Vector128<float> x)
-; vsub__g32f_128x32f[39] = {50 c5 f8 77 90 c5 fa 11 4c 24 04 c4 e2 79 18 44 24 04 c4 c1 79 10 08 c5 f8 5c c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
+; vsub_g32f_v128x32f[39] = {50 c5 f8 77 90 c5 fa 11 4c 24 04 c4 e2 79 18 44 24 04 c4 c1 79 10 08 c5 f8 5c c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -306,7 +306,7 @@
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vsub<double>(double a, Vector128<double> x)
-; vsub__g64f_128x64f[26] = {c5 f8 77 66 90 c5 fb 12 c1 c4 c1 79 10 08 c5 f9 5c c1 c5 f9 11 01 48 8b c1 c3}
+; vsub_g64f_v128x64f[26] = {c5 f8 77 66 90 c5 fb 12 c1 c4 c1 79 10 08 c5 f9 5c c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

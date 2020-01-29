@@ -1,4 +1,4 @@
-// Id := 100663841, Name := Z0.bit Z0.fmath::divides(System.Single,System.Single)
+// Z0.bit Z0.fmath::divides(System.Single,System.Single)
 // bit divides(float a, float b)
 // AggressiveInlining
 bit divides(float a, float b)
@@ -12,7 +12,7 @@ bit divides(float a, float b)
     IL_000F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663842, Name := Z0.bit Z0.fmath::divides(System.Double,System.Double)
+// Z0.bit Z0.fmath::divides(System.Double,System.Double)
 // bit divides(double a, double b)
 // AggressiveInlining
 bit divides(double a, double b)

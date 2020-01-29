@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, in byte src)
-; vload_gn512_8u[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_8u(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -28,7 +28,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, in sbyte src)
-; vload_gn512_8i[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_8i(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -56,7 +56,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, in ushort src)
-; vload_gn512_16u[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_16u(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -84,7 +84,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, in short src)
-; vload_gn512_16i[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_16i(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -112,7 +112,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, in uint src)
-; vload_gn512_32u[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32u(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -140,7 +140,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, in int src)
-; vload_gn512_32i[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32i(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -168,7 +168,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, in ulong src)
-; vload_gn512_64u[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64u(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -196,7 +196,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, in long src)
-; vload_gn512_64i[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64i(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -224,7 +224,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, in float src)
-; vload_gn512_32f[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32f(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -252,7 +252,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, in double src)
-; vload_gn512_64f[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64f(in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -280,7 +280,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, in byte src, int offset)
-; vload_gn512_8u_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_8u(in)_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -310,7 +310,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, in sbyte src, int offset)
-; vload_gn512_8i_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_8i(in)_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -340,7 +340,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, in ushort src, int offset)
-; vload_gn512_16u_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_16u(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -370,7 +370,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, in short src, int offset)
-; vload_gn512_16i_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_16i(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -400,7 +400,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, in uint src, int offset)
-; vload_gn512_32u_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32u(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -430,7 +430,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, in int src, int offset)
-; vload_gn512_32i_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32i(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -460,7 +460,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, in ulong src, int offset)
-; vload_gn512_64u_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64u(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -490,7 +490,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, in long src, int offset)
-; vload_gn512_64i_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64i(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -520,7 +520,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, in float src, int offset)
-; vload_gn512_32f_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_32f(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -550,7 +550,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, in double src, int offset)
-; vload_gn512_64f_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gn512_64f(in)_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -580,7 +580,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<byte> vload<byte>(in byte src, out Vector512<byte> dst)
-; vload__g8u_512x8u[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g8u(in)_v512x8u(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -602,7 +602,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<sbyte> vload<sbyte>(in sbyte src, out Vector512<sbyte> dst)
-; vload__g8i_512x8i[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g8i(in)_v512x8i(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -624,7 +624,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ushort> vload<ushort>(in ushort src, out Vector512<ushort> dst)
-; vload__g16u_512x16u[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g16u(in)_v512x16u(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -646,7 +646,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<short> vload<short>(in short src, out Vector512<short> dst)
-; vload__g16i_512x16i[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g16i(in)_v512x16i(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -668,7 +668,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<uint> vload<uint>(in uint src, out Vector512<uint> dst)
-; vload__g32u_512x32u[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g32u(in)_v512x32u(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -690,7 +690,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<int> vload<int>(in int src, out Vector512<int> dst)
-; vload__g32i_512x32i[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g32i(in)_v512x32i(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -712,7 +712,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ulong> vload<ulong>(in ulong src, out Vector512<ulong> dst)
-; vload__g64u_512x64u[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g64u(in)_v512x64u(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -734,7 +734,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<long> vload<long>(in long src, out Vector512<long> dst)
-; vload__g64i_512x64i[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g64i(in)_v512x64i(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -756,7 +756,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<float> vload<float>(in float src, out Vector512<float> dst)
-; vload__g32f_512x32f[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g32f(in)_v512x32f(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -778,7 +778,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<double> vload<double>(in double src, out Vector512<double> dst)
-; vload__g64f_512x64f[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g64f(in)_v512x64f(out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1760,7 +1760,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(in Block512<byte> src)
-; vload_g512x8u[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x8u(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1783,7 +1783,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(in Block512<sbyte> src)
-; vload_g512x8i[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x8i(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1806,7 +1806,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(in Block512<ushort> src)
-; vload_g512x16u[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x16u(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1829,7 +1829,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(in Block512<short> src)
-; vload_g512x16i[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x16i(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1852,7 +1852,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(in Block512<uint> src)
-; vload_g512x32u[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x32u(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1875,7 +1875,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(in Block512<int> src)
-; vload_g512x32i[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x32i(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1898,7 +1898,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(in Block512<ulong> src)
-; vload_g512x64u[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x64u(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1921,7 +1921,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(in Block512<long> src)
-; vload_g512x64i[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x64i(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1944,7 +1944,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(in Block512<float> src)
-; vload_g512x32f[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x32f(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1967,7 +1967,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(in Block512<double> src)
-; vload_g512x64f[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_gb512x64f(in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1990,7 +1990,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(in Block512<byte> src, int block)
-; vload_g512x8u_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x8u(in)_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2022,7 +2022,7 @@
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(in Block512<sbyte> src, int block)
-; vload_g512x8i_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x8i(in)_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2054,7 +2054,7 @@
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(in Block512<ushort> src, int block)
-; vload_g512x16u_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x16u(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2086,7 +2086,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(in Block512<short> src, int block)
-; vload_g512x16i_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x16i(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2118,7 +2118,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(in Block512<uint> src, int block)
-; vload_g512x32u_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x32u(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2150,7 +2150,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(in Block512<int> src, int block)
-; vload_g512x32i_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x32i(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2182,7 +2182,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(in Block512<ulong> src, int block)
-; vload_g512x64u_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x64u(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2214,7 +2214,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(in Block512<long> src, int block)
-; vload_g512x64i_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x64i(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2246,7 +2246,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(in Block512<float> src, int block)
-; vload_g512x32f_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x32f(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2278,7 +2278,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(in Block512<double> src, int block)
-; vload_g512x64f_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gb512x64f(in)_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2590,7 +2590,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<byte> vload<byte>(byte* pSrc, out Vector512<byte> dst)
-; vload__gByte*_512x8u[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gByte*_v512x8u(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2618,7 +2618,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<sbyte> vload<sbyte>(sbyte* pSrc, out Vector512<sbyte> dst)
-; vload__gSByte*_512x8i[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gSByte*_v512x8i(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2646,7 +2646,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ushort> vload<ushort>(ushort* pSrc, out Vector512<ushort> dst)
-; vload__gUInt16*_512x16u[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gUInt16*_v512x16u(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2674,7 +2674,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<short> vload<short>(short* pSrc, out Vector512<short> dst)
-; vload__gInt16*_512x16i[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gInt16*_v512x16i(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2702,7 +2702,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<uint> vload<uint>(uint* pSrc, out Vector512<uint> dst)
-; vload__gUInt32*_512x32u[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gUInt32*_v512x32u(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2730,7 +2730,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<int> vload<int>(int* pSrc, out Vector512<int> dst)
-; vload__gInt32*_512x32i[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gInt32*_v512x32i(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2758,7 +2758,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ulong> vload<ulong>(ulong* pSrc, out Vector512<ulong> dst)
-; vload__gUInt64*_512x64u[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gUInt64*_v512x64u(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2786,7 +2786,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<long> vload<long>(long* pSrc, out Vector512<long> dst)
-; vload__gInt64*_512x64i[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gInt64*_v512x64i(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2814,7 +2814,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<float> vload<float>(float* pSrc, out Vector512<float> dst)
-; vload__gSingle*_512x32f[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gSingle*_v512x32f(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2842,7 +2842,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<double> vload<double>(double* pSrc, out Vector512<double> dst)
-; vload__gDouble*_512x64f[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_gDouble*_v512x64f(out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

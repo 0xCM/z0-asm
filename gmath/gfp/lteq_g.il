@@ -1,4 +1,4 @@
-// Id := 100663810, Name := Z0.bit Z0.gfp::lteq<T>(T,T)
+// Z0.bit Z0.gfp::lteq<T>(T,T)
 // bit lteq<float>(float lhs, float rhs)
 // AggressiveInlining
 bit lteq<float>(float lhs, float rhs)
@@ -35,7 +35,7 @@ bit lteq<float>(float lhs, float rhs)
     IL_0070: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663810, Name := Z0.bit Z0.gfp::lteq<T>(T,T)
+// Z0.bit Z0.gfp::lteq<T>(T,T)
 // bit lteq<double>(double lhs, double rhs)
 // AggressiveInlining
 bit lteq<double>(double lhs, double rhs)

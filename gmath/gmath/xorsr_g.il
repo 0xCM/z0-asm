@@ -1,4 +1,4 @@
-// Id := 100664076, Name := T Z0.gmath::xorsr<T>(T,System.Byte)
+// T Z0.gmath::xorsr<T>(T,System.Byte)
 // byte xorsr<byte>(byte a, byte offset)
 // AggressiveInlining
 byte xorsr<byte>(byte a, byte offset)
@@ -9,7 +9,7 @@ byte xorsr<byte>(byte a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664076, Name := T Z0.gmath::xorsr<T>(T,System.Byte)
+// T Z0.gmath::xorsr<T>(T,System.Byte)
 // ushort xorsr<ushort>(ushort a, byte offset)
 // AggressiveInlining
 ushort xorsr<ushort>(ushort a, byte offset)
@@ -20,7 +20,7 @@ ushort xorsr<ushort>(ushort a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664076, Name := T Z0.gmath::xorsr<T>(T,System.Byte)
+// T Z0.gmath::xorsr<T>(T,System.Byte)
 // uint xorsr<uint>(uint a, byte offset)
 // AggressiveInlining
 uint xorsr<uint>(uint a, byte offset)
@@ -31,7 +31,7 @@ uint xorsr<uint>(uint a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664076, Name := T Z0.gmath::xorsr<T>(T,System.Byte)
+// T Z0.gmath::xorsr<T>(T,System.Byte)
 // ulong xorsr<ulong>(ulong a, byte offset)
 // AggressiveInlining
 ulong xorsr<ulong>(ulong a, byte offset)

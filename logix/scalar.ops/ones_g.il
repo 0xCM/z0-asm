@@ -1,4 +1,4 @@
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // byte ones<byte>()
 // AggressiveInlining
 byte ones<byte>()
@@ -10,7 +10,7 @@ byte ones<byte>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // sbyte ones<sbyte>()
 // AggressiveInlining
 sbyte ones<sbyte>()
@@ -22,7 +22,7 @@ sbyte ones<sbyte>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // ushort ones<ushort>()
 // AggressiveInlining
 ushort ones<ushort>()
@@ -34,7 +34,7 @@ ushort ones<ushort>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // short ones<short>()
 // AggressiveInlining
 short ones<short>()
@@ -46,7 +46,7 @@ short ones<short>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // uint ones<uint>()
 // AggressiveInlining
 uint ones<uint>()
@@ -58,7 +58,7 @@ uint ones<uint>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // int ones<int>()
 // AggressiveInlining
 int ones<int>()
@@ -70,7 +70,7 @@ int ones<int>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // ulong ones<ulong>()
 // AggressiveInlining
 ulong ones<ulong>()
@@ -82,7 +82,7 @@ ulong ones<ulong>()
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664527, Name := T Z0.Logix.ScalarOps::ones<T>()
+// T Z0.Logix.ScalarOps::ones<T>()
 // long ones<long>()
 // AggressiveInlining
 long ones<long>()

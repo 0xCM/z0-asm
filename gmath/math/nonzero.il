@@ -1,4 +1,4 @@
-// Id := 100663748, Name := Z0.bit Z0.math::nonzero(System.SByte)
+// Z0.bit Z0.math::nonzero(System.SByte)
 // bit nonzero(sbyte src)
 // AggressiveInlining
 bit nonzero(sbyte src)
@@ -10,7 +10,7 @@ bit nonzero(sbyte src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663749, Name := Z0.bit Z0.math::nonzero(System.Byte)
+// Z0.bit Z0.math::nonzero(System.Byte)
 // bit nonzero(byte src)
 // AggressiveInlining
 bit nonzero(byte src)
@@ -22,7 +22,7 @@ bit nonzero(byte src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663750, Name := Z0.bit Z0.math::nonzero(System.Int16)
+// Z0.bit Z0.math::nonzero(System.Int16)
 // bit nonzero(short src)
 // AggressiveInlining
 bit nonzero(short src)
@@ -34,7 +34,7 @@ bit nonzero(short src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663751, Name := Z0.bit Z0.math::nonzero(System.UInt16)
+// Z0.bit Z0.math::nonzero(System.UInt16)
 // bit nonzero(ushort src)
 // AggressiveInlining
 bit nonzero(ushort src)
@@ -46,7 +46,7 @@ bit nonzero(ushort src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663752, Name := Z0.bit Z0.math::nonzero(System.Int32)
+// Z0.bit Z0.math::nonzero(System.Int32)
 // bit nonzero(int src)
 // AggressiveInlining
 bit nonzero(int src)
@@ -58,7 +58,7 @@ bit nonzero(int src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663753, Name := Z0.bit Z0.math::nonzero(System.UInt32)
+// Z0.bit Z0.math::nonzero(System.UInt32)
 // bit nonzero(uint src)
 // AggressiveInlining
 bit nonzero(uint src)
@@ -70,7 +70,7 @@ bit nonzero(uint src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663754, Name := Z0.bit Z0.math::nonzero(System.Int64)
+// Z0.bit Z0.math::nonzero(System.Int64)
 // bit nonzero(long src)
 // AggressiveInlining
 bit nonzero(long src)
@@ -83,7 +83,7 @@ bit nonzero(long src)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663755, Name := Z0.bit Z0.math::nonzero(System.UInt64)
+// Z0.bit Z0.math::nonzero(System.UInt64)
 // bit nonzero(ulong src)
 // AggressiveInlining
 bit nonzero(ulong src)
@@ -96,7 +96,7 @@ bit nonzero(ulong src)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663756, Name := Z0.bit Z0.math::nonzero(System.Single)
+// Z0.bit Z0.math::nonzero(System.Single)
 // bit nonzero(float src)
 // AggressiveInlining
 bit nonzero(float src)
@@ -110,7 +110,7 @@ bit nonzero(float src)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663757, Name := Z0.bit Z0.math::nonzero(System.Double)
+// Z0.bit Z0.math::nonzero(System.Double)
 // bit nonzero(double src)
 // AggressiveInlining
 bit nonzero(double src)

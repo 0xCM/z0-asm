@@ -1,4 +1,4 @@
-// Id := 100663663, Name := T Z0.gbits::rev<T>(T)
+// T Z0.gbits::rev<T>(T)
 // byte rev<byte>(byte src)
 // AggressiveInlining
 byte rev<byte>(byte src)
@@ -55,7 +55,7 @@ byte rev<byte>(byte src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663663, Name := T Z0.gbits::rev<T>(T)
+// T Z0.gbits::rev<T>(T)
 // ushort rev<ushort>(ushort src)
 // AggressiveInlining
 ushort rev<ushort>(ushort src)
@@ -112,7 +112,7 @@ ushort rev<ushort>(ushort src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663663, Name := T Z0.gbits::rev<T>(T)
+// T Z0.gbits::rev<T>(T)
 // uint rev<uint>(uint src)
 // AggressiveInlining
 uint rev<uint>(uint src)
@@ -169,7 +169,7 @@ uint rev<uint>(uint src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663663, Name := T Z0.gbits::rev<T>(T)
+// T Z0.gbits::rev<T>(T)
 // ulong rev<ulong>(ulong src)
 // AggressiveInlining
 ulong rev<ulong>(ulong src)

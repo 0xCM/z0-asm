@@ -1,4 +1,4 @@
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // byte negate<byte>(byte a)
 // AggressiveInlining
 byte negate<byte>(byte a)
@@ -8,7 +8,7 @@ byte negate<byte>(byte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // sbyte negate<sbyte>(sbyte a)
 // AggressiveInlining
 sbyte negate<sbyte>(sbyte a)
@@ -18,7 +18,7 @@ sbyte negate<sbyte>(sbyte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // ushort negate<ushort>(ushort a)
 // AggressiveInlining
 ushort negate<ushort>(ushort a)
@@ -28,7 +28,7 @@ ushort negate<ushort>(ushort a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // short negate<short>(short a)
 // AggressiveInlining
 short negate<short>(short a)
@@ -38,7 +38,7 @@ short negate<short>(short a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // uint negate<uint>(uint a)
 // AggressiveInlining
 uint negate<uint>(uint a)
@@ -48,7 +48,7 @@ uint negate<uint>(uint a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // int negate<int>(int a)
 // AggressiveInlining
 int negate<int>(int a)
@@ -58,7 +58,7 @@ int negate<int>(int a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // ulong negate<ulong>(ulong a)
 // AggressiveInlining
 ulong negate<ulong>(ulong a)
@@ -68,7 +68,7 @@ ulong negate<ulong>(ulong a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664570, Name := T Z0.Logix.ScalarOps::negate<T>(T)
+// T Z0.Logix.ScalarOps::negate<T>(T)
 // long negate<long>(long a)
 // AggressiveInlining
 long negate<long>(long a)

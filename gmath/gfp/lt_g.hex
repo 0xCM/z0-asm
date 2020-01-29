@@ -1,2 +1,2 @@
-lt_g32f  c5 f8 77 66 90 c5 f8 2e c8 0f 97 c0 0f b6 c0 c3
-lt_g64f  c5 f8 77 66 90 c5 f9 2e c8 0f 97 c0 0f b6 c0 c3
+lt_g32f_32f  c5 f8 77 66 90 c5 f8 2e c8 0f 97 c0 0f b6 c0 c3
+lt_g64f_64f  c5 f8 77 66 90 c5 f9 2e c8 0f 97 c0 0f b6 c0 c3

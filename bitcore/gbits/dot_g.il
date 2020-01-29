@@ -1,4 +1,4 @@
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<byte>(byte x, byte y)
 // AggressiveInlining
 bit dot<byte>(byte x, byte y)
@@ -11,7 +11,7 @@ bit dot<byte>(byte x, byte y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<sbyte>(sbyte x, sbyte y)
 // AggressiveInlining
 bit dot<sbyte>(sbyte x, sbyte y)
@@ -24,7 +24,7 @@ bit dot<sbyte>(sbyte x, sbyte y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<ushort>(ushort x, ushort y)
 // AggressiveInlining
 bit dot<ushort>(ushort x, ushort y)
@@ -37,7 +37,7 @@ bit dot<ushort>(ushort x, ushort y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<short>(short x, short y)
 // AggressiveInlining
 bit dot<short>(short x, short y)
@@ -50,7 +50,7 @@ bit dot<short>(short x, short y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<uint>(uint x, uint y)
 // AggressiveInlining
 bit dot<uint>(uint x, uint y)
@@ -63,7 +63,7 @@ bit dot<uint>(uint x, uint y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<int>(int x, int y)
 // AggressiveInlining
 bit dot<int>(int x, int y)
@@ -76,7 +76,7 @@ bit dot<int>(int x, int y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<ulong>(ulong x, ulong y)
 // AggressiveInlining
 bit dot<ulong>(ulong x, ulong y)
@@ -89,7 +89,7 @@ bit dot<ulong>(ulong x, ulong y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663635, Name := Z0.bit Z0.gbits::dot<T>(T,T)
+// Z0.bit Z0.gbits::dot<T>(T,T)
 // bit dot<long>(long x, long y)
 // AggressiveInlining
 bit dot<long>(long x, long y)

@@ -1,4 +1,4 @@
-// Id := 100663936, Name := T Z0.gmath::abs<T>(T)
+// T Z0.gmath::abs<T>(T)
 // sbyte abs<sbyte>(sbyte src)
 // AggressiveInlining
 sbyte abs<sbyte>(sbyte src)
@@ -56,7 +56,7 @@ sbyte abs<sbyte>(sbyte src)
     IL_00BF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663936, Name := T Z0.gmath::abs<T>(T)
+// T Z0.gmath::abs<T>(T)
 // short abs<short>(short src)
 // AggressiveInlining
 short abs<short>(short src)
@@ -114,7 +114,7 @@ short abs<short>(short src)
     IL_00BF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663936, Name := T Z0.gmath::abs<T>(T)
+// T Z0.gmath::abs<T>(T)
 // int abs<int>(int src)
 // AggressiveInlining
 int abs<int>(int src)
@@ -172,7 +172,7 @@ int abs<int>(int src)
     IL_00BF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663936, Name := T Z0.gmath::abs<T>(T)
+// T Z0.gmath::abs<T>(T)
 // long abs<long>(long src)
 // AggressiveInlining
 long abs<long>(long src)

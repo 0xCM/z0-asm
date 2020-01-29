@@ -1,4 +1,4 @@
-// Id := 100663579, Name := System.Void Z0.Bits::unpack64x1(System.UInt64,System.Span`1<System.Byte>)
+// System.Void Z0.Bits::unpack64x1(System.UInt64,System.Span`1<System.Byte>)
 // void unpack64x1(ulong src, Span<byte> dst)
 // AggressiveInlining
 void unpack64x1(ulong src, Span<byte> dst)
@@ -10,7 +10,7 @@ void unpack64x1(ulong src, Span<byte> dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663584, Name := System.Void Z0.Bits::unpack64x1(System.UInt64,System.UInt64&)
+// System.Void Z0.Bits::unpack64x1(System.UInt64,System.UInt64&)
 // void unpack64x1(ulong src, ref ulong dst)
 // AggressiveInlining
 void unpack64x1(ulong src, ref ulong dst)

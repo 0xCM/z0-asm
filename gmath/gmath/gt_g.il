@@ -1,4 +1,4 @@
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<byte>(byte a, byte b)
 // AggressiveInlining
 bit gt<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ bit gt<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 bit gt<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ bit gt<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<ushort>(ushort a, ushort b)
 // AggressiveInlining
 bit gt<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ bit gt<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<short>(short a, short b)
 // AggressiveInlining
 bit gt<short>(short a, short b)
@@ -42,7 +42,7 @@ bit gt<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<uint>(uint a, uint b)
 // AggressiveInlining
 bit gt<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ bit gt<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<int>(int a, int b)
 // AggressiveInlining
 bit gt<int>(int a, int b)
@@ -64,7 +64,7 @@ bit gt<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<ulong>(ulong a, ulong b)
 // AggressiveInlining
 bit gt<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ bit gt<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664086, Name := Z0.bit Z0.gmath::gt<T>(T,T)
+// Z0.bit Z0.gmath::gt<T>(T,T)
 // bit gt<long>(long a, long b)
 // AggressiveInlining
 bit gt<long>(long a, long b)

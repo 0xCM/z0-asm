@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vavg(Vector128<byte> lhs, Vector128<byte> rhs)
-; vavg_128x8u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e0 00 c5 f9 11 01 48 8b c1 c3}
+; vavg_v128x8u_v128x8u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vavg(Vector128<ushort> lhs, Vector128<ushort> rhs)
-; vavg_128x16u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e3 00 c5 f9 11 01 48 8b c1 c3}
+; vavg_v128x16u_v128x16u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e3 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vavg(Vector256<byte> lhs, Vector256<byte> rhs)
-; vavg_256x8u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vavg_v256x8u_v256x8u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -34,7 +34,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vavg(Vector256<ushort> lhs, Vector256<ushort> rhs)
-; vavg_256x16u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vavg_v256x16u_v256x16u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

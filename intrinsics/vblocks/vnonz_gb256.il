@@ -1,4 +1,4 @@
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<byte>(in Block256<byte> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<byte>(in Block256<byte> a, Span<bit> dst)
@@ -38,7 +38,7 @@ Span<bit> vnonz<byte>(in Block256<byte> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<sbyte>(in Block256<sbyte> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<sbyte>(in Block256<sbyte> a, Span<bit> dst)
@@ -78,7 +78,7 @@ Span<bit> vnonz<sbyte>(in Block256<sbyte> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<ushort>(in Block256<ushort> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<ushort>(in Block256<ushort> a, Span<bit> dst)
@@ -118,7 +118,7 @@ Span<bit> vnonz<ushort>(in Block256<ushort> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<short>(in Block256<short> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<short>(in Block256<short> a, Span<bit> dst)
@@ -158,7 +158,7 @@ Span<bit> vnonz<short>(in Block256<short> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<uint>(in Block256<uint> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<uint>(in Block256<uint> a, Span<bit> dst)
@@ -198,7 +198,7 @@ Span<bit> vnonz<uint>(in Block256<uint> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<int>(in Block256<int> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<int>(in Block256<int> a, Span<bit> dst)
@@ -238,7 +238,7 @@ Span<bit> vnonz<int>(in Block256<int> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<ulong>(in Block256<ulong> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<ulong>(in Block256<ulong> a, Span<bit> dst)
@@ -278,7 +278,7 @@ Span<bit> vnonz<ulong>(in Block256<ulong> a, Span<bit> dst)
     IL_004F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666838, Name := System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.vblocks::vnonz<T>(Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vnonz<long>(in Block256<long> a, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vnonz<long>(in Block256<long> a, Span<bit> dst)

@@ -1,4 +1,4 @@
-// Id := 100664326, Name := Z0.bit Z0.Logix.LogicOps::cnonimpl(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::cnonimpl(Z0.bit,Z0.bit)
 // bit cnonimpl(bit a, bit b)
 // AggressiveInlining
 bit cnonimpl(bit a, bit b)

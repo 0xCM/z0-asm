@@ -1,4 +1,4 @@
-// Id := 100664307, Name := Z0.bit Z0.Logix.LogicOps::not(Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::not(Z0.bit)
 // bit not(bit a)
 // AggressiveInlining
 bit not(bit a)

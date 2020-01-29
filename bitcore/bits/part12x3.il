@@ -1,4 +1,4 @@
-// Id := 100663460, Name := System.Void Z0.Bits::part12x3(System.UInt32,System.Byte&)
+// System.Void Z0.Bits::part12x3(System.UInt32,System.Byte&)
 // void part12x3(uint src, ref byte dst)
 // AggressiveInlining
 void part12x3(uint src, ref byte dst)

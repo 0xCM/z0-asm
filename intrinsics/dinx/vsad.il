@@ -1,4 +1,4 @@
-// Id := 100663587, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsad(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsad(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<ushort> vsad(Vector128<byte> lhs, Vector128<byte> rhs)
 // AggressiveInlining
 Vector128<ushort> vsad(Vector128<byte> lhs, Vector128<byte> rhs)
@@ -9,7 +9,7 @@ Vector128<ushort> vsad(Vector128<byte> lhs, Vector128<byte> rhs)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663588, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsad(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsad(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector256<ushort> vsad(Vector256<byte> lhs, Vector256<byte> rhs)
 // AggressiveInlining
 Vector256<ushort> vsad(Vector256<byte> lhs, Vector256<byte> rhs)

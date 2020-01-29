@@ -1,4 +1,4 @@
-// Id := 100663797, Name := T Z0.gfp::mul<T>(T,T)
+// T Z0.gfp::mul<T>(T,T)
 // float mul<float>(float lhs, float rhs)
 // AggressiveInlining
 float mul<float>(float lhs, float rhs)
@@ -37,7 +37,7 @@ float mul<float>(float lhs, float rhs)
     IL_007A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663797, Name := T Z0.gfp::mul<T>(T,T)
+// T Z0.gfp::mul<T>(T,T)
 // double mul<double>(double lhs, double rhs)
 // AggressiveInlining
 double mul<double>(double lhs, double rhs)

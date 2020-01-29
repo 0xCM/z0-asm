@@ -1,4 +1,4 @@
-// Id := 100663843, Name := System.Single Z0.fmath::floor(System.Single)
+// System.Single Z0.fmath::floor(System.Single)
 // float floor(float src)
 // AggressiveInlining
 float floor(float src)
@@ -8,7 +8,7 @@ float floor(float src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663844, Name := System.Double Z0.fmath::floor(System.Double)
+// System.Double Z0.fmath::floor(System.Double)
 // double floor(double src)
 // AggressiveInlining
 double floor(double src)

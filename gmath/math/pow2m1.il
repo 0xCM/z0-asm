@@ -1,4 +1,4 @@
-// Id := 100663473, Name := System.UInt64 Z0.math::pow2m1(System.Int32)
+// System.UInt64 Z0.math::pow2m1(System.Int32)
 // ulong pow2m1(int exp)
 // AggressiveInlining
 ulong pow2m1(int exp)

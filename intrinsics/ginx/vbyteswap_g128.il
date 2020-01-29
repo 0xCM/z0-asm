@@ -1,4 +1,4 @@
-// Id := 100665224, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<ushort> vbyteswap<ushort>(Vector128<ushort> x)
 // AggressiveInlining
 Vector128<ushort> vbyteswap<ushort>(Vector128<ushort> x)
@@ -61,7 +61,7 @@ Vector128<ushort> vbyteswap<ushort>(Vector128<ushort> x)
     IL_00CF: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665224, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<uint> vbyteswap<uint>(Vector128<uint> x)
 // AggressiveInlining
 Vector128<uint> vbyteswap<uint>(Vector128<uint> x)
@@ -124,7 +124,7 @@ Vector128<uint> vbyteswap<uint>(Vector128<uint> x)
     IL_00CF: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665224, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.ginx::vbyteswap<T>(System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<ulong> vbyteswap<ulong>(Vector128<ulong> x)
 // AggressiveInlining
 Vector128<ulong> vbyteswap<ulong>(Vector128<ulong> x)

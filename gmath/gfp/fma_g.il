@@ -1,4 +1,4 @@
-// Id := 100663793, Name := T Z0.gfp::fma<T>(T,T,T)
+// T Z0.gfp::fma<T>(T,T,T)
 // float fma<float>(float x, float y, float z)
 // AggressiveInlining
 float fma<float>(float x, float y, float z)
@@ -41,7 +41,7 @@ float fma<float>(float x, float y, float z)
     IL_0086: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663793, Name := T Z0.gfp::fma<T>(T,T,T)
+// T Z0.gfp::fma<T>(T,T,T)
 // double fma<double>(double x, double y, double z)
 // AggressiveInlining
 double fma<double>(double x, double y, double z)

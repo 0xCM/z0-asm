@@ -1,4 +1,4 @@
-// Id := 100663514, Name := System.SByte Z0.math::cnonimpl(System.SByte,System.SByte)
+// System.SByte Z0.math::cnonimpl(System.SByte,System.SByte)
 // sbyte cnonimpl(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte cnonimpl(sbyte a, sbyte b)
@@ -10,7 +10,7 @@ sbyte cnonimpl(sbyte a, sbyte b)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663515, Name := System.Byte Z0.math::cnonimpl(System.Byte,System.Byte)
+// System.Byte Z0.math::cnonimpl(System.Byte,System.Byte)
 // byte cnonimpl(byte a, byte b)
 // AggressiveInlining
 byte cnonimpl(byte a, byte b)
@@ -22,7 +22,7 @@ byte cnonimpl(byte a, byte b)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663516, Name := System.Int16 Z0.math::cnonimpl(System.Int16,System.Int16)
+// System.Int16 Z0.math::cnonimpl(System.Int16,System.Int16)
 // short cnonimpl(short a, short b)
 // AggressiveInlining
 short cnonimpl(short a, short b)
@@ -34,7 +34,7 @@ short cnonimpl(short a, short b)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663517, Name := System.UInt16 Z0.math::cnonimpl(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::cnonimpl(System.UInt16,System.UInt16)
 // ushort cnonimpl(ushort a, ushort b)
 // AggressiveInlining
 ushort cnonimpl(ushort a, ushort b)
@@ -46,7 +46,7 @@ ushort cnonimpl(ushort a, ushort b)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663518, Name := System.Int32 Z0.math::cnonimpl(System.Int32,System.Int32)
+// System.Int32 Z0.math::cnonimpl(System.Int32,System.Int32)
 // int cnonimpl(int a, int b)
 // AggressiveInlining
 int cnonimpl(int a, int b)
@@ -57,7 +57,7 @@ int cnonimpl(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663519, Name := System.UInt32 Z0.math::cnonimpl(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::cnonimpl(System.UInt32,System.UInt32)
 // uint cnonimpl(uint a, uint b)
 // AggressiveInlining
 uint cnonimpl(uint a, uint b)
@@ -68,7 +68,7 @@ uint cnonimpl(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663520, Name := System.Int64 Z0.math::cnonimpl(System.Int64,System.Int64)
+// System.Int64 Z0.math::cnonimpl(System.Int64,System.Int64)
 // long cnonimpl(long a, long b)
 // AggressiveInlining
 long cnonimpl(long a, long b)
@@ -79,7 +79,7 @@ long cnonimpl(long a, long b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663521, Name := System.UInt64 Z0.math::cnonimpl(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::cnonimpl(System.UInt64,System.UInt64)
 // ulong cnonimpl(ulong a, ulong b)
 // AggressiveInlining
 ulong cnonimpl(ulong a, ulong b)

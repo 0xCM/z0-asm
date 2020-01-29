@@ -1,4 +1,4 @@
-// Id := 100663530, Name := System.SByte Z0.math::nand(System.SByte,System.SByte)
+// System.SByte Z0.math::nand(System.SByte,System.SByte)
 // sbyte nand(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte nand(sbyte a, sbyte b)
@@ -10,7 +10,7 @@ sbyte nand(sbyte a, sbyte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663531, Name := System.Byte Z0.math::nand(System.Byte,System.Byte)
+// System.Byte Z0.math::nand(System.Byte,System.Byte)
 // byte nand(byte a, byte b)
 // AggressiveInlining
 byte nand(byte a, byte b)
@@ -22,7 +22,7 @@ byte nand(byte a, byte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663532, Name := System.Int16 Z0.math::nand(System.Int16,System.Int16)
+// System.Int16 Z0.math::nand(System.Int16,System.Int16)
 // short nand(short a, short b)
 // AggressiveInlining
 short nand(short a, short b)
@@ -34,7 +34,7 @@ short nand(short a, short b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663533, Name := System.UInt16 Z0.math::nand(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::nand(System.UInt16,System.UInt16)
 // ushort nand(ushort a, ushort b)
 // AggressiveInlining
 ushort nand(ushort a, ushort b)
@@ -46,7 +46,7 @@ ushort nand(ushort a, ushort b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663534, Name := System.Int32 Z0.math::nand(System.Int32,System.Int32)
+// System.Int32 Z0.math::nand(System.Int32,System.Int32)
 // int nand(int a, int b)
 // AggressiveInlining
 int nand(int a, int b)
@@ -58,7 +58,7 @@ int nand(int a, int b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663535, Name := System.UInt32 Z0.math::nand(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::nand(System.UInt32,System.UInt32)
 // uint nand(uint a, uint b)
 // AggressiveInlining
 uint nand(uint a, uint b)
@@ -70,7 +70,7 @@ uint nand(uint a, uint b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663536, Name := System.Int64 Z0.math::nand(System.Int64,System.Int64)
+// System.Int64 Z0.math::nand(System.Int64,System.Int64)
 // long nand(long a, long b)
 // AggressiveInlining
 long nand(long a, long b)
@@ -82,7 +82,7 @@ long nand(long a, long b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663537, Name := System.UInt64 Z0.math::nand(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::nand(System.UInt64,System.UInt64)
 // ulong nand(ulong a, ulong b)
 // AggressiveInlining
 ulong nand(ulong a, ulong b)

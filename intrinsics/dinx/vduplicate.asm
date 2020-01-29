@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vduplicate(N0 parity, N32 w, Vector256<byte> src)
-; vduplicate_n0_n32_256x8u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n0_n32_v256x8u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -12,7 +12,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vduplicate(N1 parity, N32 w, Vector256<byte> src)
-; vduplicate_n1_n32_256x8u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n1_n32_v256x8u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -24,7 +24,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vduplicate(N0 parity, N32 w, Vector256<ushort> src)
-; vduplicate_n0_n32_256x16u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n0_n32_v256x16u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -36,7 +36,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vduplicate(N1 parity, N32 w, Vector256<ushort> src)
-; vduplicate_n1_n32_256x16u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n1_n32_v256x16u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -48,7 +48,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vduplicate(N0 parity, N32 w, Vector256<uint> src)
-; vduplicate_n0_n32_256x32u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n0_n32_v256x32u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vduplicate(N1 parity, N32 w, Vector256<uint> src)
-; vduplicate_n1_n32_256x32u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n1_n32_v256x32u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fe 16 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vduplicate(N0 parity, N64 w, Vector256<ulong> src)
-; vduplicate_n0_n64_256x64u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 ff 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n0_n64_v256x64u[25] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 ff 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vduplicate(N1 parity, N64 w, Vector256<ulong> src)
-; vduplicate_n1_n64_256x64u[30] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fd 73 d0 40 c5 ff 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vduplicate_n1_n64_v256x64u[30] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fd 73 d0 40 c5 ff 12 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

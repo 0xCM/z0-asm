@@ -1,8 +1,8 @@
-vbitblend_256x32u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vbitblend_256x64u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vbitblend_128x8u   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
-vbitblend_128x16u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
-vbitblend_128x32u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
-vbitblend_128x64u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
-vbitblend_256x8u   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vbitblend_256x16u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbitblend_v256x32u_v256x32u_v256x32u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbitblend_v256x64u_v256x64u_v256x64u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbitblend_v128x8u_v128x8u_v128x8u     c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vbitblend_v128x16u_v128x16u_v128x16u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vbitblend_v128x32u_v128x32u_v128x32u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vbitblend_v128x64u_v128x64u_v128x64u  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3
+vbitblend_v256x8u_v256x8u_v256x8u     c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbitblend_v256x16u_v256x16u_v256x16u  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 ef ca c4 c1 7d 10 11 c5 f5 db ca c5 fd ef c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

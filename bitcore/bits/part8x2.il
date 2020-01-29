@@ -1,4 +1,4 @@
-// Id := 100663450, Name := System.Void Z0.Bits::part8x2(System.UInt32,System.Byte&)
+// System.Void Z0.Bits::part8x2(System.UInt32,System.Byte&)
 // void part8x2(uint src, ref byte dst)
 // AggressiveInlining
 void part8x2(uint src, ref byte dst)
@@ -44,7 +44,7 @@ void part8x2(uint src, ref byte dst)
     IL_0036: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663451, Name := System.Void Z0.Bits::part8x2(System.Byte,System.Byte&)
+// System.Void Z0.Bits::part8x2(System.Byte,System.Byte&)
 // void part8x2(byte src, ref byte dst)
 // AggressiveInlining
 void part8x2(byte src, ref byte dst)

@@ -1,4 +1,4 @@
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<byte>(Vector256<byte> x, Vector256<byte> y, Vector256<byte> z)
 // AggressiveInlining
 uint vpop<byte>(Vector256<byte> x, Vector256<byte> y, Vector256<byte> z)
@@ -13,7 +13,7 @@ uint vpop<byte>(Vector256<byte> x, Vector256<byte> y, Vector256<byte> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y, Vector256<sbyte> z)
 // AggressiveInlining
 uint vpop<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y, Vector256<sbyte> z)
@@ -28,7 +28,7 @@ uint vpop<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y, Vector256<sbyte> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<ushort>(Vector256<ushort> x, Vector256<ushort> y, Vector256<ushort> z)
 // AggressiveInlining
 uint vpop<ushort>(Vector256<ushort> x, Vector256<ushort> y, Vector256<ushort> z)
@@ -43,7 +43,7 @@ uint vpop<ushort>(Vector256<ushort> x, Vector256<ushort> y, Vector256<ushort> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<short>(Vector256<short> x, Vector256<short> y, Vector256<short> z)
 // AggressiveInlining
 uint vpop<short>(Vector256<short> x, Vector256<short> y, Vector256<short> z)
@@ -58,7 +58,7 @@ uint vpop<short>(Vector256<short> x, Vector256<short> y, Vector256<short> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<uint>(Vector256<uint> x, Vector256<uint> y, Vector256<uint> z)
 // AggressiveInlining
 uint vpop<uint>(Vector256<uint> x, Vector256<uint> y, Vector256<uint> z)
@@ -73,7 +73,7 @@ uint vpop<uint>(Vector256<uint> x, Vector256<uint> y, Vector256<uint> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<int>(Vector256<int> x, Vector256<int> y, Vector256<int> z)
 // AggressiveInlining
 uint vpop<int>(Vector256<int> x, Vector256<int> y, Vector256<int> z)
@@ -88,7 +88,7 @@ uint vpop<int>(Vector256<int> x, Vector256<int> y, Vector256<int> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<ulong>(Vector256<ulong> x, Vector256<ulong> y, Vector256<ulong> z)
 // AggressiveInlining
 uint vpop<ulong>(Vector256<ulong> x, Vector256<ulong> y, Vector256<ulong> z)
@@ -103,7 +103,7 @@ uint vpop<ulong>(Vector256<ulong> x, Vector256<ulong> y, Vector256<ulong> z)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665331, Name := System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vpop<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vpop<long>(Vector256<long> x, Vector256<long> y, Vector256<long> z)
 // AggressiveInlining
 uint vpop<long>(Vector256<long> x, Vector256<long> y, Vector256<long> z)

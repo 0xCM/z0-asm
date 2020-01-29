@@ -1,4 +1,4 @@
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // byte modmul<byte>(byte a, byte b, byte m)
 // AggressiveInlining
 byte modmul<byte>(byte a, byte b, byte m)
@@ -10,7 +10,7 @@ byte modmul<byte>(byte a, byte b, byte m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // sbyte modmul<sbyte>(sbyte a, sbyte b, sbyte m)
 // AggressiveInlining
 sbyte modmul<sbyte>(sbyte a, sbyte b, sbyte m)
@@ -22,7 +22,7 @@ sbyte modmul<sbyte>(sbyte a, sbyte b, sbyte m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // ushort modmul<ushort>(ushort a, ushort b, ushort m)
 // AggressiveInlining
 ushort modmul<ushort>(ushort a, ushort b, ushort m)
@@ -34,7 +34,7 @@ ushort modmul<ushort>(ushort a, ushort b, ushort m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // short modmul<short>(short a, short b, short m)
 // AggressiveInlining
 short modmul<short>(short a, short b, short m)
@@ -46,7 +46,7 @@ short modmul<short>(short a, short b, short m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // uint modmul<uint>(uint a, uint b, uint m)
 // AggressiveInlining
 uint modmul<uint>(uint a, uint b, uint m)
@@ -58,7 +58,7 @@ uint modmul<uint>(uint a, uint b, uint m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // int modmul<int>(int a, int b, int m)
 // AggressiveInlining
 int modmul<int>(int a, int b, int m)
@@ -70,7 +70,7 @@ int modmul<int>(int a, int b, int m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // ulong modmul<ulong>(ulong a, ulong b, ulong m)
 // AggressiveInlining
 ulong modmul<ulong>(ulong a, ulong b, ulong m)
@@ -82,7 +82,7 @@ ulong modmul<ulong>(ulong a, ulong b, ulong m)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663986, Name := T Z0.gmath::modmul<T>(T,T,T)
+// T Z0.gmath::modmul<T>(T,T,T)
 // long modmul<long>(long a, long b, long m)
 // AggressiveInlining
 long modmul<long>(long a, long b, long m)

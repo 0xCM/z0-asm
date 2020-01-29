@@ -1,4 +1,4 @@
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<byte>(Vector128<byte> src, byte index)
 // AggressiveInlining
 ushort pack8<byte>(Vector128<byte> src, byte index)
@@ -9,7 +9,7 @@ ushort pack8<byte>(Vector128<byte> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<sbyte>(Vector128<sbyte> src, byte index)
 // AggressiveInlining
 ushort pack8<sbyte>(Vector128<sbyte> src, byte index)
@@ -20,7 +20,7 @@ ushort pack8<sbyte>(Vector128<sbyte> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<ushort>(Vector128<ushort> src, byte index)
 // AggressiveInlining
 ushort pack8<ushort>(Vector128<ushort> src, byte index)
@@ -31,7 +31,7 @@ ushort pack8<ushort>(Vector128<ushort> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<short>(Vector128<short> src, byte index)
 // AggressiveInlining
 ushort pack8<short>(Vector128<short> src, byte index)
@@ -42,7 +42,7 @@ ushort pack8<short>(Vector128<short> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<uint>(Vector128<uint> src, byte index)
 // AggressiveInlining
 ushort pack8<uint>(Vector128<uint> src, byte index)
@@ -53,7 +53,7 @@ ushort pack8<uint>(Vector128<uint> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<int>(Vector128<int> src, byte index)
 // AggressiveInlining
 ushort pack8<int>(Vector128<int> src, byte index)
@@ -64,7 +64,7 @@ ushort pack8<int>(Vector128<int> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<ulong>(Vector128<ulong> src, byte index)
 // AggressiveInlining
 ushort pack8<ulong>(Vector128<ulong> src, byte index)
@@ -75,7 +75,7 @@ ushort pack8<ulong>(Vector128<ulong> src, byte index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666141, Name := System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+// System.UInt16 Z0.BitPack::pack8<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
 // ushort pack8<long>(Vector128<long> src, byte index)
 // AggressiveInlining
 ushort pack8<long>(Vector128<long> src, byte index)

@@ -1,4 +1,4 @@
-// Id := 100663381, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.CpuVector::vpartsi(Z0.N256,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)
+// System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.CpuVector::vpartsi(Z0.N256,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)
 // Vector256<short> vpartsi(N256 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short xA, short xB, short xC, short xD, short xE, short xF)
 // AggressiveInlining
 Vector256<short> vpartsi(N256 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short xA, short xB, short xC, short xD, short xE, short xF)
@@ -23,7 +23,7 @@ Vector256<short> vpartsi(N256 w, short x0, short x1, short x2, short x3, short x
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663382, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N256,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N256,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 // Vector256<int> vpartsi(N256 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7)
 // AggressiveInlining
 Vector256<int> vpartsi(N256 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7)
@@ -40,7 +40,7 @@ Vector256<int> vpartsi(N256 w, int x0, int x1, int x2, int x3, int x4, int x5, i
     IL_0012: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663384, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N256,System.Int64,System.Int64,System.Int64,System.Int64)
+// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N256,System.Int64,System.Int64,System.Int64,System.Int64)
 // Vector256<long> vpartsi(N256 w, long x0, long x1, long x2, long x3)
 // AggressiveInlining
 Vector256<long> vpartsi(N256 w, long x0, long x1, long x2, long x3)
@@ -53,7 +53,7 @@ Vector256<long> vpartsi(N256 w, long x0, long x1, long x2, long x3)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663388, Name := Z0.Vector512`1<System.Int16> Z0.CpuVector::vpartsi(Z0.N512,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)
+// Z0.Vector512`1<System.Int16> Z0.CpuVector::vpartsi(Z0.N512,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16,System.Int16)
 // Vector512<short> vpartsi(N512 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short x10, short x11, short x12, short x13, short x14, short x15, short x16, short x17, short x18, short x19, short x20, short x21, short x22, short x23, short x24, short x25, short x26, short x27, short x28, short x29, short x30, short x31)
 // AggressiveInlining
 Vector512<short> vpartsi(N512 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short x10, short x11, short x12, short x13, short x14, short x15, short x16, short x17, short x18, short x19, short x20, short x21, short x22, short x23, short x24, short x25, short x26, short x27, short x28, short x29, short x30, short x31)
@@ -94,7 +94,7 @@ Vector512<short> vpartsi(N512 w, short x0, short x1, short x2, short x3, short x
     IL_0042: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663390, Name := Z0.Vector512`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N512,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
+// Z0.Vector512`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N512,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32)
 // Vector512<int> vpartsi(N512 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7, int x8, int x9, int x10, int x11, int x12, int x13, int x14, int x15)
 // AggressiveInlining
 Vector512<int> vpartsi(N512 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7, int x8, int x9, int x10, int x11, int x12, int x13, int x14, int x15)
@@ -119,7 +119,7 @@ Vector512<int> vpartsi(N512 w, int x0, int x1, int x2, int x3, int x4, int x5, i
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663392, Name := Z0.Vector512`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N512,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64)
+// Z0.Vector512`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N512,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64,System.Int64)
 // Vector512<long> vpartsi(N512 w, long x0, long x1, long x2, long x3, long x4, long x5, long x6, long x7)
 // AggressiveInlining
 Vector512<long> vpartsi(N512 w, long x0, long x1, long x2, long x3, long x4, long x5, long x6, long x7)
@@ -136,7 +136,7 @@ Vector512<long> vpartsi(N512 w, long x0, long x1, long x2, long x3, long x4, lon
     IL_0012: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663374, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N128,System.Int32,System.Int32,System.Int32,System.Int32)
+// System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.CpuVector::vpartsi(Z0.N128,System.Int32,System.Int32,System.Int32,System.Int32)
 // Vector128<int> vpartsi(N128 w, int x0, int x1, int x2, int x3)
 // AggressiveInlining
 Vector128<int> vpartsi(N128 w, int x0, int x1, int x2, int x3)
@@ -149,7 +149,7 @@ Vector128<int> vpartsi(N128 w, int x0, int x1, int x2, int x3)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663375, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N128,System.Int64,System.Int64)
+// System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.CpuVector::vpartsi(Z0.N128,System.Int64,System.Int64)
 // Vector128<long> vpartsi(N128 w, long x0, long x1)
 // AggressiveInlining
 Vector128<long> vpartsi(N128 w, long x0, long x1)

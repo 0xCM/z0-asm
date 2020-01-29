@@ -1,4 +1,4 @@
-// Id := 100663697, Name := System.Int32 Z0.gbits::effwidth<T>(T)
+// System.Int32 Z0.gbits::effwidth<T>(T)
 // int effwidth<byte>(byte src)
 // AggressiveInlining
 int effwidth<byte>(byte src)
@@ -51,7 +51,7 @@ int effwidth<byte>(byte src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663697, Name := System.Int32 Z0.gbits::effwidth<T>(T)
+// System.Int32 Z0.gbits::effwidth<T>(T)
 // int effwidth<ushort>(ushort src)
 // AggressiveInlining
 int effwidth<ushort>(ushort src)
@@ -104,7 +104,7 @@ int effwidth<ushort>(ushort src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663697, Name := System.Int32 Z0.gbits::effwidth<T>(T)
+// System.Int32 Z0.gbits::effwidth<T>(T)
 // int effwidth<uint>(uint src)
 // AggressiveInlining
 int effwidth<uint>(uint src)
@@ -157,7 +157,7 @@ int effwidth<uint>(uint src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663697, Name := System.Int32 Z0.gbits::effwidth<T>(T)
+// System.Int32 Z0.gbits::effwidth<T>(T)
 // int effwidth<ulong>(ulong src)
 // AggressiveInlining
 int effwidth<ulong>(ulong src)

@@ -1,4 +1,4 @@
-// Id := 100664396, Name := Z0.bit Z0.Logix.LogicOps::f43(Z0.bit,Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::f43(Z0.bit,Z0.bit,Z0.bit)
 // bit f43(bit a, bit b, bit c)
 // AggressiveInlining
 bit f43(bit a, bit b, bit c)

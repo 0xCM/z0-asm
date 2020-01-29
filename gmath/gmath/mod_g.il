@@ -1,4 +1,4 @@
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // byte mod<byte>(byte a, byte m)
 // AggressiveInlining
 byte mod<byte>(byte a, byte m)
@@ -65,7 +65,7 @@ byte mod<byte>(byte a, byte m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // sbyte mod<sbyte>(sbyte a, sbyte m)
 // AggressiveInlining
 sbyte mod<sbyte>(sbyte a, sbyte m)
@@ -132,7 +132,7 @@ sbyte mod<sbyte>(sbyte a, sbyte m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // ushort mod<ushort>(ushort a, ushort m)
 // AggressiveInlining
 ushort mod<ushort>(ushort a, ushort m)
@@ -199,7 +199,7 @@ ushort mod<ushort>(ushort a, ushort m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // short mod<short>(short a, short m)
 // AggressiveInlining
 short mod<short>(short a, short m)
@@ -266,7 +266,7 @@ short mod<short>(short a, short m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // uint mod<uint>(uint a, uint m)
 // AggressiveInlining
 uint mod<uint>(uint a, uint m)
@@ -333,7 +333,7 @@ uint mod<uint>(uint a, uint m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // int mod<int>(int a, int m)
 // AggressiveInlining
 int mod<int>(int a, int m)
@@ -400,7 +400,7 @@ int mod<int>(int a, int m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // ulong mod<ulong>(ulong a, ulong m)
 // AggressiveInlining
 ulong mod<ulong>(ulong a, ulong m)
@@ -467,7 +467,7 @@ ulong mod<ulong>(ulong a, ulong m)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663983, Name := T Z0.gmath::mod<T>(T,T)
+// T Z0.gmath::mod<T>(T,T)
 // long mod<long>(long a, long m)
 // AggressiveInlining
 long mod<long>(long a, long m)

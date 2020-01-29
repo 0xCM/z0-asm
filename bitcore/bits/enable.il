@@ -1,4 +1,4 @@
-// Id := 100663375, Name := System.SByte Z0.Bits::enable(System.SByte,System.Int32)
+// System.SByte Z0.Bits::enable(System.SByte,System.Int32)
 // sbyte enable(sbyte src, int pos)
 // AggressiveInlining
 sbyte enable(sbyte src, int pos)
@@ -17,7 +17,7 @@ sbyte enable(sbyte src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663376, Name := System.Byte Z0.Bits::enable(System.Byte,System.Int32)
+// System.Byte Z0.Bits::enable(System.Byte,System.Int32)
 // byte enable(byte src, int pos)
 // AggressiveInlining
 byte enable(byte src, int pos)
@@ -36,7 +36,7 @@ byte enable(byte src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663377, Name := System.Int16 Z0.Bits::enable(System.Int16,System.Int32)
+// System.Int16 Z0.Bits::enable(System.Int16,System.Int32)
 // short enable(short src, int pos)
 // AggressiveInlining
 short enable(short src, int pos)
@@ -55,7 +55,7 @@ short enable(short src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663378, Name := System.UInt16 Z0.Bits::enable(System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::enable(System.UInt16,System.Int32)
 // ushort enable(ushort src, int pos)
 // AggressiveInlining
 ushort enable(ushort src, int pos)
@@ -74,7 +74,7 @@ ushort enable(ushort src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663379, Name := System.Int32 Z0.Bits::enable(System.Int32,System.Int32)
+// System.Int32 Z0.Bits::enable(System.Int32,System.Int32)
 // int enable(int src, int pos)
 // AggressiveInlining
 int enable(int src, int pos)
@@ -91,7 +91,7 @@ int enable(int src, int pos)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663380, Name := System.UInt32 Z0.Bits::enable(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::enable(System.UInt32,System.Int32)
 // uint enable(uint src, int pos)
 // AggressiveInlining
 uint enable(uint src, int pos)
@@ -108,7 +108,7 @@ uint enable(uint src, int pos)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663381, Name := System.Int64 Z0.Bits::enable(System.Int64,System.Int32)
+// System.Int64 Z0.Bits::enable(System.Int64,System.Int32)
 // long enable(long src, int pos)
 // AggressiveInlining
 long enable(long src, int pos)
@@ -126,7 +126,7 @@ long enable(long src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663382, Name := System.UInt64 Z0.Bits::enable(System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::enable(System.UInt64,System.Int32)
 // ulong enable(ulong src, int pos)
 // AggressiveInlining
 ulong enable(ulong src, int pos)
@@ -144,7 +144,7 @@ ulong enable(ulong src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663383, Name := System.Single Z0.Bits::enable(System.Single,System.Int32)
+// System.Single Z0.Bits::enable(System.Single,System.Int32)
 // float enable(float src, int pos)
 // AggressiveInlining
 float enable(float src, int pos)
@@ -167,7 +167,7 @@ float enable(float src, int pos)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663384, Name := System.Double Z0.Bits::enable(System.Double,System.Int32)
+// System.Double Z0.Bits::enable(System.Double,System.Int32)
 // double enable(double src, int pos)
 // AggressiveInlining
 double enable(double src, int pos)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vabs<sbyte>(Vector128<sbyte> x)
-; vabs_g128x8i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1c c0 c5 f9 11 01 48 8b c1 c3}
+; vabs_gv128x8i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vabs<short>(Vector128<short> x)
-; vabs_g128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1d c0 c5 f9 11 01 48 8b c1 c3}
+; vabs_gv128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1d c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vabs<int>(Vector128<int> x)
-; vabs_g128x32i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1e c0 c5 f9 11 01 48 8b c1 c3}
+; vabs_gv128x32i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 1e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -33,7 +33,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vabs<long>(Vector128<long> x)
-; vabs_g128x64i[38] = {c5 f8 77 66 90 c5 f9 10 02 c5 f1 73 d0 3f c5 e8 57 d2 c5 e9 fb c9 c5 f1 ef c0 c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
+; vabs_gv128x64i[38] = {c5 f8 77 66 90 c5 f9 10 02 c5 f1 73 d0 3f c5 e8 57 d2 c5 e9 fb c9 c5 f1 ef c0 c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

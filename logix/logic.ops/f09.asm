@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f09(bit a, bit b, bit c)
-; f09_0e[18] = {0f 1f 44 00 00 41 33 d0 0b d1 8b c2 f7 d0 83 e0 01 c3}
+; f09_bit_bit_bit[18] = {0f 1f 44 00 00 41 33 d0 0b d1 8b c2 f7 d0 83 e0 01 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor edx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 d0}

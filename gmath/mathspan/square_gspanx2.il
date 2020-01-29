@@ -1,4 +1,4 @@
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> square<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
 // AggressiveInlining
 Span<byte> square<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
@@ -13,7 +13,7 @@ Span<byte> square<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> square<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> square<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
@@ -28,7 +28,7 @@ Span<sbyte> square<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> square<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> square<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
@@ -43,7 +43,7 @@ Span<ushort> square<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> square<short>(ReadOnlySpan<short> src, Span<short> dst)
 // AggressiveInlining
 Span<short> square<short>(ReadOnlySpan<short> src, Span<short> dst)
@@ -58,7 +58,7 @@ Span<short> square<short>(ReadOnlySpan<short> src, Span<short> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> square<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
 // AggressiveInlining
 Span<uint> square<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
@@ -73,7 +73,7 @@ Span<uint> square<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> square<int>(ReadOnlySpan<int> src, Span<int> dst)
 // AggressiveInlining
 Span<int> square<int>(ReadOnlySpan<int> src, Span<int> dst)
@@ -88,7 +88,7 @@ Span<int> square<int>(ReadOnlySpan<int> src, Span<int> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> square<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> square<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
@@ -103,7 +103,7 @@ Span<ulong> square<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664158, Name := System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::square<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> square<long>(ReadOnlySpan<long> src, Span<long> dst)
 // AggressiveInlining
 Span<long> square<long>(ReadOnlySpan<long> src, Span<long> dst)

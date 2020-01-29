@@ -1,4 +1,4 @@
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<byte>(in byte src)
 // AggressiveInlining
 ref double float64<byte>(in byte src)
@@ -9,7 +9,7 @@ ref double float64<byte>(in byte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<sbyte>(in sbyte src)
 // AggressiveInlining
 ref double float64<sbyte>(in sbyte src)
@@ -20,7 +20,7 @@ ref double float64<sbyte>(in sbyte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<ushort>(in ushort src)
 // AggressiveInlining
 ref double float64<ushort>(in ushort src)
@@ -31,7 +31,7 @@ ref double float64<ushort>(in ushort src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<short>(in short src)
 // AggressiveInlining
 ref double float64<short>(in short src)
@@ -42,7 +42,7 @@ ref double float64<short>(in short src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<uint>(in uint src)
 // AggressiveInlining
 ref double float64<uint>(in uint src)
@@ -53,7 +53,7 @@ ref double float64<uint>(in uint src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<int>(in int src)
 // AggressiveInlining
 ref double float64<int>(in int src)
@@ -64,7 +64,7 @@ ref double float64<int>(in int src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<ulong>(in ulong src)
 // AggressiveInlining
 ref double float64<ulong>(in ulong src)
@@ -75,7 +75,7 @@ ref double float64<ulong>(in ulong src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<long>(in long src)
 // AggressiveInlining
 ref double float64<long>(in long src)
@@ -86,7 +86,7 @@ ref double float64<long>(in long src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<float>(in float src)
 // AggressiveInlining
 ref double float64<float>(in float src)
@@ -97,7 +97,7 @@ ref double float64<float>(in float src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665620, Name := System.Double& Z0.AsIn::float64<T>(T&)
+// System.Double& Z0.AsIn::float64<T>(T&)
 // ref double float64<double>(in double src)
 // AggressiveInlining
 ref double float64<double>(in double src)

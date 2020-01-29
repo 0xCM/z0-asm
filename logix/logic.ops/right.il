@@ -1,4 +1,4 @@
-// Id := 100664322, Name := Z0.bit Z0.Logix.LogicOps::right(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::right(Z0.bit,Z0.bit)
 // bit right(bit a, bit b)
 // AggressiveInlining
 bit right(bit a, bit b)

@@ -1,4 +1,4 @@
-// Id := 100663898, Name := System.Single Z0.fmath::gcd(System.Single,System.Single)
+// System.Single Z0.fmath::gcd(System.Single,System.Single)
 // float gcd(float a, float b)
 // AggressiveInlining
 float gcd(float a, float b)
@@ -25,7 +25,7 @@ float gcd(float a, float b)
     IL_0025: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663899, Name := System.Double Z0.fmath::gcd(System.Double,System.Double)
+// System.Double Z0.fmath::gcd(System.Double,System.Double)
 // double gcd(double a, double b)
 // AggressiveInlining
 double gcd(double a, double b)

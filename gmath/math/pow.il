@@ -1,4 +1,4 @@
-// Id := 100663464, Name := System.SByte Z0.math::pow(System.SByte,System.UInt32)
+// System.SByte Z0.math::pow(System.SByte,System.UInt32)
 // sbyte pow(sbyte b, uint exp)
 // AggressiveInlining
 sbyte pow(sbyte b, uint exp)
@@ -34,7 +34,7 @@ sbyte pow(sbyte b, uint exp)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663465, Name := System.Byte Z0.math::pow(System.Byte,System.UInt32)
+// System.Byte Z0.math::pow(System.Byte,System.UInt32)
 // byte pow(byte b, uint exp)
 // AggressiveInlining
 byte pow(byte b, uint exp)
@@ -70,7 +70,7 @@ byte pow(byte b, uint exp)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663466, Name := System.Int16 Z0.math::pow(System.Int16,System.UInt32)
+// System.Int16 Z0.math::pow(System.Int16,System.UInt32)
 // short pow(short b, uint exp)
 // AggressiveInlining
 short pow(short b, uint exp)
@@ -106,7 +106,7 @@ short pow(short b, uint exp)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663467, Name := System.UInt16 Z0.math::pow(System.UInt16,System.UInt32)
+// System.UInt16 Z0.math::pow(System.UInt16,System.UInt32)
 // ushort pow(ushort b, uint exp)
 // AggressiveInlining
 ushort pow(ushort b, uint exp)
@@ -142,7 +142,7 @@ ushort pow(ushort b, uint exp)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663468, Name := System.Int32 Z0.math::pow(System.Int32,System.UInt32)
+// System.Int32 Z0.math::pow(System.Int32,System.UInt32)
 // int pow(int b, uint exp)
 // AggressiveInlining
 int pow(int b, uint exp)
@@ -176,7 +176,7 @@ int pow(int b, uint exp)
     IL_0020: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663469, Name := System.UInt32 Z0.math::pow(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::pow(System.UInt32,System.UInt32)
 // uint pow(uint b, uint exp)
 // AggressiveInlining
 uint pow(uint b, uint exp)
@@ -210,7 +210,7 @@ uint pow(uint b, uint exp)
     IL_0020: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663470, Name := System.Int64 Z0.math::pow(System.Int64,System.UInt32)
+// System.Int64 Z0.math::pow(System.Int64,System.UInt32)
 // long pow(long b, uint exp)
 // AggressiveInlining
 long pow(long b, uint exp)
@@ -246,7 +246,7 @@ long pow(long b, uint exp)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663471, Name := System.UInt64 Z0.math::pow(System.UInt64,System.UInt32)
+// System.UInt64 Z0.math::pow(System.UInt64,System.UInt32)
 // ulong pow(ulong b, uint exp)
 // AggressiveInlining
 ulong pow(ulong b, uint exp)

@@ -1,4 +1,4 @@
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<byte>(byte src, int pos)
 // AggressiveInlining
 bit testbit<byte>(byte src, int pos)
@@ -53,7 +53,7 @@ bit testbit<byte>(byte src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<sbyte>(sbyte src, int pos)
 // AggressiveInlining
 bit testbit<sbyte>(sbyte src, int pos)
@@ -108,7 +108,7 @@ bit testbit<sbyte>(sbyte src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<ushort>(ushort src, int pos)
 // AggressiveInlining
 bit testbit<ushort>(ushort src, int pos)
@@ -163,7 +163,7 @@ bit testbit<ushort>(ushort src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<short>(short src, int pos)
 // AggressiveInlining
 bit testbit<short>(short src, int pos)
@@ -218,7 +218,7 @@ bit testbit<short>(short src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<uint>(uint src, int pos)
 // AggressiveInlining
 bit testbit<uint>(uint src, int pos)
@@ -273,7 +273,7 @@ bit testbit<uint>(uint src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<int>(int src, int pos)
 // AggressiveInlining
 bit testbit<int>(int src, int pos)
@@ -328,7 +328,7 @@ bit testbit<int>(int src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<ulong>(ulong src, int pos)
 // AggressiveInlining
 bit testbit<ulong>(ulong src, int pos)
@@ -383,7 +383,7 @@ bit testbit<ulong>(ulong src, int pos)
     IL_00A7: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663680, Name := Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
+// Z0.bit Z0.gbits::testbit<T>(T,System.Int32)
 // bit testbit<long>(long src, int pos)
 // AggressiveInlining
 bit testbit<long>(long src, int pos)

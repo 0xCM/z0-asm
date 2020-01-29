@@ -1,4 +1,4 @@
-// Id := 100663845, Name := System.Single Z0.fmath::fma(System.Single,System.Single,System.Single)
+// System.Single Z0.fmath::fma(System.Single,System.Single,System.Single)
 // float fma(float x, float y, float z)
 // AggressiveInlining
 float fma(float x, float y, float z)
@@ -10,7 +10,7 @@ float fma(float x, float y, float z)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663846, Name := System.Double Z0.fmath::fma(System.Double,System.Double,System.Double)
+// System.Double Z0.fmath::fma(System.Double,System.Double,System.Double)
 // double fma(double x, double y, double z)
 // AggressiveInlining
 double fma(double x, double y, double z)

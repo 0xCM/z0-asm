@@ -1,4 +1,4 @@
-// Id := 100664564, Name := T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
 // byte rotl<byte>(byte a, byte count)
 // AggressiveInlining
 byte rotl<byte>(byte a, byte count)
@@ -9,7 +9,7 @@ byte rotl<byte>(byte a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664564, Name := T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
 // ushort rotl<ushort>(ushort a, byte count)
 // AggressiveInlining
 ushort rotl<ushort>(ushort a, byte count)
@@ -20,7 +20,7 @@ ushort rotl<ushort>(ushort a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664564, Name := T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
 // uint rotl<uint>(uint a, byte count)
 // AggressiveInlining
 uint rotl<uint>(uint a, byte count)
@@ -31,7 +31,7 @@ uint rotl<uint>(uint a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664564, Name := T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::rotl<T>(T,System.Byte)
 // ulong rotl<ulong>(ulong a, byte count)
 // AggressiveInlining
 ulong rotl<ulong>(ulong a, byte count)

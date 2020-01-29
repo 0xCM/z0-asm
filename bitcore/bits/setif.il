@@ -1,4 +1,4 @@
-// Id := 100663537, Name := System.Byte Z0.Bits::setif(System.Byte,System.Int32,System.Byte,System.Int32)
+// System.Byte Z0.Bits::setif(System.Byte,System.Int32,System.Byte,System.Int32)
 // byte setif(byte src, int srcpos, byte dst, int dstpos)
 // AggressiveInlining
 byte setif(byte src, int srcpos, byte dst, int dstpos)
@@ -16,7 +16,7 @@ byte setif(byte src, int srcpos, byte dst, int dstpos)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663538, Name := System.UInt16 Z0.Bits::setif(System.UInt16,System.Int32,System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::setif(System.UInt16,System.Int32,System.UInt16,System.Int32)
 // ushort setif(ushort src, int srcpos, ushort dst, int dstpos)
 // AggressiveInlining
 ushort setif(ushort src, int srcpos, ushort dst, int dstpos)
@@ -34,7 +34,7 @@ ushort setif(ushort src, int srcpos, ushort dst, int dstpos)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663539, Name := System.UInt32 Z0.Bits::setif(System.UInt32,System.Int32,System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::setif(System.UInt32,System.Int32,System.UInt32,System.Int32)
 // uint setif(uint src, int srcpos, uint dst, int dstpos)
 // AggressiveInlining
 uint setif(uint src, int srcpos, uint dst, int dstpos)
@@ -52,7 +52,7 @@ uint setif(uint src, int srcpos, uint dst, int dstpos)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663540, Name := System.UInt64 Z0.Bits::setif(System.UInt64,System.Int32,System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::setif(System.UInt64,System.Int32,System.UInt64,System.Int32)
 // ulong setif(ulong src, int srcpos, ulong dst, int dstpos)
 // AggressiveInlining
 ulong setif(ulong src, int srcpos, ulong dst, int dstpos)

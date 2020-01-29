@@ -1,4 +1,4 @@
-// Id := 100663357, Name := System.UInt16 Z0.Bits::broadcast(System.Byte,Z0.N16)
+// System.UInt16 Z0.Bits::broadcast(System.Byte,Z0.N16)
 // ushort broadcast(byte src, N16 w)
 // AggressiveInlining
 ushort broadcast(byte src, N16 w)
@@ -9,7 +9,7 @@ ushort broadcast(byte src, N16 w)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663358, Name := System.UInt32 Z0.Bits::broadcast(System.Byte,Z0.N32)
+// System.UInt32 Z0.Bits::broadcast(System.Byte,Z0.N32)
 // uint broadcast(byte src, N32 w)
 // AggressiveInlining
 uint broadcast(byte src, N32 w)
@@ -20,7 +20,7 @@ uint broadcast(byte src, N32 w)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663359, Name := System.UInt64 Z0.Bits::broadcast(System.Byte,Z0.N64)
+// System.UInt64 Z0.Bits::broadcast(System.Byte,Z0.N64)
 // ulong broadcast(byte src, N64 w)
 // AggressiveInlining
 ulong broadcast(byte src, N64 w)
@@ -31,7 +31,7 @@ ulong broadcast(byte src, N64 w)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663360, Name := System.UInt32 Z0.Bits::broadcast(System.UInt16,Z0.N32)
+// System.UInt32 Z0.Bits::broadcast(System.UInt16,Z0.N32)
 // uint broadcast(ushort src, N32 w)
 // AggressiveInlining
 uint broadcast(ushort src, N32 w)
@@ -42,7 +42,7 @@ uint broadcast(ushort src, N32 w)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663361, Name := System.UInt64 Z0.Bits::broadcast(System.UInt16,Z0.N64)
+// System.UInt64 Z0.Bits::broadcast(System.UInt16,Z0.N64)
 // ulong broadcast(ushort src, N64 w)
 // AggressiveInlining
 ulong broadcast(ushort src, N64 w)
@@ -53,7 +53,7 @@ ulong broadcast(ushort src, N64 w)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663362, Name := System.UInt64 Z0.Bits::broadcast(System.UInt32,Z0.N64)
+// System.UInt64 Z0.Bits::broadcast(System.UInt32,Z0.N64)
 // ulong broadcast(uint src, N64 w)
 // AggressiveInlining
 ulong broadcast(uint src, N64 w)

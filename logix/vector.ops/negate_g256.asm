@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> negate<byte>(Vector256<byte> a)
-; negate_g256x8u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x8u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -17,7 +17,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> negate<sbyte>(Vector256<sbyte> a)
-; negate_g256x8i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x8i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -30,7 +30,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> negate<ushort>(Vector256<ushort> a)
-; negate_g256x16u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x16u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -47,7 +47,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> negate<short>(Vector256<short> a)
-; negate_g256x16i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x16i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> negate<uint>(Vector256<uint> a)
-; negate_g256x32u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x32u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -77,7 +77,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> negate<int>(Vector256<int> a)
-; negate_g256x32i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x32i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -90,7 +90,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> negate<ulong>(Vector256<ulong> a)
-; negate_g256x64u[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x64u[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -107,7 +107,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> negate<long>(Vector256<long> a)
-; negate_g256x64i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; negate_gv256x64i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,4 +1,4 @@
-// Id := 100663309, Name := System.SByte Z0.Bits::between(System.SByte,System.Byte,System.Byte)
+// System.SByte Z0.Bits::between(System.SByte,System.Byte,System.Byte)
 // sbyte between(sbyte src, byte k0, byte k1)
 // AggressiveInlining
 sbyte between(sbyte src, byte k0, byte k1)
@@ -16,7 +16,7 @@ sbyte between(sbyte src, byte k0, byte k1)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663310, Name := System.Byte Z0.Bits::between(System.Byte,System.Byte,System.Byte)
+// System.Byte Z0.Bits::between(System.Byte,System.Byte,System.Byte)
 // byte between(byte src, byte k0, byte k1)
 // AggressiveInlining
 byte between(byte src, byte k0, byte k1)
@@ -34,7 +34,7 @@ byte between(byte src, byte k0, byte k1)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663311, Name := System.Int16 Z0.Bits::between(System.Int16,System.Byte,System.Byte)
+// System.Int16 Z0.Bits::between(System.Int16,System.Byte,System.Byte)
 // short between(short src, byte k0, byte k1)
 // AggressiveInlining
 short between(short src, byte k0, byte k1)
@@ -52,7 +52,7 @@ short between(short src, byte k0, byte k1)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663312, Name := System.UInt16 Z0.Bits::between(System.UInt16,System.Byte,System.Byte)
+// System.UInt16 Z0.Bits::between(System.UInt16,System.Byte,System.Byte)
 // ushort between(ushort src, byte k0, byte k1)
 // AggressiveInlining
 ushort between(ushort src, byte k0, byte k1)
@@ -70,7 +70,7 @@ ushort between(ushort src, byte k0, byte k1)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663313, Name := System.UInt32 Z0.Bits::between(System.UInt32,System.Byte,System.Byte)
+// System.UInt32 Z0.Bits::between(System.UInt32,System.Byte,System.Byte)
 // uint between(uint src, byte k0, byte k1)
 // AggressiveInlining
 uint between(uint src, byte k0, byte k1)
@@ -87,7 +87,7 @@ uint between(uint src, byte k0, byte k1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663314, Name := System.Int32 Z0.Bits::between(System.Int32,System.Byte,System.Byte)
+// System.Int32 Z0.Bits::between(System.Int32,System.Byte,System.Byte)
 // int between(int src, byte k0, byte k1)
 // AggressiveInlining
 int between(int src, byte k0, byte k1)
@@ -104,7 +104,7 @@ int between(int src, byte k0, byte k1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663315, Name := System.UInt64 Z0.Bits::between(System.UInt64,System.Byte,System.Byte)
+// System.UInt64 Z0.Bits::between(System.UInt64,System.Byte,System.Byte)
 // ulong between(ulong src, byte k0, byte k1)
 // AggressiveInlining
 ulong between(ulong src, byte k0, byte k1)
@@ -121,7 +121,7 @@ ulong between(ulong src, byte k0, byte k1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663316, Name := System.Int64 Z0.Bits::between(System.Int64,System.Byte,System.Byte)
+// System.Int64 Z0.Bits::between(System.Int64,System.Byte,System.Byte)
 // long between(long src, byte k0, byte k1)
 // AggressiveInlining
 long between(long src, byte k0, byte k1)
@@ -138,7 +138,7 @@ long between(long src, byte k0, byte k1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663317, Name := System.Single Z0.Bits::between(System.Single,System.Byte,System.Byte)
+// System.Single Z0.Bits::between(System.Single,System.Byte,System.Byte)
 // float between(float src, byte k0, byte k1)
 // AggressiveInlining
 float between(float src, byte k0, byte k1)
@@ -152,7 +152,7 @@ float between(float src, byte k0, byte k1)
     IL_0012: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663318, Name := System.Double Z0.Bits::between(System.Double,System.Byte,System.Byte)
+// System.Double Z0.Bits::between(System.Double,System.Byte,System.Byte)
 // double between(double src, byte k0, byte k1)
 // AggressiveInlining
 double between(double src, byte k0, byte k1)

@@ -1,4 +1,4 @@
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // byte nand<byte>(byte a, byte b)
 // AggressiveInlining
 byte nand<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte nand<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // sbyte nand<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte nand<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte nand<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // ushort nand<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort nand<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort nand<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // short nand<short>(short a, short b)
 // AggressiveInlining
 short nand<short>(short a, short b)
@@ -42,7 +42,7 @@ short nand<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // uint nand<uint>(uint a, uint b)
 // AggressiveInlining
 uint nand<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint nand<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // int nand<int>(int a, int b)
 // AggressiveInlining
 int nand<int>(int a, int b)
@@ -64,7 +64,7 @@ int nand<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // ulong nand<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong nand<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong nand<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664541, Name := T Z0.Logix.ScalarOps::nand<T>(T,T)
+// T Z0.Logix.ScalarOps::nand<T>(T,T)
 // long nand<long>(long a, long b)
 // AggressiveInlining
 long nand<long>(long a, long b)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vones<byte>(N256 n, byte t)
-; vones~n256_g8x8u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_8u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -13,7 +13,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vones<sbyte>(N256 n, sbyte t)
-; vones~n256_g8x8i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_8i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -26,7 +26,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vones<ushort>(N256 n, ushort t)
-; vones~n256_g16x16u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_16u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -39,7 +39,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vones<short>(N256 n, short t)
-; vones~n256_g16x16i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_16i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -52,7 +52,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vones<uint>(N256 n, uint t)
-; vones~n256_g32x32u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_32u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -65,7 +65,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vones<int>(N256 n, int t)
-; vones~n256_g32x32i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_32i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -78,7 +78,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vones<ulong>(N256 n, ulong t)
-; vones~n256_g64x64u[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_64u[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -91,7 +91,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vones<long>(N256 n, long t)
-; vones~n256_g64x64i[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_64i[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -104,7 +104,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vones<float>(N256 n, float t)
-; vones~n256_g32x32f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fc c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_32f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fc c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -117,7 +117,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vones<double>(N256 n, double t)
-; vones~n256_g64x64f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vones_gn256_64f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

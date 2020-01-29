@@ -1,4 +1,4 @@
-// Id := 100663303, Name := System.SByte Z0.math::abs(System.SByte)
+// System.SByte Z0.math::abs(System.SByte)
 // sbyte abs(sbyte a)
 // AggressiveInlining
 sbyte abs(sbyte a)
@@ -16,7 +16,7 @@ sbyte abs(sbyte a)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663304, Name := System.Int16 Z0.math::abs(System.Int16)
+// System.Int16 Z0.math::abs(System.Int16)
 // short abs(short a)
 // AggressiveInlining
 short abs(short a)
@@ -34,7 +34,7 @@ short abs(short a)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663305, Name := System.Int32 Z0.math::abs(System.Int32)
+// System.Int32 Z0.math::abs(System.Int32)
 // int abs(int a)
 // AggressiveInlining
 int abs(int a)
@@ -51,7 +51,7 @@ int abs(int a)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663306, Name := System.Int64 Z0.math::abs(System.Int64)
+// System.Int64 Z0.math::abs(System.Int64)
 // long abs(long a)
 // AggressiveInlining
 long abs(long a)

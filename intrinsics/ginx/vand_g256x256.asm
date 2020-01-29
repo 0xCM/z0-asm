@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vand<byte>(Vector256<byte> x, Vector256<byte> y)
-; vand_g256x8u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x8u_v256x8u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -13,7 +13,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vand<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y)
-; vand_g256x8i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x8i_v256x8i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -26,7 +26,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vand<ushort>(Vector256<ushort> x, Vector256<ushort> y)
-; vand_g256x16u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x16u_v256x16u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -39,7 +39,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vand<short>(Vector256<short> x, Vector256<short> y)
-; vand_g256x16i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x16i_v256x16i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -52,7 +52,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vand<uint>(Vector256<uint> x, Vector256<uint> y)
-; vand_g256x32u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x32u_v256x32u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -65,7 +65,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vand<int>(Vector256<int> x, Vector256<int> y)
-; vand_g256x32i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x32i_v256x32i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -78,7 +78,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vand<ulong>(Vector256<ulong> x, Vector256<ulong> y)
-; vand_g256x64u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x64u_v256x64u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -91,7 +91,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vand<long>(Vector256<long> x, Vector256<long> y)
-; vand_g256x64i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vand_gv256x64i_v256x64i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd db c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

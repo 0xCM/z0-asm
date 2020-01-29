@@ -1,4 +1,4 @@
-// Id := 100663702, Name := Z0.bit Z0.math::gteq(System.SByte,System.SByte)
+// Z0.bit Z0.math::gteq(System.SByte,System.SByte)
 // bit gteq(sbyte a, sbyte b)
 // AggressiveInlining
 bit gteq(sbyte a, sbyte b)
@@ -12,7 +12,7 @@ bit gteq(sbyte a, sbyte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663703, Name := Z0.bit Z0.math::gteq(System.Byte,System.Byte)
+// Z0.bit Z0.math::gteq(System.Byte,System.Byte)
 // bit gteq(byte a, byte b)
 // AggressiveInlining
 bit gteq(byte a, byte b)
@@ -26,7 +26,7 @@ bit gteq(byte a, byte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663704, Name := Z0.bit Z0.math::gteq(System.Int16,System.Int16)
+// Z0.bit Z0.math::gteq(System.Int16,System.Int16)
 // bit gteq(short a, short b)
 // AggressiveInlining
 bit gteq(short a, short b)
@@ -40,7 +40,7 @@ bit gteq(short a, short b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663705, Name := Z0.bit Z0.math::gteq(System.UInt16,System.UInt16)
+// Z0.bit Z0.math::gteq(System.UInt16,System.UInt16)
 // bit gteq(ushort a, ushort b)
 // AggressiveInlining
 bit gteq(ushort a, ushort b)
@@ -54,7 +54,7 @@ bit gteq(ushort a, ushort b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663706, Name := Z0.bit Z0.math::gteq(System.Int32,System.Int32)
+// Z0.bit Z0.math::gteq(System.Int32,System.Int32)
 // bit gteq(int a, int b)
 // AggressiveInlining
 bit gteq(int a, int b)
@@ -68,7 +68,7 @@ bit gteq(int a, int b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663707, Name := Z0.bit Z0.math::gteq(System.UInt32,System.UInt32)
+// Z0.bit Z0.math::gteq(System.UInt32,System.UInt32)
 // bit gteq(uint a, uint b)
 // AggressiveInlining
 bit gteq(uint a, uint b)
@@ -82,7 +82,7 @@ bit gteq(uint a, uint b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663708, Name := Z0.bit Z0.math::gteq(System.Int64,System.Int64)
+// Z0.bit Z0.math::gteq(System.Int64,System.Int64)
 // bit gteq(long a, long b)
 // AggressiveInlining
 bit gteq(long a, long b)
@@ -96,7 +96,7 @@ bit gteq(long a, long b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663709, Name := Z0.bit Z0.math::gteq(System.UInt64,System.UInt64)
+// Z0.bit Z0.math::gteq(System.UInt64,System.UInt64)
 // bit gteq(ulong a, ulong b)
 // AggressiveInlining
 bit gteq(ulong a, ulong b)

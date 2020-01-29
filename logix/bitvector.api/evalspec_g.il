@@ -1,4 +1,4 @@
-// Id := 100664017, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<byte> evalspec<byte>(BinaryBitLogicKind:byte kind, BitVector<byte> x, BitVector<byte> y)
 // IL
 BitVector<byte> evalspec<byte>(BinaryBitLogicKind:byte kind, BitVector<byte> x, BitVector<byte> y)
@@ -72,7 +72,7 @@ BitVector<byte> evalspec<byte>(BinaryBitLogicKind:byte kind, BitVector<byte> x, 
     IL_00C7: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664017, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ushort> evalspec<ushort>(BinaryBitLogicKind:byte kind, BitVector<ushort> x, BitVector<ushort> y)
 // IL
 BitVector<ushort> evalspec<ushort>(BinaryBitLogicKind:byte kind, BitVector<ushort> x, BitVector<ushort> y)
@@ -146,7 +146,7 @@ BitVector<ushort> evalspec<ushort>(BinaryBitLogicKind:byte kind, BitVector<ushor
     IL_00C7: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664017, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<uint> evalspec<uint>(BinaryBitLogicKind:byte kind, BitVector<uint> x, BitVector<uint> y)
 // IL
 BitVector<uint> evalspec<uint>(BinaryBitLogicKind:byte kind, BitVector<uint> x, BitVector<uint> y)
@@ -220,7 +220,7 @@ BitVector<uint> evalspec<uint>(BinaryBitLogicKind:byte kind, BitVector<uint> x, 
     IL_00C7: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664017, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOpApi::evalspec<T>(Z0.BinaryBitLogicKind,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ulong> evalspec<ulong>(BinaryBitLogicKind:byte kind, BitVector<ulong> x, BitVector<ulong> y)
 // IL
 BitVector<ulong> evalspec<ulong>(BinaryBitLogicKind:byte kind, BitVector<ulong> x, BitVector<ulong> y)

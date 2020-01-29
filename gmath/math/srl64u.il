@@ -1,4 +1,4 @@
-// Id := 100663645, Name := System.UInt64 Z0.math::srl64u(System.UInt64,System.Byte)
+// System.UInt64 Z0.math::srl64u(System.UInt64,System.Byte)
 // ulong srl64u(ulong src, byte offset)
 // AggressiveInlining
 ulong srl64u(ulong src, byte offset)

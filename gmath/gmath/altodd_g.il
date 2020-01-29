@@ -1,4 +1,4 @@
-// Id := 100663950, Name := T Z0.gmath::altodd<T>()
+// T Z0.gmath::altodd<T>()
 // byte altodd<byte>()
 // AggressiveInlining
 byte altodd<byte>()
@@ -59,7 +59,7 @@ byte altodd<byte>()
     IL_00CF: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663950, Name := T Z0.gmath::altodd<T>()
+// T Z0.gmath::altodd<T>()
 // ushort altodd<ushort>()
 // AggressiveInlining
 ushort altodd<ushort>()
@@ -120,7 +120,7 @@ ushort altodd<ushort>()
     IL_00CF: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663950, Name := T Z0.gmath::altodd<T>()
+// T Z0.gmath::altodd<T>()
 // uint altodd<uint>()
 // AggressiveInlining
 uint altodd<uint>()
@@ -181,7 +181,7 @@ uint altodd<uint>()
     IL_00CF: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663950, Name := T Z0.gmath::altodd<T>()
+// T Z0.gmath::altodd<T>()
 // ulong altodd<ulong>()
 // AggressiveInlining
 ulong altodd<ulong>()

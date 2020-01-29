@@ -1,4 +1,4 @@
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // byte eqz<byte>(byte a, byte b)
 // AggressiveInlining
 byte eqz<byte>(byte a, byte b)
@@ -19,7 +19,7 @@ byte eqz<byte>(byte a, byte b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // sbyte eqz<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte eqz<sbyte>(sbyte a, sbyte b)
@@ -40,7 +40,7 @@ sbyte eqz<sbyte>(sbyte a, sbyte b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // ushort eqz<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort eqz<ushort>(ushort a, ushort b)
@@ -61,7 +61,7 @@ ushort eqz<ushort>(ushort a, ushort b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // short eqz<short>(short a, short b)
 // AggressiveInlining
 short eqz<short>(short a, short b)
@@ -82,7 +82,7 @@ short eqz<short>(short a, short b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // uint eqz<uint>(uint a, uint b)
 // AggressiveInlining
 uint eqz<uint>(uint a, uint b)
@@ -103,7 +103,7 @@ uint eqz<uint>(uint a, uint b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // int eqz<int>(int a, int b)
 // AggressiveInlining
 int eqz<int>(int a, int b)
@@ -124,7 +124,7 @@ int eqz<int>(int a, int b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // ulong eqz<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong eqz<ulong>(ulong a, ulong b)
@@ -145,7 +145,7 @@ ulong eqz<ulong>(ulong a, ulong b)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664083, Name := T Z0.gmath::eqz<T>(T,T)
+// T Z0.gmath::eqz<T>(T,T)
 // long eqz<long>(long a, long b)
 // AggressiveInlining
 long eqz<long>(long a, long b)

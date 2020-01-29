@@ -1,4 +1,4 @@
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // byte eval<byte>(BinaryBitLogicKind:byte kind, byte a, byte b)
 // IL
 byte eval<byte>(BinaryBitLogicKind:byte kind, byte a, byte b)
@@ -76,7 +76,7 @@ byte eval<byte>(BinaryBitLogicKind:byte kind, byte a, byte b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // sbyte eval<sbyte>(BinaryBitLogicKind:byte kind, sbyte a, sbyte b)
 // IL
 sbyte eval<sbyte>(BinaryBitLogicKind:byte kind, sbyte a, sbyte b)
@@ -154,7 +154,7 @@ sbyte eval<sbyte>(BinaryBitLogicKind:byte kind, sbyte a, sbyte b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // ushort eval<ushort>(BinaryBitLogicKind:byte kind, ushort a, ushort b)
 // IL
 ushort eval<ushort>(BinaryBitLogicKind:byte kind, ushort a, ushort b)
@@ -232,7 +232,7 @@ ushort eval<ushort>(BinaryBitLogicKind:byte kind, ushort a, ushort b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // short eval<short>(BinaryBitLogicKind:byte kind, short a, short b)
 // IL
 short eval<short>(BinaryBitLogicKind:byte kind, short a, short b)
@@ -310,7 +310,7 @@ short eval<short>(BinaryBitLogicKind:byte kind, short a, short b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // uint eval<uint>(BinaryBitLogicKind:byte kind, uint a, uint b)
 // IL
 uint eval<uint>(BinaryBitLogicKind:byte kind, uint a, uint b)
@@ -388,7 +388,7 @@ uint eval<uint>(BinaryBitLogicKind:byte kind, uint a, uint b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // int eval<int>(BinaryBitLogicKind:byte kind, int a, int b)
 // IL
 int eval<int>(BinaryBitLogicKind:byte kind, int a, int b)
@@ -466,7 +466,7 @@ int eval<int>(BinaryBitLogicKind:byte kind, int a, int b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // ulong eval<ulong>(BinaryBitLogicKind:byte kind, ulong a, ulong b)
 // IL
 ulong eval<ulong>(BinaryBitLogicKind:byte kind, ulong a, ulong b)
@@ -544,7 +544,7 @@ ulong eval<ulong>(BinaryBitLogicKind:byte kind, ulong a, ulong b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664037, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.BinaryBitLogicKind,T,T)
 // long eval<long>(BinaryBitLogicKind:byte kind, long a, long b)
 // IL
 long eval<long>(BinaryBitLogicKind:byte kind, long a, long b)
@@ -622,7 +622,7 @@ long eval<long>(BinaryBitLogicKind:byte kind, long a, long b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // byte eval<byte>(UnaryBitLogicKind:byte kind, byte a)
 // IL
 byte eval<byte>(UnaryBitLogicKind:byte kind, byte a)
@@ -646,7 +646,7 @@ byte eval<byte>(UnaryBitLogicKind:byte kind, byte a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // sbyte eval<sbyte>(UnaryBitLogicKind:byte kind, sbyte a)
 // IL
 sbyte eval<sbyte>(UnaryBitLogicKind:byte kind, sbyte a)
@@ -670,7 +670,7 @@ sbyte eval<sbyte>(UnaryBitLogicKind:byte kind, sbyte a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // ushort eval<ushort>(UnaryBitLogicKind:byte kind, ushort a)
 // IL
 ushort eval<ushort>(UnaryBitLogicKind:byte kind, ushort a)
@@ -694,7 +694,7 @@ ushort eval<ushort>(UnaryBitLogicKind:byte kind, ushort a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // short eval<short>(UnaryBitLogicKind:byte kind, short a)
 // IL
 short eval<short>(UnaryBitLogicKind:byte kind, short a)
@@ -718,7 +718,7 @@ short eval<short>(UnaryBitLogicKind:byte kind, short a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // uint eval<uint>(UnaryBitLogicKind:byte kind, uint a)
 // IL
 uint eval<uint>(UnaryBitLogicKind:byte kind, uint a)
@@ -742,7 +742,7 @@ uint eval<uint>(UnaryBitLogicKind:byte kind, uint a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // int eval<int>(UnaryBitLogicKind:byte kind, int a)
 // IL
 int eval<int>(UnaryBitLogicKind:byte kind, int a)
@@ -766,7 +766,7 @@ int eval<int>(UnaryBitLogicKind:byte kind, int a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // ulong eval<ulong>(UnaryBitLogicKind:byte kind, ulong a)
 // IL
 ulong eval<ulong>(UnaryBitLogicKind:byte kind, ulong a)
@@ -790,7 +790,7 @@ ulong eval<ulong>(UnaryBitLogicKind:byte kind, ulong a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664038, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.UnaryBitLogicKind,T)
 // long eval<long>(UnaryBitLogicKind:byte kind, long a)
 // IL
 long eval<long>(UnaryBitLogicKind:byte kind, long a)
@@ -814,7 +814,7 @@ long eval<long>(UnaryBitLogicKind:byte kind, long a)
     IL_0023: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // byte eval<byte>(ComparisonKind:byte kind, byte a, byte b)
 // IL
 byte eval<byte>(ComparisonKind:byte kind, byte a, byte b)
@@ -854,7 +854,7 @@ byte eval<byte>(ComparisonKind:byte kind, byte a, byte b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // sbyte eval<sbyte>(ComparisonKind:byte kind, sbyte a, sbyte b)
 // IL
 sbyte eval<sbyte>(ComparisonKind:byte kind, sbyte a, sbyte b)
@@ -894,7 +894,7 @@ sbyte eval<sbyte>(ComparisonKind:byte kind, sbyte a, sbyte b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // ushort eval<ushort>(ComparisonKind:byte kind, ushort a, ushort b)
 // IL
 ushort eval<ushort>(ComparisonKind:byte kind, ushort a, ushort b)
@@ -934,7 +934,7 @@ ushort eval<ushort>(ComparisonKind:byte kind, ushort a, ushort b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // short eval<short>(ComparisonKind:byte kind, short a, short b)
 // IL
 short eval<short>(ComparisonKind:byte kind, short a, short b)
@@ -974,7 +974,7 @@ short eval<short>(ComparisonKind:byte kind, short a, short b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // uint eval<uint>(ComparisonKind:byte kind, uint a, uint b)
 // IL
 uint eval<uint>(ComparisonKind:byte kind, uint a, uint b)
@@ -1014,7 +1014,7 @@ uint eval<uint>(ComparisonKind:byte kind, uint a, uint b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // int eval<int>(ComparisonKind:byte kind, int a, int b)
 // IL
 int eval<int>(ComparisonKind:byte kind, int a, int b)
@@ -1054,7 +1054,7 @@ int eval<int>(ComparisonKind:byte kind, int a, int b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // ulong eval<ulong>(ComparisonKind:byte kind, ulong a, ulong b)
 // IL
 ulong eval<ulong>(ComparisonKind:byte kind, ulong a, ulong b)
@@ -1094,7 +1094,7 @@ ulong eval<ulong>(ComparisonKind:byte kind, ulong a, ulong b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664039, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ComparisonKind,T,T)
 // long eval<long>(ComparisonKind:byte kind, long a, long b)
 // IL
 long eval<long>(ComparisonKind:byte kind, long a, long b)
@@ -1134,7 +1134,7 @@ long eval<long>(ComparisonKind:byte kind, long a, long b)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // byte eval<byte>(TernaryBitLogicKind:byte kind, byte a, byte b, byte c)
 // IL
 byte eval<byte>(TernaryBitLogicKind:byte kind, byte a, byte b, byte c)
@@ -1625,7 +1625,7 @@ byte eval<byte>(TernaryBitLogicKind:byte kind, byte a, byte b, byte c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // sbyte eval<sbyte>(TernaryBitLogicKind:byte kind, sbyte a, sbyte b, sbyte c)
 // IL
 sbyte eval<sbyte>(TernaryBitLogicKind:byte kind, sbyte a, sbyte b, sbyte c)
@@ -2116,7 +2116,7 @@ sbyte eval<sbyte>(TernaryBitLogicKind:byte kind, sbyte a, sbyte b, sbyte c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // ushort eval<ushort>(TernaryBitLogicKind:byte kind, ushort a, ushort b, ushort c)
 // IL
 ushort eval<ushort>(TernaryBitLogicKind:byte kind, ushort a, ushort b, ushort c)
@@ -2607,7 +2607,7 @@ ushort eval<ushort>(TernaryBitLogicKind:byte kind, ushort a, ushort b, ushort c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
 // IL
 short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
@@ -3098,7 +3098,7 @@ short eval<short>(TernaryBitLogicKind:byte kind, short a, short b, short c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // uint eval<uint>(TernaryBitLogicKind:byte kind, uint a, uint b, uint c)
 // IL
 uint eval<uint>(TernaryBitLogicKind:byte kind, uint a, uint b, uint c)
@@ -3589,7 +3589,7 @@ uint eval<uint>(TernaryBitLogicKind:byte kind, uint a, uint b, uint c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // int eval<int>(TernaryBitLogicKind:byte kind, int a, int b, int c)
 // IL
 int eval<int>(TernaryBitLogicKind:byte kind, int a, int b, int c)
@@ -4080,7 +4080,7 @@ int eval<int>(TernaryBitLogicKind:byte kind, int a, int b, int c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // ulong eval<ulong>(TernaryBitLogicKind:byte kind, ulong a, ulong b, ulong c)
 // IL
 ulong eval<ulong>(TernaryBitLogicKind:byte kind, ulong a, ulong b, ulong c)
@@ -4571,7 +4571,7 @@ ulong eval<ulong>(TernaryBitLogicKind:byte kind, ulong a, ulong b, ulong c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664040, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.TernaryBitLogicKind,T,T,T)
 // long eval<long>(TernaryBitLogicKind:byte kind, long a, long b, long c)
 // IL
 long eval<long>(TernaryBitLogicKind:byte kind, long a, long b, long c)
@@ -5062,7 +5062,7 @@ long eval<long>(TernaryBitLogicKind:byte kind, long a, long b, long c)
     IL_04EB: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664041, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
 // byte eval<byte>(ShiftOpKind:byte kind, byte a, byte count)
 // IL
 byte eval<byte>(ShiftOpKind:byte kind, byte a, byte count)
@@ -5097,7 +5097,7 @@ byte eval<byte>(ShiftOpKind:byte kind, byte a, byte count)
     IL_0049: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664041, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
 // ushort eval<ushort>(ShiftOpKind:byte kind, ushort a, byte count)
 // IL
 ushort eval<ushort>(ShiftOpKind:byte kind, ushort a, byte count)
@@ -5132,7 +5132,7 @@ ushort eval<ushort>(ShiftOpKind:byte kind, ushort a, byte count)
     IL_0049: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664041, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
 // uint eval<uint>(ShiftOpKind:byte kind, uint a, byte count)
 // IL
 uint eval<uint>(ShiftOpKind:byte kind, uint a, byte count)
@@ -5167,7 +5167,7 @@ uint eval<uint>(ShiftOpKind:byte kind, uint a, byte count)
     IL_0049: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664041, Name := T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
+// T Z0.Logix.ScalarOpApi::eval<T>(Z0.ShiftOpKind,T,System.Byte)
 // ulong eval<ulong>(ShiftOpKind:byte kind, ulong a, byte count)
 // IL
 ulong eval<ulong>(ShiftOpKind:byte kind, ulong a, byte count)

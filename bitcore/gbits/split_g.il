@@ -1,4 +1,4 @@
-// Id := 100663674, Name := System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
+// System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
 // void split<byte>(byte src, int index, out byte x0, out byte x1)
 // AggressiveInlining
 void split<byte>(byte src, int index, out byte x0, out byte x1)
@@ -95,7 +95,7 @@ void split<byte>(byte src, int index, out byte x0, out byte x1)
     IL_012A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663674, Name := System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
+// System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
 // void split<ushort>(ushort src, int index, out ushort x0, out ushort x1)
 // AggressiveInlining
 void split<ushort>(ushort src, int index, out ushort x0, out ushort x1)
@@ -192,7 +192,7 @@ void split<ushort>(ushort src, int index, out ushort x0, out ushort x1)
     IL_012A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663674, Name := System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
+// System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
 // void split<uint>(uint src, int index, out uint x0, out uint x1)
 // AggressiveInlining
 void split<uint>(uint src, int index, out uint x0, out uint x1)
@@ -289,7 +289,7 @@ void split<uint>(uint src, int index, out uint x0, out uint x1)
     IL_012A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663674, Name := System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
+// System.Void Z0.gbits::split<T>(T,System.Int32,T&,T&)
 // void split<ulong>(ulong src, int index, out ulong x0, out ulong x1)
 // AggressiveInlining
 void split<ulong>(ulong src, int index, out ulong x0, out ulong x1)

@@ -1,4 +1,4 @@
-// Id := 100663801, Name := Z0.Sign Z0.gfp::signum<T>(T)
+// Z0.Sign Z0.gfp::signum<T>(T)
 // Sign:int signum<float>(float src)
 // AggressiveInlining
 Sign:int signum<float>(float src)
@@ -31,7 +31,7 @@ Sign:int signum<float>(float src)
     IL_0064: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663801, Name := Z0.Sign Z0.gfp::signum<T>(T)
+// Z0.Sign Z0.gfp::signum<T>(T)
 // Sign:int signum<double>(double src)
 // AggressiveInlining
 Sign:int signum<double>(double src)

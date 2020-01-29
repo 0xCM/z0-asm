@@ -1,4 +1,4 @@
-// Id := 100663799, Name := Z0.bit Z0.gfp::nonzero<T>(T)
+// Z0.bit Z0.gfp::nonzero<T>(T)
 // bit nonzero<float>(float a)
 // AggressiveInlining
 bit nonzero<float>(float a)
@@ -31,7 +31,7 @@ bit nonzero<float>(float a)
     IL_0064: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663799, Name := Z0.bit Z0.gfp::nonzero<T>(T)
+// Z0.bit Z0.gfp::nonzero<T>(T)
 // bit nonzero<double>(double a)
 // AggressiveInlining
 bit nonzero<double>(double a)

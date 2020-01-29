@@ -1,4 +1,4 @@
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<byte>(Vector256<byte> x, Vector256<byte> y)
 // AggressiveInlining
 bit vsame<byte>(Vector256<byte> x, Vector256<byte> y)
@@ -10,7 +10,7 @@ bit vsame<byte>(Vector256<byte> x, Vector256<byte> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
 bit vsame<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y)
@@ -22,7 +22,7 @@ bit vsame<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<ushort>(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 bit vsame<ushort>(Vector256<ushort> x, Vector256<ushort> y)
@@ -34,7 +34,7 @@ bit vsame<ushort>(Vector256<ushort> x, Vector256<ushort> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<short>(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 bit vsame<short>(Vector256<short> x, Vector256<short> y)
@@ -46,7 +46,7 @@ bit vsame<short>(Vector256<short> x, Vector256<short> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<uint>(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 bit vsame<uint>(Vector256<uint> x, Vector256<uint> y)
@@ -58,7 +58,7 @@ bit vsame<uint>(Vector256<uint> x, Vector256<uint> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<int>(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 bit vsame<int>(Vector256<int> x, Vector256<int> y)
@@ -70,7 +70,7 @@ bit vsame<int>(Vector256<int> x, Vector256<int> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<ulong>(Vector256<ulong> x, Vector256<ulong> y)
 // AggressiveInlining
 bit vsame<ulong>(Vector256<ulong> x, Vector256<ulong> y)
@@ -82,7 +82,7 @@ bit vsame<ulong>(Vector256<ulong> x, Vector256<ulong> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<long>(Vector256<long> x, Vector256<long> y)
 // AggressiveInlining
 bit vsame<long>(Vector256<long> x, Vector256<long> y)
@@ -94,7 +94,7 @@ bit vsame<long>(Vector256<long> x, Vector256<long> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<float>(Vector256<float> x, Vector256<float> y)
 // AggressiveInlining
 bit vsame<float>(Vector256<float> x, Vector256<float> y)
@@ -106,7 +106,7 @@ bit vsame<float>(Vector256<float> x, Vector256<float> y)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665514, Name := Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// Z0.bit Z0.ginx::vsame<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // bit vsame<double>(Vector256<double> x, Vector256<double> y)
 // AggressiveInlining
 bit vsame<double>(Vector256<double> x, Vector256<double> y)

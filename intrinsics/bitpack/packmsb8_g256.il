@@ -1,4 +1,4 @@
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<byte>(Vector256<byte> src)
 // AggressiveInlining
 ulong packmsb8<byte>(Vector256<byte> src)
@@ -9,7 +9,7 @@ ulong packmsb8<byte>(Vector256<byte> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<sbyte>(Vector256<sbyte> src)
 // AggressiveInlining
 ulong packmsb8<sbyte>(Vector256<sbyte> src)
@@ -20,7 +20,7 @@ ulong packmsb8<sbyte>(Vector256<sbyte> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<ushort>(Vector256<ushort> src)
 // AggressiveInlining
 ulong packmsb8<ushort>(Vector256<ushort> src)
@@ -31,7 +31,7 @@ ulong packmsb8<ushort>(Vector256<ushort> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<short>(Vector256<short> src)
 // AggressiveInlining
 ulong packmsb8<short>(Vector256<short> src)
@@ -42,7 +42,7 @@ ulong packmsb8<short>(Vector256<short> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<uint>(Vector256<uint> src)
 // AggressiveInlining
 ulong packmsb8<uint>(Vector256<uint> src)
@@ -53,7 +53,7 @@ ulong packmsb8<uint>(Vector256<uint> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<int>(Vector256<int> src)
 // AggressiveInlining
 ulong packmsb8<int>(Vector256<int> src)
@@ -64,7 +64,7 @@ ulong packmsb8<int>(Vector256<int> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<ulong>(Vector256<ulong> src)
 // AggressiveInlining
 ulong packmsb8<ulong>(Vector256<ulong> src)
@@ -75,7 +75,7 @@ ulong packmsb8<ulong>(Vector256<ulong> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666144, Name := System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt64 Z0.BitPack::packmsb8<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // ulong packmsb8<long>(Vector256<long> src)
 // AggressiveInlining
 ulong packmsb8<long>(Vector256<long> src)

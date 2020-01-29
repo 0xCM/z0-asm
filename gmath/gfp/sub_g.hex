@@ -1,2 +1,2 @@
-sub_g32f  c5 f8 77 66 90 c5 fa 5c c1 c3
-sub_g64f  c5 f8 77 66 90 c5 fb 5c c1 c3
+sub_g32f_32f  c5 f8 77 66 90 c5 fa 5c c1 c3
+sub_g64f_64f  c5 f8 77 66 90 c5 fb 5c c1 c3

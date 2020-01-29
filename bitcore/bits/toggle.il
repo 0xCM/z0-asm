@@ -1,4 +1,4 @@
-// Id := 100663565, Name := System.SByte Z0.Bits::toggle(System.SByte,System.Int32)
+// System.SByte Z0.Bits::toggle(System.SByte,System.Int32)
 // sbyte toggle(sbyte src, int pos)
 // AggressiveInlining
 sbyte toggle(sbyte src, int pos)
@@ -17,7 +17,7 @@ sbyte toggle(sbyte src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663566, Name := System.Byte Z0.Bits::toggle(System.Byte,System.Int32)
+// System.Byte Z0.Bits::toggle(System.Byte,System.Int32)
 // byte toggle(byte src, int pos)
 // AggressiveInlining
 byte toggle(byte src, int pos)
@@ -36,7 +36,7 @@ byte toggle(byte src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663567, Name := System.Int16 Z0.Bits::toggle(System.Int16,System.Int32)
+// System.Int16 Z0.Bits::toggle(System.Int16,System.Int32)
 // short toggle(short src, int pos)
 // AggressiveInlining
 short toggle(short src, int pos)
@@ -55,7 +55,7 @@ short toggle(short src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663568, Name := System.UInt16 Z0.Bits::toggle(System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::toggle(System.UInt16,System.Int32)
 // ushort toggle(ushort src, int pos)
 // AggressiveInlining
 ushort toggle(ushort src, int pos)
@@ -74,7 +74,7 @@ ushort toggle(ushort src, int pos)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663569, Name := System.Int32 Z0.Bits::toggle(System.Int32,System.Int32)
+// System.Int32 Z0.Bits::toggle(System.Int32,System.Int32)
 // int toggle(int src, int pos)
 // AggressiveInlining
 int toggle(int src, int pos)
@@ -91,7 +91,7 @@ int toggle(int src, int pos)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663570, Name := System.UInt32 Z0.Bits::toggle(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::toggle(System.UInt32,System.Int32)
 // uint toggle(uint src, int pos)
 // AggressiveInlining
 uint toggle(uint src, int pos)
@@ -108,7 +108,7 @@ uint toggle(uint src, int pos)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663571, Name := System.Int64 Z0.Bits::toggle(System.Int64,System.Int32)
+// System.Int64 Z0.Bits::toggle(System.Int64,System.Int32)
 // long toggle(long src, int pos)
 // AggressiveInlining
 long toggle(long src, int pos)
@@ -126,7 +126,7 @@ long toggle(long src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663572, Name := System.UInt64 Z0.Bits::toggle(System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::toggle(System.UInt64,System.Int32)
 // ulong toggle(ulong src, int pos)
 // AggressiveInlining
 ulong toggle(ulong src, int pos)
@@ -144,7 +144,7 @@ ulong toggle(ulong src, int pos)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663573, Name := System.Single Z0.Bits::toggle(System.Single,System.Int32)
+// System.Single Z0.Bits::toggle(System.Single,System.Int32)
 // float toggle(float src, int pos)
 // AggressiveInlining
 float toggle(float src, int pos)
@@ -166,7 +166,7 @@ float toggle(float src, int pos)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663574, Name := System.Double Z0.Bits::toggle(System.Double,System.Int32)
+// System.Double Z0.Bits::toggle(System.Double,System.Int32)
 // double toggle(double src, int pos)
 // AggressiveInlining
 double toggle(double src, int pos)

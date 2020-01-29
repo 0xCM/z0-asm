@@ -1,4 +1,4 @@
-// Id := 100663861, Name := System.Single Z0.fmath::square(System.Single)
+// System.Single Z0.fmath::square(System.Single)
 // float square(float src)
 // AggressiveInlining
 float square(float src)
@@ -9,7 +9,7 @@ float square(float src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663862, Name := System.Double Z0.fmath::square(System.Double)
+// System.Double Z0.fmath::square(System.Double)
 // double square(double src)
 // AggressiveInlining
 double square(double src)

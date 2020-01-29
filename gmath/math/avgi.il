@@ -1,4 +1,4 @@
-// Id := 100663319, Name := System.Byte Z0.math::avgi(System.Byte,System.Byte)
+// System.Byte Z0.math::avgi(System.Byte,System.Byte)
 // byte avgi(byte a, byte b)
 // AggressiveInlining
 byte avgi(byte a, byte b)
@@ -16,7 +16,7 @@ byte avgi(byte a, byte b)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663320, Name := System.UInt16 Z0.math::avgi(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::avgi(System.UInt16,System.UInt16)
 // ushort avgi(ushort a, ushort b)
 // AggressiveInlining
 ushort avgi(ushort a, ushort b)
@@ -34,7 +34,7 @@ ushort avgi(ushort a, ushort b)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663321, Name := System.UInt32 Z0.math::avgi(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::avgi(System.UInt32,System.UInt32)
 // uint avgi(uint a, uint b)
 // AggressiveInlining
 uint avgi(uint a, uint b)
@@ -51,7 +51,7 @@ uint avgi(uint a, uint b)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663322, Name := System.UInt64 Z0.math::avgi(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::avgi(System.UInt64,System.UInt64)
 // ulong avgi(ulong a, ulong b)
 // AggressiveInlining
 ulong avgi(ulong a, ulong b)

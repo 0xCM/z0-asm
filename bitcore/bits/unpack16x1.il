@@ -1,4 +1,4 @@
-// Id := 100663577, Name := System.Void Z0.Bits::unpack16x1(System.UInt16,System.Span`1<System.Byte>)
+// System.Void Z0.Bits::unpack16x1(System.UInt16,System.Span`1<System.Byte>)
 // void unpack16x1(ushort src, Span<byte> dst)
 // AggressiveInlining
 void unpack16x1(ushort src, Span<byte> dst)
@@ -10,7 +10,7 @@ void unpack16x1(ushort src, Span<byte> dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663580, Name := System.Void Z0.Bits::unpack16x1(System.UInt16,Z0.Block128`1<System.Byte>&)
+// System.Void Z0.Bits::unpack16x1(System.UInt16,Z0.Block128`1<System.Byte>&)
 // void unpack16x1(ushort src, in Block128<byte> dst)
 // AggressiveInlining
 void unpack16x1(ushort src, in Block128<byte> dst)
@@ -22,7 +22,7 @@ void unpack16x1(ushort src, in Block128<byte> dst)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663582, Name := System.Void Z0.Bits::unpack16x1(System.UInt16,System.UInt64&)
+// System.Void Z0.Bits::unpack16x1(System.UInt16,System.UInt64&)
 // void unpack16x1(ushort src, ref ulong dst)
 // AggressiveInlining
 void unpack16x1(ushort src, ref ulong dst)

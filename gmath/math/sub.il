@@ -1,4 +1,4 @@
-// Id := 100663490, Name := System.SByte Z0.math::sub(System.SByte,System.SByte)
+// System.SByte Z0.math::sub(System.SByte,System.SByte)
 // sbyte sub(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte sub(sbyte a, sbyte b)
@@ -10,7 +10,7 @@ sbyte sub(sbyte a, sbyte b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663491, Name := System.Byte Z0.math::sub(System.Byte,System.Byte)
+// System.Byte Z0.math::sub(System.Byte,System.Byte)
 // byte sub(byte a, byte b)
 // AggressiveInlining
 byte sub(byte a, byte b)
@@ -22,7 +22,7 @@ byte sub(byte a, byte b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663492, Name := System.Int16 Z0.math::sub(System.Int16,System.Int16)
+// System.Int16 Z0.math::sub(System.Int16,System.Int16)
 // short sub(short a, short b)
 // AggressiveInlining
 short sub(short a, short b)
@@ -34,7 +34,7 @@ short sub(short a, short b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663493, Name := System.UInt16 Z0.math::sub(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::sub(System.UInt16,System.UInt16)
 // ushort sub(ushort a, ushort b)
 // AggressiveInlining
 ushort sub(ushort a, ushort b)
@@ -46,7 +46,7 @@ ushort sub(ushort a, ushort b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663494, Name := System.Int32 Z0.math::sub(System.Int32,System.Int32)
+// System.Int32 Z0.math::sub(System.Int32,System.Int32)
 // int sub(int a, int b)
 // AggressiveInlining
 int sub(int a, int b)
@@ -57,7 +57,7 @@ int sub(int a, int b)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663495, Name := System.UInt32 Z0.math::sub(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::sub(System.UInt32,System.UInt32)
 // uint sub(uint a, uint b)
 // AggressiveInlining
 uint sub(uint a, uint b)
@@ -68,7 +68,7 @@ uint sub(uint a, uint b)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663496, Name := System.Int64 Z0.math::sub(System.Int64,System.Int64)
+// System.Int64 Z0.math::sub(System.Int64,System.Int64)
 // long sub(long a, long b)
 // AggressiveInlining
 long sub(long a, long b)
@@ -79,7 +79,7 @@ long sub(long a, long b)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663497, Name := System.UInt64 Z0.math::sub(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::sub(System.UInt64,System.UInt64)
 // ulong sub(ulong a, ulong b)
 // AggressiveInlining
 ulong sub(ulong a, ulong b)

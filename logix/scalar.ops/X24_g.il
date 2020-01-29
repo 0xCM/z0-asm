@@ -1,4 +1,4 @@
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // byte f24<byte>(byte a, byte b, byte c)
 // AggressiveInlining
 byte f24<byte>(byte a, byte b, byte c)
@@ -13,7 +13,7 @@ byte f24<byte>(byte a, byte b, byte c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // sbyte f24<sbyte>(sbyte a, sbyte b, sbyte c)
 // AggressiveInlining
 sbyte f24<sbyte>(sbyte a, sbyte b, sbyte c)
@@ -28,7 +28,7 @@ sbyte f24<sbyte>(sbyte a, sbyte b, sbyte c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // ushort f24<ushort>(ushort a, ushort b, ushort c)
 // AggressiveInlining
 ushort f24<ushort>(ushort a, ushort b, ushort c)
@@ -43,7 +43,7 @@ ushort f24<ushort>(ushort a, ushort b, ushort c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // short f24<short>(short a, short b, short c)
 // AggressiveInlining
 short f24<short>(short a, short b, short c)
@@ -58,7 +58,7 @@ short f24<short>(short a, short b, short c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // uint f24<uint>(uint a, uint b, uint c)
 // AggressiveInlining
 uint f24<uint>(uint a, uint b, uint c)
@@ -73,7 +73,7 @@ uint f24<uint>(uint a, uint b, uint c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // int f24<int>(int a, int b, int c)
 // AggressiveInlining
 int f24<int>(int a, int b, int c)
@@ -88,7 +88,7 @@ int f24<int>(int a, int b, int c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // ulong f24<ulong>(ulong a, ulong b, ulong c)
 // AggressiveInlining
 ulong f24<ulong>(ulong a, ulong b, ulong c)
@@ -103,7 +103,7 @@ ulong f24<ulong>(ulong a, ulong b, ulong c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := T Z0.Logix.ScalarOps::f24<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f24<T>(T,T,T)
 // long f24<long>(long a, long b, long c)
 // AggressiveInlining
 long f24<long>(long a, long b, long c)

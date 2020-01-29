@@ -1,4 +1,4 @@
-// Id := 100663561, Name := System.Byte Z0.Bits::stitch(System.Byte,System.Int32,System.Byte,System.Int32)
+// System.Byte Z0.Bits::stitch(System.Byte,System.Int32,System.Byte,System.Int32)
 // byte stitch(byte left, int ldx, byte right, int rdx)
 // AggressiveInlining
 byte stitch(byte left, int ldx, byte right, int rdx)
@@ -26,7 +26,7 @@ byte stitch(byte left, int ldx, byte right, int rdx)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663562, Name := System.UInt16 Z0.Bits::stitch(System.UInt16,System.Int32,System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::stitch(System.UInt16,System.Int32,System.UInt16,System.Int32)
 // ushort stitch(ushort left, int ldx, ushort right, int rdx)
 // AggressiveInlining
 ushort stitch(ushort left, int ldx, ushort right, int rdx)
@@ -54,7 +54,7 @@ ushort stitch(ushort left, int ldx, ushort right, int rdx)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663563, Name := System.UInt32 Z0.Bits::stitch(System.UInt32,System.Int32,System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::stitch(System.UInt32,System.Int32,System.UInt32,System.Int32)
 // uint stitch(uint left, int ldx, uint right, int rdx)
 // AggressiveInlining
 uint stitch(uint left, int ldx, uint right, int rdx)
@@ -81,7 +81,7 @@ uint stitch(uint left, int ldx, uint right, int rdx)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663564, Name := System.UInt64 Z0.Bits::stitch(System.UInt64,System.Int32,System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::stitch(System.UInt64,System.Int32,System.UInt64,System.Int32)
 // ulong stitch(ulong left, int ldx, ulong right, int rdx)
 // AggressiveInlining
 ulong stitch(ulong left, int ldx, ulong right, int rdx)

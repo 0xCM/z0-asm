@@ -1,4 +1,4 @@
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // byte sar<byte>(byte src, byte offset)
 // AggressiveInlining
 byte sar<byte>(byte src, byte offset)
@@ -9,7 +9,7 @@ byte sar<byte>(byte src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // sbyte sar<sbyte>(sbyte src, byte offset)
 // AggressiveInlining
 sbyte sar<sbyte>(sbyte src, byte offset)
@@ -20,7 +20,7 @@ sbyte sar<sbyte>(sbyte src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // ushort sar<ushort>(ushort src, byte offset)
 // AggressiveInlining
 ushort sar<ushort>(ushort src, byte offset)
@@ -31,7 +31,7 @@ ushort sar<ushort>(ushort src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // short sar<short>(short src, byte offset)
 // AggressiveInlining
 short sar<short>(short src, byte offset)
@@ -42,7 +42,7 @@ short sar<short>(short src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // uint sar<uint>(uint src, byte offset)
 // AggressiveInlining
 uint sar<uint>(uint src, byte offset)
@@ -53,7 +53,7 @@ uint sar<uint>(uint src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // int sar<int>(int src, byte offset)
 // AggressiveInlining
 int sar<int>(int src, byte offset)
@@ -64,7 +64,7 @@ int sar<int>(int src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // ulong sar<ulong>(ulong src, byte offset)
 // AggressiveInlining
 ulong sar<ulong>(ulong src, byte offset)
@@ -75,7 +75,7 @@ ulong sar<ulong>(ulong src, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664061, Name := T Z0.gmath::sar<T>(T,System.Byte)
+// T Z0.gmath::sar<T>(T,System.Byte)
 // long sar<long>(long src, byte offset)
 // AggressiveInlining
 long sar<long>(long src, byte offset)

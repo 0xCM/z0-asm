@@ -1,4 +1,4 @@
-// Id := 100663788, Name := T Z0.gfp::ceil<T>(T)
+// T Z0.gfp::ceil<T>(T)
 // float ceil<float>(float src)
 // AggressiveInlining
 float ceil<float>(float src)
@@ -33,7 +33,7 @@ float ceil<float>(float src)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663788, Name := T Z0.gfp::ceil<T>(T)
+// T Z0.gfp::ceil<T>(T)
 // double ceil<double>(double src)
 // AggressiveInlining
 double ceil<double>(double src)

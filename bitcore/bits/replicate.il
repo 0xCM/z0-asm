@@ -1,4 +1,4 @@
-// Id := 100663505, Name := System.Byte Z0.Bits::replicate(System.Byte,System.Byte,System.Byte,System.Int32)
+// System.Byte Z0.Bits::replicate(System.Byte,System.Byte,System.Byte,System.Int32)
 // byte replicate(byte src, byte from, byte to, int reps)
 // AggressiveInlining
 byte replicate(byte src, byte from, byte to, int reps)
@@ -40,7 +40,7 @@ byte replicate(byte src, byte from, byte to, int reps)
     IL_0029: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663506, Name := System.UInt16 Z0.Bits::replicate(System.UInt16,System.Byte,System.Byte,System.Int32)
+// System.UInt16 Z0.Bits::replicate(System.UInt16,System.Byte,System.Byte,System.Int32)
 // ushort replicate(ushort src, byte from, byte to, int reps)
 // AggressiveInlining
 ushort replicate(ushort src, byte from, byte to, int reps)
@@ -82,7 +82,7 @@ ushort replicate(ushort src, byte from, byte to, int reps)
     IL_0029: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663507, Name := System.UInt32 Z0.Bits::replicate(System.UInt32,System.Byte,System.Byte,System.Int32)
+// System.UInt32 Z0.Bits::replicate(System.UInt32,System.Byte,System.Byte,System.Int32)
 // uint replicate(uint src, byte from, byte to, int reps)
 // AggressiveInlining
 uint replicate(uint src, byte from, byte to, int reps)
@@ -122,7 +122,7 @@ uint replicate(uint src, byte from, byte to, int reps)
     IL_0027: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663508, Name := System.UInt64 Z0.Bits::replicate(System.UInt64,System.Byte,System.Byte,System.Int32)
+// System.UInt64 Z0.Bits::replicate(System.UInt64,System.Byte,System.Byte,System.Int32)
 // ulong replicate(ulong src, byte from, byte to, int reps)
 // AggressiveInlining
 ulong replicate(ulong src, byte from, byte to, int reps)

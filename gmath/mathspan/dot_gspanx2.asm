@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte dot<byte>(ReadOnlySpan<byte> lhs, ReadOnlySpan<byte> rhs)
-; dot_g8u[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 46 0f b6 1c 11 46 0f b6 14 12 45 0f b6 db 45 0f b6 db 45 0f b6 d2 45 0f af d3 45 03 c2 45 0f b6 c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
+; dot_gspan8u_span8u[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 46 0f b6 1c 11 46 0f b6 14 12 45 0f b6 db 45 0f b6 db 45 0f b6 d2 45 0f af d3 45 03 c2 45 0f b6 c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -26,7 +26,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte dot<sbyte>(ReadOnlySpan<sbyte> lhs, ReadOnlySpan<sbyte> rhs)
-; dot_g8i[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f be 1c 11 4e 0f be 14 12 4d 0f be db 4d 0f be db 4d 0f be d2 45 0f af d3 45 03 c2 4d 0f be c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
+; dot_gspan8i_span8i[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f be 1c 11 4e 0f be 14 12 4d 0f be db 4d 0f be db 4d 0f be d2 45 0f af d3 45 03 c2 4d 0f be c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -52,7 +52,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs)
-; dot_g16u[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 46 0f b7 1c 51 46 0f b7 14 52 45 0f b7 db 45 0f b7 db 45 0f b7 d2 45 0f af d3 45 03 c2 45 0f b7 c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
+; dot_gspan16u_span16u[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 46 0f b7 1c 51 46 0f b7 14 52 45 0f b7 db 45 0f b7 db 45 0f b7 d2 45 0f af d3 45 03 c2 45 0f b7 c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -78,7 +78,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
-; dot_g16i[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f bf 1c 51 4e 0f bf 14 52 4d 0f bf db 4d 0f bf db 4d 0f bf d2 45 0f af d3 45 03 c2 4d 0f bf c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
+; dot_gspan16i_span16i[72] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 2c 4d 63 d1 4e 0f bf 1c 51 4e 0f bf 14 52 4d 0f bf db 4d 0f bf db 4d 0f bf d2 45 0f af d3 45 03 c2 4d 0f bf c0 41 ff c1 44 3b c8 7c d4 41 8b c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -104,7 +104,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint dot<uint>(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs)
-; dot_g32u[54] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1a 4d 63 d1 46 8b 1c 91 46 8b 14 92 45 0f af d3 45 03 c2 41 ff c1 44 3b c8 7c e6 41 8b c0 c3}
+; dot_gspan32u_span32u[54] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1a 4d 63 d1 46 8b 1c 91 46 8b 14 92 45 0f af d3 45 03 c2 41 ff c1 44 3b c8 7c e6 41 8b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -126,7 +126,7 @@
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int dot<int>(ReadOnlySpan<int> lhs, ReadOnlySpan<int> rhs)
-; dot_g32i[54] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1a 4d 63 d1 46 8b 1c 91 46 8b 14 92 45 0f af d3 45 03 c2 41 ff c1 44 3b c8 7c e6 41 8b c0 c3}
+; dot_gspan32i_span32i[54] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1a 4d 63 d1 46 8b 1c 91 46 8b 14 92 45 0f af d3 45 03 c2 41 ff c1 44 3b c8 7c e6 41 8b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -148,7 +148,7 @@
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong dot<ulong>(ReadOnlySpan<ulong> lhs, ReadOnlySpan<ulong> rhs)
-; dot_g64u[57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
+; dot_gspan64u_span64u[57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -171,7 +171,7 @@
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs)
-; dot_g64i[57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
+; dot_gspan64i_span64i[57] = {0f 1f 44 00 00 8b 41 08 48 8b 09 48 8b 12 45 33 c0 45 33 c9 85 c0 7e 1d 4d 63 d1 4e 8b 14 d1 4d 63 d9 4e 8b 1c da 4d 0f af d3 4d 03 c2 41 ff c1 44 3b c8 7c e3 49 8b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
@@ -194,7 +194,7 @@
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs)
-; dot_g32f[77] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 44 89 44 24 04 85 c0 7e 28 4d 63 c8 c4 a1 7a 10 04 89 c4 a1 7a 10 0c 8a c5 fa 10 54 24 04 c4 e2 71 a9 c2 c5 fa 11 44 24 04 41 ff c0 44 3b c0 7c d8 c5 fa 10 44 24 04 48 83 c4 08 c3}
+; dot_gspan32f_span32f[77] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 44 89 44 24 04 85 c0 7e 28 4d 63 c8 c4 a1 7a 10 04 89 c4 a1 7a 10 0c 8a c5 fa 10 54 24 04 c4 e2 71 a9 c2 c5 fa 11 44 24 04 41 ff c0 44 3b c0 7c d8 c5 fa 10 44 24 04 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -220,7 +220,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double dot<double>(ReadOnlySpan<double> lhs, ReadOnlySpan<double> rhs)
-; dot_g64f[73] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 4c 89 04 24 85 c0 7e 26 4d 63 c8 c4 a1 7b 10 04 c9 c4 a1 7b 10 0c ca c5 fb 10 14 24 c4 e2 f1 a9 c2 c5 fb 11 04 24 41 ff c0 44 3b c0 7c da c5 fb 10 04 24 48 83 c4 08 c3}
+; dot_gspan64f_span64f[73] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 4c 89 04 24 85 c0 7e 26 4d 63 c8 c4 a1 7b 10 04 c9 c4 a1 7b 10 0c ca c5 fb 10 14 24 c4 e2 f1 a9 c2 c5 fb 11 04 24 41 ff c0 44 3b c0 7c da c5 fb 10 04 24 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

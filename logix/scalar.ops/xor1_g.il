@@ -1,4 +1,4 @@
-// Id := 100664537, Name := T Z0.Logix.ScalarOps::xor1<T>(T)
+// T Z0.Logix.ScalarOps::xor1<T>(T)
 // byte xor1<byte>(byte a)
 // AggressiveInlining
 byte xor1<byte>(byte a)
@@ -61,7 +61,7 @@ byte xor1<byte>(byte a)
     IL_00C4: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664537, Name := T Z0.Logix.ScalarOps::xor1<T>(T)
+// T Z0.Logix.ScalarOps::xor1<T>(T)
 // ushort xor1<ushort>(ushort a)
 // AggressiveInlining
 ushort xor1<ushort>(ushort a)
@@ -124,7 +124,7 @@ ushort xor1<ushort>(ushort a)
     IL_00C4: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664537, Name := T Z0.Logix.ScalarOps::xor1<T>(T)
+// T Z0.Logix.ScalarOps::xor1<T>(T)
 // uint xor1<uint>(uint a)
 // AggressiveInlining
 uint xor1<uint>(uint a)
@@ -187,7 +187,7 @@ uint xor1<uint>(uint a)
     IL_00C4: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664537, Name := T Z0.Logix.ScalarOps::xor1<T>(T)
+// T Z0.Logix.ScalarOps::xor1<T>(T)
 // ulong xor1<ulong>(ulong a)
 // AggressiveInlining
 ulong xor1<ulong>(ulong a)

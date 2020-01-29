@@ -1,4 +1,4 @@
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<byte>(byte a, byte b)
 // AggressiveInlining
 bit divides<byte>(byte a, byte b)
@@ -66,7 +66,7 @@ bit divides<byte>(byte a, byte b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 bit divides<sbyte>(sbyte a, sbyte b)
@@ -134,7 +134,7 @@ bit divides<sbyte>(sbyte a, sbyte b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<ushort>(ushort a, ushort b)
 // AggressiveInlining
 bit divides<ushort>(ushort a, ushort b)
@@ -202,7 +202,7 @@ bit divides<ushort>(ushort a, ushort b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<short>(short a, short b)
 // AggressiveInlining
 bit divides<short>(short a, short b)
@@ -270,7 +270,7 @@ bit divides<short>(short a, short b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<uint>(uint a, uint b)
 // AggressiveInlining
 bit divides<uint>(uint a, uint b)
@@ -338,7 +338,7 @@ bit divides<uint>(uint a, uint b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<int>(int a, int b)
 // AggressiveInlining
 bit divides<int>(int a, int b)
@@ -406,7 +406,7 @@ bit divides<int>(int a, int b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<ulong>(ulong a, ulong b)
 // AggressiveInlining
 bit divides<ulong>(ulong a, ulong b)
@@ -474,7 +474,7 @@ bit divides<ulong>(ulong a, ulong b)
     IL_00F4: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663962, Name := Z0.bit Z0.gmath::divides<T>(T,T)
+// Z0.bit Z0.gmath::divides<T>(T,T)
 // bit divides<long>(long a, long b)
 // AggressiveInlining
 bit divides<long>(long a, long b)

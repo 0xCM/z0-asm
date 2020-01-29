@@ -1,4 +1,4 @@
-// Id := 100663399, Name := System.SByte Z0.math::inc(System.SByte)
+// System.SByte Z0.math::inc(System.SByte)
 // sbyte inc(sbyte src)
 // AggressiveInlining
 sbyte inc(sbyte src)
@@ -12,7 +12,7 @@ sbyte inc(sbyte src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663400, Name := System.Byte Z0.math::inc(System.Byte)
+// System.Byte Z0.math::inc(System.Byte)
 // byte inc(byte src)
 // AggressiveInlining
 byte inc(byte src)
@@ -26,7 +26,7 @@ byte inc(byte src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663401, Name := System.Int16 Z0.math::inc(System.Int16)
+// System.Int16 Z0.math::inc(System.Int16)
 // short inc(short src)
 // AggressiveInlining
 short inc(short src)
@@ -40,7 +40,7 @@ short inc(short src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663402, Name := System.UInt16 Z0.math::inc(System.UInt16)
+// System.UInt16 Z0.math::inc(System.UInt16)
 // ushort inc(ushort src)
 // AggressiveInlining
 ushort inc(ushort src)
@@ -54,7 +54,7 @@ ushort inc(ushort src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663403, Name := System.Int32 Z0.math::inc(System.Int32)
+// System.Int32 Z0.math::inc(System.Int32)
 // int inc(int src)
 // AggressiveInlining
 int inc(int src)
@@ -67,7 +67,7 @@ int inc(int src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663404, Name := System.UInt32 Z0.math::inc(System.UInt32)
+// System.UInt32 Z0.math::inc(System.UInt32)
 // uint inc(uint src)
 // AggressiveInlining
 uint inc(uint src)
@@ -80,7 +80,7 @@ uint inc(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663405, Name := System.Int64 Z0.math::inc(System.Int64)
+// System.Int64 Z0.math::inc(System.Int64)
 // long inc(long src)
 // AggressiveInlining
 long inc(long src)
@@ -94,7 +94,7 @@ long inc(long src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663406, Name := System.UInt64 Z0.math::inc(System.UInt64)
+// System.UInt64 Z0.math::inc(System.UInt64)
 // ulong inc(ulong src)
 // AggressiveInlining
 ulong inc(ulong src)

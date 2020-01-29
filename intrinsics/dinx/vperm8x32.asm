@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vperm8x32(Vector256<byte> src, Vector256<uint> spec)
-; vperm8x32_256x8u_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x8u_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -13,7 +13,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vperm8x32(Vector256<sbyte> src, Vector256<uint> spec)
-; vperm8x32_256x8i_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x8i_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -26,7 +26,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
-; vperm8x32_256x16i_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x16i_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -39,7 +39,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vperm8x32(Vector256<ushort> src, Vector256<uint> spec)
-; vperm8x32_256x16u_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x16u_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -52,7 +52,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vperm8x32(Vector256<uint> src, Vector256<uint> spec)
-; vperm8x32_256x32u[26] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 e2 7d 36 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x32u_v256x32u[26] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 e2 7d 36 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -64,7 +64,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vperm8x32(Vector256<int> src, Vector256<uint> spec)
-; vperm8x32_256x32i_256x32u[26] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 e2 7d 36 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x32i_v256x32u[26] = {c5 f8 77 66 90 c4 c1 7d 10 00 c4 e2 7d 36 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -76,7 +76,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vperm8x32(Vector256<long> src, Vector256<uint> spec)
-; vperm8x32_256x64i_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x64i_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -89,7 +89,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vperm8x32(Vector256<ulong> src, Vector256<uint> spec)
-; vperm8x32_256x64u_256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm8x32_v256x64u_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 36 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

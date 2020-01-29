@@ -1,4 +1,4 @@
-// Id := 100663334, Name := System.Byte Z0.Bits::bitclear(System.Byte,System.Byte,System.Byte)
+// System.Byte Z0.Bits::bitclear(System.Byte,System.Byte,System.Byte)
 // byte bitclear(byte src, byte index, byte count)
 // AggressiveInlining
 byte bitclear(byte src, byte index, byte count)
@@ -22,7 +22,7 @@ byte bitclear(byte src, byte index, byte count)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663335, Name := System.SByte Z0.Bits::bitclear(System.SByte,System.Byte,System.Byte)
+// System.SByte Z0.Bits::bitclear(System.SByte,System.Byte,System.Byte)
 // sbyte bitclear(sbyte src, byte index, byte count)
 // AggressiveInlining
 sbyte bitclear(sbyte src, byte index, byte count)
@@ -46,7 +46,7 @@ sbyte bitclear(sbyte src, byte index, byte count)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663336, Name := System.UInt16 Z0.Bits::bitclear(System.UInt16,System.Byte,System.Byte)
+// System.UInt16 Z0.Bits::bitclear(System.UInt16,System.Byte,System.Byte)
 // ushort bitclear(ushort src, byte index, byte count)
 // AggressiveInlining
 ushort bitclear(ushort src, byte index, byte count)
@@ -70,7 +70,7 @@ ushort bitclear(ushort src, byte index, byte count)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663337, Name := System.Int16 Z0.Bits::bitclear(System.Int16,System.Byte,System.Byte)
+// System.Int16 Z0.Bits::bitclear(System.Int16,System.Byte,System.Byte)
 // short bitclear(short src, byte index, byte count)
 // AggressiveInlining
 short bitclear(short src, byte index, byte count)
@@ -94,7 +94,7 @@ short bitclear(short src, byte index, byte count)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663338, Name := System.UInt32 Z0.Bits::bitclear(System.UInt32,System.Byte,System.Byte)
+// System.UInt32 Z0.Bits::bitclear(System.UInt32,System.Byte,System.Byte)
 // uint bitclear(uint src, byte index, byte count)
 // AggressiveInlining
 uint bitclear(uint src, byte index, byte count)
@@ -117,7 +117,7 @@ uint bitclear(uint src, byte index, byte count)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663339, Name := System.Int32 Z0.Bits::bitclear(System.Int32,System.Byte,System.Byte)
+// System.Int32 Z0.Bits::bitclear(System.Int32,System.Byte,System.Byte)
 // int bitclear(int src, byte index, byte count)
 // AggressiveInlining
 int bitclear(int src, byte index, byte count)
@@ -129,7 +129,7 @@ int bitclear(int src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663340, Name := System.UInt64 Z0.Bits::bitclear(System.UInt64,System.Byte,System.Byte)
+// System.UInt64 Z0.Bits::bitclear(System.UInt64,System.Byte,System.Byte)
 // ulong bitclear(ulong src, byte index, byte count)
 // AggressiveInlining
 ulong bitclear(ulong src, byte index, byte count)
@@ -152,7 +152,7 @@ ulong bitclear(ulong src, byte index, byte count)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663341, Name := System.Int64 Z0.Bits::bitclear(System.Int64,System.Byte,System.Byte)
+// System.Int64 Z0.Bits::bitclear(System.Int64,System.Byte,System.Byte)
 // long bitclear(long src, byte index, byte count)
 // AggressiveInlining
 long bitclear(long src, byte index, byte count)

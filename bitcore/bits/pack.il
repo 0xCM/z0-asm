@@ -1,4 +1,4 @@
-// Id := 100663443, Name := System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit)
+// System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit)
 // uint pack(bit b0, bit b1)
 // AggressiveInlining
 uint pack(bit b0, bit b1)
@@ -17,7 +17,7 @@ uint pack(bit b0, bit b1)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663444, Name := System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit)
+// System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit)
 // uint pack(bit b0, bit b1, bit b2)
 // AggressiveInlining
 uint pack(bit b0, bit b1, bit b2)
@@ -43,7 +43,7 @@ uint pack(bit b0, bit b1, bit b2)
     IL_001E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663445, Name := System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit)
+// System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit)
 // uint pack(bit b0, bit b1, bit b2, bit b3)
 // AggressiveInlining
 uint pack(bit b0, bit b1, bit b2, bit b3)
@@ -76,7 +76,7 @@ uint pack(bit b0, bit b1, bit b2, bit b3)
     IL_0029: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663446, Name := System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit)
+// System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit)
 // uint pack(bit b0, bit b1, bit b2, bit b3, bit b4)
 // AggressiveInlining
 uint pack(bit b0, bit b1, bit b2, bit b3, bit b4)
@@ -116,7 +116,7 @@ uint pack(bit b0, bit b1, bit b2, bit b3, bit b4)
     IL_0035: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663447, Name := System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit)
+// System.UInt32 Z0.Bits::pack(Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit,Z0.bit)
 // uint pack(bit b0, bit b1, bit b2, bit b3, bit b4, bit b5, bit b6, bit b7)
 // AggressiveInlining
 uint pack(bit b0, bit b1, bit b2, bit b3, bit b4, bit b5, bit b6, bit b7)

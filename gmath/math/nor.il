@@ -1,4 +1,4 @@
-// Id := 100663546, Name := System.SByte Z0.math::nor(System.SByte,System.SByte)
+// System.SByte Z0.math::nor(System.SByte,System.SByte)
 // sbyte nor(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte nor(sbyte a, sbyte b)
@@ -10,7 +10,7 @@ sbyte nor(sbyte a, sbyte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663547, Name := System.Byte Z0.math::nor(System.Byte,System.Byte)
+// System.Byte Z0.math::nor(System.Byte,System.Byte)
 // byte nor(byte a, byte b)
 // AggressiveInlining
 byte nor(byte a, byte b)
@@ -22,7 +22,7 @@ byte nor(byte a, byte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663548, Name := System.Int16 Z0.math::nor(System.Int16,System.Int16)
+// System.Int16 Z0.math::nor(System.Int16,System.Int16)
 // short nor(short a, short b)
 // AggressiveInlining
 short nor(short a, short b)
@@ -34,7 +34,7 @@ short nor(short a, short b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663549, Name := System.UInt16 Z0.math::nor(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::nor(System.UInt16,System.UInt16)
 // ushort nor(ushort a, ushort b)
 // AggressiveInlining
 ushort nor(ushort a, ushort b)
@@ -46,7 +46,7 @@ ushort nor(ushort a, ushort b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663550, Name := System.Int32 Z0.math::nor(System.Int32,System.Int32)
+// System.Int32 Z0.math::nor(System.Int32,System.Int32)
 // int nor(int a, int b)
 // AggressiveInlining
 int nor(int a, int b)
@@ -58,7 +58,7 @@ int nor(int a, int b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663551, Name := System.UInt32 Z0.math::nor(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::nor(System.UInt32,System.UInt32)
 // uint nor(uint a, uint b)
 // AggressiveInlining
 uint nor(uint a, uint b)
@@ -70,7 +70,7 @@ uint nor(uint a, uint b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663552, Name := System.Int64 Z0.math::nor(System.Int64,System.Int64)
+// System.Int64 Z0.math::nor(System.Int64,System.Int64)
 // long nor(long a, long b)
 // AggressiveInlining
 long nor(long a, long b)
@@ -82,7 +82,7 @@ long nor(long a, long b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663553, Name := System.UInt64 Z0.math::nor(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::nor(System.UInt64,System.UInt64)
 // ulong nor(ulong a, ulong b)
 // AggressiveInlining
 ulong nor(ulong a, ulong b)

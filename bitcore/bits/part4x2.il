@@ -1,4 +1,4 @@
-// Id := 100663466, Name := System.Void Z0.Bits::part4x2(System.UInt32,System.Byte&)
+// System.Void Z0.Bits::part4x2(System.UInt32,System.Byte&)
 // void part4x2(uint src, ref byte dst)
 // AggressiveInlining
 void part4x2(uint src, ref byte dst)
@@ -24,7 +24,7 @@ void part4x2(uint src, ref byte dst)
     IL_001C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663467, Name := System.Void Z0.Bits::part4x2(System.UInt32,Z0.NatSpan`2<Z0.N2,System.Byte>)
+// System.Void Z0.Bits::part4x2(System.UInt32,Z0.NatSpan`2<Z0.N2,System.Byte>)
 // void part4x2(uint src, NatSpan<N2,byte> dst)
 // AggressiveInlining
 void part4x2(uint src, NatSpan<N2,byte> dst)

@@ -1,4 +1,4 @@
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // byte setnb<byte>(byte src, byte pos, bit value)
 // AggressiveInlining
 byte setnb<byte>(byte src, byte pos, bit value)
@@ -29,7 +29,7 @@ byte setnb<byte>(byte src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // sbyte setnb<sbyte>(sbyte src, byte pos, bit value)
 // AggressiveInlining
 sbyte setnb<sbyte>(sbyte src, byte pos, bit value)
@@ -60,7 +60,7 @@ sbyte setnb<sbyte>(sbyte src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // ushort setnb<ushort>(ushort src, byte pos, bit value)
 // AggressiveInlining
 ushort setnb<ushort>(ushort src, byte pos, bit value)
@@ -91,7 +91,7 @@ ushort setnb<ushort>(ushort src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // short setnb<short>(short src, byte pos, bit value)
 // AggressiveInlining
 short setnb<short>(short src, byte pos, bit value)
@@ -122,7 +122,7 @@ short setnb<short>(short src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // uint setnb<uint>(uint src, byte pos, bit value)
 // AggressiveInlining
 uint setnb<uint>(uint src, byte pos, bit value)
@@ -153,7 +153,7 @@ uint setnb<uint>(uint src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // int setnb<int>(int src, byte pos, bit value)
 // AggressiveInlining
 int setnb<int>(int src, byte pos, bit value)
@@ -184,7 +184,7 @@ int setnb<int>(int src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // ulong setnb<ulong>(ulong src, byte pos, bit value)
 // AggressiveInlining
 ulong setnb<ulong>(ulong src, byte pos, bit value)
@@ -215,7 +215,7 @@ ulong setnb<ulong>(ulong src, byte pos, bit value)
     IL_003A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
+// T Z0.gbits::setnb<T>(T,System.Byte,Z0.bit)
 // long setnb<long>(long src, byte pos, bit value)
 // AggressiveInlining
 long setnb<long>(long src, byte pos, bit value)

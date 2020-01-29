@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmaskgather(N128 n, Vector128<uint> vsrc, ref uint msrc, Vector128<int> vidx, Vector128<uint> mask)
-; vmaskgather_n128_128x32u_32u_128x32i_128x32u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 61 90 04 89 c5 f9 11 01 48 8b c1 c3}
+; vmaskgather_n128_v128x32u_32u(ref)_v128x32i_v128x32u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 61 90 04 89 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmaskgather(N128 w, Vector128<ulong> vsrc, ref ulong msrc, Vector128<long> vidx, Vector128<ulong> mask)
-; vmaskgather_n128_128x64u_64u_128x64i_128x64u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 e1 91 04 c9 c5 f9 11 01 48 8b c1 c3}
+; vmaskgather_n128_v128x64u_64u(ref)_v128x64i_v128x64u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 e1 91 04 c9 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -32,7 +32,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmaskgather(N128 w, Vector128<ulong> vsrc, ref ulong msrc, Vector128<int> vidx, Vector128<ulong> mask)
-; vmaskgather_n128_128x64u_64u_128x32i_128x64u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 e1 90 04 c9 c5 f9 11 01 48 8b c1 c3}
+; vmaskgather_n128_v128x64u_64u(ref)_v128x32i_v128x64u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 e1 90 04 c9 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -48,7 +48,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmaskgather(N128 w, Vector128<uint> vsrc, ref uint msrc, Vector128<long> vidx, Vector128<uint> mask)
-; vmaskgather_n128_128x32u_32u_128x64i_128x32u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 61 91 04 89 c5 f9 11 01 48 8b c1 c3}
+; vmaskgather_n128_v128x32u_32u(ref)_v128x64i_v128x32u[46] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 f9 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 61 91 04 89 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -64,7 +64,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmaskgather(N128 w, Vector128<uint> vsrc, ref uint msrc, Vector256<long> vidx, Vector128<uint> mask)
-; vmaskgather_n128_128x32u_32u_256x64i_128x32u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 fd 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 65 91 04 89 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
+; vmaskgather_n128_v128x32u_32u(ref)_v256x64i_v128x32u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 79 10 00 c5 fd 10 08 c5 f9 10 12 c5 f8 28 da c4 c2 65 91 04 89 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -81,7 +81,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmaskgather(N256 w, Vector256<uint> vsrc, ref uint msrc, Vector256<int> vidx, Vector256<uint> mask)
-; vmaskgather_n256_256x32u_32u_256x32i_256x32u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 fd 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 65 90 04 89 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaskgather_n256_v256x32u_32u(ref)_v256x32i_v256x32u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 fd 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 65 90 04 89 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -98,7 +98,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmaskgather(N256 w, Vector256<ulong> vsrc, ref ulong msrc, Vector256<long> vidx, Vector256<ulong> mask)
-; vmaskgather_n256_256x64u_64u_256x64i_256x64u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 fd 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 e5 91 04 c9 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaskgather_n256_v256x64u_64u(ref)_v256x64i_v256x64u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 fd 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 e5 91 04 c9 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -115,7 +115,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmaskgather(N256 w, Vector256<ulong> vsrc, ref ulong msrc, Vector128<int> vidx, Vector256<ulong> mask)
-; vmaskgather_n256_256x64u_64u_128x32i_256x64u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 f9 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 e5 90 04 c9 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaskgather_n256_v256x64u_64u(ref)_v128x32i_v256x64u[49] = {c5 f8 77 66 90 48 8b 44 24 28 48 8b 54 24 30 c4 c1 7d 10 00 c5 f9 10 08 c5 fd 10 12 c5 fc 28 da c4 c2 e5 90 04 c9 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

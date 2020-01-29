@@ -1,4 +1,4 @@
-// Id := 100664315, Name := Z0.bit Z0.Logix.LogicOps::or(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::or(Z0.bit,Z0.bit)
 // bit or(bit a, bit b)
 // AggressiveInlining
 bit or(bit a, bit b)

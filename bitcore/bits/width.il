@@ -1,4 +1,4 @@
-// Id := 100663585, Name := System.Int32 Z0.Bits::width(System.Byte)
+// System.Int32 Z0.Bits::width(System.Byte)
 // int width(byte src)
 // AggressiveInlining
 int width(byte src)
@@ -10,7 +10,7 @@ int width(byte src)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663586, Name := System.Int32 Z0.Bits::width(System.UInt16)
+// System.Int32 Z0.Bits::width(System.UInt16)
 // int width(ushort src)
 // AggressiveInlining
 int width(ushort src)
@@ -22,7 +22,7 @@ int width(ushort src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663587, Name := System.Int32 Z0.Bits::width(System.UInt32)
+// System.Int32 Z0.Bits::width(System.UInt32)
 // int width(uint src)
 // AggressiveInlining
 int width(uint src)
@@ -34,7 +34,7 @@ int width(uint src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663588, Name := System.Int32 Z0.Bits::width(System.UInt64)
+// System.Int32 Z0.Bits::width(System.UInt64)
 // int width(ulong src)
 // AggressiveInlining
 int width(ulong src)

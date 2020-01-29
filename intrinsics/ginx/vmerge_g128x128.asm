@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmerge<byte>(Vector128<byte> x, Vector128<byte> y)
-; vmerge__g128x8u_128x8u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 60 d1 c5 f9 68 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x8u_v128x8u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 60 d1 c5 f9 68 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -17,7 +17,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vmerge<sbyte>(Vector128<sbyte> x, Vector128<sbyte> y)
-; vmerge__g128x8i_128x8i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 60 d1 c5 f9 68 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x8i_v128x8i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 60 d1 c5 f9 68 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -34,7 +34,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmerge<ushort>(Vector128<ushort> x, Vector128<ushort> y)
-; vmerge__g128x16u_128x16u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 61 d1 c5 f9 69 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x16u_v128x16u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 61 d1 c5 f9 69 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -51,7 +51,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vmerge<short>(Vector128<short> x, Vector128<short> y)
-; vmerge__g128x16i_128x16i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 61 d1 c5 f9 69 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x16i_v128x16i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 61 d1 c5 f9 69 c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -68,7 +68,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmerge<uint>(Vector128<uint> x, Vector128<uint> y)
-; vmerge__g128x32u_128x32u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 62 d1 c5 f9 6a c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x32u_v128x32u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 62 d1 c5 f9 6a c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -85,7 +85,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vmerge<int>(Vector128<int> x, Vector128<int> y)
-; vmerge__g128x32i_128x32i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 62 d1 c5 f9 6a c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x32i_v128x32i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 62 d1 c5 f9 6a c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -102,7 +102,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmerge<ulong>(Vector128<ulong> x, Vector128<ulong> y)
-; vmerge__g128x64u_128x64u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 6c d1 c5 f9 6d c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x64u_v128x64u[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 6c d1 c5 f9 6d c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -119,7 +119,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vmerge<long>(Vector128<long> x, Vector128<long> y)
-; vmerge__g128x64i_128x64i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 6c d1 c5 f9 6d c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmerge_gv128x64i_v128x64i[49] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 6c d1 c5 f9 6d c1 c5 f4 57 c9 c4 e3 75 38 ca 00 c4 e3 75 38 c0 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

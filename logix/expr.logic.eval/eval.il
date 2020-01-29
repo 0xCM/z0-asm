@@ -1,4 +1,4 @@
-// Id := 100663473, Name := Z0.bit Z0.Logix.LogicExprEval::eval(Z0.Logix.ILogicExpr)
+// Z0.bit Z0.Logix.LogicExprEval::eval(Z0.Logix.ILogicExpr)
 // bit eval(ILogicExpr expr)
 // IL
 bit eval(ILogicExpr expr)
@@ -59,7 +59,7 @@ bit eval(ILogicExpr expr)
     IL_008F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663474, Name := Z0.bit Z0.Logix.LogicExprEval::eval(Z0.Logix.ILogicOp)
+// Z0.bit Z0.Logix.LogicExprEval::eval(Z0.Logix.ILogicOp)
 // bit eval(ILogicOp expr)
 // IL
 bit eval(ILogicOp expr)

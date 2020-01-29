@@ -1,4 +1,4 @@
-// Id := 100663675, Name := T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
+// T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
 // byte stitch<byte>(byte left, int ldx, byte right, int rdx)
 // AggressiveInlining
 byte stitch<byte>(byte left, int ldx, byte right, int rdx)
@@ -71,7 +71,7 @@ byte stitch<byte>(byte left, int ldx, byte right, int rdx)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663675, Name := T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
+// T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
 // ushort stitch<ushort>(ushort left, int ldx, ushort right, int rdx)
 // AggressiveInlining
 ushort stitch<ushort>(ushort left, int ldx, ushort right, int rdx)
@@ -144,7 +144,7 @@ ushort stitch<ushort>(ushort left, int ldx, ushort right, int rdx)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663675, Name := T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
+// T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
 // uint stitch<uint>(uint left, int ldx, uint right, int rdx)
 // AggressiveInlining
 uint stitch<uint>(uint left, int ldx, uint right, int rdx)
@@ -217,7 +217,7 @@ uint stitch<uint>(uint left, int ldx, uint right, int rdx)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663675, Name := T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
+// T Z0.gbits::stitch<T>(T,System.Int32,T,System.Int32)
 // ulong stitch<ulong>(ulong left, int ldx, ulong right, int rdx)
 // AggressiveInlining
 ulong stitch<ulong>(ulong left, int ldx, ulong right, int rdx)

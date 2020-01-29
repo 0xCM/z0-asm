@@ -1,4 +1,4 @@
-// Id := 100663789, Name := T Z0.gfp::dec<T>(T)
+// T Z0.gfp::dec<T>(T)
 // float dec<float>(float src)
 // AggressiveInlining
 float dec<float>(float src)
@@ -33,7 +33,7 @@ float dec<float>(float src)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663789, Name := T Z0.gfp::dec<T>(T)
+// T Z0.gfp::dec<T>(T)
 // double dec<double>(double src)
 // AggressiveInlining
 double dec<double>(double src)

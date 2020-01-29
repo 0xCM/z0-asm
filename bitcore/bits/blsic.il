@@ -1,4 +1,4 @@
-// Id := 100663353, Name := System.Byte Z0.Bits::blsic(System.Byte)
+// System.Byte Z0.Bits::blsic(System.Byte)
 // byte blsic(byte src)
 // AggressiveInlining
 byte blsic(byte src)
@@ -13,7 +13,7 @@ byte blsic(byte src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663354, Name := System.UInt16 Z0.Bits::blsic(System.UInt16)
+// System.UInt16 Z0.Bits::blsic(System.UInt16)
 // ushort blsic(ushort src)
 // AggressiveInlining
 ushort blsic(ushort src)
@@ -28,7 +28,7 @@ ushort blsic(ushort src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663355, Name := System.UInt32 Z0.Bits::blsic(System.UInt32)
+// System.UInt32 Z0.Bits::blsic(System.UInt32)
 // uint blsic(uint src)
 // AggressiveInlining
 uint blsic(uint src)
@@ -42,7 +42,7 @@ uint blsic(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663356, Name := System.UInt64 Z0.Bits::blsic(System.UInt64)
+// System.UInt64 Z0.Bits::blsic(System.UInt64)
 // ulong blsic(ulong src)
 // AggressiveInlining
 ulong blsic(ulong src)

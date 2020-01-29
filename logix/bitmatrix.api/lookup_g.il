@@ -1,4 +1,4 @@
-// Id := 100664014, Name := Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BitMatrixBinaryRefOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
 // IL
 BitMatrixBinaryRefOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
@@ -76,7 +76,7 @@ BitMatrixBinaryRefOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664014, Name := Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BitMatrixBinaryRefOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
 // IL
 BitMatrixBinaryRefOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
@@ -154,7 +154,7 @@ BitMatrixBinaryRefOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664014, Name := Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BitMatrixBinaryRefOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
 // IL
 BitMatrixBinaryRefOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
@@ -232,7 +232,7 @@ BitMatrixBinaryRefOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664014, Name := Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.Logix.BitMatrixBinaryRefOp`1<T> Z0.Logix.BitMatrixOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BitMatrixBinaryRefOp<ulong> lookup<ulong>(BinaryBitLogicKind:byte kind)
 // IL
 BitMatrixBinaryRefOp<ulong> lookup<ulong>(BinaryBitLogicKind:byte kind)

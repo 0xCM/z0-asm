@@ -1,4 +1,4 @@
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<byte> lookup<byte>(ShiftOpKind:byte kind)
 // IL
 Shifter<byte> lookup<byte>(ShiftOpKind:byte kind)
@@ -33,7 +33,7 @@ Shifter<byte> lookup<byte>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<sbyte> lookup<sbyte>(ShiftOpKind:byte kind)
 // IL
 Shifter<sbyte> lookup<sbyte>(ShiftOpKind:byte kind)
@@ -68,7 +68,7 @@ Shifter<sbyte> lookup<sbyte>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<ushort> lookup<ushort>(ShiftOpKind:byte kind)
 // IL
 Shifter<ushort> lookup<ushort>(ShiftOpKind:byte kind)
@@ -103,7 +103,7 @@ Shifter<ushort> lookup<ushort>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<short> lookup<short>(ShiftOpKind:byte kind)
 // IL
 Shifter<short> lookup<short>(ShiftOpKind:byte kind)
@@ -138,7 +138,7 @@ Shifter<short> lookup<short>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<uint> lookup<uint>(ShiftOpKind:byte kind)
 // IL
 Shifter<uint> lookup<uint>(ShiftOpKind:byte kind)
@@ -173,7 +173,7 @@ Shifter<uint> lookup<uint>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<int> lookup<int>(ShiftOpKind:byte kind)
 // IL
 Shifter<int> lookup<int>(ShiftOpKind:byte kind)
@@ -208,7 +208,7 @@ Shifter<int> lookup<int>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<ulong> lookup<ulong>(ShiftOpKind:byte kind)
 // IL
 Shifter<ulong> lookup<ulong>(ShiftOpKind:byte kind)
@@ -243,7 +243,7 @@ Shifter<ulong> lookup<ulong>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664042, Name := Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ShiftOpKind)
 // Shifter<long> lookup<long>(ShiftOpKind:byte kind)
 // IL
 Shifter<long> lookup<long>(ShiftOpKind:byte kind)
@@ -278,7 +278,7 @@ Shifter<long> lookup<long>(ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<byte> lookup<byte>(ComparisonKind:byte kind)
 // IL
 BinaryOp<byte> lookup<byte>(ComparisonKind:byte kind)
@@ -318,7 +318,7 @@ BinaryOp<byte> lookup<byte>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<sbyte> lookup<sbyte>(ComparisonKind:byte kind)
 // IL
 BinaryOp<sbyte> lookup<sbyte>(ComparisonKind:byte kind)
@@ -358,7 +358,7 @@ BinaryOp<sbyte> lookup<sbyte>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<ushort> lookup<ushort>(ComparisonKind:byte kind)
 // IL
 BinaryOp<ushort> lookup<ushort>(ComparisonKind:byte kind)
@@ -398,7 +398,7 @@ BinaryOp<ushort> lookup<ushort>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<short> lookup<short>(ComparisonKind:byte kind)
 // IL
 BinaryOp<short> lookup<short>(ComparisonKind:byte kind)
@@ -438,7 +438,7 @@ BinaryOp<short> lookup<short>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<uint> lookup<uint>(ComparisonKind:byte kind)
 // IL
 BinaryOp<uint> lookup<uint>(ComparisonKind:byte kind)
@@ -478,7 +478,7 @@ BinaryOp<uint> lookup<uint>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<int> lookup<int>(ComparisonKind:byte kind)
 // IL
 BinaryOp<int> lookup<int>(ComparisonKind:byte kind)
@@ -518,7 +518,7 @@ BinaryOp<int> lookup<int>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<ulong> lookup<ulong>(ComparisonKind:byte kind)
 // IL
 BinaryOp<ulong> lookup<ulong>(ComparisonKind:byte kind)
@@ -558,7 +558,7 @@ BinaryOp<ulong> lookup<ulong>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<long> lookup<long>(ComparisonKind:byte kind)
 // IL
 BinaryOp<long> lookup<long>(ComparisonKind:byte kind)
@@ -598,7 +598,7 @@ BinaryOp<long> lookup<long>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<float> lookup<float>(ComparisonKind:byte kind)
 // IL
 BinaryOp<float> lookup<float>(ComparisonKind:byte kind)
@@ -638,7 +638,7 @@ BinaryOp<float> lookup<float>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664043, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.ComparisonKind)
 // BinaryOp<double> lookup<double>(ComparisonKind:byte kind)
 // IL
 BinaryOp<double> lookup<double>(ComparisonKind:byte kind)
@@ -678,7 +678,7 @@ BinaryOp<double> lookup<double>(ComparisonKind:byte kind)
     IL_007B: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<byte> lookup<byte>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<byte> lookup<byte>(UnaryBitLogicKind:byte kind)
@@ -704,7 +704,7 @@ UnaryOp<byte> lookup<byte>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<sbyte> lookup<sbyte>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<sbyte> lookup<sbyte>(UnaryBitLogicKind:byte kind)
@@ -730,7 +730,7 @@ UnaryOp<sbyte> lookup<sbyte>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<ushort> lookup<ushort>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<ushort> lookup<ushort>(UnaryBitLogicKind:byte kind)
@@ -756,7 +756,7 @@ UnaryOp<ushort> lookup<ushort>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<short> lookup<short>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<short> lookup<short>(UnaryBitLogicKind:byte kind)
@@ -782,7 +782,7 @@ UnaryOp<short> lookup<short>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<uint> lookup<uint>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<uint> lookup<uint>(UnaryBitLogicKind:byte kind)
@@ -808,7 +808,7 @@ UnaryOp<uint> lookup<uint>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<int> lookup<int>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<int> lookup<int>(UnaryBitLogicKind:byte kind)
@@ -834,7 +834,7 @@ UnaryOp<int> lookup<int>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<ulong> lookup<ulong>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<ulong> lookup<ulong>(UnaryBitLogicKind:byte kind)
@@ -860,7 +860,7 @@ UnaryOp<ulong> lookup<ulong>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664044, Name := Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.UnaryBitLogicKind)
 // UnaryOp<long> lookup<long>(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<long> lookup<long>(UnaryBitLogicKind:byte kind)
@@ -886,7 +886,7 @@ UnaryOp<long> lookup<long>(UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
@@ -964,7 +964,7 @@ BinaryOp<byte> lookup<byte>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<sbyte> lookup<sbyte>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<sbyte> lookup<sbyte>(BinaryBitLogicKind:byte kind)
@@ -1042,7 +1042,7 @@ BinaryOp<sbyte> lookup<sbyte>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
@@ -1120,7 +1120,7 @@ BinaryOp<ushort> lookup<ushort>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<short> lookup<short>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<short> lookup<short>(BinaryBitLogicKind:byte kind)
@@ -1198,7 +1198,7 @@ BinaryOp<short> lookup<short>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
@@ -1276,7 +1276,7 @@ BinaryOp<uint> lookup<uint>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<int> lookup<int>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<int> lookup<int>(BinaryBitLogicKind:byte kind)
@@ -1354,7 +1354,7 @@ BinaryOp<int> lookup<int>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<ulong> lookup<ulong>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<ulong> lookup<ulong>(BinaryBitLogicKind:byte kind)
@@ -1432,7 +1432,7 @@ BinaryOp<ulong> lookup<ulong>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664045, Name := Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<T> Z0.Logix.ScalarOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<long> lookup<long>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<long> lookup<long>(BinaryBitLogicKind:byte kind)

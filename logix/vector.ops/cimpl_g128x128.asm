@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> cimpl<byte>(Vector128<byte> a, Vector128<byte> b)
-; cimpl_g128x8u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x8u_v128x8u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -14,7 +14,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> cimpl<sbyte>(Vector128<sbyte> a, Vector128<sbyte> b)
-; cimpl_g128x8i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x8i_v128x8i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -28,7 +28,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> cimpl<ushort>(Vector128<ushort> a, Vector128<ushort> b)
-; cimpl_g128x16u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x16u_v128x16u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -42,7 +42,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> cimpl<short>(Vector128<short> a, Vector128<short> b)
-; cimpl_g128x16i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x16i_v128x16i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -56,7 +56,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> cimpl<uint>(Vector128<uint> a, Vector128<uint> b)
-; cimpl_g128x32u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x32u_v128x32u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -70,7 +70,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> cimpl<int>(Vector128<int> a, Vector128<int> b)
-; cimpl_g128x32i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x32i_v128x32i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> cimpl<ulong>(Vector128<ulong> a, Vector128<ulong> b)
-; cimpl_g128x64u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x64u_v128x64u[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -98,7 +98,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> cimpl<long>(Vector128<long> a, Vector128<long> b)
-; cimpl_g128x64i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
+; cimpl_gv128x64i_v128x64i[34] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

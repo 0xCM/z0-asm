@@ -1,4 +1,4 @@
-// Id := 100663798, Name := T Z0.gfp::negate<T>(T)
+// T Z0.gfp::negate<T>(T)
 // float negate<float>(float lhs)
 // AggressiveInlining
 float negate<float>(float lhs)
@@ -33,7 +33,7 @@ float negate<float>(float lhs)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663798, Name := T Z0.gfp::negate<T>(T)
+// T Z0.gfp::negate<T>(T)
 // double negate<double>(double lhs)
 // AggressiveInlining
 double negate<double>(double lhs)

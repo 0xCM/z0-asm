@@ -1,4 +1,4 @@
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // byte lt<byte>(byte a, byte b)
 // AggressiveInlining
 byte lt<byte>(byte a, byte b)
@@ -10,7 +10,7 @@ byte lt<byte>(byte a, byte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // sbyte lt<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte lt<sbyte>(sbyte a, sbyte b)
@@ -22,7 +22,7 @@ sbyte lt<sbyte>(sbyte a, sbyte b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // ushort lt<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort lt<ushort>(ushort a, ushort b)
@@ -34,7 +34,7 @@ ushort lt<ushort>(ushort a, ushort b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // short lt<short>(short a, short b)
 // AggressiveInlining
 short lt<short>(short a, short b)
@@ -46,7 +46,7 @@ short lt<short>(short a, short b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // uint lt<uint>(uint a, uint b)
 // AggressiveInlining
 uint lt<uint>(uint a, uint b)
@@ -58,7 +58,7 @@ uint lt<uint>(uint a, uint b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // int lt<int>(int a, int b)
 // AggressiveInlining
 int lt<int>(int a, int b)
@@ -70,7 +70,7 @@ int lt<int>(int a, int b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // ulong lt<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong lt<ulong>(ulong a, ulong b)
@@ -82,7 +82,7 @@ ulong lt<ulong>(ulong a, ulong b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664557, Name := T Z0.Logix.ScalarOps::lt<T>(T,T)
+// T Z0.Logix.ScalarOps::lt<T>(T,T)
 // long lt<long>(long a, long b)
 // AggressiveInlining
 long lt<long>(long a, long b)

@@ -1,4 +1,4 @@
-// Id := 100664010, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
 // BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A)
 // IL
 BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A)
@@ -22,7 +22,7 @@ BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A)
     IL_0025: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
 // BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A)
 // IL
 BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A)
@@ -46,7 +46,7 @@ BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A)
     IL_0025: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
 // BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A)
 // IL
 BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A)
@@ -70,7 +70,7 @@ BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A)
     IL_0025: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664010, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>)
 // BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A)
 // IL
 BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A)
@@ -94,7 +94,7 @@ BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A)
     IL_0025: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664011, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A, ref BitMatrix<byte> Z)
 // IL
 BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A, ref BitMatrix<byte> Z)
@@ -122,7 +122,7 @@ BitMatrix<byte> eval<byte>(UnaryBitLogicKind:byte kind, BitMatrix<byte> A, ref B
     IL_0031: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664011, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
 // IL
 BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
@@ -150,7 +150,7 @@ BitMatrix<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, BitMatrix<ushort> A,
     IL_0031: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664011, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A, ref BitMatrix<uint> Z)
 // IL
 BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A, ref BitMatrix<uint> Z)
@@ -178,7 +178,7 @@ BitMatrix<uint> eval<uint>(UnaryBitLogicKind:byte kind, BitMatrix<uint> A, ref B
     IL_0031: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664011, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.UnaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A, ref BitMatrix<ulong> Z)
 // IL
 BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A, ref BitMatrix<ulong> Z)
@@ -206,7 +206,7 @@ BitMatrix<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, BitMatrix<ulong> A, re
     IL_0031: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664012, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
 // BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitMatrix<byte> B)
 // IL
 BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitMatrix<byte> B)
@@ -280,7 +280,7 @@ BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitM
     IL_00EE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664012, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
 // BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A, BitMatrix<ushort> B)
 // IL
 BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A, BitMatrix<ushort> B)
@@ -354,7 +354,7 @@ BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A
     IL_00EE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664012, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
 // BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitMatrix<uint> B)
 // IL
 BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitMatrix<uint> B)
@@ -428,7 +428,7 @@ BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitM
     IL_00EE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664012, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>)
 // BitMatrix<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitMatrix<ulong> A, BitMatrix<ulong> B)
 // IL
 BitMatrix<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitMatrix<ulong> A, BitMatrix<ulong> B)
@@ -502,7 +502,7 @@ BitMatrix<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitMatrix<ulong> A, B
     IL_00EE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664013, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitMatrix<byte> B, ref BitMatrix<byte> Z)
 // IL
 BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitMatrix<byte> B, ref BitMatrix<byte> Z)
@@ -604,7 +604,7 @@ BitMatrix<byte> eval<byte>(BinaryBitLogicKind:byte kind, BitMatrix<byte> A, BitM
     IL_0142: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664013, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A, BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
 // IL
 BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A, BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
@@ -706,7 +706,7 @@ BitMatrix<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, BitMatrix<ushort> A
     IL_0142: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664013, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitMatrix<uint> B, ref BitMatrix<uint> Z)
 // IL
 BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitMatrix<uint> B, ref BitMatrix<uint> Z)
@@ -808,7 +808,7 @@ BitMatrix<uint> eval<uint>(BinaryBitLogicKind:byte kind, BitMatrix<uint> A, BitM
     IL_0142: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664013, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOpApi::eval<T>(Z0.BinaryBitLogicKind,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>,Z0.BitMatrix`1<T>&)
 // BitMatrix<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitMatrix<ulong> A, BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
 // IL
 BitMatrix<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, BitMatrix<ulong> A, BitMatrix<ulong> B, ref BitMatrix<ulong> Z)

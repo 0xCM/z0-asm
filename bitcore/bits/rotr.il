@@ -1,4 +1,4 @@
-// Id := 100663521, Name := System.Byte Z0.Bits::rotr(System.Byte,System.Int32)
+// System.Byte Z0.Bits::rotr(System.Byte,System.Int32)
 // byte rotr(byte src, int shift)
 // AggressiveInlining
 byte rotr(byte src, int shift)
@@ -20,7 +20,7 @@ byte rotr(byte src, int shift)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663522, Name := System.UInt16 Z0.Bits::rotr(System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::rotr(System.UInt16,System.Int32)
 // ushort rotr(ushort src, int shift)
 // AggressiveInlining
 ushort rotr(ushort src, int shift)
@@ -42,7 +42,7 @@ ushort rotr(ushort src, int shift)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663523, Name := System.UInt32 Z0.Bits::rotr(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::rotr(System.UInt32,System.Int32)
 // uint rotr(uint src, int shift)
 // AggressiveInlining
 uint rotr(uint src, int shift)
@@ -63,7 +63,7 @@ uint rotr(uint src, int shift)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663524, Name := System.UInt64 Z0.Bits::rotr(System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::rotr(System.UInt64,System.Int32)
 // ulong rotr(ulong src, int shift)
 // AggressiveInlining
 ulong rotr(ulong src, int shift)
@@ -84,7 +84,7 @@ ulong rotr(ulong src, int shift)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663525, Name := System.Byte Z0.Bits::rotr(System.Byte,System.Int32,System.Int32)
+// System.Byte Z0.Bits::rotr(System.Byte,System.Int32,System.Int32)
 // byte rotr(byte src, int shift, int width)
 // AggressiveInlining
 byte rotr(byte src, int shift, int width)
@@ -106,7 +106,7 @@ byte rotr(byte src, int shift, int width)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663526, Name := System.UInt16 Z0.Bits::rotr(System.UInt16,System.Int32,System.Int32)
+// System.UInt16 Z0.Bits::rotr(System.UInt16,System.Int32,System.Int32)
 // ushort rotr(ushort src, int shift, int width)
 // AggressiveInlining
 ushort rotr(ushort src, int shift, int width)
@@ -128,7 +128,7 @@ ushort rotr(ushort src, int shift, int width)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663527, Name := System.UInt32 Z0.Bits::rotr(System.UInt32,System.Int32,System.Int32)
+// System.UInt32 Z0.Bits::rotr(System.UInt32,System.Int32,System.Int32)
 // uint rotr(uint src, int shift, int width)
 // AggressiveInlining
 uint rotr(uint src, int shift, int width)
@@ -149,7 +149,7 @@ uint rotr(uint src, int shift, int width)
     IL_000F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663528, Name := System.UInt64 Z0.Bits::rotr(System.UInt64,System.Int32,System.Int32)
+// System.UInt64 Z0.Bits::rotr(System.UInt64,System.Int32,System.Int32)
 // ulong rotr(ulong src, int shift, int width)
 // AggressiveInlining
 ulong rotr(ulong src, int shift, int width)

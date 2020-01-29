@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<byte>(Vector256<byte> x, Vector256<byte> y)
-; vsame__g256x8u_256x8u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x8u_v256x8u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -17,7 +17,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<sbyte>(Vector256<sbyte> x, Vector256<sbyte> y)
-; vsame__g256x8i_256x8i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x8i_v256x8i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -34,7 +34,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<ushort>(Vector256<ushort> x, Vector256<ushort> y)
-; vsame__g256x16u_256x16u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x16u_v256x16u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -51,7 +51,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<short>(Vector256<short> x, Vector256<short> y)
-; vsame__g256x16i_256x16i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x16i_v256x16i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -68,7 +68,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<uint>(Vector256<uint> x, Vector256<uint> y)
-; vsame__g256x32u_256x32u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x32u_v256x32u[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -85,7 +85,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<int>(Vector256<int> x, Vector256<int> y)
-; vsame__g256x32i_256x32i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x32i_v256x32i[44] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -102,7 +102,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<ulong>(Vector256<ulong> x, Vector256<ulong> y)
-; vsame__g256x64u_256x64u[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x64u_v256x64u[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -119,7 +119,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<long>(Vector256<long> x, Vector256<long> y)
-; vsame__g256x64i_256x64i[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x64i_v256x64i[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c4 e2 7d 17 c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -136,7 +136,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<float>(Vector256<float> x, Vector256<float> y)
-; vsame__g256x32f_256x32f[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fc c2 c1 08 c5 f4 57 c9 c5 ec 57 d2 c5 f4 c2 ca 08 c4 e2 7d 0e c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x32f_v256x32f[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fc c2 c1 08 c5 f4 57 c9 c5 ec 57 d2 c5 f4 c2 ca 08 c4 e2 7d 0e c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -153,7 +153,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<double>(Vector256<double> x, Vector256<double> y)
-; vsame__g256x64f_256x64f[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd c2 c1 08 c5 f4 57 c9 c5 ec 57 d2 c5 f5 c2 ca 08 c4 e2 7d 0f c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
+; vsame_gv256x64f_v256x64f[46] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 10 0a c5 fd c2 c1 08 c5 f4 57 c9 c5 ec 57 d2 c5 f5 c2 ca 08 c4 e2 7d 0f c1 0f 92 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

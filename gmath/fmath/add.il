@@ -1,4 +1,4 @@
-// Id := 100663830, Name := System.Single Z0.fmath::add(System.Single,System.Single)
+// System.Single Z0.fmath::add(System.Single,System.Single)
 // float add(float lhs, float rhs)
 // AggressiveInlining
 float add(float lhs, float rhs)
@@ -9,7 +9,7 @@ float add(float lhs, float rhs)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663831, Name := System.Double Z0.fmath::add(System.Double,System.Double)
+// System.Double Z0.fmath::add(System.Double,System.Double)
 // double add(double lhs, double rhs)
 // AggressiveInlining
 double add(double lhs, double rhs)

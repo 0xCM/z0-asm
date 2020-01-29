@@ -1,4 +1,4 @@
-// Id := 100663481, Name := System.UInt32 Z0.Bits::pop(System.SByte)
+// System.UInt32 Z0.Bits::pop(System.SByte)
 // uint pop(sbyte src)
 // AggressiveInlining
 uint pop(sbyte src)
@@ -8,7 +8,7 @@ uint pop(sbyte src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663482, Name := System.UInt32 Z0.Bits::pop(System.Byte)
+// System.UInt32 Z0.Bits::pop(System.Byte)
 // uint pop(byte src)
 // AggressiveInlining
 uint pop(byte src)
@@ -18,7 +18,7 @@ uint pop(byte src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663483, Name := System.UInt32 Z0.Bits::pop(System.Int16)
+// System.UInt32 Z0.Bits::pop(System.Int16)
 // uint pop(short src)
 // AggressiveInlining
 uint pop(short src)
@@ -28,7 +28,7 @@ uint pop(short src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663484, Name := System.UInt32 Z0.Bits::pop(System.UInt16)
+// System.UInt32 Z0.Bits::pop(System.UInt16)
 // uint pop(ushort src)
 // AggressiveInlining
 uint pop(ushort src)
@@ -38,7 +38,7 @@ uint pop(ushort src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663485, Name := System.UInt32 Z0.Bits::pop(System.Int32)
+// System.UInt32 Z0.Bits::pop(System.Int32)
 // uint pop(int src)
 // AggressiveInlining
 uint pop(int src)
@@ -48,7 +48,7 @@ uint pop(int src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663486, Name := System.UInt32 Z0.Bits::pop(System.UInt32)
+// System.UInt32 Z0.Bits::pop(System.UInt32)
 // uint pop(uint src)
 // AggressiveInlining
 uint pop(uint src)
@@ -58,7 +58,7 @@ uint pop(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663487, Name := System.UInt32 Z0.Bits::pop(System.Int64)
+// System.UInt32 Z0.Bits::pop(System.Int64)
 // uint pop(long src)
 // AggressiveInlining
 uint pop(long src)
@@ -69,7 +69,7 @@ uint pop(long src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663488, Name := System.UInt32 Z0.Bits::pop(System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64)
 // uint pop(ulong src)
 // AggressiveInlining
 uint pop(ulong src)
@@ -80,7 +80,7 @@ uint pop(ulong src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663489, Name := System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64)
 // uint pop(ulong x0, ulong x1)
 // AggressiveInlining
 uint pop(ulong x0, ulong x1)
@@ -94,7 +94,7 @@ uint pop(ulong x0, ulong x1)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663490, Name := System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64)
 // uint pop(ulong x, ulong y, ulong z)
 // AggressiveInlining
 uint pop(ulong x, ulong y, ulong z)
@@ -182,7 +182,7 @@ uint pop(ulong x, ulong y, ulong z)
     IL_0099: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663491, Name := System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64)
 // uint pop(ulong x0, ulong x1, ulong x2, ulong x3)
 // AggressiveInlining
 uint pop(ulong x0, ulong x1, ulong x2, ulong x3)
@@ -202,7 +202,7 @@ uint pop(ulong x0, ulong x1, ulong x2, ulong x3)
     IL_001C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663492, Name := System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)
 // uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
 // AggressiveInlining
 uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
@@ -221,7 +221,7 @@ uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, u
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663493, Name := System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)
+// System.UInt32 Z0.Bits::pop(System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64,System.UInt64)
 // uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5)
 // AggressiveInlining
 uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5)

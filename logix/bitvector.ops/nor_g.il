@@ -1,4 +1,4 @@
-// Id := 100664143, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<byte> nor<byte>(BitVector<byte> x, BitVector<byte> y)
 // AggressiveInlining
 BitVector<byte> nor<byte>(BitVector<byte> x, BitVector<byte> y)
@@ -9,7 +9,7 @@ BitVector<byte> nor<byte>(BitVector<byte> x, BitVector<byte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664143, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ushort> nor<ushort>(BitVector<ushort> x, BitVector<ushort> y)
 // AggressiveInlining
 BitVector<ushort> nor<ushort>(BitVector<ushort> x, BitVector<ushort> y)
@@ -20,7 +20,7 @@ BitVector<ushort> nor<ushort>(BitVector<ushort> x, BitVector<ushort> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664143, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<uint> nor<uint>(BitVector<uint> x, BitVector<uint> y)
 // AggressiveInlining
 BitVector<uint> nor<uint>(BitVector<uint> x, BitVector<uint> y)
@@ -31,7 +31,7 @@ BitVector<uint> nor<uint>(BitVector<uint> x, BitVector<uint> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664143, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::nor<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ulong> nor<ulong>(BitVector<ulong> x, BitVector<ulong> y)
 // AggressiveInlining
 BitVector<ulong> nor<ulong>(BitVector<ulong> x, BitVector<ulong> y)

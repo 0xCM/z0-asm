@@ -1,4 +1,4 @@
-// Id := 100663816, Name := T Z0.gfp::sqrt<T>(T)
+// T Z0.gfp::sqrt<T>(T)
 // float sqrt<float>(float src)
 // AggressiveInlining
 float sqrt<float>(float src)
@@ -33,7 +33,7 @@ float sqrt<float>(float src)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663816, Name := T Z0.gfp::sqrt<T>(T)
+// T Z0.gfp::sqrt<T>(T)
 // double sqrt<double>(double src)
 // AggressiveInlining
 double sqrt<double>(double src)

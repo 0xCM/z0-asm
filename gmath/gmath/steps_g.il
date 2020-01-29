@@ -1,4 +1,4 @@
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<byte>(byte first, byte step, int count, ref byte dst)
 // AggressiveInlining
 void steps<byte>(byte first, byte step, int count, ref byte dst)
@@ -29,7 +29,7 @@ void steps<byte>(byte first, byte step, int count, ref byte dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst)
 // AggressiveInlining
 void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst)
@@ -60,7 +60,7 @@ void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<ushort>(ushort first, ushort step, int count, ref ushort dst)
 // AggressiveInlining
 void steps<ushort>(ushort first, ushort step, int count, ref ushort dst)
@@ -91,7 +91,7 @@ void steps<ushort>(ushort first, ushort step, int count, ref ushort dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<short>(short first, short step, int count, ref short dst)
 // AggressiveInlining
 void steps<short>(short first, short step, int count, ref short dst)
@@ -122,7 +122,7 @@ void steps<short>(short first, short step, int count, ref short dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<uint>(uint first, uint step, int count, ref uint dst)
 // AggressiveInlining
 void steps<uint>(uint first, uint step, int count, ref uint dst)
@@ -153,7 +153,7 @@ void steps<uint>(uint first, uint step, int count, ref uint dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<int>(int first, int step, int count, ref int dst)
 // AggressiveInlining
 void steps<int>(int first, int step, int count, ref int dst)
@@ -184,7 +184,7 @@ void steps<int>(int first, int step, int count, ref int dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<ulong>(ulong first, ulong step, int count, ref ulong dst)
 // AggressiveInlining
 void steps<ulong>(ulong first, ulong step, int count, ref ulong dst)
@@ -215,7 +215,7 @@ void steps<ulong>(ulong first, ulong step, int count, ref ulong dst)
     IL_0033: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664131, Name := System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
+// System.Void Z0.gmath::steps<T>(T,T,System.Int32,T&)
 // void steps<long>(long first, long step, int count, ref long dst)
 // AggressiveInlining
 void steps<long>(long first, long step, int count, ref long dst)

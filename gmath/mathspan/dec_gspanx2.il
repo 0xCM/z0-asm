@@ -1,4 +1,4 @@
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> dec<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
 // AggressiveInlining
 Span<byte> dec<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
@@ -13,7 +13,7 @@ Span<byte> dec<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> dec<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> dec<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
@@ -28,7 +28,7 @@ Span<sbyte> dec<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> dec<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> dec<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
@@ -43,7 +43,7 @@ Span<ushort> dec<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> dec<short>(ReadOnlySpan<short> src, Span<short> dst)
 // AggressiveInlining
 Span<short> dec<short>(ReadOnlySpan<short> src, Span<short> dst)
@@ -58,7 +58,7 @@ Span<short> dec<short>(ReadOnlySpan<short> src, Span<short> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> dec<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
 // AggressiveInlining
 Span<uint> dec<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
@@ -73,7 +73,7 @@ Span<uint> dec<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> dec<int>(ReadOnlySpan<int> src, Span<int> dst)
 // AggressiveInlining
 Span<int> dec<int>(ReadOnlySpan<int> src, Span<int> dst)
@@ -88,7 +88,7 @@ Span<int> dec<int>(ReadOnlySpan<int> src, Span<int> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> dec<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> dec<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
@@ -103,7 +103,7 @@ Span<ulong> dec<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664157, Name := System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::dec<T>(System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> dec<long>(ReadOnlySpan<long> src, Span<long> dst)
 // AggressiveInlining
 Span<long> dec<long>(ReadOnlySpan<long> src, Span<long> dst)

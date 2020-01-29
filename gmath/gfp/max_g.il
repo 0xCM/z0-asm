@@ -1,4 +1,4 @@
-// Id := 100663811, Name := T Z0.gfp::max<T>(T,T)
+// T Z0.gfp::max<T>(T,T)
 // float max<float>(float a, float b)
 // AggressiveInlining
 float max<float>(float a, float b)
@@ -37,7 +37,7 @@ float max<float>(float a, float b)
     IL_007A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663811, Name := T Z0.gfp::max<T>(T,T)
+// T Z0.gfp::max<T>(T,T)
 // double max<double>(double a, double b)
 // AggressiveInlining
 double max<double>(double a, double b)

@@ -1,4 +1,4 @@
-// Id := 100663589, Name := System.Byte Z0.Bits::zerohi(System.Byte,System.Int32)
+// System.Byte Z0.Bits::zerohi(System.Byte,System.Int32)
 // byte zerohi(byte src, int index)
 // AggressiveInlining
 byte zerohi(byte src, int index)
@@ -10,7 +10,7 @@ byte zerohi(byte src, int index)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663590, Name := System.UInt16 Z0.Bits::zerohi(System.UInt16,System.Int32)
+// System.UInt16 Z0.Bits::zerohi(System.UInt16,System.Int32)
 // ushort zerohi(ushort src, int index)
 // AggressiveInlining
 ushort zerohi(ushort src, int index)
@@ -22,7 +22,7 @@ ushort zerohi(ushort src, int index)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663591, Name := System.UInt32 Z0.Bits::zerohi(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::zerohi(System.UInt32,System.Int32)
 // uint zerohi(uint src, int index)
 // AggressiveInlining
 uint zerohi(uint src, int index)
@@ -33,7 +33,7 @@ uint zerohi(uint src, int index)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663592, Name := System.UInt64 Z0.Bits::zerohi(System.UInt64,System.Int32)
+// System.UInt64 Z0.Bits::zerohi(System.UInt64,System.Int32)
 // ulong zerohi(ulong src, int index)
 // AggressiveInlining
 ulong zerohi(ulong src, int index)

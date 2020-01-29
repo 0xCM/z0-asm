@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbfly<byte>(N1 n, Vector256<byte> x)
-; vbfly__gn1_256x8u[141] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c7 44 24 14 66 00 00 00 48 8d 44 24 14 c4 e2 7d 78 4c 24 14 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c7 44 24 10 fe 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 01 c7 44 24 0c 7f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vbfly_gn1_v256x8u[141] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c7 44 24 14 66 00 00 00 48 8d 44 24 14 c4 e2 7d 78 4c 24 14 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c7 44 24 10 fe 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 01 c7 44 24 0c 7f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -34,7 +34,7 @@
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbfly<ushort>(N1 n, Vector256<ushort> x)
-; vbfly__gn1_256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 66 66 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 01 c5 fc 28 e2 c5 dd 71 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn1_v256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 66 66 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 01 c5 fc 28 e2 c5 dd 71 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -61,7 +61,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbfly<uint>(N1 n, Vector256<uint> x)
-; vbfly__gn1_256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 66 66 66 66 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 01 c5 fc 28 e2 c5 dd 72 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn1_v256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 66 66 66 66 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 01 c5 fc 28 e2 c5 dd 72 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -88,7 +88,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbfly<ulong>(N1 n, Vector256<ulong> x)
-; vbfly__gn1_256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 66 66 66 66 66 66 66 66 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c5 fc 28 e2 c5 dd 73 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn1_v256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 66 66 66 66 66 66 66 66 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 01 c5 fc 28 e2 c5 dd 73 d4 01 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -116,7 +116,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbfly<byte>(N2 n, Vector256<byte> x)
-; vbfly__gn2_256x8u[141] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c7 44 24 14 3c 00 00 00 48 8d 44 24 14 c4 e2 7d 78 4c 24 14 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 02 c7 44 24 10 fc 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 02 c7 44 24 0c 3f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vbfly_gn2_v256x8u[141] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c7 44 24 14 3c 00 00 00 48 8d 44 24 14 c4 e2 7d 78 4c 24 14 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 02 c7 44 24 10 fc 00 00 00 48 8d 44 24 10 c4 e2 7d 78 64 24 10 c5 e5 db dc c5 fc 28 e2 c5 dd 73 d4 02 c7 44 24 0c 3f 00 00 00 48 8d 44 24 0c c4 e2 7d 78 6c 24 0c c5 dd db e5 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -150,7 +150,7 @@
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbfly<ushort>(N2 n, Vector256<ushort> x)
-; vbfly__gn2_256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 3c 3c 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 02 c5 fc 28 e2 c5 dd 71 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn2_v256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 3c 3c 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 02 c5 fc 28 e2 c5 dd 71 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -177,7 +177,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbfly<uint>(N2 n, Vector256<uint> x)
-; vbfly__gn2_256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 3c 3c 3c 3c 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 02 c5 fc 28 e2 c5 dd 72 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn2_v256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 3c 3c 3c 3c 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 02 c5 fc 28 e2 c5 dd 72 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -204,7 +204,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbfly<ulong>(N2 n, Vector256<ulong> x)
-; vbfly__gn2_256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 02 c5 fc 28 e2 c5 dd 73 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn2_v256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 02 c5 fc 28 e2 c5 dd 73 d4 02 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -232,7 +232,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbfly<byte>(N4 n, Vector256<byte> x)
-; vbfly__gn4_256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn4_v256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -243,7 +243,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbfly<ushort>(N4 n, Vector256<ushort> x)
-; vbfly__gn4_256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 f0 0f 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 04 c5 fc 28 e2 c5 dd 71 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn4_v256x16u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 f0 0f 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 71 f3 04 c5 fc 28 e2 c5 dd 71 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -270,7 +270,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbfly<uint>(N4 n, Vector256<uint> x)
-; vbfly__gn4_256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 f0 0f f0 0f 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 04 c5 fc 28 e2 c5 dd 72 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn4_v256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 f0 0f f0 0f 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 04 c5 fc 28 e2 c5 dd 72 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -297,7 +297,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbfly<ulong>(N4 n, Vector256<ulong> x)
-; vbfly__gn4_256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 f0 0f f0 0f f0 0f f0 0f 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 04 c5 fc 28 e2 c5 dd 73 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn4_v256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 f0 0f f0 0f f0 0f f0 0f 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 04 c5 fc 28 e2 c5 dd 73 d4 04 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -325,7 +325,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbfly<byte>(N8 n, Vector256<byte> x)
-; vbfly__gn8_256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn8_v256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -336,7 +336,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbfly<ushort>(N8 n, Vector256<ushort> x)
-; vbfly__gn8_256x16u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn8_v256x16u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -347,7 +347,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbfly<uint>(N8 n, Vector256<uint> x)
-; vbfly__gn8_256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 00 ff ff 00 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 08 c5 fc 28 e2 c5 dd 72 d4 08 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn8_v256x32u[91] = {50 c5 f8 77 90 c4 c1 7d 10 00 c7 44 24 04 00 ff ff 00 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 72 f3 08 c5 fc 28 e2 c5 dd 72 d4 08 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -374,7 +374,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbfly<ulong>(N8 n, Vector256<ulong> x)
-; vbfly__gn8_256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 00 ff ff 00 00 ff ff 00 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 08 c5 fc 28 e2 c5 dd 73 d4 08 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn8_v256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 00 ff ff 00 00 ff ff 00 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 08 c5 fc 28 e2 c5 dd 73 d4 08 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -402,7 +402,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbfly<byte>(N16 n, Vector256<byte> x)
-; vbfly__gn16_256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn16_v256x8u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -413,7 +413,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbfly<ushort>(N16 n, Vector256<ushort> x)
-; vbfly__gn16_256x16u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn16_v256x16u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -424,7 +424,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbfly<uint>(N16 n, Vector256<uint> x)
-; vbfly__gn16_256x32u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vbfly_gn16_v256x32u[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -435,7 +435,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbfly<ulong>(N16 n, Vector256<ulong> x)
-; vbfly__gn16_256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 00 00 ff ff ff ff 00 00 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 10 c5 fc 28 e2 c5 dd 73 d4 10 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vbfly_gn16_v256x64u[95] = {50 c5 f8 77 90 c4 c1 7d 10 00 48 b8 00 00 ff ff ff ff 00 00 48 89 04 24 48 8d 04 24 c4 e2 7d 59 0c 24 c5 fc 28 d0 c5 fc 28 d9 c5 ed db d3 c5 fc 28 da c5 e5 73 f3 10 c5 fc 28 e2 c5 dd 73 d4 10 c5 e5 ef dc c5 ed ef d3 c5 ed db c9 c5 f5 ef c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

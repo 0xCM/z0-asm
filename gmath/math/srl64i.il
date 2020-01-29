@@ -1,4 +1,4 @@
-// Id := 100663644, Name := System.Int64 Z0.math::srl64i(System.Int64,System.Byte)
+// System.Int64 Z0.math::srl64i(System.Int64,System.Byte)
 // long srl64i(long src, byte offset)
 // AggressiveInlining
 long srl64i(long src, byte offset)

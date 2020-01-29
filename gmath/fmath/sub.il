@@ -1,4 +1,4 @@
-// Id := 100663865, Name := System.Single Z0.fmath::sub(System.Single,System.Single)
+// System.Single Z0.fmath::sub(System.Single,System.Single)
 // float sub(float a, float b)
 // AggressiveInlining
 float sub(float a, float b)
@@ -9,7 +9,7 @@ float sub(float a, float b)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663866, Name := System.Double Z0.fmath::sub(System.Double,System.Double)
+// System.Double Z0.fmath::sub(System.Double,System.Double)
 // double sub(double a, double b)
 // AggressiveInlining
 double sub(double a, double b)

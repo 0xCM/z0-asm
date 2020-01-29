@@ -1,4 +1,4 @@
-// Id := 100664018, Name := Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<BitVector<byte>> lookup<byte>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<BitVector<byte>> lookup<byte>(BinaryBitLogicKind:byte kind)
@@ -76,7 +76,7 @@ BinaryOp<BitVector<byte>> lookup<byte>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664018, Name := Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<BitVector<ushort>> lookup<ushort>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<BitVector<ushort>> lookup<ushort>(BinaryBitLogicKind:byte kind)
@@ -154,7 +154,7 @@ BinaryOp<BitVector<ushort>> lookup<ushort>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664018, Name := Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<BitVector<uint>> lookup<uint>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<BitVector<uint>> lookup<uint>(BinaryBitLogicKind:byte kind)
@@ -232,7 +232,7 @@ BinaryOp<BitVector<uint>> lookup<uint>(BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664018, Name := Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<Z0.BitVector`1<T>> Z0.Logix.BitVectorOpApi::lookup<T>(Z0.BinaryBitLogicKind)
 // BinaryOp<BitVector<ulong>> lookup<ulong>(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<BitVector<ulong>> lookup<ulong>(BinaryBitLogicKind:byte kind)

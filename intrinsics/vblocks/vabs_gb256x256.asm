@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<sbyte> vabs<sbyte>(in Block256<sbyte> a, in Block256<sbyte> c)
-; vabs_gb256x8i_256x8i[100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 05 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7f f0 02 c4 e2 7d 1c c0 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 5e c3}
+; vabs_gb256x8i(in)_b256x8i(in)[100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 05 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7f f0 02 c4 e2 7d 1c c0 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -37,7 +37,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<short> vabs<short>(in Block256<short> a, in Block256<short> c)
-; vabs_gb256x16i_256x16i[96] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 36 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7f f0 02 c4 e2 7d 1d c0 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c d0 48 8b c2 c5 f8 77 c3}
+; vabs_gb256x16i(in)_b256x16i(in)[96] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 36 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7f f0 02 c4 e2 7d 1d c0 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -71,7 +71,7 @@
 005fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<int> vabs<int>(in Block256<int> a, in Block256<int> c)
-; vabs_gb256x32i_256x32i[97] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 37 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 03 4d 63 db 49 c1 e3 02 4d 03 d3 c4 c1 7f f0 02 c4 e2 7d 1e c0 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cf 48 8b c2 c5 f8 77 c3}
+; vabs_gb256x32i(in)_b256x32i(in)[97] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 37 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 03 4d 63 db 49 c1 e3 02 4d 03 d3 c4 c1 7f f0 02 c4 e2 7d 1e c0 4c 8b d1 4d 03 d3 c4 c1 7e 7f 02 41 ff c1 45 3b c8 7c cf 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -105,7 +105,7 @@
 0060h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<long> vabs<long>(in Block256<long> a, in Block256<long> c)
-; vabs_gb256x64i_256x64i[116] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4a 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f5 73 d0 3f c5 ec 57 d2 c5 ed fb c9 c5 f5 ef c0 c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b9 48 8b c2 c5 f8 77 c3}
+; vabs_gb256x64i(in)_b256x64i(in)[116] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4a 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f5 73 d0 3f c5 ec 57 d2 c5 ed fb c9 c5 f5 ef c0 c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b9 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

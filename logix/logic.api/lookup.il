@@ -1,4 +1,4 @@
-// Id := 100664024, Name := Z0.UnaryOp`1<Z0.bit> Z0.Logix.LogicOpApi::lookup(Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<Z0.bit> Z0.Logix.LogicOpApi::lookup(Z0.UnaryBitLogicKind)
 // UnaryOp<bit> lookup(UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<bit> lookup(UnaryBitLogicKind:byte kind)
@@ -28,7 +28,7 @@ UnaryOp<bit> lookup(UnaryBitLogicKind:byte kind)
     IL_0057: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664025, Name := Z0.BinaryOp`1<Z0.bit> Z0.Logix.LogicOpApi::lookup(Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<Z0.bit> Z0.Logix.LogicOpApi::lookup(Z0.BinaryBitLogicKind)
 // BinaryOp<bit> lookup(BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<bit> lookup(BinaryBitLogicKind:byte kind)

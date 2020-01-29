@@ -1,4 +1,4 @@
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<byte>(byte a)
 // AggressiveInlining
 bit positive<byte>(byte a)
@@ -8,7 +8,7 @@ bit positive<byte>(byte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<sbyte>(sbyte a)
 // AggressiveInlining
 bit positive<sbyte>(sbyte a)
@@ -18,7 +18,7 @@ bit positive<sbyte>(sbyte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<ushort>(ushort a)
 // AggressiveInlining
 bit positive<ushort>(ushort a)
@@ -28,7 +28,7 @@ bit positive<ushort>(ushort a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<short>(short a)
 // AggressiveInlining
 bit positive<short>(short a)
@@ -38,7 +38,7 @@ bit positive<short>(short a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<uint>(uint a)
 // AggressiveInlining
 bit positive<uint>(uint a)
@@ -48,7 +48,7 @@ bit positive<uint>(uint a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<int>(int a)
 // AggressiveInlining
 bit positive<int>(int a)
@@ -58,7 +58,7 @@ bit positive<int>(int a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<ulong>(ulong a)
 // AggressiveInlining
 bit positive<ulong>(ulong a)
@@ -68,7 +68,7 @@ bit positive<ulong>(ulong a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664113, Name := Z0.bit Z0.gmath::positive<T>(T)
+// Z0.bit Z0.gmath::positive<T>(T)
 // bit positive<long>(long a)
 // AggressiveInlining
 bit positive<long>(long a)

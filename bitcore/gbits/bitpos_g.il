@@ -1,4 +1,4 @@
-// Id := 100663614, Name := Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
+// Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
 // BitPos<byte> bitpos<byte>(int index)
 // AggressiveInlining
 BitPos<byte> bitpos<byte>(int index)
@@ -8,7 +8,7 @@ BitPos<byte> bitpos<byte>(int index)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663614, Name := Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
+// Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
 // BitPos<ushort> bitpos<ushort>(int index)
 // AggressiveInlining
 BitPos<ushort> bitpos<ushort>(int index)
@@ -18,7 +18,7 @@ BitPos<ushort> bitpos<ushort>(int index)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663614, Name := Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
+// Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
 // BitPos<uint> bitpos<uint>(int index)
 // AggressiveInlining
 BitPos<uint> bitpos<uint>(int index)
@@ -28,7 +28,7 @@ BitPos<uint> bitpos<uint>(int index)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663614, Name := Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
+// Z0.BitPos`1<T> Z0.gbits::bitpos<T>(System.Int32)
 // BitPos<ulong> bitpos<ulong>(int index)
 // AggressiveInlining
 BitPos<ulong> bitpos<ulong>(int index)

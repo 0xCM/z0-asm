@@ -1,4 +1,4 @@
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // byte div<byte>(byte a, byte b)
 // AggressiveInlining
 byte div<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte div<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // sbyte div<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte div<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte div<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // ushort div<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort div<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort div<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // short div<short>(short a, short b)
 // AggressiveInlining
 short div<short>(short a, short b)
@@ -42,7 +42,7 @@ short div<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // uint div<uint>(uint a, uint b)
 // AggressiveInlining
 uint div<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint div<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // int div<int>(int a, int b)
 // AggressiveInlining
 int div<int>(int a, int b)
@@ -64,7 +64,7 @@ int div<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // ulong div<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong div<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong div<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // long div<long>(long a, long b)
 // AggressiveInlining
 long div<long>(long a, long b)
@@ -86,7 +86,7 @@ long div<long>(long a, long b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // float div<float>(float a, float b)
 // AggressiveInlining
 float div<float>(float a, float b)
@@ -97,7 +97,7 @@ float div<float>(float a, float b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663959, Name := T Z0.gmath::div<T>(T,T)
+// T Z0.gmath::div<T>(T,T)
 // double div<double>(double a, double b)
 // AggressiveInlining
 double div<double>(double a, double b)

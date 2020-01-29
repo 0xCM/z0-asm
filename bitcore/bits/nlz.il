@@ -1,4 +1,4 @@
-// Id := 100663431, Name := System.Int32 Z0.Bits::nlz(System.Byte)
+// System.Int32 Z0.Bits::nlz(System.Byte)
 // int nlz(byte src)
 // AggressiveInlining
 int nlz(byte src)
@@ -10,7 +10,7 @@ int nlz(byte src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663432, Name := System.Int32 Z0.Bits::nlz(System.UInt16)
+// System.Int32 Z0.Bits::nlz(System.UInt16)
 // int nlz(ushort src)
 // AggressiveInlining
 int nlz(ushort src)
@@ -22,7 +22,7 @@ int nlz(ushort src)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663433, Name := System.Int32 Z0.Bits::nlz(System.UInt32)
+// System.Int32 Z0.Bits::nlz(System.UInt32)
 // int nlz(uint src)
 // AggressiveInlining
 int nlz(uint src)
@@ -32,7 +32,7 @@ int nlz(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663434, Name := System.Int32 Z0.Bits::nlz(System.UInt64)
+// System.Int32 Z0.Bits::nlz(System.UInt64)
 // int nlz(ulong src)
 // AggressiveInlining
 int nlz(ulong src)

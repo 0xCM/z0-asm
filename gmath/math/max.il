@@ -1,4 +1,4 @@
-// Id := 100663726, Name := System.SByte Z0.math::max(System.SByte,System.SByte)
+// System.SByte Z0.math::max(System.SByte,System.SByte)
 // sbyte max(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte max(sbyte a, sbyte b)
@@ -12,7 +12,7 @@ sbyte max(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663727, Name := System.Byte Z0.math::max(System.Byte,System.Byte)
+// System.Byte Z0.math::max(System.Byte,System.Byte)
 // byte max(byte a, byte b)
 // AggressiveInlining
 byte max(byte a, byte b)
@@ -26,7 +26,7 @@ byte max(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663728, Name := System.Int16 Z0.math::max(System.Int16,System.Int16)
+// System.Int16 Z0.math::max(System.Int16,System.Int16)
 // short max(short a, short b)
 // AggressiveInlining
 short max(short a, short b)
@@ -40,7 +40,7 @@ short max(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663729, Name := System.UInt16 Z0.math::max(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::max(System.UInt16,System.UInt16)
 // ushort max(ushort a, ushort b)
 // AggressiveInlining
 ushort max(ushort a, ushort b)
@@ -54,7 +54,7 @@ ushort max(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663730, Name := System.Int32 Z0.math::max(System.Int32,System.Int32)
+// System.Int32 Z0.math::max(System.Int32,System.Int32)
 // int max(int a, int b)
 // AggressiveInlining
 int max(int a, int b)
@@ -68,7 +68,7 @@ int max(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663731, Name := System.UInt32 Z0.math::max(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::max(System.UInt32,System.UInt32)
 // uint max(uint a, uint b)
 // AggressiveInlining
 uint max(uint a, uint b)
@@ -82,7 +82,7 @@ uint max(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663732, Name := System.Int64 Z0.math::max(System.Int64,System.Int64)
+// System.Int64 Z0.math::max(System.Int64,System.Int64)
 // long max(long a, long b)
 // AggressiveInlining
 long max(long a, long b)
@@ -96,7 +96,7 @@ long max(long a, long b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663733, Name := System.UInt64 Z0.math::max(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::max(System.UInt64,System.UInt64)
 // ulong max(ulong a, ulong b)
 // AggressiveInlining
 ulong max(ulong a, ulong b)

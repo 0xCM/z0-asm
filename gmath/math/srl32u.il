@@ -1,4 +1,4 @@
-// Id := 100663643, Name := System.UInt32 Z0.math::srl32u(System.UInt32,System.Byte)
+// System.UInt32 Z0.math::srl32u(System.UInt32,System.Byte)
 // uint srl32u(uint src, byte offset)
 // AggressiveInlining
 uint srl32u(uint src, byte offset)

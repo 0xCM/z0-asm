@@ -1,4 +1,4 @@
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // byte promote<byte>(bit src)
 // AggressiveInlining
 byte promote<byte>(bit src)
@@ -14,7 +14,7 @@ byte promote<byte>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // sbyte promote<sbyte>(bit src)
 // AggressiveInlining
 sbyte promote<sbyte>(bit src)
@@ -30,7 +30,7 @@ sbyte promote<sbyte>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // ushort promote<ushort>(bit src)
 // AggressiveInlining
 ushort promote<ushort>(bit src)
@@ -46,7 +46,7 @@ ushort promote<ushort>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // short promote<short>(bit src)
 // AggressiveInlining
 short promote<short>(bit src)
@@ -62,7 +62,7 @@ short promote<short>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // uint promote<uint>(bit src)
 // AggressiveInlining
 uint promote<uint>(bit src)
@@ -78,7 +78,7 @@ uint promote<uint>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // int promote<int>(bit src)
 // AggressiveInlining
 int promote<int>(bit src)
@@ -94,7 +94,7 @@ int promote<int>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // ulong promote<ulong>(bit src)
 // AggressiveInlining
 ulong promote<ulong>(bit src)
@@ -110,7 +110,7 @@ ulong promote<ulong>(bit src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664538, Name := T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
+// T Z0.Logix.ScalarOps::promote<T>(Z0.bit)
 // long promote<long>(bit src)
 // AggressiveInlining
 long promote<long>(bit src)

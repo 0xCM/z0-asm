@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vnegate<byte>(Vector128<byte> src)
-; vnegate_g128x8u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c5 f9 f8 c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x8u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c5 f9 f8 c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vnegate<sbyte>(Vector128<sbyte> src)
-; vnegate_g128x8i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x8i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -28,7 +28,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vnegate<ushort>(Vector128<ushort> src)
-; vnegate_g128x16u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c5 f9 f9 c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x16u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c5 f9 f9 c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -44,7 +44,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vnegate<short>(Vector128<short> src)
-; vnegate_g128x16i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x16i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -56,7 +56,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vnegate<uint>(Vector128<uint> src)
-; vnegate_g128x32u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c5 f9 fa c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x32u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c5 f9 fa c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vnegate<int>(Vector128<int> src)
-; vnegate_g128x32i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x32i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vnegate<ulong>(Vector128<ulong> src)
-; vnegate_g128x64u[42] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x64u[42] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -100,7 +100,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vnegate<long>(Vector128<long> src)
-; vnegate_g128x64i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x64i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vnegate<float>(Vector128<float> src)
-; vnegate_g128x32f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x32f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -124,7 +124,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vnegate<double>(Vector128<double> src)
-; vnegate_g128x64f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_gv128x64f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

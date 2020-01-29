@@ -1,4 +1,4 @@
-// Id := 100664022, Name := Z0.bit Z0.Logix.LogicOpApi::eval(Z0.UnaryBitLogicKind,Z0.bit)
+// Z0.bit Z0.Logix.LogicOpApi::eval(Z0.UnaryBitLogicKind,Z0.bit)
 // bit eval(UnaryBitLogicKind:byte kind, bit a)
 // IL
 bit eval(UnaryBitLogicKind:byte kind, bit a)
@@ -21,7 +21,7 @@ bit eval(UnaryBitLogicKind:byte kind, bit a)
     IL_0038: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664023, Name := Z0.bit Z0.Logix.LogicOpApi::eval(Z0.BinaryBitLogicKind,Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOpApi::eval(Z0.BinaryBitLogicKind,Z0.bit,Z0.bit)
 // bit eval(BinaryBitLogicKind:byte kind, bit a, bit b)
 // IL
 bit eval(BinaryBitLogicKind:byte kind, bit a, bit b)
@@ -99,7 +99,7 @@ bit eval(BinaryBitLogicKind:byte kind, bit a, bit b)
     IL_00D6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664026, Name := Z0.bit Z0.Logix.LogicOpApi::eval(Z0.TernaryBitLogicKind,Z0.bit,Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOpApi::eval(Z0.TernaryBitLogicKind,Z0.bit,Z0.bit,Z0.bit)
 // bit eval(TernaryBitLogicKind:byte kind, bit a, bit b, bit c)
 // IL
 bit eval(TernaryBitLogicKind:byte kind, bit a, bit b, bit c)

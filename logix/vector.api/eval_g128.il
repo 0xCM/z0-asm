@@ -1,4 +1,4 @@
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<byte> eval<byte>(UnaryBitLogicKind:byte kind, Vector128<byte> a)
 // IL
 Vector128<byte> eval<byte>(UnaryBitLogicKind:byte kind, Vector128<byte> a)
@@ -24,7 +24,7 @@ Vector128<byte> eval<byte>(UnaryBitLogicKind:byte kind, Vector128<byte> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<sbyte> eval<sbyte>(UnaryBitLogicKind:byte kind, Vector128<sbyte> a)
 // IL
 Vector128<sbyte> eval<sbyte>(UnaryBitLogicKind:byte kind, Vector128<sbyte> a)
@@ -50,7 +50,7 @@ Vector128<sbyte> eval<sbyte>(UnaryBitLogicKind:byte kind, Vector128<sbyte> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector128<ushort> a)
 // IL
 Vector128<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector128<ushort> a)
@@ -76,7 +76,7 @@ Vector128<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector128<ushort> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
 // IL
 Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
@@ -102,7 +102,7 @@ Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<uint> eval<uint>(UnaryBitLogicKind:byte kind, Vector128<uint> a)
 // IL
 Vector128<uint> eval<uint>(UnaryBitLogicKind:byte kind, Vector128<uint> a)
@@ -128,7 +128,7 @@ Vector128<uint> eval<uint>(UnaryBitLogicKind:byte kind, Vector128<uint> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<int> eval<int>(UnaryBitLogicKind:byte kind, Vector128<int> a)
 // IL
 Vector128<int> eval<int>(UnaryBitLogicKind:byte kind, Vector128<int> a)
@@ -154,7 +154,7 @@ Vector128<int> eval<int>(UnaryBitLogicKind:byte kind, Vector128<int> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, Vector128<ulong> a)
 // IL
 Vector128<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, Vector128<ulong> a)
@@ -180,7 +180,7 @@ Vector128<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, Vector128<ulong> a)
     IL_003F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664072, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<long> eval<long>(UnaryBitLogicKind:byte kind, Vector128<long> a)
 // IL
 Vector128<long> eval<long>(UnaryBitLogicKind:byte kind, Vector128<long> a)

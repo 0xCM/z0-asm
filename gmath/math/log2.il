@@ -1,4 +1,4 @@
-// Id := 100663416, Name := System.UInt64 Z0.math::log2(System.UInt64)
+// System.UInt64 Z0.math::log2(System.UInt64)
 // ulong log2(ulong src)
 // AggressiveInlining
 ulong log2(ulong src)
@@ -51,7 +51,7 @@ ulong log2(ulong src)
     IL_004E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663417, Name := System.UInt64 Z0.math::log2(System.Int32)
+// System.UInt64 Z0.math::log2(System.Int32)
 // ulong log2(int src)
 // AggressiveInlining
 ulong log2(int src)
@@ -62,7 +62,7 @@ ulong log2(int src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663418, Name := System.UInt32 Z0.math::log2(System.UInt32)
+// System.UInt32 Z0.math::log2(System.UInt32)
 // uint log2(uint src)
 // AggressiveInlining
 uint log2(uint src)
@@ -74,7 +74,7 @@ uint log2(uint src)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663419, Name := System.Byte Z0.math::log2(System.Byte)
+// System.Byte Z0.math::log2(System.Byte)
 // byte log2(byte src)
 // AggressiveInlining
 byte log2(byte src)
@@ -86,7 +86,7 @@ byte log2(byte src)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663420, Name := System.UInt16 Z0.math::log2(System.UInt16)
+// System.UInt16 Z0.math::log2(System.UInt16)
 // ushort log2(ushort src)
 // AggressiveInlining
 ushort log2(ushort src)

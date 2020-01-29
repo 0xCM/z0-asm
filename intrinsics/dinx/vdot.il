@@ -1,4 +1,4 @@
-// Id := 100663508, Name := System.Int64 Z0.dinx::vdot(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// System.Int64 Z0.dinx::vdot(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // long vdot(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 long vdot(Vector256<int> x, Vector256<int> y)
@@ -23,7 +23,7 @@ long vdot(Vector256<int> x, Vector256<int> y)
     IL_0029: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663509, Name := System.UInt64 Z0.dinx::vdot(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// System.UInt64 Z0.dinx::vdot(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // ulong vdot(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 ulong vdot(Vector256<uint> x, Vector256<uint> y)

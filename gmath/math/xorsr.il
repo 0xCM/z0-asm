@@ -1,4 +1,4 @@
-// Id := 100663662, Name := System.Byte Z0.math::xorsr(System.Byte,System.Byte)
+// System.Byte Z0.math::xorsr(System.Byte,System.Byte)
 // byte xorsr(byte a, byte offset)
 // AggressiveInlining
 byte xorsr(byte a, byte offset)
@@ -10,7 +10,7 @@ byte xorsr(byte a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663663, Name := System.SByte Z0.math::xorsr(System.SByte,System.Byte)
+// System.SByte Z0.math::xorsr(System.SByte,System.Byte)
 // sbyte xorsr(sbyte a, byte offset)
 // AggressiveInlining
 sbyte xorsr(sbyte a, byte offset)
@@ -22,7 +22,7 @@ sbyte xorsr(sbyte a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663664, Name := System.Int16 Z0.math::xorsr(System.Int16,System.Byte)
+// System.Int16 Z0.math::xorsr(System.Int16,System.Byte)
 // short xorsr(short a, byte offset)
 // AggressiveInlining
 short xorsr(short a, byte offset)
@@ -34,7 +34,7 @@ short xorsr(short a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663665, Name := System.UInt16 Z0.math::xorsr(System.UInt16,System.Byte)
+// System.UInt16 Z0.math::xorsr(System.UInt16,System.Byte)
 // ushort xorsr(ushort a, byte offset)
 // AggressiveInlining
 ushort xorsr(ushort a, byte offset)
@@ -46,7 +46,7 @@ ushort xorsr(ushort a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663666, Name := System.Int32 Z0.math::xorsr(System.Int32,System.Byte)
+// System.Int32 Z0.math::xorsr(System.Int32,System.Byte)
 // int xorsr(int a, byte offset)
 // AggressiveInlining
 int xorsr(int a, byte offset)
@@ -61,7 +61,7 @@ int xorsr(int a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663667, Name := System.UInt32 Z0.math::xorsr(System.UInt32,System.Byte)
+// System.UInt32 Z0.math::xorsr(System.UInt32,System.Byte)
 // uint xorsr(uint a, byte offset)
 // AggressiveInlining
 uint xorsr(uint a, byte offset)
@@ -76,7 +76,7 @@ uint xorsr(uint a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663668, Name := System.Int64 Z0.math::xorsr(System.Int64,System.Byte)
+// System.Int64 Z0.math::xorsr(System.Int64,System.Byte)
 // long xorsr(long a, byte offset)
 // AggressiveInlining
 long xorsr(long a, byte offset)
@@ -91,7 +91,7 @@ long xorsr(long a, byte offset)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663669, Name := System.UInt64 Z0.math::xorsr(System.UInt64,System.Byte)
+// System.UInt64 Z0.math::xorsr(System.UInt64,System.Byte)
 // ulong xorsr(ulong a, byte offset)
 // AggressiveInlining
 ulong xorsr(ulong a, byte offset)

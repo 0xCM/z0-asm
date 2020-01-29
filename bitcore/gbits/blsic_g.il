@@ -1,4 +1,4 @@
-// Id := 100663627, Name := T Z0.gbits::blsic<T>(T)
+// T Z0.gbits::blsic<T>(T)
 // byte blsic<byte>(byte src)
 // AggressiveInlining
 byte blsic<byte>(byte src)
@@ -55,7 +55,7 @@ byte blsic<byte>(byte src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663627, Name := T Z0.gbits::blsic<T>(T)
+// T Z0.gbits::blsic<T>(T)
 // ushort blsic<ushort>(ushort src)
 // AggressiveInlining
 ushort blsic<ushort>(ushort src)
@@ -112,7 +112,7 @@ ushort blsic<ushort>(ushort src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663627, Name := T Z0.gbits::blsic<T>(T)
+// T Z0.gbits::blsic<T>(T)
 // uint blsic<uint>(uint src)
 // AggressiveInlining
 uint blsic<uint>(uint src)
@@ -169,7 +169,7 @@ uint blsic<uint>(uint src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663627, Name := T Z0.gbits::blsic<T>(T)
+// T Z0.gbits::blsic<T>(T)
 // ulong blsic<ulong>(ulong src)
 // AggressiveInlining
 ulong blsic<ulong>(ulong src)

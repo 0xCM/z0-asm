@@ -1,4 +1,4 @@
-// Id := 100664272, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::get_Vector256u64()
+// System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::get_Vector256u64()
 // Vector256<ulong> get_Vector256u64()
 // AggressiveInlining
 Vector256<ulong> get_Vector256u64()
@@ -10,7 +10,7 @@ Vector256<ulong> get_Vector256u64()
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664273, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::get_Vector256u32()
+// System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::get_Vector256u32()
 // Vector256<uint> get_Vector256u32()
 // AggressiveInlining
 Vector256<uint> get_Vector256u32()
@@ -21,7 +21,7 @@ Vector256<uint> get_Vector256u32()
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664274, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::get_Vector128u64()
+// System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::get_Vector128u64()
 // Vector128<ulong> get_Vector128u64()
 // AggressiveInlining
 Vector128<ulong> get_Vector128u64()
@@ -33,7 +33,7 @@ Vector128<ulong> get_Vector128u64()
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::get_Vector128u32()
+// System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::get_Vector128u32()
 // Vector128<uint> get_Vector128u32()
 // AggressiveInlining
 Vector128<uint> get_Vector128u32()

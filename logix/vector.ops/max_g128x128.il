@@ -1,4 +1,4 @@
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<byte> max<byte>(Vector128<byte> a, Vector128<byte> b)
 // AggressiveInlining
 Vector128<byte> max<byte>(Vector128<byte> a, Vector128<byte> b)
@@ -9,7 +9,7 @@ Vector128<byte> max<byte>(Vector128<byte> a, Vector128<byte> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<sbyte> max<sbyte>(Vector128<sbyte> a, Vector128<sbyte> b)
 // AggressiveInlining
 Vector128<sbyte> max<sbyte>(Vector128<sbyte> a, Vector128<sbyte> b)
@@ -20,7 +20,7 @@ Vector128<sbyte> max<sbyte>(Vector128<sbyte> a, Vector128<sbyte> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<ushort> max<ushort>(Vector128<ushort> a, Vector128<ushort> b)
 // AggressiveInlining
 Vector128<ushort> max<ushort>(Vector128<ushort> a, Vector128<ushort> b)
@@ -31,7 +31,7 @@ Vector128<ushort> max<ushort>(Vector128<ushort> a, Vector128<ushort> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<short> max<short>(Vector128<short> a, Vector128<short> b)
 // AggressiveInlining
 Vector128<short> max<short>(Vector128<short> a, Vector128<short> b)
@@ -42,7 +42,7 @@ Vector128<short> max<short>(Vector128<short> a, Vector128<short> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<uint> max<uint>(Vector128<uint> a, Vector128<uint> b)
 // AggressiveInlining
 Vector128<uint> max<uint>(Vector128<uint> a, Vector128<uint> b)
@@ -53,7 +53,7 @@ Vector128<uint> max<uint>(Vector128<uint> a, Vector128<uint> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<int> max<int>(Vector128<int> a, Vector128<int> b)
 // AggressiveInlining
 Vector128<int> max<int>(Vector128<int> a, Vector128<int> b)
@@ -64,7 +64,7 @@ Vector128<int> max<int>(Vector128<int> a, Vector128<int> b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664206, Name := System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::max<T>(System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
 // Vector128<long> max<long>(Vector128<long> a, Vector128<long> b)
 // AggressiveInlining
 Vector128<long> max<long>(Vector128<long> a, Vector128<long> b)

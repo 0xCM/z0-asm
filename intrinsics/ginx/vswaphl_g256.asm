@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vswaphl<byte>(Vector256<byte> x)
-; vswaphl_g256x8u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x8u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -13,7 +13,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vswaphl<sbyte>(Vector256<sbyte> x)
-; vswaphl_g256x8i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x8i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -26,7 +26,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vswaphl<ushort>(Vector256<ushort> x)
-; vswaphl_g256x16u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x16u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -39,7 +39,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vswaphl<short>(Vector256<short> x)
-; vswaphl_g256x16i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x16i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -52,7 +52,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vswaphl<uint>(Vector256<uint> x)
-; vswaphl_g256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -65,7 +65,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vswaphl<int>(Vector256<int> x)
-; vswaphl_g256x32i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x32i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -78,7 +78,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vswaphl<ulong>(Vector256<ulong> x)
-; vswaphl_g256x64u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x64u[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -91,7 +91,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vswaphl<long>(Vector256<long> x)
-; vswaphl_g256x64i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x64i[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 46 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -104,7 +104,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vswaphl<float>(Vector256<float> x)
-; vswaphl_g256x32f[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 06 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x32f[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 06 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -117,7 +117,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vswaphl<double>(Vector256<double> x)
-; vswaphl_g256x64f[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 06 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vswaphl_gv256x64f[30] = {c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 e3 75 06 c0 03 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

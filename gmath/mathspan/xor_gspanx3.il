@@ -1,4 +1,4 @@
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> xor<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
 // AggressiveInlining
 Span<byte> xor<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
@@ -14,7 +14,7 @@ Span<byte> xor<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> xor<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> xor<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte> dst)
@@ -30,7 +30,7 @@ Span<sbyte> xor<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte>
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> xor<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> xor<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
@@ -46,7 +46,7 @@ Span<ushort> xor<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<us
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> xor<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 // AggressiveInlining
 Span<short> xor<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
@@ -62,7 +62,7 @@ Span<short> xor<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short>
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> xor<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
 // AggressiveInlining
 Span<uint> xor<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
@@ -78,7 +78,7 @@ Span<uint> xor<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> xor<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
 // AggressiveInlining
 Span<int> xor<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
@@ -94,7 +94,7 @@ Span<int> xor<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> xor<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> xor<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
@@ -110,7 +110,7 @@ Span<ulong> xor<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong>
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664170, Name := System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::xor<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> xor<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<long> dst)
 // AggressiveInlining
 Span<long> xor<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<long> dst)

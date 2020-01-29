@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<byte>(Vector128<byte> src, byte index)
-; pack8__g128x8u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x8u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<sbyte>(Vector128<sbyte> src, byte index)
-; pack8__g128x8i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x8i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -32,7 +32,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<ushort>(Vector128<ushort> src, byte index)
-; pack8__g128x16u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x16u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -48,7 +48,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<short>(Vector128<short> src, byte index)
-; pack8__g128x16i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x16i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -64,7 +64,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<uint>(Vector128<uint> src, byte index)
-; pack8__g128x32u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x32u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -80,7 +80,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<int>(Vector128<int> src, byte index)
-; pack8__g128x32i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x32i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -96,7 +96,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<ulong>(Vector128<ulong> src, byte index)
-; pack8__g128x64u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x64u_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<long>(Vector128<long> src, byte index)
-; pack8__g128x64i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gv128x64i_8u[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

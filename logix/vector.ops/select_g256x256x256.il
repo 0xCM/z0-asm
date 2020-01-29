@@ -1,4 +1,4 @@
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<byte> select<byte>(Vector256<byte> a, Vector256<byte> b, Vector256<byte> c)
 // AggressiveInlining
 Vector256<byte> select<byte>(Vector256<byte> a, Vector256<byte> b, Vector256<byte> c)
@@ -10,7 +10,7 @@ Vector256<byte> select<byte>(Vector256<byte> a, Vector256<byte> b, Vector256<byt
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<sbyte> select<sbyte>(Vector256<sbyte> a, Vector256<sbyte> b, Vector256<sbyte> c)
 // AggressiveInlining
 Vector256<sbyte> select<sbyte>(Vector256<sbyte> a, Vector256<sbyte> b, Vector256<sbyte> c)
@@ -22,7 +22,7 @@ Vector256<sbyte> select<sbyte>(Vector256<sbyte> a, Vector256<sbyte> b, Vector256
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<ushort> select<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vector256<ushort> c)
 // AggressiveInlining
 Vector256<ushort> select<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vector256<ushort> c)
@@ -34,7 +34,7 @@ Vector256<ushort> select<ushort>(Vector256<ushort> a, Vector256<ushort> b, Vecto
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<short> select<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
 // AggressiveInlining
 Vector256<short> select<short>(Vector256<short> a, Vector256<short> b, Vector256<short> c)
@@ -46,7 +46,7 @@ Vector256<short> select<short>(Vector256<short> a, Vector256<short> b, Vector256
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<uint> select<uint>(Vector256<uint> a, Vector256<uint> b, Vector256<uint> c)
 // AggressiveInlining
 Vector256<uint> select<uint>(Vector256<uint> a, Vector256<uint> b, Vector256<uint> c)
@@ -58,7 +58,7 @@ Vector256<uint> select<uint>(Vector256<uint> a, Vector256<uint> b, Vector256<uin
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<int> select<int>(Vector256<int> a, Vector256<int> b, Vector256<int> c)
 // AggressiveInlining
 Vector256<int> select<int>(Vector256<int> a, Vector256<int> b, Vector256<int> c)
@@ -70,7 +70,7 @@ Vector256<int> select<int>(Vector256<int> a, Vector256<int> b, Vector256<int> c)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<ulong> select<ulong>(Vector256<ulong> a, Vector256<ulong> b, Vector256<ulong> c)
 // AggressiveInlining
 Vector256<ulong> select<ulong>(Vector256<ulong> a, Vector256<ulong> b, Vector256<ulong> c)
@@ -82,7 +82,7 @@ Vector256<ulong> select<ulong>(Vector256<ulong> a, Vector256<ulong> b, Vector256
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664275, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::select<T>(System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<long> select<long>(Vector256<long> a, Vector256<long> b, Vector256<long> c)
 // AggressiveInlining
 Vector256<long> select<long>(Vector256<long> a, Vector256<long> b, Vector256<long> c)

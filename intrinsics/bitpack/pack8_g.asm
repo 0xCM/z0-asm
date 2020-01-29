@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<byte>(in Block32<byte> src, int block)
-; pack8_g32x8u_32i[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x8u(in)_32i[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -13,7 +13,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<sbyte>(in Block32<sbyte> src, int block)
-; pack8_g32x8i_32i[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x8i(in)_32i[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -26,7 +26,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<ushort>(in Block32<ushort> src, int block)
-; pack8_g32x16u_32i[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x16u(in)_32i[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -39,7 +39,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<short>(in Block32<short> src, int block)
-; pack8_g32x16i_32i[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x16i(in)_32i[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -52,7 +52,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<uint>(in Block32<uint> src, int block)
-; pack8_g32x32u_32i[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x32u(in)_32i[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -64,7 +64,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<int>(in Block32<int> src, int block)
-; pack8_g32x32i_32i[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x32i(in)_32i[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -76,7 +76,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<ulong>(in Block32<ulong> src, int block)
-; pack8_g32x64u_32i[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x64u(in)_32i[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -87,7 +87,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<long>(in Block32<long> src, int block)
-; pack8_g32x64i_32i[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; pack8_gb32x64i(in)_32i[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -98,7 +98,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<byte>(in Block64<byte> src, int block)
-; pack8_g64x8u_32i[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 0f b6 04 10 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x8u(in)_32i[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 0f b6 04 10 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -111,7 +111,7 @@
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<sbyte>(in Block64<sbyte> src, int block)
-; pack8_g64x8i_32i[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 48 0f be 04 10 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x8i(in)_32i[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 48 0f be 04 10 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -125,7 +125,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<ushort>(in Block64<ushort> src, int block)
-; pack8_g64x16u_32i[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 0f b7 04 50 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x16u(in)_32i[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 0f b7 04 50 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -138,7 +138,7 @@
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<short>(in Block64<short> src, int block)
-; pack8_g64x16i_32i[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 48 0f bf 04 50 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x16i(in)_32i[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 48 0f bf 04 50 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -152,7 +152,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<uint>(in Block64<uint> src, int block)
-; pack8_g64x32u_32i[35] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x32u(in)_32i[35] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -165,7 +165,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<int>(in Block64<int> src, int block)
-; pack8_g64x32i_32i[38] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x32i(in)_32i[38] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -179,7 +179,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<ulong>(in Block64<ulong> src, int block)
-; pack8_g64x64u_32i[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x64u(in)_32i[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -191,7 +191,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pack8<long>(in Block64<long> src, int block)
-; pack8_g64x64i_32i[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; pack8_gb64x64i(in)_32i[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -203,7 +203,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<byte>(in Block128<byte> src, int block)
-; pack8_g128x8u_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x8u(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -218,7 +218,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<sbyte>(in Block128<sbyte> src, int block)
-; pack8_g128x8i_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x8i(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -233,7 +233,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<ushort>(in Block128<ushort> src, int block)
-; pack8_g128x16u_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x16u(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -248,7 +248,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<short>(in Block128<short> src, int block)
-; pack8_g128x16i_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x16i(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -263,7 +263,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<uint>(in Block128<uint> src, int block)
-; pack8_g128x32u_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x32u(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -278,7 +278,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<int>(in Block128<int> src, int block)
-; pack8_g128x32i_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x32i(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -293,7 +293,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<ulong>(in Block128<ulong> src, int block)
-; pack8_g128x64u_32i[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x64u(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -308,7 +308,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pack8<long>(in Block128<long> src, int block)
-; pack8_g128x64i_32i[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; pack8_gb128x64i(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -323,7 +323,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<byte>(in Block256<byte> src, int block)
-; pack8_g256x8u_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x8u(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -338,7 +338,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<sbyte>(in Block256<sbyte> src, int block)
-; pack8_g256x8i_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x8i(in)_32i[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -353,7 +353,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<ushort>(in Block256<ushort> src, int block)
-; pack8_g256x16u_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x16u(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -368,7 +368,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<short>(in Block256<short> src, int block)
-; pack8_g256x16i_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x16i(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -383,7 +383,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<uint>(in Block256<uint> src, int block)
-; pack8_g256x32u_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x32u(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -398,7 +398,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<int>(in Block256<int> src, int block)
-; pack8_g256x32i_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x32i(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -413,7 +413,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<ulong>(in Block256<ulong> src, int block)
-; pack8_g256x64u_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x64u(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -428,7 +428,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pack8<long>(in Block256<long> src, int block)
-; pack8_g256x64i_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; pack8_gb256x64i(in)_32i[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -443,7 +443,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<byte>(in Block512<byte> src, int block)
-; pack8_g512x8u_32i[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x8u(in)_32i[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -468,7 +468,7 @@
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<sbyte>(in Block512<sbyte> src, int block)
-; pack8_g512x8i_32i[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x8i(in)_32i[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -493,7 +493,7 @@
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<ushort>(in Block512<ushort> src, int block)
-; pack8_g512x16u_32i[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x16u(in)_32i[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -518,7 +518,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<short>(in Block512<short> src, int block)
-; pack8_g512x16i_32i[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x16i(in)_32i[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -543,7 +543,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<uint>(in Block512<uint> src, int block)
-; pack8_g512x32u_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x32u(in)_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -568,7 +568,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<int>(in Block512<int> src, int block)
-; pack8_g512x32i_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x32i(in)_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -593,7 +593,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<ulong>(in Block512<ulong> src, int block)
-; pack8_g512x64u_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x64u(in)_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -618,7 +618,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pack8<long>(in Block512<long> src, int block)
-; pack8_g512x64i_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; pack8_gb512x64i(in)_32i[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

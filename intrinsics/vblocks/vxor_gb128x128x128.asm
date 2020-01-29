@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> vxor<byte>(in Block128<byte> a, in Block128<byte> b, in Block128<byte> c)
-; vxor_gb128x8u_128x8u_128x8u[117] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 4e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 00 48 8b 02 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c b8 49 8b c0 c3}
+; vxor_gb128x8u(in)_b128x8u(in)_b128x8u(in)[117] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 4e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 00 48 8b 02 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c b8 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -41,7 +41,7 @@
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<sbyte> vxor<sbyte>(in Block128<sbyte> a, in Block128<sbyte> b, in Block128<sbyte> c)
-; vxor_gb128x8i_128x8i_128x8i[117] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 4e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 00 48 8b 02 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c b8 49 8b c0 c3}
+; vxor_gb128x8i(in)_b128x8i(in)_b128x8i(in)[117] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 4e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 00 48 8b 02 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 45 8b da 41 c1 e3 04 4d 63 db 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c b8 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -82,7 +82,7 @@
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ushort> vxor<ushort>(in Block128<ushort> a, in Block128<ushort> b, in Block128<ushort> c)
-; vxor_gb128x16u_128x16u_128x16u[100] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 03 4d 63 db 49 d1 e3 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
+; vxor_gb128x16u(in)_b128x16u(in)_b128x16u(in)[100] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 03 4d 63 db 49 d1 e3 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -118,7 +118,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<short> vxor<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c)
-; vxor_gb128x16i_128x16i_128x16i[100] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 03 4d 63 db 49 d1 e3 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
+; vxor_gb128x16i(in)_b128x16i(in)_b128x16i(in)[100] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 03 4d 63 db 49 d1 e3 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -154,7 +154,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<uint> vxor<uint>(in Block128<uint> a, in Block128<uint> b, in Block128<uint> c)
-; vxor_gb128x32u_128x32u_128x32u[101] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c3}
+; vxor_gb128x32u(in)_b128x32u(in)_b128x32u(in)[101] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -190,7 +190,7 @@
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<int> vxor<int>(in Block128<int> a, in Block128<int> b, in Block128<int> c)
-; vxor_gb128x32i_128x32i_128x32i[101] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c3}
+; vxor_gb128x32i(in)_b128x32i(in)_b128x32i(in)[101] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 02 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -226,7 +226,7 @@
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ulong> vxor<ulong>(in Block128<ulong> a, in Block128<ulong> b, in Block128<ulong> c)
-; vxor_gb128x64u_128x64u_128x64u[95] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 ea 1f 45 03 ca 41 d1 f9 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 d1 e3 4d 63 db 49 c1 e3 03 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
+; vxor_gb128x64u(in)_b128x64u(in)_b128x64u(in)[95] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 ea 1f 45 03 ca 41 d1 f9 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 d1 e3 4d 63 db 49 c1 e3 03 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -261,7 +261,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<long> vxor<long>(in Block128<long> a, in Block128<long> b, in Block128<long> c)
-; vxor_gb128x64i_128x64i_128x64i[95] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 ea 1f 45 03 ca 41 d1 f9 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 d1 e3 4d 63 db 49 c1 e3 03 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
+; vxor_gb128x64i(in)_b128x64i(in)_b128x64i(in)[95] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 ea 1f 45 03 ca 41 d1 f9 45 33 d2 45 85 c9 7e 3d 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 d1 e3 4d 63 db 49 c1 e3 03 49 03 c3 c5 fb f0 00 48 8b 02 49 03 c3 c5 fb f0 08 c5 f9 ef c1 49 8b 00 49 03 c3 c5 fa 7f 00 41 ff c2 45 3b d1 7c c9 49 8b c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

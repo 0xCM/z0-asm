@@ -1,8 +1,8 @@
-X37_g8u   0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 0b c1 0f b6 c0 0f b6 d2 23 c2 f7 d0 0f b6 c0 c3
-X37_g8i   0f 1f 44 00 00 48 0f be c1 49 0f be c8 0b c1 48 0f be c0 48 0f be d2 23 c2 f7 d0 48 0f be c0 c3
-X37_g16u  0f 1f 44 00 00 0f b7 c1 41 0f b7 c8 0b c1 0f b7 c0 0f b7 d2 23 c2 f7 d0 0f b7 c0 c3
-X37_g16i  0f 1f 44 00 00 48 0f bf c1 49 0f bf c8 0b c1 48 0f bf c0 48 0f bf d2 23 c2 f7 d0 48 0f bf c0 c3
-X37_g32u  0f 1f 44 00 00 41 0b c8 23 d1 8b c2 f7 d0 c3
-X37_g32i  0f 1f 44 00 00 41 0b c8 23 d1 8b c2 f7 d0 c3
-X37_g64u  0f 1f 44 00 00 49 0b c8 48 23 d1 48 8b c2 48 f7 d0 c3
-X37_g64i  0f 1f 44 00 00 49 0b c8 48 23 d1 48 8b c2 48 f7 d0 c3
+X37_g8u_8u_8u     0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 0b c1 0f b6 c0 0f b6 d2 23 c2 f7 d0 0f b6 c0 c3
+X37_g8i_8i_8i     0f 1f 44 00 00 48 0f be c1 49 0f be c8 0b c1 48 0f be c0 48 0f be d2 23 c2 f7 d0 48 0f be c0 c3
+X37_g16u_16u_16u  0f 1f 44 00 00 0f b7 c1 41 0f b7 c8 0b c1 0f b7 c0 0f b7 d2 23 c2 f7 d0 0f b7 c0 c3
+X37_g16i_16i_16i  0f 1f 44 00 00 48 0f bf c1 49 0f bf c8 0b c1 48 0f bf c0 48 0f bf d2 23 c2 f7 d0 48 0f bf c0 c3
+X37_g32u_32u_32u  0f 1f 44 00 00 41 0b c8 23 d1 8b c2 f7 d0 c3
+X37_g32i_32i_32i  0f 1f 44 00 00 41 0b c8 23 d1 8b c2 f7 d0 c3
+X37_g64u_64u_64u  0f 1f 44 00 00 49 0b c8 48 23 d1 48 8b c2 48 f7 d0 c3
+X37_g64i_64i_64i  0f 1f 44 00 00 49 0b c8 48 23 d1 48 8b c2 48 f7 d0 c3

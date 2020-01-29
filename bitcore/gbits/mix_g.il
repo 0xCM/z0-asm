@@ -1,4 +1,4 @@
-// Id := 100663647, Name := T Z0.gbits::mix<T>(Z0.N0,T,T)
+// T Z0.gbits::mix<T>(Z0.N0,T,T)
 // byte mix<byte>(N0 parity, byte x, byte y)
 // AggressiveInlining
 byte mix<byte>(N0 parity, byte x, byte y)
@@ -67,7 +67,7 @@ byte mix<byte>(N0 parity, byte x, byte y)
     IL_00E2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663647, Name := T Z0.gbits::mix<T>(Z0.N0,T,T)
+// T Z0.gbits::mix<T>(Z0.N0,T,T)
 // ushort mix<ushort>(N0 parity, ushort x, ushort y)
 // AggressiveInlining
 ushort mix<ushort>(N0 parity, ushort x, ushort y)
@@ -136,7 +136,7 @@ ushort mix<ushort>(N0 parity, ushort x, ushort y)
     IL_00E2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663647, Name := T Z0.gbits::mix<T>(Z0.N0,T,T)
+// T Z0.gbits::mix<T>(Z0.N0,T,T)
 // uint mix<uint>(N0 parity, uint x, uint y)
 // AggressiveInlining
 uint mix<uint>(N0 parity, uint x, uint y)
@@ -205,7 +205,7 @@ uint mix<uint>(N0 parity, uint x, uint y)
     IL_00E2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663647, Name := T Z0.gbits::mix<T>(Z0.N0,T,T)
+// T Z0.gbits::mix<T>(Z0.N0,T,T)
 // ulong mix<ulong>(N0 parity, ulong x, ulong y)
 // AggressiveInlining
 ulong mix<ulong>(N0 parity, ulong x, ulong y)

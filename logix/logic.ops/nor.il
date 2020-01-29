@@ -1,4 +1,4 @@
-// Id := 100664316, Name := Z0.bit Z0.Logix.LogicOps::nor(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::nor(Z0.bit,Z0.bit)
 // bit nor(bit a, bit b)
 // AggressiveInlining
 bit nor(bit a, bit b)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<byte>(Vector256<byte> src)
-; packmsb8__g256x8u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x8u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<sbyte>(Vector256<sbyte> src)
-; packmsb8__g256x8i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x8i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<ushort>(Vector256<ushort> src)
-; packmsb8__g256x16u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x16u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -33,7 +33,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<short>(Vector256<short> src)
-; packmsb8__g256x16i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x16i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -44,7 +44,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<uint>(Vector256<uint> src)
-; packmsb8__g256x32u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x32u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -55,7 +55,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<int>(Vector256<int> src)
-; packmsb8__g256x32i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x32i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -66,7 +66,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<ulong>(Vector256<ulong> src)
-; packmsb8__g256x64u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x64u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -77,7 +77,7 @@
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<long>(Vector256<long> src)
-; packmsb8__g256x64i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; packmsb8_gv256x64i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

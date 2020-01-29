@@ -1,4 +1,4 @@
-// Id := 100664314, Name := Z0.bit Z0.Logix.LogicOps::nand(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::nand(Z0.bit,Z0.bit)
 // bit nand(bit a, bit b)
 // AggressiveInlining
 bit nand(bit a, bit b)

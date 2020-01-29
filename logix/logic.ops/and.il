@@ -1,4 +1,4 @@
-// Id := 100664313, Name := Z0.bit Z0.Logix.LogicOps::and(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::and(Z0.bit,Z0.bit)
 // bit and(bit a, bit b)
 // AggressiveInlining
 bit and(bit a, bit b)

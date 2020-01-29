@@ -1,4 +1,4 @@
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // byte parse<byte>(string src)
 // AggressiveInlining
 byte parse<byte>(string src)
@@ -15,7 +15,7 @@ byte parse<byte>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // sbyte parse<sbyte>(string src)
 // AggressiveInlining
 sbyte parse<sbyte>(string src)
@@ -32,7 +32,7 @@ sbyte parse<sbyte>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // ushort parse<ushort>(string src)
 // AggressiveInlining
 ushort parse<ushort>(string src)
@@ -49,7 +49,7 @@ ushort parse<ushort>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // short parse<short>(string src)
 // AggressiveInlining
 short parse<short>(string src)
@@ -66,7 +66,7 @@ short parse<short>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // uint parse<uint>(string src)
 // AggressiveInlining
 uint parse<uint>(string src)
@@ -83,7 +83,7 @@ uint parse<uint>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // int parse<int>(string src)
 // AggressiveInlining
 int parse<int>(string src)
@@ -100,7 +100,7 @@ int parse<int>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // ulong parse<ulong>(string src)
 // AggressiveInlining
 ulong parse<ulong>(string src)
@@ -117,7 +117,7 @@ ulong parse<ulong>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // long parse<long>(string src)
 // AggressiveInlining
 long parse<long>(string src)
@@ -134,7 +134,7 @@ long parse<long>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // float parse<float>(string src)
 // AggressiveInlining
 float parse<float>(string src)
@@ -151,7 +151,7 @@ float parse<float>(string src)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664120, Name := T Z0.gmath::parse<T>(System.String)
+// T Z0.gmath::parse<T>(System.String)
 // double parse<double>(string src)
 // AggressiveInlining
 double parse<double>(string src)

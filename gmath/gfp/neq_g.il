@@ -1,4 +1,4 @@
-// Id := 100663806, Name := Z0.bit Z0.gfp::neq<T>(T,T)
+// Z0.bit Z0.gfp::neq<T>(T,T)
 // bit neq<float>(float a, float b)
 // AggressiveInlining
 bit neq<float>(float a, float b)
@@ -35,7 +35,7 @@ bit neq<float>(float a, float b)
     IL_0070: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663806, Name := Z0.bit Z0.gfp::neq<T>(T,T)
+// Z0.bit Z0.gfp::neq<T>(T,T)
 // bit neq<double>(double a, double b)
 // AggressiveInlining
 bit neq<double>(double a, double b)

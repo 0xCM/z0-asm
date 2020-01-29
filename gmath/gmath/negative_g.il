@@ -1,4 +1,4 @@
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<byte>(byte src)
 // AggressiveInlining
 bit negative<byte>(byte src)
@@ -68,7 +68,7 @@ bit negative<byte>(byte src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<sbyte>(sbyte src)
 // AggressiveInlining
 bit negative<sbyte>(sbyte src)
@@ -138,7 +138,7 @@ bit negative<sbyte>(sbyte src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<ushort>(ushort src)
 // AggressiveInlining
 bit negative<ushort>(ushort src)
@@ -208,7 +208,7 @@ bit negative<ushort>(ushort src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<short>(short src)
 // AggressiveInlining
 bit negative<short>(short src)
@@ -278,7 +278,7 @@ bit negative<short>(short src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<uint>(uint src)
 // AggressiveInlining
 bit negative<uint>(uint src)
@@ -348,7 +348,7 @@ bit negative<uint>(uint src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<int>(int src)
 // AggressiveInlining
 bit negative<int>(int src)
@@ -418,7 +418,7 @@ bit negative<int>(int src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<ulong>(ulong src)
 // AggressiveInlining
 bit negative<ulong>(ulong src)
@@ -488,7 +488,7 @@ bit negative<ulong>(ulong src)
     IL_00F0: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.bit Z0.gmath::negative<T>(T)
+// Z0.bit Z0.gmath::negative<T>(T)
 // bit negative<long>(long src)
 // AggressiveInlining
 bit negative<long>(long src)

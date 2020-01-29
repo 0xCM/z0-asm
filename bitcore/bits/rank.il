@@ -1,4 +1,4 @@
-// Id := 100663501, Name := System.UInt32 Z0.Bits::rank(System.Byte,System.Int32)
+// System.UInt32 Z0.Bits::rank(System.Byte,System.Int32)
 // uint rank(byte src, int pos)
 // AggressiveInlining
 uint rank(byte src, int pos)
@@ -12,7 +12,7 @@ uint rank(byte src, int pos)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663502, Name := System.UInt32 Z0.Bits::rank(System.UInt16,System.Int32)
+// System.UInt32 Z0.Bits::rank(System.UInt16,System.Int32)
 // uint rank(ushort src, int pos)
 // AggressiveInlining
 uint rank(ushort src, int pos)
@@ -26,7 +26,7 @@ uint rank(ushort src, int pos)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663503, Name := System.UInt32 Z0.Bits::rank(System.UInt32,System.Int32)
+// System.UInt32 Z0.Bits::rank(System.UInt32,System.Int32)
 // uint rank(uint src, int pos)
 // AggressiveInlining
 uint rank(uint src, int pos)
@@ -40,7 +40,7 @@ uint rank(uint src, int pos)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663504, Name := System.UInt32 Z0.Bits::rank(System.UInt64,System.Int32)
+// System.UInt32 Z0.Bits::rank(System.UInt64,System.Int32)
 // uint rank(ulong src, int pos)
 // AggressiveInlining
 uint rank(ulong src, int pos)

@@ -1,4 +1,4 @@
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // byte dot<byte>(ReadOnlySpan<byte> lhs, ReadOnlySpan<byte> rhs)
 // AggressiveInlining
 byte dot<byte>(ReadOnlySpan<byte> lhs, ReadOnlySpan<byte> rhs)
@@ -39,7 +39,7 @@ byte dot<byte>(ReadOnlySpan<byte> lhs, ReadOnlySpan<byte> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // sbyte dot<sbyte>(ReadOnlySpan<sbyte> lhs, ReadOnlySpan<sbyte> rhs)
 // AggressiveInlining
 sbyte dot<sbyte>(ReadOnlySpan<sbyte> lhs, ReadOnlySpan<sbyte> rhs)
@@ -80,7 +80,7 @@ sbyte dot<sbyte>(ReadOnlySpan<sbyte> lhs, ReadOnlySpan<sbyte> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs)
 // AggressiveInlining
 ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs)
@@ -121,7 +121,7 @@ ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
 // AggressiveInlining
 short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
@@ -162,7 +162,7 @@ short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // uint dot<uint>(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs)
 // AggressiveInlining
 uint dot<uint>(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs)
@@ -203,7 +203,7 @@ uint dot<uint>(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // int dot<int>(ReadOnlySpan<int> lhs, ReadOnlySpan<int> rhs)
 // AggressiveInlining
 int dot<int>(ReadOnlySpan<int> lhs, ReadOnlySpan<int> rhs)
@@ -244,7 +244,7 @@ int dot<int>(ReadOnlySpan<int> lhs, ReadOnlySpan<int> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // ulong dot<ulong>(ReadOnlySpan<ulong> lhs, ReadOnlySpan<ulong> rhs)
 // AggressiveInlining
 ulong dot<ulong>(ReadOnlySpan<ulong> lhs, ReadOnlySpan<ulong> rhs)
@@ -285,7 +285,7 @@ ulong dot<ulong>(ReadOnlySpan<ulong> lhs, ReadOnlySpan<ulong> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs)
 // AggressiveInlining
 long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs)
@@ -326,7 +326,7 @@ long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs)
 // AggressiveInlining
 float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs)
@@ -367,7 +367,7 @@ float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs)
     IL_0050: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664184, Name := T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
+// T Z0.mathspan::dot<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>)
 // double dot<double>(ReadOnlySpan<double> lhs, ReadOnlySpan<double> rhs)
 // AggressiveInlining
 double dot<double>(ReadOnlySpan<double> lhs, ReadOnlySpan<double> rhs)

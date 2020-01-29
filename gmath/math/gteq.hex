@@ -1,8 +1,8 @@
-gteq_8i   0f 1f 44 00 00 48 0f be c1 48 0f be d2 3b c2 0f 9d c0 0f b6 c0 c3
-gteq_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 0f 9d c0 0f b6 c0 c3
-gteq_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9d c0 0f b6 c0 c3
-gteq_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 3b c2 0f 9d c0 0f b6 c0 c3
-gteq_32i  0f 1f 44 00 00 3b ca 0f 9d c0 0f b6 c0 c3
-gteq_32u  0f 1f 44 00 00 3b ca 0f 93 c0 0f b6 c0 c3
-gteq_64i  0f 1f 44 00 00 48 3b ca 0f 9d c0 0f b6 c0 c3
-gteq_64u  0f 1f 44 00 00 48 3b ca 0f 93 c0 0f b6 c0 c3
+gteq_8i_8i    0f 1f 44 00 00 48 0f be c1 48 0f be d2 3b c2 0f 9d c0 0f b6 c0 c3
+gteq_8u_8u    0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 0f 9d c0 0f b6 c0 c3
+gteq_16i_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9d c0 0f b6 c0 c3
+gteq_16u_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 3b c2 0f 9d c0 0f b6 c0 c3
+gteq_32i_32i  0f 1f 44 00 00 3b ca 0f 9d c0 0f b6 c0 c3
+gteq_32u_32u  0f 1f 44 00 00 3b ca 0f 93 c0 0f b6 c0 c3
+gteq_64i_64i  0f 1f 44 00 00 48 3b ca 0f 9d c0 0f b6 c0 c3
+gteq_64u_64u  0f 1f 44 00 00 48 3b ca 0f 93 c0 0f b6 c0 c3

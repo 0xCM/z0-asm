@@ -1,4 +1,4 @@
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // byte zero<byte>(byte t)
 // AggressiveInlining
 byte zero<byte>(byte t)
@@ -9,7 +9,7 @@ byte zero<byte>(byte t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // sbyte zero<sbyte>(sbyte t)
 // AggressiveInlining
 sbyte zero<sbyte>(sbyte t)
@@ -20,7 +20,7 @@ sbyte zero<sbyte>(sbyte t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // ushort zero<ushort>(ushort t)
 // AggressiveInlining
 ushort zero<ushort>(ushort t)
@@ -31,7 +31,7 @@ ushort zero<ushort>(ushort t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // short zero<short>(short t)
 // AggressiveInlining
 short zero<short>(short t)
@@ -42,7 +42,7 @@ short zero<short>(short t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // uint zero<uint>(uint t)
 // AggressiveInlining
 uint zero<uint>(uint t)
@@ -53,7 +53,7 @@ uint zero<uint>(uint t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // int zero<int>(int t)
 // AggressiveInlining
 int zero<int>(int t)
@@ -64,7 +64,7 @@ int zero<int>(int t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // ulong zero<ulong>(ulong t)
 // AggressiveInlining
 ulong zero<ulong>(ulong t)
@@ -75,7 +75,7 @@ ulong zero<ulong>(ulong t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // long zero<long>(long t)
 // AggressiveInlining
 long zero<long>(long t)
@@ -86,7 +86,7 @@ long zero<long>(long t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // float zero<float>(float t)
 // AggressiveInlining
 float zero<float>(float t)
@@ -97,7 +97,7 @@ float zero<float>(float t)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663945, Name := T Z0.gmath::zero<T>(T)
+// T Z0.gmath::zero<T>(T)
 // double zero<double>(double t)
 // AggressiveInlining
 double zero<double>(double t)

@@ -1,4 +1,4 @@
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // byte f1e<byte>(byte a, byte b, byte c)
 // AggressiveInlining
 byte f1e<byte>(byte a, byte b, byte c)
@@ -11,7 +11,7 @@ byte f1e<byte>(byte a, byte b, byte c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // sbyte f1e<sbyte>(sbyte a, sbyte b, sbyte c)
 // AggressiveInlining
 sbyte f1e<sbyte>(sbyte a, sbyte b, sbyte c)
@@ -24,7 +24,7 @@ sbyte f1e<sbyte>(sbyte a, sbyte b, sbyte c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // ushort f1e<ushort>(ushort a, ushort b, ushort c)
 // AggressiveInlining
 ushort f1e<ushort>(ushort a, ushort b, ushort c)
@@ -37,7 +37,7 @@ ushort f1e<ushort>(ushort a, ushort b, ushort c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // short f1e<short>(short a, short b, short c)
 // AggressiveInlining
 short f1e<short>(short a, short b, short c)
@@ -50,7 +50,7 @@ short f1e<short>(short a, short b, short c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // uint f1e<uint>(uint a, uint b, uint c)
 // AggressiveInlining
 uint f1e<uint>(uint a, uint b, uint c)
@@ -63,7 +63,7 @@ uint f1e<uint>(uint a, uint b, uint c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // int f1e<int>(int a, int b, int c)
 // AggressiveInlining
 int f1e<int>(int a, int b, int c)
@@ -76,7 +76,7 @@ int f1e<int>(int a, int b, int c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // ulong f1e<ulong>(ulong a, ulong b, ulong c)
 // AggressiveInlining
 ulong f1e<ulong>(ulong a, ulong b, ulong c)
@@ -89,7 +89,7 @@ ulong f1e<ulong>(ulong a, ulong b, ulong c)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f1e<T>(T,T,T)
 // long f1e<long>(long a, long b, long c)
 // AggressiveInlining
 long f1e<long>(long a, long b, long c)

@@ -1,4 +1,4 @@
-// Id := 100663698, Name := T Z0.gbits::zerohi<T>(T,System.Int32)
+// T Z0.gbits::zerohi<T>(T,System.Int32)
 // byte zerohi<byte>(byte src, int index)
 // AggressiveInlining
 byte zerohi<byte>(byte src, int index)
@@ -59,7 +59,7 @@ byte zerohi<byte>(byte src, int index)
     IL_00CA: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663698, Name := T Z0.gbits::zerohi<T>(T,System.Int32)
+// T Z0.gbits::zerohi<T>(T,System.Int32)
 // ushort zerohi<ushort>(ushort src, int index)
 // AggressiveInlining
 ushort zerohi<ushort>(ushort src, int index)
@@ -120,7 +120,7 @@ ushort zerohi<ushort>(ushort src, int index)
     IL_00CA: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663698, Name := T Z0.gbits::zerohi<T>(T,System.Int32)
+// T Z0.gbits::zerohi<T>(T,System.Int32)
 // uint zerohi<uint>(uint src, int index)
 // AggressiveInlining
 uint zerohi<uint>(uint src, int index)
@@ -181,7 +181,7 @@ uint zerohi<uint>(uint src, int index)
     IL_00CA: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663698, Name := T Z0.gbits::zerohi<T>(T,System.Int32)
+// T Z0.gbits::zerohi<T>(T,System.Int32)
 // ulong zerohi<ulong>(ulong src, int index)
 // AggressiveInlining
 ulong zerohi<ulong>(ulong src, int index)

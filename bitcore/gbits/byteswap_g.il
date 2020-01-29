@@ -1,4 +1,4 @@
-// Id := 100663628, Name := T Z0.gbits::byteswap<T>(T)
+// T Z0.gbits::byteswap<T>(T)
 // ushort byteswap<ushort>(ushort src)
 // AggressiveInlining
 ushort byteswap<ushort>(ushort src)
@@ -44,7 +44,7 @@ ushort byteswap<ushort>(ushort src)
     IL_009A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663628, Name := T Z0.gbits::byteswap<T>(T)
+// T Z0.gbits::byteswap<T>(T)
 // uint byteswap<uint>(uint src)
 // AggressiveInlining
 uint byteswap<uint>(uint src)
@@ -90,7 +90,7 @@ uint byteswap<uint>(uint src)
     IL_009A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663628, Name := T Z0.gbits::byteswap<T>(T)
+// T Z0.gbits::byteswap<T>(T)
 // ulong byteswap<ulong>(ulong src)
 // AggressiveInlining
 ulong byteswap<ulong>(ulong src)

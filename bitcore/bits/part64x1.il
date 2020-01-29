@@ -1,4 +1,4 @@
-// Id := 100663448, Name := System.Void Z0.Bits::part64x1(System.UInt64,System.Span`1<System.Byte>)
+// System.Void Z0.Bits::part64x1(System.UInt64,System.Span`1<System.Byte>)
 // void part64x1(ulong src, Span<byte> dst)
 // AggressiveInlining
 void part64x1(ulong src, Span<byte> dst)
@@ -71,7 +71,7 @@ void part64x1(ulong src, Span<byte> dst)
     IL_008B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663449, Name := System.Void Z0.Bits::part64x1(System.UInt64,System.Span`1<Z0.bit>)
+// System.Void Z0.Bits::part64x1(System.UInt64,System.Span`1<Z0.bit>)
 // void part64x1(ulong src, Span<bit> dst)
 // AggressiveInlining
 void part64x1(ulong src, Span<bit> dst)

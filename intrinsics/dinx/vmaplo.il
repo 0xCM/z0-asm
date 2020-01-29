@@ -1,4 +1,4 @@
-// Id := 100664855, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N128,System.UInt64)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N128,System.UInt64)
 // Vector128<ulong> vmaplo(Vector128<uint> src, N128 w, ulong t)
 // AggressiveInlining
 Vector128<ulong> vmaplo(Vector128<uint> src, N128 w, ulong t)
@@ -9,7 +9,7 @@ Vector128<ulong> vmaplo(Vector128<uint> src, N128 w, ulong t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664857, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.SByte>,Z0.N256,System.Int16)
+// System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.SByte>,Z0.N256,System.Int16)
 // Vector256<short> vmaplo(Vector256<sbyte> src, N256 w, short t)
 // AggressiveInlining
 Vector256<short> vmaplo(Vector256<sbyte> src, N256 w, short t)
@@ -20,7 +20,7 @@ Vector256<short> vmaplo(Vector256<sbyte> src, N256 w, short t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664859, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Byte>,Z0.N256,System.UInt16)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Byte>,Z0.N256,System.UInt16)
 // Vector256<ushort> vmaplo(Vector256<byte> src, N256 w, ushort t)
 // AggressiveInlining
 Vector256<ushort> vmaplo(Vector256<byte> src, N256 w, ushort t)
@@ -32,7 +32,7 @@ Vector256<ushort> vmaplo(Vector256<byte> src, N256 w, ushort t)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664861, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Byte>,Z0.N256,System.Int16)
+// System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Byte>,Z0.N256,System.Int16)
 // Vector256<short> vmaplo(Vector256<byte> src, N256 w, short t)
 // AggressiveInlining
 Vector256<short> vmaplo(Vector256<byte> src, N256 w, short t)
@@ -43,7 +43,7 @@ Vector256<short> vmaplo(Vector256<byte> src, N256 w, short t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664863, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Int16>,Z0.N256,System.Int32)
+// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Int16>,Z0.N256,System.Int32)
 // Vector256<int> vmaplo(Vector256<short> src, N256 w, int t)
 // AggressiveInlining
 Vector256<int> vmaplo(Vector256<short> src, N256 w, int t)
@@ -54,7 +54,7 @@ Vector256<int> vmaplo(Vector256<short> src, N256 w, int t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664865, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,Z0.N256,System.UInt32)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,Z0.N256,System.UInt32)
 // Vector256<uint> vmaplo(Vector256<ushort> src, N256 w, uint t)
 // AggressiveInlining
 Vector256<uint> vmaplo(Vector256<ushort> src, N256 w, uint t)
@@ -66,7 +66,7 @@ Vector256<uint> vmaplo(Vector256<ushort> src, N256 w, uint t)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664867, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Int32>,Z0.N256,System.Int64)
+// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.Int32>,Z0.N256,System.Int64)
 // Vector256<long> vmaplo(Vector256<int> src, N256 w, long t)
 // AggressiveInlining
 Vector256<long> vmaplo(Vector256<int> src, N256 w, long t)
@@ -77,7 +77,7 @@ Vector256<long> vmaplo(Vector256<int> src, N256 w, long t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664869, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,Z0.N256,System.UInt64)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,Z0.N256,System.UInt64)
 // Vector256<ulong> vmaplo(Vector256<uint> src, N256 w, ulong t)
 // AggressiveInlining
 Vector256<ulong> vmaplo(Vector256<uint> src, N256 w, ulong t)
@@ -89,7 +89,7 @@ Vector256<ulong> vmaplo(Vector256<uint> src, N256 w, ulong t)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664829, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N128,System.Int16)
+// System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N128,System.Int16)
 // Vector128<short> vmaplo(Vector128<sbyte> src, N128 w, short t)
 // AggressiveInlining
 Vector128<short> vmaplo(Vector128<sbyte> src, N128 w, short t)
@@ -99,7 +99,7 @@ Vector128<short> vmaplo(Vector128<sbyte> src, N128 w, short t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664831, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N128,System.UInt16)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N128,System.UInt16)
 // Vector128<ushort> vmaplo(Vector128<sbyte> src, N128 w, ushort t)
 // AggressiveInlining
 Vector128<ushort> vmaplo(Vector128<sbyte> src, N128 w, ushort t)
@@ -110,7 +110,7 @@ Vector128<ushort> vmaplo(Vector128<sbyte> src, N128 w, ushort t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664833, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N256,System.Int32)
+// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.SByte>,Z0.N256,System.Int32)
 // Vector256<int> vmaplo(Vector128<sbyte> src, N256 w, int t)
 // AggressiveInlining
 Vector256<int> vmaplo(Vector128<sbyte> src, N256 w, int t)
@@ -120,7 +120,7 @@ Vector256<int> vmaplo(Vector128<sbyte> src, N256 w, int t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664835, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N128,System.Int16)
+// System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N128,System.Int16)
 // Vector128<short> vmaplo(Vector128<byte> src, N128 w, short t)
 // AggressiveInlining
 Vector128<short> vmaplo(Vector128<byte> src, N128 w, short t)
@@ -130,7 +130,7 @@ Vector128<short> vmaplo(Vector128<byte> src, N128 w, short t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664837, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N128,System.UInt16)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N128,System.UInt16)
 // Vector128<ushort> vmaplo(Vector128<byte> src, N128 w, ushort t)
 // AggressiveInlining
 Vector128<ushort> vmaplo(Vector128<byte> src, N128 w, ushort t)
@@ -141,7 +141,7 @@ Vector128<ushort> vmaplo(Vector128<byte> src, N128 w, ushort t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664839, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt32)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt32)
 // Vector256<uint> vmaplo(Vector128<byte> src, N256 w, uint t)
 // AggressiveInlining
 Vector256<uint> vmaplo(Vector128<byte> src, N256 w, uint t)
@@ -152,7 +152,7 @@ Vector256<uint> vmaplo(Vector128<byte> src, N256 w, uint t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664841, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.Int32)
+// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.Int32)
 // Vector256<int> vmaplo(Vector128<byte> src, N256 w, int t)
 // AggressiveInlining
 Vector256<int> vmaplo(Vector128<byte> src, N256 w, int t)
@@ -162,7 +162,7 @@ Vector256<int> vmaplo(Vector128<byte> src, N256 w, int t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664843, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N128,System.Int32)
+// System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N128,System.Int32)
 // Vector128<int> vmaplo(Vector128<short> src, N128 w, int t)
 // AggressiveInlining
 Vector128<int> vmaplo(Vector128<short> src, N128 w, int t)
@@ -172,7 +172,7 @@ Vector128<int> vmaplo(Vector128<short> src, N128 w, int t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664845, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int64)
+// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int64)
 // Vector256<long> vmaplo(Vector128<short> src, N256 w, long t)
 // AggressiveInlining
 Vector256<long> vmaplo(Vector128<short> src, N256 w, long t)
@@ -182,7 +182,7 @@ Vector256<long> vmaplo(Vector128<short> src, N256 w, long t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664847, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N128,System.UInt32)
+// System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N128,System.UInt32)
 // Vector128<uint> vmaplo(Vector128<ushort> src, N128 w, uint t)
 // AggressiveInlining
 Vector128<uint> vmaplo(Vector128<ushort> src, N128 w, uint t)
@@ -193,7 +193,7 @@ Vector128<uint> vmaplo(Vector128<ushort> src, N128 w, uint t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664849, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.Int64)
+// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.Int64)
 // Vector256<long> vmaplo(Vector128<ushort> src, N256 w, long t)
 // AggressiveInlining
 Vector256<long> vmaplo(Vector128<ushort> src, N256 w, long t)
@@ -203,7 +203,7 @@ Vector256<long> vmaplo(Vector128<ushort> src, N256 w, long t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664851, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt64)
+// System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt64)
 // Vector256<ulong> vmaplo(Vector128<ushort> src, N256 w, ulong t)
 // AggressiveInlining
 Vector256<ulong> vmaplo(Vector128<ushort> src, N256 w, ulong t)
@@ -214,7 +214,7 @@ Vector256<ulong> vmaplo(Vector128<ushort> src, N256 w, ulong t)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664853, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N128,System.Int64)
+// System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmaplo(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N128,System.Int64)
 // Vector128<long> vmaplo(Vector128<uint> src, N128 w, long t)
 // AggressiveInlining
 Vector128<long> vmaplo(Vector128<uint> src, N128 w, long t)

@@ -1,4 +1,4 @@
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // byte nonimpl<byte>(byte a, byte b)
 // AggressiveInlining
 byte nonimpl<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte nonimpl<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // sbyte nonimpl<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte nonimpl<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte nonimpl<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // ushort nonimpl<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort nonimpl<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort nonimpl<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // short nonimpl<short>(short a, short b)
 // AggressiveInlining
 short nonimpl<short>(short a, short b)
@@ -42,7 +42,7 @@ short nonimpl<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // uint nonimpl<uint>(uint a, uint b)
 // AggressiveInlining
 uint nonimpl<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint nonimpl<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // int nonimpl<int>(int a, int b)
 // AggressiveInlining
 int nonimpl<int>(int a, int b)
@@ -64,7 +64,7 @@ int nonimpl<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // ulong nonimpl<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong nonimpl<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong nonimpl<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664030, Name := T Z0.gmath::nonimpl<T>(T,T)
+// T Z0.gmath::nonimpl<T>(T,T)
 // long nonimpl<long>(long a, long b)
 // AggressiveInlining
 long nonimpl<long>(long a, long b)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitclear(byte src, byte index, byte count)
-; bitclear_8u[53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b6 c0 41 23 c0 0f b6 c0 c3}
+; bitclear_8u_8u_8u[53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b6 c0 41 23 c0 0f b6 c0 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -19,7 +19,7 @@
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte bitclear(sbyte src, byte index, byte count)
-; bitclear_8i[55] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 48 0f be c0 41 23 c0 48 0f be c0 c3}
+; bitclear_8i_8u_8u[55] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 48 0f be c0 41 23 c0 48 0f be c0 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -38,7 +38,7 @@
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitclear(ushort src, byte index, byte count)
-; bitclear_16u[53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b7 c0 41 23 c0 0f b7 c0 c3}
+; bitclear_16u_8u_8u[53] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 0f b7 c0 41 23 c0 0f b7 c0 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -57,7 +57,7 @@
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short bitclear(short src, byte index, byte count)
-; bitclear_16i[55] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 48 0f bf c0 41 23 c0 48 0f bf c0 c3}
+; bitclear_16i_8u_8u[55] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 48 0f bf c0 41 23 c0 48 0f bf c0 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -76,7 +76,7 @@
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitclear(uint src, byte index, byte count)
-; bitclear_32u[44] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 8b d0 f7 d2 23 c2 c3}
+; bitclear_32u_8u_8u[44] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 8b d0 f7 d2 23 c2 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -94,7 +94,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int bitclear(int src, byte index, byte count)
-; bitclear_32i[44] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 8b d0 f7 d2 23 c2 c3}
+; bitclear_32i_8u_8u[44] = {0f 1f 44 00 00 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 8b d0 f7 d2 23 c2 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -112,7 +112,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitclear(ulong src, byte index, byte count)
-; bitclear_64u[44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
+; bitclear_64u_8u_8u[44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -129,7 +129,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long bitclear(long src, byte index, byte count)
-; bitclear_64i[44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
+; bitclear_64i_8u_8u[44] = {0f 1f 44 00 00 48 8b c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 b8 f3 d0 0f b6 ca 49 d3 e0 49 8b d0 48 f7 d2 48 23 c2 c3}
 ; TermCode = RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

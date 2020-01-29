@@ -1,4 +1,4 @@
-// Id := 100664154, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<byte> select<byte>(BitVector<byte> x, BitVector<byte> y, BitVector<byte> z)
 // AggressiveInlining
 BitVector<byte> select<byte>(BitVector<byte> x, BitVector<byte> y, BitVector<byte> z)
@@ -10,7 +10,7 @@ BitVector<byte> select<byte>(BitVector<byte> x, BitVector<byte> y, BitVector<byt
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664154, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ushort> select<ushort>(BitVector<ushort> x, BitVector<ushort> y, BitVector<ushort> z)
 // AggressiveInlining
 BitVector<ushort> select<ushort>(BitVector<ushort> x, BitVector<ushort> y, BitVector<ushort> z)
@@ -22,7 +22,7 @@ BitVector<ushort> select<ushort>(BitVector<ushort> x, BitVector<ushort> y, BitVe
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664154, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<uint> select<uint>(BitVector<uint> x, BitVector<uint> y, BitVector<uint> z)
 // AggressiveInlining
 BitVector<uint> select<uint>(BitVector<uint> x, BitVector<uint> y, BitVector<uint> z)
@@ -34,7 +34,7 @@ BitVector<uint> select<uint>(BitVector<uint> x, BitVector<uint> y, BitVector<uin
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664154, Name := Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
+// Z0.BitVector`1<T> Z0.Logix.BitVectorOps::select<T>(Z0.BitVector`1<T>,Z0.BitVector`1<T>,Z0.BitVector`1<T>)
 // BitVector<ulong> select<ulong>(BitVector<ulong> x, BitVector<ulong> y, BitVector<ulong> z)
 // AggressiveInlining
 BitVector<ulong> select<ulong>(BitVector<ulong> x, BitVector<ulong> y, BitVector<ulong> z)

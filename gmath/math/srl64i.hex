@@ -1,1 +1,1 @@
-srl64i_64i  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3
+srl64i_64i_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3

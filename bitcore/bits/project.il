@@ -1,4 +1,4 @@
-// Id := 100663497, Name := System.Byte Z0.Bits::project(System.Byte,System.Byte)
+// System.Byte Z0.Bits::project(System.Byte,System.Byte)
 // byte project(byte src, byte spec)
 // AggressiveInlining
 byte project(byte src, byte spec)
@@ -10,7 +10,7 @@ byte project(byte src, byte spec)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663499, Name := System.UInt16 Z0.Bits::project(System.UInt16,System.UInt16)
+// System.UInt16 Z0.Bits::project(System.UInt16,System.UInt16)
 // ushort project(ushort src, ushort spec)
 // AggressiveInlining
 ushort project(ushort src, ushort spec)
@@ -22,7 +22,7 @@ ushort project(ushort src, ushort spec)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663533, Name := System.UInt32 Z0.Bits::project(System.UInt32,System.UInt32)
+// System.UInt32 Z0.Bits::project(System.UInt32,System.UInt32)
 // uint project(uint src, uint spec)
 // AggressiveInlining
 uint project(uint src, uint spec)
@@ -33,7 +33,7 @@ uint project(uint src, uint spec)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663535, Name := System.UInt64 Z0.Bits::project(System.UInt64,System.UInt64)
+// System.UInt64 Z0.Bits::project(System.UInt64,System.UInt64)
 // ulong project(ulong src, ulong spec)
 // AggressiveInlining
 ulong project(ulong src, ulong spec)

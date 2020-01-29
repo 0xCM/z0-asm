@@ -1,4 +1,4 @@
-// Id := 100663804, Name := Z0.bit Z0.gfp::between<T>(T,T,T)
+// Z0.bit Z0.gfp::between<T>(T,T,T)
 // bit between<float>(float x, float a, float b)
 // AggressiveInlining
 bit between<float>(float x, float a, float b)
@@ -39,7 +39,7 @@ bit between<float>(float x, float a, float b)
     IL_007C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663804, Name := Z0.bit Z0.gfp::between<T>(T,T,T)
+// Z0.bit Z0.gfp::between<T>(T,T,T)
 // bit between<double>(double x, double a, double b)
 // AggressiveInlining
 bit between<double>(double x, double a, double b)

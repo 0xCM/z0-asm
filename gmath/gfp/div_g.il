@@ -1,4 +1,4 @@
-// Id := 100663790, Name := T Z0.gfp::div<T>(T,T)
+// T Z0.gfp::div<T>(T,T)
 // float div<float>(float a, float b)
 // AggressiveInlining
 float div<float>(float a, float b)
@@ -37,7 +37,7 @@ float div<float>(float a, float b)
     IL_007A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663790, Name := T Z0.gfp::div<T>(T,T)
+// T Z0.gfp::div<T>(T,T)
 // double div<double>(double a, double b)
 // AggressiveInlining
 double div<double>(double a, double b)

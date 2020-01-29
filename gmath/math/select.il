@@ -1,4 +1,4 @@
-// Id := 100663578, Name := System.SByte Z0.math::select(System.SByte,System.SByte,System.SByte)
+// System.SByte Z0.math::select(System.SByte,System.SByte,System.SByte)
 // sbyte select(sbyte a, sbyte b, sbyte c)
 // AggressiveInlining
 sbyte select(sbyte a, sbyte b, sbyte c)
@@ -11,7 +11,7 @@ sbyte select(sbyte a, sbyte b, sbyte c)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663579, Name := System.Byte Z0.math::select(System.Byte,System.Byte,System.Byte)
+// System.Byte Z0.math::select(System.Byte,System.Byte,System.Byte)
 // byte select(byte a, byte b, byte c)
 // AggressiveInlining
 byte select(byte a, byte b, byte c)
@@ -24,7 +24,7 @@ byte select(byte a, byte b, byte c)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663580, Name := System.Int16 Z0.math::select(System.Int16,System.Int16,System.Int16)
+// System.Int16 Z0.math::select(System.Int16,System.Int16,System.Int16)
 // short select(short a, short b, short c)
 // AggressiveInlining
 short select(short a, short b, short c)
@@ -37,7 +37,7 @@ short select(short a, short b, short c)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663581, Name := System.UInt16 Z0.math::select(System.UInt16,System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::select(System.UInt16,System.UInt16,System.UInt16)
 // ushort select(ushort a, ushort b, ushort c)
 // AggressiveInlining
 ushort select(ushort a, ushort b, ushort c)
@@ -50,7 +50,7 @@ ushort select(ushort a, ushort b, ushort c)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663582, Name := System.Int32 Z0.math::select(System.Int32,System.Int32,System.Int32)
+// System.Int32 Z0.math::select(System.Int32,System.Int32,System.Int32)
 // int select(int a, int b, int c)
 // AggressiveInlining
 int select(int a, int b, int c)
@@ -65,7 +65,7 @@ int select(int a, int b, int c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663583, Name := System.UInt32 Z0.math::select(System.UInt32,System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::select(System.UInt32,System.UInt32,System.UInt32)
 // uint select(uint a, uint b, uint c)
 // AggressiveInlining
 uint select(uint a, uint b, uint c)
@@ -80,7 +80,7 @@ uint select(uint a, uint b, uint c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663584, Name := System.Int64 Z0.math::select(System.Int64,System.Int64,System.Int64)
+// System.Int64 Z0.math::select(System.Int64,System.Int64,System.Int64)
 // long select(long a, long b, long c)
 // AggressiveInlining
 long select(long a, long b, long c)
@@ -95,7 +95,7 @@ long select(long a, long b, long c)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663585, Name := System.UInt64 Z0.math::select(System.UInt64,System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::select(System.UInt64,System.UInt64,System.UInt64)
 // ulong select(ulong a, ulong b, ulong c)
 // AggressiveInlining
 ulong select(ulong a, ulong b, ulong c)

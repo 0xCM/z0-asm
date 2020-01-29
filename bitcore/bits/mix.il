@@ -1,4 +1,4 @@
-// Id := 100663419, Name := System.Byte Z0.Bits::mix(Z0.N0,System.Byte,System.Byte)
+// System.Byte Z0.Bits::mix(Z0.N0,System.Byte,System.Byte)
 // byte mix(N0 parity, byte x, byte y)
 // AggressiveInlining
 byte mix(N0 parity, byte x, byte y)
@@ -26,7 +26,7 @@ byte mix(N0 parity, byte x, byte y)
     IL_002A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663420, Name := System.Byte Z0.Bits::mix(Z0.N1,System.Byte,System.Byte)
+// System.Byte Z0.Bits::mix(Z0.N1,System.Byte,System.Byte)
 // byte mix(N1 parity, byte x, byte y)
 // AggressiveInlining
 byte mix(N1 parity, byte x, byte y)
@@ -54,7 +54,7 @@ byte mix(N1 parity, byte x, byte y)
     IL_002D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663421, Name := System.UInt16 Z0.Bits::mix(Z0.N0,System.UInt16,System.UInt16)
+// System.UInt16 Z0.Bits::mix(Z0.N0,System.UInt16,System.UInt16)
 // ushort mix(N0 parity, ushort x, ushort y)
 // AggressiveInlining
 ushort mix(N0 parity, ushort x, ushort y)
@@ -82,7 +82,7 @@ ushort mix(N0 parity, ushort x, ushort y)
     IL_0030: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663422, Name := System.UInt16 Z0.Bits::mix(Z0.N1,System.UInt16,System.UInt16)
+// System.UInt16 Z0.Bits::mix(Z0.N1,System.UInt16,System.UInt16)
 // ushort mix(N1 parity, ushort x, ushort y)
 // AggressiveInlining
 ushort mix(N1 parity, ushort x, ushort y)
@@ -110,7 +110,7 @@ ushort mix(N1 parity, ushort x, ushort y)
     IL_0030: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663423, Name := System.UInt32 Z0.Bits::mix(Z0.N0,System.UInt32,System.UInt32)
+// System.UInt32 Z0.Bits::mix(Z0.N0,System.UInt32,System.UInt32)
 // uint mix(N0 parity, uint x, uint y)
 // AggressiveInlining
 uint mix(N0 parity, uint x, uint y)
@@ -137,7 +137,7 @@ uint mix(N0 parity, uint x, uint y)
     IL_002F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663424, Name := System.UInt32 Z0.Bits::mix(Z0.N1,System.UInt32,System.UInt32)
+// System.UInt32 Z0.Bits::mix(Z0.N1,System.UInt32,System.UInt32)
 // uint mix(N1 parity, uint x, uint y)
 // AggressiveInlining
 uint mix(N1 parity, uint x, uint y)
@@ -164,7 +164,7 @@ uint mix(N1 parity, uint x, uint y)
     IL_002F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663425, Name := System.UInt64 Z0.Bits::mix(Z0.N0,System.UInt64,System.UInt64)
+// System.UInt64 Z0.Bits::mix(Z0.N0,System.UInt64,System.UInt64)
 // ulong mix(N0 parity, ulong x, ulong y)
 // AggressiveInlining
 ulong mix(N0 parity, ulong x, ulong y)
@@ -191,7 +191,7 @@ ulong mix(N0 parity, ulong x, ulong y)
     IL_003B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663426, Name := System.UInt64 Z0.Bits::mix(Z0.N1,System.UInt64,System.UInt64)
+// System.UInt64 Z0.Bits::mix(Z0.N1,System.UInt64,System.UInt64)
 // ulong mix(N1 parity, ulong x, ulong y)
 // AggressiveInlining
 ulong mix(N1 parity, ulong x, ulong y)

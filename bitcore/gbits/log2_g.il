@@ -1,4 +1,4 @@
-// Id := 100663643, Name := System.UInt32 Z0.gbits::log2<T>(T&)
+// System.UInt32 Z0.gbits::log2<T>(T&)
 // uint log2<byte>(in byte src)
 // AggressiveInlining
 uint log2<byte>(in byte src)
@@ -55,7 +55,7 @@ uint log2<byte>(in byte src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663643, Name := System.UInt32 Z0.gbits::log2<T>(T&)
+// System.UInt32 Z0.gbits::log2<T>(T&)
 // uint log2<ushort>(in ushort src)
 // AggressiveInlining
 uint log2<ushort>(in ushort src)
@@ -112,7 +112,7 @@ uint log2<ushort>(in ushort src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663643, Name := System.UInt32 Z0.gbits::log2<T>(T&)
+// System.UInt32 Z0.gbits::log2<T>(T&)
 // uint log2<uint>(in uint src)
 // AggressiveInlining
 uint log2<uint>(in uint src)
@@ -169,7 +169,7 @@ uint log2<uint>(in uint src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663643, Name := System.UInt32 Z0.gbits::log2<T>(T&)
+// System.UInt32 Z0.gbits::log2<T>(T&)
 // uint log2<ulong>(in ulong src)
 // AggressiveInlining
 uint log2<ulong>(in ulong src)

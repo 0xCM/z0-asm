@@ -1,4 +1,4 @@
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // byte bitclear<byte>(byte src, byte index, byte count)
 // AggressiveInlining
 byte bitclear<byte>(byte src, byte index, byte count)
@@ -10,7 +10,7 @@ byte bitclear<byte>(byte src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // sbyte bitclear<sbyte>(sbyte src, byte index, byte count)
 // AggressiveInlining
 sbyte bitclear<sbyte>(sbyte src, byte index, byte count)
@@ -22,7 +22,7 @@ sbyte bitclear<sbyte>(sbyte src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // ushort bitclear<ushort>(ushort src, byte index, byte count)
 // AggressiveInlining
 ushort bitclear<ushort>(ushort src, byte index, byte count)
@@ -34,7 +34,7 @@ ushort bitclear<ushort>(ushort src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // short bitclear<short>(short src, byte index, byte count)
 // AggressiveInlining
 short bitclear<short>(short src, byte index, byte count)
@@ -46,7 +46,7 @@ short bitclear<short>(short src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // uint bitclear<uint>(uint src, byte index, byte count)
 // AggressiveInlining
 uint bitclear<uint>(uint src, byte index, byte count)
@@ -58,7 +58,7 @@ uint bitclear<uint>(uint src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // int bitclear<int>(int src, byte index, byte count)
 // AggressiveInlining
 int bitclear<int>(int src, byte index, byte count)
@@ -70,7 +70,7 @@ int bitclear<int>(int src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // ulong bitclear<ulong>(ulong src, byte index, byte count)
 // AggressiveInlining
 ulong bitclear<ulong>(ulong src, byte index, byte count)
@@ -82,7 +82,7 @@ ulong bitclear<ulong>(ulong src, byte index, byte count)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663608, Name := T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
+// T Z0.gbits::bitclear<T>(T,System.Byte,System.Byte)
 // long bitclear<long>(long src, byte index, byte count)
 // AggressiveInlining
 long bitclear<long>(long src, byte index, byte count)

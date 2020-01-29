@@ -1,4 +1,4 @@
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // byte enable<byte>(byte src, int pos)
 // AggressiveInlining
 byte enable<byte>(byte src, int pos)
@@ -65,7 +65,7 @@ byte enable<byte>(byte src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // sbyte enable<sbyte>(sbyte src, int pos)
 // AggressiveInlining
 sbyte enable<sbyte>(sbyte src, int pos)
@@ -132,7 +132,7 @@ sbyte enable<sbyte>(sbyte src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // ushort enable<ushort>(ushort src, int pos)
 // AggressiveInlining
 ushort enable<ushort>(ushort src, int pos)
@@ -199,7 +199,7 @@ ushort enable<ushort>(ushort src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // short enable<short>(short src, int pos)
 // AggressiveInlining
 short enable<short>(short src, int pos)
@@ -266,7 +266,7 @@ short enable<short>(short src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // uint enable<uint>(uint src, int pos)
 // AggressiveInlining
 uint enable<uint>(uint src, int pos)
@@ -333,7 +333,7 @@ uint enable<uint>(uint src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // int enable<int>(int src, int pos)
 // AggressiveInlining
 int enable<int>(int src, int pos)
@@ -400,7 +400,7 @@ int enable<int>(int src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // ulong enable<ulong>(ulong src, int pos)
 // AggressiveInlining
 ulong enable<ulong>(ulong src, int pos)
@@ -467,7 +467,7 @@ ulong enable<ulong>(ulong src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // long enable<long>(long src, int pos)
 // AggressiveInlining
 long enable<long>(long src, int pos)
@@ -534,7 +534,7 @@ long enable<long>(long src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // float enable<float>(float src, int pos)
 // AggressiveInlining
 float enable<float>(float src, int pos)
@@ -601,7 +601,7 @@ float enable<float>(float src, int pos)
     IL_00EF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663636, Name := T Z0.gbits::enable<T>(T,System.Int32)
+// T Z0.gbits::enable<T>(T,System.Int32)
 // double enable<double>(double src, int pos)
 // AggressiveInlining
 double enable<double>(double src, int pos)

@@ -1,4 +1,4 @@
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // byte xors<byte>(byte a, byte offset)
 // AggressiveInlining
 byte xors<byte>(byte a, byte offset)
@@ -9,7 +9,7 @@ byte xors<byte>(byte a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // sbyte xors<sbyte>(sbyte a, byte offset)
 // AggressiveInlining
 sbyte xors<sbyte>(sbyte a, byte offset)
@@ -20,7 +20,7 @@ sbyte xors<sbyte>(sbyte a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // ushort xors<ushort>(ushort a, byte offset)
 // AggressiveInlining
 ushort xors<ushort>(ushort a, byte offset)
@@ -31,7 +31,7 @@ ushort xors<ushort>(ushort a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // short xors<short>(short a, byte offset)
 // AggressiveInlining
 short xors<short>(short a, byte offset)
@@ -42,7 +42,7 @@ short xors<short>(short a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // uint xors<uint>(uint a, byte offset)
 // AggressiveInlining
 uint xors<uint>(uint a, byte offset)
@@ -53,7 +53,7 @@ uint xors<uint>(uint a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // int xors<int>(int a, byte offset)
 // AggressiveInlining
 int xors<int>(int a, byte offset)
@@ -64,7 +64,7 @@ int xors<int>(int a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // ulong xors<ulong>(ulong a, byte offset)
 // AggressiveInlining
 ulong xors<ulong>(ulong a, byte offset)
@@ -75,7 +75,7 @@ ulong xors<ulong>(ulong a, byte offset)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664070, Name := T Z0.gmath::xors<T>(T,System.Byte)
+// T Z0.gmath::xors<T>(T,System.Byte)
 // long xors<long>(long a, byte offset)
 // AggressiveInlining
 long xors<long>(long a, byte offset)

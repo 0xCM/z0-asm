@@ -1,4 +1,4 @@
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // byte lnot<byte>(byte a, byte b)
 // AggressiveInlining
 byte lnot<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte lnot<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // sbyte lnot<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte lnot<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte lnot<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // ushort lnot<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort lnot<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort lnot<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // short lnot<short>(short a, short b)
 // AggressiveInlining
 short lnot<short>(short a, short b)
@@ -42,7 +42,7 @@ short lnot<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // uint lnot<uint>(uint a, uint b)
 // AggressiveInlining
 uint lnot<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint lnot<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // int lnot<int>(int a, int b)
 // AggressiveInlining
 int lnot<int>(int a, int b)
@@ -64,7 +64,7 @@ int lnot<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // ulong lnot<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong lnot<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong lnot<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664548, Name := T Z0.Logix.ScalarOps::lnot<T>(T,T)
+// T Z0.Logix.ScalarOps::lnot<T>(T,T)
 // long lnot<long>(long a, long b)
 // AggressiveInlining
 long lnot<long>(long a, long b)

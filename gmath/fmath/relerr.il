@@ -1,4 +1,4 @@
-// Id := 100663908, Name := System.Single Z0.fmath::relerr(System.Single,System.Single)
+// System.Single Z0.fmath::relerr(System.Single,System.Single)
 // float relerr(float lhs, float rhs)
 // AggressiveInlining
 float relerr(float lhs, float rhs)
@@ -12,7 +12,7 @@ float relerr(float lhs, float rhs)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663909, Name := System.Double Z0.fmath::relerr(System.Double,System.Double)
+// System.Double Z0.fmath::relerr(System.Double,System.Double)
 // double relerr(double lhs, double rhs)
 // AggressiveInlining
 double relerr(double lhs, double rhs)
@@ -26,7 +26,7 @@ double relerr(double lhs, double rhs)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663910, Name := System.Single Z0.fmath::relerr(Z0.ComplexF32,Z0.ComplexF32)
+// System.Single Z0.fmath::relerr(Z0.ComplexF32,Z0.ComplexF32)
 // float relerr(ComplexF32 lhs, ComplexF32 rhs)
 // AggressiveInlining
 float relerr(ComplexF32 lhs, ComplexF32 rhs)
@@ -52,7 +52,7 @@ float relerr(ComplexF32 lhs, ComplexF32 rhs)
     IL_002B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663911, Name := System.Double Z0.fmath::relerr(Z0.ComplexF64,Z0.ComplexF64)
+// System.Double Z0.fmath::relerr(Z0.ComplexF64,Z0.ComplexF64)
 // double relerr(ComplexF64 lhs, ComplexF64 rhs)
 // AggressiveInlining
 double relerr(ComplexF64 lhs, ComplexF64 rhs)

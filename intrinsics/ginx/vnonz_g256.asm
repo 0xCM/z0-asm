@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<byte>(Vector256<byte> src)
-; vnonz__g256x8u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x8u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -15,7 +15,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<sbyte>(Vector256<sbyte> src)
-; vnonz__g256x8i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x8i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -30,7 +30,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<ushort>(Vector256<ushort> src)
-; vnonz__g256x16u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x16u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -45,7 +45,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<short>(Vector256<short> src)
-; vnonz__g256x16i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x16i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<uint>(Vector256<uint> src)
-; vnonz__g256x32u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x32u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -75,7 +75,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<int>(Vector256<int> src)
-; vnonz__g256x32i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x32i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -90,7 +90,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<ulong>(Vector256<ulong> src)
-; vnonz__g256x64u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x64u[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -105,7 +105,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<long>(Vector256<long> src)
-; vnonz__g256x64i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x64i[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -120,7 +120,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<float>(Vector256<float> src)
-; vnonz__g256x32f[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 0e c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x32f[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 0e c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -135,7 +135,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vnonz<double>(Vector256<double> src)
-; vnonz__g256x64f[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 0f c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
+; vnonz_gv256x64f[32] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 0f c0 0f 94 c0 0f b6 c0 85 c0 0f 94 c0 0f b6 c0 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

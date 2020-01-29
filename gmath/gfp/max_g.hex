@@ -1,2 +1,2 @@
-max_g32f  c5 f8 77 66 90 c5 f8 2e c1 77 06 c5 f8 28 c1 eb 00 c3
-max_g64f  c5 f8 77 66 90 c5 f9 2e c1 77 06 c5 f8 28 c1 eb 00 c3
+max_g32f_32f  c5 f8 77 66 90 c5 f8 2e c1 77 06 c5 f8 28 c1 eb 00 c3
+max_g64f_64f  c5 f8 77 66 90 c5 f9 2e c1 77 06 c5 f8 28 c1 eb 00 c3

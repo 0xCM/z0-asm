@@ -1,4 +1,4 @@
-// Id := 100663828, Name := System.Single Z0.fmath::abs(System.Single)
+// System.Single Z0.fmath::abs(System.Single)
 // float abs(float a)
 // AggressiveInlining
 float abs(float a)
@@ -18,7 +18,7 @@ float abs(float a)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663829, Name := System.Double Z0.fmath::abs(System.Double)
+// System.Double Z0.fmath::abs(System.Double)
 // double abs(double a)
 // AggressiveInlining
 double abs(double a)

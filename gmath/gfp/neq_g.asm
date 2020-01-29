@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit neq<float>(float a, float b)
-; neq_g32f[21] = {c5 f8 77 66 90 c5 f8 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3}
+; neq_g32f_32f[21] = {c5 f8 77 66 90 c5 f8 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -12,7 +12,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit neq<double>(double a, double b)
-; neq_g64f[21] = {c5 f8 77 66 90 c5 f9 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3}
+; neq_g64f_64f[21] = {c5 f8 77 66 90 c5 f9 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,10 +1,10 @@
-enable_8i   0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 0b c2 48 0f be c0 48 0f be c0 c3
-enable_8u   0f 1f 44 00 00 0f b6 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 0b c2 0f b6 c0 0f b6 c0 c3
-enable_16i  0f 1f 44 00 00 48 0f bf c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 0b c2 48 0f bf c0 48 0f bf c0 c3
-enable_16u  0f 1f 44 00 00 0f b7 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b7 d0 0b c2 0f b7 c0 0f b7 c0 c3
-enable_32i  0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 c3
-enable_32u  0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 c3
-enable_64i  0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3
-enable_64u  0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3
-enable_32f  50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 89 04 24 c5 fa 10 04 24 48 83 c4 08 c3
-enable_64f  48 83 ec 18 c5 f8 77 c5 fb 11 44 24 10 48 8b 44 24 10 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3
+enable_8i_32i   0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 0b c2 48 0f be c0 48 0f be c0 c3
+enable_8u_32i   0f 1f 44 00 00 0f b6 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 0b c2 0f b6 c0 0f b6 c0 c3
+enable_16i_32i  0f 1f 44 00 00 48 0f bf c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 0b c2 48 0f bf c0 48 0f bf c0 c3
+enable_16u_32i  0f 1f 44 00 00 0f b7 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b7 d0 0b c2 0f b7 c0 0f b7 c0 c3
+enable_32i_32i  0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 c3
+enable_32u_32i  0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 c3
+enable_64i_32i  0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3
+enable_64u_32i  0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 c3
+enable_32f_32i  50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0b c0 89 04 24 c5 fa 10 04 24 48 83 c4 08 c3
+enable_64f_32i  48 83 ec 18 c5 f8 77 c5 fb 11 44 24 10 48 8b 44 24 10 41 b8 01 00 00 00 8b ca 49 d3 e0 49 0b c0 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3

@@ -1,4 +1,4 @@
-// Id := 100663475, Name := System.Void Z0.Bits::part8x8(System.UInt64,Z0.NatSpan`2<Z0.N8,System.Byte>)
+// System.Void Z0.Bits::part8x8(System.UInt64,Z0.NatSpan`2<Z0.N8,System.Byte>)
 // void part8x8(ulong src, NatSpan<N8,byte> dst)
 // AggressiveInlining
 void part8x8(ulong src, NatSpan<N8,byte> dst)

@@ -1,4 +1,4 @@
-// Id := 100663644, Name := T Z0.gbits::lsboff<T>(T)
+// T Z0.gbits::lsboff<T>(T)
 // byte lsboff<byte>(byte src)
 // AggressiveInlining
 byte lsboff<byte>(byte src)
@@ -55,7 +55,7 @@ byte lsboff<byte>(byte src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663644, Name := T Z0.gbits::lsboff<T>(T)
+// T Z0.gbits::lsboff<T>(T)
 // ushort lsboff<ushort>(ushort src)
 // AggressiveInlining
 ushort lsboff<ushort>(ushort src)
@@ -112,7 +112,7 @@ ushort lsboff<ushort>(ushort src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663644, Name := T Z0.gbits::lsboff<T>(T)
+// T Z0.gbits::lsboff<T>(T)
 // uint lsboff<uint>(uint src)
 // AggressiveInlining
 uint lsboff<uint>(uint src)
@@ -169,7 +169,7 @@ uint lsboff<uint>(uint src)
     IL_00C6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663644, Name := T Z0.gbits::lsboff<T>(T)
+// T Z0.gbits::lsboff<T>(T)
 // ulong lsboff<ulong>(ulong src)
 // AggressiveInlining
 ulong lsboff<ulong>(ulong src)

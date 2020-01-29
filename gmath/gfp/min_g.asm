@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float min<float>(float a, float b)
-; min_g32f[18] = {c5 f8 77 66 90 c5 f8 2e c8 77 06 c5 f8 28 c1 eb 00 c3}
+; min_g32f_32f[18] = {c5 f8 77 66 90 c5 f8 2e c8 77 06 c5 f8 28 c1 eb 00 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double min<double>(double a, double b)
-; min_g64f[18] = {c5 f8 77 66 90 c5 f9 2e c8 77 06 c5 f8 28 c1 eb 00 c3}
+; min_g64f_64f[18] = {c5 f8 77 66 90 c5 f9 2e c8 77 06 c5 f8 28 c1 eb 00 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

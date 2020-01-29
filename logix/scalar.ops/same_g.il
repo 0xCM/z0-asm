@@ -1,4 +1,4 @@
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<byte>(byte a, byte b)
 // AggressiveInlining
 bit same<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ bit same<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 bit same<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ bit same<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<ushort>(ushort a, ushort b)
 // AggressiveInlining
 bit same<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ bit same<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<short>(short a, short b)
 // AggressiveInlining
 bit same<short>(short a, short b)
@@ -42,7 +42,7 @@ bit same<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<uint>(uint a, uint b)
 // AggressiveInlining
 bit same<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ bit same<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<int>(int a, int b)
 // AggressiveInlining
 bit same<int>(int a, int b)
@@ -64,7 +64,7 @@ bit same<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<ulong>(ulong a, ulong b)
 // AggressiveInlining
 bit same<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ bit same<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664561, Name := Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
+// Z0.bit Z0.Logix.ScalarOps::same<T>(T,T)
 // bit same<long>(long a, long b)
 // AggressiveInlining
 bit same<long>(long a, long b)

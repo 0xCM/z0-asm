@@ -1,4 +1,4 @@
-// Id := 100663805, Name := Z0.bit Z0.gfp::eq<T>(T,T)
+// Z0.bit Z0.gfp::eq<T>(T,T)
 // bit eq<float>(float a, float b)
 // AggressiveInlining
 bit eq<float>(float a, float b)
@@ -35,7 +35,7 @@ bit eq<float>(float a, float b)
     IL_0070: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663805, Name := Z0.bit Z0.gfp::eq<T>(T,T)
+// Z0.bit Z0.gfp::eq<T>(T,T)
 // bit eq<double>(double a, double b)
 // AggressiveInlining
 bit eq<double>(double a, double b)

@@ -1,4 +1,4 @@
-// Id := 100663345, Name := System.SByte Z0.Bits::bitslice(System.SByte,System.Byte,System.Byte)
+// System.SByte Z0.Bits::bitslice(System.SByte,System.Byte,System.Byte)
 // sbyte bitslice(sbyte src, byte start, byte length)
 // AggressiveInlining
 sbyte bitslice(sbyte src, byte start, byte length)
@@ -11,7 +11,7 @@ sbyte bitslice(sbyte src, byte start, byte length)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663346, Name := System.Byte Z0.Bits::bitslice(System.Byte,System.Byte,System.Byte)
+// System.Byte Z0.Bits::bitslice(System.Byte,System.Byte,System.Byte)
 // byte bitslice(byte src, byte start, byte length)
 // AggressiveInlining
 byte bitslice(byte src, byte start, byte length)
@@ -24,7 +24,7 @@ byte bitslice(byte src, byte start, byte length)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663347, Name := System.Int16 Z0.Bits::bitslice(System.Int16,System.Byte,System.Byte)
+// System.Int16 Z0.Bits::bitslice(System.Int16,System.Byte,System.Byte)
 // short bitslice(short src, byte start, byte length)
 // AggressiveInlining
 short bitslice(short src, byte start, byte length)
@@ -37,7 +37,7 @@ short bitslice(short src, byte start, byte length)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663348, Name := System.UInt16 Z0.Bits::bitslice(System.UInt16,System.Byte,System.Byte)
+// System.UInt16 Z0.Bits::bitslice(System.UInt16,System.Byte,System.Byte)
 // ushort bitslice(ushort src, byte start, byte length)
 // AggressiveInlining
 ushort bitslice(ushort src, byte start, byte length)
@@ -50,7 +50,7 @@ ushort bitslice(ushort src, byte start, byte length)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663349, Name := System.Int32 Z0.Bits::bitslice(System.Int32,System.Byte,System.Byte)
+// System.Int32 Z0.Bits::bitslice(System.Int32,System.Byte,System.Byte)
 // int bitslice(int src, byte start, byte length)
 // AggressiveInlining
 int bitslice(int src, byte start, byte length)
@@ -62,7 +62,7 @@ int bitslice(int src, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663350, Name := System.UInt32 Z0.Bits::bitslice(System.UInt32,System.Byte,System.Byte)
+// System.UInt32 Z0.Bits::bitslice(System.UInt32,System.Byte,System.Byte)
 // uint bitslice(uint src, byte start, byte length)
 // AggressiveInlining
 uint bitslice(uint src, byte start, byte length)
@@ -74,7 +74,7 @@ uint bitslice(uint src, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663351, Name := System.Int64 Z0.Bits::bitslice(System.Int64,System.Byte,System.Byte)
+// System.Int64 Z0.Bits::bitslice(System.Int64,System.Byte,System.Byte)
 // long bitslice(long src, byte start, byte length)
 // AggressiveInlining
 long bitslice(long src, byte start, byte length)
@@ -86,7 +86,7 @@ long bitslice(long src, byte start, byte length)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663352, Name := System.UInt64 Z0.Bits::bitslice(System.UInt64,System.Byte,System.Byte)
+// System.UInt64 Z0.Bits::bitslice(System.UInt64,System.Byte,System.Byte)
 // ulong bitslice(ulong src, byte start, byte length)
 // AggressiveInlining
 ulong bitslice(ulong src, byte start, byte length)

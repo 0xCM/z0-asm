@@ -1,4 +1,4 @@
-// Id := 100663859, Name := Z0.Sign Z0.fmath::signum(System.Single)
+// Z0.Sign Z0.fmath::signum(System.Single)
 // Sign:int signum(float src)
 // AggressiveInlining
 Sign:int signum(float src)
@@ -8,7 +8,7 @@ Sign:int signum(float src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663860, Name := Z0.Sign Z0.fmath::signum(System.Double)
+// Z0.Sign Z0.fmath::signum(System.Double)
 // Sign:int signum(double src)
 // AggressiveInlining
 Sign:int signum(double src)

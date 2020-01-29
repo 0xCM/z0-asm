@@ -1,6 +1,240 @@
 ------------------------------------------------------------------------------------------------------------------------
+; byte set<byte>(byte src, int pos, bit value)
+; set_g8u_32i_bit[66] = {0f 1f 44 00 00 45 85 c0 74 1b 0f b6 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 0b c2 0f b6 c0 0f b6 c0 c3 0f b6 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 f7 d2 0f b6 d2 23 c2 0f b6 c0 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+0008h je short 0025h                          ; JE rel8 || 74 cb || encoded[2]{74 1b}
+000ah movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
+000dh mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0013h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0015h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0018h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
+001ch or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+0024h ret                                     ; RET || C3 || encoded[1]{c3}
+0025h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
+0028h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+002eh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0030h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0033h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
+0037h not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+0039h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
+003ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
+003eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+0041h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; sbyte set<sbyte>(sbyte src, int pos, bit value)
+; set_g8i_32i_bit[71] = {0f 1f 44 00 00 45 85 c0 74 1e 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 0b c2 48 0f be c0 48 0f be c0 c3 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 f7 d2 0f b6 d2 23 c2 48 0f be c0 c3}
+; TermCode = RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+0008h je short 0028h                          ; JE rel8 || 74 cb || encoded[2]{74 1e}
+000ah movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
+000eh mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0014h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0016h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0019h movsx rdx,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be d0}
+001dh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
+0028h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
+002ch mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0032h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0034h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0037h movsx rdx,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be d0}
+003bh not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+003dh movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
+0040h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
+0042h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+0046h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort set<ushort>(ushort src, int pos, bit value)
+; set_g16u_32i_bit[66] = {0f 1f 44 00 00 45 85 c0 74 1b 0f b7 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b7 d0 0b c2 0f b7 c0 0f b7 c0 c3 0f b7 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b7 d0 f7 d2 0f b7 d2 23 c2 0f b7 c0 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+0008h je short 0025h                          ; JE rel8 || 74 cb || encoded[2]{74 1b}
+000ah movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
+000dh mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0013h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0015h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0018h movzx edx,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 d0}
+001ch or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+0024h ret                                     ; RET || C3 || encoded[1]{c3}
+0025h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
+0028h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+002eh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0030h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0033h movzx edx,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 d0}
+0037h not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+0039h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
+003ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
+003eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+0041h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; short set<short>(short src, int pos, bit value)
+; set_g16i_32i_bit[72] = {0f 1f 44 00 00 45 85 c0 74 1e 48 0f bf c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 0b c2 48 0f bf c0 48 0f bf c0 c3 48 0f bf c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 f7 d2 48 0f bf d2 23 c2 48 0f bf c0 c3}
+; TermCode = RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+0008h je short 0028h                          ; JE rel8 || 74 cb || encoded[2]{74 1e}
+000ah movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
+000eh mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0014h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0016h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0019h movsx rdx,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf d0}
+001dh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
+0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
+0028h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
+002ch mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+0032h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0034h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0037h movsx rdx,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf d0}
+003bh not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+003dh movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
+0041h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
+0043h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
+0047h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint set<uint>(uint src, int pos, bit value)
+; set_g32u_32i_bit[38] = {0f 1f 44 00 00 8b c1 8b ca 45 85 c0 74 0a ba 01 00 00 00 d3 e2 0b c2 c3 ba 01 00 00 00 d3 e2 f7 d2 23 d0 8b c2 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0009h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ch je short 0018h                          ; JE rel8 || 74 cb || encoded[2]{74 0a}
+000eh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0013h shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+0017h ret                                     ; RET || C3 || encoded[1]{c3}
+0018h mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+001dh shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+001fh not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+0021h and edx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d0}
+0023h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
+0025h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; int set<int>(int src, int pos, bit value)
+; set_g32i_32i_bit[38] = {0f 1f 44 00 00 8b c1 8b ca 45 85 c0 74 0a ba 01 00 00 00 d3 e2 0b c2 c3 ba 01 00 00 00 d3 e2 f7 d2 23 d0 8b c2 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0009h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ch je short 0018h                          ; JE rel8 || 74 cb || encoded[2]{74 0a}
+000eh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0013h shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+0017h ret                                     ; RET || C3 || encoded[1]{c3}
+0018h mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+001dh shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+001fh not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+0021h and edx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d0}
+0023h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
+0025h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong set<ulong>(ulong src, int pos, bit value)
+; set_g64u_32i_bit[45] = {0f 1f 44 00 00 48 8b c1 8b ca 45 85 c0 74 0c ba 01 00 00 00 48 d3 e2 48 0b c2 c3 ba 01 00 00 00 48 d3 e2 48 f7 d2 48 23 d0 48 8b c2 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+000ah test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000dh je short 001bh                          ; JE rel8 || 74 cb || encoded[2]{74 0c}
+000fh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0014h shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0017h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
+001ah ret                                     ; RET || C3 || encoded[1]{c3}
+001bh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0020h shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0023h not rdx                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d2}
+0026h and rdx,rax                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d0}
+0029h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
+002ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; long set<long>(long src, int pos, bit value)
+; set_g64i_32i_bit[45] = {0f 1f 44 00 00 48 8b c1 8b ca 45 85 c0 74 0c ba 01 00 00 00 48 d3 e2 48 0b c2 c3 ba 01 00 00 00 48 d3 e2 48 f7 d2 48 23 d0 48 8b c2 c3}
+; TermCode = RET_ZEDx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+000ah test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000dh je short 001bh                          ; JE rel8 || 74 cb || encoded[2]{74 0c}
+000fh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0014h shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0017h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
+001ah ret                                     ; RET || C3 || encoded[1]{c3}
+001bh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0020h shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0023h not rdx                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d2}
+0026h and rdx,rax                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d0}
+0029h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
+002ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; float set<float>(float src, int pos, bit value)
+; set_g32f_32i_bit[81] = {48 83 ec 18 c5 f8 77 8b ca 45 85 c0 74 22 c5 fa 11 44 24 14 8b 44 24 14 ba 01 00 00 00 d3 e2 0b c2 89 44 24 10 c5 fa 10 44 24 10 48 83 c4 18 c3 c5 fa 11 44 24 0c 48 8d 44 24 0c ba 01 00 00 00 d3 e2 f7 d2 21 10 c5 fa 10 44 24 0c 48 83 c4 18 c3}
+; TermCode = RET_INTR
+0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
+0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
+0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0009h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ch je short 0030h                          ; JE rel8 || 74 cb || encoded[2]{74 22}
+000eh vmovss dword ptr [rsp+14h],xmm0         ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 14}
+0014h mov eax,[rsp+14h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{8b 44 24 14}
+0018h mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+001dh shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+001fh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+0021h mov [rsp+10h],eax                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 44 24 10}
+0025h vmovss xmm0,dword ptr [rsp+10h]         ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 44 24 10}
+002bh add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
+002fh ret                                     ; RET || C3 || encoded[1]{c3}
+0030h vmovss dword ptr [rsp+0ch],xmm0         ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 0c}
+0036h lea rax,[rsp+0ch]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 44 24 0c}
+003bh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0040h shl edx,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e2}
+0042h not edx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d2}
+0044h and [rax],edx                           ; AND r/m32, r32 || o32 21 /r || encoded[2]{21 10}
+0046h vmovss xmm0,dword ptr [rsp+0ch]         ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 44 24 0c}
+004ch add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
+0050h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; double set<double>(double src, int pos, bit value)
+; set_g64f_32i_bit[85] = {48 83 ec 18 c5 f8 77 8b ca 45 85 c0 74 26 c5 fb 11 44 24 10 48 8b 44 24 10 ba 01 00 00 00 48 d3 e2 48 0b c2 48 89 44 24 08 c5 fb 10 44 24 08 48 83 c4 18 c3 c5 fb 11 04 24 48 8d 04 24 ba 01 00 00 00 48 d3 e2 48 f7 d2 48 21 10 c5 fb 10 04 24 48 83 c4 18 c3}
+; TermCode = RET_INTR
+0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
+0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
+0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0009h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ch je short 0034h                          ; JE rel8 || 74 cb || encoded[2]{74 26}
+000eh vmovsd qword ptr [rsp+10h],xmm0         ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 44 24 10}
+0014h mov rax,[rsp+10h]                       ; MOV r64, r/m64 || REX.W 8B /r || encoded[5]{48 8b 44 24 10}
+0019h mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+001eh shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0021h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
+0024h mov [rsp+8],rax                         ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 08}
+0029h vmovsd xmm0,qword ptr [rsp+8]           ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c5 fb 10 44 24 08}
+002fh add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
+0033h ret                                     ; RET || C3 || encoded[1]{c3}
+0034h vmovsd qword ptr [rsp],xmm0             ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[5]{c5 fb 11 04 24}
+0039h lea rax,[rsp]                           ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 24}
+003dh mov edx,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 01 00 00 00}
+0042h shl rdx,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e2}
+0045h not rdx                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d2}
+0048h and [rax],rdx                           ; AND r/m64, r64 || REX.W 21 /r || encoded[3]{48 21 10}
+004bh vmovsd xmm0,qword ptr [rsp]             ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[5]{c5 fb 10 04 24}
+0050h add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
+0054h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
 ; void set<byte>(in Block256<byte> src, int index, bit value)
-; set_g256x8u_32i_bit[252] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 08 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 03 c2 8b 54 24 38 0f b7 d2 48 63 d2 0f b6 14 11 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 18 41 b8 01 00 00 00 41 d3 e0 41 0f b6 c8 0b ca 0f b6 c9 44 0f b6 c1 eb 18 41 b8 01 00 00 00 41 d3 e0 41 0f b6 c8 f7 d1 0f b6 c9 23 ca 44 0f b6 c1 44 88 00 48 83 c4 58 c3}
+; set_gb256x8u(in)_32i_bit[252] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 08 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 03 c2 8b 54 24 38 0f b7 d2 48 63 d2 0f b6 14 11 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 18 41 b8 01 00 00 00 41 d3 e0 41 0f b6 c8 0b ca 0f b6 c9 44 0f b6 c1 eb 18 41 b8 01 00 00 00 41 d3 e0 41 0f b6 c8 f7 d1 0f b6 c9 23 ca 44 0f b6 c1 44 88 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -68,7 +302,7 @@
 00fbh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<sbyte>(in Block256<sbyte> src, int index, bit value)
-; set_g256x8i_32i_bit[254] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 08 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 03 c2 8b 54 24 38 0f b7 d2 48 63 d2 48 0f be 14 11 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 19 41 b8 01 00 00 00 41 d3 e0 49 0f be c8 0b ca 48 0f be c9 4c 0f be c1 eb 18 41 b8 01 00 00 00 41 d3 e0 49 0f be c8 f7 d1 0f b6 c9 23 ca 4c 0f be c1 44 88 00 48 83 c4 58 c3}
+; set_gb256x8i(in)_32i_bit[254] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 08 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 03 c2 8b 54 24 38 0f b7 d2 48 63 d2 48 0f be 14 11 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 19 41 b8 01 00 00 00 41 d3 e0 49 0f be c8 0b ca 48 0f be c9 4c 0f be c1 eb 18 41 b8 01 00 00 00 41 d3 e0 49 0f be c8 f7 d1 0f b6 c9 23 ca 4c 0f be c1 44 88 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -136,7 +370,7 @@
 00fdh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<ushort>(in Block256<ushort> src, int index, bit value)
-; set_g256x16u_32i_bit[254] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 10 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 50 8b 54 24 38 0f b7 d2 48 63 d2 0f b7 14 51 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 18 41 b8 01 00 00 00 41 d3 e0 41 0f b7 c8 0b ca 0f b7 c9 44 0f b7 c1 eb 18 41 b8 01 00 00 00 41 d3 e0 41 0f b7 c8 f7 d1 0f b7 c9 23 ca 44 0f b7 c1 66 44 89 00 48 83 c4 58 c3}
+; set_gb256x16u(in)_32i_bit[254] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 10 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 50 8b 54 24 38 0f b7 d2 48 63 d2 0f b7 14 51 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 18 41 b8 01 00 00 00 41 d3 e0 41 0f b7 c8 0b ca 0f b7 c9 44 0f b7 c1 eb 18 41 b8 01 00 00 00 41 d3 e0 41 0f b7 c8 f7 d1 0f b7 c9 23 ca 44 0f b7 c1 66 44 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -204,7 +438,7 @@
 00fdh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<short>(in Block256<short> src, int index, bit value)
-; set_g256x16i_32i_bit[257] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 10 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 50 8b 54 24 38 0f b7 d2 48 63 d2 48 0f bf 14 51 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 19 41 b8 01 00 00 00 41 d3 e0 49 0f bf c8 0b ca 48 0f bf c9 4c 0f bf c1 eb 19 41 b8 01 00 00 00 41 d3 e0 49 0f bf c8 f7 d1 48 0f bf c9 23 ca 4c 0f bf c1 66 44 89 00 48 83 c4 58 c3}
+; set_gb256x16i(in)_32i_bit[257] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 10 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 50 8b 54 24 38 0f b7 d2 48 63 d2 48 0f bf 14 51 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 19 41 b8 01 00 00 00 41 d3 e0 49 0f bf c8 0b ca 48 0f bf c9 4c 0f bf c1 eb 19 41 b8 01 00 00 00 41 d3 e0 49 0f bf c8 f7 d1 48 0f bf c9 23 ca 4c 0f bf c1 66 44 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -272,7 +506,7 @@
 0100h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<uint>(in Block256<uint> src, int index, bit value)
-; set_g256x32u_32i_bit[233] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 20 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 38 0f b7 d2 48 63 d2 8b 14 91 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 41 d3 e0 44 0b c2 eb 0f 41 b8 01 00 00 00 41 d3 e0 41 f7 d0 44 23 c2 44 89 00 48 83 c4 58 c3}
+; set_gb256x32u(in)_32i_bit[233] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 20 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 38 0f b7 d2 48 63 d2 8b 14 91 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 41 d3 e0 44 0b c2 eb 0f 41 b8 01 00 00 00 41 d3 e0 41 f7 d0 44 23 c2 44 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -334,7 +568,7 @@
 00e8h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<int>(in Block256<int> src, int index, bit value)
-; set_g256x32i_32i_bit[233] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 20 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 38 0f b7 d2 48 63 d2 8b 14 91 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 41 d3 e0 44 0b c2 eb 0f 41 b8 01 00 00 00 41 d3 e0 41 f7 d0 44 23 c2 44 89 00 48 83 c4 58 c3}
+; set_gb256x32i(in)_32i_bit[233] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 20 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 38 0f b7 d2 48 63 d2 8b 14 91 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 41 d3 e0 44 0b c2 eb 0f 41 b8 01 00 00 00 41 d3 e0 41 f7 d0 44 23 c2 44 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -396,7 +630,7 @@
 00e8h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<ulong>(in Block256<ulong> src, int index, bit value)
-; set_g256x64u_32i_bit[234] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 40 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 d0 8b 54 24 38 0f b7 d2 48 63 d2 48 8b 14 d1 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 49 d3 e0 4c 0b c2 eb 0f 41 b8 01 00 00 00 49 d3 e0 49 f7 d0 4c 23 c2 4c 89 00 48 83 c4 58 c3}
+; set_gb256x64u(in)_32i_bit[234] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 40 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 d0 8b 54 24 38 0f b7 d2 48 63 d2 48 8b 14 d1 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 49 d3 e0 4c 0b c2 eb 0f 41 b8 01 00 00 00 49 d3 e0 49 f7 d0 4c 23 c2 4c 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -458,7 +692,7 @@
 00e9h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<long>(in Block256<long> src, int index, bit value)
-; set_g256x64i_32i_bit[234] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 40 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 d0 8b 54 24 38 0f b7 d2 48 63 d2 48 8b 14 d1 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 49 d3 e0 4c 0b c2 eb 0f 41 b8 01 00 00 00 49 d3 e0 49 f7 d0 4c 23 c2 4c 89 00 48 83 c4 58 c3}
+; set_gb256x64i(in)_32i_bit[234] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b ca c7 44 24 14 40 00 00 00 44 0f b6 54 24 14 41 8b c1 33 d2 41 f7 f2 89 44 24 10 44 0f b7 54 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 5c 24 0c 41 8b c1 33 d2 41 f7 f3 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 54 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 48 8b c1 8b 54 24 38 0f b7 d2 48 63 d2 48 8d 04 d0 8b 54 24 38 0f b7 d2 48 63 d2 48 8b 14 d1 8b 4c 24 3a 0f b7 c9 0f b6 c9 45 85 c0 74 0e 41 b8 01 00 00 00 49 d3 e0 4c 0b c2 eb 0f 41 b8 01 00 00 00 49 d3 e0 49 f7 d0 4c 23 c2 4c 89 00 48 83 c4 58 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -520,7 +754,7 @@
 00e9h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<float>(in Block256<float> src, int index, bit value)
-; set_g256x32f_32i_bit[274] = {48 83 ec 68 c5 f8 77 33 c0 48 89 44 24 48 48 89 44 24 50 48 89 44 24 58 48 89 44 24 60 44 8b ca c7 44 24 24 20 00 00 00 44 0f b6 54 24 24 41 8b c1 33 d2 41 f7 f2 89 44 24 20 44 0f b7 54 24 20 c7 44 24 1c 20 00 00 00 44 0f b6 5c 24 1c 41 8b c1 33 d2 41 f7 f3 89 54 24 18 48 8d 44 24 28 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 18 66 44 89 54 24 28 66 89 44 24 2a c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 c5 fa 6f 44 24 38 c5 fa 7f 44 24 58 48 8b 09 48 8b c1 8b 54 24 48 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 48 0f b7 d2 48 63 d2 c5 fa 10 04 91 8b 4c 24 4a 0f b7 c9 0f b6 c9 45 85 c0 74 22 c5 fa 11 44 24 14 8b 54 24 14 41 b8 01 00 00 00 41 d3 e0 41 0b d0 89 54 24 10 c5 fa 10 44 24 10 eb 21 c5 fa 11 44 24 0c 48 8d 54 24 0c 41 b8 01 00 00 00 41 d3 e0 41 8b c8 f7 d1 21 0a c5 fa 10 44 24 0c c5 fa 11 00 48 83 c4 68 c3}
+; set_gb256x32f(in)_32i_bit[274] = {48 83 ec 68 c5 f8 77 33 c0 48 89 44 24 48 48 89 44 24 50 48 89 44 24 58 48 89 44 24 60 44 8b ca c7 44 24 24 20 00 00 00 44 0f b6 54 24 24 41 8b c1 33 d2 41 f7 f2 89 44 24 20 44 0f b7 54 24 20 c7 44 24 1c 20 00 00 00 44 0f b6 5c 24 1c 41 8b c1 33 d2 41 f7 f3 89 54 24 18 48 8d 44 24 28 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 18 66 44 89 54 24 28 66 89 44 24 2a c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 c5 fa 6f 44 24 38 c5 fa 7f 44 24 58 48 8b 09 48 8b c1 8b 54 24 48 0f b7 d2 48 63 d2 48 8d 04 90 8b 54 24 48 0f b7 d2 48 63 d2 c5 fa 10 04 91 8b 4c 24 4a 0f b7 c9 0f b6 c9 45 85 c0 74 22 c5 fa 11 44 24 14 8b 54 24 14 41 b8 01 00 00 00 41 d3 e0 41 0b d0 89 54 24 10 c5 fa 10 44 24 10 eb 21 c5 fa 11 44 24 0c 48 8d 54 24 0c 41 b8 01 00 00 00 41 d3 e0 41 8b c8 f7 d1 21 0a c5 fa 10 44 24 0c c5 fa 11 00 48 83 c4 68 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,68h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 68}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -590,7 +824,7 @@
 0111h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void set<double>(in Block256<double> src, int index, bit value)
-; set_g256x64f_32i_bit[275] = {48 83 ec 68 c5 f8 77 33 c0 48 89 44 24 48 48 89 44 24 50 48 89 44 24 58 48 89 44 24 60 44 8b ca c7 44 24 24 40 00 00 00 44 0f b6 54 24 24 41 8b c1 33 d2 41 f7 f2 89 44 24 20 44 0f b7 54 24 20 c7 44 24 1c 40 00 00 00 44 0f b6 5c 24 1c 41 8b c1 33 d2 41 f7 f3 89 54 24 18 48 8d 44 24 28 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 18 66 44 89 54 24 28 66 89 44 24 2a c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 c5 fa 6f 44 24 38 c5 fa 7f 44 24 58 48 8b 01 8b 54 24 48 0f b7 d2 48 63 d2 48 8d 04 d0 48 8b 09 8b 54 24 48 0f b7 d2 48 63 d2 c5 fb 10 04 d1 8b 4c 24 4a 0f b7 c9 0f b6 c9 45 85 c0 74 24 c5 fb 11 44 24 10 48 8b 54 24 10 41 b8 01 00 00 00 49 d3 e0 49 0b d0 48 89 54 24 08 c5 fb 10 44 24 08 eb 20 c5 fb 11 04 24 48 8d 14 24 41 b8 01 00 00 00 49 d3 e0 49 8b c8 48 f7 d1 48 21 0a c5 fb 10 04 24 c5 fb 11 00 48 83 c4 68 c3}
+; set_gb256x64f(in)_32i_bit[275] = {48 83 ec 68 c5 f8 77 33 c0 48 89 44 24 48 48 89 44 24 50 48 89 44 24 58 48 89 44 24 60 44 8b ca c7 44 24 24 40 00 00 00 44 0f b6 54 24 24 41 8b c1 33 d2 41 f7 f2 89 44 24 20 44 0f b7 54 24 20 c7 44 24 1c 40 00 00 00 44 0f b6 5c 24 1c 41 8b c1 33 d2 41 f7 f3 89 54 24 18 48 8d 44 24 28 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 18 66 44 89 54 24 28 66 89 44 24 2a c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 c5 fa 6f 44 24 38 c5 fa 7f 44 24 58 48 8b 01 8b 54 24 48 0f b7 d2 48 63 d2 48 8d 04 d0 48 8b 09 8b 54 24 48 0f b7 d2 48 63 d2 c5 fb 10 04 d1 8b 4c 24 4a 0f b7 c9 0f b6 c9 45 85 c0 74 24 c5 fb 11 44 24 10 48 8b 54 24 10 41 b8 01 00 00 00 49 d3 e0 49 0b d0 48 89 54 24 08 c5 fb 10 44 24 08 eb 20 c5 fb 11 04 24 48 8d 14 24 41 b8 01 00 00 00 49 d3 e0 49 8b c8 48 f7 d1 48 21 0a c5 fb 10 04 24 c5 fb 11 00 48 83 c4 68 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,68h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 68}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

@@ -1,4 +1,4 @@
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> cimpl<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
 // AggressiveInlining
 Span<byte> cimpl<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
@@ -14,7 +14,7 @@ Span<byte> cimpl<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> ds
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> cimpl<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> cimpl<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte> dst)
@@ -30,7 +30,7 @@ Span<sbyte> cimpl<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyt
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> cimpl<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> cimpl<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
@@ -46,7 +46,7 @@ Span<ushort> cimpl<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> cimpl<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 // AggressiveInlining
 Span<short> cimpl<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
@@ -62,7 +62,7 @@ Span<short> cimpl<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<shor
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> cimpl<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
 // AggressiveInlining
 Span<uint> cimpl<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
@@ -78,7 +78,7 @@ Span<uint> cimpl<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> ds
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> cimpl<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
 // AggressiveInlining
 Span<int> cimpl<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
@@ -94,7 +94,7 @@ Span<int> cimpl<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> cimpl<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> cimpl<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
@@ -110,7 +110,7 @@ Span<ulong> cimpl<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulon
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664176, Name := System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::cimpl<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> cimpl<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<long> dst)
 // AggressiveInlining
 Span<long> cimpl<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<long> dst)

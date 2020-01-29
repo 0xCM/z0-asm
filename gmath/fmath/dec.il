@@ -1,4 +1,4 @@
-// Id := 100663836, Name := System.Single Z0.fmath::dec(System.Single)
+// System.Single Z0.fmath::dec(System.Single)
 // float dec(float src)
 // AggressiveInlining
 float dec(float src)
@@ -11,7 +11,7 @@ float dec(float src)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663837, Name := System.Double Z0.fmath::dec(System.Double)
+// System.Double Z0.fmath::dec(System.Double)
 // double dec(double src)
 // AggressiveInlining
 double dec(double src)

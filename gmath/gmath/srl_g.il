@@ -1,4 +1,4 @@
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // byte srl<byte>(byte a, byte count)
 // AggressiveInlining
 byte srl<byte>(byte a, byte count)
@@ -9,7 +9,7 @@ byte srl<byte>(byte a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // sbyte srl<sbyte>(sbyte a, byte count)
 // AggressiveInlining
 sbyte srl<sbyte>(sbyte a, byte count)
@@ -20,7 +20,7 @@ sbyte srl<sbyte>(sbyte a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // ushort srl<ushort>(ushort a, byte count)
 // AggressiveInlining
 ushort srl<ushort>(ushort a, byte count)
@@ -31,7 +31,7 @@ ushort srl<ushort>(ushort a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // short srl<short>(short a, byte count)
 // AggressiveInlining
 short srl<short>(short a, byte count)
@@ -42,7 +42,7 @@ short srl<short>(short a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // uint srl<uint>(uint a, byte count)
 // AggressiveInlining
 uint srl<uint>(uint a, byte count)
@@ -53,7 +53,7 @@ uint srl<uint>(uint a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // int srl<int>(int a, byte count)
 // AggressiveInlining
 int srl<int>(int a, byte count)
@@ -64,7 +64,7 @@ int srl<int>(int a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // ulong srl<ulong>(ulong a, byte count)
 // AggressiveInlining
 ulong srl<ulong>(ulong a, byte count)
@@ -75,7 +75,7 @@ ulong srl<ulong>(ulong a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664067, Name := T Z0.gmath::srl<T>(T,System.Byte)
+// T Z0.gmath::srl<T>(T,System.Byte)
 // long srl<long>(long a, byte count)
 // AggressiveInlining
 long srl<long>(long a, byte count)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vsrlv<byte>(Vector256<byte> x, Vector256<byte> counts)
-; vsrlv_g256x8u[303] = {48 83 ec 18 c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 30 d2 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c4 e3 7d 19 cb 00 c4 e2 7d 30 db c4 e3 7d 19 c9 01 c4 e2 7d 30 c9 c4 e3 7d 19 d4 00 c4 e2 7d 33 e4 c4 e3 7d 19 d2 01 c4 e2 7d 33 d2 c5 fc 28 eb c4 e3 7d 19 ed 00 c4 e2 7d 33 ed c4 e3 7d 19 db 01 c4 e2 7d 33 db c4 e2 5d 45 e5 c4 e2 6d 45 d3 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 5c 24 14 c5 dd db e3 c5 ed db d3 c4 e2 5d 2b d2 c4 e3 fd 00 d2 d8 c4 e3 7d 19 c3 00 c4 e2 7d 33 db c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 e3 7d 19 cc 00 c4 e2 7d 33 e4 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e2 65 45 dc c4 e2 7d 45 c1 c7 44 24 10 ff ff 00 00 48 8d 44 24 10 c4 e2 7d 58 4c 24 10 c5 e5 db d9 c5 fd db c1 c4 e2 65 2b c0 c4 e3 fd 00 c0 d8 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 4c 24 0c c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vsrlv_gv256x8u_v256x8u[303] = {48 83 ec 18 c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 30 d2 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c4 e3 7d 19 cb 00 c4 e2 7d 30 db c4 e3 7d 19 c9 01 c4 e2 7d 30 c9 c4 e3 7d 19 d4 00 c4 e2 7d 33 e4 c4 e3 7d 19 d2 01 c4 e2 7d 33 d2 c5 fc 28 eb c4 e3 7d 19 ed 00 c4 e2 7d 33 ed c4 e3 7d 19 db 01 c4 e2 7d 33 db c4 e2 5d 45 e5 c4 e2 6d 45 d3 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 5c 24 14 c5 dd db e3 c5 ed db d3 c4 e2 5d 2b d2 c4 e3 fd 00 d2 d8 c4 e3 7d 19 c3 00 c4 e2 7d 33 db c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 e3 7d 19 cc 00 c4 e2 7d 33 e4 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e2 65 45 dc c4 e2 7d 45 c1 c7 44 24 10 ff ff 00 00 48 8d 44 24 10 c4 e2 7d 58 4c 24 10 c5 e5 db d9 c5 fd db c1 c4 e2 65 2b c0 c4 e3 fd 00 c0 d8 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 4c 24 0c c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -63,7 +63,7 @@
 012eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vsrlv<sbyte>(Vector256<sbyte> x, Vector256<sbyte> counts)
-; vsrlv_g256x8i[219] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 20 d2 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c4 e3 7d 19 cb 00 c4 e2 7d 20 db c4 e3 7d 19 c9 01 c4 e2 7d 20 c9 c4 e3 7d 19 d4 00 c4 e2 7d 23 e4 c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c5 fc 28 eb c4 e3 7d 19 ed 00 c4 e2 7d 23 ed c4 e3 7d 19 db 01 c4 e2 7d 23 db c4 e2 5d 45 e5 c4 e2 6d 45 d3 c5 dd 6b d2 c4 e3 fd 00 d2 d8 c5 fc 28 d8 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c5 fc 28 e1 c4 e3 7d 19 e4 00 c4 e2 7d 23 e4 c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e2 65 45 dc c4 e2 7d 45 c1 c5 e5 6b c0 c4 e3 fd 00 c0 d8 c5 ed 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x8i_v256x8i[219] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 20 d2 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c4 e3 7d 19 cb 00 c4 e2 7d 20 db c4 e3 7d 19 c9 01 c4 e2 7d 20 c9 c4 e3 7d 19 d4 00 c4 e2 7d 23 e4 c4 e3 7d 19 d2 01 c4 e2 7d 23 d2 c5 fc 28 eb c4 e3 7d 19 ed 00 c4 e2 7d 23 ed c4 e3 7d 19 db 01 c4 e2 7d 23 db c4 e2 5d 45 e5 c4 e2 6d 45 d3 c5 dd 6b d2 c4 e3 fd 00 d2 d8 c5 fc 28 d8 c4 e3 7d 19 db 00 c4 e2 7d 23 db c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c5 fc 28 e1 c4 e3 7d 19 e4 00 c4 e2 7d 23 e4 c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e2 65 45 dc c4 e2 7d 45 c1 c5 e5 6b c0 c4 e3 fd 00 c0 d8 c5 ed 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 00dah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vsrlv<ushort>(Vector256<ushort> x, Vector256<ushort> counts)
-; vsrlv_g256x16u[122] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 33 d2 c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 e3 7d 19 cb 00 c4 e2 7d 33 db c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e2 6d 45 d3 c4 e2 7d 45 c1 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 ed db d1 c5 fd db c1 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vsrlv_gv256x16u_v256x16u[122] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 33 d2 c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c4 e3 7d 19 cb 00 c4 e2 7d 33 db c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c4 e2 6d 45 d3 c4 e2 7d 45 c1 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c5 ed db d1 c5 fd db c1 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -143,7 +143,7 @@
 0079h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vsrlv<short>(Vector256<short> x, Vector256<short> counts)
-; vsrlv_g256x16i[89] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 23 d2 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 e3 7d 19 cb 00 c4 e2 7d 23 db c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e2 6d 45 d3 c4 e2 7d 45 c1 c5 ed 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x16i_v256x16i[89] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 19 c2 00 c4 e2 7d 23 d2 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c4 e3 7d 19 cb 00 c4 e2 7d 23 db c4 e3 7d 19 c9 01 c4 e2 7d 23 c9 c4 e2 6d 45 d3 c4 e2 7d 45 c1 c5 ed 6b c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -167,7 +167,7 @@
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vsrlv<uint>(Vector256<uint> x, Vector256<uint> counts)
-; vsrlv_g256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x32u_v256x32u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -180,7 +180,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vsrlv<int>(Vector256<int> x, Vector256<int> counts)
-; vsrlv_g256x32i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x32i_v256x32i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -193,7 +193,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vsrlv<ulong>(Vector256<ulong> x, Vector256<ulong> counts)
-; vsrlv_g256x64u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x64u_v256x64u[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -206,7 +206,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vsrlv<long>(Vector256<long> x, Vector256<long> counts)
-; vsrlv_g256x64i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vsrlv_gv256x64i_v256x64i[30] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 45 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

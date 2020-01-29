@@ -1,4 +1,4 @@
-// Id := 100664098, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
 // BitMatrix<byte> not<byte>(in BitMatrix<byte> A)
 // AggressiveInlining
 BitMatrix<byte> not<byte>(in BitMatrix<byte> A)
@@ -8,7 +8,7 @@ BitMatrix<byte> not<byte>(in BitMatrix<byte> A)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664098, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
 // BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A)
 // AggressiveInlining
 BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A)
@@ -18,7 +18,7 @@ BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664098, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
 // BitMatrix<uint> not<uint>(in BitMatrix<uint> A)
 // AggressiveInlining
 BitMatrix<uint> not<uint>(in BitMatrix<uint> A)
@@ -28,7 +28,7 @@ BitMatrix<uint> not<uint>(in BitMatrix<uint> A)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664098, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&)
 // BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A)
 // AggressiveInlining
 BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A)
@@ -38,7 +38,7 @@ BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664099, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<byte> not<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z)
 // AggressiveInlining
 ref BitMatrix<byte> not<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z)
@@ -49,7 +49,7 @@ ref BitMatrix<byte> not<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664099, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
 // AggressiveInlining
 ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
@@ -60,7 +60,7 @@ ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> 
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664099, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<uint> not<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z)
 // AggressiveInlining
 ref BitMatrix<uint> not<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z)
@@ -71,7 +71,7 @@ ref BitMatrix<uint> not<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664099, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::not<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z)
 // AggressiveInlining
 ref BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z)

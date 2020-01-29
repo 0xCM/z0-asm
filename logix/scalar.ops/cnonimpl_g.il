@@ -1,4 +1,4 @@
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // byte cnonimpl<byte>(byte a, byte b)
 // AggressiveInlining
 byte cnonimpl<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte cnonimpl<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // sbyte cnonimpl<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte cnonimpl<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte cnonimpl<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // ushort cnonimpl<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort cnonimpl<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort cnonimpl<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // short cnonimpl<short>(short a, short b)
 // AggressiveInlining
 short cnonimpl<short>(short a, short b)
@@ -42,7 +42,7 @@ short cnonimpl<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // uint cnonimpl<uint>(uint a, uint b)
 // AggressiveInlining
 uint cnonimpl<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint cnonimpl<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // int cnonimpl<int>(int a, int b)
 // AggressiveInlining
 int cnonimpl<int>(int a, int b)
@@ -64,7 +64,7 @@ int cnonimpl<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // ulong cnonimpl<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong cnonimpl<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong cnonimpl<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664553, Name := T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
+// T Z0.Logix.ScalarOps::cnonimpl<T>(T,T)
 // long cnonimpl<long>(long a, long b)
 // AggressiveInlining
 long cnonimpl<long>(long a, long b)

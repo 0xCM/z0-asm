@@ -1,4 +1,4 @@
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // byte f2b<byte>(byte a, byte b, byte c)
 // AggressiveInlining
 byte f2b<byte>(byte a, byte b, byte c)
@@ -14,7 +14,7 @@ byte f2b<byte>(byte a, byte b, byte c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // sbyte f2b<sbyte>(sbyte a, sbyte b, sbyte c)
 // AggressiveInlining
 sbyte f2b<sbyte>(sbyte a, sbyte b, sbyte c)
@@ -30,7 +30,7 @@ sbyte f2b<sbyte>(sbyte a, sbyte b, sbyte c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // ushort f2b<ushort>(ushort a, ushort b, ushort c)
 // AggressiveInlining
 ushort f2b<ushort>(ushort a, ushort b, ushort c)
@@ -46,7 +46,7 @@ ushort f2b<ushort>(ushort a, ushort b, ushort c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // short f2b<short>(short a, short b, short c)
 // AggressiveInlining
 short f2b<short>(short a, short b, short c)
@@ -62,7 +62,7 @@ short f2b<short>(short a, short b, short c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // uint f2b<uint>(uint a, uint b, uint c)
 // AggressiveInlining
 uint f2b<uint>(uint a, uint b, uint c)
@@ -78,7 +78,7 @@ uint f2b<uint>(uint a, uint b, uint c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // int f2b<int>(int a, int b, int c)
 // AggressiveInlining
 int f2b<int>(int a, int b, int c)
@@ -94,7 +94,7 @@ int f2b<int>(int a, int b, int c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // ulong f2b<ulong>(ulong a, ulong b, ulong c)
 // AggressiveInlining
 ulong f2b<ulong>(ulong a, ulong b, ulong c)
@@ -110,7 +110,7 @@ ulong f2b<ulong>(ulong a, ulong b, ulong c)
     IL_0014: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
+// T Z0.Logix.ScalarOps::f2b<T>(T,T,T)
 // long f2b<long>(long a, long b, long c)
 // AggressiveInlining
 long f2b<long>(long a, long b, long c)

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmaplo(Vector128<uint> src, N128 w, ulong t)
-; vmaplo_128x32u_n128_64u[18] = {c5 f8 77 66 90 c4 e2 79 35 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x32u_n128_64u[18] = {c5 f8 77 66 90 c4 e2 79 35 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -10,7 +10,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vmaplo(Vector256<sbyte> src, N256 w, short t)
-; vmaplo_256x8i_n256_16i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 20 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x8i_n256_16i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 20 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -23,7 +23,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmaplo(Vector256<byte> src, N256 w, ushort t)
-; vmaplo_256x8u_n256_16u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x8u_n256_16u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -36,7 +36,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vmaplo(Vector256<byte> src, N256 w, short t)
-; vmaplo_256x8u_n256_16i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x8u_n256_16i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -49,7 +49,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vmaplo(Vector256<short> src, N256 w, int t)
-; vmaplo_256x16i_n256_32i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 23 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x16i_n256_32i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 23 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -62,7 +62,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmaplo(Vector256<ushort> src, N256 w, uint t)
-; vmaplo_256x16u_n256_32u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 33 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x16u_n256_32u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 33 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -75,7 +75,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vmaplo(Vector256<int> src, N256 w, long t)
-; vmaplo_256x32i_n256_64i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 25 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x32i_n256_64i[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 25 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -88,7 +88,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmaplo(Vector256<uint> src, N256 w, ulong t)
-; vmaplo_256x32u_n256_64u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 35 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v256x32u_n256_64u[31] = {c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 35 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -101,7 +101,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vmaplo(Vector128<sbyte> src, N128 w, short t)
-; vmaplo_128x8i_n128_16i[18] = {c5 f8 77 66 90 c4 e2 79 20 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x8i_n128_16i[18] = {c5 f8 77 66 90 c4 e2 79 20 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -111,7 +111,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmaplo(Vector128<sbyte> src, N128 w, ushort t)
-; vmaplo_128x8i_n128_16u[18] = {c5 f8 77 66 90 c4 e2 79 20 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x8i_n128_16u[18] = {c5 f8 77 66 90 c4 e2 79 20 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -121,7 +121,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vmaplo(Vector128<sbyte> src, N256 w, int t)
-; vmaplo_128x8i_n256_32i[21] = {c5 f8 77 66 90 c4 e2 7d 21 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x8i_n256_32i[21] = {c5 f8 77 66 90 c4 e2 7d 21 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -132,7 +132,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vmaplo(Vector128<byte> src, N128 w, short t)
-; vmaplo_128x8u_n128_16i[18] = {c5 f8 77 66 90 c4 e2 79 30 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x8u_n128_16i[18] = {c5 f8 77 66 90 c4 e2 79 30 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -142,7 +142,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmaplo(Vector128<byte> src, N128 w, ushort t)
-; vmaplo_128x8u_n128_16u[18] = {c5 f8 77 66 90 c4 e2 79 30 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x8u_n128_16u[18] = {c5 f8 77 66 90 c4 e2 79 30 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -152,7 +152,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmaplo(Vector128<byte> src, N256 w, uint t)
-; vmaplo_128x8u_n256_32u[21] = {c5 f8 77 66 90 c4 e2 7d 31 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x8u_n256_32u[21] = {c5 f8 77 66 90 c4 e2 7d 31 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -163,7 +163,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vmaplo(Vector128<byte> src, N256 w, int t)
-; vmaplo_128x8u_n256_32i[21] = {c5 f8 77 66 90 c4 e2 7d 31 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x8u_n256_32i[21] = {c5 f8 77 66 90 c4 e2 7d 31 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -174,7 +174,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vmaplo(Vector128<short> src, N128 w, int t)
-; vmaplo_128x16i_n128_32i[18] = {c5 f8 77 66 90 c4 e2 79 23 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x16i_n128_32i[18] = {c5 f8 77 66 90 c4 e2 79 23 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -184,7 +184,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vmaplo(Vector128<short> src, N256 w, long t)
-; vmaplo_128x16i_n256_64i[21] = {c5 f8 77 66 90 c4 e2 7d 24 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x16i_n256_64i[21] = {c5 f8 77 66 90 c4 e2 7d 24 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -195,7 +195,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmaplo(Vector128<ushort> src, N128 w, uint t)
-; vmaplo_128x16u_n128_32u[18] = {c5 f8 77 66 90 c4 e2 79 33 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x16u_n128_32u[18] = {c5 f8 77 66 90 c4 e2 79 33 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -205,7 +205,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vmaplo(Vector128<ushort> src, N256 w, long t)
-; vmaplo_128x16u_n256_64i[21] = {c5 f8 77 66 90 c4 e2 7d 34 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x16u_n256_64i[21] = {c5 f8 77 66 90 c4 e2 7d 34 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -216,7 +216,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmaplo(Vector128<ushort> src, N256 w, ulong t)
-; vmaplo_128x16u_n256_64u[21] = {c5 f8 77 66 90 c4 e2 7d 34 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmaplo_v128x16u_n256_64u[21] = {c5 f8 77 66 90 c4 e2 7d 34 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -227,7 +227,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vmaplo(Vector128<uint> src, N128 w, long t)
-; vmaplo_128x32u_n128_64i[18] = {c5 f8 77 66 90 c4 e2 79 35 02 c5 f9 11 01 48 8b c1 c3}
+; vmaplo_v128x32u_n128_64i[18] = {c5 f8 77 66 90 c4 e2 79 35 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

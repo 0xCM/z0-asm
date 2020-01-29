@@ -1,4 +1,4 @@
-// Id := 100663472, Name := System.Void Z0.Bits::Part4x5(System.UInt32,Z0.NatSpan`2<Z0.N4,System.Byte>)
+// System.Void Z0.Bits::Part4x5(System.UInt32,Z0.NatSpan`2<Z0.N4,System.Byte>)
 // void Part4x5(uint src, NatSpan<N4,byte> dst)
 // AggressiveInlining
 void Part4x5(uint src, NatSpan<N4,byte> dst)

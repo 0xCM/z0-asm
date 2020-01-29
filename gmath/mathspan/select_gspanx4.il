@@ -1,4 +1,4 @@
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<byte> select<byte>(ReadOnlySpan<byte> a, ReadOnlySpan<byte> b, ReadOnlySpan<byte> c, Span<byte> dst)
 // AggressiveInlining
 Span<byte> select<byte>(ReadOnlySpan<byte> a, ReadOnlySpan<byte> b, ReadOnlySpan<byte> c, Span<byte> dst)
@@ -15,7 +15,7 @@ Span<byte> select<byte>(ReadOnlySpan<byte> a, ReadOnlySpan<byte> b, ReadOnlySpan
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<sbyte> select<sbyte>(ReadOnlySpan<sbyte> a, ReadOnlySpan<sbyte> b, ReadOnlySpan<sbyte> c, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> select<sbyte>(ReadOnlySpan<sbyte> a, ReadOnlySpan<sbyte> b, ReadOnlySpan<sbyte> c, Span<sbyte> dst)
@@ -32,7 +32,7 @@ Span<sbyte> select<sbyte>(ReadOnlySpan<sbyte> a, ReadOnlySpan<sbyte> b, ReadOnly
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ushort> select<ushort>(ReadOnlySpan<ushort> a, ReadOnlySpan<ushort> b, ReadOnlySpan<ushort> c, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> select<ushort>(ReadOnlySpan<ushort> a, ReadOnlySpan<ushort> b, ReadOnlySpan<ushort> c, Span<ushort> dst)
@@ -49,7 +49,7 @@ Span<ushort> select<ushort>(ReadOnlySpan<ushort> a, ReadOnlySpan<ushort> b, Read
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnlySpan<short> c, Span<short> dst)
 // AggressiveInlining
 Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnlySpan<short> c, Span<short> dst)
@@ -66,7 +66,7 @@ Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnly
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<uint> select<uint>(ReadOnlySpan<uint> a, ReadOnlySpan<uint> b, ReadOnlySpan<uint> c, Span<uint> dst)
 // AggressiveInlining
 Span<uint> select<uint>(ReadOnlySpan<uint> a, ReadOnlySpan<uint> b, ReadOnlySpan<uint> c, Span<uint> dst)
@@ -83,7 +83,7 @@ Span<uint> select<uint>(ReadOnlySpan<uint> a, ReadOnlySpan<uint> b, ReadOnlySpan
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<int> select<int>(ReadOnlySpan<int> a, ReadOnlySpan<int> b, ReadOnlySpan<int> c, Span<int> dst)
 // AggressiveInlining
 Span<int> select<int>(ReadOnlySpan<int> a, ReadOnlySpan<int> b, ReadOnlySpan<int> c, Span<int> dst)
@@ -100,7 +100,7 @@ Span<int> select<int>(ReadOnlySpan<int> a, ReadOnlySpan<int> b, ReadOnlySpan<int
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<ulong> select<ulong>(ReadOnlySpan<ulong> a, ReadOnlySpan<ulong> b, ReadOnlySpan<ulong> c, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> select<ulong>(ReadOnlySpan<ulong> a, ReadOnlySpan<ulong> b, ReadOnlySpan<ulong> c, Span<ulong> dst)
@@ -117,7 +117,7 @@ Span<ulong> select<ulong>(ReadOnlySpan<ulong> a, ReadOnlySpan<ulong> b, ReadOnly
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664178, Name := System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::select<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<T>)
 // Span<long> select<long>(ReadOnlySpan<long> a, ReadOnlySpan<long> b, ReadOnlySpan<long> c, Span<long> dst)
 // AggressiveInlining
 Span<long> select<long>(ReadOnlySpan<long> a, ReadOnlySpan<long> b, ReadOnlySpan<long> c, Span<long> dst)

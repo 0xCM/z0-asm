@@ -1,4 +1,4 @@
-// Id := 100663807, Name := Z0.bit Z0.gfp::gt<T>(T,T)
+// Z0.bit Z0.gfp::gt<T>(T,T)
 // bit gt<float>(float a, float b)
 // AggressiveInlining
 bit gt<float>(float a, float b)
@@ -35,7 +35,7 @@ bit gt<float>(float a, float b)
     IL_0070: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663807, Name := Z0.bit Z0.gfp::gt<T>(T,T)
+// Z0.bit Z0.gfp::gt<T>(T,T)
 // bit gt<double>(double a, double b)
 // AggressiveInlining
 bit gt<double>(double a, double b)

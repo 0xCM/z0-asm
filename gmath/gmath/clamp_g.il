@@ -1,4 +1,4 @@
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // byte clamp<byte>(byte a, byte b)
 // AggressiveInlining
 byte clamp<byte>(byte a, byte b)
@@ -61,7 +61,7 @@ byte clamp<byte>(byte a, byte b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // sbyte clamp<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte clamp<sbyte>(sbyte a, sbyte b)
@@ -124,7 +124,7 @@ sbyte clamp<sbyte>(sbyte a, sbyte b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // ushort clamp<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort clamp<ushort>(ushort a, ushort b)
@@ -187,7 +187,7 @@ ushort clamp<ushort>(ushort a, ushort b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // short clamp<short>(short a, short b)
 // AggressiveInlining
 short clamp<short>(short a, short b)
@@ -250,7 +250,7 @@ short clamp<short>(short a, short b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // uint clamp<uint>(uint a, uint b)
 // AggressiveInlining
 uint clamp<uint>(uint a, uint b)
@@ -313,7 +313,7 @@ uint clamp<uint>(uint a, uint b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // int clamp<int>(int a, int b)
 // AggressiveInlining
 int clamp<int>(int a, int b)
@@ -376,7 +376,7 @@ int clamp<int>(int a, int b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // ulong clamp<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong clamp<ulong>(ulong a, ulong b)
@@ -439,7 +439,7 @@ ulong clamp<ulong>(ulong a, ulong b)
     IL_00CF: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663942, Name := T Z0.gmath::clamp<T>(T,T)
+// T Z0.gmath::clamp<T>(T,T)
 // long clamp<long>(long a, long b)
 // AggressiveInlining
 long clamp<long>(long a, long b)

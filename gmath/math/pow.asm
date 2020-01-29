@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte pow(sbyte b, uint exp)
-; pow_8i[61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f be c1 41 0f af c0 48 0f be c0 d1 ea 85 d2 74 11 4c 0f be c1 41 8b c8 41 0f af c8 48 0f be c9 eb d8 c3}
+; pow_8i_32u[61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f be c1 41 0f af c0 48 0f be c0 d1 ea 85 d2 74 11 4c 0f be c1 41 8b c8 41 0f af c8 48 0f be c9 eb d8 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -24,7 +24,7 @@
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte pow(byte b, uint exp)
-; pow_8u[59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b6 c1 41 0f af c0 0f b6 c0 d1 ea 85 d2 74 10 44 0f b6 c1 41 8b c8 41 0f af c8 0f b6 c9 eb da c3}
+; pow_8u_32u[59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b6 c1 41 0f af c0 0f b6 c0 d1 ea 85 d2 74 10 44 0f b6 c1 41 8b c8 41 0f af c8 0f b6 c9 eb da c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -48,7 +48,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short pow(short b, uint exp)
-; pow_16i[61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f bf c1 41 0f af c0 48 0f bf c0 d1 ea 85 d2 74 11 4c 0f bf c1 41 8b c8 41 0f af c8 48 0f bf c9 eb d8 c3}
+; pow_16i_32u[61] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0c 4c 0f bf c1 41 0f af c0 48 0f bf c0 d1 ea 85 d2 74 11 4c 0f bf c1 41 8b c8 41 0f af c8 48 0f bf c9 eb d8 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -72,7 +72,7 @@
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort pow(ushort b, uint exp)
-; pow_16u[59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b7 c1 41 0f af c0 0f b7 c0 d1 ea 85 d2 74 10 44 0f b7 c1 41 8b c8 41 0f af c8 0f b7 c9 eb da c3}
+; pow_16u_32u[59] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 0b 44 0f b7 c1 41 0f af c0 0f b7 c0 d1 ea 85 d2 74 10 44 0f b7 c1 41 8b c8 41 0f af c8 0f b7 c9 eb da c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -96,7 +96,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int pow(int b, uint exp)
-; pow_32i[40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
+; pow_32i_32u[40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -115,7 +115,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pow(uint b, uint exp)
-; pow_32u[40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
+; pow_32u_32u[40] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 03 0f af c1 d1 ea 85 d2 74 05 0f af c9 eb ed c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -134,7 +134,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long pow(long b, uint exp)
-; pow_64i[42] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
+; pow_64i_32u[42] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
@@ -153,7 +153,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong pow(ulong b, uint exp)
-; pow_64u[42] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
+; pow_64u_32u[42] = {0f 1f 44 00 00 85 d2 75 06 b8 01 00 00 00 c3 b8 01 00 00 00 f6 c2 01 74 04 48 0f af c1 d1 ea 85 d2 74 06 48 0f af c9 eb eb c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}

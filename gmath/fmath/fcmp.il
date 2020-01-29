@@ -1,4 +1,4 @@
-// Id := 100663869, Name := System.Boolean Z0.fmath::fcmp(System.Single,System.Single,Z0.FpCmpMode)
+// System.Boolean Z0.fmath::fcmp(System.Single,System.Single,Z0.FpCmpMode)
 // bool fcmp(float x, float y, FpCmpMode:byte mode)
 // IL
 bool fcmp(float x, float y, FpCmpMode:byte mode)
@@ -158,7 +158,7 @@ bool fcmp(float x, float y, FpCmpMode:byte mode)
     IL_017A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663870, Name := System.Boolean Z0.fmath::fcmp(System.Double,System.Double,Z0.FpCmpMode)
+// System.Boolean Z0.fmath::fcmp(System.Double,System.Double,Z0.FpCmpMode)
 // bool fcmp(double x, double y, FpCmpMode:byte mode)
 // IL
 bool fcmp(double x, double y, FpCmpMode:byte mode)

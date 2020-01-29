@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long vdot(Vector256<int> x, Vector256<int> y)
-; vdot_256x32i_256x32i[48] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 28 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
+; vdot_v256x32i_v256x32i[48] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 28 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong vdot(Vector256<uint> x, Vector256<uint> y)
-; vdot_256x32u_256x32u[47] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd f4 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
+; vdot_v256x32u_v256x32u[47] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd f4 02 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 d4 c0 c4 e1 f9 7e c0 c4 e3 f9 16 c2 01 48 03 c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

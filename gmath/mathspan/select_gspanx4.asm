@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> select<byte>(ReadOnlySpan<byte> a, ReadOnlySpan<byte> b, ReadOnlySpan<byte> c, Span<byte> dst)
-; select_g8u[113] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 44 49 63 f3 49 03 f2 49 63 fb 40 0f b6 3c 3a 49 63 db 41 0f b6 1c 18 49 63 eb 41 0f b6 2c 29 40 0f b6 ff 0f b6 db 40 0f b6 ff 0f b6 db 23 df c4 e2 40 f2 fd 0b fb 40 0f b6 ff 40 88 3e 41 ff c3 44 3b d8 7c bc 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan8u_span8u_span8u_span8u[113] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 44 49 63 f3 49 03 f2 49 63 fb 40 0f b6 3c 3a 49 63 db 41 0f b6 1c 18 49 63 eb 41 0f b6 2c 29 40 0f b6 ff 0f b6 db 40 0f b6 ff 0f b6 db 23 df c4 e2 40 f2 fd 0b fb 40 0f b6 ff 40 88 3e 41 ff c3 44 3b d8 7c bc 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -45,7 +45,7 @@
 0070h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> select<sbyte>(ReadOnlySpan<sbyte> a, ReadOnlySpan<sbyte> b, ReadOnlySpan<sbyte> c, Span<sbyte> dst)
-; select_g8i[119] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4a 49 63 f3 49 03 f2 49 63 fb 48 0f be 3c 3a 49 63 db 49 0f be 1c 18 49 63 eb 49 0f be 2c 29 48 0f be ff 48 0f be db 23 df 48 0f be db c4 e2 40 f2 fd 48 0f be ff 48 0f be db 0b fb 48 0f be ff 40 88 3e 41 ff c3 44 3b d8 7c b6 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan8i_span8i_span8i_span8i[119] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4a 49 63 f3 49 03 f2 49 63 fb 48 0f be 3c 3a 49 63 db 49 0f be 1c 18 49 63 eb 49 0f be 2c 29 48 0f be ff 48 0f be db 23 df 48 0f be db c4 e2 40 f2 fd 48 0f be ff 48 0f be db 0b fb 48 0f be ff 40 88 3e 41 ff c3 44 3b d8 7c b6 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -91,7 +91,7 @@
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> select<ushort>(ReadOnlySpan<ushort> a, ReadOnlySpan<ushort> b, ReadOnlySpan<ushort> c, Span<ushort> dst)
-; select_g16u[110] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 41 49 63 f3 49 8d 34 72 49 63 fb 0f b7 3c 7a 49 63 db 41 0f b7 1c 58 49 63 eb 41 0f b7 2c 69 0f b7 ff 0f b7 db 0f b7 ff 0f b7 db 23 df c4 e2 40 f2 fd 0b fb 0f b7 ff 66 89 3e 41 ff c3 44 3b d8 7c bf 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan16u_span16u_span16u_span16u[110] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 41 49 63 f3 49 8d 34 72 49 63 fb 0f b7 3c 7a 49 63 db 41 0f b7 1c 58 49 63 eb 41 0f b7 2c 69 0f b7 ff 0f b7 db 0f b7 ff 0f b7 db 23 df c4 e2 40 f2 fd 0b fb 0f b7 ff 66 89 3e 41 ff c3 44 3b d8 7c bf 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -136,7 +136,7 @@
 006dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> select<short>(ReadOnlySpan<short> a, ReadOnlySpan<short> b, ReadOnlySpan<short> c, Span<short> dst)
-; select_g16i[120] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4b 49 63 f3 49 8d 34 72 49 63 fb 48 0f bf 3c 7a 49 63 db 49 0f bf 1c 58 49 63 eb 49 0f bf 2c 69 48 0f bf ff 48 0f bf db 23 df 48 0f bf db c4 e2 40 f2 fd 48 0f bf ff 48 0f bf db 0b fb 48 0f bf ff 66 89 3e 41 ff c3 44 3b d8 7c b5 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan16i_span16i_span16i_span16i[120] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 4b 49 63 f3 49 8d 34 72 49 63 fb 48 0f bf 3c 7a 49 63 db 49 0f bf 1c 58 49 63 eb 49 0f bf 2c 69 48 0f bf ff 48 0f bf db 23 df 48 0f bf db c4 e2 40 f2 fd 48 0f bf ff 48 0f bf db 0b fb 48 0f bf ff 66 89 3e 41 ff c3 44 3b d8 7c b5 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -182,7 +182,7 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> select<uint>(ReadOnlySpan<uint> a, ReadOnlySpan<uint> b, ReadOnlySpan<uint> c, Span<uint> dst)
-; select_g32u[91] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 2e 49 63 f3 49 8d 34 b2 49 63 fb 8b 3c ba 49 63 db 41 8b 1c 98 49 63 eb 41 8b 2c a9 23 df c4 e2 40 f2 fd 0b fb 89 3e 41 ff c3 44 3b d8 7c d2 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan32u_span32u_span32u_span32u[91] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 2e 49 63 f3 49 8d 34 b2 49 63 fb 8b 3c ba 49 63 db 41 8b 1c 98 49 63 eb 41 8b 2c a9 23 df c4 e2 40 f2 fd 0b fb 89 3e 41 ff c3 44 3b d8 7c d2 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -222,7 +222,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> select<int>(ReadOnlySpan<int> a, ReadOnlySpan<int> b, ReadOnlySpan<int> c, Span<int> dst)
-; select_g32i[91] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 2e 49 63 f3 49 8d 34 b2 49 63 fb 8b 3c ba 49 63 db 41 8b 1c 98 49 63 eb 41 8b 2c a9 23 df c4 e2 40 f2 fd 0b fb 89 3e 41 ff c3 44 3b d8 7c d2 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan32i_span32i_span32i_span32i[91] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 2e 49 63 f3 49 8d 34 b2 49 63 fb 8b 3c ba 49 63 db 41 8b 1c 98 49 63 eb 41 8b 2c a9 23 df c4 e2 40 f2 fd 0b fb 89 3e 41 ff c3 44 3b d8 7c d2 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -262,7 +262,7 @@
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> select<ulong>(ReadOnlySpan<ulong> a, ReadOnlySpan<ulong> b, ReadOnlySpan<ulong> c, Span<ulong> dst)
-; select_g64u[95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan64u_span64u_span64u_span64u[95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -302,7 +302,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> select<long>(ReadOnlySpan<long> a, ReadOnlySpan<long> b, ReadOnlySpan<long> c, Span<long> dst)
-; select_g64i[95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
+; select_gspan64i_span64i_span64i_span64i[95] = {57 56 55 53 48 8b 44 24 48 48 8b 12 4d 8b 00 4d 8b 09 4c 8b 10 8b 40 08 45 33 db 85 c0 7e 32 49 63 f3 49 8d 34 f2 49 63 fb 48 8b 3c fa 49 63 db 49 8b 1c d8 49 63 eb 49 8b 2c e9 48 23 df c4 e2 c0 f2 fd 48 0b fb 48 89 3e 41 ff c3 44 3b d8 7c ce 4c 89 11 89 41 08 48 8b c1 5b 5d 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

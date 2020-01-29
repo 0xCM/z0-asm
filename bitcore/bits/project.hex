@@ -1,4 +1,4 @@
-project_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 c4 e2 7b f5 c2 0f b6 c0 c3
-project_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 c4 e2 7b f5 c2 0f b7 c0 c3
-project_32u  0f 1f 44 00 00 c4 e2 73 f5 c2 c3
-project_64u  0f 1f 44 00 00 c4 e2 f3 f5 c2 c3
+project_8u_8u    0f 1f 44 00 00 0f b6 c1 0f b6 d2 c4 e2 7b f5 c2 0f b6 c0 c3
+project_16u_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 c4 e2 7b f5 c2 0f b7 c0 c3
+project_32u_32u  0f 1f 44 00 00 c4 e2 73 f5 c2 c3
+project_64u_64u  0f 1f 44 00 00 c4 e2 f3 f5 c2 c3

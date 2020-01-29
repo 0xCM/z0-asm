@@ -1,4 +1,4 @@
-// Id := 100664563, Name := T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
 // byte srl<byte>(byte a, byte count)
 // AggressiveInlining
 byte srl<byte>(byte a, byte count)
@@ -9,7 +9,7 @@ byte srl<byte>(byte a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664563, Name := T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
 // ushort srl<ushort>(ushort a, byte count)
 // AggressiveInlining
 ushort srl<ushort>(ushort a, byte count)
@@ -20,7 +20,7 @@ ushort srl<ushort>(ushort a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664563, Name := T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
 // uint srl<uint>(uint a, byte count)
 // AggressiveInlining
 uint srl<uint>(uint a, byte count)
@@ -31,7 +31,7 @@ uint srl<uint>(uint a, byte count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664563, Name := T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
+// T Z0.Logix.ScalarOps::srl<T>(T,System.Byte)
 // ulong srl<ulong>(ulong a, byte count)
 // AggressiveInlining
 ulong srl<ulong>(ulong a, byte count)

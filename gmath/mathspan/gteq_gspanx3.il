@@ -1,4 +1,4 @@
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<bit> dst)
@@ -14,7 +14,7 @@ Span<bit> gteq<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<bit> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<bit> dst)
@@ -30,7 +30,7 @@ Span<bit> gteq<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<bit> ds
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<bit> dst)
@@ -46,7 +46,7 @@ Span<bit> gteq<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<bit>
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> dst)
@@ -62,7 +62,7 @@ Span<bit> gteq<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<bit> ds
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<bit> dst)
@@ -78,7 +78,7 @@ Span<bit> gteq<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<bit> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<bit> dst)
@@ -94,7 +94,7 @@ Span<bit> gteq<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<bit> dst)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<bit> dst)
@@ -110,7 +110,7 @@ Span<bit> gteq<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<bit> ds
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664165, Name := System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
+// System.Span`1<Z0.bit> Z0.mathspan::gteq<T>(System.ReadOnlySpan`1<T>,System.ReadOnlySpan`1<T>,System.Span`1<Z0.bit>)
 // Span<bit> gteq<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<bit> dst)
 // AggressiveInlining
 Span<bit> gteq<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<bit> dst)

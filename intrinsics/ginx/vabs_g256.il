@@ -1,4 +1,4 @@
-// Id := 100665125, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<sbyte> vabs<sbyte>(Vector256<sbyte> x)
 // AggressiveInlining
 Vector256<sbyte> vabs<sbyte>(Vector256<sbyte> x)
@@ -67,7 +67,7 @@ Vector256<sbyte> vabs<sbyte>(Vector256<sbyte> x)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665125, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<short> vabs<short>(Vector256<short> x)
 // AggressiveInlining
 Vector256<short> vabs<short>(Vector256<short> x)
@@ -136,7 +136,7 @@ Vector256<short> vabs<short>(Vector256<short> x)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665125, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<int> vabs<int>(Vector256<int> x)
 // AggressiveInlining
 Vector256<int> vabs<int>(Vector256<int> x)
@@ -205,7 +205,7 @@ Vector256<int> vabs<int>(Vector256<int> x)
     IL_00E6: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665125, Name := System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.ginx::vabs<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<long> vabs<long>(Vector256<long> x)
 // AggressiveInlining
 Vector256<long> vabs<long>(Vector256<long> x)

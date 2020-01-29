@@ -1,4 +1,4 @@
-// Id := 100663670, Name := T Z0.gbits::scatter<T>(T,T)
+// T Z0.gbits::scatter<T>(T,T)
 // byte scatter<byte>(byte src, byte mask)
 // AggressiveInlining
 byte scatter<byte>(byte src, byte mask)
@@ -63,7 +63,7 @@ byte scatter<byte>(byte src, byte mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663670, Name := T Z0.gbits::scatter<T>(T,T)
+// T Z0.gbits::scatter<T>(T,T)
 // ushort scatter<ushort>(ushort src, ushort mask)
 // AggressiveInlining
 ushort scatter<ushort>(ushort src, ushort mask)
@@ -128,7 +128,7 @@ ushort scatter<ushort>(ushort src, ushort mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663670, Name := T Z0.gbits::scatter<T>(T,T)
+// T Z0.gbits::scatter<T>(T,T)
 // uint scatter<uint>(uint src, uint mask)
 // AggressiveInlining
 uint scatter<uint>(uint src, uint mask)
@@ -193,7 +193,7 @@ uint scatter<uint>(uint src, uint mask)
     IL_00DE: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663670, Name := T Z0.gbits::scatter<T>(T,T)
+// T Z0.gbits::scatter<T>(T,T)
 // ulong scatter<ulong>(ulong src, ulong mask)
 // AggressiveInlining
 ulong scatter<ulong>(ulong src, ulong mask)

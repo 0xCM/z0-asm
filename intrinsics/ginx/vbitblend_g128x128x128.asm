@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vbitblend<byte>(Vector128<byte> x, Vector128<byte> y, Vector128<byte> mask)
-; vbitblend_g128x8u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x8u_v128x8u_v128x8u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vbitblend<sbyte>(Vector128<sbyte> x, Vector128<sbyte> y, Vector128<sbyte> mask)
-; vbitblend_g128x8i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x8i_v128x8i_v128x8i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -32,7 +32,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vbitblend<ushort>(Vector128<ushort> x, Vector128<ushort> y, Vector128<ushort> mask)
-; vbitblend_g128x16u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x16u_v128x16u_v128x16u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -48,7 +48,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vbitblend<short>(Vector128<short> x, Vector128<short> y, Vector128<short> mask)
-; vbitblend_g128x16i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x16i_v128x16i_v128x16i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -64,7 +64,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vbitblend<uint>(Vector128<uint> x, Vector128<uint> y, Vector128<uint> mask)
-; vbitblend_g128x32u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x32u_v128x32u_v128x32u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -80,7 +80,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vbitblend<int>(Vector128<int> x, Vector128<int> y, Vector128<int> mask)
-; vbitblend_g128x32i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x32i_v128x32i_v128x32i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -96,7 +96,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vbitblend<ulong>(Vector128<ulong> x, Vector128<ulong> y, Vector128<ulong> mask)
-; vbitblend_g128x64u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x64u_v128x64u_v128x64u[43] = {c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 ef ca c4 c1 79 10 11 c5 f1 db ca c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vbitblend<long>(Vector128<long> x, Vector128<long> y, Vector128<long> mask)
-; vbitblend_g128x64i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
+; vbitblend_gv128x64i_v128x64i_v128x64i[43] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 ef c1 c4 c1 79 10 09 c5 f9 db c1 c5 f9 10 0a c5 f1 ef c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

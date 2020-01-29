@@ -1,4 +1,4 @@
-// Id := 100663651, Name := System.Int32 Z0.gbits::ntz<T>(T)
+// System.Int32 Z0.gbits::ntz<T>(T)
 // int ntz<byte>(byte src)
 // AggressiveInlining
 int ntz<byte>(byte src)
@@ -51,7 +51,7 @@ int ntz<byte>(byte src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663651, Name := System.Int32 Z0.gbits::ntz<T>(T)
+// System.Int32 Z0.gbits::ntz<T>(T)
 // int ntz<ushort>(ushort src)
 // AggressiveInlining
 int ntz<ushort>(ushort src)
@@ -104,7 +104,7 @@ int ntz<ushort>(ushort src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663651, Name := System.Int32 Z0.gbits::ntz<T>(T)
+// System.Int32 Z0.gbits::ntz<T>(T)
 // int ntz<uint>(uint src)
 // AggressiveInlining
 int ntz<uint>(uint src)
@@ -157,7 +157,7 @@ int ntz<uint>(uint src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663651, Name := System.Int32 Z0.gbits::ntz<T>(T)
+// System.Int32 Z0.gbits::ntz<T>(T)
 // int ntz<ulong>(ulong src)
 // AggressiveInlining
 int ntz<ulong>(ulong src)

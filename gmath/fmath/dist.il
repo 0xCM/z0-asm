@@ -1,4 +1,4 @@
-// Id := 100663838, Name := System.UInt64 Z0.fmath::dist(System.Double,System.Double)
+// System.UInt64 Z0.fmath::dist(System.Double,System.Double)
 // ulong dist(double a, double b)
 // AggressiveInlining
 ulong dist(double a, double b)

@@ -1,8 +1,8 @@
-xor_8i   0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 c2 48 0f be c0 c3
-xor_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 c2 0f b6 c0 c3
-xor_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 c2 48 0f bf c0 c3
-xor_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 c2 0f b7 c0 c3
-xor_32i  0f 1f 44 00 00 8b c1 33 c2 c3
-xor_32u  0f 1f 44 00 00 8b c1 33 c2 c3
-xor_64i  0f 1f 44 00 00 48 8b c1 48 33 c2 c3
-xor_64u  0f 1f 44 00 00 48 8b c1 48 33 c2 c3
+xor_8i_8i    0f 1f 44 00 00 48 0f be c1 48 0f be d2 33 c2 48 0f be c0 c3
+xor_8u_8u    0f 1f 44 00 00 0f b6 c1 0f b6 d2 33 c2 0f b6 c0 c3
+xor_16i_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 33 c2 48 0f bf c0 c3
+xor_16u_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 33 c2 0f b7 c0 c3
+xor_32i_32i  0f 1f 44 00 00 8b c1 33 c2 c3
+xor_32u_32u  0f 1f 44 00 00 8b c1 33 c2 c3
+xor_64i_64i  0f 1f 44 00 00 48 8b c1 48 33 c2 c3
+xor_64u_64u  0f 1f 44 00 00 48 8b c1 48 33 c2 c3

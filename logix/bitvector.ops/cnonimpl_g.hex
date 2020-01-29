@@ -1,4 +1,4 @@
-cnonimpl_g  0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 68 f2 c0 0f b6 c0 c3
-cnonimpl_g  0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 c4 e2 68 f2 c0 0f b7 c0 c3
-cnonimpl_g  0f 1f 44 00 00 c4 e2 68 f2 c1 c3
-cnonimpl_g  0f 1f 44 00 00 c4 e2 e8 f2 c1 c3
+cnonimpl_g~eg_BitVector`1_Byte_~eg_BitVector`1_Byte      0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 68 f2 c0 0f b6 c0 c3
+cnonimpl_g~eg_BitVector`1_UInt16_~eg_BitVector`1_UInt16  0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 c4 e2 68 f2 c0 0f b7 c0 c3
+cnonimpl_g~eg_BitVector`1_UInt32_~eg_BitVector`1_UInt32  0f 1f 44 00 00 c4 e2 68 f2 c1 c3
+cnonimpl_g~eg_BitVector`1_UInt64_~eg_BitVector`1_UInt64  0f 1f 44 00 00 c4 e2 e8 f2 c1 c3

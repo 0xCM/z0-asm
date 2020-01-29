@@ -1,4 +1,4 @@
-// Id := 100663649, Name := System.Int32 Z0.gbits::msbpos<T>(T)
+// System.Int32 Z0.gbits::msbpos<T>(T)
 // int msbpos<byte>(byte src)
 // AggressiveInlining
 int msbpos<byte>(byte src)
@@ -51,7 +51,7 @@ int msbpos<byte>(byte src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663649, Name := System.Int32 Z0.gbits::msbpos<T>(T)
+// System.Int32 Z0.gbits::msbpos<T>(T)
 // int msbpos<ushort>(ushort src)
 // AggressiveInlining
 int msbpos<ushort>(ushort src)
@@ -104,7 +104,7 @@ int msbpos<ushort>(ushort src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663649, Name := System.Int32 Z0.gbits::msbpos<T>(T)
+// System.Int32 Z0.gbits::msbpos<T>(T)
 // int msbpos<uint>(uint src)
 // AggressiveInlining
 int msbpos<uint>(uint src)
@@ -157,7 +157,7 @@ int msbpos<uint>(uint src)
     IL_00B2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663649, Name := System.Int32 Z0.gbits::msbpos<T>(T)
+// System.Int32 Z0.gbits::msbpos<T>(T)
 // int msbpos<ulong>(ulong src)
 // AggressiveInlining
 int msbpos<ulong>(ulong src)

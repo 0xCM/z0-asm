@@ -1,4 +1,4 @@
-// Id := 100663371, Name := Z0.bit Z0.math::divides(System.SByte,System.SByte)
+// Z0.bit Z0.math::divides(System.SByte,System.SByte)
 // bit divides(sbyte a, sbyte b)
 // AggressiveInlining
 bit divides(sbyte a, sbyte b)
@@ -12,7 +12,7 @@ bit divides(sbyte a, sbyte b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663372, Name := Z0.bit Z0.math::divides(System.Byte,System.Byte)
+// Z0.bit Z0.math::divides(System.Byte,System.Byte)
 // bit divides(byte a, byte b)
 // AggressiveInlining
 bit divides(byte a, byte b)
@@ -26,7 +26,7 @@ bit divides(byte a, byte b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663373, Name := Z0.bit Z0.math::divides(System.Int16,System.Int16)
+// Z0.bit Z0.math::divides(System.Int16,System.Int16)
 // bit divides(short a, short b)
 // AggressiveInlining
 bit divides(short a, short b)
@@ -40,7 +40,7 @@ bit divides(short a, short b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663374, Name := Z0.bit Z0.math::divides(System.UInt16,System.UInt16)
+// Z0.bit Z0.math::divides(System.UInt16,System.UInt16)
 // bit divides(ushort a, ushort b)
 // AggressiveInlining
 bit divides(ushort a, ushort b)
@@ -54,7 +54,7 @@ bit divides(ushort a, ushort b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663375, Name := Z0.bit Z0.math::divides(System.Int32,System.Int32)
+// Z0.bit Z0.math::divides(System.Int32,System.Int32)
 // bit divides(int a, int b)
 // AggressiveInlining
 bit divides(int a, int b)
@@ -68,7 +68,7 @@ bit divides(int a, int b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663376, Name := Z0.bit Z0.math::divides(System.UInt32,System.UInt32)
+// Z0.bit Z0.math::divides(System.UInt32,System.UInt32)
 // bit divides(uint a, uint b)
 // AggressiveInlining
 bit divides(uint a, uint b)
@@ -82,7 +82,7 @@ bit divides(uint a, uint b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663377, Name := Z0.bit Z0.math::divides(System.Int64,System.Int64)
+// Z0.bit Z0.math::divides(System.Int64,System.Int64)
 // bit divides(long a, long b)
 // AggressiveInlining
 bit divides(long a, long b)
@@ -97,7 +97,7 @@ bit divides(long a, long b)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663378, Name := Z0.bit Z0.math::divides(System.UInt64,System.UInt64)
+// Z0.bit Z0.math::divides(System.UInt64,System.UInt64)
 // bit divides(ulong a, ulong b)
 // AggressiveInlining
 bit divides(ulong a, ulong b)

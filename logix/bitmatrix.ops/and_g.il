@@ -1,4 +1,4 @@
-// Id := 100664106, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
 // AggressiveInlining
 BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
@@ -9,7 +9,7 @@ BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
 // AggressiveInlining
 BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
@@ -20,7 +20,7 @@ BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
 // AggressiveInlining
 BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
@@ -31,7 +31,7 @@ BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664106, Name := Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T> Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
 // AggressiveInlining
 BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
@@ -42,7 +42,7 @@ BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
 // AggressiveInlining
 ref BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
@@ -54,7 +54,7 @@ ref BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref Bi
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
 // AggressiveInlining
 ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
@@ -66,7 +66,7 @@ ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
 // AggressiveInlining
 ref BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
@@ -78,7 +78,7 @@ ref BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref Bi
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
+// Z0.BitMatrix`1<T>& Z0.Logix.BitMatrixOps::and<T>(Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&,Z0.BitMatrix`1<T>&)
 // ref BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
 // AggressiveInlining
 ref BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)

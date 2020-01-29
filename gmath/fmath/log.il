@@ -1,4 +1,4 @@
-// Id := 100663904, Name := System.Single Z0.fmath::log(System.Single,System.Nullable`1<System.Single>)
+// System.Single Z0.fmath::log(System.Single,System.Nullable`1<System.Single>)
 // float log(float src, float b)
 // AggressiveInlining
 float log(float src, float b)
@@ -17,7 +17,7 @@ float log(float src, float b)
     IL_001F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663905, Name := System.Double Z0.fmath::log(System.Double,System.Nullable`1<System.Double>)
+// System.Double Z0.fmath::log(System.Double,System.Nullable`1<System.Double>)
 // double log(double src, double b)
 // AggressiveInlining
 double log(double src, double b)

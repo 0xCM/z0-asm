@@ -1,4 +1,4 @@
-// Id := 100663315, Name := System.Byte Z0.math::avgz(System.Byte,System.Byte)
+// System.Byte Z0.math::avgz(System.Byte,System.Byte)
 // byte avgz(byte a, byte b)
 // AggressiveInlining
 byte avgz(byte a, byte b)
@@ -16,7 +16,7 @@ byte avgz(byte a, byte b)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663316, Name := System.UInt16 Z0.math::avgz(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::avgz(System.UInt16,System.UInt16)
 // ushort avgz(ushort a, ushort b)
 // AggressiveInlining
 ushort avgz(ushort a, ushort b)
@@ -34,7 +34,7 @@ ushort avgz(ushort a, ushort b)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663317, Name := System.UInt32 Z0.math::avgz(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::avgz(System.UInt32,System.UInt32)
 // uint avgz(uint a, uint b)
 // AggressiveInlining
 uint avgz(uint a, uint b)
@@ -51,7 +51,7 @@ uint avgz(uint a, uint b)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663318, Name := System.UInt64 Z0.math::avgz(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::avgz(System.UInt64,System.UInt64)
 // ulong avgz(ulong a, ulong b)
 // AggressiveInlining
 ulong avgz(ulong a, ulong b)

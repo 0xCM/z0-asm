@@ -1,8 +1,8 @@
-sar_8i   0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 f8 48 0f be c0 c3
-sar_8u   0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 f8 0f b6 c0 c3
-sar_16i  0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 f8 48 0f bf c0 c3
-sar_16u  0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 f8 0f b7 c0 c3
-sar_32i  0f 1f 44 00 00 8b c1 0f b6 ca d3 f8 c3
-sar_32u  0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 c3
-sar_64i  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 f8 c3
-sar_64u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3
+sar_8i_8u   0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 f8 48 0f be c0 c3
+sar_8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 f8 0f b6 c0 c3
+sar_16i_8u  0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 f8 48 0f bf c0 c3
+sar_16u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 f8 0f b7 c0 c3
+sar_32i_8u  0f 1f 44 00 00 8b c1 0f b6 ca d3 f8 c3
+sar_32u_8u  0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 c3
+sar_64i_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 f8 c3
+sar_64u_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3

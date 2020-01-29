@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> vnot<byte>(in Block128<byte> a, in Block128<byte> c)
-; vnot_gb128x8u_128x8u[100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3c 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7b f0 02 c5 f9 74 c8 c5 f9 ef c1 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c ca 48 8b c2 5e c3}
+; vnot_gb128x8u(in)_b128x8u(in)[100] = {56 c5 f8 77 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3c 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 04 41 8b f3 48 63 f6 4c 03 d6 c4 c1 7b f0 02 c5 f9 74 c8 c5 f9 ef c1 4c 8b d1 4d 63 db 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c ca 48 8b c2 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -37,7 +37,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<sbyte> vnot<sbyte>(in Block128<sbyte> a, in Block128<sbyte> c)
-; vnot_gb128x8i_128x8i[98] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 49 03 c2 c5 fb f0 00 c5 f9 74 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 49 03 c2 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
+; vnot_gb128x8i(in)_b128x8i(in)[98] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 49 03 c2 c5 fb f0 00 c5 f9 74 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 49 03 c2 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0061h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ushort> vnot<ushort>(in Block128<ushort> a, in Block128<ushort> c)
-; vnot_gb128x16u_128x16u[96] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 03 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7b f0 02 c5 f9 75 c8 c5 f9 ef c1 4c 8b d1 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c3}
+; vnot_gb128x16u(in)_b128x16u(in)[96] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 39 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 03 4d 63 db 49 d1 e3 4d 03 d3 c4 c1 7b f0 02 c5 f9 75 c8 c5 f9 ef c1 4c 8b d1 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c cd 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -106,7 +106,7 @@
 005fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<short> vnot<short>(in Block128<short> a, in Block128<short> c)
-; vnot_gb128x16i_128x16i[100] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fb f0 00 c5 f9 75 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fa 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c3}
+; vnot_gb128x16i(in)_b128x16i(in)[100] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fb f0 00 c5 f9 75 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 50 c5 fa 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -141,7 +141,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<uint> vnot<uint>(in Block128<uint> a, in Block128<uint> c)
-; vnot_gb128x32u_128x32u[97] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3a 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 02 4d 63 db 49 c1 e3 02 4d 03 d3 c4 c1 7b f0 02 c5 f9 76 c8 c5 f9 ef c1 4c 8b d1 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c cc 48 8b c2 c3}
+; vnot_gb128x32u(in)_b128x32u(in)[97] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3a 48 8b 01 48 8b 0a 4c 8b d0 45 8b d9 41 c1 e3 02 4d 63 db 49 c1 e3 02 4d 03 d3 c4 c1 7b f0 02 c5 f9 76 c8 c5 f9 ef c1 4c 8b d1 4d 03 d3 c4 c1 7a 7f 02 41 ff c1 45 3b c8 7c cc 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -175,7 +175,7 @@
 0060h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<int> vnot<int>(in Block128<int> a, in Block128<int> c)
-; vnot_gb128x32i_128x32i[100] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 90 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 90 c5 fa 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c3}
+; vnot_gb128x32i(in)_b128x32i(in)[100] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 90 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 90 c5 fa 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -210,7 +210,7 @@
 0063h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ulong> vnot<ulong>(in Block128<ulong> a, in Block128<ulong> c)
-; vnot_gb128x64u_128x64u[93] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 e9 1f 45 03 c1 41 d1 f8 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
+; vnot_gb128x64u(in)_b128x64u(in)[93] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 e9 1f 45 03 c1 41 d1 f8 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -244,7 +244,7 @@
 005ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<long> vnot<long>(in Block128<long> a, in Block128<long> c)
-; vnot_gb128x64i_128x64i[93] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 e9 1f 45 03 c1 41 d1 f8 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
+; vnot_gb128x64i(in)_b128x64i(in)[93] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 e9 1f 45 03 c1 41 d1 f8 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fb f0 00 c5 f9 76 c8 c5 f9 ef c1 48 8b 02 45 8b d1 41 d1 e2 4d 63 d2 4a 8d 04 d0 c5 fa 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

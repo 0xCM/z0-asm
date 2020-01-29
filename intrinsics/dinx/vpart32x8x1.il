@@ -1,4 +1,4 @@
-// Id := 100663682, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpart32x8x1(System.UInt32)
+// System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpart32x8x1(System.UInt32)
 // Vector256<byte> vpart32x8x1(uint src)
 // AggressiveInlining
 Vector256<byte> vpart32x8x1(uint src)

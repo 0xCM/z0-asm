@@ -1,4 +1,4 @@
-// Id := 100663586, Name := System.SByte Z0.math::blend(System.SByte,System.SByte,System.SByte)
+// System.SByte Z0.math::blend(System.SByte,System.SByte,System.SByte)
 // sbyte blend(sbyte a, sbyte b, sbyte mask)
 // AggressiveInlining
 sbyte blend(sbyte a, sbyte b, sbyte mask)
@@ -13,7 +13,7 @@ sbyte blend(sbyte a, sbyte b, sbyte mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663587, Name := System.Byte Z0.math::blend(System.Byte,System.Byte,System.Byte)
+// System.Byte Z0.math::blend(System.Byte,System.Byte,System.Byte)
 // byte blend(byte a, byte b, byte mask)
 // AggressiveInlining
 byte blend(byte a, byte b, byte mask)
@@ -28,7 +28,7 @@ byte blend(byte a, byte b, byte mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663588, Name := System.Int16 Z0.math::blend(System.Int16,System.Int16,System.Int16)
+// System.Int16 Z0.math::blend(System.Int16,System.Int16,System.Int16)
 // short blend(short a, short b, short mask)
 // AggressiveInlining
 short blend(short a, short b, short mask)
@@ -43,7 +43,7 @@ short blend(short a, short b, short mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663589, Name := System.UInt16 Z0.math::blend(System.UInt16,System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::blend(System.UInt16,System.UInt16,System.UInt16)
 // ushort blend(ushort a, ushort b, ushort mask)
 // AggressiveInlining
 ushort blend(ushort a, ushort b, ushort mask)
@@ -58,7 +58,7 @@ ushort blend(ushort a, ushort b, ushort mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663590, Name := System.Int32 Z0.math::blend(System.Int32,System.Int32,System.Int32)
+// System.Int32 Z0.math::blend(System.Int32,System.Int32,System.Int32)
 // int blend(int a, int b, int mask)
 // AggressiveInlining
 int blend(int a, int b, int mask)
@@ -73,7 +73,7 @@ int blend(int a, int b, int mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663591, Name := System.UInt32 Z0.math::blend(System.UInt32,System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::blend(System.UInt32,System.UInt32,System.UInt32)
 // uint blend(uint a, uint b, uint mask)
 // AggressiveInlining
 uint blend(uint a, uint b, uint mask)
@@ -88,7 +88,7 @@ uint blend(uint a, uint b, uint mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663592, Name := System.Int64 Z0.math::blend(System.Int64,System.Int64,System.Int64)
+// System.Int64 Z0.math::blend(System.Int64,System.Int64,System.Int64)
 // long blend(long a, long b, long mask)
 // AggressiveInlining
 long blend(long a, long b, long mask)
@@ -103,7 +103,7 @@ long blend(long a, long b, long mask)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663593, Name := System.UInt64 Z0.math::blend(System.UInt64,System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::blend(System.UInt64,System.UInt64,System.UInt64)
 // ulong blend(ulong a, ulong b, ulong mask)
 // AggressiveInlining
 ulong blend(ulong a, ulong b, ulong mask)

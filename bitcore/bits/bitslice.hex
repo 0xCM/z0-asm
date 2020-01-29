@@ -1,8 +1,8 @@
-bitslice_8i   0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 48 0f be d1 c4 e2 78 f7 c2 48 0f be c0 c3
-bitslice_8u   0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 c3
-bitslice_16i  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 48 0f bf d1 c4 e2 78 f7 c2 48 0f bf c0 c3
-bitslice_16u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 0f b7 d1 c4 e2 78 f7 c2 0f b7 c0 c3
-bitslice_32i  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
-bitslice_32u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
-bitslice_64i  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
-bitslice_64u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
+bitslice_8i_8u_8u   0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 48 0f be d1 c4 e2 78 f7 c2 48 0f be c0 c3
+bitslice_8u_8u_8u   0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 0f b6 d1 c4 e2 78 f7 c2 0f b6 c0 c3
+bitslice_16i_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 48 0f bf d1 c4 e2 78 f7 c2 48 0f bf c0 c3
+bitslice_16u_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 0f b7 d1 c4 e2 78 f7 c2 0f b7 c0 c3
+bitslice_32i_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
+bitslice_32u_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
+bitslice_64i_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
+bitslice_64u_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3

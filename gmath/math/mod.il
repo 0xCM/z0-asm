@@ -1,4 +1,4 @@
-// Id := 100663421, Name := System.SByte Z0.math::mod(System.SByte,System.SByte)
+// System.SByte Z0.math::mod(System.SByte,System.SByte)
 // sbyte mod(sbyte a, sbyte m)
 // AggressiveInlining
 sbyte mod(sbyte a, sbyte m)
@@ -10,7 +10,7 @@ sbyte mod(sbyte a, sbyte m)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663422, Name := System.Byte Z0.math::mod(System.Byte,System.Byte)
+// System.Byte Z0.math::mod(System.Byte,System.Byte)
 // byte mod(byte a, byte m)
 // AggressiveInlining
 byte mod(byte a, byte m)
@@ -22,7 +22,7 @@ byte mod(byte a, byte m)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663423, Name := System.Int16 Z0.math::mod(System.Int16,System.Int16)
+// System.Int16 Z0.math::mod(System.Int16,System.Int16)
 // short mod(short a, short m)
 // AggressiveInlining
 short mod(short a, short m)
@@ -34,7 +34,7 @@ short mod(short a, short m)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663424, Name := System.UInt16 Z0.math::mod(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::mod(System.UInt16,System.UInt16)
 // ushort mod(ushort a, ushort m)
 // AggressiveInlining
 ushort mod(ushort a, ushort m)
@@ -46,7 +46,7 @@ ushort mod(ushort a, ushort m)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663425, Name := System.Int32 Z0.math::mod(System.Int32,System.Int32)
+// System.Int32 Z0.math::mod(System.Int32,System.Int32)
 // int mod(int a, int m)
 // AggressiveInlining
 int mod(int a, int m)
@@ -57,7 +57,7 @@ int mod(int a, int m)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663426, Name := System.UInt32 Z0.math::mod(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::mod(System.UInt32,System.UInt32)
 // uint mod(uint a, uint m)
 // AggressiveInlining
 uint mod(uint a, uint m)
@@ -68,7 +68,7 @@ uint mod(uint a, uint m)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663427, Name := System.Int64 Z0.math::mod(System.Int64,System.Int64)
+// System.Int64 Z0.math::mod(System.Int64,System.Int64)
 // long mod(long a, long m)
 // AggressiveInlining
 long mod(long a, long m)
@@ -79,7 +79,7 @@ long mod(long a, long m)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663428, Name := System.UInt64 Z0.math::mod(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::mod(System.UInt64,System.UInt64)
 // ulong mod(ulong a, ulong m)
 // AggressiveInlining
 ulong mod(ulong a, ulong m)

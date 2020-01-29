@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vconcat(Vector128<byte> lo, Vector128<byte> hi)
-; vconcat_128x8u_128x8u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x8u_v128x8u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -15,7 +15,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vconcat(Vector128<sbyte> lo, Vector128<sbyte> hi)
-; vconcat_128x8i_128x8i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x8i_v128x8i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -30,7 +30,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vconcat(Vector128<short> lo, Vector128<short> hi)
-; vconcat_128x16i_128x16i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x16i_v128x16i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -45,7 +45,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vconcat(Vector128<ushort> lo, Vector128<ushort> hi)
-; vconcat_128x16u_128x16u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x16u_v128x16u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vconcat(Vector128<int> lo, Vector128<int> hi)
-; vconcat_128x32i_128x32i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x32i_v128x32i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -75,7 +75,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconcat(Vector128<uint> lo, Vector128<uint> hi)
-; vconcat_128x32u_128x32u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x32u_v128x32u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -90,7 +90,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconcat(Vector128<long> lo, Vector128<long> hi)
-; vconcat_128x64i_128x64i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x64i_v128x64i[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -105,7 +105,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vconcat(Vector128<ulong> lo, Vector128<ulong> hi)
-; vconcat_128x64u_128x64u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x64u_v128x64u[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c4 c1 79 10 08 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -120,7 +120,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vconcat(Vector128<float> lo, Vector128<float> hi)
-; vconcat_128x32f_128x32f[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 18 c1 00 c4 c1 79 10 08 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x32f_v128x32f[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 18 c1 00 c4 c1 79 10 08 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -135,7 +135,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vconcat(Vector128<double> lo, Vector128<double> hi)
-; vconcat_128x64f_128x64f[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 18 c1 00 c4 c1 79 10 08 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconcat_v128x64f_v128x64f[41] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 18 c1 00 c4 c1 79 10 08 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

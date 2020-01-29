@@ -1,4 +1,4 @@
-// Id := 100663366, Name := System.UInt16 Z0.Bits::byteswap(System.UInt16)
+// System.UInt16 Z0.Bits::byteswap(System.UInt16)
 // ushort byteswap(ushort src)
 // AggressiveInlining
 ushort byteswap(ushort src)
@@ -20,7 +20,7 @@ ushort byteswap(ushort src)
     IL_0012: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663367, Name := System.UInt32 Z0.Bits::byteswap(System.UInt32)
+// System.UInt32 Z0.Bits::byteswap(System.UInt32)
 // uint byteswap(uint src)
 // AggressiveInlining
 uint byteswap(uint src)
@@ -63,7 +63,7 @@ uint byteswap(uint src)
     IL_0027: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663368, Name := System.UInt64 Z0.Bits::byteswap(System.UInt64)
+// System.UInt64 Z0.Bits::byteswap(System.UInt64)
 // ulong byteswap(ulong src)
 // AggressiveInlining
 ulong byteswap(ulong src)

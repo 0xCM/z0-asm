@@ -1,4 +1,4 @@
-// Id := 100663670, Name := Z0.bit Z0.math::between(System.Byte,System.Byte,System.Byte)
+// Z0.bit Z0.math::between(System.Byte,System.Byte,System.Byte)
 // bit between(byte t, byte min, byte max)
 // AggressiveInlining
 bit between(byte t, byte min, byte max)
@@ -17,7 +17,7 @@ bit between(byte t, byte min, byte max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663671, Name := Z0.bit Z0.math::between(System.SByte,System.SByte,System.SByte)
+// Z0.bit Z0.math::between(System.SByte,System.SByte,System.SByte)
 // bit between(sbyte t, sbyte min, sbyte max)
 // AggressiveInlining
 bit between(sbyte t, sbyte min, sbyte max)
@@ -36,7 +36,7 @@ bit between(sbyte t, sbyte min, sbyte max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663672, Name := Z0.bit Z0.math::between(System.Int16,System.Int16,System.Int16)
+// Z0.bit Z0.math::between(System.Int16,System.Int16,System.Int16)
 // bit between(short t, short min, short max)
 // AggressiveInlining
 bit between(short t, short min, short max)
@@ -55,7 +55,7 @@ bit between(short t, short min, short max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663673, Name := Z0.bit Z0.math::between(System.UInt16,System.UInt16,System.UInt16)
+// Z0.bit Z0.math::between(System.UInt16,System.UInt16,System.UInt16)
 // bit between(ushort t, ushort min, ushort max)
 // AggressiveInlining
 bit between(ushort t, ushort min, ushort max)
@@ -74,7 +74,7 @@ bit between(ushort t, ushort min, ushort max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663674, Name := Z0.bit Z0.math::between(System.Int32,System.Int32,System.Int32)
+// Z0.bit Z0.math::between(System.Int32,System.Int32,System.Int32)
 // bit between(int t, int min, int max)
 // AggressiveInlining
 bit between(int t, int min, int max)
@@ -93,7 +93,7 @@ bit between(int t, int min, int max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663675, Name := Z0.bit Z0.math::between(System.UInt32,System.UInt32,System.UInt32)
+// Z0.bit Z0.math::between(System.UInt32,System.UInt32,System.UInt32)
 // bit between(uint t, uint min, uint max)
 // AggressiveInlining
 bit between(uint t, uint min, uint max)
@@ -112,7 +112,7 @@ bit between(uint t, uint min, uint max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663676, Name := Z0.bit Z0.math::between(System.Int64,System.Int64,System.Int64)
+// Z0.bit Z0.math::between(System.Int64,System.Int64,System.Int64)
 // bit between(long t, long min, long max)
 // AggressiveInlining
 bit between(long t, long min, long max)
@@ -131,7 +131,7 @@ bit between(long t, long min, long max)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663677, Name := Z0.bit Z0.math::between(System.UInt64,System.UInt64,System.UInt64)
+// Z0.bit Z0.math::between(System.UInt64,System.UInt64,System.UInt64)
 // bit between(ulong t, ulong min, ulong max)
 // AggressiveInlining
 bit between(ulong t, ulong min, ulong max)

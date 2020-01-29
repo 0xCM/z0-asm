@@ -1,4 +1,4 @@
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // byte square<byte>(byte a)
 // AggressiveInlining
 byte square<byte>(byte a)
@@ -8,7 +8,7 @@ byte square<byte>(byte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // sbyte square<sbyte>(sbyte a)
 // AggressiveInlining
 sbyte square<sbyte>(sbyte a)
@@ -18,7 +18,7 @@ sbyte square<sbyte>(sbyte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // ushort square<ushort>(ushort a)
 // AggressiveInlining
 ushort square<ushort>(ushort a)
@@ -28,7 +28,7 @@ ushort square<ushort>(ushort a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // short square<short>(short a)
 // AggressiveInlining
 short square<short>(short a)
@@ -38,7 +38,7 @@ short square<short>(short a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // uint square<uint>(uint a)
 // AggressiveInlining
 uint square<uint>(uint a)
@@ -48,7 +48,7 @@ uint square<uint>(uint a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // int square<int>(int a)
 // AggressiveInlining
 int square<int>(int a)
@@ -58,7 +58,7 @@ int square<int>(int a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // ulong square<ulong>(ulong a)
 // AggressiveInlining
 ulong square<ulong>(ulong a)
@@ -68,7 +68,7 @@ ulong square<ulong>(ulong a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664001, Name := T Z0.gmath::square<T>(T)
+// T Z0.gmath::square<T>(T)
 // long square<long>(long a)
 // AggressiveInlining
 long square<long>(long a)

@@ -1,12 +1,12 @@
-vrotl__g128x8u-imm5    50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 03 00 00 00 c5 f9 6e d0 c5 f1 d3 ca c7 04 24 1f 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotl__g128x8u-imm9    50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 ff 00 00 00 c5 f9 6e d0 c5 f1 d3 ca 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotl__g128x8u-imm13   50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 fb 00 00 00 c5 f9 6e d0 c5 f1 d3 ca 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotl__g128x16u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 71 f0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x16u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 71 f0 09 b8 07 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x16u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 71 f0 0d b8 03 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x32u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 72 f0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x32u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 72 f0 09 b8 17 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x32u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 72 f0 0d b8 13 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x64u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 f0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x64u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 f0 09 b8 37 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotl__g128x64u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 f0 0d b8 33 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x8u_8u-imm5    50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 05 c7 44 24 04 e0 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 03 00 00 00 c5 f9 6e d0 c5 f1 d3 ca c7 04 24 1f 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotl_gv128x8u_8u-imm9    50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 ff 00 00 00 c5 f9 6e d0 c5 f1 d3 ca 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotl_gv128x8u_8u-imm13   50 c5 f8 77 c5 f9 10 02 c5 f8 28 c8 c5 f9 73 f0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f9 db c2 b8 fb 00 00 00 c5 f9 6e d0 c5 f1 d3 ca 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f1 db ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotl_gv128x16u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 71 f0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x16u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 71 f0 09 b8 07 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x16u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 71 f0 0d b8 03 00 00 00 c5 f9 6e d0 c5 f9 d1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 72 f0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 72 f0 09 b8 17 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 72 f0 0d b8 13 00 00 00 c5 f9 6e d0 c5 f9 d2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x64u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 f0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x64u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 f0 09 b8 37 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotl_gv128x64u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 f0 0d b8 33 00 00 00 c5 f9 6e d0 c5 f9 d3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3

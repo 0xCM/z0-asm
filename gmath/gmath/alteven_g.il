@@ -1,4 +1,4 @@
-// Id := 100663951, Name := T Z0.gmath::alteven<T>()
+// T Z0.gmath::alteven<T>()
 // byte alteven<byte>()
 // AggressiveInlining
 byte alteven<byte>()
@@ -59,7 +59,7 @@ byte alteven<byte>()
     IL_00D2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663951, Name := T Z0.gmath::alteven<T>()
+// T Z0.gmath::alteven<T>()
 // ushort alteven<ushort>()
 // AggressiveInlining
 ushort alteven<ushort>()
@@ -120,7 +120,7 @@ ushort alteven<ushort>()
     IL_00D2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663951, Name := T Z0.gmath::alteven<T>()
+// T Z0.gmath::alteven<T>()
 // uint alteven<uint>()
 // AggressiveInlining
 uint alteven<uint>()
@@ -181,7 +181,7 @@ uint alteven<uint>()
     IL_00D2: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663951, Name := T Z0.gmath::alteven<T>()
+// T Z0.gmath::alteven<T>()
 // ulong alteven<ulong>()
 // AggressiveInlining
 ulong alteven<ulong>()

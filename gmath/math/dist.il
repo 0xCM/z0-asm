@@ -1,4 +1,4 @@
-// Id := 100663355, Name := System.UInt64 Z0.math::dist(System.Byte,System.Byte)
+// System.UInt64 Z0.math::dist(System.Byte,System.Byte)
 // ulong dist(byte a, byte b)
 // AggressiveInlining
 ulong dist(byte a, byte b)
@@ -18,7 +18,7 @@ ulong dist(byte a, byte b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663356, Name := System.UInt64 Z0.math::dist(System.SByte,System.SByte)
+// System.UInt64 Z0.math::dist(System.SByte,System.SByte)
 // ulong dist(sbyte a, sbyte b)
 // AggressiveInlining
 ulong dist(sbyte a, sbyte b)
@@ -38,7 +38,7 @@ ulong dist(sbyte a, sbyte b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663357, Name := System.UInt64 Z0.math::dist(System.Int16,System.Int16)
+// System.UInt64 Z0.math::dist(System.Int16,System.Int16)
 // ulong dist(short a, short b)
 // AggressiveInlining
 ulong dist(short a, short b)
@@ -58,7 +58,7 @@ ulong dist(short a, short b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663358, Name := System.UInt64 Z0.math::dist(System.UInt16,System.UInt16)
+// System.UInt64 Z0.math::dist(System.UInt16,System.UInt16)
 // ulong dist(ushort a, ushort b)
 // AggressiveInlining
 ulong dist(ushort a, ushort b)
@@ -78,7 +78,7 @@ ulong dist(ushort a, ushort b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663359, Name := System.UInt64 Z0.math::dist(System.Int32,System.Int32)
+// System.UInt64 Z0.math::dist(System.Int32,System.Int32)
 // ulong dist(int a, int b)
 // AggressiveInlining
 ulong dist(int a, int b)
@@ -98,7 +98,7 @@ ulong dist(int a, int b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663360, Name := System.UInt64 Z0.math::dist(System.UInt32,System.UInt32)
+// System.UInt64 Z0.math::dist(System.UInt32,System.UInt32)
 // ulong dist(uint a, uint b)
 // AggressiveInlining
 ulong dist(uint a, uint b)
@@ -118,7 +118,7 @@ ulong dist(uint a, uint b)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663361, Name := System.UInt64 Z0.math::dist(System.Int64,System.Int64)
+// System.UInt64 Z0.math::dist(System.Int64,System.Int64)
 // ulong dist(long a, long b)
 // AggressiveInlining
 ulong dist(long a, long b)
@@ -136,7 +136,7 @@ ulong dist(long a, long b)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663362, Name := System.UInt64 Z0.math::dist(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::dist(System.UInt64,System.UInt64)
 // ulong dist(ulong a, ulong b)
 // AggressiveInlining
 ulong dist(ulong a, ulong b)

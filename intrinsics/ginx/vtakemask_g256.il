@@ -1,4 +1,4 @@
-// Id := 100665265, Name := System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vtakemask<byte>(Vector256<byte> src)
 // AggressiveInlining
 uint vtakemask<byte>(Vector256<byte> src)
@@ -9,7 +9,7 @@ uint vtakemask<byte>(Vector256<byte> src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665265, Name := System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vtakemask<ushort>(Vector256<ushort> src)
 // AggressiveInlining
 uint vtakemask<ushort>(Vector256<ushort> src)
@@ -20,7 +20,7 @@ uint vtakemask<ushort>(Vector256<ushort> src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665265, Name := System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vtakemask<uint>(Vector256<uint> src)
 // AggressiveInlining
 uint vtakemask<uint>(Vector256<uint> src)
@@ -31,7 +31,7 @@ uint vtakemask<uint>(Vector256<uint> src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100665265, Name := System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
+// System.UInt32 Z0.ginx::vtakemask<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // uint vtakemask<ulong>(Vector256<ulong> src)
 // AggressiveInlining
 uint vtakemask<ulong>(Vector256<ulong> src)

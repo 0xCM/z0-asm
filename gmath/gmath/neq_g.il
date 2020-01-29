@@ -1,4 +1,4 @@
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<byte>(byte a, byte b)
 // AggressiveInlining
 bit neq<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ bit neq<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 bit neq<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ bit neq<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<ushort>(ushort a, ushort b)
 // AggressiveInlining
 bit neq<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ bit neq<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<short>(short a, short b)
 // AggressiveInlining
 bit neq<short>(short a, short b)
@@ -42,7 +42,7 @@ bit neq<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<uint>(uint a, uint b)
 // AggressiveInlining
 bit neq<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ bit neq<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<int>(int a, int b)
 // AggressiveInlining
 bit neq<int>(int a, int b)
@@ -64,7 +64,7 @@ bit neq<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<ulong>(ulong a, ulong b)
 // AggressiveInlining
 bit neq<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ bit neq<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664107, Name := Z0.bit Z0.gmath::neq<T>(T,T)
+// Z0.bit Z0.gmath::neq<T>(T,T)
 // bit neq<long>(long a, long b)
 // AggressiveInlining
 bit neq<long>(long a, long b)

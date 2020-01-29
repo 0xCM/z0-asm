@@ -1,4 +1,4 @@
-// Id := 100663319, Name := System.Byte Z0.Bits::bfly(Z0.N1,System.Byte)
+// System.Byte Z0.Bits::bfly(Z0.N1,System.Byte)
 // byte bfly(N1 n, byte x)
 // AggressiveInlining
 byte bfly(N1 n, byte x)
@@ -10,7 +10,7 @@ byte bfly(N1 n, byte x)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663320, Name := System.UInt16 Z0.Bits::bfly(Z0.N1,System.UInt16)
+// System.UInt16 Z0.Bits::bfly(Z0.N1,System.UInt16)
 // ushort bfly(N1 n, ushort x)
 // AggressiveInlining
 ushort bfly(N1 n, ushort x)
@@ -22,7 +22,7 @@ ushort bfly(N1 n, ushort x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663321, Name := System.UInt32 Z0.Bits::bfly(Z0.N1,System.UInt32)
+// System.UInt32 Z0.Bits::bfly(Z0.N1,System.UInt32)
 // uint bfly(N1 n, uint x)
 // AggressiveInlining
 uint bfly(N1 n, uint x)
@@ -34,7 +34,7 @@ uint bfly(N1 n, uint x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663322, Name := System.UInt64 Z0.Bits::bfly(Z0.N1,System.UInt64)
+// System.UInt64 Z0.Bits::bfly(Z0.N1,System.UInt64)
 // ulong bfly(N1 n, ulong x)
 // AggressiveInlining
 ulong bfly(N1 n, ulong x)
@@ -46,7 +46,7 @@ ulong bfly(N1 n, ulong x)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663323, Name := System.Byte Z0.Bits::bfly(Z0.N2,System.Byte)
+// System.Byte Z0.Bits::bfly(Z0.N2,System.Byte)
 // byte bfly(N2 n, byte x)
 // AggressiveInlining
 byte bfly(N2 n, byte x)
@@ -58,7 +58,7 @@ byte bfly(N2 n, byte x)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663324, Name := System.UInt16 Z0.Bits::bfly(Z0.N2,System.UInt16)
+// System.UInt16 Z0.Bits::bfly(Z0.N2,System.UInt16)
 // ushort bfly(N2 n, ushort x)
 // AggressiveInlining
 ushort bfly(N2 n, ushort x)
@@ -70,7 +70,7 @@ ushort bfly(N2 n, ushort x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663325, Name := System.UInt32 Z0.Bits::bfly(Z0.N2,System.UInt32)
+// System.UInt32 Z0.Bits::bfly(Z0.N2,System.UInt32)
 // uint bfly(N2 n, uint x)
 // AggressiveInlining
 uint bfly(N2 n, uint x)
@@ -82,7 +82,7 @@ uint bfly(N2 n, uint x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663326, Name := System.UInt64 Z0.Bits::bfly(Z0.N2,System.UInt64)
+// System.UInt64 Z0.Bits::bfly(Z0.N2,System.UInt64)
 // ulong bfly(N2 n, ulong x)
 // AggressiveInlining
 ulong bfly(N2 n, ulong x)
@@ -94,7 +94,7 @@ ulong bfly(N2 n, ulong x)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663327, Name := System.UInt16 Z0.Bits::bfly(Z0.N4,System.UInt16)
+// System.UInt16 Z0.Bits::bfly(Z0.N4,System.UInt16)
 // ushort bfly(N4 n, ushort x)
 // AggressiveInlining
 ushort bfly(N4 n, ushort x)
@@ -106,7 +106,7 @@ ushort bfly(N4 n, ushort x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663328, Name := System.UInt32 Z0.Bits::bfly(Z0.N4,System.UInt32)
+// System.UInt32 Z0.Bits::bfly(Z0.N4,System.UInt32)
 // uint bfly(N4 n, uint x)
 // AggressiveInlining
 uint bfly(N4 n, uint x)
@@ -118,7 +118,7 @@ uint bfly(N4 n, uint x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663329, Name := System.UInt64 Z0.Bits::bfly(Z0.N4,System.UInt64)
+// System.UInt64 Z0.Bits::bfly(Z0.N4,System.UInt64)
 // ulong bfly(N4 n, ulong x)
 // AggressiveInlining
 ulong bfly(N4 n, ulong x)
@@ -130,7 +130,7 @@ ulong bfly(N4 n, ulong x)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663330, Name := System.UInt32 Z0.Bits::bfly(Z0.N8,System.UInt32)
+// System.UInt32 Z0.Bits::bfly(Z0.N8,System.UInt32)
 // uint bfly(N8 n, uint x)
 // AggressiveInlining
 uint bfly(N8 n, uint x)
@@ -142,7 +142,7 @@ uint bfly(N8 n, uint x)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663331, Name := System.UInt64 Z0.Bits::bfly(Z0.N8,System.UInt64)
+// System.UInt64 Z0.Bits::bfly(Z0.N8,System.UInt64)
 // ulong bfly(N8 n, ulong x)
 // AggressiveInlining
 ulong bfly(N8 n, ulong x)
@@ -154,7 +154,7 @@ ulong bfly(N8 n, ulong x)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663332, Name := System.UInt64 Z0.Bits::bfly(Z0.N16,System.UInt64)
+// System.UInt64 Z0.Bits::bfly(Z0.N16,System.UInt64)
 // ulong bfly(N16 n, ulong x)
 // AggressiveInlining
 ulong bfly(N16 n, ulong x)

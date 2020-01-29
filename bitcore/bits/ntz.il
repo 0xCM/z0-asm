@@ -1,4 +1,4 @@
-// Id := 100663436, Name := System.Int32 Z0.Bits::ntz(System.Byte)
+// System.Int32 Z0.Bits::ntz(System.Byte)
 // int ntz(byte src)
 // AggressiveInlining
 int ntz(byte src)
@@ -12,7 +12,7 @@ int ntz(byte src)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663437, Name := System.Int32 Z0.Bits::ntz(System.Int16)
+// System.Int32 Z0.Bits::ntz(System.Int16)
 // int ntz(short src)
 // AggressiveInlining
 int ntz(short src)
@@ -26,7 +26,7 @@ int ntz(short src)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663438, Name := System.Int32 Z0.Bits::ntz(System.UInt16)
+// System.Int32 Z0.Bits::ntz(System.UInt16)
 // int ntz(ushort src)
 // AggressiveInlining
 int ntz(ushort src)
@@ -40,7 +40,7 @@ int ntz(ushort src)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663439, Name := System.Int32 Z0.Bits::ntz(System.Int32)
+// System.Int32 Z0.Bits::ntz(System.Int32)
 // int ntz(int src)
 // AggressiveInlining
 int ntz(int src)
@@ -50,7 +50,7 @@ int ntz(int src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663440, Name := System.Int32 Z0.Bits::ntz(System.UInt32)
+// System.Int32 Z0.Bits::ntz(System.UInt32)
 // int ntz(uint src)
 // AggressiveInlining
 int ntz(uint src)
@@ -60,7 +60,7 @@ int ntz(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663441, Name := System.Int32 Z0.Bits::ntz(System.Int64)
+// System.Int32 Z0.Bits::ntz(System.Int64)
 // int ntz(long src)
 // AggressiveInlining
 int ntz(long src)
@@ -71,7 +71,7 @@ int ntz(long src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663442, Name := System.Int32 Z0.Bits::ntz(System.UInt64)
+// System.Int32 Z0.Bits::ntz(System.UInt64)
 // int ntz(ulong src)
 // AggressiveInlining
 int ntz(ulong src)
@@ -82,7 +82,7 @@ int ntz(ulong src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663435, Name := System.Int32 Z0.Bits::ntz(System.SByte)
+// System.Int32 Z0.Bits::ntz(System.SByte)
 // int ntz(sbyte src)
 // AggressiveInlining
 int ntz(sbyte src)

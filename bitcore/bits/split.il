@@ -1,4 +1,4 @@
-// Id := 100663560, Name := System.Void Z0.Bits::split(System.UInt64,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
+// System.Void Z0.Bits::split(System.UInt64,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
 // void split(ulong src, out byte x0, out byte x1, out byte x2, out byte x3, out byte x4, out byte x5, out byte x6, out byte x7)
 // AggressiveInlining
 void split(ulong src, out byte x0, out byte x1, out byte x2, out byte x3, out byte x4, out byte x5, out byte x6, out byte x7)
@@ -52,7 +52,7 @@ void split(ulong src, out byte x0, out byte x1, out byte x2, out byte x3, out by
     IL_0039: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663541, Name := Z0.ConstPair`1<System.Byte> Z0.Bits::split(System.UInt16,Z0.N2)
+// Z0.ConstPair`1<System.Byte> Z0.Bits::split(System.UInt16,Z0.N2)
 // ConstPair<byte> split(ushort src, N2 n)
 // AggressiveInlining
 ConstPair<byte> split(ushort src, N2 n)
@@ -68,7 +68,7 @@ ConstPair<byte> split(ushort src, N2 n)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663542, Name := Z0.ConstPair`1<System.UInt16> Z0.Bits::split(System.UInt32,Z0.N2)
+// Z0.ConstPair`1<System.UInt16> Z0.Bits::split(System.UInt32,Z0.N2)
 // ConstPair<ushort> split(uint src, N2 n)
 // AggressiveInlining
 ConstPair<ushort> split(uint src, N2 n)
@@ -84,7 +84,7 @@ ConstPair<ushort> split(uint src, N2 n)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663543, Name := Z0.ConstQuad`1<System.Byte> Z0.Bits::split(System.UInt32,Z0.N4)
+// Z0.ConstQuad`1<System.Byte> Z0.Bits::split(System.UInt32,Z0.N4)
 // ConstQuad<byte> split(uint src, N4 n)
 // AggressiveInlining
 ConstQuad<byte> split(uint src, N4 n)
@@ -108,7 +108,7 @@ ConstQuad<byte> split(uint src, N4 n)
     IL_001A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663544, Name := Z0.ConstPair`1<System.UInt32> Z0.Bits::split(System.UInt64,Z0.N2)
+// Z0.ConstPair`1<System.UInt32> Z0.Bits::split(System.UInt64,Z0.N2)
 // ConstPair<uint> split(ulong src, N2 n)
 // AggressiveInlining
 ConstPair<uint> split(ulong src, N2 n)
@@ -124,7 +124,7 @@ ConstPair<uint> split(ulong src, N2 n)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663545, Name := Z0.ConstQuad`1<System.UInt16> Z0.Bits::split(System.UInt64,Z0.N4)
+// Z0.ConstQuad`1<System.UInt16> Z0.Bits::split(System.UInt64,Z0.N4)
 // ConstQuad<ushort> split(ulong src, N4 n)
 // AggressiveInlining
 ConstQuad<ushort> split(ulong src, N4 n)
@@ -148,7 +148,7 @@ ConstQuad<ushort> split(ulong src, N4 n)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663546, Name := System.Void Z0.Bits::split(System.Byte,System.Int32,System.Byte&,System.Byte&)
+// System.Void Z0.Bits::split(System.Byte,System.Int32,System.Byte&,System.Byte&)
 // void split(byte src, int index, out byte x0, out byte x1)
 // AggressiveInlining
 void split(byte src, int index, out byte x0, out byte x1)
@@ -174,7 +174,7 @@ void split(byte src, int index, out byte x0, out byte x1)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663547, Name := System.Void Z0.Bits::split(System.UInt16,System.Int32,System.UInt16&,System.UInt16&)
+// System.Void Z0.Bits::split(System.UInt16,System.Int32,System.UInt16&,System.UInt16&)
 // void split(ushort src, int index, out ushort x0, out ushort x1)
 // AggressiveInlining
 void split(ushort src, int index, out ushort x0, out ushort x1)
@@ -200,7 +200,7 @@ void split(ushort src, int index, out ushort x0, out ushort x1)
     IL_0017: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663548, Name := System.Void Z0.Bits::split(System.UInt32,System.Int32,System.UInt32&,System.UInt32&)
+// System.Void Z0.Bits::split(System.UInt32,System.Int32,System.UInt32&,System.UInt32&)
 // void split(uint src, int index, out uint x0, out uint x1)
 // AggressiveInlining
 void split(uint src, int index, out uint x0, out uint x1)
@@ -224,7 +224,7 @@ void split(uint src, int index, out uint x0, out uint x1)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663549, Name := System.Void Z0.Bits::split(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
+// System.Void Z0.Bits::split(System.UInt64,System.Int32,System.UInt64&,System.UInt64&)
 // void split(ulong src, int index, out ulong x0, out ulong x1)
 // AggressiveInlining
 void split(ulong src, int index, out ulong x0, out ulong x1)
@@ -248,7 +248,7 @@ void split(ulong src, int index, out ulong x0, out ulong x1)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663550, Name := System.Void Z0.Bits::split(System.Byte,System.Byte&,System.Byte&)
+// System.Void Z0.Bits::split(System.Byte,System.Byte&,System.Byte&)
 // void split(byte src, out byte x0, out byte x1)
 // AggressiveInlining
 void split(byte src, out byte x0, out byte x1)
@@ -268,7 +268,7 @@ void split(byte src, out byte x0, out byte x1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663551, Name := System.Byte Z0.Bits::split(System.Byte,System.Byte&)
+// System.Byte Z0.Bits::split(System.Byte,System.Byte&)
 // byte split(byte src, out byte x0)
 // AggressiveInlining
 byte split(byte src, out byte x0)
@@ -286,7 +286,7 @@ byte split(byte src, out byte x0)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663552, Name := System.Void Z0.Bits::split(System.UInt16,System.Byte&,System.Byte&)
+// System.Void Z0.Bits::split(System.UInt16,System.Byte&,System.Byte&)
 // void split(ushort src, out byte x0, out byte x1)
 // AggressiveInlining
 void split(ushort src, out byte x0, out byte x1)
@@ -304,7 +304,7 @@ void split(ushort src, out byte x0, out byte x1)
     IL_000A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663553, Name := System.Byte Z0.Bits::split(System.UInt16,System.Byte&)
+// System.Byte Z0.Bits::split(System.UInt16,System.Byte&)
 // byte split(ushort src, out byte x0)
 // AggressiveInlining
 byte split(ushort src, out byte x0)
@@ -320,7 +320,7 @@ byte split(ushort src, out byte x0)
     IL_0008: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663554, Name := System.Void Z0.Bits::split(System.UInt32,System.UInt16&,System.UInt16&)
+// System.Void Z0.Bits::split(System.UInt32,System.UInt16&,System.UInt16&)
 // void split(uint src, out ushort x0, out ushort x1)
 // AggressiveInlining
 void split(uint src, out ushort x0, out ushort x1)
@@ -338,7 +338,7 @@ void split(uint src, out ushort x0, out ushort x1)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663555, Name := System.UInt16 Z0.Bits::split(System.UInt32,System.UInt16&)
+// System.UInt16 Z0.Bits::split(System.UInt32,System.UInt16&)
 // ushort split(uint src, out ushort x0)
 // AggressiveInlining
 ushort split(uint src, out ushort x0)
@@ -354,7 +354,7 @@ ushort split(uint src, out ushort x0)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663556, Name := System.Void Z0.Bits::split(System.UInt64,System.UInt32&,System.UInt32&)
+// System.Void Z0.Bits::split(System.UInt64,System.UInt32&,System.UInt32&)
 // void split(ulong src, out uint x0, out uint x1)
 // AggressiveInlining
 void split(ulong src, out uint x0, out uint x1)
@@ -372,7 +372,7 @@ void split(ulong src, out uint x0, out uint x1)
     IL_000B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663557, Name := System.UInt32 Z0.Bits::split(System.UInt64,System.UInt32&)
+// System.UInt32 Z0.Bits::split(System.UInt64,System.UInt32&)
 // uint split(ulong src, out uint x0)
 // AggressiveInlining
 uint split(ulong src, out uint x0)
@@ -388,7 +388,7 @@ uint split(ulong src, out uint x0)
     IL_0009: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663558, Name := System.Void Z0.Bits::split(System.UInt64,System.UInt16&,System.UInt16&,System.UInt16&,System.UInt16&)
+// System.Void Z0.Bits::split(System.UInt64,System.UInt16&,System.UInt16&,System.UInt16&,System.UInt16&)
 // void split(ulong src, out ushort x0, out ushort x1, out ushort x2, out ushort x3)
 // AggressiveInlining
 void split(ulong src, out ushort x0, out ushort x1, out ushort x2, out ushort x3)
@@ -418,7 +418,7 @@ void split(ulong src, out ushort x0, out ushort x1, out ushort x2, out ushort x3
     IL_001A: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663559, Name := System.Void Z0.Bits::split(System.UInt32,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
+// System.Void Z0.Bits::split(System.UInt32,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
 // void split(uint src, out byte x0, out byte x1, out byte x2, out byte x3)
 // AggressiveInlining
 void split(uint src, out byte x0, out byte x1, out byte x2, out byte x3)

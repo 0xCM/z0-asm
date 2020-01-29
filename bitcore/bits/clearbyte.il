@@ -1,4 +1,4 @@
-// Id := 100663342, Name := System.UInt16 Z0.Bits::clearbyte(System.UInt16,System.Byte)
+// System.UInt16 Z0.Bits::clearbyte(System.UInt16,System.Byte)
 // ushort clearbyte(ushort src, byte index)
 // AggressiveInlining
 ushort clearbyte(ushort src, byte index)
@@ -18,7 +18,7 @@ ushort clearbyte(ushort src, byte index)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663343, Name := System.UInt32 Z0.Bits::clearbyte(System.UInt32,System.Byte)
+// System.UInt32 Z0.Bits::clearbyte(System.UInt32,System.Byte)
 // uint clearbyte(uint src, byte index)
 // AggressiveInlining
 uint clearbyte(uint src, byte index)
@@ -37,7 +37,7 @@ uint clearbyte(uint src, byte index)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663344, Name := System.UInt64 Z0.Bits::clearbyte(System.UInt64,System.Byte)
+// System.UInt64 Z0.Bits::clearbyte(System.UInt64,System.Byte)
 // ulong clearbyte(ulong src, byte index)
 // AggressiveInlining
 ulong clearbyte(ulong src, byte index)

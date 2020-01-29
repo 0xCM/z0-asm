@@ -1,2 +1,2 @@
-maskpart_32u  0f 1f 44 00 00 8b c1 8b ca d3 e8 0f b6 c0 48 ba 80 80 80 80 80 80 80 80 c4 e2 fb f5 c2 c3
-maskpart_32u  0f 1f 44 00 00 8b c1 8b ca d3 e8 0f b6 c0 c4 c2 fb f5 c0 c3
+maskpart_32u_32i      0f 1f 44 00 00 8b c1 8b ca d3 e8 0f b6 c0 48 ba 80 80 80 80 80 80 80 80 c4 e2 fb f5 c2 c3
+maskpart_32u_32i_64u  0f 1f 44 00 00 8b c1 8b ca d3 e8 0f b6 c0 c4 c2 fb f5 c0 c3

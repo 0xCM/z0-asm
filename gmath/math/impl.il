@@ -1,4 +1,4 @@
-// Id := 100663522, Name := System.SByte Z0.math::impl(System.SByte,System.SByte)
+// System.SByte Z0.math::impl(System.SByte,System.SByte)
 // sbyte impl(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte impl(sbyte a, sbyte b)
@@ -11,7 +11,7 @@ sbyte impl(sbyte a, sbyte b)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663523, Name := System.Byte Z0.math::impl(System.Byte,System.Byte)
+// System.Byte Z0.math::impl(System.Byte,System.Byte)
 // byte impl(byte a, byte b)
 // AggressiveInlining
 byte impl(byte a, byte b)
@@ -24,7 +24,7 @@ byte impl(byte a, byte b)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663524, Name := System.Int16 Z0.math::impl(System.Int16,System.Int16)
+// System.Int16 Z0.math::impl(System.Int16,System.Int16)
 // short impl(short a, short b)
 // AggressiveInlining
 short impl(short a, short b)
@@ -37,7 +37,7 @@ short impl(short a, short b)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663525, Name := System.UInt16 Z0.math::impl(System.UInt16,System.UInt16)
+// System.UInt16 Z0.math::impl(System.UInt16,System.UInt16)
 // ushort impl(ushort a, ushort b)
 // AggressiveInlining
 ushort impl(ushort a, ushort b)
@@ -50,7 +50,7 @@ ushort impl(ushort a, ushort b)
     IL_0005: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663526, Name := System.Int32 Z0.math::impl(System.Int32,System.Int32)
+// System.Int32 Z0.math::impl(System.Int32,System.Int32)
 // int impl(int a, int b)
 // AggressiveInlining
 int impl(int a, int b)
@@ -62,7 +62,7 @@ int impl(int a, int b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663527, Name := System.UInt32 Z0.math::impl(System.UInt32,System.UInt32)
+// System.UInt32 Z0.math::impl(System.UInt32,System.UInt32)
 // uint impl(uint a, uint b)
 // AggressiveInlining
 uint impl(uint a, uint b)
@@ -74,7 +74,7 @@ uint impl(uint a, uint b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663528, Name := System.Int64 Z0.math::impl(System.Int64,System.Int64)
+// System.Int64 Z0.math::impl(System.Int64,System.Int64)
 // long impl(long a, long b)
 // AggressiveInlining
 long impl(long a, long b)
@@ -86,7 +86,7 @@ long impl(long a, long b)
     IL_0004: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663529, Name := System.UInt64 Z0.math::impl(System.UInt64,System.UInt64)
+// System.UInt64 Z0.math::impl(System.UInt64,System.UInt64)
 // ulong impl(ulong a, ulong b)
 // AggressiveInlining
 ulong impl(ulong a, ulong b)

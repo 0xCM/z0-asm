@@ -1,4 +1,4 @@
-// Id := 100663813, Name := Z0.bit Z0.gfp::within<T>(T,T,T)
+// Z0.bit Z0.gfp::within<T>(T,T,T)
 // bit within<float>(float a, float b, float delta)
 // AggressiveInlining
 bit within<float>(float a, float b, float delta)
@@ -39,7 +39,7 @@ bit within<float>(float a, float b, float delta)
     IL_007C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663813, Name := Z0.bit Z0.gfp::within<T>(T,T,T)
+// Z0.bit Z0.gfp::within<T>(T,T,T)
 // bit within<double>(double a, double b, double delta)
 // AggressiveInlining
 bit within<double>(double a, double b, double delta)

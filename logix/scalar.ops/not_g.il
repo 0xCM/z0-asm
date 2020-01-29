@@ -1,4 +1,4 @@
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // byte not<byte>(byte a)
 // AggressiveInlining
 byte not<byte>(byte a)
@@ -8,7 +8,7 @@ byte not<byte>(byte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // sbyte not<sbyte>(sbyte a)
 // AggressiveInlining
 sbyte not<sbyte>(sbyte a)
@@ -18,7 +18,7 @@ sbyte not<sbyte>(sbyte a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // ushort not<ushort>(ushort a)
 // AggressiveInlining
 ushort not<ushort>(ushort a)
@@ -28,7 +28,7 @@ ushort not<ushort>(ushort a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // short not<short>(short a)
 // AggressiveInlining
 short not<short>(short a)
@@ -38,7 +38,7 @@ short not<short>(short a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // uint not<uint>(uint a)
 // AggressiveInlining
 uint not<uint>(uint a)
@@ -48,7 +48,7 @@ uint not<uint>(uint a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // int not<int>(int a)
 // AggressiveInlining
 int not<int>(int a)
@@ -58,7 +58,7 @@ int not<int>(int a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // ulong not<ulong>(ulong a)
 // AggressiveInlining
 ulong not<ulong>(ulong a)
@@ -68,7 +68,7 @@ ulong not<ulong>(ulong a)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664536, Name := T Z0.Logix.ScalarOps::not<T>(T)
+// T Z0.Logix.ScalarOps::not<T>(T)
 // long not<long>(long a)
 // AggressiveInlining
 long not<long>(long a)

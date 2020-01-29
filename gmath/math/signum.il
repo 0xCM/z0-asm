@@ -1,4 +1,4 @@
-// Id := 100663474, Name := Z0.Sign Z0.math::signum(System.SByte)
+// Z0.Sign Z0.math::signum(System.SByte)
 // Sign:int signum(sbyte src)
 // AggressiveInlining
 Sign:int signum(sbyte src)
@@ -8,7 +8,7 @@ Sign:int signum(sbyte src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663475, Name := Z0.Sign Z0.math::signum(System.Byte)
+// Z0.Sign Z0.math::signum(System.Byte)
 // Sign:int signum(byte src)
 // AggressiveInlining
 Sign:int signum(byte src)
@@ -21,7 +21,7 @@ Sign:int signum(byte src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663476, Name := Z0.Sign Z0.math::signum(System.Int16)
+// Z0.Sign Z0.math::signum(System.Int16)
 // Sign:int signum(short src)
 // AggressiveInlining
 Sign:int signum(short src)
@@ -31,7 +31,7 @@ Sign:int signum(short src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663477, Name := Z0.Sign Z0.math::signum(System.UInt16)
+// Z0.Sign Z0.math::signum(System.UInt16)
 // Sign:int signum(ushort src)
 // AggressiveInlining
 Sign:int signum(ushort src)
@@ -44,7 +44,7 @@ Sign:int signum(ushort src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663478, Name := Z0.Sign Z0.math::signum(System.Int32)
+// Z0.Sign Z0.math::signum(System.Int32)
 // Sign:int signum(int src)
 // AggressiveInlining
 Sign:int signum(int src)
@@ -60,7 +60,7 @@ Sign:int signum(int src)
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663479, Name := Z0.Sign Z0.math::signum(System.UInt32)
+// Z0.Sign Z0.math::signum(System.UInt32)
 // Sign:int signum(uint src)
 // AggressiveInlining
 Sign:int signum(uint src)
@@ -73,7 +73,7 @@ Sign:int signum(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663480, Name := Z0.Sign Z0.math::signum(System.Int64)
+// Z0.Sign Z0.math::signum(System.Int64)
 // Sign:int signum(long src)
 // AggressiveInlining
 Sign:int signum(long src)
@@ -90,7 +90,7 @@ Sign:int signum(long src)
     IL_000F: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663481, Name := Z0.Sign Z0.math::signum(System.UInt64)
+// Z0.Sign Z0.math::signum(System.UInt64)
 // Sign:int signum(ulong src)
 // AggressiveInlining
 Sign:int signum(ulong src)

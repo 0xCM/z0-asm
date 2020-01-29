@@ -1,4 +1,4 @@
-// Id := 100663803, Name := T Z0.gfp::sub<T>(T,T)
+// T Z0.gfp::sub<T>(T,T)
 // float sub<float>(float a, float b)
 // AggressiveInlining
 float sub<float>(float a, float b)
@@ -37,7 +37,7 @@ float sub<float>(float a, float b)
     IL_007A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663803, Name := T Z0.gfp::sub<T>(T,T)
+// T Z0.gfp::sub<T>(T,T)
 // double sub<double>(double a, double b)
 // AggressiveInlining
 double sub<double>(double a, double b)

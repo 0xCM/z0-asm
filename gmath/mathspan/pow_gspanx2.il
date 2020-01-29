@@ -1,4 +1,4 @@
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<byte> pow<byte>(ReadOnlySpan<byte> src, uint exp, Span<byte> dst)
 // AggressiveInlining
 Span<byte> pow<byte>(ReadOnlySpan<byte> src, uint exp, Span<byte> dst)
@@ -36,7 +36,7 @@ Span<byte> pow<byte>(ReadOnlySpan<byte> src, uint exp, Span<byte> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<sbyte> pow<sbyte>(ReadOnlySpan<sbyte> src, uint exp, Span<sbyte> dst)
 // AggressiveInlining
 Span<sbyte> pow<sbyte>(ReadOnlySpan<sbyte> src, uint exp, Span<sbyte> dst)
@@ -74,7 +74,7 @@ Span<sbyte> pow<sbyte>(ReadOnlySpan<sbyte> src, uint exp, Span<sbyte> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<ushort> pow<ushort>(ReadOnlySpan<ushort> src, uint exp, Span<ushort> dst)
 // AggressiveInlining
 Span<ushort> pow<ushort>(ReadOnlySpan<ushort> src, uint exp, Span<ushort> dst)
@@ -112,7 +112,7 @@ Span<ushort> pow<ushort>(ReadOnlySpan<ushort> src, uint exp, Span<ushort> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
 // AggressiveInlining
 Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
@@ -150,7 +150,7 @@ Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<uint> pow<uint>(ReadOnlySpan<uint> src, uint exp, Span<uint> dst)
 // AggressiveInlining
 Span<uint> pow<uint>(ReadOnlySpan<uint> src, uint exp, Span<uint> dst)
@@ -188,7 +188,7 @@ Span<uint> pow<uint>(ReadOnlySpan<uint> src, uint exp, Span<uint> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<int> pow<int>(ReadOnlySpan<int> src, uint exp, Span<int> dst)
 // AggressiveInlining
 Span<int> pow<int>(ReadOnlySpan<int> src, uint exp, Span<int> dst)
@@ -226,7 +226,7 @@ Span<int> pow<int>(ReadOnlySpan<int> src, uint exp, Span<int> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<ulong> pow<ulong>(ReadOnlySpan<ulong> src, uint exp, Span<ulong> dst)
 // AggressiveInlining
 Span<ulong> pow<ulong>(ReadOnlySpan<ulong> src, uint exp, Span<ulong> dst)
@@ -264,7 +264,7 @@ Span<ulong> pow<ulong>(ReadOnlySpan<ulong> src, uint exp, Span<ulong> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<long> pow<long>(ReadOnlySpan<long> src, uint exp, Span<long> dst)
 // AggressiveInlining
 Span<long> pow<long>(ReadOnlySpan<long> src, uint exp, Span<long> dst)
@@ -302,7 +302,7 @@ Span<long> pow<long>(ReadOnlySpan<long> src, uint exp, Span<long> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<float> pow<float>(ReadOnlySpan<float> src, uint exp, Span<float> dst)
 // AggressiveInlining
 Span<float> pow<float>(ReadOnlySpan<float> src, uint exp, Span<float> dst)
@@ -340,7 +340,7 @@ Span<float> pow<float>(ReadOnlySpan<float> src, uint exp, Span<float> dst)
     IL_0041: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664185, Name := System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
+// System.Span`1<T> Z0.mathspan::pow<T>(System.ReadOnlySpan`1<T>,System.UInt32,System.Span`1<T>)
 // Span<double> pow<double>(ReadOnlySpan<double> src, uint exp, Span<double> dst)
 // AggressiveInlining
 Span<double> pow<double>(ReadOnlySpan<double> src, uint exp, Span<double> dst)

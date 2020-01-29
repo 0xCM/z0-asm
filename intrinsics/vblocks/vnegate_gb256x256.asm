@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<byte> vnegate<byte>(in Block256<byte> a, in Block256<byte> c)
-; vnegate_gb256x8u_256x8u[117] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 4b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 ff f0 00 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 48 8b 02 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 fe 7f 00 41 ff c1 45 3b c8 7c b8 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x8u(in)_b256x8u(in)[117] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 4b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 ff f0 00 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 48 8b 02 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 fe 7f 00 41 ff c1 45 3b c8 7c b8 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -40,7 +40,7 @@
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<sbyte> vnegate<sbyte>(in Block256<sbyte> a, in Block256<sbyte> c)
-; vnegate_gb256x8i_256x8i[101] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 ff f0 00 c5 f4 57 c9 c5 f5 f8 c0 48 8b 02 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 fe 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x8i(in)_b256x8i(in)[101] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 1f 45 03 c1 41 c1 f8 05 45 33 c9 45 85 c0 7e 3b 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 ff f0 00 c5 f4 57 c9 c5 f5 f8 c0 48 8b 02 45 8b d1 41 c1 e2 05 4d 63 d2 49 03 c2 c5 fe 7f 00 41 ff c1 45 3b c8 7c c8 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -76,7 +76,7 @@
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<ushort> vnegate<ushort>(in Block256<ushort> a, in Block256<ushort> c)
-; vnegate_gb256x16u_256x16u[119] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 4d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 ff f0 00 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 fe 7f 00 41 ff c1 45 3b c8 7c b6 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x16u(in)_b256x16u(in)[119] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 4d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 ff f0 00 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 fe 7f 00 41 ff c1 45 3b c8 7c b6 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -116,7 +116,7 @@
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<short> vnegate<short>(in Block256<short> a, in Block256<short> c)
-; vnegate_gb256x16i_256x16i[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 ff f0 00 c5 f4 57 c9 c5 f5 f9 c0 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x16i(in)_b256x16i(in)[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 0f 45 03 c1 41 c1 f8 04 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 ff f0 00 c5 f4 57 c9 c5 f5 f9 c0 48 8b 02 45 8b d1 41 c1 e2 04 4d 63 d2 4a 8d 04 50 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -152,7 +152,7 @@
 0066h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<uint> vnegate<uint>(in Block256<uint> a, in Block256<uint> c)
-; vnegate_gb256x32u_256x32u[119] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 4d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 ff f0 00 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 fe 7f 00 41 ff c1 45 3b c8 7c b6 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x32u(in)_b256x32u(in)[119] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 4d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 ff f0 00 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 fe 7f 00 41 ff c1 45 3b c8 7c b6 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -192,7 +192,7 @@
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<int> vnegate<int>(in Block256<int> a, in Block256<int> c)
-; vnegate_gb256x32i_256x32i[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 ff f0 00 c5 f4 57 c9 c5 f5 fa c0 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x32i(in)_b256x32i(in)[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 07 45 03 c1 41 c1 f8 03 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 ff f0 00 c5 f4 57 c9 c5 f5 fa c0 48 8b 02 45 8b d1 41 c1 e2 03 4d 63 d2 4a 8d 04 90 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -228,7 +228,7 @@
 0066h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<ulong> vnegate<ulong>(in Block256<ulong> a, in Block256<ulong> c)
-; vnegate_gb256x64u_256x64u[121] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4f 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b4 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x64u(in)_b256x64u(in)[121] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 4f 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c b4 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -268,7 +268,7 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<long> vnegate<long>(in Block256<long> a, in Block256<long> c)
-; vnegate_gb256x64i_256x64i[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f4 57 c9 c5 f5 fb c0 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
+; vnegate_gb256x64i(in)_b256x64i(in)[103] = {c5 f8 77 66 90 44 8b 42 08 45 8b c8 41 c1 f9 1f 41 83 e1 03 45 03 c1 41 c1 f8 02 45 33 c9 45 85 c0 7e 3d 48 8b 01 48 8b 01 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 ff f0 00 c5 f4 57 c9 c5 f5 fb c0 48 8b 02 45 8b d1 41 c1 e2 02 4d 63 d2 4a 8d 04 d0 c5 fe 7f 00 41 ff c1 45 3b c8 7c c6 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,4 +1,4 @@
-// Id := 100663612, Name := T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
+// T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
 // byte bitmap<byte>(byte src, byte dst, byte count, byte index)
 // AggressiveInlining
 byte bitmap<byte>(byte src, byte dst, byte count, byte index)
@@ -24,7 +24,7 @@ byte bitmap<byte>(byte src, byte dst, byte count, byte index)
     IL_002C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663612, Name := T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
+// T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
 // ushort bitmap<ushort>(ushort src, ushort dst, byte count, byte index)
 // AggressiveInlining
 ushort bitmap<ushort>(ushort src, ushort dst, byte count, byte index)
@@ -50,7 +50,7 @@ ushort bitmap<ushort>(ushort src, ushort dst, byte count, byte index)
     IL_002C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663612, Name := T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
+// T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
 // uint bitmap<uint>(uint src, uint dst, byte count, byte index)
 // AggressiveInlining
 uint bitmap<uint>(uint src, uint dst, byte count, byte index)
@@ -76,7 +76,7 @@ uint bitmap<uint>(uint src, uint dst, byte count, byte index)
     IL_002C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663612, Name := T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
+// T Z0.gbits::bitmap<T>(T,T,System.Byte,System.Byte)
 // ulong bitmap<ulong>(ulong src, ulong dst, byte count, byte index)
 // AggressiveInlining
 ulong bitmap<ulong>(ulong src, ulong dst, byte count, byte index)

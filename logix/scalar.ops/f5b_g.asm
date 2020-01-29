@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f5b<byte>(byte a, byte b, byte c)
-; f5b_g8u[50] = {0f 1f 44 00 00 0f b6 c1 45 0f b6 c0 41 33 c0 0f b6 c0 0f b6 c9 0f b6 d2 0b d1 0f b6 d2 0f b6 d2 81 f2 ff 00 00 00 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
+; f5b_g8u_8u_8u[50] = {0f 1f 44 00 00 0f b6 c1 45 0f b6 c0 41 33 c0 0f b6 c0 0f b6 c9 0f b6 d2 0b d1 0f b6 d2 0f b6 d2 81 f2 ff 00 00 00 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -20,7 +20,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f5b<sbyte>(sbyte a, sbyte b, sbyte c)
-; f5b_g8i[56] = {0f 1f 44 00 00 48 0f be c1 4d 0f be c0 41 33 c0 48 0f be c0 48 0f be c9 48 0f be d2 0b d1 48 0f be d2 48 0f be d2 83 f2 7f 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
+; f5b_g8i_8i_8i[56] = {0f 1f 44 00 00 48 0f be c1 4d 0f be c0 41 33 c0 48 0f be c0 48 0f be c9 48 0f be d2 0b d1 48 0f be d2 48 0f be d2 83 f2 7f 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -40,7 +40,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f5b<ushort>(ushort a, ushort b, ushort c)
-; f5b_g16u[50] = {0f 1f 44 00 00 0f b7 c1 45 0f b7 c0 41 33 c0 0f b7 c0 0f b7 c9 0f b7 d2 0b d1 0f b7 d2 0f b7 d2 81 f2 ff ff 00 00 0f b7 d2 0f b7 c0 0b c2 0f b7 c0 c3}
+; f5b_g16u_16u_16u[50] = {0f 1f 44 00 00 0f b7 c1 45 0f b7 c0 41 33 c0 0f b7 c0 0f b7 c9 0f b7 d2 0b d1 0f b7 d2 0f b7 d2 81 f2 ff ff 00 00 0f b7 d2 0f b7 c0 0b c2 0f b7 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -60,7 +60,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short f5b<short>(short a, short b, short c)
-; f5b_g16i[59] = {0f 1f 44 00 00 48 0f bf c1 4d 0f bf c0 41 33 c0 48 0f bf c0 48 0f bf c9 48 0f bf d2 0b d1 48 0f bf d2 48 0f bf d2 81 f2 ff 7f 00 00 48 0f bf d2 48 0f bf c0 0b c2 48 0f bf c0 c3}
+; f5b_g16i_16i_16i[59] = {0f 1f 44 00 00 48 0f bf c1 4d 0f bf c0 41 33 c0 48 0f bf c0 48 0f bf c9 48 0f bf d2 0b d1 48 0f bf d2 48 0f bf d2 81 f2 ff 7f 00 00 48 0f bf d2 48 0f bf c0 0b c2 48 0f bf c0 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -80,7 +80,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f5b<uint>(uint a, uint b, uint c)
-; f5b_g32u[18] = {0f 1f 44 00 00 44 33 c1 0b d1 8b c2 f7 d0 41 0b c0 c3}
+; f5b_g32u_32u_32u[18] = {0f 1f 44 00 00 44 33 c1 0b d1 8b c2 f7 d0 41 0b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor r8d,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{44 33 c1}
@@ -91,7 +91,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f5b<int>(int a, int b, int c)
-; f5b_g32i[22] = {0f 1f 44 00 00 44 33 c1 0b d1 81 f2 ff ff ff 7f 41 0b d0 8b c2 c3}
+; f5b_g32i_32i_32i[22] = {0f 1f 44 00 00 44 33 c1 0b d1 81 f2 ff ff ff 7f 41 0b d0 8b c2 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor r8d,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{44 33 c1}
@@ -102,7 +102,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f5b<ulong>(ulong a, ulong b, ulong c)
-; f5b_g64u[21] = {0f 1f 44 00 00 4c 33 c1 48 0b d1 48 8b c2 48 f7 d0 49 0b c0 c3}
+; f5b_g64u_64u_64u[21] = {0f 1f 44 00 00 4c 33 c1 48 0b d1 48 8b c2 48 f7 d0 49 0b c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor r8,rcx                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{4c 33 c1}
@@ -113,7 +113,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f5b<long>(long a, long b, long c)
-; f5b_g64i[28] = {0f 1f 44 00 00 4c 33 c1 48 0b d1 48 b8 ff ff ff ff ff ff ff 7f 48 33 c2 49 0b c0 c3}
+; f5b_g64i_64i_64i[28] = {0f 1f 44 00 00 4c 33 c1 48 0b d1 48 b8 ff ff ff ff ff ff ff 7f 48 33 c2 49 0b c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor r8,rcx                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{4c 33 c1}

@@ -1,4 +1,4 @@
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // byte xnor<byte>(byte a, byte b)
 // AggressiveInlining
 byte xnor<byte>(byte a, byte b)
@@ -9,7 +9,7 @@ byte xnor<byte>(byte a, byte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // sbyte xnor<sbyte>(sbyte a, sbyte b)
 // AggressiveInlining
 sbyte xnor<sbyte>(sbyte a, sbyte b)
@@ -20,7 +20,7 @@ sbyte xnor<sbyte>(sbyte a, sbyte b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // ushort xnor<ushort>(ushort a, ushort b)
 // AggressiveInlining
 ushort xnor<ushort>(ushort a, ushort b)
@@ -31,7 +31,7 @@ ushort xnor<ushort>(ushort a, ushort b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // short xnor<short>(short a, short b)
 // AggressiveInlining
 short xnor<short>(short a, short b)
@@ -42,7 +42,7 @@ short xnor<short>(short a, short b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // uint xnor<uint>(uint a, uint b)
 // AggressiveInlining
 uint xnor<uint>(uint a, uint b)
@@ -53,7 +53,7 @@ uint xnor<uint>(uint a, uint b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // int xnor<int>(int a, int b)
 // AggressiveInlining
 int xnor<int>(int a, int b)
@@ -64,7 +64,7 @@ int xnor<int>(int a, int b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // ulong xnor<ulong>(ulong a, ulong b)
 // AggressiveInlining
 ulong xnor<ulong>(ulong a, ulong b)
@@ -75,7 +75,7 @@ ulong xnor<ulong>(ulong a, ulong b)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664545, Name := T Z0.Logix.ScalarOps::xnor<T>(T,T)
+// T Z0.Logix.ScalarOps::xnor<T>(T,T)
 // long xnor<long>(long a, long b)
 // AggressiveInlining
 long xnor<long>(long a, long b)

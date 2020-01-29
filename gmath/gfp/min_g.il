@@ -1,4 +1,4 @@
-// Id := 100663812, Name := T Z0.gfp::min<T>(T,T)
+// T Z0.gfp::min<T>(T,T)
 // float min<float>(float a, float b)
 // AggressiveInlining
 float min<float>(float a, float b)
@@ -37,7 +37,7 @@ float min<float>(float a, float b)
     IL_007A: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663812, Name := T Z0.gfp::min<T>(T,T)
+// T Z0.gfp::min<T>(T,T)
 // double min<double>(double a, double b)
 // AggressiveInlining
 double min<double>(double a, double b)

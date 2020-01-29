@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vnot(Vector128<sbyte> x)
-; vnot_128x8i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x8i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -12,7 +12,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vnot(Vector128<byte> x)
-; vnot_128x8u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x8u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -24,7 +24,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vnot(Vector128<short> x)
-; vnot_128x16i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x16i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -36,7 +36,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vnot(Vector128<ushort> x)
-; vnot_128x16u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x16u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -48,7 +48,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vnot(Vector128<int> x)
-; vnot_128x32i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x32i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vnot(Vector128<uint> x)
-; vnot_128x32u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x32u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 02 c5 f9 ef 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vnot(Vector128<long> x)
-; vnot_128x64i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x64i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vnot(Vector128<ulong> x)
-; vnot_128x64u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
+; vnot_v128x64u[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -96,7 +96,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vnot(Vector256<sbyte> x)
-; vnot_256x8i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x8i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -109,7 +109,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vnot(Vector256<byte> x)
-; vnot_256x8u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x8u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -122,7 +122,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vnot(Vector256<short> x)
-; vnot_256x16i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x16i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -135,7 +135,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vnot(Vector256<ushort> x)
-; vnot_256x16u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x16u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -148,7 +148,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vnot(Vector256<int> x)
-; vnot_256x32i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x32i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -161,7 +161,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vnot(Vector256<uint> x)
-; vnot_256x32u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x32u[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -174,7 +174,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vnot(Vector256<long> x)
-; vnot_256x64i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x64i[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -187,7 +187,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vnot(Vector256<ulong> x)
-; vnot_256x64u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnot_v256x64u[29] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 02 c5 fd ef 02 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

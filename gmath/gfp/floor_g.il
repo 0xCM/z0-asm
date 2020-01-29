@@ -1,4 +1,4 @@
-// Id := 100663792, Name := T Z0.gfp::floor<T>(T)
+// T Z0.gfp::floor<T>(T)
 // float floor<float>(float src)
 // AggressiveInlining
 float floor<float>(float src)
@@ -33,7 +33,7 @@ float floor<float>(float src)
     IL_006E: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663792, Name := T Z0.gfp::floor<T>(T)
+// T Z0.gfp::floor<T>(T)
 // double floor<double>(double src)
 // AggressiveInlining
 double floor<double>(double src)

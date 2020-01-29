@@ -1,4 +1,4 @@
-// Id := 100663809, Name := Z0.bit Z0.gfp::lt<T>(T,T)
+// Z0.bit Z0.gfp::lt<T>(T,T)
 // bit lt<float>(float lhs, float rhs)
 // AggressiveInlining
 bit lt<float>(float lhs, float rhs)
@@ -35,7 +35,7 @@ bit lt<float>(float lhs, float rhs)
     IL_0070: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663809, Name := Z0.bit Z0.gfp::lt<T>(T,T)
+// Z0.bit Z0.gfp::lt<T>(T,T)
 // bit lt<double>(double lhs, double rhs)
 // AggressiveInlining
 bit lt<double>(double lhs, double rhs)

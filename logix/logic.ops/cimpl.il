@@ -1,4 +1,4 @@
-// Id := 100664325, Name := Z0.bit Z0.Logix.LogicOps::cimpl(Z0.bit,Z0.bit)
+// Z0.bit Z0.Logix.LogicOps::cimpl(Z0.bit,Z0.bit)
 // bit cimpl(bit a, bit b)
 // AggressiveInlining
 bit cimpl(bit a, bit b)

@@ -1,4 +1,4 @@
-// Id := 100663411, Name := System.Byte Z0.Bits::lsboff(System.Byte)
+// System.Byte Z0.Bits::lsboff(System.Byte)
 // byte lsboff(byte src)
 // AggressiveInlining
 byte lsboff(byte src)
@@ -9,7 +9,7 @@ byte lsboff(byte src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663412, Name := System.UInt16 Z0.Bits::lsboff(System.UInt16)
+// System.UInt16 Z0.Bits::lsboff(System.UInt16)
 // ushort lsboff(ushort src)
 // AggressiveInlining
 ushort lsboff(ushort src)
@@ -20,7 +20,7 @@ ushort lsboff(ushort src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663413, Name := System.UInt32 Z0.Bits::lsboff(System.UInt32)
+// System.UInt32 Z0.Bits::lsboff(System.UInt32)
 // uint lsboff(uint src)
 // AggressiveInlining
 uint lsboff(uint src)
@@ -30,7 +30,7 @@ uint lsboff(uint src)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663414, Name := System.UInt64 Z0.Bits::lsboff(System.UInt64)
+// System.UInt64 Z0.Bits::lsboff(System.UInt64)
 // ulong lsboff(ulong src)
 // AggressiveInlining
 ulong lsboff(ulong src)

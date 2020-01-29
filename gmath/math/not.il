@@ -1,4 +1,4 @@
-// Id := 100663559, Name := System.UInt32 Z0.math::not(System.UInt32)
+// System.UInt32 Z0.math::not(System.UInt32)
 // uint not(uint src)
 // AggressiveInlining
 uint not(uint src)
@@ -8,7 +8,7 @@ uint not(uint src)
     IL_0002: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663560, Name := System.Int64 Z0.math::not(System.Int64)
+// System.Int64 Z0.math::not(System.Int64)
 // long not(long src)
 // AggressiveInlining
 long not(long src)
@@ -18,7 +18,7 @@ long not(long src)
     IL_0002: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663561, Name := System.UInt64 Z0.math::not(System.UInt64)
+// System.UInt64 Z0.math::not(System.UInt64)
 // ulong not(ulong src)
 // AggressiveInlining
 ulong not(ulong src)
@@ -28,7 +28,7 @@ ulong not(ulong src)
     IL_0002: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663554, Name := System.SByte Z0.math::not(System.SByte)
+// System.SByte Z0.math::not(System.SByte)
 // sbyte not(sbyte src)
 // AggressiveInlining
 sbyte not(sbyte src)
@@ -39,7 +39,7 @@ sbyte not(sbyte src)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663555, Name := System.Byte Z0.math::not(System.Byte)
+// System.Byte Z0.math::not(System.Byte)
 // byte not(byte src)
 // AggressiveInlining
 byte not(byte src)
@@ -50,7 +50,7 @@ byte not(byte src)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663556, Name := System.Int16 Z0.math::not(System.Int16)
+// System.Int16 Z0.math::not(System.Int16)
 // short not(short src)
 // AggressiveInlining
 short not(short src)
@@ -61,7 +61,7 @@ short not(short src)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663557, Name := System.UInt16 Z0.math::not(System.UInt16)
+// System.UInt16 Z0.math::not(System.UInt16)
 // ushort not(ushort src)
 // AggressiveInlining
 ushort not(ushort src)
@@ -72,7 +72,7 @@ ushort not(ushort src)
     IL_0003: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663558, Name := System.Int32 Z0.math::not(System.Int32)
+// System.Int32 Z0.math::not(System.Int32)
 // int not(int src)
 // AggressiveInlining
 int not(int src)
