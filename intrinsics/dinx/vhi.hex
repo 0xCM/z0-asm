@@ -1,19 +1,19 @@
-vhi_256x8u          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x16i         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x16u         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x32i         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x64i         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x64u_0o_0o   c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
-vhi_256x8u_0o_0o    c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
-vhi_256x64u_Pair`1  c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3
-vhi_128x8i          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x8u          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x16i         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x16u         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x32i         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x32u         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x64i         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_128x64u         c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vhi_256x8i          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x32u         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhi_256x64u         c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x8u           c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x16i          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x16u          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x32i          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x64i          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x64u_64u_64u  c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
+vhi_256x8u_64u_64u   c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
+vhi_256x64u_Pair`1   c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3
+vhi_128x8i           c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x8u           c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x16i          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x16u          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x32i          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x32u          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x64i          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_128x64u          c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vhi_256x8i           c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x32u          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhi_256x64u          c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3

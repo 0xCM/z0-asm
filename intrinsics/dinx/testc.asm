@@ -18,7 +18,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit testc(ulong a)
 ; testc_64u[48] = {50 c5 f8 77 90 48 89 0c 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c4 e2 79 17 c1 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

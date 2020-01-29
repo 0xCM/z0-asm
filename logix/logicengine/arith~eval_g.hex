@@ -1,8 +1,0 @@
-arith~eval_g8u   0f 1f 44 00 00 48 b8 20 a5 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g8i   0f 1f 44 00 00 48 b8 70 a5 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g16u  0f 1f 44 00 00 48 b8 f8 a7 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g16i  0f 1f 44 00 00 48 b8 38 a8 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g32u  0f 1f 44 00 00 48 b8 78 a8 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g32i  0f 1f 44 00 00 48 b8 b8 a8 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g64u  0f 1f 44 00 00 48 b8 f8 a8 3a c7 f7 7f 00 00 48 ff e0
-arith~eval_g64i  0f 1f 44 00 00 48 b8 38 a9 3a c7 f7 7f 00 00 48 ff e0

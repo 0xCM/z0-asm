@@ -1,4 +1,4 @@
-// Id := 100664309, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100664306, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vsllr(Vector128<byte> src, Vector128<byte> count)
 // AggressiveInlining
 Vector128<byte> vsllr(Vector128<byte> src, Vector128<byte> count)
@@ -20,7 +20,7 @@ Vector128<byte> vsllr(Vector128<byte> src, Vector128<byte> count)
     IL_0026: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664310, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100664307, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vsllr(Vector128<sbyte> src, Vector128<sbyte> count)
 // AggressiveInlining
 Vector128<sbyte> vsllr(Vector128<sbyte> src, Vector128<sbyte> count)
@@ -42,7 +42,7 @@ Vector128<sbyte> vsllr(Vector128<sbyte> src, Vector128<sbyte> count)
     IL_0026: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664311, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664308, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vsllr(Vector128<short> src, Vector128<short> count)
 // AggressiveInlining
 Vector128<short> vsllr(Vector128<short> src, Vector128<short> count)
@@ -53,7 +53,7 @@ Vector128<short> vsllr(Vector128<short> src, Vector128<short> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664312, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664309, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vsllr(Vector128<ushort> src, Vector128<ushort> count)
 // AggressiveInlining
 Vector128<ushort> vsllr(Vector128<ushort> src, Vector128<ushort> count)
@@ -64,7 +64,7 @@ Vector128<ushort> vsllr(Vector128<ushort> src, Vector128<ushort> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664313, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664310, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<int> vsllr(Vector128<int> src, Vector128<int> count)
 // AggressiveInlining
 Vector128<int> vsllr(Vector128<int> src, Vector128<int> count)
@@ -75,7 +75,7 @@ Vector128<int> vsllr(Vector128<int> src, Vector128<int> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664314, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664311, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vsllr(Vector128<uint> src, Vector128<uint> count)
 // AggressiveInlining
 Vector128<uint> vsllr(Vector128<uint> src, Vector128<uint> count)
@@ -86,7 +86,7 @@ Vector128<uint> vsllr(Vector128<uint> src, Vector128<uint> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664315, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
+// Id := 100664312, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
 // Vector128<long> vsllr(Vector128<long> src, Vector128<long> count)
 // AggressiveInlining
 Vector128<long> vsllr(Vector128<long> src, Vector128<long> count)
@@ -97,7 +97,7 @@ Vector128<long> vsllr(Vector128<long> src, Vector128<long> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664316, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100664313, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector128<ulong> vsllr(Vector128<ulong> src, Vector128<ulong> count)
 // AggressiveInlining
 Vector128<ulong> vsllr(Vector128<ulong> src, Vector128<ulong> count)
@@ -108,7 +108,7 @@ Vector128<ulong> vsllr(Vector128<ulong> src, Vector128<ulong> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664317, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100664314, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector256<sbyte> vsllr(Vector256<sbyte> src, Vector128<sbyte> count)
 // AggressiveInlining
 Vector256<sbyte> vsllr(Vector256<sbyte> src, Vector128<sbyte> count)
@@ -140,7 +140,7 @@ Vector256<sbyte> vsllr(Vector256<sbyte> src, Vector128<sbyte> count)
     IL_0044: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664318, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100664315, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector256<byte> vsllr(Vector256<byte> src, Vector128<byte> count)
 // AggressiveInlining
 Vector256<byte> vsllr(Vector256<byte> src, Vector128<byte> count)
@@ -172,7 +172,7 @@ Vector256<byte> vsllr(Vector256<byte> src, Vector128<byte> count)
     IL_0044: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664319, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664316, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector256<short> vsllr(Vector256<short> src, Vector128<short> count)
 // AggressiveInlining
 Vector256<short> vsllr(Vector256<short> src, Vector128<short> count)
@@ -183,7 +183,7 @@ Vector256<short> vsllr(Vector256<short> src, Vector128<short> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664320, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664317, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector256<ushort> vsllr(Vector256<ushort> src, Vector128<ushort> count)
 // AggressiveInlining
 Vector256<ushort> vsllr(Vector256<ushort> src, Vector128<ushort> count)
@@ -194,7 +194,7 @@ Vector256<ushort> vsllr(Vector256<ushort> src, Vector128<ushort> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664321, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664318, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector256<int> vsllr(Vector256<int> src, Vector128<int> count)
 // AggressiveInlining
 Vector256<int> vsllr(Vector256<int> src, Vector128<int> count)
@@ -205,7 +205,7 @@ Vector256<int> vsllr(Vector256<int> src, Vector128<int> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664322, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664319, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector256<uint> vsllr(Vector256<uint> src, Vector128<uint> count)
 // AggressiveInlining
 Vector256<uint> vsllr(Vector256<uint> src, Vector128<uint> count)
@@ -216,7 +216,7 @@ Vector256<uint> vsllr(Vector256<uint> src, Vector128<uint> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664323, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
+// Id := 100664320, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
 // Vector256<long> vsllr(Vector256<long> src, Vector128<long> count)
 // AggressiveInlining
 Vector256<long> vsllr(Vector256<long> src, Vector128<long> count)
@@ -227,7 +227,7 @@ Vector256<long> vsllr(Vector256<long> src, Vector128<long> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664324, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100664321, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector256<ulong> vsllr(Vector256<ulong> src, Vector128<ulong> count)
 // AggressiveInlining
 Vector256<ulong> vsllr(Vector256<ulong> src, Vector128<ulong> count)
@@ -238,7 +238,7 @@ Vector256<ulong> vsllr(Vector256<ulong> src, Vector128<ulong> count)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664325, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.SByte)
+// Id := 100664322, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.SByte)
 // Vector128<sbyte> vsllr(Vector128<sbyte> src, sbyte count)
 // AggressiveInlining
 Vector128<sbyte> vsllr(Vector128<sbyte> src, sbyte count)
@@ -251,7 +251,7 @@ Vector128<sbyte> vsllr(Vector128<sbyte> src, sbyte count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664326, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Byte)
+// Id := 100664323, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Byte)
 // Vector128<byte> vsllr(Vector128<byte> src, byte count)
 // AggressiveInlining
 Vector128<byte> vsllr(Vector128<byte> src, byte count)
@@ -264,7 +264,7 @@ Vector128<byte> vsllr(Vector128<byte> src, byte count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664327, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Int16)
+// Id := 100664324, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Int16)
 // Vector128<short> vsllr(Vector128<short> src, short count)
 // AggressiveInlining
 Vector128<short> vsllr(Vector128<short> src, short count)
@@ -277,7 +277,7 @@ Vector128<short> vsllr(Vector128<short> src, short count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664328, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.UInt16)
+// Id := 100664325, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.UInt16)
 // Vector128<ushort> vsllr(Vector128<ushort> src, ushort count)
 // AggressiveInlining
 Vector128<ushort> vsllr(Vector128<ushort> src, ushort count)
@@ -290,7 +290,7 @@ Vector128<ushort> vsllr(Vector128<ushort> src, ushort count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664329, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Int32)
+// Id := 100664326, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Int32)
 // Vector128<int> vsllr(Vector128<int> src, int count)
 // AggressiveInlining
 Vector128<int> vsllr(Vector128<int> src, int count)
@@ -303,7 +303,7 @@ Vector128<int> vsllr(Vector128<int> src, int count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664330, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.UInt32)
+// Id := 100664327, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.UInt32)
 // Vector128<uint> vsllr(Vector128<uint> src, uint count)
 // AggressiveInlining
 Vector128<uint> vsllr(Vector128<uint> src, uint count)
@@ -316,7 +316,7 @@ Vector128<uint> vsllr(Vector128<uint> src, uint count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664331, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Int64)
+// Id := 100664328, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Int64)
 // Vector128<long> vsllr(Vector128<long> src, long count)
 // AggressiveInlining
 Vector128<long> vsllr(Vector128<long> src, long count)
@@ -329,7 +329,7 @@ Vector128<long> vsllr(Vector128<long> src, long count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664332, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.UInt64)
+// Id := 100664329, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.UInt64)
 // Vector128<ulong> vsllr(Vector128<ulong> src, ulong count)
 // AggressiveInlining
 Vector128<ulong> vsllr(Vector128<ulong> src, ulong count)
@@ -342,7 +342,7 @@ Vector128<ulong> vsllr(Vector128<ulong> src, ulong count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664333, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.SByte)
+// Id := 100664330, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.SByte)
 // Vector256<sbyte> vsllr(Vector256<sbyte> src, sbyte count)
 // AggressiveInlining
 Vector256<sbyte> vsllr(Vector256<sbyte> src, sbyte count)
@@ -355,7 +355,7 @@ Vector256<sbyte> vsllr(Vector256<sbyte> src, sbyte count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664334, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Byte)
+// Id := 100664331, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Byte)
 // Vector256<byte> vsllr(Vector256<byte> src, byte count)
 // AggressiveInlining
 Vector256<byte> vsllr(Vector256<byte> src, byte count)
@@ -368,7 +368,7 @@ Vector256<byte> vsllr(Vector256<byte> src, byte count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664335, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Int16)
+// Id := 100664332, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Int16)
 // Vector256<short> vsllr(Vector256<short> src, short count)
 // AggressiveInlining
 Vector256<short> vsllr(Vector256<short> src, short count)
@@ -381,7 +381,7 @@ Vector256<short> vsllr(Vector256<short> src, short count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664336, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.UInt16)
+// Id := 100664333, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.UInt16)
 // Vector256<ushort> vsllr(Vector256<ushort> src, ushort count)
 // AggressiveInlining
 Vector256<ushort> vsllr(Vector256<ushort> src, ushort count)
@@ -394,7 +394,7 @@ Vector256<ushort> vsllr(Vector256<ushort> src, ushort count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664337, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Int32)
+// Id := 100664334, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Int32)
 // Vector256<int> vsllr(Vector256<int> src, int count)
 // AggressiveInlining
 Vector256<int> vsllr(Vector256<int> src, int count)
@@ -407,7 +407,7 @@ Vector256<int> vsllr(Vector256<int> src, int count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664338, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.UInt32)
+// Id := 100664335, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.UInt32)
 // Vector256<uint> vsllr(Vector256<uint> src, uint count)
 // AggressiveInlining
 Vector256<uint> vsllr(Vector256<uint> src, uint count)
@@ -420,7 +420,7 @@ Vector256<uint> vsllr(Vector256<uint> src, uint count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664339, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Int64)
+// Id := 100664336, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Int64)
 // Vector256<long> vsllr(Vector256<long> src, long count)
 // AggressiveInlining
 Vector256<long> vsllr(Vector256<long> src, long count)
@@ -433,7 +433,7 @@ Vector256<long> vsllr(Vector256<long> src, long count)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664340, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.UInt64)
+// Id := 100664337, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vsllr(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.UInt64)
 // Vector256<ulong> vsllr(Vector256<ulong> src, ulong count)
 // AggressiveInlining
 Vector256<ulong> vsllr(Vector256<ulong> src, ulong count)

@@ -60,7 +60,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float convert<float>(ushort src)
 ; convert16u~convert_g16u[17] = {c5 f8 77 66 90 0f b7 c1 c5 f8 57 c0 c5 fa 2a c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -70,7 +70,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double convert<double>(ushort src)
 ; convert16u~convert_g16u[17] = {c5 f8 77 66 90 0f b7 c1 c5 f8 57 c0 c5 fb 2a c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}

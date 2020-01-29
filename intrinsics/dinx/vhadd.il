@@ -1,4 +1,4 @@
-// Id := 100663513, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100663510, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vhadd(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
 Vector128<sbyte> vhadd(Vector128<sbyte> x, Vector128<sbyte> y)
@@ -22,7 +22,7 @@ Vector128<sbyte> vhadd(Vector128<sbyte> x, Vector128<sbyte> y)
     IL_002C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663514, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100663511, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vhadd(Vector128<byte> x, Vector128<byte> y)
 // AggressiveInlining
 Vector128<byte> vhadd(Vector128<byte> x, Vector128<byte> y)
@@ -46,7 +46,7 @@ Vector128<byte> vhadd(Vector128<byte> x, Vector128<byte> y)
     IL_002C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663515, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100663512, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vhadd(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<short> vhadd(Vector128<short> x, Vector128<short> y)
@@ -57,7 +57,7 @@ Vector128<short> vhadd(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663516, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100663513, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<int> vhadd(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector128<int> vhadd(Vector128<int> x, Vector128<int> y)
@@ -68,7 +68,7 @@ Vector128<int> vhadd(Vector128<int> x, Vector128<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663517, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100663514, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector256<sbyte> vhadd(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
 Vector256<sbyte> vhadd(Vector256<sbyte> x, Vector256<sbyte> y)
@@ -111,7 +111,7 @@ Vector256<sbyte> vhadd(Vector256<sbyte> x, Vector256<sbyte> y)
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663518, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100663515, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<short> vhadd(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<short> vhadd(Vector256<short> x, Vector256<short> y)
@@ -122,7 +122,7 @@ Vector256<short> vhadd(Vector256<short> x, Vector256<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663519, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100663516, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vhadd(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector256<int> vhadd(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector256<int> vhadd(Vector256<int> x, Vector256<int> y)

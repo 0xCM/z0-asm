@@ -1,4 +1,4 @@
-// Id := 100664602, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664599, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vmax(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<short> vmax(Vector128<short> x, Vector128<short> y)
@@ -9,7 +9,7 @@ Vector128<short> vmax(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664603, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664600, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vmax(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector128<ushort> vmax(Vector128<ushort> x, Vector128<ushort> y)
@@ -20,7 +20,7 @@ Vector128<ushort> vmax(Vector128<ushort> x, Vector128<ushort> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664604, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664601, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<int> vmax(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector128<int> vmax(Vector128<int> x, Vector128<int> y)
@@ -31,7 +31,7 @@ Vector128<int> vmax(Vector128<int> x, Vector128<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664605, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664602, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vmax(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector128<uint> vmax(Vector128<uint> x, Vector128<uint> y)
@@ -42,7 +42,7 @@ Vector128<uint> vmax(Vector128<uint> x, Vector128<uint> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664607, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
+// Id := 100664604, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
 // Vector128<long> vmax(Vector128<long> x, Vector128<long> y)
 // AggressiveInlining
 Vector128<long> vmax(Vector128<long> x, Vector128<long> y)
@@ -68,7 +68,7 @@ Vector128<long> vmax(Vector128<long> x, Vector128<long> y)
     IL_002E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664608, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// Id := 100664605, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector256<byte> vmax(Vector256<byte> x, Vector256<byte> y)
 // AggressiveInlining
 Vector256<byte> vmax(Vector256<byte> x, Vector256<byte> y)
@@ -79,7 +79,7 @@ Vector256<byte> vmax(Vector256<byte> x, Vector256<byte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664609, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100664606, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector256<sbyte> vmax(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
 Vector256<sbyte> vmax(Vector256<sbyte> x, Vector256<sbyte> y)
@@ -90,7 +90,7 @@ Vector256<sbyte> vmax(Vector256<sbyte> x, Vector256<sbyte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664610, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100664607, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<short> vmax(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<short> vmax(Vector256<short> x, Vector256<short> y)
@@ -101,7 +101,7 @@ Vector256<short> vmax(Vector256<short> x, Vector256<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664611, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100664608, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<ushort> vmax(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector256<ushort> vmax(Vector256<ushort> x, Vector256<ushort> y)
@@ -112,7 +112,7 @@ Vector256<ushort> vmax(Vector256<ushort> x, Vector256<ushort> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664612, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100664609, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector256<int> vmax(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector256<int> vmax(Vector256<int> x, Vector256<int> y)
@@ -123,7 +123,7 @@ Vector256<int> vmax(Vector256<int> x, Vector256<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664613, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664610, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vmax(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector256<uint> vmax(Vector256<uint> x, Vector256<uint> y)
@@ -134,7 +134,7 @@ Vector256<uint> vmax(Vector256<uint> x, Vector256<uint> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664615, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
+// Id := 100664612, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
 // Vector256<long> vmax(Vector256<long> x, Vector256<long> y)
 // AggressiveInlining
 Vector256<long> vmax(Vector256<long> x, Vector256<long> y)
@@ -149,7 +149,7 @@ Vector256<long> vmax(Vector256<long> x, Vector256<long> y)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664600, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100664597, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
 // AggressiveInlining
 Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
@@ -160,7 +160,7 @@ Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664601, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100664598, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
 Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)

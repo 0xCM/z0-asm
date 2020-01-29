@@ -1,4 +1,4 @@
-// Id := 100664616, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100664613, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vmin(Vector128<byte> x, Vector128<byte> y)
 // AggressiveInlining
 Vector128<byte> vmin(Vector128<byte> x, Vector128<byte> y)
@@ -9,7 +9,7 @@ Vector128<byte> vmin(Vector128<byte> x, Vector128<byte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664617, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100664614, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vmin(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
 Vector128<sbyte> vmin(Vector128<sbyte> x, Vector128<sbyte> y)
@@ -20,7 +20,7 @@ Vector128<sbyte> vmin(Vector128<sbyte> x, Vector128<sbyte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664618, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664615, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vmin(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<short> vmin(Vector128<short> x, Vector128<short> y)
@@ -31,7 +31,7 @@ Vector128<short> vmin(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664619, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664616, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vmin(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector128<ushort> vmin(Vector128<ushort> x, Vector128<ushort> y)
@@ -42,7 +42,7 @@ Vector128<ushort> vmin(Vector128<ushort> x, Vector128<ushort> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664620, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664617, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<int> vmin(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector128<int> vmin(Vector128<int> x, Vector128<int> y)
@@ -53,7 +53,7 @@ Vector128<int> vmin(Vector128<int> x, Vector128<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664621, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664618, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vmin(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector128<uint> vmin(Vector128<uint> x, Vector128<uint> y)
@@ -64,7 +64,7 @@ Vector128<uint> vmin(Vector128<uint> x, Vector128<uint> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664622, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
+// Id := 100664619, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector128`1<System.Int64>,System.Runtime.Intrinsics.Vector128`1<System.Int64>)
 // Vector128<long> vmin(Vector128<long> x, Vector128<long> y)
 // AggressiveInlining
 Vector128<long> vmin(Vector128<long> x, Vector128<long> y)
@@ -90,7 +90,7 @@ Vector128<long> vmin(Vector128<long> x, Vector128<long> y)
     IL_002E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664624, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// Id := 100664621, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector256<byte> vmin(Vector256<byte> x, Vector256<byte> y)
 // AggressiveInlining
 Vector256<byte> vmin(Vector256<byte> x, Vector256<byte> y)
@@ -101,7 +101,7 @@ Vector256<byte> vmin(Vector256<byte> x, Vector256<byte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664625, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100664622, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector256<sbyte> vmin(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
 Vector256<sbyte> vmin(Vector256<sbyte> x, Vector256<sbyte> y)
@@ -112,7 +112,7 @@ Vector256<sbyte> vmin(Vector256<sbyte> x, Vector256<sbyte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664626, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100664623, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<short> vmin(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<short> vmin(Vector256<short> x, Vector256<short> y)
@@ -123,7 +123,7 @@ Vector256<short> vmin(Vector256<short> x, Vector256<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664627, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100664624, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<ushort> vmin(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector256<ushort> vmin(Vector256<ushort> x, Vector256<ushort> y)
@@ -134,7 +134,7 @@ Vector256<ushort> vmin(Vector256<ushort> x, Vector256<ushort> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664628, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100664625, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector256<int> vmin(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector256<int> vmin(Vector256<int> x, Vector256<int> y)
@@ -145,7 +145,7 @@ Vector256<int> vmin(Vector256<int> x, Vector256<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664629, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664626, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmin(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vmin(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector256<uint> vmin(Vector256<uint> x, Vector256<uint> y)

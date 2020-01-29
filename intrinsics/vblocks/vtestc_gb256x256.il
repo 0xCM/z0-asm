@@ -1,4 +1,4 @@
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<byte>(in Block256<byte> a, in Block256<byte> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<byte>(in Block256<byte> a, in Block256<byte> b, Span<bit> dst)
@@ -41,7 +41,7 @@ Span<bit> vtestc<byte>(in Block256<byte> a, in Block256<byte> b, Span<bit> dst)
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<sbyte>(in Block256<sbyte> a, in Block256<sbyte> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<sbyte>(in Block256<sbyte> a, in Block256<sbyte> b, Span<bit> dst)
@@ -84,7 +84,7 @@ Span<bit> vtestc<sbyte>(in Block256<sbyte> a, in Block256<sbyte> b, Span<bit> ds
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<ushort>(in Block256<ushort> a, in Block256<ushort> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<ushort>(in Block256<ushort> a, in Block256<ushort> b, Span<bit> dst)
@@ -127,7 +127,7 @@ Span<bit> vtestc<ushort>(in Block256<ushort> a, in Block256<ushort> b, Span<bit>
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<short>(in Block256<short> a, in Block256<short> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<short>(in Block256<short> a, in Block256<short> b, Span<bit> dst)
@@ -170,7 +170,7 @@ Span<bit> vtestc<short>(in Block256<short> a, in Block256<short> b, Span<bit> ds
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<uint>(in Block256<uint> a, in Block256<uint> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<uint>(in Block256<uint> a, in Block256<uint> b, Span<bit> dst)
@@ -213,7 +213,7 @@ Span<bit> vtestc<uint>(in Block256<uint> a, in Block256<uint> b, Span<bit> dst)
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<int>(in Block256<int> a, in Block256<int> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<int>(in Block256<int> a, in Block256<int> b, Span<bit> dst)
@@ -256,7 +256,7 @@ Span<bit> vtestc<int>(in Block256<int> a, in Block256<int> b, Span<bit> dst)
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<ulong>(in Block256<ulong> a, in Block256<ulong> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<ulong>(in Block256<ulong> a, in Block256<ulong> b, Span<bit> dst)
@@ -299,7 +299,7 @@ Span<bit> vtestc<ulong>(in Block256<ulong> a, in Block256<ulong> b, Span<bit> ds
     IL_0057: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666843, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
+// Id := 100666840, Name := System.Span`1<Z0.bit> Z0.vblocks::vtestc<T>(Z0.Block256`1<T>&,Z0.Block256`1<T>&,System.Span`1<Z0.bit>)
 // Span<bit> vtestc<long>(in Block256<long> a, in Block256<long> b, Span<bit> dst)
 // AggressiveInlining
 Span<bit> vtestc<long>(in Block256<long> a, in Block256<long> b, Span<bit> dst)

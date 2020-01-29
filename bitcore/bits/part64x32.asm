@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part64x32(ulong src, NatSpan<N2,uint> dst)
-; part64x32_0o_ns2x0oN2[12] = {0f 1f 44 00 00 48 8b 02 48 89 08 c3}
+; part64x32_64u_ns2x32uN2[12] = {0f 1f 44 00 00 48 8b 02 48 89 08 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

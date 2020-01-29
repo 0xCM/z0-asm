@@ -1,4 +1,4 @@
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // byte convert<byte>(byte src)
 // AggressiveInlining
 byte convert<byte>(byte src)
@@ -62,7 +62,7 @@ byte convert<byte>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // sbyte convert<sbyte>(byte src)
 // AggressiveInlining
 sbyte convert<sbyte>(byte src)
@@ -126,7 +126,7 @@ sbyte convert<sbyte>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // ushort convert<ushort>(byte src)
 // AggressiveInlining
 ushort convert<ushort>(byte src)
@@ -190,7 +190,7 @@ ushort convert<ushort>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // short convert<short>(byte src)
 // AggressiveInlining
 short convert<short>(byte src)
@@ -254,7 +254,7 @@ short convert<short>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // uint convert<uint>(byte src)
 // AggressiveInlining
 uint convert<uint>(byte src)
@@ -318,7 +318,7 @@ uint convert<uint>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // int convert<int>(byte src)
 // AggressiveInlining
 int convert<int>(byte src)
@@ -382,7 +382,7 @@ int convert<int>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // ulong convert<ulong>(byte src)
 // AggressiveInlining
 ulong convert<ulong>(byte src)
@@ -446,7 +446,7 @@ ulong convert<ulong>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // long convert<long>(byte src)
 // AggressiveInlining
 long convert<long>(byte src)
@@ -510,7 +510,7 @@ long convert<long>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // float convert<float>(byte src)
 // AggressiveInlining
 float convert<float>(byte src)
@@ -574,7 +574,7 @@ float convert<float>(byte src)
     IL_00EC: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100666437, Name := T Z0.Converter::convert<T>(System.Byte)
+// Id := 100666438, Name := T Z0.Converter::convert<T>(System.Byte)
 // double convert<double>(byte src)
 // AggressiveInlining
 double convert<double>(byte src)

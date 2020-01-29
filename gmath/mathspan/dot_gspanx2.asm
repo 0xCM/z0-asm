@@ -195,7 +195,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs)
 ; dot_g32f[77] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 44 89 44 24 04 85 c0 7e 28 4d 63 c8 c4 a1 7a 10 04 89 c4 a1 7a 10 0c 8a c5 fa 10 54 24 04 c4 e2 71 a9 c2 c5 fa 11 44 24 04 41 ff c0 44 3b c0 7c d8 c5 fa 10 44 24 04 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -221,7 +221,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double dot<double>(ReadOnlySpan<double> lhs, ReadOnlySpan<double> rhs)
 ; dot_g64f[73] = {50 c5 f8 77 90 8b 41 08 48 8b 09 48 8b 12 45 33 c0 4c 89 04 24 85 c0 7e 26 4d 63 c8 c4 a1 7b 10 04 c9 c4 a1 7b 10 0c ca c5 fb 10 14 24 c4 e2 f1 a9 c2 c5 fb 11 04 24 41 ff c0 44 3b c0 7c da c5 fb 10 04 24 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

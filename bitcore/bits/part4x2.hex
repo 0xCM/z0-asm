@@ -1,2 +1,2 @@
-part4x2_32u          0f 1f 44 00 00 8b c1 83 e0 0f 88 02 c1 e9 04 83 e1 0f 88 4a 01 c3
-part4x2_0o_ns2x0oN2  0f 1f 44 00 00 48 8b 02 8b d1 83 e2 0f 88 10 c1 e9 04 83 e1 0f 88 48 01 c3
+part4x2_32u           0f 1f 44 00 00 8b c1 83 e0 0f 88 02 c1 e9 04 83 e1 0f 88 4a 01 c3
+part4x2_32u_ns2x8uN2  0f 1f 44 00 00 48 8b 02 8b d1 83 e2 0f 88 10 c1 e9 04 83 e1 0f 88 48 01 c3

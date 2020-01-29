@@ -1,4 +1,4 @@
-// Id := 100664463, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664460, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vxorsrv(Vector128<uint> x, Vector128<uint> counts)
 // AggressiveInlining
 Vector128<uint> vxorsrv(Vector128<uint> x, Vector128<uint> counts)
@@ -11,7 +11,7 @@ Vector128<uint> vxorsrv(Vector128<uint> x, Vector128<uint> counts)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664464, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100664461, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector128<ulong> vxorsrv(Vector128<ulong> x, Vector128<ulong> counts)
 // AggressiveInlining
 Vector128<ulong> vxorsrv(Vector128<ulong> x, Vector128<ulong> counts)
@@ -24,7 +24,7 @@ Vector128<ulong> vxorsrv(Vector128<ulong> x, Vector128<ulong> counts)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664465, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664462, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vxorsrv(Vector256<uint> x, Vector256<uint> counts)
 // AggressiveInlining
 Vector256<uint> vxorsrv(Vector256<uint> x, Vector256<uint> counts)
@@ -37,7 +37,7 @@ Vector256<uint> vxorsrv(Vector256<uint> x, Vector256<uint> counts)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664466, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
+// Id := 100664463, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vxorsrv(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
 // Vector256<ulong> vxorsrv(Vector256<ulong> x, Vector256<ulong> counts)
 // AggressiveInlining
 Vector256<ulong> vxorsrv(Vector256<ulong> x, Vector256<ulong> counts)

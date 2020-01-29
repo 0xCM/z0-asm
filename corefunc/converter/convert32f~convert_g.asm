@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte convert<sbyte>(float src)
 ; convert32f~convert_g32f[18] = {c5 f8 77 66 90 c5 fa 5a c0 c5 fb 2c c0 48 0f be c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vcvtss2sd xmm0,xmm0,xmm0                ; VCVTSS2SD xmm1, xmm2, xmm3/m32 || VEX.LIG.F3.0F.WIG 5A /r || encoded[4]{c5 fa 5a c0}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short convert<short>(float src)
 ; convert32f~convert_g32f[22] = {c5 f8 77 66 90 c5 fa 5a c0 c5 fb 2c c0 48 0f be c0 48 0f bf c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vcvtss2sd xmm0,xmm0,xmm0                ; VCVTSS2SD xmm1, xmm2, xmm3/m32 || VEX.LIG.F3.0F.WIG 5A /r || encoded[4]{c5 fa 5a c0}
@@ -50,7 +50,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int convert<int>(float src)
 ; convert32f~convert_g32f[14] = {c5 f8 77 66 90 c5 fa 5a c0 c5 fb 2c c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vcvtss2sd xmm0,xmm0,xmm0                ; VCVTSS2SD xmm1, xmm2, xmm3/m32 || VEX.LIG.F3.0F.WIG 5A /r || encoded[4]{c5 fa 5a c0}

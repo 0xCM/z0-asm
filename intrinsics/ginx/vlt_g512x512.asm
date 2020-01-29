@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vlt<byte>(in Vector512<byte> x, in Vector512<byte> y)
 ; vlt__g512x8u_512x8u[106] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c7 44 24 04 80 00 00 00 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 f5 64 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c7 04 24 80 00 00 00 48 8d 04 24 c4 e2 7d 78 1c 24 c5 f5 ef cb c5 ed ef d3 c5 ed 64 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -30,7 +30,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vlt<sbyte>(in Vector512<sbyte> x, in Vector512<sbyte> y)
 ; vlt__g512x8i_512x8i[49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 64 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 ed 64 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -47,7 +47,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vlt<ushort>(in Vector512<ushort> x, in Vector512<ushort> y)
 ; vlt__g512x16u_512x16u[106] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c7 44 24 04 00 80 00 00 48 8d 44 24 04 c4 e2 7d 79 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 f5 65 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c7 04 24 00 80 00 00 48 8d 04 24 c4 e2 7d 79 1c 24 c5 f5 ef cb c5 ed ef d3 c5 ed 65 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -76,7 +76,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vlt<short>(in Vector512<short> x, in Vector512<short> y)
 ; vlt__g512x16i_512x16i[49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 65 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 ed 65 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -93,7 +93,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vlt<uint>(in Vector512<uint> x, in Vector512<uint> y)
 ; vlt__g512x32u_512x32u[106] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c7 44 24 04 00 00 00 80 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 fd ef c2 c5 f5 ef ca c5 f5 66 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c7 04 24 00 00 00 80 48 8d 04 24 c4 e2 7d 58 1c 24 c5 f5 ef cb c5 ed ef d3 c5 ed 66 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -122,7 +122,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vlt<int>(in Vector512<int> x, in Vector512<int> y)
 ; vlt__g512x32i_512x32i[49] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 66 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 ed 66 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -139,7 +139,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vlt<long>(in Vector512<long> x, in Vector512<long> y)
 ; vlt__g512x64i_512x64i[51] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 75 37 c0 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c4 e2 6d 37 c9 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

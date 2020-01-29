@@ -1,24 +1,21 @@
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack64 ss_alloc_64()
 ; ss_alloc_64[8] = {0f 1f 44 00 00 33 c0 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack128 ss_alloc_128()
 ; ss_alloc_128[18] = {0f 1f 44 00 00 33 c0 48 89 01 48 89 41 08 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 000ah mov [rcx+8],rax                         ; MOV r/m64, r64 || REX.W 89 /r || encoded[4]{48 89 41 08}
 000eh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack256 ss_alloc_256()
 ; ss_alloc_256[22] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -26,10 +23,9 @@
 000dh vmovdqu xmmword ptr [rcx+10h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 10}
 0012h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack512 ss_alloc_512()
 ; ss_alloc_512[32] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -39,10 +35,9 @@
 0017h vmovdqu xmmword ptr [rcx+30h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 30}
 001ch mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack1024 ss_alloc_1024()
 ; ss_alloc_1024[52] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -56,22 +51,20 @@
 002bh vmovdqu xmmword ptr [rcx+70h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 70}
 0030h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0033h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; void ss_store_128(in byte src, uint count, ref MemStack128 dst)
-; ss_store_128_0o_0o_MemStack128[24] = {0f 1f 44 00 00 48 8b c1 49 8b c8 44 8b c2 48 8b d0 e8 fa 4f 39 5f 90 c3}
-; Capture completion code = MSDIAG
+; ss_store_128_8u_32u_MemStack128[24] = {0f 1f 44 00 00 48 8b c1 49 8b c8 44 8b c2 48 8b d0 e8 ea cd 3a 5f 90 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov rcx,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c8}
 000bh mov r8d,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c2}
 000eh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
-0011h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa 4f 39 5f}
+0011h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea cd 3a 5f}
 0016h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> ss_span_128x8(ref MemStack128 src)
-; ss_span_128x8_MemStack128[29] = {48 83 ec 28 90 48 89 11 c7 41 08 10 00 00 00 48 8b c1 48 83 c4 28 c3 e8 94 e7 4b 5f cc}
-; Capture completion code = MSDIAG
+; ss_span_128x8_MemStack128[29] = {48 83 ec 28 90 48 89 11 c7 41 08 10 00 00 00 48 8b c1 48 83 c4 28 c3 e8 84 69 4d 5f cc}
+; TermCode = MSDIAG
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov [rcx],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 11}
@@ -79,12 +72,11 @@
 000fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0012h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
-0017h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 e7 4b 5f}
+0017h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 69 4d 5f}
 001ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> ss_span_256x8(ref MemStack256 src)
-; ss_span_256x8_MemStack256[29] = {48 83 ec 28 90 48 89 11 c7 41 08 20 00 00 00 48 8b c1 48 83 c4 28 c3 e8 54 e7 4b 5f cc}
-; Capture completion code = MSDIAG
+; ss_span_256x8_MemStack256[29] = {48 83 ec 28 90 48 89 11 c7 41 08 20 00 00 00 48 8b c1 48 83 c4 28 c3 e8 44 69 4d 5f cc}
+; TermCode = MSDIAG
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov [rcx],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 11}
@@ -92,104 +84,91 @@
 000fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0012h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
-0017h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 e7 4b 5f}
+0017h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 69 4d 5f}
 001ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-------------------------------------------------------------------------------------------------------------------------
 ; ref byte ss_head_128x8(ref MemStack128 src)
 ; ss_head_128x8_MemStack128[9] = {0f 1f 44 00 00 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ushort ss_head_128x16(ref MemStack128 src)
 ; ss_head_128x16_MemStack128[9] = {0f 1f 44 00 00 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref uint ss_head_128x32(ref MemStack128 src)
 ; ss_head_128x32_MemStack128[9] = {0f 1f 44 00 00 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ulong ss_head_128x64(ref MemStack128 src)
 ; ss_head_128x64_MemStack128[9] = {0f 1f 44 00 00 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref byte ss_value_128x8(ref MemStack128 src, int index)
-; ss_value_128x8_MemStack128_0o[12] = {0f 1f 44 00 00 48 63 c2 48 03 c1 c3}
-; Capture completion code = MSDIAG
+; ss_value_128x8_MemStack128_32i[12] = {0f 1f 44 00 00 48 63 c2 48 03 c1 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h add rax,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ushort ss_value_128x16(ref MemStack128 src, int index)
-; ss_value_128x16_MemStack128_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3}
-; Capture completion code = MSDIAG
+; ss_value_128x16_MemStack128_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*2]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 41}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref uint ss_value_128x32(ref MemStack128 src, int index)
-; ss_value_128x32_MemStack128_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3}
-; Capture completion code = MSDIAG
+; ss_value_128x32_MemStack128_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 81}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ulong ss_value_128x64(ref MemStack128 src, int index)
-; ss_value_128x64_MemStack128_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3}
-; Capture completion code = MSDIAG
+; ss_value_128x64_MemStack128_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 c1}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref byte ss_value_256x8(ref MemStack256 src, int index)
-; ss_value_256x8_MemStack256_0o[12] = {0f 1f 44 00 00 48 63 c2 48 03 c1 c3}
-; Capture completion code = MSDIAG
+; ss_value_256x8_MemStack256_32i[12] = {0f 1f 44 00 00 48 63 c2 48 03 c1 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h add rax,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ushort ss_value_256x16(ref MemStack256 src, int index)
-; ss_value_256x16_MemStack256_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3}
-; Capture completion code = MSDIAG
+; ss_value_256x16_MemStack256_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*2]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 41}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref uint ss_value_256x32(ref MemStack256 src, int index)
-; ss_value_256x32_MemStack256_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3}
-; Capture completion code = MSDIAG
+; ss_value_256x32_MemStack256_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 81}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref ulong ss_value_256x64(ref MemStack256 src, int index)
-; ss_value_256x64_MemStack256_0o[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3}
-; Capture completion code = MSDIAG
+; ss_value_256x64_MemStack256_32i[13] = {0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3}
+; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
 0008h lea rax,[rcx+rax*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 c1}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; CharStack4 ss_alloc_c4()
 ; ss_alloc_c4[20] = {50 0f 1f 40 00 33 c0 48 89 04 24 48 8b 04 24 48 83 c4 08 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -197,20 +176,18 @@
 000bh mov rax,[rsp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 04 24}
 000fh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; CharStack8 ss_alloc_c8()
 ; ss_alloc_c8[17] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0009h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 000dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; CharStack32 ss_alloc_c32()
 ; ss_alloc_c32[32] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -220,10 +197,9 @@
 0017h vmovdqu xmmword ptr [rcx+30h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 30}
 001ch mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; CharStack64 ss_alloc_c64()
 ; ss_alloc_c64[52] = {c5 f8 77 66 90 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -237,10 +213,9 @@
 002bh vmovdqu xmmword ptr [rcx+70h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 70}
 0030h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0033h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; CharStack8 ss_concat_8x8(CharStack4 head, CharStack4 tail)
 ; ss_concat_8x8_CharStack4_CharStack4[97] = {48 83 ec 18 c5 f8 77 48 89 54 24 28 4c 89 44 24 30 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 28 48 8d 54 24 08 48 8b 00 48 89 02 48 8d 44 24 30 48 8d 54 24 08 48 83 c2 08 48 8b 00 48 89 02 c5 fa 6f 44 24 08 c5 fa 7f 01 48 8b c1 48 83 c4 18 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+28h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 28}
@@ -265,10 +240,9 @@
 0059h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 005ch add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 0060h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref CharStack32 ss_concat_2x16_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
 ; ss_concat_2x16_buffered_CharStack16_CharStack16_CharStack32[51] = {c5 f8 77 66 90 c5 fa 6f 01 c4 c1 7a 7f 00 c5 fa 6f 41 10 c4 c1 7a 7f 40 10 49 8d 40 20 c5 fa 6f 02 c5 fa 7f 00 c5 fa 6f 42 10 c5 fa 7f 40 10 49 8b c0 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovdqu xmm0,xmmword ptr [rcx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 01}
@@ -282,10 +256,9 @@
 002ah vmovdqu xmmword ptr [rax+10h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 40 10}
 002fh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref CharStack32 ss_concat_2x32_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
 ; ss_concat_2x32_buffered_CharStack16_CharStack16_CharStack32[51] = {c5 f8 77 66 90 c5 fa 6f 01 c4 c1 7a 7f 00 c5 fa 6f 41 10 c4 c1 7a 7f 40 10 49 8d 40 20 c5 fa 6f 02 c5 fa 7f 00 c5 fa 6f 42 10 c5 fa 7f 40 10 49 8b c0 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovdqu xmm0,xmmword ptr [rcx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 01}
@@ -299,10 +272,9 @@
 002ah vmovdqu xmmword ptr [rax+10h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 40 10}
 002fh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack64 init_64x8(in byte src)
 ; init_64x8_8u[34] = {50 0f 1f 40 00 33 c0 48 89 04 24 48 89 04 24 48 8d 04 24 48 8b 11 48 89 10 48 8b 04 24 48 83 c4 08 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -314,10 +286,9 @@
 0019h mov rax,[rsp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 04 24}
 001dh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack64 init_64x16(in ushort src)
 ; init_64x16_16u[34] = {50 0f 1f 40 00 33 c0 48 89 04 24 48 89 04 24 48 8d 04 24 48 8b 11 48 89 10 48 8b 04 24 48 83 c4 08 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -329,10 +300,9 @@
 0019h mov rax,[rsp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 04 24}
 001dh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack64 init_64x32(in uint src)
 ; init_64x32_32u[34] = {50 0f 1f 40 00 33 c0 48 89 04 24 48 89 04 24 48 8d 04 24 48 8b 11 48 89 10 48 8b 04 24 48 83 c4 08 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -344,10 +314,9 @@
 0019h mov rax,[rsp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 04 24}
 001dh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack64 init_64x64(in ulong src)
 ; init_64x64_64u[34] = {50 0f 1f 40 00 33 c0 48 89 04 24 48 89 04 24 48 8d 04 24 48 8b 11 48 89 10 48 8b 04 24 48 83 c4 08 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -359,10 +328,9 @@
 0019h mov rax,[rsp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 04 24}
 001dh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack128 init_128x8(in byte src)
 ; init_128x8_8u[74] = {48 83 ec 18 90 33 c0 48 89 44 24 08 48 89 44 24 10 48 89 44 24 08 48 89 44 24 10 48 8d 44 24 08 4c 8b 02 4c 89 00 48 83 c0 08 48 8b 52 08 48 89 10 48 8b 44 24 08 48 8b 54 24 10 48 89 01 48 89 51 08 48 8b c1 48 83 c4 18 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -383,10 +351,9 @@
 0042h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0045h add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack256 init_256x8(in byte src)
 ; init_256x8_8u[140] = {48 83 ec 48 c5 f8 77 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 48 8d 44 24 08 4c 8b 02 4c 89 00 4c 8d 40 08 4c 8b 4a 08 4d 89 08 4c 8d 40 10 4c 8b 4a 10 4d 89 08 48 83 c0 18 48 8b 52 18 48 89 10 c5 fa 6f 44 24 08 c5 fa 7f 44 24 28 c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 01 c5 fa 6f 44 24 38 c5 fa 7f 41 10 48 8b c1 48 83 c4 48 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h sub rsp,48h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 48}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h lea rax,[rsp+8]                         ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 44 24 08}
@@ -420,10 +387,9 @@
 0084h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0087h add rsp,48h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 48}
 008bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack256 init_256x32(in uint src)
 ; init_256x32_32u[140] = {48 83 ec 48 c5 f8 77 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 48 8d 44 24 08 4c 8b 02 4c 89 00 4c 8d 40 08 4c 8b 4a 08 4d 89 08 4c 8d 40 10 4c 8b 4a 10 4d 89 08 48 83 c0 18 48 8b 52 18 48 89 10 c5 fa 6f 44 24 08 c5 fa 7f 44 24 28 c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 01 c5 fa 6f 44 24 38 c5 fa 7f 41 10 48 8b c1 48 83 c4 48 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h sub rsp,48h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 48}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h lea rax,[rsp+8]                         ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 44 24 08}
@@ -457,10 +423,9 @@
 0084h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0087h add rsp,48h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 48}
 008bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack512 init_512x8(in byte src)
 ; init_512x8_8u[157] = {48 83 ec 48 c5 f8 77 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 44 24 08 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 44 24 08 c5 fa 6f 02 c5 fa 7f 00 c5 fa 6f 42 10 c5 fa 7f 40 10 c5 fa 6f 42 20 c5 fa 7f 40 20 c5 fa 6f 42 30 c5 fa 7f 40 30 c5 fa 6f 44 24 08 c5 fa 7f 01 c5 fa 6f 44 24 18 c5 fa 7f 41 10 c5 fa 6f 44 24 28 c5 fa 7f 41 20 c5 fa 6f 44 24 38 c5 fa 7f 41 30 48 8b c1 48 83 c4 48 c3}
-; Capture completion code = MSDIAG
+; TermCode = MSDIAG
 0000h sub rsp,48h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 48}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h lea rax,[rsp+8]                         ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 44 24 08}
@@ -495,10 +460,9 @@
 0095h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0098h add rsp,48h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 48}
 009ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; MemStack1024 init_1024x8(in byte src)
-; init_1024x8_8u[153] = {56 48 81 ec 80 00 00 00 c5 f8 77 48 8b f1 48 8d 0c 24 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8d 0c 24 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8d 0c 24 41 b8 80 00 00 00 e8 b5 3f 39 5f 48 8b ce 48 8d 14 24 41 b8 80 00 00 00 e8 a3 3f 39 5f 48 8b c6 48 81 c4 80 00 00 00 5e c3}
-; Capture completion code = MSDIAG
+; init_1024x8_8u[153] = {56 48 81 ec 80 00 00 00 c5 f8 77 48 8b f1 48 8d 0c 24 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8d 0c 24 c5 f8 57 c0 c5 fa 7f 01 c5 fa 7f 41 10 c5 fa 7f 41 20 c5 fa 7f 41 30 c5 fa 7f 41 40 c5 fa 7f 41 50 c5 fa 7f 41 60 c5 fa 7f 41 70 48 8d 0c 24 41 b8 80 00 00 00 e8 b5 c1 3a 5f 48 8b ce 48 8d 14 24 41 b8 80 00 00 00 e8 a3 c1 3a 5f 48 8b c6 48 81 c4 80 00 00 00 5e c3}
+; TermCode = MSDIAG
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,80h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 80 00 00 00}
 0008h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -525,11 +489,11 @@
 0067h vmovdqu xmmword ptr [rcx+70h],xmm0      ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[5]{c5 fa 7f 41 70}
 006ch lea rcx,[rsp]                           ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 0c 24}
 0070h mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-0076h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 3f 39 5f}
+0076h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 c1 3a 5f}
 007bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 007eh lea rdx,[rsp]                           ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 14 24}
 0082h mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-0088h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 3f 39 5f}
+0088h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 c1 3a 5f}
 008dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0090h add rsp,80h                             ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 80 00 00 00}
 0097h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

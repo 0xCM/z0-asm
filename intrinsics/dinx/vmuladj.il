@@ -1,4 +1,4 @@
-// Id := 100663528, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100663525, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<short> vmuladj(Vector128<byte> x, Vector128<sbyte> y)
 // AggressiveInlining
 Vector128<short> vmuladj(Vector128<byte> x, Vector128<sbyte> y)
@@ -9,7 +9,7 @@ Vector128<short> vmuladj(Vector128<byte> x, Vector128<sbyte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663529, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100663526, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector256<short> vmuladj(Vector256<byte> x, Vector256<sbyte> y)
 // AggressiveInlining
 Vector256<short> vmuladj(Vector256<byte> x, Vector256<sbyte> y)
@@ -20,7 +20,7 @@ Vector256<short> vmuladj(Vector256<byte> x, Vector256<sbyte> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663530, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100663527, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmuladj(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<int> vmuladj(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<int> vmuladj(Vector256<short> x, Vector256<short> y)

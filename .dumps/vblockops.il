@@ -1,5 +1,5 @@
-// 2020-01-26 03:38:02:372
-// Id := 100664453, Name := System.UInt32& modreq(System.Runtime.InteropServices.InAttribute) Z0.OpCodes.vblockops::reftest_1(System.UInt32&,System.UInt32&,System.UInt32&)
+// 2020-01-28 16:12:00:311
+// Id := 100664447, Name := System.UInt32& modreq(System.Runtime.InteropServices.InAttribute) Z0.OpCodes.vblockops::reftest_1(System.UInt32&,System.UInt32&,System.UInt32&)
 // ref uint reftest_1(in uint x, in uint y, ref uint z)
 // IL
 ref uint reftest_1(in uint x, in uint y, ref uint z)
@@ -15,7 +15,7 @@ ref uint reftest_1(in uint x, in uint y, ref uint z)
     IL_0008: ret
 }
 
-// Id := 100664454, Name := System.UInt32& Z0.OpCodes.vblockops::reftest_2(System.UInt32&,System.UInt32&,System.UInt32&)
+// Id := 100664448, Name := System.UInt32& Z0.OpCodes.vblockops::reftest_2(System.UInt32&,System.UInt32&,System.UInt32&)
 // ref uint reftest_2(in uint x, in uint y, ref uint z)
 // IL
 ref uint reftest_2(in uint x, in uint y, ref uint z)
@@ -31,7 +31,7 @@ ref uint reftest_2(in uint x, in uint y, ref uint z)
     IL_0008: ret
 }
 
-// Id := 100664455, Name := Z0.Block128`1<System.UInt32>& modreq(System.Runtime.InteropServices.InAttribute) Z0.OpCodes.vblockops::vbsll(Z0.Block128`1<System.UInt32>&,Z0.Block128`1<System.UInt32>&)
+// Id := 100664449, Name := Z0.Block128`1<System.UInt32>& modreq(System.Runtime.InteropServices.InAttribute) Z0.OpCodes.vblockops::vbsll(Z0.Block128`1<System.UInt32>&,Z0.Block128`1<System.UInt32>&)
 // ref Block128<uint> vbsll(in Block128<uint> a, in Block128<uint> dst)
 // IL
 ref Block128<uint> vbsll(in Block128<uint> a, in Block128<uint> dst)
@@ -43,10 +43,10 @@ ref Block128<uint> vbsll(in Block128<uint> a, in Block128<uint> dst)
     IL_0008: ret
 }
 
-// Id := 100664456, Name := System.ReadOnlySpan`1<System.Int16> Z0.OpCodes.vblockops::spanconvert(System.Span`1<System.Int16>)
-// ReadOnlySpan<Int16> spanconvert(Span<Int16> src)
+// Id := 100664450, Name := System.ReadOnlySpan`1<System.Int16> Z0.OpCodes.vblockops::spanconvert(System.Span`1<System.Int16>)
+// ReadOnlySpan<short> spanconvert(Span<short> src)
 // IL
-ReadOnlySpan<Int16> spanconvert(Span<Int16> src)
+ReadOnlySpan<short> spanconvert(Span<short> src)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<System.Int16> System.Span`1<System.Int16>::op_Implicit(System.Span`1<System.Int16>)

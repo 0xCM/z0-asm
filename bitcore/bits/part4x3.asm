@@ -16,7 +16,7 @@
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void part4x3(uint src, NatSpan<N3,byte> dst)
-; part4x3_0o_ns3x0oN3[36] = {0f 1f 44 00 00 48 8b 02 8b d1 83 e2 0f 88 10 8b d1 c1 ea 04 83 e2 0f 88 50 01 c1 e9 08 83 e1 0f 88 48 02 c3}
+; part4x3_32u_ns3x8uN3[36] = {0f 1f 44 00 00 48 8b 02 8b d1 83 e2 0f 88 10 8b d1 c1 ea 04 83 e2 0f 88 50 01 c1 e9 08 83 e1 0f 88 48 02 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

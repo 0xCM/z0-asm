@@ -1,4 +1,4 @@
-// Id := 100663526, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhsubs(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100663523, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhsubs(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vhsubs(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<short> vhsubs(Vector128<short> x, Vector128<short> y)
@@ -9,7 +9,7 @@ Vector128<short> vhsubs(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663527, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vhsubs(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100663524, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vhsubs(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<short> vhsubs(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<short> vhsubs(Vector256<short> x, Vector256<short> y)

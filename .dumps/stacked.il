@@ -1,5 +1,5 @@
-// 2020-01-26 03:38:02:276
-// Id := 100664317, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::ss_alloc_64()
+// 2020-01-28 16:12:00:235
+// Id := 100664311, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::ss_alloc_64()
 // MemStack64 ss_alloc_64()
 // IL
 MemStack64 ss_alloc_64()
@@ -9,7 +9,7 @@ MemStack64 ss_alloc_64()
     IL_000A: ret
 }
 
-// Id := 100664318, Name := Z0.Stacked/MemStack128 Z0.OpCodes.stacked::ss_alloc_128()
+// Id := 100664312, Name := Z0.Stacked/MemStack128 Z0.OpCodes.stacked::ss_alloc_128()
 // MemStack128 ss_alloc_128()
 // IL
 MemStack128 ss_alloc_128()
@@ -19,7 +19,7 @@ MemStack128 ss_alloc_128()
     IL_000A: ret
 }
 
-// Id := 100664319, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::ss_alloc_256()
+// Id := 100664313, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::ss_alloc_256()
 // MemStack256 ss_alloc_256()
 // IL
 MemStack256 ss_alloc_256()
@@ -29,7 +29,7 @@ MemStack256 ss_alloc_256()
     IL_000A: ret
 }
 
-// Id := 100664320, Name := Z0.Stacked/MemStack512 Z0.OpCodes.stacked::ss_alloc_512()
+// Id := 100664314, Name := Z0.Stacked/MemStack512 Z0.OpCodes.stacked::ss_alloc_512()
 // MemStack512 ss_alloc_512()
 // IL
 MemStack512 ss_alloc_512()
@@ -39,7 +39,7 @@ MemStack512 ss_alloc_512()
     IL_000A: ret
 }
 
-// Id := 100664321, Name := Z0.Stacked/MemStack1024 Z0.OpCodes.stacked::ss_alloc_1024()
+// Id := 100664315, Name := Z0.Stacked/MemStack1024 Z0.OpCodes.stacked::ss_alloc_1024()
 // MemStack1024 ss_alloc_1024()
 // IL
 MemStack1024 ss_alloc_1024()
@@ -49,7 +49,7 @@ MemStack1024 ss_alloc_1024()
     IL_000A: ret
 }
 
-// Id := 100664322, Name := System.Void Z0.OpCodes.stacked::ss_store_128(System.Byte&,System.UInt32,Z0.Stacked/MemStack128&)
+// Id := 100664316, Name := System.Void Z0.OpCodes.stacked::ss_store_128(System.Byte&,System.UInt32,Z0.Stacked/MemStack128&)
 // void ss_store_128(in byte src, uint count, ref MemStack128 dst)
 // IL
 void ss_store_128(in byte src, uint count, ref MemStack128 dst)
@@ -61,7 +61,7 @@ void ss_store_128(in byte src, uint count, ref MemStack128 dst)
     IL_0008: ret
 }
 
-// Id := 100664323, Name := System.Span`1<System.Byte> Z0.OpCodes.stacked::ss_span_128x8(Z0.Stacked/MemStack128&)
+// Id := 100664317, Name := System.Span`1<System.Byte> Z0.OpCodes.stacked::ss_span_128x8(Z0.Stacked/MemStack128&)
 // Span<byte> ss_span_128x8(ref MemStack128 src)
 // IL
 Span<byte> ss_span_128x8(ref MemStack128 src)
@@ -72,7 +72,7 @@ Span<byte> ss_span_128x8(ref MemStack128 src)
     IL_0007: ret
 }
 
-// Id := 100664324, Name := System.Span`1<System.Byte> Z0.OpCodes.stacked::ss_span_256x8(Z0.Stacked/MemStack256&)
+// Id := 100664318, Name := System.Span`1<System.Byte> Z0.OpCodes.stacked::ss_span_256x8(Z0.Stacked/MemStack256&)
 // Span<byte> ss_span_256x8(ref MemStack256 src)
 // IL
 Span<byte> ss_span_256x8(ref MemStack256 src)
@@ -83,7 +83,7 @@ Span<byte> ss_span_256x8(ref MemStack256 src)
     IL_0007: ret
 }
 
-// Id := 100664325, Name := System.Byte& Z0.OpCodes.stacked::ss_head_128x8(Z0.Stacked/MemStack128&)
+// Id := 100664319, Name := System.Byte& Z0.OpCodes.stacked::ss_head_128x8(Z0.Stacked/MemStack128&)
 // ref byte ss_head_128x8(ref MemStack128 src)
 // IL
 ref byte ss_head_128x8(ref MemStack128 src)
@@ -94,7 +94,7 @@ ref byte ss_head_128x8(ref MemStack128 src)
     IL_0007: ret
 }
 
-// Id := 100664326, Name := System.UInt16& Z0.OpCodes.stacked::ss_head_128x16(Z0.Stacked/MemStack128&)
+// Id := 100664320, Name := System.UInt16& Z0.OpCodes.stacked::ss_head_128x16(Z0.Stacked/MemStack128&)
 // ref ushort ss_head_128x16(ref MemStack128 src)
 // IL
 ref ushort ss_head_128x16(ref MemStack128 src)
@@ -105,7 +105,7 @@ ref ushort ss_head_128x16(ref MemStack128 src)
     IL_0007: ret
 }
 
-// Id := 100664327, Name := System.UInt32& Z0.OpCodes.stacked::ss_head_128x32(Z0.Stacked/MemStack128&)
+// Id := 100664321, Name := System.UInt32& Z0.OpCodes.stacked::ss_head_128x32(Z0.Stacked/MemStack128&)
 // ref uint ss_head_128x32(ref MemStack128 src)
 // IL
 ref uint ss_head_128x32(ref MemStack128 src)
@@ -116,7 +116,7 @@ ref uint ss_head_128x32(ref MemStack128 src)
     IL_0007: ret
 }
 
-// Id := 100664328, Name := System.UInt64& Z0.OpCodes.stacked::ss_head_128x64(Z0.Stacked/MemStack128&)
+// Id := 100664322, Name := System.UInt64& Z0.OpCodes.stacked::ss_head_128x64(Z0.Stacked/MemStack128&)
 // ref ulong ss_head_128x64(ref MemStack128 src)
 // IL
 ref ulong ss_head_128x64(ref MemStack128 src)
@@ -128,7 +128,7 @@ ref ulong ss_head_128x64(ref MemStack128 src)
     IL_0008: ret
 }
 
-// Id := 100664329, Name := System.Byte& Z0.OpCodes.stacked::ss_value_128x8(Z0.Stacked/MemStack128&,System.Int32)
+// Id := 100664323, Name := System.Byte& Z0.OpCodes.stacked::ss_value_128x8(Z0.Stacked/MemStack128&,System.Int32)
 // ref byte ss_value_128x8(ref MemStack128 src, int index)
 // IL
 ref byte ss_value_128x8(ref MemStack128 src, int index)
@@ -140,7 +140,7 @@ ref byte ss_value_128x8(ref MemStack128 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664330, Name := System.UInt16& Z0.OpCodes.stacked::ss_value_128x16(Z0.Stacked/MemStack128&,System.Int32)
+// Id := 100664324, Name := System.UInt16& Z0.OpCodes.stacked::ss_value_128x16(Z0.Stacked/MemStack128&,System.Int32)
 // ref ushort ss_value_128x16(ref MemStack128 src, int index)
 // IL
 ref ushort ss_value_128x16(ref MemStack128 src, int index)
@@ -152,7 +152,7 @@ ref ushort ss_value_128x16(ref MemStack128 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664331, Name := System.UInt32& Z0.OpCodes.stacked::ss_value_128x32(Z0.Stacked/MemStack128&,System.Int32)
+// Id := 100664325, Name := System.UInt32& Z0.OpCodes.stacked::ss_value_128x32(Z0.Stacked/MemStack128&,System.Int32)
 // ref uint ss_value_128x32(ref MemStack128 src, int index)
 // IL
 ref uint ss_value_128x32(ref MemStack128 src, int index)
@@ -164,7 +164,7 @@ ref uint ss_value_128x32(ref MemStack128 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664332, Name := System.UInt64& Z0.OpCodes.stacked::ss_value_128x64(Z0.Stacked/MemStack128&,System.Int32)
+// Id := 100664326, Name := System.UInt64& Z0.OpCodes.stacked::ss_value_128x64(Z0.Stacked/MemStack128&,System.Int32)
 // ref ulong ss_value_128x64(ref MemStack128 src, int index)
 // IL
 ref ulong ss_value_128x64(ref MemStack128 src, int index)
@@ -177,7 +177,7 @@ ref ulong ss_value_128x64(ref MemStack128 src, int index)
     IL_0009: ret
 }
 
-// Id := 100664333, Name := System.Byte& Z0.OpCodes.stacked::ss_value_256x8(Z0.Stacked/MemStack256&,System.Int32)
+// Id := 100664327, Name := System.Byte& Z0.OpCodes.stacked::ss_value_256x8(Z0.Stacked/MemStack256&,System.Int32)
 // ref byte ss_value_256x8(ref MemStack256 src, int index)
 // IL
 ref byte ss_value_256x8(ref MemStack256 src, int index)
@@ -189,7 +189,7 @@ ref byte ss_value_256x8(ref MemStack256 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664334, Name := System.UInt16& Z0.OpCodes.stacked::ss_value_256x16(Z0.Stacked/MemStack256&,System.Int32)
+// Id := 100664328, Name := System.UInt16& Z0.OpCodes.stacked::ss_value_256x16(Z0.Stacked/MemStack256&,System.Int32)
 // ref ushort ss_value_256x16(ref MemStack256 src, int index)
 // IL
 ref ushort ss_value_256x16(ref MemStack256 src, int index)
@@ -201,7 +201,7 @@ ref ushort ss_value_256x16(ref MemStack256 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664335, Name := System.UInt32& Z0.OpCodes.stacked::ss_value_256x32(Z0.Stacked/MemStack256&,System.Int32)
+// Id := 100664329, Name := System.UInt32& Z0.OpCodes.stacked::ss_value_256x32(Z0.Stacked/MemStack256&,System.Int32)
 // ref uint ss_value_256x32(ref MemStack256 src, int index)
 // IL
 ref uint ss_value_256x32(ref MemStack256 src, int index)
@@ -213,7 +213,7 @@ ref uint ss_value_256x32(ref MemStack256 src, int index)
     IL_0008: ret
 }
 
-// Id := 100664336, Name := System.UInt64& Z0.OpCodes.stacked::ss_value_256x64(Z0.Stacked/MemStack256&,System.Int32)
+// Id := 100664330, Name := System.UInt64& Z0.OpCodes.stacked::ss_value_256x64(Z0.Stacked/MemStack256&,System.Int32)
 // ref ulong ss_value_256x64(ref MemStack256 src, int index)
 // IL
 ref ulong ss_value_256x64(ref MemStack256 src, int index)
@@ -226,7 +226,7 @@ ref ulong ss_value_256x64(ref MemStack256 src, int index)
     IL_0009: ret
 }
 
-// Id := 100664337, Name := Z0.Stacked/CharStack4 Z0.OpCodes.stacked::ss_alloc_c4()
+// Id := 100664331, Name := Z0.Stacked/CharStack4 Z0.OpCodes.stacked::ss_alloc_c4()
 // CharStack4 ss_alloc_c4()
 // IL
 CharStack4 ss_alloc_c4()
@@ -236,7 +236,7 @@ CharStack4 ss_alloc_c4()
     IL_000A: ret
 }
 
-// Id := 100664338, Name := Z0.Stacked/CharStack8 Z0.OpCodes.stacked::ss_alloc_c8()
+// Id := 100664332, Name := Z0.Stacked/CharStack8 Z0.OpCodes.stacked::ss_alloc_c8()
 // CharStack8 ss_alloc_c8()
 // IL
 CharStack8 ss_alloc_c8()
@@ -246,7 +246,7 @@ CharStack8 ss_alloc_c8()
     IL_000A: ret
 }
 
-// Id := 100664339, Name := Z0.Stacked/CharStack32 Z0.OpCodes.stacked::ss_alloc_c32()
+// Id := 100664333, Name := Z0.Stacked/CharStack32 Z0.OpCodes.stacked::ss_alloc_c32()
 // CharStack32 ss_alloc_c32()
 // IL
 CharStack32 ss_alloc_c32()
@@ -256,7 +256,7 @@ CharStack32 ss_alloc_c32()
     IL_000A: ret
 }
 
-// Id := 100664340, Name := Z0.Stacked/CharStack64 Z0.OpCodes.stacked::ss_alloc_c64()
+// Id := 100664334, Name := Z0.Stacked/CharStack64 Z0.OpCodes.stacked::ss_alloc_c64()
 // CharStack64 ss_alloc_c64()
 // IL
 CharStack64 ss_alloc_c64()
@@ -266,7 +266,7 @@ CharStack64 ss_alloc_c64()
     IL_000A: ret
 }
 
-// Id := 100664341, Name := Z0.Stacked/CharStack8 Z0.OpCodes.stacked::ss_concat_8x8(Z0.Stacked/CharStack4,Z0.Stacked/CharStack4)
+// Id := 100664335, Name := Z0.Stacked/CharStack8 Z0.OpCodes.stacked::ss_concat_8x8(Z0.Stacked/CharStack4,Z0.Stacked/CharStack4)
 // CharStack8 ss_concat_8x8(CharStack4 head, CharStack4 tail)
 // IL
 CharStack8 ss_concat_8x8(CharStack4 head, CharStack4 tail)
@@ -277,7 +277,7 @@ CharStack8 ss_concat_8x8(CharStack4 head, CharStack4 tail)
     IL_0009: ret
 }
 
-// Id := 100664342, Name := Z0.Stacked/CharStack32& Z0.OpCodes.stacked::ss_concat_2x16_buffered(Z0.Stacked/CharStack16&,Z0.Stacked/CharStack16&,Z0.Stacked/CharStack32&)
+// Id := 100664336, Name := Z0.Stacked/CharStack32& Z0.OpCodes.stacked::ss_concat_2x16_buffered(Z0.Stacked/CharStack16&,Z0.Stacked/CharStack16&,Z0.Stacked/CharStack32&)
 // ref CharStack32 ss_concat_2x16_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
 // IL
 ref CharStack32 ss_concat_2x16_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
@@ -289,7 +289,7 @@ ref CharStack32 ss_concat_2x16_buffered(in CharStack16 head, in CharStack16 tail
     IL_0008: ret
 }
 
-// Id := 100664343, Name := Z0.Stacked/CharStack32& Z0.OpCodes.stacked::ss_concat_2x32_buffered(Z0.Stacked/CharStack16&,Z0.Stacked/CharStack16&,Z0.Stacked/CharStack32&)
+// Id := 100664337, Name := Z0.Stacked/CharStack32& Z0.OpCodes.stacked::ss_concat_2x32_buffered(Z0.Stacked/CharStack16&,Z0.Stacked/CharStack16&,Z0.Stacked/CharStack32&)
 // ref CharStack32 ss_concat_2x32_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
 // IL
 ref CharStack32 ss_concat_2x32_buffered(in CharStack16 head, in CharStack16 tail, ref CharStack32 dst)
@@ -301,7 +301,7 @@ ref CharStack32 ss_concat_2x32_buffered(in CharStack16 head, in CharStack16 tail
     IL_0008: ret
 }
 
-// Id := 100664344, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x8(System.Byte&)
+// Id := 100664338, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x8(System.Byte&)
 // MemStack64 init_64x8(in byte src)
 // IL
 MemStack64 init_64x8(in byte src)
@@ -312,7 +312,7 @@ MemStack64 init_64x8(in byte src)
     IL_000B: ret
 }
 
-// Id := 100664345, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x16(System.UInt16&)
+// Id := 100664339, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x16(System.UInt16&)
 // MemStack64 init_64x16(in ushort src)
 // IL
 MemStack64 init_64x16(in ushort src)
@@ -323,7 +323,7 @@ MemStack64 init_64x16(in ushort src)
     IL_000B: ret
 }
 
-// Id := 100664346, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x32(System.UInt32&)
+// Id := 100664340, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x32(System.UInt32&)
 // MemStack64 init_64x32(in uint src)
 // IL
 MemStack64 init_64x32(in uint src)
@@ -334,7 +334,7 @@ MemStack64 init_64x32(in uint src)
     IL_000B: ret
 }
 
-// Id := 100664347, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x64(System.UInt64&)
+// Id := 100664341, Name := Z0.Stacked/MemStack64 Z0.OpCodes.stacked::init_64x64(System.UInt64&)
 // MemStack64 init_64x64(in ulong src)
 // IL
 MemStack64 init_64x64(in ulong src)
@@ -345,7 +345,7 @@ MemStack64 init_64x64(in ulong src)
     IL_000B: ret
 }
 
-// Id := 100664348, Name := Z0.Stacked/MemStack128 Z0.OpCodes.stacked::init_128x8(System.Byte&)
+// Id := 100664342, Name := Z0.Stacked/MemStack128 Z0.OpCodes.stacked::init_128x8(System.Byte&)
 // MemStack128 init_128x8(in byte src)
 // IL
 MemStack128 init_128x8(in byte src)
@@ -356,7 +356,7 @@ MemStack128 init_128x8(in byte src)
     IL_000B: ret
 }
 
-// Id := 100664349, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::init_256x8(System.Byte&)
+// Id := 100664343, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::init_256x8(System.Byte&)
 // MemStack256 init_256x8(in byte src)
 // IL
 MemStack256 init_256x8(in byte src)
@@ -367,7 +367,7 @@ MemStack256 init_256x8(in byte src)
     IL_000B: ret
 }
 
-// Id := 100664350, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::init_256x32(System.UInt32&)
+// Id := 100664344, Name := Z0.Stacked/MemStack256 Z0.OpCodes.stacked::init_256x32(System.UInt32&)
 // MemStack256 init_256x32(in uint src)
 // IL
 MemStack256 init_256x32(in uint src)
@@ -378,7 +378,7 @@ MemStack256 init_256x32(in uint src)
     IL_000B: ret
 }
 
-// Id := 100664351, Name := Z0.Stacked/MemStack512 Z0.OpCodes.stacked::init_512x8(System.Byte&)
+// Id := 100664345, Name := Z0.Stacked/MemStack512 Z0.OpCodes.stacked::init_512x8(System.Byte&)
 // MemStack512 init_512x8(in byte src)
 // IL
 MemStack512 init_512x8(in byte src)
@@ -389,7 +389,7 @@ MemStack512 init_512x8(in byte src)
     IL_000B: ret
 }
 
-// Id := 100664352, Name := Z0.Stacked/MemStack1024 Z0.OpCodes.stacked::init_1024x8(System.Byte&)
+// Id := 100664346, Name := Z0.Stacked/MemStack1024 Z0.OpCodes.stacked::init_1024x8(System.Byte&)
 // MemStack1024 init_1024x8(in byte src)
 // IL
 MemStack1024 init_1024x8(in byte src)

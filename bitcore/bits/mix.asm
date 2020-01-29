@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte mix(N0 parity, byte x, byte y)
-; mix_n0_0o_0o[65] = {0f 1f 44 00 00 0f b6 c2 ba 55 00 00 00 c4 e2 7a f5 c2 0f b6 c0 c4 e2 7b f5 c2 0f b6 c0 41 0f b6 d0 b9 55 00 00 00 c4 e2 6a f5 d1 0f b6 d2 b9 aa 00 00 00 c4 e2 6b f5 d1 0f b6 d2 0b c2 0f b6 c0 c3}
+; mix_n0_8u_8u[65] = {0f 1f 44 00 00 0f b6 c2 ba 55 00 00 00 c4 e2 7a f5 c2 0f b6 c0 c4 e2 7b f5 c2 0f b6 c0 41 0f b6 d0 b9 55 00 00 00 c4 e2 6a f5 d1 0f b6 d2 b9 aa 00 00 00 c4 e2 6b f5 d1 0f b6 d2 0b c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -21,7 +21,7 @@
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte mix(N1 parity, byte x, byte y)
-; mix_n1_0o_0o[65] = {0f 1f 44 00 00 0f b6 c2 ba aa 00 00 00 c4 e2 7a f5 c2 0f b6 c0 ba 55 00 00 00 c4 e2 7b f5 c2 0f b6 c0 41 0f b6 d0 b9 aa 00 00 00 c4 e2 6a f5 d1 0f b6 d2 c4 e2 6b f5 d1 0f b6 d2 0b c2 0f b6 c0 c3}
+; mix_n1_8u_8u[65] = {0f 1f 44 00 00 0f b6 c2 ba aa 00 00 00 c4 e2 7a f5 c2 0f b6 c0 ba 55 00 00 00 c4 e2 7b f5 c2 0f b6 c0 41 0f b6 d0 b9 aa 00 00 00 c4 e2 6a f5 d1 0f b6 d2 c4 e2 6b f5 d1 0f b6 d2 0b c2 0f b6 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -42,7 +42,7 @@
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort mix(N0 parity, ushort x, ushort y)
-; mix_n0_0o_0o[65] = {0f 1f 44 00 00 0f b7 c2 ba 55 55 00 00 c4 e2 7a f5 c2 0f b7 c0 c4 e2 7b f5 c2 0f b7 c0 41 0f b7 d0 b9 55 55 00 00 c4 e2 6a f5 d1 0f b7 d2 b9 aa aa 00 00 c4 e2 6b f5 d1 0f b7 d2 0b c2 0f b7 c0 c3}
+; mix_n0_16u_16u[65] = {0f 1f 44 00 00 0f b7 c2 ba 55 55 00 00 c4 e2 7a f5 c2 0f b7 c0 c4 e2 7b f5 c2 0f b7 c0 41 0f b7 d0 b9 55 55 00 00 c4 e2 6a f5 d1 0f b7 d2 b9 aa aa 00 00 c4 e2 6b f5 d1 0f b7 d2 0b c2 0f b7 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
@@ -63,7 +63,7 @@
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort mix(N1 parity, ushort x, ushort y)
-; mix_n1_0o_0o[65] = {0f 1f 44 00 00 0f b7 c2 ba aa aa 00 00 c4 e2 7a f5 c2 0f b7 c0 ba 55 55 00 00 c4 e2 7b f5 c2 0f b7 c0 41 0f b7 d0 b9 aa aa 00 00 c4 e2 6a f5 d1 0f b7 d2 c4 e2 6b f5 d1 0f b7 d2 0b c2 0f b7 c0 c3}
+; mix_n1_16u_16u[65] = {0f 1f 44 00 00 0f b7 c2 ba aa aa 00 00 c4 e2 7a f5 c2 0f b7 c0 ba 55 55 00 00 c4 e2 7b f5 c2 0f b7 c0 41 0f b7 d0 b9 aa aa 00 00 c4 e2 6a f5 d1 0f b7 d2 c4 e2 6b f5 d1 0f b7 d2 0b c2 0f b7 c0 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
@@ -84,7 +84,7 @@
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint mix(N0 parity, uint x, uint y)
-; mix_n0_0o_0o[43] = {0f 1f 44 00 00 b8 55 55 55 55 c4 e2 6a f5 c0 ba 55 55 55 55 c4 e2 7b f5 c2 c4 e2 3a f5 d2 b9 aa aa aa aa c4 e2 6b f5 d1 0b c2 c3}
+; mix_n0_32u_32u[43] = {0f 1f 44 00 00 b8 55 55 55 55 c4 e2 6a f5 c0 ba 55 55 55 55 c4 e2 7b f5 c2 c4 e2 3a f5 d2 b9 aa aa aa aa c4 e2 6b f5 d1 0b c2 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,55555555h                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 55 55 55 55}
@@ -98,7 +98,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint mix(N1 parity, uint x, uint y)
-; mix_n1_0o_0o[48] = {0f 1f 44 00 00 b8 aa aa aa aa c4 e2 6a f5 c0 ba 55 55 55 55 c4 e2 7b f5 c2 ba aa aa aa aa c4 e2 3a f5 d2 b9 aa aa aa aa c4 e2 6b f5 d1 0b c2 c3}
+; mix_n1_32u_32u[48] = {0f 1f 44 00 00 b8 aa aa aa aa c4 e2 6a f5 c0 ba 55 55 55 55 c4 e2 7b f5 c2 ba aa aa aa aa c4 e2 3a f5 d2 b9 aa aa aa aa c4 e2 6b f5 d1 0b c2 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0aaaaaaaah                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 aa aa aa aa}
@@ -113,7 +113,7 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong mix(N0 parity, ulong x, ulong y)
-; mix_n0_0o_0o[59] = {0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
+; mix_n0_64u_64u[59] = {0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,5555555555555555h               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 55 55 55 55 55 55 55 55}
@@ -127,7 +127,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong mix(N1 parity, ulong x, ulong y)
-; mix_n1_0o_0o[69] = {0f 1f 44 00 00 48 b8 aa aa aa aa aa aa aa aa c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 48 ba aa aa aa aa aa aa aa aa c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
+; mix_n1_64u_64u[69] = {0f 1f 44 00 00 48 b8 aa aa aa aa aa aa aa aa c4 e2 ea f5 c0 48 ba 55 55 55 55 55 55 55 55 c4 e2 fb f5 c2 48 ba aa aa aa aa aa aa aa aa c4 e2 ba f5 d2 48 b9 aa aa aa aa aa aa aa aa c4 e2 eb f5 d1 48 0b c2 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0aaaaaaaaaaaaaaaah              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 aa aa aa aa aa aa aa aa}

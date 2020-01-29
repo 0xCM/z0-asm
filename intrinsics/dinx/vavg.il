@@ -1,4 +1,4 @@
-// Id := 100663491, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100663488, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vavg(Vector128<byte> lhs, Vector128<byte> rhs)
 // AggressiveInlining
 Vector128<byte> vavg(Vector128<byte> lhs, Vector128<byte> rhs)
@@ -9,7 +9,7 @@ Vector128<byte> vavg(Vector128<byte> lhs, Vector128<byte> rhs)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663492, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100663489, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vavg(Vector128<ushort> lhs, Vector128<ushort> rhs)
 // AggressiveInlining
 Vector128<ushort> vavg(Vector128<ushort> lhs, Vector128<ushort> rhs)
@@ -20,7 +20,7 @@ Vector128<ushort> vavg(Vector128<ushort> lhs, Vector128<ushort> rhs)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663493, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// Id := 100663490, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector256<byte> vavg(Vector256<byte> lhs, Vector256<byte> rhs)
 // AggressiveInlining
 Vector256<byte> vavg(Vector256<byte> lhs, Vector256<byte> rhs)
@@ -31,7 +31,7 @@ Vector256<byte> vavg(Vector256<byte> lhs, Vector256<byte> rhs)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663494, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100663491, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vavg(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<ushort> vavg(Vector256<ushort> lhs, Vector256<ushort> rhs)
 // AggressiveInlining
 Vector256<ushort> vavg(Vector256<ushort> lhs, Vector256<ushort> rhs)

@@ -1,5 +1,5 @@
-// 2020-01-26 03:38:02:160
-// Id := 100664219, Name := System.Void Z0.OpCodes.pop::part64x1_byte(System.UInt64,System.Span`1<System.Byte>)
+// 2020-01-28 16:12:00:142
+// Id := 100664213, Name := System.Void Z0.OpCodes.pop::part64x1_byte(System.UInt64,System.Span`1<System.Byte>)
 // void part64x1_byte(ulong src, Span<byte> dst)
 // IL
 void part64x1_byte(ulong src, Span<byte> dst)
@@ -10,7 +10,7 @@ void part64x1_byte(ulong src, Span<byte> dst)
     IL_0007: ret
 }
 
-// Id := 100664220, Name := System.Void Z0.OpCodes.pop::part64x1_bit(System.UInt64,System.Span`1<Z0.bit>)
+// Id := 100664214, Name := System.Void Z0.OpCodes.pop::part64x1_bit(System.UInt64,System.Span`1<Z0.bit>)
 // void part64x1_bit(ulong src, Span<bit> dst)
 // IL
 void part64x1_bit(ulong src, Span<bit> dst)

@@ -1,4 +1,4 @@
-// Id := 100663791, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100663788, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vbyteswap(Vector128<ushort> x)
 // AggressiveInlining
 Vector128<ushort> vbyteswap(Vector128<ushort> x)
@@ -11,7 +11,7 @@ Vector128<ushort> vbyteswap(Vector128<ushort> x)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663792, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100663789, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vbyteswap(Vector128<uint> x)
 // AggressiveInlining
 Vector128<uint> vbyteswap(Vector128<uint> x)
@@ -24,7 +24,7 @@ Vector128<uint> vbyteswap(Vector128<uint> x)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663793, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100663790, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector128<ulong> vbyteswap(Vector128<ulong> x)
 // AggressiveInlining
 Vector128<ulong> vbyteswap(Vector128<ulong> x)
@@ -37,7 +37,7 @@ Vector128<ulong> vbyteswap(Vector128<ulong> x)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663794, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100663791, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<ushort> vbyteswap(Vector256<ushort> x)
 // AggressiveInlining
 Vector256<ushort> vbyteswap(Vector256<ushort> x)
@@ -50,7 +50,7 @@ Vector256<ushort> vbyteswap(Vector256<ushort> x)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663795, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663792, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vbyteswap(Vector256<uint> x)
 // AggressiveInlining
 Vector256<uint> vbyteswap(Vector256<uint> x)
@@ -63,7 +63,7 @@ Vector256<uint> vbyteswap(Vector256<uint> x)
     IL_0015: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663796, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
+// Id := 100663793, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vbyteswap(System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
 // Vector256<ulong> vbyteswap(Vector256<ulong> x)
 // AggressiveInlining
 Vector256<ulong> vbyteswap(Vector256<ulong> x)

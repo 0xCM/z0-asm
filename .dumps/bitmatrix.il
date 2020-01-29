@@ -1,5 +1,5 @@
-// 2020-01-26 03:38:02:132
-// Id := 100664211, Name := System.Int32 Z0.OpCodes.bitmatrix::cell_count_32x64x8()
+// 2020-01-28 16:12:00:126
+// Id := 100664205, Name := System.Int32 Z0.OpCodes.bitmatrix::cell_count_32x64x8()
 // int cell_count_32x64x8()
 // IL
 int cell_count_32x64x8()
@@ -11,7 +11,7 @@ int cell_count_32x64x8()
     IL_0010: ret
 }
 
-// Id := 100664212, Name := Z0.TableIndex Z0.OpCodes.bitmatrix::tableindex_32x64x8(System.Int32,System.Int32)
+// Id := 100664206, Name := Z0.TableIndex Z0.OpCodes.bitmatrix::tableindex_32x64x8(System.Int32,System.Int32)
 // TableIndex tableindex_32x64x8(int row, int col)
 // IL
 TableIndex tableindex_32x64x8(int row, int col)

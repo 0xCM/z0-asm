@@ -1,4 +1,4 @@
-// Id := 100663707, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// Id := 100663704, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector128<byte> vhi(Vector256<byte> src)
 // AggressiveInlining
 Vector128<byte> vhi(Vector256<byte> src)
@@ -9,7 +9,7 @@ Vector128<byte> vhi(Vector256<byte> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663708, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100663705, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector128<short> vhi(Vector256<short> src)
 // AggressiveInlining
 Vector128<short> vhi(Vector256<short> src)
@@ -20,7 +20,7 @@ Vector128<short> vhi(Vector256<short> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663709, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100663706, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector128<ushort> vhi(Vector256<ushort> src)
 // AggressiveInlining
 Vector128<ushort> vhi(Vector256<ushort> src)
@@ -31,7 +31,7 @@ Vector128<ushort> vhi(Vector256<ushort> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663710, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100663707, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector128<int> vhi(Vector256<int> src)
 // AggressiveInlining
 Vector128<int> vhi(Vector256<int> src)
@@ -42,7 +42,7 @@ Vector128<int> vhi(Vector256<int> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663711, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int64>)
+// Id := 100663708, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Int64>)
 // Vector128<long> vhi(Vector256<long> src)
 // AggressiveInlining
 Vector128<long> vhi(Vector256<long> src)
@@ -53,7 +53,7 @@ Vector128<long> vhi(Vector256<long> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663712, Name := System.Void Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.UInt64&,System.UInt64&)
+// Id := 100663709, Name := System.Void Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.UInt64&,System.UInt64&)
 // void vhi(Vector256<ulong> src, out ulong x0, out ulong x1)
 // AggressiveInlining
 void vhi(Vector256<ulong> src, out ulong x0, out ulong x1)
@@ -74,7 +74,7 @@ void vhi(Vector256<ulong> src, out ulong x0, out ulong x1)
     IL_0019: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663713, Name := System.Void Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.UInt64&,System.UInt64&)
+// Id := 100663710, Name := System.Void Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.UInt64&,System.UInt64&)
 // void vhi(Vector256<byte> src, out ulong x0, out ulong x1)
 // AggressiveInlining
 void vhi(Vector256<byte> src, out ulong x0, out ulong x1)
@@ -87,7 +87,7 @@ void vhi(Vector256<byte> src, out ulong x0, out ulong x1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663714, Name := Z0.Pair`1<System.UInt64>& Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,Z0.Pair`1<System.UInt64>&)
+// Id := 100663711, Name := Z0.Pair`1<System.UInt64>& Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,Z0.Pair`1<System.UInt64>&)
 // ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
 // AggressiveInlining
 ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
@@ -109,7 +109,7 @@ ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
     IL_0022: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663696, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100663693, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vhi(Vector128<sbyte> src)
 // AggressiveInlining
 Vector128<sbyte> vhi(Vector128<sbyte> src)
@@ -124,7 +124,7 @@ Vector128<sbyte> vhi(Vector128<sbyte> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663697, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100663694, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector128<byte> vhi(Vector128<byte> src)
 // AggressiveInlining
 Vector128<byte> vhi(Vector128<byte> src)
@@ -139,7 +139,7 @@ Vector128<byte> vhi(Vector128<byte> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663698, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100663695, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vhi(Vector128<short> src)
 // AggressiveInlining
 Vector128<short> vhi(Vector128<short> src)
@@ -154,7 +154,7 @@ Vector128<short> vhi(Vector128<short> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663699, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100663696, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<ushort> vhi(Vector128<ushort> src)
 // AggressiveInlining
 Vector128<ushort> vhi(Vector128<ushort> src)
@@ -169,7 +169,7 @@ Vector128<ushort> vhi(Vector128<ushort> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663700, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100663697, Name := System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<int> vhi(Vector128<int> src)
 // AggressiveInlining
 Vector128<int> vhi(Vector128<int> src)
@@ -184,7 +184,7 @@ Vector128<int> vhi(Vector128<int> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663701, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100663698, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vhi(Vector128<uint> src)
 // AggressiveInlining
 Vector128<uint> vhi(Vector128<uint> src)
@@ -199,7 +199,7 @@ Vector128<uint> vhi(Vector128<uint> src)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663702, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int64>)
+// Id := 100663699, Name := System.Runtime.Intrinsics.Vector128`1<System.Int64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.Int64>)
 // Vector128<long> vhi(Vector128<long> src)
 // AggressiveInlining
 Vector128<long> vhi(Vector128<long> src)
@@ -212,7 +212,7 @@ Vector128<long> vhi(Vector128<long> src)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663703, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100663700, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector128<ulong> vhi(Vector128<ulong> src)
 // AggressiveInlining
 Vector128<ulong> vhi(Vector128<ulong> src)
@@ -225,7 +225,7 @@ Vector128<ulong> vhi(Vector128<ulong> src)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663704, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100663701, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector128<sbyte> vhi(Vector256<sbyte> src)
 // AggressiveInlining
 Vector128<sbyte> vhi(Vector256<sbyte> src)
@@ -236,7 +236,7 @@ Vector128<sbyte> vhi(Vector256<sbyte> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663705, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663702, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector128<uint> vhi(Vector256<uint> src)
 // AggressiveInlining
 Vector128<uint> vhi(Vector256<uint> src)
@@ -247,7 +247,7 @@ Vector128<uint> vhi(Vector256<uint> src)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663706, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
+// Id := 100663703, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
 // Vector128<ulong> vhi(Vector256<ulong> src)
 // AggressiveInlining
 Vector128<ulong> vhi(Vector256<ulong> src)

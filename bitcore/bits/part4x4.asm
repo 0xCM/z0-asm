@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part4x4(ushort src, NatSpan<N4,byte> dst)
-; part4x4_0o_ns4x0oN4[24] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 b9 0f 0f 0f 0f c4 e2 6b f5 d1 89 10 c3}
+; part4x4_16u_ns4x8uN4[24] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 b9 0f 0f 0f 0f c4 e2 6b f5 d1 89 10 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

@@ -1,4 +1,4 @@
-// Id := 100664676, Name := Z0.bit Z0.dinx::testc(System.UInt64,System.UInt64)
+// Id := 100664673, Name := Z0.bit Z0.dinx::testc(System.UInt64,System.UInt64)
 // bit testc(ulong a, ulong b)
 // AggressiveInlining
 bit testc(ulong a, ulong b)
@@ -13,7 +13,7 @@ bit testc(ulong a, ulong b)
     IL_001B: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664677, Name := Z0.bit Z0.dinx::testc(System.UInt64)
+// Id := 100664674, Name := Z0.bit Z0.dinx::testc(System.UInt64)
 // bit testc(ulong a)
 // AggressiveInlining
 bit testc(ulong a)

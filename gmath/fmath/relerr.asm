@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float relerr(float lhs, float rhs)
 ; relerr_32f[61] = {48 83 ec 18 c5 f8 77 33 c0 89 44 24 10 c5 f8 28 d0 c5 ea 5c d1 c5 ea 5e d0 c5 fa 11 54 24 08 8b 44 24 08 89 44 24 10 48 8d 44 24 10 81 20 ff ff ff 7f c5 fa 10 44 24 10 48 83 c4 18 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -20,7 +20,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double relerr(double lhs, double rhs)
 ; relerr_64f[71] = {48 83 ec 18 c5 f8 77 33 c0 48 89 44 24 10 c5 f8 28 d0 c5 eb 5c d1 c5 eb 5e d0 c5 fb 11 54 24 08 48 8b 44 24 08 48 89 44 24 10 48 8d 44 24 10 48 ba ff ff ff ff ff ff ff 7f 48 21 10 c5 fb 10 44 24 10 48 83 c4 18 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float relerr(ComplexF32 lhs, ComplexF32 rhs)
 ; relerr_ComplexF32_ComplexF32[159] = {48 83 ec 28 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 10 48 89 4c 24 30 48 89 54 24 38 c5 fa 10 44 24 30 c5 fa 10 4c 24 38 c5 f8 28 d0 c5 ea 5c d1 c5 ea 5e d0 c5 fa 11 54 24 18 8b 44 24 18 89 44 24 20 48 8d 44 24 20 81 20 ff ff ff 7f c5 fa 10 44 24 20 c5 fa 10 4c 24 34 c5 fa 10 54 24 3c c5 f8 28 d9 c5 e2 5c da c5 e2 5e d9 c5 fa 11 5c 24 08 8b 44 24 08 89 44 24 10 48 8d 44 24 10 81 20 ff ff ff 7f c5 fa 10 4c 24 10 c5 f8 2e c1 77 09 c5 f8 28 c1 48 83 c4 28 c3 48 83 c4 28 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -80,7 +80,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double relerr(ComplexF64 lhs, ComplexF64 rhs)
 ; relerr_ComplexF64_ComplexF64[151] = {48 83 ec 28 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 10 c5 fb 10 01 c5 fb 10 0a c5 f8 28 d0 c5 eb 5c d1 c5 eb 5e d0 c5 fb 11 54 24 18 48 8b 44 24 18 48 89 44 24 20 48 8d 44 24 20 49 b8 ff ff ff ff ff ff ff 7f 4c 21 00 c5 fb 10 44 24 20 c5 fb 10 49 08 c5 fb 10 52 08 c5 f8 28 d9 c5 e3 5c da c5 e3 5e d9 c5 fb 11 5c 24 08 48 8b 44 24 08 48 89 44 24 10 48 8d 44 24 10 4c 21 00 c5 fb 10 4c 24 10 c5 f9 2e c1 77 09 c5 f8 28 c1 48 83 c4 28 c3 48 83 c4 28 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

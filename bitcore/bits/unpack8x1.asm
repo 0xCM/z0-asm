@@ -10,7 +10,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack8x1(byte src, Span<byte> dst)
-; unpack8x1_0o_span0o[34] = {48 83 ec 28 90 48 8b 02 0f b6 d1 48 b9 01 01 01 01 01 01 01 01 c4 e2 eb f5 d1 48 89 10 48 83 c4 28 c3}
+; unpack8x1_8u_span8u[34] = {48 83 ec 28 90 48 8b 02 0f b6 d1 48 b9 01 01 01 01 01 01 01 01 c4 e2 eb f5 d1 48 89 10 48 83 c4 28 c3}
 ; TermCode = ZEDx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

@@ -47,7 +47,7 @@ sbyte abs<sbyte>(sbyte src)
     IL_00A5: call System.Int64 Z0.math::abs(System.Int64)
     IL_00AA: call T Z0.As::generic<T>(System.Int64)
     IL_00AF: ret
-    IL_00B0: call System.Boolean Z0.PrimalType::unsigned<T>()
+    IL_00B0: call System.Boolean Z0.NumericType::unsigned<T>()
     IL_00B5: brfalse.s IL_00B9
     IL_00B7: ldarg.0
     IL_00B8: ret
@@ -105,7 +105,7 @@ short abs<short>(short src)
     IL_00A5: call System.Int64 Z0.math::abs(System.Int64)
     IL_00AA: call T Z0.As::generic<T>(System.Int64)
     IL_00AF: ret
-    IL_00B0: call System.Boolean Z0.PrimalType::unsigned<T>()
+    IL_00B0: call System.Boolean Z0.NumericType::unsigned<T>()
     IL_00B5: brfalse.s IL_00B9
     IL_00B7: ldarg.0
     IL_00B8: ret
@@ -163,7 +163,7 @@ int abs<int>(int src)
     IL_00A5: call System.Int64 Z0.math::abs(System.Int64)
     IL_00AA: call T Z0.As::generic<T>(System.Int64)
     IL_00AF: ret
-    IL_00B0: call System.Boolean Z0.PrimalType::unsigned<T>()
+    IL_00B0: call System.Boolean Z0.NumericType::unsigned<T>()
     IL_00B5: brfalse.s IL_00B9
     IL_00B7: ldarg.0
     IL_00B8: ret
@@ -221,7 +221,7 @@ long abs<long>(long src)
     IL_00A5: call System.Int64 Z0.math::abs(System.Int64)
     IL_00AA: call T Z0.As::generic<T>(System.Int64)
     IL_00AF: ret
-    IL_00B0: call System.Boolean Z0.PrimalType::unsigned<T>()
+    IL_00B0: call System.Boolean Z0.NumericType::unsigned<T>()
     IL_00B5: brfalse.s IL_00B9
     IL_00B7: ldarg.0
     IL_00B8: ret

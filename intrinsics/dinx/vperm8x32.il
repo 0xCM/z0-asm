@@ -1,4 +1,4 @@
-// Id := 100663873, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663870, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<byte> vperm8x32(Vector256<byte> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<byte> vperm8x32(Vector256<byte> src, Vector256<uint> spec)
@@ -11,7 +11,7 @@ Vector256<byte> vperm8x32(Vector256<byte> src, Vector256<uint> spec)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663874, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663871, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<sbyte> vperm8x32(Vector256<sbyte> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<sbyte> vperm8x32(Vector256<sbyte> src, Vector256<uint> spec)
@@ -24,7 +24,7 @@ Vector256<sbyte> vperm8x32(Vector256<sbyte> src, Vector256<uint> spec)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663875, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663872, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
@@ -37,7 +37,7 @@ Vector256<short> vperm8x32(Vector256<short> src, Vector256<uint> spec)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663876, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663873, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<ushort> vperm8x32(Vector256<ushort> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<ushort> vperm8x32(Vector256<ushort> src, Vector256<uint> spec)
@@ -50,7 +50,7 @@ Vector256<ushort> vperm8x32(Vector256<ushort> src, Vector256<uint> spec)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663877, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663874, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vperm8x32(Vector256<uint> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<uint> vperm8x32(Vector256<uint> src, Vector256<uint> spec)
@@ -61,7 +61,7 @@ Vector256<uint> vperm8x32(Vector256<uint> src, Vector256<uint> spec)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663878, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663875, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<int> vperm8x32(Vector256<int> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<int> vperm8x32(Vector256<int> src, Vector256<uint> spec)
@@ -73,7 +73,7 @@ Vector256<int> vperm8x32(Vector256<int> src, Vector256<uint> spec)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663879, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663876, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<long> vperm8x32(Vector256<long> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<long> vperm8x32(Vector256<long> src, Vector256<uint> spec)
@@ -86,7 +86,7 @@ Vector256<long> vperm8x32(Vector256<long> src, Vector256<uint> spec)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663880, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663877, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vperm8x32(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<ulong> vperm8x32(Vector256<ulong> src, Vector256<uint> spec)
 // AggressiveInlining
 Vector256<ulong> vperm8x32(Vector256<ulong> src, Vector256<uint> spec)

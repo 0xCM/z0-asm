@@ -1,5 +1,5 @@
-// 2020-01-26 03:38:02:186
-// Id := 100664221, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::and_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
+// 2020-01-28 16:12:00:167
+// Id := 100664215, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::and_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
 // RowBits<byte> and_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
 // IL
 RowBits<byte> and_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
@@ -11,7 +11,7 @@ RowBits<byte> and_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
     IL_000B: ret
 }
 
-// Id := 100664222, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::and_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
+// Id := 100664216, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::and_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
 // RowBits<ushort> and_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
 // IL
 RowBits<ushort> and_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
@@ -23,7 +23,7 @@ RowBits<ushort> and_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> ds
     IL_000B: ret
 }
 
-// Id := 100664223, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::and_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
+// Id := 100664217, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::and_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
 // RowBits<uint> and_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
 // IL
 RowBits<uint> and_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
@@ -35,7 +35,7 @@ RowBits<uint> and_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
     IL_000B: ret
 }
 
-// Id := 100664224, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::and_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
+// Id := 100664218, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::and_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
 // RowBits<ulong> and_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
 // IL
 RowBits<ulong> and_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
@@ -47,7 +47,7 @@ RowBits<ulong> and_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
     IL_000B: ret
 }
 
-// Id := 100664225, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::and_64u_op(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
+// Id := 100664219, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::and_64u_op(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
 // RowBits<ulong> and_64u_op(RowBits<ulong> x, RowBits<ulong> y)
 // IL
 RowBits<ulong> and_64u_op(RowBits<ulong> x, RowBits<ulong> y)
@@ -58,7 +58,7 @@ RowBits<ulong> and_64u_op(RowBits<ulong> x, RowBits<ulong> y)
     IL_0009: ret
 }
 
-// Id := 100664226, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::xor_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
+// Id := 100664220, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::xor_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
 // RowBits<byte> xor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
 // IL
 RowBits<byte> xor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
@@ -70,7 +70,7 @@ RowBits<byte> xor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
     IL_000B: ret
 }
 
-// Id := 100664227, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::xor_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
+// Id := 100664221, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::xor_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
 // RowBits<ushort> xor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
 // IL
 RowBits<ushort> xor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
@@ -82,7 +82,7 @@ RowBits<ushort> xor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> ds
     IL_000B: ret
 }
 
-// Id := 100664228, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::xor_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
+// Id := 100664222, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::xor_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
 // RowBits<uint> xor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
 // IL
 RowBits<uint> xor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
@@ -94,7 +94,7 @@ RowBits<uint> xor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
     IL_000B: ret
 }
 
-// Id := 100664229, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::xor_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
+// Id := 100664223, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::xor_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
 // RowBits<ulong> xor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
 // IL
 RowBits<ulong> xor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
@@ -106,7 +106,7 @@ RowBits<ulong> xor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
     IL_000B: ret
 }
 
-// Id := 100664230, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::xnor_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
+// Id := 100664224, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::xnor_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
 // RowBits<byte> xnor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
 // IL
 RowBits<byte> xnor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
@@ -118,7 +118,7 @@ RowBits<byte> xnor_8u(RowBits<byte> x, RowBits<byte> y, RowBits<byte> dst)
     IL_000B: ret
 }
 
-// Id := 100664231, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::xnor_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
+// Id := 100664225, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::xnor_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
 // RowBits<ushort> xnor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
 // IL
 RowBits<ushort> xnor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> dst)
@@ -130,7 +130,7 @@ RowBits<ushort> xnor_16u(RowBits<ushort> x, RowBits<ushort> y, RowBits<ushort> d
     IL_000B: ret
 }
 
-// Id := 100664232, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::xnor_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
+// Id := 100664226, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::xnor_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
 // RowBits<uint> xnor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
 // IL
 RowBits<uint> xnor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
@@ -142,7 +142,7 @@ RowBits<uint> xnor_32u(RowBits<uint> x, RowBits<uint> y, RowBits<uint> dst)
     IL_000B: ret
 }
 
-// Id := 100664233, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::xnor_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
+// Id := 100664227, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::xnor_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
 // RowBits<ulong> xnor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
 // IL
 RowBits<ulong> xnor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
@@ -154,7 +154,7 @@ RowBits<ulong> xnor_64u(RowBits<ulong> x, RowBits<ulong> y, RowBits<ulong> dst)
     IL_000B: ret
 }
 
-// Id := 100664234, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::not_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
+// Id := 100664228, Name := Z0.RowBits`1<System.Byte> Z0.OpCodes.rowbits::not_8u(Z0.RowBits`1<System.Byte>,Z0.RowBits`1<System.Byte>)
 // RowBits<byte> not_8u(RowBits<byte> x, RowBits<byte> dst)
 // IL
 RowBits<byte> not_8u(RowBits<byte> x, RowBits<byte> dst)
@@ -165,7 +165,7 @@ RowBits<byte> not_8u(RowBits<byte> x, RowBits<byte> dst)
     IL_0009: ret
 }
 
-// Id := 100664235, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::not_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
+// Id := 100664229, Name := Z0.RowBits`1<System.UInt16> Z0.OpCodes.rowbits::not_16u(Z0.RowBits`1<System.UInt16>,Z0.RowBits`1<System.UInt16>)
 // RowBits<ushort> not_16u(RowBits<ushort> x, RowBits<ushort> dst)
 // IL
 RowBits<ushort> not_16u(RowBits<ushort> x, RowBits<ushort> dst)
@@ -176,7 +176,7 @@ RowBits<ushort> not_16u(RowBits<ushort> x, RowBits<ushort> dst)
     IL_0009: ret
 }
 
-// Id := 100664236, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::not_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
+// Id := 100664230, Name := Z0.RowBits`1<System.UInt32> Z0.OpCodes.rowbits::not_32u(Z0.RowBits`1<System.UInt32>,Z0.RowBits`1<System.UInt32>)
 // RowBits<uint> not_32u(RowBits<uint> x, RowBits<uint> dst)
 // IL
 RowBits<uint> not_32u(RowBits<uint> x, RowBits<uint> dst)
@@ -187,7 +187,7 @@ RowBits<uint> not_32u(RowBits<uint> x, RowBits<uint> dst)
     IL_0009: ret
 }
 
-// Id := 100664237, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::not_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
+// Id := 100664231, Name := Z0.RowBits`1<System.UInt64> Z0.OpCodes.rowbits::not_64u(Z0.RowBits`1<System.UInt64>,Z0.RowBits`1<System.UInt64>)
 // RowBits<ulong> not_64u(RowBits<ulong> x, RowBits<ulong> dst)
 // IL
 RowBits<ulong> not_64u(RowBits<ulong> x, RowBits<ulong> dst)

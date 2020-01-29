@@ -1,4 +1,4 @@
-// Id := 100663547, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Id := 100663544, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
 Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
@@ -15,7 +15,7 @@ Vector256<short> vmul(Vector128<sbyte> x, Vector128<sbyte> y)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663548, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Id := 100663545, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
 // Vector256<ushort> vmul(Vector128<byte> x, Vector128<byte> y)
 // AggressiveInlining
 Vector256<ushort> vmul(Vector128<byte> x, Vector128<byte> y)
@@ -36,7 +36,7 @@ Vector256<ushort> vmul(Vector128<byte> x, Vector128<byte> y)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663549, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100663546, Name := System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
@@ -57,7 +57,7 @@ Vector256<int> vmul(Vector128<short> x, Vector128<short> y)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663550, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100663547, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector256<uint> vmul(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector256<uint> vmul(Vector128<ushort> x, Vector128<ushort> y)
@@ -78,7 +78,7 @@ Vector256<uint> vmul(Vector128<ushort> x, Vector128<ushort> y)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663551, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100663548, Name := System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector256<long> vmul(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector256<long> vmul(Vector128<int> x, Vector128<int> y)
@@ -99,7 +99,7 @@ Vector256<long> vmul(Vector128<int> x, Vector128<int> y)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663552, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100663549, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector256<ulong> vmul(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector256<ulong> vmul(Vector128<uint> x, Vector128<uint> y)
@@ -120,7 +120,7 @@ Vector256<ulong> vmul(Vector128<uint> x, Vector128<uint> y)
     IL_0021: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663553, Name := Z0.Vector512`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Id := 100663550, Name := Z0.Vector512`1<System.Int16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
 // Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
 // AggressiveInlining
 Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
@@ -162,7 +162,7 @@ Vector512<short> vmul(Vector256<sbyte> x, Vector256<sbyte> y)
     IL_0056: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663554, Name := Z0.Vector512`1<System.UInt16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
+// Id := 100663551, Name := Z0.Vector512`1<System.UInt16> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
 // Vector512<ushort> vmul(Vector256<byte> x, Vector256<byte> y)
 // AggressiveInlining
 Vector512<ushort> vmul(Vector256<byte> x, Vector256<byte> y)
@@ -204,7 +204,7 @@ Vector512<ushort> vmul(Vector256<byte> x, Vector256<byte> y)
     IL_0056: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663555, Name := Z0.Vector512`1<System.UInt32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100663552, Name := Z0.Vector512`1<System.UInt32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector512<uint> vmul(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector512<uint> vmul(Vector256<ushort> x, Vector256<ushort> y)
@@ -246,7 +246,7 @@ Vector512<uint> vmul(Vector256<ushort> x, Vector256<ushort> y)
     IL_0056: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663556, Name := Z0.Vector512`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100663553, Name := Z0.Vector512`1<System.Int32> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
@@ -288,7 +288,7 @@ Vector512<int> vmul(Vector256<short> x, Vector256<short> y)
     IL_0056: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663557, Name := Z0.Vector512`1<System.Int64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100663554, Name := Z0.Vector512`1<System.Int64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector512<long> vmul(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector512<long> vmul(Vector256<int> x, Vector256<int> y)
@@ -310,7 +310,7 @@ Vector512<long> vmul(Vector256<int> x, Vector256<int> y)
     IL_0026: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663558, Name := Z0.Vector512`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100663555, Name := Z0.Vector512`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector512<ulong> vmul(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector512<ulong> vmul(Vector256<uint> x, Vector256<uint> y)
@@ -332,7 +332,7 @@ Vector512<ulong> vmul(Vector256<uint> x, Vector256<uint> y)
     IL_0026: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663559, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
+// Id := 100663556, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vmul(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
 // Vector256<ulong> vmul(Vector256<ulong> x, Vector256<ulong> y)
 // AggressiveInlining
 Vector256<ulong> vmul(Vector256<ulong> x, Vector256<ulong> y)

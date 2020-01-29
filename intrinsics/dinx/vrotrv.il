@@ -1,4 +1,4 @@
-// Id := 100664279, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664276, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vrotrv(Vector128<uint> src, Vector128<uint> counts)
 // AggressiveInlining
 Vector128<uint> vrotrv(Vector128<uint> src, Vector128<uint> counts)
@@ -15,7 +15,7 @@ Vector128<uint> vrotrv(Vector128<uint> src, Vector128<uint> counts)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664280, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
+// Id := 100664277, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>)
 // Vector128<ulong> vrotrv(Vector128<ulong> src, Vector128<ulong> counts)
 // AggressiveInlining
 Vector128<ulong> vrotrv(Vector128<ulong> src, Vector128<ulong> counts)
@@ -32,7 +32,7 @@ Vector128<ulong> vrotrv(Vector128<ulong> src, Vector128<ulong> counts)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664281, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664278, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vrotrv(Vector256<uint> src, Vector256<uint> counts)
 // AggressiveInlining
 Vector256<uint> vrotrv(Vector256<uint> src, Vector256<uint> counts)
@@ -49,7 +49,7 @@ Vector256<uint> vrotrv(Vector256<uint> src, Vector256<uint> counts)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664282, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
+// Id := 100664279, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::vrotrv(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
 // Vector256<ulong> vrotrv(Vector256<ulong> src, Vector256<ulong> counts)
 // AggressiveInlining
 Vector256<ulong> vrotrv(Vector256<ulong> src, Vector256<ulong> counts)

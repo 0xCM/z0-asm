@@ -1,0 +1,21 @@
+vmaphi_128x32u_n128_64u  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 35 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_256x8i_n256_16i   c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x8u_n256_16u   c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x8u_n256_16i   c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 30 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x16i_n256_32i  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 23 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x16u_n256_32u  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 33 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x32i_n256_64i  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 25 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_256x32u_n256_64u  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c4 e2 7d 35 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x8i_n128_16i   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x8i_n128_16u   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x8i_n256_32i   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 21 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x8u_n128_16i   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 30 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x8u_n128_16u   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 30 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x8u_n256_32u   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x8u_n256_32i   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x16i_n128_32i  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 23 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x16i_n256_64i  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 24 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x16u_n128_32u  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 33 c0 c5 f9 11 01 48 8b c1 c3
+vmaphi_128x16u_n256_64i  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 34 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x16u_n256_64u  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 34 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vmaphi_128x32u_n128_64i  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 35 c0 c5 f9 11 01 48 8b c1 c3

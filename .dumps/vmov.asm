@@ -1,7 +1,6 @@
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vmov_idx3_128x8u(byte src, Vector128<byte> dst)
-; vmov_idx3_128x8u_0o_128x8u[27] = {c5 f8 77 66 90 c4 c1 79 10 00 0f b6 c2 c4 e3 79 20 c0 03 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov_idx3_128x8u_8u_128x8u[27] = {c5 f8 77 66 90 c4 c1 79 10 00 0f b6 c2 c4 e3 79 20 c0 03 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -10,10 +9,9 @@
 0013h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0017h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmov_idx4_128x16u(ushort src, Vector128<ushort> dst)
-; vmov_idx4_128x16u_0o_128x16u[26] = {c5 f8 77 66 90 c4 c1 79 10 00 0f b7 c2 c5 f9 c4 c0 04 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov_idx4_128x16u_16u_128x16u[26] = {c5 f8 77 66 90 c4 c1 79 10 00 0f b7 c2 c5 f9 c4 c0 04 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -22,10 +20,9 @@
 0012h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0016h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmov_idx2_128x32u(uint src, Vector128<uint> dst)
-; vmov_idx2_128x32u_0o_128x32u[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov_idx2_128x32u_32u_128x32u[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -33,10 +30,9 @@
 0010h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0014h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmov_idx3_256x8u(byte src, Vector256<byte> dst)
-; vmov_idx3_256x8u_0o_256x8u[40] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 0f b6 c2 c4 e3 71 20 c8 03 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov_idx3_256x8u_8u_256x8u[40] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 0f b6 c2 c4 e3 71 20 c8 03 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r8]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 00}
@@ -48,10 +44,9 @@
 0021h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0024h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmov_idx4_256x16u(ushort src, Vector256<ushort> dst)
-; vmov_idx4_256x16u_0o_256x16u[39] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 0f b7 c2 c5 f1 c4 c8 04 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov_idx4_256x16u_16u_256x16u[39] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 0f b7 c2 c5 f1 c4 c8 04 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r8]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 00}
@@ -63,10 +58,9 @@
 0020h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0023h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmov_idx2_256x32u(uint src, Vector256<uint> dst)
-; vmov_idx2_256x32u_0o_256x32u[37] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 71 22 ca 02 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov_idx2_256x32u_32u_256x32u[37] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 71 22 ca 02 c4 e3 7d 18 c1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r8]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 00}
@@ -77,10 +71,9 @@
 001eh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0021h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmov_idx4x2_256x32u(uint a, uint b, Vector256<uint> dst)
-; vmov_idx4x2_256x32u_0o_0o_256x32u[55] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fc 28 c8 c4 e3 71 22 ca 02 c4 e3 7d 18 c1 00 c4 e3 7d 19 c1 01 c4 c3 71 22 c8 00 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov_idx4x2_256x32u_32u_32u_256x32u[55] = {c5 f8 77 66 90 c4 c1 7d 10 01 c5 fc 28 c8 c4 e3 71 22 ca 02 c4 e3 7d 18 c1 00 c4 e3 7d 19 c1 01 c4 c3 71 22 c8 00 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[r9]                       ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c4 c1 7d 10 01}
@@ -94,10 +87,9 @@
 0030h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0033h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vmov128x8u(byte src)
-; vmov128x8u_0o[20] = {c5 f8 77 66 90 0f b6 c2 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov128x8u_8u[20] = {c5 f8 77 66 90 0f b6 c2 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -105,10 +97,9 @@
 000ch vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0010h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmov128x16u(ushort src)
-; vmov128x16u_0o[20] = {c5 f8 77 66 90 0f b7 c2 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov128x16u_16u[20] = {c5 f8 77 66 90 0f b7 c2 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
@@ -116,39 +107,35 @@
 000ch vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 0010h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmov128x32u(uint src)
-; vmov128x32u_0o[17] = {c5 f8 77 66 90 c5 f9 6e c2 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov128x32u_32u[17] = {c5 f8 77 66 90 c5 f9 6e c2 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovd xmm0,edx                          ; VMOVD xmm1, r/m32 || VEX.128.66.0F.W0 6E /r || encoded[4]{c5 f9 6e c2}
 0009h vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 000dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmov128x64u(ulong src)
-; vmov128x64u_0o[18] = {c5 f8 77 66 90 c4 e1 f9 6e c2 c5 f9 11 01 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov128x64u_64u[18] = {c5 f8 77 66 90 c4 e1 f9 6e c2 c5 f9 11 01 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovq xmm0,rdx                          ; VMOVQ xmm1, r/m64 || VEX.128.66.0F.W1 6E /r || encoded[5]{c4 e1 f9 6e c2}
 000ah vmovupd [rcx],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 01}
 000eh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vmov128x64u(double src)
-; vmov128x64u_0o[13] = {c5 f8 77 66 90 c5 f9 11 09 48 8b c1 c3}
-; Capture completion code = MSDIAG
+; vmov128x64u_64f[13] = {c5 f8 77 66 90 c5 f9 11 09 48 8b c1 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd [rcx],xmm1                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 09}
 0009h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmov256x8u(byte src)
-; vmov256x8u_0o[23] = {c5 f8 77 66 90 0f b6 c2 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov256x8u_8u[23] = {c5 f8 77 66 90 0f b6 c2 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -157,10 +144,9 @@
 0010h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0013h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmov256x16u(ushort src)
-; vmov256x16u_0o[23] = {c5 f8 77 66 90 0f b7 c2 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov256x16u_16u[23] = {c5 f8 77 66 90 0f b7 c2 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
@@ -169,10 +155,9 @@
 0010h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0013h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmov256x32u(uint src)
-; vmov256x32u_0o[20] = {c5 f8 77 66 90 c5 f9 6e c2 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov256x32u_32u[20] = {c5 f8 77 66 90 c5 f9 6e c2 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovd xmm0,edx                          ; VMOVD xmm1, r/m32 || VEX.128.66.0F.W0 6E /r || encoded[4]{c5 f9 6e c2}
@@ -180,10 +165,9 @@
 000dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0010h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmov256x64u(ulong src)
-; vmov256x64u_0o[21] = {c5 f8 77 66 90 c4 e1 f9 6e c2 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov256x64u_64u[21] = {c5 f8 77 66 90 c4 e1 f9 6e c2 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovq xmm0,rdx                          ; VMOVQ xmm1, r/m64 || VEX.128.66.0F.W1 6E /r || encoded[5]{c4 e1 f9 6e c2}
@@ -191,10 +175,9 @@
 000eh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0011h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vmov256x64u(double src)
-; vmov256x64u_0o[16] = {c5 f8 77 66 90 c5 fd 11 09 48 8b c1 c5 f8 77 c3}
-; Capture completion code = MSDIAG
+; vmov256x64u_64f[16] = {c5 f8 77 66 90 c5 fd 11 09 48 8b c1 c5 f8 77 c3}
+; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd [rcx],ymm1                      ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[4]{c5 fd 11 09}

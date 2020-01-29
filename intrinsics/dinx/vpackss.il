@@ -1,4 +1,4 @@
-// Id := 100664874, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664871, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<sbyte> vpackss(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<sbyte> vpackss(Vector128<short> x, Vector128<short> y)
@@ -9,7 +9,7 @@ Vector128<sbyte> vpackss(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664875, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664872, Name := System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<sbyte> vpackss(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector128<sbyte> vpackss(Vector128<ushort> x, Vector128<ushort> y)
@@ -22,7 +22,7 @@ Vector128<sbyte> vpackss(Vector128<ushort> x, Vector128<ushort> y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664876, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664873, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<short> vpackss(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector128<short> vpackss(Vector128<int> x, Vector128<int> y)
@@ -33,7 +33,7 @@ Vector128<short> vpackss(Vector128<int> x, Vector128<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664877, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664874, Name := System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<short> vpackss(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector128<short> vpackss(Vector128<uint> x, Vector128<uint> y)
@@ -46,7 +46,7 @@ Vector128<short> vpackss(Vector128<uint> x, Vector128<uint> y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664878, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100664875, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<sbyte> vpackss(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<sbyte> vpackss(Vector256<short> x, Vector256<short> y)
@@ -57,7 +57,7 @@ Vector256<sbyte> vpackss(Vector256<short> x, Vector256<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664879, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100664876, Name := System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<sbyte> vpackss(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector256<sbyte> vpackss(Vector256<ushort> x, Vector256<ushort> y)
@@ -70,7 +70,7 @@ Vector256<sbyte> vpackss(Vector256<ushort> x, Vector256<ushort> y)
     IL_0011: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664880, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100664877, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector256<short> vpackss(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector256<short> vpackss(Vector256<int> x, Vector256<int> y)
@@ -81,7 +81,7 @@ Vector256<short> vpackss(Vector256<int> x, Vector256<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664881, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664878, Name := System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vpackss(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<short> vpackss(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector256<short> vpackss(Vector256<uint> x, Vector256<uint> y)

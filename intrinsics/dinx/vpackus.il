@@ -1,4 +1,4 @@
-// Id := 100664882, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Id := 100664879, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<byte> vpackus(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
 Vector128<byte> vpackus(Vector128<short> x, Vector128<short> y)
@@ -9,7 +9,7 @@ Vector128<byte> vpackus(Vector128<short> x, Vector128<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664883, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664880, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<byte> vpackus(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector128<byte> vpackus(Vector128<ushort> x, Vector128<ushort> y)
@@ -34,7 +34,7 @@ Vector128<byte> vpackus(Vector128<ushort> x, Vector128<ushort> y)
     IL_0031: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664884, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Id := 100664881, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
 // Vector128<byte> vpackus_alt(Vector128<ushort> x, Vector128<ushort> y)
 // AggressiveInlining
 Vector128<byte> vpackus_alt(Vector128<ushort> x, Vector128<ushort> y)
@@ -56,7 +56,7 @@ Vector128<byte> vpackus_alt(Vector128<ushort> x, Vector128<ushort> y)
     IL_003E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664885, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Id := 100664882, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
 // Vector128<ushort> vpackus(Vector128<int> x, Vector128<int> y)
 // AggressiveInlining
 Vector128<ushort> vpackus(Vector128<int> x, Vector128<int> y)
@@ -67,7 +67,7 @@ Vector128<ushort> vpackus(Vector128<int> x, Vector128<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664886, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664883, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<ushort> vpackus(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector128<ushort> vpackus(Vector128<uint> x, Vector128<uint> y)
@@ -92,7 +92,7 @@ Vector128<ushort> vpackus(Vector128<uint> x, Vector128<uint> y)
     IL_0031: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664887, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+// Id := 100664884, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<ushort> vpackus_alt(Vector128<uint> x, Vector128<uint> y)
 // AggressiveInlining
 Vector128<ushort> vpackus_alt(Vector128<uint> x, Vector128<uint> y)
@@ -118,7 +118,7 @@ Vector128<ushort> vpackus_alt(Vector128<uint> x, Vector128<uint> y)
     IL_0042: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664888, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Id := 100664885, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
 // Vector256<byte> vpackus(Vector256<short> x, Vector256<short> y)
 // AggressiveInlining
 Vector256<byte> vpackus(Vector256<short> x, Vector256<short> y)
@@ -129,7 +129,7 @@ Vector256<byte> vpackus(Vector256<short> x, Vector256<short> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664889, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100664886, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<byte> vpackus(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector256<byte> vpackus(Vector256<ushort> x, Vector256<ushort> y)
@@ -154,7 +154,7 @@ Vector256<byte> vpackus(Vector256<ushort> x, Vector256<ushort> y)
     IL_0031: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664890, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Id := 100664887, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
 // Vector256<byte> vpackus_alt(Vector256<ushort> x, Vector256<ushort> y)
 // AggressiveInlining
 Vector256<byte> vpackus_alt(Vector256<ushort> x, Vector256<ushort> y)
@@ -180,7 +180,7 @@ Vector256<byte> vpackus_alt(Vector256<ushort> x, Vector256<ushort> y)
     IL_0042: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664891, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Id := 100664888, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
 // Vector256<ushort> vpackus(Vector256<int> x, Vector256<int> y)
 // AggressiveInlining
 Vector256<ushort> vpackus(Vector256<int> x, Vector256<int> y)
@@ -191,7 +191,7 @@ Vector256<ushort> vpackus(Vector256<int> x, Vector256<int> y)
     IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664892, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664889, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<ushort> vpackus(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector256<ushort> vpackus(Vector256<uint> x, Vector256<uint> y)
@@ -216,7 +216,7 @@ Vector256<ushort> vpackus(Vector256<uint> x, Vector256<uint> y)
     IL_0031: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664893, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+// Id := 100664890, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vpackus_alt(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<ushort> vpackus_alt(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
 Vector256<ushort> vpackus_alt(Vector256<uint> x, Vector256<uint> y)

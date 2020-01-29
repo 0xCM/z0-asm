@@ -1,4 +1,4 @@
-// Id := 100663668, Name := System.UInt64 Z0.dinx::maskpart(System.UInt32,System.Int32)
+// Id := 100663665, Name := System.UInt64 Z0.dinx::maskpart(System.UInt32,System.Int32)
 // ulong maskpart(uint src, int offset)
 // AggressiveInlining
 ulong maskpart(uint src, int offset)
@@ -15,7 +15,7 @@ ulong maskpart(uint src, int offset)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663669, Name := System.UInt64 Z0.dinx::maskpart(System.UInt32,System.Int32,System.UInt64)
+// Id := 100663666, Name := System.UInt64 Z0.dinx::maskpart(System.UInt32,System.Int32,System.UInt64)
 // ulong maskpart(uint src, int offset, ulong mask)
 // AggressiveInlining
 ulong maskpart(uint src, int offset, ulong mask)

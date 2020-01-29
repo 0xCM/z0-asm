@@ -1,8 +1,0 @@
-X01_g8u   0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 0b c2 0f b6 c0 0f b6 d1 0b c2 f7 d0 0f b6 c0 c3
-X01_g8i   0f 1f 44 00 00 48 0f be c2 49 0f be d0 0b c2 48 0f be c0 48 0f be d1 0b c2 f7 d0 48 0f be c0 c3
-X01_g16u  0f 1f 44 00 00 0f b7 c2 41 0f b7 d0 0b c2 0f b7 c0 0f b7 d1 0b c2 f7 d0 0f b7 c0 c3
-X01_g16i  0f 1f 44 00 00 48 0f bf c2 49 0f bf d0 0b c2 48 0f bf c0 48 0f bf d1 0b c2 f7 d0 48 0f bf c0 c3
-X01_g32u  0f 1f 44 00 00 41 0b d0 0b d1 8b c2 f7 d0 c3
-X01_g32i  0f 1f 44 00 00 41 0b d0 0b d1 8b c2 f7 d0 c3
-X01_g64u  0f 1f 44 00 00 49 0b d0 48 0b d1 48 8b c2 48 f7 d0 c3
-X01_g64i  0f 1f 44 00 00 49 0b d0 48 0b d1 48 8b c2 48 f7 d0 c3

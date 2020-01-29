@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vmovelo(int src, Vector128<float> dst)
-; vmovelo_0o_128x32f[22] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 fa 2a c2 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTRx2
+; vmovelo_32i_128x32f[22] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 fa 2a c2 c5 f9 11 01 48 8b c1 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -11,8 +11,8 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vmovelo(int src, Vector128<double> dst)
-; vmovelo_0o_128x64f[22] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 fb 2a c2 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTRx2
+; vmovelo_32i_128x64f[22] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 fb 2a c2 c5 f9 11 01 48 8b c1 c3}
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -22,7 +22,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vmovelo(long src, Vector128<double> dst)
-; vmovelo_0o_128x64f[23] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e1 fb 2a c2 c5 f9 11 01 48 8b c1 c3}
+; vmovelo_64i_128x64f[23] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e1 fb 2a c2 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -34,7 +34,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte vmovelo(Vector128<sbyte> src, N8 w)
 ; vmovelo_128x8i_n8[18] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 48 0f be c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -44,7 +44,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte vmovelo(Vector128<byte> src, N8 w)
 ; vmovelo_128x8u_n8[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 0f b6 c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -54,7 +54,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short vmovelo(Vector128<short> src, N16 w)
 ; vmovelo_128x16i_n16[18] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 48 0f bf c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -64,7 +64,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort vmovelo(Vector128<ushort> src, N16 w)
 ; vmovelo_128x16u_n16[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 0f b7 c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -74,7 +74,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int vmovelo(Vector128<int> src, N32 w)
 ; vmovelo_128x32i_n32[14] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -83,7 +83,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint vmovelo(Vector128<uint> src, N32 w)
 ; vmovelo_128x32u_n32[14] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -110,7 +110,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmovelo(Vector128<uint> src, Vector128<ulong> dst)
 ; vmovelo_128x32u_128x64u[26] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 10 0a c5 fa 5a c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -122,7 +122,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vmovelo(Vector128<int> src, Vector128<long> dst)
 ; vmovelo_128x32i_128x64i[26] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 10 0a c5 fa 5a c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -134,7 +134,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vmovelo(Vector128<float> src, Vector128<double> dst)
 ; vmovelo_128x32f_128x64f[22] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 fa 5a 02 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTRx2
+; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}

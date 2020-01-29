@@ -1,4 +1,4 @@
-// Id := 100663664, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmakemask(System.UInt16)
+// Id := 100663661, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmakemask(System.UInt16)
 // Vector128<byte> vmakemask(ushort src)
 // AggressiveInlining
 Vector128<byte> vmakemask(ushort src)
@@ -15,7 +15,7 @@ Vector128<byte> vmakemask(ushort src)
     IL_001D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663665, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmakemask(System.UInt32)
+// Id := 100663662, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmakemask(System.UInt32)
 // Vector256<byte> vmakemask(uint src)
 // AggressiveInlining
 Vector256<byte> vmakemask(uint src)
@@ -32,7 +32,7 @@ Vector256<byte> vmakemask(uint src)
     IL_0016: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663666, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmakemask(System.UInt16,System.Byte)
+// Id := 100663663, Name := System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmakemask(System.UInt16,System.Byte)
 // Vector128<byte> vmakemask(ushort src, byte index)
 // AggressiveInlining
 Vector128<byte> vmakemask(ushort src, byte index)
@@ -57,7 +57,7 @@ Vector128<byte> vmakemask(ushort src, byte index)
     IL_002E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100663667, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmakemask(System.UInt32,System.Byte)
+// Id := 100663664, Name := System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vmakemask(System.UInt32,System.Byte)
 // Vector256<byte> vmakemask(uint src, byte index)
 // AggressiveInlining
 Vector256<byte> vmakemask(uint src, byte index)

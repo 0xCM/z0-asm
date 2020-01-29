@@ -1,4 +1,4 @@
-// Id := 100664794, Name := System.Int32 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.Int32>,Z0.N32,System.Int32)
+// Id := 100664791, Name := System.Int32 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.Int32>,Z0.N32,System.Int32)
 // int convert(Vector128<int> src, N32 w, int t)
 // AggressiveInlining
 int convert(Vector128<int> src, N32 w, int t)
@@ -8,7 +8,7 @@ int convert(Vector128<int> src, N32 w, int t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664795, Name := System.UInt32 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N32,System.UInt32)
+// Id := 100664792, Name := System.UInt32 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N32,System.UInt32)
 // uint convert(Vector128<uint> src, N32 w, uint t)
 // AggressiveInlining
 uint convert(Vector128<uint> src, N32 w, uint t)
@@ -18,7 +18,7 @@ uint convert(Vector128<uint> src, N32 w, uint t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664796, Name := System.Int64 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.Int64>,Z0.N64,System.Int64)
+// Id := 100664793, Name := System.Int64 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.Int64>,Z0.N64,System.Int64)
 // long convert(Vector128<long> src, N64 w, long t)
 // AggressiveInlining
 long convert(Vector128<long> src, N64 w, long t)
@@ -28,7 +28,7 @@ long convert(Vector128<long> src, N64 w, long t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664797, Name := System.UInt64 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,Z0.N64,System.UInt64)
+// Id := 100664794, Name := System.UInt64 Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,Z0.N64,System.UInt64)
 // ulong convert(Vector128<ulong> src, N64 w, ulong t)
 // AggressiveInlining
 ulong convert(Vector128<ulong> src, N64 w, ulong t)
@@ -38,7 +38,7 @@ ulong convert(Vector128<ulong> src, N64 w, ulong t)
     IL_0006: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664798, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>,Z0.N128,System.UInt32)
+// Id := 100664795, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Runtime.Intrinsics.Vector128`1<System.UInt64>,Z0.N128,System.UInt32)
 // Vector128<uint> convert(Vector128<ulong> lo, Vector128<ulong> hi, N128 w, uint t)
 // AggressiveInlining
 Vector128<uint> convert(Vector128<ulong> lo, Vector128<ulong> hi, N128 w, uint t)
@@ -52,7 +52,7 @@ Vector128<uint> convert(Vector128<ulong> lo, Vector128<ulong> hi, N128 w, uint t
     IL_000E: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664799, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::convert(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,Z0.N128,System.UInt32)
+// Id := 100664796, Name := System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::convert(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,Z0.N128,System.UInt32)
 // Vector128<uint> convert(Vector256<ulong> src, N128 w, uint t)
 // AggressiveInlining
 Vector128<uint> convert(Vector256<ulong> src, N128 w, uint t)
@@ -64,7 +64,7 @@ Vector128<uint> convert(Vector256<ulong> src, N128 w, uint t)
     IL_0010: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Id := 100664800, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N256,System.UInt64)
+// Id := 100664797, Name := System.Runtime.Intrinsics.Vector256`1<System.UInt64> Z0.dinx::convert(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,Z0.N256,System.UInt64)
 // Vector256<ulong> convert(Vector128<uint> src, N256 w, ulong t)
 // AggressiveInlining
 Vector256<ulong> convert(Vector128<uint> src, N256 w, ulong t)
