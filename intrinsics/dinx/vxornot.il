@@ -1,3 +1,51 @@
+// System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+// Vector256<short> vxornot(Vector256<short> x, Vector256<short> y)
+// AggressiveInlining
+Vector256<short> vxornot(Vector256<short> x, Vector256<short> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int16> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+// Vector256<sbyte> vxornot(Vector256<sbyte> x, Vector256<sbyte> y)
+// AggressiveInlining
+Vector256<sbyte> vxornot(Vector256<sbyte> x, Vector256<sbyte> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.SByte> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+// Vector256<ushort> vxornot(Vector256<ushort> x, Vector256<ushort> y)
+// AggressiveInlining
+Vector256<ushort> vxornot(Vector256<ushort> x, Vector256<ushort> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+// Vector256<int> vxornot(Vector256<int> x, Vector256<int> y)
+// AggressiveInlining
+Vector256<int> vxornot(Vector256<int> x, Vector256<int> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
 // Vector256<uint> vxornot(Vector256<uint> x, Vector256<uint> y)
 // AggressiveInlining
@@ -139,54 +187,6 @@ Vector256<byte> vxornot(Vector256<byte> x, Vector256<byte> y)
     IL_0001: ldarg.1
     IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Byte> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Byte>)
     IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Byte> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.Byte>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-// Vector256<short> vxornot(Vector256<short> x, Vector256<short> y)
-// AggressiveInlining
-Vector256<short> vxornot(Vector256<short> x, Vector256<short> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int16> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.Int16>,System.Runtime.Intrinsics.Vector256`1<System.Int16>)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
-// Vector256<sbyte> vxornot(Vector256<sbyte> x, Vector256<sbyte> y)
-// AggressiveInlining
-Vector256<sbyte> vxornot(Vector256<sbyte> x, Vector256<sbyte> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.SByte> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.SByte>)
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.SByte> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.SByte>,System.Runtime.Intrinsics.Vector256`1<System.SByte>)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
-// Vector256<ushort> vxornot(Vector256<ushort> x, Vector256<ushort> y)
-// AggressiveInlining
-Vector256<ushort> vxornot(Vector256<ushort> x, Vector256<ushort> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vxornot(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
-// Vector256<int> vxornot(Vector256<int> x, Vector256<int> y)
-// AggressiveInlining
-Vector256<int> vxornot(Vector256<int> x, Vector256<int> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vnot(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::Xor(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------

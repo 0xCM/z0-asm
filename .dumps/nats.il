@@ -1,5 +1,5 @@
-// 2020-01-28 16:12:00:413
-// Id := 100664586, Name := System.UInt64 Z0.OpCodes.nats::nat_add()
+// 2020-01-31 17:23:16:620
+// System.UInt64 Z0.OpCodes.nats::nat_add()
 // ulong nat_add()
 // IL
 ulong nat_add()
@@ -10,7 +10,7 @@ ulong nat_add()
     IL_000F: ret
 }
 
-// Id := 100664587, Name := System.UInt64 Z0.OpCodes.nats::nat_sub()
+// System.UInt64 Z0.OpCodes.nats::nat_sub()
 // ulong nat_sub()
 // IL
 ulong nat_sub()
@@ -21,7 +21,7 @@ ulong nat_sub()
     IL_000F: ret
 }
 
-// Id := 100664588, Name := System.UInt64 Z0.OpCodes.nats::nat_mul()
+// System.UInt64 Z0.OpCodes.nats::nat_mul()
 // ulong nat_mul()
 // IL
 ulong nat_mul()
@@ -32,7 +32,7 @@ ulong nat_mul()
     IL_000F: ret
 }
 
-// Id := 100664589, Name := System.UInt64 Z0.OpCodes.nats::nat_div()
+// System.UInt64 Z0.OpCodes.nats::nat_div()
 // ulong nat_div()
 // IL
 ulong nat_div()
@@ -43,7 +43,7 @@ ulong nat_div()
     IL_000F: ret
 }
 
-// Id := 100664590, Name := System.UInt64 Z0.OpCodes.nats::nat_mod()
+// System.UInt64 Z0.OpCodes.nats::nat_mod()
 // ulong nat_mod()
 // IL
 ulong nat_mod()
@@ -54,7 +54,7 @@ ulong nat_mod()
     IL_000F: ret
 }
 
-// Id := 100664591, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_1_0()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_1_0()
 // ulong digits_encode_1_0()
 // IL
 ulong digits_encode_1_0()
@@ -64,7 +64,7 @@ ulong digits_encode_1_0()
     IL_0007: ret
 }
 
-// Id := 100664592, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_1()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_1()
 // ulong digits_encode_1()
 // IL
 ulong digits_encode_1()
@@ -74,7 +74,7 @@ ulong digits_encode_1()
     IL_0007: ret
 }
 
-// Id := 100664593, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_2()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_2()
 // ulong digits_encode_2()
 // IL
 ulong digits_encode_2()
@@ -84,7 +84,7 @@ ulong digits_encode_2()
     IL_0007: ret
 }
 
-// Id := 100664594, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_3()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_3()
 // ulong digits_encode_3()
 // IL
 ulong digits_encode_3()
@@ -94,7 +94,7 @@ ulong digits_encode_3()
     IL_0007: ret
 }
 
-// Id := 100664595, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_10()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_10()
 // ulong digits_encode_10()
 // IL
 ulong digits_encode_10()
@@ -105,7 +105,7 @@ ulong digits_encode_10()
     IL_0009: ret
 }
 
-// Id := 100664596, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_210()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_210()
 // ulong digits_encode_210()
 // IL
 ulong digits_encode_210()
@@ -117,7 +117,7 @@ ulong digits_encode_210()
     IL_000B: ret
 }
 
-// Id := 100664597, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_3210()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_3210()
 // ulong digits_encode_3210()
 // IL
 ulong digits_encode_3210()
@@ -130,7 +130,7 @@ ulong digits_encode_3210()
     IL_000D: ret
 }
 
-// Id := 100664598, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_43210()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_43210()
 // ulong digits_encode_43210()
 // IL
 ulong digits_encode_43210()
@@ -144,7 +144,7 @@ ulong digits_encode_43210()
     IL_000F: ret
 }
 
-// Id := 100664599, Name := System.UInt64 Z0.OpCodes.nats::digits_encode_76543210()
+// System.UInt64 Z0.OpCodes.nats::digits_encode_76543210()
 // ulong digits_encode_76543210()
 // IL
 ulong digits_encode_76543210()
@@ -161,7 +161,7 @@ ulong digits_encode_76543210()
     IL_0015: ret
 }
 
-// Id := 100664600, Name := System.UInt64 Z0.OpCodes.nats::digit_extract_9()
+// System.UInt64 Z0.OpCodes.nats::digit_extract_9()
 // ulong digit_extract_9()
 // IL
 ulong digit_extract_9()
@@ -173,7 +173,7 @@ ulong digit_extract_9()
     IL_000C: ret
 }
 
-// Id := 100664601, Name := System.UInt64 Z0.OpCodes.nats::digit_extract_4()
+// System.UInt64 Z0.OpCodes.nats::digit_extract_4()
 // ulong digit_extract_4()
 // IL
 ulong digit_extract_4()
@@ -185,7 +185,7 @@ ulong digit_extract_4()
     IL_000C: ret
 }
 
-// Id := 100664602, Name := System.UInt64 Z0.OpCodes.nats::digit_extract_8()
+// System.UInt64 Z0.OpCodes.nats::digit_extract_8()
 // ulong digit_extract_8()
 // IL
 ulong digit_extract_8()
@@ -197,7 +197,7 @@ ulong digit_extract_8()
     IL_000C: ret
 }
 
-// Id := 100664603, Name := System.UInt64 Z0.OpCodes.nats::digit_extract_5()
+// System.UInt64 Z0.OpCodes.nats::digit_extract_5()
 // ulong digit_extract_5()
 // IL
 ulong digit_extract_5()
@@ -209,7 +209,7 @@ ulong digit_extract_5()
     IL_000C: ret
 }
 
-// Id := 100664604, Name := System.Void Z0.OpCodes.nats::digits_extract_5849(System.Byte&,System.Byte&,System.Byte&,System.Byte&)
+// System.Void Z0.OpCodes.nats::digits_extract_5849(System.Byte&,System.Byte&,System.Byte&,System.Byte&)
 // void digits_extract_5849(out byte d3, out byte d2, out byte d1, out byte d0)
 // IL
 void digits_extract_5849(out byte d3, out byte d2, out byte d1, out byte d0)
@@ -224,7 +224,7 @@ void digits_extract_5849(out byte d3, out byte d2, out byte d1, out byte d0)
     IL_000F: ret
 }
 
-// Id := 100664605, Name := System.Void Z0.OpCodes.nats::digits_extract_5489_ref(System.Byte&)
+// System.Void Z0.OpCodes.nats::digits_extract_5489_ref(System.Byte&)
 // void digits_extract_5489_ref(ref byte dst)
 // IL
 void digits_extract_5489_ref(ref byte dst)
@@ -237,7 +237,7 @@ void digits_extract_5489_ref(ref byte dst)
     IL_0011: ret
 }
 
-// Id := 100664606, Name := System.Void Z0.OpCodes.nats::digits_extract_80352178(System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
+// System.Void Z0.OpCodes.nats::digits_extract_80352178(System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&,System.Byte&)
 // void digits_extract_80352178(out byte d7, out byte d6, out byte d5, out byte d4, out byte d3, out byte d2, out byte d1, out byte d0)
 // IL
 void digits_extract_80352178(out byte d7, out byte d6, out byte d5, out byte d4, out byte d3, out byte d2, out byte d1, out byte d0)
@@ -259,7 +259,7 @@ void digits_extract_80352178(out byte d7, out byte d6, out byte d5, out byte d4,
     IL_0022: ret
 }
 
-// Id := 100664607, Name := System.Void Z0.OpCodes.nats::chars_5489(System.Char&,System.Char&,System.Char&,System.Char&)
+// System.Void Z0.OpCodes.nats::chars_5489(System.Char&,System.Char&,System.Char&,System.Char&)
 // void chars_5489(out char c3, out char c2, out char c1, out char c0)
 // IL
 void chars_5489(out char c3, out char c2, out char c1, out char c0)
@@ -273,7 +273,7 @@ void chars_5489(out char c3, out char c2, out char c1, out char c0)
     IL_000E: ret
 }
 
-// Id := 100664608, Name := System.Void Z0.OpCodes.nats::chars_80352178(System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&)
+// System.Void Z0.OpCodes.nats::chars_80352178(System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&,System.Char&)
 // void chars_80352178(out char c7, out char c6, out char c5, out char c4, out char c3, out char c2, out char c1, out char c0)
 // IL
 void chars_80352178(out char c7, out char c6, out char c5, out char c4, out char c3, out char c2, out char c1, out char c0)
@@ -292,7 +292,7 @@ void chars_80352178(out char c7, out char c6, out char c5, out char c4, out char
     IL_0017: ret
 }
 
-// Id := 100664609, Name := System.ReadOnlySpan`1<System.Char> Z0.OpCodes.nats::charspan_5489()
+// System.ReadOnlySpan`1<System.Char> Z0.OpCodes.nats::charspan_5489()
 // ReadOnlySpan<char> charspan_5489()
 // IL
 ReadOnlySpan<char> charspan_5489()
@@ -302,7 +302,7 @@ ReadOnlySpan<char> charspan_5489()
     IL_000A: ret
 }
 
-// Id := 100664610, Name := System.Char Z0.OpCodes.nats::digit_decode_0()
+// System.Char Z0.OpCodes.nats::digit_decode_0()
 // char digit_decode_0()
 // IL
 char digit_decode_0()
@@ -313,7 +313,7 @@ char digit_decode_0()
     IL_0007: ret
 }
 
-// Id := 100664611, Name := System.Char Z0.OpCodes.nats::digit_decode_1()
+// System.Char Z0.OpCodes.nats::digit_decode_1()
 // char digit_decode_1()
 // IL
 char digit_decode_1()
@@ -324,7 +324,7 @@ char digit_decode_1()
     IL_0007: ret
 }
 
-// Id := 100664612, Name := System.Char Z0.OpCodes.nats::digit_decode_2()
+// System.Char Z0.OpCodes.nats::digit_decode_2()
 // char digit_decode_2()
 // IL
 char digit_decode_2()
@@ -335,7 +335,7 @@ char digit_decode_2()
     IL_0007: ret
 }
 
-// Id := 100664613, Name := System.Char Z0.OpCodes.nats::digit_decode_3()
+// System.Char Z0.OpCodes.nats::digit_decode_3()
 // char digit_decode_3()
 // IL
 char digit_decode_3()
@@ -346,7 +346,7 @@ char digit_decode_3()
     IL_0007: ret
 }
 
-// Id := 100664614, Name := System.Char Z0.OpCodes.nats::digit_decode_4()
+// System.Char Z0.OpCodes.nats::digit_decode_4()
 // char digit_decode_4()
 // IL
 char digit_decode_4()
@@ -357,7 +357,7 @@ char digit_decode_4()
     IL_0007: ret
 }
 
-// Id := 100664615, Name := System.Char Z0.OpCodes.nats::digit_decode_n4()
+// System.Char Z0.OpCodes.nats::digit_decode_n4()
 // char digit_decode_n4()
 // IL
 char digit_decode_n4()
@@ -366,7 +366,7 @@ char digit_decode_n4()
     IL_0005: ret
 }
 
-// Id := 100664616, Name := System.Char Z0.OpCodes.nats::digit_decode_5()
+// System.Char Z0.OpCodes.nats::digit_decode_5()
 // char digit_decode_5()
 // IL
 char digit_decode_5()
@@ -377,7 +377,7 @@ char digit_decode_5()
     IL_0007: ret
 }
 
-// Id := 100664617, Name := System.Char Z0.OpCodes.nats::digit_decode_n5()
+// System.Char Z0.OpCodes.nats::digit_decode_n5()
 // char digit_decode_n5()
 // IL
 char digit_decode_n5()

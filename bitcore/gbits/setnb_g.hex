@@ -1,8 +1,0 @@
-setnb_g8u_8u_bit   0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 41 b9 01 00 00 00 8b ca 41 d3 e1 41 0f b6 c9 f7 d1 ff c1 44 0f b6 c9 8b ca 41 d3 e0 41 0f b6 d0 0f b6 c0 41 23 c1 0f b6 c0 23 c2 0f b6 c0 c3
-setnb_g8i_8u_bit   0f 1f 44 00 00 8b c1 0f b6 ca 41 b9 01 00 00 00 41 d3 e1 49 0f be c9 f7 d9 4c 0f be c9 0f b6 ca 41 d3 e0 49 0f be d0 48 0f be c0 41 23 c1 48 0f be c0 23 c2 48 0f be c0 c3
-setnb_g16u_8u_bit  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 41 b9 01 00 00 00 8b ca 41 d3 e1 41 0f b7 c9 f7 d1 ff c1 44 0f b7 c9 8b ca 41 d3 e0 41 0f b7 d0 0f b7 c0 41 23 c1 0f b7 c0 23 c2 0f b7 c0 c3
-setnb_g16i_8u_bit  0f 1f 44 00 00 8b c1 0f b6 ca 41 b9 01 00 00 00 41 d3 e1 49 0f bf c9 f7 d9 4c 0f bf c9 0f b6 ca 41 d3 e0 49 0f bf d0 48 0f bf c0 41 23 c1 48 0f bf c0 23 c2 48 0f bf c0 c3
-setnb_g32u_8u_bit  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 41 b9 01 00 00 00 8b ca 41 d3 e1 41 f7 d1 41 ff c1 8b ca 41 d3 e0 41 23 c1 41 23 c0 c3
-setnb_g32i_8u_bit  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 41 b9 01 00 00 00 8b ca 41 d3 e1 41 f7 d9 8b ca 41 d3 e0 41 23 c1 41 23 c0 c3
-setnb_g64u_8u_bit  0f 1f 44 00 00 48 8b c1 0f b6 d2 41 b9 01 00 00 00 8b ca 49 d3 e1 49 f7 d1 49 ff c1 8b ca 41 d3 e0 41 8b d0 49 23 c1 48 23 c2 c3
-setnb_g64i_8u_bit  0f 1f 44 00 00 48 8b c1 0f b6 d2 41 b9 01 00 00 00 8b ca 49 d3 e1 49 f7 d9 8b ca 41 d3 e0 41 8b d0 49 23 c1 48 23 c2 c3

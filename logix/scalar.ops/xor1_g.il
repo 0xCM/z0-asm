@@ -55,7 +55,7 @@ byte xor1<byte>(byte a)
     IL_00AD: ret
     IL_00AE: ldstr "xor1"
     IL_00B3: ldstr "J:\\dev\\projects\\z0\\logix\\src\\operators\\impl\\ScalarOps.cs"
-    IL_00B8: ldc.i4.s 86
+    IL_00B8: ldc.i4.s 85
     IL_00BA: newobj System.Void System.Nullable`1<System.Int32>::.ctor(System.Int32)
     IL_00BF: call Z0.AppException zfunc::unsupported<T>(System.String,System.String,System.Nullable`1<System.Int32>)
     IL_00C4: throw
@@ -118,7 +118,7 @@ ushort xor1<ushort>(ushort a)
     IL_00AD: ret
     IL_00AE: ldstr "xor1"
     IL_00B3: ldstr "J:\\dev\\projects\\z0\\logix\\src\\operators\\impl\\ScalarOps.cs"
-    IL_00B8: ldc.i4.s 86
+    IL_00B8: ldc.i4.s 85
     IL_00BA: newobj System.Void System.Nullable`1<System.Int32>::.ctor(System.Int32)
     IL_00BF: call Z0.AppException zfunc::unsupported<T>(System.String,System.String,System.Nullable`1<System.Int32>)
     IL_00C4: throw
@@ -181,7 +181,7 @@ uint xor1<uint>(uint a)
     IL_00AD: ret
     IL_00AE: ldstr "xor1"
     IL_00B3: ldstr "J:\\dev\\projects\\z0\\logix\\src\\operators\\impl\\ScalarOps.cs"
-    IL_00B8: ldc.i4.s 86
+    IL_00B8: ldc.i4.s 85
     IL_00BA: newobj System.Void System.Nullable`1<System.Int32>::.ctor(System.Int32)
     IL_00BF: call Z0.AppException zfunc::unsupported<T>(System.String,System.String,System.Nullable`1<System.Int32>)
     IL_00C4: throw
@@ -244,7 +244,7 @@ ulong xor1<ulong>(ulong a)
     IL_00AD: ret
     IL_00AE: ldstr "xor1"
     IL_00B3: ldstr "J:\\dev\\projects\\z0\\logix\\src\\operators\\impl\\ScalarOps.cs"
-    IL_00B8: ldc.i4.s 86
+    IL_00B8: ldc.i4.s 85
     IL_00BA: newobj System.Void System.Nullable`1<System.Int32>::.ctor(System.Int32)
     IL_00BF: call Z0.AppException zfunc::unsupported<T>(System.String,System.String,System.Nullable`1<System.Int32>)
     IL_00C4: throw

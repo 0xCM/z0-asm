@@ -1,1 +1,1 @@
-xor_bit_bit  0f 1f 44 00 00 8b c1 33 c2 c3
+xor_  0f 1f 44 00 00 8b c1 33 c2 c3

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<byte> and<byte>(BitVector<byte> x, BitVector<byte> y)
-; and_g~eg_BitVector`1_Byte_~eg_BitVector`1_Byte[20] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3}
+; and_g[20] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -11,7 +11,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ushort> and<ushort>(BitVector<ushort> x, BitVector<ushort> y)
-; and_g~eg_BitVector`1_UInt16_~eg_BitVector`1_UInt16[20] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
+; and_g[20] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -22,7 +22,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<uint> and<uint>(BitVector<uint> x, BitVector<uint> y)
-; and_g~eg_BitVector`1_UInt32_~eg_BitVector`1_UInt32[10] = {0f 1f 44 00 00 23 d1 8b c2 c3}
+; and_g[10] = {0f 1f 44 00 00 23 d1 8b c2 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}
@@ -30,7 +30,7 @@
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ulong> and<ulong>(BitVector<ulong> x, BitVector<ulong> y)
-; and_g~eg_BitVector`1_UInt64_~eg_BitVector`1_UInt64[12] = {0f 1f 44 00 00 48 23 d1 48 8b c2 c3}
+; and_g[12] = {0f 1f 44 00 00 48 23 d1 48 8b c2 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and rdx,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 d1}

@@ -1,31 +1,31 @@
 ; ReadOnlySpan<byte> bitseq(byte value)
-; bitseq_8u[41] = {0f 1f 44 00 00 0f b6 c2 c1 e0 03 48 63 c0 48 ba 79 14 0a f0 c2 01 00 00 48 03 c2 48 89 01 c7 41 08 08 00 00 00 48 8b c1 c3}
+; bitseq_8u[41] = {0f 1f 44 00 00 0f b6 c2 c1 e0 03 48 63 c0 48 ba 71 70 2e 6b 22 02 00 00 48 03 c2 48 89 01 c7 41 08 08 00 00 00 48 8b c1 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h shl eax,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e0 03}
 000bh movsxd rax,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c0}
-000eh mov rdx,1c2f00a1479h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 79 14 0a f0 c2 01 00 00}
+000eh mov rdx,2226b2e7071h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 71 70 2e 6b 22 02 00 00}
 0018h add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
 001bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 001eh mov dword ptr [rcx+8],8                 ; MOV r/m32, imm32 || o32 C7 /0 id || encoded[7]{c7 41 08 08 00 00 00}
 0025h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitseq_8u(byte value, Span<byte> dst)
-; bitseq_8u_8u_span8u[37] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 c1 e2 03 48 63 d2 48 b9 79 14 0a f0 c2 01 00 00 48 03 d1 48 8b 12 48 89 10 c3}
+; bitseq_8u_8u_span8u[37] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 c1 e2 03 48 63 d2 48 b9 71 70 2e 6b 22 02 00 00 48 03 d1 48 8b 12 48 89 10 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h movzx edx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d1}
 000bh shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 000eh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0011h mov rcx,1c2f00a1479h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 79 14 0a f0 c2 01 00 00}
+0011h mov rcx,2226b2e7071h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 71 70 2e 6b 22 02 00 00}
 001bh add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 001eh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 0021h mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitseq_16u(ushort value, Span<byte> dst)
-; bitseq_16u_16u_span8u[70] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 48 8b c8 44 0f b6 c2 41 c1 e0 03 4d 63 c0 49 b9 79 14 0a f0 c2 01 00 00 4d 03 c1 4d 8b 00 4c 89 01 48 83 c0 08 c1 fa 08 0f b6 d2 c1 e2 03 48 63 d2 49 03 d1 48 8b 12 48 89 10 c3}
+; bitseq_16u_16u_span8u[70] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 48 8b c8 44 0f b6 c2 41 c1 e0 03 4d 63 c0 49 b9 71 70 2e 6b 22 02 00 00 4d 03 c1 4d 8b 00 4c 89 01 48 83 c0 08 c1 fa 08 0f b6 d2 c1 e2 03 48 63 d2 49 03 d1 48 8b 12 48 89 10 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -34,7 +34,7 @@
 000eh movzx r8d,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c2}
 0012h shl r8d,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 03}
 0016h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-0019h mov r9,1c2f00a1479h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 79 14 0a f0 c2 01 00 00}
+0019h mov r9,2226b2e7071h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 71 70 2e 6b 22 02 00 00}
 0023h add r8,r9                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c1}
 0026h mov r8,[r8]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 00}
 0029h mov [rcx],r8                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4c 89 01}
@@ -48,7 +48,7 @@
 0042h mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitseq_32u(uint value, Span<byte> dst)
-; bitseq_32u_32u_span8u[70] = {0f 1f 44 00 00 48 8b 02 8b d1 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 c8 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 79 14 0a f0 c2 01 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 04 7c c8 c3}
+; bitseq_32u_32u_span8u[70] = {0f 1f 44 00 00 48 8b 02 8b d1 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 c8 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 71 70 2e 6b 22 02 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 04 7c c8 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -63,7 +63,7 @@
 001fh movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0023h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 0026h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0029h mov r10,1c2f00a1479h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 79 14 0a f0 c2 01 00 00}
+0029h mov r10,2226b2e7071h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 71 70 2e 6b 22 02 00 00}
 0033h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0036h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 0039h mov [r9],rcx                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 09}
@@ -72,7 +72,7 @@
 0043h jl short 000dh                          ; JL rel8 || 7C cb || encoded[2]{7c c8}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitseq_64u(ulong value, Span<byte> dst)
-; bitseq_64u_64u_span8u[71] = {0f 1f 44 00 00 48 8b 02 48 8b d1 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 c8 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 79 14 0a f0 c2 01 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 08 7c c8 c3}
+; bitseq_64u_64u_span8u[71] = {0f 1f 44 00 00 48 8b 02 48 8b d1 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 c8 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 71 70 2e 6b 22 02 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 08 7c c8 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -87,7 +87,7 @@
 0020h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0024h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 0027h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002ah mov r10,1c2f00a1479h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 79 14 0a f0 c2 01 00 00}
+002ah mov r10,2226b2e7071h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 71 70 2e 6b 22 02 00 00}
 0034h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0037h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 003ah mov [r9],rcx                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 09}
@@ -96,7 +96,7 @@
 0044h jl short 000eh                          ; JL rel8 || 7C cb || encoded[2]{7c c8}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ; ReadOnlySpan<byte> bitseq(int offset, int count)
-; bitseq_32i[58] = {48 83 ec 28 90 8b c2 45 8b c8 49 03 c1 48 3d 00 08 00 00 77 1f 48 63 c2 48 ba 79 14 0a f0 c2 01 00 00 48 03 c2 48 89 01 44 89 41 08 48 8b c1 48 83 c4 28 c3 e8 17 bf 8a ff cc}
+; bitseq_32i_32i[58] = {48 83 ec 28 90 8b c2 45 8b c8 49 03 c1 48 3d 00 08 00 00 77 1f 48 63 c2 48 ba 71 70 2e 6b 22 02 00 00 48 03 c2 48 89 01 44 89 41 08 48 8b c1 48 83 c4 28 c3 e8 c7 af 89 ff cc}
 ; TermCode = MSDIAG
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -106,31 +106,31 @@
 000dh cmp rax,800h                            ; CMP RAX, imm32 || REX.W 3D id || encoded[6]{48 3d 00 08 00 00}
 0013h ja short 0034h                          ; JA rel8 || 77 cb || encoded[2]{77 1f}
 0015h movsxd rax,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c2}
-0018h mov rdx,1c2f00a1479h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 79 14 0a f0 c2 01 00 00}
+0018h mov rdx,2226b2e7071h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 71 70 2e 6b 22 02 00 00}
 0022h add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
 0025h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 0028h mov [rcx+8],r8d                         ; MOV r/m32, r32 || o32 89 /r || encoded[4]{44 89 41 08}
 002ch mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 002fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0033h ret                                     ; RET || C3 || encoded[1]{c3}
-0034h call 7ff7c63a3250h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 bf 8a ff}
+0034h call 7ff7c63b3330h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 af 89 ff}
 0039h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ; ReadOnlySpan<byte> bitseq8u(byte src)
-; bitseq8u_8u[89] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 08 00 00 00 e8 61 f6 3a 5f 48 8d 50 10 40 0f b6 cf c1 e1 03 48 63 c9 49 b8 79 14 0a f0 c2 01 00 00 49 03 c8 48 8b 09 48 89 0a 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitseq8u_8u[89] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 36 c6 f7 7f 00 00 ba 08 00 00 00 e8 41 ea 38 5f 48 8d 50 10 40 0f b6 cf c1 e1 03 48 63 c9 49 b8 71 70 2e 6b 22 02 00 00 49 03 c8 48 8b 09 48 89 0a 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = MSDIAG
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0009h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-000bh mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+000bh mov rcx,7ff7c636ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 36 c6 f7 7f 00 00}
 0015h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 f6 3a 5f}
+001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 ea 38 5f}
 001fh lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 0023h movzx ecx,dil                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{40 0f b6 cf}
 0027h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 002ah movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002dh mov r8,1c2f00a1479h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 79 14 0a f0 c2 01 00 00}
+002dh mov r8,2226b2e7071h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 71 70 2e 6b 22 02 00 00}
 0037h add rcx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 c8}
 003ah mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 003dh mov [rdx],rcx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 0a}
@@ -144,14 +144,14 @@
 0057h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ; ReadOnlySpan<char> bitchars_8u(byte value)
-; bitchars_8u_8u[52] = {48 83 ec 28 90 0f b6 c2 c1 e0 04 48 63 c0 48 ba 81 1e 0a f0 c2 01 00 00 48 03 c2 ba 08 00 00 00 48 89 01 89 51 08 48 8b c1 48 83 c4 28 c3 e8 0d 84 4d 5f cc}
+; bitchars_8u_8u[52] = {48 83 ec 28 90 0f b6 c2 c1 e0 04 48 63 c0 48 ba 79 7a 2e 6b 22 02 00 00 48 03 c2 ba 08 00 00 00 48 89 01 89 51 08 48 8b c1 48 83 c4 28 c3 e8 ed 77 4b 5f cc}
 ; TermCode = MSDIAG
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h shl eax,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e0 04}
 000bh movsxd rax,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c0}
-000eh mov rdx,1c2f00a1e81h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 81 1e 0a f0 c2 01 00 00}
+000eh mov rdx,2226b2e7a79h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 79 7a 2e 6b 22 02 00 00}
 0018h add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
 001bh mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
 0020h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
@@ -159,10 +159,10 @@
 0026h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0029h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
-002eh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d 84 4d 5f}
+002eh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed 77 4b 5f}
 0033h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ; void bitchars_8u(byte value, Span<char> dst)
-; bitchars_8u_8u_span0o[39] = {c5 f8 77 66 90 48 8b 02 0f b6 d1 c1 e2 04 48 63 d2 48 b9 81 1e 0a f0 c2 01 00 00 48 03 d1 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_8u_8u_ed_Span`1[39] = {c5 f8 77 66 90 48 8b 02 0f b6 d1 c1 e2 04 48 63 d2 48 b9 79 7a 2e 6b 22 02 00 00 48 03 d1 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -170,13 +170,13 @@
 0008h movzx edx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d1}
 000bh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 000eh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0011h mov rcx,1c2f00a1e81h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 81 1e 0a f0 c2 01 00 00}
+0011h mov rcx,2226b2e7a79h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 79 7a 2e 6b 22 02 00 00}
 001bh add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 001eh vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
 0022h vmovdqu xmmword ptr [rax],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 00}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitchars_16u(ushort value, Span<char> dst)
-; bitchars_16u_16u_span0o[83] = {c5 f8 77 66 90 48 8b 02 0f b7 d1 0f b6 ca c1 e1 04 48 63 c9 49 b8 81 1e 0a f0 c2 01 00 00 49 03 c8 4c 8b c0 c5 fa 6f 01 c4 c1 7a 7f 00 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 81 1e 0a f0 c2 01 00 00 48 03 d1 48 83 c0 10 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_16u_16u_ed_Span`1[83] = {c5 f8 77 66 90 48 8b 02 0f b7 d1 0f b6 ca c1 e1 04 48 63 c9 49 b8 79 7a 2e 6b 22 02 00 00 49 03 c8 4c 8b c0 c5 fa 6f 01 c4 c1 7a 7f 00 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 79 7a 2e 6b 22 02 00 00 48 03 d1 48 83 c0 10 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -185,7 +185,7 @@
 000bh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
 000eh shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0011h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0014h mov r8,1c2f00a1e81h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 81 1e 0a f0 c2 01 00 00}
+0014h mov r8,2226b2e7a79h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 79 7a 2e 6b 22 02 00 00}
 001eh add rcx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 c8}
 0021h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0024h vmovdqu xmm0,xmmword ptr [rcx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 01}
@@ -194,14 +194,14 @@
 0030h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 0033h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0036h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0039h mov rcx,1c2f00a1e81h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 81 1e 0a f0 c2 01 00 00}
+0039h mov rcx,2226b2e7a79h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 79 7a 2e 6b 22 02 00 00}
 0043h add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 0046h add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 004ah vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
 004eh vmovdqu xmmword ptr [rax],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 00}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitchars_32u(uint value, Span<char> dst)
-; bitchars_32u_32u_span0o[78] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c0 45 8b c8 41 c1 e1 03 41 8b c9 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 81 1e 0a f0 c2 01 00 00 49 03 ca 4d 63 c9 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 41 ff c0 41 83 f8 04 7c c0 c3}
+; bitchars_32u_32u_ed_Span`1[78] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c0 45 8b c8 41 c1 e1 03 41 8b c9 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 79 7a 2e 6b 22 02 00 00 49 03 ca 4d 63 c9 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 41 ff c0 41 83 f8 04 7c c0 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -216,7 +216,7 @@
 001dh movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0021h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0024h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0027h mov r10,1c2f00a1e81h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 81 1e 0a f0 c2 01 00 00}
+0027h mov r10,2226b2e7a79h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 79 7a 2e 6b 22 02 00 00}
 0031h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0034h movsxd r9,r9d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c9}
 0037h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
@@ -227,7 +227,7 @@
 004bh jl short 000dh                          ; JL rel8 || 7C cb || encoded[2]{7c c0}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
 ; void bitchars_64u(ulong value, Span<char> dst)
-; bitchars_64u_64u_span0o[79] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c0 45 8b c8 41 c1 e1 03 41 8b c9 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 81 1e 0a f0 c2 01 00 00 49 03 ca 4d 63 c9 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 41 ff c0 41 83 f8 08 7c c0 c3}
+; bitchars_64u_64u_ed_Span`1[79] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c0 45 8b c8 41 c1 e1 03 41 8b c9 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 79 7a 2e 6b 22 02 00 00 49 03 ca 4d 63 c9 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 41 ff c0 41 83 f8 08 7c c0 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -242,7 +242,7 @@
 001eh movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0022h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0025h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0028h mov r10,1c2f00a1e81h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 81 1e 0a f0 c2 01 00 00}
+0028h mov r10,2226b2e7a79h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 79 7a 2e 6b 22 02 00 00}
 0032h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0035h movsxd r9,r9d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c9}
 0038h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}

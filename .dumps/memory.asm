@@ -30,10 +30,10 @@
 0005h mov eax,3                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 03 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ; char digit_1()
-; digit_1[46] = {0f 1f 44 00 00 48 b8 c8 ee 00 90 c2 01 00 00 48 8b 00 48 85 c0 75 04 33 d2 eb 0e 8b 10 48 8b d0 39 12 48 83 c2 0c 8b 40 08 0f b7 42 0a c3}
+; digit_1[46] = {0f 1f 44 00 00 48 b8 40 ef 00 10 22 02 00 00 48 8b 00 48 85 c0 75 04 33 d2 eb 0e 8b 10 48 8b d0 39 12 48 83 c2 0c 8b 40 08 0f b7 42 0a c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,1c29000eec8h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 c8 ee 00 90 c2 01 00 00}
+0005h mov rax,2221000ef40h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 40 ef 00 10 22 02 00 00}
 000fh mov rax,[rax]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 00}
 0012h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}
 0015h jne short 001bh                         ; JNE rel8 || 75 cb || encoded[2]{75 04}
@@ -47,25 +47,25 @@
 0029h movzx eax,word ptr [rdx+0ah]            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{0f b7 42 0a}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ; char digit_2()
-; digit_2[39] = {48 83 ec 28 90 48 b8 c8 ee 00 90 c2 01 00 00 48 8b 00 83 78 08 05 76 09 0f b7 40 16 48 83 c4 28 c3 e8 2a 77 4d 5f cc}
+; digit_2[39] = {48 83 ec 28 90 48 b8 40 ef 00 10 22 02 00 00 48 8b 00 83 78 08 05 76 09 0f b7 40 16 48 83 c4 28 c3 e8 0a 6b 4b 5f cc}
 ; TermCode = MSDIAG
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rax,1c29000eec8h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 c8 ee 00 90 c2 01 00 00}
+0005h mov rax,2221000ef40h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 40 ef 00 10 22 02 00 00}
 000fh mov rax,[rax]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 00}
 0012h cmp dword ptr [rax+8],5                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 78 08 05}
 0016h jbe short 0021h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
 0018h movzx eax,word ptr [rax+16h]            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{0f b7 40 16}
 001ch add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
-0021h call 7ff825fcfdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a 77 4d 5f}
+0021h call 7ff825fcfdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 6b 4b 5f}
 0026h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ; char digit(int i)
-; digit_32i[23] = {0f 1f 44 00 00 48 63 c1 48 ba 09 7e 17 ee c2 01 00 00 0f b6 04 10 c3}
+; digit_32i[23] = {0f 1f 44 00 00 48 63 c1 48 ba f5 7e 45 69 22 02 00 00 0f b6 04 10 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsxd rax,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c1}
-0008h mov rdx,1c2ee177e09h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 09 7e 17 ee c2 01 00 00}
+0008h mov rdx,22269457ef5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba f5 7e 45 69 22 02 00 00}
 0012h movzx eax,byte ptr [rax+rdx]            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{0f b6 04 10}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ; char bdigit(bit b)

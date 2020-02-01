@@ -1,3 +1,25 @@
+// System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
+// AggressiveInlining
+Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.Byte> System.Runtime.Intrinsics.X86.Sse2::Max(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+    IL_0007: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+// Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)
+// AggressiveInlining
+Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.SByte> System.Runtime.Intrinsics.X86.Sse41::Max(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
+    IL_0007: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
 // Vector128<short> vmax(Vector128<short> x, Vector128<short> y)
 // AggressiveInlining
@@ -147,27 +169,5 @@ Vector256<long> vmax(Vector256<long> x, Vector256<long> y)
     IL_0009: call System.Runtime.Intrinsics.Vector256`1<System.Byte> zfunc::v8u<System.Int64>(System.Runtime.Intrinsics.Vector256`1<System.Int64>)
     IL_000E: call System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vblend(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Byte>)
     IL_0013: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
-// AggressiveInlining
-Vector128<byte> vmax(Vector128<byte> x, Vector128<byte> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.Byte> System.Runtime.Intrinsics.X86.Sse2::Max(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-    IL_0007: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vmax(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
-// Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)
-// AggressiveInlining
-Vector128<sbyte> vmax(Vector128<sbyte> x, Vector128<sbyte> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.SByte> System.Runtime.Intrinsics.X86.Sse41::Max(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
-    IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------

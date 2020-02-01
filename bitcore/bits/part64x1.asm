@@ -47,7 +47,7 @@
 00aah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void part64x1(ulong src, Span<bit> dst)
-; part64x1_64u_ed_Span`1[77] = {48 83 ec 28 48 8b c1 4c 8b 02 8b 4a 08 48 c1 e1 02 48 c1 e9 03 48 81 f9 ff ff ff 7f 77 2f 33 d2 48 63 ca 4d 8d 0c c8 8b ca 4c 8b d0 49 d3 ea 48 b9 01 00 00 00 01 00 00 00 c4 e2 ab f5 c9 49 89 09 ff c2 83 fa 20 7c d8 48 83 c4 28 c3}
+; part64x1_64u_span1u[77] = {48 83 ec 28 48 8b c1 4c 8b 02 8b 4a 08 48 c1 e1 02 48 c1 e9 03 48 81 f9 ff ff ff 7f 77 2f 33 d2 48 63 ca 4d 8d 0c c8 8b ca 4c 8b d0 49 d3 ea 48 b9 01 00 00 00 01 00 00 00 c4 e2 ab f5 c9 49 89 09 ff c2 83 fa 20 7c d8 48 83 c4 28 c3}
 ; TermCode = ZEDx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

@@ -1,11 +1,11 @@
-true  0f 1f 44 00 00 b8 ff 00 00 00 c3
-true  0f 1f 44 00 00 b8 ff ff ff ff c3
-true  0f 1f 44 00 00 b8 ff ff 00 00 c3
-true  0f 1f 44 00 00 b8 ff ff ff ff c3
-true  0f 1f 44 00 00 b8 ff ff ff ff c3
-true  0f 1f 44 00 00 b8 ff ff ff ff c3
-true  0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff ff c3
-true  0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff ff c3
+true_g  0f 1f 44 00 00 b8 ff 00 00 00 c3
+true_g  0f 1f 44 00 00 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 b8 ff ff 00 00 c3
+true_g  0f 1f 44 00 00 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff ff c3
+true_g  0f 1f 44 00 00 48 b8 ff ff ff ff ff ff ff ff c3
 true_g8u   0f 1f 44 00 00 b8 ff 00 00 00 c3
 true_g8i   0f 1f 44 00 00 b8 ff ff ff ff c3
 true_g16u  0f 1f 44 00 00 b8 ff ff 00 00 c3

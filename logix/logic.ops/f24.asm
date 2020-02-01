@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f24(bit a, bit b, bit c)
-; f24_bit_bit_bit[15] = {0f 1f 44 00 00 33 ca 41 33 d0 8b c1 23 c2 c3}
+; f24_[15] = {0f 1f 44 00 00 33 ca 41 33 d0 8b c1 23 c2 c3}
 ; TermCode = RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor ecx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 ca}

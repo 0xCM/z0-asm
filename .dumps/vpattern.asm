@@ -16,19 +16,19 @@
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,20100100h                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 00 01 10 20}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
-; PrimalKind:uint pkind_8u()
+; NumericKind:uint pkind_8u()
 ; pkind_8u[11] = {0f 1f 44 00 00 b8 08 00 01 20 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,20010008h                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 08 00 01 20}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
-; PrimalKind:uint pkind_32u()
+; NumericKind:uint pkind_32u()
 ; pkind_32u[11] = {0f 1f 44 00 00 b8 20 00 10 20 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,20100020h                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 20 00 10 20}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
-; PrimalKind:uint pkind_32i()
+; NumericKind:uint pkind_32i()
 ; pkind_32i[11] = {0f 1f 44 00 00 b8 20 00 20 80 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -93,22 +93,22 @@
 0019h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ; Vector256<byte> pattern_lanemerge_256x8u()
-; pattern_lanemerge_256x8u[30] = {c5 f8 77 66 90 48 b8 61 79 08 f1 c2 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; pattern_lanemerge_256x8u[30] = {c5 f8 77 66 90 48 b8 5d 93 34 6c 22 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h mov rax,1c2f1087961h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 61 79 08 f1 c2 01 00 00}
+0005h mov rax,2226c34935dh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 5d 93 34 6c 22 02 00 00}
 000fh vlddqu ymm0,ymmword ptr [rax]           ; VLDDQU ymm1, m256 || VEX.256.F2.0F.WIG F0 /r || encoded[4]{c5 ff f0 00}
 0013h vmovupd [rcx],ymm0                      ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[4]{c5 fd 11 01}
 0017h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ; Vector256<ushort> pattern_lanemerge_256x16u()
-; pattern_lanemerge_256x16u[30] = {c5 f8 77 66 90 48 b8 e1 79 08 f1 c2 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; pattern_lanemerge_256x16u[30] = {c5 f8 77 66 90 48 b8 dd 93 34 6c 22 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = MSDIAG
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h mov rax,1c2f10879e1h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 e1 79 08 f1 c2 01 00 00}
+0005h mov rax,2226c3493ddh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 dd 93 34 6c 22 02 00 00}
 000fh vlddqu ymm0,ymmword ptr [rax]           ; VLDDQU ymm1, m256 || VEX.256.F2.0F.WIG F0 /r || encoded[4]{c5 ff f0 00}
 0013h vmovupd [rcx],ymm0                      ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[4]{c5 fd 11 01}
 0017h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

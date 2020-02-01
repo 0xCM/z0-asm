@@ -1,0 +1,4 @@
+cell_gdbg8x8u(in)_32i    0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 07 03 d1 c1 fa 03 48 63 d2 48 03 c2 c3
+cell_gdbg16x16u(in)_32i  0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 0f 03 d1 c1 fa 04 48 63 d2 48 8d 04 50 c3
+cell_gdbg32x32u(in)_32i  0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 1f 03 d1 c1 fa 05 48 63 d2 48 8d 04 90 c3
+cell_gdbg64x64u(in)_32i  0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 3f 03 d1 c1 fa 06 48 63 d2 48 8d 04 d0 c3

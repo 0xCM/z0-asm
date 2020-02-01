@@ -1,4 +1,4 @@
-altodd  0f 1f 44 00 00 b8 55 00 00 00 c3
-altodd  0f 1f 44 00 00 b8 55 55 00 00 c3
-altodd  0f 1f 44 00 00 b8 55 55 55 55 c3
-altodd  0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3
+altodd_g  0f 1f 44 00 00 b8 55 00 00 00 c3
+altodd_g  0f 1f 44 00 00 b8 55 55 00 00 c3
+altodd_g  0f 1f 44 00 00 b8 55 55 55 55 c3
+altodd_g  0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3

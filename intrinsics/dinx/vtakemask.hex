@@ -1,0 +1,8 @@
+vtakemask_v128x8u   c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3
+vtakemask_v128x16u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3
+vtakemask_v128x32u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3
+vtakemask_v128x64u  c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3
+vtakemask_v256x8u   c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3
+vtakemask_v256x16u  c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3
+vtakemask_v256x32u  c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3
+vtakemask_v256x64u  c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 c5 f8 77 c3

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8i_8u-imm5
-; vperm4x64_v256x8i_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -10,8 +10,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8i_8u-imm9
-; vperm4x64_v256x8i_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -21,8 +21,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8i_8u-imm13
-; vperm4x64_v256x8i_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -32,8 +32,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8u_8u-imm5
-; vperm4x64_v256x8u_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -43,8 +43,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8u_8u-imm9
-; vperm4x64_v256x8u_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -54,8 +54,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x8u_8u-imm13
-; vperm4x64_v256x8u_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -65,8 +65,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16i_8u-imm5
-; vperm4x64_v256x16i_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -76,8 +76,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16i_8u-imm9
-; vperm4x64_v256x16i_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -87,8 +87,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16i_8u-imm13
-; vperm4x64_v256x16i_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -98,8 +98,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16u_8u-imm5
-; vperm4x64_v256x16u_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -109,8 +109,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16u_8u-imm9
-; vperm4x64_v256x16u_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -120,8 +120,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x16u_8u-imm13
-; vperm4x64_v256x16u_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -131,8 +131,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32i_8u-imm5
-; vperm4x64_v256x32i_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -142,8 +142,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32i_8u-imm9
-; vperm4x64_v256x32i_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -153,8 +153,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32i_8u-imm13
-; vperm4x64_v256x32i_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -164,8 +164,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32u_8u-imm5
-; vperm4x64_v256x32u_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -175,8 +175,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32u_8u-imm9
-; vperm4x64_v256x32u_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -186,8 +186,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x32u_8u-imm13
-; vperm4x64_v256x32u_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -197,8 +197,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64u_8u-imm5
-; vperm4x64_v256x64u_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -208,8 +208,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64u_8u-imm9
-; vperm4x64_v256x64u_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -219,8 +219,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64u_8u-imm13
-; vperm4x64_v256x64u_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -230,8 +230,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64i_8u-imm5
-; vperm4x64_v256x64i_8u-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm5
+; vperm4x64-imm5[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -241,8 +241,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64i_8u-imm9
-; vperm4x64_v256x64i_8u-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm9
+; vperm4x64-imm9[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -252,8 +252,8 @@
 0014h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; vperm4x64_v256x64i_8u-imm13
-; vperm4x64_v256x64i_8u-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vperm4x64-imm13
+; vperm4x64-imm13[24] = {c5 f8 77 c5 fd 10 02 c4 e3 fd 00 c0 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

@@ -1,4 +1,4 @@
-true_g~eg_BitVector`1_Byte_~eg_BitVector`1_Byte      0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff 00 00 00 c3
-true_g~eg_BitVector`1_UInt16_~eg_BitVector`1_UInt16  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff 00 00 c3
-true_g~eg_BitVector`1_UInt32_~eg_BitVector`1_UInt32  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
-true_g~eg_BitVector`1_UInt64_~eg_BitVector`1_UInt64  0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 48 b8 ff ff ff ff ff ff ff ff c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff 00 00 00 c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff 00 00 c3
+true_g  0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+true_g  0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 48 b8 ff ff ff ff ff ff ff ff c3

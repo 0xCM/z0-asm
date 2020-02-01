@@ -1,0 +1,90 @@
+vload_g8u(in)_v128x8u(out)    c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g8i(in)_v128x8i(out)    c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g16u(in)_v128x16u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g16i(in)_v128x16i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32u(in)_v128x32u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32i(in)_v128x32i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g64u(in)_v128x64u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g64i(in)_v128x64i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32f(in)_v128x32f(out)  c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3
+vload_g64f(in)_v128x64f(out)  c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3
+vload_g8u(in)_v256x8u(out)    c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g8i(in)_v256x8i(out)    c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g16u(in)_v256x16u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g16i(in)_v256x16i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32u(in)_v256x32u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32i(in)_v256x32i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64u(in)_v256x64u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64i(in)_v256x64i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32f(in)_v256x32f(out)  c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64f(in)_v256x64f(out)  c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g8u(in)_v512x8u(out)    48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g8i(in)_v512x8i(out)    48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g16u(in)_v512x16u(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g16i(in)_v512x16i(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g32u(in)_v512x32u(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g32i(in)_v512x32i(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g64u(in)_v512x64u(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g64i(in)_v512x64i(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g32f(in)_v512x32f(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_g64f(in)_v512x64f(out)  48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3
+vload_gb128x8u(in)   c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x8i(in)   c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x16u(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x16i(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x32u(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x32i(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x64u(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x64i(in)  c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x32f(in)  c5 f8 77 66 90 48 8b 02 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3
+vload_gb128x64f(in)  c5 f8 77 66 90 48 8b 02 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3
+vload_gb256x8u(in)   c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x8i(in)   c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x16u(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x16i(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x32u(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x32i(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x64u(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x64i(in)  c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x32f(in)  c5 f8 77 66 90 48 8b 02 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb256x64f(in)  c5 f8 77 66 90 48 8b 02 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vload_gb512x8u(in)   48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x8i(in)   48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x16u(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x16i(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x32u(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x32i(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x64u(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x64i(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x32f(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_gb512x64f(in)  48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3
+vload_g8u(ptr)_v128x8u(out)    c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g8i(ptr)_v128x8i(out)    c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g16u(ptr)_v128x16u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g16i(ptr)_v128x16i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32u(ptr)_v128x32u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32i(ptr)_v128x32i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g64u(ptr)_v128x64u(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g64i(ptr)_v128x64i(out)  c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3
+vload_g32f(ptr)_v128x32f(out)  c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3
+vload_g64f(ptr)_v128x64f(out)  c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3
+vload_g8u(ptr)_v256x8u(out)    c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g8i(ptr)_v256x8i(out)    c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g16u(ptr)_v256x16u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g16i(ptr)_v256x16i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32u(ptr)_v256x32u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32i(ptr)_v256x32i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64u(ptr)_v256x64u(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64i(ptr)_v256x64i(out)  c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g32f(ptr)_v256x32f(out)  c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g64f(ptr)_v256x64f(out)  c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3
+vload_g8u(ptr)_v512x8u(out)    57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g8i(ptr)_v512x8i(out)    57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g16u(ptr)_v512x16u(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g16i(ptr)_v512x16i(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g32u(ptr)_v512x32u(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g32i(ptr)_v512x32i(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g64u(ptr)_v512x64u(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g64i(ptr)_v512x64i(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g32f(ptr)_v512x32f(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3
+vload_g64f(ptr)_v512x64f(out)  57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3

@@ -1,3 +1,92 @@
+// System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
+// Vector128<byte> vsllv(Vector128<byte> src, Vector128<byte> counts)
+// AggressiveInlining
+Vector128<byte> vsllv(Vector128<byte> src, Vector128<byte> counts)
+{
+    IL_0000: ldarg.0
+    IL_0001: call Z0.N256 zfunc::get_n256()
+    IL_0006: ldc.i4.0
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt16)
+    IL_000C: stloc.0
+    IL_000D: ldarg.1
+    IL_000E: call Z0.N256 zfunc::get_n256()
+    IL_0013: ldc.i4.0
+    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt16)
+    IL_0019: stloc.1
+    IL_001A: ldloc.0
+    IL_001B: ldloc.1
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
+    IL_0021: call Z0.N128 zfunc::get_n128()
+    IL_0026: ldc.i4.0
+    IL_0027: call System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,Z0.N128,System.Byte)
+    IL_002C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
+// Vector128<short> vsllv(Vector128<short> src, Vector128<short> counts)
+// AggressiveInlining
+Vector128<short> vsllv(Vector128<short> src, Vector128<short> counts)
+{
+    IL_0000: ldarg.0
+    IL_0001: call Z0.N256 zfunc::get_n256()
+    IL_0006: ldc.i4.0
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int32)
+    IL_000C: stloc.0
+    IL_000D: ldarg.1
+    IL_000E: call Z0.N256 zfunc::get_n256()
+    IL_0013: ldc.i4.0
+    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int32)
+    IL_0019: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> zfunc::v32u<System.Int32>(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
+    IL_001E: stloc.1
+    IL_001F: ldloc.0
+    IL_0020: ldloc.1
+    IL_0021: call System.Runtime.Intrinsics.Vector256`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+    IL_0026: stloc.2
+    IL_0027: ldloc.2
+    IL_0028: call Z0.N128 zfunc::get_n128()
+    IL_002D: ldc.i4.0
+    IL_002E: call System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.Int32>,Z0.N128,System.Int16)
+    IL_0033: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
+// Vector128<ushort> vsllv(Vector128<ushort> src, Vector128<ushort> counts)
+// AggressiveInlining
+Vector128<ushort> vsllv(Vector128<ushort> src, Vector128<ushort> counts)
+{
+    IL_0000: ldarg.0
+    IL_0001: call Z0.N256 zfunc::get_n256()
+    IL_0006: ldc.i4.0
+    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt32)
+    IL_000C: stloc.0
+    IL_000D: ldarg.1
+    IL_000E: call Z0.N256 zfunc::get_n256()
+    IL_0013: ldc.i4.0
+    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt32)
+    IL_0019: stloc.1
+    IL_001A: ldloc.0
+    IL_001B: ldloc.1
+    IL_001C: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
+    IL_0021: stloc.2
+    IL_0022: ldloc.2
+    IL_0023: call Z0.N128 zfunc::get_n128()
+    IL_0028: ldc.i4.0
+    IL_0029: call System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,Z0.N128,System.UInt16)
+    IL_002E: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+// Vector128<int> vsllv(Vector128<int> src, Vector128<int> counts)
+// AggressiveInlining
+Vector128<int> vsllv(Vector128<int> src, Vector128<int> counts)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.UInt32> zfunc::v32u<System.Int32>(System.Runtime.Intrinsics.Vector128`1<System.Int32>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector128`1<System.UInt32> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.UInt32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
 // Vector128<uint> vsllv(Vector128<uint> src, Vector128<uint> counts)
 // AggressiveInlining
@@ -272,94 +361,5 @@ Vector128<sbyte> vsllv(Vector128<sbyte> src, Vector128<sbyte> counts)
     IL_0026: ldc.i4.0
     IL_0027: call System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.Int16>,Z0.N128,System.SByte)
     IL_002C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Byte>,System.Runtime.Intrinsics.Vector128`1<System.Byte>)
-// Vector128<byte> vsllv(Vector128<byte> src, Vector128<byte> counts)
-// AggressiveInlining
-Vector128<byte> vsllv(Vector128<byte> src, Vector128<byte> counts)
-{
-    IL_0000: ldarg.0
-    IL_0001: call Z0.N256 zfunc::get_n256()
-    IL_0006: ldc.i4.0
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt16)
-    IL_000C: stloc.0
-    IL_000D: ldarg.1
-    IL_000E: call Z0.N256 zfunc::get_n256()
-    IL_0013: ldc.i4.0
-    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Byte>,Z0.N256,System.UInt16)
-    IL_0019: stloc.1
-    IL_001A: ldloc.0
-    IL_001B: ldloc.1
-    IL_001C: call System.Runtime.Intrinsics.Vector256`1<System.UInt16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,System.Runtime.Intrinsics.Vector256`1<System.UInt16>)
-    IL_0021: call Z0.N128 zfunc::get_n128()
-    IL_0026: ldc.i4.0
-    IL_0027: call System.Runtime.Intrinsics.Vector128`1<System.Byte> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.UInt16>,Z0.N128,System.Byte)
-    IL_002C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Int16>,System.Runtime.Intrinsics.Vector128`1<System.Int16>)
-// Vector128<short> vsllv(Vector128<short> src, Vector128<short> counts)
-// AggressiveInlining
-Vector128<short> vsllv(Vector128<short> src, Vector128<short> counts)
-{
-    IL_0000: ldarg.0
-    IL_0001: call Z0.N256 zfunc::get_n256()
-    IL_0006: ldc.i4.0
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int32)
-    IL_000C: stloc.0
-    IL_000D: ldarg.1
-    IL_000E: call Z0.N256 zfunc::get_n256()
-    IL_0013: ldc.i4.0
-    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.Int16>,Z0.N256,System.Int32)
-    IL_0019: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> zfunc::v32u<System.Int32>(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
-    IL_001E: stloc.1
-    IL_001F: ldloc.0
-    IL_0020: ldloc.1
-    IL_0021: call System.Runtime.Intrinsics.Vector256`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
-    IL_0026: stloc.2
-    IL_0027: ldloc.2
-    IL_0028: call Z0.N128 zfunc::get_n128()
-    IL_002D: ldc.i4.0
-    IL_002E: call System.Runtime.Intrinsics.Vector128`1<System.Int16> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.Int32>,Z0.N128,System.Int16)
-    IL_0033: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,System.Runtime.Intrinsics.Vector128`1<System.UInt16>)
-// Vector128<ushort> vsllv(Vector128<ushort> src, Vector128<ushort> counts)
-// AggressiveInlining
-Vector128<ushort> vsllv(Vector128<ushort> src, Vector128<ushort> counts)
-{
-    IL_0000: ldarg.0
-    IL_0001: call Z0.N256 zfunc::get_n256()
-    IL_0006: ldc.i4.0
-    IL_0007: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt32)
-    IL_000C: stloc.0
-    IL_000D: ldarg.1
-    IL_000E: call Z0.N256 zfunc::get_n256()
-    IL_0013: ldc.i4.0
-    IL_0014: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> Z0.dinx::vinflate(System.Runtime.Intrinsics.Vector128`1<System.UInt16>,Z0.N256,System.UInt32)
-    IL_0019: stloc.1
-    IL_001A: ldloc.0
-    IL_001B: ldloc.1
-    IL_001C: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,System.Runtime.Intrinsics.Vector256`1<System.UInt32>)
-    IL_0021: stloc.2
-    IL_0022: ldloc.2
-    IL_0023: call Z0.N128 zfunc::get_n128()
-    IL_0028: ldc.i4.0
-    IL_0029: call System.Runtime.Intrinsics.Vector128`1<System.UInt16> Z0.dinx::vcompact(System.Runtime.Intrinsics.Vector256`1<System.UInt32>,Z0.N128,System.UInt16)
-    IL_002E: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<System.Int32> Z0.dinx::vsllv(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.Int32>)
-// Vector128<int> vsllv(Vector128<int> src, Vector128<int> counts)
-// AggressiveInlining
-Vector128<int> vsllv(Vector128<int> src, Vector128<int> counts)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector128`1<System.UInt32> zfunc::v32u<System.Int32>(System.Runtime.Intrinsics.Vector128`1<System.Int32>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<System.Int32> System.Runtime.Intrinsics.X86.Avx2::ShiftLeftLogicalVariable(System.Runtime.Intrinsics.Vector128`1<System.Int32>,System.Runtime.Intrinsics.Vector128`1<System.UInt32>)
-    IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------

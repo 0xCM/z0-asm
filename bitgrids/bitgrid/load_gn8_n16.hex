@@ -1,0 +1,4 @@
+load_gv128x8u_n8_n16   c5 f8 77 66 90 c5 f9 10 02 c5 f9 11 01 48 8b c1 c3
+load_gv128x16u_n8_n16  c5 f8 77 66 90 c5 f9 10 02 c5 f9 11 01 48 8b c1 c3
+load_gv128x32u_n8_n16  c5 f8 77 66 90 c5 f9 10 02 c5 f9 11 01 48 8b c1 c3
+load_gv128x64u_n8_n16  c5 f8 77 66 90 c5 f9 10 02 c5 f9 11 01 48 8b c1 c3

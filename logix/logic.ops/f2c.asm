@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f2c(bit a, bit b, bit c)
-; f2c_bit_bit_bit[16] = {0f 1f 44 00 00 44 0b c2 33 d1 41 8b c0 23 c2 c3}
+; f2c_[16] = {0f 1f 44 00 00 44 0b c2 33 d1 41 8b c0 23 c2 c3}
 ; TermCode = RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h or r8d,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{44 0b c2}

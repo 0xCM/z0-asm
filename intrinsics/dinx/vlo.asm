@@ -124,7 +124,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Pair<ulong> vlo(Vector256<ulong> src, ref Pair<ulong> dst)
-; vlo_v256x64u_~eg_Pair`1_UInt64(ref)[38] = {c5 f8 77 66 90 c5 fe 6f 01 c4 e1 f9 7e c0 48 89 02 c5 fe 6f 01 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3}
+; vlo_v256x64u[38] = {c5 f8 77 66 90 c5 fe 6f 01 c4 e1 f9 7e c0 48 89 02 c5 fe 6f 01 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

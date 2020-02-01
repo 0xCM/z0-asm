@@ -1,5 +1,5 @@
 ; long loop_inc(int start, int max, long count)
-; loop_inc_32i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 7d 0c 4c 63 c1 49 03 c0 ff c1 3b ca 7c f4 c3}
+; loop_inc_32i_32i_64i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 7d 0c 4c 63 c1 49 03 c0 ff c1 3b ca 7c f4 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
@@ -12,7 +12,7 @@
 0016h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c f4}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ; long loop_inc_test_neq(int start, int test, long count)
-; loop_inc_test_neq_32i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 74 0c 4c 63 c1 49 03 c0 ff c1 3b ca 75 f4 c3}
+; loop_inc_test_neq_32i_32i_64i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 74 0c 4c 63 c1 49 03 c0 ff c1 3b ca 75 f4 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
@@ -25,7 +25,7 @@
 0016h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 f4}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ; long loop_dec(int start, int min, long count)
-; loop_dec_32i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 7c 0c 4c 63 c1 49 03 c0 ff c9 3b ca 7d f4 c3}
+; loop_dec_32i_32i_64i[25] = {0f 1f 44 00 00 49 8b c0 3b ca 7c 0c 4c 63 c1 49 03 c0 ff c9 3b ca 7d f4 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
@@ -38,7 +38,7 @@
 0016h jge short 000ch                         ; JGE rel8 || 7D cb || encoded[2]{7d f4}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ; long loop_inc_step(int start, int max, int step, long count)
-; loop_inc_step_32i[26] = {0f 1f 44 00 00 49 8b c1 3b ca 7d 0d 4c 63 c9 49 03 c1 41 03 c8 3b ca 7c f3 c3}
+; loop_inc_step_32i_32i_32i_64i[26] = {0f 1f 44 00 00 49 8b c1 3b ca 7d 0d 4c 63 c9 49 03 c1 41 03 c8 3b ca 7c f3 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c1}
@@ -51,7 +51,7 @@
 0017h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c f3}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ; long loop_dec_step(int start, int min, int step, long count)
-; loop_dec_step_32i[26] = {0f 1f 44 00 00 49 8b c1 3b ca 7c 0d 4c 63 c9 49 03 c1 41 2b c8 3b ca 7d f3 c3}
+; loop_dec_step_32i_32i_32i_64i[26] = {0f 1f 44 00 00 49 8b c1 3b ca 7c 0d 4c 63 c9 49 03 c1 41 2b c8 3b ca 7d f3 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c1}
@@ -137,7 +137,7 @@
 0024h and eax,7                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 07}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ; int FindByte(in Block256<byte> src)
-; FindByte_256x8u[71] = {0f 1f 44 00 00 33 c0 48 8b 11 48 8b ca 4c 63 c0 42 0f b6 0c 01 48 85 c9 75 07 ff c0 83 f8 21 7c e9 48 8b d1 48 f7 da 48 23 d1 48 c1 ea 08 48 b9 80 03 83 02 82 01 81 00 48 0f af d1 48 c1 ea 37 83 e2 07 8d 04 c2 c3}
+; FindByte_b256x8u(in)[71] = {0f 1f 44 00 00 33 c0 48 8b 11 48 8b ca 4c 63 c0 42 0f b6 0c 01 48 85 c9 75 07 ff c0 83 f8 21 7c e9 48 8b d1 48 f7 da 48 23 d1 48 c1 ea 08 48 b9 80 03 83 02 82 01 81 00 48 0f af d1 48 c1 ea 37 83 e2 07 8d 04 c2 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

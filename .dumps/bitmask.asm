@@ -1,5 +1,5 @@
 ; bit testbit_8i(sbyte src, int pos)
-; testbit_8i_8i[19] = {0f 1f 44 00 00 48 0f be c1 0f a3 d0 0f 92 c0 0f b6 c0 c3}
+; testbit_8i_8i_32i[19] = {0f 1f 44 00 00 48 0f be c1 0f a3 d0 0f 92 c0 0f b6 c0 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -8,7 +8,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_d8u(byte src, int pos)
-; testbit_d8u_8u[16] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 c3}
+; testbit_d8u_8u_32i[16] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -17,7 +17,7 @@
 000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_8u(byte src, int pos)
-; testbit_8u_8u[16] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 c3}
+; testbit_8u_8u_32i[16] = {0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -26,7 +26,7 @@
 000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_16i(short src, int pos)
-; testbit_16i_16i[19] = {0f 1f 44 00 00 48 0f bf c1 0f a3 d0 0f 92 c0 0f b6 c0 c3}
+; testbit_16i_16i_32i[19] = {0f 1f 44 00 00 48 0f bf c1 0f a3 d0 0f 92 c0 0f b6 c0 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -35,7 +35,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_16u(ushort src, int pos)
-; testbit_16u_16u[16] = {0f 1f 44 00 00 0f b7 c1 8b ca d3 e8 83 e0 01 c3}
+; testbit_16u_16u_32i[16] = {0f 1f 44 00 00 0f b7 c1 8b ca d3 e8 83 e0 01 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -44,7 +44,7 @@
 000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_32i(int src, int pos)
-; testbit_32i_32i[15] = {0f 1f 44 00 00 0f a3 d1 0f 92 c0 0f b6 c0 c3}
+; testbit_32i_32i_32i[15] = {0f 1f 44 00 00 0f a3 d1 0f 92 c0 0f b6 c0 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h bt ecx,edx                              ; BT r/m32, r32 || o32 0F A3 /r || encoded[3]{0f a3 d1}
@@ -52,7 +52,7 @@
 000bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_32u(uint src, int pos)
-; testbit_32u_32u[15] = {0f 1f 44 00 00 8b c1 8b ca d3 e8 83 e0 01 c3}
+; testbit_32u_32u_32i[15] = {0f 1f 44 00 00 8b c1 8b ca d3 e8 83 e0 01 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -61,7 +61,7 @@
 000bh and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_64i(long src, int pos)
-; testbit_64i_64i[16] = {0f 1f 44 00 00 48 0f a3 d1 0f 92 c0 0f b6 c0 c3}
+; testbit_64i_64i_32i[16] = {0f 1f 44 00 00 48 0f a3 d1 0f 92 c0 0f b6 c0 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h bt rcx,rdx                              ; BT r/m64, r64 || REX.W 0F A3 /r || encoded[4]{48 0f a3 d1}
@@ -69,7 +69,7 @@
 000ch movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ; bit testbit_64u(ulong src, int pos)
-; testbit_64u_64u[17] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 83 e0 01 c3}
+; testbit_64u_64u_32i[17] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 83 e0 01 c3}
 ; TermCode = MSDIAG
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

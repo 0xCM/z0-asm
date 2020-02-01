@@ -1,0 +1,4 @@
+identity_gbm8x8u(in)    57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 6d 0d b4 5e 48 a5 48 8b c3 5b 5e 5f c3
+identity_gbm16x16u(in)  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 2d 0d b4 5e 48 a5 48 8b c3 5b 5e 5f c3
+identity_gbm32x32u(in)  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 ed 0c b4 5e 48 a5 48 8b c3 5b 5e 5f c3
+identity_gbm64x64u(in)  57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 ad 0c b4 5e 48 a5 48 8b c3 5b 5e 5f c3

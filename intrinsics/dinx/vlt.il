@@ -1,3 +1,14 @@
+// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vlt(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
+// Vector256<long> vlt(Vector256<long> x, Vector256<long> y)
+// AggressiveInlining
+Vector256<long> vlt(Vector256<long> x, Vector256<long> y)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.X86Missing::CompareLessThan(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
+    IL_0007: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vlt(System.Runtime.Intrinsics.Vector128`1<System.SByte>,System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vlt(Vector128<sbyte> x, Vector128<sbyte> y)
 // AggressiveInlining
@@ -221,16 +232,5 @@ Vector256<uint> vlt(Vector256<uint> x, Vector256<uint> y)
     IL_0028: call System.Runtime.Intrinsics.Vector256`1<System.Int32> Z0.X86Missing::CompareLessThan(System.Runtime.Intrinsics.Vector256`1<System.Int32>,System.Runtime.Intrinsics.Vector256`1<System.Int32>)
     IL_002D: call System.Runtime.Intrinsics.Vector256`1<System.UInt32> zfunc::v32u<System.Int32>(System.Runtime.Intrinsics.Vector256`1<System.Int32>)
     IL_0032: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.dinx::vlt(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
-// Vector256<long> vlt(Vector256<long> x, Vector256<long> y)
-// AggressiveInlining
-Vector256<long> vlt(Vector256<long> x, Vector256<long> y)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call System.Runtime.Intrinsics.Vector256`1<System.Int64> Z0.X86Missing::CompareLessThan(System.Runtime.Intrinsics.Vector256`1<System.Int64>,System.Runtime.Intrinsics.Vector256`1<System.Int64>)
-    IL_0007: ret
 }
 ------------------------------------------------------------------------------------------------------------------------

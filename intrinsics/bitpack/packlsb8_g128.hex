@@ -1,8 +1,0 @@
-packlsb8_gv128x8u   c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x8i   c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x16u  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x16i  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x32u  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x32i  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x64u  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3
-packlsb8_gv128x64i  c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3

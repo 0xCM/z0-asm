@@ -1,8 +1,8 @@
-negate_g~eg_IUnaryArithmeticOp`1_Byte    56 48 83 ec 20 e8 06 f0 ff ff 0f b6 48 08 f7 d1 ff c1 40 0f b6 f1 48 b9 60 03 95 c7 f7 7f 00 00 e8 db a0 aa 5e 40 88 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_SByte   56 48 83 ec 20 e8 06 f0 ff ff 48 0f be 48 08 f7 d9 48 0f be f1 48 b9 d0 06 95 c7 f7 7f 00 00 e8 8c a0 aa 5e 40 88 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_UInt16  56 48 83 ec 20 e8 e6 ef ff ff 0f b7 48 08 f7 d1 ff c1 0f b7 f1 48 b9 e0 09 95 c7 f7 7f 00 00 e8 3c a0 aa 5e 66 89 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_Int16   56 48 83 ec 20 e8 c6 ef ff ff 48 0f bf 48 08 f7 d9 48 0f bf f1 48 b9 f0 0c 95 c7 f7 7f 00 00 e8 ec 9f aa 5e 66 89 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_UInt32  56 48 83 ec 20 e8 8e f7 ff ff 8b 48 08 8b f1 f7 d6 ff c6 48 b9 00 10 95 c7 f7 7f 00 00 e8 9e 9f aa 5e 89 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_Int32   56 48 83 ec 20 e8 7e f7 ff ff 8b 48 08 8b f1 f7 de 48 b9 10 13 95 c7 f7 7f 00 00 e8 60 9f aa 5e 89 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_UInt64  56 48 83 ec 20 e8 6e f7 ff ff 48 8b 48 08 48 8b f1 48 f7 d6 48 ff c6 48 b9 20 16 95 c7 f7 7f 00 00 e8 1a 9f aa 5e 48 89 70 08 48 83 c4 20 5e c3
-negate_g~eg_IUnaryArithmeticOp`1_Int64   56 48 83 ec 20 e8 4e f7 ff ff 48 8b 48 08 48 8b f1 48 f7 de 48 b9 30 19 95 c7 f7 7f 00 00 e8 cd 9e aa 5e 48 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 ae ef ff ff 0f b6 48 08 f7 d1 ff c1 40 0f b6 f1 48 b9 58 97 94 c7 f7 7f 00 00 e8 bb 53 ad 5e 40 88 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 ae ef ff ff 48 0f be 48 08 f7 d9 48 0f be f1 48 b9 c8 9a 94 c7 f7 7f 00 00 e8 6c 53 ad 5e 40 88 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 8e ef ff ff 0f b7 48 08 f7 d1 ff c1 0f b7 f1 48 b9 d8 9d 94 c7 f7 7f 00 00 e8 1c 53 ad 5e 66 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 6e ef ff ff 48 0f bf 48 08 f7 d9 48 0f bf f1 48 b9 e8 a0 94 c7 f7 7f 00 00 e8 cc 52 ad 5e 66 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 4e ef ff ff 8b 48 08 8b f1 f7 d6 ff c6 48 b9 f8 a3 94 c7 f7 7f 00 00 e8 7e 52 ad 5e 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 3e ef ff ff 8b 48 08 8b f1 f7 de 48 b9 08 a7 94 c7 f7 7f 00 00 e8 40 52 ad 5e 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 2e ef ff ff 48 8b 48 08 48 8b f1 48 f7 d6 48 ff c6 48 b9 18 aa 94 c7 f7 7f 00 00 e8 fa 51 ad 5e 48 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 0e ef ff ff 48 8b 48 08 48 8b f1 48 f7 de 48 b9 28 ad 94 c7 f7 7f 00 00 e8 ad 51 ad 5e 48 89 70 08 48 83 c4 20 5e c3
