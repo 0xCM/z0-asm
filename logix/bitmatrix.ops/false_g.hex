@@ -1,4 +1,16 @@
-false_g  0f 1f 44 00 00 48 b8 48 34 33 c7 f7 7f 00 00 48 ff e0
-false_g  0f 1f 44 00 00 48 b8 08 35 33 c7 f7 7f 00 00 48 ff e0
-false_g  0f 1f 44 00 00 48 b8 20 3a 33 c7 f7 7f 00 00 48 ff e0
-false_g  0f 1f 44 00 00 48 b8 b0 3a 33 c7 f7 7f 00 00 48 ff e0
+false_g  0f 1f 44 00 00 48 b8 f8 2c 34 c7 f7 7f 00 00 48 ff e0
+false_g  0f 1f 44 00 00 48 b8 b8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_g  0f 1f 44 00 00 48 b8 d8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_g  0f 1f 44 00 00 48 b8 f8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm8x8u(in)    0f 1f 44 00 00 48 b8 f8 2c 34 c7 f7 7f 00 00 48 ff e0
+false_gbm16x16u(in)  0f 1f 44 00 00 48 b8 b8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm32x32u(in)  0f 1f 44 00 00 48 b8 d8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm64x64u(in)  0f 1f 44 00 00 48 b8 f8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm8x8u(in)_bm8x8u(in)      0f 1f 44 00 00 48 b8 f8 2c 34 c7 f7 7f 00 00 48 ff e0
+false_gbm16x16u(in)_bm16x16u(in)  0f 1f 44 00 00 48 b8 b8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm32x32u(in)_bm32x32u(in)  0f 1f 44 00 00 48 b8 d8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm64x64u(in)_bm64x64u(in)  0f 1f 44 00 00 48 b8 f8 2d 34 c7 f7 7f 00 00 48 ff e0
+false_gbm8x8u(in)_bm8x8u(in)_bm8x8u(ref)        56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 86 be 03 ff 48 8b c6 48 83 c4 30 5e c3
+false_gbm16x16u(in)_bm16x16u(in)_bm16x16u(ref)  56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 46 22 99 ff 48 8b c6 48 83 c4 30 5e c3
+false_gbm32x32u(in)_bm32x32u(in)_bm32x32u(ref)  56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 4e 26 99 ff 48 8b c6 48 83 c4 30 5e c3
+false_gbm64x64u(in)_bm64x64u(in)_bm64x64u(ref)  56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 b6 27 99 ff 48 8b c6 48 83 c4 30 5e c3

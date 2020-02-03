@@ -1,36 +1,36 @@
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
-vtakemask-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v128x8u_8u-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x8u_8u-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x8u_8u-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x16u_8u-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x16u_8u-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x16u_8u-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_8u-imm5   c5 f8 77 c5 f9 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_8u-imm9   c5 f8 77 c5 f9 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_8u-imm13  c5 f8 77 c5 f9 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v256x8u_8u-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x8u_8u-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x8u_8u-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x16u_8u-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x16u_8u-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x16u_8u-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_8u-imm5   c5 f8 77 c5 fd 10 02 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_8u-imm9   c5 f8 77 c5 fd 10 02 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_8u-imm13  c5 f8 77 c5 fd 10 02 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v128x32u_v128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x32u_v128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x32u_v128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_v128x64u_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_v128x64u_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v128x64u_v128x64u_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 66 89 01 48 8b c1 c3
+vtakemask_v256x32u_v256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x32u_v256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x32u_v256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f2 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_v256x64u_8u-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 02 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_v256x64u_8u-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 fe 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3
+vtakemask_v256x64u_v256x64u_8u-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 b8 fa 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 89 01 48 8b c1 c5 f8 77 c3

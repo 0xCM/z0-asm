@@ -1,3 +1,91 @@
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<byte> false<byte>(N256 w)
+// AggressiveInlining
+Vector256<byte> false<byte>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<sbyte> false<sbyte>(N256 w)
+// AggressiveInlining
+Vector256<sbyte> false<sbyte>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<ushort> false<ushort>(N256 w)
+// AggressiveInlining
+Vector256<ushort> false<ushort>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<short> false<short>(N256 w)
+// AggressiveInlining
+Vector256<short> false<short>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<uint> false<uint>(N256 w)
+// AggressiveInlining
+Vector256<uint> false<uint>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<int> false<int>(N256 w)
+// AggressiveInlining
+Vector256<int> false<int>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<ulong> false<ulong>(N256 w)
+// AggressiveInlining
+Vector256<ulong> false<ulong>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N256)
+// Vector256<long> false<long>(N256 w)
+// AggressiveInlining
+Vector256<long> false<long>(N256 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::false<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<byte> false<byte>(Vector256<byte> x)
 // AggressiveInlining
@@ -258,6 +346,94 @@ Vector256<long> false<long>(Vector256<long> x, Vector256<long> y, Vector256<long
 {
     IL_0000: ldloca.s V_0
     IL_0002: initobj System.Runtime.Intrinsics.Vector256`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<byte> false<byte>(N128 w)
+// AggressiveInlining
+Vector128<byte> false<byte>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<sbyte> false<sbyte>(N128 w)
+// AggressiveInlining
+Vector128<sbyte> false<sbyte>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<ushort> false<ushort>(N128 w)
+// AggressiveInlining
+Vector128<ushort> false<ushort>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<short> false<short>(N128 w)
+// AggressiveInlining
+Vector128<short> false<short>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<uint> false<uint>(N128 w)
+// AggressiveInlining
+Vector128<uint> false<uint>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<int> false<int>(N128 w)
+// AggressiveInlining
+Vector128<int> false<int>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<ulong> false<ulong>(N128 w)
+// AggressiveInlining
+Vector128<ulong> false<ulong>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
+    IL_0008: ldloc.0
+    IL_0009: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::false<T>(Z0.N128)
+// Vector128<long> false<long>(N128 w)
+// AggressiveInlining
+Vector128<long> false<long>(N128 w)
+{
+    IL_0000: ldloca.s V_0
+    IL_0002: initobj System.Runtime.Intrinsics.Vector128`1<T>
     IL_0008: ldloc.0
     IL_0009: ret
 }

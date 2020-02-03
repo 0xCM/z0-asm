@@ -1,3 +1,107 @@
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<byte> true<byte>(N256 w)
+// AggressiveInlining
+Vector256<byte> true<byte>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<sbyte> true<sbyte>(N256 w)
+// AggressiveInlining
+Vector256<sbyte> true<sbyte>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<ushort> true<ushort>(N256 w)
+// AggressiveInlining
+Vector256<ushort> true<ushort>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<short> true<short>(N256 w)
+// AggressiveInlining
+Vector256<short> true<short>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<uint> true<uint>(N256 w)
+// AggressiveInlining
+Vector256<uint> true<uint>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<int> true<int>(N256 w)
+// AggressiveInlining
+Vector256<int> true<int>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<ulong> true<ulong>(N256 w)
+// AggressiveInlining
+Vector256<ulong> true<ulong>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N256)
+// Vector256<long> true<long>(N256 w)
+// AggressiveInlining
+Vector256<long> true<long>(N256 w)
+{
+    IL_0000: call Z0.N256 zfunc::get_n256()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOps::true<T>(System.Runtime.Intrinsics.Vector256`1<T>)
 // Vector256<byte> true<byte>(Vector256<byte> x)
 // AggressiveInlining
@@ -307,6 +411,110 @@ Vector256<long> true<long>(Vector256<long> x, Vector256<long> y, Vector256<long>
     IL_0007: initobj T
     IL_000D: ldloc.0
     IL_000E: call System.Runtime.Intrinsics.Vector256`1<T> Z0.VPattern::vones<T>(Z0.N256,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<byte> true<byte>(N128 w)
+// AggressiveInlining
+Vector128<byte> true<byte>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<sbyte> true<sbyte>(N128 w)
+// AggressiveInlining
+Vector128<sbyte> true<sbyte>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<ushort> true<ushort>(N128 w)
+// AggressiveInlining
+Vector128<ushort> true<ushort>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<short> true<short>(N128 w)
+// AggressiveInlining
+Vector128<short> true<short>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<uint> true<uint>(N128 w)
+// AggressiveInlining
+Vector128<uint> true<uint>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<int> true<int>(N128 w)
+// AggressiveInlining
+Vector128<int> true<int>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<ulong> true<ulong>(N128 w)
+// AggressiveInlining
+Vector128<ulong> true<ulong>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
+    IL_0013: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOps::true<T>(Z0.N128)
+// Vector128<long> true<long>(N128 w)
+// AggressiveInlining
+Vector128<long> true<long>(N128 w)
+{
+    IL_0000: call Z0.N128 zfunc::get_n128()
+    IL_0005: ldloca.s V_0
+    IL_0007: initobj T
+    IL_000D: ldloc.0
+    IL_000E: call System.Runtime.Intrinsics.Vector128`1<T> Z0.VPattern::vones<T>(Z0.N128,T)
     IL_0013: ret
 }
 ------------------------------------------------------------------------------------------------------------------------

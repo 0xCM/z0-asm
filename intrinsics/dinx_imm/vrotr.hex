@@ -1,24 +1,24 @@
-vrotr-imm5   50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 03 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotr-imm9   50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 ff 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotr-imm13  50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 fb 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vrotr-imm5   c5 f8 77 c5 f9 10 02 c5 f1 71 d0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm9   c5 f8 77 c5 f9 10 02 c5 f1 71 d0 09 b8 07 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm13  c5 f8 77 c5 f9 10 02 c5 f1 71 d0 0d b8 03 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm5   c5 f8 77 c5 f9 10 02 c5 f1 72 d0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm9   c5 f8 77 c5 f9 10 02 c5 f1 72 d0 09 b8 17 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm13  c5 f8 77 c5 f9 10 02 c5 f1 72 d0 0d b8 13 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vrotr-imm5   50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 03 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vrotr-imm9   50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 ff 00 00 00 c5 f9 6e d0 c5 fd f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vrotr-imm13  50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 fb 00 00 00 c5 f9 6e d0 c5 fd f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vrotr-imm5   c5 f8 77 c5 fd 10 02 c5 f5 71 d0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm9   c5 f8 77 c5 fd 10 02 c5 f5 71 d0 09 b8 07 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm13  c5 f8 77 c5 fd 10 02 c5 f5 71 d0 0d b8 03 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm5   c5 f8 77 c5 fd 10 02 c5 f5 72 d0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm9   c5 f8 77 c5 fd 10 02 c5 f5 72 d0 09 b8 17 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm13  c5 f8 77 c5 fd 10 02 c5 f5 72 d0 0d b8 13 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vrotr-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v128x8u_8u-imm5   50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 03 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotr_v128x8u_8u-imm9   50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 ff 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotr_v128x8u_8u-imm13  50 c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 79 78 54 24 04 c5 f1 db ca b8 fb 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 79 78 14 24 c5 f9 db c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
+vrotr_v128x16u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 71 d0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x16u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 71 d0 09 b8 07 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x16u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 71 d0 0d b8 03 00 00 00 c5 f9 6e d0 c5 f9 f1 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 72 d0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 72 d0 09 b8 17 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 72 d0 0d b8 13 00 00 00 c5 f9 6e d0 c5 f9 f2 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x64u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x64u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v128x64u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vrotr_v256x8u_8u-imm5   50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c7 44 24 04 07 00 00 00 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 03 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c7 04 24 f8 00 00 00 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vrotr_v256x8u_8u-imm9   50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 ff 00 00 00 c5 f9 6e d0 c5 fd f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vrotr_v256x8u_8u-imm13  50 c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d 33 c0 89 44 24 04 48 8d 44 24 04 c4 e2 7d 78 54 24 04 c5 f5 db ca b8 fb 00 00 00 c5 f9 6e d0 c5 fd f3 c2 33 c0 89 04 24 48 8d 04 24 c4 e2 7d 78 14 24 c5 fd db c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vrotr_v256x16u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 71 d0 05 b8 0b 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x16u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 71 d0 09 b8 07 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x16u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 71 d0 0d b8 03 00 00 00 c5 f9 6e d0 c5 fd f1 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 72 d0 05 b8 1b 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 72 d0 09 b8 17 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 72 d0 0d b8 13 00 00 00 c5 f9 6e d0 c5 fd f2 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x64u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x64u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vrotr_v256x64u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,0 +1,16 @@
+vunits_gn128_8u   c5 f8 77 66 90 48 b8 b5 57 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_8i   c5 f8 77 66 90 48 b8 b5 57 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_16u  c5 f8 77 66 90 48 b8 b5 54 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_16i  c5 f8 77 66 90 48 b8 b5 54 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_32u  c5 f8 77 66 90 48 b8 85 54 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_32i  c5 f8 77 66 90 48 b8 85 54 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_64u  c5 f8 77 66 90 48 b8 75 56 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn128_64i  c5 f8 77 66 90 48 b8 75 56 7f d5 c4 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_gn256_8u   c5 f8 77 66 90 48 b8 45 56 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_8i   c5 f8 77 66 90 48 b8 45 56 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_16u  c5 f8 77 66 90 48 b8 c5 54 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_16i  c5 f8 77 66 90 48 b8 c5 54 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_32u  c5 f8 77 66 90 48 b8 65 54 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_32i  c5 f8 77 66 90 48 b8 65 54 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_64u  c5 f8 77 66 90 48 b8 95 55 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_gn256_64i  c5 f8 77 66 90 48 b8 95 55 7f d5 c4 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

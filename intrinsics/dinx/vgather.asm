@@ -477,7 +477,7 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c639a5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e 03 2b ff}
+001dh call 7ff7c638a5b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e 03 2b ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -495,7 +495,7 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c639a5b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 03 2b ff}
+001dh call 7ff7c638a5b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 03 2b ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -513,7 +513,7 @@
 0011h mov r9d,[rsp+50h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[5]{44 8b 4c 24 50}
 0016h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
 001ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
-001dh call 7ff7c639a588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 02 2b ff}
+001dh call 7ff7c638a588h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 02 2b ff}
 0022h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0025h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0029h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

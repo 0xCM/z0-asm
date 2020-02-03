@@ -1,12 +1,12 @@
-vblend8x16-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vblend8x16-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vblend8x16-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vblend8x16-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 05 c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 09 c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 0d c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 05 c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 09 c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 0d c5 f9 11 01 48 8b c1 c3
-vblend8x16-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vblend8x16-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vblend8x16-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v256x16u_v256x16u_8u-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v256x16u_v256x16u_8u-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v256x16u_v256x16u_8u-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v128x16i_v128x16i_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 05 c5 f9 11 01 48 8b c1 c3
+vblend8x16_v128x16i_v128x16i_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 09 c5 f9 11 01 48 8b c1 c3
+vblend8x16_v128x16i_v128x16i_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 0d c5 f9 11 01 48 8b c1 c3
+vblend8x16_v128x16u_v128x16u_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 05 c5 f9 11 01 48 8b c1 c3
+vblend8x16_v128x16u_v128x16u_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 09 c5 f9 11 01 48 8b c1 c3
+vblend8x16_v128x16u_v128x16u_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 0e c1 0d c5 f9 11 01 48 8b c1 c3
+vblend8x16_v256x16i_v256x16i_8u-imm5   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 05 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v256x16i_v256x16i_8u-imm9   c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 09 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vblend8x16_v256x16i_v256x16i_8u-imm13  c5 f8 77 c5 fd 10 02 c4 c1 7d 10 08 c4 e3 7d 0e c1 0d c5 fd 11 01 48 8b c1 c5 f8 77 c3
