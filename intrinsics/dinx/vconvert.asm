@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconvert(in Block32<byte> src, N256 w, long t)
-; vconvert_b32x8u(in)_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 32 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b32x8u~in_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 32 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -12,7 +12,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vconvert(in Block64<byte> src, N128 w, short t)
-; vconvert_b64x8u(in)_n128_16i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 30 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x8u~in_n128_16i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 30 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -23,7 +23,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vconvert(in Block64<byte> src, N128 w, ushort t)
-; vconvert_b64x8u(in)_n128_16u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 30 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x8u~in_n128_16u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 30 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -34,7 +34,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(in Block64<byte> src, N256 w, uint t)
-; vconvert_b64x8u(in)_n256_32u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b64x8u~in_n256_32u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -46,7 +46,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vconvert(in Block128<byte> src, N256 w, short t)
-; vconvert_b128x8u(in)_n256_16i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 30 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x8u~in_n256_16i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 30 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -58,7 +58,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vconvert(in Block128<byte> src, N256 w, ushort t)
-; vconvert_b128x8u(in)_n256_16u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 30 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x8u~in_n256_16u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 30 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -70,7 +70,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block32<short> src, N128 w, long t)
-; vconvert_b32x16i(in)_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 24 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x16i~in_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 24 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -81,7 +81,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vconvert(in Block64<short> src, N128 w, int t)
-; vconvert_b64x16i(in)_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 23 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x16i~in_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 23 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -92,7 +92,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block32<ushort> src, N128 w, long t)
-; vconvert_b32x16u(in)_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 34 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x16u~in_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 34 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -103,7 +103,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vconvert(in Block32<ushort> src, N128 w, ulong t)
-; vconvert_b32x16u(in)_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 34 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x16u~in_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 34 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -114,7 +114,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vconvert(in Block64<ushort> src, N256 w, ulong t)
-; vconvert_b64x16u(in)_n256_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 34 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b64x16u~in_n256_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 34 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -126,7 +126,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vconvert(in Block64<ushort> src, N128 w, uint t)
-; vconvert_b64x16u(in)_n128_32u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 33 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x16u~in_n128_32u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 33 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -137,7 +137,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(in Block128<ushort> src, uint t)
-; vconvert_b128x16u(in)_32u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 33 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x16u~in_32u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 33 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -149,7 +149,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vconvert(in Block128<ushort> src, int t)
-; vconvert_b128x16u(in)_32i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 33 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x16u~in_32i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 33 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -161,7 +161,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconvert(in Block64<ushort> src, N256 w, long t)
-; vconvert_b64x16u(in)_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 34 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b64x16u~in_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 34 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -173,7 +173,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconvert(in Block128<uint> src, N256 w, long t)
-; vconvert_b128x32u(in)_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x32u~in_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -185,7 +185,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vconvert(in Block128<uint> src, ulong t)
-; vconvert_b128x32u(in)_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x32u~in_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -197,7 +197,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block64<uint> src, N128 w, ulong t)
-; vconvert_b64x32u(in)_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 25 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x32u~in_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 25 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -208,7 +208,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block64<int> src, N128 w, long t)
-; vconvert_b64x32i(in)_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 25 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x32i~in_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 25 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -219,7 +219,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconvert(in Block128<int> src, N256 w, long t)
-; vconvert_b128x32i(in)_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x32i~in_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 25 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -231,7 +231,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vconvert(in Block256<ushort> src, N512 w, uint t)
-; vconvert_b256x16u(in)_n512_32u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 33 02 48 83 c0 10 c4 e2 7d 33 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert_b256x16u~in_n512_32u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 33 02 48 83 c0 10 c4 e2 7d 33 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -247,7 +247,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vconvert(in Block128<short> src, N512 w, int t)
-; vconvert_b128x16i(in)_n512_32i[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 23 02 48 83 c0 10 c4 e2 7d 23 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x16i~in_n512_32i[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 23 02 48 83 c0 10 c4 e2 7d 23 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -263,7 +263,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vconvert(in Block256<byte> src, N512 w, ushort t)
-; vconvert_b256x8u(in)_n512_16u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 30 02 48 83 c0 10 c4 e2 7d 30 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert_b256x8u~in_n512_16u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 30 02 48 83 c0 10 c4 e2 7d 30 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -279,7 +279,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vconvert(in Block128<ushort> src, N512 w, ulong t)
-; vconvert_b128x16u(in)_n512_64u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 34 02 48 83 c0 08 c4 e2 7d 34 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x16u~in_n512_64u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 34 02 48 83 c0 08 c4 e2 7d 34 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -295,7 +295,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vconvert(in Block256<uint> src, N512 w, ulong t)
-; vconvert_b256x32u(in)_n512_64u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 25 02 48 83 c0 10 c4 e2 7d 25 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vconvert_b256x32u~in_n512_64u[41] = {c5 f8 77 66 90 48 8b 02 48 8b d0 c4 e2 7d 25 02 48 83 c0 10 c4 e2 7d 25 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -613,7 +613,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector1024<ulong> vconvert(Vector256<ushort> src, N1024 w, ulong t)
-; vconvert_v256x16u_n1024_64u[269] = {57 56 48 81 ec 08 01 00 00 c5 f8 77 48 8b f1 48 8d bc 24 88 00 00 00 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8b f1 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 34 c8 c4 e3 f9 16 c1 01 c4 e1 f9 6e c1 c4 e2 7d 34 c0 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 34 da c4 e3 f9 16 d2 01 c4 e1 f9 6e d2 c4 e2 7d 34 d2 48 8d 54 24 08 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 54 24 08 c5 fd 11 0a c5 fd 11 42 20 48 8d 54 24 48 c5 fd 11 1a c5 fd 11 52 20 48 8d 8c 24 88 00 00 00 48 8d 54 24 08 41 b8 80 00 00 00 e8 78 b3 d9 5e 48 8d 84 24 88 00 00 00 c5 fd 10 00 c5 fd 10 48 20 48 8d 84 24 c8 00 00 00 c5 fd 10 10 c5 fd 10 58 20 c5 fd 11 06 c5 fd 11 4e 20 c5 fd 11 56 40 c5 fd 11 5e 60 48 8b c6 c5 f8 77 48 81 c4 08 01 00 00 5e 5f c3}
+; vconvert_v256x16u_n1024_64u[269] = {57 56 48 81 ec 08 01 00 00 c5 f8 77 48 8b f1 48 8d bc 24 88 00 00 00 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8b f1 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 34 c8 c4 e3 f9 16 c1 01 c4 e1 f9 6e c1 c4 e2 7d 34 c0 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 34 da c4 e3 f9 16 d2 01 c4 e1 f9 6e d2 c4 e2 7d 34 d2 48 8d 54 24 08 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 54 24 08 c5 fd 11 0a c5 fd 11 42 20 48 8d 54 24 48 c5 fd 11 1a c5 fd 11 52 20 48 8d 8c 24 88 00 00 00 48 8d 54 24 08 41 b8 80 00 00 00 e8 78 b3 dd 5e 48 8d 84 24 88 00 00 00 c5 fd 10 00 c5 fd 10 48 20 48 8d 84 24 c8 00 00 00 c5 fd 10 10 c5 fd 10 58 20 c5 fd 11 06 c5 fd 11 4e 20 c5 fd 11 56 40 c5 fd 11 5e 60 48 8b c6 c5 f8 77 48 81 c4 08 01 00 00 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -657,7 +657,7 @@
 00b0h lea rcx,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 88 00 00 00}
 00b8h lea rdx,[rsp+8]                         ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 08}
 00bdh mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-00c3h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 b3 d9 5e}
+00c3h call 7ff825ea6050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 b3 dd 5e}
 00c8h lea rax,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 84 24 88 00 00 00}
 00d0h vmovupd ymm0,[rax]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 00}
 00d4h vmovupd ymm1,[rax+20h]                  ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c5 fd 10 48 20}
@@ -761,7 +761,7 @@
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(N64 srcbits, in byte src, N256 w, N32 n)
-; vconvert_n64_8u(in)_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_n64_8u~in_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -772,7 +772,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(N64 srcbits, in ushort src, N256 w, N32 n)
-; vconvert_n64_16u(in)_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_n64_16u~in_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -783,7 +783,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(N64 srcbits, in uint src, N256 w, N32 n)
-; vconvert_n64_32u(in)_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_n64_32u~in_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -794,7 +794,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vconvert(N64 srcbits, in ulong src, N256 w, N32 n)
-; vconvert_n64_64u(in)_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_n64_64u~in_n256_n32[21] = {c5 f8 77 66 90 c4 c2 7d 31 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -805,7 +805,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block16<sbyte> src, N128 w, long t)
-; vconvert_b16x8i(in)_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 22 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b16x8i~in_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 22 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -816,7 +816,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vconvert(in Block32<sbyte> src, N128 w, int t)
-; vconvert_b32x8i(in)_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 21 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x8i~in_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 21 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -827,7 +827,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vconvert(in Block32<sbyte> src, N256 w, long t)
-; vconvert_b32x8i(in)_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 22 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b32x8i~in_n256_64i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 22 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -839,7 +839,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vconvert(in Block64<sbyte> src, N128 w, short t)
-; vconvert_b64x8i(in)_n128_16i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 20 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b64x8i~in_n128_16i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 20 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -850,7 +850,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vconvert(in Block64<sbyte> src, N256 w, int t)
-; vconvert_b64x8i(in)_n256_32i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 21 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b64x8i~in_n256_32i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 21 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -862,7 +862,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vconvert(in Block128<sbyte> src, N256 w, short t)
-; vconvert_b128x8i(in)_n256_16i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 20 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b128x8i~in_n256_16i[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 20 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -874,7 +874,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block16<byte> src, N128 w, long t)
-; vconvert_b16x8u(in)_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b16x8u~in_n128_64i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -885,7 +885,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vconvert(in Block16<byte> src, int block, N128 w, long t)
-; vconvert_b16x8u(in)_32i_n128_64i[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 03 c2 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b16x8u~in_32i_n128_64i[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 03 c2 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -899,7 +899,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vconvert(in Block16<byte> src, N128 w, ulong t)
-; vconvert_b16x8u(in)_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b16x8u~in_n128_64u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 32 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -910,7 +910,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vconvert(in Block32<byte> src, N128 w, int t)
-; vconvert_b32x8u(in)_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 31 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x8u~in_n128_32i[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 31 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -921,7 +921,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vconvert(in Block32<byte> src, N128 w, uint t)
-; vconvert_b32x8u(in)_n128_32u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 31 00 c5 f9 11 01 48 8b c1 c3}
+; vconvert_b32x8u~in_n128_32u[21] = {c5 f8 77 66 90 48 8b 02 c4 e2 79 31 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -932,7 +932,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vconvert(in Block32<byte> src, N256 w, ulong t)
-; vconvert_b32x8u(in)_n256_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 32 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vconvert_b32x8u~in_n256_64u[24] = {c5 f8 77 66 90 48 8b 02 c4 e2 7d 32 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

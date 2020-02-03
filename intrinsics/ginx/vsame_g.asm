@@ -330,7 +330,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<byte>(in Vector512<byte> x, in Vector512<byte> y)
-; vsame_gv512x8u(in)_v512x8u(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 74 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 74 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x8u~in_v512x8u~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 74 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 74 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -380,7 +380,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<sbyte>(in Vector512<sbyte> x, in Vector512<sbyte> y)
-; vsame_gv512x8i(in)_v512x8i(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 74 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 74 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x8i~in_v512x8i~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 74 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 74 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -430,7 +430,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<ushort>(in Vector512<ushort> x, in Vector512<ushort> y)
-; vsame_gv512x16u(in)_v512x16u(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 75 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 75 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x16u~in_v512x16u~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 75 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 75 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -480,7 +480,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<short>(in Vector512<short> x, in Vector512<short> y)
-; vsame_gv512x16i(in)_v512x16i(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 75 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 75 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x16i~in_v512x16i~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 75 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 75 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -530,7 +530,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<uint>(in Vector512<uint> x, in Vector512<uint> y)
-; vsame_gv512x32u(in)_v512x32u(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 76 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 76 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x32u~in_v512x32u~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 76 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 76 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -580,7 +580,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<int>(in Vector512<int> x, in Vector512<int> y)
-; vsame_gv512x32i(in)_v512x32i(in)[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 76 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 76 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x32i~in_v512x32i~in[191] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 76 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed 76 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -630,7 +630,7 @@
 00beh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<ulong>(in Vector512<ulong> x, in Vector512<ulong> y)
-; vsame_gv512x64u(in)_v512x64u(in)[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x64u~in_v512x64u~in[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -680,7 +680,7 @@
 00c1h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<long>(in Vector512<long> x, in Vector512<long> y)
-; vsame_gv512x64i(in)_v512x64i(in)[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x64i~in_v512x64i~in[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 49 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c4 e2 6d 29 d3 c5 fc 28 da c4 e2 7d 17 c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 17 ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -730,7 +730,7 @@
 00c1h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<float>(in Vector512<float> x, in Vector512<float> y)
-; vsame_gv512x32f(in)_v512x32f(in)[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fc c2 c1 08 c5 fd 10 49 20 c5 fd 10 52 20 c5 f4 c2 ca 08 c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ec c2 d3 08 c5 fc 28 da c4 e2 7d 0e c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 0e ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x32f~in_v512x32f~in[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fc c2 c1 08 c5 fd 10 49 20 c5 fd 10 52 20 c5 f4 c2 ca 08 c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ec c2 d3 08 c5 fc 28 da c4 e2 7d 0e c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 0e ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -780,7 +780,7 @@
 00c1h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vsame<double>(in Vector512<double> x, in Vector512<double> y)
-; vsame_gv512x64f(in)_v512x64f(in)[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd c2 c1 08 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 c2 ca 08 c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed c2 d3 08 c5 fc 28 da c4 e2 7d 0f c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 0f ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
+; vsame_gv512x64f~in_v512x64f~in[194] = {48 81 ec 88 00 00 00 c5 f8 77 c5 fd 10 01 c5 fd 10 0a c5 fd c2 c1 08 c5 fd 10 49 20 c5 fd 10 52 20 c5 f5 c2 ca 08 c5 ec 57 d2 c5 fd 11 54 24 48 c5 ec 57 d2 c5 fd 11 54 24 68 c5 ec 57 d2 c5 fd 11 54 24 08 c5 ec 57 d2 c5 fd 11 54 24 28 48 8d 44 24 48 c5 e8 57 d2 c5 fa 7f 10 c5 fa 7f 50 10 c5 fa 7f 50 20 c5 fa 7f 50 30 48 8d 54 24 08 c5 e8 57 d2 c5 fa 7f 12 c5 fa 7f 52 10 c5 fa 7f 52 20 c5 fa 7f 52 30 c5 fd 10 10 c5 fd 10 1a c5 ed c2 d3 08 c5 fc 28 da c4 e2 7d 0f c3 0f 92 c0 0f b6 c0 85 c0 74 0f c4 e2 7d 0f ca 0f 92 c2 0f b6 d2 23 c2 eb 02 33 c0 c5 f8 77 48 81 c4 88 00 00 00 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

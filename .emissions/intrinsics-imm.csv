@@ -199,7 +199,7 @@ Size    | Uri
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x64u_v256x64u_8u-imm9
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8i_v256x8i_8u-imm13
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8i_v256x8i_8u-imm5
-45      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8i_v256x8i_8u-imm9
+31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8i_v256x8i_8u-imm9
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8u_v256x8u_8u-imm13
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8u_v256x8u_8u-imm5
 31      | asm://intrinsics/dinx_imm/vinsert?vinsert_v128x8u_v256x8u_8u-imm9

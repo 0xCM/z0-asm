@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vgather<byte>(in byte src, Vector128<byte> vidx)
-; vgather_g8u(in)_v128x8u[149] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 e2 75 90 14 02 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g8u~in_v128x8u[149] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 e2 75 90 14 02 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -37,7 +37,7 @@
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vgather<sbyte>(in sbyte src, Vector128<sbyte> vidx)
-; vgather_g8i(in)_v128x8i[149] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 e2 75 90 14 02 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g8i~in_v128x8i[149] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 31 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 08 c5 f5 76 c9 c4 e2 75 90 14 02 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 e5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -74,7 +74,7 @@
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vgather<ushort>(in ushort src, Vector128<ushort> vidx)
-; vgather_g16u(in)_v128x16u[85] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 42 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g16u~in_v128x16u[85] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 42 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -98,7 +98,7 @@
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vgather<short>(in short src, Vector128<short> vidx)
-; vgather_g16i(in)_v128x16i[85] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 42 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g16i~in_v128x16i[85] = {50 c5 f8 77 90 c4 c1 79 10 00 c4 e2 7d 33 c0 c5 f5 76 c9 c4 e2 75 90 14 42 c4 e3 7d 19 d0 00 c4 e3 7d 19 d1 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f9 db c2 c5 f1 db ca c4 e2 79 2b c1 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -122,7 +122,7 @@
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vgather<uint>(in uint src, Vector128<uint> vidx)
-; vgather_g32u(in)_v128x32u[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 71 90 14 82 c5 f9 11 11 48 8b c1 c3}
+; vgather_g32u~in_v128x32u[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 71 90 14 82 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -134,7 +134,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vgather<int>(in int src, Vector128<int> vidx)
-; vgather_g32i(in)_v128x32i[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 71 90 14 82 c5 f9 11 11 48 8b c1 c3}
+; vgather_g32i~in_v128x32i[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 71 90 14 82 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -146,7 +146,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vgather<ulong>(in ulong src, Vector128<ulong> vidx)
-; vgather_g64u(in)_v128x64u[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 f1 91 14 c2 c5 f9 11 11 48 8b c1 c3}
+; vgather_g64u~in_v128x64u[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 f1 91 14 c2 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -158,7 +158,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vgather<long>(in long src, Vector128<long> vidx)
-; vgather_g64i(in)_v128x64i[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 f1 91 14 c2 c5 f9 11 11 48 8b c1 c3}
+; vgather_g64i~in_v128x64i[28] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f1 76 c9 c4 e2 f1 91 14 c2 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -170,7 +170,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vgather<byte>(in byte src, Vector256<byte> vidx)
-; vgather_g8u(in)_v256x8u[316] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 c4 e2 7d 31 d0 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 00 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 44 24 14 c5 dd db d0 c5 e5 db c0 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c2 00 c4 e3 7d 19 c0 01 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 79 79 5c 24 10 c5 e9 db d3 c5 f9 db c3 c5 e9 67 c0 c4 e3 7d 19 c9 01 c4 e2 7d 31 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 7d 31 c9 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 c5 ed 76 d2 c4 e2 6d 90 1c 0a c7 44 24 0c ff ff 00 00 48 8d 44 24 0c c4 e2 7d 58 4c 24 0c c5 dd db d1 c5 e5 db c9 c4 e2 6d 2b c9 c4 e3 fd 00 c9 d8 c4 e3 7d 19 ca 00 c4 e3 7d 19 c9 01 c7 44 24 08 ff 00 00 00 48 8d 44 24 08 c4 e2 79 79 5c 24 08 c5 e9 db d3 c5 f1 db cb c5 e9 67 c9 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vgather_g8u~in_v256x8u[316] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 c4 e2 7d 31 d0 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 00 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 44 24 14 c5 dd db d0 c5 e5 db c0 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c2 00 c4 e3 7d 19 c0 01 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 79 79 5c 24 10 c5 e9 db d3 c5 f9 db c3 c5 e9 67 c0 c4 e3 7d 19 c9 01 c4 e2 7d 31 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 7d 31 c9 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 c5 ed 76 d2 c4 e2 6d 90 1c 0a c7 44 24 0c ff ff 00 00 48 8d 44 24 0c c4 e2 7d 58 4c 24 0c c5 dd db d1 c5 e5 db c9 c4 e2 6d 2b c9 c4 e3 fd 00 c9 d8 c4 e3 7d 19 ca 00 c4 e3 7d 19 c9 01 c7 44 24 08 ff 00 00 00 48 8d 44 24 08 c4 e2 79 79 5c 24 08 c5 e9 db d3 c5 f1 db cb c5 e9 67 c9 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -237,7 +237,7 @@
 013bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vgather<sbyte>(in sbyte src, Vector256<sbyte> vidx)
-; vgather_g8i(in)_v256x8i[316] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 c4 e2 7d 31 d0 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 00 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 44 24 14 c5 dd db d0 c5 e5 db c0 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c2 00 c4 e3 7d 19 c0 01 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 79 79 5c 24 10 c5 e9 db d3 c5 f9 db c3 c5 e9 67 c0 c4 e3 7d 19 c9 01 c4 e2 7d 31 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 7d 31 c9 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 c5 ed 76 d2 c4 e2 6d 90 1c 0a c7 44 24 0c ff ff 00 00 48 8d 44 24 0c c4 e2 7d 58 4c 24 0c c5 dd db d1 c5 e5 db c9 c4 e2 6d 2b c9 c4 e3 fd 00 c9 d8 c4 e3 7d 19 ca 00 c4 e3 7d 19 c9 01 c7 44 24 08 ff 00 00 00 48 8d 44 24 08 c4 e2 79 79 5c 24 08 c5 e9 db d3 c5 f1 db cb c5 e9 67 c9 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
+; vgather_g8i~in_v256x8i[316] = {48 83 ec 18 c5 f8 77 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 c4 e2 7d 31 d0 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 7d 31 c0 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 48 8b c2 c5 ed 76 d2 c4 e2 6d 90 1c 00 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 44 24 14 c5 dd db d0 c5 e5 db c0 c4 e2 6d 2b c0 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c2 00 c4 e3 7d 19 c0 01 c7 44 24 10 ff 00 00 00 48 8d 44 24 10 c4 e2 79 79 5c 24 10 c5 e9 db d3 c5 f9 db c3 c5 e9 67 c0 c4 e3 7d 19 c9 01 c4 e2 7d 31 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 7d 31 c9 48 8b c2 c5 e5 76 db c4 e2 65 90 24 10 c5 ed 76 d2 c4 e2 6d 90 1c 0a c7 44 24 0c ff ff 00 00 48 8d 44 24 0c c4 e2 7d 58 4c 24 0c c5 dd db d1 c5 e5 db c9 c4 e2 6d 2b c9 c4 e3 fd 00 c9 d8 c4 e3 7d 19 ca 00 c4 e3 7d 19 c9 01 c7 44 24 08 ff 00 00 00 48 8d 44 24 08 c4 e2 79 79 5c 24 08 c5 e9 db d3 c5 f1 db cb c5 e9 67 c9 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 18 c3}
 ; TermCode = RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -304,7 +304,7 @@
 013bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vgather<ushort>(in ushort src, Vector256<ushort> vidx)
-; vgather_g16u(in)_v256x16u[177] = {50 c5 f8 77 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 48 8b c2 c4 e2 7d 33 c0 c5 ed 76 d2 c4 e2 6d 90 1c 40 c4 e3 7d 19 d8 00 c4 e3 7d 19 da 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 5c 24 04 c5 f9 db c3 c5 e9 db d3 c4 e2 79 2b c2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 e2 6d 90 1c 4a c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g16u~in_v256x16u[177] = {50 c5 f8 77 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 48 8b c2 c4 e2 7d 33 c0 c5 ed 76 d2 c4 e2 6d 90 1c 40 c4 e3 7d 19 d8 00 c4 e3 7d 19 da 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 5c 24 04 c5 f9 db c3 c5 e9 db d3 c4 e2 79 2b c2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 e2 6d 90 1c 4a c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -346,7 +346,7 @@
 00b0h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vgather<short>(in short src, Vector256<short> vidx)
-; vgather_g16i(in)_v256x16i[177] = {50 c5 f8 77 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 48 8b c2 c4 e2 7d 33 c0 c5 ed 76 d2 c4 e2 6d 90 1c 40 c4 e3 7d 19 d8 00 c4 e3 7d 19 da 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 5c 24 04 c5 f9 db c3 c5 e9 db d3 c4 e2 79 2b c2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 e2 6d 90 1c 4a c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vgather_g16i~in_v256x16i[177] = {50 c5 f8 77 90 c4 c1 7d 10 00 c5 fc 28 c8 c4 e3 7d 19 c0 00 48 8b c2 c4 e2 7d 33 c0 c5 ed 76 d2 c4 e2 6d 90 1c 40 c4 e3 7d 19 d8 00 c4 e3 7d 19 da 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 5c 24 04 c5 f9 db c3 c5 e9 db d3 c4 e2 79 2b c2 c4 e3 7d 19 c9 01 c4 e2 7d 33 c9 c5 ed 76 d2 c4 e2 6d 90 1c 4a c4 e3 7d 19 d9 00 c4 e3 7d 19 da 01 c7 04 24 ff ff 00 00 48 8d 04 24 c4 e2 79 58 1c 24 c5 f1 db cb c5 e9 db d3 c4 e2 71 2b ca c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -388,7 +388,7 @@
 00b0h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vgather<uint>(in uint src, Vector256<uint> vidx)
-; vgather_g32u(in)_v256x32u[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 75 90 14 82 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vgather_g32u~in_v256x32u[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 75 90 14 82 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -401,7 +401,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vgather<int>(in int src, Vector256<int> vidx)
-; vgather_g32i(in)_v256x32i[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 75 90 14 82 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vgather_g32i~in_v256x32i[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 75 90 14 82 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -414,7 +414,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vgather<ulong>(in ulong src, Vector256<ulong> vidx)
-; vgather_g64u(in)_v256x64u[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 f5 91 14 c2 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vgather_g64u~in_v256x64u[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 f5 91 14 c2 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -427,7 +427,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vgather<long>(in long src, Vector256<long> vidx)
-; vgather_g64i(in)_v256x64i[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 f5 91 14 c2 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vgather_g64i~in_v256x64i[31] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 f5 76 c9 c4 e2 f5 91 14 c2 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

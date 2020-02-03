@@ -21,7 +21,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong concat(in uint x0, in uint x1)
-; concat_32u(in)_32u(in)[17] = {0f 1f 44 00 00 8b 01 8b 12 48 c1 e2 20 48 0b c2 c3}
+; concat_32u~in_32u~in[17] = {0f 1f 44 00 00 8b 01 8b 12 48 c1 e2 20 48 0b c2 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,[rcx]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 01}

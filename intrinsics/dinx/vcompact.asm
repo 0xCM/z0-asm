@@ -387,7 +387,7 @@
 006ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vcompact(in Vector512<uint> src, N128 w, byte t)
-; vcompact_v512x32u(in)_n128_8u[109] = {50 c5 f8 77 90 c5 fd 10 02 c5 fd 10 4a 20 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
+; vcompact_v512x32u~in_n128_8u[109] = {50 c5 f8 77 90 c5 fd 10 02 c5 fd 10 4a 20 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

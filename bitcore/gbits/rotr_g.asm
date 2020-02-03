@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotr<byte>(in byte src, int shift, ref byte dst, int count)
-; rotr_g8u(in)_32i_8u(ref)_32i[72] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 36 44 8b da 41 83 e3 1f f7 da 83 c2 08 83 e2 1f 49 63 ca 49 8d 34 08 40 0f b6 3c 08 41 8b cb 8b df d3 fb 8b ca d3 e7 0b fb 40 0f b6 cf 88 0e 41 ff c2 45 3b d1 7c d9 5b 5e 5f c3}
+; rotr_g8u~in_32i_8u~ref_32i[72] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 36 44 8b da 41 83 e3 1f f7 da 83 c2 08 83 e2 1f 49 63 ca 49 8d 34 08 40 0f b6 3c 08 41 8b cb 8b df d3 fb 8b ca d3 e7 0b fb 40 0f b6 cf 88 0e 41 ff c2 45 3b d1 7c d9 5b 5e 5f c3}
 ; TermCode = RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -34,7 +34,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotr<ushort>(in ushort src, int shift, ref ushort dst, int count)
-; rotr_g16u(in)_32i_16u(ref)_32i[71] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 35 44 8b da 41 83 e3 1f f7 da 83 c2 10 83 e2 1f 49 63 ca 49 8d 34 48 0f b7 3c 48 41 8b cb 8b df d3 fb 8b ca d3 e7 0b fb 0f b7 cf 66 89 0e 41 ff c2 45 3b d1 7c da 5b 5e 5f c3}
+; rotr_g16u~in_32i_16u~ref_32i[71] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 35 44 8b da 41 83 e3 1f f7 da 83 c2 10 83 e2 1f 49 63 ca 49 8d 34 48 0f b7 3c 48 41 8b cb 8b df d3 fb 8b ca d3 e7 0b fb 0f b7 cf 66 89 0e 41 ff c2 45 3b d1 7c da 5b 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -68,7 +68,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotr<uint>(in uint src, int shift, ref uint dst, int count)
-; rotr_g32u(in)_32i_32u(ref)_32i[40] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 19 49 63 ca 4d 8d 1c 88 8b 34 88 8b ca d3 ce 41 89 33 41 ff c2 45 3b d1 7c e7 5e c3}
+; rotr_g32u~in_32i_32u~ref_32i[40] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 19 49 63 ca 4d 8d 1c 88 8b 34 88 8b ca d3 ce 41 89 33 41 ff c2 45 3b d1 7c e7 5e c3}
 ; TermCode = RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -89,7 +89,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotr<ulong>(in ulong src, int shift, ref ulong dst, int count)
-; rotr_g64u(in)_32i_64u(ref)_32i[42] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 1b 49 63 ca 4d 8d 1c c8 48 8b 34 c8 8b ca 48 d3 ce 49 89 33 41 ff c2 45 3b d1 7c e5 5e c3}
+; rotr_g64u~in_32i_64u~ref_32i[42] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 1b 49 63 ca 4d 8d 1c c8 48 8b 34 c8 8b ca 48 d3 ce 49 89 33 41 ff c2 45 3b d1 7c e5 5e c3}
 ; TermCode = RET_ZEDx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

@@ -18,13 +18,13 @@ vadd_gv256x64u_v256x64u  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c
 vadd_gv256x64i_v256x64i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 vadd_gv256x32f_v256x32f  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 58 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 vadd_gv256x64f_v256x64f  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 58 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vadd_gv512x8u(in)_v512x8u(in)    c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fc c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fc ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x8i(in)_v512x8i(in)    c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fc c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fc ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x16u(in)_v512x16u(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fd c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fd ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x16i(in)_v512x16i(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fd c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fd ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x32u(in)_v512x32u(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fe c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fe ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x32i(in)_v512x32i(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fe c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fe ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x64u(in)_v512x64u(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 d4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x64i(in)_v512x64i(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 d4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x32f(in)_v512x32f(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 58 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f4 58 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
-vadd_gv512x64f(in)_v512x64f(in)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 58 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 58 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x8u~in_v512x8u~in    c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fc c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fc ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x8i~in_v512x8i~in    c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fc c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fc ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x16u~in_v512x16u~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fd c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fd ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x16i~in_v512x16i~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fd c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fd ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x32u~in_v512x32u~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fe c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fe ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x32i~in_v512x32i~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd fe c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 fe ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x64u~in_v512x64u~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 d4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x64i~in_v512x64i~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd d4 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 d4 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x32f~in_v512x32f~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 58 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f4 58 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3
+vadd_gv512x64f~in_v512x64f~in  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 58 c1 c5 fd 10 4a 20 c4 c1 7d 10 50 20 c5 f5 58 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3

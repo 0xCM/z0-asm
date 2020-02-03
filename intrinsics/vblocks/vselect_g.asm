@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> vselect<byte>(in Block128<byte> a, in Block128<byte> b, in Block128<byte> c, in Block128<byte> dst)
-; vselect_gb128x8u(in)_b128x8u(in)_b128x8u(in)_b128x8u(in)[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
+; vselect_gb128x8u~in_b128x8u~in_b128x8u~in_b128x8u~in[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -51,7 +51,7 @@
 0089h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<sbyte> vselect<sbyte>(in Block128<sbyte> a, in Block128<sbyte> b, in Block128<sbyte> c, in Block128<sbyte> dst)
-; vselect_gb128x8i(in)_b128x8i(in)_b128x8i(in)_b128x8i(in)[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
+; vselect_gb128x8i~in_b128x8i~in_b128x8i~in_b128x8i~in[138] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 8b fe 48 63 ff 48 03 c7 c5 fb f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 fb f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -102,7 +102,7 @@
 0089h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ushort> vselect<ushort>(in Block128<ushort> a, in Block128<ushort> b, in Block128<ushort> c, in Block128<ushort> dst)
-; vselect_gb128x16u(in)_b128x16u(in)_b128x16u(in)_b128x16u(in)[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
+; vselect_gb128x16u~in_b128x16u~in_b128x16u~in_b128x16u~in[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -147,7 +147,7 @@
 007ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<short> vselect<short>(in Block128<short> a, in Block128<short> b, in Block128<short> c, in Block128<short> dst)
-; vselect_gb128x16i(in)_b128x16i(in)_b128x16i(in)_b128x16i(in)[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
+; vselect_gb128x16i~in_b128x16i~in_b128x16i~in_b128x16i~in[125] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 d1 e6 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -192,7 +192,7 @@
 007ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<uint> vselect<uint>(in Block128<uint> a, in Block128<uint> b, in Block128<uint> c, in Block128<uint> dst)
-; vselect_gb128x32u(in)_b128x32u(in)_b128x32u(in)_b128x32u(in)[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
+; vselect_gb128x32u~in_b128x32u~in_b128x32u~in_b128x32u~in[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -237,7 +237,7 @@
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<int> vselect<int>(in Block128<int> a, in Block128<int> b, in Block128<int> c, in Block128<int> dst)
-; vselect_gb128x32i(in)_b128x32i(in)_b128x32i(in)_b128x32i(in)[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
+; vselect_gb128x32i~in_b128x32i~in_b128x32i~in_b128x32i~in[126] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 02 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -282,7 +282,7 @@
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<ulong> vselect<ulong>(in Block128<ulong> a, in Block128<ulong> b, in Block128<ulong> c, in Block128<ulong> dst)
-; vselect_gb128x64u(in)_b128x64u(in)_b128x64u(in)_b128x64u(in)[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
+; vselect_gb128x64u~in_b128x64u~in_b128x64u~in_b128x64u~in[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -326,7 +326,7 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<long> vselect<long>(in Block128<long> a, in Block128<long> b, in Block128<long> c, in Block128<long> dst)
-; vselect_gb128x64i(in)_b128x64i(in)_b128x64i(in)_b128x64i(in)[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
+; vselect_gb128x64i~in_b128x64i~in_b128x64i~in_b128x64i~in[120] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 eb 1f 45 03 d3 41 d1 fa 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 d1 e6 48 63 f6 48 c1 e6 03 48 03 c6 c5 fb f0 00 48 8b 02 48 03 c6 c5 fb f0 08 49 8b 00 48 03 c6 c5 fb f0 10 c5 f8 28 d8 c5 e1 db c9 c5 f9 df c2 c5 f1 eb c0 49 8b 01 48 03 c6 c5 fa 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -370,7 +370,7 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<byte> vselect<byte>(in Block256<byte> a, in Block256<byte> b, in Block256<byte> c, in Block256<byte> dst)
-; vselect_gb256x8u(in)_b256x8u(in)_b256x8u(in)_b256x8u(in)[141] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 1f 45 03 d3 41 c1 fa 05 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 05 8b fe 48 63 ff 48 03 c7 c5 ff f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 ff f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 c5 f8 77 5e 5f c3}
+; vselect_gb256x8u~in_b256x8u~in_b256x8u~in_b256x8u~in[141] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 1f 45 03 d3 41 c1 fa 05 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 05 8b fe 48 63 ff 48 03 c7 c5 ff f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 ff f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 c5 f8 77 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -422,7 +422,7 @@
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<sbyte> vselect<sbyte>(in Block256<sbyte> a, in Block256<sbyte> b, in Block256<sbyte> c, in Block256<sbyte> dst)
-; vselect_gb256x8i(in)_b256x8i(in)_b256x8i(in)_b256x8i(in)[141] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 1f 45 03 d3 41 c1 fa 05 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 05 8b fe 48 63 ff 48 03 c7 c5 ff f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 ff f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 c5 f8 77 5e 5f c3}
+; vselect_gb256x8i~in_b256x8i~in_b256x8i~in_b256x8i~in[141] = {57 56 c5 f8 77 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 1f 45 03 d3 41 c1 fa 05 45 33 db 45 85 d2 7e 61 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 05 8b fe 48 63 ff 48 03 c7 c5 ff f0 00 48 8b 02 8b fe 48 63 ff 48 03 c7 c5 ff f0 08 49 8b 00 8b fe 48 63 ff 48 03 c7 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 63 f6 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c a8 49 8b c1 c5 f8 77 5e 5f c3}
 ; TermCode = RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -474,7 +474,7 @@
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<ushort> vselect<ushort>(in Block256<ushort> a, in Block256<ushort> b, in Block256<ushort> c, in Block256<ushort> dst)
-; vselect_gb256x16u(in)_b256x16u(in)_b256x16u(in)_b256x16u(in)[128] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 48 63 f6 48 d1 e6 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x16u~in_b256x16u~in_b256x16u~in_b256x16u~in[128] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 48 63 f6 48 d1 e6 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -520,7 +520,7 @@
 007fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<short> vselect<short>(in Block256<short> a, in Block256<short> b, in Block256<short> c, in Block256<short> dst)
-; vselect_gb256x16i(in)_b256x16i(in)_b256x16i(in)_b256x16i(in)[128] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 48 63 f6 48 d1 e6 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x16i~in_b256x16i~in_b256x16i~in_b256x16i~in[128] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 0f 45 03 d3 41 c1 fa 04 45 33 db 45 85 d2 7e 55 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 04 48 63 f6 48 d1 e6 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b4 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -566,7 +566,7 @@
 007fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<uint> vselect<uint>(in Block256<uint> a, in Block256<uint> b, in Block256<uint> c, in Block256<uint> dst)
-; vselect_gb256x32u(in)_b256x32u(in)_b256x32u(in)_b256x32u(in)[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 c1 e6 02 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x32u~in_b256x32u~in_b256x32u~in_b256x32u~in[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 c1 e6 02 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -612,7 +612,7 @@
 0080h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<int> vselect<int>(in Block256<int> a, in Block256<int> b, in Block256<int> c, in Block256<int> dst)
-; vselect_gb256x32i(in)_b256x32i(in)_b256x32i(in)_b256x32i(in)[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 c1 e6 02 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x32i~in_b256x32i~in_b256x32i~in_b256x32i~in[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 07 45 03 d3 41 c1 fa 03 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 03 48 63 f6 48 c1 e6 02 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -658,7 +658,7 @@
 0080h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<ulong> vselect<ulong>(in Block256<ulong> a, in Block256<ulong> b, in Block256<ulong> c, in Block256<ulong> dst)
-; vselect_gb256x64u(in)_b256x64u(in)_b256x64u(in)_b256x64u(in)[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x64u~in_b256x64u~in_b256x64u~in_b256x64u~in[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -704,7 +704,7 @@
 0080h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<long> vselect<long>(in Block256<long> a, in Block256<long> b, in Block256<long> c, in Block256<long> dst)
-; vselect_gb256x64i(in)_b256x64i(in)_b256x64i(in)_b256x64i(in)[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
+; vselect_gb256x64i~in_b256x64i~in_b256x64i~in_b256x64i~in[129] = {56 c5 f8 77 90 45 8b 51 08 45 8b da 41 c1 fb 1f 41 83 e3 03 45 03 d3 41 c1 fa 02 45 33 db 45 85 d2 7e 56 48 8b 01 48 8b 02 49 8b 00 48 8b 01 41 8b f3 c1 e6 02 48 63 f6 48 c1 e6 03 48 03 c6 c5 ff f0 00 48 8b 02 48 03 c6 c5 ff f0 08 49 8b 00 48 03 c6 c5 ff f0 10 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 8b 01 48 03 c6 c5 fe 7f 00 41 ff c3 45 3b da 7c b3 49 8b c1 c5 f8 77 5e c3}
 ; TermCode = RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

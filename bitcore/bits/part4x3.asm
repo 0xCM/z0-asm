@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part4x3(uint src, ref byte dst)
-; part4x3_32u_8u(ref)[33] = {0f 1f 44 00 00 8b c1 83 e0 0f 88 02 8b c1 c1 e8 04 83 e0 0f 88 42 01 c1 e9 08 83 e1 0f 88 4a 02 c3}
+; part4x3_32u_8u~ref[33] = {0f 1f 44 00 00 8b c1 83 e0 0f 88 02 8b c1 c1 e8 04 83 e0 0f 88 42 01 c1 e9 08 83 e1 0f 88 4a 02 c3}
 ; TermCode = RET_ZEDx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
