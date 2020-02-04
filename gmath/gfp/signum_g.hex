@@ -1,2 +1,2 @@
-signum_g32f  48 83 ec 28 c5 f8 77 e8 84 27 4d ff 90 48 83 c4 28 c3
-signum_g64f  48 83 ec 28 c5 f8 77 e8 2c 27 4d ff 90 48 83 c4 28 c3
+signum_g32f  48 83 ec 28 c5 f8 77 e8 04 93 88 ff 90 48 83 c4 28 c3
+signum_g64f  48 83 ec 28 c5 f8 77 e8 ac 92 88 ff 90 48 83 c4 28 c3

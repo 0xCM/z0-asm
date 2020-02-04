@@ -1288,6 +1288,126 @@ Vector128<double> vload<double>(N128 w, Span<double> src)
     IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src)
+// AggressiveInlining
+Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src)
+// AggressiveInlining
+Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src)
+// AggressiveInlining
+Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src)
+// AggressiveInlining
+Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src)
+// AggressiveInlining
+Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src)
+// AggressiveInlining
+Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src)
+// AggressiveInlining
+Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src)
+// AggressiveInlining
+Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src)
+// AggressiveInlining
+Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
+// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
+// Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src)
+// AggressiveInlining
+Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src)
+{
+    IL_0000: ldarg.0
+    IL_0001: ldarg.1
+    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
+    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
+    IL_000C: ret
+}
+------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector256`1<T> Z0.CpuVector::vload<T>(Z0.N256,System.Span`1<T>)
 // Vector256<byte> vload<byte>(N256 w, Span<byte> src)
 // AggressiveInlining
@@ -1916,126 +2036,6 @@ Vector512<double> vload<double>(N512 w, Span<double> src, int offset)
     IL_0003: call T& zfunc::seek<T>(System.Span`1<T>,System.Int32)
     IL_0008: call Z0.Vector512`1<T> Z0.CpuVector::vload<T>(Z0.N512,T&)
     IL_000D: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src)
-// AggressiveInlining
-Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src)
-// AggressiveInlining
-Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src)
-// AggressiveInlining
-Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src)
-// AggressiveInlining
-Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src)
-// AggressiveInlining
-Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src)
-// AggressiveInlining
-Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src)
-// AggressiveInlining
-Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src)
-// AggressiveInlining
-Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src)
-// AggressiveInlining
-Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
-}
-------------------------------------------------------------------------------------------------------------------------
-// System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,System.ReadOnlySpan`1<T>)
-// Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src)
-// AggressiveInlining
-Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src)
-{
-    IL_0000: ldarg.0
-    IL_0001: ldarg.1
-    IL_0002: call T& modreq(System.Runtime.InteropServices.InAttribute) zfunc::head<T>(System.ReadOnlySpan`1<T>)
-    IL_0007: call System.Runtime.Intrinsics.Vector128`1<T> Z0.CpuVector::vload<T>(Z0.N128,T&)
-    IL_000C: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector256`1<T> Z0.CpuVector::vload<T>(Z0.N256,System.ReadOnlySpan`1<T>)

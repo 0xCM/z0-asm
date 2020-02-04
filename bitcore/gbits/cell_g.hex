@@ -2,7 +2,7 @@ cell_gspan8u   0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 03 c2 c3
 cell_gspan16u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 50 c3
 cell_gspan32u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 90 c3
 cell_gspan64u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 d0 c3
-cell_gspan8u   0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 03 c2 c3
-cell_gspan16u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 50 c3
-cell_gspan32u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 90 c3
-cell_gspan64u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 d0 c3
+cell_gimspan8u   0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 03 c2 c3
+cell_gimspan16u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 50 c3
+cell_gimspan32u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 90 c3
+cell_gimspan64u  0f 1f 44 00 00 48 8b 01 0f b7 12 48 63 d2 48 8d 04 d0 c3

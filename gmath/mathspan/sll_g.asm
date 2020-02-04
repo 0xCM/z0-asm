@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> sll<byte>(ReadOnlySpan<byte> src, byte count, Span<byte> dst)
-; sll_gspan8u_8u_span8u[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 40 0f b6 3c 0a 41 8b c8 d3 e7 40 0f b6 cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan8u_8u_span8u[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 40 0f b6 3c 0a 41 8b c8 d3 e7 40 0f b6 cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -30,7 +30,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> sll<sbyte>(ReadOnlySpan<sbyte> src, byte count, Span<sbyte> dst)
-; sll_gspan8i_8u_span8i[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 48 0f be 3c 0a 41 8b c8 d3 e7 48 0f be cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan8i_8u_span8i[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 48 0f be 3c 0a 41 8b c8 d3 e7 48 0f be cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -60,7 +60,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> sll<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
-; sll_gspan16u_8u_span16u[71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 e7 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan16u_8u_span16u[71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 e7 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -90,7 +90,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> sll<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
-; sll_gspan16i_8u_span16i[73] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 28 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 48 0f bf 3c 4a 41 8b c8 d3 e7 48 0f bf cf 66 89 0e 41 ff c3 45 3b d9 7c e0 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan16i_8u_span16i[73] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 28 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 48 0f bf 3c 4a 41 8b c8 d3 e7 48 0f bf cf 66 89 0e 41 ff c3 45 3b d9 7c e0 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -120,7 +120,7 @@
 0048h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> sll<uint>(ReadOnlySpan<uint> src, byte count, Span<uint> dst)
-; sll_gspan32u_8u_span32u[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 e7 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan32u_8u_span32u[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 e7 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -149,7 +149,7 @@
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> sll<int>(ReadOnlySpan<int> src, byte count, Span<int> dst)
-; sll_gspan32i_8u_span32i[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 e7 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan32i_8u_span32i[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 e7 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -178,7 +178,7 @@
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> sll<ulong>(ReadOnlySpan<ulong> src, byte count, Span<ulong> dst)
-; sll_gspan64u_8u_span64u[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 e7 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan64u_8u_span64u[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 e7 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -207,7 +207,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> sll<long>(ReadOnlySpan<long> src, byte count, Span<long> dst)
-; sll_gspan64i_8u_span64i[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 e7 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
+; sll_gimspan64i_8u_span64i[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 e7 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = RET_ZEDx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
