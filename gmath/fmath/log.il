@@ -1,7 +1,7 @@
 // System.Single Z0.fmath::log(System.Single,System.Nullable`1<System.Single>)
-// float log(float src, float b)
+// float log(float src, Nullable<float> b)
 // AggressiveInlining
-float log(float src, float b)
+float log(float src, Nullable<float> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1
@@ -18,9 +18,9 @@ float log(float src, float b)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Double Z0.fmath::log(System.Double,System.Nullable`1<System.Double>)
-// double log(double src, double b)
+// double log(double src, Nullable<double> b)
 // AggressiveInlining
-double log(double src, double b)
+double log(double src, Nullable<double> b)
 {
     IL_0000: ldarg.0
     IL_0001: ldarg.1

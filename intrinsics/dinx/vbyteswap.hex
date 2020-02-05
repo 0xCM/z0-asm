@@ -1,6 +1,6 @@
-vbyteswap_v128x16u  c5 f8 77 66 90 48 b8 4d 54 53 d7 0b 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vbyteswap_v128x32u  c5 f8 77 66 90 48 b8 fd 54 53 d7 0b 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vbyteswap_v128x64u  c5 f8 77 66 90 48 b8 3d 57 53 d7 0b 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vbyteswap_v256x16u  c5 f8 77 66 90 48 b8 8d 57 53 d7 0b 02 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vbyteswap_v256x32u  c5 f8 77 66 90 48 b8 cd 57 53 d7 0b 02 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vbyteswap_v256x64u  c5 f8 77 66 90 48 b8 ed 55 53 d7 0b 02 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbyteswap_v128x16u  c5 f8 77 66 90 48 b8 4d 54 06 40 b3 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vbyteswap_v128x32u  c5 f8 77 66 90 48 b8 fd 54 06 40 b3 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vbyteswap_v128x64u  c5 f8 77 66 90 48 b8 3d 57 06 40 b3 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vbyteswap_v256x16u  c5 f8 77 66 90 48 b8 8d 57 06 40 b3 01 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbyteswap_v256x32u  c5 f8 77 66 90 48 b8 cd 57 06 40 b3 01 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vbyteswap_v256x64u  c5 f8 77 66 90 48 b8 ed 55 06 40 b3 01 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

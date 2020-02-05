@@ -309,9 +309,9 @@ ReadOnlySpan<char> bitchars<double>(in double src)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<byte>(ReadOnlySpan<byte> src, int maxlen)
+// Span<char> bitchars<byte>(ReadOnlySpan<byte> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<byte>(ReadOnlySpan<byte> src, int maxlen)
+Span<char> bitchars<byte>(ReadOnlySpan<byte> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -373,9 +373,9 @@ Span<char> bitchars<byte>(ReadOnlySpan<byte> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, int maxlen)
+// Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, int maxlen)
+Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -437,9 +437,9 @@ Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, int maxlen)
+// Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, int maxlen)
+Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -501,9 +501,9 @@ Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<short>(ReadOnlySpan<short> src, int maxlen)
+// Span<char> bitchars<short>(ReadOnlySpan<short> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<short>(ReadOnlySpan<short> src, int maxlen)
+Span<char> bitchars<short>(ReadOnlySpan<short> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -565,9 +565,9 @@ Span<char> bitchars<short>(ReadOnlySpan<short> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<uint>(ReadOnlySpan<uint> src, int maxlen)
+// Span<char> bitchars<uint>(ReadOnlySpan<uint> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<uint>(ReadOnlySpan<uint> src, int maxlen)
+Span<char> bitchars<uint>(ReadOnlySpan<uint> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -629,9 +629,9 @@ Span<char> bitchars<uint>(ReadOnlySpan<uint> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<int>(ReadOnlySpan<int> src, int maxlen)
+// Span<char> bitchars<int>(ReadOnlySpan<int> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<int>(ReadOnlySpan<int> src, int maxlen)
+Span<char> bitchars<int>(ReadOnlySpan<int> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -693,9 +693,9 @@ Span<char> bitchars<int>(ReadOnlySpan<int> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, int maxlen)
+// Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, int maxlen)
+Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -757,9 +757,9 @@ Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<long>(ReadOnlySpan<long> src, int maxlen)
+// Span<char> bitchars<long>(ReadOnlySpan<long> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<long>(ReadOnlySpan<long> src, int maxlen)
+Span<char> bitchars<long>(ReadOnlySpan<long> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -821,9 +821,9 @@ Span<char> bitchars<long>(ReadOnlySpan<long> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<float>(ReadOnlySpan<float> src, int maxlen)
+// Span<char> bitchars<float>(ReadOnlySpan<float> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<float>(ReadOnlySpan<float> src, int maxlen)
+Span<char> bitchars<float>(ReadOnlySpan<float> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -885,9 +885,9 @@ Span<char> bitchars<float>(ReadOnlySpan<float> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.ReadOnlySpan`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<double>(ReadOnlySpan<double> src, int maxlen)
+// Span<char> bitchars<double>(ReadOnlySpan<double> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<double>(ReadOnlySpan<double> src, int maxlen)
+Span<char> bitchars<double>(ReadOnlySpan<double> src, Nullable<int> maxlen)
 {
     IL_0000: call System.Int32 zfunc::bitsize<T>()
     IL_0005: stloc.0
@@ -949,9 +949,9 @@ Span<char> bitchars<double>(ReadOnlySpan<double> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<byte>(Span<byte> src, int maxlen)
+// Span<char> bitchars<byte>(Span<byte> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<byte>(Span<byte> src, int maxlen)
+Span<char> bitchars<byte>(Span<byte> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -961,9 +961,9 @@ Span<char> bitchars<byte>(Span<byte> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<sbyte>(Span<sbyte> src, int maxlen)
+// Span<char> bitchars<sbyte>(Span<sbyte> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<sbyte>(Span<sbyte> src, int maxlen)
+Span<char> bitchars<sbyte>(Span<sbyte> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -973,9 +973,9 @@ Span<char> bitchars<sbyte>(Span<sbyte> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<ushort>(Span<ushort> src, int maxlen)
+// Span<char> bitchars<ushort>(Span<ushort> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<ushort>(Span<ushort> src, int maxlen)
+Span<char> bitchars<ushort>(Span<ushort> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -985,9 +985,9 @@ Span<char> bitchars<ushort>(Span<ushort> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<short>(Span<short> src, int maxlen)
+// Span<char> bitchars<short>(Span<short> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<short>(Span<short> src, int maxlen)
+Span<char> bitchars<short>(Span<short> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -997,9 +997,9 @@ Span<char> bitchars<short>(Span<short> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<uint>(Span<uint> src, int maxlen)
+// Span<char> bitchars<uint>(Span<uint> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<uint>(Span<uint> src, int maxlen)
+Span<char> bitchars<uint>(Span<uint> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -1009,9 +1009,9 @@ Span<char> bitchars<uint>(Span<uint> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<int>(Span<int> src, int maxlen)
+// Span<char> bitchars<int>(Span<int> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<int>(Span<int> src, int maxlen)
+Span<char> bitchars<int>(Span<int> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -1021,9 +1021,9 @@ Span<char> bitchars<int>(Span<int> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<ulong>(Span<ulong> src, int maxlen)
+// Span<char> bitchars<ulong>(Span<ulong> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<ulong>(Span<ulong> src, int maxlen)
+Span<char> bitchars<ulong>(Span<ulong> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -1033,9 +1033,9 @@ Span<char> bitchars<ulong>(Span<ulong> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<long>(Span<long> src, int maxlen)
+// Span<char> bitchars<long>(Span<long> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<long>(Span<long> src, int maxlen)
+Span<char> bitchars<long>(Span<long> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -1045,9 +1045,9 @@ Span<char> bitchars<long>(Span<long> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<float>(Span<float> src, int maxlen)
+// Span<char> bitchars<float>(Span<float> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<float>(Span<float> src, int maxlen)
+Span<char> bitchars<float>(Span<float> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)
@@ -1057,9 +1057,9 @@ Span<char> bitchars<float>(Span<float> src, int maxlen)
 }
 ------------------------------------------------------------------------------------------------------------------------
 // System.Span`1<System.Char> Z0.gbits::bitchars<T>(System.Span`1<T>,System.Nullable`1<System.Int32>)
-// Span<char> bitchars<double>(Span<double> src, int maxlen)
+// Span<char> bitchars<double>(Span<double> src, Nullable<int> maxlen)
 // AggressiveInlining
-Span<char> bitchars<double>(Span<double> src, int maxlen)
+Span<char> bitchars<double>(Span<double> src, Nullable<int> maxlen)
 {
     IL_0000: ldarg.0
     IL_0001: call System.ReadOnlySpan`1<T> Z0.SpanExtend::ReadOnly<T>(System.Span`1<T>)

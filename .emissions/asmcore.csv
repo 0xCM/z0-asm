@@ -1,5 +1,5 @@
 Size    | Uri
 48      | asm://asmcore/asmconstructs?alloc#alloc_32u_32i
-157     | asm://asmcore/asmconstructs?compute#compute_32u_8u_32u_32u
+157     | asm://asmcore/asmconstructs?compute#compute_32u_BinaryBitLogicKind~8u_32u_32u
 98      | asm://asmcore/asmconstructs?for#for_min_max_
 44      | asm://asmcore/asmconstructs?for#for_min_max_32i_32i

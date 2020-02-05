@@ -1,16 +1,11 @@
 Size    | Uri
-19      | asm://root/numeric?char#char_NumericIndicator~16u
-11      | asm://root/numeric?class#class_NumericKind~32u
 7993    | asm://root/numeric?convert#convert_NumericKind~32u
 73      | asm://root/numeric?floating#floating_
 118     | asm://root/numeric?format#format_FixedWidth~32u
-155     | asm://root/numeric?format#format_NumericIndicator~16u
 192     | asm://root/numeric?from#from_FixedWidth~32u_NumericClass~32u
 187     | asm://root/numeric?from#from_FixedWidth~32u_NumericIndicator~16u
-20      | asm://root/numeric?id#id_NumericKind~32u
 8       | asm://root/numeric?int#int_FixedWidth~32u
 111     | asm://root/numeric?is#is_NumericKind~32u_NumericKind~32u
-68      | asm://root/numeric?keyword#keyword_NumericKind~32u
 155     | asm://root/numeric?kind#kind_
 145     | asm://root/numeric?kindset#kindset_NumericKind~32u
 287     | asm://root/numeric?kindsetCreate#kindsetCreate_NumericKind~32u
@@ -18,5 +13,3 @@ Size    | Uri
 71      | asm://root/numeric?type#type_NumericKind~32u
 145     | asm://root/numeric?typeset#typeset_NumericKind~32u
 133     | asm://root/numeric?unsigned#unsigned_
-85      | asm://root/numeric?valid#valid_NumericIndicator~16u
-9       | asm://root/numeric?width#width_NumericKind~32u
