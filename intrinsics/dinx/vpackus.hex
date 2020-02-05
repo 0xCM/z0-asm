@@ -1,12 +1,12 @@
 vpackus_v128x16i_v128x16i      c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 67 00 c5 f9 11 01 48 8b c1 c3
 vpackus_v128x16u_v128x16u      50 c5 f8 77 90 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 db c8 c4 c1 79 10 10 c5 e9 db c0 c5 f1 67 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vpackus_alt_v128x16u_v128x16u  c5 f8 77 66 90 48 b8 5d 56 27 77 c0 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 48 b8 bd 57 27 77 c0 01 00 00 c5 fb f0 08 c4 c1 79 10 10 c4 e2 69 00 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3
+vpackus_alt_v128x16u_v128x16u  c5 f8 77 66 90 48 b8 5d 56 06 6f 1b 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 48 b8 bd 57 06 6f 1b 02 00 00 c5 fb f0 08 c4 c1 79 10 10 c4 e2 69 00 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3
 vpackus_v128x32i_v128x32i      c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 2b 00 c5 f9 11 01 48 8b c1 c3
 vpackus_v128x32u_v128x32u      50 c5 f8 77 90 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 db c8 c4 c1 79 10 10 c5 e9 db c0 c4 e2 71 2b c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3
-vpackus_alt_v128x32u_v128x32u  c5 f8 77 66 90 48 b8 1d 55 27 77 c0 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 48 b8 0d 57 27 77 c0 01 00 00 c5 fb f0 08 c4 c1 79 10 10 c4 e2 69 00 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3
+vpackus_alt_v128x32u_v128x32u  c5 f8 77 66 90 48 b8 1d 55 06 6f 1b 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 48 b8 0d 57 06 6f 1b 02 00 00 c5 fb f0 08 c4 c1 79 10 10 c4 e2 69 00 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 c3
 vpackus_v256x16i_v256x16i      c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 67 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 vpackus_v256x16u_v256x16u      50 c5 f8 77 90 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 f5 db c8 c4 c1 7d 10 10 c5 ed db c0 c5 f5 67 c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vpackus_alt_v256x16u_v256x16u  c5 f8 77 66 90 48 b8 2d 55 27 77 c0 01 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 48 b8 dd 54 27 77 c0 01 00 00 c5 ff f0 08 c4 c1 7d 10 10 c4 e2 6d 00 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vpackus_alt_v256x16u_v256x16u  c5 f8 77 66 90 48 b8 2d 55 06 6f 1b 02 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 48 b8 dd 54 06 6f 1b 02 00 00 c5 ff f0 08 c4 c1 7d 10 10 c4 e2 6d 00 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 vpackus_v256x32i_v256x32i      c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 2b 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
 vpackus_v256x32u_v256x32u      50 c5 f8 77 90 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 f5 db c8 c4 c1 7d 10 10 c5 ed db c0 c4 e2 75 2b c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vpackus_alt_v256x32u_v256x32u  c5 f8 77 66 90 48 b8 1d 57 27 77 c0 01 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 48 b8 5d 57 27 77 c0 01 00 00 c5 ff f0 08 c4 c1 7d 10 10 c4 e2 6d 00 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vpackus_alt_v256x32u_v256x32u  c5 f8 77 66 90 48 b8 1d 57 06 6f 1b 02 00 00 c5 ff f0 00 c5 fd 10 0a c4 e2 75 00 c0 48 b8 5d 57 06 6f 1b 02 00 00 c5 ff f0 08 c4 c1 7d 10 10 c4 e2 6d 00 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
