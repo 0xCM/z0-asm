@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte gt<byte>(byte a, byte b)
 ; gt_g8u_8u[33] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 0f 97 c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff 00 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -17,7 +17,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte gt<sbyte>(sbyte a, sbyte b)
 ; gt_g8i_8i[35] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 3b c2 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 7f 00 00 00 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
@@ -33,7 +33,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort gt<ushort>(ushort a, ushort b)
 ; gt_g16u_16u[33] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 3b c2 0f 97 c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff ff 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
@@ -49,7 +49,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short gt<short>(short a, short b)
 ; gt_g16i_16i[35] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff 7f 00 00 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
@@ -65,7 +65,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint gt<uint>(uint a, uint b)
 ; gt_g32u_32u[27] = {0f 1f 44 00 00 3b ca 0f 97 c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff ff ff ff c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h seta al                                 ; SETA r/m8 || 0F 97 /r || encoded[3]{0f 97 c0}
@@ -79,7 +79,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int gt<int>(int a, int b)
 ; gt_g32i_32i[27] = {0f 1f 44 00 00 3b ca 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 05 b8 ff ff ff 7f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h setg al                                 ; SETG r/m8 || 0F 9F /r || encoded[3]{0f 9f c0}
@@ -93,7 +93,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong gt<ulong>(ulong a, ulong b)
 ; gt_g64u_64u[33] = {0f 1f 44 00 00 48 3b ca 0f 97 c0 0f b6 c0 85 c0 75 04 33 c0 eb 0a 48 b8 ff ff ff ff ff ff ff ff c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h seta al                                 ; SETA r/m8 || 0F 97 /r || encoded[3]{0f 97 c0}
@@ -107,7 +107,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long gt<long>(long a, long b)
 ; gt_g64i_64i[33] = {0f 1f 44 00 00 48 3b ca 0f 9f c0 0f b6 c0 85 c0 75 04 33 c0 eb 0a 48 b8 ff ff ff ff ff ff ff 7f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h setg al                                 ; SETG r/m8 || 0F 9F /r || encoded[3]{0f 9f c0}

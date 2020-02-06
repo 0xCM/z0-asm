@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part4x2(uint src, ref byte dst)
 ; part4x2_32u_8u~ref[22] = {0f 1f 44 00 00 8b c1 83 e0 0f 88 02 c1 e9 04 83 e1 0f 88 4a 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h and eax,0fh                             ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 0f}
@@ -13,7 +13,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part4x2(uint src, NatSpan<N2,byte> dst)
 ; part4x2_32u_nspan2x8u[25] = {0f 1f 44 00 00 48 8b 02 8b d1 83 e2 0f 88 10 c1 e9 04 83 e1 0f 88 48 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d1}

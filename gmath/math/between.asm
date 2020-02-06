@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(byte t, byte min, byte max)
 ; between_8u_8u_8u[38] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 3b c2 7c 11 0f b6 c1 41 0f b6 d0 3b c2 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -19,7 +19,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(sbyte t, sbyte min, sbyte max)
 ; between_8i_8i_8i[41] = {0f 1f 44 00 00 48 0f be c1 48 0f be d2 3b c2 7c 12 48 0f be c1 49 0f be d0 3b c2 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
@@ -37,7 +37,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(short t, short min, short max)
 ; between_16i_16i_16i[41] = {0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 3b c2 7c 12 48 0f bf c1 49 0f bf d0 3b c2 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
@@ -55,7 +55,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(ushort t, ushort min, ushort max)
 ; between_16u_16u_16u[38] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 3b c2 7c 11 0f b7 c1 41 0f b7 d0 3b c2 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
@@ -73,7 +73,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(int t, int min, int max)
 ; between_32i_32i_32i[26] = {0f 1f 44 00 00 3b ca 7c 0b 41 3b c8 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h jl short 0014h                          ; JL rel8 || 7C cb || encoded[2]{7c 0b}
@@ -87,7 +87,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(uint t, uint min, uint max)
 ; between_32u_32u_32u[26] = {0f 1f 44 00 00 3b ca 72 0b 41 3b c8 0f 96 c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp ecx,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b ca}
 0007h jb short 0014h                          ; JB rel8 || 72 cb || encoded[2]{72 0b}
@@ -101,7 +101,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(long t, long min, long max)
 ; between_64i_64i_64i[27] = {0f 1f 44 00 00 48 3b ca 7c 0b 49 3b c8 0f 9e c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jl short 0015h                          ; JL rel8 || 7C cb || encoded[2]{7c 0b}
@@ -115,7 +115,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit between(ulong t, ulong min, ulong max)
 ; between_64u_64u_64u[27] = {0f 1f 44 00 00 48 3b ca 72 0b 49 3b c8 0f 96 c0 0f b6 c0 eb 02 33 c0 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h cmp rcx,rdx                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{48 3b ca}
 0008h jb short 0015h                          ; JB rel8 || 72 cb || encoded[2]{72 0b}

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vbroadcast<byte>(N128 n, byte src)
 ; vbroadcast_gn128_8u[37] = {50 c5 f8 77 90 41 0f b6 c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -16,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vbroadcast<sbyte>(N128 n, sbyte src)
 ; vbroadcast_gn128_8i[37] = {50 c5 f8 77 90 49 0f be c0 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vbroadcast<ushort>(N128 n, ushort src)
 ; vbroadcast_gn128_16u[38] = {50 c5 f8 77 90 41 0f b7 c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -46,7 +46,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vbroadcast<short>(N128 n, short src)
 ; vbroadcast_gn128_16i[38] = {50 c5 f8 77 90 49 0f bf c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vbroadcast<uint>(N128 n, uint src)
 ; vbroadcast_gn128_32u[34] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -75,7 +75,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vbroadcast<int>(N128 n, int src)
 ; vbroadcast_gn128_32i[34] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -89,7 +89,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vbroadcast<ulong>(N128 n, ulong src)
 ; vbroadcast_gn128_64u[31] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -103,7 +103,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vbroadcast<long>(N128 n, long src)
 ; vbroadcast_gn128_64i[31] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -117,7 +117,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vbroadcast<float>(N128 n, float src)
 ; vbroadcast_gn128_32f[30] = {50 c5 f8 77 90 c5 fa 11 54 24 04 c4 e2 79 18 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -130,7 +130,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vbroadcast<double>(N128 n, double src)
 ; vbroadcast_gn128_64f[17] = {c5 f8 77 66 90 c5 fb 12 c2 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovddup xmm0,xmm2                      ; VMOVDDUP xmm1, xmm2/m64 || VEX.128.F2.0F.WIG 12 /r || encoded[4]{c5 fb 12 c2}
@@ -140,7 +140,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbroadcast<byte>(N256 n, byte src)
 ; vbroadcast_gn256_8u[40] = {50 c5 f8 77 90 41 0f b6 c0 88 44 24 04 48 8d 44 24 04 c4 e2 7d 78 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -156,7 +156,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vbroadcast<sbyte>(N256 n, sbyte src)
 ; vbroadcast_gn256_8i[40] = {50 c5 f8 77 90 49 0f be c0 88 44 24 04 48 8d 44 24 04 c4 e2 7d 78 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -172,7 +172,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbroadcast<ushort>(N256 n, ushort src)
 ; vbroadcast_gn256_16u[41] = {50 c5 f8 77 90 41 0f b7 c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -188,7 +188,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vbroadcast<short>(N256 n, short src)
 ; vbroadcast_gn256_16i[41] = {50 c5 f8 77 90 49 0f bf c0 66 89 44 24 04 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -204,7 +204,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbroadcast<uint>(N256 n, uint src)
 ; vbroadcast_gn256_32u[37] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -219,7 +219,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vbroadcast<int>(N256 n, int src)
 ; vbroadcast_gn256_32i[37] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -234,7 +234,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbroadcast<ulong>(N256 n, ulong src)
 ; vbroadcast_gn256_64u[34] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -249,7 +249,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vbroadcast<long>(N256 n, long src)
 ; vbroadcast_gn256_64i[34] = {50 c5 f8 77 90 4c 89 04 24 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -264,7 +264,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vbroadcast<float>(N256 n, float src)
 ; vbroadcast_gn256_32f[33] = {50 c5 f8 77 90 c5 fa 11 54 24 04 c4 e2 7d 18 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -278,7 +278,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vbroadcast<double>(N256 n, double src)
 ; vbroadcast_gn256_64f[31] = {50 c5 f8 77 90 c5 fb 11 14 24 c4 e2 7d 19 04 24 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -292,7 +292,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vbroadcast<byte>(N512 n, byte src)
 ; vbroadcast_gn512_8u[60] = {50 c5 f8 77 90 41 0f b6 c0 8b d0 88 54 24 04 48 8d 54 24 04 c4 e2 7d 78 44 24 04 88 04 24 48 8d 04 24 c4 e2 7d 78 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -313,7 +313,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vbroadcast<sbyte>(N512 n, sbyte src)
 ; vbroadcast_gn512_8i[60] = {50 c5 f8 77 90 49 0f be c0 8b d0 88 54 24 04 48 8d 54 24 04 c4 e2 7d 78 44 24 04 88 04 24 48 8d 04 24 c4 e2 7d 78 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -334,7 +334,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vbroadcast<ushort>(N512 n, ushort src)
 ; vbroadcast_gn512_16u[62] = {50 c5 f8 77 90 41 0f b7 c0 8b d0 66 89 54 24 04 48 8d 54 24 04 c4 e2 7d 79 44 24 04 66 89 04 24 48 8d 04 24 c4 e2 7d 79 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -355,7 +355,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vbroadcast<short>(N512 n, short src)
 ; vbroadcast_gn512_16i[62] = {50 c5 f8 77 90 49 0f bf c0 8b d0 66 89 54 24 04 48 8d 54 24 04 c4 e2 7d 79 44 24 04 66 89 04 24 48 8d 04 24 c4 e2 7d 79 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -376,7 +376,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vbroadcast<uint>(N512 n, uint src)
 ; vbroadcast_gn512_32u[56] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 44 89 04 24 48 8d 04 24 c4 e2 7d 58 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -395,7 +395,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vbroadcast<int>(N512 n, int src)
 ; vbroadcast_gn512_32i[56] = {50 c5 f8 77 90 44 89 44 24 04 48 8d 44 24 04 c4 e2 7d 58 44 24 04 44 89 04 24 48 8d 04 24 c4 e2 7d 58 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -414,7 +414,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vbroadcast<ulong>(N512 n, ulong src)
 ; vbroadcast_gn512_64u[61] = {48 83 ec 18 c5 f8 77 4c 89 44 24 10 48 8d 44 24 10 c4 e2 7d 59 44 24 10 4c 89 44 24 08 48 8d 44 24 08 c4 e2 7d 59 4c 24 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 18 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+10h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 10}
@@ -432,7 +432,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vbroadcast<long>(N512 n, long src)
 ; vbroadcast_gn512_64i[61] = {48 83 ec 18 c5 f8 77 4c 89 44 24 10 48 8d 44 24 10 c4 e2 7d 59 44 24 10 4c 89 44 24 08 48 8d 44 24 08 c4 e2 7d 59 4c 24 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 18 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h mov [rsp+10h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 44 24 10}
@@ -450,7 +450,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vbroadcast<float>(N512 n, float src)
 ; vbroadcast_gn512_32f[49] = {50 c5 f8 77 90 c5 fa 11 54 24 04 c4 e2 7d 18 44 24 04 c5 fa 11 14 24 c4 e2 7d 18 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -467,7 +467,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vbroadcast<double>(N512 n, double src)
 ; vbroadcast_gn512_64f[53] = {48 83 ec 18 c5 f8 77 c5 fb 11 54 24 10 c4 e2 7d 19 44 24 10 c5 fb 11 54 24 08 c4 e2 7d 19 4c 24 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 18 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmovsd qword ptr [rsp+10h],xmm2         ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 54 24 10}

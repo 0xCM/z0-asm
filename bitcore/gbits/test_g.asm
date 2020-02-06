@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<byte>(byte src, int pos)
 ; test_g8u_32i[17] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<sbyte>(sbyte src, int pos)
 ; test_g8i_32i[22] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ushort>(ushort src, int pos)
 ; test_g16u_32i[17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -32,7 +32,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<short>(short src, int pos)
 ; test_g16i_32i[22] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<uint>(uint src, int pos)
 ; test_g32u_32i[16] = {0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -53,7 +53,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<int>(int src, int pos)
 ; test_g32i_32i[18] = {0f 1f 44 00 00 0f b6 c2 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt ecx,eax                              ; BT r/m32, r32 || o32 0F A3 /r || encoded[3]{0f a3 c1}
@@ -63,7 +63,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ulong>(ulong src, int pos)
 ; test_g64u_32i[18] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -73,7 +73,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<long>(long src, int pos)
 ; test_g64i_32i[19] = {0f 1f 44 00 00 0f b6 c2 48 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt rcx,rax                              ; BT r/m64, r64 || REX.W 0F A3 /r || encoded[4]{48 0f a3 c1}
@@ -83,7 +83,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<float>(float src, int pos)
 ; test_g32f_32i[32] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -98,7 +98,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<double>(double src, int pos)
 ; test_g64f_32i[32] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 0f b6 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -113,7 +113,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<byte>(byte src, uint pos)
 ; test_g8u_32u[17] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -123,7 +123,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<sbyte>(sbyte src, uint pos)
 ; test_g8i_32u[22] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -134,7 +134,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ushort>(ushort src, uint pos)
 ; test_g16u_32u[17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -144,7 +144,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<short>(short src, uint pos)
 ; test_g16i_32u[22] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -155,7 +155,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<uint>(uint src, uint pos)
 ; test_g32u_32u[16] = {0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -165,7 +165,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<int>(int src, uint pos)
 ; test_g32i_32u[18] = {0f 1f 44 00 00 0f b6 c2 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt ecx,eax                              ; BT r/m32, r32 || o32 0F A3 /r || encoded[3]{0f a3 c1}
@@ -175,7 +175,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ulong>(ulong src, uint pos)
 ; test_g64u_32u[18] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -185,7 +185,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<long>(long src, uint pos)
 ; test_g64i_32u[19] = {0f 1f 44 00 00 0f b6 c2 48 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt rcx,rax                              ; BT r/m64, r64 || REX.W 0F A3 /r || encoded[4]{48 0f a3 c1}
@@ -195,7 +195,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<float>(float src, uint pos)
 ; test_g32f_32u[32] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -210,7 +210,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<double>(double src, uint pos)
 ; test_g64f_32u[32] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 0f b6 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -225,7 +225,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<byte>(byte src, byte pos)
 ; test_g8u_8u[17] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -235,7 +235,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<sbyte>(sbyte src, byte pos)
 ; test_g8i_8u[22] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -246,7 +246,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ushort>(ushort src, byte pos)
 ; test_g16u_8u[17] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -256,7 +256,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<short>(short src, byte pos)
 ; test_g16i_8u[22] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -267,7 +267,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<uint>(uint src, byte pos)
 ; test_g32u_8u[16] = {0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 83 e0 01 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -277,7 +277,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<int>(int src, byte pos)
 ; test_g32i_8u[18] = {0f 1f 44 00 00 0f b6 c2 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt ecx,eax                              ; BT r/m32, r32 || o32 0F A3 /r || encoded[3]{0f a3 c1}
@@ -287,7 +287,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ulong>(ulong src, byte pos)
 ; test_g64u_8u[18] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
@@ -297,7 +297,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<long>(long src, byte pos)
 ; test_g64i_8u[19] = {0f 1f 44 00 00 0f b6 c2 48 0f a3 c1 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h bt rcx,rax                              ; BT r/m64, r64 || REX.W 0F A3 /r || encoded[4]{48 0f a3 c1}
@@ -307,7 +307,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<float>(float src, byte pos)
 ; test_g32f_8u[32] = {50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 0f b6 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -322,7 +322,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<double>(double src, byte pos)
 ; test_g64f_8u[32] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 0f b6 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -337,7 +337,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<byte>(in Block256<byte> src, int index)
 ; test_gb256x8u~in_32i[182] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 08 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 8b 44 24 38 0f b7 c0 48 63 c0 0f b6 04 01 8b 4c 24 3a 0f b7 c9 d3 e8 83 e0 01 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -384,7 +384,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<sbyte>(in Block256<sbyte> src, int index)
 ; test_gb256x8i~in_32i[187] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 08 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 08 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 48 0f be 04 10 8b 54 24 3a 0f b7 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -432,7 +432,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ushort>(in Block256<ushort> src, int index)
 ; test_gb256x16u~in_32i[182] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 10 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 8b 44 24 38 0f b7 c0 48 63 c0 0f b7 04 41 8b 4c 24 3a 0f b7 c9 d3 e8 83 e0 01 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -479,7 +479,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<short>(in Block256<short> src, int index)
 ; test_gb256x16i~in_32i[187] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 10 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 10 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 48 0f bf 04 50 8b 54 24 3a 0f b7 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -527,7 +527,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<uint>(in Block256<uint> src, int index)
 ; test_gb256x32u~in_32i[181] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 20 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 8b 44 24 38 0f b7 c0 48 63 c0 8b 04 81 8b 4c 24 3a 0f b7 c9 d3 e8 83 e0 01 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -574,7 +574,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<int>(in Block256<int> src, int index)
 ; test_gb256x32i~in_32i[185] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 20 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 8b 04 90 8b 54 24 3a 0f b7 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -622,7 +622,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<ulong>(in Block256<ulong> src, int index)
 ; test_gb256x64u~in_32i[183] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 40 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 09 8b 44 24 38 0f b7 c0 48 63 c0 48 8b 04 c1 8b 4c 24 3a 0f b7 c9 48 d3 e8 83 e0 01 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -669,7 +669,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<long>(in Block256<long> src, int index)
 ; test_gb256x64i~in_32i[187] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 40 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 48 8b 04 d0 8b 54 24 3a 0f b7 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -717,7 +717,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<float>(in Block256<float> src, int index)
 ; test_gb256x32f~in_32i[197] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 20 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 20 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 c5 fa 10 04 90 c5 fa 11 44 24 04 8b 44 24 04 8b 54 24 3a 0f b7 d2 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -767,7 +767,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit test<double>(in Block256<double> src, int index)
 ; test_gb256x64f~in_32i[197] = {48 83 ec 58 c5 f8 77 33 c0 48 89 44 24 38 48 89 44 24 40 48 89 44 24 48 48 89 44 24 50 44 8b c2 c7 44 24 14 40 00 00 00 44 0f b6 4c 24 14 41 8b c0 33 d2 41 f7 f1 89 44 24 10 44 0f b7 4c 24 10 c7 44 24 0c 40 00 00 00 44 0f b6 54 24 0c 41 8b c0 33 d2 41 f7 f2 89 54 24 08 48 8d 44 24 18 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 44 24 08 66 44 89 4c 24 18 66 89 44 24 1a c5 fa 6f 44 24 18 c5 fa 7f 44 24 38 c5 fa 6f 44 24 28 c5 fa 7f 44 24 48 48 8b 01 8b 54 24 38 0f b7 d2 48 63 d2 c5 fb 10 04 d0 c5 fb 11 04 24 48 8b 04 24 8b 54 24 3a 0f b7 d2 48 0f a3 d0 0f 92 c0 0f b6 c0 48 83 c4 58 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

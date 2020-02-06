@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte toggle<byte>(byte src, int pos)
 ; toggle_g8u_32i[32] = {0f 1f 44 00 00 0f b6 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 33 c2 0f b6 c0 0f b6 c0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -15,7 +15,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte toggle<sbyte>(sbyte src, int pos)
 ; toggle_g8i_32i[35] = {0f 1f 44 00 00 48 0f be c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f be d0 33 c2 48 0f be c0 48 0f be c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -29,7 +29,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort toggle<ushort>(ushort src, int pos)
 ; toggle_g16u_32i[32] = {0f 1f 44 00 00 0f b7 c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b7 d0 33 c2 0f b7 c0 0f b7 c0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short toggle<short>(short src, int pos)
 ; toggle_g16i_32i[35] = {0f 1f 44 00 00 48 0f bf c1 41 b8 01 00 00 00 8b ca 41 d3 e0 49 0f bf d0 33 c2 48 0f bf c0 48 0f bf c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -57,7 +57,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint toggle<uint>(uint src, int pos)
 ; toggle_g32u_32i[22] = {0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 33 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -68,7 +68,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int toggle<int>(int src, int pos)
 ; toggle_g32i_32i[22] = {0f 1f 44 00 00 8b c1 41 b8 01 00 00 00 8b ca 41 d3 e0 41 33 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -79,7 +79,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong toggle<ulong>(ulong src, int pos)
 ; toggle_g64u_32i[23] = {0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 33 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -90,7 +90,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long toggle<long>(long src, int pos)
 ; toggle_g64i_32i[23] = {0f 1f 44 00 00 48 8b c1 41 b8 01 00 00 00 8b ca 49 d3 e0 49 33 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
@@ -101,7 +101,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float toggle<float>(float src, int pos)
 ; toggle_g32f_32i[41] = {50 c5 f8 77 90 c5 fa 11 44 24 04 48 8d 44 24 04 41 b8 01 00 00 00 8b ca 41 d3 e0 44 31 00 c5 fa 10 44 24 04 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -117,7 +117,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; double toggle<double>(double src, int pos)
 ; toggle_g64f_32i[38] = {50 c5 f8 77 90 c5 fb 11 04 24 48 8d 04 24 41 b8 01 00 00 00 8b ca 49 d3 e0 4c 31 00 c5 fb 10 04 24 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

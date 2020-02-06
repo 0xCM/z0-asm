@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit xnor(bit a, bit b)
 ; xnor_1u_1u[15] = {0f 1f 44 00 00 33 d1 8b c2 f7 d0 83 e0 01 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor edx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d1}
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}

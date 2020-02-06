@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vrotlv(Vector128<uint> src, Vector128<uint> counts)
 ; vrotlv_v128x32u_v128x32u[73] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c4 e2 79 47 c1 c7 44 24 04 20 00 00 00 48 8d 44 24 04 c4 e2 79 58 4c 24 04 c4 c1 79 10 10 c5 f1 fa ca c5 f9 10 12 c4 e2 69 45 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vrotlv(Vector128<ulong> src, Vector128<ulong> counts)
 ; vrotlv_v128x64u_v128x64u[71] = {50 c5 f8 77 90 c5 f9 10 02 c4 c1 79 10 08 c4 e2 f9 47 c1 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 79 59 0c 24 c4 c1 79 10 10 c5 f1 fb ca c5 f9 10 12 c4 e2 e9 45 c9 c5 f9 eb c1 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vrotlv(Vector256<uint> src, Vector256<uint> counts)
 ; vrotlv_v256x32u_v256x32u[76] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 7d 47 c1 c7 44 24 04 20 00 00 00 48 8d 44 24 04 c4 e2 7d 58 4c 24 04 c4 c1 7d 10 10 c5 f5 fa ca c5 fd 10 12 c4 e2 6d 45 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -68,7 +68,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vrotlv(Vector256<ulong> src, Vector256<ulong> counts)
 ; vrotlv_v256x64u_v256x64u[74] = {50 c5 f8 77 90 c5 fd 10 02 c4 c1 7d 10 08 c4 e2 fd 47 c1 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 7d 59 0c 24 c4 c1 7d 10 10 c5 f5 fb ca c5 fd 10 12 c4 e2 ed 45 c9 c5 fd eb c1 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

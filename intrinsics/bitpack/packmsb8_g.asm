@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<byte>(Vector128<byte> src)
 ; packmsb8_gv128x8u[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -11,7 +11,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<sbyte>(Vector128<sbyte> src)
 ; packmsb8_gv128x8i[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<ushort>(Vector128<ushort> src)
 ; packmsb8_gv128x16u[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<short>(Vector128<short> src)
 ; packmsb8_gv128x16i[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -41,7 +41,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<uint>(Vector128<uint> src)
 ; packmsb8_gv128x32u[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -51,7 +51,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<int>(Vector128<int> src)
 ; packmsb8_gv128x32i[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<ulong>(Vector128<ulong> src)
 ; packmsb8_gv128x64u[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -71,7 +71,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort packmsb8<long>(Vector128<long> src)
 ; packmsb8_gv128x64i[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -81,7 +81,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<byte>(Vector256<byte> src)
 ; packmsb8_gv256x8u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -92,7 +92,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<sbyte>(Vector256<sbyte> src)
 ; packmsb8_gv256x8i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -103,7 +103,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<ushort>(Vector256<ushort> src)
 ; packmsb8_gv256x16u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -114,7 +114,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<short>(Vector256<short> src)
 ; packmsb8_gv256x16i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -125,7 +125,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<uint>(Vector256<uint> src)
 ; packmsb8_gv256x32u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -136,7 +136,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<int>(Vector256<int> src)
 ; packmsb8_gv256x32i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -147,7 +147,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<ulong>(Vector256<ulong> src)
 ; packmsb8_gv256x64u[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -158,7 +158,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong packmsb8<long>(Vector256<long> src)
 ; packmsb8_gv256x64i[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

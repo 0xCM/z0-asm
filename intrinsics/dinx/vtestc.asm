@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<sbyte> src, Vector128<sbyte> mask)
 ; vtestc_v128x8i_v128x8i[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<byte> src, Vector128<byte> mask)
 ; vtestc_v128x8u_v128x8u[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<short> src, Vector128<short> mask)
 ; vtestc_v128x16i_v128x16i[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -34,7 +34,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<ushort> src, Vector128<ushort> mask)
 ; vtestc_v128x16u_v128x16u[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<int> src, Vector128<int> mask)
 ; vtestc_v128x32i_v128x32i[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -56,7 +56,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<uint> src, Vector128<uint> mask)
 ; vtestc_v128x32u_v128x32u[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -67,7 +67,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<long> src, Vector128<long> mask)
 ; vtestc_v128x64i_v128x64i[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -78,7 +78,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<ulong> src, Vector128<ulong> mask)
 ; vtestc_v128x64u_v128x64u[21] = {c5 f8 77 66 90 c5 f9 10 01 c4 e2 79 17 02 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rcx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 01}
@@ -89,7 +89,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<sbyte> src)
 ; vtestc_v128x8i[33] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -103,7 +103,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<byte> src)
 ; vtestc_v128x8u[33] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -117,7 +117,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<ushort> src)
 ; vtestc_v128x16u[33] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -131,7 +131,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<int> src)
 ; vtestc_v128x32i[33] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -145,7 +145,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<uint> src)
 ; vtestc_v128x32u[33] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -159,7 +159,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<long> src)
 ; vtestc_v128x64i[34] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -173,7 +173,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector128<ulong> src)
 ; vtestc_v128x64u[34] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 10 09 c4 e2 79 17 c8 0f 92 c0 0f b6 c0 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -187,7 +187,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<sbyte> src, Vector256<sbyte> mask)
 ; vtestc_v256x8i_v256x8i[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -199,7 +199,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<byte> src, Vector256<byte> mask)
 ; vtestc_v256x8u_v256x8u[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -211,7 +211,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<short> src, Vector256<short> mask)
 ; vtestc_v256x16i_v256x16i[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -223,7 +223,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<ushort> src, Vector256<ushort> mask)
 ; vtestc_v256x16u_v256x16u[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -235,7 +235,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<int> src, Vector256<int> mask)
 ; vtestc_v256x32i_v256x32i[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -247,7 +247,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<uint> src, Vector256<uint> mask)
 ; vtestc_v256x32u_v256x32u[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -259,7 +259,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<long> src, Vector256<long> mask)
 ; vtestc_v256x64i_v256x64i[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
@@ -271,7 +271,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit vtestc(Vector256<ulong> src, Vector256<ulong> mask)
 ; vtestc_v256x64u_v256x64u[24] = {c5 f8 77 66 90 c5 fd 10 01 c4 e2 7d 17 02 0f 92 c0 0f b6 c0 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}

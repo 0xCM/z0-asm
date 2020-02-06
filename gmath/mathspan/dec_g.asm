@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> dec<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
 ; dec_gimspan8u_span8u[66] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 20 4d 63 d1 4c 03 d2 4d 63 d9 46 0f b6 1c 18 41 ff cb 45 0f b6 db 45 88 1a 41 ff c1 45 3b c8 7c e0 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -26,7 +26,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> dec<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
 ; dec_gimspan8i_span8i[66] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 20 4d 63 d1 4c 03 d2 4d 63 d9 4e 0f be 1c 18 41 ff cb 4d 0f be db 45 88 1a 41 ff c1 45 3b c8 7c e0 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -51,7 +51,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> dec<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
 ; dec_gimspan16u_span16u[68] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 14 52 4d 63 d9 46 0f b7 1c 58 41 ff cb 45 0f b7 db 66 45 89 1a 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -76,7 +76,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> dec<short>(ReadOnlySpan<short> src, Span<short> dst)
 ; dec_gimspan16i_span16i[68] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 14 52 4d 63 d9 4e 0f bf 1c 58 41 ff cb 4d 0f bf db 66 45 89 1a 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -101,7 +101,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> dec<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
 ; dec_gimspan32u_span32u[62] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1c 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 41 ff cb 45 89 1a 41 ff c1 45 3b c8 7c e4 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -125,7 +125,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> dec<int>(ReadOnlySpan<int> src, Span<int> dst)
 ; dec_gimspan32i_span32i[62] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1c 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 41 ff cb 45 89 1a 41 ff c1 45 3b c8 7c e4 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -149,7 +149,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> dec<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
 ; dec_gimspan64u_span64u[62] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1c 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 49 ff cb 4d 89 1a 41 ff c1 45 3b c8 7c e4 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}
@@ -173,7 +173,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> dec<long>(ReadOnlySpan<long> src, Span<long> dst)
 ; dec_gimspan64i_span64i[62] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1c 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 49 ff cb 4d 89 1a 41 ff c1 45 3b c8 7c e4 48 89 11 44 89 41 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov rdx,[r8]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b 10}

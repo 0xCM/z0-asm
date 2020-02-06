@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> get_Vector256u64()
 ; get_Vector256u64_[38] = {50 c5 f8 77 90 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -16,7 +16,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> get_Vector256u32()
 ; get_Vector256u32_[40] = {50 c5 f8 77 90 c7 44 24 04 20 00 00 00 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> get_Vector128u64()
 ; get_Vector128u64_[35] = {50 c5 f8 77 90 48 c7 04 24 40 00 00 00 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> get_Vector128u32()
 ; get_Vector128u32_[37] = {50 c5 f8 77 90 c7 44 24 04 20 00 00 00 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

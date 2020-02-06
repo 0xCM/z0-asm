@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vsad(Vector128<byte> lhs, Vector128<byte> rhs)
 ; vsad_v128x8u_v128x8u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 f6 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vsad(Vector256<byte> lhs, Vector256<byte> rhs)
 ; vsad_v256x8u_v256x8u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d f6 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}

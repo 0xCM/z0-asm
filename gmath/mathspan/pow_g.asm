@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> pow<byte>(ReadOnlySpan<byte> src, uint exp, Span<byte> dst)
 ; pow_gimspan8u_32u_span8u[108] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 47 4d 63 da 4a 8d 34 18 46 0f b6 1c 1a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 22 bb 01 00 00 00 40 f6 c7 01 74 07 41 0f af db 0f b6 db d1 ef 85 ff 74 0a 45 0f af db 45 0f b6 db eb e3 88 1e 41 ff c2 45 3b d1 7c b9 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> pow<sbyte>(ReadOnlySpan<sbyte> src, uint exp, Span<sbyte> dst)
 ; pow_gimspan8i_32u_span8i[109] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 48 4d 63 da 4a 8d 34 18 4e 0f be 1c 1a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 23 bb 01 00 00 00 40 f6 c7 01 74 08 41 0f af db 48 0f be db d1 ef 85 ff 74 0a 45 0f af db 4d 0f be db eb e2 88 1e 41 ff c2 45 3b d1 7c b8 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -89,7 +89,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> pow<ushort>(ReadOnlySpan<ushort> src, uint exp, Span<ushort> dst)
 ; pow_gimspan16u_32u_span16u[109] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 48 4d 63 da 4a 8d 34 58 46 0f b7 1c 5a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 22 bb 01 00 00 00 40 f6 c7 01 74 07 41 0f af db 0f b7 db d1 ef 85 ff 74 0a 45 0f af db 45 0f b7 db eb e3 66 89 1e 41 ff c2 45 3b d1 7c b8 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -133,7 +133,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> pow<short>(ReadOnlySpan<short> src, uint exp, Span<short> dst)
 ; pow_gimspan16i_32u_span16i[110] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 49 4d 63 da 4a 8d 34 58 4e 0f bf 1c 5a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 23 bb 01 00 00 00 40 f6 c7 01 74 08 41 0f af db 48 0f bf db d1 ef 85 ff 74 0a 45 0f af db 4d 0f bf db eb e2 66 89 1e 41 ff c2 45 3b d1 7c b7 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -177,7 +177,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> pow<uint>(ReadOnlySpan<uint> src, uint exp, Span<uint> dst)
 ; pow_gimspan32u_32u_span32u[100] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 3f 4d 63 da 4a 8d 34 98 46 8b 1c 9a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 41 0f af db d1 ef 85 ff 74 06 45 0f af db eb ea 89 1e 41 ff c2 45 3b d1 7c c1 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -219,7 +219,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> pow<int>(ReadOnlySpan<int> src, uint exp, Span<int> dst)
 ; pow_gimspan32i_32u_span32i[100] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 3f 4d 63 da 4a 8d 34 98 46 8b 1c 9a 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 41 0f af db d1 ef 85 ff 74 06 45 0f af db eb ea 89 1e 41 ff c2 45 3b d1 7c c1 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -261,7 +261,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> pow<ulong>(ReadOnlySpan<ulong> src, uint exp, Span<ulong> dst)
 ; pow_gimspan64u_32u_span64u[104] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 43 4d 63 da 4e 8d 1c d8 49 63 f2 48 8b 34 f2 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 48 0f af de d1 ef 85 ff 74 06 48 0f af f6 eb ea 49 89 1b 41 ff c2 45 3b d1 7c bd 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -304,7 +304,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> pow<long>(ReadOnlySpan<long> src, uint exp, Span<long> dst)
 ; pow_gimspan64i_32u_span64i[104] = {57 56 53 66 90 49 8b 01 45 8b 49 08 48 8b 12 45 33 d2 45 85 c9 7e 43 4d 63 da 4e 8d 1c d8 49 63 f2 48 8b 34 f2 41 8b f8 45 85 c0 75 07 bb 01 00 00 00 eb 1b bb 01 00 00 00 40 f6 c7 01 74 04 48 0f af de d1 ef 85 ff 74 06 48 0f af f6 eb ea 49 89 1b 41 ff c2 45 3b d1 7c bd 48 89 01 44 89 49 08 48 8b c1 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -346,8 +346,8 @@
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<float> pow<float>(ReadOnlySpan<float> src, uint exp, Span<float> dst)
-; pow_gimspan32f_32u_span32f[120] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 33 41 8b c0 c5 f8 57 c0 c4 e1 fb 2a c0 c5 cb 5a f0 49 63 c6 4c 8d 3c 87 c5 fa 10 44 85 00 c5 f8 28 ce e8 e1 f8 20 5f c4 c1 7a 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
-; TermCode = RET_INTR
+; pow_gimspan32f_32u_span32f[120] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 33 41 8b c0 c5 f8 57 c0 c4 e1 fb 2a c0 c5 cb 5a f0 49 63 c6 4c 8d 3c 87 c5 fa 10 44 85 00 c5 f8 28 ce e8 c1 b7 21 5f c4 c1 7a 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
 0004h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
@@ -372,7 +372,7 @@
 003ch lea r15,[rdi+rax*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 3c 87}
 0040h vmovss xmm0,dword ptr [rbp+rax*4]       ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 44 85 00}
 0046h vmovaps xmm1,xmm6                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ce}
-004ah call 7ff8260f8d20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 f8 20 5f}
+004ah call 7ff8260f8d20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 b7 21 5f}
 004fh vmovss dword ptr [r15],xmm0             ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[5]{c4 c1 7a 11 07}
 0054h inc r14d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c6}
 0057h cmp r14d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b f3}
@@ -391,8 +391,8 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<double> pow<double>(ReadOnlySpan<double> src, uint exp, Span<double> dst)
-; pow_gimspan64f_32u_span64f[116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 f5 f5 20 5f c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
-; TermCode = RET_INTR
+; pow_gimspan64f_32u_span64f[116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 d5 b8 21 5f c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
 0004h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
@@ -416,7 +416,7 @@
 0038h lea r15,[rdi+rax*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 3c c7}
 003ch vmovsd xmm0,qword ptr [rbp+rax*8]       ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c5 fb 10 44 c5 00}
 0042h vmovaps xmm1,xmm6                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ce}
-0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 f5 20 5f}
+0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 b8 21 5f}
 004bh vmovsd qword ptr [r15],xmm0             ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[5]{c4 c1 7b 11 07}
 0050h inc r14d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c6}
 0053h cmp r14d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b f3}

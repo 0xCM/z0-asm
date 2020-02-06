@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int ntz<byte>(byte src)
 ; ntz_g8u[24] = {0f 1f 44 00 00 0f b6 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 08 00 00 00 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
@@ -13,7 +13,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int ntz<ushort>(ushort src)
 ; ntz_g16u[24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
@@ -25,7 +25,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int ntz<uint>(uint src)
 ; ntz_g32u[12] = {0f 1f 44 00 00 33 c0 f3 0f bc c1 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h tzcnt eax,ecx                           ; TZCNT r32, r/m32 || o32 F3 0F BC /r || encoded[4]{f3 0f bc c1}
@@ -33,7 +33,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int ntz<ulong>(ulong src)
 ; ntz_g64u[13] = {0f 1f 44 00 00 33 c0 f3 48 0f bc c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h tzcnt rax,rcx                           ; TZCNT r64, r/m64 || F3 REX.W 0F BC /r || encoded[5]{f3 48 0f bc c1}

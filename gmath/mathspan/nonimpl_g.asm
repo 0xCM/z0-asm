@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> nonimpl<byte>(ReadOnlySpan<byte> l, ReadOnlySpan<byte> r, Span<byte> dst)
 ; nonimpl_gimspan8u_imspan8u_span8u[85] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 2e 4d 63 da 4d 03 d8 49 63 f2 40 0f b6 34 30 49 63 fa 40 0f b6 3c 3a 40 0f b6 f6 c4 e2 48 f2 f7 40 0f b6 f6 41 88 33 41 ff c2 45 3b d1 7c d2 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -34,7 +34,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> nonimpl<sbyte>(ReadOnlySpan<sbyte> l, ReadOnlySpan<sbyte> r, Span<sbyte> dst)
 ; nonimpl_gimspan8i_imspan8i_span8i[85] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 2e 4d 63 da 4d 03 d8 49 63 f2 48 0f be 34 30 49 63 fa 48 0f be 3c 3a 48 0f be f6 c4 e2 48 f2 f7 48 0f be f6 41 88 33 41 ff c2 45 3b d1 7c d2 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -67,7 +67,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> nonimpl<ushort>(ReadOnlySpan<ushort> l, ReadOnlySpan<ushort> r, Span<ushort> dst)
 ; nonimpl_gimspan16u_imspan16u_span16u[83] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 2c 4d 63 da 4f 8d 1c 58 49 63 f2 0f b7 34 70 49 63 fa 0f b7 3c 7a 0f b7 f6 c4 e2 48 f2 f7 0f b7 f6 66 41 89 33 41 ff c2 45 3b d1 7c d4 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -100,7 +100,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> nonimpl<short>(ReadOnlySpan<short> l, ReadOnlySpan<short> r, Span<short> dst)
 ; nonimpl_gimspan16i_imspan16i_span16i[87] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 30 4d 63 da 4f 8d 1c 58 49 63 f2 48 0f bf 34 70 49 63 fa 48 0f bf 3c 7a 48 0f bf f6 c4 e2 48 f2 f7 48 0f bf f6 66 41 89 33 41 ff c2 45 3b d1 7c d0 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -133,7 +133,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> nonimpl<uint>(ReadOnlySpan<uint> l, ReadOnlySpan<uint> r, Span<uint> dst)
 ; nonimpl_gimspan32u_imspan32u_span32u[70] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 1f 4d 63 da 4b 8d 34 98 42 8b 3c 98 46 8b 1c 9a c4 42 40 f2 db 44 89 1e 41 ff c2 45 3b d1 7c e1 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -162,7 +162,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> nonimpl<int>(ReadOnlySpan<int> l, ReadOnlySpan<int> r, Span<int> dst)
 ; nonimpl_gimspan32i_imspan32i_span32i[70] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 1f 4d 63 da 4b 8d 34 98 42 8b 3c 98 46 8b 1c 9a c4 42 40 f2 db 44 89 1e 41 ff c2 45 3b d1 7c e1 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -191,7 +191,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> nonimpl<ulong>(ReadOnlySpan<ulong> l, ReadOnlySpan<ulong> r, Span<ulong> dst)
 ; nonimpl_gimspan64u_imspan64u_span64u[70] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 1f 4d 63 da 4b 8d 34 d8 4a 8b 3c d8 4e 8b 1c da c4 42 c0 f2 db 4c 89 1e 41 ff c2 45 3b d1 7c e1 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}
@@ -220,7 +220,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> nonimpl<long>(ReadOnlySpan<long> l, ReadOnlySpan<long> r, Span<long> dst)
 ; nonimpl_gimspan64i_imspan64i_span64i[70] = {57 56 0f 1f 00 48 8b 02 49 8b 10 4d 8b 01 45 8b 49 08 45 33 d2 45 85 c9 7e 1f 4d 63 da 4b 8d 34 d8 4a 8b 3c d8 4e 8b 1c da c4 42 c0 f2 db 4c 89 1e 41 ff c2 45 3b d1 7c e1 4c 89 01 44 89 49 08 48 8b c1 5e 5f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[3]{0f 1f 00}

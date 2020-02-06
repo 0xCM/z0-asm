@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bool signed(Object value)
 ; signed_[133] = {0f 1f 44 00 00 48 8b c1 48 85 c0 74 11 48 ba 68 6f 35 c6 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 5c 48 8b c1 48 85 c0 74 11 48 ba 48 7f 35 c6 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 3e 48 8b c1 48 85 c0 74 11 48 ba 08 8f 35 c6 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 20 48 85 c9 74 11 48 b8 a8 9e 35 c6 f7 7f 00 00 48 39 01 74 02 33 c9 48 85 c9 0f 95 c0 0f b6 c0 c3 b8 01 00 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}

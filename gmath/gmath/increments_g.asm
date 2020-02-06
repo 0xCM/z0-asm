@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> increments<byte>(Span<byte> dst)
 ; increments_gspan8u[49] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 15 4d 63 c8 4c 03 c8 45 0f b6 d0 45 88 11 41 ff c0 44 3b c2 7c eb 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -22,7 +22,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> increments<sbyte>(Span<sbyte> dst)
 ; increments_gspan8i[49] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 15 4d 63 c8 4c 03 c8 4d 0f be d0 45 88 11 41 ff c0 44 3b c2 7c eb 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -43,7 +43,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> increments<ushort>(Span<ushort> dst)
 ; increments_gspan16u[51] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 17 4d 63 c8 4e 8d 0c 48 45 0f b7 d0 66 45 89 11 41 ff c0 44 3b c2 7c e9 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -64,7 +64,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> increments<short>(Span<short> dst)
 ; increments_gspan16i[51] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 17 4d 63 c8 4e 8d 0c 48 4d 0f bf d0 66 45 89 11 41 ff c0 44 3b c2 7c e9 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> increments<uint>(Span<uint> dst)
 ; increments_gspan32u[49] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 15 4d 63 c8 4e 8d 0c 88 45 8b d0 45 89 11 41 ff c0 44 3b c2 7c eb 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -106,7 +106,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> increments<int>(Span<int> dst)
 ; increments_gspan32i[49] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 15 4d 63 c8 4e 8d 0c 88 45 8b d0 45 89 11 41 ff c0 44 3b c2 7c eb 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -127,7 +127,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> increments<ulong>(Span<ulong> dst)
 ; increments_gspan64u[46] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 12 4d 63 c8 4e 8d 14 c8 4d 89 0a 41 ff c0 44 3b c2 7c ee 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -147,7 +147,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> increments<long>(Span<long> dst)
 ; increments_gspan64i[46] = {0f 1f 44 00 00 48 8b 02 8b 52 08 45 33 c0 85 d2 7e 12 4d 63 c8 4e 8d 14 c8 4d 89 0a 41 ff c0 44 3b c2 7c ee 48 89 01 89 51 08 48 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
@@ -167,7 +167,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<byte>(int count, ref byte dst)
 ; increments_g32i_8u~ref[31] = {0f 1f 44 00 00 33 c0 85 c9 7e 13 4c 63 c0 4c 03 c2 44 0f b6 c8 45 88 08 ff c0 3b c1 7c ed c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -183,7 +183,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<sbyte>(int count, ref sbyte dst)
 ; increments_g32i_8i~ref[31] = {0f 1f 44 00 00 33 c0 85 c9 7e 13 4c 63 c0 4c 03 c2 4c 0f be c8 45 88 08 ff c0 3b c1 7c ed c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -199,7 +199,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<ushort>(int count, ref ushort dst)
 ; increments_g32i_16u~ref[33] = {0f 1f 44 00 00 33 c0 85 c9 7e 15 4c 63 c0 4e 8d 04 42 44 0f b7 c8 66 45 89 08 ff c0 3b c1 7c eb c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -215,7 +215,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<short>(int count, ref short dst)
 ; increments_g32i_16i~ref[33] = {0f 1f 44 00 00 33 c0 85 c9 7e 15 4c 63 c0 4e 8d 04 42 4c 0f bf c8 66 45 89 08 ff c0 3b c1 7c eb c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -231,7 +231,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<uint>(int count, ref uint dst)
 ; increments_g32i_32u~ref[31] = {0f 1f 44 00 00 33 c0 85 c9 7e 13 4c 63 c0 4e 8d 04 82 44 8b c8 45 89 08 ff c0 3b c1 7c ed c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -247,7 +247,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<int>(int count, ref int dst)
 ; increments_g32i_32i~ref[31] = {0f 1f 44 00 00 33 c0 85 c9 7e 13 4c 63 c0 4e 8d 04 82 44 8b c8 45 89 08 ff c0 3b c1 7c ed c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -263,7 +263,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<ulong>(int count, ref ulong dst)
 ; increments_g32i_64u~ref[28] = {0f 1f 44 00 00 33 c0 85 c9 7e 10 4c 63 c0 4e 8d 0c c2 4d 89 01 ff c0 3b c1 7c f0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -278,7 +278,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void increments<long>(int count, ref long dst)
 ; increments_g32i_64i~ref[28] = {0f 1f 44 00 00 33 c0 85 c9 7e 10 4c 63 c0 4e 8d 0c c2 4d 89 01 ff c0 3b c1 7c f0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte promote<byte>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 00 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte promote<sbyte>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 7f 00 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort promote<ushort>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -34,7 +34,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; short promote<short>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 7f 00 00 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -45,7 +45,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint promote<uint>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff ff c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -56,7 +56,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int promote<int>(bit src)
 ; promote_g1u[18] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff 7f c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -67,7 +67,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong promote<ulong>(bit src)
 ; promote_g1u[23] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff ff c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}
@@ -78,7 +78,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; long promote<long>(bit src)
 ; promote_g1u[23] = {0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff 7f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
 0007h jne short 000ch                         ; JNE rel8 || 75 cb || encoded[2]{75 03}

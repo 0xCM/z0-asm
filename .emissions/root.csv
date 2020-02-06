@@ -2,7 +2,6 @@ Size    | Uri
 7993    | asm://root/numeric?convert#convert_NumericKind~32u
 73      | asm://root/numeric?floating#floating_
 118     | asm://root/numeric?format#format_FixedWidth~32u
-192     | asm://root/numeric?from#from_FixedWidth~32u_NumericClass~32u
 187     | asm://root/numeric?from#from_FixedWidth~32u_NumericIndicator~16u
 8       | asm://root/numeric?int#int_FixedWidth~32u
 111     | asm://root/numeric?is#is_NumericKind~32u_NumericKind~32u

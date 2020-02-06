@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f15(bit a, bit b, bit c)
 ; f15_1u_1u_1u[18] = {0f 1f 44 00 00 23 d1 41 0b d0 8b c2 f7 d0 83 e0 01 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}
 0007h or edx,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b d0}

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> eval<byte>(UnaryBitLogicKind:byte kind, Vector128<byte> a)
-; eval_gUnaryBitLogicKind~8u_v128x8u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 0a c0 b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 34 43 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 e2 bf b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 cb 58 c5 5e 48 8b e8 48 8b ce e8 00 40 44 ff 8b c8 e8 69 26 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 33 94 00 ff 48 8b d0 48 8b cb e8 50 47 03 ff 48 8b cb e8 e8 0b aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x8u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 fa e0 b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 24 64 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 d2 e0 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 bb 79 c6 5e 48 8b e8 48 8b ce e8 30 63 45 ff 8b c8 e8 59 47 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 23 b5 01 ff 48 8b d0 48 8b cb e8 90 68 04 ff 48 8b cb e8 d8 2c ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -55,38 +55,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a c0 b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa e0 b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 43 ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 64 ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 bf b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 e0 b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb 58 c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb 79 c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 40 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 63 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 26 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 47 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 94 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 b5 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 47 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 68 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 0b aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 2c ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> eval<sbyte>(UnaryBitLogicKind:byte kind, Vector128<sbyte> a)
-; eval_gUnaryBitLogicKind~8u_v128x8i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 ba be b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 e4 41 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 92 be b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7b 57 c5 5e 48 8b e8 48 8b ce e8 b0 3e 44 ff 8b c8 e8 19 25 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e3 92 00 ff 48 8b d0 48 8b cb e8 00 46 03 ff 48 8b cb e8 98 0a aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x8i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 aa df b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 d4 62 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 82 df b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6b 78 c6 5e 48 8b e8 48 8b ce e8 e0 61 45 ff 8b c8 e8 09 46 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d3 b3 01 ff 48 8b d0 48 8b cb e8 40 67 04 ff 48 8b cb e8 88 2b ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -140,38 +140,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba be b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa df b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 41 ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 62 ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 be b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 df b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 57 c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b 78 c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 3e 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 61 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 25 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 46 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 92 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 b3 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 46 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 67 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 0a aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 2b ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector128<ushort> a)
-; eval_gUnaryBitLogicKind~8u_v128x16u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 6a bd b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 94 40 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 42 bd b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 2b 56 c5 5e 48 8b e8 48 8b ce e8 60 3d 44 ff 8b c8 e8 c9 23 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 93 91 00 ff 48 8b d0 48 8b cb e8 b0 44 03 ff 48 8b cb e8 48 09 aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x16u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 5a de b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 84 61 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 32 de b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 1b 77 c6 5e 48 8b e8 48 8b ce e8 90 60 45 ff 8b c8 e8 b9 44 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 83 b2 01 ff 48 8b d0 48 8b cb e8 f0 65 04 ff 48 8b cb e8 38 2a ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -225,38 +225,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a bd b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a de b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 40 ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 61 ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 bd b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 de b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b 56 c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b 77 c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 3d 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 60 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 23 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 44 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 91 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 b2 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 44 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 65 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 09 aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 2a ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> eval<short>(UnaryBitLogicKind:byte kind, Vector128<short> a)
-; eval_gUnaryBitLogicKind~8u_v128x16i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 1a bc b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 44 3f ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 f2 bb b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 db 54 c5 5e 48 8b e8 48 8b ce e8 10 3c 44 ff 8b c8 e8 79 22 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 43 90 00 ff 48 8b d0 48 8b cb e8 60 43 03 ff 48 8b cb e8 f8 07 aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x16i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 0a dd b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 34 60 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 e2 dc b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 cb 75 c6 5e 48 8b e8 48 8b ce e8 40 5f 45 ff 8b c8 e8 69 43 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 33 b1 01 ff 48 8b d0 48 8b cb e8 a0 64 04 ff 48 8b cb e8 e8 28 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -310,38 +310,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a bc b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a dd b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 3f ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 60 ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 bb b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 dc b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db 54 c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb 75 c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 3c 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 5f 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 22 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 43 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 90 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 b1 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 43 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 64 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 07 aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 28 ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> eval<uint>(UnaryBitLogicKind:byte kind, Vector128<uint> a)
-; eval_gUnaryBitLogicKind~8u_v128x32u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 ca b6 b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 f4 39 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 a2 b6 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 8b 4f c5 5e 48 8b e8 48 8b ce e8 c0 36 44 ff 8b c8 e8 29 1d 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f3 8a 00 ff 48 8b d0 48 8b cb e8 10 3e 03 ff 48 8b cb e8 a8 02 aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x32u[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 ba d7 b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 e4 5a ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 92 d7 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 7b 70 c6 5e 48 8b e8 48 8b ce e8 f0 59 45 ff 8b c8 e8 19 3e 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e3 ab 01 ff 48 8b d0 48 8b cb e8 50 5f 04 ff 48 8b cb e8 98 23 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -395,38 +395,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca b6 b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba d7 b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 39 ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 5a ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 b6 b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 d7 b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b 4f c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 70 c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 36 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 59 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 1d 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 3e 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 8a 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 ab 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 3e 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 5f 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 02 aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 23 ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> eval<int>(UnaryBitLogicKind:byte kind, Vector128<int> a)
-; eval_gUnaryBitLogicKind~8u_v128x32i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 7a b5 b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 a4 38 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 52 b5 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 3b 4e c5 5e 48 8b e8 48 8b ce e8 70 35 44 ff 8b c8 e8 d9 1b 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 a3 89 00 ff 48 8b d0 48 8b cb e8 c0 3c 03 ff 48 8b cb e8 58 01 aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x32i[265] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6e 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 6a d6 b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 94 59 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 42 d6 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 2b 6f c6 5e 48 8b e8 48 8b ce e8 a0 58 45 ff 8b c8 e8 c9 3c 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 93 aa 01 ff 48 8b d0 48 8b cb e8 00 5e 04 ff 48 8b cb e8 48 22 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -480,38 +480,38 @@
 0084h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
-0087h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b5 b2 5e}
+0087h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0091h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d6 b3 5e}
 0096h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0099h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009dh mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 38 ad 5e}
+00a7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 59 ae 5e}
 00ach mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00afh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 b5 b2 5e}
+00afh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 d6 b3 5e}
 00beh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b 4e c5 5e}
+00c6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b 6f c6 5e}
 00d5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dbh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 35 44 ff}
+00dbh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 58 45 ff}
 00e0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 1b 02 ff}
+00e2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 3c 03 ff}
 00e7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00eah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00edh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 89 00 ff}
+00f0h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 aa 01 ff}
 00f5h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f8h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fbh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 3c 03 ff}
+00fbh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 5e 04 ff}
 0100h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 01 aa 5e}
+0103h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 22 ab 5e}
 0108h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, Vector128<ulong> a)
-; eval_gUnaryBitLogicKind~8u_v128x64u[266] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6f 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 29 b4 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 53 37 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 01 b4 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 ea 4c c5 5e 48 8b e8 48 8b ce e8 1f 34 44 ff 8b c8 e8 88 1a 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 52 88 00 ff 48 8b d0 48 8b cb e8 6f 3b 03 ff 48 8b cb e8 07 00 aa 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x64u[266] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6f 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 19 d5 b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 43 58 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 f1 d4 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 da 6d c6 5e 48 8b e8 48 8b ce e8 4f 57 45 ff 8b c8 e8 78 3b 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 42 a9 01 ff 48 8b d0 48 8b cb e8 af 5c 04 ff 48 8b cb e8 f7 20 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -565,38 +565,38 @@
 0085h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0086h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0087h ret                                     ; RET || C3 || encoded[1]{c3}
-0088h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0092h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 b4 b2 5e}
+0088h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0092h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 d5 b3 5e}
 0097h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 009ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009eh mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-00a8h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 37 ad 5e}
+00a8h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 58 ae 5e}
 00adh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b0h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00bah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 b4 b2 5e}
+00b0h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00bah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 d4 b3 5e}
 00bfh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c2h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c7h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 4c c5 5e}
+00c7h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da 6d c6 5e}
 00d6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dch call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f 34 44 ff}
+00dch call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f 57 45 ff}
 00e1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 1a 02 ff}
+00e3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 3b 03 ff}
 00e8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00ebh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00eeh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 88 00 ff}
+00f1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 a9 01 ff}
 00f6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f 3b 03 ff}
+00fch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 5c 04 ff}
 0101h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0104h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 00 aa 5e}
+0104h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 20 ab 5e}
 0109h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> eval<long>(UnaryBitLogicKind:byte kind, Vector128<long> a)
-; eval_gUnaryBitLogicKind~8u_v128x64i[266] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6f 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 d9 b2 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 03 36 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 b1 b2 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 9a 4b c5 5e 48 8b e8 48 8b ce e8 cf 32 44 ff 8b c8 e8 38 19 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 02 87 00 ff 48 8b d0 48 8b cb e8 1f 3a 03 ff 48 8b cb e8 b7 fe a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v128x64i[266] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 77 6f 8b c9 48 8d 15 f6 00 00 00 8b 14 8a 4c 8d 0d e4 ff ff ff 49 03 d1 ff e2 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 c9 d3 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 f3 56 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 a1 d3 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 8a 6c c6 5e 48 8b e8 48 8b ce e8 ff 55 45 ff 8b c8 e8 28 3a 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f2 a7 01 ff 48 8b d0 48 8b cb e8 5f 5b 04 ff 48 8b cb e8 a7 1f ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -650,38 +650,38 @@
 0085h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0086h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0087h ret                                     ; RET || C3 || encoded[1]{c3}
-0088h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-0092h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 b2 b2 5e}
+0088h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+0092h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 d3 b3 5e}
 0097h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 009ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009eh mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-00a8h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 36 ad 5e}
+00a8h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 56 ae 5e}
 00adh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b0h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00bah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 b2 b2 5e}
+00b0h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00bah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 d3 b3 5e}
 00bfh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c2h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c7h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 4b c5 5e}
+00c7h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 6c c6 5e}
 00d6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00dch call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 32 44 ff}
+00dch call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 55 45 ff}
 00e1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 19 02 ff}
+00e3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 3a 03 ff}
 00e8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00ebh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00eeh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 87 00 ff}
+00f1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 a7 01 ff}
 00f6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00fch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f 3a 03 ff}
+00fch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 5b 04 ff}
 0101h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0104h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 fe a9 5e}
+0104h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 1f ab 5e}
 0109h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> eval<byte>(UnaryBitLogicKind:byte kind, Vector256<byte> a)
-; eval_gUnaryBitLogicKind~8u_v256x8u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 7a b1 b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 a4 34 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 52 b1 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 3b 4a c5 5e 48 8b e8 48 8b ce e8 70 31 44 ff 8b c8 e8 d9 17 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 a3 85 00 ff 48 8b d0 48 8b cb e8 c0 38 03 ff 48 8b cb e8 58 fd a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x8u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 6a d2 b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 94 55 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 42 d2 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 2b 6b c6 5e 48 8b e8 48 8b ce e8 a0 54 45 ff 8b c8 e8 c9 38 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 93 a6 01 ff 48 8b d0 48 8b cb e8 00 5a 04 ff 48 8b cb e8 48 1e ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -739,38 +739,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b1 b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d2 b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 34 ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 55 ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 b1 b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 d2 b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b 4a c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b 6b c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 31 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 54 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 17 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 38 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 85 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 a6 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 38 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 5a 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 fd a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 1e ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> eval<sbyte>(UnaryBitLogicKind:byte kind, Vector256<sbyte> a)
-; eval_gUnaryBitLogicKind~8u_v256x8i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 1a b0 b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 44 33 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 f2 af b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 db 48 c5 5e 48 8b e8 48 8b ce e8 10 30 44 ff 8b c8 e8 79 16 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 43 84 00 ff 48 8b d0 48 8b cb e8 60 37 03 ff 48 8b cb e8 f8 fb a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x8i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 0a d1 b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 34 54 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 e2 d0 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 cb 69 c6 5e 48 8b e8 48 8b ce e8 40 53 45 ff 8b c8 e8 69 37 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 33 a5 01 ff 48 8b d0 48 8b cb e8 a0 58 04 ff 48 8b cb e8 e8 1c ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -828,38 +828,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a b0 b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a d1 b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 33 ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 54 ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 af b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 d0 b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db 48 c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb 69 c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 30 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 53 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 16 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 37 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 84 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 a5 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 37 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 58 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 fb a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 1c ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> eval<ushort>(UnaryBitLogicKind:byte kind, Vector256<ushort> a)
-; eval_gUnaryBitLogicKind~8u_v256x16u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 ba ae b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 e4 31 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 92 ae b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7b 47 c5 5e 48 8b e8 48 8b ce e8 b0 2e 44 ff 8b c8 e8 19 15 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e3 82 00 ff 48 8b d0 48 8b cb e8 00 36 03 ff 48 8b cb e8 98 fa a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x16u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 aa cf b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 d4 52 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 82 cf b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6b 68 c6 5e 48 8b e8 48 8b ce e8 e0 51 45 ff 8b c8 e8 09 36 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d3 a3 01 ff 48 8b d0 48 8b cb e8 40 57 04 ff 48 8b cb e8 88 1b ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -917,38 +917,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba ae b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa cf b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 31 ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 52 ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 ae b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 cf b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 47 c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b 68 c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 2e 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 51 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 15 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 36 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 82 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 a3 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 36 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 57 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 fa a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 1b ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> eval<short>(UnaryBitLogicKind:byte kind, Vector256<short> a)
-; eval_gUnaryBitLogicKind~8u_v256x16i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 5a ad b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 84 30 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 32 ad b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 1b 46 c5 5e 48 8b e8 48 8b ce e8 50 2d 44 ff 8b c8 e8 b9 13 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 83 81 00 ff 48 8b d0 48 8b cb e8 a0 34 03 ff 48 8b cb e8 38 f9 a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x16i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 4a ce b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 74 51 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 22 ce b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 0b 67 c6 5e 48 8b e8 48 8b ce e8 80 50 45 ff 8b c8 e8 a9 34 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 73 a2 01 ff 48 8b d0 48 8b cb e8 e0 55 04 ff 48 8b cb e8 28 1a ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1006,38 +1006,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a ad b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a ce b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 30 ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 51 ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 ad b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 ce b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b 46 c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b 67 c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 2d 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 50 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 13 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 34 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 81 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 a2 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 34 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 55 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 f9 a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 1a ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> eval<uint>(UnaryBitLogicKind:byte kind, Vector256<uint> a)
-; eval_gUnaryBitLogicKind~8u_v256x32u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 fa ab b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 24 2f ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 d2 ab b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 bb 44 c5 5e 48 8b e8 48 8b ce e8 f0 2b 44 ff 8b c8 e8 59 12 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 23 80 00 ff 48 8b d0 48 8b cb e8 40 33 03 ff 48 8b cb e8 d8 f7 a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x32u[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 ea cc b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 14 50 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 c2 cc b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 ab 65 c6 5e 48 8b e8 48 8b ce e8 20 4f 45 ff 8b c8 e8 49 33 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 13 a1 01 ff 48 8b d0 48 8b cb e8 80 54 04 ff 48 8b cb e8 c8 18 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1095,38 +1095,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa ab b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea cc b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 2f ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 50 ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 ab b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 cc b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb 44 c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab 65 c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 2b 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 4f 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 12 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 33 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 80 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 a1 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 33 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 54 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 f7 a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 18 ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> eval<int>(UnaryBitLogicKind:byte kind, Vector256<int> a)
-; eval_gUnaryBitLogicKind~8u_v256x32i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 9a aa b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 c4 2d ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 72 aa b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 5b 43 c5 5e 48 8b e8 48 8b ce e8 90 2a 44 ff 8b c8 e8 f9 10 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c3 7e 00 ff 48 8b d0 48 8b cb e8 e0 31 03 ff 48 8b cb e8 78 f6 a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x32i[281] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7a 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 8a cb b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 b4 4e ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 62 cb b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 4b 64 c6 5e 48 8b e8 48 8b ce e8 c0 4d 45 ff 8b c8 e8 e9 31 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 b3 9f 01 ff 48 8b d0 48 8b cb e8 20 53 04 ff 48 8b cb e8 68 17 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1184,38 +1184,38 @@
 0094h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0095h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0096h ret                                     ; RET || C3 || encoded[1]{c3}
-0097h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a aa b2 5e}
+0097h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a1h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a cb b3 5e}
 00a6h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a9h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00adh mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 2d ad 5e}
+00b7h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 4e ae 5e}
 00bch mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00bfh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 aa b2 5e}
+00bfh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c9h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 cb b3 5e}
 00ceh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d1h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d6h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b 43 c5 5e}
+00d6h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e0h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b 64 c6 5e}
 00e5h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e8h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ebh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 2a 44 ff}
+00ebh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 4d 45 ff}
 00f0h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 10 02 ff}
+00f2h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 31 03 ff}
 00f7h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fah mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00fdh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 7e 00 ff}
+0100h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 9f 01 ff}
 0105h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0108h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010bh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 31 03 ff}
+010bh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 53 04 ff}
 0110h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 f6 a9 5e}
+0113h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 17 ab 5e}
 0118h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> eval<ulong>(UnaryBitLogicKind:byte kind, Vector256<ulong> a)
-; eval_gUnaryBitLogicKind~8u_v256x64u[283] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7c 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 38 a5 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 62 28 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 10 a5 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 f9 3d c5 5e 48 8b e8 48 8b ce e8 2e 25 44 ff 8b c8 e8 97 0b 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 61 79 00 ff 48 8b d0 48 8b cb e8 7e 2c 03 ff 48 8b cb e8 16 f1 a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x64u[283] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7c 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 28 c6 b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 52 49 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 00 c6 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 e9 5e c6 5e 48 8b e8 48 8b ce e8 5e 48 45 ff 8b c8 e8 87 2c 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 51 9a 01 ff 48 8b d0 48 8b cb e8 be 4d 04 ff 48 8b cb e8 06 12 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1273,38 +1273,38 @@
 0096h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0097h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0098h ret                                     ; RET || C3 || encoded[1]{c3}
-0099h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 a5 b2 5e}
+0099h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 c6 b3 5e}
 00a8h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00abh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00afh mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-00b9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 28 ad 5e}
+00b9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 49 ae 5e}
 00beh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00c1h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00cbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 a5 b2 5e}
+00c1h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00cbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 c6 b3 5e}
 00d0h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d3h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d8h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 3d c5 5e}
+00d8h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 5e c6 5e}
 00e7h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00eah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00edh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e 25 44 ff}
+00edh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e 48 45 ff}
 00f2h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f4h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 0b 02 ff}
+00f4h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 2c 03 ff}
 00f9h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fch mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00ffh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0102h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 79 00 ff}
+0102h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 9a 01 ff}
 0107h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 010ah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010dh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 2c 03 ff}
+010dh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be 4d 04 ff}
 0112h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0115h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 f1 a9 5e}
+0115h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 12 ab 5e}
 011ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> eval<long>(UnaryBitLogicKind:byte kind, Vector256<long> a)
-; eval_gUnaryBitLogicKind~8u_v256x64i[283] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7c 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 47 cc c6 f7 7f 00 00 e8 d8 a3 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 02 27 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 b0 a3 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 99 3c c5 5e 48 8b e8 48 8b ce e8 ce 23 44 ff 8b c8 e8 37 0a 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 01 78 00 ff 48 8b d0 48 8b cb e8 1e 2b 03 ff 48 8b cb e8 b6 ef a9 5e cc}
-; TermCode = INTRx2
+; eval_gUnaryBitLogicKind~8u_v256x64i[283] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce 83 f9 03 0f 87 7c 00 00 00 8b c9 48 8d 15 02 01 00 00 8b 14 8a 4c 8d 0d e0 ff ff ff 49 03 d1 ff e2 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 f0 1b d2 c6 f7 7f 00 00 e8 c8 c4 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 f2 47 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 a0 c4 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 89 5d c6 5e 48 8b e8 48 8b ce e8 fe 46 45 ff 8b c8 e8 27 2b 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f1 98 01 ff 48 8b d0 48 8b cb e8 5e 4c 04 ff 48 8b cb e8 a6 10 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1362,38 +1362,38 @@
 0096h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0097h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0098h ret                                     ; RET || C3 || encoded[1]{c3}
-0099h mov rcx,7ff7c6cc4730h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 47 cc c6 f7 7f 00 00}
-00a3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 a3 b2 5e}
+0099h mov rcx,7ff7c6d21bf0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f0 1b d2 c6 f7 7f 00 00}
+00a3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 c4 b3 5e}
 00a8h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00abh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00afh mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-00b9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 27 ad 5e}
+00b9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 47 ae 5e}
 00beh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00c1h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00cbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 a3 b2 5e}
+00c1h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00cbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 c4 b3 5e}
 00d0h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00d3h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00d8h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00e2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 3c c5 5e}
+00d8h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00e2h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 5d c6 5e}
 00e7h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00eah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00edh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce 23 44 ff}
+00edh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe 46 45 ff}
 00f2h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00f4h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 0a 02 ff}
+00f4h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 2b 03 ff}
 00f9h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00fch mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00ffh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0102h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 78 00 ff}
+0102h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 98 01 ff}
 0107h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 010ah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010dh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 2b 03 ff}
+010dh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e 4c 04 ff}
 0112h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0115h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 ef a9 5e}
+0115h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 10 ab 5e}
 011ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> eval<byte>(ComparisonKind:byte kind, Vector128<byte> a, Vector128<byte> b)
-; eval_gComparisonKind~8u_v128x8u_v128x8u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 80 00 00 00 4c 8d 44 24 24 c4 e2 79 78 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 64 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 80 00 00 00 48 8d 4c 24 20 c4 e2 79 78 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 64 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 51 a2 b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 7b 25 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 29 a2 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 12 3b c5 5e 48 8b e8 48 8b ce e8 47 22 44 ff 8b c8 e8 b0 08 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 7a 76 00 ff 48 8b d0 48 8b cb e8 97 29 03 ff 48 8b cb e8 2f ee a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x8u_v128x8u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 80 00 00 00 4c 8d 44 24 24 c4 e2 79 78 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 64 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 80 00 00 00 48 8d 4c 24 20 c4 e2 79 78 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 64 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 41 c3 b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 6b 46 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 19 c3 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 02 5c c6 5e 48 8b e8 48 8b ce e8 77 45 45 ff 8b c8 e8 a0 29 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 6a 97 01 ff 48 8b d0 48 8b cb e8 d7 4a 04 ff 48 8b cb e8 1f 0f ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1452,38 +1452,38 @@
 00bdh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00beh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00bfh ret                                     ; RET || C3 || encoded[1]{c3}
-00c0h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 a2 b2 5e}
+00c0h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 c3 b3 5e}
 00cfh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00d2h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00d6h mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 25 ad 5e}
+00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b 46 ae 5e}
 00e5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00e8h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 a2 b2 5e}
+00e8h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 c3 b3 5e}
 00f7h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00fah mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00ffh mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 3b c5 5e}
+00ffh mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 5c c6 5e}
 010eh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0111h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0114h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 22 44 ff}
+0114h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 45 45 ff}
 0119h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 08 02 ff}
+011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 29 03 ff}
 0120h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0123h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0126h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a 76 00 ff}
+0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a 97 01 ff}
 012eh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0131h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0134h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 29 03 ff}
+0134h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 4a 04 ff}
 0139h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f ee a9 5e}
+013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f 0f ab 5e}
 0141h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> eval<sbyte>(ComparisonKind:byte kind, Vector128<sbyte> a, Vector128<sbyte> b)
-; eval_gComparisonKind~8u_v128x8i_v128x8i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 64 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 64 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 0d a1 b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 37 24 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 e5 a0 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 ce 39 c5 5e 48 8b e8 48 8b ce e8 03 21 44 ff 8b c8 e8 6c 07 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 36 75 00 ff 48 8b d0 48 8b cb e8 53 28 03 ff 48 8b cb e8 eb ec a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x8i_v128x8i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 64 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 64 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 fd c1 b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 27 45 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 d5 c1 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 be 5a c6 5e 48 8b e8 48 8b ce e8 33 44 45 ff 8b c8 e8 5c 28 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 26 96 01 ff 48 8b d0 48 8b cb e8 93 49 04 ff 48 8b cb e8 db 0d ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1532,38 +1532,38 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d a1 b2 5e}
+0084h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd c1 b3 5e}
 0093h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0096h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009ah mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 24 ad 5e}
+00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 45 ae 5e}
 00a9h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00ach mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 a0 b2 5e}
+00ach mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 c1 b3 5e}
 00bbh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00beh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c3h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce 39 c5 5e}
+00c3h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be 5a c6 5e}
 00d2h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d5h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00d8h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 21 44 ff}
+00d8h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 44 45 ff}
 00ddh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c 07 02 ff}
+00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 28 03 ff}
 00e4h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00e7h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00eah mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 75 00 ff}
+00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 96 01 ff}
 00f2h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f5h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00f8h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 28 03 ff}
+00f8h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 49 04 ff}
 00fdh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb ec a9 5e}
+0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db 0d ab 5e}
 0105h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> eval<ushort>(ComparisonKind:byte kind, Vector128<ushort> a, Vector128<ushort> b)
-; eval_gComparisonKind~8u_v128x16u_v128x16u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 00 80 00 00 4c 8d 44 24 24 c4 e2 79 79 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 65 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 00 80 00 00 48 8d 4c 24 20 c4 e2 79 79 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 65 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 91 9f b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 bb 22 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 69 9f b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 52 38 c5 5e 48 8b e8 48 8b ce e8 87 1f 44 ff 8b c8 e8 f0 05 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 ba 73 00 ff 48 8b d0 48 8b cb e8 d7 26 03 ff 48 8b cb e8 6f eb a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x16u_v128x16u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 00 80 00 00 4c 8d 44 24 24 c4 e2 79 79 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 65 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 00 80 00 00 48 8d 4c 24 20 c4 e2 79 79 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 65 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 81 c0 b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 ab 43 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 59 c0 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 42 59 c6 5e 48 8b e8 48 8b ce e8 b7 42 45 ff 8b c8 e8 e0 26 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 aa 94 01 ff 48 8b d0 48 8b cb e8 17 48 04 ff 48 8b cb e8 5f 0c ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1622,38 +1622,38 @@
 00bdh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00beh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00bfh ret                                     ; RET || C3 || encoded[1]{c3}
-00c0h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 9f b2 5e}
+00c0h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 c0 b3 5e}
 00cfh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00d2h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00d6h mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb 22 ad 5e}
+00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab 43 ae 5e}
 00e5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00e8h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 9f b2 5e}
+00e8h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 c0 b3 5e}
 00f7h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00fah mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00ffh mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 38 c5 5e}
+00ffh mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 59 c6 5e}
 010eh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0111h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0114h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 1f 44 ff}
+0114h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 42 45 ff}
 0119h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 05 02 ff}
+011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 26 03 ff}
 0120h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0123h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0126h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba 73 00 ff}
+0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa 94 01 ff}
 012eh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0131h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0134h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 26 03 ff}
+0134h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 48 04 ff}
 0139h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f eb a9 5e}
+013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 0c ab 5e}
 0141h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> eval<short>(ComparisonKind:byte kind, Vector128<short> a, Vector128<short> b)
-; eval_gComparisonKind~8u_v128x16i_v128x16i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 65 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 65 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 4d 9e b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 77 21 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 25 9e b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 0e 37 c5 5e 48 8b e8 48 8b ce e8 43 1e 44 ff 8b c8 e8 ac 04 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 76 72 00 ff 48 8b d0 48 8b cb e8 93 25 03 ff 48 8b cb e8 2b ea a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x16i_v128x16i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 65 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 65 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 3d bf b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 67 42 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 15 bf b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 fe 57 c6 5e 48 8b e8 48 8b ce e8 73 41 45 ff 8b c8 e8 9c 25 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 66 93 01 ff 48 8b d0 48 8b cb e8 d3 46 04 ff 48 8b cb e8 1b 0b ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1702,38 +1702,38 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 9e b2 5e}
+0084h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d bf b3 5e}
 0093h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0096h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009ah mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 21 ad 5e}
+00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 42 ae 5e}
 00a9h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00ach mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 9e b2 5e}
+00ach mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 bf b3 5e}
 00bbh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00beh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c3h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 37 c5 5e}
+00c3h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe 57 c6 5e}
 00d2h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d5h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00d8h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 1e 44 ff}
+00d8h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 41 45 ff}
 00ddh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 04 02 ff}
+00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c 25 03 ff}
 00e4h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00e7h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00eah mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 72 00 ff}
+00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 93 01 ff}
 00f2h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f5h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00f8h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 25 03 ff}
+00f8h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 46 04 ff}
 00fdh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b ea a9 5e}
+0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b 0b ab 5e}
 0105h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> eval<uint>(ComparisonKind:byte kind, Vector128<uint> a, Vector128<uint> b)
-; eval_gComparisonKind~8u_v128x32u_v128x32u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 00 00 00 80 4c 8d 44 24 24 c4 e2 79 58 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 66 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 00 00 00 80 48 8d 4c 24 20 c4 e2 79 58 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 66 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 d1 9c b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 fb 1f ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 a9 9c b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 92 35 c5 5e 48 8b e8 48 8b ce e8 c7 1c 44 ff 8b c8 e8 30 03 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 fa 70 00 ff 48 8b d0 48 8b cb e8 17 24 03 ff 48 8b cb e8 af e8 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x32u_v128x32u[322] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 a1 00 00 00 8b c9 48 8d 15 28 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 24 00 00 00 80 4c 8d 44 24 24 c4 e2 79 58 54 24 24 c5 f9 ef c2 c5 f1 ef ca c5 f1 66 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c7 44 24 20 00 00 00 80 48 8d 4c 24 20 c4 e2 79 58 54 24 20 c5 f9 ef c2 c5 f1 ef ca c5 f9 66 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 c1 bd b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 eb 40 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 99 bd b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 82 56 c6 5e 48 8b e8 48 8b ce e8 f7 3f 45 ff 8b c8 e8 20 24 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 ea 91 01 ff 48 8b d0 48 8b cb e8 57 45 04 ff 48 8b cb e8 9f 09 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1792,38 +1792,38 @@
 00bdh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00beh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00bfh ret                                     ; RET || C3 || encoded[1]{c3}
-00c0h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 9c b2 5e}
+00c0h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00cah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 bd b3 5e}
 00cfh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00d2h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00d6h mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb 1f ad 5e}
+00e0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb 40 ae 5e}
 00e5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00e8h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 9c b2 5e}
+00e8h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00f2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 bd b3 5e}
 00f7h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00fah mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00ffh mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 35 c5 5e}
+00ffh mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0109h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 56 c6 5e}
 010eh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0111h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0114h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 1c 44 ff}
+0114h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 3f 45 ff}
 0119h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 03 02 ff}
+011bh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 24 03 ff}
 0120h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0123h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0126h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa 70 00 ff}
+0129h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 91 01 ff}
 012eh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0131h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0134h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 24 03 ff}
+0134h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 45 04 ff}
 0139h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af e8 a9 5e}
+013ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 09 ab 5e}
 0141h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> eval<int>(ComparisonKind:byte kind, Vector128<int> a, Vector128<int> b)
-; eval_gComparisonKind~8u_v128x32i_v128x32i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 66 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 66 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 8d 9b b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 b7 1e ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 65 9b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 4e 34 c5 5e 48 8b e8 48 8b ce e8 83 1b 44 ff 8b c8 e8 ec 01 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 b6 6f 00 ff 48 8b d0 48 8b cb e8 d3 22 03 ff 48 8b cb e8 6b e7 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x32i_v128x32i[262] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 69 8b c9 48 8d 15 ec 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 66 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 66 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 7d bc b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 a7 3f ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 55 bc b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 3e 55 c6 5e 48 8b e8 48 8b ce e8 b3 3e 45 ff 8b c8 e8 dc 22 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 a6 90 01 ff 48 8b d0 48 8b cb e8 13 44 04 ff 48 8b cb e8 5b 08 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1872,38 +1872,38 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 9b b2 5e}
+0084h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+008eh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d bc b3 5e}
 0093h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0096h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 009ah mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 1e ad 5e}
+00a4h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 3f ae 5e}
 00a9h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00ach mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 9b b2 5e}
+00ach mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00b6h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 bc b3 5e}
 00bbh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00beh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00c3h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 34 c5 5e}
+00c3h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00cdh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e 55 c6 5e}
 00d2h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00d5h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00d8h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 1b 44 ff}
+00d8h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 3e 45 ff}
 00ddh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 01 02 ff}
+00dfh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 22 03 ff}
 00e4h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00e7h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00eah mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 6f 00 ff}
+00edh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 90 01 ff}
 00f2h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00f5h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00f8h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 22 03 ff}
+00f8h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 44 04 ff}
 00fdh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b e7 a9 5e}
+0100h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b 08 ab 5e}
 0105h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> eval<ulong>(ComparisonKind:byte kind, Vector128<ulong> a, Vector128<ulong> b)
 ; eval_gComparisonKind~8u_v128x64u_v128x64u[86] = {57 56 55 53 48 83 ec 38 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 f1 00 00 00 8b c9 48 8d 15 78 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c4 e2 79 29 c1 c5 f9 11 00 c5 f8 77 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = ZEDx7_RET
+; TermCode = CTC_Zx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1935,8 +1935,8 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> eval<long>(ComparisonKind:byte kind, Vector128<long> a, Vector128<long> b)
-; eval_gComparisonKind~8u_v128x64i_v128x64i[332] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 ab 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c4 e2 79 29 c1 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c4 e3 7d 46 c8 03 c4 e2 75 37 c0 c4 e3 7d 19 c0 00 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 ec 57 d2 c4 e3 6d 38 c0 00 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e2 7d 37 c1 c4 e3 7d 19 c0 00 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 37 98 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 61 1b ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 0f 98 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 f8 30 c5 5e 48 8b e8 48 8b ce e8 2d 18 44 ff 8b c8 e8 96 fe 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 60 6c 00 ff 48 8b d0 48 8b cb e8 7d 1f 03 ff 48 8b cb e8 15 e4 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x64i_v128x64i[332] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 ab 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 79 10 00 c4 c1 79 10 09 c4 e2 79 29 c1 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c4 e3 7d 46 c8 03 c4 e2 75 37 c0 c4 e3 7d 19 c0 00 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 ec 57 d2 c4 e3 6d 38 c0 00 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e2 7d 37 c1 c4 e3 7d 19 c0 00 c5 f9 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 27 b9 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 51 3c ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 ff b8 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 e8 51 c6 5e 48 8b e8 48 8b ce e8 5d 3b 45 ff 8b c8 e8 86 1f 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 50 8d 01 ff 48 8b d0 48 8b cb e8 bd 40 04 ff 48 8b cb e8 05 05 ab 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -1998,38 +1998,38 @@
 00c7h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00c8h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c9h ret                                     ; RET || C3 || encoded[1]{c3}
-00cah mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00d4h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 98 b2 5e}
+00cah mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00d4h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 b9 b3 5e}
 00d9h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00dch mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00e0h mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-00eah call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 1b ad 5e}
+00eah call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 3c ae 5e}
 00efh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00f2h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00fch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f 98 b2 5e}
+00f2h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00fch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff b8 b3 5e}
 0101h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0104h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0109h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0113h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 30 c5 5e}
+0109h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0113h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 51 c6 5e}
 0118h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 011bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-011eh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 18 44 ff}
+011eh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 3b 45 ff}
 0123h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0125h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 fe 01 ff}
+0125h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 1f 03 ff}
 012ah mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 012dh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0130h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0133h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 6c 00 ff}
+0133h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 8d 01 ff}
 0138h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 013bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013eh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 1f 03 ff}
+013eh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 40 04 ff}
 0143h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0146h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 e4 a9 5e}
+0146h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 05 ab 5e}
 014bh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> eval<float>(ComparisonKind:byte kind, Vector128<float> a, Vector128<float> b)
-; eval_gComparisonKind~8u_v128x32f_v128x32f[344] = {57 56 55 53 48 83 ec 68 c5 f8 77 48 8b f1 8b fa 40 0f b6 c7 ff c8 83 f8 03 0f 87 b7 00 00 00 8b c0 48 8d 0d 40 01 00 00 8b 0c 81 48 8d 15 de ff ff ff 48 03 ca ff e1 c4 c1 79 10 00 c4 c1 79 10 09 c5 f8 c2 c1 00 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 50 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 b8 fb ff ff c5 f9 28 44 24 50 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 40 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 a8 fb ff ff c5 f9 28 44 24 40 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 9b 92 b2 5e 48 8b f0 40 88 7e 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 c5 15 ad 5e 48 8b f8 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 73 92 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 5c 2b c5 5e 48 8b e8 48 8b cf e8 91 12 44 ff 8b c8 e8 fa f8 01 ff 4c 8b c0 48 8b cd 48 8b d6 e8 c4 66 00 ff 48 8b d0 48 8b cb e8 e1 19 03 ff 48 8b cb e8 79 de a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x32f_v128x32f[344] = {57 56 55 53 48 83 ec 68 c5 f8 77 48 8b f1 8b fa 40 0f b6 c7 ff c8 83 f8 03 0f 87 b7 00 00 00 8b c0 48 8d 0d 40 01 00 00 8b 0c 81 48 8d 15 de ff ff ff 48 03 ca ff e1 c4 c1 79 10 00 c4 c1 79 10 09 c5 f8 c2 c1 00 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 50 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 b8 fb ff ff c5 f9 28 44 24 50 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 40 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 a8 fb ff ff c5 f9 28 44 24 40 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 8b b3 b3 5e 48 8b f0 40 88 7e 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 b5 36 ae 5e 48 8b f8 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 63 b3 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 4c 4c c6 5e 48 8b e8 48 8b cf e8 c1 35 45 ff 8b c8 e8 ea 19 03 ff 4c 8b c0 48 8b cd 48 8b d6 e8 b4 87 01 ff 48 8b d0 48 8b cb e8 21 3b 04 ff 48 8b cb e8 69 ff aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2066,7 +2066,7 @@
 006bh vmovapd [rsp+20h],xmm1                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 4c 24 20}
 0071h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 0076h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
-007bh call 7ff7c737d568h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fb ff ff}
+007bh call 7ff7c736b478h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fb ff ff}
 0080h vmovapd xmm0,[rsp+50h]                  ; VMOVAPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 28 /r || encoded[6]{c5 f9 28 44 24 50}
 0086h vmovupd [rsi],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 06}
 008ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
@@ -2083,7 +2083,7 @@
 00abh vmovapd [rsp+20h],xmm1                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 4c 24 20}
 00b1h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 00b6h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
-00bbh call 7ff7c737d598h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 fb ff ff}
+00bbh call 7ff7c736b4a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 fb ff ff}
 00c0h vmovapd xmm0,[rsp+40h]                  ; VMOVAPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 28 /r || encoded[6]{c5 f9 28 44 24 40}
 00c6h vmovupd [rsi],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 06}
 00cah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
@@ -2093,38 +2093,38 @@
 00d3h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00d4h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00d5h ret                                     ; RET || C3 || encoded[1]{c3}
-00d6h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00e0h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b 92 b2 5e}
+00d6h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00e0h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b b3 b3 5e}
 00e5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
 00e8h mov [rsi+8],dil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 7e 08}
 00ech mov rcx,7ff7c635af58h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 af 35 c6 f7 7f 00 00}
-00f6h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 15 ad 5e}
+00f6h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 36 ae 5e}
 00fbh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
-00feh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0108h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 92 b2 5e}
+00feh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0108h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 b3 b3 5e}
 010dh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0110h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0115h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-011fh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 2b c5 5e}
+0115h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+011fh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c 4c c6 5e}
 0124h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0127h mov rcx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cf}
-012ah call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 12 44 ff}
+012ah call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 35 45 ff}
 012fh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0131h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa f8 01 ff}
+0131h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 19 03 ff}
 0136h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0139h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 013ch mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
-013fh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 66 00 ff}
+013fh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 87 01 ff}
 0144h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0147h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-014ah call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 19 03 ff}
+014ah call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 3b 04 ff}
 014fh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0152h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 de a9 5e}
+0152h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 ff aa 5e}
 0157h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> eval<double>(ComparisonKind:byte kind, Vector128<double> a, Vector128<double> b)
-; eval_gComparisonKind~8u_v128x64f_v128x64f[344] = {57 56 55 53 48 83 ec 68 c5 f8 77 48 8b f1 8b fa 40 0f b6 c7 ff c8 83 f8 03 0f 87 b7 00 00 00 8b c0 48 8d 0d 40 01 00 00 8b 0c 81 48 8d 15 de ff ff ff 48 03 ca ff e1 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 c2 c1 00 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 50 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 b8 fa ff ff c5 f9 28 44 24 50 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 40 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 a8 fa ff ff c5 f9 28 44 24 40 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 fb 90 b2 5e 48 8b f0 40 88 7e 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 25 14 ad 5e 48 8b f8 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 d3 90 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 bc 29 c5 5e 48 8b e8 48 8b cf e8 f1 10 44 ff 8b c8 e8 5a f7 01 ff 4c 8b c0 48 8b cd 48 8b d6 e8 24 65 00 ff 48 8b d0 48 8b cb e8 41 18 03 ff 48 8b cb e8 d9 dc a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v128x64f_v128x64f[344] = {57 56 55 53 48 83 ec 68 c5 f8 77 48 8b f1 8b fa 40 0f b6 c7 ff c8 83 f8 03 0f 87 b7 00 00 00 8b c0 48 8d 0d 40 01 00 00 8b 0c 81 48 8d 15 de ff ff ff 48 03 ca ff e1 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 c2 c1 00 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 50 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 b8 fa ff ff c5 f9 28 44 24 50 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 48 8d 4c 24 40 c5 f9 29 44 24 30 c5 f9 29 4c 24 20 48 8d 54 24 30 4c 8d 44 24 20 e8 a8 fa ff ff c5 f9 28 44 24 40 c5 f9 11 06 48 8b c6 48 83 c4 68 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 eb b1 b3 5e 48 8b f0 40 88 7e 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 15 35 ae 5e 48 8b f8 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 c3 b1 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 ac 4a c6 5e 48 8b e8 48 8b cf e8 21 34 45 ff 8b c8 e8 4a 18 03 ff 4c 8b c0 48 8b cd 48 8b d6 e8 14 86 01 ff 48 8b d0 48 8b cb e8 81 39 04 ff 48 8b cb e8 c9 fd aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2161,7 +2161,7 @@
 006bh vmovapd [rsp+20h],xmm1                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 4c 24 20}
 0071h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 0076h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
-007bh call 7ff7c737d608h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fa ff ff}
+007bh call 7ff7c736b518h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fa ff ff}
 0080h vmovapd xmm0,[rsp+50h]                  ; VMOVAPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 28 /r || encoded[6]{c5 f9 28 44 24 50}
 0086h vmovupd [rsi],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 06}
 008ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
@@ -2178,7 +2178,7 @@
 00abh vmovapd [rsp+20h],xmm1                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 4c 24 20}
 00b1h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 00b6h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
-00bbh call 7ff7c737d638h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 fa ff ff}
+00bbh call 7ff7c736b548h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 fa ff ff}
 00c0h vmovapd xmm0,[rsp+40h]                  ; VMOVAPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 28 /r || encoded[6]{c5 f9 28 44 24 40}
 00c6h vmovupd [rsi],xmm0                      ; VMOVUPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 11 /r || encoded[4]{c5 f9 11 06}
 00cah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
@@ -2188,38 +2188,38 @@
 00d3h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00d4h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00d5h ret                                     ; RET || C3 || encoded[1]{c3}
-00d6h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00e0h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb 90 b2 5e}
+00d6h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00e0h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb b1 b3 5e}
 00e5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
 00e8h mov [rsi+8],dil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 7e 08}
 00ech mov rcx,7ff7c635b838h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 b8 35 c6 f7 7f 00 00}
-00f6h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 14 ad 5e}
+00f6h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 35 ae 5e}
 00fbh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
-00feh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0108h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 90 b2 5e}
+00feh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0108h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 b1 b3 5e}
 010dh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0110h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0115h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-011fh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 29 c5 5e}
+0115h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+011fh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 4a c6 5e}
 0124h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0127h mov rcx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cf}
-012ah call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 10 44 ff}
+012ah call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 34 45 ff}
 012fh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0131h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a f7 01 ff}
+0131h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a 18 03 ff}
 0136h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0139h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 013ch mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
-013fh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 65 00 ff}
+013fh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 86 01 ff}
 0144h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0147h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-014ah call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 18 03 ff}
+014ah call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 39 04 ff}
 014fh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0152h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 dc a9 5e}
+0152h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 fd aa 5e}
 0157h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> eval<byte>(ComparisonKind:byte kind, Vector256<byte> a, Vector256<byte> b)
-; eval_gComparisonKind~8u_v256x8u_v256x8u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 80 00 00 00 4c 8d 44 24 24 c4 e2 7d 78 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 64 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 80 00 00 00 48 8d 4c 24 20 c4 e2 7d 78 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 64 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 68 8f b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 92 12 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 40 8f b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 29 28 c5 5e 48 8b e8 48 8b ce e8 5e 0f 44 ff 8b c8 e8 c7 f5 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 91 63 00 ff 48 8b d0 48 8b cb e8 ae 16 03 ff 48 8b cb e8 46 db a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x8u_v256x8u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 80 00 00 00 4c 8d 44 24 24 c4 e2 7d 78 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 64 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 80 00 00 00 48 8d 4c 24 20 c4 e2 7d 78 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 64 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 58 b0 b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 82 33 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 30 b0 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 19 49 c6 5e 48 8b e8 48 8b ce e8 8e 32 45 ff 8b c8 e8 b7 16 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 81 84 01 ff 48 8b d0 48 8b cb e8 ee 37 04 ff 48 8b cb e8 36 fc aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2281,38 +2281,38 @@
 00c6h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00c7h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c8h ret                                     ; RET || C3 || encoded[1]{c3}
-00c9h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 8f b2 5e}
+00c9h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 b0 b3 5e}
 00d8h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00dbh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00dfh mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 12 ad 5e}
+00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 33 ae 5e}
 00eeh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00f1h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 8f b2 5e}
+00f1h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 b0 b3 5e}
 0100h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0103h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0108h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 28 c5 5e}
+0108h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 49 c6 5e}
 0117h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 011ah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-011dh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e 0f 44 ff}
+011dh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 32 45 ff}
 0122h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 f5 01 ff}
+0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 16 03 ff}
 0129h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 012ch mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 012fh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 63 00 ff}
+0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 84 01 ff}
 0137h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 013ah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013dh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae 16 03 ff}
+013dh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee 37 04 ff}
 0142h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 db a9 5e}
+0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 fc aa 5e}
 014ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> eval<sbyte>(ComparisonKind:byte kind, Vector256<sbyte> a, Vector256<sbyte> b)
-; eval_gComparisonKind~8u_v256x8i_v256x8i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 64 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 64 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 14 8e b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 3e 11 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 ec 8d b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 d5 26 c5 5e 48 8b e8 48 8b ce e8 0a 0e 44 ff 8b c8 e8 73 f4 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 3d 62 00 ff 48 8b d0 48 8b cb e8 5a 15 03 ff 48 8b cb e8 f2 d9 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x8i_v256x8i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 64 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 64 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 04 af b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 2e 32 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 dc ae b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 c5 47 c6 5e 48 8b e8 48 8b ce e8 3a 31 45 ff 8b c8 e8 63 15 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 2d 83 01 ff 48 8b d0 48 8b cb e8 9a 36 04 ff 48 8b cb e8 e2 fa aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2364,38 +2364,38 @@
 008ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 008bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
-008dh mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 8e b2 5e}
+008dh mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 af b3 5e}
 009ch mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 009fh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00a3h mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e 11 ad 5e}
+00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e 32 ae 5e}
 00b2h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b5h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 8d b2 5e}
+00b5h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc ae b3 5e}
 00c4h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c7h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00cch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 26 c5 5e}
+00cch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 47 c6 5e}
 00dbh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00deh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00e1h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 0e 44 ff}
+00e1h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a 31 45 ff}
 00e6h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 f4 01 ff}
+00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 15 03 ff}
 00edh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00f0h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00f3h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d 62 00 ff}
+00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 83 01 ff}
 00fbh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00feh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0101h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 15 03 ff}
+0101h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 36 04 ff}
 0106h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 d9 a9 5e}
+0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 fa aa 5e}
 010eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> eval<ushort>(ComparisonKind:byte kind, Vector256<ushort> a, Vector256<ushort> b)
-; eval_gComparisonKind~8u_v256x16u_v256x16u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 00 80 00 00 4c 8d 44 24 24 c4 e2 7d 79 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 65 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 00 80 00 00 48 8d 4c 24 20 c4 e2 7d 79 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 65 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 88 8c b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 b2 0f ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 60 8c b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 49 25 c5 5e 48 8b e8 48 8b ce e8 7e 0c 44 ff 8b c8 e8 e7 f2 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 b1 60 00 ff 48 8b d0 48 8b cb e8 ce 13 03 ff 48 8b cb e8 66 d8 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x16u_v256x16u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 00 80 00 00 4c 8d 44 24 24 c4 e2 7d 79 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 65 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 00 80 00 00 48 8d 4c 24 20 c4 e2 7d 79 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 65 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 78 ad b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 a2 30 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 50 ad b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 39 46 c6 5e 48 8b e8 48 8b ce e8 ae 2f 45 ff 8b c8 e8 d7 13 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 a1 81 01 ff 48 8b d0 48 8b cb e8 0e 35 04 ff 48 8b cb e8 56 f9 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2457,38 +2457,38 @@
 00c6h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00c7h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c8h ret                                     ; RET || C3 || encoded[1]{c3}
-00c9h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 8c b2 5e}
+00c9h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 ad b3 5e}
 00d8h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00dbh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00dfh mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 0f ad 5e}
+00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 30 ae 5e}
 00eeh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00f1h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 8c b2 5e}
+00f1h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 ad b3 5e}
 0100h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0103h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0108h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 25 c5 5e}
+0108h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 46 c6 5e}
 0117h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 011ah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-011dh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 0c 44 ff}
+011dh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae 2f 45 ff}
 0122h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 f2 01 ff}
+0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 13 03 ff}
 0129h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 012ch mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 012fh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 60 00 ff}
+0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 81 01 ff}
 0137h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 013ah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013dh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce 13 03 ff}
+013dh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 35 04 ff}
 0142h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 d8 a9 5e}
+0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 f9 aa 5e}
 014ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> eval<short>(ComparisonKind:byte kind, Vector256<short> a, Vector256<short> b)
-; eval_gComparisonKind~8u_v256x16i_v256x16i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 65 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 65 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 34 8b b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 5e 0e ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 0c 8b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 f5 23 c5 5e 48 8b e8 48 8b ce e8 2a 0b 44 ff 8b c8 e8 93 f1 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 5d 5f 00 ff 48 8b d0 48 8b cb e8 7a 12 03 ff 48 8b cb e8 12 d7 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x16i_v256x16i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 65 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 65 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 24 ac b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 4e 2f ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 fc ab b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 e5 44 c6 5e 48 8b e8 48 8b ce e8 5a 2e 45 ff 8b c8 e8 83 12 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 4d 80 01 ff 48 8b d0 48 8b cb e8 ba 33 04 ff 48 8b cb e8 02 f8 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2540,38 +2540,38 @@
 008ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 008bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
-008dh mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 8b b2 5e}
+008dh mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 ac b3 5e}
 009ch mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 009fh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00a3h mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e 0e ad 5e}
+00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 2f ae 5e}
 00b2h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b5h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c 8b b2 5e}
+00b5h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc ab b3 5e}
 00c4h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c7h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00cch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 23 c5 5e}
+00cch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 44 c6 5e}
 00dbh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00deh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00e1h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a 0b 44 ff}
+00e1h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 2e 45 ff}
 00e6h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 f1 01 ff}
+00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 12 03 ff}
 00edh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00f0h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00f3h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 5f 00 ff}
+00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 80 01 ff}
 00fbh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00feh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0101h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a 12 03 ff}
+0101h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba 33 04 ff}
 0106h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 d7 a9 5e}
+0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 f8 aa 5e}
 010eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> eval<uint>(ComparisonKind:byte kind, Vector256<uint> a, Vector256<uint> b)
-; eval_gComparisonKind~8u_v256x32u_v256x32u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 00 00 00 80 4c 8d 44 24 24 c4 e2 7d 58 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 66 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 00 00 00 80 48 8d 4c 24 20 c4 e2 7d 58 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 66 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 a8 89 b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 d2 0c ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 80 89 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 69 22 c5 5e 48 8b e8 48 8b ce e8 9e 09 44 ff 8b c8 e8 07 f0 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d1 5d 00 ff 48 8b d0 48 8b cb e8 ee 10 03 ff 48 8b cb e8 86 d5 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x32u_v256x32u[331] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 aa 00 00 00 8b c9 48 8d 15 30 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 24 00 00 00 80 4c 8d 44 24 24 c4 e2 7d 58 54 24 24 c5 fd ef c2 c5 f5 ef ca c5 f5 66 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c7 44 24 20 00 00 00 80 48 8d 4c 24 20 c4 e2 7d 58 54 24 20 c5 fd ef c2 c5 f5 ef ca c5 fd 66 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 98 aa b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 c2 2d ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 70 aa b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 59 43 c6 5e 48 8b e8 48 8b ce e8 ce 2c 45 ff 8b c8 e8 f7 10 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c1 7e 01 ff 48 8b d0 48 8b cb e8 2e 32 04 ff 48 8b cb e8 76 f6 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2633,38 +2633,38 @@
 00c6h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 00c7h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c8h ret                                     ; RET || C3 || encoded[1]{c3}
-00c9h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 89 b2 5e}
+00c9h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+00d3h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 aa b3 5e}
 00d8h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00dbh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00dfh mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0c ad 5e}
+00e9h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 2d ae 5e}
 00eeh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00f1h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 89 b2 5e}
+00f1h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00fbh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 aa b3 5e}
 0100h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0103h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0108h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 22 c5 5e}
+0108h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0112h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 43 c6 5e}
 0117h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 011ah mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-011dh call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 09 44 ff}
+011dh call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce 2c 45 ff}
 0122h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 f0 01 ff}
+0124h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 10 03 ff}
 0129h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 012ch mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 012fh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 5d 00 ff}
+0132h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 7e 01 ff}
 0137h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 013ah mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-013dh call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee 10 03 ff}
+013dh call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e 32 04 ff}
 0142h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 d5 a9 5e}
+0145h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 f6 aa 5e}
 014ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> eval<int>(ComparisonKind:byte kind, Vector256<int> a, Vector256<int> b)
-; eval_gComparisonKind~8u_v256x32i_v256x32i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 66 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 66 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 54 88 b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 7e 0b ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 2c 88 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 15 21 c5 5e 48 8b e8 48 8b ce e8 4a 08 44 ff 8b c8 e8 b3 ee 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 7d 5c 00 ff 48 8b d0 48 8b cb e8 9a 0f 03 ff 48 8b cb e8 32 d4 a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x32i_v256x32i[271] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 72 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 66 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 66 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 44 a9 b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 6e 2c ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 1c a9 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 05 42 c6 5e 48 8b e8 48 8b ce e8 7a 2b 45 ff 8b c8 e8 a3 0f 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 6d 7d 01 ff 48 8b d0 48 8b cb e8 da 30 04 ff 48 8b cb e8 22 f5 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2716,38 +2716,38 @@
 008ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 008bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 008ch ret                                     ; RET || C3 || encoded[1]{c3}
-008dh mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 88 b2 5e}
+008dh mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+0097h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 a9 b3 5e}
 009ch mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 009fh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00a3h mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 0b ad 5e}
+00adh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e 2c ae 5e}
 00b2h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b5h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c 88 b2 5e}
+00b5h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00bfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c a9 b3 5e}
 00c4h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00c7h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00cch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 21 c5 5e}
+00cch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d6h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 42 c6 5e}
 00dbh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00deh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00e1h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a 08 44 ff}
+00e1h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a 2b 45 ff}
 00e6h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 ee 01 ff}
+00e8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 0f 03 ff}
 00edh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00f0h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00f3h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 5c 00 ff}
+00f6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d 7d 01 ff}
 00fbh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00feh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0101h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 0f 03 ff}
+0101h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da 30 04 ff}
 0106h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 d4 a9 5e}
+0109h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 f5 aa 5e}
 010eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> eval<ulong>(ComparisonKind:byte kind, Vector256<ulong> a, Vector256<ulong> b)
 ; eval_gComparisonKind~8u_v256x64u_v256x64u[86] = {57 56 55 53 48 83 ec 38 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 0f 87 bb 00 00 00 8b c9 48 8d 15 40 01 00 00 8b 14 8a 4c 8d 15 de ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = ZEDx7_RET
+; TermCode = CTC_Zx7_RET
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2779,8 +2779,8 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> eval<long>(ComparisonKind:byte kind, Vector256<long> a, Vector256<long> b)
-; eval_gComparisonKind~8u_v256x64i_v256x64i[274] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 75 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 37 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 37 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 70 4c cc c6 f7 7f 00 00 e8 61 81 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 8b 04 ad 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 39 81 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 22 1a c5 5e 48 8b e8 48 8b ce e8 57 01 44 ff 8b c8 e8 c0 e7 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 8a 55 00 ff 48 8b d0 48 8b cb e8 a7 08 03 ff 48 8b cb e8 3f cd a9 5e cc}
-; TermCode = INTRx2
+; eval_gComparisonKind~8u_v256x64i_v256x64i[274] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 0f b6 ce ff c9 83 f9 03 77 75 8b c9 48 8d 15 f4 00 00 00 8b 14 8a 4c 8d 15 e2 ff ff ff 49 03 d2 ff e2 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 37 c0 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 37 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 30 21 d2 c6 f7 7f 00 00 e8 51 a2 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 7b 25 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 29 a2 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 12 3b c6 5e 48 8b e8 48 8b ce e8 87 24 45 ff 8b c8 e8 b0 08 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 7a 76 01 ff 48 8b d0 48 8b cb e8 e7 29 04 ff 48 8b cb e8 2f ee aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2832,38 +2832,38 @@
 008dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 008eh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 008fh ret                                     ; RET || C3 || encoded[1]{c3}
-0090h mov rcx,7ff7c6cc4c70h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 4c cc c6 f7 7f 00 00}
-009ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 81 b2 5e}
+0090h mov rcx,7ff7c6d22130h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 30 21 d2 c6 f7 7f 00 00}
+009ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 a2 b3 5e}
 009fh mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 00a2h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 00a6h mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-00b0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b 04 ad 5e}
+00b0h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b 25 ae 5e}
 00b5h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-00b8h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-00c2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 81 b2 5e}
+00b8h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+00c2h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 a2 b3 5e}
 00c7h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 00cah mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-00cfh mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00d9h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 1a c5 5e}
+00cfh mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00d9h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 3b c6 5e}
 00deh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00e1h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00e4h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 01 44 ff}
+00e4h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 24 45 ff}
 00e9h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00ebh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 e7 01 ff}
+00ebh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 08 03 ff}
 00f0h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00f3h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00f6h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00f9h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 55 00 ff}
+00f9h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a 76 01 ff}
 00feh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0101h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0104h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 08 03 ff}
+0104h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 29 04 ff}
 0109h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-010ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f cd a9 5e}
+010ch call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f ee aa 5e}
 0111h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> eval<byte>(BinaryBitLogicKind:byte kind, Vector128<byte> a, Vector128<byte> b)
-; eval_gBinaryBitLogicKind~8u_v128x8u_v128x8u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 cf 7a b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 f9 fd ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 a7 7a b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 90 13 c5 5e 48 8b e8 48 8b ce e8 c5 fa 43 ff 8b c8 e8 2e e1 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f8 4e 00 ff 48 8b d0 48 8b cb e8 15 02 03 ff 48 8b cb e8 ad c6 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x8u_v128x8u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 bf 9b b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 e9 1e ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 97 9b b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 80 34 c6 5e 48 8b e8 48 8b ce e8 f5 1d 45 ff 8b c8 e8 1e 02 03 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e8 6f 01 ff 48 8b d0 48 8b cb e8 55 23 04 ff 48 8b cb e8 9d e7 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -2985,38 +2985,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 7a b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf 9b b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 fd ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 1e ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 7a b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 9b b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 13 c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 34 c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 fa 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 1d 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e e1 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 02 03 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 4e 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 6f 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 02 03 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 23 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad c6 a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d e7 aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> eval<sbyte>(BinaryBitLogicKind:byte kind, Vector128<sbyte> a, Vector128<sbyte> b)
-; eval_gBinaryBitLogicKind~8u_v128x8i_v128x8i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 ef 77 b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 19 fb ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 c7 77 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 b0 10 c5 5e 48 8b e8 48 8b ce e8 e5 f7 43 ff 8b c8 e8 4e de 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 18 4c 00 ff 48 8b d0 48 8b cb e8 35 ff 02 ff 48 8b cb e8 cd c3 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x8i_v128x8i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 74 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 74 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 74 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 df 98 b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 09 1c ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 b7 98 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 a0 31 c6 5e 48 8b e8 48 8b ce e8 15 1b 45 ff 8b c8 e8 3e ff 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 08 6d 01 ff 48 8b d0 48 8b cb e8 75 20 04 ff 48 8b cb e8 bd e4 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3138,38 +3138,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef 77 b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df 98 b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 fb ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 1c ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 77 b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 98 b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b0 10 c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 31 c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 f7 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 1b 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e de 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e ff 02 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 4c 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 6d 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 ff 02 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 20 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd c3 a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd e4 aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, Vector128<ushort> a, Vector128<ushort> b)
-; eval_gBinaryBitLogicKind~8u_v128x16u_v128x16u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 75 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 0f 75 b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 39 f8 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 e7 74 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 d0 0d c5 5e 48 8b e8 48 8b ce e8 05 f5 43 ff 8b c8 e8 6e db 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 38 49 00 ff 48 8b d0 48 8b cb e8 55 fc 02 ff 48 8b cb e8 ed c0 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x16u_v128x16u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 75 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 ff 95 b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 29 19 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 d7 95 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 c0 2e c6 5e 48 8b e8 48 8b ce e8 35 18 45 ff 8b c8 e8 5e fc 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 28 6a 01 ff 48 8b d0 48 8b cb e8 95 1d 04 ff 48 8b cb e8 dd e1 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3291,38 +3291,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f 75 b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 95 b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 f8 ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 19 ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 74 b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 95 b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d0 0d c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 2e c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 f5 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 18 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e db 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e fc 02 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 49 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 6a 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 fc 02 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 1d 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed c0 a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd e1 aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> eval<short>(BinaryBitLogicKind:byte kind, Vector128<short> a, Vector128<short> b)
-; eval_gBinaryBitLogicKind~8u_v128x16i_v128x16i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 75 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 2f 72 b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 59 f5 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 07 72 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 f0 0a c5 5e 48 8b e8 48 8b ce e8 25 f2 43 ff 8b c8 e8 8e d8 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 58 46 00 ff 48 8b d0 48 8b cb e8 75 f9 02 ff 48 8b cb e8 0d be a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x16i_v128x16i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 75 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 75 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 75 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 1f 93 b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 49 16 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 f7 92 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 e0 2b c6 5e 48 8b e8 48 8b ce e8 55 15 45 ff 8b c8 e8 7e f9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 48 67 01 ff 48 8b d0 48 8b cb e8 b5 1a 04 ff 48 8b cb e8 fd de aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3444,38 +3444,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f 72 b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f 93 b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 f5 ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 16 ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 72 b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 92 b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 0a c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 2b c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 f2 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 15 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e d8 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e f9 02 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 46 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 67 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 f9 02 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 1a 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d be a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd de aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> eval<uint>(BinaryBitLogicKind:byte kind, Vector128<uint> a, Vector128<uint> b)
-; eval_gBinaryBitLogicKind~8u_v128x32u_v128x32u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 3f 6b b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 69 ee ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 17 6b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 00 04 c5 5e 48 8b e8 48 8b ce e8 35 eb 43 ff 8b c8 e8 9e d1 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 68 3f 00 ff 48 8b d0 48 8b cb e8 85 f2 02 ff 48 8b cb e8 1d b7 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x32u_v128x32u[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 2f 8c b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 59 0f ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 07 8c b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 f0 24 c6 5e 48 8b e8 48 8b ce e8 65 0e 45 ff 8b c8 e8 8e f2 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 58 60 01 ff 48 8b d0 48 8b cb e8 c5 13 04 ff 48 8b cb e8 0d d8 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3597,38 +3597,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f 6b b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f 8c b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 ee ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 0f ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 6b b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 8c b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 04 c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 24 c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 eb 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 0e 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e d1 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e f2 02 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 3f 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 60 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 f2 02 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 13 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d b7 a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d d8 aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> eval<int>(BinaryBitLogicKind:byte kind, Vector128<int> a, Vector128<int> b)
-; eval_gBinaryBitLogicKind~8u_v128x32i_v128x32i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 5f 68 b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 89 eb ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 37 68 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 20 01 c5 5e 48 8b e8 48 8b ce e8 55 e8 43 ff 8b c8 e8 be ce 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 88 3c 00 ff 48 8b d0 48 8b cb e8 a5 ef 02 ff 48 8b cb e8 3d b4 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x32i_v128x32i[596] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b8 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 4f 89 b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 79 0c ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 27 89 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 10 22 c6 5e 48 8b e8 48 8b ce e8 85 0b 45 ff 8b c8 e8 ae ef 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 78 5d 01 ff 48 8b d0 48 8b cb e8 e5 10 04 ff 48 8b cb e8 2d d5 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3750,38 +3750,38 @@
 01cfh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d0h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d1h ret                                     ; RET || C3 || encoded[1]{c3}
-01d2h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 68 b2 5e}
+01d2h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f 89 b3 5e}
 01e1h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e4h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e8h mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 eb ac 5e}
+01f2h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 0c ae 5e}
 01f7h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 68 b2 5e}
+01fah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0204h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 89 b3 5e}
 0209h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0211h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 01 c5 5e}
+0211h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 22 c6 5e}
 0220h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0223h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0226h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 e8 43 ff}
+0226h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 0b 45 ff}
 022bh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be ce 01 ff}
+022dh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae ef 02 ff}
 0232h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0235h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0238h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 3c 00 ff}
+023bh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 5d 01 ff}
 0240h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0243h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0246h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 ef 02 ff}
+0246h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 10 04 ff}
 024bh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d b4 a9 5e}
+024eh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d d5 aa 5e}
 0253h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, Vector128<ulong> a, Vector128<ulong> b)
-; eval_gBinaryBitLogicKind~8u_v128x64u_v128x64u[597] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b9 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 7e 65 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 a8 e8 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 56 65 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 3f fe c4 5e 48 8b e8 48 8b ce e8 74 e5 43 ff 8b c8 e8 dd cb 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 a7 39 00 ff 48 8b d0 48 8b cb e8 c4 ec 02 ff 48 8b cb e8 5c b1 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x64u_v128x64u[597] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b9 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 6e 86 b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 98 09 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 46 86 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 2f 1f c6 5e 48 8b e8 48 8b ce e8 a4 08 45 ff 8b c8 e8 cd ec 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 97 5a 01 ff 48 8b d0 48 8b cb e8 04 0e 04 ff 48 8b cb e8 4c d2 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -3903,38 +3903,38 @@
 01d0h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d1h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d2h ret                                     ; RET || C3 || encoded[1]{c3}
-01d3h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01ddh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 65 b2 5e}
+01d3h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01ddh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e 86 b3 5e}
 01e2h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e5h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e9h mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-01f3h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 e8 ac 5e}
+01f3h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 09 ae 5e}
 01f8h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fbh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0205h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 65 b2 5e}
+01fbh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0205h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 86 b3 5e}
 020ah mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020dh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0212h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021ch call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f fe c4 5e}
+0212h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021ch call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f 1f c6 5e}
 0221h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0224h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0227h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 e5 43 ff}
+0227h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 08 45 ff}
 022ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022eh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd cb 01 ff}
+022eh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd ec 02 ff}
 0233h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0236h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0239h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023ch call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 39 00 ff}
+023ch call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 5a 01 ff}
 0241h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0244h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0247h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 ec 02 ff}
+0247h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 0e 04 ff}
 024ch mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024fh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c b1 a9 5e}
+024fh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c d2 aa 5e}
 0254h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> eval<long>(BinaryBitLogicKind:byte kind, Vector128<long> a, Vector128<long> b)
-; eval_gBinaryBitLogicKind~8u_v128x64i_v128x64i[597] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b9 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 9e 62 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 c8 e5 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 76 62 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 5f fb c4 5e 48 8b e8 48 8b ce e8 94 e2 43 ff 8b c8 e8 fd c8 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c7 36 00 ff 48 8b d0 48 8b cb e8 e4 e9 02 ff 48 8b cb e8 7c ae a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v128x64i_v128x64i[597] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 b9 01 00 00 8b c0 48 8d 15 5d 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 e9 7f 01 00 00 c5 f8 57 c0 c5 f9 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 11 01 48 8b c1 e9 55 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 db c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 33 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 11 01 48 8b c1 e9 19 01 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 eb c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 ef c1 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 79 10 01 c5 f9 11 01 48 8b c1 e9 99 00 00 00 c4 c1 79 10 00 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 e9 80 00 00 00 c4 c1 79 10 01 c5 f9 76 c8 c5 f9 ef c1 c5 f9 11 01 48 8b c1 eb 6a c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 76 d1 c5 f1 ef ca c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 4b c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 df c1 c5 f9 11 01 48 8b c1 eb 34 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 76 d0 c5 f9 ef c2 c5 f9 eb c1 c5 f9 11 01 48 8b c1 eb 15 c4 c1 79 10 00 c4 c1 79 10 09 c5 f1 df c0 c5 f9 11 01 48 8b c1 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 8e 83 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 b8 06 ae 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 66 83 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 4f 1c c6 5e 48 8b e8 48 8b ce e8 c4 05 45 ff 8b c8 e8 ed e9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 b7 57 01 ff 48 8b d0 48 8b cb e8 24 0b 04 ff 48 8b cb e8 6c cf aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4056,38 +4056,38 @@
 01d0h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d1h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d2h ret                                     ; RET || C3 || encoded[1]{c3}
-01d3h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01ddh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 62 b2 5e}
+01d3h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01ddh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 83 b3 5e}
 01e2h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e5h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01e9h mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-01f3h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 e5 ac 5e}
+01f3h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 06 ae 5e}
 01f8h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fbh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0205h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 62 b2 5e}
+01fbh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0205h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 83 b3 5e}
 020ah mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020dh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0212h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021ch call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f fb c4 5e}
+0212h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021ch call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f 1c c6 5e}
 0221h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0224h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0227h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 e2 43 ff}
+0227h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 05 45 ff}
 022ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-022eh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd c8 01 ff}
+022eh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed e9 02 ff}
 0233h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0236h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0239h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023ch call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 36 00 ff}
+023ch call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 57 01 ff}
 0241h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0244h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0247h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 e9 02 ff}
+0247h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 0b 04 ff}
 024ch mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-024fh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c ae a9 5e}
+024fh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c cf aa 5e}
 0254h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> eval<byte>(BinaryBitLogicKind:byte kind, Vector256<byte> a, Vector256<byte> b)
-; eval_gBinaryBitLogicKind~8u_v256x8u_v256x8u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 ac 5b b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 d6 de ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 84 5b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 6d f4 c4 5e 48 8b e8 48 8b ce e8 a2 db 43 ff 8b c8 e8 0b c2 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d5 2f 00 ff 48 8b d0 48 8b cb e8 f2 e2 02 ff 48 8b cb e8 8a a7 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x8u_v256x8u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 9c 7c b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 c6 ff ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 74 7c b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 5d 15 c6 5e 48 8b e8 48 8b ce e8 d2 fe 44 ff 8b c8 e8 fb e2 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c5 50 01 ff 48 8b d0 48 8b cb e8 32 04 04 ff 48 8b cb e8 7a c8 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4210,38 +4210,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 5b b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c 7c b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 de ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 ff ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 5b b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 7c b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f4 c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 15 c6 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 db 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 fe 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b c2 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb e2 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 2f 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 50 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 e2 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 04 04 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a a7 a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a c8 aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> eval<sbyte>(BinaryBitLogicKind:byte kind, Vector256<sbyte> a, Vector256<sbyte> b)
-; eval_gBinaryBitLogicKind~8u_v256x8i_v256x8i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 bc 58 b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 e6 db ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 94 58 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7d f1 c4 5e 48 8b e8 48 8b ce e8 b2 d8 43 ff 8b c8 e8 1b bf 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e5 2c 00 ff 48 8b d0 48 8b cb e8 02 e0 02 ff 48 8b cb e8 9a a4 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x8i_v256x8i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 74 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 74 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 74 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 ac 79 b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 d6 fc ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 84 79 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6d 12 c6 5e 48 8b e8 48 8b ce e8 e2 fb 44 ff 8b c8 e8 0b e0 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d5 4d 01 ff 48 8b d0 48 8b cb e8 42 01 04 ff 48 8b cb e8 8a c5 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4364,38 +4364,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 58 b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 79 b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 db ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 fc ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 58 b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 79 b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d f1 c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d 12 c6 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 d8 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 fb 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b bf 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b e0 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 2c 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 4d 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 e0 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 01 04 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a a4 a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a c5 aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> eval<ushort>(BinaryBitLogicKind:byte kind, Vector256<ushort> a, Vector256<ushort> b)
-; eval_gBinaryBitLogicKind~8u_v256x16u_v256x16u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 cc 51 b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 f6 d4 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 a4 51 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 8d ea c4 5e 48 8b e8 48 8b ce e8 c2 d1 43 ff 8b c8 e8 2b b8 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f5 25 00 ff 48 8b d0 48 8b cb e8 12 d9 02 ff 48 8b cb e8 aa 9d a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x16u_v256x16u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 bc 72 b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 e6 f5 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 94 72 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 7d 0b c6 5e 48 8b e8 48 8b ce e8 f2 f4 44 ff 8b c8 e8 1b d9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e5 46 01 ff 48 8b d0 48 8b cb e8 52 fa 03 ff 48 8b cb e8 9a be aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4518,38 +4518,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc 51 b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 72 b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 d4 ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 f5 ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 51 b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 72 b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d ea c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 0b c6 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 d1 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 f4 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b b8 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b d9 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 25 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 46 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 d9 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 fa 03 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa 9d a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a be aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> eval<short>(BinaryBitLogicKind:byte kind, Vector256<short> a, Vector256<short> b)
-; eval_gBinaryBitLogicKind~8u_v256x16i_v256x16i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 dc 4e b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 06 d2 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 b4 4e b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 9d e7 c4 5e 48 8b e8 48 8b ce e8 d2 ce 43 ff 8b c8 e8 3b b5 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 05 23 00 ff 48 8b d0 48 8b cb e8 22 d6 02 ff 48 8b cb e8 ba 9a a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x16i_v256x16i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 75 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 cc 6f b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 f6 f2 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 a4 6f b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 8d 08 c6 5e 48 8b e8 48 8b ce e8 02 f2 44 ff 8b c8 e8 2b d6 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 f5 43 01 ff 48 8b d0 48 8b cb e8 62 f7 03 ff 48 8b cb e8 aa bb aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4672,38 +4672,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 4e b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc 6f b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 d2 ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 f2 ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 4e b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 6f b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d e7 c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 08 c6 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 ce 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 f2 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b b5 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b d6 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 23 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 43 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 d6 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 f7 03 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba 9a a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa bb aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> eval<uint>(BinaryBitLogicKind:byte kind, Vector256<uint> a, Vector256<uint> b)
-; eval_gBinaryBitLogicKind~8u_v256x32u_v256x32u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 ec 4b b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 16 cf ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 c4 4b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 ad e4 c4 5e 48 8b e8 48 8b ce e8 e2 cb 43 ff 8b c8 e8 4b b2 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 15 20 00 ff 48 8b d0 48 8b cb e8 32 d3 02 ff 48 8b cb e8 ca 97 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x32u_v256x32u[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 dc 6c b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 06 f0 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 b4 6c b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 9d 05 c6 5e 48 8b e8 48 8b ce e8 12 ef 44 ff 8b c8 e8 3b d3 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 05 41 01 ff 48 8b d0 48 8b cb e8 72 f4 03 ff 48 8b cb e8 ba b8 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4826,38 +4826,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 4b b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 6c b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 cf ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 f0 ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 4b b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 6c b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad e4 c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d 05 c6 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 cb 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 ef 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b b2 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b d3 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 20 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 41 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 32 d3 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 f4 03 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca 97 a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba b8 aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> eval<int>(BinaryBitLogicKind:byte kind, Vector256<int> a, Vector256<int> b)
-; eval_gBinaryBitLogicKind~8u_v256x32i_v256x32i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 fc 44 b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 26 c8 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 d4 44 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 bd dd c4 5e 48 8b e8 48 8b ce e8 f2 c4 43 ff 8b c8 e8 5b ab 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 25 19 00 ff 48 8b d0 48 8b cb e8 42 cc 02 ff 48 8b cb e8 da 90 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x32i_v256x32i[599] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 bb 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 e9 7f 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 6f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 55 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 33 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 19 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 f7 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 dd 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bb 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 aa 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 99 00 00 00 c4 c1 7d 10 00 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 80 00 00 00 c4 c1 7d 10 01 c5 fd 76 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6a c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4b c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 34 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 ec 65 b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 16 e9 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 c4 65 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 ad fe c5 5e 48 8b e8 48 8b ce e8 22 e8 44 ff 8b c8 e8 4b cc 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 15 3a 01 ff 48 8b d0 48 8b cb e8 82 ed 03 ff 48 8b cb e8 ca b1 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -4980,38 +4980,38 @@
 01d2h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01d3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01d4h ret                                     ; RET || C3 || encoded[1]{c3}
-01d5h mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 44 b2 5e}
+01d5h mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01dfh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 65 b3 5e}
 01e4h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01e7h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01ebh mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 c8 ac 5e}
+01f5h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 e9 ad 5e}
 01fah mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-01fdh mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 44 b2 5e}
+01fdh mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0207h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 65 b3 5e}
 020ch mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 020fh mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0214h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd dd c4 5e}
+0214h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+021eh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad fe c5 5e}
 0223h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 0226h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0229h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 c4 43 ff}
+0229h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 e8 44 ff}
 022eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b ab 01 ff}
+0230h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b cc 02 ff}
 0235h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0238h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 023bh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 19 00 ff}
+023eh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 3a 01 ff}
 0243h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 0246h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0249h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 cc 02 ff}
+0249h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 ed 03 ff}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da 90 a9 5e}
+0251h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca b1 aa 5e}
 0256h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> eval<ulong>(BinaryBitLogicKind:byte kind, Vector256<ulong> a, Vector256<ulong> b)
-; eval_gBinaryBitLogicKind~8u_v256x64u_v256x64u[607] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 c3 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 e9 86 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 76 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 5c 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 39 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 1f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 fc 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 e2 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bf 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 ae 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 9d 00 00 00 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 83 00 00 00 c4 c1 7d 10 01 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6c c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 35 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 04 42 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 2e c5 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 dc 41 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 c5 da c4 5e 48 8b e8 48 8b ce e8 fa c1 43 ff 8b c8 e8 63 a8 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 2d 16 00 ff 48 8b d0 48 8b cb e8 4a c9 02 ff 48 8b cb e8 e2 8d a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x64u_v256x64u[607] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 c3 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 e9 86 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 76 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 5c 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 39 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 1f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 fc 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 e2 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bf 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 ae 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 9d 00 00 00 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 83 00 00 00 c4 c1 7d 10 01 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6c c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 35 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 f4 62 b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 1e e6 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 cc 62 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 b5 fb c5 5e 48 8b e8 48 8b ce e8 2a e5 44 ff 8b c8 e8 53 c9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 1d 37 01 ff 48 8b d0 48 8b cb e8 8a ea 03 ff 48 8b cb e8 d2 ae aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5134,38 +5134,38 @@
 01dah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01dbh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01dch ret                                     ; RET || C3 || encoded[1]{c3}
-01ddh mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01e7h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 42 b2 5e}
+01ddh mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01e7h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 62 b3 5e}
 01ech mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01efh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01f3h mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-01fdh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e c5 ac 5e}
+01fdh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e e6 ad 5e}
 0202h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0205h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-020fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 41 b2 5e}
+0205h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+020fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc 62 b3 5e}
 0214h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0217h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-021ch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0226h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 da c4 5e}
+021ch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0226h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 fb c5 5e}
 022bh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 022eh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0231h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa c1 43 ff}
+0231h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a e5 44 ff}
 0236h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0238h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 a8 01 ff}
+0238h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 c9 02 ff}
 023dh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0240h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0243h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0246h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 16 00 ff}
+0246h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d 37 01 ff}
 024bh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a c9 02 ff}
+0251h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a ea 03 ff}
 0256h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0259h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 8d a9 5e}
+0259h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 ae aa 5e}
 025eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> eval<long>(BinaryBitLogicKind:byte kind, Vector256<long> a, Vector256<long> b)
-; eval_gBinaryBitLogicKind~8u_v256x64i_v256x64i[607] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 c3 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 e9 86 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 76 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 5c 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 39 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 1f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 fc 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 e2 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bf 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 ae 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 9d 00 00 00 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 83 00 00 00 c4 c1 7d 10 01 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6c c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 35 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 80 48 cc c6 f7 7f 00 00 e8 14 3f b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 3e c2 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 ec 3e b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 d5 d7 c4 5e 48 8b e8 48 8b ce e8 0a bf 43 ff 8b c8 e8 73 a5 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 3d 13 00 ff 48 8b d0 48 8b cb e8 5a c6 02 ff 48 8b cb e8 f2 8a a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryBitLogicKind~8u_v256x64i_v256x64i[607] = {57 56 55 53 48 83 ec 28 c5 f8 77 8b f2 40 0f b6 c6 83 f8 0f 0f 87 c3 01 00 00 8b c0 48 8d 15 65 02 00 00 8b 14 82 4c 8d 15 e0 ff ff ff 49 03 d2 ff e2 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 e9 86 01 00 00 c5 fc 57 c0 c5 fd 11 01 48 8b c1 e9 76 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c5 fd 11 01 48 8b c1 e9 5c 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 39 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c5 fd 11 01 48 8b c1 e9 1f 01 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 fc 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 e2 00 00 00 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 bf 00 00 00 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 e9 ae 00 00 00 c4 c1 7d 10 01 c5 fd 11 01 48 8b c1 e9 9d 00 00 00 c4 c1 7d 10 00 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 e9 83 00 00 00 c4 c1 7d 10 01 c4 e2 7d 29 c8 c5 fd ef c1 c5 fd 11 01 48 8b c1 eb 6c c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 4c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd df c1 c5 fd 11 01 48 8b c1 eb 35 c4 c1 7d 10 00 c4 c1 7d 10 09 c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 c5 fd 11 01 48 8b c1 eb 15 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 f5 df c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 40 1d d2 c6 f7 7f 00 00 e8 04 60 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 2e e3 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 dc 5f b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 c5 f8 c5 5e 48 8b e8 48 8b ce e8 3a e2 44 ff 8b c8 e8 63 c6 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 2d 34 01 ff 48 8b d0 48 8b cb e8 9a e7 03 ff 48 8b cb e8 e2 ab aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5288,38 +5288,38 @@
 01dah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 01dbh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 01dch ret                                     ; RET || C3 || encoded[1]{c3}
-01ddh mov rcx,7ff7c6cc4880h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 48 cc c6 f7 7f 00 00}
-01e7h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 3f b2 5e}
+01ddh mov rcx,7ff7c6d21d40h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 1d d2 c6 f7 7f 00 00}
+01e7h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 60 b3 5e}
 01ech mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 01efh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 01f3h mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-01fdh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e c2 ac 5e}
+01fdh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e e3 ad 5e}
 0202h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0205h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-020fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 3e b2 5e}
+0205h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+020fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 5f b3 5e}
 0214h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0217h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-021ch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0226h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 d7 c4 5e}
+021ch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0226h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 f8 c5 5e}
 022bh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 022eh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0231h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a bf 43 ff}
+0231h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a e2 44 ff}
 0236h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0238h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 a5 01 ff}
+0238h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 c6 02 ff}
 023dh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 0240h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 0243h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-0246h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d 13 00 ff}
+0246h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 34 01 ff}
 024bh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 024eh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0251h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a c6 02 ff}
+0251h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a e7 03 ff}
 0256h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-0259h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 8a a9 5e}
+0259h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ab aa 5e}
 025eh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> eval<byte>(TernaryBitLogicKind:byte kind, Vector128<byte> x, Vector128<byte> y, Vector128<byte> z)
 ; eval_gTernaryBitLogicKind~8u_v128x8u_v128x8u_v128x8u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 e2 f5 ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5334,7 +5334,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73824b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f5 ff ff}
+0031h call 7ff7c73703c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f5 ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5351,7 +5351,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> eval<sbyte>(TernaryBitLogicKind:byte kind, Vector128<sbyte> x, Vector128<sbyte> y, Vector128<sbyte> z)
 ; eval_gTernaryBitLogicKind~8u_v128x8i_v128x8i_v128x8i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 e2 f5 ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5366,7 +5366,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7382538h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f5 ff ff}
+0031h call 7ff7c7370448h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f5 ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5383,7 +5383,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> eval<ushort>(TernaryBitLogicKind:byte kind, Vector128<ushort> x, Vector128<ushort> y, Vector128<ushort> z)
 ; eval_gTernaryBitLogicKind~8u_v128x16u_v128x16u_v128x16u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 aa f5 ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5398,7 +5398,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7382580h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa f5 ff ff}
+0031h call 7ff7c7370490h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa f5 ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5415,7 +5415,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> eval<short>(TernaryBitLogicKind:byte kind, Vector128<short> x, Vector128<short> y, Vector128<short> z)
 ; eval_gTernaryBitLogicKind~8u_v128x16i_v128x16i_v128x16i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 c2 fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5430,7 +5430,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 fb ff ff}
+0031h call 7ff7c7370f28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5447,7 +5447,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> eval<uint>(TernaryBitLogicKind:byte kind, Vector128<uint> x, Vector128<uint> y, Vector128<uint> z)
 ; eval_gTernaryBitLogicKind~8u_v128x32u_v128x32u_v128x32u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 8a fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5462,7 +5462,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383060h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a fb ff ff}
+0031h call 7ff7c7370f70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5479,7 +5479,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> eval<int>(TernaryBitLogicKind:byte kind, Vector128<int> x, Vector128<int> y, Vector128<int> z)
 ; eval_gTernaryBitLogicKind~8u_v128x32i_v128x32i_v128x32i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 52 fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5494,7 +5494,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73830a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 fb ff ff}
+0031h call 7ff7c7370fb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5511,7 +5511,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> eval<ulong>(TernaryBitLogicKind:byte kind, Vector128<ulong> x, Vector128<ulong> y, Vector128<ulong> z)
 ; eval_gTernaryBitLogicKind~8u_v128x64u_v128x64u_v128x64u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 1a fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5526,7 +5526,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73830f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a fb ff ff}
+0031h call 7ff7c7371000h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5543,7 +5543,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> eval<long>(TernaryBitLogicKind:byte kind, Vector128<long> x, Vector128<long> y, Vector128<long> z)
 ; eval_gTernaryBitLogicKind~8u_v128x64i_v128x64i_v128x64i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 e2 fa ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5558,7 +5558,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 fa ff ff}
+0031h call 7ff7c7371048h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 fa ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5575,7 +5575,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> eval<byte>(TernaryBitLogicKind:byte kind, Vector256<byte> x, Vector256<byte> y, Vector256<byte> z)
 ; eval_gTernaryBitLogicKind~8u_v256x8u_v256x8u_v256x8u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 2a fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5590,7 +5590,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383200h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a fb ff ff}
+0031h call 7ff7c7371110h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5607,7 +5607,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> eval<sbyte>(TernaryBitLogicKind:byte kind, Vector256<sbyte> x, Vector256<sbyte> y, Vector256<sbyte> z)
 ; eval_gTernaryBitLogicKind~8u_v256x8i_v256x8i_v256x8i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 2a fb ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5622,7 +5622,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383280h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a fb ff ff}
+0031h call 7ff7c7371190h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a fb ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5639,7 +5639,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> eval<ushort>(TernaryBitLogicKind:byte kind, Vector256<ushort> x, Vector256<ushort> y, Vector256<ushort> z)
 ; eval_gTernaryBitLogicKind~8u_v256x16u_v256x16u_v256x16u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 f2 fa ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5654,7 +5654,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73832c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 fa ff ff}
+0031h call 7ff7c73711d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f2 fa ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5671,7 +5671,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> eval<short>(TernaryBitLogicKind:byte kind, Vector256<short> x, Vector256<short> y, Vector256<short> z)
 ; eval_gTernaryBitLogicKind~8u_v256x16i_v256x16i_v256x16i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 ba fa ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5686,7 +5686,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba fa ff ff}
+0031h call 7ff7c7371220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba fa ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5703,7 +5703,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> eval<uint>(TernaryBitLogicKind:byte kind, Vector256<uint> x, Vector256<uint> y, Vector256<uint> z)
 ; eval_gTernaryBitLogicKind~8u_v256x32u_v256x32u_v256x32u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 82 fa ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5718,7 +5718,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383358h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 fa ff ff}
+0031h call 7ff7c7371268h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 fa ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5735,7 +5735,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> eval<int>(TernaryBitLogicKind:byte kind, Vector256<int> x, Vector256<int> y, Vector256<int> z)
 ; eval_gTernaryBitLogicKind~8u_v256x32i_v256x32i_v256x32i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 4a fa ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5750,7 +5750,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73833a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a fa ff ff}
+0031h call 7ff7c73712b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a fa ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5767,7 +5767,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> eval<ulong>(TernaryBitLogicKind:byte kind, Vector256<ulong> x, Vector256<ulong> y, Vector256<ulong> z)
 ; eval_gTernaryBitLogicKind~8u_v256x64u_v256x64u_v256x64u[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 12 f6 ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5782,7 +5782,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c73833e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 f6 ff ff}
+0031h call 7ff7c73712f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 f6 ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5799,7 +5799,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> eval<long>(TernaryBitLogicKind:byte kind, Vector256<long> x, Vector256<long> y, Vector256<long> z)
 ; eval_gTernaryBitLogicKind~8u_v256x64i_v256x64i_v256x64i[87] = {57 56 55 53 48 83 ec 38 48 8b d9 49 8b f0 49 8b f9 48 8b ac 24 80 00 00 00 c6 44 24 28 00 48 0f be 4c 24 28 88 4c 24 30 0f b6 d2 48 0f be 4c 24 30 e8 b2 f5 ff ff 48 89 6c 24 20 48 8b 48 08 48 8b d3 4c 8b c6 4c 8b cf ff 50 18 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5814,7 +5814,7 @@
 0024h mov [rsp+30h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 30}
 0028h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002bh movsx rcx,byte ptr [rsp+30h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 4c 24 30}
-0031h call 7ff7c7383408h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 f5 ff ff}
+0031h call 7ff7c7371318h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 f5 ff ff}
 0036h mov [rsp+20h],rbp                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 6c 24 20}
 003bh mov rcx,[rax+8]                         ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 48 08}
 003fh mov rdx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d3}
@@ -5830,8 +5830,8 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> eval<byte>(BinaryArithmeticKind:byte kind, Vector128<byte> x, Vector128<byte> y)
-; eval_gBinaryArithmeticKind~8u_v128x8u_v128x8u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f8 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fc c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 2d b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 d9 b0 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 2d b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c6 c4 5e 48 8b e8 48 8b ce e8 a5 ad 43 ff 8b c8 e8 0e 94 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 01 00 ff 48 8b d0 48 8b cb e8 f5 b4 02 ff 48 8b cb e8 8d 79 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x8u_v128x8u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f8 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fc c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 4e b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 c9 d1 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 4e b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e7 c5 5e 48 8b e8 48 8b ce e8 d5 d0 44 ff 8b c8 e8 fe b4 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 22 01 ff 48 8b d0 48 8b cb e8 35 d6 03 ff 48 8b cb e8 7d 9a aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5864,38 +5864,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 2d b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 4e b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 b0 ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 d1 ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 2d b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 4e b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c6 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e7 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 ad 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 d0 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 94 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe b4 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 01 00 ff}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 22 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 b4 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d6 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 79 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 9a aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> eval<sbyte>(BinaryArithmeticKind:byte kind, Vector128<sbyte> x, Vector128<sbyte> y)
-; eval_gBinaryArithmeticKind~8u_v128x8i_v128x8i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f8 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fc c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 2c b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 d9 af ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 2c b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c5 c4 5e 48 8b e8 48 8b ce e8 a5 ac 43 ff 8b c8 e8 0e 93 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 00 00 ff 48 8b d0 48 8b cb e8 f5 b3 02 ff 48 8b cb e8 8d 78 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x8i_v128x8i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f8 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fc c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 4d b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 c9 d0 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 4d b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e6 c5 5e 48 8b e8 48 8b ce e8 d5 cf 44 ff 8b c8 e8 fe b3 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 21 01 ff 48 8b d0 48 8b cb e8 35 d5 03 ff 48 8b cb e8 7d 99 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5928,38 +5928,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 2c b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 4d b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 af ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 d0 ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 2c b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 4d b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c5 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e6 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 ac 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 cf 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 93 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe b3 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 00 00 ff}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 21 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 b3 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d5 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 78 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 99 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> eval<ushort>(BinaryArithmeticKind:byte kind, Vector128<ushort> x, Vector128<ushort> y)
-; eval_gBinaryArithmeticKind~8u_v128x16u_v128x16u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 2b b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 d9 ae ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 2b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c4 c4 5e 48 8b e8 48 8b ce e8 a5 ab 43 ff 8b c8 e8 0e 92 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 ff ff fe 48 8b d0 48 8b cb e8 f5 b2 02 ff 48 8b cb e8 8d 77 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x16u_v128x16u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 4c b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 c9 cf ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 4c b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e5 c5 5e 48 8b e8 48 8b ce e8 d5 ce 44 ff 8b c8 e8 fe b2 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 20 01 ff 48 8b d0 48 8b cb e8 35 d4 03 ff 48 8b cb e8 7d 98 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -5992,38 +5992,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 2b b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 4c b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 ae ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 cf ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 2b b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 4c b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c4 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e5 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 ab 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 ce 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 92 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe b2 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 ff ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 20 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 b2 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d4 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 77 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 98 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> eval<short>(BinaryArithmeticKind:byte kind, Vector128<short> x, Vector128<short> y)
-; eval_gBinaryArithmeticKind~8u_v128x16i_v128x16i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 2a b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 d9 ad ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 2a b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c3 c4 5e 48 8b e8 48 8b ce e8 a5 aa 43 ff 8b c8 e8 0e 91 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 fe ff fe 48 8b d0 48 8b cb e8 f5 b1 02 ff 48 8b cb e8 8d 76 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x16i_v128x16i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 f9 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fd c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 4b b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 c9 ce ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 4b b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e4 c5 5e 48 8b e8 48 8b ce e8 d5 cd 44 ff 8b c8 e8 fe b1 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 1f 01 ff 48 8b d0 48 8b cb e8 35 d3 03 ff 48 8b cb e8 7d 97 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6056,38 +6056,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 2a b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 4b b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 ad ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 ce ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 2a b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 4b b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c3 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e4 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 aa 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 cd 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 91 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe b1 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 fe ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 1f 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 b1 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d3 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 76 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 97 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> eval<uint>(BinaryArithmeticKind:byte kind, Vector128<uint> x, Vector128<uint> y)
-; eval_gBinaryArithmeticKind~8u_v128x32u_v128x32u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fa c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fe c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 29 b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 d9 ac ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 29 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c2 c4 5e 48 8b e8 48 8b ce e8 a5 a9 43 ff 8b c8 e8 0e 90 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 fd ff fe 48 8b d0 48 8b cb e8 f5 b0 02 ff 48 8b cb e8 8d 75 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x32u_v128x32u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fa c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fe c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 4a b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 c9 cd ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 4a b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e3 c5 5e 48 8b e8 48 8b ce e8 d5 cc 44 ff 8b c8 e8 fe b0 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 1e 01 ff 48 8b d0 48 8b cb e8 35 d2 03 ff 48 8b cb e8 7d 96 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6120,38 +6120,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 29 b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 4a b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 ac ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 cd ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 29 b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 4a b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c2 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e3 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 a9 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 cc 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 90 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe b0 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 fd ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 1e 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 b0 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d2 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 75 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 96 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> eval<int>(BinaryArithmeticKind:byte kind, Vector128<int> x, Vector128<int> y)
-; eval_gBinaryArithmeticKind~8u_v128x32i_v128x32i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fa c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fe c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 28 b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 d9 ab ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 28 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c1 c4 5e 48 8b e8 48 8b ce e8 a5 a8 43 ff 8b c8 e8 0e 8f 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 fc ff fe 48 8b d0 48 8b cb e8 f5 af 02 ff 48 8b cb e8 8d 74 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x32i_v128x32i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fa c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fe c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 49 b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 c9 cc ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 49 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e2 c5 5e 48 8b e8 48 8b ce e8 d5 cb 44 ff 8b c8 e8 fe af 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 1d 01 ff 48 8b d0 48 8b cb e8 35 d1 03 ff 48 8b cb e8 7d 95 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6184,38 +6184,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 28 b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 49 b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 ab ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 cc ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 28 b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 49 b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c1 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e2 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 a8 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 cb 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 8f 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe af 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 fc ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 1d 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 af 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d1 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 74 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 95 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> eval<ulong>(BinaryArithmeticKind:byte kind, Vector128<ulong> x, Vector128<ulong> y)
-; eval_gBinaryArithmeticKind~8u_v128x64u_v128x64u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fb c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 d4 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 27 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 d9 aa ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 27 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 c0 c4 5e 48 8b e8 48 8b ce e8 a5 a7 43 ff 8b c8 e8 0e 8e 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 fb ff fe 48 8b d0 48 8b cb e8 f5 ae 02 ff 48 8b cb e8 8d 73 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x64u_v128x64u[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fb c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 d4 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 48 b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 c9 cb ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 48 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 e1 c5 5e 48 8b e8 48 8b ce e8 d5 ca 44 ff 8b c8 e8 fe ae 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 1c 01 ff 48 8b d0 48 8b cb e8 35 d0 03 ff 48 8b cb e8 7d 94 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6248,38 +6248,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 27 b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 48 b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 aa ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 cb ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 27 b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 48 b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 c0 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 e1 c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 a7 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 ca 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 8e 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe ae 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 fb ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 1c 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 ae 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d0 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 73 a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 94 aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> eval<long>(BinaryArithmeticKind:byte kind, Vector128<long> x, Vector128<long> y)
-; eval_gBinaryArithmeticKind~8u_v128x64i_v128x64i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fb c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 d4 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 af 22 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 d9 a5 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 87 22 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 70 bb c4 5e 48 8b e8 48 8b ce e8 a5 a2 43 ff 8b c8 e8 0e 89 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 f6 ff fe 48 8b d0 48 8b cb e8 f5 a9 02 ff 48 8b cb e8 8d 6e a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x64i_v128x64i[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 fb c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 d4 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 9f 43 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 c9 c6 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 77 43 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 60 dc c5 5e 48 8b e8 48 8b ce e8 d5 c5 44 ff 8b c8 e8 fe a9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 c8 17 01 ff 48 8b d0 48 8b cb e8 35 cb 03 ff 48 8b cb e8 7d 8f aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6312,38 +6312,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 22 b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f 43 b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 a5 ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 c6 ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 22 b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 43 b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 bb c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 dc c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 a2 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 c5 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 89 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe a9 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 f6 ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 17 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 a9 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 cb 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 6e a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 8f aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> eval<float>(BinaryArithmeticKind:byte kind, Vector128<float> x, Vector128<float> y)
-; eval_gBinaryArithmeticKind~8u_v128x32f_v128x32f[207] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 31 c4 c1 79 10 00 c4 c1 79 10 09 c5 f8 5c c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f8 58 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b4 21 b2 5e 48 8b f8 40 88 77 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 de a4 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 8c 21 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 75 ba c4 5e 48 8b e8 48 8b ce e8 aa a1 43 ff 8b c8 e8 13 88 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 dd f5 ff fe 48 8b d0 48 8b cb e8 fa a8 02 ff 48 8b cb e8 92 6d a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x32f_v128x32f[207] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 31 c4 c1 79 10 00 c4 c1 79 10 09 c5 f8 5c c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c5 f8 58 c0 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a4 42 b3 5e 48 8b f8 40 88 77 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 ce c5 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 7c 42 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 65 db c5 5e 48 8b e8 48 8b ce e8 da c4 44 ff 8b c8 e8 03 a9 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 cd 16 01 ff 48 8b d0 48 8b cb e8 3a ca 03 ff 48 8b cb e8 82 8e aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6375,38 +6375,38 @@
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
-004dh mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0057h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 21 b2 5e}
+004dh mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0057h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 42 b3 5e}
 005ch mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 005fh mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0063h mov rcx,7ff7c635af58h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 af 35 c6 f7 7f 00 00}
-006dh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de a4 ac 5e}
+006dh call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce c5 ad 5e}
 0072h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0075h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-007fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c 21 b2 5e}
+0075h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+007fh call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c 42 b3 5e}
 0084h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0087h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-008ch mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-0096h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 ba c4 5e}
+008ch mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+0096h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 db c5 5e}
 009bh mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 009eh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a1h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa a1 43 ff}
+00a1h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da c4 44 ff}
 00a6h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00a8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 88 01 ff}
+00a8h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 a9 02 ff}
 00adh mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b0h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b3h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00b6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f5 ff fe}
+00b6h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 16 01 ff}
 00bbh mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00beh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c1h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa a8 02 ff}
+00c1h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a ca 03 ff}
 00c6h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c9h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 6d a9 5e}
+00c9h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 8e aa 5e}
 00ceh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> eval<double>(BinaryArithmeticKind:byte kind, Vector128<double> x, Vector128<double> y)
-; eval_gBinaryArithmeticKind~8u_v128x64f_v128x64f[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 5c c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 58 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 bf 20 b2 5e 48 8b f8 40 88 77 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 e9 a3 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 97 20 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 80 b9 c4 5e 48 8b e8 48 8b ce e8 b5 a0 43 ff 8b c8 e8 1e 87 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e8 f4 ff fe 48 8b d0 48 8b cb e8 05 a8 02 ff 48 8b cb e8 9d 6c a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v128x64f_v128x64f[212] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 21 40 80 fe 02 75 36 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 5c c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 79 10 00 c4 c1 79 10 09 c5 f9 58 c1 c5 f9 11 00 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 af 41 b3 5e 48 8b f8 40 88 77 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 d9 c4 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 87 41 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 70 da c5 5e 48 8b e8 48 8b ce e8 e5 c3 44 ff 8b c8 e8 0e a8 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d8 15 01 ff 48 8b d0 48 8b cb e8 45 c9 03 ff 48 8b cb e8 8d 8d aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6439,38 +6439,38 @@
 004fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0050h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
-0052h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf 20 b2 5e}
+0052h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+005ch call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 41 b3 5e}
 0061h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 0064h mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 0068h mov rcx,7ff7c635b838h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 b8 35 c6 f7 7f 00 00}
-0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 a3 ac 5e}
+0072h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 c4 ad 5e}
 0077h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-007ah mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 20 b2 5e}
+007ah mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+0084h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 41 b3 5e}
 0089h mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 008ch mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0091h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 b9 c4 5e}
+0091h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+009bh call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 70 da c5 5e}
 00a0h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a3h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00a6h call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 a0 43 ff}
+00a6h call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 c3 44 ff}
 00abh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 87 01 ff}
+00adh call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e a8 02 ff}
 00b2h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00b5h mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00b8h mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 f4 ff fe}
+00bbh call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 15 01 ff}
 00c0h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c3h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00c6h call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 a8 02 ff}
+00c6h call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 c9 03 ff}
 00cbh mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d 6c a9 5e}
+00ceh call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 8d aa 5e}
 00d3h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> eval<byte>(BinaryArithmeticKind:byte kind, Vector256<byte> x, Vector256<byte> y)
-; eval_gBinaryArithmeticKind~8u_v256x8u_v256x8u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f8 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fc c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1f b2 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 e3 a2 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1f b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b8 c4 5e 48 8b e8 48 8b ce e8 af 9f 43 ff 8b c8 e8 18 86 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 f3 ff fe 48 8b d0 48 8b cb e8 ff a6 02 ff 48 8b cb e8 97 6b a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x8u_v256x8u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f8 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fc c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 40 b3 5e 48 8b f8 40 88 77 08 48 b9 58 77 35 c6 f7 7f 00 00 e8 d3 c3 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 40 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d9 c5 5e 48 8b e8 48 8b ce e8 df c2 44 ff 8b c8 e8 08 a7 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 14 01 ff 48 8b d0 48 8b cb e8 3f c8 03 ff 48 8b cb e8 87 8c aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6505,38 +6505,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1f b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 40 b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6357758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 77 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 a2 ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 c3 ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1f b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 40 b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b8 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d9 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9f 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df c2 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 86 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a7 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f3 ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 14 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a6 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c8 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 6b a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 8c aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> eval<sbyte>(BinaryArithmeticKind:byte kind, Vector256<sbyte> x, Vector256<sbyte> y)
-; eval_gBinaryArithmeticKind~8u_v256x8i_v256x8i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f8 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fc c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1e b2 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 e3 a1 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1e b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b7 c4 5e 48 8b e8 48 8b ce e8 af 9e 43 ff 8b c8 e8 18 85 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 f2 ff fe 48 8b d0 48 8b cb e8 ff a5 02 ff 48 8b cb e8 97 6a a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x8i_v256x8i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f8 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fc c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3f b3 5e 48 8b f8 40 88 77 08 48 b9 68 6f 35 c6 f7 7f 00 00 e8 d3 c2 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3f b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d8 c5 5e 48 8b e8 48 8b ce e8 df c1 44 ff 8b c8 e8 08 a6 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 13 01 ff 48 8b d0 48 8b cb e8 3f c7 03 ff 48 8b cb e8 87 8b aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6571,38 +6571,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1e b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3f b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6356f68h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 68 6f 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 a1 ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 c2 ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1e b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3f b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b7 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d8 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9e 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df c1 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 85 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a6 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f2 ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 13 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a5 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c7 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 6a a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 8b aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> eval<ushort>(BinaryArithmeticKind:byte kind, Vector256<ushort> x, Vector256<ushort> y)
-; eval_gBinaryArithmeticKind~8u_v256x16u_v256x16u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f9 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fd c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1d b2 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 e3 a0 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1d b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b6 c4 5e 48 8b e8 48 8b ce e8 af 9d 43 ff 8b c8 e8 18 84 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 f1 ff fe 48 8b d0 48 8b cb e8 ff a4 02 ff 48 8b cb e8 97 69 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x16u_v256x16u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f9 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fd c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3e b3 5e 48 8b f8 40 88 77 08 48 b9 38 87 35 c6 f7 7f 00 00 e8 d3 c1 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3e b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d7 c5 5e 48 8b e8 48 8b ce e8 df c0 44 ff 8b c8 e8 08 a5 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 12 01 ff 48 8b d0 48 8b cb e8 3f c6 03 ff 48 8b cb e8 87 8a aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6637,38 +6637,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1d b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3e b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6358738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 87 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 a0 ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 c1 ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1d b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3e b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b6 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d7 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9d 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df c0 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 84 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a5 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f1 ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 12 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a4 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c6 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 69 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 8a aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> eval<short>(BinaryArithmeticKind:byte kind, Vector256<short> x, Vector256<short> y)
-; eval_gBinaryArithmeticKind~8u_v256x16i_v256x16i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f9 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fd c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1c b2 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 e3 9f ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1c b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b5 c4 5e 48 8b e8 48 8b ce e8 af 9c 43 ff 8b c8 e8 18 83 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 f0 ff fe 48 8b d0 48 8b cb e8 ff a3 02 ff 48 8b cb e8 97 68 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x16i_v256x16i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd f9 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fd c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3d b3 5e 48 8b f8 40 88 77 08 48 b9 48 7f 35 c6 f7 7f 00 00 e8 d3 c0 ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3d b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d6 c5 5e 48 8b e8 48 8b ce e8 df bf 44 ff 8b c8 e8 08 a4 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 11 01 ff 48 8b d0 48 8b cb e8 3f c5 03 ff 48 8b cb e8 87 89 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6703,38 +6703,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1c b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3d b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6357f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 7f 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9f ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 c0 ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1c b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3d b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b5 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d6 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9c 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df bf 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 83 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a4 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f0 ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 11 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a3 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c5 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 68 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 89 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> eval<uint>(BinaryArithmeticKind:byte kind, Vector256<uint> x, Vector256<uint> y)
-; eval_gBinaryArithmeticKind~8u_v256x32u_v256x32u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fa c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fe c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1b b2 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 e3 9e ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1b b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b4 c4 5e 48 8b e8 48 8b ce e8 af 9b 43 ff 8b c8 e8 18 82 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 ef ff fe 48 8b d0 48 8b cb e8 ff a2 02 ff 48 8b cb e8 97 67 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x32u_v256x32u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fa c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fe c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3c b3 5e 48 8b f8 40 88 77 08 48 b9 d8 96 35 c6 f7 7f 00 00 e8 d3 bf ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3c b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d5 c5 5e 48 8b e8 48 8b ce e8 df be 44 ff 8b c8 e8 08 a3 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 10 01 ff 48 8b d0 48 8b cb e8 3f c4 03 ff 48 8b cb e8 87 88 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6769,38 +6769,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1b b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3c b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c63596d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 96 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9e ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 bf ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1b b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3c b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b4 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d5 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9b 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df be 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 82 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a3 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ef ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 10 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a2 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c4 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 67 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 88 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> eval<int>(BinaryArithmeticKind:byte kind, Vector256<int> x, Vector256<int> y)
-; eval_gBinaryArithmeticKind~8u_v256x32i_v256x32i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fa c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fe c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 1a b2 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 e3 9d ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 1a b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b3 c4 5e 48 8b e8 48 8b ce e8 af 9a 43 ff 8b c8 e8 18 81 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 ee ff fe 48 8b d0 48 8b cb e8 ff a1 02 ff 48 8b cb e8 97 66 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x32i_v256x32i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fa c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fe c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3b b3 5e 48 8b f8 40 88 77 08 48 b9 08 8f 35 c6 f7 7f 00 00 e8 d3 be ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3b b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d4 c5 5e 48 8b e8 48 8b ce e8 df bd 44 ff 8b c8 e8 08 a2 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 0f 01 ff 48 8b d0 48 8b cb e8 3f c3 03 ff 48 8b cb e8 87 87 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6835,38 +6835,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 1a b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3b b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6358f08h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 08 8f 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9d ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 be ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 1a b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3b b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b3 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d4 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 9a 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df bd 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 81 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a2 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ee ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0f 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a1 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c3 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 66 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 87 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> eval<ulong>(BinaryArithmeticKind:byte kind, Vector256<ulong> x, Vector256<ulong> y)
-; eval_gBinaryArithmeticKind~8u_v256x64u_v256x64u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fb c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd d4 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 19 b2 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 e3 9c ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 19 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b2 c4 5e 48 8b e8 48 8b ce e8 af 99 43 ff 8b c8 e8 18 80 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 ed ff fe 48 8b d0 48 8b cb e8 ff a0 02 ff 48 8b cb e8 97 65 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x64u_v256x64u[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fb c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd d4 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 3a b3 5e 48 8b f8 40 88 77 08 48 b9 78 a6 35 c6 f7 7f 00 00 e8 d3 bd ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 3a b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d3 c5 5e 48 8b e8 48 8b ce e8 df bc 44 ff 8b c8 e8 08 a1 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 0e 01 ff 48 8b d0 48 8b cb e8 3f c2 03 ff 48 8b cb e8 87 86 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6901,38 +6901,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 19 b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 3a b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c635a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 78 a6 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9c ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 bd ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 19 b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 3a b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b2 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d3 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 99 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df bc 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 80 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a1 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ed ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0e 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff a0 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c2 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 65 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 86 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> eval<long>(BinaryArithmeticKind:byte kind, Vector256<long> x, Vector256<long> y)
-; eval_gBinaryArithmeticKind~8u_v256x64i_v256x64i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fb c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd d4 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 18 b2 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 e3 9b ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 18 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b1 c4 5e 48 8b e8 48 8b ce e8 af 98 43 ff 8b c8 e8 18 7f 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 ec ff fe 48 8b d0 48 8b cb e8 ff 9f 02 ff 48 8b cb e8 97 64 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x64i_v256x64i[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd fb c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd d4 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 39 b3 5e 48 8b f8 40 88 77 08 48 b9 a8 9e 35 c6 f7 7f 00 00 e8 d3 bc ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 39 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d2 c5 5e 48 8b e8 48 8b ce e8 df bb 44 ff 8b c8 e8 08 a0 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 0d 01 ff 48 8b d0 48 8b cb e8 3f c1 03 ff 48 8b cb e8 87 85 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -6967,38 +6967,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 18 b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 39 b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c6359ea8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a8 9e 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9b ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 bc ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 18 b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 39 b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b1 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d2 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 98 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df bb 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 7f 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 a0 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ec ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0d 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 9f 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c1 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 64 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 85 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> eval<float>(BinaryArithmeticKind:byte kind, Vector256<float> x, Vector256<float> y)
-; eval_gBinaryArithmeticKind~8u_v256x32f_v256x32f[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fc 5c c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fc 58 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 17 b2 5e 48 8b f8 40 88 77 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 e3 9a ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 17 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a b0 c4 5e 48 8b e8 48 8b ce e8 af 97 43 ff 8b c8 e8 18 7e 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 eb ff fe 48 8b d0 48 8b cb e8 ff 9e 02 ff 48 8b cb e8 97 63 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x32f_v256x32f[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fc 5c c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fc 58 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 38 b3 5e 48 8b f8 40 88 77 08 48 b9 58 af 35 c6 f7 7f 00 00 e8 d3 bb ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 38 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d1 c5 5e 48 8b e8 48 8b ce e8 df ba 44 ff 8b c8 e8 08 9f 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 0c 01 ff 48 8b d0 48 8b cb e8 3f c0 03 ff 48 8b cb e8 87 84 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -7033,38 +7033,38 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 17 b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 38 b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c635af58h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 af 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9a ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 bb ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 17 b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 38 b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a b0 c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d1 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 97 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df ba 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 7e 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 9f 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 eb ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0c 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 9e 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f c0 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 63 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 84 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> eval<double>(BinaryArithmeticKind:byte kind, Vector256<double> x, Vector256<double> y)
-; eval_gBinaryArithmeticKind~8u_v256x64f_v256x64f[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 5c c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 58 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 10 4f cc c6 f7 7f 00 00 e8 b9 16 b2 5e 48 8b f8 40 88 77 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 e3 99 ac 5e 48 8b f0 48 b9 d0 e5 70 c6 f7 7f 00 00 e8 91 16 b2 5e 48 8b d8 b9 4c 04 00 00 48 ba 00 91 60 c6 f7 7f 00 00 e8 7a af c4 5e 48 8b e8 48 8b ce e8 af 96 43 ff 8b c8 e8 18 7d 01 ff 4c 8b c0 48 8b cd 48 8b d7 e8 e2 ea ff fe 48 8b d0 48 8b cb e8 ff 9d 02 ff 48 8b cb e8 97 62 a9 5e cc}
-; TermCode = INTRx2
+; eval_gBinaryArithmeticKind~8u_v256x64f_v256x64f[218] = {57 56 55 53 48 83 ec 28 c5 f8 77 48 8b c1 8b f2 40 80 fe 01 74 24 40 80 fe 02 75 3c c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 5c c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 c4 c1 7d 10 00 c4 c1 7d 10 09 c5 fd 58 c1 c5 fd 11 00 c5 f8 77 48 83 c4 28 5b 5d 5e 5f c3 48 b9 d0 23 d2 c6 f7 7f 00 00 e8 a9 37 b3 5e 48 8b f8 40 88 77 08 48 b9 38 b8 35 c6 f7 7f 00 00 e8 d3 ba ad 5e 48 8b f0 48 b9 f8 e7 70 c6 f7 7f 00 00 e8 81 37 b3 5e 48 8b d8 b9 4c 04 00 00 48 ba e0 91 60 c6 f7 7f 00 00 e8 6a d0 c5 5e 48 8b e8 48 8b ce e8 df b9 44 ff 8b c8 e8 08 9e 02 ff 4c 8b c0 48 8b cd 48 8b d7 e8 d2 0b 01 ff 48 8b d0 48 8b cb e8 3f bf 03 ff 48 8b cb e8 87 83 aa 5e cc}
+; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbp                                ; PUSH r64 || 50+ro || encoded[1]{55}
@@ -7099,31 +7099,31 @@
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
-0058h mov rcx,7ff7c6cc4f10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 4f cc c6 f7 7f 00 00}
-0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 16 b2 5e}
+0058h mov rcx,7ff7c6d223d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 23 d2 c6 f7 7f 00 00}
+0062h call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 37 b3 5e}
 0067h mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 006ah mov [rdi+8],sil                         ; MOV r/m8, r8 || 88 /r || encoded[4]{40 88 77 08}
 006eh mov rcx,7ff7c635b838h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 b8 35 c6 f7 7f 00 00}
-0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 99 ac 5e}
+0078h call 7ff825e4eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 ba ad 5e}
 007dh mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
-0080h mov rcx,7ff7c670e5d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 e5 70 c6 f7 7f 00 00}
-008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 16 b2 5e}
+0080h mov rcx,7ff7c670e7f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 e7 70 c6 f7 7f 00 00}
+008ah call 7ff825ea6cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 81 37 b3 5e}
 008fh mov rbx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d8}
 0092h mov ecx,44ch                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 4c 04 00 00}
-0097h mov rdx,7ff7c6609100h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 00 91 60 c6 f7 7f 00 00}
-00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a af c4 5e}
+0097h mov rdx,7ff7c66091e0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba e0 91 60 c6 f7 7f 00 00}
+00a1h call 7ff825fd05b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a d0 c5 5e}
 00a6h mov rbp,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b e8}
 00a9h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-00ach call 7ff7c67becf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 96 43 ff}
+00ach call 7ff7c67bef30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df b9 44 ff}
 00b1h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 7d 01 ff}
+00b3h call 7ff7c639d360h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 9e 02 ff}
 00b8h mov r8,rax                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c0}
 00bbh mov rcx,rbp                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cd}
 00beh mov rdx,rdi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d7}
-00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 ea ff fe}
+00c1h call 7ff7c6384138h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 0b 01 ff}
 00c6h mov rdx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d0}
 00c9h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00cch call 7ff7c63af460h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 9d 02 ff}
+00cch call 7ff7c63af4b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f bf 03 ff}
 00d1h mov rcx,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b cb}
-00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 62 a9 5e}
+00d4h call 7ff825e1b900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 83 aa 5e}
 00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}

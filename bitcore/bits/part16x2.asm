@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part16x2(ushort src, ref byte dst)
 ; part16x2_16u_8u~ref[109] = {0f 1f 44 00 00 0f b7 c1 0f b6 c8 44 8b c1 41 83 e0 03 44 88 02 44 8b c1 41 c1 e8 02 41 83 e0 03 44 88 42 01 44 8b c1 41 c1 e8 04 41 83 e0 03 44 88 42 02 c1 e9 06 83 e1 03 88 4a 03 c1 f8 08 0f b6 c0 48 83 c2 04 8b c8 83 e1 03 88 0a 8b c8 c1 e9 02 83 e1 03 88 4a 01 8b c8 c1 e9 04 83 e1 03 88 4a 02 c1 e8 06 83 e0 03 88 42 03 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h movzx ecx,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c8}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part16x2(ushort src, Block64<byte> dst)
 ; part16x2_16u_b64x8u[112] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 0f b6 ca 44 8b c1 41 83 e0 03 44 88 00 44 8b c1 41 c1 e8 02 41 83 e0 03 44 88 40 01 44 8b c1 41 c1 e8 04 41 83 e0 03 44 88 40 02 c1 e9 06 83 e1 03 88 48 03 c1 fa 08 0f b6 d2 48 83 c0 04 8b ca 83 e1 03 88 08 8b ca c1 e9 02 83 e1 03 88 48 01 8b ca c1 e9 04 83 e1 03 88 48 02 c1 ea 06 83 e2 03 88 50 03 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
 0008h movzx edx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d1}

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N0 n)
 ; vinsert_32u_v128x32u_n0[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N1 n)
 ; vinsert_32u_v128x32u_n1[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 01 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N2 n)
 ; vinsert_32u_v128x32u_n2[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}
@@ -34,7 +34,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N3 n)
 ; vinsert_32u_v128x32u_n3[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 03 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[r8]                       ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[5]{c4 c1 79 10 00}

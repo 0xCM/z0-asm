@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotl<byte>(in byte src, int shift, ref byte dst, int count)
 ; rotl_g8u~in_32i_8u~ref_32i[72] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 36 44 8b da 41 83 e3 1f f7 da 83 c2 08 83 e2 1f 49 63 ca 49 8d 34 08 40 0f b6 3c 08 41 8b cb 8b df d3 e3 8b ca d3 ff 0b fb 40 0f b6 cf 88 0e 41 ff c2 45 3b d1 7c d9 5b 5e 5f c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -35,7 +35,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotl<ushort>(in ushort src, int shift, ref ushort dst, int count)
 ; rotl_g16u~in_32i_16u~ref_32i[71] = {57 56 53 48 8b c1 45 33 d2 45 85 c9 7e 35 44 8b da 41 83 e3 1f f7 da 83 c2 10 83 e2 1f 49 63 ca 49 8d 34 48 0f b7 3c 48 41 8b cb 8b df d3 e3 8b ca d3 ff 0b fb 0f b7 cf 66 89 0e 41 ff c2 45 3b d1 7c da 5b 5e 5f c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -69,7 +69,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotl<uint>(in uint src, int shift, ref uint dst, int count)
 ; rotl_g32u~in_32i_32u~ref_32i[40] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 19 49 63 ca 4d 8d 1c 88 8b 34 88 8b ca d3 c6 41 89 33 41 ff c2 45 3b d1 7c e7 5e c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -90,7 +90,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void rotl<ulong>(in ulong src, int shift, ref ulong dst, int count)
 ; rotl_g64u~in_32i_64u~ref_32i[42] = {56 48 8b c1 90 45 33 d2 45 85 c9 7e 1b 49 63 ca 4d 8d 1c c8 48 8b 34 c8 8b ca 48 d3 c6 49 89 33 41 ff c2 45 3b d1 7c e5 5e c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -111,7 +111,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte rotl<byte>(byte src, int shift)
 ; rotl_g8u_32i[32] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 08 d3 f8 41 0b c0 0f b6 c0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -127,7 +127,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort rotl<ushort>(ushort src, int shift)
 ; rotl_g16u_32i[32] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c0 41 d3 e0 8b ca f7 d9 83 c1 10 d3 f8 41 0b c0 0f b7 c0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -143,7 +143,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rotl<uint>(uint src, int shift)
 ; rotl_g32u_32i[12] = {0f 1f 44 00 00 8b c1 8b ca d3 c0 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -152,7 +152,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong rotl<ulong>(ulong src, int shift)
 ; rotl_g64u_32i[14] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -161,7 +161,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte rotl<byte>(byte src, int shift, int width)
 ; rotl_g8u_32i_32i[31] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c8 41 d3 e1 44 2b c2 41 8b c8 d3 f8 41 0b c1 0f b6 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -176,7 +176,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort rotl<ushort>(ushort src, int shift, int width)
 ; rotl_g16u_32i_32i[31] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c8 41 d3 e1 44 2b c2 41 8b c8 d3 f8 41 0b c1 0f b7 c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -191,7 +191,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rotl<uint>(uint src, int shift, int width)
 ; rotl_g32u_32i_32i[27] = {0f 1f 44 00 00 8b c1 8b ca 44 8b c8 41 d3 e1 44 2b c2 41 8b c8 d3 e8 41 0b c1 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -205,7 +205,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong rotl<ulong>(ulong src, int shift, int width)
 ; rotl_g64u_32i_32i[29] = {0f 1f 44 00 00 48 8b c1 8b ca 4c 8b c8 49 d3 e1 44 2b c2 41 8b c8 48 d3 e8 49 0b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

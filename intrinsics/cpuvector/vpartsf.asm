@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vpartsf(N128 w, float x0, float x1, float x2, float x3)
 ; vpartsf_n128_32f_32f_32f_32f[43] = {c5 f8 77 66 90 c4 e3 69 21 d3 10 c5 fa 10 44 24 28 c4 e3 69 21 d0 20 c5 fa 10 44 24 30 c4 e3 69 21 c0 30 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vinsertps xmm2,xmm2,xmm3,10h            ; VINSERTPS xmm1, xmm2, xmm3/m32, imm8 || VEX.128.66.0F3A.WIG 21 /r ib || encoded[6]{c4 e3 69 21 d3 10}
@@ -15,7 +15,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vpartsf(N128 w, double x0, double x1)
 ; vpartsf_n128_64f_64f[17] = {c5 f8 77 66 90 c5 e8 16 c3 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovlhps xmm0,xmm2,xmm3                 ; VMOVLHPS xmm1, xmm2, xmm3 || VEX.128.0F.WIG 16 /r || encoded[4]{c5 e8 16 c3}
@@ -25,7 +25,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vpartsf(N256 w, float x0, float x1, float x2, float x3, float x4, float x5, float x6, float x7)
 ; vpartsf_n256_32f_32f_32f_32f_32f_32f_32f_32f[94] = {c5 f8 77 66 90 c4 e3 69 21 d3 10 c5 fa 10 44 24 28 c4 e3 69 21 d0 20 c5 fa 10 44 24 30 c4 e3 69 21 c0 30 c5 fa 10 4c 24 38 c5 fa 10 54 24 40 c4 e3 71 21 ca 10 c5 fa 10 54 24 48 c4 e3 71 21 ca 20 c5 fa 10 54 24 50 c4 e3 71 21 ca 30 c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vinsertps xmm2,xmm2,xmm3,10h            ; VINSERTPS xmm1, xmm2, xmm3/m32, imm8 || VEX.128.66.0F3A.WIG 21 /r ib || encoded[6]{c4 e3 69 21 d3 10}
@@ -48,7 +48,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vpartsf(N256 w, double x0, double x1, double x2, double x3)
 ; vpartsf_n256_64f_64f_64f_64f[42] = {c5 f8 77 66 90 c5 e8 16 c3 c5 fb 10 4c 24 28 c5 fb 10 54 24 30 c5 f0 16 ca c4 e3 7d 18 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovlhps xmm0,xmm2,xmm3                 ; VMOVLHPS xmm1, xmm2, xmm3 || VEX.128.0F.WIG 16 /r || encoded[4]{c5 e8 16 c3}
@@ -63,7 +63,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vpartsf(N512 w, float x0, float x1, float x2, float x3, float x4, float x5, float x6, float x7, float x8, float x9, float x10, float x11, float x12, float x13, float x14, float x15)
 ; vpartsf_n512_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f_32f[198] = {c5 f8 77 66 90 c4 e3 69 21 d3 10 c5 fa 10 44 24 28 c4 e3 69 21 d0 20 c5 fa 10 44 24 30 c4 e3 69 21 c0 30 c5 fa 10 4c 24 38 c5 fa 10 54 24 40 c4 e3 71 21 ca 10 c5 fa 10 54 24 48 c4 e3 71 21 ca 20 c5 fa 10 54 24 50 c4 e3 71 21 ca 30 c4 e3 7d 18 c1 01 c5 fa 10 4c 24 58 c5 fa 10 54 24 60 c4 e3 71 21 ca 10 c5 fa 10 54 24 68 c4 e3 71 21 ca 20 c5 fa 10 54 24 70 c4 e3 71 21 ca 30 c5 fa 10 54 24 78 c5 fa 10 9c 24 80 00 00 00 c4 e3 69 21 d3 10 c5 fa 10 9c 24 88 00 00 00 c4 e3 69 21 d3 20 c5 fa 10 9c 24 90 00 00 00 c4 e3 69 21 d3 30 c4 e3 75 18 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vinsertps xmm2,xmm2,xmm3,10h            ; VINSERTPS xmm1, xmm2, xmm3/m32, imm8 || VEX.128.66.0F3A.WIG 21 /r ib || encoded[6]{c4 e3 69 21 d3 10}
@@ -102,7 +102,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vpartsf(N512 w, double x0, double x1, double x2, double x3, double x4, double x5, double x6, double x7)
 ; vpartsf_n512_64f_64f_64f_64f_64f_64f_64f_64f[85] = {c5 f8 77 66 90 c5 e8 16 c3 c5 fb 10 4c 24 28 c5 fb 10 54 24 30 c5 f0 16 ca c4 e3 7d 18 c1 01 c5 fb 10 4c 24 38 c5 fb 10 54 24 40 c5 f0 16 ca c5 fb 10 54 24 48 c5 fb 10 5c 24 50 c5 e8 16 d3 c4 e3 75 18 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovlhps xmm0,xmm2,xmm3                 ; VMOVLHPS xmm1, xmm2, xmm3 || VEX.128.0F.WIG 16 /r || encoded[4]{c5 e8 16 c3}

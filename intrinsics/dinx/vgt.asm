@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vgt(Vector128<sbyte> x, Vector128<sbyte> y)
 ; vgt_v128x8i_v128x8i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 64 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -12,7 +12,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vgt(Vector128<byte> x, Vector128<byte> y)
 ; vgt_v128x8u_v128x8u[58] = {50 c5 f8 77 90 c7 44 24 04 80 00 00 00 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f1 ef c8 c4 c1 79 10 10 c5 e9 ef c0 c5 f1 64 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -31,7 +31,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vgt(Vector128<short> x, Vector128<short> y)
 ; vgt_v128x16i_v128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 65 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -42,7 +42,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vgt(Vector128<ushort> x, Vector128<ushort> y)
 ; vgt_v128x16u_v128x16u[58] = {50 c5 f8 77 90 c7 44 24 04 00 80 00 00 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f1 ef c8 c4 c1 79 10 10 c5 e9 ef c0 c5 f1 65 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vgt(Vector128<int> x, Vector128<int> y)
 ; vgt_v128x32i_v128x32i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 66 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd xmm0,[rdx]                      ; VMOVUPD xmm1, xmm2/m128 || VEX.128.66.0F.WIG 10 /r || encoded[4]{c5 f9 10 02}
@@ -72,7 +72,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vgt(Vector128<uint> x, Vector128<uint> y)
 ; vgt_v128x32u_v128x32u[58] = {50 c5 f8 77 90 c7 44 24 04 00 00 00 80 48 8d 44 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f1 ef c8 c4 c1 79 10 10 c5 e9 ef c0 c5 f1 66 c0 c5 f9 11 01 48 8b c1 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -91,7 +91,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vgt(Vector128<long> x, Vector128<long> y)
 ; vgt_v128x64i_v128x64i[56] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f9 10 0a c4 e3 7d 38 c1 00 c5 f4 57 c9 c4 c1 79 10 10 c4 e3 75 38 ca 00 c4 e2 7d 37 c1 c4 e3 7d 19 c0 00 c5 f9 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -109,7 +109,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vgt(Vector128<ulong> x, Vector128<ulong> y)
 ; vgt_v128x64u_v128x64u[92] = {50 c5 f8 77 90 48 b8 00 00 00 00 00 00 00 80 48 89 04 24 48 8d 04 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f1 ef c8 c4 c1 79 10 10 c5 e9 ef c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e2 75 37 c0 c4 e3 7d 19 c0 00 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -135,7 +135,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vgt(Vector256<sbyte> x, Vector256<sbyte> y)
 ; vgt_v256x8i_v256x8i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 64 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -147,7 +147,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vgt(Vector256<byte> x, Vector256<byte> y)
 ; vgt_v256x8u_v256x8u[61] = {50 c5 f8 77 90 c7 44 24 04 80 00 00 00 48 8d 44 24 04 c4 e2 7d 78 44 24 04 c5 fd 10 0a c5 f5 ef c8 c4 c1 7d 10 10 c5 ed ef c0 c5 f5 64 c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -167,7 +167,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vgt(Vector256<short> x, Vector256<short> y)
 ; vgt_v256x16i_v256x16i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 65 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -179,7 +179,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vgt(Vector256<ushort> x, Vector256<ushort> y)
 ; vgt_v256x16u_v256x16u[61] = {50 c5 f8 77 90 c7 44 24 04 00 80 00 00 48 8d 44 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 f5 ef c8 c4 c1 7d 10 10 c5 ed ef c0 c5 f5 65 c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -199,7 +199,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vgt(Vector256<int> x, Vector256<int> y)
 ; vgt_v256x32i_v256x32i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 66 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -211,7 +211,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vgt(Vector256<uint> x, Vector256<uint> y)
 ; vgt_v256x32u_v256x32u[61] = {50 c5 f8 77 90 c7 44 24 04 00 00 00 80 48 8d 44 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 f5 ef c8 c4 c1 7d 10 10 c5 ed ef c0 c5 f5 66 c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -231,7 +231,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vgt(Vector256<long> x, Vector256<long> y)
 ; vgt_v256x64i_v256x64i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 37 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vmovupd ymm0,[rdx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 02}
@@ -243,7 +243,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vgt(Vector256<ulong> x, Vector256<ulong> y)
 ; vgt_v256x64u_v256x64u[66] = {50 c5 f8 77 90 48 b8 00 00 00 00 00 00 00 80 48 89 04 24 48 8d 04 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 f5 ef c8 c4 c1 7d 10 10 c5 ed ef c0 c4 e2 75 37 c0 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}

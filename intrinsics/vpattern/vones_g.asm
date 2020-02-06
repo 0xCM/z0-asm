@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vones<byte>(N128 n, byte t)
 ; vones_gn128_8u[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -13,7 +13,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vones<sbyte>(N128 n, sbyte t)
 ; vones_gn128_8i[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 74 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -25,7 +25,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vones<ushort>(N128 n, ushort t)
 ; vones_gn128_16u[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -37,7 +37,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vones<short>(N128 n, short t)
 ; vones_gn128_16i[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 75 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -49,7 +49,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vones<uint>(N128 n, uint t)
 ; vones_gn128_32u[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -61,7 +61,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vones<int>(N128 n, int t)
 ; vones_gn128_32i[25] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 76 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -73,7 +73,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vones<ulong>(N128 n, ulong t)
 ; vones_gn128_64u[26] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -85,7 +85,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vones<long>(N128 n, long t)
 ; vones_gn128_64i[26] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c4 e2 79 29 c1 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -97,7 +97,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vones<float>(N128 n, float t)
 ; vones_gn128_32f[26] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f8 c2 c1 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -109,7 +109,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vones<double>(N128 n, double t)
 ; vones_gn128_64f[26] = {c5 f8 77 66 90 c5 f8 57 c0 c5 f0 57 c9 c5 f9 c2 c1 00 c5 f9 11 01 48 8b c1 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
@@ -121,7 +121,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vones<byte>(N256 n, byte t)
 ; vones_gn256_8u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -134,7 +134,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vones<sbyte>(N256 n, sbyte t)
 ; vones_gn256_8i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 74 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -147,7 +147,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vones<ushort>(N256 n, ushort t)
 ; vones_gn256_16u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -160,7 +160,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vones<short>(N256 n, short t)
 ; vones_gn256_16i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 75 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -173,7 +173,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vones<uint>(N256 n, uint t)
 ; vones_gn256_32u[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -186,7 +186,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vones<int>(N256 n, int t)
 ; vones_gn256_32i[28] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd 76 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -199,7 +199,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vones<ulong>(N256 n, ulong t)
 ; vones_gn256_64u[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -212,7 +212,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vones<long>(N256 n, long t)
 ; vones_gn256_64i[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c4 e2 7d 29 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -225,7 +225,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vones<float>(N256 n, float t)
 ; vones_gn256_32f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fc c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -238,7 +238,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vones<double>(N256 n, double t)
 ; vones_gn256_64f[29] = {c5 f8 77 66 90 c5 fc 57 c0 c5 f4 57 c9 c5 fd c2 c1 08 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
 0005h vxorps ymm0,ymm0,ymm0                   ; VXORPS ymm1, ymm2, ymm3/m256 || VEX.256.0F.WIG 57 /r || encoded[4]{c5 fc 57 c0}
@@ -251,7 +251,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vones<byte>(N512 n, byte t)
 ; vones_gn512_8u[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 74 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -291,7 +291,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vones<sbyte>(N512 n, sbyte t)
 ; vones_gn512_8i[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 74 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 74 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -331,7 +331,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vones<ushort>(N512 n, ushort t)
 ; vones_gn512_16u[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 75 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -371,7 +371,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vones<short>(N512 n, short t)
 ; vones_gn512_16i[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 75 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 75 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -411,7 +411,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vones<uint>(N512 n, uint t)
 ; vones_gn512_32u[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 76 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -451,7 +451,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vones<int>(N512 n, int t)
 ; vones_gn512_32i[139] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd 76 c1 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 76 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -491,7 +491,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vones<ulong>(N512 n, ulong t)
 ; vones_gn512_64u[141] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 48 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -531,7 +531,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vones<long>(N512 n, long t)
 ; vones_gn512_64i[141] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c4 e2 7d 29 c1 c5 fd 10 48 20 c5 fd 10 52 20 c4 e2 75 29 ca c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -571,7 +571,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vones<float>(N512 n, float t)
 ; vones_gn512_32f[141] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fc c2 c1 08 c5 fd 10 48 20 c5 fd 10 52 20 c5 f4 c2 ca 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}
@@ -611,7 +611,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vones<double>(N512 n, double t)
 ; vones_gn512_64f[141] = {57 56 48 81 ec 88 00 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8d 44 24 48 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 c5 fa 7f 40 20 c5 fa 7f 40 30 48 8d 54 24 08 c5 f8 57 c0 c5 fa 7f 02 c5 fa 7f 42 10 c5 fa 7f 42 20 c5 fa 7f 42 30 c5 fd 10 00 c5 fd 10 0a c5 fd c2 c1 08 c5 fd 10 48 20 c5 fd 10 52 20 c5 f5 c2 ca 08 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 81 c4 88 00 00 00 5e 5f c3}
-; TermCode = RET_INTR
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,88h                             ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 88 00 00 00}

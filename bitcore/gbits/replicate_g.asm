@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte replicate<byte>(byte src, byte i0, byte i1, int reps)
 ; replicate_g8u_8u_8u_32i[85] = {0f 1f 44 00 00 0f b6 c9 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 44 8b c0 41 c1 e0 08 41 0b d0 0f b7 d2 c4 e2 e8 f7 d1 4c 8b c2 41 ba 01 00 00 00 41 83 f9 01 7e 17 41 8b ca 0f af c8 4c 8b da 49 d3 e3 4d 0b c3 41 ff c2 45 3b d1 7c e9 49 8b c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
@@ -32,7 +32,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort replicate<ushort>(ushort src, byte i0, byte i1, int reps)
 ; replicate_g16u_8u_8u_32i[85] = {0f 1f 44 00 00 0f b7 c9 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 44 8b c0 41 c1 e0 08 41 0b d0 0f b7 d2 c4 e2 e8 f7 d1 4c 8b c2 41 ba 01 00 00 00 41 83 f9 01 7e 17 41 8b ca 0f af c8 4c 8b da 49 d3 e3 4d 0b c3 41 ff c2 45 3b d1 7c e9 49 8b c0 0f b7 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 0008h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
@@ -63,7 +63,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint replicate<uint>(uint src, byte i0, byte i1, int reps)
 ; replicate_g32u_8u_8u_32i[81] = {0f 1f 44 00 00 8b c9 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 44 8b c0 41 c1 e0 08 41 0b d0 0f b7 d2 c4 e2 e8 f7 d1 4c 8b c2 41 ba 01 00 00 00 41 83 f9 01 7e 17 41 8b ca 0f af c8 4c 8b da 49 d3 e3 4d 0b c3 41 ff c2 45 3b d1 7c e9 49 8b c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov ecx,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c9}
 0007h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
@@ -93,7 +93,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong replicate<ulong>(ulong src, byte i0, byte i1, int reps)
 ; replicate_g64u_8u_8u_32i[79] = {0f 1f 44 00 00 41 0f b6 c0 0f b6 d2 2b c2 ff c0 0f b6 c0 44 8b c0 41 c1 e0 08 41 0b d0 0f b7 d2 c4 e2 e8 f7 d1 4c 8b c2 41 ba 01 00 00 00 41 83 f9 01 7e 17 41 8b ca 0f af c8 4c 8b da 49 d3 e3 4d 0b c3 41 ff c2 45 3b d1 7c e9 49 8b c0 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
 0009h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
@@ -122,7 +122,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte replicate<byte>(byte src)
 ; replicate_g8u[106] = {0f 1f 44 00 00 0f b6 c9 8b c1 f3 0f bd c0 83 c0 e8 f7 d8 83 c0 07 44 0f b6 c0 b8 08 00 00 00 41 ff c0 99 41 f7 f8 ff c0 8b c9 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -160,7 +160,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort replicate<ushort>(ushort src)
 ; replicate_g16u[106] = {0f 1f 44 00 00 0f b7 c9 8b c1 f3 0f bd c0 83 c0 f0 f7 d8 83 c0 0f 44 0f b6 c0 b8 10 00 00 00 41 ff c0 99 41 f7 f8 ff c0 8b c9 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 0f b7 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -198,7 +198,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint replicate<uint>(uint src)
 ; replicate_g32u[97] = {0f 1f 44 00 00 33 c0 f3 0f bd c1 f7 d8 83 c0 1f 44 0f b6 c0 b8 20 00 00 00 41 ff c0 99 41 f7 f8 ff c0 8b c9 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h lzcnt eax,ecx                           ; LZCNT r32, r/m32 || o32 F3 0F BD /r || encoded[4]{f3 0f bd c1}
@@ -233,7 +233,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong replicate<ulong>(ulong src)
 ; replicate_g64u[96] = {0f 1f 44 00 00 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f 44 0f b6 c0 b8 40 00 00 00 41 ff c0 99 41 f7 f8 ff c0 41 0f b6 d0 44 8b c2 41 c1 e0 08 45 0f b7 c0 c4 62 b8 f7 c1 4d 8b c8 41 ba 01 00 00 00 83 f8 01 7e 17 41 8b ca 0f af ca 4d 8b d8 49 d3 e3 4d 0b cb 41 ff c2 44 3b d0 7c e9 49 8b c1 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h lzcnt rax,rcx                           ; LZCNT r64, r/m64 || F3 REX.W 0F BD /r || encoded[5]{f3 48 0f bd c1}
@@ -267,7 +267,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte replicate<byte>(byte src)
 ; replicate_g8u[22] = {0f 1f 44 00 00 0f b6 c1 ba 00 08 00 00 c4 e2 e8 f7 c0 0f b6 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h mov edx,800h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 00 08 00 00}
@@ -277,7 +277,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort replicate<ushort>(byte src)
 ; replicate_g8u[58] = {0f 1f 44 00 00 0f b6 c9 b8 00 08 00 00 c4 e2 f8 f7 c1 48 8b d0 41 b8 01 00 00 00 41 8b c8 c1 e1 03 4c 8b c8 49 d3 e1 49 0b d1 41 ff c0 41 83 f8 02 7c e8 48 8b c2 0f b7 c0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h mov eax,800h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 00 08 00 00}
@@ -298,7 +298,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint replicate<uint>(byte src)
 ; replicate_g8u[55] = {0f 1f 44 00 00 0f b6 c9 b8 00 08 00 00 c4 e2 f8 f7 c1 48 8b d0 41 b8 01 00 00 00 41 8b c8 c1 e1 03 4c 8b c8 49 d3 e1 49 0b d1 41 ff c0 41 83 f8 04 7c e8 48 8b c2 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h mov eax,800h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 00 08 00 00}
@@ -318,7 +318,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong replicate<ulong>(byte src)
 ; replicate_g8u[55] = {0f 1f 44 00 00 0f b6 c9 b8 00 08 00 00 c4 e2 f8 f7 c1 48 8b d0 41 b8 01 00 00 00 41 8b c8 c1 e1 03 4c 8b c8 49 d3 e1 49 0b d1 41 ff c0 41 83 f8 08 7c e8 48 8b c2 c3}
-; TermCode = RET_ZED_SBB
+; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
 0008h mov eax,800h                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 00 08 00 00}

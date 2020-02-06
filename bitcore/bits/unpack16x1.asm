@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack16x1(ushort src, Span<byte> dst)
 ; unpack16x1_16u_span8u[60] = {48 83 ec 28 90 48 8b 02 0f b7 d1 8b ca 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d0 48 89 10 48 83 c4 28 c3}
-; TermCode = ZEDx7_RET
+; TermCode = CTC_Zx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -21,7 +21,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack16x1(ushort src, in Block128<byte> dst)
 ; unpack16x1_16u_b128x8u~in[60] = {48 83 ec 28 90 48 8b 02 0f b7 d1 8b ca 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 24 0f b7 54 24 24 c4 c2 eb f5 d0 48 89 10 48 83 c4 28 c3}
-; TermCode = ZEDx7_RET
+; TermCode = CTC_Zx7_RET
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -41,7 +41,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack16x1(ushort src, ref ulong dst)
 ; unpack16x1_16u_64u~ref[57] = {50 0f 1f 40 00 0f b7 c1 8b c8 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 0a 48 83 c2 08 c1 f8 08 89 44 24 04 0f b7 44 24 04 c4 c2 fb f5 c0 48 89 02 48 83 c4 08 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}

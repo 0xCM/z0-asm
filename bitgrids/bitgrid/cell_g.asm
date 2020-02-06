@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref byte cell<byte>(ref byte src, int bitpos)
 ; cell_g8u~ref_32i[25] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 07 03 c2 c1 f8 03 48 63 c0 48 03 c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h sar eax,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 1f}
@@ -14,7 +14,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ushort cell<ushort>(ref ushort src, int bitpos)
 ; cell_g16u~ref_32i[26] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 0f 03 c2 c1 f8 04 48 63 c0 48 8d 04 41 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h sar eax,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 1f}
@@ -27,7 +27,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref uint cell<uint>(ref uint src, int bitpos)
 ; cell_g32u~ref_32i[26] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 1f 03 c2 c1 f8 05 48 63 c0 48 8d 04 81 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h sar eax,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 1f}
@@ -40,7 +40,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ulong cell<ulong>(ref ulong src, int bitpos)
 ; cell_g64u~ref_32i[26] = {0f 1f 44 00 00 8b c2 c1 f8 1f 83 e0 3f 03 c2 c1 f8 06 48 63 c0 48 8d 04 c1 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h sar eax,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 1f}
@@ -53,7 +53,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref byte cell<byte>(in BitGrid<byte> src, int bitpos)
 ; cell_gbg8u~in_32i[28] = {0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 07 03 d1 c1 fa 03 48 63 d2 48 03 c2 c3}
-; TermCode = RET_SBB
+; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -67,7 +67,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ushort cell<ushort>(in BitGrid<ushort> src, int bitpos)
 ; cell_gbg16u~in_32i[29] = {0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 0f 03 d1 c1 fa 04 48 63 d2 48 8d 04 50 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -81,7 +81,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref uint cell<uint>(in BitGrid<uint> src, int bitpos)
 ; cell_gbg32u~in_32i[29] = {0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 1f 03 d1 c1 fa 05 48 63 d2 48 8d 04 90 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
@@ -95,7 +95,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref ulong cell<ulong>(in BitGrid<ulong> src, int bitpos)
 ; cell_gbg64u~in_32i[29] = {0f 1f 44 00 00 48 8b 01 8b ca c1 f9 1f 83 e1 3f 03 d1 c1 fa 06 48 63 d2 48 8d 04 d0 c3}
-; TermCode = RET_ZEDx3
+; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
 0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}

@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<byte>(in Block128<byte> a, Span<bit> dst)
-; vnonz_gb128x8u~in[117] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4c 03 de c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 c4 b9 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x8u~in[117] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4c 03 de c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 f4 a6 ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -37,7 +37,7 @@
 005fh jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 0061h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0064h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 b9 bb 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 a6 ef 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -46,8 +46,8 @@
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<sbyte>(in Block128<sbyte> a, Span<bit> dst)
-; vnonz_gb128x8i~in[117] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4c 03 de c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 34 b9 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x8i~in[117] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4c 03 de c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 34 a4 ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -83,7 +83,7 @@
 005fh jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 0061h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0064h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 b9 bb 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 a4 ef 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -92,8 +92,8 @@
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<ushort>(in Block128<ushort> a, Span<bit> dst)
-; vnonz_gb128x16u~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c 73 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 a3 b8 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x16u~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c 73 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 93 9f ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -129,7 +129,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 b8 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 9f ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -138,8 +138,8 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<short>(in Block128<short> a, Span<bit> dst)
-; vnonz_gb128x16i~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c 73 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 13 b8 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x16i~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c 73 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 03 9f ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -175,7 +175,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 b8 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 9f ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -184,8 +184,8 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<uint>(in Block128<uint> a, Span<bit> dst)
-; vnonz_gb128x32u~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c b3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 73 b3 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x32u~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c b3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 73 9e ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -221,7 +221,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 b3 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 9e ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -230,8 +230,8 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<int>(in Block128<int> a, Span<bit> dst)
-; vnonz_gb128x32i~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c b3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 e3 b2 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x32i~in[118] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c b3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 e3 9d ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -267,7 +267,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 b2 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 9d ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -276,8 +276,8 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<ulong>(in Block128<ulong> a, Span<bit> dst)
-; vnonz_gb128x64u~in[113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 58 b2 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x64u~in[113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 58 9d ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -312,7 +312,7 @@
 005bh jl short 001fh                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 005dh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0060h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 b2 bb 5e}
+0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 9d ef 5e}
 0068h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 006dh pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -321,8 +321,8 @@
 0070h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<long>(in Block128<long> a, Span<bit> dst)
-; vnonz_gb128x64i~in[113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 c8 b1 bb 5e 48 a5 48 8b c3 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb128x64i~in[113] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 e9 1f 03 c1 d1 f8 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 d1 e6 48 63 f6 4d 8d 1c f3 c4 c1 7b f0 03 c4 e2 79 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 b8 98 ef 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -357,7 +357,7 @@
 005bh jl short 001fh                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 005dh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0060h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 b1 bb 5e}
+0063h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 98 ef 5e}
 0068h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 006dh pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -366,8 +366,8 @@
 0070h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<byte>(in Block256<byte> a, Span<bit> dst)
-; vnonz_gb256x8u~in[120] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 1f 03 c1 c1 f8 05 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 24 a9 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x8u~in[120] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 1f 03 c1 c1 f8 05 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 14 94 ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -403,7 +403,7 @@
 005fh jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 0061h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0064h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 a9 bb 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 94 ef 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -413,8 +413,8 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<sbyte>(in Block256<sbyte> a, Span<bit> dst)
-; vnonz_gb256x8i~in[120] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 1f 03 c1 c1 f8 05 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 84 a8 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x8i~in[120] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 1f 03 c1 c1 f8 05 49 8b 08 45 33 c9 85 c0 7e 3e 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c2 48 8b fb 49 8b f0 e8 74 93 ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -450,7 +450,7 @@
 005fh jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c2}
 0061h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0064h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 a8 bb 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 93 ef 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -460,8 +460,8 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<ushort>(in Block256<ushort> a, Span<bit> dst)
-; vnonz_gb256x16u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 e3 a7 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x16u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 d3 92 ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -497,7 +497,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 a7 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 92 ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -507,8 +507,8 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<short>(in Block256<short> a, Span<bit> dst)
-; vnonz_gb256x16i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 43 a7 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x16i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 0f 03 c1 c1 f8 04 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 04 48 63 f6 4d 8d 1c 73 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 33 8e ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -544,7 +544,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 a7 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 8e ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -554,8 +554,8 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<uint>(in Block256<uint> a, Span<bit> dst)
-; vnonz_gb256x32u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c b3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 a3 a2 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x32u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c b3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 93 8d ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -591,7 +591,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 a2 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 8d ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -601,8 +601,8 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<int>(in Block256<int> a, Span<bit> dst)
-; vnonz_gb256x32i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c b3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 03 a2 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x32i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 07 03 c1 c1 f8 03 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 03 48 63 f6 4d 8d 1c b3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 f3 8c ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -638,7 +638,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 a2 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 8c ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -648,8 +648,8 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<ulong>(in Block256<ulong> a, Span<bit> dst)
-; vnonz_gb256x64u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c f3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 63 a1 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x64u~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c f3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 53 8c ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -685,7 +685,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 a1 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 8c ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -695,8 +695,8 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<bit> vnonz<long>(in Block256<long> a, Span<bit> dst)
-; vnonz_gb256x64i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c f3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 c3 a0 bb 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
-; TermCode = RET_INTR
+; vnonz_gb256x64i~in[121] = {57 56 53 c5 f8 77 48 8b d9 8b 42 08 8b c8 c1 f9 1f 83 e1 03 03 c1 c1 f8 02 49 8b 08 45 33 c9 85 c0 7e 3f 4d 63 d1 4e 8d 14 91 4c 8b 1a 41 8b f1 c1 e6 02 48 63 f6 4d 8d 1c f3 c4 c1 7f f0 03 c4 e2 7d 17 c0 41 0f 94 c3 45 0f b6 db 45 85 db 41 0f 94 c3 45 0f b6 db 45 89 1a 41 ff c1 44 3b c8 7c c1 48 8b fb 49 8b f0 e8 b3 87 ef 5e 48 a5 48 8b c3 c5 f8 77 5b 5e 5f c3}
+; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h push rbx                                ; PUSH r64 || 50+ro || encoded[1]{53}
@@ -732,7 +732,7 @@
 0060h jl short 0023h                          ; JL rel8 || 7C cb || encoded[2]{7c c1}
 0062h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0065h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 a0 bb 5e}
+0068h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 87 ef 5e}
 006dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0072h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
