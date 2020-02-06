@@ -1,51 +1,51 @@
 broadcast_g8u_b64x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b64x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b64x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b64x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32u_b64x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 18 75 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b64x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b64x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b64x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32u_b64x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 98 75 9b c6 f7 7f 00 00 48 ff e0
 broadcast_g32i_b64x32i~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 00 df 78 c6 f7 7f 00 00 48 ff e0
-broadcast_g64u_b64x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 60 67 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g64i_b64x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 20 1b b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32f_b64x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 38 1e b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g64f_b64x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b8 1f b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64u_b64x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 40 68 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g64i_b64x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 98 1c b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32f_b64x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 40 1e b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64f_b64x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b0 21 b5 c6 f7 7f 00 00 48 ff e0
 broadcast_g8u_b128x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b128x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b128x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b128x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32u_b128x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 18 75 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b128x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b128x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b128x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32u_b128x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 98 75 9b c6 f7 7f 00 00 48 ff e0
 broadcast_g32i_b128x32i~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 00 df 78 c6 f7 7f 00 00 48 ff e0
-broadcast_g64u_b128x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 60 67 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g64i_b128x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 20 1b b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32f_b128x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 38 1e b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g64f_b128x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b8 1f b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64u_b128x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 40 68 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g64i_b128x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 98 1c b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32f_b128x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 40 1e b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64f_b128x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b0 21 b5 c6 f7 7f 00 00 48 ff e0
 broadcast_g8u_b256x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b256x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b256x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b256x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32u_b256x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 18 75 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b256x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b256x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b256x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32u_b256x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 98 75 9b c6 f7 7f 00 00 48 ff e0
 broadcast_g32i_b256x32i~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 00 df 78 c6 f7 7f 00 00 48 ff e0
-broadcast_g64u_b256x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 60 67 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g64i_b256x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 20 1b b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32f_b256x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 38 1e b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g64f_b256x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b8 1f b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64u_b256x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 40 68 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g64i_b256x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 98 1c b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32f_b256x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 40 1e b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64f_b256x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b0 21 b5 c6 f7 7f 00 00 48 ff e0
 broadcast_g8u_b512x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b512x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b512x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b512x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32u_b512x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 18 75 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b512x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b512x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b512x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32u_b512x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 98 75 9b c6 f7 7f 00 00 48 ff e0
 broadcast_g32i_b512x32i~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 00 df 78 c6 f7 7f 00 00 48 ff e0
-broadcast_g64u_b512x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 60 67 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g64i_b512x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 20 1b b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32f_b512x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 38 1e b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g64f_b512x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b8 1f b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64u_b512x64u~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 40 68 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g64i_b512x64i~in  48 8b c1 66 90 48 8b ca 48 8b d0 48 b8 98 1c b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32f_b512x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 40 1e b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g64f_b512x64f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 b0 21 b5 c6 f7 7f 00 00 48 ff e0
 broadcast_g8u_b16x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b16x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b16x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b16x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b16x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b16x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b16x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
 broadcast_g8u_b32x8u~in    48 8b c2 66 90 0f b6 d1 48 8b c8 48 b8 60 1d 3b c6 f7 7f 00 00 48 ff e0
-broadcast_g8i_b32x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 b8 11 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g16u_b32x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 f0 63 9b c6 f7 7f 00 00 48 ff e0
-broadcast_g16i_b32x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 48 19 b5 c6 f7 7f 00 00 48 ff e0
-broadcast_g32u_b32x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 18 75 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g8i_b32x8i~in    48 8b c2 66 90 48 0f be d1 48 8b c8 48 b8 d8 12 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g16u_b32x16u~in  48 8b c2 66 90 0f b7 d1 48 8b c8 48 b8 d0 64 9b c6 f7 7f 00 00 48 ff e0
+broadcast_g16i_b32x16i~in  48 8b c2 66 90 48 0f bf d1 48 8b c8 48 b8 90 14 b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32u_b32x32u~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 98 75 9b c6 f7 7f 00 00 48 ff e0
 broadcast_g32i_b32x32i~in  8b c1 0f 1f 00 48 8b ca 8b d0 48 b8 00 df 78 c6 f7 7f 00 00 48 ff e0
-broadcast_g32f_b32x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 38 1e b5 c6 f7 7f 00 00 48 ff e0
+broadcast_g32f_b32x32f~in  c5 f8 77 66 90 48 8b ca c5 f8 28 c8 48 b8 40 1e b5 c6 f7 7f 00 00 48 ff e0
