@@ -1,4 +1,4 @@
-vrotrx_v128x8u_n8   c5 f8 77 66 90 48 b8 61 8d e8 7d 85 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotrx_v128x8u_n16  c5 f8 77 66 90 48 b8 f1 8c e8 7d 85 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotrx_v128x8u_n24  c5 f8 77 66 90 48 b8 41 8e e8 7d 85 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotrx_v128x8u_n32  c5 f8 77 66 90 48 b8 e1 8c e8 7d 85 01 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_v128x8u_n8   c5 f8 77 66 90 48 b8 61 8d 57 ff 3a 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_v128x8u_n16  c5 f8 77 66 90 48 b8 f1 8c 57 ff 3a 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_v128x8u_n24  c5 f8 77 66 90 48 b8 41 8e 57 ff 3a 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotrx_v128x8u_n32  c5 f8 77 66 90 48 b8 e1 8c 57 ff 3a 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3

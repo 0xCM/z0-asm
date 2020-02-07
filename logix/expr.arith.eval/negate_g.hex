@@ -1,8 +1,8 @@
-negate_g  56 48 83 ec 20 e8 9e f1 ff ff 0f b6 48 08 f7 d1 ff c1 40 0f b6 f1 48 b9 30 63 d4 c8 f7 7f 00 00 e8 6b 1a ae 5e 40 88 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 9e f1 ff ff 48 0f be 48 08 f7 d9 48 0f be f1 48 b9 a0 66 d4 c8 f7 7f 00 00 e8 1c 1a ae 5e 40 88 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 7e f1 ff ff 0f b7 48 08 f7 d1 ff c1 0f b7 f1 48 b9 b0 69 d4 c8 f7 7f 00 00 e8 cc 19 ae 5e 66 89 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 5e f1 ff ff 48 0f bf 48 08 f7 d9 48 0f bf f1 48 b9 c0 6c d4 c8 f7 7f 00 00 e8 7c 19 ae 5e 66 89 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 3e f1 ff ff 8b 48 08 8b f1 f7 d6 ff c6 48 b9 d0 6f d4 c8 f7 7f 00 00 e8 2e 19 ae 5e 89 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 2e f1 ff ff 8b 48 08 8b f1 f7 de 48 b9 e0 72 d4 c8 f7 7f 00 00 e8 f0 18 ae 5e 89 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 1e f1 ff ff 48 8b 48 08 48 8b f1 48 f7 d6 48 ff c6 48 b9 f0 75 d4 c8 f7 7f 00 00 e8 aa 18 ae 5e 48 89 70 08 48 83 c4 20 5e c3
-negate_g  56 48 83 ec 20 e8 fe f0 ff ff 48 8b 48 08 48 8b f1 48 f7 de 48 b9 00 79 d4 c8 f7 7f 00 00 e8 5d 18 ae 5e 48 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 9e f1 ff ff 0f b6 48 08 f7 d1 ff c1 40 0f b6 f1 48 b9 10 ad d1 c8 f7 7f 00 00 e8 cb 2f af 5e 40 88 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 9e f1 ff ff 48 0f be 48 08 f7 d9 48 0f be f1 48 b9 80 b0 d1 c8 f7 7f 00 00 e8 7c 2f af 5e 40 88 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 7e f1 ff ff 0f b7 48 08 f7 d1 ff c1 0f b7 f1 48 b9 90 b3 d1 c8 f7 7f 00 00 e8 2c 2f af 5e 66 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 5e f1 ff ff 48 0f bf 48 08 f7 d9 48 0f bf f1 48 b9 a0 b6 d1 c8 f7 7f 00 00 e8 dc 2e af 5e 66 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 3e f1 ff ff 8b 48 08 8b f1 f7 d6 ff c6 48 b9 b0 b9 d1 c8 f7 7f 00 00 e8 8e 2e af 5e 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 2e f1 ff ff 8b 48 08 8b f1 f7 de 48 b9 c0 bc d1 c8 f7 7f 00 00 e8 50 2e af 5e 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 1e f1 ff ff 48 8b 48 08 48 8b f1 48 f7 d6 48 ff c6 48 b9 d0 bf d1 c8 f7 7f 00 00 e8 0a 2e af 5e 48 89 70 08 48 83 c4 20 5e c3
+negate_g  56 48 83 ec 20 e8 fe f0 ff ff 48 8b 48 08 48 8b f1 48 f7 de 48 b9 e0 c2 d1 c8 f7 7f 00 00 e8 bd 2d af 5e 48 89 70 08 48 83 c4 20 5e c3

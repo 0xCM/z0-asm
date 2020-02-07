@@ -236,7 +236,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; float avg<float>(ReadOnlySpan<float> src)
-; avg_gimspan32f[47] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 bf a4 ca ff 90 48 83 c4 38 c3}
+; avg_gimspan32f[47] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 e7 b8 ca ff 90 48 83 c4 38 c3}
 ; TermCode = CTC_Zx7_RET
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -248,13 +248,13 @@
 0019h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 001ch mov [rdx+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 4a 08}
 001fh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-0024h call 7ff7c7f552c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf a4 ca ff}
+0024h call 7ff7c7f467f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 b8 ca ff}
 0029h nop                                     ; NOP || o32 90 || encoded[1]{90}
 002ah add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double avg<double>(ReadOnlySpan<double> src)
-; avg_gimspan64f[47] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 77 a4 ca ff 90 48 83 c4 38 c3}
+; avg_gimspan64f[47] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 9f b8 ca ff 90 48 83 c4 38 c3}
 ; TermCode = CTC_Zx7_RET
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -266,7 +266,7 @@
 0019h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 001ch mov [rdx+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 4a 08}
 001fh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-0024h call 7ff7c7f552d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 a4 ca ff}
+0024h call 7ff7c7f467f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f b8 ca ff}
 0029h nop                                     ; NOP || o32 90 || encoded[1]{90}
 002ah add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}

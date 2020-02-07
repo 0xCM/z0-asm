@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; NumericKind:uint kind(Type t)
-; kind_[155] = {56 48 83 ec 20 48 8b f1 48 8b ce 48 8b 06 48 8b 40 70 ff 50 30 85 c0 74 04 33 c0 eb 78 48 8b ce e8 fb d3 ff ff 48 8b c8 e8 23 c6 19 4f 83 c0 fb 83 f8 09 77 5e 8b c0 48 8d 15 62 00 00 00 8b 14 82 48 8d 0d c0 ff ff ff 48 03 d1 ff e2 b8 08 00 01 20 eb 41 b8 08 00 02 80 eb 3a b8 10 00 08 80 eb 33 b8 10 00 04 20 eb 2c b8 20 00 20 80 eb 25 b8 20 00 10 20 eb 1e b8 40 00 80 80 eb 17 b8 40 00 40 20 eb 10 b8 20 00 00 42 eb 09 b8 40 00 00 44 eb 02 33 c0 48 83 c4 20 5e c3}
+; kind_[155] = {56 48 83 ec 20 48 8b f1 48 8b ce 48 8b 06 48 8b 40 70 ff 50 30 85 c0 74 04 33 c0 eb 78 48 8b ce e8 0b d8 ff ff 48 8b c8 e8 a3 d3 1a 4f 83 c0 fb 83 f8 09 77 5e 8b c0 48 8d 15 62 00 00 00 8b 14 82 48 8d 0d c0 ff ff ff 48 03 d1 ff e2 b8 08 00 01 20 eb 41 b8 08 00 02 80 eb 3a b8 10 00 08 80 eb 33 b8 10 00 04 20 eb 2c b8 20 00 20 80 eb 25 b8 20 00 10 20 eb 1e b8 40 00 80 80 eb 17 b8 40 00 40 20 eb 10 b8 20 00 00 42 eb 09 b8 40 00 00 44 eb 02 33 c0 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -14,9 +14,9 @@
 0019h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 001bh jmp short 0095h                         ; JMP rel8 || EB cb || encoded[2]{eb 78}
 001dh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
-0020h call 7ff7c7b9cd50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb d3 ff ff}
+0020h call 7ff7c7b8c3e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b d8 ff ff}
 0025h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0028h call 7ff816d3bf80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 c6 19 4f}
+0028h call 7ff816d3bf80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 d3 1a 4f}
 002dh add eax,0fffffffbh                      ; ADD r/m32, imm8 || o32 83 /0 ib || encoded[3]{83 c0 fb}
 0030h cmp eax,9                               ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[3]{83 f8 09}
 0033h ja short 0093h                          ; JA rel8 || 77 cb || encoded[2]{77 5e}
