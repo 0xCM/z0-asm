@@ -10,7 +10,7 @@ NumericKind:uint kind(Type t)
     IL_0009: stloc.0
     IL_000A: br IL_00A1
     IL_000F: ldarg.0
-    IL_0010: call System.Type Z0.RootX::EffectiveType(System.Type)
+    IL_0010: call System.Type Z0.RootReflections::EffectiveType(System.Type)
     IL_0015: call System.TypeCode System.Type::GetTypeCode(System.Type)
     IL_001A: stloc.2
     IL_001B: ldloc.2

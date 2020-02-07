@@ -936,7 +936,7 @@ Size    | Uri
 22      | asm://intrinsics/dinx?vgt#vgt_v128x32i_v128x32i
 58      | asm://intrinsics/dinx?vgt#vgt_v128x32u_v128x32u
 56      | asm://intrinsics/dinx?vgt#vgt_v128x64i_v128x64i
-92      | asm://intrinsics/dinx?vgt#vgt_v128x64u_v128x64u
+7       | asm://intrinsics/dinx?vgt#vgt_v128x64u_v128x64u
 22      | asm://intrinsics/dinx?vgt#vgt_v128x8i_v128x8i
 58      | asm://intrinsics/dinx?vgt#vgt_v128x8u_v128x8u
 25      | asm://intrinsics/dinx?vgt#vgt_v256x16i_v256x16i
@@ -944,7 +944,7 @@ Size    | Uri
 25      | asm://intrinsics/dinx?vgt#vgt_v256x32i_v256x32i
 61      | asm://intrinsics/dinx?vgt#vgt_v256x32u_v256x32u
 25      | asm://intrinsics/dinx?vgt#vgt_v256x64i_v256x64i
-66      | asm://intrinsics/dinx?vgt#vgt_v256x64u_v256x64u
+7       | asm://intrinsics/dinx?vgt#vgt_v256x64u_v256x64u
 25      | asm://intrinsics/dinx?vgt#vgt_v256x8i_v256x8i
 61      | asm://intrinsics/dinx?vgt#vgt_v256x8u_v256x8u
 22      | asm://intrinsics/dinx?vhadd#vhadd_v128x16i_v128x16i
