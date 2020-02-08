@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vparts(N128 w, ulong x0, ulong x1)
-; vparts_n128_64u_64u[24] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c5 f9 11 01 48 8b c1 c3}
+; vparts_(n128,64u,64u)[24] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vparts(N256 w, byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7, byte x8, byte x9, byte xa, byte xb, byte xc, byte xd, byte xe, byte xf, byte x10, byte x11, byte x12, byte x13, byte x14, byte x15, byte x16, byte x17, byte x18, byte x19, byte x1a, byte x1b, byte x1c, byte x1d, byte x1e, byte x1f)
-; vparts_n256_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u[485] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 41 0f b6 c1 c4 e3 79 20 c0 01 8b 44 24 28 0f b6 c0 c4 e3 79 20 c0 02 8b 44 24 30 0f b6 c0 c4 e3 79 20 c0 03 8b 44 24 38 0f b6 c0 c4 e3 79 20 c0 04 8b 44 24 40 0f b6 c0 c4 e3 79 20 c0 05 8b 44 24 48 0f b6 c0 c4 e3 79 20 c0 06 8b 44 24 50 0f b6 c0 c4 e3 79 20 c0 07 8b 44 24 58 0f b6 c0 c4 e3 79 20 c0 08 8b 44 24 60 0f b6 c0 c4 e3 79 20 c0 09 8b 44 24 68 0f b6 c0 c4 e3 79 20 c0 0a 8b 44 24 70 0f b6 c0 c4 e3 79 20 c0 0b 8b 44 24 78 0f b6 c0 c4 e3 79 20 c0 0c 8b 84 24 80 00 00 00 0f b6 c0 c4 e3 79 20 c0 0d 8b 84 24 88 00 00 00 0f b6 c0 c4 e3 79 20 c0 0e 8b 84 24 90 00 00 00 0f b6 c0 c4 e3 79 20 c0 0f 8b 84 24 98 00 00 00 0f b6 c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 0f b6 c0 c4 e3 71 20 c8 01 8b 84 24 a8 00 00 00 0f b6 c0 c4 e3 71 20 c8 02 8b 84 24 b0 00 00 00 0f b6 c0 c4 e3 71 20 c8 03 8b 84 24 b8 00 00 00 0f b6 c0 c4 e3 71 20 c8 04 8b 84 24 c0 00 00 00 0f b6 c0 c4 e3 71 20 c8 05 8b 84 24 c8 00 00 00 0f b6 c0 c4 e3 71 20 c8 06 8b 84 24 d0 00 00 00 0f b6 c0 c4 e3 71 20 c8 07 8b 84 24 d8 00 00 00 0f b6 c0 c4 e3 71 20 c8 08 8b 84 24 e0 00 00 00 0f b6 c0 c4 e3 71 20 c8 09 8b 84 24 e8 00 00 00 0f b6 c0 c4 e3 71 20 c8 0a 8b 84 24 f0 00 00 00 0f b6 c0 c4 e3 71 20 c8 0b 8b 84 24 f8 00 00 00 0f b6 c0 c4 e3 71 20 c8 0c 8b 84 24 00 01 00 00 0f b6 c0 c4 e3 71 20 c8 0d 8b 84 24 08 01 00 00 0f b6 c0 c4 e3 71 20 c8 0e 8b 84 24 10 01 00 00 0f b6 c0 c4 e3 71 20 c8 0f c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vparts_(n256,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u)[485] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 41 0f b6 c1 c4 e3 79 20 c0 01 8b 44 24 28 0f b6 c0 c4 e3 79 20 c0 02 8b 44 24 30 0f b6 c0 c4 e3 79 20 c0 03 8b 44 24 38 0f b6 c0 c4 e3 79 20 c0 04 8b 44 24 40 0f b6 c0 c4 e3 79 20 c0 05 8b 44 24 48 0f b6 c0 c4 e3 79 20 c0 06 8b 44 24 50 0f b6 c0 c4 e3 79 20 c0 07 8b 44 24 58 0f b6 c0 c4 e3 79 20 c0 08 8b 44 24 60 0f b6 c0 c4 e3 79 20 c0 09 8b 44 24 68 0f b6 c0 c4 e3 79 20 c0 0a 8b 44 24 70 0f b6 c0 c4 e3 79 20 c0 0b 8b 44 24 78 0f b6 c0 c4 e3 79 20 c0 0c 8b 84 24 80 00 00 00 0f b6 c0 c4 e3 79 20 c0 0d 8b 84 24 88 00 00 00 0f b6 c0 c4 e3 79 20 c0 0e 8b 84 24 90 00 00 00 0f b6 c0 c4 e3 79 20 c0 0f 8b 84 24 98 00 00 00 0f b6 c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 0f b6 c0 c4 e3 71 20 c8 01 8b 84 24 a8 00 00 00 0f b6 c0 c4 e3 71 20 c8 02 8b 84 24 b0 00 00 00 0f b6 c0 c4 e3 71 20 c8 03 8b 84 24 b8 00 00 00 0f b6 c0 c4 e3 71 20 c8 04 8b 84 24 c0 00 00 00 0f b6 c0 c4 e3 71 20 c8 05 8b 84 24 c8 00 00 00 0f b6 c0 c4 e3 71 20 c8 06 8b 84 24 d0 00 00 00 0f b6 c0 c4 e3 71 20 c8 07 8b 84 24 d8 00 00 00 0f b6 c0 c4 e3 71 20 c8 08 8b 84 24 e0 00 00 00 0f b6 c0 c4 e3 71 20 c8 09 8b 84 24 e8 00 00 00 0f b6 c0 c4 e3 71 20 c8 0a 8b 84 24 f0 00 00 00 0f b6 c0 c4 e3 71 20 c8 0b 8b 84 24 f8 00 00 00 0f b6 c0 c4 e3 71 20 c8 0c 8b 84 24 00 01 00 00 0f b6 c0 c4 e3 71 20 c8 0d 8b 84 24 08 01 00 00 0f b6 c0 c4 e3 71 20 c8 0e 8b 84 24 10 01 00 00 0f b6 c0 c4 e3 71 20 c8 0f c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -116,7 +116,7 @@
 01e4h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vparts(N256 w, ushort x0, ushort x1, ushort x2, ushort x3, ushort x4, ushort x5, ushort x6, ushort x7, ushort x8, ushort x9, ushort xA, ushort xB, ushort xC, ushort xD, ushort xE, ushort xF)
-; vparts_n256_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u[215] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 8b 44 24 58 0f b7 c0 c5 f9 6e c8 8b 44 24 60 0f b7 c0 c5 f1 c4 c8 01 8b 44 24 68 0f b7 c0 c5 f1 c4 c8 02 8b 44 24 70 0f b7 c0 c5 f1 c4 c8 03 8b 44 24 78 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 0f b7 c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vparts_(n256,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u)[215] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 8b 44 24 58 0f b7 c0 c5 f9 6e c8 8b 44 24 60 0f b7 c0 c5 f1 c4 c8 01 8b 44 24 68 0f b7 c0 c5 f1 c4 c8 02 8b 44 24 70 0f b7 c0 c5 f1 c4 c8 03 8b 44 24 78 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 0f b7 c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -173,7 +173,7 @@
 00d6h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vparts(N256 w, uint x0, uint x1, uint x2, uint x3, uint x4, uint x5, uint x6, uint x7)
-; vparts_n256_32u_32u_32u_32u_32u_32u_32u_32u[79] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vparts_(n256,32u,32u,32u,32u,32u,32u,32u,32u)[79] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -192,7 +192,7 @@
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vparts(N256 w, ulong x0, ulong x1, ulong x2, ulong x3)
-; vparts_n256_64u_64u_64u_64u[48] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vparts_(n256,64u,64u,64u,64u)[48] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -207,7 +207,7 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vparts(N512 w, ushort x0, ushort x1, ushort x2, ushort x3, ushort x4, ushort x5, ushort x6, ushort x7, ushort x8, ushort x9, ushort x10, ushort x11, ushort x12, ushort x13, ushort x14, ushort x15, ushort x16, ushort x17, ushort x18, ushort x19, ushort x20, ushort x21, ushort x22, ushort x23, ushort x24, ushort x25, ushort x26, ushort x27, ushort x28, ushort x29, ushort x30, ushort x31)
-; vparts_n512_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u_16u[464] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 8b 44 24 58 0f b7 c0 c5 f9 6e c8 8b 44 24 60 0f b7 c0 c5 f1 c4 c8 01 8b 44 24 68 0f b7 c0 c5 f1 c4 c8 02 8b 44 24 70 0f b7 c0 c5 f1 c4 c8 03 8b 44 24 78 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 0f b7 c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 8b 84 24 98 00 00 00 0f b7 c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 0f b7 c0 c5 f1 c4 c8 01 8b 84 24 a8 00 00 00 0f b7 c0 c5 f1 c4 c8 02 8b 84 24 b0 00 00 00 0f b7 c0 c5 f1 c4 c8 03 8b 84 24 b8 00 00 00 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 c0 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 c8 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 d0 00 00 00 0f b7 c0 c5 f1 c4 c8 07 8b 84 24 d8 00 00 00 0f b7 c0 c5 f9 6e d0 8b 84 24 e0 00 00 00 0f b7 c0 c5 e9 c4 d0 01 8b 84 24 e8 00 00 00 0f b7 c0 c5 e9 c4 d0 02 8b 84 24 f0 00 00 00 0f b7 c0 c5 e9 c4 d0 03 8b 84 24 f8 00 00 00 0f b7 c0 c5 e9 c4 d0 04 8b 84 24 00 01 00 00 0f b7 c0 c5 e9 c4 d0 05 8b 84 24 08 01 00 00 0f b7 c0 c5 e9 c4 d0 06 8b 84 24 10 01 00 00 0f b7 c0 c5 e9 c4 d0 07 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vparts_(n512,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u,16u)[464] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 8b 44 24 58 0f b7 c0 c5 f9 6e c8 8b 44 24 60 0f b7 c0 c5 f1 c4 c8 01 8b 44 24 68 0f b7 c0 c5 f1 c4 c8 02 8b 44 24 70 0f b7 c0 c5 f1 c4 c8 03 8b 44 24 78 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 0f b7 c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 8b 84 24 98 00 00 00 0f b7 c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 0f b7 c0 c5 f1 c4 c8 01 8b 84 24 a8 00 00 00 0f b7 c0 c5 f1 c4 c8 02 8b 84 24 b0 00 00 00 0f b7 c0 c5 f1 c4 c8 03 8b 84 24 b8 00 00 00 0f b7 c0 c5 f1 c4 c8 04 8b 84 24 c0 00 00 00 0f b7 c0 c5 f1 c4 c8 05 8b 84 24 c8 00 00 00 0f b7 c0 c5 f1 c4 c8 06 8b 84 24 d0 00 00 00 0f b7 c0 c5 f1 c4 c8 07 8b 84 24 d8 00 00 00 0f b7 c0 c5 f9 6e d0 8b 84 24 e0 00 00 00 0f b7 c0 c5 e9 c4 d0 01 8b 84 24 e8 00 00 00 0f b7 c0 c5 e9 c4 d0 02 8b 84 24 f0 00 00 00 0f b7 c0 c5 e9 c4 d0 03 8b 84 24 f8 00 00 00 0f b7 c0 c5 e9 c4 d0 04 8b 84 24 00 01 00 00 0f b7 c0 c5 e9 c4 d0 05 8b 84 24 08 01 00 00 0f b7 c0 c5 e9 c4 d0 06 8b 84 24 10 01 00 00 0f b7 c0 c5 e9 c4 d0 07 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -314,7 +314,7 @@
 01cfh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vparts(N512 w, uint x0, uint x1, uint x2, uint x3, uint x4, uint x5, uint x6, uint x7, uint x8, uint x9, uint x10, uint x11, uint x12, uint x13, uint x14, uint x15)
-; vparts_n512_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u_32u[159] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 f9 6e 4c 24 58 c4 e3 71 22 4c 24 60 01 c4 e3 71 22 4c 24 68 02 c4 e3 71 22 4c 24 70 03 c5 f9 6e 54 24 78 c4 e3 69 22 94 24 80 00 00 00 01 c4 e3 69 22 94 24 88 00 00 00 02 c4 e3 69 22 94 24 90 00 00 00 03 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vparts_(n512,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u,32u)[159] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 f9 6e 4c 24 58 c4 e3 71 22 4c 24 60 01 c4 e3 71 22 4c 24 68 02 c4 e3 71 22 4c 24 70 03 c5 f9 6e 54 24 78 c4 e3 69 22 94 24 80 00 00 00 01 c4 e3 69 22 94 24 88 00 00 00 02 c4 e3 69 22 94 24 90 00 00 00 03 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -343,7 +343,7 @@
 009eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vparts(N512 w, ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
-; vparts_n512_64u_64u_64u_64u_64u_64u_64u_64u[89] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c4 e1 f9 6e 4c 24 38 c4 e3 f1 22 4c 24 40 01 c4 e1 f9 6e 54 24 48 c4 e3 e9 22 54 24 50 01 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vparts_(n512,64u,64u,64u,64u,64u,64u,64u,64u)[89] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c4 e1 f9 6e 4c 24 38 c4 e3 f1 22 4c 24 40 01 c4 e1 f9 6e 54 24 48 c4 e3 e9 22 54 24 50 01 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -364,7 +364,7 @@
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vparts(N128 w, byte x0, byte x1, byte x2, byte x3, byte x4, byte x5, byte x6, byte x7, byte x8, byte x9, byte xa, byte xb, byte xc, byte xd, byte xe, byte xf)
-; vparts_n128_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u_8u[222] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 41 0f b6 c1 c4 e3 79 20 c0 01 8b 44 24 28 0f b6 c0 c4 e3 79 20 c0 02 8b 44 24 30 0f b6 c0 c4 e3 79 20 c0 03 8b 44 24 38 0f b6 c0 c4 e3 79 20 c0 04 8b 44 24 40 0f b6 c0 c4 e3 79 20 c0 05 8b 44 24 48 0f b6 c0 c4 e3 79 20 c0 06 8b 44 24 50 0f b6 c0 c4 e3 79 20 c0 07 8b 44 24 58 0f b6 c0 c4 e3 79 20 c0 08 8b 44 24 60 0f b6 c0 c4 e3 79 20 c0 09 8b 44 24 68 0f b6 c0 c4 e3 79 20 c0 0a 8b 44 24 70 0f b6 c0 c4 e3 79 20 c0 0b 8b 44 24 78 0f b6 c0 c4 e3 79 20 c0 0c 8b 84 24 80 00 00 00 0f b6 c0 c4 e3 79 20 c0 0d 8b 84 24 88 00 00 00 0f b6 c0 c4 e3 79 20 c0 0e 8b 84 24 90 00 00 00 0f b6 c0 c4 e3 79 20 c0 0f c5 f9 11 01 48 8b c1 c3}
+; vparts_(n128,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u,8u)[222] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 41 0f b6 c1 c4 e3 79 20 c0 01 8b 44 24 28 0f b6 c0 c4 e3 79 20 c0 02 8b 44 24 30 0f b6 c0 c4 e3 79 20 c0 03 8b 44 24 38 0f b6 c0 c4 e3 79 20 c0 04 8b 44 24 40 0f b6 c0 c4 e3 79 20 c0 05 8b 44 24 48 0f b6 c0 c4 e3 79 20 c0 06 8b 44 24 50 0f b6 c0 c4 e3 79 20 c0 07 8b 44 24 58 0f b6 c0 c4 e3 79 20 c0 08 8b 44 24 60 0f b6 c0 c4 e3 79 20 c0 09 8b 44 24 68 0f b6 c0 c4 e3 79 20 c0 0a 8b 44 24 70 0f b6 c0 c4 e3 79 20 c0 0b 8b 44 24 78 0f b6 c0 c4 e3 79 20 c0 0c 8b 84 24 80 00 00 00 0f b6 c0 c4 e3 79 20 c0 0d 8b 84 24 88 00 00 00 0f b6 c0 c4 e3 79 20 c0 0e 8b 84 24 90 00 00 00 0f b6 c0 c4 e3 79 20 c0 0f c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -419,7 +419,7 @@
 00ddh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vparts(N128 w, ushort x0, ushort x1, ushort x2, ushort x3, ushort x4, ushort x5, ushort x6, ushort x7)
-; vparts_n128_16u_16u_16u_16u_16u_16u_16u_16u[102] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 c5 f9 11 01 48 8b c1 c3}
+; vparts_(n128,16u,16u,16u,16u,16u,16u,16u,16u)[102] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 41 0f b7 c1 c5 f9 c4 c0 01 8b 44 24 28 0f b7 c0 c5 f9 c4 c0 02 8b 44 24 30 0f b7 c0 c5 f9 c4 c0 03 8b 44 24 38 0f b7 c0 c5 f9 c4 c0 04 8b 44 24 40 0f b7 c0 c5 f9 c4 c0 05 8b 44 24 48 0f b7 c0 c5 f9 c4 c0 06 8b 44 24 50 0f b7 c0 c5 f9 c4 c0 07 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -450,7 +450,7 @@
 0065h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vparts(N128 w, uint x0, uint x1, uint x2, uint x3)
-; vparts_n128_32u_32u_32u_32u[40] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 11 01 48 8b c1 c3}
+; vparts_(n128,32u,32u,32u,32u)[40] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -463,7 +463,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vparts(uint x0, uint x1, uint x2, uint x3)
-; vparts_32u_32u_32u_32u[37] = {c5 f8 77 66 90 c5 f9 6e c2 c4 c3 79 22 c0 01 c4 c3 79 22 c1 02 c4 e3 79 22 44 24 28 03 c5 f9 11 01 48 8b c1 c3}
+; vparts_(32u,32u,32u,32u)[37] = {c5 f8 77 66 90 c5 f9 6e c2 c4 c3 79 22 c0 01 c4 c3 79 22 c1 02 c4 e3 79 22 44 24 28 03 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

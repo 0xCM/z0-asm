@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vbitclear<byte>(Vector128<byte> src, byte start, byte count)
-; vbitclear_gv128x8u_8u_8u[85] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b6 c9 41 0f b6 c8 41 d3 e1 41 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[8u](v128x8u,8u,8u)[85] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b6 c9 41 0f b6 c8 41 d3 e1 41 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -27,7 +27,7 @@
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vbitclear<sbyte>(Vector128<sbyte> src, byte start, byte count)
-; vbitclear_gv128x8i_8u_8u[83] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f be c9 41 0f b6 c8 41 d3 e1 49 0f be c9 83 f1 7f 48 0f be c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[8i](v128x8i,8u,8u)[83] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f be c9 41 0f b6 c8 41 d3 e1 49 0f be c9 83 f1 7f 48 0f be c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 79 78 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -54,7 +54,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vbitclear<ushort>(Vector128<ushort> src, byte start, byte count)
-; vbitclear_gv128x16u_8u_8u[86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[16u](v128x16u,8u,8u)[86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -81,7 +81,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vbitclear<short>(Vector128<short> src, byte start, byte count)
-; vbitclear_gv128x16i_8u_8u[87] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[16i](v128x16i,8u,8u)[87] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 79 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -108,7 +108,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vbitclear<uint>(Vector128<uint> src, byte start, byte count)
-; vbitclear_gv128x32u_8u_8u[73] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 8b c9 f7 d1 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[32u](v128x32u,8u,8u)[73] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 8b c9 f7 d1 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -133,7 +133,7 @@
 0048h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vbitclear<int>(Vector128<int> src, byte start, byte count)
-; vbitclear_gv128x32i_8u_8u[76] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 81 f1 ff ff ff 7f 44 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[32i](v128x32i,8u,8u)[76] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 81 f1 ff ff ff 7f 44 89 4c 24 04 48 8d 4c 24 04 c4 e2 79 58 44 24 04 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -157,7 +157,7 @@
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vbitclear<ulong>(Vector128<ulong> src, byte start, byte count)
-; vbitclear_gv128x64u_8u_8u[72] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 49 8b c9 48 f7 d1 48 89 0c 24 48 8d 0c 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[64u](v128x64u,8u,8u)[72] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 49 8b c9 48 f7 d1 48 89 0c 24 48 8d 0c 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -182,7 +182,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vbitclear<long>(Vector128<long> src, byte start, byte count)
-; vbitclear_gv128x64i_8u_8u[79] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
+; vbitclear_g[64i](v128x64i,8u,8u)[79] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 79 59 04 24 c5 f9 10 0a c5 f9 db c1 c5 f9 11 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -207,7 +207,7 @@
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vbitclear<byte>(Vector256<byte> src, byte start, byte count)
-; vbitclear_gv256x8u_8u_8u[88] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b6 c9 41 0f b6 c8 41 d3 e1 41 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 7d 78 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[8u](v256x8u,8u,8u)[88] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b6 c9 41 0f b6 c8 41 d3 e1 41 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 7d 78 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -235,7 +235,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vbitclear<sbyte>(Vector256<sbyte> src, byte start, byte count)
-; vbitclear_gv256x8i_8u_8u[86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f be c9 41 0f b6 c8 41 d3 e1 49 0f be c9 83 f1 7f 48 0f be c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 7d 78 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[8i](v256x8i,8u,8u)[86] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f be c9 41 0f b6 c8 41 d3 e1 49 0f be c9 83 f1 7f 48 0f be c9 88 4c 24 04 48 8d 4c 24 04 c4 e2 7d 78 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -263,7 +263,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vbitclear<ushort>(Vector256<ushort> src, byte start, byte count)
-; vbitclear_gv256x16u_8u_8u[89] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[16u](v256x16u,8u,8u)[89] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 44 0f b7 c9 41 0f b6 c8 41 d3 e1 41 0f b7 c9 81 f1 ff ff 00 00 0f b7 c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -291,7 +291,7 @@
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vbitclear<short>(Vector256<short> src, byte start, byte count)
-; vbitclear_gv256x16i_8u_8u[90] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[16i](v256x16i,8u,8u)[90] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 f0 f3 d1 4c 0f bf c9 41 0f b6 c8 41 d3 e1 49 0f bf c9 81 f1 ff 7f 00 00 48 0f bf c9 66 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 79 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -319,7 +319,7 @@
 0059h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vbitclear<uint>(Vector256<uint> src, byte start, byte count)
-; vbitclear_gv256x32u_8u_8u[76] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 8b c9 f7 d1 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[32u](v256x32u,8u,8u)[76] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 8b c9 f7 d1 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -345,7 +345,7 @@
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vbitclear<int>(Vector256<int> src, byte start, byte count)
-; vbitclear_gv256x32i_8u_8u[79] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 81 f1 ff ff ff 7f 44 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[32i](v256x32i,8u,8u)[79] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 41 d3 e1 41 81 f1 ff ff ff 7f 44 89 4c 24 04 48 8d 4c 24 04 c4 e2 7d 58 44 24 04 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -370,7 +370,7 @@
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vbitclear<ulong>(Vector256<ulong> src, byte start, byte count)
-; vbitclear_gv256x64u_8u_8u[75] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 49 8b c9 48 f7 d1 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[64u](v256x64u,8u,8u)[75] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 49 8b c9 48 f7 d1 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -396,7 +396,7 @@
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vbitclear<long>(Vector256<long> src, byte start, byte count)
-; vbitclear_gv256x64i_8u_8u[82] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
+; vbitclear_g[64i](v256x64i,8u,8u)[82] = {50 c5 f8 77 90 48 8b c1 41 0f b6 c9 ff c9 41 b9 01 00 00 00 49 d3 e1 c4 c2 b0 f3 d1 41 0f b6 c8 49 d3 e1 48 b9 ff ff ff ff ff ff ff 7f 49 33 c9 48 89 0c 24 48 8d 0c 24 c4 e2 7d 59 04 24 c5 fd 10 0a c5 fd db c1 c5 fd 11 00 c5 f8 77 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

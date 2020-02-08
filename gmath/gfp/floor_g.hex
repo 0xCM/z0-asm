@@ -1,2 +1,2 @@
-floor_g32f  c5 f8 77 66 90 c4 e3 79 0a c0 09 c3
-floor_g64f  c5 f8 77 66 90 c4 e3 79 0b c0 09 c3
+floor_g[32f](32f)  c5 f8 77 66 90 c4 e3 79 0a c0 09 c3
+floor_g[64f](64f)  c5 f8 77 66 90 c4 e3 79 0b c0 09 c3

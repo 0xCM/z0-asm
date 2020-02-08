@@ -1,4 +1,4 @@
-lsbx_g8u   0f 1f 44 00 00 0f b6 c1 c4 e2 78 f3 d8 0f b6 c0 c3
-lsbx_g16u  0f 1f 44 00 00 0f b7 c1 c4 e2 78 f3 d8 0f b7 c0 c3
-lsbx_g32u  0f 1f 44 00 00 c4 e2 78 f3 d9 c3
-lsbx_g64u  0f 1f 44 00 00 c4 e2 f8 f3 d9 c3
+lsbx_g[8u](8u)    0f 1f 44 00 00 0f b6 c1 c4 e2 78 f3 d8 0f b6 c0 c3
+lsbx_g[16u](16u)  0f 1f 44 00 00 0f b7 c1 c4 e2 78 f3 d8 0f b7 c0 c3
+lsbx_g[32u](32u)  0f 1f 44 00 00 c4 e2 78 f3 d9 c3
+lsbx_g[64u](64u)  0f 1f 44 00 00 c4 e2 f8 f3 d9 c3

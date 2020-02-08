@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vmullo(Vector128<short> x, Vector128<short> y)
-; vmullo_v128x16i_v128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d5 00 c5 f9 11 01 48 8b c1 c3}
+; vmullo_(v128x16i,v128x16i)[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d5 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmullo(Vector128<ushort> x, Vector128<ushort> y)
-; vmullo_v128x16u_v128x16u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d5 00 c5 f9 11 01 48 8b c1 c3}
+; vmullo_(v128x16u,v128x16u)[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d5 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vmullo(Vector128<int> x, Vector128<int> y)
-; vmullo_v128x32i_v128x32i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 40 00 c5 f9 11 01 48 8b c1 c3}
+; vmullo_(v128x32i,v128x32i)[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 40 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -33,7 +33,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmullo(Vector128<uint> x, Vector128<uint> y)
-; vmullo_v128x32u_v128x32u[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 40 00 c5 f9 11 01 48 8b c1 c3}
+; vmullo_(v128x32u,v128x32u)[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 40 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -44,7 +44,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vmullo(Vector256<short> x, Vector256<short> y)
-; vmullo_v256x16i_v256x16i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d5 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmullo_(v256x16i,v256x16i)[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d5 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -56,7 +56,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmullo(Vector256<ushort> x, Vector256<ushort> y)
-; vmullo_v256x16u_v256x16u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d5 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmullo_(v256x16u,v256x16u)[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d5 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -68,7 +68,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vmullo(Vector256<int> x, Vector256<int> y)
-; vmullo_v256x32i_v256x32i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 40 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmullo_(v256x32i,v256x32i)[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 40 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -80,7 +80,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmullo(Vector256<uint> x, Vector256<uint> y)
-; vmullo_v256x32u_v256x32u[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 40 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmullo_(v256x32u,v256x32u)[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 40 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,8 +1,8 @@
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 00 00 00 c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 7f 00 00 00 c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff 00 00 c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 7f 00 00 c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff ff c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff 7f c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff ff c3
-promote_g1u  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff 7f c3
+promote_g[8u](1u)   0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 00 00 00 c3
+promote_g[8i](1u)   0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 7f 00 00 00 c3
+promote_g[16u](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff 00 00 c3
+promote_g[16i](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff 7f 00 00 c3
+promote_g[32u](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff ff c3
+promote_g[32i](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 b8 ff ff ff 7f c3
+promote_g[64u](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff ff c3
+promote_g[64i](1u)  0f 1f 44 00 00 85 c9 75 03 33 c0 c3 48 b8 ff ff ff ff ff ff ff 7f c3

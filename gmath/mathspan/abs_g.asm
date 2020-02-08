@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> abs<byte>(ReadOnlySpan<byte> src, Span<byte> dst)
-; abs_gimspan8u_span8u[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4c 03 d2 4d 63 d9 46 0f b6 1c 18 45 88 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
+; abs_g[8u](uspan8u,span8u)[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4c 03 d2 4d 63 d9 46 0f b6 1c 18 45 88 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -23,7 +23,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> abs<sbyte>(ReadOnlySpan<sbyte> src, Span<sbyte> dst)
-; abs_gimspan8i_span8i[74] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 27 4d 63 d1 4e 8d 1c 12 4e 0f be 14 10 41 8b f2 c1 fe 07 44 03 d6 44 33 d6 4d 0f be d2 45 88 13 41 ff c1 45 3b c8 7c d9 48 89 11 44 89 41 08 48 8b c1 5e c3}
+; abs_g[8i](uspan8i,span8i)[74] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 27 4d 63 d1 4e 8d 1c 12 4e 0f be 14 10 41 8b f2 c1 fe 07 44 03 d6 44 33 d6 4d 0f be d2 45 88 13 41 ff c1 45 3b c8 7c d9 48 89 11 44 89 41 08 48 8b c1 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -52,7 +52,7 @@
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> abs<ushort>(ReadOnlySpan<ushort> src, Span<ushort> dst)
-; abs_gimspan16u_span16u[61] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1b 4d 63 d1 4e 8d 14 52 4d 63 d9 46 0f b7 1c 58 66 45 89 1a 41 ff c1 45 3b c8 7c e5 48 89 11 44 89 41 08 48 8b c1 c3}
+; abs_g[16u](uspan16u,span16u)[61] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 1b 4d 63 d1 4e 8d 14 52 4d 63 d9 46 0f b7 1c 58 66 45 89 1a 41 ff c1 45 3b c8 7c e5 48 89 11 44 89 41 08 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -75,7 +75,7 @@
 003ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> abs<short>(ReadOnlySpan<short> src, Span<short> dst)
-; abs_gimspan16i_span16i[75] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 28 4d 63 d1 4e 8d 1c 52 4e 0f bf 14 50 41 8b f2 c1 fe 0f 44 03 d6 44 33 d6 4d 0f bf d2 66 45 89 13 41 ff c1 45 3b c8 7c d8 48 89 11 44 89 41 08 48 8b c1 5e c3}
+; abs_g[16i](uspan16i,span16i)[75] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 28 4d 63 d1 4e 8d 1c 52 4e 0f bf 14 50 41 8b f2 c1 fe 0f 44 03 d6 44 33 d6 4d 0f bf d2 66 45 89 13 41 ff c1 45 3b c8 7c d8 48 89 11 44 89 41 08 48 8b c1 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -104,7 +104,7 @@
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> abs<uint>(ReadOnlySpan<uint> src, Span<uint> dst)
-; abs_gimspan32u_span32u[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 45 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
+; abs_g[32u](uspan32u,span32u)[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 92 4d 63 d9 46 8b 1c 98 45 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -127,7 +127,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> abs<int>(ReadOnlySpan<int> src, Span<int> dst)
-; abs_gimspan32i_span32i[69] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 1c 92 46 8b 14 90 41 8b f2 c1 fe 1f 44 03 d6 44 33 d6 45 89 13 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 5e c3}
+; abs_g[32i](uspan32i,span32i)[69] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 22 4d 63 d1 4e 8d 1c 92 46 8b 14 90 41 8b f2 c1 fe 1f 44 03 d6 44 33 d6 45 89 13 41 ff c1 45 3b c8 7c de 48 89 11 44 89 41 08 48 8b c1 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -155,7 +155,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> abs<ulong>(ReadOnlySpan<ulong> src, Span<ulong> dst)
-; abs_gimspan64u_span64u[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 4d 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
+; abs_g[64u](uspan64u,span64u)[59] = {0f 1f 44 00 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 19 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 4d 89 1a 41 ff c1 45 3b c8 7c e7 48 89 11 44 89 41 08 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -178,7 +178,7 @@
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> abs<long>(ReadOnlySpan<long> src, Span<long> dst)
-; abs_gimspan64i_span64i[73] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 26 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 49 8b f3 48 c1 fe 3f 4c 03 de 4c 33 de 4d 89 1a 41 ff c1 45 3b c8 7c da 48 89 11 44 89 41 08 48 8b c1 5e c3}
+; abs_g[64i](uspan64i,span64i)[73] = {56 0f 1f 40 00 48 8b 02 49 8b 10 45 8b 40 08 45 33 c9 45 85 c0 7e 26 4d 63 d1 4e 8d 14 d2 4d 63 d9 4e 8b 1c d8 49 8b f3 48 c1 fe 3f 4c 03 de 4c 33 de 4d 89 1a 41 ff c1 45 3b c8 7c da 48 89 11 44 89 41 08 48 8b c1 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}

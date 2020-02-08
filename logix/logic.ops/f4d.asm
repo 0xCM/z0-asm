@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit f4d(bit a, bit b, bit c)
-; f4d_1u_1u_1u[35] = {0f 1f 44 00 00 8b c1 41 23 c0 f7 d0 83 e0 01 41 0b c8 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3}
+; f4d_(1u,1u,1u)[35] = {0f 1f 44 00 00 8b c1 41 23 c0 f7 d0 83 e0 01 41 0b c8 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

@@ -1,4 +1,4 @@
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<byte>> lookup<byte>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<byte>> lookup<byte>(N128 w, UnaryBitLogicKind:byte kind)
@@ -24,7 +24,7 @@ UnaryOp<Vector128<byte>> lookup<byte>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, UnaryBitLogicKind:byte kind)
@@ -50,7 +50,7 @@ UnaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<ushort>> lookup<ushort>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<ushort>> lookup<ushort>(N128 w, UnaryBitLogicKind:byte kind)
@@ -76,7 +76,7 @@ UnaryOp<Vector128<ushort>> lookup<ushort>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<short>> lookup<short>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<short>> lookup<short>(N128 w, UnaryBitLogicKind:byte kind)
@@ -102,7 +102,7 @@ UnaryOp<Vector128<short>> lookup<short>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<uint>> lookup<uint>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<uint>> lookup<uint>(N128 w, UnaryBitLogicKind:byte kind)
@@ -128,7 +128,7 @@ UnaryOp<Vector128<uint>> lookup<uint>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<int>> lookup<int>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<int>> lookup<int>(N128 w, UnaryBitLogicKind:byte kind)
@@ -154,7 +154,7 @@ UnaryOp<Vector128<int>> lookup<int>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<ulong>> lookup<ulong>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<ulong>> lookup<ulong>(N128 w, UnaryBitLogicKind:byte kind)
@@ -180,7 +180,7 @@ UnaryOp<Vector128<ulong>> lookup<ulong>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector128<long>> lookup<long>(N128 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector128<long>> lookup<long>(N128 w, UnaryBitLogicKind:byte kind)
@@ -206,7 +206,7 @@ UnaryOp<Vector128<long>> lookup<long>(N128 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<byte>> lookup<byte>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<byte>> lookup<byte>(N256 w, UnaryBitLogicKind:byte kind)
@@ -232,7 +232,7 @@ UnaryOp<Vector256<byte>> lookup<byte>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, UnaryBitLogicKind:byte kind)
@@ -258,7 +258,7 @@ UnaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<ushort>> lookup<ushort>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<ushort>> lookup<ushort>(N256 w, UnaryBitLogicKind:byte kind)
@@ -284,7 +284,7 @@ UnaryOp<Vector256<ushort>> lookup<ushort>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<short>> lookup<short>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<short>> lookup<short>(N256 w, UnaryBitLogicKind:byte kind)
@@ -310,7 +310,7 @@ UnaryOp<Vector256<short>> lookup<short>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<uint>> lookup<uint>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<uint>> lookup<uint>(N256 w, UnaryBitLogicKind:byte kind)
@@ -336,7 +336,7 @@ UnaryOp<Vector256<uint>> lookup<uint>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<int>> lookup<int>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<int>> lookup<int>(N256 w, UnaryBitLogicKind:byte kind)
@@ -362,7 +362,7 @@ UnaryOp<Vector256<int>> lookup<int>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<ulong>> lookup<ulong>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<ulong>> lookup<ulong>(N256 w, UnaryBitLogicKind:byte kind)
@@ -388,7 +388,7 @@ UnaryOp<Vector256<ulong>> lookup<ulong>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
+// Z0.UnaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.UnaryBitLogicKind)
 // UnaryOp<Vector256<long>> lookup<long>(N256 w, UnaryBitLogicKind:byte kind)
 // IL
 UnaryOp<Vector256<long>> lookup<long>(N256 w, UnaryBitLogicKind:byte kind)
@@ -414,7 +414,7 @@ UnaryOp<Vector256<long>> lookup<long>(N256 w, UnaryBitLogicKind:byte kind)
     IL_002F: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<byte>> lookup<byte>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<byte>> lookup<byte>(N128 w, ComparisonKind:byte kind)
@@ -442,7 +442,7 @@ BinaryOp<Vector128<byte>> lookup<byte>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, ComparisonKind:byte kind)
@@ -470,7 +470,7 @@ BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, ComparisonKind:byte kind)
@@ -498,7 +498,7 @@ BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<short>> lookup<short>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<short>> lookup<short>(N128 w, ComparisonKind:byte kind)
@@ -526,7 +526,7 @@ BinaryOp<Vector128<short>> lookup<short>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<uint>> lookup<uint>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<uint>> lookup<uint>(N128 w, ComparisonKind:byte kind)
@@ -554,7 +554,7 @@ BinaryOp<Vector128<uint>> lookup<uint>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<int>> lookup<int>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<int>> lookup<int>(N128 w, ComparisonKind:byte kind)
@@ -582,7 +582,7 @@ BinaryOp<Vector128<int>> lookup<int>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, ComparisonKind:byte kind)
@@ -610,7 +610,7 @@ BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ComparisonKind)
 // BinaryOp<Vector128<long>> lookup<long>(N128 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector128<long>> lookup<long>(N128 w, ComparisonKind:byte kind)
@@ -638,7 +638,7 @@ BinaryOp<Vector128<long>> lookup<long>(N128 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<byte>> lookup<byte>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<byte>> lookup<byte>(N256 w, ComparisonKind:byte kind)
@@ -666,7 +666,7 @@ BinaryOp<Vector256<byte>> lookup<byte>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, ComparisonKind:byte kind)
@@ -694,7 +694,7 @@ BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, ComparisonKind:byte kind)
@@ -722,7 +722,7 @@ BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<short>> lookup<short>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<short>> lookup<short>(N256 w, ComparisonKind:byte kind)
@@ -750,7 +750,7 @@ BinaryOp<Vector256<short>> lookup<short>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<uint>> lookup<uint>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<uint>> lookup<uint>(N256 w, ComparisonKind:byte kind)
@@ -778,7 +778,7 @@ BinaryOp<Vector256<uint>> lookup<uint>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<int>> lookup<int>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<int>> lookup<int>(N256 w, ComparisonKind:byte kind)
@@ -806,7 +806,7 @@ BinaryOp<Vector256<int>> lookup<int>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, ComparisonKind:byte kind)
@@ -834,7 +834,7 @@ BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ComparisonKind)
 // BinaryOp<Vector256<long>> lookup<long>(N256 w, ComparisonKind:byte kind)
 // IL
 BinaryOp<Vector256<long>> lookup<long>(N256 w, ComparisonKind:byte kind)
@@ -862,7 +862,7 @@ BinaryOp<Vector256<long>> lookup<long>(N256 w, ComparisonKind:byte kind)
     IL_004C: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<byte>> lookup<byte>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<byte>> lookup<byte>(N128 w, ShiftOpKind:byte kind)
@@ -897,7 +897,7 @@ Shifter<Vector128<byte>> lookup<byte>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<sbyte>> lookup<sbyte>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<sbyte>> lookup<sbyte>(N128 w, ShiftOpKind:byte kind)
@@ -932,7 +932,7 @@ Shifter<Vector128<sbyte>> lookup<sbyte>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<ushort>> lookup<ushort>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<ushort>> lookup<ushort>(N128 w, ShiftOpKind:byte kind)
@@ -967,7 +967,7 @@ Shifter<Vector128<ushort>> lookup<ushort>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<short>> lookup<short>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<short>> lookup<short>(N128 w, ShiftOpKind:byte kind)
@@ -1002,7 +1002,7 @@ Shifter<Vector128<short>> lookup<short>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<uint>> lookup<uint>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<uint>> lookup<uint>(N128 w, ShiftOpKind:byte kind)
@@ -1037,7 +1037,7 @@ Shifter<Vector128<uint>> lookup<uint>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<int>> lookup<int>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<int>> lookup<int>(N128 w, ShiftOpKind:byte kind)
@@ -1072,7 +1072,7 @@ Shifter<Vector128<int>> lookup<int>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<ulong>> lookup<ulong>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<ulong>> lookup<ulong>(N128 w, ShiftOpKind:byte kind)
@@ -1107,7 +1107,7 @@ Shifter<Vector128<ulong>> lookup<ulong>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.ShiftOpKind)
 // Shifter<Vector128<long>> lookup<long>(N128 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector128<long>> lookup<long>(N128 w, ShiftOpKind:byte kind)
@@ -1142,7 +1142,7 @@ Shifter<Vector128<long>> lookup<long>(N128 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<byte>> lookup<byte>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<byte>> lookup<byte>(N256 w, ShiftOpKind:byte kind)
@@ -1177,7 +1177,7 @@ Shifter<Vector256<byte>> lookup<byte>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<sbyte>> lookup<sbyte>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<sbyte>> lookup<sbyte>(N256 w, ShiftOpKind:byte kind)
@@ -1212,7 +1212,7 @@ Shifter<Vector256<sbyte>> lookup<sbyte>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<ushort>> lookup<ushort>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<ushort>> lookup<ushort>(N256 w, ShiftOpKind:byte kind)
@@ -1247,7 +1247,7 @@ Shifter<Vector256<ushort>> lookup<ushort>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<short>> lookup<short>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<short>> lookup<short>(N256 w, ShiftOpKind:byte kind)
@@ -1282,7 +1282,7 @@ Shifter<Vector256<short>> lookup<short>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<uint>> lookup<uint>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<uint>> lookup<uint>(N256 w, ShiftOpKind:byte kind)
@@ -1317,7 +1317,7 @@ Shifter<Vector256<uint>> lookup<uint>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<int>> lookup<int>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<int>> lookup<int>(N256 w, ShiftOpKind:byte kind)
@@ -1352,7 +1352,7 @@ Shifter<Vector256<int>> lookup<int>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<ulong>> lookup<ulong>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<ulong>> lookup<ulong>(N256 w, ShiftOpKind:byte kind)
@@ -1387,7 +1387,7 @@ Shifter<Vector256<ulong>> lookup<ulong>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
+// Z0.Logix.Shifter`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.ShiftOpKind)
 // Shifter<Vector256<long>> lookup<long>(N256 w, ShiftOpKind:byte kind)
 // IL
 Shifter<Vector256<long>> lookup<long>(N256 w, ShiftOpKind:byte kind)
@@ -1422,7 +1422,7 @@ Shifter<Vector256<long>> lookup<long>(N256 w, ShiftOpKind:byte kind)
     IL_005D: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<byte>> lookup<byte>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<byte>> lookup<byte>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1500,7 +1500,7 @@ BinaryOp<Vector128<byte>> lookup<byte>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1578,7 +1578,7 @@ BinaryOp<Vector128<sbyte>> lookup<sbyte>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1656,7 +1656,7 @@ BinaryOp<Vector128<ushort>> lookup<ushort>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<short>> lookup<short>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<short>> lookup<short>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1734,7 +1734,7 @@ BinaryOp<Vector128<short>> lookup<short>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<uint>> lookup<uint>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<uint>> lookup<uint>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1812,7 +1812,7 @@ BinaryOp<Vector128<uint>> lookup<uint>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<int>> lookup<int>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<int>> lookup<int>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1890,7 +1890,7 @@ BinaryOp<Vector128<int>> lookup<int>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, BinaryBitLogicKind:byte kind)
@@ -1968,7 +1968,7 @@ BinaryOp<Vector128<ulong>> lookup<ulong>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N128,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector128<long>> lookup<long>(N128 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector128<long>> lookup<long>(N128 w, BinaryBitLogicKind:byte kind)
@@ -2046,7 +2046,7 @@ BinaryOp<Vector128<long>> lookup<long>(N128 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<byte>> lookup<byte>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<byte>> lookup<byte>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2124,7 +2124,7 @@ BinaryOp<Vector256<byte>> lookup<byte>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2202,7 +2202,7 @@ BinaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2280,7 +2280,7 @@ BinaryOp<Vector256<ushort>> lookup<ushort>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<short>> lookup<short>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<short>> lookup<short>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2358,7 +2358,7 @@ BinaryOp<Vector256<short>> lookup<short>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<uint>> lookup<uint>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<uint>> lookup<uint>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2436,7 +2436,7 @@ BinaryOp<Vector256<uint>> lookup<uint>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<int>> lookup<int>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<int>> lookup<int>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2514,7 +2514,7 @@ BinaryOp<Vector256<int>> lookup<int>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2592,7 +2592,7 @@ BinaryOp<Vector256<ulong>> lookup<ulong>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
+// Z0.BinaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.BinaryBitLogicKind)
 // BinaryOp<Vector256<long>> lookup<long>(N256 w, BinaryBitLogicKind:byte kind)
 // IL
 BinaryOp<Vector256<long>> lookup<long>(N256 w, BinaryBitLogicKind:byte kind)
@@ -2670,7 +2670,7 @@ BinaryOp<Vector256<long>> lookup<long>(N256 w, BinaryBitLogicKind:byte kind)
     IL_0126: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<byte>> lookup<byte>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<byte>> lookup<byte>(N256 w, TernaryBitLogicKind:byte kind)
@@ -2794,7 +2794,7 @@ TernaryOp<Vector256<byte>> lookup<byte>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, TernaryBitLogicKind:byte kind)
@@ -2918,7 +2918,7 @@ TernaryOp<Vector256<sbyte>> lookup<sbyte>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<ushort>> lookup<ushort>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<ushort>> lookup<ushort>(N256 w, TernaryBitLogicKind:byte kind)
@@ -3042,7 +3042,7 @@ TernaryOp<Vector256<ushort>> lookup<ushort>(N256 w, TernaryBitLogicKind:byte kin
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<short>> lookup<short>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<short>> lookup<short>(N256 w, TernaryBitLogicKind:byte kind)
@@ -3166,7 +3166,7 @@ TernaryOp<Vector256<short>> lookup<short>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<uint>> lookup<uint>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<uint>> lookup<uint>(N256 w, TernaryBitLogicKind:byte kind)
@@ -3290,7 +3290,7 @@ TernaryOp<Vector256<uint>> lookup<uint>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<int>> lookup<int>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<int>> lookup<int>(N256 w, TernaryBitLogicKind:byte kind)
@@ -3414,7 +3414,7 @@ TernaryOp<Vector256<int>> lookup<int>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<ulong>> lookup<ulong>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<ulong>> lookup<ulong>(N256 w, TernaryBitLogicKind:byte kind)
@@ -3538,7 +3538,7 @@ TernaryOp<Vector256<ulong>> lookup<ulong>(N256 w, TernaryBitLogicKind:byte kind)
     IL_01E3: throw
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorizedOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
+// Z0.TernaryOp`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorOpApi::lookup<T>(Z0.N256,Z0.TernaryBitLogicKind)
 // TernaryOp<Vector256<long>> lookup<long>(N256 w, TernaryBitLogicKind:byte kind)
 // IL
 TernaryOp<Vector256<long>> lookup<long>(N256 w, TernaryBitLogicKind:byte kind)

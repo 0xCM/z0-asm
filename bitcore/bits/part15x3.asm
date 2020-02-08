@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part15x3(ushort src, in NatSpan<N5,byte> dst)
-; part15x3_16u_nspan5x8u~in[51] = {0f 1f 44 00 00 48 8b 02 0f b7 c9 41 b8 07 07 07 07 c4 42 73 f5 c0 44 89 00 48 8b 02 48 83 c0 04 c1 f9 0c 0f b6 d1 b9 07 00 00 00 c4 e2 6b f5 d1 88 10 c3}
+; part15x3_(16u,nspan5x8u~in)[51] = {0f 1f 44 00 00 48 8b 02 0f b7 c9 41 b8 07 07 07 07 c4 42 73 f5 c0 44 89 00 48 8b 02 48 83 c0 04 c1 f9 0c 0f b6 d1 b9 07 00 00 00 c4 e2 6b f5 d1 88 10 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

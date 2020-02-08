@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte blsic(byte src)
-; blsic_8u[20] = {0f 1f 44 00 00 0f b6 c1 8b d0 f7 d2 ff c8 0b c2 0f b6 c0 c3}
+; blsic_(8u)[20] = {0f 1f 44 00 00 0f b6 c1 8b d0 f7 d2 ff c8 0b c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -12,7 +12,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort blsic(ushort src)
-; blsic_16u[20] = {0f 1f 44 00 00 0f b7 c1 8b d0 f7 d2 ff c8 0b c2 0f b7 c0 c3}
+; blsic_(16u)[20] = {0f 1f 44 00 00 0f b7 c1 8b d0 f7 d2 ff c8 0b c2 0f b7 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -24,7 +24,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint blsic(uint src)
-; blsic_32u[14] = {0f 1f 44 00 00 8b c1 f7 d0 ff c9 0b c1 c3}
+; blsic_(32u)[14] = {0f 1f 44 00 00 8b c1 f7 d0 ff c9 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -34,7 +34,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong blsic(ulong src)
-; blsic_64u[18] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 48 ff c9 48 0b c1 c3}
+; blsic_(64u)[18] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 48 ff c9 48 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

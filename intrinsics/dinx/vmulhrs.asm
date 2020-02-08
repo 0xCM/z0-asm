@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vmulhrs(Vector128<short> x, Vector128<short> y)
-; vmulhrs_v128x16i_v128x16i[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 0b 00 c5 f9 11 01 48 8b c1 c3}
+; vmulhrs_(v128x16i,v128x16i)[22] = {c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 0b 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vmulhrs(Vector256<short> x, Vector256<short> y)
-; vmulhrs_v256x16i_v256x16i[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 0b 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmulhrs_(v256x16i,v256x16i)[25] = {c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 0b 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

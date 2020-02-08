@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void part12x3(uint src, ref byte dst)
-; part12x3_32u_8u~ref[44] = {0f 1f 44 00 00 8b c1 83 e0 07 88 02 8b c1 c1 e8 03 83 e0 07 88 42 01 8b c1 c1 e8 06 83 e0 07 88 42 02 c1 e9 09 83 e1 07 88 4a 03 c3}
+; part12x3_(32u,8u~ref)[44] = {0f 1f 44 00 00 8b c1 83 e0 07 88 02 8b c1 c1 e8 03 83 e0 07 88 42 01 8b c1 c1 e8 06 83 e0 07 88 42 02 c1 e9 09 83 e1 07 88 4a 03 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}

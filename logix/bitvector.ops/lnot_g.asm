@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<byte> lnot<byte>(BitVector<byte> x, BitVector<byte> y)
-; lnot_g[18] = {0f 1f 44 00 00 89 54 24 10 0f b6 c1 f7 d0 0f b6 c0 c3}
+; lnot_g[8u]()[18] = {0f 1f 44 00 00 89 54 24 10 0f b6 c1 f7 d0 0f b6 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -10,7 +10,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ushort> lnot<ushort>(BitVector<ushort> x, BitVector<ushort> y)
-; lnot_g[18] = {0f 1f 44 00 00 89 54 24 10 0f b7 c1 f7 d0 0f b7 c0 c3}
+; lnot_g[16u]()[18] = {0f 1f 44 00 00 89 54 24 10 0f b7 c1 f7 d0 0f b7 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -20,7 +20,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<uint> lnot<uint>(BitVector<uint> x, BitVector<uint> y)
-; lnot_g[14] = {0f 1f 44 00 00 89 54 24 10 8b c1 f7 d0 c3}
+; lnot_g[32u]()[14] = {0f 1f 44 00 00 89 54 24 10 8b c1 f7 d0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -29,7 +29,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ulong> lnot<ulong>(BitVector<ulong> x, BitVector<ulong> y)
-; lnot_g[17] = {0f 1f 44 00 00 48 89 54 24 10 48 8b c1 48 f7 d0 c3}
+; lnot_g[64u]()[17] = {0f 1f 44 00 00 48 89 54 24 10 48 8b c1 48 f7 d0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 10}

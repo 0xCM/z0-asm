@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte cnonimpl(sbyte a, sbyte b)
-; cnonimpl_8i_8i[23] = {0f 1f 44 00 00 48 0f be c2 48 0f be d1 c4 e2 78 f2 c2 48 0f be c0 c3}
+; cnonimpl_(8i,8i)[23] = {0f 1f 44 00 00 48 0f be c2 48 0f be d1 c4 e2 78 f2 c2 48 0f be c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c2}
@@ -10,7 +10,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte cnonimpl(byte a, byte b)
-; cnonimpl_8u_8u[20] = {0f 1f 44 00 00 0f b6 c2 0f b6 d1 c4 e2 78 f2 c2 0f b6 c0 c3}
+; cnonimpl_(8u,8u)[20] = {0f 1f 44 00 00 0f b6 c2 0f b6 d1 c4 e2 78 f2 c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -20,7 +20,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short cnonimpl(short a, short b)
-; cnonimpl_16i_16i[23] = {0f 1f 44 00 00 48 0f bf c2 48 0f bf d1 c4 e2 78 f2 c2 48 0f bf c0 c3}
+; cnonimpl_(16i,16i)[23] = {0f 1f 44 00 00 48 0f bf c2 48 0f bf d1 c4 e2 78 f2 c2 48 0f bf c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c2}
@@ -30,7 +30,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort cnonimpl(ushort a, ushort b)
-; cnonimpl_16u_16u[20] = {0f 1f 44 00 00 0f b7 c2 0f b7 d1 c4 e2 78 f2 c2 0f b7 c0 c3}
+; cnonimpl_(16u,16u)[20] = {0f 1f 44 00 00 0f b7 c2 0f b7 d1 c4 e2 78 f2 c2 0f b7 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
@@ -40,28 +40,28 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int cnonimpl(int a, int b)
-; cnonimpl_32i_32i[11] = {0f 1f 44 00 00 c4 e2 68 f2 c1 c3}
+; cnonimpl_(32i,32i)[11] = {0f 1f 44 00 00 c4 e2 68 f2 c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint cnonimpl(uint a, uint b)
-; cnonimpl_32u_32u[11] = {0f 1f 44 00 00 c4 e2 68 f2 c1 c3}
+; cnonimpl_(32u,32u)[11] = {0f 1f 44 00 00 c4 e2 68 f2 c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long cnonimpl(long a, long b)
-; cnonimpl_64i_64i[11] = {0f 1f 44 00 00 c4 e2 e8 f2 c1 c3}
+; cnonimpl_(64i,64i)[11] = {0f 1f 44 00 00 c4 e2 e8 f2 c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong cnonimpl(ulong a, ulong b)
-; cnonimpl_64u_64u[11] = {0f 1f 44 00 00 c4 e2 e8 f2 c1 c3}
+; cnonimpl_(64u,64u)[11] = {0f 1f 44 00 00 c4 e2 e8 f2 c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; int lsbpos<byte>(byte src)
-; lsbpos_g8u[24] = {0f 1f 44 00 00 0f b6 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 08 00 00 00 c3}
+; lsbpos_g[8u](8u)[24] = {0f 1f 44 00 00 0f b6 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 08 00 00 00 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -12,7 +12,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int lsbpos<ushort>(ushort src)
-; lsbpos_g16u[24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
+; lsbpos_g[16u](16u)[24] = {0f 1f 44 00 00 0f b7 c1 85 c0 74 06 f3 0f bc c0 eb 05 b8 10 00 00 00 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -24,7 +24,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int lsbpos<uint>(uint src)
-; lsbpos_g32u[12] = {0f 1f 44 00 00 33 c0 f3 0f bc c1 c3}
+; lsbpos_g[32u](32u)[12] = {0f 1f 44 00 00 33 c0 f3 0f bc c1 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -32,7 +32,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int lsbpos<ulong>(ulong src)
-; lsbpos_g64u[13] = {0f 1f 44 00 00 33 c0 f3 48 0f bc c1 c3}
+; lsbpos_g[64u](64u)[13] = {0f 1f 44 00 00 33 c0 f3 48 0f bc c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}

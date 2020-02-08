@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f3b<byte>(byte a, byte b, byte c)
-; f3b_g8u_8u_8u[43] = {0f 1f 44 00 00 0f b6 c1 f7 d0 0f b6 c0 41 0f b6 c8 23 c1 0f b6 c0 0f b6 d2 81 f2 ff 00 00 00 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
+; f3b_g[8u](8u,8u,8u)[43] = {0f 1f 44 00 00 0f b6 c1 f7 d0 0f b6 c0 41 0f b6 c8 23 c1 0f b6 c0 0f b6 d2 81 f2 ff 00 00 00 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -18,7 +18,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f3b<sbyte>(sbyte a, sbyte b, sbyte c)
-; f3b_g8i_8i_8i[54] = {56 48 83 ec 20 48 0f be c9 f7 d1 48 0f be c9 49 0f be c0 23 c8 48 0f be f1 48 0f be ca e8 fe bb fe ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 83 c4 20 5e c3}
+; f3b_g[8i](8i,8i,8i)[54] = {56 48 83 ec 20 48 0f be c9 f7 d1 48 0f be c9 49 0f be c0 23 c8 48 0f be f1 48 0f be ca e8 1e bc fe ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -29,7 +29,7 @@
 0013h and ecx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c8}
 0015h movsx rsi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f1}
 0019h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-001dh call 7ff7c8699510h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe bb fe ff}
+001dh call 7ff7c86ce9b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e bc fe ff}
 0022h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0026h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 002ah or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -39,7 +39,7 @@
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f3b<ushort>(ushort a, ushort b, ushort c)
-; f3b_g16u_16u_16u[53] = {50 0f 1f 40 00 0f b7 c1 f7 d0 0f b7 c0 41 0f b7 c8 23 c1 0f b7 c0 0f b7 d2 81 f2 ff ff 00 00 89 54 24 04 0f b7 54 24 04 0f b7 c0 0b c2 0f b7 c0 48 83 c4 08 c3}
+; f3b_g[16u](16u,16u,16u)[53] = {50 0f 1f 40 00 0f b7 c1 f7 d0 0f b7 c0 41 0f b7 c8 23 c1 0f b7 c0 0f b7 d2 81 f2 ff ff 00 00 89 54 24 04 0f b7 54 24 04 0f b7 c0 0b c2 0f b7 c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -60,7 +60,7 @@
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short f3b<short>(short a, short b, short c)
-; f3b_g16i_16i_16i[54] = {56 48 83 ec 20 48 0f bf c9 f7 d1 48 0f bf c9 49 0f bf c0 23 c8 48 0f bf f1 48 0f bf ca e8 de dc fe ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 83 c4 20 5e c3}
+; f3b_g[16i](16i,16i,16i)[54] = {56 48 83 ec 20 48 0f bf c9 f7 d1 48 0f bf c9 49 0f bf c0 23 c8 48 0f bf f1 48 0f bf ca e8 ee dc fe ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -71,7 +71,7 @@
 0013h and ecx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c8}
 0015h movsx rsi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f1}
 0019h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-001dh call 7ff7c869b690h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de dc fe ff}
+001dh call 7ff7c86d0b20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee dc fe ff}
 0022h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0026h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 002ah or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -81,7 +81,7 @@
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f3b<uint>(uint a, uint b, uint c)
-; f3b_g32u_32u_32u[17] = {0f 1f 44 00 00 8b c1 f7 d0 41 23 c0 f7 d2 0b c2 c3}
+; f3b_g[32u](32u,32u,32u)[17] = {0f 1f 44 00 00 8b c1 f7 d0 41 23 c0 f7 d2 0b c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -92,7 +92,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f3b<int>(int a, int b, int c)
-; f3b_g32i_32i_32i[27] = {56 48 83 ec 20 8b f1 f7 d6 41 23 f0 8b ca e8 2d fd fe ff 0b c6 48 83 c4 20 5e c3}
+; f3b_g[32i](32i,32i,32i)[27] = {56 48 83 ec 20 8b f1 f7 d6 41 23 f0 8b ca e8 3d fd fe ff 0b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -100,14 +100,14 @@
 0007h not esi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d6}
 0009h and esi,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 f0}
 000ch mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000eh call 7ff7c869d750h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d fd fe ff}
+000eh call 7ff7c86d2be0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d fd fe ff}
 0013h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0015h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0019h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f3b<ulong>(ulong a, ulong b, ulong c)
-; f3b_g64u_64u_64u[21] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 49 23 c0 48 f7 d2 48 0b c2 c3}
+; f3b_g[64u](64u,64u,64u)[21] = {0f 1f 44 00 00 48 8b c1 48 f7 d0 49 23 c0 48 f7 d2 48 0b c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -118,7 +118,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f3b<long>(long a, long b, long c)
-; f3b_g64i_64i_64i[31] = {56 48 83 ec 20 48 8b f1 48 f7 d6 49 23 f0 48 8b ca e8 72 19 ff ff 48 0b c6 48 83 c4 20 5e c3}
+; f3b_g[64i](64i,64i,64i)[31] = {56 48 83 ec 20 48 8b f1 48 f7 d6 49 23 f0 48 8b ca e8 82 19 ff ff 48 0b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -126,7 +126,7 @@
 0008h not rsi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d6}
 000bh and rsi,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 f0}
 000eh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
-0011h call 7ff7c869f3f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 19 ff ff}
+0011h call 7ff7c86d4888h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 19 ff ff}
 0016h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 0019h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte avgi(byte a, byte b)
-; avgi_8u_8u[25] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b c8 0b ca 33 c2 d1 f8 2b c8 0f b6 c1 c3}
+; avgi_(8u,8u)[25] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 8b c8 0b ca 33 c2 d1 f8 2b c8 0f b6 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -14,7 +14,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort avgi(ushort a, ushort b)
-; avgi_16u_16u[25] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 8b c8 0b ca 33 c2 d1 f8 2b c8 0f b7 c1 c3}
+; avgi_(16u,16u)[25] = {0f 1f 44 00 00 0f b7 c1 0f b7 d2 8b c8 0b ca 33 c2 d1 f8 2b c8 0f b7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -28,7 +28,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint avgi(uint a, uint b)
-; avgi_32u_32u[16] = {0f 1f 44 00 00 8b c1 0b c2 33 d1 d1 ea 2b c2 c3}
+; avgi_(32u,32u)[16] = {0f 1f 44 00 00 8b c1 0b c2 33 d1 d1 ea 2b c2 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -39,7 +39,7 @@
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong avgi(ulong a, ulong b)
-; avgi_64u_64u[21] = {0f 1f 44 00 00 48 8b c1 48 0b c2 48 33 d1 48 d1 ea 48 2b c2 c3}
+; avgi_(64u,64u)[21] = {0f 1f 44 00 00 48 8b c1 48 0b c2 48 33 d1 48 d1 ea 48 2b c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

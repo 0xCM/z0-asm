@@ -1,6 +1,6 @@
-negative_8i   0f 1f 44 00 00 48 0f be c1 85 c0 0f 9c c0 0f b6 c0 c3
-negative_16i  0f 1f 44 00 00 48 0f bf c1 85 c0 0f 9c c0 0f b6 c0 c3
-negative_32i  0f 1f 44 00 00 85 c9 0f 9c c0 0f b6 c0 c3
-negative_64i  0f 1f 44 00 00 48 85 c9 0f 9c c0 0f b6 c0 c3
-negative_32f  c5 f8 77 66 90 c5 f0 57 c9 c5 f8 2e c8 0f 97 c0 0f b6 c0 c3
-negative_64f  c5 f8 77 66 90 c5 f0 57 c9 c5 f9 2e c8 0f 97 c0 0f b6 c0 c3
+negative_(8i)   0f 1f 44 00 00 48 0f be c1 85 c0 0f 9c c0 0f b6 c0 c3
+negative_(16i)  0f 1f 44 00 00 48 0f bf c1 85 c0 0f 9c c0 0f b6 c0 c3
+negative_(32i)  0f 1f 44 00 00 85 c9 0f 9c c0 0f b6 c0 c3
+negative_(64i)  0f 1f 44 00 00 48 85 c9 0f 9c c0 0f b6 c0 c3
+negative_(32f)  c5 f8 77 66 90 c5 f0 57 c9 c5 f8 2e c8 0f 97 c0 0f b6 c0 c3
+negative_(64f)  c5 f8 77 66 90 c5 f0 57 c9 c5 f9 2e c8 0f 97 c0 0f b6 c0 c3

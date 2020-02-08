@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ulong src, out byte x0, out byte x1, out byte x2, out byte x3, out byte x4, out byte x5, out byte x6, out byte x7)
-; split_64u_8u~out_8u~out_8u~out_8u~out_8u~out_8u~out_8u~out_8u~out[95] = {0f 1f 44 00 00 88 0a 48 8b c1 48 c1 e8 08 41 88 00 48 8b c1 48 c1 e8 10 41 88 01 48 8b c1 48 c1 e8 18 48 8b 54 24 28 88 02 48 8b c1 48 c1 e8 20 48 8b 54 24 30 88 02 48 8b c1 48 c1 e8 28 48 8b 54 24 38 88 02 48 8b c1 48 c1 e8 30 48 8b 54 24 40 88 02 48 c1 e9 38 48 8b 44 24 48 88 08 c3}
+; split_(64u,8u~out,8u~out,8u~out,8u~out,8u~out,8u~out,8u~out,8u~out)[95] = {0f 1f 44 00 00 88 0a 48 8b c1 48 c1 e8 08 41 88 00 48 8b c1 48 c1 e8 10 41 88 01 48 8b c1 48 c1 e8 18 48 8b 54 24 28 88 02 48 8b c1 48 c1 e8 20 48 8b 54 24 30 88 02 48 8b c1 48 c1 e8 28 48 8b 54 24 38 88 02 48 8b c1 48 c1 e8 30 48 8b 54 24 40 88 02 48 c1 e9 38 48 8b 44 24 48 88 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cl                            ; MOV r/m8, r8 || 88 /r || encoded[2]{88 0a}
@@ -32,7 +32,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstPair<byte> split(ushort src, N2 n)
-; split_16u_n2[49] = {50 0f 1f 40 00 0f b7 c1 0f b6 d0 c1 f8 08 0f b6 c0 c6 04 24 00 c6 44 24 01 00 0f b6 d2 88 14 24 0f b6 c0 88 44 24 01 48 0f bf 04 24 48 83 c4 08 c3}
+; split_(16u,n2)[49] = {50 0f 1f 40 00 0f b7 c1 0f b6 d0 c1 f8 08 0f b6 c0 c6 04 24 00 c6 44 24 01 00 0f b6 d2 88 14 24 0f b6 c0 88 44 24 01 48 0f bf 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -51,7 +51,7 @@
 0030h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstPair<ushort> split(uint src, N2 n)
-; split_32u_n2[50] = {50 0f 1f 40 00 0f b7 c1 c1 e9 10 0f b7 d1 66 c7 04 24 00 00 66 c7 44 24 02 00 00 0f b7 c0 66 89 04 24 0f b7 c2 66 89 44 24 02 8b 04 24 48 83 c4 08 c3}
+; split_(32u,n2)[50] = {50 0f 1f 40 00 0f b7 c1 c1 e9 10 0f b7 d1 66 c7 04 24 00 00 66 c7 44 24 02 00 00 0f b7 c0 66 89 04 24 0f b7 c2 66 89 44 24 02 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -69,7 +69,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstQuad<byte> split(uint src, N4 n)
-; split_32u_n4[88] = {50 0f 1f 40 00 0f b6 c1 8b d1 c1 ea 08 0f b6 d2 44 8b c1 41 c1 e8 10 45 0f b6 c0 c1 e9 18 0f b6 c9 c6 04 24 00 c6 44 24 01 00 c6 44 24 02 00 c6 44 24 03 00 0f b6 c0 88 04 24 0f b6 c2 88 44 24 01 41 0f b6 c0 88 44 24 02 0f b6 c1 88 44 24 03 8b 04 24 48 83 c4 08 c3}
+; split_(32u,n4)[88] = {50 0f 1f 40 00 0f b6 c1 8b d1 c1 ea 08 0f b6 d2 44 8b c1 41 c1 e8 10 45 0f b6 c0 c1 e9 18 0f b6 c9 c6 04 24 00 c6 44 24 01 00 c6 44 24 02 00 c6 44 24 03 00 0f b6 c0 88 04 24 0f b6 c2 88 44 24 01 41 0f b6 c0 88 44 24 02 0f b6 c1 88 44 24 03 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -99,7 +99,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstPair<uint> split(ulong src, N2 n)
-; split_64u_n2[38] = {50 0f 1f 40 00 8b c1 48 c1 e9 20 8b d1 33 c9 89 0c 24 89 4c 24 04 89 04 24 89 54 24 04 48 8b 04 24 48 83 c4 08 c3}
+; split_(64u,n2)[38] = {50 0f 1f 40 00 8b c1 48 c1 e9 20 8b d1 33 c9 89 0c 24 89 4c 24 04 89 04 24 89 54 24 04 48 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -116,7 +116,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstQuad<ushort> split(ulong src, N4 n)
-; split_64u_n4[104] = {50 0f 1f 40 00 0f b7 c1 48 8b d1 48 c1 ea 10 0f b7 d2 4c 8b c1 49 c1 e8 20 45 0f b7 c0 48 c1 e9 30 0f b7 c9 66 c7 04 24 00 00 66 c7 44 24 02 00 00 66 c7 44 24 04 00 00 66 c7 44 24 06 00 00 0f b7 c0 66 89 04 24 0f b7 c2 66 89 44 24 02 41 0f b7 c0 66 89 44 24 04 0f b7 c1 66 89 44 24 06 48 8b 04 24 48 83 c4 08 c3}
+; split_(64u,n4)[104] = {50 0f 1f 40 00 0f b7 c1 48 8b d1 48 c1 ea 10 0f b7 d2 4c 8b c1 49 c1 e8 20 45 0f b7 c0 48 c1 e9 30 0f b7 c9 66 c7 04 24 00 00 66 c7 44 24 02 00 00 66 c7 44 24 04 00 00 66 c7 44 24 06 00 00 0f b7 c0 66 89 04 24 0f b7 c2 66 89 44 24 02 41 0f b7 c0 66 89 44 24 04 0f b7 c1 66 89 44 24 06 48 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -146,7 +146,7 @@
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(byte src, int index, out byte x0, out byte x1)
-; split_8u_32i_8u~out_8u~out[42] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b d0 41 d3 fa 45 88 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 0f b6 d1 ff ca 23 c2 41 88 00 c3}
+; split_(8u,32i,8u~out,8u~out)[42] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b d0 41 d3 fa 45 88 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 0f b6 d1 ff ca 23 c2 41 88 00 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -164,7 +164,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ushort src, int index, out ushort x0, out ushort x1)
-; split_16u_32i_16u~out_16u~out[44] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b d0 41 d3 fa 66 45 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 0f b7 d1 ff ca 23 c2 66 41 89 00 c3}
+; split_(16u,32i,16u~out,16u~out)[44] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b d0 41 d3 fa 66 45 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 0f b7 d1 ff ca 23 c2 66 41 89 00 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -182,7 +182,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(uint src, int index, out uint x0, out uint x1)
-; split_32u_32i_32u~out_32u~out[40] = {0f 1f 44 00 00 8b c1 8b ca 44 8b d0 41 d3 ea 45 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 8b d1 ff ca 23 c2 41 89 00 c3}
+; split_(32u,32i,32u~out,32u~out)[40] = {0f 1f 44 00 00 8b c1 8b ca 44 8b d0 41 d3 ea 45 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 41 8b d1 ff ca 23 c2 41 89 00 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -200,7 +200,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ulong src, int index, out ulong x0, out ulong x1)
-; split_64u_32i_64u~out_64u~out[43] = {0f 1f 44 00 00 48 8b c1 83 e2 3f 8b ca 4c 8b d0 49 d3 ea 4d 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 49 ff c9 49 23 c1 49 89 00 c3}
+; split_(64u,32i,64u~out,64u~out)[43] = {0f 1f 44 00 00 48 8b c1 83 e2 3f 8b ca 4c 8b d0 49 d3 ea 4d 89 11 41 b9 01 00 00 00 8b ca 49 d3 e1 49 ff c9 49 23 c1 49 89 00 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -218,7 +218,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(byte src, out byte x0, out byte x1)
-; split_8u_8u~out_8u~out[22] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 0f 88 0a c1 f8 04 41 88 00 c3}
+; split_(8u,8u~out,8u~out)[22] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 0f 88 0a c1 f8 04 41 88 00 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -230,7 +230,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte split(byte src, out byte x0)
-; split_8u_8u~out[22] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 0f 88 0a c1 f8 04 0f b6 c0 c3}
+; split_(8u,8u~out)[22] = {0f 1f 44 00 00 0f b6 c1 8b c8 83 e1 0f 88 0a c1 f8 04 0f b6 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -242,7 +242,7 @@
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ushort src, out byte x0, out byte x1)
-; split_16u_8u~out_8u~out[17] = {0f 1f 44 00 00 88 0a 0f b7 c1 c1 f8 08 41 88 00 c3}
+; split_(16u,8u~out,8u~out)[17] = {0f 1f 44 00 00 88 0a 0f b7 c1 c1 f8 08 41 88 00 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cl                            ; MOV r/m8, r8 || 88 /r || encoded[2]{88 0a}
@@ -252,7 +252,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte split(ushort src, out byte x0)
-; split_16u_8u~out[17] = {0f 1f 44 00 00 88 0a 0f b7 c1 c1 f8 08 0f b6 c0 c3}
+; split_(16u,8u~out)[17] = {0f 1f 44 00 00 88 0a 0f b7 c1 c1 f8 08 0f b6 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cl                            ; MOV r/m8, r8 || 88 /r || encoded[2]{88 0a}
@@ -262,7 +262,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(uint src, out ushort x0, out ushort x1)
-; split_32u_16u~out_16u~out[16] = {0f 1f 44 00 00 66 89 0a c1 e9 10 66 41 89 08 c3}
+; split_(32u,16u~out,16u~out)[16] = {0f 1f 44 00 00 66 89 0a c1 e9 10 66 41 89 08 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cx                            ; MOV r/m16, r16 || o16 89 /r || encoded[3]{66 89 0a}
@@ -271,7 +271,7 @@
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort split(uint src, out ushort x0)
-; split_32u_16u~out[15] = {0f 1f 44 00 00 66 89 0a c1 e9 10 0f b7 c1 c3}
+; split_(32u,16u~out)[15] = {0f 1f 44 00 00 66 89 0a c1 e9 10 0f b7 c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cx                            ; MOV r/m16, r16 || o16 89 /r || encoded[3]{66 89 0a}
@@ -280,7 +280,7 @@
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ulong src, out uint x0, out uint x1)
-; split_64u_32u~out_32u~out[17] = {0f 1f 44 00 00 89 0a 48 c1 e9 20 8b c1 41 89 00 c3}
+; split_(64u,32u~out,32u~out)[17] = {0f 1f 44 00 00 89 0a 48 c1 e9 20 8b c1 41 89 00 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],ecx                           ; MOV r/m32, r32 || o32 89 /r || encoded[2]{89 0a}
@@ -290,7 +290,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint split(ulong src, out uint x0)
-; split_64u_32u~out[14] = {0f 1f 44 00 00 89 0a 48 c1 e9 20 8b c1 c3}
+; split_(64u,32u~out)[14] = {0f 1f 44 00 00 89 0a 48 c1 e9 20 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],ecx                           ; MOV r/m32, r32 || o32 89 /r || encoded[2]{89 0a}
@@ -299,7 +299,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(ulong src, out ushort x0, out ushort x1, out ushort x2, out ushort x3)
-; split_64u_16u~out_16u~out_16u~out_16u~out[43] = {0f 1f 44 00 00 66 89 0a 48 8b c1 48 c1 e8 10 66 41 89 00 48 8b c1 48 c1 e8 20 66 41 89 01 48 c1 e9 30 48 8b 44 24 28 66 89 08 c3}
+; split_(64u,16u~out,16u~out,16u~out,16u~out)[43] = {0f 1f 44 00 00 66 89 0a 48 8b c1 48 c1 e8 10 66 41 89 00 48 8b c1 48 c1 e8 20 66 41 89 01 48 c1 e9 30 48 8b 44 24 28 66 89 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cx                            ; MOV r/m16, r16 || o16 89 /r || encoded[3]{66 89 0a}
@@ -315,7 +315,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void split(uint src, out byte x0, out byte x1, out byte x2, out byte x3)
-; split_32u_8u~out_8u~out_8u~out_8u~out[34] = {0f 1f 44 00 00 88 0a 8b c1 c1 e8 08 41 88 00 8b c1 c1 e8 10 41 88 01 c1 e9 18 48 8b 44 24 28 88 08 c3}
+; split_(32u,8u~out,8u~out,8u~out,8u~out)[34] = {0f 1f 44 00 00 88 0a 8b c1 c1 e8 08 41 88 00 8b c1 c1 e8 10 41 88 01 c1 e9 18 48 8b 44 24 28 88 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rdx],cl                            ; MOV r/m8, r8 || 88 /r || encoded[2]{88 0a}

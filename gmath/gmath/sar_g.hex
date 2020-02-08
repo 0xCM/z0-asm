@@ -1,8 +1,8 @@
-sar_g8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 f8 0f b6 c0 c3
-sar_g8i_8u   0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 f8 48 0f be c0 c3
-sar_g16u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 f8 0f b7 c0 c3
-sar_g16i_8u  0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 f8 48 0f bf c0 c3
-sar_g32u_8u  0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 c3
-sar_g32i_8u  0f 1f 44 00 00 8b c1 0f b6 ca d3 f8 c3
-sar_g64u_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3
-sar_g64i_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 f8 c3
+sar_g[8u](8u,8u)    0f 1f 44 00 00 0f b6 c1 0f b6 ca d3 f8 0f b6 c0 c3
+sar_g[8i](8i,8u)    0f 1f 44 00 00 48 0f be c1 0f b6 ca d3 f8 48 0f be c0 c3
+sar_g[16u](16u,8u)  0f 1f 44 00 00 0f b7 c1 0f b6 ca d3 f8 0f b7 c0 c3
+sar_g[16i](16i,8u)  0f 1f 44 00 00 48 0f bf c1 0f b6 ca d3 f8 48 0f bf c0 c3
+sar_g[32u](32u,8u)  0f 1f 44 00 00 8b c1 0f b6 ca d3 e8 c3
+sar_g[32i](32i,8u)  0f 1f 44 00 00 8b c1 0f b6 ca d3 f8 c3
+sar_g[64u](64u,8u)  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 e8 c3
+sar_g[64i](64i,8u)  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 d3 f8 c3

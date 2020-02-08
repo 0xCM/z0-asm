@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(sbyte src)
-; pop_8i[14] = {0f 1f 44 00 00 48 0f be c1 f3 0f b8 c0 c3}
+; pop_(8i)[14] = {0f 1f 44 00 00 48 0f be c1 f3 0f b8 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -8,7 +8,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(byte src)
-; pop_8u[13] = {0f 1f 44 00 00 0f b6 c1 f3 0f b8 c0 c3}
+; pop_(8u)[13] = {0f 1f 44 00 00 0f b6 c1 f3 0f b8 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -16,7 +16,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(short src)
-; pop_16i[14] = {0f 1f 44 00 00 48 0f bf c1 f3 0f b8 c0 c3}
+; pop_(16i)[14] = {0f 1f 44 00 00 48 0f bf c1 f3 0f b8 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -24,7 +24,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ushort src)
-; pop_16u[13] = {0f 1f 44 00 00 0f b7 c1 f3 0f b8 c0 c3}
+; pop_(16u)[13] = {0f 1f 44 00 00 0f b7 c1 f3 0f b8 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -32,7 +32,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(int src)
-; pop_32i[12] = {0f 1f 44 00 00 33 c0 f3 0f b8 c1 c3}
+; pop_(32i)[12] = {0f 1f 44 00 00 33 c0 f3 0f b8 c1 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -40,7 +40,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(uint src)
-; pop_32u[12] = {0f 1f 44 00 00 33 c0 f3 0f b8 c1 c3}
+; pop_(32u)[12] = {0f 1f 44 00 00 33 c0 f3 0f b8 c1 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -48,7 +48,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(long src)
-; pop_64i[13] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 c3}
+; pop_(64i)[13] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -56,7 +56,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong src)
-; pop_64u[13] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 c3}
+; pop_(64u)[13] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -64,7 +64,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong x0, ulong x1)
-; pop_64u_64u[20] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 c3}
+; pop_(64u,64u)[20] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -74,7 +74,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong x, ulong y, ulong z)
-; pop_64u_64u_64u[187] = {0f 1f 44 00 00 48 8b c1 48 33 c2 4c 8b c8 4d 23 c8 48 23 d1 49 0b d1 49 33 c0 48 8b ca 48 d1 e9 49 b8 55 55 55 55 55 55 55 55 49 23 c8 48 2b d1 48 8b c8 48 d1 e9 49 23 c8 48 2b c1 48 b9 33 33 33 33 33 33 33 33 48 23 ca 48 c1 ea 02 49 b8 33 33 33 33 33 33 33 33 49 23 d0 48 03 d1 4c 23 c0 48 c1 e8 02 48 b9 33 33 33 33 33 33 33 33 48 23 c1 49 03 c0 48 8b ca 48 c1 e9 04 48 03 ca 48 ba 0f 0f 0f 0f 0f 0f 0f 0f 48 23 d1 48 8b c8 48 c1 e9 04 48 03 c8 48 b8 0f 0f 0f 0f 0f 0f 0f 0f 48 23 c1 48 03 d2 48 03 d0 48 b8 01 01 01 01 01 01 01 01 48 0f af c2 48 c1 e8 38 c3}
+; pop_(64u,64u,64u)[187] = {0f 1f 44 00 00 48 8b c1 48 33 c2 4c 8b c8 4d 23 c8 48 23 d1 49 0b d1 49 33 c0 48 8b ca 48 d1 e9 49 b8 55 55 55 55 55 55 55 55 49 23 c8 48 2b d1 48 8b c8 48 d1 e9 49 23 c8 48 2b c1 48 b9 33 33 33 33 33 33 33 33 48 23 ca 48 c1 ea 02 49 b8 33 33 33 33 33 33 33 33 49 23 d0 48 03 d1 4c 23 c0 48 c1 e8 02 48 b9 33 33 33 33 33 33 33 33 48 23 c1 49 03 c0 48 8b ca 48 c1 e9 04 48 03 ca 48 ba 0f 0f 0f 0f 0f 0f 0f 0f 48 23 d1 48 8b c8 48 c1 e9 04 48 03 c8 48 b8 0f 0f 0f 0f 0f 0f 0f 0f 48 23 c1 48 03 d2 48 03 d0 48 b8 01 01 01 01 01 01 01 01 48 0f af c2 48 c1 e8 38 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -122,7 +122,7 @@
 00bah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong x0, ulong x1, ulong x2, ulong x3)
-; pop_64u_64u_64u_64u[38] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 c3}
+; pop_(64u,64u,64u,64u)[38] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -138,7 +138,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5, ulong x6, ulong x7)
-; pop_64u_64u_64u_64u_64u_64u_64u_64u[82] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 48 0f b8 54 24 28 03 c2 33 d2 f3 48 0f b8 54 24 30 03 c2 33 d2 f3 48 0f b8 54 24 38 03 c2 33 d2 f3 48 0f b8 54 24 40 03 c2 c3}
+; pop_(64u,64u,64u,64u,64u,64u,64u,64u)[82] = {0f 1f 44 00 00 33 c0 f3 48 0f b8 c1 f3 48 0f b8 d2 03 c2 33 d2 f3 49 0f b8 d0 03 c2 33 d2 f3 49 0f b8 d1 03 c2 33 d2 f3 48 0f b8 54 24 28 03 c2 33 d2 f3 48 0f b8 54 24 30 03 c2 33 d2 f3 48 0f b8 54 24 38 03 c2 33 d2 f3 48 0f b8 54 24 40 03 c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -166,7 +166,7 @@
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint pop(ulong x0, ulong x1, ulong x2, ulong x3, ulong x4, ulong x5)
-; pop_64u_64u_64u_64u_64u_64u[385] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b d9 4c 33 da 49 8b f3 49 23 f0 48 23 d1 48 0b d6 4d 33 c3 48 8b ca 48 d1 e9 49 bb 55 55 55 55 55 55 55 55 49 23 cb 48 2b d1 49 8b c8 48 d1 e9 49 23 cb 4c 2b c1 48 b9 33 33 33 33 33 33 33 33 48 23 ca 48 c1 ea 02 49 bb 33 33 33 33 33 33 33 33 49 23 d3 48 03 d1 4d 23 d8 49 c1 e8 02 48 b9 33 33 33 33 33 33 33 33 4c 23 c1 4d 03 c3 48 8b ca 48 c1 e9 04 48 03 ca 48 ba 0f 0f 0f 0f 0f 0f 0f 0f 48 23 d1 49 8b c8 48 c1 e9 04 49 03 c8 49 b8 0f 0f 0f 0f 0f 0f 0f 0f 4c 23 c1 48 03 d2 49 03 d0 49 b8 01 01 01 01 01 01 01 01 4c 0f af c2 49 c1 e8 38 41 8b d0 49 8b c9 48 33 c8 4c 8b c1 4d 23 c2 49 23 c1 49 0b c0 49 33 ca 4c 8b c0 49 d1 e8 49 b9 55 55 55 55 55 55 55 55 4d 23 c1 49 2b c0 4c 8b c1 49 d1 e8 4d 23 c1 49 2b c8 49 b8 33 33 33 33 33 33 33 33 4c 23 c0 48 c1 e8 02 49 b9 33 33 33 33 33 33 33 33 49 23 c1 49 03 c0 4c 23 c9 48 c1 e9 02 49 b8 33 33 33 33 33 33 33 33 49 23 c8 49 03 c9 4c 8b c0 49 c1 e8 04 4c 03 c0 48 b8 0f 0f 0f 0f 0f 0f 0f 0f 49 23 c0 4c 8b c1 49 c1 e8 04 4c 03 c1 48 b9 0f 0f 0f 0f 0f 0f 0f 0f 49 23 c8 48 03 c0 48 03 c1 48 b9 01 01 01 01 01 01 01 01 48 0f af c8 48 c1 e9 38 8d 04 0a 5e c3}
+; pop_(64u,64u,64u,64u,64u,64u)[385] = {56 0f 1f 40 00 48 8b 44 24 30 4c 8b 54 24 38 4c 8b d9 4c 33 da 49 8b f3 49 23 f0 48 23 d1 48 0b d6 4d 33 c3 48 8b ca 48 d1 e9 49 bb 55 55 55 55 55 55 55 55 49 23 cb 48 2b d1 49 8b c8 48 d1 e9 49 23 cb 4c 2b c1 48 b9 33 33 33 33 33 33 33 33 48 23 ca 48 c1 ea 02 49 bb 33 33 33 33 33 33 33 33 49 23 d3 48 03 d1 4d 23 d8 49 c1 e8 02 48 b9 33 33 33 33 33 33 33 33 4c 23 c1 4d 03 c3 48 8b ca 48 c1 e9 04 48 03 ca 48 ba 0f 0f 0f 0f 0f 0f 0f 0f 48 23 d1 49 8b c8 48 c1 e9 04 49 03 c8 49 b8 0f 0f 0f 0f 0f 0f 0f 0f 4c 23 c1 48 03 d2 49 03 d0 49 b8 01 01 01 01 01 01 01 01 4c 0f af c2 49 c1 e8 38 41 8b d0 49 8b c9 48 33 c8 4c 8b c1 4d 23 c2 49 23 c1 49 0b c0 49 33 ca 4c 8b c0 49 d1 e8 49 b9 55 55 55 55 55 55 55 55 4d 23 c1 49 2b c0 4c 8b c1 49 d1 e8 4d 23 c1 49 2b c8 49 b8 33 33 33 33 33 33 33 33 4c 23 c0 48 c1 e8 02 49 b9 33 33 33 33 33 33 33 33 49 23 c1 49 03 c0 4c 23 c9 48 c1 e9 02 49 b8 33 33 33 33 33 33 33 33 49 23 c8 49 03 c9 4c 8b c0 49 c1 e8 04 4c 03 c0 48 b8 0f 0f 0f 0f 0f 0f 0f 0f 49 23 c0 4c 8b c1 49 c1 e8 04 4c 03 c1 48 b9 0f 0f 0f 0f 0f 0f 0f 0f 49 23 c8 48 03 c0 48 03 c1 48 b9 01 01 01 01 01 01 01 01 48 0f af c8 48 c1 e9 38 8d 04 0a 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}

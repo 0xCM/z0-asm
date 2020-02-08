@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<byte> left<byte>(BitVector<byte> x, BitVector<byte> y)
-; left_g[13] = {0f 1f 44 00 00 89 54 24 10 0f b6 c1 c3}
+; left_g[8u]()[13] = {0f 1f 44 00 00 89 54 24 10 0f b6 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -8,7 +8,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ushort> left<ushort>(BitVector<ushort> x, BitVector<ushort> y)
-; left_g[13] = {0f 1f 44 00 00 89 54 24 10 0f b7 c1 c3}
+; left_g[16u]()[13] = {0f 1f 44 00 00 89 54 24 10 0f b7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -16,7 +16,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<uint> left<uint>(BitVector<uint> x, BitVector<uint> y)
-; left_g[12] = {0f 1f 44 00 00 89 54 24 10 8b c1 c3}
+; left_g[32u]()[12] = {0f 1f 44 00 00 89 54 24 10 8b c1 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],edx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 54 24 10}
@@ -24,7 +24,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitVector<ulong> left<ulong>(BitVector<ulong> x, BitVector<ulong> y)
-; left_g[14] = {0f 1f 44 00 00 48 89 54 24 10 48 8b c1 c3}
+; left_g[64u]()[14] = {0f 1f 44 00 00 48 89 54 24 10 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov [rsp+10h],rdx                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 54 24 10}

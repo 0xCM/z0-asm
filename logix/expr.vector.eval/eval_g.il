@@ -1054,7 +1054,7 @@ LiteralExpr<Vector128<byte>> eval<byte>(IOperator<Vector128<byte>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1067,7 +1067,7 @@ LiteralExpr<Vector128<byte>> eval<byte>(IOperator<Vector128<byte>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1080,7 +1080,7 @@ LiteralExpr<Vector128<byte>> eval<byte>(IOperator<Vector128<byte>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1097,7 +1097,7 @@ LiteralExpr<Vector128<byte>> eval<byte>(IOperator<Vector128<byte>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1139,7 +1139,7 @@ LiteralExpr<Vector128<sbyte>> eval<sbyte>(IOperator<Vector128<sbyte>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1152,7 +1152,7 @@ LiteralExpr<Vector128<sbyte>> eval<sbyte>(IOperator<Vector128<sbyte>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1165,7 +1165,7 @@ LiteralExpr<Vector128<sbyte>> eval<sbyte>(IOperator<Vector128<sbyte>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1182,7 +1182,7 @@ LiteralExpr<Vector128<sbyte>> eval<sbyte>(IOperator<Vector128<sbyte>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1224,7 +1224,7 @@ LiteralExpr<Vector128<ushort>> eval<ushort>(IOperator<Vector128<ushort>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1237,7 +1237,7 @@ LiteralExpr<Vector128<ushort>> eval<ushort>(IOperator<Vector128<ushort>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1250,7 +1250,7 @@ LiteralExpr<Vector128<ushort>> eval<ushort>(IOperator<Vector128<ushort>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1267,7 +1267,7 @@ LiteralExpr<Vector128<ushort>> eval<ushort>(IOperator<Vector128<ushort>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1309,7 +1309,7 @@ LiteralExpr<Vector128<short>> eval<short>(IOperator<Vector128<short>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1322,7 +1322,7 @@ LiteralExpr<Vector128<short>> eval<short>(IOperator<Vector128<short>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1335,7 +1335,7 @@ LiteralExpr<Vector128<short>> eval<short>(IOperator<Vector128<short>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1352,7 +1352,7 @@ LiteralExpr<Vector128<short>> eval<short>(IOperator<Vector128<short>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1394,7 +1394,7 @@ LiteralExpr<Vector128<uint>> eval<uint>(IOperator<Vector128<uint>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1407,7 +1407,7 @@ LiteralExpr<Vector128<uint>> eval<uint>(IOperator<Vector128<uint>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1420,7 +1420,7 @@ LiteralExpr<Vector128<uint>> eval<uint>(IOperator<Vector128<uint>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1437,7 +1437,7 @@ LiteralExpr<Vector128<uint>> eval<uint>(IOperator<Vector128<uint>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1479,7 +1479,7 @@ LiteralExpr<Vector128<int>> eval<int>(IOperator<Vector128<int>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1492,7 +1492,7 @@ LiteralExpr<Vector128<int>> eval<int>(IOperator<Vector128<int>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1505,7 +1505,7 @@ LiteralExpr<Vector128<int>> eval<int>(IOperator<Vector128<int>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1522,7 +1522,7 @@ LiteralExpr<Vector128<int>> eval<int>(IOperator<Vector128<int>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1564,7 +1564,7 @@ LiteralExpr<Vector128<ulong>> eval<ulong>(IOperator<Vector128<ulong>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1577,7 +1577,7 @@ LiteralExpr<Vector128<ulong>> eval<ulong>(IOperator<Vector128<ulong>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1590,7 +1590,7 @@ LiteralExpr<Vector128<ulong>> eval<ulong>(IOperator<Vector128<ulong>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1607,7 +1607,7 @@ LiteralExpr<Vector128<ulong>> eval<ulong>(IOperator<Vector128<ulong>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1649,7 +1649,7 @@ LiteralExpr<Vector128<long>> eval<long>(IOperator<Vector128<long>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1662,7 +1662,7 @@ LiteralExpr<Vector128<long>> eval<long>(IOperator<Vector128<long>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1675,7 +1675,7 @@ LiteralExpr<Vector128<long>> eval<long>(IOperator<Vector128<long>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector128`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1692,7 +1692,7 @@ LiteralExpr<Vector128<long>> eval<long>(IOperator<Vector128<long>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector128`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>,System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector128`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector128`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1734,7 +1734,7 @@ LiteralExpr<Vector256<byte>> eval<byte>(IOperator<Vector256<byte>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1747,7 +1747,7 @@ LiteralExpr<Vector256<byte>> eval<byte>(IOperator<Vector256<byte>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1760,7 +1760,7 @@ LiteralExpr<Vector256<byte>> eval<byte>(IOperator<Vector256<byte>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1777,7 +1777,7 @@ LiteralExpr<Vector256<byte>> eval<byte>(IOperator<Vector256<byte>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1819,7 +1819,7 @@ LiteralExpr<Vector256<sbyte>> eval<sbyte>(IOperator<Vector256<sbyte>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1832,7 +1832,7 @@ LiteralExpr<Vector256<sbyte>> eval<sbyte>(IOperator<Vector256<sbyte>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1845,7 +1845,7 @@ LiteralExpr<Vector256<sbyte>> eval<sbyte>(IOperator<Vector256<sbyte>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1862,7 +1862,7 @@ LiteralExpr<Vector256<sbyte>> eval<sbyte>(IOperator<Vector256<sbyte>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1904,7 +1904,7 @@ LiteralExpr<Vector256<ushort>> eval<ushort>(IOperator<Vector256<ushort>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -1917,7 +1917,7 @@ LiteralExpr<Vector256<ushort>> eval<ushort>(IOperator<Vector256<ushort>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -1930,7 +1930,7 @@ LiteralExpr<Vector256<ushort>> eval<ushort>(IOperator<Vector256<ushort>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -1947,7 +1947,7 @@ LiteralExpr<Vector256<ushort>> eval<ushort>(IOperator<Vector256<ushort>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -1989,7 +1989,7 @@ LiteralExpr<Vector256<short>> eval<short>(IOperator<Vector256<short>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -2002,7 +2002,7 @@ LiteralExpr<Vector256<short>> eval<short>(IOperator<Vector256<short>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -2015,7 +2015,7 @@ LiteralExpr<Vector256<short>> eval<short>(IOperator<Vector256<short>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -2032,7 +2032,7 @@ LiteralExpr<Vector256<short>> eval<short>(IOperator<Vector256<short>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -2074,7 +2074,7 @@ LiteralExpr<Vector256<uint>> eval<uint>(IOperator<Vector256<uint>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -2087,7 +2087,7 @@ LiteralExpr<Vector256<uint>> eval<uint>(IOperator<Vector256<uint>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -2100,7 +2100,7 @@ LiteralExpr<Vector256<uint>> eval<uint>(IOperator<Vector256<uint>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -2117,7 +2117,7 @@ LiteralExpr<Vector256<uint>> eval<uint>(IOperator<Vector256<uint>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -2159,7 +2159,7 @@ LiteralExpr<Vector256<int>> eval<int>(IOperator<Vector256<int>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -2172,7 +2172,7 @@ LiteralExpr<Vector256<int>> eval<int>(IOperator<Vector256<int>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -2185,7 +2185,7 @@ LiteralExpr<Vector256<int>> eval<int>(IOperator<Vector256<int>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -2202,7 +2202,7 @@ LiteralExpr<Vector256<int>> eval<int>(IOperator<Vector256<int>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -2244,7 +2244,7 @@ LiteralExpr<Vector256<ulong>> eval<ulong>(IOperator<Vector256<ulong>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -2257,7 +2257,7 @@ LiteralExpr<Vector256<ulong>> eval<ulong>(IOperator<Vector256<ulong>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -2270,7 +2270,7 @@ LiteralExpr<Vector256<ulong>> eval<ulong>(IOperator<Vector256<ulong>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -2287,7 +2287,7 @@ LiteralExpr<Vector256<ulong>> eval<ulong>(IOperator<Vector256<ulong>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0
@@ -2329,7 +2329,7 @@ LiteralExpr<Vector256<long>> eval<long>(IOperator<Vector256<long>> expr)
     IL_0037: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IUnaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_Arg()
     IL_003C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0041: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0046: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.UnaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_004B: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0050: ret
     IL_0051: ldloc.1
@@ -2342,7 +2342,7 @@ LiteralExpr<Vector256<long>> eval<long>(IOperator<Vector256<long>> expr)
     IL_0068: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.IBinaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_RightArg()
     IL_006D: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_0072: callvirt System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Value()
-    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_0077: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.BinaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_007C: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_0081: ret
     IL_0082: ldloc.2
@@ -2355,7 +2355,7 @@ LiteralExpr<Vector256<long>> eval<long>(IOperator<Vector256<long>> expr)
     IL_0099: callvirt Z0.Logix.IExpr`1<System.Byte> Z0.Logix.IShiftOp`1<System.Runtime.Intrinsics.Vector256`1<T>>::get_Offset()
     IL_009E: call Z0.Logix.LiteralExpr`1<System.Byte> Z0.Logix.ScalarExprEval::eval<System.Byte>(Z0.Logix.IExpr`1<System.Byte>)
     IL_00A3: callvirt System.Byte Z0.Logix.LiteralExpr`1<System.Byte>::get_Value()
-    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
+    IL_00A8: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.ShiftOpKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Byte)
     IL_00AD: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00B2: ret
     IL_00B3: ldloc.3
@@ -2372,7 +2372,7 @@ LiteralExpr<Vector256<long>> eval<long>(IOperator<Vector256<long>> expr)
     IL_00DA: callvirt Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.ITernaryOp`1<Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>>::get_ThirdArg()
     IL_00DF: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.VectorExprEval::eval<T>(Z0.Logix.IExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
     IL_00E4: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>)
-    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorizedOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
+    IL_00E9: call System.Runtime.Intrinsics.Vector256`1<T> Z0.Logix.VectorOpApi::eval<T>(Z0.TernaryBitLogicKind,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>,System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00EE: call Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>> Z0.Logix.LiteralExpr`1<System.Runtime.Intrinsics.Vector256`1<T>>::op_Implicit(System.Runtime.Intrinsics.Vector256`1<T>)
     IL_00F3: ret
     IL_00F4: ldarg.0

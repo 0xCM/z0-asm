@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float clamp(float src, float max)
-; clamp_32f_32f[17] = {c5 f8 77 66 90 c5 f8 2e c1 77 01 c3 c5 f8 28 c1 c3}
+; clamp_(32f,32f)[17] = {c5 f8 77 66 90 c5 f8 2e c1 77 01 c3 c5 f8 28 c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double clamp(double src, double max)
-; clamp_64f_64f[17] = {c5 f8 77 66 90 c5 f9 2e c1 77 01 c3 c5 f8 28 c1 c3}
+; clamp_(64f,64f)[17] = {c5 f8 77 66 90 c5 f9 2e c1 77 01 c3 c5 f8 28 c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

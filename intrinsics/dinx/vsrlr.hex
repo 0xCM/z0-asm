@@ -1,32 +1,32 @@
-vsrlr_v128x8u_v128x8u    50 c5 f8 77 90 c4 c1 79 10 00 c5 f9 10 0a c4 e2 7d 30 c9 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 79 79 54 24 04 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsrlr_v128x8i_v128x8i    c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 10 0a c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v128x16i_v128x16i  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d1 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x16u_v128x16u  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d1 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x32i_v128x32i  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d2 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x32u_v128x32u  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d2 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x64i_v128x64i  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d3 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x64u_v128x64u  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d3 00 c5 f9 11 01 48 8b c1 c3
-vsrlr_v256x8i_v128x8i    c5 f8 77 66 90 c4 c1 79 10 00 c5 fd 10 0a c4 e3 7d 19 c9 00 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c8 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 79 20 da c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 d2 01 c5 ed d1 c0 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x8u_v128x8u    50 c5 f8 77 90 c4 c1 79 10 00 c5 fd 10 0a c4 e3 7d 19 c9 00 c4 e2 7d 30 c9 c5 f5 d1 c8 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 30 d2 c5 ed d1 c0 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 54 24 04 c5 f5 db ca c5 fd db c2 c5 f5 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsrlr_v256x16i_v128x16i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x16u_v128x16u  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x32i_v128x32i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d2 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x32u_v128x32u  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d2 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x64i_v128x64i  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x64u_v128x64u  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v128x8i_8i         c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 10 0a c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v128x8u_8u         50 c5 f8 77 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 10 0a c4 e2 7d 30 c9 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 79 79 54 24 04 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsrlr_v128x16i_16i       c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 10 0a c5 f1 d1 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x16u_16u       c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 10 0a c5 f1 d1 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x32i_32i       c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 10 0a c5 f1 d2 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x32u_32u       c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 10 0a c5 f1 d2 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x64i_64i       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 10 0a c5 f1 d3 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v128x64u_64u       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 10 0a c5 f1 d3 c0 c5 f9 11 01 48 8b c1 c3
-vsrlr_v256x8i_8i         c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 10 0a c4 e3 7d 19 ca 00 c4 e2 79 20 da c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 d2 01 c5 ed d1 d0 c4 e3 7d 19 c9 01 c4 e2 79 20 d9 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 c9 01 c5 f5 d1 c0 c5 ed 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x8u_8u         50 c5 f8 77 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 10 0a c4 e3 7d 19 ca 00 c4 e2 7d 30 d2 c5 ed d1 d0 c4 e3 7d 19 c9 01 c4 e2 7d 30 c9 c5 f5 d1 c0 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
-vsrlr_v256x16i_16i       c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x16u_16u       c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x32i_32i       c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 10 0a c5 f5 d2 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x32u_32u       c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 10 0a c5 f5 d2 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x64i_64i       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 10 0a c5 f5 d3 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlr_v256x64u_64u       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 10 0a c5 f5 d3 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v128x8u,v128x8u)    50 c5 f8 77 90 c4 c1 79 10 00 c5 f9 10 0a c4 e2 7d 30 c9 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 79 79 54 24 04 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsrlr_(v128x8i,v128x8i)    c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 10 0a c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v128x16i,v128x16i)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d1 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x16u,v128x16u)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d1 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x32i,v128x32i)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d2 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x32u,v128x32u)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d2 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x64i,v128x64i)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d3 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x64u,v128x64u)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 d3 00 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v256x8i,v128x8i)    c5 f8 77 66 90 c4 c1 79 10 00 c5 fd 10 0a c4 e3 7d 19 c9 00 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c8 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 79 20 da c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 d2 01 c5 ed d1 c0 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x8u,v128x8u)    50 c5 f8 77 90 c4 c1 79 10 00 c5 fd 10 0a c4 e3 7d 19 c9 00 c4 e2 7d 30 c9 c5 f5 d1 c8 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 30 d2 c5 ed d1 c0 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 54 24 04 c5 f5 db ca c5 fd db c2 c5 f5 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsrlr_(v256x16i,v128x16i)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x16u,v128x16u)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d1 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x32i,v128x32i)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d2 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x32u,v128x32u)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d2 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x64i,v128x64i)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x64u,v128x64u)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d d3 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v128x8i,8i)         c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 10 0a c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v128x8u,8u)         50 c5 f8 77 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 10 0a c4 e2 7d 30 c9 c5 f5 d1 c0 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 79 79 54 24 04 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 c5 f9 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsrlr_(v128x16i,16i)       c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 10 0a c5 f1 d1 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x16u,16u)       c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 10 0a c5 f1 d1 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x32i,32i)       c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 10 0a c5 f1 d2 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x32u,32u)       c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 10 0a c5 f1 d2 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x64i,64i)       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 10 0a c5 f1 d3 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v128x64u,64u)       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 10 0a c5 f1 d3 c0 c5 f9 11 01 48 8b c1 c3
+vsrlr_(v256x8i,8i)         c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 10 0a c4 e3 7d 19 ca 00 c4 e2 79 20 da c4 e3 f9 16 d0 01 c4 e1 f9 6e d0 c4 e2 79 20 d2 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 d2 01 c5 ed d1 d0 c4 e3 7d 19 c9 01 c4 e2 79 20 d9 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 dc 57 e4 c4 e3 5d 38 db 00 c4 e3 65 38 c9 01 c5 f5 d1 c0 c5 ed 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x8u,8u)         50 c5 f8 77 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 10 0a c4 e3 7d 19 ca 00 c4 e2 7d 30 d2 c5 ed d1 d0 c4 e3 7d 19 c9 01 c4 e2 7d 30 c9 c5 f5 d1 c0 c7 44 24 04 ff 00 00 00 48 8d 44 24 04 c4 e2 7d 79 4c 24 04 c5 ed db d1 c5 fd db c1 c5 ed 67 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 08 c3
+vsrlr_(v256x16i,16i)       c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x16u,16u)       c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 10 0a c5 f5 d1 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x32i,32i)       c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 10 0a c5 f5 d2 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x32u,32u)       c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 10 0a c5 f5 d2 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x64i,64i)       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 10 0a c5 f5 d3 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlr_(v256x64u,64u)       c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 10 0a c5 f5 d3 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

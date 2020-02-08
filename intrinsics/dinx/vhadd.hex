@@ -1,7 +1,7 @@
-vhadd_v128x8i_v128x8i    c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 20 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 c4 c1 79 10 08 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c4 e2 7d 01 c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhadd_v128x8u_v128x8u    c5 f8 77 66 90 c5 f9 10 02 c4 e2 7d 30 c0 c4 c1 79 10 08 c4 e2 7d 30 c9 c4 e2 7d 01 c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-vhadd_v128x16i_v128x16i  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 01 00 c5 f9 11 01 48 8b c1 c3
-vhadd_v128x32i_v128x32i  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 02 00 c5 f9 11 01 48 8b c1 c3
-vhadd_v256x8i_v256x8i    c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 20 c9 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c5 fd 10 12 c4 e3 7d 19 d3 00 c4 e2 7d 20 db c4 e3 7d 19 d2 01 c4 e2 7d 20 d2 c4 e2 75 01 cb c4 e2 7d 01 c2 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vhadd_v256x16i_v256x16i  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 01 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vhadd_v256x32i_v256x32i  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 02 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vhadd_(v128x8i,v128x8i)    c5 f8 77 66 90 c5 f9 10 02 c4 e2 79 20 c8 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c4 e2 79 20 c0 c5 ec 57 d2 c4 e3 6d 38 c9 00 c4 e3 75 38 c0 01 c4 c1 79 10 08 c4 e2 79 20 d1 c4 e3 f9 16 c8 01 c4 e1 f9 6e c8 c4 e2 79 20 c9 c5 e4 57 db c4 e3 65 38 d2 00 c4 e3 6d 38 c9 01 c4 e2 7d 01 c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhadd_(v128x8u,v128x8u)    c5 f8 77 66 90 c5 f9 10 02 c4 e2 7d 30 c0 c4 c1 79 10 08 c4 e2 7d 30 c9 c4 e2 7d 01 c1 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c5 f1 63 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+vhadd_(v128x16i,v128x16i)  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 01 00 c5 f9 11 01 48 8b c1 c3
+vhadd_(v128x32i,v128x32i)  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 02 00 c5 f9 11 01 48 8b c1 c3
+vhadd_(v256x8i,v256x8i)    c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c1 00 c4 e2 7d 20 c9 c4 e3 7d 19 c0 01 c4 e2 7d 20 c0 c5 fd 10 12 c4 e3 7d 19 d3 00 c4 e2 7d 20 db c4 e3 7d 19 d2 01 c4 e2 7d 20 d2 c4 e2 75 01 cb c4 e2 7d 01 c2 c5 f5 63 c0 c4 e3 fd 00 c0 d8 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vhadd_(v256x16i,v256x16i)  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 01 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vhadd_(v256x32i,v256x32i)  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 02 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; uint log2(byte src)
-; log2_8u[26] = {0f 1f 44 00 00 0f b6 c1 85 c0 75 04 33 c0 eb 09 f3 0f bd c0 f7 d8 83 c0 1f c3}
+; log2_(8u)[26] = {0f 1f 44 00 00 0f b6 c1 85 c0 75 04 33 c0 eb 09 f3 0f bd c0 f7 d8 83 c0 1f c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -14,7 +14,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint log2(ushort src)
-; log2_16u[26] = {0f 1f 44 00 00 0f b7 c1 85 c0 75 04 33 c0 eb 09 f3 0f bd c0 f7 d8 83 c0 1f c3}
+; log2_(16u)[26] = {0f 1f 44 00 00 0f b7 c1 85 c0 75 04 33 c0 eb 09 f3 0f bd c0 f7 d8 83 c0 1f c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -28,7 +28,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint log2(uint src)
-; log2_32u[25] = {0f 1f 44 00 00 85 c9 75 04 33 c0 eb 0b 33 c0 f3 0f bd c1 f7 d8 83 c0 1f c3}
+; log2_(32u)[25] = {0f 1f 44 00 00 85 c9 75 04 33 c0 eb 0b 33 c0 f3 0f bd c1 f7 d8 83 c0 1f c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
@@ -42,7 +42,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint log2(ulong src)
-; log2_64u[27] = {0f 1f 44 00 00 48 85 c9 75 04 33 c0 eb 0c 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f c3}
+; log2_(64u)[27] = {0f 1f 44 00 00 48 85 c9 75 04 33 c0 eb 0c 33 c0 f3 48 0f bd c1 f7 d8 83 c0 3f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h test rcx,rcx                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c9}

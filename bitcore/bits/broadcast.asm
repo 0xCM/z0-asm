@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort broadcast(byte src, N16 w)
-; broadcast_8u_n16[34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 c5 c0 00 48 83 c4 08 c3}
+; broadcast_(8u,n16)[34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 c5 c0 00 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -14,7 +14,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint broadcast(byte src, N32 w)
-; broadcast_8u_n32[33] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 7e c0 48 83 c4 08 c3}
+; broadcast_(8u,n32)[33] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c5 f9 7e c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -28,7 +28,7 @@
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong broadcast(byte src, N64 w)
-; broadcast_8u_n64[34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
+; broadcast_(8u,n64)[34] = {50 c5 f8 77 90 0f b6 c1 88 44 24 04 48 8d 44 24 04 c4 e2 79 78 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -42,7 +42,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint broadcast(ushort src, N32 w)
-; broadcast_16u_n32[34] = {50 c5 f8 77 90 0f b7 c1 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 7e c0 48 83 c4 08 c3}
+; broadcast_(16u,n32)[34] = {50 c5 f8 77 90 0f b7 c1 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c5 f9 7e c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -56,7 +56,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong broadcast(ushort src, N64 w)
-; broadcast_16u_n64[35] = {50 c5 f8 77 90 0f b7 c1 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
+; broadcast_(16u,n64)[35] = {50 c5 f8 77 90 0f b7 c1 66 89 44 24 04 48 8d 44 24 04 c4 e2 79 79 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -70,7 +70,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong broadcast(uint src, N64 w)
-; broadcast_32u_n64[31] = {50 c5 f8 77 90 89 4c 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
+; broadcast_(32u,n64)[31] = {50 c5 f8 77 90 89 4c 24 04 48 8d 44 24 04 c4 e2 79 58 44 24 04 c4 e1 f9 7e c0 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

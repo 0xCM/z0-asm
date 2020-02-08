@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte xorsl<byte>(byte a, byte offset)
-; xorsl_g8u_8u[21] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b6 c0 c3}
+; xorsl_g[8u](8u,8u)[21] = {0f 1f 44 00 00 0f b6 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -12,7 +12,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort xorsl<ushort>(ushort a, byte offset)
-; xorsl_g16u_8u[21] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b7 c0 c3}
+; xorsl_g[16u](16u,8u)[21] = {0f 1f 44 00 00 0f b7 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b7 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -24,7 +24,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint xorsl<uint>(uint a, byte offset)
-; xorsl_g32u_8u[17] = {0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 e2 33 c2 c3}
+; xorsl_g[32u](32u,8u)[17] = {0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 e2 33 c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -35,7 +35,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong xorsl<ulong>(ulong a, byte offset)
-; xorsl_g64u_8u[21] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 8b d0 48 d3 e2 48 33 c2 c3}
+; xorsl_g[64u](64u,8u)[21] = {0f 1f 44 00 00 48 8b c1 0f b6 ca 48 8b d0 48 d3 e2 48 33 c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

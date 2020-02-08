@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitslice<byte>(byte a, byte start, byte length)
-; bitslice_g8u_8u_8u[32] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 c3}
+; bitslice_g[8u](8u,8u,8u)[32] = {0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -14,7 +14,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte bitslice<sbyte>(sbyte a, byte start, byte length)
-; bitslice_g8i_8u_8u[34] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f be c0 c3}
+; bitslice_g[8i](8i,8u,8u)[34] = {0f 1f 44 00 00 48 0f be c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f be c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -28,7 +28,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitslice<ushort>(ushort a, byte start, byte length)
-; bitslice_g16u_8u_8u[32] = {0f 1f 44 00 00 0f b7 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 c3}
+; bitslice_g[16u](16u,8u,8u)[32] = {0f 1f 44 00 00 0f b7 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -42,7 +42,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short bitslice<short>(short a, byte start, byte length)
-; bitslice_g16i_8u_8u[34] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3}
+; bitslice_g[16i](16i,8u,8u)[34] = {0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -56,7 +56,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitslice<uint>(uint a, byte start, byte length)
-; bitslice_g32u_8u_8u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
+; bitslice_g[32u](32u,8u,8u)[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -68,7 +68,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int bitslice<int>(int a, byte start, byte length)
-; bitslice_g32i_8u_8u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
+; bitslice_g[32i](32i,8u,8u)[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -80,7 +80,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitslice<ulong>(ulong a, byte start, byte length)
-; bitslice_g64u_8u_8u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
+; bitslice_g[64u](64u,8u,8u)[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
@@ -92,7 +92,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long bitslice<long>(long a, byte start, byte length)
-; bitslice_g64i_8u_8u[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
+; bitslice_g[64i](64i,8u,8u)[26] = {0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}

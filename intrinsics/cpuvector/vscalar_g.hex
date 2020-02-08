@@ -1,20 +1,20 @@
-vscalar_gn128_8u   c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_8i   c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_16u  c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_16i  c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_32u  c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_32i  c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_64u  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_64i  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
-vscalar_gn128_32f  c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3
-vscalar_gn128_64f  c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3
-vscalar_gn256_8u   c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_8i   c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_16u  c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_16i  c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_32u  c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_32i  c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_64u  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_64i  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vscalar_gn256_32f  c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3
-vscalar_gn256_64f  c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3
+vscalar_g[8u](n128,8u)    c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[8i](n128,8i)    c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[16u](n128,16u)  c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[16i](n128,16i)  c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[32u](n128,32u)  c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[32i](n128,32i)  c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[64u](n128,64u)  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[64i](n128,64i)  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
+vscalar_g[32f](n128,32f)  c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3
+vscalar_g[64f](n128,64f)  c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3
+vscalar_g[8u](n256,8u)    c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[8i](n256,8i)    c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[16u](n256,16u)  c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[16i](n256,16i)  c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[32u](n256,32u)  c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[32i](n256,32i)  c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[64u](n256,64u)  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[64i](n256,64i)  c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vscalar_g[32f](n256,32f)  c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3
+vscalar_g[64f](n256,64f)  c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> srl<byte>(ReadOnlySpan<byte> src, byte count, Span<byte> dst)
-; srl_gimspan8u_8u_span8u[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 40 0f b6 3c 0a 41 8b c8 d3 ef 40 0f b6 cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[8u](uspan8u,8u,span8u)[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 40 0f b6 3c 0a 41 8b c8 d3 ef 40 0f b6 cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -30,7 +30,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> srl<sbyte>(ReadOnlySpan<sbyte> src, byte count, Span<sbyte> dst)
-; srl_gimspan8i_8u_span8i[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 48 0f be 3c 0a 41 8b c8 d3 ef 48 0f be cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[8i](uspan8i,8u,span8i)[72] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 27 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 0a 48 0f be 3c 0a 41 8b c8 d3 ef 48 0f be cf 88 0e 41 ff c3 45 3b d9 7c e1 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -60,7 +60,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> srl<ushort>(ReadOnlySpan<ushort> src, byte count, Span<ushort> dst)
-; srl_gimspan16u_8u_span16u[71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[16u](uspan16u,8u,span16u)[71] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 26 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 0f b7 3c 4a 41 8b c8 d3 ef 0f b7 cf 66 89 0e 41 ff c3 45 3b d9 7c e2 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -90,7 +90,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> srl<short>(ReadOnlySpan<short> src, byte count, Span<short> dst)
-; srl_gimspan16i_8u_span16i[73] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 28 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 48 0f bf 3c 4a 41 8b c8 d3 ef 48 0f bf cf 66 89 0e 41 ff c3 45 3b d9 7c e0 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[16i](uspan16i,8u,span16i)[73] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 28 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 4a 48 0f bf 3c 4a 41 8b c8 d3 ef 48 0f bf cf 66 89 0e 41 ff c3 45 3b d9 7c e0 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -120,7 +120,7 @@
 0048h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> srl<uint>(ReadOnlySpan<uint> src, byte count, Span<uint> dst)
-; srl_gimspan32u_8u_span32u[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 ef 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[32u](uspan32u,8u,span32u)[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 ef 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -149,7 +149,7 @@
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> srl<int>(ReadOnlySpan<int> src, byte count, Span<int> dst)
-; srl_gimspan32i_8u_span32i[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 ef 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[32i](uspan32i,8u,span32i)[66] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 21 45 0f b6 c0 41 83 e0 1f 49 63 cb 49 8d 34 8a 8b 3c 8a 41 8b c8 d3 ef 89 3e 41 ff c3 45 3b d9 7c e7 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -178,7 +178,7 @@
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> srl<ulong>(ReadOnlySpan<ulong> src, byte count, Span<ulong> dst)
-; srl_gimspan64u_8u_span64u[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 ef 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[64u](uspan64u,8u,span64u)[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 ef 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -207,7 +207,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> srl<long>(ReadOnlySpan<long> src, byte count, Span<long> dst)
-; srl_gimspan64i_8u_span64i[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 ef 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
+; srl_g[64i](uspan64i,8u,span64i)[69] = {57 56 48 8b c1 4d 8b 11 45 8b 49 08 48 8b 12 45 33 db 45 85 c9 7e 24 45 0f b6 c0 41 83 e0 3f 49 63 cb 49 8d 34 ca 48 8b 3c ca 41 8b c8 48 d3 ef 48 89 3e 41 ff c3 45 3b d9 7c e4 4c 89 10 44 89 48 08 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

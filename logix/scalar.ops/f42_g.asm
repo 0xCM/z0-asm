@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f42<byte>(byte a, byte b, byte c)
-; f42_g8u_8u_8u[38] = {0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 33 c1 0f b6 c0 0f b6 d2 41 0f b6 c8 33 d1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3}
+; f42_g[8u](8u,8u,8u)[38] = {0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 33 c1 0f b6 c0 0f b6 d2 41 0f b6 c8 33 d1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -17,7 +17,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f42<sbyte>(sbyte a, sbyte b, sbyte c)
-; f42_g8i_8i_8i[44] = {0f 1f 44 00 00 48 0f be c1 49 0f be c8 33 c1 48 0f be c0 48 0f be d2 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 23 c2 48 0f be c0 c3}
+; f42_g[8i](8i,8i,8i)[44] = {0f 1f 44 00 00 48 0f be c1 49 0f be c8 33 c1 48 0f be c0 48 0f be d2 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 23 c2 48 0f be c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
@@ -34,7 +34,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f42<ushort>(ushort a, ushort b, ushort c)
-; f42_g16u_16u_16u[38] = {0f 1f 44 00 00 0f b7 c1 41 0f b7 c8 33 c1 0f b7 c0 0f b7 d2 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
+; f42_g[16u](16u,16u,16u)[38] = {0f 1f 44 00 00 0f b7 c1 41 0f b7 c8 33 c1 0f b7 c0 0f b7 d2 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -51,7 +51,7 @@
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short f42<short>(short a, short b, short c)
-; f42_g16i_16i_16i[44] = {0f 1f 44 00 00 48 0f bf c1 49 0f bf c8 33 c1 48 0f bf c0 48 0f bf d2 49 0f bf c8 33 d1 48 0f bf d2 48 0f bf c0 23 c2 48 0f bf c0 c3}
+; f42_g[16i](16i,16i,16i)[44] = {0f 1f 44 00 00 48 0f bf c1 49 0f bf c8 33 c1 48 0f bf c0 48 0f bf d2 49 0f bf c8 33 d1 48 0f bf d2 48 0f bf c0 23 c2 48 0f bf c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
@@ -68,7 +68,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f42<uint>(uint a, uint b, uint c)
-; f42_g32u_32u_32u[16] = {0f 1f 44 00 00 41 33 c8 41 33 d0 23 d1 8b c2 c3}
+; f42_g[32u](32u,32u,32u)[16] = {0f 1f 44 00 00 41 33 c8 41 33 d0 23 d1 8b c2 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor ecx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c8}
@@ -78,7 +78,7 @@
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f42<int>(int a, int b, int c)
-; f42_g32i_32i_32i[16] = {0f 1f 44 00 00 41 33 c8 41 33 d0 23 d1 8b c2 c3}
+; f42_g[32i](32i,32i,32i)[16] = {0f 1f 44 00 00 41 33 c8 41 33 d0 23 d1 8b c2 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor ecx,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c8}
@@ -88,7 +88,7 @@
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f42<ulong>(ulong a, ulong b, ulong c)
-; f42_g64u_64u_64u[18] = {0f 1f 44 00 00 49 33 c8 49 33 d0 48 23 d1 48 8b c2 c3}
+; f42_g[64u](64u,64u,64u)[18] = {0f 1f 44 00 00 49 33 c8 49 33 d0 48 23 d1 48 8b c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rcx,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c8}
@@ -98,7 +98,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f42<long>(long a, long b, long c)
-; f42_g64i_64i_64i[18] = {0f 1f 44 00 00 49 33 c8 49 33 d0 48 23 d1 48 8b c2 c3}
+; f42_g[64i](64i,64i,64i)[18] = {0f 1f 44 00 00 49 33 c8 49 33 d0 48 23 d1 48 8b c2 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor rcx,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c8}

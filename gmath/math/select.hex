@@ -1,8 +1,8 @@
-select_8i_8i_8i     0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 d0 49 0f be c8 c4 e2 78 f2 c1 0b c2 48 0f be c0 c3
-select_8u_8u_8u     0f 1f 44 00 00 0f b6 c1 0f b6 d2 23 d0 41 0f b6 c8 c4 e2 78 f2 c1 0b c2 0f b6 c0 c3
-select_16i_16i_16i  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 d0 49 0f bf c8 c4 e2 78 f2 c1 0b c2 48 0f bf c0 c3
-select_16u_16u_16u  0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 d0 41 0f b7 c8 c4 e2 78 f2 c1 0b c2 0f b7 c0 c3
-select_32i_32i_32i  0f 1f 44 00 00 23 d1 8b c2 c4 c2 70 f2 d0 0b c2 c3
-select_32u_32u_32u  0f 1f 44 00 00 23 d1 8b c2 c4 c2 70 f2 d0 0b c2 c3
-select_64i_64i_64i  0f 1f 44 00 00 48 23 d1 48 8b c2 c4 c2 f0 f2 d0 48 0b c2 c3
-select_64u_64u_64u  0f 1f 44 00 00 48 23 d1 48 8b c2 c4 c2 f0 f2 d0 48 0b c2 c3
+select_(8i,8i,8i)     0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 d0 49 0f be c8 c4 e2 78 f2 c1 0b c2 48 0f be c0 c3
+select_(8u,8u,8u)     0f 1f 44 00 00 0f b6 c1 0f b6 d2 23 d0 41 0f b6 c8 c4 e2 78 f2 c1 0b c2 0f b6 c0 c3
+select_(16i,16i,16i)  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 d0 49 0f bf c8 c4 e2 78 f2 c1 0b c2 48 0f bf c0 c3
+select_(16u,16u,16u)  0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 d0 41 0f b7 c8 c4 e2 78 f2 c1 0b c2 0f b7 c0 c3
+select_(32i,32i,32i)  0f 1f 44 00 00 23 d1 8b c2 c4 c2 70 f2 d0 0b c2 c3
+select_(32u,32u,32u)  0f 1f 44 00 00 23 d1 8b c2 c4 c2 70 f2 d0 0b c2 c3
+select_(64i,64i,64i)  0f 1f 44 00 00 48 23 d1 48 8b c2 c4 c2 f0 f2 d0 48 0b c2 c3
+select_(64u,64u,64u)  0f 1f 44 00 00 48 23 d1 48 8b c2 c4 c2 f0 f2 d0 48 0b c2 c3

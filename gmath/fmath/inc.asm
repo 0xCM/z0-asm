@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float inc(float src)
-; inc_32f[14] = {c5 f8 77 66 90 c5 fa 58 05 03 00 00 00 c3}
+; inc_(32f)[14] = {c5 f8 77 66 90 c5 fa 58 05 03 00 00 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -8,7 +8,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double inc(double src)
-; inc_64f[14] = {c5 f8 77 66 90 c5 fb 58 05 03 00 00 00 c3}
+; inc_(64f)[14] = {c5 f8 77 66 90 c5 fb 58 05 03 00 00 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte f5e<byte>(byte a, byte b, byte c)
-; f5e_g8u_8u_8u[43] = {0f 1f 44 00 00 41 0f b6 c0 f7 d0 0f b6 c0 0f b6 d2 23 c2 0f b6 c0 0f b6 d1 41 0f b6 c8 33 d1 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
+; f5e_g[8u](8u,8u,8u)[43] = {0f 1f 44 00 00 41 0f b6 c0 f7 d0 0f b6 c0 0f b6 d2 23 c2 0f b6 c0 0f b6 d1 41 0f b6 c8 33 d1 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
@@ -19,7 +19,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte f5e<sbyte>(sbyte a, sbyte b, sbyte c)
-; f5e_g8i_8i_8i[50] = {0f 1f 44 00 00 49 0f be c0 f7 d0 48 0f be c0 48 0f be d2 23 c2 48 0f be c0 48 0f be d1 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
+; f5e_g[8i](8i,8i,8i)[50] = {0f 1f 44 00 00 49 0f be c0 f7 d0 48 0f be c0 48 0f be d2 23 c2 48 0f be c0 48 0f be d1 49 0f be c8 33 d1 48 0f be d2 48 0f be c0 0b c2 48 0f be c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be c0}
@@ -38,7 +38,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort f5e<ushort>(ushort a, ushort b, ushort c)
-; f5e_g16u_16u_16u[43] = {0f 1f 44 00 00 41 0f b7 c0 f7 d0 0f b7 c0 0f b7 d2 23 c2 0f b7 c0 0f b7 d1 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 0b c2 0f b7 c0 c3}
+; f5e_g[16u](16u,16u,16u)[43] = {0f 1f 44 00 00 41 0f b7 c0 f7 d0 0f b7 c0 0f b7 d2 23 c2 0f b7 c0 0f b7 d1 41 0f b7 c8 33 d1 0f b7 d2 0f b7 c0 0b c2 0f b7 c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
@@ -57,7 +57,7 @@
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; short f5e<short>(short a, short b, short c)
-; f5e_g16i_16i_16i[50] = {0f 1f 44 00 00 49 0f bf c0 f7 d0 48 0f bf c0 48 0f bf d2 23 c2 48 0f bf c0 48 0f bf d1 49 0f bf c8 33 d1 48 0f bf d2 48 0f bf c0 0b c2 48 0f bf c0 c3}
+; f5e_g[16i](16i,16i,16i)[50] = {0f 1f 44 00 00 49 0f bf c0 f7 d0 48 0f bf c0 48 0f bf d2 23 c2 48 0f bf c0 48 0f bf d1 49 0f bf c8 33 d1 48 0f bf d2 48 0f bf c0 0b c2 48 0f bf c0 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf c0}
@@ -76,7 +76,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint f5e<uint>(uint a, uint b, uint c)
-; f5e_g32u_32u_32u[18] = {0f 1f 44 00 00 41 8b c0 f7 d0 23 c2 41 33 c8 0b c1 c3}
+; f5e_g[32u](32u,32u,32u)[18] = {0f 1f 44 00 00 41 8b c0 f7 d0 23 c2 41 33 c8 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
@@ -87,7 +87,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int f5e<int>(int a, int b, int c)
-; f5e_g32i_32i_32i[18] = {0f 1f 44 00 00 41 8b c0 f7 d0 23 c2 41 33 c8 0b c1 c3}
+; f5e_g[32i](32i,32i,32i)[18] = {0f 1f 44 00 00 41 8b c0 f7 d0 23 c2 41 33 c8 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
@@ -98,7 +98,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong f5e<ulong>(ulong a, ulong b, ulong c)
-; f5e_g64u_64u_64u[21] = {0f 1f 44 00 00 49 8b c0 48 f7 d0 48 23 c2 49 33 c8 48 0b c1 c3}
+; f5e_g[64u](64u,64u,64u)[21] = {0f 1f 44 00 00 49 8b c0 48 f7 d0 48 23 c2 49 33 c8 48 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
@@ -109,7 +109,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; long f5e<long>(long a, long b, long c)
-; f5e_g64i_64i_64i[21] = {0f 1f 44 00 00 49 8b c0 48 f7 d0 48 23 c2 49 33 c8 48 0b c1 c3}
+; f5e_g[64i](64i,64i,64i)[21] = {0f 1f 44 00 00 49 8b c0 48 f7 d0 48 23 c2 49 33 c8 48 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte lsbx<byte>(byte src)
-; lsbx_g8u[17] = {0f 1f 44 00 00 0f b6 c1 c4 e2 78 f3 d8 0f b6 c0 c3}
+; lsbx_g[8u](8u)[17] = {0f 1f 44 00 00 0f b6 c1 c4 e2 78 f3 d8 0f b6 c0 c3}
 ; TermCode = CTC_RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -9,7 +9,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort lsbx<ushort>(ushort src)
-; lsbx_g16u[17] = {0f 1f 44 00 00 0f b7 c1 c4 e2 78 f3 d8 0f b7 c0 c3}
+; lsbx_g[16u](16u)[17] = {0f 1f 44 00 00 0f b7 c1 c4 e2 78 f3 d8 0f b7 c0 c3}
 ; TermCode = CTC_RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -18,14 +18,14 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint lsbx<uint>(uint src)
-; lsbx_g32u[11] = {0f 1f 44 00 00 c4 e2 78 f3 d9 c3}
+; lsbx_g[32u](32u)[11] = {0f 1f 44 00 00 c4 e2 78 f3 d9 c3}
 ; TermCode = CTC_RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h blsi eax,ecx                            ; BLSI r32, r/m32 || VEX.LZ.0F38.W0 F3 /3 || encoded[5]{c4 e2 78 f3 d9}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong lsbx<ulong>(ulong src)
-; lsbx_g64u[11] = {0f 1f 44 00 00 c4 e2 f8 f3 d9 c3}
+; lsbx_g[64u](64u)[11] = {0f 1f 44 00 00 c4 e2 f8 f3 d9 c3}
 ; TermCode = CTC_RET_INTR
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h blsi rax,rcx                            ; BLSI r64, r/m64 || VEX.LZ.0F38.W1 F3 /3 || encoded[5]{c4 e2 f8 f3 d9}

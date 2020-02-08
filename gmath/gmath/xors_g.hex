@@ -1,8 +1,8 @@
-xors_g8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 c3
-xors_g8i_8u   0f 1f 44 00 00 48 0f be c9 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 48 0f be c0 c3
-xors_g16u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 c3
-xors_g16i_8u  0f 1f 44 00 00 48 0f bf c9 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 48 0f bf c0 c3
-xors_g32u_8u  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
-xors_g32i_8u  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 f8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
-xors_g64u_8u  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 e8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3
-xors_g64i_8u  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 f8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3
+xors_g[8u](8u,8u)    0f 1f 44 00 00 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 c3
+xors_g[8i](8i,8u)    0f 1f 44 00 00 48 0f be c9 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 48 0f be c0 c3
+xors_g[16u](16u,8u)  0f 1f 44 00 00 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 c3
+xors_g[16i](16i,8u)  0f 1f 44 00 00 48 0f bf c9 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 48 0f bf c0 c3
+xors_g[32u](32u,8u)  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
+xors_g[32i](32i,8u)  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 f8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
+xors_g[64u](64u,8u)  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 e8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3
+xors_g[64i](64i,8u)  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 f8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3

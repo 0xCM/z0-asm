@@ -1,6 +1,6 @@
-vblend4x32_v128x32i_v128x32i_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 05 c5 f9 11 01 48 8b c1 c3
-vblend4x32_v128x32i_v128x32i_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 09 c5 f9 11 01 48 8b c1 c3
-vblend4x32_v128x32i_v128x32i_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 0d c5 f9 11 01 48 8b c1 c3
-vblend4x32_v128x32u_v128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 05 c5 f9 11 01 48 8b c1 c3
-vblend4x32_v128x32u_v128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 09 c5 f9 11 01 48 8b c1 c3
-vblend4x32_v128x32u_v128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 0d c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32i,v128x32i,8u)-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 05 c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32i,v128x32i,8u)-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 09 c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32i,v128x32i,8u)-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 0d c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32u,v128x32u,8u)-imm5   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 05 c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32u,v128x32u,8u)-imm9   c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 09 c5 f9 11 01 48 8b c1 c3
+vblend4x32_(v128x32u,v128x32u,8u)-imm13  c5 f8 77 c5 f9 10 02 c4 c1 79 10 08 c4 e3 79 02 c1 0d c5 f9 11 01 48 8b c1 c3

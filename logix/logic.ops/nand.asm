@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit nand(bit a, bit b)
-; nand_1u_1u[15] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 c3}
+; nand_(1u,1u)[15] = {0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h and edx,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 d1}

@@ -1,8 +1,8 @@
-ispow2_8i   0f 1f 44 00 00 48 0f be c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
-ispow2_8u   0f 1f 44 00 00 0f b6 c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
-ispow2_16i  0f 1f 44 00 00 48 0f bf c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
-ispow2_16u  0f 1f 44 00 00 0f b7 c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
-ispow2_32i  0f 1f 44 00 00 8d 41 ff 85 c8 0f 94 c0 0f b6 c0 c3
-ispow2_32u  0f 1f 44 00 00 8d 41 ff 85 c8 0f 94 c0 0f b6 c0 c3
-ispow2_64i  0f 1f 44 00 00 48 8d 41 ff 48 85 c8 0f 94 c0 0f b6 c0 c3
-ispow2_64u  0f 1f 44 00 00 48 8d 41 ff 48 85 c8 0f 94 c0 0f b6 c0 c3
+ispow2_(8i)   0f 1f 44 00 00 48 0f be c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
+ispow2_(8u)   0f 1f 44 00 00 0f b6 c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
+ispow2_(16i)  0f 1f 44 00 00 48 0f bf c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
+ispow2_(16u)  0f 1f 44 00 00 0f b7 c1 8d 50 ff 85 c2 0f 94 c0 0f b6 c0 c3
+ispow2_(32i)  0f 1f 44 00 00 8d 41 ff 85 c8 0f 94 c0 0f b6 c0 c3
+ispow2_(32u)  0f 1f 44 00 00 8d 41 ff 85 c8 0f 94 c0 0f b6 c0 c3
+ispow2_(64i)  0f 1f 44 00 00 48 8d 41 ff 48 85 c8 0f 94 c0 0f b6 c0 c3
+ispow2_(64u)  0f 1f 44 00 00 48 8d 41 ff 48 85 c8 0f 94 c0 0f b6 c0 c3

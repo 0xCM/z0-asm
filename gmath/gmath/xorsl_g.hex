@@ -1,4 +1,4 @@
-xorsl_g8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b6 c0 c3
-xorsl_g16u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b7 c0 c3
-xorsl_g32u_8u  0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 e2 33 c2 c3
-xorsl_g64u_8u  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 8b d0 48 d3 e2 48 33 c2 c3
+xorsl_g[8u](8u,8u)    0f 1f 44 00 00 0f b6 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b6 c0 c3
+xorsl_g[16u](16u,8u)  0f 1f 44 00 00 0f b7 c1 0f b6 ca 8b d0 d3 e2 33 c2 0f b7 c0 c3
+xorsl_g[32u](32u,8u)  0f 1f 44 00 00 8b c1 0f b6 ca 8b d0 d3 e2 33 c2 c3
+xorsl_g[64u](64u,8u)  0f 1f 44 00 00 48 8b c1 0f b6 ca 48 8b d0 48 d3 e2 48 33 c2 c3

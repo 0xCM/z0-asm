@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vnegate<byte>(Vector128<byte> src)
-; vnegate_gv128x8u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c5 f9 f8 c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[8u](v128x8u)[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 74 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 74 ca c5 f9 f8 c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -16,7 +16,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vnegate<sbyte>(Vector128<sbyte> src)
-; vnegate_gv128x8i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[8i](v128x8i)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -28,7 +28,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vnegate<ushort>(Vector128<ushort> src)
-; vnegate_gv128x16u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c5 f9 f9 c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[16u](v128x16u)[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 75 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 75 ca c5 f9 f9 c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -44,7 +44,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vnegate<short>(Vector128<short> src)
-; vnegate_gv128x16i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[16i](v128x16i)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -56,7 +56,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vnegate<uint>(Vector128<uint> src)
-; vnegate_gv128x32u[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c5 f9 fa c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[32u](v128x32u)[41] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c5 f1 76 ca c5 f9 fa c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vnegate<int>(Vector128<int> src)
-; vnegate_gv128x32i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[32i](v128x32i)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vnegate<ulong>(Vector128<ulong> src)
-; vnegate_gv128x64u[42] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[64u](v128x64u)[42] = {c5 f8 77 66 90 c5 f9 10 02 c5 f9 76 c8 c5 f9 ef c1 c5 f0 57 c9 c5 e8 57 d2 c4 e2 71 29 ca c5 f9 fb c1 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -100,7 +100,7 @@
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vnegate<long>(Vector128<long> src)
-; vnegate_gv128x64i[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[64i](v128x64i)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vnegate<float>(Vector128<float> src)
-; vnegate_gv128x32f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[32f](v128x32f)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -124,7 +124,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vnegate<double>(Vector128<double> src)
-; vnegate_gv128x64f[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
+; vnegate_g[64f](v128x64f)[25] = {c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -136,7 +136,7 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vnegate<byte>(Vector256<byte> src)
-; vnegate_gv256x8u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[8u](v256x8u)[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 74 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 74 ca c5 fd f8 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -153,7 +153,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vnegate<sbyte>(Vector256<sbyte> src)
-; vnegate_gv256x8i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[8i](v256x8i)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -166,7 +166,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vnegate<ushort>(Vector256<ushort> src)
-; vnegate_gv256x16u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[16u](v256x16u)[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 75 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 75 ca c5 fd f9 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -183,7 +183,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vnegate<short>(Vector256<short> src)
-; vnegate_gv256x16i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[16i](v256x16i)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -196,7 +196,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vnegate<uint>(Vector256<uint> src)
-; vnegate_gv256x32u[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[32u](v256x32u)[44] = {c5 f8 77 66 90 c5 fd 10 02 c5 fd 76 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c5 f5 76 ca c5 fd fa c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -213,7 +213,7 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vnegate<int>(Vector256<int> src)
-; vnegate_gv256x32i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[32i](v256x32i)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -226,7 +226,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vnegate<ulong>(Vector256<ulong> src)
-; vnegate_gv256x64u[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[64u](v256x64u)[46] = {c5 f8 77 66 90 c5 fd 10 02 c4 e2 7d 29 c8 c5 fd ef c1 c5 f4 57 c9 c5 ec 57 d2 c4 e2 75 29 ca c5 fd fb c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -243,7 +243,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vnegate<long>(Vector256<long> src)
-; vnegate_gv256x64i[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[64i](v256x64i)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -256,7 +256,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vnegate<float>(Vector256<float> src)
-; vnegate_gv256x32f[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f4 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[32f](v256x32f)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f4 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -269,7 +269,7 @@
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vnegate<double>(Vector256<double> src)
-; vnegate_gv256x64f[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vnegate_g[64f](v256x64f)[28] = {c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

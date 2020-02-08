@@ -1,14 +1,14 @@
-bfly_n1_8u    0f 1f 44 00 00 0f b6 c2 83 e0 66 0f b6 c0 8b c8 d1 e1 33 c8 d1 e8 33 c1 0f b6 c0 83 e0 66 0f b6 c0 0f b6 d2 33 c2 0f b6 c0 c3
-bfly_n1_16u   0f 1f 44 00 00 0f b7 c2 25 66 66 00 00 0f b7 c0 8b c8 d1 e1 33 c8 d1 e8 33 c1 0f b7 c0 25 66 66 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
-bfly_n1_32u   0f 1f 44 00 00 8b c2 25 66 66 66 66 8b c8 d1 e1 33 c8 d1 e8 33 c1 25 66 66 66 66 33 c2 c3
-bfly_n1_64u   0f 1f 44 00 00 48 b8 66 66 66 66 66 66 66 66 48 23 c2 48 8b c8 48 d1 e1 48 33 c8 48 d1 e8 48 33 c1 48 b9 66 66 66 66 66 66 66 66 48 23 c1 48 33 c2 c3
-bfly_n2_8u    0f 1f 44 00 00 0f b6 c2 83 e0 3c 0f b6 c0 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 0f b6 c0 83 e0 3c 0f b6 c0 0f b6 d2 33 c2 0f b6 c0 c3
-bfly_n2_16u   0f 1f 44 00 00 0f b7 c2 25 3c 3c 00 00 0f b7 c0 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 0f b7 c0 25 3c 3c 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
-bfly_n2_32u   0f 1f 44 00 00 8b c2 25 3c 3c 3c 3c 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 25 3c 3c 3c 3c 33 c2 c3
-bfly_n2_64u   0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c2 48 8b c8 48 c1 e1 02 48 33 c8 48 c1 e8 02 48 33 c1 48 b9 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c1 48 33 c2 c3
-bfly_n4_16u   0f 1f 44 00 00 0f b7 c2 25 f0 0f 00 00 0f b7 c0 8b c8 c1 e1 04 33 c8 c1 e8 04 33 c1 0f b7 c0 25 f0 0f 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
-bfly_n4_32u   0f 1f 44 00 00 8b c2 25 f0 0f f0 0f 8b c8 c1 e1 04 33 c8 c1 e8 04 33 c1 25 f0 0f f0 0f 33 c2 c3
-bfly_n4_64u   0f 1f 44 00 00 48 b8 f0 0f f0 0f f0 0f f0 0f 48 23 c2 48 8b c8 48 c1 e1 04 48 33 c8 48 c1 e8 04 48 33 c1 48 b9 f0 0f f0 0f f0 0f f0 0f 48 23 c1 48 33 c2 c3
-bfly_n8_32u   0f 1f 44 00 00 8b c2 25 00 ff ff 00 8b c8 c1 e1 08 33 c8 c1 e8 08 33 c1 25 00 ff ff 00 33 c2 c3
-bfly_n8_64u   0f 1f 44 00 00 48 b8 00 ff ff 00 00 ff ff 00 48 23 c2 48 8b c8 48 c1 e1 08 48 33 c8 48 c1 e8 08 48 33 c1 48 b9 00 ff ff 00 00 ff ff 00 48 23 c1 48 33 c2 c3
-bfly_n16_64u  0f 1f 44 00 00 48 b8 00 00 ff ff ff ff 00 00 48 23 c2 48 8b c8 48 c1 e1 10 48 33 c8 48 c1 e8 10 48 33 c1 48 b9 00 00 ff ff ff ff 00 00 48 23 c1 48 33 c2 c3
+bfly_(n1,8u)    0f 1f 44 00 00 0f b6 c2 83 e0 66 0f b6 c0 8b c8 d1 e1 33 c8 d1 e8 33 c1 0f b6 c0 83 e0 66 0f b6 c0 0f b6 d2 33 c2 0f b6 c0 c3
+bfly_(n1,16u)   0f 1f 44 00 00 0f b7 c2 25 66 66 00 00 0f b7 c0 8b c8 d1 e1 33 c8 d1 e8 33 c1 0f b7 c0 25 66 66 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
+bfly_(n1,32u)   0f 1f 44 00 00 8b c2 25 66 66 66 66 8b c8 d1 e1 33 c8 d1 e8 33 c1 25 66 66 66 66 33 c2 c3
+bfly_(n1,64u)   0f 1f 44 00 00 48 b8 66 66 66 66 66 66 66 66 48 23 c2 48 8b c8 48 d1 e1 48 33 c8 48 d1 e8 48 33 c1 48 b9 66 66 66 66 66 66 66 66 48 23 c1 48 33 c2 c3
+bfly_(n2,8u)    0f 1f 44 00 00 0f b6 c2 83 e0 3c 0f b6 c0 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 0f b6 c0 83 e0 3c 0f b6 c0 0f b6 d2 33 c2 0f b6 c0 c3
+bfly_(n2,16u)   0f 1f 44 00 00 0f b7 c2 25 3c 3c 00 00 0f b7 c0 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 0f b7 c0 25 3c 3c 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
+bfly_(n2,32u)   0f 1f 44 00 00 8b c2 25 3c 3c 3c 3c 8b c8 c1 e1 02 33 c8 c1 e8 02 33 c1 25 3c 3c 3c 3c 33 c2 c3
+bfly_(n2,64u)   0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c2 48 8b c8 48 c1 e1 02 48 33 c8 48 c1 e8 02 48 33 c1 48 b9 3c 3c 3c 3c 3c 3c 3c 3c 48 23 c1 48 33 c2 c3
+bfly_(n4,16u)   0f 1f 44 00 00 0f b7 c2 25 f0 0f 00 00 0f b7 c0 8b c8 c1 e1 04 33 c8 c1 e8 04 33 c1 0f b7 c0 25 f0 0f 00 00 0f b7 c0 0f b7 d2 33 c2 0f b7 c0 c3
+bfly_(n4,32u)   0f 1f 44 00 00 8b c2 25 f0 0f f0 0f 8b c8 c1 e1 04 33 c8 c1 e8 04 33 c1 25 f0 0f f0 0f 33 c2 c3
+bfly_(n4,64u)   0f 1f 44 00 00 48 b8 f0 0f f0 0f f0 0f f0 0f 48 23 c2 48 8b c8 48 c1 e1 04 48 33 c8 48 c1 e8 04 48 33 c1 48 b9 f0 0f f0 0f f0 0f f0 0f 48 23 c1 48 33 c2 c3
+bfly_(n8,32u)   0f 1f 44 00 00 8b c2 25 00 ff ff 00 8b c8 c1 e1 08 33 c8 c1 e8 08 33 c1 25 00 ff ff 00 33 c2 c3
+bfly_(n8,64u)   0f 1f 44 00 00 48 b8 00 ff ff 00 00 ff ff 00 48 23 c2 48 8b c8 48 c1 e1 08 48 33 c8 48 c1 e8 08 48 33 c1 48 b9 00 ff ff 00 00 ff ff 00 48 23 c1 48 33 c2 c3
+bfly_(n16,64u)  0f 1f 44 00 00 48 b8 00 00 ff ff ff ff 00 00 48 23 c2 48 8b c8 48 c1 e1 10 48 33 c8 48 c1 e8 10 48 33 c1 48 b9 00 00 ff ff ff ff 00 00 48 23 c1 48 33 c2 c3

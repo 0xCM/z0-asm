@@ -1,4 +1,4 @@
-stitch_g8u_32i_8u_32i    0f 1f 44 00 00 0f b6 c9 41 0f b6 c0 44 0f b6 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b6 c0 c3
-stitch_g16u_32i_16u_32i  0f 1f 44 00 00 0f b7 c9 41 0f b7 c0 44 0f b7 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b7 c0 c3
-stitch_g32u_32i_32u_32i  0f 1f 44 00 00 8b c1 8b ca d3 e0 41 83 e1 1f 41 8b c9 41 d3 e8 41 0b c0 41 8b c9 d3 e8 c3
-stitch_g64u_32i_64u_32i  0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e0 41 83 e1 3f 41 8b c9 49 d3 e8 49 0b c0 41 8b c9 48 d3 e8 c3
+stitch_g[8u](8u,32i,8u,32i)     0f 1f 44 00 00 0f b6 c9 41 0f b6 c0 44 0f b6 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b6 c0 c3
+stitch_g[16u](16u,32i,16u,32i)  0f 1f 44 00 00 0f b7 c9 41 0f b7 c0 44 0f b7 c1 8b ca 41 d3 e0 41 83 e1 1f 41 8b c9 d3 e8 41 0b c0 41 8b c9 d3 e8 0f b7 c0 c3
+stitch_g[32u](32u,32i,32u,32i)  0f 1f 44 00 00 8b c1 8b ca d3 e0 41 83 e1 1f 41 8b c9 41 d3 e8 41 0b c0 41 8b c9 d3 e8 c3
+stitch_g[64u](64u,32i,64u,32i)  0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e0 41 83 e1 3f 41 8b c9 49 d3 e8 49 0b c0 41 8b c9 48 d3 e8 c3

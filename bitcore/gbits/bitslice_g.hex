@@ -1,8 +1,8 @@
-bitslice_g8u_8u_8u   0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 c3
-bitslice_g8i_8u_8u   0f 1f 44 00 00 48 0f be c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f be c0 c3
-bitslice_g16u_8u_8u  0f 1f 44 00 00 0f b7 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 c3
-bitslice_g16i_8u_8u  0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3
-bitslice_g32u_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
-bitslice_g32i_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
-bitslice_g64u_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
-bitslice_g64i_8u_8u  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
+bitslice_g[8u](8u,8u,8u)    0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 c3
+bitslice_g[8i](8i,8u,8u)    0f 1f 44 00 00 48 0f be c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f be c0 c3
+bitslice_g[16u](16u,8u,8u)  0f 1f 44 00 00 0f b7 c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 c3
+bitslice_g[16i](16i,8u,8u)  0f 1f 44 00 00 48 0f bf c1 0f b6 d2 41 0f b6 c8 c1 e1 08 0b d1 0f b7 d2 c4 e2 68 f7 c0 48 0f bf c0 c3
+bitslice_g[32u](32u,8u,8u)  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
+bitslice_g[32i](32i,8u,8u)  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 78 f7 c1 c3
+bitslice_g[64u](64u,8u,8u)  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3
+bitslice_g[64i](64i,8u,8u)  0f 1f 44 00 00 0f b6 c2 41 0f b6 d0 c1 e2 08 0b c2 0f b7 c0 c4 e2 f8 f7 c1 c3

@@ -1,4 +1,4 @@
-abs_8i   0f 1f 44 00 00 48 0f be c1 8b d0 c1 fa 07 03 c2 33 c2 48 0f be c0 c3
-abs_16i  0f 1f 44 00 00 48 0f bf c1 8b d0 c1 fa 0f 03 c2 33 c2 48 0f bf c0 c3
-abs_32i  0f 1f 44 00 00 8b c1 c1 f8 1f 8d 14 01 33 c2 c3
-abs_64i  0f 1f 44 00 00 48 8b c1 48 c1 f8 3f 48 8d 14 01 48 33 c2 c3
+abs_(8i)   0f 1f 44 00 00 48 0f be c1 8b d0 c1 fa 07 03 c2 33 c2 48 0f be c0 c3
+abs_(16i)  0f 1f 44 00 00 48 0f bf c1 8b d0 c1 fa 0f 03 c2 33 c2 48 0f bf c0 c3
+abs_(32i)  0f 1f 44 00 00 8b c1 c1 f8 1f 8d 14 01 33 c2 c3
+abs_(64i)  0f 1f 44 00 00 48 8b c1 48 c1 f8 3f 48 8d 14 01 48 33 c2 c3

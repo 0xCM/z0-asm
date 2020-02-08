@@ -1,48 +1,48 @@
-vsrlx_gv128x8u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x8u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x8u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x8i_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x8i_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x8i_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16i_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16i_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x16i_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32i_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32i_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x32i_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64u_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64u_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64u_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64i_8u-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64i_8u-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv128x64i_8u-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vsrlx_gv256x8u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x8u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x8u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x8i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x8i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x8i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x16i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x32i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64u_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64u_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64u_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64i_8u-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64i_8u-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsrlx_gv256x64i_8u-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8u](v128x8u,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8u](v128x8u,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8u](v128x8u,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8i](v128x8i,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8i](v128x8i,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8i](v128x8i,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16u](v128x16u,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16u](v128x16u,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16u](v128x16u,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16i](v128x16i,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16i](v128x16i,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[16i](v128x16i,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32u](v128x32u,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32u](v128x32u,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32u](v128x32u,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32i](v128x32i,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32i](v128x32i,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[32i](v128x32i,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64u](v128x64u,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64u](v128x64u,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64u](v128x64u,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64i](v128x64i,8u)-imm5   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 05 c5 f9 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64i](v128x64i,8u)-imm9   c5 f8 77 c5 f9 10 02 c5 f1 73 d0 09 c5 f9 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[64i](v128x64i,8u)-imm13  c5 f8 77 c5 f9 10 02 c5 f1 73 d0 0d c5 f9 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 f9 f3 c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
+vsrlx_g[8u](v256x8u,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8u](v256x8u,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8u](v256x8u,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8i](v256x8i,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8i](v256x8i,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[8i](v256x8i,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16u](v256x16u,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16u](v256x16u,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16u](v256x16u,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16i](v256x16i,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16i](v256x16i,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[16i](v256x16i,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32u](v256x32u,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32u](v256x32u,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32u](v256x32u,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32i](v256x32i,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32i](v256x32i,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[32i](v256x32i,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64u](v256x64u,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64u](v256x64u,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64u](v256x64u,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64i](v256x64i,8u)-imm5   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 05 c5 fd 73 d8 08 b8 3b 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64i](v256x64i,8u)-imm9   c5 f8 77 c5 fd 10 02 c5 f5 73 d0 09 c5 fd 73 d8 08 b8 37 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vsrlx_g[64i](v256x64i,8u)-imm13  c5 f8 77 c5 fd 10 02 c5 f5 73 d0 0d c5 fd 73 d8 08 b8 33 00 00 00 c5 f9 6e d0 c5 fd f3 c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within<float>(float a, float b, float delta)
-; within_g32f_32f_32f[45] = {c5 f8 77 66 90 c5 f8 2e c1 77 10 c5 f2 5c c8 c5 f8 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fa 5c c1 c5 f8 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
+; within_g[32f](32f,32f,32f)[45] = {c5 f8 77 66 90 c5 f8 2e c1 77 10 c5 f2 5c c8 c5 f8 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fa 5c c1 c5 f8 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -19,7 +19,7 @@
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; bit within<double>(double a, double b, double delta)
-; within_g64f_64f_64f[45] = {c5 f8 77 66 90 c5 f9 2e c1 77 10 c5 f3 5c c8 c5 f9 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fb 5c c1 c5 f9 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
+; within_g[64f](64f,64f,64f)[45] = {c5 f8 77 66 90 c5 f9 2e c1 77 10 c5 f3 5c c8 c5 f9 2e d1 0f 93 c0 0f b6 c0 eb 0e c5 fb 5c c1 c5 f9 2e d0 0f 93 c0 0f b6 c0 0f b6 c0 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

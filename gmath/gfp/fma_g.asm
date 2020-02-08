@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; float fma<float>(float x, float y, float z)
-; fma_g32f_32f_32f[11] = {c5 f8 77 66 90 c4 e2 71 a9 c2 c3}
+; fma_g[32f](32f,32f,32f)[11] = {c5 f8 77 66 90 c4 e2 71 a9 c2 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -8,7 +8,7 @@
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double fma<double>(double x, double y, double z)
-; fma_g64f_64f_64f[11] = {c5 f8 77 66 90 c4 e2 f1 a9 c2 c3}
+; fma_g[64f](64f,64f,64f)[11] = {c5 f8 77 66 90 c4 e2 f1 a9 c2 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; byte rotr(byte src, int shift)
-; rotr_8u_32i[32] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c0 41 d3 f8 8b ca f7 d9 83 c1 08 d3 e0 41 0b c0 0f b6 c0 c3}
+; rotr_(8u,32i)[32] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c0 41 d3 f8 8b ca f7 d9 83 c1 08 d3 e0 41 0b c0 0f b6 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -16,7 +16,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort rotr(ushort src, int shift)
-; rotr_16u_32i[32] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c0 41 d3 f8 8b ca f7 d9 83 c1 10 d3 e0 41 0b c0 0f b7 c0 c3}
+; rotr_(16u,32i)[32] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c0 41 d3 f8 8b ca f7 d9 83 c1 10 d3 e0 41 0b c0 0f b7 c0 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -32,7 +32,7 @@
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rotr(uint src, int shift)
-; rotr_32u_32i[12] = {0f 1f 44 00 00 8b c1 8b ca d3 c8 c3}
+; rotr_(32u,32i)[12] = {0f 1f 44 00 00 8b c1 8b ca d3 c8 c3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -41,7 +41,7 @@
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong rotr(ulong src, int shift)
-; rotr_64u_32i[14] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 c8 c3}
+; rotr_(64u,32i)[14] = {0f 1f 44 00 00 48 8b c1 8b ca 48 d3 c8 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
@@ -50,7 +50,7 @@
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte rotr(byte src, int shift, int width)
-; rotr_8u_32i_32i[31] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c8 41 d3 f9 44 2b c2 41 8b c8 d3 e0 41 0b c1 0f b6 c0 c3}
+; rotr_(8u,32i,32i)[31] = {0f 1f 44 00 00 0f b6 c1 8b ca 44 8b c8 41 d3 f9 44 2b c2 41 8b c8 d3 e0 41 0b c1 0f b6 c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -65,7 +65,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort rotr(ushort src, int shift, int width)
-; rotr_16u_32i_32i[31] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c8 41 d3 f9 44 2b c2 41 8b c8 d3 e0 41 0b c1 0f b7 c0 c3}
+; rotr_(16u,32i,32i)[31] = {0f 1f 44 00 00 0f b7 c1 8b ca 44 8b c8 41 d3 f9 44 2b c2 41 8b c8 d3 e0 41 0b c1 0f b7 c0 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -80,7 +80,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint rotr(uint src, int shift, int width)
-; rotr_32u_32i_32i[27] = {0f 1f 44 00 00 8b c1 8b ca 44 8b c8 41 d3 e9 44 2b c2 41 8b c8 d3 e0 41 0b c1 c3}
+; rotr_(32u,32i,32i)[27] = {0f 1f 44 00 00 8b c1 8b ca 44 8b c8 41 d3 e9 44 2b c2 41 8b c8 d3 e0 41 0b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -94,7 +94,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong rotr(ulong src, int shift, int width)
-; rotr_64u_32i_32i[29] = {0f 1f 44 00 00 48 8b c1 8b ca 4c 8b c8 49 d3 e9 44 2b c2 41 8b c8 48 d3 e0 49 0b c1 c3}
+; rotr_(64u,32i,32i)[29] = {0f 1f 44 00 00 48 8b c1 8b ca 4c 8b c8 49 d3 e9 44 2b c2 41 8b c8 48 d3 e0 49 0b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}

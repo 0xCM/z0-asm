@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, in byte src)
-; vload_gn128_8u~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,8u~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -10,7 +10,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, in sbyte src)
-; vload_gn128_8i~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,8i~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -20,7 +20,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, in ushort src)
-; vload_gn128_16u~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,16u~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -30,7 +30,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, in short src)
-; vload_gn128_16i~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,16i~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -40,7 +40,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, in uint src)
-; vload_gn128_32u~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,32u~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -50,7 +50,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, in int src)
-; vload_gn128_32i~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,32i~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -60,7 +60,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, in ulong src)
-; vload_gn128_64u~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,64u~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -70,7 +70,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, in long src)
-; vload_gn128_64i~in[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,64i~in)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -80,7 +80,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, in float src)
-; vload_gn128_32f~in[18] = {c5 f8 77 66 90 c4 c1 78 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,32f~in)[18] = {c5 f8 77 66 90 c4 c1 78 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -90,7 +90,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, in double src)
-; vload_gn128_64f~in[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,64f~in)[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -100,7 +100,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, in byte src)
-; vload_gn256_8u~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,8u~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -111,7 +111,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, in sbyte src)
-; vload_gn256_8i~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,8i~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -122,7 +122,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, in ushort src)
-; vload_gn256_16u~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,16u~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -133,7 +133,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, in short src)
-; vload_gn256_16i~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,16i~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -144,7 +144,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, in uint src)
-; vload_gn256_32u~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,32u~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -155,7 +155,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, in int src)
-; vload_gn256_32i~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,32i~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -166,7 +166,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, in ulong src)
-; vload_gn256_64u~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,64u~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -177,7 +177,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, in long src)
-; vload_gn256_64i~in[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,64i~in)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -188,7 +188,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, in float src)
-; vload_gn256_32f~in[21] = {c5 f8 77 66 90 c4 c1 7c 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,32f~in)[21] = {c5 f8 77 66 90 c4 c1 7c 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -199,7 +199,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, in double src)
-; vload_gn256_64f~in[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,64f~in)[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -210,7 +210,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, in byte src)
-; vload_gn512_8u~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8u](n512,8u~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -238,7 +238,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, in sbyte src)
-; vload_gn512_8i~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8i](n512,8i~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -266,7 +266,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, in ushort src)
-; vload_gn512_16u~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16u](n512,16u~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -294,7 +294,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, in short src)
-; vload_gn512_16i~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16i](n512,16i~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -322,7 +322,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, in uint src)
-; vload_gn512_32u~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32u](n512,32u~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -350,7 +350,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, in int src)
-; vload_gn512_32i~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32i](n512,32i~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -378,7 +378,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, in ulong src)
-; vload_gn512_64u~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64u](n512,64u~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -406,7 +406,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, in long src)
-; vload_gn512_64i~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64i](n512,64i~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -434,7 +434,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, in float src)
-; vload_gn512_32f~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32f](n512,32f~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -462,7 +462,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, in double src)
-; vload_gn512_64f~in[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64f](n512,64f~in)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -490,7 +490,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, in byte src, int offset)
-; vload_gn128_8u~in_32i[23] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,8u~in,32i)[23] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -502,7 +502,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, in sbyte src, int offset)
-; vload_gn128_8i~in_32i[23] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,8i~in,32i)[23] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -514,7 +514,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, in ushort src, int offset)
-; vload_gn128_16u~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,16u~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -526,7 +526,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, in short src, int offset)
-; vload_gn128_16i~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,16i~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -538,7 +538,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, in uint src, int offset)
-; vload_gn128_32u~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,32u~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -550,7 +550,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, in int src, int offset)
-; vload_gn128_32i~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,32i~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -562,7 +562,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, in ulong src, int offset)
-; vload_gn128_64u~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,64u~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -574,7 +574,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, in long src, int offset)
-; vload_gn128_64i~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,64i~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -586,7 +586,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, in float src, int offset)
-; vload_gn128_32f~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,32f~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -598,7 +598,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, in double src, int offset)
-; vload_gn128_64f~in_32i[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,64f~in,32i)[24] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -610,7 +610,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, in byte src, int offset)
-; vload_gn256_8u~in_32i[26] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,8u~in,32i)[26] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -623,7 +623,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, in sbyte src, int offset)
-; vload_gn256_8i~in_32i[26] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,8i~in,32i)[26] = {c5 f8 77 66 90 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -636,7 +636,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, in ushort src, int offset)
-; vload_gn256_16u~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,16u~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -649,7 +649,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, in short src, int offset)
-; vload_gn256_16i~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,16i~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -662,7 +662,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, in uint src, int offset)
-; vload_gn256_32u~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,32u~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -675,7 +675,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, in int src, int offset)
-; vload_gn256_32i~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,32i~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -688,7 +688,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, in ulong src, int offset)
-; vload_gn256_64u~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,64u~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -701,7 +701,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, in long src, int offset)
-; vload_gn256_64i~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,64i~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -714,7 +714,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, in float src, int offset)
-; vload_gn256_32f~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,32f~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -727,7 +727,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, in double src, int offset)
-; vload_gn256_64f~in_32i[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,64f~in,32i)[27] = {c5 f8 77 66 90 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -740,7 +740,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, in byte src, int offset)
-; vload_gn512_8u~in_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8u](n512,8u~in,32i)[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -770,7 +770,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, in sbyte src, int offset)
-; vload_gn512_8i~in_32i[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8i](n512,8i~in,32i)[87] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 03 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -800,7 +800,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, in ushort src, int offset)
-; vload_gn512_16u~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16u](n512,16u~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -830,7 +830,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, in short src, int offset)
-; vload_gn512_16i~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16i](n512,16i~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 40 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -860,7 +860,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, in uint src, int offset)
-; vload_gn512_32u~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32u](n512,32u~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -890,7 +890,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, in int src, int offset)
-; vload_gn512_32i~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32i](n512,32i~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -920,7 +920,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, in ulong src, int offset)
-; vload_gn512_64u~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64u](n512,64u~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -950,7 +950,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, in long src, int offset)
-; vload_gn512_64i~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64i](n512,64i~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -980,7 +980,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, in float src, int offset)
-; vload_gn512_32f~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32f](n512,32f~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 80 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1010,7 +1010,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, in double src, int offset)
-; vload_gn512_64f~in_32i[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64f](n512,64f~in,32i)[88] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 49 63 c1 49 8d 04 c0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1040,7 +1040,7 @@
 0057h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<byte> vload<byte>(in byte src, out Vector128<byte> dst)
-; vload_g8u~in_v128x8u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[8u](8u~in,v128x8u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1050,7 +1050,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<sbyte> vload<sbyte>(in sbyte src, out Vector128<sbyte> dst)
-; vload_g8i~in_v128x8i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[8i](8i~in,v128x8i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1060,7 +1060,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<ushort> vload<ushort>(in ushort src, out Vector128<ushort> dst)
-; vload_g16u~in_v128x16u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[16u](16u~in,v128x16u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1070,7 +1070,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<short> vload<short>(in short src, out Vector128<short> dst)
-; vload_g16i~in_v128x16i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[16i](16i~in,v128x16i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1080,7 +1080,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<uint> vload<uint>(in uint src, out Vector128<uint> dst)
-; vload_g32u~in_v128x32u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32u](32u~in,v128x32u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1090,7 +1090,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<int> vload<int>(in int src, out Vector128<int> dst)
-; vload_g32i~in_v128x32i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32i](32i~in,v128x32i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1100,7 +1100,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<ulong> vload<ulong>(in ulong src, out Vector128<ulong> dst)
-; vload_g64u~in_v128x64u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64u](64u~in,v128x64u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1110,7 +1110,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<long> vload<long>(in long src, out Vector128<long> dst)
-; vload_g64i~in_v128x64i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64i](64i~in,v128x64i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1120,7 +1120,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<float> vload<float>(in float src, out Vector128<float> dst)
-; vload_g32f~in_v128x32f~out[17] = {c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32f](32f~in,v128x32f~out)[17] = {c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1130,7 +1130,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<double> vload<double>(in double src, out Vector128<double> dst)
-; vload_g64f~in_v128x64f~out[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64f](64f~in,v128x64f~out)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1140,7 +1140,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<byte> vload<byte>(in byte src, out Vector256<byte> dst)
-; vload_g8u~in_v256x8u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[8u](8u~in,v256x8u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1151,7 +1151,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<sbyte> vload<sbyte>(in sbyte src, out Vector256<sbyte> dst)
-; vload_g8i~in_v256x8i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[8i](8i~in,v256x8i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1162,7 +1162,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<ushort> vload<ushort>(in ushort src, out Vector256<ushort> dst)
-; vload_g16u~in_v256x16u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[16u](16u~in,v256x16u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1173,7 +1173,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<short> vload<short>(in short src, out Vector256<short> dst)
-; vload_g16i~in_v256x16i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[16i](16i~in,v256x16i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1184,7 +1184,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<uint> vload<uint>(in uint src, out Vector256<uint> dst)
-; vload_g32u~in_v256x32u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32u](32u~in,v256x32u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1195,7 +1195,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<int> vload<int>(in int src, out Vector256<int> dst)
-; vload_g32i~in_v256x32i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32i](32i~in,v256x32i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1206,7 +1206,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<ulong> vload<ulong>(in ulong src, out Vector256<ulong> dst)
-; vload_g64u~in_v256x64u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64u](64u~in,v256x64u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1217,7 +1217,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<long> vload<long>(in long src, out Vector256<long> dst)
-; vload_g64i~in_v256x64i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64i](64i~in,v256x64i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1228,7 +1228,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<float> vload<float>(in float src, out Vector256<float> dst)
-; vload_g32f~in_v256x32f~out[20] = {c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32f](32f~in,v256x32f~out)[20] = {c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1239,7 +1239,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<double> vload<double>(in double src, out Vector256<double> dst)
-; vload_g64f~in_v256x64f~out[20] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64f](64f~in,v256x64f~out)[20] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1250,7 +1250,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<byte> vload<byte>(in byte src, out Vector512<byte> dst)
-; vload_g8u~in_v512x8u~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](8u~in,v512x8u~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1272,7 +1272,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<sbyte> vload<sbyte>(in sbyte src, out Vector512<sbyte> dst)
-; vload_g8i~in_v512x8i~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](8i~in,v512x8i~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1294,7 +1294,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ushort> vload<ushort>(in ushort src, out Vector512<ushort> dst)
-; vload_g16u~in_v512x16u~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](16u~in,v512x16u~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1316,7 +1316,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<short> vload<short>(in short src, out Vector512<short> dst)
-; vload_g16i~in_v512x16i~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](16i~in,v512x16i~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1338,7 +1338,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<uint> vload<uint>(in uint src, out Vector512<uint> dst)
-; vload_g32u~in_v512x32u~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](32u~in,v512x32u~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1360,7 +1360,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<int> vload<int>(in int src, out Vector512<int> dst)
-; vload_g32i~in_v512x32i~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](32i~in,v512x32i~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1382,7 +1382,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ulong> vload<ulong>(in ulong src, out Vector512<ulong> dst)
-; vload_g64u~in_v512x64u~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](64u~in,v512x64u~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1404,7 +1404,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<long> vload<long>(in long src, out Vector512<long> dst)
-; vload_g64i~in_v512x64i~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](64i~in,v512x64i~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1426,7 +1426,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<float> vload<float>(in float src, out Vector512<float> dst)
-; vload_g32f~in_v512x32f~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](32f~in,v512x32f~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1448,7 +1448,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<double> vload<double>(in double src, out Vector512<double> dst)
-; vload_g64f~in_v512x64f~out[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](64f~in,v512x64f~out)[77] = {48 83 ec 58 c5 f8 77 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1470,7 +1470,7 @@
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, Span<byte> src)
-; vload_gn128_span8u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,span8u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1481,7 +1481,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, Span<sbyte> src)
-; vload_gn128_span8i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,span8i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1492,7 +1492,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, Span<ushort> src)
-; vload_gn128_span16u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,span16u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1503,7 +1503,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, Span<short> src)
-; vload_gn128_span16i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,span16i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1514,7 +1514,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, Span<uint> src)
-; vload_gn128_span32u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,span32u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1525,7 +1525,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, Span<int> src)
-; vload_gn128_span32i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,span32i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1536,7 +1536,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, Span<ulong> src)
-; vload_gn128_span64u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,span64u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1547,7 +1547,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, Span<long> src)
-; vload_gn128_span64i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,span64i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1558,7 +1558,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, Span<float> src)
-; vload_gn128_span32f[20] = {c5 f8 77 66 90 49 8b 00 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,span32f)[20] = {c5 f8 77 66 90 49 8b 00 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1569,7 +1569,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, Span<double> src)
-; vload_gn128_span64f[20] = {c5 f8 77 66 90 49 8b 00 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,span64f)[20] = {c5 f8 77 66 90 49 8b 00 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1580,7 +1580,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src)
-; vload_gn128_imspan8u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,uspan8u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1591,7 +1591,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src)
-; vload_gn128_imspan8i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,uspan8i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1602,7 +1602,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src)
-; vload_gn128_imspan16u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,uspan16u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1613,7 +1613,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src)
-; vload_gn128_imspan16i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,uspan16i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1624,7 +1624,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src)
-; vload_gn128_imspan32u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,uspan32u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1635,7 +1635,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src)
-; vload_gn128_imspan32i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,uspan32i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1646,7 +1646,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src)
-; vload_gn128_imspan64u[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,uspan64u)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1657,7 +1657,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src)
-; vload_gn128_imspan64i[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,uspan64i)[20] = {c5 f8 77 66 90 49 8b 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1668,7 +1668,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src)
-; vload_gn128_imspan32f[20] = {c5 f8 77 66 90 49 8b 00 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,uspan32f)[20] = {c5 f8 77 66 90 49 8b 00 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1679,7 +1679,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src)
-; vload_gn128_imspan64f[20] = {c5 f8 77 66 90 49 8b 00 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,uspan64f)[20] = {c5 f8 77 66 90 49 8b 00 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1690,7 +1690,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, Span<byte> src)
-; vload_gn256_span8u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,span8u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1702,7 +1702,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, Span<sbyte> src)
-; vload_gn256_span8i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,span8i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1714,7 +1714,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, Span<ushort> src)
-; vload_gn256_span16u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,span16u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1726,7 +1726,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, Span<short> src)
-; vload_gn256_span16i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,span16i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1738,7 +1738,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, Span<uint> src)
-; vload_gn256_span32u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,span32u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1750,7 +1750,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, Span<int> src)
-; vload_gn256_span32i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,span32i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1762,7 +1762,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, Span<ulong> src)
-; vload_gn256_span64u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,span64u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1774,7 +1774,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, Span<long> src)
-; vload_gn256_span64i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,span64i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1786,7 +1786,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, Span<float> src)
-; vload_gn256_span32f[23] = {c5 f8 77 66 90 49 8b 00 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,span32f)[23] = {c5 f8 77 66 90 49 8b 00 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1798,7 +1798,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, Span<double> src)
-; vload_gn256_span64f[23] = {c5 f8 77 66 90 49 8b 00 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,span64f)[23] = {c5 f8 77 66 90 49 8b 00 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1810,7 +1810,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, Span<byte> src)
-; vload_gn512_span8u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](n512,span8u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1833,7 +1833,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, Span<sbyte> src)
-; vload_gn512_span8i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](n512,span8i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1856,7 +1856,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, Span<ushort> src)
-; vload_gn512_span16u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](n512,span16u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1879,7 +1879,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, Span<short> src)
-; vload_gn512_span16i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](n512,span16i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1902,7 +1902,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, Span<uint> src)
-; vload_gn512_span32u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](n512,span32u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1925,7 +1925,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, Span<int> src)
-; vload_gn512_span32i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](n512,span32i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1948,7 +1948,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, Span<ulong> src)
-; vload_gn512_span64u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](n512,span64u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1971,7 +1971,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, Span<long> src)
-; vload_gn512_span64i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](n512,span64i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1994,7 +1994,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, Span<float> src)
-; vload_gn512_span32f[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](n512,span32f)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2017,7 +2017,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, Span<double> src)
-; vload_gn512_span64f[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](n512,span64f)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2040,7 +2040,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, Span<byte> src, int offset)
-; vload_gn128_span8u_32i[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,span8u,32i)[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2053,7 +2053,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, Span<sbyte> src, int offset)
-; vload_gn128_span8i_32i[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,span8i,32i)[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2066,7 +2066,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, Span<ushort> src, int offset)
-; vload_gn128_span16u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,span16u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2079,7 +2079,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, Span<short> src, int offset)
-; vload_gn128_span16i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,span16i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2092,7 +2092,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, Span<uint> src, int offset)
-; vload_gn128_span32u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,span32u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2105,7 +2105,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, Span<int> src, int offset)
-; vload_gn128_span32i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,span32i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2118,7 +2118,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, Span<ulong> src, int offset)
-; vload_gn128_span64u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,span64u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2131,7 +2131,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, Span<long> src, int offset)
-; vload_gn128_span64i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,span64i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2144,7 +2144,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, Span<float> src, int offset)
-; vload_gn128_span32f_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,span32f,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2157,7 +2157,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, Span<double> src, int offset)
-; vload_gn128_span64f_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,span64f,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2170,7 +2170,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, Span<byte> src, int offset)
-; vload_gn256_span8u_32i[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,span8u,32i)[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2184,7 +2184,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, Span<sbyte> src, int offset)
-; vload_gn256_span8i_32i[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,span8i,32i)[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2198,7 +2198,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, Span<ushort> src, int offset)
-; vload_gn256_span16u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,span16u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2212,7 +2212,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, Span<short> src, int offset)
-; vload_gn256_span16i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,span16i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2226,7 +2226,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, Span<uint> src, int offset)
-; vload_gn256_span32u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,span32u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2240,7 +2240,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, Span<int> src, int offset)
-; vload_gn256_span32i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,span32i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2254,7 +2254,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, Span<ulong> src, int offset)
-; vload_gn256_span64u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,span64u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2268,7 +2268,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, Span<long> src, int offset)
-; vload_gn256_span64i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,span64i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2282,7 +2282,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, Span<float> src, int offset)
-; vload_gn256_span32f_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,span32f,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2296,7 +2296,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, Span<double> src, int offset)
-; vload_gn256_span64f_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,span64f,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2310,7 +2310,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, Span<byte> src, int offset)
-; vload_gn512_span8u_32i[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](n512,span8u,32i)[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2335,7 +2335,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, Span<sbyte> src, int offset)
-; vload_gn512_span8i_32i[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](n512,span8i,32i)[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2360,7 +2360,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, Span<ushort> src, int offset)
-; vload_gn512_span16u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](n512,span16u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2385,7 +2385,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, Span<short> src, int offset)
-; vload_gn512_span16i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](n512,span16i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2410,7 +2410,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, Span<uint> src, int offset)
-; vload_gn512_span32u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](n512,span32u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2435,7 +2435,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, Span<int> src, int offset)
-; vload_gn512_span32i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](n512,span32i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2460,7 +2460,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, Span<ulong> src, int offset)
-; vload_gn512_span64u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](n512,span64u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2485,7 +2485,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, Span<long> src, int offset)
-; vload_gn512_span64i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](n512,span64i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2510,7 +2510,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, Span<float> src, int offset)
-; vload_gn512_span32f_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](n512,span32f,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2535,7 +2535,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, Span<double> src, int offset)
-; vload_gn512_span64f_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](n512,span64f,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2560,7 +2560,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, ReadOnlySpan<byte> src)
-; vload_gn256_imspan8u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,uspan8u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2572,7 +2572,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, ReadOnlySpan<sbyte> src)
-; vload_gn256_imspan8i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,uspan8i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2584,7 +2584,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, ReadOnlySpan<ushort> src)
-; vload_gn256_imspan16u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,uspan16u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2596,7 +2596,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, ReadOnlySpan<short> src)
-; vload_gn256_imspan16i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,uspan16i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2608,7 +2608,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, ReadOnlySpan<uint> src)
-; vload_gn256_imspan32u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,uspan32u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2620,7 +2620,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, ReadOnlySpan<int> src)
-; vload_gn256_imspan32i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,uspan32i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2632,7 +2632,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, ReadOnlySpan<ulong> src)
-; vload_gn256_imspan64u[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,uspan64u)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2644,7 +2644,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, ReadOnlySpan<long> src)
-; vload_gn256_imspan64i[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,uspan64i)[23] = {c5 f8 77 66 90 49 8b 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2656,7 +2656,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, ReadOnlySpan<float> src)
-; vload_gn256_imspan32f[23] = {c5 f8 77 66 90 49 8b 00 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,uspan32f)[23] = {c5 f8 77 66 90 49 8b 00 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2668,7 +2668,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, ReadOnlySpan<double> src)
-; vload_gn256_imspan64f[23] = {c5 f8 77 66 90 49 8b 00 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,uspan64f)[23] = {c5 f8 77 66 90 49 8b 00 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2680,7 +2680,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, ReadOnlySpan<byte> src)
-; vload_gn512_imspan8u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](n512,uspan8u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2703,7 +2703,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, ReadOnlySpan<sbyte> src)
-; vload_gn512_imspan8i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](n512,uspan8i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2726,7 +2726,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, ReadOnlySpan<ushort> src)
-; vload_gn512_imspan16u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](n512,uspan16u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2749,7 +2749,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, ReadOnlySpan<short> src)
-; vload_gn512_imspan16i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](n512,uspan16i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2772,7 +2772,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, ReadOnlySpan<uint> src)
-; vload_gn512_imspan32u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](n512,uspan32u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2795,7 +2795,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, ReadOnlySpan<int> src)
-; vload_gn512_imspan32i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](n512,uspan32i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2818,7 +2818,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, ReadOnlySpan<ulong> src)
-; vload_gn512_imspan64u[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](n512,uspan64u)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2841,7 +2841,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, ReadOnlySpan<long> src)
-; vload_gn512_imspan64i[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](n512,uspan64i)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2864,7 +2864,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, ReadOnlySpan<float> src)
-; vload_gn512_imspan32f[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](n512,uspan32f)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2887,7 +2887,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, ReadOnlySpan<double> src)
-; vload_gn512_imspan64f[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](n512,uspan64f)[80] = {48 83 ec 58 c5 f8 77 49 8b 00 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2910,7 +2910,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, ReadOnlySpan<byte> src, int offset)
-; vload_gn128_imspan8u_32i[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,uspan8u,32i)[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2923,7 +2923,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, ReadOnlySpan<sbyte> src, int offset)
-; vload_gn128_imspan8i_32i[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,uspan8i,32i)[26] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2936,7 +2936,7 @@
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, ReadOnlySpan<ushort> src, int offset)
-; vload_gn128_imspan16u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,uspan16u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2949,7 +2949,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, ReadOnlySpan<short> src, int offset)
-; vload_gn128_imspan16i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,uspan16i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2962,7 +2962,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, ReadOnlySpan<uint> src, int offset)
-; vload_gn128_imspan32u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,uspan32u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2975,7 +2975,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, ReadOnlySpan<int> src, int offset)
-; vload_gn128_imspan32i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,uspan32i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2988,7 +2988,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, ReadOnlySpan<ulong> src, int offset)
-; vload_gn128_imspan64u_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,uspan64u,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3001,7 +3001,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, ReadOnlySpan<long> src, int offset)
-; vload_gn128_imspan64i_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,uspan64i,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3014,7 +3014,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, ReadOnlySpan<float> src, int offset)
-; vload_gn128_imspan32f_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,uspan32f,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3027,7 +3027,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, ReadOnlySpan<double> src, int offset)
-; vload_gn128_imspan64f_32i[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,uspan64f,32i)[27] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3040,7 +3040,7 @@
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, ReadOnlySpan<byte> src, int offset)
-; vload_gn256_imspan8u_32i[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,uspan8u,32i)[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3054,7 +3054,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, ReadOnlySpan<sbyte> src, int offset)
-; vload_gn256_imspan8i_32i[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,uspan8i,32i)[29] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3068,7 +3068,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, ReadOnlySpan<ushort> src, int offset)
-; vload_gn256_imspan16u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,uspan16u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3082,7 +3082,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, ReadOnlySpan<short> src, int offset)
-; vload_gn256_imspan16i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,uspan16i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3096,7 +3096,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, ReadOnlySpan<uint> src, int offset)
-; vload_gn256_imspan32u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,uspan32u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3110,7 +3110,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, ReadOnlySpan<int> src, int offset)
-; vload_gn256_imspan32i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,uspan32i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3124,7 +3124,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, ReadOnlySpan<ulong> src, int offset)
-; vload_gn256_imspan64u_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,uspan64u,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3138,7 +3138,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, ReadOnlySpan<long> src, int offset)
-; vload_gn256_imspan64i_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,uspan64i,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3152,7 +3152,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, ReadOnlySpan<float> src, int offset)
-; vload_gn256_imspan32f_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,uspan32f,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3166,7 +3166,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, ReadOnlySpan<double> src, int offset)
-; vload_gn256_imspan64f_32i[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,uspan64f,32i)[30] = {c5 f8 77 66 90 49 8b 00 49 63 d1 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3180,7 +3180,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, ReadOnlySpan<byte> src, int offset)
-; vload_gn512_imspan8u_32i[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](n512,uspan8u,32i)[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3205,7 +3205,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, ReadOnlySpan<sbyte> src, int offset)
-; vload_gn512_imspan8i_32i[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](n512,uspan8i,32i)[86] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 03 c2 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3230,7 +3230,7 @@
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, ReadOnlySpan<ushort> src, int offset)
-; vload_gn512_imspan16u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](n512,uspan16u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3255,7 +3255,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, ReadOnlySpan<short> src, int offset)
-; vload_gn512_imspan16i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](n512,uspan16i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 50 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3280,7 +3280,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, ReadOnlySpan<uint> src, int offset)
-; vload_gn512_imspan32u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](n512,uspan32u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3305,7 +3305,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, ReadOnlySpan<int> src, int offset)
-; vload_gn512_imspan32i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](n512,uspan32i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3330,7 +3330,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, ReadOnlySpan<ulong> src, int offset)
-; vload_gn512_imspan64u_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](n512,uspan64u,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3355,7 +3355,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, ReadOnlySpan<long> src, int offset)
-; vload_gn512_imspan64i_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](n512,uspan64i,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3380,7 +3380,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, ReadOnlySpan<float> src, int offset)
-; vload_gn512_imspan32f_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](n512,uspan32f,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 90 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3405,7 +3405,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, ReadOnlySpan<double> src, int offset)
-; vload_gn512_imspan64f_32i[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](n512,uspan64f,32i)[87] = {48 83 ec 58 c5 f8 77 49 8b 00 49 63 d1 48 8d 04 d0 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3430,7 +3430,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(in Block128<byte> src)
-; vload_gb128x8u~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](b128x8u~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3441,7 +3441,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(in Block128<sbyte> src)
-; vload_gb128x8i~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](b128x8i~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3452,7 +3452,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(in Block128<ushort> src)
-; vload_gb128x16u~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](b128x16u~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3463,7 +3463,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(in Block128<short> src)
-; vload_gb128x16i~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](b128x16i~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3474,7 +3474,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(in Block128<uint> src)
-; vload_gb128x32u~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](b128x32u~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3485,7 +3485,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(in Block128<int> src)
-; vload_gb128x32i~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](b128x32i~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3496,7 +3496,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(in Block128<ulong> src)
-; vload_gb128x64u~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](b128x64u~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3507,7 +3507,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(in Block128<long> src)
-; vload_gb128x64i~in[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](b128x64i~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3518,7 +3518,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(in Block128<float> src)
-; vload_gb128x32f~in[20] = {c5 f8 77 66 90 48 8b 02 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](b128x32f~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3529,7 +3529,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(in Block128<double> src)
-; vload_gb128x64f~in[20] = {c5 f8 77 66 90 48 8b 02 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](b128x64f~in)[20] = {c5 f8 77 66 90 48 8b 02 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3540,7 +3540,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(in Block256<byte> src)
-; vload_gb256x8u~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](b256x8u~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3552,7 +3552,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(in Block256<sbyte> src)
-; vload_gb256x8i~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](b256x8i~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3564,7 +3564,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(in Block256<ushort> src)
-; vload_gb256x16u~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](b256x16u~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3576,7 +3576,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(in Block256<short> src)
-; vload_gb256x16i~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](b256x16i~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3588,7 +3588,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(in Block256<uint> src)
-; vload_gb256x32u~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](b256x32u~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3600,7 +3600,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(in Block256<int> src)
-; vload_gb256x32i~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](b256x32i~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3612,7 +3612,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(in Block256<ulong> src)
-; vload_gb256x64u~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](b256x64u~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3624,7 +3624,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(in Block256<long> src)
-; vload_gb256x64i~in[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](b256x64i~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3636,7 +3636,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(in Block256<float> src)
-; vload_gb256x32f~in[23] = {c5 f8 77 66 90 48 8b 02 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](b256x32f~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3648,7 +3648,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(in Block256<double> src)
-; vload_gb256x64f~in[23] = {c5 f8 77 66 90 48 8b 02 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](b256x64f~in)[23] = {c5 f8 77 66 90 48 8b 02 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3660,7 +3660,7 @@
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(in Block512<byte> src)
-; vload_gb512x8u~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8u](b512x8u~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3683,7 +3683,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(in Block512<sbyte> src)
-; vload_gb512x8i~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[8i](b512x8i~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3706,7 +3706,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(in Block512<ushort> src)
-; vload_gb512x16u~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16u](b512x16u~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3729,7 +3729,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(in Block512<short> src)
-; vload_gb512x16i~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[16i](b512x16i~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3752,7 +3752,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(in Block512<uint> src)
-; vload_gb512x32u~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32u](b512x32u~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3775,7 +3775,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(in Block512<int> src)
-; vload_gb512x32i~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32i](b512x32i~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3798,7 +3798,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(in Block512<ulong> src)
-; vload_gb512x64u~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64u](b512x64u~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3821,7 +3821,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(in Block512<long> src)
-; vload_gb512x64i~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64i](b512x64i~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3844,7 +3844,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(in Block512<float> src)
-; vload_gb512x32f~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[32f](b512x32f~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3867,7 +3867,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(in Block512<double> src)
-; vload_gb512x64f~in[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
+; vload_g[64f](b512x64f~in)[80] = {48 83 ec 58 c5 f8 77 48 8b 02 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 58 c3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3890,7 +3890,7 @@
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(in Block128<byte> src, int block)
-; vload_gb128x8u~in_32i[30] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](b128x8u~in,32i)[30] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3904,7 +3904,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(in Block128<sbyte> src, int block)
-; vload_gb128x8i~in_32i[30] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](b128x8i~in,32i)[30] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 03 c2 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3918,7 +3918,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(in Block128<ushort> src, int block)
-; vload_gb128x16u~in_32i[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](b128x16u~in,32i)[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3932,7 +3932,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(in Block128<short> src, int block)
-; vload_gb128x16i~in_32i[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](b128x16i~in,32i)[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 50 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3946,7 +3946,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(in Block128<uint> src, int block)
-; vload_gb128x32u~in_32i[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](b128x32u~in,32i)[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3960,7 +3960,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(in Block128<int> src, int block)
-; vload_gb128x32i~in_32i[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](b128x32i~in,32i)[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3974,7 +3974,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(in Block128<ulong> src, int block)
-; vload_gb128x64u~in_32i[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](b128x64u~in,32i)[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3988,7 +3988,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(in Block128<long> src, int block)
-; vload_gb128x64i~in_32i[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](b128x64i~in,32i)[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4002,7 +4002,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(in Block128<float> src, int block)
-; vload_gb128x32f~in_32i[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](b128x32f~in,32i)[31] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 90 c5 f8 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4016,7 +4016,7 @@
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(in Block128<double> src, int block)
-; vload_gb128x64f~in_32i[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](b128x64f~in,32i)[30] = {c5 f8 77 66 90 48 8b 02 41 d1 e0 49 63 d0 48 8d 04 d0 c5 f9 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4030,7 +4030,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(in Block256<byte> src, int block)
-; vload_gb256x8u~in_32i[33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](b256x8u~in,32i)[33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4045,7 +4045,7 @@
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(in Block256<sbyte> src, int block)
-; vload_gb256x8i~in_32i[33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](b256x8i~in,32i)[33] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 05 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4060,7 +4060,7 @@
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(in Block256<ushort> src, int block)
-; vload_gb256x16u~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](b256x16u~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4075,7 +4075,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(in Block256<short> src, int block)
-; vload_gb256x16i~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](b256x16i~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4090,7 +4090,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(in Block256<uint> src, int block)
-; vload_gb256x32u~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](b256x32u~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4105,7 +4105,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(in Block256<int> src, int block)
-; vload_gb256x32i~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](b256x32i~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4120,7 +4120,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(in Block256<ulong> src, int block)
-; vload_gb256x64u~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](b256x64u~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4135,7 +4135,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(in Block256<long> src, int block)
-; vload_gb256x64i~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](b256x64i~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4150,7 +4150,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(in Block256<float> src, int block)
-; vload_gb256x32f~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](b256x32f~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4165,7 +4165,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(in Block256<double> src, int block)
-; vload_gb256x64f~in_32i[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](b256x64f~in,32i)[34] = {c5 f8 77 66 90 48 8b 02 41 c1 e0 02 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4180,7 +4180,7 @@
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(in Block512<byte> src, int block)
-; vload_gb512x8u~in_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8u](b512x8u~in,32i)[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4212,7 +4212,7 @@
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(in Block512<sbyte> src, int block)
-; vload_gb512x8i~in_32i[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8i](b512x8i~in,32i)[94] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 06 49 63 d0 48 03 c2 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4244,7 +4244,7 @@
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(in Block512<ushort> src, int block)
-; vload_gb512x16u~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16u](b512x16u~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4276,7 +4276,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(in Block512<short> src, int block)
-; vload_gb512x16i~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16i](b512x16i~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 05 49 63 d0 48 8d 04 50 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4308,7 +4308,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(in Block512<uint> src, int block)
-; vload_gb512x32u~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32u](b512x32u~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4340,7 +4340,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(in Block512<int> src, int block)
-; vload_gb512x32i~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32i](b512x32i~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4372,7 +4372,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(in Block512<ulong> src, int block)
-; vload_gb512x64u~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64u](b512x64u~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4404,7 +4404,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(in Block512<long> src, int block)
-; vload_gb512x64i~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64i](b512x64i~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4436,7 +4436,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(in Block512<float> src, int block)
-; vload_gb512x32f~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32f](b512x32f~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 04 49 63 d0 48 8d 04 90 c5 fc 10 00 c5 fd 11 44 24 20 c5 fc 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4468,7 +4468,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(in Block512<double> src, int block)
-; vload_gb512x64f~in_32i[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64f](b512x64f~in,32i)[95] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce 48 8b 02 41 c1 e0 03 49 63 d0 48 8d 04 d0 c5 fd 10 00 c5 fd 11 44 24 20 c5 fd 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4500,7 +4500,7 @@
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vload<byte>(N128 w, byte* pSrc)
-; vload_gn128_8u~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8u](n128,8u~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4510,7 +4510,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vload<sbyte>(N128 w, sbyte* pSrc)
-; vload_gn128_8i~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[8i](n128,8i~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4520,7 +4520,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vload<ushort>(N128 w, ushort* pSrc)
-; vload_gn128_16u~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16u](n128,16u~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4530,7 +4530,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vload<short>(N128 w, short* pSrc)
-; vload_gn128_16i~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[16i](n128,16i~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4540,7 +4540,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vload<uint>(N128 w, uint* pSrc)
-; vload_gn128_32u~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32u](n128,32u~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4550,7 +4550,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vload<int>(N128 w, int* pSrc)
-; vload_gn128_32i~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32i](n128,32i~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4560,7 +4560,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vload<ulong>(N128 w, ulong* pSrc)
-; vload_gn128_64u~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64u](n128,64u~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4570,7 +4570,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vload<long>(N128 w, long* pSrc)
-; vload_gn128_64i~ptr[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64i](n128,64i~ptr)[18] = {c5 f8 77 66 90 c4 c1 7b f0 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4580,7 +4580,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vload<float>(N128 w, float* pSrc)
-; vload_gn128_32f~ptr[18] = {c5 f8 77 66 90 c4 c1 78 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[32f](n128,32f~ptr)[18] = {c5 f8 77 66 90 c4 c1 78 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4590,7 +4590,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vload<double>(N128 w, double* pSrc)
-; vload_gn128_64f~ptr[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
+; vload_g[64f](n128,64f~ptr)[18] = {c5 f8 77 66 90 c4 c1 79 10 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4600,7 +4600,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vload<byte>(N256 w, byte* pSrc)
-; vload_gn256_8u~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8u](n256,8u~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4611,7 +4611,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vload<sbyte>(N256 w, sbyte* pSrc)
-; vload_gn256_8i~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[8i](n256,8i~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4622,7 +4622,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vload<ushort>(N256 w, ushort* pSrc)
-; vload_gn256_16u~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16u](n256,16u~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4633,7 +4633,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vload<short>(N256 w, short* pSrc)
-; vload_gn256_16i~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[16i](n256,16i~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4644,7 +4644,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vload<uint>(N256 w, uint* pSrc)
-; vload_gn256_32u~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32u](n256,32u~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4655,7 +4655,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vload<int>(N256 w, int* pSrc)
-; vload_gn256_32i~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32i](n256,32i~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4666,7 +4666,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vload<ulong>(N256 w, ulong* pSrc)
-; vload_gn256_64u~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64u](n256,64u~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4677,7 +4677,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vload<long>(N256 w, long* pSrc)
-; vload_gn256_64i~ptr[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64i](n256,64i~ptr)[21] = {c5 f8 77 66 90 c4 c1 7f f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4688,7 +4688,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vload<float>(N256 w, float* pSrc)
-; vload_gn256_32f~ptr[21] = {c5 f8 77 66 90 c4 c1 7c 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[32f](n256,32f~ptr)[21] = {c5 f8 77 66 90 c4 c1 7c 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4699,7 +4699,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vload<double>(N256 w, double* pSrc)
-; vload_gn256_64f~ptr[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vload_g[64f](n256,64f~ptr)[21] = {c5 f8 77 66 90 c4 c1 7d 10 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4710,7 +4710,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<byte> vload<byte>(N512 w, byte* pSrc)
-; vload_gn512_8u~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8u](n512,8u~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4738,7 +4738,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<sbyte> vload<sbyte>(N512 w, sbyte* pSrc)
-; vload_gn512_8i~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8i](n512,8i~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4766,7 +4766,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ushort> vload<ushort>(N512 w, ushort* pSrc)
-; vload_gn512_16u~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16u](n512,16u~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4794,7 +4794,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vload<short>(N512 w, short* pSrc)
-; vload_gn512_16i~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16i](n512,16i~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4822,7 +4822,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<uint> vload<uint>(N512 w, uint* pSrc)
-; vload_gn512_32u~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32u](n512,32u~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4850,7 +4850,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vload<int>(N512 w, int* pSrc)
-; vload_gn512_32i~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32i](n512,32i~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4878,7 +4878,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<ulong> vload<ulong>(N512 w, ulong* pSrc)
-; vload_gn512_64u~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64u](n512,64u~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4906,7 +4906,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vload<long>(N512 w, long* pSrc)
-; vload_gn512_64i~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64i](n512,64i~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7f f0 00 c5 fd 11 44 24 20 c4 c1 7f f0 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4934,7 +4934,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<float> vload<float>(N512 w, float* pSrc)
-; vload_gn512_32f~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32f](n512,32f~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7c 10 00 c5 fd 11 44 24 20 c4 c1 7c 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4962,7 +4962,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<double> vload<double>(N512 w, double* pSrc)
-; vload_gn512_64f~ptr[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64f](n512,64f~ptr)[83] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7d 10 00 c5 fd 11 44 24 20 c4 c1 7d 10 40 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4990,7 +4990,7 @@
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<byte> vload<byte>(byte* pSrc, out Vector128<byte> dst)
-; vload_g8u~ptr_v128x8u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[8u](8u~ptr,v128x8u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5000,7 +5000,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<sbyte> vload<sbyte>(sbyte* pSrc, out Vector128<sbyte> dst)
-; vload_g8i~ptr_v128x8i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[8i](8i~ptr,v128x8i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5010,7 +5010,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<ushort> vload<ushort>(ushort* pSrc, out Vector128<ushort> dst)
-; vload_g16u~ptr_v128x16u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[16u](16u~ptr,v128x16u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5020,7 +5020,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<short> vload<short>(short* pSrc, out Vector128<short> dst)
-; vload_g16i~ptr_v128x16i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[16i](16i~ptr,v128x16i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5030,7 +5030,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<uint> vload<uint>(uint* pSrc, out Vector128<uint> dst)
-; vload_g32u~ptr_v128x32u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32u](32u~ptr,v128x32u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5040,7 +5040,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<int> vload<int>(int* pSrc, out Vector128<int> dst)
-; vload_g32i~ptr_v128x32i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32i](32i~ptr,v128x32i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5050,7 +5050,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<ulong> vload<ulong>(ulong* pSrc, out Vector128<ulong> dst)
-; vload_g64u~ptr_v128x64u~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64u](64u~ptr,v128x64u~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5060,7 +5060,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<long> vload<long>(long* pSrc, out Vector128<long> dst)
-; vload_g64i~ptr_v128x64i~out[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64i](64i~ptr,v128x64i~out)[17] = {c5 f8 77 66 90 c5 fb f0 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5070,7 +5070,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<float> vload<float>(float* pSrc, out Vector128<float> dst)
-; vload_g32f~ptr_v128x32f~out[17] = {c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[32f](32f~ptr,v128x32f~out)[17] = {c5 f8 77 66 90 c5 f8 10 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5080,7 +5080,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector128<double> vload<double>(double* pSrc, out Vector128<double> dst)
-; vload_g64f~ptr_v128x64f~out[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3}
+; vload_g[64f](64f~ptr,v128x64f~out)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 11 02 48 8b c2 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5090,7 +5090,7 @@
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<byte> vload<byte>(byte* pSrc, out Vector256<byte> dst)
-; vload_g8u~ptr_v256x8u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[8u](8u~ptr,v256x8u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5101,7 +5101,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<sbyte> vload<sbyte>(sbyte* pSrc, out Vector256<sbyte> dst)
-; vload_g8i~ptr_v256x8i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[8i](8i~ptr,v256x8i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5112,7 +5112,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<ushort> vload<ushort>(ushort* pSrc, out Vector256<ushort> dst)
-; vload_g16u~ptr_v256x16u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[16u](16u~ptr,v256x16u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5123,7 +5123,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<short> vload<short>(short* pSrc, out Vector256<short> dst)
-; vload_g16i~ptr_v256x16i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[16i](16i~ptr,v256x16i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5134,7 +5134,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<uint> vload<uint>(uint* pSrc, out Vector256<uint> dst)
-; vload_g32u~ptr_v256x32u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32u](32u~ptr,v256x32u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5145,7 +5145,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<int> vload<int>(int* pSrc, out Vector256<int> dst)
-; vload_g32i~ptr_v256x32i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32i](32i~ptr,v256x32i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5156,7 +5156,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<ulong> vload<ulong>(ulong* pSrc, out Vector256<ulong> dst)
-; vload_g64u~ptr_v256x64u~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64u](64u~ptr,v256x64u~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5167,7 +5167,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<long> vload<long>(long* pSrc, out Vector256<long> dst)
-; vload_g64i~ptr_v256x64i~out[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64i](64i~ptr,v256x64i~out)[20] = {c5 f8 77 66 90 c5 ff f0 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5178,7 +5178,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<float> vload<float>(float* pSrc, out Vector256<float> dst)
-; vload_g32f~ptr_v256x32f~out[20] = {c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[32f](32f~ptr,v256x32f~out)[20] = {c5 f8 77 66 90 c5 fc 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5189,7 +5189,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector256<double> vload<double>(double* pSrc, out Vector256<double> dst)
-; vload_g64f~ptr_v256x64f~out[20] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
+; vload_g[64f](64f~ptr,v256x64f~out)[20] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd 11 02 48 8b c2 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -5200,7 +5200,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<byte> vload<byte>(byte* pSrc, out Vector512<byte> dst)
-; vload_g8u~ptr_v512x8u~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8u](8u~ptr,v512x8u~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5228,7 +5228,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<sbyte> vload<sbyte>(sbyte* pSrc, out Vector512<sbyte> dst)
-; vload_g8i~ptr_v512x8i~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[8i](8i~ptr,v512x8i~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5256,7 +5256,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ushort> vload<ushort>(ushort* pSrc, out Vector512<ushort> dst)
-; vload_g16u~ptr_v512x16u~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16u](16u~ptr,v512x16u~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5284,7 +5284,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<short> vload<short>(short* pSrc, out Vector512<short> dst)
-; vload_g16i~ptr_v512x16i~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[16i](16i~ptr,v512x16i~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5312,7 +5312,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<uint> vload<uint>(uint* pSrc, out Vector512<uint> dst)
-; vload_g32u~ptr_v512x32u~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32u](32u~ptr,v512x32u~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5340,7 +5340,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<int> vload<int>(int* pSrc, out Vector512<int> dst)
-; vload_g32i~ptr_v512x32i~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32i](32i~ptr,v512x32i~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5368,7 +5368,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<ulong> vload<ulong>(ulong* pSrc, out Vector512<ulong> dst)
-; vload_g64u~ptr_v512x64u~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64u](64u~ptr,v512x64u~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5396,7 +5396,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<long> vload<long>(long* pSrc, out Vector512<long> dst)
-; vload_g64i~ptr_v512x64i~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64i](64i~ptr,v512x64i~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 ff f0 01 c5 fd 11 44 24 20 c5 ff f0 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5424,7 +5424,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<float> vload<float>(float* pSrc, out Vector512<float> dst)
-; vload_g32f~ptr_v512x32f~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[32f](32f~ptr,v512x32f~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fc 10 01 c5 fd 11 44 24 20 c5 fc 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5452,7 +5452,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Vector512<double> vload<double>(double* pSrc, out Vector512<double> dst)
-; vload_g64f~ptr_v512x64f~out[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
+; vload_g[64f](64f~ptr,v512x64f~out)[81] = {57 56 48 83 ec 48 c5 f8 77 48 8b f1 48 8d 3c 24 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c5 fd 10 01 c5 fd 11 44 24 20 c5 fd 10 41 20 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd 11 02 c5 fd 11 4a 20 48 8b c2 c5 f8 77 48 83 c4 48 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

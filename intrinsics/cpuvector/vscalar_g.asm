@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vscalar<byte>(N128 w, byte src)
-; vscalar_gn128_8u[21] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[8u](n128,8u)[21] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vscalar<sbyte>(N128 w, sbyte src)
-; vscalar_gn128_8i[21] = {c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[8i](n128,8i)[21] = {c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vscalar<ushort>(N128 w, ushort src)
-; vscalar_gn128_16u[21] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[16u](n128,16u)[21] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -33,7 +33,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vscalar<short>(N128 w, short src)
-; vscalar_gn128_16i[21] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[16i](n128,16i)[21] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -44,7 +44,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vscalar<uint>(N128 w, uint src)
-; vscalar_gn128_32u[18] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[32u](n128,32u)[18] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -54,7 +54,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vscalar<int>(N128 w, int src)
-; vscalar_gn128_32i[18] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[32i](n128,32i)[18] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -64,7 +64,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vscalar<ulong>(N128 w, ulong src)
-; vscalar_gn128_64u[18] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[64u](n128,64u)[18] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -74,7 +74,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vscalar<long>(N128 w, long src)
-; vscalar_gn128_64i[18] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
+; vscalar_g[64i](n128,64i)[18] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -84,7 +84,7 @@
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vscalar<float>(N128 w, float src)
-; vscalar_gn128_32f[13] = {c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3}
+; vscalar_g[32f](n128,32f)[13] = {c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -93,7 +93,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vscalar<double>(N128 w, double src)
-; vscalar_gn128_64f[13] = {c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3}
+; vscalar_g[64f](n128,64f)[13] = {c5 f8 77 66 90 c5 f9 11 11 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -102,7 +102,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vscalar<byte>(N256 n, byte src)
-; vscalar_gn256_8u[24] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[8u](n256,8u)[24] = {c5 f8 77 66 90 41 0f b6 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -114,7 +114,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vscalar<sbyte>(N256 n, sbyte src)
-; vscalar_gn256_8i[24] = {c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[8i](n256,8i)[24] = {c5 f8 77 66 90 49 0f be c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -126,7 +126,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vscalar<ushort>(N256 n, ushort src)
-; vscalar_gn256_16u[24] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[16u](n256,16u)[24] = {c5 f8 77 66 90 41 0f b7 c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -138,7 +138,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vscalar<short>(N256 n, short src)
-; vscalar_gn256_16i[24] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[16i](n256,16i)[24] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -150,7 +150,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vscalar<uint>(N256 n, uint src)
-; vscalar_gn256_32u[21] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[32u](n256,32u)[21] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -161,7 +161,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vscalar<int>(N256 n, int src)
-; vscalar_gn256_32i[21] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[32i](n256,32i)[21] = {c5 f8 77 66 90 c4 c1 79 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -172,7 +172,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vscalar<ulong>(N256 n, ulong src)
-; vscalar_gn256_64u[21] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[64u](n256,64u)[21] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -183,7 +183,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vscalar<long>(N256 n, long src)
-; vscalar_gn256_64i[21] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vscalar_g[64i](n256,64i)[21] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -194,7 +194,7 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vscalar<float>(N256 n, float src)
-; vscalar_gn256_32f[16] = {c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vscalar_g[32f](n256,32f)[16] = {c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -204,7 +204,7 @@
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vscalar<double>(N256 n, double src)
-; vscalar_gn256_64f[16] = {c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
+; vscalar_g[64f](n256,64f)[16] = {c5 f8 77 66 90 c5 fd 11 11 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

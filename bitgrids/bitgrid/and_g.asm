@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<byte> and<byte>(BitGrid16<byte> gx, BitGrid16<byte> gy)
-; and_gbg8u_bg8u[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
+; and_g[8u](bg8u,bg8u)[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -26,7 +26,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<ushort> and<ushort>(BitGrid16<ushort> gx, BitGrid16<ushort> gy)
-; and_gbg16u_bg16u[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
+; and_g[16u](bg16u,bg16u)[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -52,7 +52,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<uint> and<uint>(BitGrid16<uint> gx, BitGrid16<uint> gy)
-; and_gbg32u_bg32u[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
+; and_g[32u](bg32u,bg32u)[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -78,7 +78,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<ulong> and<ulong>(BitGrid16<ulong> gx, BitGrid16<ulong> gy)
-; and_gbg64u_bg64u[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
+; and_g[64u](bg64u,bg64u)[87] = {50 0f 1f 40 00 48 89 4c 24 10 48 89 54 24 18 0f b6 44 24 12 0f b6 54 24 13 48 8d 4c 24 10 0f b7 09 4c 8d 44 24 18 45 0f b7 00 66 c7 04 24 00 00 c6 44 24 02 00 c6 44 24 03 00 0f b7 c9 41 23 c8 0f b7 c9 66 89 0c 24 88 44 24 02 88 54 24 03 8b 04 24 48 83 c4 08 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
@@ -104,7 +104,7 @@
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<byte> and<byte>(BitGrid32<byte> gx, BitGrid32<byte> gy)
-; and_gbg8u_bg8u[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
+; and_g[8u](bg8u,bg8u)[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,byte ptr [rdx+4]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{0f b6 42 04}
@@ -119,7 +119,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<ushort> and<ushort>(BitGrid32<ushort> gx, BitGrid32<ushort> gy)
-; and_gbg16u_bg16u[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
+; and_g[16u](bg16u,bg16u)[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,byte ptr [rdx+4]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{0f b6 42 04}
@@ -134,7 +134,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<uint> and<uint>(BitGrid32<uint> gx, BitGrid32<uint> gy)
-; and_gbg32u_bg32u[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
+; and_g[32u](bg32u,bg32u)[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,byte ptr [rdx+4]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{0f b6 42 04}
@@ -149,7 +149,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<ulong> and<ulong>(BitGrid32<ulong> gx, BitGrid32<ulong> gy)
-; and_gbg64u_bg64u[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
+; and_g[64u](bg64u,bg64u)[35] = {0f 1f 44 00 00 0f b6 42 04 44 0f b6 4a 05 8b 12 45 8b 00 41 23 d0 89 11 88 41 04 44 88 49 05 48 8b c1 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,byte ptr [rdx+4]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{0f b6 42 04}
@@ -164,7 +164,7 @@
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<byte> and<byte>(BitGrid64<byte> gx, BitGrid64<byte> gy)
-; and_gbg8u_bg8u[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
+; and_g[8u](bg8u,bg8u)[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -178,7 +178,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<ushort> and<ushort>(BitGrid64<ushort> gx, BitGrid64<ushort> gy)
-; and_gbg16u_bg16u[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
+; and_g[16u](bg16u,bg16u)[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -192,7 +192,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<uint> and<uint>(BitGrid64<uint> gx, BitGrid64<uint> gy)
-; and_gbg32u_bg32u[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
+; and_g[32u](bg32u,bg32u)[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -206,7 +206,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<ulong> and<ulong>(BitGrid64<ulong> gx, BitGrid64<ulong> gy)
-; and_gbg64u_bg64u[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
+; and_g[64u](bg64u,bg64u)[29] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 23 c2 33 d2 48 89 01 88 51 08 88 51 09 48 8b c1 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -220,7 +220,7 @@
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitGrid<byte> and<byte>(in BitGrid<byte> gx, in BitGrid<byte> gy, in BitGrid<byte> gz)
-; and_gbg8u~in_bg8u~in_bg8u~in[124] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 1f 45 03 ca 41 c1 f9 05 45 33 d2 45 85 c9 7e 51 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 4c 8b da 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c b8 49 8b c0 c5 f8 77 5e c3}
+; and_g[8u](bg8u~in,bg8u~in,bg8u~in)[124] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 1f 45 03 ca 41 c1 f9 05 45 33 d2 45 85 c9 7e 51 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 03 4c 8b da 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 41 8b f2 c1 e6 05 48 63 f6 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c b8 49 8b c0 c5 f8 77 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -265,7 +265,7 @@
 007bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitGrid<ushort> and<ushort>(in BitGrid<ushort> gx, in BitGrid<ushort> gy, in BitGrid<ushort> gz)
-; and_gbg16u~in_bg16u~in_bg16u~in[109] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 42 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 04 48 63 f6 48 d1 e6 4c 03 de c4 c1 7f f0 03 4c 8b da 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c c7 49 8b c0 c5 f8 77 5e c3}
+; and_g[16u](bg16u~in,bg16u~in,bg16u~in)[109] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 0f 45 03 ca 41 c1 f9 04 45 33 d2 45 85 c9 7e 42 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 04 48 63 f6 48 d1 e6 4c 03 de c4 c1 7f f0 03 4c 8b da 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c c7 49 8b c0 c5 f8 77 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -305,7 +305,7 @@
 006ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitGrid<uint> and<uint>(in BitGrid<uint> gx, in BitGrid<uint> gy, in BitGrid<uint> gz)
-; and_gbg32u~in_bg32u~in_bg32u~in[110] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 43 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 03 48 63 f6 48 c1 e6 02 4c 03 de c4 c1 7f f0 03 4c 8b da 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c c6 49 8b c0 c5 f8 77 5e c3}
+; and_g[32u](bg32u~in,bg32u~in,bg32u~in)[110] = {56 c5 f8 77 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 07 45 03 ca 41 c1 f9 03 45 33 d2 45 85 c9 7e 43 48 8b 01 48 8b 12 49 8b 08 4c 8b d8 41 8b f2 c1 e6 03 48 63 f6 48 c1 e6 02 4c 03 de c4 c1 7f f0 03 4c 8b da 4c 03 de c4 c1 7f f0 0b c5 fd db c1 4c 8b d9 4c 03 de c4 c1 7e 7f 03 41 ff c2 45 3b d1 7c c6 49 8b c0 c5 f8 77 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -345,7 +345,7 @@
 006dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref BitGrid<ulong> and<ulong>(in BitGrid<ulong> gx, in BitGrid<ulong> gy, in BitGrid<ulong> gz)
-; and_gbg64u~in_bg64u~in_bg64u~in[104] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 03 49 03 c3 c5 ff f0 00 48 8b 02 49 03 c3 c5 ff f0 08 c5 fd db c1 49 8b 00 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c5 f8 77 c3}
+; and_g[64u](bg64u~in,bg64u~in,bg64u~in)[104] = {c5 f8 77 66 90 45 8b 48 08 45 8b d1 41 c1 fa 1f 41 83 e2 03 45 03 ca 41 c1 f9 02 45 33 d2 45 85 c9 7e 3e 48 8b 01 48 8b 02 48 8b 01 45 8b da 41 c1 e3 02 4d 63 db 49 c1 e3 03 49 03 c3 c5 ff f0 00 48 8b 02 49 03 c3 c5 ff f0 08 c5 fd db c1 49 8b 00 49 03 c3 c5 fe 7f 00 41 ff c2 45 3b d1 7c c8 49 8b c0 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -382,7 +382,7 @@
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<byte> and<byte>(in BitGrid<byte> gx, in BitGrid<byte> gy)
-; and_gbg8u~in_bg8u~in[200] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 13 f9 ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 1f 03 c2 c1 f8 05 45 33 ff 85 c0 7e 4f 48 8b 55 00 48 8b 13 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 ff f0 02 48 8b 55 00 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c b5 49 8b fe 48 8d 74 24 20 e8 af c0 bf 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; and_g[8u](bg8u~in,bg8u~in)[200] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 4b f9 ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 1f 03 c2 c1 f8 05 45 33 ff 85 c0 7e 4f 48 8b 55 00 48 8b 13 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 ff f0 02 48 8b 55 00 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 41 8b cf c1 e1 05 48 63 c9 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c b5 49 8b fe 48 8d 74 24 20 e8 ff 6b bc 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -403,7 +403,7 @@
 002ch mov r8d,[rbx+14h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 43 14}
 0030h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0035h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0038h call 7ff7c8669680h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 f9 ff ff}
+0038h call 7ff7c869eb68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b f9 ff ff}
 003dh mov eax,[rsp+28h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{8b 44 24 28}
 0041h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
 0043h sar edx,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 fa 1f}
@@ -439,7 +439,7 @@
 00a2h jl short 0059h                          ; JL rel8 || 7C cb || encoded[2]{7c b5}
 00a4h mov rdi,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b fe}
 00a7h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-00ach call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af c0 bf 5e}
+00ach call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff 6b bc 5e}
 00b1h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00b3h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00b5h mov rax,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c6}
@@ -454,7 +454,7 @@
 00c7h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<ushort> and<ushort>(in BitGrid<ushort> gx, in BitGrid<ushort> gy)
-; and_gbg16u~in_bg16u~in[185] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 63 f8 ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 0f 03 c2 c1 f8 04 45 33 ff 85 c0 7e 40 48 8b 55 00 48 8b 13 41 8b cf c1 e1 04 48 63 c9 48 d1 e1 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c4 49 8b fe 48 8d 74 24 20 e8 ce bf bf 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; and_g[16u](bg16u~in,bg16u~in)[185] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 23 fd ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 0f 03 c2 c1 f8 04 45 33 ff 85 c0 7e 40 48 8b 55 00 48 8b 13 41 8b cf c1 e1 04 48 63 c9 48 d1 e1 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c4 49 8b fe 48 8d 74 24 20 e8 1e 6b bc 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -475,7 +475,7 @@
 002ch mov r8d,[rbx+14h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 43 14}
 0030h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0035h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0038h call 7ff7c86696c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 f8 ff ff}
+0038h call 7ff7c869f030h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 fd ff ff}
 003dh mov eax,[rsp+28h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{8b 44 24 28}
 0041h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
 0043h sar edx,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 fa 1f}
@@ -506,7 +506,7 @@
 0093h jl short 0059h                          ; JL rel8 || 7C cb || encoded[2]{7c c4}
 0095h mov rdi,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b fe}
 0098h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-009dh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce bf bf 5e}
+009dh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 6b bc 5e}
 00a2h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a4h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a6h mov rax,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c6}
@@ -521,7 +521,7 @@
 00b8h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<uint> and<uint>(in BitGrid<uint> gx, in BitGrid<uint> gy)
-; and_gbg32u~in_bg32u~in[186] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 33 fc ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 07 03 c2 c1 f8 03 45 33 ff 85 c0 7e 41 48 8b 55 00 48 8b 13 41 8b cf c1 e1 03 48 63 c9 48 c1 e1 02 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c3 49 8b fe 48 8d 74 24 20 e8 ed be bf 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; and_g[32u](bg32u~in,bg32u~in)[186] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 63 fc ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 07 03 c2 c1 f8 03 45 33 ff 85 c0 7e 41 48 8b 55 00 48 8b 13 41 8b cf c1 e1 03 48 63 c9 48 c1 e1 02 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c3 49 8b fe 48 8d 74 24 20 e8 3d 6a bc 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -542,7 +542,7 @@
 002ch mov r8d,[rbx+14h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 43 14}
 0030h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0035h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0038h call 7ff7c8669b70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 fc ff ff}
+0038h call 7ff7c869f050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 fc ff ff}
 003dh mov eax,[rsp+28h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{8b 44 24 28}
 0041h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
 0043h sar edx,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 fa 1f}
@@ -573,7 +573,7 @@
 0094h jl short 0059h                          ; JL rel8 || 7C cb || encoded[2]{7c c3}
 0096h mov rdi,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b fe}
 0099h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-009eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed be bf 5e}
+009eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d 6a bc 5e}
 00a3h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a5h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a7h mov rax,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c6}
@@ -588,7 +588,7 @@
 00b9h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<ulong> and<ulong>(in BitGrid<ulong> gx, in BitGrid<ulong> gy)
-; and_gbg64u~in_bg64u~in[186] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 73 fb ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 03 03 c2 c1 f8 02 45 33 ff 85 c0 7e 41 48 8b 55 00 48 8b 13 41 8b cf c1 e1 02 48 63 c9 48 c1 e1 03 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c3 49 8b fe 48 8d 74 24 20 e8 0d be bf 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; and_g[64u](bg64u~in,bg64u~in)[186] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 89 44 24 30 4c 8b f1 48 8b da 49 8b e8 8b 53 10 44 8b 43 14 48 8d 4c 24 20 45 33 c9 e8 a3 fb ff ff 8b 44 24 28 8b d0 c1 fa 1f 83 e2 03 03 c2 c1 f8 02 45 33 ff 85 c0 7e 41 48 8b 55 00 48 8b 13 41 8b cf c1 e1 02 48 63 c9 48 c1 e1 03 48 03 d1 c5 ff f0 02 48 8b 55 00 48 03 d1 c5 ff f0 0a c5 fd db c1 48 8d 54 24 20 48 8b 12 48 03 d1 c5 fe 7f 02 41 ff c7 44 3b f8 7c c3 49 8b fe 48 8d 74 24 20 e8 5d 69 bc 5e 48 a5 48 a5 49 8b c6 c5 f8 77 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -609,7 +609,7 @@
 002ch mov r8d,[rbx+14h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 43 14}
 0030h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0035h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0038h call 7ff7c8669b90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 fb ff ff}
+0038h call 7ff7c869f070h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 fb ff ff}
 003dh mov eax,[rsp+28h]                       ; MOV r32, r/m32 || o32 8B /r || encoded[4]{8b 44 24 28}
 0041h mov edx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d0}
 0043h sar edx,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 fa 1f}
@@ -640,7 +640,7 @@
 0094h jl short 0059h                          ; JL rel8 || 7C cb || encoded[2]{7c c3}
 0096h mov rdi,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b fe}
 0099h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-009eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d be bf 5e}
+009eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 69 bc 5e}
 00a3h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a5h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00a7h mov rax,r14                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c6}

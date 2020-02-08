@@ -1,7 +1,7 @@
-convert_v128x32i_n32_32i            c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
-convert_v128x32u_n32_32u            c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
-convert_v128x64i_n64_64i            c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3
-convert_v128x64u_n64_64u            c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3
-convert_v128x64u_v128x64u_n128_32u  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 ff e6 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-convert_v256x64u_n128_32u           c5 f8 77 66 90 c5 fd 10 02 c5 ff e6 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
-convert_v128x32u_n256_64u           c5 f8 77 66 90 c5 f9 10 02 c5 fe e6 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+convert_(v128x32i,n32,32i)            c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
+convert_(v128x32u,n32,32u)            c5 f8 77 66 90 c5 f9 10 01 c5 f9 7e c0 c3
+convert_(v128x64i,n64,64i)            c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3
+convert_(v128x64u,n64,64u)            c5 f8 77 66 90 c5 f9 10 01 c4 e1 f9 7e c0 c3
+convert_(v128x64u,v128x64u,n128,32u)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 ff e6 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+convert_(v256x64u,n128,32u)           c5 f8 77 66 90 c5 fd 10 02 c5 ff e6 c0 c5 f9 11 01 48 8b c1 c5 f8 77 c3
+convert_(v128x32u,n256,64u)           c5 f8 77 66 90 c5 f9 10 02 c5 fe e6 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

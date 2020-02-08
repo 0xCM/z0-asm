@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vmakemask<byte>(ushort src)
-; vmakemask_g16u[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
+; vmakemask_g[8u](16u)[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -18,7 +18,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmakemask<ushort>(ushort src)
-; vmakemask_g16u[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
+; vmakemask_g[16u](16u)[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -36,7 +36,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmakemask<uint>(ushort src)
-; vmakemask_g16u[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
+; vmakemask_g[32u](16u)[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -54,7 +54,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmakemask<ulong>(ushort src)
-; vmakemask_g16u[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
+; vmakemask_g[64u](16u)[56] = {c5 f8 77 66 90 0f b7 c2 0f b6 d0 49 b8 80 80 80 80 80 80 80 80 c4 c2 eb f5 d0 c4 e1 f9 6e c2 c1 e8 08 0f b6 c0 c4 c2 fb f5 c0 c4 e3 f9 22 c0 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -72,7 +72,7 @@
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vmakemask<byte>(ushort src, byte index)
-; vmakemask_g16u_8u[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; vmakemask_g[8u](16u,8u)[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -92,7 +92,7 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vmakemask<ushort>(ushort src, byte index)
-; vmakemask_g16u_8u[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; vmakemask_g[16u](16u,8u)[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -112,7 +112,7 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vmakemask<uint>(ushort src, byte index)
-; vmakemask_g16u_8u[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; vmakemask_g[32u](16u,8u)[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -132,7 +132,7 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vmakemask<ulong>(ushort src, byte index)
-; vmakemask_g16u_8u[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
+; vmakemask_g[64u](16u,8u)[63] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b7 d2 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 c1 ea 08 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f9 22 c2 01 c5 f9 11 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -152,7 +152,7 @@
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmakemask<byte>(uint src)
-; vmakemask_g32u[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmakemask_g[8u](32u)[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -183,7 +183,7 @@
 006fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmakemask<ushort>(uint src)
-; vmakemask_g32u[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmakemask_g[16u](32u)[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -214,7 +214,7 @@
 006fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmakemask<uint>(uint src)
-; vmakemask_g32u[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmakemask_g[32u](32u)[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -245,7 +245,7 @@
 006fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmakemask<ulong>(uint src)
-; vmakemask_g32u[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vmakemask_g[64u](32u)[112] = {c5 f8 77 66 90 0f b7 c2 44 0f b6 c0 49 b9 80 80 80 80 80 80 80 80 c4 42 bb f5 c1 c4 c1 f9 6e c0 c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f9 22 c0 01 c1 ea 10 0f b7 c2 0f b6 d0 c4 c2 eb f5 d1 c4 e1 f9 6e ca c1 e8 08 0f b6 c0 c4 c2 fb f5 c1 c4 e3 f1 22 c8 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -276,7 +276,7 @@
 006fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vmakemask<byte>(uint src, byte index)
-; vmakemask_g32u_8u[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; vmakemask_g[8u](32u,8u)[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -309,7 +309,7 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vmakemask<ushort>(uint src, byte index)
-; vmakemask_g32u_8u[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; vmakemask_g[16u](32u,8u)[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -342,7 +342,7 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vmakemask<uint>(uint src, byte index)
-; vmakemask_g32u_8u[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; vmakemask_g[32u](32u,8u)[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -375,7 +375,7 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vmakemask<ulong>(uint src, byte index)
-; vmakemask_g32u_8u[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
+; vmakemask_g[64u](32u,8u)[116] = {c5 f8 77 66 90 48 8b c1 41 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 49 d3 e0 0f b6 ca c4 c2 f3 f5 c8 c4 e1 f9 6e c1 8b ca c1 e9 08 0f b6 c9 c4 c2 f3 f5 c8 c4 e3 f9 22 c1 01 8b ca c1 e9 10 0f b6 c9 c4 c2 f3 f5 c8 c4 e1 f9 6e c9 c1 ea 18 0f b6 d2 c4 c2 eb f5 d0 c4 e3 f1 22 ca 01 c5 ec 57 d2 c4 e3 6d 38 c0 00 c4 e3 7d 38 c1 01 c5 fd 11 00 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

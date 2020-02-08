@@ -1,4 +1,4 @@
-hi_8u   0f 1f 44 00 00 0f b6 c1 c1 f8 04 0f b6 c0 c3
-hi_16u  0f 1f 44 00 00 0f b7 c1 c1 f8 08 0f b6 c0 c3
-hi_32u  0f 1f 44 00 00 c1 e9 10 0f b7 c1 c3
-hi_64u  0f 1f 44 00 00 48 c1 e9 20 8b c1 c3
+hi_(8u)   0f 1f 44 00 00 0f b6 c1 c1 f8 04 0f b6 c0 c3
+hi_(16u)  0f 1f 44 00 00 0f b7 c1 c1 f8 08 0f b6 c0 c3
+hi_(32u)  0f 1f 44 00 00 c1 e9 10 0f b7 c1 c3
+hi_(64u)  0f 1f 44 00 00 48 c1 e9 20 8b c1 c3

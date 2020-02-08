@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vpartsi(N256 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short xA, short xB, short xC, short xD, short xE, short xF)
-; vpartsi_n256_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i[229] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 49 0f bf c1 c5 f9 c4 c0 01 8b 44 24 28 48 0f bf c0 c5 f9 c4 c0 02 8b 44 24 30 48 0f bf c0 c5 f9 c4 c0 03 8b 44 24 38 48 0f bf c0 c5 f9 c4 c0 04 8b 44 24 40 48 0f bf c0 c5 f9 c4 c0 05 8b 44 24 48 48 0f bf c0 c5 f9 c4 c0 06 8b 44 24 50 48 0f bf c0 c5 f9 c4 c0 07 8b 44 24 58 48 0f bf c0 c5 f9 6e c8 8b 44 24 60 48 0f bf c0 c5 f1 c4 c8 01 8b 44 24 68 48 0f bf c0 c5 f1 c4 c8 02 8b 44 24 70 48 0f bf c0 c5 f1 c4 c8 03 8b 44 24 78 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n256,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i)[229] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 49 0f bf c1 c5 f9 c4 c0 01 8b 44 24 28 48 0f bf c0 c5 f9 c4 c0 02 8b 44 24 30 48 0f bf c0 c5 f9 c4 c0 03 8b 44 24 38 48 0f bf c0 c5 f9 c4 c0 04 8b 44 24 40 48 0f bf c0 c5 f9 c4 c0 05 8b 44 24 48 48 0f bf c0 c5 f9 c4 c0 06 8b 44 24 50 48 0f bf c0 c5 f9 c4 c0 07 8b 44 24 58 48 0f bf c0 c5 f9 6e c8 8b 44 24 60 48 0f bf c0 c5 f1 c4 c8 01 8b 44 24 68 48 0f bf c0 c5 f1 c4 c8 02 8b 44 24 70 48 0f bf c0 c5 f1 c4 c8 03 8b 44 24 78 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -57,7 +57,7 @@
 00e4h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vpartsi(N256 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7)
-; vpartsi_n256_32i_32i_32i_32i_32i_32i_32i_32i[79] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n256,32i,32i,32i,32i,32i,32i,32i,32i)[79] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -76,7 +76,7 @@
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vpartsi(N256 w, long x0, long x1, long x2, long x3)
-; vpartsi_n256_64i_64i_64i_64i[48] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n256,64i,64i,64i,64i)[48] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c5 fd 11 01 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -91,7 +91,7 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<short> vpartsi(N512 w, short x0, short x1, short x2, short x3, short x4, short x5, short x6, short x7, short x8, short x9, short x10, short x11, short x12, short x13, short x14, short x15, short x16, short x17, short x18, short x19, short x20, short x21, short x22, short x23, short x24, short x25, short x26, short x27, short x28, short x29, short x30, short x31)
-; vpartsi_n512_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i_16i[494] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 49 0f bf c1 c5 f9 c4 c0 01 8b 44 24 28 48 0f bf c0 c5 f9 c4 c0 02 8b 44 24 30 48 0f bf c0 c5 f9 c4 c0 03 8b 44 24 38 48 0f bf c0 c5 f9 c4 c0 04 8b 44 24 40 48 0f bf c0 c5 f9 c4 c0 05 8b 44 24 48 48 0f bf c0 c5 f9 c4 c0 06 8b 44 24 50 48 0f bf c0 c5 f9 c4 c0 07 8b 44 24 58 48 0f bf c0 c5 f9 6e c8 8b 44 24 60 48 0f bf c0 c5 f1 c4 c8 01 8b 44 24 68 48 0f bf c0 c5 f1 c4 c8 02 8b 44 24 70 48 0f bf c0 c5 f1 c4 c8 03 8b 44 24 78 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 8b 84 24 98 00 00 00 48 0f bf c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 48 0f bf c0 c5 f1 c4 c8 01 8b 84 24 a8 00 00 00 48 0f bf c0 c5 f1 c4 c8 02 8b 84 24 b0 00 00 00 48 0f bf c0 c5 f1 c4 c8 03 8b 84 24 b8 00 00 00 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 c0 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 c8 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 d0 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 8b 84 24 d8 00 00 00 48 0f bf c0 c5 f9 6e d0 8b 84 24 e0 00 00 00 48 0f bf c0 c5 e9 c4 d0 01 8b 84 24 e8 00 00 00 48 0f bf c0 c5 e9 c4 d0 02 8b 84 24 f0 00 00 00 48 0f bf c0 c5 e9 c4 d0 03 8b 84 24 f8 00 00 00 48 0f bf c0 c5 e9 c4 d0 04 8b 84 24 00 01 00 00 48 0f bf c0 c5 e9 c4 d0 05 8b 84 24 08 01 00 00 48 0f bf c0 c5 e9 c4 d0 06 8b 84 24 10 01 00 00 48 0f bf c0 c5 e9 c4 d0 07 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n512,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i,16i)[494] = {c5 f8 77 66 90 49 0f bf c0 c5 f9 6e c0 49 0f bf c1 c5 f9 c4 c0 01 8b 44 24 28 48 0f bf c0 c5 f9 c4 c0 02 8b 44 24 30 48 0f bf c0 c5 f9 c4 c0 03 8b 44 24 38 48 0f bf c0 c5 f9 c4 c0 04 8b 44 24 40 48 0f bf c0 c5 f9 c4 c0 05 8b 44 24 48 48 0f bf c0 c5 f9 c4 c0 06 8b 44 24 50 48 0f bf c0 c5 f9 c4 c0 07 8b 44 24 58 48 0f bf c0 c5 f9 6e c8 8b 44 24 60 48 0f bf c0 c5 f1 c4 c8 01 8b 44 24 68 48 0f bf c0 c5 f1 c4 c8 02 8b 44 24 70 48 0f bf c0 c5 f1 c4 c8 03 8b 44 24 78 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 80 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 88 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 90 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 c4 e3 7d 38 c1 01 8b 84 24 98 00 00 00 48 0f bf c0 c5 f9 6e c8 8b 84 24 a0 00 00 00 48 0f bf c0 c5 f1 c4 c8 01 8b 84 24 a8 00 00 00 48 0f bf c0 c5 f1 c4 c8 02 8b 84 24 b0 00 00 00 48 0f bf c0 c5 f1 c4 c8 03 8b 84 24 b8 00 00 00 48 0f bf c0 c5 f1 c4 c8 04 8b 84 24 c0 00 00 00 48 0f bf c0 c5 f1 c4 c8 05 8b 84 24 c8 00 00 00 48 0f bf c0 c5 f1 c4 c8 06 8b 84 24 d0 00 00 00 48 0f bf c0 c5 f1 c4 c8 07 8b 84 24 d8 00 00 00 48 0f bf c0 c5 f9 6e d0 8b 84 24 e0 00 00 00 48 0f bf c0 c5 e9 c4 d0 01 8b 84 24 e8 00 00 00 48 0f bf c0 c5 e9 c4 d0 02 8b 84 24 f0 00 00 00 48 0f bf c0 c5 e9 c4 d0 03 8b 84 24 f8 00 00 00 48 0f bf c0 c5 e9 c4 d0 04 8b 84 24 00 01 00 00 48 0f bf c0 c5 e9 c4 d0 05 8b 84 24 08 01 00 00 48 0f bf c0 c5 e9 c4 d0 06 8b 84 24 10 01 00 00 48 0f bf c0 c5 e9 c4 d0 07 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -198,7 +198,7 @@
 01edh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<int> vpartsi(N512 w, int x0, int x1, int x2, int x3, int x4, int x5, int x6, int x7, int x8, int x9, int x10, int x11, int x12, int x13, int x14, int x15)
-; vpartsi_n512_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i_32i[159] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 f9 6e 4c 24 58 c4 e3 71 22 4c 24 60 01 c4 e3 71 22 4c 24 68 02 c4 e3 71 22 4c 24 70 03 c5 f9 6e 54 24 78 c4 e3 69 22 94 24 80 00 00 00 01 c4 e3 69 22 94 24 88 00 00 00 02 c4 e3 69 22 94 24 90 00 00 00 03 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n512,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i,32i)[159] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 6e 4c 24 38 c4 e3 71 22 4c 24 40 01 c4 e3 71 22 4c 24 48 02 c4 e3 71 22 4c 24 50 03 c4 e3 7d 38 c1 01 c5 f9 6e 4c 24 58 c4 e3 71 22 4c 24 60 01 c4 e3 71 22 4c 24 68 02 c4 e3 71 22 4c 24 70 03 c5 f9 6e 54 24 78 c4 e3 69 22 94 24 80 00 00 00 01 c4 e3 69 22 94 24 88 00 00 00 02 c4 e3 69 22 94 24 90 00 00 00 03 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -227,7 +227,7 @@
 009eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector512<long> vpartsi(N512 w, long x0, long x1, long x2, long x3, long x4, long x5, long x6, long x7)
-; vpartsi_n512_64i_64i_64i_64i_64i_64i_64i_64i[89] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c4 e1 f9 6e 4c 24 38 c4 e3 f1 22 4c 24 40 01 c4 e1 f9 6e 54 24 48 c4 e3 e9 22 54 24 50 01 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
+; vpartsi_(n512,64i,64i,64i,64i,64i,64i,64i,64i)[89] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c4 e1 f9 6e 4c 24 28 c4 e3 f1 22 4c 24 30 01 c4 e3 7d 38 c1 01 c4 e1 f9 6e 4c 24 38 c4 e3 f1 22 4c 24 40 01 c4 e1 f9 6e 54 24 48 c4 e3 e9 22 54 24 50 01 c4 e3 75 38 ca 01 c5 fd 11 01 c5 fd 11 49 20 48 8b c1 c5 f8 77 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -248,7 +248,7 @@
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vpartsi(N128 w, int x0, int x1, int x2, int x3)
-; vpartsi_n128_32i_32i_32i_32i[40] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 11 01 48 8b c1 c3}
+; vpartsi_(n128,32i,32i,32i,32i)[40] = {c5 f8 77 66 90 c4 c1 79 6e c0 c4 c3 79 22 c1 01 c4 e3 79 22 44 24 28 02 c4 e3 79 22 44 24 30 03 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -261,7 +261,7 @@
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vpartsi(N128 w, long x0, long x1)
-; vpartsi_n128_64i_64i[24] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c5 f9 11 01 48 8b c1 c3}
+; vpartsi_(n128,64i,64i)[24] = {c5 f8 77 66 90 c4 c1 f9 6e c0 c4 c3 f9 22 c1 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

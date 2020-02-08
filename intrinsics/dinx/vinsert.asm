@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N0 n)
-; vinsert_32u_v128x32u_n0[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 00 c5 f9 11 01 48 8b c1 c3}
+; vinsert_(32u,v128x32u,n0)[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 00 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -11,7 +11,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N1 n)
-; vinsert_32u_v128x32u_n1[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 01 c5 f9 11 01 48 8b c1 c3}
+; vinsert_(32u,v128x32u,n1)[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 01 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -22,7 +22,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N2 n)
-; vinsert_32u_v128x32u_n2[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3}
+; vinsert_(32u,v128x32u,n2)[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -33,7 +33,7 @@
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vinsert(uint src, Vector128<uint> dst, N3 n)
-; vinsert_32u_v128x32u_n3[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 03 c5 f9 11 01 48 8b c1 c3}
+; vinsert_(32u,v128x32u,n3)[24] = {c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 03 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}

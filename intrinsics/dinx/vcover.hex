@@ -1,10 +1,10 @@
-vcover_v128x16u_v128x8u~out   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 71 f1 08 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
-vcover_v256x16u_v256x8u~out   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 71 f1 08 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vcover_v128x32u_v128x16u~out  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 10 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
-vcover_v256x32u_v256x16u~out  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 72 f1 10 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vcover_v128x64u_v128x32u~out  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 73 f1 20 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
-vcover_v256x64u_v256x32u~out  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 20 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vcover_v128x32u_v128x8u~out   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 10 c5 f1 ef c0 c5 f1 71 f0 08 c5 f1 eb c0 c4 c1 79 11 00 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
-vcover_v256x32u_v256x8u~out   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 72 f1 10 c5 f5 ef c0 c5 f5 71 f0 08 c5 f5 eb c0 c4 c1 7d 11 00 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vcover_v128x64u_v128x8u~out   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 73 f1 20 c5 f1 ef c0 c5 f1 72 f0 10 c5 f1 ef c0 c5 f1 71 f0 08 c5 f1 eb c0 c4 c1 79 11 00 c4 c1 79 11 00 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
-vcover_v256x64u_v256x8u~out   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 20 c5 f5 ef c0 c5 f5 72 f0 10 c5 f5 ef c0 c5 f5 71 f0 08 c5 f5 eb c0 c4 c1 7d 11 00 c4 c1 7d 11 00 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcover_(v128x16u,v128x8u~out)   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 71 f1 08 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
+vcover_(v256x16u,v256x8u~out)   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 71 f1 08 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcover_(v128x32u,v128x16u~out)  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 10 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
+vcover_(v256x32u,v256x16u~out)  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 72 f1 10 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcover_(v128x64u,v128x32u~out)  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 73 f1 20 c5 f1 eb c0 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
+vcover_(v256x64u,v256x32u~out)  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 20 c5 f5 eb c0 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcover_(v128x32u,v128x8u~out)   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 72 f1 10 c5 f1 ef c0 c5 f1 71 f0 08 c5 f1 eb c0 c4 c1 79 11 00 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
+vcover_(v256x32u,v256x8u~out)   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 72 f1 10 c5 f5 ef c0 c5 f5 71 f0 08 c5 f5 eb c0 c4 c1 7d 11 00 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vcover_(v128x64u,v128x8u~out)   c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c5 f1 73 f1 20 c5 f1 ef c0 c5 f1 72 f0 10 c5 f1 ef c0 c5 f1 71 f0 08 c5 f1 eb c0 c4 c1 79 11 00 c4 c1 79 11 00 c4 c1 79 11 00 c5 f9 11 01 48 8b c1 c3
+vcover_(v256x64u,v256x8u~out)   c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c5 f5 73 f1 20 c5 f5 ef c0 c5 f5 72 f0 10 c5 f5 ef c0 c5 f5 71 f0 08 c5 f5 eb c0 c4 c1 7d 11 00 c4 c1 7d 11 00 c4 c1 7d 11 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
