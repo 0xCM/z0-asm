@@ -298,7 +298,7 @@ Size    | Uri
 46      | asm://bitcore/gbits?bitchars_g#bitchars_g8u_spanchar_32i
 97      | asm://bitcore/gbits?bitchars_g#bitchars_g8u~in
 387     | asm://bitcore/gbits?bitchars_g#bitchars_gimspan16i
-383     | asm://bitcore/gbits?bitchars_g#bitchars_gimspan16u
+49      | asm://bitcore/gbits?bitchars_g#bitchars_gimspan16u
 383     | asm://bitcore/gbits?bitchars_g#bitchars_gimspan32f
 372     | asm://bitcore/gbits?bitchars_g#bitchars_gimspan32i
 372     | asm://bitcore/gbits?bitchars_g#bitchars_gimspan32u

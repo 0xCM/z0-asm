@@ -4,11 +4,11 @@ Size    | Uri
 118     | asm://root/numeric?format#format_FixedWidth~32u
 187     | asm://root/numeric?from#from_FixedWidth~32u_NumericIndicator~16u
 8       | asm://root/numeric?int#int_FixedWidth~32u
-111     | asm://root/numeric?is#is_NumericKind~32u_NumericKind~32u
+91      | asm://root/numeric?is#is_NumericKind~32u_NumericKind~32u
 155     | asm://root/numeric?kind#kind_
-145     | asm://root/numeric?kindset#kindset_NumericKind~32u
-287     | asm://root/numeric?kindsetCreate#kindsetCreate_NumericKind~32u
+125     | asm://root/numeric?kindset#kindset_NumericKind~32u
+267     | asm://root/numeric?kindsetCreate#kindsetCreate_NumericKind~32u
 133     | asm://root/numeric?signed#signed_
 71      | asm://root/numeric?type#type_NumericKind~32u
-145     | asm://root/numeric?typeset#typeset_NumericKind~32u
+125     | asm://root/numeric?typeset#typeset_NumericKind~32u
 133     | asm://root/numeric?unsigned#unsigned_

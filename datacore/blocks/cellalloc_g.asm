@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Block16<byte> cellalloc<byte>(N16 n, int cellcount)
-; cellalloc_gn16_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9d fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn16_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ad fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -22,14 +22,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f15990h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d fa ff ff}
+003eh call 7ff7c7d41ba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad fa ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block16<sbyte> cellalloc<sbyte>(N16 n, int cellcount)
-; cellalloc_gn16_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 45 f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn16_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 0d f4 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -51,14 +51,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f15c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 f9 ff ff}
+003eh call 7ff7c7d41ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d f4 ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block16<ushort> cellalloc<ushort>(N16 n, int cellcount)
-; cellalloc_gn16_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 3f f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn16_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 07 f4 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -77,14 +77,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f15cd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3f f9 ff ff}
+0034h call 7ff7c7d41f30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 f4 ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block16<short> cellalloc<short>(N16 n, int cellcount)
-; cellalloc_gn16_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 a7 f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn16_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 6f f4 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -103,14 +103,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f15da0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 f9 ff ff}
+0034h call 7ff7c7d41ff8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f f4 ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<byte> cellalloc<byte>(N32 n, int cellcount)
-; cellalloc_gn32_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 a6 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 76 f0 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -134,14 +134,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f16510h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 fc ff ff}
+0045h call 7ff7c7d42070h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 f0 ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<sbyte> cellalloc<sbyte>(N32 n, int cellcount)
-; cellalloc_gn32_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 1e fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 76 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -165,14 +165,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f165f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e fd ff ff}
+0045h call 7ff7c7d42de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 fd ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<ushort> cellalloc<ushort>(N32 n, int cellcount)
-; cellalloc_gn32_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 f5 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 4d fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -194,14 +194,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f16638h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 fc ff ff}
+003eh call 7ff7c7d42e20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d fd ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<short> cellalloc<short>(N32 n, int cellcount)
-; cellalloc_gn32_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 5d fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 b5 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -223,14 +223,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f16700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d fd ff ff}
+003eh call 7ff7c7d42ee8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 fd ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<uint> cellalloc<uint>(N32 n, int cellcount)
-; cellalloc_gn32_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 47 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9f fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -249,14 +249,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f16740h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 fd ff ff}
+0034h call 7ff7c7d42f28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f fd ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<int> cellalloc<int>(N32 n, int cellcount)
-; cellalloc_gn32_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 af f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 6f f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -275,14 +275,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f16808h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af f9 ff ff}
+0034h call 7ff7c7d42f58h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f f9 ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block32<float> cellalloc<float>(N32 n, int cellcount)
-; cellalloc_gn32_32i[70] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 33 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn32_32i[70] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 8b fc ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -302,14 +302,14 @@
 002bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002eh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0034h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0038h call 7ff7c7f16af0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 fc ff ff}
+0038h call 7ff7c7d432d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b fc ff ff}
 003dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0040h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<byte> cellalloc<byte>(N64 n, int cellcount)
-; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 be fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 16 fe ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -333,14 +333,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f16ce8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be fd ff ff}
+0045h call 7ff7c7d434d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 fe ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<sbyte> cellalloc<sbyte>(N64 n, int cellcount)
-; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9e fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 f6 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -364,14 +364,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f16d38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e fd ff ff}
+0045h call 7ff7c7d43520h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 fd ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<ushort> cellalloc<ushort>(N64 n, int cellcount)
-; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 6e fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 c6 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -395,14 +395,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f16d78h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e fd ff ff}
+0045h call 7ff7c7d43560h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 fd ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<short> cellalloc<short>(N64 n, int cellcount)
-; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 2e fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 86 f9 ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -426,14 +426,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f16da8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e fd ff ff}
+0045h call 7ff7c7d43590h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 f9 ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<uint> cellalloc<uint>(N64 n, int cellcount)
-; cellalloc_gn64_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 05 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 75 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -455,14 +455,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f16de8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 fd ff ff}
+003eh call 7ff7c7d437e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 fb ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<int> cellalloc<int>(N64 n, int cellcount)
-; cellalloc_gn64_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ad fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 45 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -484,14 +484,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f17100h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad fb ff ff}
+003eh call 7ff7c7d43818h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 fb ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<ulong> cellalloc<ulong>(N64 n, int cellcount)
-; cellalloc_gn64_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 97 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 2f fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -510,14 +510,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f17140h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 fb ff ff}
+0034h call 7ff7c7d43858h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f fb ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<long> cellalloc<long>(N64 n, int cellcount)
-; cellalloc_gn64_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 67 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[66] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ff fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -536,14 +536,14 @@
 0028h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002bh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0031h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0034h call 7ff7c7f17170h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 fb ff ff}
+0034h call 7ff7c7d43888h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff fa ff ff}
 0039h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003ch add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0040h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<float> cellalloc<float>(N64 n, int cellcount)
-; cellalloc_gn64_32i[80] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 49 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[80] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 e1 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -566,14 +566,14 @@
 0035h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0038h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003eh vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0042h call 7ff7c7f171c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 fb ff ff}
+0042h call 7ff7c7d438d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 fa ff ff}
 0047h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004ah add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004eh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block64<double> cellalloc<double>(N64 n, int cellcount)
-; cellalloc_gn64_32i[70] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 23 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn64_32i[70] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 00 41 03 c8 83 e1 ff 41 8b d0 2b d1 74 05 41 ff c0 eb 00 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 bb fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -593,14 +593,14 @@
 002bh mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 002eh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0034h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0038h call 7ff7c7f17200h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 fb ff ff}
+0038h call 7ff7c7d43918h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb fa ff ff}
 003dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0040h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<byte> cellalloc<byte>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 b6 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 4e fc ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -624,14 +624,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17400h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 fc ff ff}
+0045h call 7ff7c7d43b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e fc ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<sbyte> cellalloc<sbyte>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 96 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 2e fc ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -655,14 +655,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17450h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 fc ff ff}
+0045h call 7ff7c7d43b68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e fc ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<ushort> cellalloc<ushort>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 66 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 fe fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -686,14 +686,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17490h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 fc ff ff}
+0045h call 7ff7c7d43ba8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<short> cellalloc<short>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 26 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ce fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -717,14 +717,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f174c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 fc ff ff}
+0045h call 7ff7c7d43fe8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<uint> cellalloc<uint>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ae fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -748,14 +748,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f178b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae fb ff ff}
+0045h call 7ff7c7d44028h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<int> cellalloc<int>(N128 n, int cellcount)
-; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 6e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 5e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -779,14 +779,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f178e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e fb ff ff}
+0045h call 7ff7c7d44058h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<ulong> cellalloc<ulong>(N128 n, int cellcount)
-; cellalloc_gn128_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 45 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 35 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -808,14 +808,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f17928h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 fb ff ff}
+003eh call 7ff7c7d44098h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 fb ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<long> cellalloc<long>(N128 n, int cellcount)
-; cellalloc_gn128_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 15 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[76] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 05 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -837,14 +837,14 @@
 0032h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0035h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003bh xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-003eh call 7ff7c7f17958h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 fb ff ff}
+003eh call 7ff7c7d440c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 fb ff ff}
 0043h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0046h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004ah pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<float> cellalloc<float>(N128 n, int cellcount)
-; cellalloc_gn128_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 ea fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 da fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -869,14 +869,14 @@
 003ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003fh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0045h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0049h call 7ff7c7f17998h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea fa ff ff}
+0049h call 7ff7c7d44108h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da fa ff ff}
 004eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0051h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block128<double> cellalloc<double>(N128 n, int cellcount)
-; cellalloc_gn128_32i[80] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 c1 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn128_32i[80] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 e9 1f 41 03 c8 d1 f9 41 8b d0 c1 ea 1f 41 03 d0 83 e2 fe 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 b1 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -899,14 +899,14 @@
 0035h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0038h movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 003eh vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0042h call 7ff7c7f179d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c1 fa ff ff}
+0042h call 7ff7c7d44148h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 fa ff ff}
 0047h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004ah add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 004eh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<byte> cellalloc<byte>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 46 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 36 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -930,14 +930,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17bd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 fc ff ff}
+0045h call 7ff7c7d44340h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 fc ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<sbyte> cellalloc<sbyte>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 26 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 16 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -961,14 +961,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17c20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 fc ff ff}
+0045h call 7ff7c7d44390h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 fc ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<ushort> cellalloc<ushort>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 f6 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 be fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -992,14 +992,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17c60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 fb ff ff}
+0045h call 7ff7c7d447a8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<short> cellalloc<short>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 b6 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 7e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1023,14 +1023,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f17c90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 fb ff ff}
+0045h call 7ff7c7d447d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<uint> cellalloc<uint>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ce fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 4e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1054,14 +1054,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18118h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce fb ff ff}
+0045h call 7ff7c7d44818h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<int> cellalloc<int>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 8e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 0e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1085,14 +1085,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18148h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e fb ff ff}
+0045h call 7ff7c7d44848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<ulong> cellalloc<ulong>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 5e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 de fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1116,14 +1116,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18188h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e fb ff ff}
+0045h call 7ff7c7d44888h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de fa ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<long> cellalloc<long>(N256 n, int cellcount)
-; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 1e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9e fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1147,14 +1147,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f181b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e fb ff ff}
+0045h call 7ff7c7d448b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e fa ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<float> cellalloc<float>(N256 n, int cellcount)
-; cellalloc_gn256_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 ea fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 6a fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1179,14 +1179,14 @@
 003ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003fh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0045h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0049h call 7ff7c7f181f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea fa ff ff}
+0049h call 7ff7c7d448f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a fa ff ff}
 004eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0051h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block256<double> cellalloc<double>(N256 n, int cellcount)
-; cellalloc_gn256_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 ba fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn256_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 03 41 03 c8 c1 f9 02 41 8b d0 c1 fa 1f 83 e2 03 41 03 d0 83 e2 fc 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 3a fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1211,14 +1211,14 @@
 003ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003fh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0045h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0049h call 7ff7c7f18238h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba fa ff ff}
+0049h call 7ff7c7d44938h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a fa ff ff}
 004eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0051h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<byte> cellalloc<byte>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 3f 41 03 c8 c1 f9 06 41 8b d0 c1 fa 1f 83 e2 3f 41 03 d0 83 e2 c0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 86 fc ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 3f 41 03 c8 c1 f9 06 41 8b d0 c1 fa 1f 83 e2 3f 41 03 d0 83 e2 c0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 a6 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1242,14 +1242,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18490h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fc ff ff}
+0045h call 7ff7c7d44f40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<sbyte> cellalloc<sbyte>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 3f 41 03 c8 c1 f9 06 41 8b d0 c1 fa 1f 83 e2 3f 41 03 d0 83 e2 c0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 be fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 3f 41 03 c8 c1 f9 06 41 8b d0 c1 fa 1f 83 e2 3f 41 03 d0 83 e2 c0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 a6 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1273,14 +1273,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18838h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be fb ff ff}
+0045h call 7ff7c7d44fb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<ushort> cellalloc<ushort>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 8e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 76 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1304,14 +1304,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18878h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e fb ff ff}
+0045h call 7ff7c7d44ff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<short> cellalloc<short>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 5e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 1f 41 03 c8 c1 f9 05 41 8b d0 c1 fa 1f 83 e2 1f 41 03 d0 83 e2 e0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 46 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1335,14 +1335,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f188b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e fb ff ff}
+0045h call 7ff7c7d45030h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<uint> cellalloc<uint>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 2e fb ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 16 fb ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1366,14 +1366,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f188f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e fb ff ff}
+0045h call 7ff7c7d45070h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 fb ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<int> cellalloc<int>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 fe fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 e6 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1397,14 +1397,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18938h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe fa ff ff}
+0045h call 7ff7c7d450b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 fa ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<ulong> cellalloc<ulong>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 ce fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 b6 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1428,14 +1428,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f18978h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce fa ff ff}
+0045h call 7ff7c7d450f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 fa ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<long> cellalloc<long>(N512 n, int cellcount)
-; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 9e fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[83] = {56 48 83 ec 20 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 45 33 c9 e8 86 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1459,14 +1459,14 @@
 0039h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003ch movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0042h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
-0045h call 7ff7c7f189b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e fa ff ff}
+0045h call 7ff7c7d45130h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fa ff ff}
 004ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 004dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0051h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0052h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<float> cellalloc<float>(N512 n, int cellcount)
-; cellalloc_gn512_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 6a fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 0f 41 03 c8 c1 f9 04 41 8b d0 c1 fa 1f 83 e2 0f 41 03 d0 83 e2 f0 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 52 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1491,14 +1491,14 @@
 003ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003fh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0045h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0049h call 7ff7c7f189f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a fa ff ff}
+0049h call 7ff7c7d45170h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 fa ff ff}
 004eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0051h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0056h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Block512<double> cellalloc<double>(N512 n, int cellcount)
-; cellalloc_gn512_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 3a fa ff ff 48 8b c6 48 83 c4 20 5e c3}
+; cellalloc_gn512_32i[87] = {56 48 83 ec 20 c5 f8 77 48 89 54 24 38 48 8b f1 41 8b c8 c1 f9 1f 83 e1 07 41 03 c8 c1 f9 03 41 8b d0 c1 fa 1f 83 e2 07 41 03 d0 83 e2 f8 44 2b c2 74 06 44 8d 41 01 eb 03 44 8b c1 48 8b ce 48 0f be 54 24 38 c5 e0 57 db e8 22 fa ff ff 48 8b c6 48 83 c4 20 5e c3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -1523,7 +1523,7 @@
 003ch mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 003fh movsx rdx,byte ptr [rsp+38h]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[6]{48 0f be 54 24 38}
 0045h vxorps xmm3,xmm3,xmm3                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 e0 57 db}
-0049h call 7ff7c7f18a38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a fa ff ff}
+0049h call 7ff7c7d451b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 fa ff ff}
 004eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0051h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0055h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}

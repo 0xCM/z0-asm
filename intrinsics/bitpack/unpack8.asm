@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block64<byte> unpack8(byte packed, in Block64<byte> unpacked, int block)
 ; unpack8_8u_b64x8u~in_32i[63] = {48 83 ec 28 90 41 c1 e0 03 41 8b c0 48 83 c0 08 44 8b 4a 08 49 3b c1 77 26 48 8b 02 4d 63 c0 49 03 c0 0f b6 c9 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 8b c2 48 83 c4 28 c3}
-; TermCode = CTC_Zx7_RET
+; TermCode = CTC_RET_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h shl r8d,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 03}
@@ -23,7 +23,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> unpack8(ushort packed, in Block128<byte> unpacked, int block)
 ; unpack8_16u_b128x8u~in_32i[85] = {48 83 ec 28 90 41 c1 e0 04 41 8b c0 48 83 c0 10 44 8b 4a 08 49 3b c1 77 3c 48 8b 02 4d 63 c0 49 03 c0 0f b7 c9 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 48 83 c0 08 c1 f9 08 0f b6 c9 c4 c2 f3 f5 c9 48 89 08 48 8b c2 48 83 c4 28 c3}
-; TermCode = CTC_Zx7_RET
+; TermCode = CTC_RET_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
@@ -51,7 +51,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<byte> unpack8(uint packed, in Block256<byte> unpacked, int block)
 ; unpack8_32u_b256x8u~in_32i[138] = {48 83 ec 28 90 41 c1 e0 05 41 8b c0 48 83 c0 20 44 8b 4a 08 49 3b c1 77 71 48 8b 02 4d 63 c0 49 03 c0 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 ca 48 89 08 48 8b c2 48 83 c4 28 c3}
-; TermCode = CTC_Zx7_RET
+; TermCode = CTC_RET_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h shl r8d,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 05}
@@ -91,7 +91,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block512<byte> unpack8(ulong packed, in Block512<byte> unpacked, int block)
 ; unpack8_64u_b512x8u~in_32i[136] = {48 83 ec 28 90 41 c1 e0 06 41 8b c0 48 83 c0 40 44 8b 4a 08 49 3b c1 0f 87 ca 00 00 00 48 8b 02 4d 63 c0 49 03 c0 44 8b c1 45 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4c 89 08 4c 8d 48 08 45 8b d0 41 c1 ea 08 45 0f b6 d2 49 bb 01 01 01 01 01 01 01 01 c4 42 ab f5 d3 4d 89 11 4c 8d 48 10 45 8b d0 41 c1 ea 10 45 0f b6 d2 c4 42 ab f5 d3 4d 89 11 4c 8d 48 18 41 c1 e8 18 45 0f b6 c0 c4 42 bb f5 c3}
-; TermCode = CTC_Zx7_RET
+; TermCode = CTC_RET_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h shl r8d,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 06}

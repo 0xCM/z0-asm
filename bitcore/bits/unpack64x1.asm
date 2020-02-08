@@ -1,7 +1,7 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; void unpack64x1(ulong src, Span<byte> dst)
 ; unpack64x1_64u_span8u[204] = {48 83 ec 38 90 48 8b 02 8b d1 44 0f b7 c2 45 8b c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4c 89 08 4c 8d 48 08 41 c1 f8 08 44 89 44 24 34 44 0f b7 44 24 34 c4 42 bb f5 c2 4d 89 01 c1 ea 10 0f b7 d2 4c 8d 40 10 44 8b ca c4 42 b3 f5 ca 4d 89 08 49 83 c0 08 c1 fa 08 89 54 24 30 0f b7 54 24 30 c4 c2 eb f5 d2 49 89 10 48 c1 e9 20 8b d1 48 83 c0 20 0f b7 ca 44 8b c1 c4 42 bb f5 c2 4c 89 00 4c 8d 40 08 c1 f9 08 89 4c 24 2c 0f b7 4c 24 2c c4 c2 f3 f5 ca 49 89 08 c1 ea 10 0f b7 d2 48 83 c0 10 8b ca c4 c2 f3 f5 ca 48 89 08 48 83 c0 08 c1 fa 08 89 54 24 28 0f b7 54 24 28 c4 c2 eb f5 d2 48 89 10 48 83 c4 38 c3}
-; TermCode = CTC_Zx7_RET
+; TermCode = CTC_RET_Zx7
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

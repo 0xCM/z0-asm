@@ -1,16 +1,16 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Sign:int signum(float src)
-; signum_32f[18] = {c5 f8 77 66 90 48 b8 b0 80 78 c7 f7 7f 00 00 48 ff e0}
+; signum_32f[18] = {c5 f8 77 66 90 48 b8 48 45 76 c7 f7 7f 00 00 48 ff e0}
 ; TermCode = CTC_JMP_RAX
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h mov rax,7ff7c77880b0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 b0 80 78 c7 f7 7f 00 00}
+0005h mov rax,7ff7c7764548h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 48 45 76 c7 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
 ; Sign:int signum(double src)
-; signum_64f[18] = {c5 f8 77 66 90 48 b8 88 80 78 c7 f7 7f 00 00 48 ff e0}
+; signum_64f[18] = {c5 f8 77 66 90 48 b8 20 45 76 c7 f7 7f 00 00 48 ff e0}
 ; TermCode = CTC_JMP_RAX
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h mov rax,7ff7c7788088h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 88 80 78 c7 f7 7f 00 00}
+0005h mov rax,7ff7c7764520h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 20 45 76 c7 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
