@@ -1,4 +1,0 @@
-vinsert_(32u,v128x32u,n0)  c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 00 c5 f9 11 01 48 8b c1 c3
-vinsert_(32u,v128x32u,n1)  c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 01 c5 f9 11 01 48 8b c1 c3
-vinsert_(32u,v128x32u,n2)  c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 02 c5 f9 11 01 48 8b c1 c3
-vinsert_(32u,v128x32u,n3)  c5 f8 77 66 90 c4 c1 79 10 00 c4 e3 79 22 c2 03 c5 f9 11 01 48 8b c1 c3

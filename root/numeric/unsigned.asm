@@ -1,12 +1,12 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; bool unsigned(Object value)
-; unsigned_()[133] = {0f 1f 44 00 00 48 8b c1 48 85 c0 74 11 48 ba 58 77 73 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 5c 48 8b c1 48 85 c0 74 11 48 ba 38 87 73 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 3e 48 8b c1 48 85 c0 74 11 48 ba d8 96 73 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 20 48 85 c9 74 11 48 b8 78 a6 73 c7 f7 7f 00 00 48 39 01 74 02 33 c9 48 85 c9 0f 95 c0 0f b6 c0 c3 b8 01 00 00 00 c3}
+; unsigned_()[133] = {0f 1f 44 00 00 48 8b c1 48 85 c0 74 11 48 ba 58 77 71 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 5c 48 8b c1 48 85 c0 74 11 48 ba 38 87 71 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 3e 48 8b c1 48 85 c0 74 11 48 ba d8 96 71 c7 f7 7f 00 00 48 39 10 74 02 33 c0 48 85 c0 75 20 48 85 c9 74 11 48 b8 78 a6 71 c7 f7 7f 00 00 48 39 01 74 02 33 c9 48 85 c9 0f 95 c0 0f b6 c0 c3 b8 01 00 00 00 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}
 000bh je short 001eh                          ; JE rel8 || 74 cb || encoded[2]{74 11}
-000dh mov rdx,7ff7c7737758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 58 77 73 c7 f7 7f 00 00}
+000dh mov rdx,7ff7c7717758h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 58 77 71 c7 f7 7f 00 00}
 0017h cmp [rax],rdx                           ; CMP r/m64, r64 || REX.W 39 /r || encoded[3]{48 39 10}
 001ah je short 001eh                          ; JE rel8 || 74 cb || encoded[2]{74 02}
 001ch xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -15,7 +15,7 @@
 0023h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0026h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}
 0029h je short 003ch                          ; JE rel8 || 74 cb || encoded[2]{74 11}
-002bh mov rdx,7ff7c7738738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 38 87 73 c7 f7 7f 00 00}
+002bh mov rdx,7ff7c7718738h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 38 87 71 c7 f7 7f 00 00}
 0035h cmp [rax],rdx                           ; CMP r/m64, r64 || REX.W 39 /r || encoded[3]{48 39 10}
 0038h je short 003ch                          ; JE rel8 || 74 cb || encoded[2]{74 02}
 003ah xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -24,7 +24,7 @@
 0041h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0044h test rax,rax                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c0}
 0047h je short 005ah                          ; JE rel8 || 74 cb || encoded[2]{74 11}
-0049h mov rdx,7ff7c77396d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba d8 96 73 c7 f7 7f 00 00}
+0049h mov rdx,7ff7c77196d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba d8 96 71 c7 f7 7f 00 00}
 0053h cmp [rax],rdx                           ; CMP r/m64, r64 || REX.W 39 /r || encoded[3]{48 39 10}
 0056h je short 005ah                          ; JE rel8 || 74 cb || encoded[2]{74 02}
 0058h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
@@ -32,7 +32,7 @@
 005dh jne short 007fh                         ; JNE rel8 || 75 cb || encoded[2]{75 20}
 005fh test rcx,rcx                            ; TEST r/m64, r64 || REX.W 85 /r || encoded[3]{48 85 c9}
 0062h je short 0075h                          ; JE rel8 || 74 cb || encoded[2]{74 11}
-0064h mov rax,7ff7c773a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 78 a6 73 c7 f7 7f 00 00}
+0064h mov rax,7ff7c771a678h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 78 a6 71 c7 f7 7f 00 00}
 006eh cmp [rcx],rax                           ; CMP r/m64, r64 || REX.W 39 /r || encoded[3]{48 39 01}
 0071h je short 0075h                          ; JE rel8 || 74 cb || encoded[2]{74 02}
 0073h xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}

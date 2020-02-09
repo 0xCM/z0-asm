@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N1,N16,byte> load<byte>(in Block16<byte> src, N1 m, N16 n)
-; load_g[8u](b16x8u~in,n1,n16)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 e4 43 d0 5e cc}
+; load_g[8u](b16x8u~in,n1,n16)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 d4 f9 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -36,11 +36,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 43 d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 f9 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N1,N16,ushort> load<ushort>(in Block16<ushort> src, N1 m, N16 n)
-; load_g[16u](b16x16u~in,n1,n16)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 46 43 d0 5e cc}
+; load_g[16u](b16x16u~in,n1,n16)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 36 f9 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -75,11 +75,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 43 d0 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 f9 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N1,N16,uint> load<uint>(in Block16<uint> src, N1 m, N16 n)
-; load_g[32u](b16x32u~in,n1,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 97 42 d0 5e cc}
+; load_g[32u](b16x32u~in,n1,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 87 f8 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -118,11 +118,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 42 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 f8 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N1,N16,ulong> load<ulong>(in Block16<ulong> src, N1 m, N16 n)
-; load_g[64u](b16x64u~in,n1,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 d7 3d d0 5e cc}
+; load_g[64u](b16x64u~in,n1,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c7 f3 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -161,11 +161,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 3d d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 f3 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N16,N1,byte> load<byte>(in Block16<byte> src, N16 m, N1 n)
-; load_g[8u](b16x8u~in,n16,n1)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 34 3d d0 5e cc}
+; load_g[8u](b16x8u~in,n16,n1)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 24 f3 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -201,11 +201,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 3d d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 f3 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N16,N1,ushort> load<ushort>(in Block16<ushort> src, N16 m, N1 n)
-; load_g[16u](b16x16u~in,n16,n1)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 86 38 d0 5e cc}
+; load_g[16u](b16x16u~in,n16,n1)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 76 ee d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -240,11 +240,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 38 d0 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 ee d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N16,N1,uint> load<uint>(in Block16<uint> src, N16 m, N1 n)
-; load_g[32u](b16x32u~in,n16,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 d7 37 d0 5e cc}
+; load_g[32u](b16x32u~in,n16,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c7 ed d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -283,11 +283,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 37 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 ed d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N16,N1,ulong> load<ulong>(in Block16<ulong> src, N16 m, N1 n)
-; load_g[64u](b16x64u~in,n16,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 27 37 d0 5e cc}
+; load_g[64u](b16x64u~in,n16,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 17 ed d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -326,11 +326,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 37 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 ed d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,byte> load<byte>(in Block16<byte> src, N2 m, N8 n)
-; load_g[8u](b16x8u~in,n2,n8)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 74 32 d0 5e cc}
+; load_g[8u](b16x8u~in,n2,n8)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 64 e8 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -366,11 +366,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 32 d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 64 e8 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,ushort> load<ushort>(in Block16<ushort> src, N2 m, N8 n)
-; load_g[16u](b16x16u~in,n2,n8)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 d6 31 d0 5e cc}
+; load_g[16u](b16x16u~in,n2,n8)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c6 e7 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -405,11 +405,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 31 d0 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 e7 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,uint> load<uint>(in Block16<uint> src, N2 m, N8 n)
-; load_g[32u](b16x32u~in,n2,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 27 31 d0 5e cc}
+; load_g[32u](b16x32u~in,n2,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 17 e7 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -448,11 +448,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 31 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 e7 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,ulong> load<ulong>(in Block16<ulong> src, N2 m, N8 n)
-; load_g[64u](b16x64u~in,n2,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 67 2c d0 5e cc}
+; load_g[64u](b16x64u~in,n2,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 57 e2 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -491,11 +491,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 2c d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 e2 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,byte> load<byte>(in Block16<byte> src, N8 m, N2 n)
-; load_g[8u](b16x8u~in,n8,n2)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c4 2b d0 5e cc}
+; load_g[8u](b16x8u~in,n8,n2)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 b4 e1 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -531,11 +531,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 2b d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 e1 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,ushort> load<ushort>(in Block16<ushort> src, N8 m, N2 n)
-; load_g[16u](b16x16u~in,n8,n2)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 26 2b d0 5e cc}
+; load_g[16u](b16x16u~in,n8,n2)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 16 e1 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -570,11 +570,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 2b d0 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 e1 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,uint> load<uint>(in Block16<uint> src, N8 m, N2 n)
-; load_g[32u](b16x32u~in,n8,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 77 2a d0 5e cc}
+; load_g[32u](b16x32u~in,n8,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 67 e0 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -613,11 +613,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 2a d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 e0 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N8,N2,ulong> load<ulong>(in Block16<ulong> src, N8 m, N2 n)
-; load_g[64u](b16x64u~in,n8,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c7 29 d0 5e cc}
+; load_g[64u](b16x64u~in,n8,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 b7 df d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -656,11 +656,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 29 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 df d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N4,N4,byte> load<byte>(in Block16<byte> src, N4 m, N4 n)
-; load_g[8u](b16x8u~in,n4,n4)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 14 25 d0 5e cc}
+; load_g[8u](b16x8u~in,n4,n4)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 d1 e8 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 04 db d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -696,11 +696,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 25 d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 db d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N4,N4,ushort> load<ushort>(in Block16<ushort> src, N4 m, N4 n)
-; load_g[16u](b16x16u~in,n4,n4)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 76 24 d0 5e cc}
+; load_g[16u](b16x16u~in,n4,n4)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 66 da d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -735,11 +735,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 24 d0 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 da d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N4,N4,uint> load<uint>(in Block16<uint> src, N4 m, N4 n)
-; load_g[32u](b16x32u~in,n4,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 c7 23 d0 5e cc}
+; load_g[32u](b16x32u~in,n4,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 b7 d9 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -778,11 +778,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 23 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 d9 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid16<N4,N4,ulong> load<ulong>(in Block16<ulong> src, N4 m, N4 n)
-; load_g[64u](b16x64u~in,n4,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 07 1f d0 5e cc}
+; load_g[64u](b16x64u~in,n4,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 d1 e8 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 0f b7 00 48 83 c4 58 5e 5f c3 e8 f7 d4 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -821,11 +821,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 1f d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 d4 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N1,N32,byte> load<byte>(in Block32<byte> src, N1 m, N32 n)
-; load_g[8u](b32x8u~in,n1,n32)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 54 1a d0 5e cc}
+; load_g[8u](b32x8u~in,n1,n32)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 44 d0 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -861,11 +861,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 1a d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 d0 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N1,N32,ushort> load<ushort>(in Block32<ushort> src, N1 m, N32 n)
-; load_g[16u](b32x16u~in,n1,n32)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 a8 19 d0 5e cc}
+; load_g[16u](b32x16u~in,n1,n32)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 98 cf d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -904,11 +904,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 19 d0 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 cf d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N1,N32,uint> load<uint>(in Block32<uint> src, N1 m, N32 n)
-; load_g[32u](b32x32u~in,n1,n32)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 f7 14 d0 5e cc}
+; load_g[32u](b32x32u~in,n1,n32)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 e7 ca d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -943,11 +943,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 14 d0 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 ca d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N1,N32,ulong> load<ulong>(in Block32<ulong> src, N1 m, N32 n)
-; load_g[64u](b32x64u~in,n1,n32)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 47 14 d0 5e cc}
+; load_g[64u](b32x64u~in,n1,n32)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 37 ca d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -986,11 +986,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 14 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 ca d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N32,N1,byte> load<byte>(in Block32<byte> src, N32 m, N1 n)
-; load_g[8u](b32x8u~in,n32,n1)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 94 0f d0 5e cc}
+; load_g[8u](b32x8u~in,n32,n1)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 84 c5 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1026,11 +1026,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 0f d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 c5 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N32,N1,ushort> load<ushort>(in Block32<ushort> src, N32 m, N1 n)
-; load_g[16u](b32x16u~in,n32,n1)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 e8 0e d0 5e cc}
+; load_g[16u](b32x16u~in,n32,n1)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 d8 c4 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1069,11 +1069,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 0e d0 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 c4 d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N32,N1,uint> load<uint>(in Block32<uint> src, N32 m, N1 n)
-; load_g[32u](b32x32u~in,n32,n1)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 47 0e d0 5e cc}
+; load_g[32u](b32x32u~in,n32,n1)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 37 c4 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1108,11 +1108,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 0e d0 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 c4 d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N32,N1,ulong> load<ulong>(in Block32<ulong> src, N32 m, N1 n)
-; load_g[64u](b32x64u~in,n32,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 87 09 d0 5e cc}
+; load_g[64u](b32x64u~in,n32,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 77 bf d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1151,11 +1151,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 09 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 bf d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N2,N16,byte> load<byte>(in Block32<byte> src, N2 m, N16 n)
-; load_g[8u](b32x8u~in,n2,n16)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 d4 04 d0 5e cc}
+; load_g[8u](b32x8u~in,n2,n16)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 c4 ba d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1191,11 +1191,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 04 d0 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 ba d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N2,N16,ushort> load<ushort>(in Block32<ushort> src, N2 m, N16 n)
-; load_g[16u](b32x16u~in,n2,n16)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 28 04 d0 5e cc}
+; load_g[16u](b32x16u~in,n2,n16)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 18 ba d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1234,11 +1234,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 04 d0 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 ba d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N2,N16,uint> load<uint>(in Block32<uint> src, N2 m, N16 n)
-; load_g[32u](b32x32u~in,n2,n16)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 87 03 d0 5e cc}
+; load_g[32u](b32x32u~in,n2,n16)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 77 b9 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1273,11 +1273,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 03 d0 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 b9 d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N2,N16,ulong> load<ulong>(in Block32<ulong> src, N2 m, N16 n)
-; load_g[64u](b32x64u~in,n2,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 d7 02 d0 5e cc}
+; load_g[64u](b32x64u~in,n2,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 c7 b8 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1316,11 +1316,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 02 d0 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 b8 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N16,N2,byte> load<byte>(in Block32<byte> src, N16 m, N2 n)
-; load_g[8u](b32x8u~in,n16,n2)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 24 fe cf 5e cc}
+; load_g[8u](b32x8u~in,n16,n2)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 14 b4 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1356,11 +1356,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 fe cf 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 b4 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N16,N2,ushort> load<ushort>(in Block32<ushort> src, N16 m, N2 n)
-; load_g[16u](b32x16u~in,n16,n2)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 78 fd cf 5e cc}
+; load_g[16u](b32x16u~in,n16,n2)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 68 b3 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1399,11 +1399,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 fd cf 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 b3 d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N16,N2,uint> load<uint>(in Block32<uint> src, N16 m, N2 n)
-; load_g[32u](b32x32u~in,n16,n2)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 c7 f8 cf 5e cc}
+; load_g[32u](b32x32u~in,n16,n2)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 b7 ae d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1438,11 +1438,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 f8 cf 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 ae d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N16,N2,ulong> load<ulong>(in Block32<ulong> src, N16 m, N2 n)
-; load_g[64u](b32x64u~in,n16,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 17 f8 cf 5e cc}
+; load_g[64u](b32x64u~in,n16,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 07 ae d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1481,11 +1481,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 f8 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 ae d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N4,N8,byte> load<byte>(in Block32<byte> src, N4 m, N8 n)
-; load_g[8u](b32x8u~in,n4,n8)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 64 f3 cf 5e cc}
+; load_g[8u](b32x8u~in,n4,n8)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 54 a9 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1521,11 +1521,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 64 f3 cf 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 a9 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N4,N8,ushort> load<ushort>(in Block32<ushort> src, N4 m, N8 n)
-; load_g[16u](b32x16u~in,n4,n8)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 b8 f2 cf 5e cc}
+; load_g[16u](b32x16u~in,n4,n8)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 a8 a8 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1564,11 +1564,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 f2 cf 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 a8 d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N4,N8,uint> load<uint>(in Block32<uint> src, N4 m, N8 n)
-; load_g[32u](b32x32u~in,n4,n8)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 17 f2 cf 5e cc}
+; load_g[32u](b32x32u~in,n4,n8)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 07 a8 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1603,11 +1603,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 f2 cf 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 a8 d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N4,N8,ulong> load<ulong>(in Block32<ulong> src, N4 m, N8 n)
-; load_g[64u](b32x64u~in,n4,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 67 f1 cf 5e cc}
+; load_g[64u](b32x64u~in,n4,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 57 a7 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1646,11 +1646,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 f1 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 a7 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N8,N4,byte> load<byte>(in Block32<byte> src, N8 m, N4 n)
-; load_g[8u](b32x8u~in,n8,n4)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 b4 ec cf 5e cc}
+; load_g[8u](b32x8u~in,n8,n4)[125] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 02 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 a4 a2 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1686,11 +1686,11 @@
 0074h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0075h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0076h ret                                     ; RET || C3 || encoded[1]{c3}
-0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 ec cf 5e}
+0077h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 a2 d2 5e}
 007ch int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N8,N4,ushort> load<ushort>(in Block32<ushort> src, N8 m, N4 n)
-; load_g[16u](b32x16u~in,n8,n4)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 08 ec cf 5e cc}
+; load_g[16u](b32x16u~in,n8,n4)[137] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 f8 a1 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1729,11 +1729,11 @@
 0080h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0081h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
-0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 ec cf 5e}
+0083h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 a1 d2 5e}
 0088h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N8,N4,uint> load<uint>(in Block32<uint> src, N8 m, N4 n)
-; load_g[32u](b32x32u~in,n8,n4)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 57 e7 cf 5e cc}
+; load_g[32u](b32x32u~in,n8,n4)[122] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 47 9d d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1768,11 +1768,11 @@
 0071h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
-0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 e7 cf 5e}
+0074h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 9d d2 5e}
 0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid32<N8,N4,ulong> load<ulong>(in Block32<ulong> src, N8 m, N4 n)
-; load_g[64u](b32x64u~in,n8,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 a7 e6 cf 5e cc}
+; load_g[64u](b32x64u~in,n8,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 03 48 c1 e8 02 48 3d ff ff ff 7f 77 35 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 8b 00 48 83 c4 58 5e 5f c3 e8 97 9c d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1811,11 +1811,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 e6 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 9c d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N1,N64,byte> load<byte>(in Block64<byte> src, N1 m, N64 n)
-; load_g[8u](b64x8u~in,n1,n64)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 f3 dd cf 5e cc}
+; load_g[8u](b64x8u~in,n1,n64)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 e3 93 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1851,11 +1851,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 dd cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e3 93 d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N1,N64,ushort> load<ushort>(in Block64<ushort> src, N1 m, N64 n)
-; load_g[16u](b64x16u~in,n1,n64)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 47 dd cf 5e cc}
+; load_g[16u](b64x16u~in,n1,n64)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 37 93 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1894,11 +1894,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 dd cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 93 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N1,N64,uint> load<uint>(in Block64<uint> src, N1 m, N64 n)
-; load_g[32u](b64x32u~in,n1,n64)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 96 dc cf 5e cc}
+; load_g[32u](b64x32u~in,n1,n64)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 86 92 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1937,11 +1937,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 dc cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 92 d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N1,N64,ulong> load<ulong>(in Block64<ulong> src, N1 m, N64 n)
-; load_g[64u](b64x64u~in,n1,n64)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 f6 db cf 5e cc}
+; load_g[64u](b64x64u~in,n1,n64)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 e6 91 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1976,11 +1976,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 db cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 91 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N64,N1,byte> load<byte>(in Block64<byte> src, N64 m, N1 n)
-; load_g[8u](b64x8u~in,n64,n1)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 43 d7 cf 5e cc}
+; load_g[8u](b64x8u~in,n64,n1)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 33 8d d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2016,11 +2016,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 d7 cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 8d d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N64,N1,ushort> load<ushort>(in Block64<ushort> src, N64 m, N1 n)
-; load_g[16u](b64x16u~in,n64,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 97 d6 cf 5e cc}
+; load_g[16u](b64x16u~in,n64,n1)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 87 8c d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2059,11 +2059,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 d6 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 8c d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N64,N1,uint> load<uint>(in Block64<uint> src, N64 m, N1 n)
-; load_g[32u](b64x32u~in,n64,n1)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 d6 d1 cf 5e cc}
+; load_g[32u](b64x32u~in,n64,n1)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 c6 87 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2102,11 +2102,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 d1 cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 87 d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N64,N1,ulong> load<ulong>(in Block64<ulong> src, N64 m, N1 n)
-; load_g[64u](b64x64u~in,n64,n1)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 36 d1 cf 5e cc}
+; load_g[64u](b64x64u~in,n64,n1)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 26 87 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2141,11 +2141,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 d1 cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 87 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N2,N32,byte> load<byte>(in Block64<byte> src, N2 m, N32 n)
-; load_g[8u](b64x8u~in,n2,n32)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 83 cc cf 5e cc}
+; load_g[8u](b64x8u~in,n2,n32)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 73 82 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2181,11 +2181,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 cc cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 82 d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N2,N32,ushort> load<ushort>(in Block64<ushort> src, N2 m, N32 n)
-; load_g[16u](b64x16u~in,n2,n32)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 d7 cb cf 5e cc}
+; load_g[16u](b64x16u~in,n2,n32)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 c7 81 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2224,11 +2224,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 cb cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 81 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N2,N32,uint> load<uint>(in Block64<uint> src, N2 m, N32 n)
-; load_g[32u](b64x32u~in,n2,n32)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 26 cb cf 5e cc}
+; load_g[32u](b64x32u~in,n2,n32)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 16 81 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2267,11 +2267,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 cb cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 81 d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N2,N32,ulong> load<ulong>(in Block64<ulong> src, N2 m, N32 n)
-; load_g[64u](b64x64u~in,n2,n32)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 86 ca cf 5e cc}
+; load_g[64u](b64x64u~in,n2,n32)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 76 80 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2306,11 +2306,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 ca cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 80 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N32,N2,byte> load<byte>(in Block64<byte> src, N32 m, N2 n)
-; load_g[8u](b64x8u~in,n32,n2)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 d3 c5 cf 5e cc}
+; load_g[8u](b64x8u~in,n32,n2)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 c3 7b d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2346,11 +2346,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 c5 cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 7b d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N32,N2,ushort> load<ushort>(in Block64<ushort> src, N32 m, N2 n)
-; load_g[16u](b64x16u~in,n32,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 27 c5 cf 5e cc}
+; load_g[16u](b64x16u~in,n32,n2)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 17 7b d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2389,11 +2389,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 c5 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 7b d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N32,N2,uint> load<uint>(in Block64<uint> src, N32 m, N2 n)
-; load_g[32u](b64x32u~in,n32,n2)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 66 c0 cf 5e cc}
+; load_g[32u](b64x32u~in,n32,n2)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 56 76 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2432,11 +2432,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 c0 cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 76 d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N32,N2,ulong> load<ulong>(in Block64<ulong> src, N32 m, N2 n)
-; load_g[64u](b64x64u~in,n32,n2)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 c6 bf cf 5e cc}
+; load_g[64u](b64x64u~in,n32,n2)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 b6 75 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2471,11 +2471,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 bf cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 75 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N4,N16,byte> load<byte>(in Block64<byte> src, N4 m, N16 n)
-; load_g[8u](b64x8u~in,n4,n16)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 13 bb cf 5e cc}
+; load_g[8u](b64x8u~in,n4,n16)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 03 71 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2511,11 +2511,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 bb cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 71 d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N4,N16,ushort> load<ushort>(in Block64<ushort> src, N4 m, N16 n)
-; load_g[16u](b64x16u~in,n4,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 67 ba cf 5e cc}
+; load_g[16u](b64x16u~in,n4,n16)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 57 70 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2554,11 +2554,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 ba cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 70 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N4,N16,uint> load<uint>(in Block64<uint> src, N4 m, N16 n)
-; load_g[32u](b64x32u~in,n4,n16)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 b6 b9 cf 5e cc}
+; load_g[32u](b64x32u~in,n4,n16)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 a6 6f d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2597,11 +2597,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 b9 cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 6f d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N4,N16,ulong> load<ulong>(in Block64<ulong> src, N4 m, N16 n)
-; load_g[64u](b64x64u~in,n4,n16)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 16 b9 cf 5e cc}
+; load_g[64u](b64x64u~in,n4,n16)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 06 6f d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2636,11 +2636,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 b9 cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 6f d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N16,N4,byte> load<byte>(in Block64<byte> src, N16 m, N4 n)
-; load_g[8u](b64x8u~in,n16,n4)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 63 b4 cf 5e cc}
+; load_g[8u](b64x8u~in,n16,n4)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 53 6a d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2676,11 +2676,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 b4 cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 6a d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N16,N4,ushort> load<ushort>(in Block64<ushort> src, N16 m, N4 n)
-; load_g[16u](b64x16u~in,n16,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 a7 af cf 5e cc}
+; load_g[16u](b64x16u~in,n16,n4)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 97 65 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2719,11 +2719,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 af cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 65 d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N16,N4,uint> load<uint>(in Block64<uint> src, N16 m, N4 n)
-; load_g[32u](b64x32u~in,n16,n4)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 f6 ae cf 5e cc}
+; load_g[32u](b64x32u~in,n16,n4)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 e6 64 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2762,11 +2762,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 ae cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 64 d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N16,N4,ulong> load<ulong>(in Block64<ulong> src, N16 m, N4 n)
-; load_g[64u](b64x64u~in,n16,n4)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 56 ae cf 5e cc}
+; load_g[64u](b64x64u~in,n16,n4)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 46 64 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2801,11 +2801,11 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 ae cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 64 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N8,N8,byte> load<byte>(in Block64<byte> src, N8 m, N8 n)
-; load_g[8u](b64x8u~in,n8,n8)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 a3 a9 cf 5e cc}
+; load_g[8u](b64x8u~in,n8,n8)[126] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 c1 e8 03 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 93 5f d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2841,11 +2841,11 @@
 0075h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0076h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
-0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 a9 cf 5e}
+0078h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 5f d2 5e}
 007dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N8,N8,ushort> load<ushort>(in Block64<ushort> src, N8 m, N8 n)
-; load_g[16u](b64x16u~in,n8,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 f7 a8 cf 5e cc}
+; load_g[16u](b64x16u~in,n8,n8)[138] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 d1 e0 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 e7 5e d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2884,11 +2884,11 @@
 0081h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0082h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0083h ret                                     ; RET || C3 || encoded[1]{c3}
-0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 a8 cf 5e}
+0084h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 5e d2 5e}
 0089h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N8,N8,uint> load<uint>(in Block64<uint> src, N8 m, N8 n)
-; load_g[32u](b64x32u~in,n8,n8)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 46 a8 cf 5e cc}
+; load_g[32u](b64x32u~in,n8,n8)[139] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 c1 e0 02 48 c1 e8 03 48 3d ff ff ff 7f 77 36 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 36 5e d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2927,11 +2927,11 @@
 0082h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0083h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0084h ret                                     ; RET || C3 || encoded[1]{c3}
-0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 a8 cf 5e}
+0085h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 5e d2 5e}
 008ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid64<N8,N8,ulong> load<ulong>(in Block64<ulong> src, N8 m, N8 n)
-; load_g[64u](b64x64u~in,n8,n8)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 96 a3 cf 5e cc}
+; load_g[64u](b64x64u~in,n8,n8)[123] = {57 56 48 83 ec 58 c5 f8 77 48 8b f1 48 8d 7c 24 28 b9 0c 00 00 00 33 c0 f3 ab 48 8b ce c5 fa 6f 01 c5 fa 7f 44 24 48 48 8d 44 24 38 c5 f8 57 c0 c5 fa 7f 00 48 8d 44 24 48 48 8b 10 8b 40 08 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 48 89 11 89 41 08 c5 fa 6f 44 24 28 c5 fa 7f 44 24 38 48 8d 44 24 38 48 8b 00 48 8b 00 48 83 c4 58 5e 5f c3 e8 86 59 d2 5e cc}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2966,7 +2966,7 @@
 0072h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0073h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0074h ret                                     ; RET || C3 || encoded[1]{c3}
-0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 a3 cf 5e}
+0075h call 7ff82738fc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 59 d2 5e}
 007ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid128<N1,N128,byte> load<byte>(Vector128<byte> src, N1 m, N128 n)
@@ -3642,7 +3642,7 @@
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<byte> load<byte>(in Block256<byte> src, ushort rows, ushort cols)
-; load_g[8u](b256x8u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 79 a5 bc 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; load_g[8u](b256x8u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 69 5b bf 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3671,7 +3671,7 @@
 0056h mov [rsp+2ch],eax                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 44 24 2c}
 005ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005dh lea rsi,[rsp+18h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 18}
-0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 a5 bc 5e}
+0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 5b bf 5e}
 0067h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0069h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006bh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
@@ -3682,7 +3682,7 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<ushort> load<ushort>(in Block256<ushort> src, ushort rows, ushort cols)
-; load_g[16u](b256x16u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 d9 a4 bc 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; load_g[16u](b256x16u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 c9 5a bf 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3711,7 +3711,7 @@
 0056h mov [rsp+2ch],eax                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 44 24 2c}
 005ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005dh lea rsi,[rsp+18h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 18}
-0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 a4 bc 5e}
+0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 5a bf 5e}
 0067h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0069h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006bh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
@@ -3722,7 +3722,7 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<uint> load<uint>(in Block256<uint> src, ushort rows, ushort cols)
-; load_g[32u](b256x32u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 39 a0 bc 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; load_g[32u](b256x32u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 29 56 bf 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3751,7 +3751,7 @@
 0056h mov [rsp+2ch],eax                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 44 24 2c}
 005ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005dh lea rsi,[rsp+18h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 18}
-0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 a0 bc 5e}
+0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 56 bf 5e}
 0067h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0069h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006bh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
@@ -3762,7 +3762,7 @@
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitGrid<ulong> load<ulong>(in Block256<ulong> src, ushort rows, ushort cols)
-; load_g[64u](b256x64u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 99 9f bc 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; load_g[64u](b256x64u~in,16u,16u)[118] = {57 56 53 48 83 ec 30 c5 f8 77 48 8b f1 48 8d 7c 24 08 b9 0a 00 00 00 33 c0 f3 ab 48 8b ce 48 8b d9 33 c0 48 8d 4c 24 18 c5 f8 57 c0 c5 fa 7f 01 48 89 41 10 c5 fa 6f 02 c5 fa 7f 44 24 08 c5 fa 6f 44 24 08 c5 fa 7f 44 24 18 41 0f b7 c0 89 44 24 28 41 0f b7 c1 89 44 24 2c 48 8b fb 48 8d 74 24 18 e8 89 55 bf 5e 48 a5 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3791,7 +3791,7 @@
 0056h mov [rsp+2ch],eax                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 44 24 2c}
 005ah mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005dh lea rsi,[rsp+18h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 18}
-0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 9f bc 5e}
+0062h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 55 bf 5e}
 0067h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0069h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006bh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}

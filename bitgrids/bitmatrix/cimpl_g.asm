@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<byte> cimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; cimpl_g[8u](bm8x8u~in,bm8x8u~in)[93] = {57 56 53 48 83 ec 30 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 22 ef ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 f7 d0 48 0b c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 20 c2 bd 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; cimpl_g[8u](bm8x8u~in,bm8x8u~in)[93] = {57 56 53 48 83 ec 30 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 22 ef ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 f7 d0 48 0b c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 10 78 c0 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13,7 +13,7 @@
 0016h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 0019h mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 001ch lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0021h call 7ff7c8688b68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 ef ff ff}
+0021h call 7ff7c865d578h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 ef ff ff}
 0026h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0029h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 002ch lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -25,7 +25,7 @@
 0040h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 0043h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0046h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-004bh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 c2 bd 5e}
+004bh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 10 78 c0 5e}
 0050h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0052h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0055h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -35,7 +35,7 @@
 005ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<ushort> cimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; cimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 ef ee ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 94 c1 bd 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; cimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 ef ee ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 84 77 c0 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -49,7 +49,7 @@
 0019h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 001ch mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 001fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0024h call 7ff7c8688bb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef ee ff ff}
+0024h call 7ff7c865d5c8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef ee ff ff}
 0029h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 002ch mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 002fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -62,7 +62,7 @@
 004bh vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 004fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0052h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0057h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 c1 bd 5e}
+0057h call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 77 c0 5e}
 005ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0061h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -73,7 +73,7 @@
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<uint> cimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; cimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 7f ee ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 dd c0 bd 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; cimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 7f ee ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 cd 76 c0 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -87,7 +87,7 @@
 0019h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 001ch mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 001fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0024h call 7ff7c8688bd8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f ee ff ff}
+0024h call 7ff7c865d5e8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f ee ff ff}
 0029h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 002ch mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 002fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -111,7 +111,7 @@
 0074h jl short 003dh                          ; JL rel8 || 7C cb || encoded[2]{7c c7}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd c0 bd 5e}
+007eh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 76 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -122,7 +122,7 @@
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; BitMatrix<ulong> cimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; cimpl_g[64u](bm64x64u~in,bm64x64u~in)[148] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 ef ed ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 2c c0 bd 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; cimpl_g[64u](bm64x64u~in,bm64x64u~in)[148] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 e8 ef ed ff ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 1c 76 c0 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -136,7 +136,7 @@
 0019h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 001ch mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 001fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0024h call 7ff7c8688bf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef ed ff ff}
+0024h call 7ff7c865d608h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef ed ff ff}
 0029h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 002ch mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 002fh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -160,7 +160,7 @@
 0075h jl short 003dh                          ; JL rel8 || 7C cb || encoded[2]{7c c6}
 0077h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 007ah lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007fh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c c0 bd 5e}
+007fh call 7ff827265e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c 76 c0 5e}
 0084h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0086h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0089h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}

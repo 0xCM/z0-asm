@@ -1,2 +1,2 @@
-divides_(32f,32f)  48 83 ec 28 c5 f8 77 c5 f8 28 d0 c5 f8 28 c1 c5 f8 28 ca e8 e8 a1 19 5f c5 f0 57 c9 c5 f8 2e c1 0f 9b c0 7a 03 0f 94 c0 0f b6 c0 48 83 c4 28 c3
-divides_(64f,64f)  48 83 ec 28 c5 f8 77 c5 f8 28 d0 c5 f8 28 c1 c5 f8 28 ca e8 08 a1 19 5f c5 f0 57 c9 c5 f9 2e c1 0f 9b c0 7a 03 0f 94 c0 0f b6 c0 48 83 c4 28 c3
+divides_(32f,32f)  48 83 ec 28 c5 f8 77 c5 f8 28 d0 c5 f8 28 c1 c5 f8 28 ca e8 28 68 1d 5f c5 f0 57 c9 c5 f8 2e c1 0f 9b c0 7a 03 0f 94 c0 0f b6 c0 48 83 c4 28 c3
+divides_(64f,64f)  48 83 ec 28 c5 f8 77 c5 f8 28 d0 c5 f8 28 c1 c5 f8 28 ca e8 48 67 1d 5f c5 f0 57 c9 c5 f9 2e c1 0f 9b c0 7a 03 0f 94 c0 0f b6 c0 48 83 c4 28 c3
