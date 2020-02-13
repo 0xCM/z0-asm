@@ -24,44 +24,44 @@
 003dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 003fh jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 74}
 0041h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0043h call 7ff7c8698be0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 fd ff ff}
+0043h call 7ff7c86988b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 fd ff ff}
 0048h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 6b}
 004ah mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-004ch call 7ff7c8698a80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af fb ff ff}
+004ch call 7ff7c8698750h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af fb ff ff}
 0051h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 62}
 0053h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0055h call 7ff7c8698b60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fc ff ff}
+0055h call 7ff7c8698830h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fc ff ff}
 005ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 59}
 005ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-005eh call 7ff7c8698b40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d fc ff ff}
+005eh call 7ff7c8698810h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d fc ff ff}
 0063h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 50}
 0065h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0067h call 7ff7c8698b80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 fc ff ff}
+0067h call 7ff7c8698850h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 fc ff ff}
 006ch jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 47}
 006eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0070h call 7ff7c8698b20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b fc ff ff}
+0070h call 7ff7c86987f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b fc ff ff}
 0075h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 3e}
 0077h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 007ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 39}
 007ch movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 007fh jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 34}
 0081h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0083h call 7ff7c8698ac0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fb ff ff}
+0083h call 7ff7c8698790h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 fb ff ff}
 0088h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 2b}
 008ah mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-008ch call 7ff7c8698b00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef fb ff ff}
+008ch call 7ff7c86987d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef fb ff ff}
 0091h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 22}
 0093h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0095h call 7ff7c8698ae0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 fb ff ff}
+0095h call 7ff7c86987b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 fb ff ff}
 009ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 19}
 009ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-009eh call 7ff7c8698ba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d fc ff ff}
+009eh call 7ff7c8698870h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d fc ff ff}
 00a3h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 10}
 00a5h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00a7h call 7ff7c8698aa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 fb ff ff}
+00a7h call 7ff7c8698770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 fb ff ff}
 00ach jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 07}
 00aeh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b0h call 7ff7c8698bc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b fc ff ff}
+00b0h call 7ff7c8698890h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b fc ff ff}
 00b5h nop                                     ; NOP || o32 90 || encoded[1]{90}
 00b6h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00bah pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -95,44 +95,44 @@
 003dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 003fh jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 74}
 0041h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0043h call 7ff7c8698cd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 fc ff ff}
+0043h call 7ff7c86989a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 fc ff ff}
 0048h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 6b}
 004ah mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-004ch call 7ff7c8698c20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f fb ff ff}
+004ch call 7ff7c86988f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f fb ff ff}
 0051h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 62}
 0053h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0055h call 7ff7c8698c90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 fc ff ff}
+0055h call 7ff7c8698960h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 fc ff ff}
 005ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 59}
 005ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-005eh call 7ff7c8698c80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed fb ff ff}
+005eh call 7ff7c8698950h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed fb ff ff}
 0063h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 50}
 0065h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0067h call 7ff7c8698ca0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 fc ff ff}
+0067h call 7ff7c8698970h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 fc ff ff}
 006ch jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 47}
 006eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0070h call 7ff7c8698c70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb fb ff ff}
+0070h call 7ff7c8698940h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb fb ff ff}
 0075h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 3e}
 0077h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 007ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 39}
 007ch movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 007fh jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 34}
 0081h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0083h call 7ff7c8698c40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 fb ff ff}
+0083h call 7ff7c8698910h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 fb ff ff}
 0088h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 2b}
 008ah mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-008ch call 7ff7c8698c60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f fb ff ff}
+008ch call 7ff7c8698930h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f fb ff ff}
 0091h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 22}
 0093h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0095h call 7ff7c8698c50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fb ff ff}
+0095h call 7ff7c8698920h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 fb ff ff}
 009ah jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 19}
 009ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-009eh call 7ff7c8698cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd fb ff ff}
+009eh call 7ff7c8698980h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd fb ff ff}
 00a3h jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 10}
 00a5h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00a7h call 7ff7c8698c30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 fb ff ff}
+00a7h call 7ff7c8698900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 fb ff ff}
 00ach jmp short 00b5h                         ; JMP rel8 || EB cb || encoded[2]{eb 07}
 00aeh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-00b0h call 7ff7c8698cc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db fb ff ff}
+00b0h call 7ff7c8698990h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db fb ff ff}
 00b5h nop                                     ; NOP || o32 90 || encoded[1]{90}
 00b6h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00bah pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -166,28 +166,28 @@
 003dh xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 003fh jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 70}
 0041h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0043h call 7ff7c8698da0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 fb ff ff}
+0043h call 7ff7c8698a70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 fb ff ff}
 0048h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 67}
 004ah mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-004ch call 7ff7c8698cf0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf fa ff ff}
+004ch call 7ff7c86989c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bf fa ff ff}
 0051h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 5e}
 0053h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0055h call 7ff7c8698d60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 fb ff ff}
+0055h call 7ff7c8698a30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 fb ff ff}
 005ah jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 55}
 005ch mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-005eh call 7ff7c8698d50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d fb ff ff}
+005eh call 7ff7c8698a20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d fb ff ff}
 0063h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 4c}
 0065h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0067h call 7ff7c8698d70h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 fb ff ff}
+0067h call 7ff7c8698a40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 fb ff ff}
 006ch jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 43}
 006eh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-0070h call 7ff7c8698d40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb fa ff ff}
+0070h call 7ff7c8698a10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb fa ff ff}
 0075h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 3a}
 0077h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 38}
 0079h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 007bh jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 34}
 007dh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-007fh call 7ff7c8698d10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac fa ff ff}
+007fh call 7ff7c86989e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac fa ff ff}
 0084h jmp short 00b1h                         ; JMP rel8 || EB cb || encoded[2]{eb 2b}
 0086h mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
 0088h (bad)                                   ; <invalid> || <invalid> || encoded[2]{e8 c3}
@@ -217,43 +217,43 @@
 0046h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0048h jmp near ptr 00cah                      ; JMP rel32 || E9 cd || encoded[5]{e9 7d 00 00 00}
 004dh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0050h call 7ff7c8699380h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b fb ff ff}
+0050h call 7ff7c8699050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b fb ff ff}
 0055h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 73}
 0057h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-005ah call 7ff7c8698dc0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f5 ff ff}
+005ah call 7ff7c8698a90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f5 ff ff}
 005fh jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 69}
 0061h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0064h call 7ff7c8698e30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 f6 ff ff}
+0064h call 7ff7c8698b00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 f6 ff ff}
 0069h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 5f}
 006bh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-006eh call 7ff7c8698e20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d f6 ff ff}
+006eh call 7ff7c8698af0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d f6 ff ff}
 0073h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 55}
 0075h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0078h call 7ff7c8698e40h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 f6 ff ff}
+0078h call 7ff7c8698b10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 f6 ff ff}
 007dh jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 4b}
 007fh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0082h call 7ff7c8698e10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 f5 ff ff}
+0082h call 7ff7c8698ae0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 f5 ff ff}
 0087h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 41}
 0089h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 3f}
 008bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 008eh jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 3a}
 0090h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-0093h call 7ff7c8698de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 f5 ff ff}
+0093h call 7ff7c8698ab0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 f5 ff ff}
 0098h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 30}
 009ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-009dh call 7ff7c8698e00h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce f5 ff ff}
+009dh call 7ff7c8698ad0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce f5 ff ff}
 00a2h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 26}
 00a4h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-00a7h call 7ff7c8698df0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 f5 ff ff}
+00a7h call 7ff7c8698ac0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 f5 ff ff}
 00ach jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 1c}
 00aeh mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-00b1h call 7ff7c8698e50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a f6 ff ff}
+00b1h call 7ff7c8698b20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a f6 ff ff}
 00b6h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 12}
 00b8h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-00bbh call 7ff7c8698dd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 f5 ff ff}
+00bbh call 7ff7c8698aa0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 f5 ff ff}
 00c0h jmp short 00cah                         ; JMP rel8 || EB cb || encoded[2]{eb 08}
 00c2h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-00c5h call 7ff7c8698e60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 f6 ff ff}
+00c5h call 7ff7c8698b30h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 f6 ff ff}
 00cah nop                                     ; NOP || o32 90 || encoded[1]{90}
 00cbh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00cfh pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}

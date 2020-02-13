@@ -1,16 +1,16 @@
-vunits_g[8u](n128,8u)    c5 f8 77 66 90 48 b8 ad 57 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[8i](n128,8i)    c5 f8 77 66 90 48 b8 ad 57 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[16u](n128,16u)  c5 f8 77 66 90 48 b8 ad 54 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[16i](n128,16i)  c5 f8 77 66 90 48 b8 ad 54 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[32u](n128,32u)  c5 f8 77 66 90 48 b8 7d 54 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[32i](n128,32i)  c5 f8 77 66 90 48 b8 7d 54 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[64u](n128,64u)  c5 f8 77 66 90 48 b8 6d 56 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[64i](n128,64i)  c5 f8 77 66 90 48 b8 6d 56 46 66 9e 01 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
-vunits_g[8u](n256,8u)    c5 f8 77 66 90 48 b8 3d 56 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[8i](n256,8i)    c5 f8 77 66 90 48 b8 3d 56 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[16u](n256,16u)  c5 f8 77 66 90 48 b8 bd 54 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[16i](n256,16i)  c5 f8 77 66 90 48 b8 bd 54 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[32u](n256,32u)  c5 f8 77 66 90 48 b8 5d 54 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[32i](n256,32i)  c5 f8 77 66 90 48 b8 5d 54 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[64u](n256,64u)  c5 f8 77 66 90 48 b8 8d 55 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vunits_g[64i](n256,64i)  c5 f8 77 66 90 48 b8 8d 55 46 66 9e 01 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[8u](n128,8u)    c5 f8 77 66 90 48 b8 b1 57 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[8i](n128,8i)    c5 f8 77 66 90 48 b8 b1 57 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[16u](n128,16u)  c5 f8 77 66 90 48 b8 b1 54 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[16i](n128,16i)  c5 f8 77 66 90 48 b8 b1 54 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[32u](n128,32u)  c5 f8 77 66 90 48 b8 81 54 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[32i](n128,32i)  c5 f8 77 66 90 48 b8 81 54 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[64u](n128,64u)  c5 f8 77 66 90 48 b8 71 56 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[64i](n128,64i)  c5 f8 77 66 90 48 b8 71 56 35 24 04 02 00 00 c5 fb f0 00 c5 f9 11 01 48 8b c1 c3
+vunits_g[8u](n256,8u)    c5 f8 77 66 90 48 b8 41 56 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[8i](n256,8i)    c5 f8 77 66 90 48 b8 41 56 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[16u](n256,16u)  c5 f8 77 66 90 48 b8 c1 54 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[16i](n256,16i)  c5 f8 77 66 90 48 b8 c1 54 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[32u](n256,32u)  c5 f8 77 66 90 48 b8 61 54 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[32i](n256,32i)  c5 f8 77 66 90 48 b8 61 54 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[64u](n256,64u)  c5 f8 77 66 90 48 b8 91 55 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vunits_g[64i](n256,64i)  c5 f8 77 66 90 48 b8 91 55 35 24 04 02 00 00 c5 ff f0 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

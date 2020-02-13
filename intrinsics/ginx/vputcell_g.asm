@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<byte> vputcell<byte>(byte src, int index, Vector128<byte> dst)
-; vputcell_g[8u](8u,32i,v128x8u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 10 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 68 34 32 ff cc}
+; vputcell_g[8u](8u,32i,v128x8u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 10 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 68 0d 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -17,11 +17,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 34 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 0d 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vputcell<sbyte>(sbyte src, int index, Vector128<sbyte> dst)
-; vputcell_g[8i](8i,32i,v128x8i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 10 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 08 34 32 ff cc}
+; vputcell_g[8i](8i,32i,v128x8i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 10 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 98 0c 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -38,11 +38,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 34 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 0c 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ushort> vputcell<ushort>(ushort src, int index, Vector128<ushort> dst)
-; vputcell_g[16u](16u,32i,v128x16u)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 08 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 a7 33 32 ff cc}
+; vputcell_g[16u](16u,32i,v128x16u)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 08 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 37 0c 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -59,11 +59,11 @@
 0032h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 0037h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 33 32 ff}
+003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 0c 69 ff}
 0041h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<short> vputcell<short>(short src, int index, Vector128<short> dst)
-; vputcell_g[16i](16i,32i,v128x16i)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 08 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 47 33 32 ff cc}
+; vputcell_g[16i](16i,32i,v128x16i)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 08 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 d7 0b 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -80,11 +80,11 @@
 0032h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 0037h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 33 32 ff}
+003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 0b 69 ff}
 0041h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<uint> vputcell<uint>(uint src, int index, Vector128<uint> dst)
-; vputcell_g[32u](32u,32i,v128x32u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 e8 32 32 ff cc}
+; vputcell_g[32u](32u,32i,v128x32u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 78 0b 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -101,11 +101,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 32 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 0b 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<int> vputcell<int>(int src, int index, Vector128<int> dst)
-; vputcell_g[32i](32i,32i,v128x32i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 88 32 32 ff cc}
+; vputcell_g[32i](32i,32i,v128x32i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 18 0b 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -122,11 +122,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 88 32 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 0b 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<ulong> vputcell<ulong>(ulong src, int index, Vector128<ulong> dst)
-; vputcell_g[64u](64u,32i,v128x64u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 28 32 32 ff cc}
+; vputcell_g[64u](64u,32i,v128x64u)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 b8 0a 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -143,11 +143,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 32 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b8 0a 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<long> vputcell<long>(long src, int index, Vector128<long> dst)
-; vputcell_g[64i](64i,32i,v128x64i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 c8 31 32 ff cc}
+; vputcell_g[64i](64i,32i,v128x64i)[65] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 24 c5 f9 29 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 58 0a 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -164,11 +164,11 @@
 0031h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 0036h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 31 32 ff}
+003bh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 0a 69 ff}
 0040h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vputcell<float>(float src, int index, Vector128<float> dst)
-; vputcell_g[32f](32f,32i,v128x32f)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 67 31 32 ff cc}
+; vputcell_g[32f](32f,32i,v128x32f)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 04 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 f7 05 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -185,11 +185,11 @@
 0032h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 0037h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 31 32 ff}
+003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 05 69 ff}
 0041h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<double> vputcell<double>(double src, int index, Vector128<double> dst)
-; vputcell_g[64f](64f,32i,v128x64f)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 07 31 32 ff cc}
+; vputcell_g[64f](64f,32i,v128x64f)[66] = {48 83 ec 38 c5 f8 77 c4 c1 79 10 01 41 83 f8 02 73 25 c5 f9 29 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 f9 28 44 24 20 c5 f9 11 01 48 8b c1 48 83 c4 38 c3 b9 15 00 00 00 e8 b7 04 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -206,11 +206,11 @@
 0032h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 0037h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 31 32 ff}
+003ch call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 04 69 ff}
 0041h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<byte> vputcell<byte>(byte src, int index, Vector256<byte> dst)
-; vputcell_g[8u](8u,32i,v256x8u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 a5 30 32 ff cc}
+; vputcell_g[8u](8u,32i,v256x8u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 55 04 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -228,11 +228,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 30 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 04 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<sbyte> vputcell<sbyte>(sbyte src, int index, Vector256<sbyte> dst)
-; vputcell_g[8i](8i,32i,v256x8i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 35 2c 32 ff cc}
+; vputcell_g[8i](8i,32i,v256x8i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 20 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 88 14 00 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 f5 03 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -250,11 +250,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 2c 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 03 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ushort> vputcell<ushort>(ushort src, int index, Vector256<ushort> dst)
-; vputcell_g[16u](16u,32i,v256x16u)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 d4 2b 32 ff cc}
+; vputcell_g[16u](16u,32i,v256x16u)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 94 03 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -272,11 +272,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 2b 32 ff}
+003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 03 69 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<short> vputcell<short>(short src, int index, Vector256<short> dst)
-; vputcell_g[16i](16i,32i,v256x16i)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 74 2b 32 ff cc}
+; vputcell_g[16i](16i,32i,v256x16i)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 10 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 66 42 89 14 40 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 34 03 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -294,11 +294,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 2b 32 ff}
+003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 03 69 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<uint> vputcell<uint>(uint src, int index, Vector256<uint> dst)
-; vputcell_g[32u](32u,32i,v256x32u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 15 2b 32 ff cc}
+; vputcell_g[32u](32u,32i,v256x32u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 d5 02 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -316,11 +316,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 2b 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 02 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<int> vputcell<int>(int src, int index, Vector256<int> dst)
-; vputcell_g[32i](32i,32i,v256x32i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 b5 2a 32 ff cc}
+; vputcell_g[32i](32i,32i,v256x32i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 42 89 14 80 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 75 02 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -338,11 +338,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 2a 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 02 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<ulong> vputcell<ulong>(ulong src, int index, Vector256<ulong> dst)
-; vputcell_g[64u](64u,32i,v256x64u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 55 2a 32 ff cc}
+; vputcell_g[64u](64u,32i,v256x64u)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 15 02 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -360,11 +360,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 2a 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 02 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<long> vputcell<long>(long src, int index, Vector256<long> dst)
-; vputcell_g[64i](64i,32i,v256x64i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 f5 29 32 ff cc}
+; vputcell_g[64i](64i,32i,v256x64i)[68] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 27 c5 fd 11 44 24 20 48 8d 44 24 20 4d 63 c0 4a 89 14 c0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 b5 01 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -382,11 +382,11 @@
 0034h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 0039h mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 29 32 ff}
+003eh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 01 69 ff}
 0043h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<float> vputcell<float>(float src, int index, Vector256<float> dst)
-; vputcell_g[32f](32f,32i,v256x32f)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 94 29 32 ff cc}
+; vputcell_g[32f](32f,32i,v256x32f)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 08 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fa 11 0c 90 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 54 01 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -404,11 +404,11 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 29 32 ff}
+003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 01 69 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector256<double> vputcell<double>(double src, int index, Vector256<double> dst)
-; vputcell_g[64f](64f,32i,v256x64f)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 34 29 32 ff cc}
+; vputcell_g[64f](64f,32i,v256x64f)[69] = {48 83 ec 58 c5 f8 77 c4 c1 7d 10 01 41 83 f8 04 73 28 c5 fd 11 44 24 20 48 8d 44 24 20 49 63 d0 c5 fb 11 0c d0 c5 fd 10 44 24 20 c5 fd 11 01 48 8b c1 c5 f8 77 48 83 c4 58 c3 b9 15 00 00 00 e8 f4 00 69 ff cc}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -426,5 +426,5 @@
 0035h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 003ah mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 29 32 ff}
+003fh call 7ff7c7755848h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 00 69 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}

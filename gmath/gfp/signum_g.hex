@@ -1,2 +1,2 @@
-signum_g[32f](32f)  48 83 ec 28 c5 f8 77 e8 2c 1f 58 ff 90 48 83 c4 28 c3
-signum_g[64f](64f)  48 83 ec 28 c5 f8 77 e8 d4 1e 58 ff 90 48 83 c4 28 c3
+signum_g[32f](32f)  48 83 ec 28 c5 f8 77 e8 3c 1f 58 ff 90 48 83 c4 28 c3
+signum_g[64f](64f)  48 83 ec 28 c5 f8 77 e8 e4 1e 58 ff 90 48 83 c4 28 c3
