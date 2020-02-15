@@ -1,0 +1,8 @@
+eval_logic_expr_g[8u]()   0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[8i]()   0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[16u]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[16i]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[32u]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[32i]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[64u]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0
+eval_logic_expr_g[64i]()  0f 1f 44 00 00 48 b8 f0 22 67 c8 f7 7f 00 00 48 ff e0

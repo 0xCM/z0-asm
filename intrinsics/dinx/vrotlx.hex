@@ -1,4 +1,4 @@
-vrotlx_(v128x8u,n8)   c5 f8 77 66 90 48 b8 69 8d 9a 3e 04 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotlx_(v128x8u,n16)  c5 f8 77 66 90 48 b8 79 8d 9a 3e 04 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotlx_(v128x8u,n24)  c5 f8 77 66 90 48 b8 89 8d 9a 3e 04 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
-vrotlx_(v128x8u,n32)  c5 f8 77 66 90 48 b8 99 8d 9a 3e 04 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotlx_(v128x8u,n8)   c5 f8 77 66 90 48 b8 25 8f e4 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotlx_(v128x8u,n16)  c5 f8 77 66 90 48 b8 35 8f e4 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotlx_(v128x8u,n24)  c5 f8 77 66 90 48 b8 45 8f e4 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3
+vrotlx_(v128x8u,n32)  c5 f8 77 66 90 48 b8 55 8f e4 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c4 e2 71 00 c0 c5 f9 11 01 48 8b c1 c3

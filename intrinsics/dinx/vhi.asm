@@ -87,21 +87,6 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
-; vhi_(v256x64u)[40] = {c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vmovupd ymm0,[rcx]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 01}
-0009h vextractf128 xmm0,ymm0,1                ; VEXTRACTF128 xmm1/m128, ymm2, imm8 || VEX.256.66.0F3A.W0 19 /r ib || encoded[6]{c4 e3 7d 19 c0 01}
-000fh vmovq rax,xmm0                          ; VMOVQ r/m64, xmm1 || VEX.128.66.0F.W1 7E /r || encoded[5]{c4 e1 f9 7e c0}
-0014h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
-0017h vpextrq rax,xmm0,1                      ; VPEXTRQ r/m64, xmm2, imm8 || VEX.128.66.0F3A.W1 16 /r ib || encoded[6]{c4 e3 f9 16 c0 01}
-001dh mov [rdx+8],rax                         ; MOV r/m64, r64 || REX.W 89 /r || encoded[4]{48 89 42 08}
-0021h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
-0024h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; Vector128<sbyte> vhi(Vector128<sbyte> src)
 ; vhi_(v128x8i)[28] = {c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3}
 ; TermCode = CTC_RET_INTR

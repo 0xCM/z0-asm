@@ -613,7 +613,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector1024<ulong> vconvert(Vector256<ushort> src, N1024 w, ulong t)
-; vconvert_(v256x16u,n1024,64u)[269] = {57 56 48 81 ec 08 01 00 00 c5 f8 77 48 8b f1 48 8d bc 24 88 00 00 00 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8b f1 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 34 c8 c4 e3 f9 16 c1 01 c4 e1 f9 6e c1 c4 e2 7d 34 c0 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 34 da c4 e3 f9 16 d2 01 c4 e1 f9 6e d2 c4 e2 7d 34 d2 48 8d 54 24 08 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 54 24 08 c5 fd 11 0a c5 fd 11 42 20 48 8d 54 24 48 c5 fd 11 1a c5 fd 11 52 20 48 8d 8c 24 88 00 00 00 48 8d 54 24 08 41 b8 80 00 00 00 e8 18 d3 31 5f 48 8d 84 24 88 00 00 00 c5 fd 10 00 c5 fd 10 48 20 48 8d 84 24 c8 00 00 00 c5 fd 10 10 c5 fd 10 58 20 c5 fd 11 06 c5 fd 11 4e 20 c5 fd 11 56 40 c5 fd 11 5e 60 48 8b c6 c5 f8 77 48 81 c4 08 01 00 00 5e 5f c3}
+; vconvert_(v256x16u,n1024,64u)[269] = {57 56 48 81 ec 08 01 00 00 c5 f8 77 48 8b f1 48 8d bc 24 88 00 00 00 b9 20 00 00 00 33 c0 f3 ab 48 8b ce 48 8b f1 c5 fd 10 02 c4 e3 7d 19 c0 00 c4 e2 7d 34 c8 c4 e3 f9 16 c1 01 c4 e1 f9 6e c1 c4 e2 7d 34 c0 c5 fd 10 12 c4 e3 7d 19 d2 01 c4 e2 7d 34 da c4 e3 f9 16 d2 01 c4 e1 f9 6e d2 c4 e2 7d 34 d2 48 8d 54 24 08 c5 d8 57 e4 c5 fa 7f 22 c5 fa 7f 62 10 c5 fa 7f 62 20 c5 fa 7f 62 30 c5 fa 7f 62 40 c5 fa 7f 62 50 c5 fa 7f 62 60 c5 fa 7f 62 70 48 8d 54 24 08 c5 fd 11 0a c5 fd 11 42 20 48 8d 54 24 48 c5 fd 11 1a c5 fd 11 52 20 48 8d 8c 24 88 00 00 00 48 8d 54 24 08 41 b8 80 00 00 00 e8 28 8b e7 5e 48 8d 84 24 88 00 00 00 c5 fd 10 00 c5 fd 10 48 20 48 8d 84 24 c8 00 00 00 c5 fd 10 10 c5 fd 10 58 20 c5 fd 11 06 c5 fd 11 4e 20 c5 fd 11 56 40 c5 fd 11 5e 60 48 8b c6 c5 f8 77 48 81 c4 08 01 00 00 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -657,7 +657,7 @@
 00b0h lea rcx,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 88 00 00 00}
 00b8h lea rdx,[rsp+8]                         ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 08}
 00bdh mov r8d,80h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 80 00 00 00}
-00c3h call 7ff827266050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 18 d3 31 5f}
+00c3h call 7ff827266050h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 8b e7 5e}
 00c8h lea rax,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 84 24 88 00 00 00}
 00d0h vmovupd ymm0,[rax]                      ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[4]{c5 fd 10 00}
 00d4h vmovupd ymm1,[rax+20h]                  ; VMOVUPD ymm1, ymm2/m256 || VEX.256.66.0F.WIG 10 /r || encoded[5]{c5 fd 10 48 20}

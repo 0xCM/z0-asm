@@ -1,0 +1,7 @@
+eval_vcmp_expr128_g[8u]()   0f 1f 44 00 00 48 b8 c8 6d 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[8i]()   0f 1f 44 00 00 48 b8 90 6e 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[16u]()  0f 1f 44 00 00 48 b8 70 70 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[16i]()  0f 1f 44 00 00 48 b8 28 71 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[32u]()  0f 1f 44 00 00 48 b8 e0 71 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[32i]()  0f 1f 44 00 00 48 b8 98 72 6e c8 f7 7f 00 00 48 ff e0
+eval_vcmp_expr128_g[64i]()  0f 1f 44 00 00 48 b8 50 73 6e c8 f7 7f 00 00 48 ff e0

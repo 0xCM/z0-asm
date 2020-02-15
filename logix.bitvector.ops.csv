@@ -1,0 +1,69 @@
+Sequence  | Length  | TermCode            | Uri                                                                   | Data
+0         | 19      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?true#true_g[8u]()                            | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff 00 00 00 c3
+1         | 19      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?true#true_g[16u]()                           | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff 00 00 c3
+2         | 19      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?true#true_g[32u]()                           | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 ff ff ff ff c3
+3         | 26      | CTC_RET_Zx3         | hex://logix/BitVectorOps?true#true_g[64u]()                           | 0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 48 b8 ff ff ff ff ff ff ff ff c3
+4         | 16      | CTC_RET_SBB         | hex://logix/BitVectorOps?false#false_g[8u]()                          | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3
+5         | 16      | CTC_RET_SBB         | hex://logix/BitVectorOps?false#false_g[16u]()                         | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3
+6         | 16      | CTC_RET_SBB         | hex://logix/BitVectorOps?false#false_g[32u]()                         | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3
+7         | 18      | CTC_RET_Zx3         | hex://logix/BitVectorOps?false#false_g[64u]()                         | 0f 1f 44 00 00 48 89 4c 24 08 48 89 54 24 10 33 c0 c3
+8         | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?and#and_g[8u]()                              | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3
+9         | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?and#and_g[16u]()                             | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 c3
+10        | 10      | CTC_RET_Zx3         | hex://logix/BitVectorOps?and#and_g[32u]()                             | 0f 1f 44 00 00 23 d1 8b c2 c3
+11        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?and#and_g[64u]()                             | 0f 1f 44 00 00 48 23 d1 48 8b c2 c3
+12        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?nand#nand_g[8u]()                            | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 23 c2 f7 d0 0f b6 c0 c3
+13        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?nand#nand_g[16u]()                           | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 23 c2 f7 d0 0f b7 c0 c3
+14        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?nand#nand_g[32u]()                           | 0f 1f 44 00 00 23 d1 8b c2 f7 d0 c3
+15        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nand#nand_g[64u]()                           | 0f 1f 44 00 00 48 23 d1 48 8b c2 48 f7 d0 c3
+16        | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?or#or_g[8u]()                                | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 0b c2 0f b6 c0 c3
+17        | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?or#or_g[16u]()                               | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 0b c2 0f b7 c0 c3
+18        | 10      | CTC_RET_Zx3         | hex://logix/BitVectorOps?or#or_g[32u]()                               | 0f 1f 44 00 00 0b d1 8b c2 c3
+19        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?or#or_g[64u]()                               | 0f 1f 44 00 00 48 0b d1 48 8b c2 c3
+20        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?nor#nor_g[8u]()                              | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 0b c2 f7 d0 0f b6 c0 c3
+21        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?nor#nor_g[16u]()                             | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 0b c2 f7 d0 0f b7 c0 c3
+22        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?nor#nor_g[32u]()                             | 0f 1f 44 00 00 0b d1 8b c2 f7 d0 c3
+23        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nor#nor_g[64u]()                             | 0f 1f 44 00 00 48 0b d1 48 8b c2 48 f7 d0 c3
+24        | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?xor#xor_g[8u]()                              | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 33 c2 0f b6 c0 c3
+25        | 20      | CTC_RET_SBB         | hex://logix/BitVectorOps?xor#xor_g[16u]()                             | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 33 c2 0f b7 c0 c3
+26        | 10      | CTC_RET_Zx3         | hex://logix/BitVectorOps?xor#xor_g[32u]()                             | 0f 1f 44 00 00 33 d1 8b c2 c3
+27        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?xor#xor_g[64u]()                             | 0f 1f 44 00 00 48 33 d1 48 8b c2 c3
+28        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?xnor#xnor_g[8u]()                            | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 33 c2 f7 d0 0f b6 c0 c3
+29        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?xnor#xnor_g[16u]()                           | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 33 c2 f7 d0 0f b7 c0 c3
+30        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?xnor#xnor_g[32u]()                           | 0f 1f 44 00 00 33 d1 8b c2 f7 d0 c3
+31        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?xnor#xnor_g[64u]()                           | 0f 1f 44 00 00 48 33 d1 48 8b c2 48 f7 d0 c3
+32        | 13      | CTC_RET_Zx3         | hex://logix/BitVectorOps?left#left_g[8u]()                            | 0f 1f 44 00 00 89 54 24 10 0f b6 c1 c3
+33        | 13      | CTC_RET_Zx3         | hex://logix/BitVectorOps?left#left_g[16u]()                           | 0f 1f 44 00 00 89 54 24 10 0f b7 c1 c3
+34        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?left#left_g[32u]()                           | 0f 1f 44 00 00 89 54 24 10 8b c1 c3
+35        | 14      | CTC_RET_Zx3         | hex://logix/BitVectorOps?left#left_g[64u]()                           | 0f 1f 44 00 00 48 89 54 24 10 48 8b c1 c3
+36        | 13      | CTC_RET_Zx3         | hex://logix/BitVectorOps?right#right_g[8u]()                          | 0f 1f 44 00 00 89 4c 24 08 0f b6 c2 c3
+37        | 13      | CTC_RET_Zx3         | hex://logix/BitVectorOps?right#right_g[16u]()                         | 0f 1f 44 00 00 89 4c 24 08 0f b7 c2 c3
+38        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?right#right_g[32u]()                         | 0f 1f 44 00 00 89 4c 24 08 8b c2 c3
+39        | 14      | CTC_RET_Zx3         | hex://logix/BitVectorOps?right#right_g[64u]()                         | 0f 1f 44 00 00 48 89 4c 24 08 48 8b c2 c3
+40        | 18      | CTC_RET_Zx3         | hex://logix/BitVectorOps?lnot#lnot_g[8u]()                            | 0f 1f 44 00 00 89 54 24 10 0f b6 c1 f7 d0 0f b6 c0 c3
+41        | 18      | CTC_RET_Zx3         | hex://logix/BitVectorOps?lnot#lnot_g[16u]()                           | 0f 1f 44 00 00 89 54 24 10 0f b7 c1 f7 d0 0f b7 c0 c3
+42        | 14      | CTC_RET_Zx3         | hex://logix/BitVectorOps?lnot#lnot_g[32u]()                           | 0f 1f 44 00 00 89 54 24 10 8b c1 f7 d0 c3
+43        | 17      | CTC_RET_Zx3         | hex://logix/BitVectorOps?lnot#lnot_g[64u]()                           | 0f 1f 44 00 00 48 89 54 24 10 48 8b c1 48 f7 d0 c3
+44        | 18      | CTC_RET_Zx3         | hex://logix/BitVectorOps?rnot#rnot_g[8u]()                            | 0f 1f 44 00 00 89 4c 24 08 0f b6 c2 f7 d0 0f b6 c0 c3
+45        | 18      | CTC_RET_Zx3         | hex://logix/BitVectorOps?rnot#rnot_g[16u]()                           | 0f 1f 44 00 00 89 4c 24 08 0f b7 c2 f7 d0 0f b7 c0 c3
+46        | 14      | CTC_RET_Zx3         | hex://logix/BitVectorOps?rnot#rnot_g[32u]()                           | 0f 1f 44 00 00 89 4c 24 08 8b c2 f7 d0 c3
+47        | 17      | CTC_RET_Zx3         | hex://logix/BitVectorOps?rnot#rnot_g[64u]()                           | 0f 1f 44 00 00 48 89 4c 24 08 48 8b c2 48 f7 d0 c3
+48        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?impl#impl_g[8u]()                            | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 f7 d2 0b c2 0f b6 c0 c3
+49        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?impl#impl_g[16u]()                           | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 f7 d2 0b c2 0f b7 c0 c3
+50        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?impl#impl_g[32u]()                           | 0f 1f 44 00 00 8b c2 f7 d0 0b c1 c3
+51        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?impl#impl_g[64u]()                           | 0f 1f 44 00 00 48 8b c2 48 f7 d0 48 0b c1 c3
+52        | 23      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nonimpl#nonimpl_g[8u]()                      | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 78 f2 c2 0f b6 c0 c3
+53        | 23      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nonimpl#nonimpl_g[16u]()                     | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 c4 e2 78 f2 c2 0f b7 c0 c3
+54        | 11      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nonimpl#nonimpl_g[32u]()                     | 0f 1f 44 00 00 c4 e2 70 f2 c2 c3
+55        | 11      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?nonimpl#nonimpl_g[64u]()                     | 0f 1f 44 00 00 c4 e2 f0 f2 c2 c3
+56        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?cimpl#cimpl_g[8u]()                          | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 f7 d0 0b c2 0f b6 c0 c3
+57        | 22      | CTC_RET_Zx3         | hex://logix/BitVectorOps?cimpl#cimpl_g[16u]()                         | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 f7 d0 0b c2 0f b7 c0 c3
+58        | 12      | CTC_RET_SBB         | hex://logix/BitVectorOps?cimpl#cimpl_g[32u]()                         | 0f 1f 44 00 00 8b c1 f7 d0 0b c2 c3
+59        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?cimpl#cimpl_g[64u]()                         | 0f 1f 44 00 00 48 8b c1 48 f7 d0 48 0b c2 c3
+60        | 23      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?cnonimpl#cnonimpl_g[8u]()                    | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 0f b6 c0 c4 e2 68 f2 c0 0f b6 c0 c3
+61        | 23      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?cnonimpl#cnonimpl_g[16u]()                   | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 0f b7 c0 c4 e2 68 f2 c0 0f b7 c0 c3
+62        | 11      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?cnonimpl#cnonimpl_g[32u]()                   | 0f 1f 44 00 00 c4 e2 68 f2 c1 c3
+63        | 11      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?cnonimpl#cnonimpl_g[64u]()                   | 0f 1f 44 00 00 c4 e2 e8 f2 c1 c3
+64        | 34      | CTC_RET_Zx3         | hex://logix/BitVectorOps?select#select_g[8u]()                        | 0f 1f 44 00 00 0f b6 c1 0f b6 d2 41 0f b6 c8 0f b6 c0 0f b6 d2 23 d0 c4 e2 78 f2 c1 0b c2 0f b6 c0 c3
+65        | 34      | CTC_RET_Zx3         | hex://logix/BitVectorOps?select#select_g[16u]()                       | 0f 1f 44 00 00 0f b7 c1 0f b7 d2 41 0f b7 c8 0f b7 c0 0f b7 d2 23 d0 c4 e2 78 f2 c1 0b c2 0f b7 c0 c3
+66        | 15      | CTC_RET_ZED_SBB     | hex://logix/BitVectorOps?select#select_g[32u]()                       | 0f 1f 44 00 00 23 d1 c4 c2 70 f2 c0 0b c2 c3
+67        | 17      | CTC_RET_Zx3         | hex://logix/BitVectorOps?select#select_g[64u]()                       | 0f 1f 44 00 00 48 23 d1 c4 c2 f0 f2 c0 48 0b c2 c3

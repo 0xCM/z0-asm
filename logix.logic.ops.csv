@@ -1,0 +1,118 @@
+Sequence  | Length  | TermCode            | Uri                                                                   | Data
+0         | 24      | CTC_RET_SBB         | hex://logix/LogicOps?true#true_(1u,1u,1u)                             | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 44 89 44 24 18 b8 01 00 00 00 c3
+1         | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?not#not_(1u)                                     | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 c3
+2         | 8       | CTC_RET_SBB         | hex://logix/LogicOps?identity#identity_(1u)                           | 0f 1f 44 00 00 8b c1 c3
+3         | 12      | CTC_RET_SBB         | hex://logix/LogicOps?false#false_(1u)                                 | 0f 1f 44 00 00 89 4c 24 08 33 c0 c3
+4         | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?true#true_(1u)                                   | 0f 1f 44 00 00 89 4c 24 08 b8 01 00 00 00 c3
+5         | 16      | CTC_RET_SBB         | hex://logix/LogicOps?false#false_(1u,1u)                              | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 33 c0 c3
+6         | 19      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?true#true_(1u,1u)                                | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 b8 01 00 00 00 c3
+7         | 10      | CTC_RET_Zx3         | hex://logix/LogicOps?and#and_(1u,1u)                                  | 0f 1f 44 00 00 8b c1 23 c2 c3
+8         | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?nand#nand_(1u,1u)                                | 0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 c3
+9         | 10      | CTC_RET_Zx3         | hex://logix/LogicOps?or#or_(1u,1u)                                    | 0f 1f 44 00 00 8b c1 0b c2 c3
+10        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?nor#nor_(1u,1u)                                  | 0f 1f 44 00 00 0b d1 8b c2 f7 d0 83 e0 01 c3
+11        | 10      | CTC_RET_Zx3         | hex://logix/LogicOps?xor#xor_(1u,1u)                                  | 0f 1f 44 00 00 8b c1 33 c2 c3
+12        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?xnor#xnor_(1u,1u)                                | 0f 1f 44 00 00 33 d1 8b c2 f7 d0 83 e0 01 c3
+13        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?impl#impl_(1u,1u)                                | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 0b c1 c3
+14        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?nonimpl#nonimpl_(1u,1u)                          | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 23 c2 c3
+15        | 12      | CTC_RET_SBB         | hex://logix/LogicOps?left#left_(1u,1u)                                | 0f 1f 44 00 00 89 54 24 10 8b c1 c3
+16        | 12      | CTC_RET_SBB         | hex://logix/LogicOps?right#right_(1u,1u)                              | 0f 1f 44 00 00 89 4c 24 08 8b c2 c3
+17        | 17      | CTC_RET_Zx3         | hex://logix/LogicOps?lnot#lnot_(1u,1u)                                | 0f 1f 44 00 00 89 54 24 10 8b c1 f7 d0 83 e0 01 c3
+18        | 17      | CTC_RET_Zx3         | hex://logix/LogicOps?rnot#rnot_(1u,1u)                                | 0f 1f 44 00 00 89 4c 24 08 8b c2 f7 d0 83 e0 01 c3
+19        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?cimpl#cimpl_(1u,1u)                              | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 0b c2 c3
+20        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?cnonimpl#cnonimpl_(1u,1u)                        | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 23 c1 c3
+21        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?select#select_(1u,1u,1u)                         | 0f 1f 44 00 00 23 d1 8b c1 f7 d0 41 23 c0 0b c2 83 e0 01 c3
+22        | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?false#false_(1u,1u,1u)                           | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 44 89 44 24 18 33 c0 c3
+23        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f01#f01_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b d0 0b d1 8b c2 f7 d0 83 e0 01 c3
+24        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f02#f02_(1u,1u,1u)                               | 0f 1f 44 00 00 0b d1 8b c2 f7 d0 83 e0 01 41 23 c0 c3
+25        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f03#f03_(1u,1u,1u)                               | 0f 1f 44 00 00 44 89 44 24 18 0b d1 8b c2 f7 d0 83 e0 01 c3
+26        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f04#f04_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b c8 8b c1 f7 d0 83 e0 01 23 c2 c3
+27        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f05#f05_(1u,1u,1u)                               | 0f 1f 44 00 00 89 54 24 10 41 0b c8 8b c1 f7 d0 83 e0 01 c3
+28        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f06#f06_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 33 d0 23 c2 c3
+29        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f07#f07_(1u,1u,1u)                               | 0f 1f 44 00 00 41 23 d0 0b d1 8b c2 f7 d0 83 e0 01 c3
+30        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f08#f08_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 23 c2 41 23 c0 c3
+31        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f09#f09_(1u,1u,1u)                               | 0f 1f 44 00 00 41 33 d0 0b d1 8b c2 f7 d0 83 e0 01 c3
+32        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f0a#f0a_(1u,1u,1u)                               | 0f 1f 44 00 00 89 54 24 10 8b c1 f7 d0 83 e0 01 41 23 c0 c3
+33        | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f0b#f0b_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 f7 d2 83 e2 01 41 0b d0 23 c2 c3
+34        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f0c#f0c_(1u,1u,1u)                               | 0f 1f 44 00 00 44 89 44 24 18 8b c1 f7 d0 83 e0 01 23 c2 c3
+35        | 25      | CTC_RET_Zx3         | hex://logix/LogicOps?f0d#f0d_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 8b c8 f7 d1 83 e1 01 0b d1 23 c2 c3
+36        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f0e#f0e_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 0b d0 23 c2 c3
+37        | 22      | CTC_RET_Zx3         | hex://logix/LogicOps?f0f#f0f_(1u,1u,1u)                               | 0f 1f 44 00 00 89 54 24 10 44 89 44 24 18 8b c1 f7 d0 83 e0 01 c3
+38        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f10#f10_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b d0 8b c2 f7 d0 83 e0 01 23 c1 c3
+39        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f11#f11_(1u,1u,1u)                               | 0f 1f 44 00 00 89 4c 24 08 41 0b d0 8b c2 f7 d0 83 e0 01 c3
+40        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f12#f12_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 33 c8 23 c1 c3
+41        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f13#f13_(1u,1u,1u)                               | 0f 1f 44 00 00 41 23 c8 0b d1 8b c2 f7 d0 83 e0 01 c3
+42        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f14#f14_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 33 d1 23 c2 c3
+43        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f15#f15_(1u,1u,1u)                               | 0f 1f 44 00 00 23 d1 41 0b d0 8b c2 f7 d0 83 e0 01 c3
+44        | 30      | CTC_RET_Zx3         | hex://logix/LogicOps?f16#f16_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 41 0b c0 f7 d0 83 e0 01 41 33 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3
+45        | 30      | CTC_RET_Zx3         | hex://logix/LogicOps?f17#f17_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 41 0b c0 41 23 d0 23 c1 f7 d1 23 d1 0b c2 83 e0 01 f7 d0 83 e0 01 c3
+46        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f18#f18_(1u,1u,1u)                               | 0f 1f 44 00 00 33 d1 41 33 c8 8b c2 23 c1 c3
+47        | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f19#f19_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 41 33 c0 41 23 d0 23 d1 33 c2 f7 d0 83 e0 01 c3
+48        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f1a#f1a_(1u,1u,1u)                               | 0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 41 33 c8 23 c1 c3
+49        | 33      | CTC_RET_Zx3         | hex://logix/LogicOps?f1b#f1b_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 f7 d2 83 e2 01 41 23 c0 41 8b c8 f7 d1 23 d1 0b c2 83 e0 01 c3
+50        | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?f1c#f1c_(1u,1u,1u)                               | 0f 1f 44 00 00 44 23 c1 41 8b c0 f7 d0 83 e0 01 33 d1 23 c2 c3
+51        | 32      | CTC_RET_SBB         | hex://logix/LogicOps?f1d#f1d_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 8b c8 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3
+52        | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?f1e#f1e_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b d0 8b c1 33 c2 c3
+53        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f1f#f1f_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b d0 23 d1 8b c2 f7 d0 83 e0 01 c3
+54        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f20#f20_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 23 c1 41 23 c0 c3
+55        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f21#f21_(1u,1u,1u)                               | 0f 1f 44 00 00 41 33 c8 0b d1 8b c2 f7 d0 83 e0 01 c3
+56        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f22#f22_(1u,1u,1u)                               | 0f 1f 44 00 00 89 4c 24 08 8b c2 f7 d0 83 e0 01 41 23 c0 c3
+57        | 25      | CTC_RET_Zx3         | hex://logix/LogicOps?f23#f23_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 8b d1 f7 d2 83 e2 01 41 0b d0 23 c2 c3
+58        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f24#f24_(1u,1u,1u)                               | 0f 1f 44 00 00 33 ca 41 33 d0 8b c1 23 c2 c3
+59        | 27      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f25#f25_(1u,1u,1u)                               | 0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 33 d1 23 c2 c3
+60        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f26#f26_(1u,1u,1u)                               | 0f 1f 44 00 00 23 ca 8b c1 f7 d0 83 e0 01 41 33 d0 23 c2 c3
+61        | 35      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f27#f27_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 8b d1 f7 d2 83 e2 01 41 23 c0 41 8b c8 f7 d1 23 d1 0b c2 83 e0 01 c3
+62        | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?f28#f28_(1u,1u,1u)                               | 0f 1f 44 00 00 33 d1 41 8b c0 23 c2 c3
+63        | 32      | CTC_RET_SBB         | hex://logix/LogicOps?f29#f29_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 33 c1 0b d1 f7 d2 83 e2 01 41 23 c0 41 8b c8 f7 d1 23 d1 0b c2 83 e0 01 c3
+64        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f2a#f2a_(1u,1u,1u)                               | 0f 1f 44 00 00 23 d1 8b c2 f7 d0 83 e0 01 41 23 c0 c3
+65        | 37      | CTC_RET_Zx3         | hex://logix/LogicOps?f2b#f2b_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 23 c1 f7 d0 83 e0 01 0b d1 f7 d2 83 e2 01 41 23 c0 41 8b c8 f7 d1 23 d1 0b c2 83 e0 01 c3
+66        | 16      | CTC_RET_SBB         | hex://logix/LogicOps?f2c#f2c_(1u,1u,1u)                               | 0f 1f 44 00 00 44 0b c2 33 d1 41 8b c0 23 c2 c3
+67        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f2d#f2d_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 0b c2 33 c1 c3
+68        | 16      | CTC_RET_SBB         | hex://logix/LogicOps?f2e#f2e_(1u,1u,1u)                               | 0f 1f 44 00 00 44 0b c2 23 d1 41 8b c0 33 c2 c3
+69        | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f2f#f2f_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 f7 d2 83 e2 01 41 23 d0 0b c2 c3
+70        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f30#f30_(1u,1u,1u)                               | 0f 1f 44 00 00 44 89 44 24 18 8b c2 f7 d0 83 e0 01 23 c1 c3
+71        | 25      | CTC_RET_Zx3         | hex://logix/LogicOps?f31#f31_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 0b d1 23 c2 c3
+72        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f32#f32_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 0b c8 23 c1 c3
+73        | 22      | CTC_RET_Zx3         | hex://logix/LogicOps?f33#f33_(1u,1u,1u)                               | 0f 1f 44 00 00 89 4c 24 08 44 89 44 24 18 8b c2 f7 d0 83 e0 01 c3
+74        | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?f34#f34_(1u,1u,1u)                               | 0f 1f 44 00 00 44 23 c2 41 8b c0 f7 d0 83 e0 01 33 d1 23 c2 c3
+75        | 32      | CTC_RET_SBB         | hex://logix/LogicOps?f35#f35_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 8b d0 f7 d2 83 e2 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3
+76        | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?f36#f36_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b c8 8b c2 33 c1 c3
+77        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f37#f37_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b c8 23 d1 8b c2 f7 d0 83 e0 01 c3
+78        | 16      | CTC_RET_SBB         | hex://logix/LogicOps?f38#f38_(1u,1u,1u)                               | 0f 1f 44 00 00 44 0b c1 33 d1 41 8b c0 23 c2 c3
+79        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f39#f39_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 0b c1 33 c2 c3
+80        | 27      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f3a#f3a_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 23 c1 8b d1 f7 d2 41 23 d0 0b c2 83 e0 01 c3
+81        | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f3b#f3b_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 23 c0 f7 d2 83 e2 01 0b c2 c3
+82        | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f3c#f3c_(1u,1u,1u)                               | 0f 1f 44 00 00 44 89 44 24 18 8b c2 33 c1 c3
+83        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f3d#f3d_(1u,1u,1u)                               | 0f 1f 44 00 00 33 d1 41 0b c8 8b c1 f7 d0 83 e0 01 0b c2 c3
+84        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f3e#f3e_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 23 c0 33 d1 0b c2 c3
+85        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f3f#f3f_(1u,1u,1u)                               | 0f 1f 44 00 00 44 89 44 24 18 23 d1 8b c2 f7 d0 83 e0 01 c3
+86        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f40#f40_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 23 c1 23 c2 c3
+87        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f41#f41_(1u,1u,1u)                               | 0f 1f 44 00 00 33 d1 41 0b d0 8b c2 f7 d0 83 e0 01 c3
+88        | 16      | CTC_RET_SBB         | hex://logix/LogicOps?f42#f42_(1u,1u,1u)                               | 0f 1f 44 00 00 41 33 c8 41 33 d0 8b c1 23 c2 c3
+89        | 26      | CTC_RET_Zx3         | hex://logix/LogicOps?f43#f43_(1u,1u,1u)                               | 0f 1f 44 00 00 44 23 c1 41 8b c0 f7 d0 83 e0 01 f7 d2 83 e2 01 33 d1 23 c2 c3
+90        | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f44#f44_(1u,1u,1u)                               | 0f 1f 44 00 00 89 4c 24 08 41 8b c0 f7 d0 83 e0 01 23 c2 c3
+91        | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f45#f45_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 f7 d1 83 e1 01 0b d1 23 c2 c3
+92        | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?f46#f46_(1u,1u,1u)                               | 0f 1f 44 00 00 41 23 c8 8b c1 f7 d0 83 e0 01 41 33 d0 23 c2 c3
+93        | 30      | CTC_RET_Zx3         | hex://logix/LogicOps?f47#f47_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3
+94        | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?f48#f48_(1u,1u,1u)                               | 0f 1f 44 00 00 41 33 c8 8b c2 23 c1 c3
+95        | 30      | CTC_RET_Zx3         | hex://logix/LogicOps?f49#f49_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 41 33 c0 41 0b c8 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3
+96        | 16      | CTC_RET_SBB         | hex://logix/LogicOps?f4a#f4a_(1u,1u,1u)                               | 0f 1f 44 00 00 41 0b d0 41 33 c8 8b c2 23 c1 c3
+97        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f4b#f4b_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 41 0b c0 33 c1 c3
+98        | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f4c#f4c_(1u,1u,1u)                               | 0f 1f 44 00 00 41 23 c8 8b c1 f7 d0 83 e0 01 23 c2 c3
+99        | 35      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f4d#f4d_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 41 23 c0 f7 d0 83 e0 01 41 0b c8 f7 d1 83 e1 01 23 c2 f7 d2 23 d1 0b c2 83 e0 01 c3
+100       | 28      | CTC_RET_SBB         | hex://logix/LogicOps?f4e#f4e_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 23 c0 41 8b c8 f7 d1 23 d1 0b c2 83 e0 01 c3
+101       | 25      | CTC_RET_Zx3         | hex://logix/LogicOps?f4f#f4f_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c1 f7 d0 83 e0 01 41 8b c8 f7 d1 83 e1 01 23 d1 0b c2 c3
+102       | 20      | CTC_RET_SBB         | hex://logix/LogicOps?f50#f50_(1u,1u,1u)                               | 0f 1f 44 00 00 89 54 24 10 41 8b c0 f7 d0 83 e0 01 23 c1 c3
+103       | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f51#f51_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 f7 d2 83 e2 01 0b d1 23 c2 c3
+104       | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?f52#f52_(1u,1u,1u)                               | 0f 1f 44 00 00 41 23 d0 8b c2 f7 d0 83 e0 01 41 33 c8 23 c1 c3
+105       | 30      | CTC_RET_Zx3         | hex://logix/LogicOps?f53#f53_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 f7 d2 83 e2 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3
+106       | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f54#f54_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 0b d1 23 c2 c3
+107       | 22      | CTC_RET_Zx3         | hex://logix/LogicOps?f55#f55_(1u,1u,1u)                               | 0f 1f 44 00 00 89 4c 24 08 89 54 24 10 41 8b c0 f7 d0 83 e0 01 c3
+108       | 13      | CTC_RET_Zx3         | hex://logix/LogicOps?f56#f56_(1u,1u,1u)                               | 0f 1f 44 00 00 0b d1 41 8b c0 33 c2 c3
+109       | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f57#f57_(1u,1u,1u)                               | 0f 1f 44 00 00 0b d1 41 23 d0 8b c2 f7 d0 83 e0 01 c3
+110       | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f58#f58_(1u,1u,1u)                               | 0f 1f 44 00 00 0b d1 41 33 c8 8b c2 23 c1 c3
+111       | 18      | CTC_RET_Zx3         | hex://logix/LogicOps?f59#f59_(1u,1u,1u)                               | 0f 1f 44 00 00 8b c2 f7 d0 83 e0 01 0b c1 41 33 c0 c3
+112       | 15      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f5a#f5a_(1u,1u,1u)                               | 0f 1f 44 00 00 89 54 24 10 41 8b c0 33 c1 c3
+113       | 19      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f5b#f5b_(1u,1u,1u)                               | 0f 1f 44 00 00 44 33 c1 0b d1 83 f2 01 41 8b c0 0b c2 c3
+114       | 25      | CTC_RET_Zx3         | hex://logix/LogicOps?f5c#f5c_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 23 c1 f7 d1 23 d1 0b c2 83 e0 01 c3
+115       | 23      | CTC_RET_ZED_SBB     | hex://logix/LogicOps?f5d#f5d_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 f7 d1 83 e1 01 23 d1 0b c2 c3
+116       | 21      | CTC_RET_Zx3         | hex://logix/LogicOps?f5e#f5e_(1u,1u,1u)                               | 0f 1f 44 00 00 41 8b c0 f7 d0 83 e0 01 23 c2 41 33 c8 0b c1 c3

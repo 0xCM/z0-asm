@@ -1,10 +1,10 @@
-SpanClear_g[8u](span8u)    48 83 ec 28 90 48 8b 11 8b 49 08 48 63 c1 48 8b ca 48 8b d0 e8 07 c9 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[8i](span8i)    48 83 ec 28 90 48 8b 11 8b 49 08 48 63 c1 48 8b ca 48 8b d0 e8 c7 c8 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[16u](span16u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 d1 e2 48 8b c8 e8 87 c8 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[16i](span16i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 d1 e2 48 8b c8 e8 47 c8 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[32u](span32u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 06 c8 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[32i](span32i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 c6 c7 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[64u](span64u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 86 c7 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[64i](span64i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 46 c7 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[32f](span32f)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 06 c7 ec 4e 90 48 83 c4 28 c3
-SpanClear_g[64f](span64f)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 c6 c6 ec 4e 90 48 83 c4 28 c3
+SpanClear_g[8u](span8u)    48 83 ec 28 90 48 8b 11 8b 49 08 48 63 c1 48 8b ca 48 8b d0 e8 37 f6 04 4e 90 48 83 c4 28 c3
+SpanClear_g[8i](span8i)    48 83 ec 28 90 48 8b 11 8b 49 08 48 63 c1 48 8b ca 48 8b d0 e8 f7 f5 04 4e 90 48 83 c4 28 c3
+SpanClear_g[16u](span16u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 d1 e2 48 8b c8 e8 b7 f5 04 4e 90 48 83 c4 28 c3
+SpanClear_g[16i](span16i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 d1 e2 48 8b c8 e8 77 f5 04 4e 90 48 83 c4 28 c3
+SpanClear_g[32u](span32u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 36 f5 04 4e 90 48 83 c4 28 c3
+SpanClear_g[32i](span32i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 f6 f4 04 4e 90 48 83 c4 28 c3
+SpanClear_g[64u](span64u)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 b6 f4 04 4e 90 48 83 c4 28 c3
+SpanClear_g[64i](span64i)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 76 f4 04 4e 90 48 83 c4 28 c3
+SpanClear_g[32f](span32f)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 02 48 8b c8 e8 36 f4 04 4e 90 48 83 c4 28 c3
+SpanClear_g[64f](span64f)  48 83 ec 28 90 48 8b 01 8b 51 08 48 63 d2 48 c1 e2 03 48 8b c8 e8 f6 f3 04 4e 90 48 83 c4 28 c3

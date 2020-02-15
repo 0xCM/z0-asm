@@ -87,28 +87,6 @@ void vhi(Vector256<byte> src, out ulong x0, out ulong x1)
     IL_000D: ret
 }
 ------------------------------------------------------------------------------------------------------------------------
-// Z0.Pair`1<System.UInt64>& Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>,Z0.Pair`1<System.UInt64>&)
-// ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
-// AggressiveInlining
-ref Pair<ulong> vhi(Vector256<ulong> src, ref Pair<ulong> dst)
-{
-    IL_0000: ldarg.0
-    IL_0001: call System.Runtime.Intrinsics.Vector128`1<System.UInt64> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector256`1<System.UInt64>)
-    IL_0006: stloc.0
-    IL_0007: ldarg.1
-    IL_0008: ldloc.0
-    IL_0009: ldc.i4.0
-    IL_000A: call System.UInt64 System.Runtime.Intrinsics.Vector128::GetElement<System.UInt64>(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Int32)
-    IL_000F: stfld System.UInt64 Z0.Pair`1<System.UInt64>::A
-    IL_0014: ldarg.1
-    IL_0015: ldloc.0
-    IL_0016: ldc.i4.1
-    IL_0017: call System.UInt64 System.Runtime.Intrinsics.Vector128::GetElement<System.UInt64>(System.Runtime.Intrinsics.Vector128`1<System.UInt64>,System.Int32)
-    IL_001C: stfld System.UInt64 Z0.Pair`1<System.UInt64>::B
-    IL_0021: ldarg.1
-    IL_0022: ret
-}
-------------------------------------------------------------------------------------------------------------------------
 // System.Runtime.Intrinsics.Vector128`1<System.SByte> Z0.dinx::vhi(System.Runtime.Intrinsics.Vector128`1<System.SByte>)
 // Vector128<sbyte> vhi(Vector128<sbyte> src)
 // AggressiveInlining

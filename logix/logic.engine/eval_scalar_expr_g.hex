@@ -1,0 +1,8 @@
+eval_scalar_expr_g[8u]()   0f 1f 44 00 00 48 b8 08 58 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[8i]()   0f 1f 44 00 00 48 b8 a8 58 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[16u]()  0f 1f 44 00 00 48 b8 38 59 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[16i]()  0f 1f 44 00 00 48 b8 98 65 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[32u]()  0f 1f 44 00 00 48 b8 28 66 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[32i]()  0f 1f 44 00 00 48 b8 b8 66 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[64u]()  0f 1f 44 00 00 48 b8 48 67 6e c8 f7 7f 00 00 48 ff e0
+eval_scalar_expr_g[64i]()  0f 1f 44 00 00 48 b8 d8 67 6e c8 f7 7f 00 00 48 ff e0

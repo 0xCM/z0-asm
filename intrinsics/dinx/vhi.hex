@@ -5,7 +5,6 @@ vhi_(v256x32i)                  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 
 vhi_(v256x64i)                  c5 f8 77 66 90 c5 fd 10 02 c4 e3 7d 19 c0 01 c5 f9 11 01 48 8b c1 c5 f8 77 c3
 vhi_(v256x64u,64u~out,64u~out)  c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
 vhi_(v256x8u,64u~out,64u~out)   c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 49 89 00 c5 f8 77 c3
-vhi_(v256x64u)                  c5 f8 77 66 90 c5 fd 10 01 c4 e3 7d 19 c0 01 c4 e1 f9 7e c0 48 89 02 c4 e3 f9 16 c0 01 48 89 42 08 48 8b c2 c5 f8 77 c3
 vhi_(v128x8i)                   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
 vhi_(v128x8u)                   c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
 vhi_(v128x16i)                  c5 f8 77 66 90 c5 f9 10 02 c4 e3 f9 16 c0 01 c4 e1 f9 6e c0 c5 f9 11 01 48 8b c1 c3
