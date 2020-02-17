@@ -1,16 +1,16 @@
-vdec_(v128x8i)   c5 f8 77 66 90 48 b8 b1 57 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x8u)   c5 f8 77 66 90 48 b8 b1 57 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x16i)  c5 f8 77 66 90 48 b8 b1 54 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x16u)  c5 f8 77 66 90 48 b8 b1 54 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x32i)  c5 f8 77 66 90 48 b8 81 54 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x32u)  c5 f8 77 66 90 48 b8 81 54 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x64i)  c5 f8 77 66 90 48 b8 71 56 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v128x64u)  c5 f8 77 66 90 48 b8 71 56 d3 6f 4d 02 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3
-vdec_(v256x8i)   c5 f8 77 66 90 48 b8 41 56 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x8u)   c5 f8 77 66 90 48 b8 41 56 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x16i)  c5 f8 77 66 90 48 b8 c1 54 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x16u)  c5 f8 77 66 90 48 b8 c1 54 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x32i)  c5 f8 77 66 90 48 b8 61 54 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x32u)  c5 f8 77 66 90 48 b8 61 54 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x64i)  c5 f8 77 66 90 48 b8 91 55 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vdec_(v256x64u)  c5 f8 77 66 90 48 b8 91 55 d3 6f 4d 02 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v128x8i)   c5 f8 77 66 90 48 b8 35 58 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x8u)   c5 f8 77 66 90 48 b8 35 58 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f8 c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x16i)  c5 f8 77 66 90 48 b8 35 55 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x16u)  c5 f8 77 66 90 48 b8 35 55 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 f9 c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x32i)  c5 f8 77 66 90 48 b8 05 55 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x32u)  c5 f8 77 66 90 48 b8 05 55 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fa c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x64i)  c5 f8 77 66 90 48 b8 f5 56 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v128x64u)  c5 f8 77 66 90 48 b8 f5 56 e0 cf 77 01 00 00 c5 fb f0 00 c5 f9 10 0a c5 f1 fb c0 c5 f9 11 01 48 8b c1 c3
+vdec_(v256x8i)   c5 f8 77 66 90 48 b8 c5 56 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x8u)   c5 f8 77 66 90 48 b8 c5 56 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f8 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x16i)  c5 f8 77 66 90 48 b8 45 55 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x16u)  c5 f8 77 66 90 48 b8 45 55 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 f9 c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x32i)  c5 f8 77 66 90 48 b8 e5 54 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x32u)  c5 f8 77 66 90 48 b8 e5 54 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fa c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x64i)  c5 f8 77 66 90 48 b8 15 56 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vdec_(v256x64u)  c5 f8 77 66 90 48 b8 15 56 e0 cf 77 01 00 00 c5 ff f0 00 c5 fd 10 0a c5 f5 fb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

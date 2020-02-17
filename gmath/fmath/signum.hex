@@ -1,2 +1,2 @@
-signum_(32f)  c5 f8 77 66 90 48 b8 b8 1d 78 c7 f7 7f 00 00 48 ff e0
-signum_(64f)  c5 f8 77 66 90 48 b8 90 1d 78 c7 f7 7f 00 00 48 ff e0
+signum_(32f)  c5 f8 77 66 90 48 b8 c8 1e 78 c7 f7 7f 00 00 48 ff e0
+signum_(64f)  c5 f8 77 66 90 48 b8 a0 1e 78 c7 f7 7f 00 00 48 ff e0

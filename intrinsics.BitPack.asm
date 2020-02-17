@@ -1275,7 +1275,7 @@
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block64<byte> unpack8(byte packed, in Block64<byte> unpacked, int block)
-; unpack8_(8u,b64x8u~in,32i)[81] = {48 83 ec 28 90 41 c1 e0 03 41 8b c0 48 83 c0 08 44 8b 4a 08 49 3b c1 77 26 48 8b 02 4d 63 c0 49 03 c0 0f b6 c9 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 8b c2 48 83 c4 28 c3 e8 04 54 83 ff cc 00 00 00 19 04 01 00 04 42 00 00 40}
+; unpack8_(8u,b64x8u~in,32i)[81] = {48 83 ec 28 90 41 c1 e0 03 41 8b c0 48 83 c0 08 44 8b 4a 08 49 3b c1 77 26 48 8b 02 4d 63 c0 49 03 c0 0f b6 c9 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 8b c2 48 83 c4 28 c3 e8 f4 64 83 ff cc 00 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -1295,7 +1295,7 @@
 0037h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 003ah add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
-003fh call 7ff7c77757b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 54 83 ff}
+003fh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 64 83 ff}
 0044h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0045h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0047h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -1305,7 +1305,7 @@
 0050h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block128<byte> unpack8(ushort packed, in Block128<byte> unpacked, int block)
-; unpack8_(16u,b128x8u~in,32i)[265] = {48 83 ec 28 90 41 c1 e0 04 41 8b c0 48 83 c0 10 44 8b 4a 08 49 3b c1 77 3c 48 8b 02 4d 63 c0 49 03 c0 0f b7 c9 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 48 83 c0 08 c1 f9 08 0f b6 c9 c4 c2 f3 f5 c9 48 89 08 48 8b c2 48 83 c4 28 c3 e8 8e 53 83 ff cc 00 19 04 01 00 04 42 00 00 40 00 00 00 00 bf ff c7 f7 7f 00 00 48 83 ec 28 90 41 c1 e0 05 41 8b c0 48 83 c0 20 44 8b 4a 08 49 3b c1 77 71 48 8b 02 4d 63 c0 49 03 c0 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 ca 48 89 08 48 8b c2 48 83 c4 28 c3 e8 e9 52 83 ff cc 19 04 01 00 04 42 00 00 40}
+; unpack8_(16u,b128x8u~in,32i)[265] = {48 83 ec 28 90 41 c1 e0 04 41 8b c0 48 83 c0 10 44 8b 4a 08 49 3b c1 77 3c 48 8b 02 4d 63 c0 49 03 c0 0f b7 c9 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 48 83 c0 08 c1 f9 08 0f b6 c9 c4 c2 f3 f5 c9 48 89 08 48 8b c2 48 83 c4 28 c3 e8 7e 64 83 ff cc 00 19 04 01 00 04 42 00 00 40 00 00 00 d0 74 c2 c6 f7 7f 00 00 48 83 ec 28 90 41 c1 e0 05 41 8b c0 48 83 c0 20 44 8b 4a 08 49 3b c1 77 71 48 8b 02 4d 63 c0 49 03 c0 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 ca 48 89 08 48 8b c2 48 83 c4 28 c3 e8 d9 63 83 ff cc 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -1331,19 +1331,20 @@
 004dh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0050h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
-0055h call 7ff7c77757b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 53 83 ff}
+0055h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e 64 83 ff}
 005ah int 3                                   ; INT3 || CC || encoded[1]{cc}
 005bh add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
 005dh add al,1                                ; ADD AL, imm8 || 04 ib || encoded[2]{04 01}
 005fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
 0062h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0064h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
-0067h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-0069h mov edi,7ff7c7ffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{bf ff c7 f7 7f}
-006eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-0070h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
-0074h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0075h shl r8d,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 05}
+0067h add al,dl                               ; ADD r/m8, r8 || 00 /r || encoded[2]{00 d0}
+0069h je short 002dh                          ; JE rel8 || 74 cb || encoded[2]{74 c2}
+006bh (bad)                                   ; <invalid> || <invalid> || encoded[2]{c6 f7}
+006dh jg short 006fh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
+006fh add [rax-7dh],cl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 48 83}
+0072h in al,dx                                ; IN AL, DX || EC || encoded[1]{ec}
+0073h sub [rax+5e0c141h],dl                   ; SUB r/m8, r8 || 28 /r || encoded[6]{28 90 41 c1 e0 05}
 0079h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
 007ch add rax,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 20}
 0080h mov r9d,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 4a 08}
@@ -1377,7 +1378,7 @@
 00f2h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 00f5h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00f9h ret                                     ; RET || C3 || encoded[1]{c3}
-00fah call 7ff7c77757b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 52 83 ff}
+00fah call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 63 83 ff}
 00ffh int 3                                   ; INT3 || CC || encoded[1]{cc}
 0100h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
 0103h add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
@@ -1385,7 +1386,7 @@
 0108h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block256<byte> unpack8(uint packed, in Block256<byte> unpacked, int block)
-; unpack8_(32u,b256x8u~in,32i)[153] = {48 83 ec 28 90 41 c1 e0 05 41 8b c0 48 83 c0 20 44 8b 4a 08 49 3b c1 77 71 48 8b 02 4d 63 c0 49 03 c0 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 ca 48 89 08 48 8b c2 48 83 c4 28 c3 e8 e9 52 83 ff cc 19 04 01 00 04 42 00 00 40}
+; unpack8_(32u,b256x8u~in,32i)[153] = {48 83 ec 28 90 41 c1 e0 05 41 8b c0 48 83 c0 20 44 8b 4a 08 49 3b c1 77 71 48 8b 02 4d 63 c0 49 03 c0 44 0f b6 c1 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 ca 48 89 08 48 8b c2 48 83 c4 28 c3 e8 d9 63 83 ff cc 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -1423,7 +1424,7 @@
 0082h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0085h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0089h ret                                     ; RET || C3 || encoded[1]{c3}
-008ah call 7ff7c77757b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 52 83 ff}
+008ah call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 63 83 ff}
 008fh int 3                                   ; INT3 || CC || encoded[1]{cc}
 0090h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
 0093h add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
@@ -1431,7 +1432,7 @@
 0098h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; ref Block512<byte> unpack8(ulong packed, in Block512<byte> unpacked, int block)
-; unpack8_(64u,b512x8u~in,32i)[249] = {48 83 ec 28 90 41 c1 e0 06 41 8b c0 48 83 c0 40 44 8b 4a 08 49 3b c1 0f 87 ca 00 00 00 48 8b 02 4d 63 c0 49 03 c0 44 8b c1 45 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4c 89 08 4c 8d 48 08 45 8b d0 41 c1 ea 08 45 0f b6 d2 49 bb 01 01 01 01 01 01 01 01 c4 42 ab f5 d3 4d 89 11 4c 8d 48 10 45 8b d0 41 c1 ea 10 45 0f b6 d2 c4 42 ab f5 d3 4d 89 11 4c 8d 48 18 41 c1 e8 18 45 0f b6 c0 c4 42 bb f5 c3 4d 89 01 48 83 c0 20 48 c1 e9 20 44 0f b6 c1 c4 42 bb f5 c3 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 c4 42 b3 f5 cb 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 cb 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 cb 48 89 08 48 8b c2 48 83 c4 28 c3 e8 dc 51 83 ff cc 00 00 00 19 04 01 00 04 42 00 00 40}
+; unpack8_(64u,b512x8u~in,32i)[249] = {48 83 ec 28 90 41 c1 e0 06 41 8b c0 48 83 c0 40 44 8b 4a 08 49 3b c1 0f 87 ca 00 00 00 48 8b 02 4d 63 c0 49 03 c0 44 8b c1 45 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4c 89 08 4c 8d 48 08 45 8b d0 41 c1 ea 08 45 0f b6 d2 49 bb 01 01 01 01 01 01 01 01 c4 42 ab f5 d3 4d 89 11 4c 8d 48 10 45 8b d0 41 c1 ea 10 45 0f b6 d2 c4 42 ab f5 d3 4d 89 11 4c 8d 48 18 41 c1 e8 18 45 0f b6 c0 c4 42 bb f5 c3 4d 89 01 48 83 c0 20 48 c1 e9 20 44 0f b6 c1 c4 42 bb f5 c3 4c 89 00 4c 8d 40 08 44 8b c9 41 c1 e9 08 45 0f b6 c9 c4 42 b3 f5 cb 4d 89 08 4c 8d 40 10 44 8b c9 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 cb 4d 89 08 48 83 c0 18 c1 e9 18 0f b6 c9 c4 c2 f3 f5 cb 48 89 08 48 8b c2 48 83 c4 28 c3 e8 cc 62 83 ff cc 00 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -1492,7 +1493,7 @@
 00dfh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 00e2h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00e6h ret                                     ; RET || C3 || encoded[1]{c3}
-00e7h call 7ff7c77757b8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 51 83 ff}
+00e7h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc 62 83 ff}
 00ech int 3                                   ; INT3 || CC || encoded[1]{cc}
 00edh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 00efh add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}

@@ -1,8 +1,8 @@
-dec_g[8u]()   56 48 83 ec 20 e8 e6 eb ff ff 0f b6 48 08 ff c9 40 0f b6 f1 48 b9 d8 0e cd c8 f7 7f 00 00 e8 2d 98 b7 5e 40 88 70 08 48 83 c4 20 5e c3
-dec_g[8i]()   56 48 83 ec 20 e8 e6 eb ff ff 48 0f be 48 08 ff c9 48 0f be f1 48 b9 48 12 cd c8 f7 7f 00 00 e8 dc 97 b7 5e 40 88 70 08 48 83 c4 20 5e c3
-dec_g[16u]()  56 48 83 ec 20 e8 c6 eb ff ff 0f b7 48 08 ff c9 0f b7 f1 48 b9 58 15 cd c8 f7 7f 00 00 e8 8e 97 b7 5e 66 89 70 08 48 83 c4 20 5e c3
-dec_g[16i]()  56 48 83 ec 20 e8 b6 eb ff ff 48 0f bf 48 08 ff c9 48 0f bf f1 48 b9 68 18 cd c8 f7 7f 00 00 e8 4c 97 b7 5e 66 89 70 08 48 83 c4 20 5e c3
-dec_g[32u]()  56 48 83 ec 20 e8 96 eb ff ff 8b 70 08 ff ce 48 b9 78 1b cd c8 f7 7f 00 00 e8 02 97 b7 5e 89 70 08 48 83 c4 20 5e c3
-dec_g[32i]()  56 48 83 ec 20 e8 d6 f9 ff ff 8b 70 08 ff ce 48 b9 88 1e cd c8 f7 7f 00 00 e8 c2 96 b7 5e 89 70 08 48 83 c4 20 5e c3
-dec_g[64u]()  56 48 83 ec 20 e8 c6 f9 ff ff 48 8b 70 08 48 ff ce 48 b9 98 21 cd c8 f7 7f 00 00 e8 80 96 b7 5e 48 89 70 08 48 83 c4 20 5e c3
-dec_g[64i]()  56 48 83 ec 20 e8 b6 f9 ff ff 48 8b 70 08 48 ff ce 48 b9 a8 24 cd c8 f7 7f 00 00 e8 40 96 b7 5e 48 89 70 08 48 83 c4 20 5e c3
+dec_g[8u]()   56 48 83 ec 20 e8 d6 ea ff ff 0f b6 48 08 ff c9 40 0f b6 f1 48 b9 a0 4c ca c8 f7 7f 00 00 e8 cd b1 b7 5e 40 88 70 08 48 83 c4 20 5e c3
+dec_g[8i]()   56 48 83 ec 20 e8 d6 ea ff ff 48 0f be 48 08 ff c9 48 0f be f1 48 b9 10 50 ca c8 f7 7f 00 00 e8 7c b1 b7 5e 40 88 70 08 48 83 c4 20 5e c3
+dec_g[16u]()  56 48 83 ec 20 e8 b6 ea ff ff 0f b7 48 08 ff c9 0f b7 f1 48 b9 20 53 ca c8 f7 7f 00 00 e8 2e b1 b7 5e 66 89 70 08 48 83 c4 20 5e c3
+dec_g[16i]()  56 48 83 ec 20 e8 a6 ea ff ff 48 0f bf 48 08 ff c9 48 0f bf f1 48 b9 30 56 ca c8 f7 7f 00 00 e8 ec b0 b7 5e 66 89 70 08 48 83 c4 20 5e c3
+dec_g[32u]()  56 48 83 ec 20 e8 86 ea ff ff 8b 70 08 ff ce 48 b9 40 59 ca c8 f7 7f 00 00 e8 a2 b0 b7 5e 89 70 08 48 83 c4 20 5e c3
+dec_g[32i]()  56 48 83 ec 20 e8 d6 f9 ff ff 8b 70 08 ff ce 48 b9 50 5c ca c8 f7 7f 00 00 e8 62 b0 b7 5e 89 70 08 48 83 c4 20 5e c3
+dec_g[64u]()  56 48 83 ec 20 e8 c6 f9 ff ff 48 8b 70 08 48 ff ce 48 b9 60 5f ca c8 f7 7f 00 00 e8 20 b0 b7 5e 48 89 70 08 48 83 c4 20 5e c3
+dec_g[64i]()  56 48 83 ec 20 e8 b6 f9 ff ff 48 8b 70 08 48 ff ce 48 b9 70 62 ca c8 f7 7f 00 00 e8 e0 af b7 5e 48 89 70 08 48 83 c4 20 5e c3

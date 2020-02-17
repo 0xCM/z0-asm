@@ -1,16 +1,16 @@
-vinc_g[8u](v128x8u)    c5 f8 77 66 90 c5 f9 10 02 48 b8 b1 57 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fc c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[8i](v128x8i)    c5 f8 77 66 90 c5 f9 10 02 48 b8 b1 57 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fc c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[16u](v128x16u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 b1 54 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fd c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[16i](v128x16i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 b1 54 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fd c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[32u](v128x32u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 81 54 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fe c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[32i](v128x32i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 81 54 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 fe c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[64u](v128x64u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 71 56 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 d4 c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[64i](v128x64i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 71 56 d3 6f 4d 02 00 00 c5 fb f0 08 c5 f9 d4 c1 c5 f9 11 01 48 8b c1 c3
-vinc_g[8u](v256x8u)    c5 f8 77 66 90 c5 fd 10 02 48 b8 41 56 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fc c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[8i](v256x8i)    c5 f8 77 66 90 c5 fd 10 02 48 b8 41 56 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fc c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[16u](v256x16u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 c1 54 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fd c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[16i](v256x16i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 c1 54 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fd c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[32u](v256x32u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 61 54 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fe c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[32i](v256x32i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 61 54 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd fe c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[64u](v256x64u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 91 55 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vinc_g[64i](v256x64i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 91 55 d3 6f 4d 02 00 00 c5 ff f0 08 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[8u](v128x8u)    c5 f8 77 66 90 c5 f9 10 02 48 b8 35 58 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fc c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[8i](v128x8i)    c5 f8 77 66 90 c5 f9 10 02 48 b8 35 58 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fc c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[16u](v128x16u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 35 55 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fd c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[16i](v128x16i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 35 55 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fd c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[32u](v128x32u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 05 55 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fe c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[32i](v128x32i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 05 55 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 fe c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[64u](v128x64u)  c5 f8 77 66 90 c5 f9 10 02 48 b8 f5 56 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 d4 c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[64i](v128x64i)  c5 f8 77 66 90 c5 f9 10 02 48 b8 f5 56 e0 cf 77 01 00 00 c5 fb f0 08 c5 f9 d4 c1 c5 f9 11 01 48 8b c1 c3
+vinc_g[8u](v256x8u)    c5 f8 77 66 90 c5 fd 10 02 48 b8 c5 56 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fc c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[8i](v256x8i)    c5 f8 77 66 90 c5 fd 10 02 48 b8 c5 56 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fc c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[16u](v256x16u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 45 55 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fd c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[16i](v256x16i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 45 55 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fd c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[32u](v256x32u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 e5 54 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fe c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[32i](v256x32i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 e5 54 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd fe c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[64u](v256x64u)  c5 f8 77 66 90 c5 fd 10 02 48 b8 15 56 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+vinc_g[64i](v256x64i)  c5 f8 77 66 90 c5 fd 10 02 48 b8 15 56 e0 cf 77 01 00 00 c5 ff f0 08 c5 fd d4 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3

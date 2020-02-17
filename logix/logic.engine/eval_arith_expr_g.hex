@@ -1,8 +1,8 @@
-eval_arith_expr_g[8u]()   0f 1f 44 00 00 48 b8 10 7d 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[8i]()   0f 1f 44 00 00 48 b8 60 7d 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[16u]()  0f 1f 44 00 00 48 b8 a0 7d 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[16i]()  0f 1f 44 00 00 48 b8 e0 7d 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[32u]()  0f 1f 44 00 00 48 b8 98 80 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[32i]()  0f 1f 44 00 00 48 b8 d8 80 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[64u]()  0f 1f 44 00 00 48 b8 18 81 6e c8 f7 7f 00 00 48 ff e0
-eval_arith_expr_g[64i]()  0f 1f 44 00 00 48 b8 58 81 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[8u]()   0f 1f 44 00 00 48 b8 f0 60 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[8i]()   0f 1f 44 00 00 48 b8 40 61 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[16u]()  0f 1f 44 00 00 48 b8 80 61 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[16i]()  0f 1f 44 00 00 48 b8 c0 61 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[32u]()  0f 1f 44 00 00 48 b8 78 64 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[32i]()  0f 1f 44 00 00 48 b8 b8 64 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[64u]()  0f 1f 44 00 00 48 b8 f8 64 6e c8 f7 7f 00 00 48 ff e0
+eval_arith_expr_g[64i]()  0f 1f 44 00 00 48 b8 38 65 6e c8 f7 7f 00 00 48 ff e0
