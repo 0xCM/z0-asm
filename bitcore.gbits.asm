@@ -3164,7 +3164,7 @@
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<byte>(byte src, Span<char> dst, int offset)
-; bitchars_g[8u](8u,spanchar,32i)[46] = {c5 f8 77 66 90 48 8b 02 0f b6 d1 c1 e2 04 48 63 d2 48 b9 ad 6e fc e8 95 01 00 00 48 03 d1 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_g[8u](8u,spanchar,32i)[46] = {c5 f8 77 66 90 48 8b 02 0f b6 d1 c1 e2 04 48 63 d2 48 b9 31 64 d5 6e 2f 02 00 00 48 03 d1 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3172,7 +3172,7 @@
 0008h movzx edx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d1}
 000bh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 000eh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0011h mov rcx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 ad 6e fc e8 95 01 00 00}
+0011h mov rcx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 31 64 d5 6e 2f 02 00 00}
 001bh add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 001eh movsxd rcx,r8d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 c8}
 0021h lea rax,[rax+rcx*2]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 48}
@@ -3181,7 +3181,7 @@
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<sbyte>(sbyte src, Span<char> dst, int offset)
-; bitchars_g[8i](8i,spanchar,32i)[50] = {c5 f8 77 66 90 48 8b 02 48 0f be d1 0f b6 d2 c1 e2 04 48 63 d2 48 b9 ad 6e fc e8 95 01 00 00 48 03 d1 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_g[8i](8i,spanchar,32i)[50] = {c5 f8 77 66 90 48 8b 02 48 0f be d1 0f b6 d2 c1 e2 04 48 63 d2 48 b9 31 64 d5 6e 2f 02 00 00 48 03 d1 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3190,7 +3190,7 @@
 000ch movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 000fh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0012h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0015h mov rcx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 ad 6e fc e8 95 01 00 00}
+0015h mov rcx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 31 64 d5 6e 2f 02 00 00}
 001fh add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 0022h movsxd rcx,r8d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 c8}
 0025h lea rax,[rax+rcx*2]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 48}
@@ -3199,7 +3199,7 @@
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<ushort>(ushort src, Span<char> dst, int offset)
-; bitchars_g[16u](16u,spanchar,32i)[94] = {c5 f8 77 66 90 48 8b 02 0f b7 d1 0f b6 ca c1 e1 04 48 63 c9 49 b9 ad 6e fc e8 95 01 00 00 49 03 c9 4d 63 c8 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 ad 6e fc e8 95 01 00 00 48 03 d1 41 83 c0 08 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_g[16u](16u,spanchar,32i)[94] = {c5 f8 77 66 90 48 8b 02 0f b7 d1 0f b6 ca c1 e1 04 48 63 c9 49 b9 31 64 d5 6e 2f 02 00 00 49 03 c9 4d 63 c8 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 31 64 d5 6e 2f 02 00 00 48 03 d1 41 83 c0 08 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3208,7 +3208,7 @@
 000bh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
 000eh shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0011h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0014h mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+0014h mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 001eh add rcx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 c9}
 0021h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
 0024h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
@@ -3218,7 +3218,7 @@
 0034h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 0037h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 003ah movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003dh mov rcx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 ad 6e fc e8 95 01 00 00}
+003dh mov rcx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 31 64 d5 6e 2f 02 00 00}
 0047h add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 004ah add r8d,8                               ; ADD r/m32, imm8 || o32 83 /0 ib || encoded[4]{41 83 c0 08}
 004eh movsxd rcx,r8d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 c8}
@@ -3228,7 +3228,7 @@
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<short>(short src, Span<char> dst, int offset)
-; bitchars_g[16i](16i,spanchar,32i)[98] = {c5 f8 77 66 90 48 8b 02 48 0f bf d1 0f b7 d2 0f b6 ca c1 e1 04 48 63 c9 49 b9 ad 6e fc e8 95 01 00 00 49 03 c9 4d 63 c8 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 ad 6e fc e8 95 01 00 00 48 03 d1 41 83 c0 08 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
+; bitchars_g[16i](16i,spanchar,32i)[98] = {c5 f8 77 66 90 48 8b 02 48 0f bf d1 0f b7 d2 0f b6 ca c1 e1 04 48 63 c9 49 b9 31 64 d5 6e 2f 02 00 00 49 03 c9 4d 63 c8 4e 8d 0c 48 c5 fa 6f 01 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 48 b9 31 64 d5 6e 2f 02 00 00 48 03 d1 41 83 c0 08 49 63 c8 48 8d 04 48 c5 fa 6f 02 c5 fa 7f 00 c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3238,7 +3238,7 @@
 000fh movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
 0012h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0015h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0018h mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+0018h mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0022h add rcx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 c9}
 0025h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
 0028h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
@@ -3248,7 +3248,7 @@
 0038h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 003bh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 003eh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0041h mov rcx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 ad 6e fc e8 95 01 00 00}
+0041h mov rcx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 31 64 d5 6e 2f 02 00 00}
 004bh add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 004eh add r8d,8                               ; ADD r/m32, imm8 || o32 83 /0 ib || encoded[4]{41 83 c0 08}
 0052h movsxd rcx,r8d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 c8}
@@ -3258,7 +3258,7 @@
 0061h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<uint>(uint src, Span<char> dst, int offset)
-; bitchars_g[32u](32u,spanchar,32i)[81] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd c3}
+; bitchars_g[32u](32u,spanchar,32i)[81] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3273,7 +3273,7 @@
 001dh movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0021h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0024h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0027h mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+0027h mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0031h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 0034h add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 0037h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3286,7 +3286,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<int>(int src, Span<char> dst, int offset)
-; bitchars_g[32i](32i,spanchar,32i)[81] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd c3}
+; bitchars_g[32i](32i,spanchar,32i)[81] = {c5 f8 77 66 90 48 8b 02 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3301,7 +3301,7 @@
 001dh movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0021h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0024h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0027h mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+0027h mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0031h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 0034h add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 0037h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3314,7 +3314,7 @@
 0050h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<ulong>(ulong src, Span<char> dst, int offset)
-; bitchars_g[64u](64u,spanchar,32i)[82] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd c3}
+; bitchars_g[64u](64u,spanchar,32i)[82] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3329,7 +3329,7 @@
 001eh movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0022h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0025h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0028h mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+0028h mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0032h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 0035h add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 0038h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3342,7 +3342,7 @@
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<long>(long src, Span<char> dst, int offset)
-; bitchars_g[64i](64i,spanchar,32i)[82] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd c3}
+; bitchars_g[64i](64i,spanchar,32i)[82] = {c5 f8 77 66 90 48 8b 02 48 8b d1 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd c3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3357,7 +3357,7 @@
 001eh movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0022h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0025h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0028h mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+0028h mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0032h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 0035h add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 0038h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3370,7 +3370,7 @@
 0051h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<float>(float src, Span<char> dst, int offset)
-; bitchars_g[32f](32f,spanchar,32i)[93] = {50 c5 f8 77 90 48 8b 02 c5 fa 11 44 24 04 8b 54 24 04 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c4 08 c3}
+; bitchars_g[32f](32f,spanchar,32i)[93] = {50 c5 f8 77 90 48 8b 02 c5 fa 11 44 24 04 8b 54 24 04 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3387,7 +3387,7 @@
 0025h movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0029h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 002ch movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002fh mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+002fh mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0039h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 003ch add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 003fh movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3401,7 +3401,7 @@
 005ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void bitchars<double>(double src, Span<char> dst, int offset)
-; bitchars_g[64f](64f,spanchar,32i)[92] = {50 c5 f8 77 90 48 8b 02 c5 fb 11 04 24 48 8b 14 24 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb ad 6e fc e8 95 01 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c4 08 c3}
+; bitchars_g[64f](64f,spanchar,32i)[92] = {50 c5 f8 77 90 48 8b 02 c5 fb 11 04 24 48 8b 14 24 45 33 c9 45 8b d1 41 c1 e2 03 41 8b ca 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 04 48 63 c9 49 bb 31 64 d5 6e 2f 02 00 00 49 03 cb 45 03 d0 4d 63 d2 4e 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c4 08 c3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3418,7 +3418,7 @@
 0024h movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0028h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 002bh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002eh mov r11,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb ad 6e fc e8 95 01 00 00}
+002eh mov r11,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 31 64 d5 6e 2f 02 00 00}
 0038h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 003bh add r10d,r8d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 d0}
 003eh movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
@@ -3432,7 +3432,7 @@
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<byte>(in byte src)
-; bitchars_g[8u](8u~in)[97] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 ed f3 f3 5e 0f b6 17 48 8d 48 10 0f b6 d2 c1 e2 04 48 63 d2 49 b8 ad 6e fc e8 95 01 00 00 49 03 d0 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[8u](8u~in)[97] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 2d 04 f6 5e 0f b6 17 48 8d 48 10 0f b6 d2 c1 e2 04 48 63 d2 49 b8 31 64 d5 6e 2f 02 00 00 49 03 d0 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3440,15 +3440,15 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed f3 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 04 f6 5e}
 0023h movzx edx,byte ptr [rdi]                ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 17}
 0026h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 002ah movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 002dh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0030h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0033h mov r8,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 ad 6e fc e8 95 01 00 00}
+0033h mov r8,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 31 64 d5 6e 2f 02 00 00}
 003dh add rdx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d0}
 0040h vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
 0044h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -3463,7 +3463,7 @@
 0060h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<sbyte>(in sbyte src)
-; bitchars_g[8i](8i~in)[102] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 6d f3 f3 5e 48 0f be 17 48 8d 48 10 48 0f be d2 0f b6 d2 c1 e2 04 48 63 d2 49 b8 ad 6e fc e8 95 01 00 00 49 03 d0 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[8i](8i~in)[102] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 ad 03 f6 5e 48 0f be 17 48 8d 48 10 48 0f be d2 0f b6 d2 c1 e2 04 48 63 d2 49 b8 31 64 d5 6e 2f 02 00 00 49 03 d0 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3471,16 +3471,16 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d f3 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad 03 f6 5e}
 0023h movsx rdx,byte ptr [rdi]                ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be 17}
 0027h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 002bh movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
 002fh movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 0032h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0035h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0038h mov r8,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 ad 6e fc e8 95 01 00 00}
+0038h mov r8,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 31 64 d5 6e 2f 02 00 00}
 0042h add rdx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d0}
 0045h vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
 0049h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -3495,7 +3495,7 @@
 0065h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<ushort>(in ushort src)
-; bitchars_g[16u](16u~in)[144] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 ed f2 f3 5e 0f b7 17 48 8d 48 10 0f b7 d2 44 0f b6 c2 41 c1 e0 04 4d 63 c0 49 b9 ad 6e fc e8 95 01 00 00 4d 03 c1 4c 8b c9 c4 c1 7a 6f 00 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 49 b8 ad 6e fc e8 95 01 00 00 49 03 d0 48 83 c1 10 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[16u](16u~in)[144] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 2d 03 f6 5e 0f b7 17 48 8d 48 10 0f b7 d2 44 0f b6 c2 41 c1 e0 04 4d 63 c0 49 b9 31 64 d5 6e 2f 02 00 00 4d 03 c1 4c 8b c9 c4 c1 7a 6f 00 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 49 b8 31 64 d5 6e 2f 02 00 00 49 03 d0 48 83 c1 10 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3503,16 +3503,16 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed f2 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 03 f6 5e}
 0023h movzx edx,word ptr [rdi]                ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 17}
 0026h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 002ah movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
 002dh movzx r8d,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c2}
 0031h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 0035h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-0038h mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+0038h mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0042h add r8,r9                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c1}
 0045h mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 0048h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -3521,7 +3521,7 @@
 0055h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 0058h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 005bh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-005eh mov r8,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 ad 6e fc e8 95 01 00 00}
+005eh mov r8,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 31 64 d5 6e 2f 02 00 00}
 0068h add rdx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d0}
 006bh add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 006fh vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -3537,7 +3537,7 @@
 008fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<short>(in short src)
-; bitchars_g[16i](16i~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 3d f2 f3 5e 48 0f bf 17 48 8d 48 10 48 0f bf d2 0f b7 d2 44 0f b6 c2 41 c1 e0 04 4d 63 c0 49 b9 ad 6e fc e8 95 01 00 00 4d 03 c1 4c 8b c9 c4 c1 7a 6f 00 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 49 b8 ad 6e fc e8 95 01 00 00 49 03 d0 48 83 c1 10 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[16i](16i~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 7d 02 f6 5e 48 0f bf 17 48 8d 48 10 48 0f bf d2 0f b7 d2 44 0f b6 c2 41 c1 e0 04 4d 63 c0 49 b9 31 64 d5 6e 2f 02 00 00 4d 03 c1 4c 8b c9 c4 c1 7a 6f 00 c4 c1 7a 7f 01 c1 fa 08 0f b6 d2 c1 e2 04 48 63 d2 49 b8 31 64 d5 6e 2f 02 00 00 49 03 d0 48 83 c1 10 c5 fa 6f 02 c5 fa 7f 01 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3545,9 +3545,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d f2 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 02 f6 5e}
 0023h movsx rdx,word ptr [rdi]                ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf 17}
 0027h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 002bh movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
@@ -3555,7 +3555,7 @@
 0032h movzx r8d,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c2}
 0036h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 003ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-003dh mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+003dh mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0047h add r8,r9                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c1}
 004ah mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 004dh vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -3564,7 +3564,7 @@
 005ah movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
 005dh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0060h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0063h mov r8,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 ad 6e fc e8 95 01 00 00}
+0063h mov r8,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 31 64 d5 6e 2f 02 00 00}
 006dh add rdx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d0}
 0070h add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 0074h vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -3580,7 +3580,7 @@
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<uint>(in uint src)
-; bitchars_g[32u](32u~in)[136] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 8d f1 f3 5e 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[32u](32u~in)[136] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 cd 01 f6 5e 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3588,9 +3588,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d f1 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 01 f6 5e}
 0023h mov edx,[rdi]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 17}
 0025h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
 0029h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
@@ -3601,7 +3601,7 @@
 0038h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 003ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 003fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0042h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0042h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 004ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 004fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0052h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3623,7 +3623,7 @@
 0087h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<int>(in int src)
-; bitchars_g[32i](32i~in)[136] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 dd f0 f3 5e 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[32i](32i~in)[136] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 1d 01 f6 5e 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3631,9 +3631,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f0 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d 01 f6 5e}
 0023h mov edx,[rdi]                           ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b 17}
 0025h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
 0029h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
@@ -3644,7 +3644,7 @@
 0038h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 003ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 003fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0042h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0042h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 004ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 004fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0052h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3666,7 +3666,7 @@
 0087h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<ulong>(in ulong src)
-; bitchars_g[64u](64u~in)[137] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 2d f0 f3 5e 48 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[64u](64u~in)[137] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 6d 00 f6 5e 48 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3674,9 +3674,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d f0 f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d 00 f6 5e}
 0023h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0026h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
 002ah xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
@@ -3687,7 +3687,7 @@
 0039h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 003dh shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0040h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0043h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0043h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 004dh add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0050h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0053h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3709,7 +3709,7 @@
 0088h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<long>(in long src)
-; bitchars_g[64i](64i~in)[137] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 7d ef f3 5e 48 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[64i](64i~in)[137] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 bd ff f5 5e 48 8b 17 4c 8d 40 10 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3717,9 +3717,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d ef f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd ff f5 5e}
 0023h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0026h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
 002ah xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
@@ -3730,7 +3730,7 @@
 0039h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 003dh shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0040h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0043h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0043h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 004dh add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0050h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0053h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3752,7 +3752,7 @@
 0088h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<float>(in float src)
-; bitchars_g[32f](32f~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 cd ee f3 5e c5 fa 10 07 48 8d 50 10 c5 fa 11 44 24 24 44 8b 44 24 24 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[32f](32f~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 0d ff f5 5e c5 fa 10 07 48 8d 50 10 c5 fa 11 44 24 24 44 8b 44 24 24 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3760,9 +3760,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd ee f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d ff f5 5e}
 0023h vmovss xmm0,dword ptr [rdi]             ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[4]{c5 fa 10 07}
 0027h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 002bh vmovss dword ptr [rsp+24h],xmm0         ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 24}
@@ -3775,7 +3775,7 @@
 0045h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0049h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 004ch movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-004fh mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+004fh mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 0059h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 005ch mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 005fh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3797,7 +3797,7 @@
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<char> bitchars<double>(in double src)
-; bitchars_g[64f](64f~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 1d ee f3 5e c5 fb 10 07 48 8d 50 10 c5 fb 11 44 24 20 4c 8b 44 24 20 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; bitchars_g[64f](64f~in)[149] = {57 56 48 83 ec 28 c5 f8 77 48 8b f1 48 8b fa 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 5d fe f5 5e c5 fb 10 07 48 8d 50 10 c5 fb 11 44 24 20 4c 8b 44 24 20 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3805,9 +3805,9 @@
 0006h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0009h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 000ch mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000fh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+000fh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0019h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d ee f3 5e}
+001eh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d fe f5 5e}
 0023h vmovsd xmm0,qword ptr [rdi]             ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[4]{c5 fb 10 07}
 0027h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 002bh vmovsd qword ptr [rsp+20h],xmm0         ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[6]{c5 fb 11 44 24 20}
@@ -3820,7 +3820,7 @@
 0045h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0049h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 004ch movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-004fh mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+004fh mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 0059h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 005ch mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 005fh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -3842,7 +3842,7 @@
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<byte>(ReadOnlySpan<byte> src, Nullable<int> maxlen)
-; bitchars_g[8u](uspan8u)[335] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 03 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 4c e9 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e 8a 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 22 e9 f3 5e 4d 63 c7 46 0f b6 04 06 48 8d 48 10 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cf c1 e1 03 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 28 0a f8 4e 41 ff c7 44 3b fb 0f 8c 76 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 cb d1 42 ff cc e8 cd d1 42 ff cc e8 ef d2 42 ff cc e8 b9 d1 42 ff}
+; bitchars_g[8u](uspan8u)[335] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 03 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 8c f9 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e 8a 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 62 f9 f5 5e 4d 63 c7 46 0f b6 04 06 48 8d 48 10 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cf c1 e1 03 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 68 1a fa 4e 41 ff c7 44 3b fb 0f 8c 76 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 0b e2 43 ff cc e8 0d e2 43 ff cc e8 2f e3 43 ff cc e8 f9 e1 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -3859,24 +3859,24 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c e9 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c f9 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00d4h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e 8a 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 e9 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 f9 f5 5e}
 005eh movsxd r8,r15d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c7}
 0061h movzx r8d,byte ptr [rsi+r8]             ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{46 0f b6 04 06}
 0066h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 006ah movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 006eh shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 0072h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-0075h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+0075h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 007fh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 0082h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
 0087h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -3895,7 +3895,7 @@
 00b7h ja near ptr 013eh                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00bdh movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00c0h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00c3h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 0a f8 4e}
+00c3h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 1a fa 4e}
 00c8h inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00cbh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00ceh jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 76 ff ff ff}
@@ -3939,16 +3939,16 @@
 0133h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0135h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0137h ret                                     ; RET || C3 || encoded[1]{c3}
-0138h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb d1 42 ff}
+0138h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b e2 43 ff}
 013dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-013eh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd d1 42 ff}
+013eh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d e2 43 ff}
 0143h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0144h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef d2 42 ff}
+0144h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f e3 43 ff}
 0149h int 3                                   ; INT3 || CC || encoded[1]{cc}
-014ah call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 d1 42 ff}
+014ah call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 e1 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<sbyte>(ReadOnlySpan<sbyte> src, Nullable<int> maxlen)
-; bitchars_g[8i](uspan8i)[339] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 03 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 cc e7 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e 8e 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 a2 e7 f3 5e 4d 63 c7 4e 0f be 04 06 48 8d 48 10 4d 0f be c0 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cf c1 e1 03 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 a4 08 f8 4e 41 ff c7 44 3b fb 0f 8c 72 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 47 d0 42 ff cc e8 49 d0 42 ff cc e8 6b d1 42 ff cc e8 35 d0 42 ff}
+; bitchars_g[8i](uspan8i)[339] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 03 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 0c f8 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e 8e 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 e2 f7 f5 5e 4d 63 c7 4e 0f be 04 06 48 8d 48 10 4d 0f be c0 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cf c1 e1 03 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 e4 18 fa 4e 41 ff c7 44 3b fb 0f 8c 72 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 87 e0 43 ff cc e8 89 e0 43 ff cc e8 ab e1 43 ff cc e8 75 e0 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -3965,17 +3965,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc e7 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c f8 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00d8h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e 8e 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 e7 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 f7 f5 5e}
 005eh movsxd r8,r15d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c7}
 0061h movsx r8,byte ptr [rsi+r8]              ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[5]{4e 0f be 04 06}
 0066h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -3983,7 +3983,7 @@
 006eh movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 0072h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 0076h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-0079h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+0079h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 0083h add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 0086h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
 008bh vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -4002,7 +4002,7 @@
 00bbh ja near ptr 0142h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00c1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00c4h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00c7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 08 f8 4e}
+00c7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 18 fa 4e}
 00cch inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00cfh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00d2h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 72 ff ff ff}
@@ -4046,16 +4046,16 @@
 0137h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0139h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 013bh ret                                     ; RET || C3 || encoded[1]{c3}
-013ch call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 d0 42 ff}
+013ch call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 e0 43 ff}
 0141h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0142h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 d0 42 ff}
+0142h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 e0 43 ff}
 0147h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0148h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b d1 42 ff}
+0148h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab e1 43 ff}
 014dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-014eh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d0 42 ff}
+014eh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 e0 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<ushort>(ReadOnlySpan<ushort> src, Nullable<int> maxlen)
-; bitchars_g[16u](uspan16u)[382] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 04 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 4c e6 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e b9 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 22 e6 f3 5e 4d 63 c7 46 0f b7 04 46 48 8d 48 10 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 ad 6e fc e8 95 01 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cf c1 e1 04 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 f9 06 f8 4e 41 ff c7 44 3b fb 0f 8c 47 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 9c ce 42 ff cc e8 9e ce 42 ff cc e8 c0 cf 42 ff cc e8 8a ce 42 ff}
+; bitchars_g[16u](uspan16u)[382] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 04 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 8c f6 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e b9 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 62 f6 f5 5e 4d 63 c7 46 0f b7 04 46 48 8d 48 10 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 31 64 d5 6e 2f 02 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cf c1 e1 04 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 39 17 fa 4e 41 ff c7 44 3b fb 0f 8c 47 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 dc de 43 ff cc e8 de de 43 ff cc e8 00 e0 43 ff cc e8 ca de 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4072,17 +4072,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c e6 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c f6 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b9 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 e6 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 f6 f5 5e}
 005eh movsxd r8,r15d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c7}
 0061h movzx r8d,word ptr [rsi+r8*2]           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{46 0f b7 04 46}
 0066h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -4090,7 +4090,7 @@
 006eh movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
 0072h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0075h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0078h mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+0078h mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0082h add rdx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d1}
 0085h mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 0088h vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -4099,7 +4099,7 @@
 0095h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 0099h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 009dh movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-00a0h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+00a0h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 00aah add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 00adh add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 00b1h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -4119,7 +4119,7 @@
 00e6h ja near ptr 016dh                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 06 f8 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 17 fa 4e}
 00f7h inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00fah cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00fdh jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 47 ff ff ff}
@@ -4163,16 +4163,16 @@
 0162h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0164h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0166h ret                                     ; RET || C3 || encoded[1]{c3}
-0167h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c ce 42 ff}
+0167h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc de 43 ff}
 016ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-016dh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e ce 42 ff}
+016dh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de de 43 ff}
 0172h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0173h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 cf 42 ff}
+0173h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 e0 43 ff}
 0178h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0179h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a ce 42 ff}
+0179h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca de 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<short>(ReadOnlySpan<short> src, Nullable<int> maxlen)
-; bitchars_g[16i](uspan16i)[386] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 04 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 9c e4 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e bd 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 72 e4 f3 5e 4d 63 c7 4e 0f bf 04 46 48 8d 48 10 4d 0f bf c0 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 ad 6e fc e8 95 01 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cf c1 e1 04 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 45 05 f8 4e 41 ff c7 44 3b fb 0f 8c 43 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 e8 cc 42 ff cc e8 ea cc 42 ff cc e8 0c ce 42 ff cc e8 d6 cc 42 ff}
+; bitchars_g[16i](uspan16i)[386] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 04 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 dc f4 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e bd 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 b2 f4 f5 5e 4d 63 c7 4e 0f bf 04 46 48 8d 48 10 4d 0f bf c0 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 31 64 d5 6e 2f 02 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cf c1 e1 04 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 85 15 fa 4e 41 ff c7 44 3b fb 0f 8c 43 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 28 dd 43 ff cc e8 2a dd 43 ff cc e8 4c de 43 ff cc e8 16 dd 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4189,17 +4189,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c e4 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc f4 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 0107h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e bd 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 e4 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b2 f4 f5 5e}
 005eh movsxd r8,r15d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c7}
 0061h movsx r8,word ptr [rsi+r8*2]            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[5]{4e 0f bf 04 46}
 0066h lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -4208,7 +4208,7 @@
 0072h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
 0076h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0079h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-007ch mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+007ch mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0086h add rdx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d1}
 0089h mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 008ch vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -4217,7 +4217,7 @@
 0099h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 009dh shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 00a1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-00a4h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+00a4h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 00aeh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 00b1h add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 00b5h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -4237,7 +4237,7 @@
 00eah ja near ptr 0171h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00f0h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00f3h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f6h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 05 f8 4e}
+00f6h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 15 fa 4e}
 00fbh inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00feh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 0101h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 43 ff ff ff}
@@ -4281,16 +4281,16 @@
 0166h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0168h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 016ah ret                                     ; RET || C3 || encoded[1]{c3}
-016bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 cc 42 ff}
+016bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 dd 43 ff}
 0170h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0171h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea cc 42 ff}
+0171h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a dd 43 ff}
 0176h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0177h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c ce 42 ff}
+0177h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c de 43 ff}
 017ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-017dh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 cc 42 ff}
+017dh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 dd 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<uint>(ReadOnlySpan<uint> src, Nullable<int> maxlen)
-; bitchars_g[32u](uspan32u)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 ec e2 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 c2 e2 f3 5e 49 63 cf 44 8b 04 8e 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 a4 03 f8 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 47 cb 42 ff cc e8 49 cb 42 ff cc e8 6b cc 42 ff cc e8 35 cb 42 ff}
+; bitchars_g[32u](uspan32u)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 2c f3 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 02 f3 f5 5e 49 63 cf 44 8b 04 8e 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 e4 13 fa 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 87 db 43 ff cc e8 89 db 43 ff cc e8 ab dc 43 ff cc e8 75 db 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4307,17 +4307,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec e2 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c f3 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00f8h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e ae 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 e2 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 f3 f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h mov r8d,[rsi+rcx*4]                     ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 04 8e}
 0065h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -4329,7 +4329,7 @@
 0078h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 007ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 007fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0082h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0082h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 008ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 008fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0092h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4355,7 +4355,7 @@
 00dbh ja near ptr 0162h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00e1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00e4h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 03 f8 4e}
+00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 13 fa 4e}
 00ech inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00efh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00f2h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 52 ff ff ff}
@@ -4399,16 +4399,16 @@
 0157h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0159h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 015bh ret                                     ; RET || C3 || encoded[1]{c3}
-015ch call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 cb 42 ff}
+015ch call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 db 43 ff}
 0161h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0162h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 cb 42 ff}
+0162h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 db 43 ff}
 0167h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0168h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b cc 42 ff}
+0168h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab dc 43 ff}
 016dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-016eh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 cb 42 ff}
+016eh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 db 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<int>(ReadOnlySpan<int> src, Nullable<int> maxlen)
-; bitchars_g[32i](uspan32i)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 4c e1 f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 22 e1 f3 5e 49 63 cf 44 8b 04 8e 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 04 02 f8 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 a7 c9 42 ff cc e8 a9 c9 42 ff cc e8 cb ca 42 ff cc e8 95 c9 42 ff}
+; bitchars_g[32i](uspan32i)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 8c f1 f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 62 f1 f5 5e 49 63 cf 44 8b 04 8e 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 44 12 fa 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 e7 d9 43 ff cc e8 e9 d9 43 ff cc e8 0b db 43 ff cc e8 d5 d9 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4425,17 +4425,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c e1 f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c f1 f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00f8h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e ae 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 e1 f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 62 f1 f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h mov r8d,[rsi+rcx*4]                     ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 04 8e}
 0065h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -4447,7 +4447,7 @@
 0078h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 007ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 007fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0082h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0082h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 008ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 008fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0092h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4473,7 +4473,7 @@
 00dbh ja near ptr 0162h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00e1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00e4h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 02 f8 4e}
+00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 12 fa 4e}
 00ech inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00efh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00f2h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 52 ff ff ff}
@@ -4517,16 +4517,16 @@
 0157h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0159h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 015bh ret                                     ; RET || C3 || encoded[1]{c3}
-015ch call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 c9 42 ff}
+015ch call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 d9 43 ff}
 0161h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0162h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 c9 42 ff}
+0162h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 d9 43 ff}
 0167h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0168h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb ca 42 ff}
+0168h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b db 43 ff}
 016dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-016eh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 c9 42 ff}
+016eh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 d9 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<ulong>(ReadOnlySpan<ulong> src, Nullable<int> maxlen)
-; bitchars_g[64u](uspan64u)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 ac df f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 82 df f3 5e 49 63 cf 4c 8b 04 ce 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 64 00 f8 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 07 c8 42 ff cc e8 09 c8 42 ff cc e8 2b c9 42 ff cc e8 f5 c7 42 ff}
+; bitchars_g[64u](uspan64u)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 ec ef f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 c2 ef f5 5e 49 63 cf 4c 8b 04 ce 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 a4 10 fa 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 47 d8 43 ff cc e8 49 d8 43 ff cc e8 6b d9 43 ff cc e8 35 d8 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4543,17 +4543,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac df f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec ef f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00f8h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e ae 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 df f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 ef f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h mov r8,[rsi+rcx*8]                      ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4c 8b 04 ce}
 0065h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -4565,7 +4565,7 @@
 0078h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 007ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 007fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0082h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0082h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 008ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 008fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0092h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4591,7 +4591,7 @@
 00dbh ja near ptr 0162h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00e1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00e4h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 64 00 f8 4e}
+00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 10 fa 4e}
 00ech inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00efh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00f2h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 52 ff ff ff}
@@ -4635,16 +4635,16 @@
 0157h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0159h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 015bh ret                                     ; RET || C3 || encoded[1]{c3}
-015ch call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 c8 42 ff}
+015ch call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 d8 43 ff}
 0161h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0162h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 c8 42 ff}
+0162h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 d8 43 ff}
 0167h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0168h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b c9 42 ff}
+0168h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b d9 43 ff}
 016dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-016eh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 c7 42 ff}
+016eh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 d8 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<long>(ReadOnlySpan<long> src, Nullable<int> maxlen)
-; bitchars_g[64i](uspan64i)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 0c de f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 e2 dd f3 5e 49 63 cf 4c 8b 04 ce 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 c4 fe f7 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 67 c6 42 ff cc e8 69 c6 42 ff cc e8 8b c7 42 ff cc e8 55 c6 42 ff}
+; bitchars_g[64i](uspan64i)[371] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 4c ee f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ae 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 22 ee f5 5e 49 63 cf 4c 8b 04 ce 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 04 0f fa 4e 41 ff c7 44 3b fb 0f 8c 52 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 a7 d6 43 ff cc e8 a9 d6 43 ff cc e8 cb d7 43 ff cc e8 95 d6 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4661,17 +4661,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c de f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c ee f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 00f8h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e ae 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 dd f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 ee f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h mov r8,[rsi+rcx*8]                      ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4c 8b 04 ce}
 0065h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -4683,7 +4683,7 @@
 0078h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 007ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 007fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0082h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0082h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 008ch add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 008fh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 0092h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4709,7 +4709,7 @@
 00dbh ja near ptr 0162h                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00e1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00e4h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 fe f7 4e}
+00e7h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 0f fa 4e}
 00ech inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00efh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00f2h jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 52 ff ff ff}
@@ -4753,16 +4753,16 @@
 0157h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0159h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 015bh ret                                     ; RET || C3 || encoded[1]{c3}
-015ch call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 c6 42 ff}
+015ch call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 d6 43 ff}
 0161h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0162h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 c6 42 ff}
+0162h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 d6 43 ff}
 0167h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0168h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b c7 42 ff}
+0168h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb d7 43 ff}
 016dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-016eh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 c6 42 ff}
+016eh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 d6 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<float>(ReadOnlySpan<float> src, Nullable<int> maxlen)
-; bitchars_g[32f](uspan32f)[382] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 6c dc f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e b9 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 42 dc f3 5e 49 63 cf c5 fa 10 04 8e 4c 8d 40 10 c5 fa 11 44 24 24 8b 54 24 24 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 19 fd f7 4e 41 ff c7 44 3b fb 0f 8c 47 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 bc c4 42 ff cc e8 be c4 42 ff cc e8 e0 c5 42 ff cc e8 aa c4 42 ff}
+; bitchars_g[32f](uspan32f)[382] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 ac ec f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e b9 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 82 ec f5 5e 49 63 cf c5 fa 10 04 8e 4c 8d 40 10 c5 fa 11 44 24 24 8b 54 24 24 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cf c1 e1 05 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 59 0d fa 4e 41 ff c7 44 3b fb 0f 8c 47 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 fc d4 43 ff cc e8 fe d4 43 ff cc e8 20 d6 43 ff cc e8 ea d4 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4779,17 +4779,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c dc f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac ec f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b9 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 dc f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 ec f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h vmovss xmm0,dword ptr [rsi+rcx*4]       ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[5]{c5 fa 10 04 8e}
 0066h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
@@ -4803,7 +4803,7 @@
 0083h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0087h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 008ah movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-008dh mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+008dh mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 0097h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 009ah mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 009dh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4829,7 +4829,7 @@
 00e6h ja near ptr 016dh                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 fd f7 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 0d fa 4e}
 00f7h inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00fah cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00fdh jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 47 ff ff ff}
@@ -4873,16 +4873,16 @@
 0162h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0164h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0166h ret                                     ; RET || C3 || encoded[1]{c3}
-0167h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc c4 42 ff}
+0167h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc d4 43 ff}
 016ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-016dh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be c4 42 ff}
+016dh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe d4 43 ff}
 0172h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0173h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e0 c5 42 ff}
+0173h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 20 d6 43 ff}
 0178h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0179h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa c4 42 ff}
+0179h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea d4 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<double>(ReadOnlySpan<double> src, Nullable<int> maxlen)
-; bitchars_g[64f](uspan64f)[383] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 bc da f3 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ba 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 92 da f3 5e 49 63 cf c5 fb 10 04 ce 4c 8d 40 10 c5 fb 11 44 24 20 48 8b 54 24 20 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 68 fb f7 4e 41 ff c7 44 3b fb 0f 8c 46 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 0b c3 42 ff cc e8 0d c3 42 ff cc e8 2f c4 42 ff cc e8 f9 c2 42 ff}
+; bitchars_g[64f](uspan64f)[383] = {41 57 41 56 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 44 24 70 48 8b f9 48 8b f2 8b 5e 08 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 fc ea f5 5e 48 8d 68 10 44 8b 70 08 48 8b 36 45 33 ff 85 db 0f 8e ba 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 d2 ea f5 5e 49 63 cf c5 fb 10 04 ce 4c 8d 40 10 c5 fb 11 44 24 20 48 8b 54 24 20 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cf c1 e1 06 41 3b ce 0f 87 91 00 00 00 41 8b c6 2b c1 48 63 c9 48 8d 4c 4d 00 44 3b c0 0f 87 81 00 00 00 4d 63 c0 49 d1 e0 e8 a8 0b fa 4e 41 ff c7 44 3b fb 0f 8c 46 ff ff ff 80 7c 24 70 00 74 1b 48 8d 44 24 70 0f b6 10 8b 40 04 44 3b f0 0f 9d c0 0f b6 c0 0f b6 d2 85 c2 75 17 48 89 2f 44 89 77 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 80 7c 24 70 00 74 30 8b 44 24 74 8b d0 41 8b ce 48 3b d1 77 28 48 89 2f 89 47 08 48 8b c7 48 83 c4 28 5b 5d 5e 5f 41 5e 41 5f c3 e8 4b d3 43 ff cc e8 4d d3 43 ff cc e8 6f d4 43 ff cc e8 39 d3 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -4899,17 +4899,17 @@
 001dh mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 001fh shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0022h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0025h mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc da f3 5e}
+0025h mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+002fh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc ea f5 5e}
 0034h lea rbp,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 68 10}
 0038h mov r14d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 70 08}
 003ch mov rsi,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 36}
 003fh xor r15d,r15d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ff}
 0042h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0044h jle near ptr 0104h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e ba 00 00 00}
-004ah mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+004ah mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0054h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 da f3 5e}
+0059h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 ea f5 5e}
 005eh movsxd rcx,r15d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cf}
 0061h vmovsd xmm0,qword ptr [rsi+rcx*8]       ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[5]{c5 fb 10 04 ce}
 0066h lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
@@ -4923,7 +4923,7 @@
 0084h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0088h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 008bh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-008eh mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+008eh mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 0098h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 009bh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 009eh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -4949,7 +4949,7 @@
 00e7h ja near ptr 016eh                       ; JA rel32 || 0F 87 cd || encoded[6]{0f 87 81 00 00 00}
 00edh movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00f0h shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f3h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 fb f7 4e}
+00f3h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 0b fa 4e}
 00f8h inc r15d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c7}
 00fbh cmp r15d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b fb}
 00feh jl near ptr 004ah                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 46 ff ff ff}
@@ -4993,16 +4993,16 @@
 0163h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0165h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0167h ret                                     ; RET || C3 || encoded[1]{c3}
-0168h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b c3 42 ff}
+0168h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b d3 43 ff}
 016dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-016eh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d c3 42 ff}
+016eh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d d3 43 ff}
 0173h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0174h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f c4 42 ff}
+0174h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6f d4 43 ff}
 0179h int 3                                   ; INT3 || CC || encoded[1]{cc}
-017ah call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 c2 42 ff}
+017ah call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 d3 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<byte>(Span<byte> src, Nullable<int> maxlen)
-; bitchars_g[8u](span8u)[312] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 03 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 f5 d8 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e 7d 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 ce d8 f3 5e 4d 63 c5 46 0f b6 04 07 48 8d 48 10 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cd c1 e1 03 41 3b cc 77 6a 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 5f 4d 63 c0 49 d1 e0 e8 dd f9 f7 4e 41 ff c5 44 3b eb 7c 83 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 a2 c1 42 ff cc e8 a4 c1 42 ff cc e8 c6 c2 42 ff cc e8 90 c1 42 ff}
+; bitchars_g[8u](span8u)[312] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 03 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 35 e9 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e 7d 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 0e e9 f5 5e 4d 63 c5 46 0f b6 04 07 48 8d 48 10 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cd c1 e1 03 41 3b cc 77 6a 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 5f 4d 63 c0 49 d1 e0 e8 1d 0a fa 4e 41 ff c5 44 3b eb 7c 83 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 e2 d1 43 ff cc e8 e4 d1 43 ff cc e8 06 d3 43 ff cc e8 d0 d1 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5024,23 +5024,23 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 d8 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 e9 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 00dbh                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e 7d 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce d8 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e e9 f5 5e}
 0072h movsxd r8,r13d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c5}
 0075h movzx r8d,byte ptr [rdi+r8]             ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{46 0f b6 04 07}
 007ah lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
 007eh movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 0082h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 0086h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-0089h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+0089h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 0093h add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 0096h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
 009bh vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -5059,7 +5059,7 @@
 00c6h ja short 0127h                          ; JA rel8 || 77 cb || encoded[2]{77 5f}
 00c8h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00cbh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00ceh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd f9 f7 4e}
+00ceh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1d 0a fa 4e}
 00d3h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00d6h cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00d9h jl short 005eh                          ; JL rel8 || 7C cb || encoded[2]{7c 83}
@@ -5092,16 +5092,16 @@
 011ch pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 011eh pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0120h ret                                     ; RET || C3 || encoded[1]{c3}
-0121h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 c1 42 ff}
+0121h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 d1 43 ff}
 0126h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0127h call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 c1 42 ff}
+0127h call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 d1 43 ff}
 012ch int 3                                   ; INT3 || CC || encoded[1]{cc}
-012dh call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 c2 42 ff}
+012dh call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 d3 43 ff}
 0132h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0133h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 c1 42 ff}
+0133h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d0 d1 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<sbyte>(Span<sbyte> src, Nullable<int> maxlen)
-; bitchars_g[8i](span8i)[320] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 03 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 95 d7 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e 85 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 08 00 00 00 e8 6e d7 f3 5e 4d 63 c5 4e 0f be 04 07 48 8d 48 10 4d 0f be c0 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cd c1 e1 03 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 79 f8 f7 4e 41 ff c5 44 3b eb 0f 8c 7b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 3a c0 42 ff cc e8 3c c0 42 ff cc e8 5e c1 42 ff cc e8 28 c0 42 ff}
+; bitchars_g[8i](span8i)[320] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 03 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 d5 e7 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e 85 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 08 00 00 00 e8 ae e7 f5 5e 4d 63 c5 4e 0f be 04 07 48 8d 48 10 4d 0f be c0 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 08 00 00 00 48 8b d0 41 8b cd c1 e1 03 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 b9 08 fa 4e 41 ff c5 44 3b eb 0f 8c 7b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 7a d0 43 ff cc e8 7c d0 43 ff cc e8 9e d1 43 ff cc e8 68 d0 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5123,16 +5123,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 d7 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 e7 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 00e3h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e 85 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e d7 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae e7 f5 5e}
 0072h movsxd r8,r13d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c5}
 0075h movsx r8,byte ptr [rdi+r8]              ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[5]{4e 0f be 04 07}
 007ah lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -5140,7 +5140,7 @@
 0082h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 0086h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 008ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-008dh mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+008dh mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 0097h add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 009ah vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
 009fh vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
@@ -5159,7 +5159,7 @@
 00cah ja short 012fh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00cch movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00cfh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00d2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 f8 f7 4e}
+00d2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 08 fa 4e}
 00d7h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00dah cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00ddh jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 7b ff ff ff}
@@ -5192,16 +5192,16 @@
 0124h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0126h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0128h ret                                     ; RET || C3 || encoded[1]{c3}
-0129h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a c0 42 ff}
+0129h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a d0 43 ff}
 012eh int 3                                   ; INT3 || CC || encoded[1]{cc}
-012fh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c c0 42 ff}
+012fh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c d0 43 ff}
 0134h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0135h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e c1 42 ff}
+0135h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e d1 43 ff}
 013ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-013bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 c0 42 ff}
+013bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 68 d0 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<ushort>(Span<ushort> src, Nullable<int> maxlen)
-; bitchars_g[16u](span16u)[363] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 04 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 25 d6 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b0 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 fe d5 f3 5e 4d 63 c5 46 0f b7 04 47 48 8d 48 10 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 ad 6e fc e8 95 01 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cd c1 e1 04 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 de f6 f7 4e 41 ff c5 44 3b eb 0f 8c 50 ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 9f be 42 ff cc e8 a1 be 42 ff cc e8 c3 bf 42 ff cc e8 8d be 42 ff}
+; bitchars_g[16u](span16u)[363] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 04 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 65 e6 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b0 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 3e e6 f5 5e 4d 63 c5 46 0f b7 04 47 48 8d 48 10 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 31 64 d5 6e 2f 02 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cd c1 e1 04 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 1e 07 fa 4e 41 ff c5 44 3b eb 0f 8c 50 ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 df ce 43 ff cc e8 e1 ce 43 ff cc e8 03 d0 43 ff cc e8 cd ce 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5223,16 +5223,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 d6 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 e6 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 010eh                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b0 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe d5 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e e6 f5 5e}
 0072h movsxd r8,r13d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c5}
 0075h movzx r8d,word ptr [rdi+r8*2]           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{46 0f b7 04 47}
 007ah lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -5240,7 +5240,7 @@
 0082h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
 0086h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0089h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-008ch mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+008ch mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 0096h add rdx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d1}
 0099h mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 009ch vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -5249,7 +5249,7 @@
 00a9h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 00adh shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 00b1h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-00b4h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+00b4h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 00beh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 00c1h add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 00c5h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -5269,7 +5269,7 @@
 00f5h ja short 015ah                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00f7h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00fah shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00fdh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de f6 f7 4e}
+00fdh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e 07 fa 4e}
 0102h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 0105h cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 0108h jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 50 ff ff ff}
@@ -5302,16 +5302,16 @@
 014fh pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0151h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0153h ret                                     ; RET || C3 || encoded[1]{c3}
-0154h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9f be 42 ff}
+0154h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df ce 43 ff}
 0159h int 3                                   ; INT3 || CC || encoded[1]{cc}
-015ah call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 be 42 ff}
+015ah call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 ce 43 ff}
 015fh int 3                                   ; INT3 || CC || encoded[1]{cc}
-0160h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 bf 42 ff}
+0160h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 d0 43 ff}
 0165h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0166h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d be 42 ff}
+0166h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd ce 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<short>(Span<short> src, Nullable<int> maxlen)
-; bitchars_g[16i](span16i)[367] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 04 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 85 d4 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b4 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 10 00 00 00 e8 5e d4 f3 5e 4d 63 c5 4e 0f bf 04 47 48 8d 48 10 4d 0f bf c0 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 ad 6e fc e8 95 01 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba ad 6e fc e8 95 01 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cd c1 e1 04 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 3a f5 f7 4e 41 ff c5 44 3b eb 0f 8c 4c ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 fb bc 42 ff cc e8 fd bc 42 ff cc e8 1f be 42 ff cc e8 e9 bc 42 ff}
+; bitchars_g[16i](span16i)[367] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 04 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 c5 e4 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b4 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 10 00 00 00 e8 9e e4 f5 5e 4d 63 c5 4e 0f bf 04 47 48 8d 48 10 4d 0f bf c0 45 0f b7 c0 41 0f b6 d0 c1 e2 04 48 63 d2 49 b9 31 64 d5 6e 2f 02 00 00 49 03 d1 4c 8b c9 c5 fa 6f 02 c4 c1 7a 7f 01 41 c1 f8 08 45 0f b6 c0 41 c1 e0 04 4d 63 c0 48 ba 31 64 d5 6e 2f 02 00 00 4c 03 c2 48 83 c1 10 c4 c1 7a 6f 00 c5 fa 7f 01 48 83 c0 10 41 b8 10 00 00 00 48 8b d0 41 8b cd c1 e1 04 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 7a 05 fa 4e 41 ff c5 44 3b eb 0f 8c 4c ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 3b cd 43 ff cc e8 3d cd 43 ff cc e8 5f ce 43 ff cc e8 29 cd 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5333,16 +5333,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 d4 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 e4 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 0112h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b4 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e d4 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e e4 f5 5e}
 0072h movsxd r8,r13d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c5}
 0075h movsx r8,word ptr [rdi+r8*2]            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[5]{4e 0f bf 04 47}
 007ah lea rcx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 48 10}
@@ -5351,7 +5351,7 @@
 0086h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
 008ah shl edx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 04}
 008dh movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0090h mov r9,195e8fc6eadh                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 ad 6e fc e8 95 01 00 00}
+0090h mov r9,22f6ed56431h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b9 31 64 d5 6e 2f 02 00 00}
 009ah add rdx,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 d1}
 009dh mov r9,rcx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c9}
 00a0h vmovdqu xmm0,xmmword ptr [rdx]          ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[4]{c5 fa 6f 02}
@@ -5360,7 +5360,7 @@
 00adh movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
 00b1h shl r8d,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e0 04}
 00b5h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
-00b8h mov rdx,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ad 6e fc e8 95 01 00 00}
+00b8h mov rdx,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba 31 64 d5 6e 2f 02 00 00}
 00c2h add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
 00c5h add rcx,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c1 10}
 00c9h vmovdqu xmm0,xmmword ptr [r8]           ; VMOVDQU xmm1, xmm2/m128 || VEX.128.F3.0F.WIG 6F /r || encoded[5]{c4 c1 7a 6f 00}
@@ -5380,7 +5380,7 @@
 00f9h ja short 015eh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00fbh movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00feh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0101h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3a f5 f7 4e}
+0101h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a 05 fa 4e}
 0106h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 0109h cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 010ch jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 4c ff ff ff}
@@ -5413,16 +5413,16 @@
 0153h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0155h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0157h ret                                     ; RET || C3 || encoded[1]{c3}
-0158h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fb bc 42 ff}
+0158h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3b cd 43 ff}
 015dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-015eh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd bc 42 ff}
+015eh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d cd 43 ff}
 0163h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0164h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f be 42 ff}
+0164h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f ce 43 ff}
 0169h int 3                                   ; INT3 || CC || encoded[1]{cc}
-016ah call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 bc 42 ff}
+016ah call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 cd 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<uint>(Span<uint> src, Nullable<int> maxlen)
-; bitchars_g[32u](span32u)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 e5 d2 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 be d2 f3 5e 49 63 cd 44 8b 04 8f 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 a9 f3 f7 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 6a bb 42 ff cc e8 6c bb 42 ff cc e8 8e bc 42 ff cc e8 58 bb 42 ff}
+; bitchars_g[32u](span32u)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 25 e3 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 fe e2 f5 5e 49 63 cd 44 8b 04 8f 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 e9 03 fa 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 aa cb 43 ff cc e8 ac cb 43 ff cc e8 ce cc 43 ff cc e8 98 cb 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5444,16 +5444,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 d2 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 e3 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e a5 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be d2 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe e2 f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h mov r8d,[rdi+rcx*4]                     ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 04 8f}
 0079h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -5465,7 +5465,7 @@
 008ch movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0090h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0093h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0096h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0096h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00a0h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00a3h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00a6h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -5491,7 +5491,7 @@
 00eah ja short 014fh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 f3 f7 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e9 03 fa 4e}
 00f7h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00fah cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00fdh jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 5b ff ff ff}
@@ -5524,16 +5524,16 @@
 0144h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0146h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0148h ret                                     ; RET || C3 || encoded[1]{c3}
-0149h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a bb 42 ff}
+0149h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa cb 43 ff}
 014eh int 3                                   ; INT3 || CC || encoded[1]{cc}
-014fh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c bb 42 ff}
+014fh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac cb 43 ff}
 0154h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0155h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e bc 42 ff}
+0155h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ce cc 43 ff}
 015ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-015bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 58 bb 42 ff}
+015bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 98 cb 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<int>(Span<int> src, Nullable<int> maxlen)
-; bitchars_g[32i](span32i)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 55 d1 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 2e d1 f3 5e 49 63 cd 44 8b 04 8f 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 19 f2 f7 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 da b9 42 ff cc e8 dc b9 42 ff cc e8 fe ba 42 ff cc e8 c8 b9 42 ff}
+; bitchars_g[32i](span32i)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 95 e1 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 6e e1 f5 5e 49 63 cd 44 8b 04 8f 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 45 8b d0 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 59 02 fa 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 1a ca 43 ff cc e8 1c ca 43 ff cc e8 3e cb 43 ff cc e8 08 ca 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5555,16 +5555,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 d1 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 e1 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e a5 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e d1 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e e1 f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h mov r8d,[rdi+rcx*4]                     ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 04 8f}
 0079h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -5576,7 +5576,7 @@
 008ch movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0090h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0093h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0096h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0096h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00a0h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00a3h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00a6h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -5602,7 +5602,7 @@
 00eah ja short 014fh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 19 f2 f7 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 02 fa 4e}
 00f7h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00fah cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00fdh jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 5b ff ff ff}
@@ -5635,16 +5635,16 @@
 0144h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0146h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0148h ret                                     ; RET || C3 || encoded[1]{c3}
-0149h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da b9 42 ff}
+0149h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a ca 43 ff}
 014eh int 3                                   ; INT3 || CC || encoded[1]{cc}
-014fh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc b9 42 ff}
+014fh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c ca 43 ff}
 0154h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0155h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe ba 42 ff}
+0155h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3e cb 43 ff}
 015ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-015bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c8 b9 42 ff}
+015bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 08 ca 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<ulong>(Span<ulong> src, Nullable<int> maxlen)
-; bitchars_g[64u](span64u)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 c5 cf f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 9e cf f3 5e 49 63 cd 4c 8b 04 cf 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 89 f0 f7 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 4a b8 42 ff cc e8 4c b8 42 ff cc e8 6e b9 42 ff cc e8 38 b8 42 ff}
+; bitchars_g[64u](span64u)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 05 e0 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 de df f5 5e 49 63 cd 4c 8b 04 cf 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 c9 00 fa 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 8a c8 43 ff cc e8 8c c8 43 ff cc e8 ae c9 43 ff cc e8 78 c8 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5666,16 +5666,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c5 cf f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 e0 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e a5 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e cf f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de df f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h mov r8,[rdi+rcx*8]                      ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4c 8b 04 cf}
 0079h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -5687,7 +5687,7 @@
 008ch movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0090h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0093h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0096h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0096h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00a0h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00a3h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00a6h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -5713,7 +5713,7 @@
 00eah ja short 014fh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 89 f0 f7 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 00 fa 4e}
 00f7h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00fah cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00fdh jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 5b ff ff ff}
@@ -5746,16 +5746,16 @@
 0144h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0146h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0148h ret                                     ; RET || C3 || encoded[1]{c3}
-0149h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a b8 42 ff}
+0149h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a c8 43 ff}
 014eh int 3                                   ; INT3 || CC || encoded[1]{cc}
-014fh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c b8 42 ff}
+014fh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c c8 43 ff}
 0154h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0155h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e b9 42 ff}
+0155h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae c9 43 ff}
 015ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-015bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 b8 42 ff}
+015bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 c8 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<long>(Span<long> src, Nullable<int> maxlen)
-; bitchars_g[64i](span64i)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 35 ce f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 0e ce f3 5e 49 63 cd 4c 8b 04 cf 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 f9 ee f7 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 ba b6 42 ff cc e8 bc b6 42 ff cc e8 de b7 42 ff cc e8 a8 b6 42 ff}
+; bitchars_g[64i](span64i)[352] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 75 de f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e a5 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 4e de f5 5e 49 63 cd 4c 8b 04 cf 48 8d 50 10 45 33 c9 41 8b c9 c1 e1 03 4d 8b d0 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4e 8d 14 52 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 39 ff f9 4e 41 ff c5 44 3b eb 0f 8c 5b ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 fa c6 43 ff cc e8 fc c6 43 ff cc e8 1e c8 43 ff cc e8 e8 c6 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5777,16 +5777,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 35 ce f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 de f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 0103h                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e a5 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e ce f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e de f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h mov r8,[rdi+rcx*8]                      ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4c 8b 04 cf}
 0079h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
@@ -5798,7 +5798,7 @@
 008ch movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0090h shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 0093h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0096h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+0096h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00a0h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00a3h mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00a6h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -5824,7 +5824,7 @@
 00eah ja short 014fh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00ech movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00efh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 ee f7 4e}
+00f2h call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 ff f9 4e}
 00f7h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 00fah cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 00fdh jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 5b ff ff ff}
@@ -5857,16 +5857,16 @@
 0144h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0146h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0148h ret                                     ; RET || C3 || encoded[1]{c3}
-0149h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba b6 42 ff}
+0149h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa c6 43 ff}
 014eh int 3                                   ; INT3 || CC || encoded[1]{cc}
-014fh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc b6 42 ff}
+014fh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc c6 43 ff}
 0154h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0155h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de b7 42 ff}
+0155h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e c8 43 ff}
 015ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-015bh call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 b6 42 ff}
+015bh call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e8 c6 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<float>(Span<float> src, Nullable<int> maxlen)
-; bitchars_g[32f](span32f)[363] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 a5 c8 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b0 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 20 00 00 00 e8 7e c8 f3 5e 49 63 cd c5 fa 10 04 8f 4c 8d 40 10 c5 fa 11 44 24 24 8b 54 24 24 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 5e e9 f7 4e 41 ff c5 44 3b eb 0f 8c 50 ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 1f b1 42 ff cc e8 21 b1 42 ff cc e8 43 b2 42 ff cc e8 0d b1 42 ff}
+; bitchars_g[32f](span32f)[363] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 05 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 e5 dc f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b0 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 20 00 00 00 e8 be dc f5 5e 49 63 cd c5 fa 10 04 8f 4c 8d 40 10 c5 fa 11 44 24 24 8b 54 24 24 45 33 c9 41 8b c9 c1 e1 03 44 8b d2 41 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 04 7c bd 48 83 c0 10 41 b8 20 00 00 00 48 8b d0 41 8b cd c1 e1 05 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 9e fd f9 4e 41 ff c5 44 3b eb 0f 8c 50 ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 5f c5 43 ff cc e8 61 c5 43 ff cc e8 83 c6 43 ff cc e8 4d c5 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -5888,16 +5888,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,5                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 05}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 c8 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 dc f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 010eh                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b0 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e c8 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be dc f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h vmovss xmm0,dword ptr [rdi+rcx*4]       ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[5]{c5 fa 10 04 8f}
 007ah lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
@@ -5911,7 +5911,7 @@
 0097h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 009bh shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 009eh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-00a1h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+00a1h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00abh add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00aeh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00b1h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -5937,7 +5937,7 @@
 00f5h ja short 015ah                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00f7h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00fah shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00fdh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5e e9 f7 4e}
+00fdh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e fd f9 4e}
 0102h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 0105h cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 0108h jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 50 ff ff ff}
@@ -5970,16 +5970,16 @@
 014fh pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0151h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0153h ret                                     ; RET || C3 || encoded[1]{c3}
-0154h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f b1 42 ff}
+0154h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f c5 43 ff}
 0159h int 3                                   ; INT3 || CC || encoded[1]{cc}
-015ah call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 b1 42 ff}
+015ah call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 c5 43 ff}
 015fh int 3                                   ; INT3 || CC || encoded[1]{cc}
-0160h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 b2 42 ff}
+0160h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 83 c6 43 ff}
 0165h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0166h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d b1 42 ff}
+0166h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d c5 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<char> bitchars<double>(Span<double> src, Nullable<int> maxlen)
-; bitchars_g[64f](span64f)[364] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 70 93 5a c6 f7 7f 00 00 e8 05 c7 f3 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b1 00 00 00 48 b9 70 93 5a c6 f7 7f 00 00 ba 40 00 00 00 e8 de c6 f3 5e 49 63 cd c5 fb 10 04 cf 4c 8d 40 10 c5 fb 11 44 24 20 48 8b 54 24 20 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba ad 6e fc e8 95 01 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 bd e7 f7 4e 41 ff c5 44 3b eb 0f 8c 4f ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 7e af 42 ff cc e8 80 af 42 ff cc e8 a2 b0 42 ff cc e8 6c af 42 ff}
+; bitchars_g[64f](span64f)[364] = {41 57 41 56 41 55 41 54 57 56 55 53 48 83 ec 28 c5 f8 77 4c 89 84 24 80 00 00 00 48 8b f1 48 8b 3a 8b 5a 08 48 8d 94 24 80 00 00 00 40 0f b6 2a 44 8b 72 04 8b d3 c1 e2 06 48 63 d2 48 b9 60 92 59 c6 f7 7f 00 00 e8 45 d7 f5 5e 4c 8d 78 10 44 8b 60 08 45 33 ed 85 db 0f 8e b1 00 00 00 48 b9 60 92 59 c6 f7 7f 00 00 ba 40 00 00 00 e8 1e d7 f5 5e 49 63 cd c5 fb 10 04 cf 4c 8d 40 10 c5 fb 11 44 24 20 48 8b 54 24 20 45 33 c9 41 8b c9 c1 e1 03 4c 8b d2 49 d3 ea 41 0f b6 ca c1 e1 04 48 63 c9 49 ba 31 64 d5 6e 2f 02 00 00 49 03 ca 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 50 c5 fa 6f 01 c4 c1 7a 7f 02 41 ff c1 41 83 f9 08 7c bd 48 83 c0 10 41 b8 40 00 00 00 48 8b d0 41 8b cd c1 e1 06 41 3b cc 77 6e 41 8b c4 2b c1 48 63 c9 49 8d 0c 4f 44 3b c0 77 63 4d 63 c0 49 d1 e0 e8 fd f7 f9 4e 41 ff c5 44 3b eb 0f 8c 4f ff ff ff 40 84 ed 74 11 45 3b e6 0f 9d c0 0f b6 c0 40 0f b6 d5 85 c2 75 02 eb 13 40 84 ed 74 35 41 8b c6 41 8b d4 48 3b c2 77 30 45 8b e6 4c 89 3e 44 89 66 08 48 8b c6 48 83 c4 28 5b 5d 5e 5f 41 5c 41 5d 41 5e 41 5f c3 e8 be bf 43 ff cc e8 c0 bf 43 ff cc e8 e2 c0 43 ff cc e8 ac bf 43 ff}
 ; TermCode = CTC_INTRx2
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -6001,16 +6001,16 @@
 0034h mov edx,ebx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b d3}
 0036h shl edx,6                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 06}
 0039h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003ch mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
-0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 c7 f3 5e}
+003ch mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
+0046h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 d7 f5 5e}
 004bh lea r15,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 78 10}
 004fh mov r12d,[rax+8]                        ; MOV r32, r/m32 || o32 8B /r || encoded[4]{44 8b 60 08}
 0053h xor r13d,r13d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 ed}
 0056h test ebx,ebx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 db}
 0058h jle near ptr 010fh                      ; JLE rel32 || 0F 8E cd || encoded[6]{0f 8e b1 00 00 00}
-005eh mov rcx,7ff7c65a9370h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 70 93 5a c6 f7 7f 00 00}
+005eh mov rcx,7ff7c6599260h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 60 92 59 c6 f7 7f 00 00}
 0068h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de c6 f3 5e}
+006dh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1e d7 f5 5e}
 0072h movsxd rcx,r13d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{49 63 cd}
 0075h vmovsd xmm0,qword ptr [rdi+rcx*8]       ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[5]{c5 fb 10 04 cf}
 007ah lea r8,[rax+10h]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 40 10}
@@ -6024,7 +6024,7 @@
 0098h movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 009ch shl ecx,4                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 04}
 009fh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-00a2h mov r10,195e8fc6eadh                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba ad 6e fc e8 95 01 00 00}
+00a2h mov r10,22f6ed56431h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 31 64 d5 6e 2f 02 00 00}
 00ach add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 00afh mov r10d,r9d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d1}
 00b2h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
@@ -6050,7 +6050,7 @@
 00f6h ja short 015bh                          ; JA rel8 || 77 cb || encoded[2]{77 63}
 00f8h movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 00fbh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-00feh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd e7 f7 4e}
+00feh call 7ff815ee8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd f7 f9 4e}
 0103h inc r13d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c5}
 0106h cmp r13d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b eb}
 0109h jl near ptr 005eh                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 4f ff ff ff}
@@ -6083,13 +6083,13 @@
 0150h pop r14                                 ; POP r64 || 58+ro || encoded[2]{41 5e}
 0152h pop r15                                 ; POP r64 || 58+ro || encoded[2]{41 5f}
 0154h ret                                     ; RET || C3 || encoded[1]{c3}
-0155h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e af 42 ff}
+0155h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 be bf 43 ff}
 015ah int 3                                   ; INT3 || CC || encoded[1]{cc}
-015bh call 7ff7c6395770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 af 42 ff}
+015bh call 7ff7c6385770h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 bf 43 ff}
 0160h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0161h call 7ff7c6395898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 b0 42 ff}
+0161h call 7ff7c6385898h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 c0 43 ff}
 0166h int 3                                   ; INT3 || CC || encoded[1]{cc}
-0167h call 7ff7c6395768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c af 42 ff}
+0167h call 7ff7c6385768h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac bf 43 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitclear<byte>(byte src, byte index, byte count)
 ; bitclear_g[8u](8u,8u,8u)[51] = {0f 1f 44 00 00 0f b6 c1 41 0f b6 c8 ff c9 41 b8 01 00 00 00 49 d3 e0 c4 c2 f0 f3 d0 44 8b c1 0f b6 ca 41 d3 e0 41 81 f0 ff ff 00 00 41 23 c0 0f b6 c0 c3}
@@ -6535,7 +6535,7 @@
 0082h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitseg<byte>(Span<byte> src, BitPos<byte> firstpos, BitPos<byte> lastpos)
-; bitseg_g[8u](span8u)[582] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 08 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 08 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 24 01 00 00 ff c2 83 fa 08 7e 0f b8 ff 00 00 00 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 0f b6 0c 11 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 0b c1 0f b6 c0 48 81 c4 18 01 00 00 5e 5f c3 e8 92 68 44 ff}
+; bitseg_g[8u](span8u)[582] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 08 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 08 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 24 01 00 00 ff c2 83 fa 08 7e 0f b8 ff 00 00 00 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 0f b6 0c 11 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 0b c1 0f b6 c0 48 81 c4 18 01 00 00 5e 5f c3 e8 d2 78 45 ff}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -6664,10 +6664,10 @@
 023eh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 023fh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0240h ret                                     ; RET || C3 || encoded[1]{c3}
-0241h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 92 68 44 ff}
+0241h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 78 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitseg<ushort>(Span<ushort> src, BitPos<ushort> firstpos, BitPos<ushort> lastpos)
-; bitseg_g[16u](span16u)[582] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 10 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 10 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 24 01 00 00 ff c2 83 fa 10 7e 0f b8 ff ff 00 00 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 0f b7 0c 51 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 0b c1 0f b7 c0 48 81 c4 18 01 00 00 5e 5f c3 e8 02 62 44 ff}
+; bitseg_g[16u](span16u)[582] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 10 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 10 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 24 01 00 00 ff c2 83 fa 10 7e 0f b8 ff ff 00 00 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 0f b7 0c 51 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 0b c1 0f b7 c0 48 81 c4 18 01 00 00 5e 5f c3 e8 52 76 45 ff}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -6796,10 +6796,10 @@
 023eh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 023fh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0240h ret                                     ; RET || C3 || encoded[1]{c3}
-0241h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 62 44 ff}
+0241h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 52 76 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitseg<uint>(Span<uint> src, BitPos<uint> firstpos, BitPos<uint> lastpos)
-; bitseg_g[32u](span32u)[567] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 20 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 20 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 15 01 00 00 ff c2 83 fa 20 7e 0f b8 ff ff ff ff 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 8b 0c 91 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 18 01 00 00 5e 5f c3 e8 91 5f 44 ff}
+; bitseg_g[32u](span32u)[567] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 20 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 20 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 15 01 00 00 ff c2 83 fa 20 7e 0f b8 ff ff ff ff 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 47 8b 0c 91 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 c0 74 0d 41 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 18 01 00 00 5e 5f c3 e8 d1 6f 45 ff}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -6924,10 +6924,10 @@
 022fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0230h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0231h ret                                     ; RET || C3 || encoded[1]{c3}
-0232h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 5f 44 ff}
+0232h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 6f 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitseg<ulong>(Span<ulong> src, BitPos<ulong> firstpos, BitPos<ulong> lastpos)
-; bitseg_g[64u](span64u)[574] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 40 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 40 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 1c 01 00 00 ff c2 83 fa 40 7e 14 48 b8 ff ff ff ff ff ff ff ff 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 4f 8b 0c d1 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 c0 74 0d 49 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 18 01 00 00 5e 5f c3 e8 1a 5d 44 ff}
+; bitseg_g[64u](span64u)[574] = {57 56 48 81 ec 18 01 00 00 c5 f8 77 48 8b f1 48 8d 7c 24 20 b9 10 00 00 00 33 c0 f3 ab 48 8b ce c4 c1 7a 6f 00 c5 fa 7f 44 24 20 c4 c1 7a 6f 40 10 c5 fa 7f 44 24 30 c5 fa 6f 02 c5 fa 7f 44 24 40 c5 fa 6f 42 10 c5 fa 7f 44 24 50 c5 fa 6f 44 24 20 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 44 24 30 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 44 24 40 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 c8 00 00 00 8b 84 24 f8 00 00 00 0f b7 d0 c7 84 24 b4 00 00 00 40 00 00 00 44 0f b6 84 24 b4 00 00 00 41 0f af d0 8b 84 24 fa 00 00 00 44 0f b7 c0 41 03 d0 8b 84 24 b8 00 00 00 0f b7 c0 c7 84 24 b0 00 00 00 40 00 00 00 44 0f b6 84 24 b0 00 00 00 41 0f af c0 44 8b 84 24 ba 00 00 00 45 0f b7 c0 41 03 c0 2b d0 85 d2 7d 0a f7 da 85 d2 0f 8c 1c 01 00 00 ff c2 83 fa 40 7e 14 48 b8 ff ff ff ff ff ff ff ff 48 81 c4 18 01 00 00 5e 5f c3 8b 44 24 40 0f b7 c0 44 8b 44 24 20 45 0f b7 c0 41 3b c0 0f 94 c0 0f b6 c0 85 c0 75 12 44 8b 44 24 42 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c2 44 89 84 24 ac 00 00 00 44 0f b6 84 24 ac 00 00 00 4c 8b 09 c5 fa 6f 44 24 40 c5 fa 7f 84 24 88 00 00 00 c5 fa 6f 44 24 50 c5 fa 7f 84 24 98 00 00 00 44 8b 94 24 88 00 00 00 45 0f b7 d2 4d 63 d2 4f 8b 0c d1 44 8b 54 24 42 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 c0 74 0d 49 8b c1 48 81 c4 18 01 00 00 5e 5f c3 41 2b d0 89 94 24 84 00 00 00 0f b6 84 24 84 00 00 00 48 8b 09 c5 fa 6f 44 24 20 c5 fa 7f 44 24 60 c5 fa 6f 44 24 30 c5 fa 7f 44 24 70 8b 54 24 60 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 18 01 00 00 5e 5f c3 e8 5a 6d 45 ff}
 ; TermCode = CTC_INTRx2
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7052,10 +7052,10 @@
 0236h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0237h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0238h ret                                     ; RET || C3 || encoded[1]{c3}
-0239h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 5d 44 ff}
+0239h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 6d 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitseg<byte>(in Block256<byte> src, BitPos<byte> firstpos, BitPos<byte> lastpos)
-; bitseg_g[8u](b256x8u~in)[546] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 18 01 00 00 c3 e8 b6 5a 44 ff}
+; bitseg_g[8u](b256x8u~in)[546] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 18 01 00 00 c3 e8 f6 6a 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,118h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 18 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7168,10 +7168,10 @@
 0212h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0215h add rsp,118h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 18 01 00 00}
 021ch ret                                     ; RET || C3 || encoded[1]{c3}
-021dh call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 5a 44 ff}
+021dh call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 6a 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitseg<ushort>(in Block256<ushort> src, BitPos<ushort> firstpos, BitPos<ushort> lastpos)
-; bitseg_g[16u](b256x16u~in)[546] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 18 01 00 00 c3 e8 56 58 44 ff}
+; bitseg_g[16u](b256x16u~in)[546] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 18 01 00 00 c3 e8 96 68 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,118h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 18 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7284,10 +7284,10 @@
 0212h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0215h add rsp,118h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 18 01 00 00}
 021ch ret                                     ; RET || C3 || encoded[1]{c3}
-021dh call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 58 44 ff}
+021dh call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 68 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitseg<uint>(in Block256<uint> src, BitPos<uint> firstpos, BitPos<uint> lastpos)
-; bitseg_g[32u](b256x32u~in)[529] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 18 01 00 00 c3 e8 07 56 44 ff}
+; bitseg_g[32u](b256x32u~in)[529] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 18 01 00 00 c3 e8 47 66 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,118h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 18 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7395,10 +7395,10 @@
 0201h or eax,r9d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c1}
 0204h add rsp,118h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 18 01 00 00}
 020bh ret                                     ; RET || C3 || encoded[1]{c3}
-020ch call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 56 44 ff}
+020ch call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 66 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitseg<ulong>(in Block256<ulong> src, BitPos<ulong> firstpos, BitPos<ulong> lastpos)
-; bitseg_g[64u](b256x64u~in)[536] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 18 01 00 00 c3 e8 c0 53 44 ff}
+; bitseg_g[64u](b256x64u~in)[536] = {48 81 ec 18 01 00 00 c5 f8 77 48 8b 09 c5 fa 6f 02 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 42 10 c5 fa 7f 84 24 e8 00 00 00 c4 c1 7a 6f 00 c5 fa 7f 84 24 f8 00 00 00 c4 c1 7a 6f 40 10 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 18 01 00 00 c3 e8 00 64 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,118h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec 18 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7506,10 +7506,10 @@
 0208h or rax,r9                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c1}
 020bh add rsp,118h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 18 01 00 00}
 0212h ret                                     ; RET || C3 || encoded[1]{c3}
-0213h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c0 53 44 ff}
+0213h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 00 64 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitseg<byte>(Span<byte> src, int firstidx, int lastidx)
-; bitseg_g[8u](span8u,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 08 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 08 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 08 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 08 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 b8 01 00 00 c3 e8 11 4c 44 ff}
+; bitseg_g[8u](span8u,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 08 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 08 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 08 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 08 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 b8 01 00 00 c3 e8 51 5c 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7671,10 +7671,10 @@
 0367h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 036ah add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0371h ret                                     ; RET || C3 || encoded[1]{c3}
-0372h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 4c 44 ff}
+0372h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 5c 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitseg<ushort>(Span<ushort> src, int firstidx, int lastidx)
-; bitseg_g[16u](span16u,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 10 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 10 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 10 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 10 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 b8 01 00 00 c3 e8 51 48 44 ff}
+; bitseg_g[16u](span16u,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 10 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 10 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 10 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 10 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 b8 01 00 00 c3 e8 91 58 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7836,10 +7836,10 @@
 0367h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 036ah add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0371h ret                                     ; RET || C3 || encoded[1]{c3}
-0372h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 48 44 ff}
+0372h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 58 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitseg<uint>(Span<uint> src, int firstidx, int lastidx)
-; bitseg_g[32u](span32u,32i,32i)[870] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 20 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 20 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 20 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 20 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 b8 01 00 00 c3 e8 a2 44 44 ff}
+; bitseg_g[32u](span32u,32i,32i)[870] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 20 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 20 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 20 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 20 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 b8 01 00 00 c3 e8 e2 54 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -7996,10 +7996,10 @@
 0356h or eax,r9d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c1}
 0359h add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0360h ret                                     ; RET || C3 || encoded[1]{c3}
-0361h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 44 44 ff}
+0361h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 54 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitseg<ulong>(Span<ulong> src, int firstidx, int lastidx)
-; bitseg_g[64u](span64u,32i,32i)[877] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 40 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 40 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 40 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 40 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 b8 01 00 00 c3 e8 eb 40 44 ff}
+; bitseg_g[64u](span64u,32i,32i)[877] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca c7 84 24 54 01 00 00 40 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 40 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 40 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 40 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 48 8b 09 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 b8 01 00 00 c3 e8 2b 51 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -8156,10 +8156,10 @@
 035dh or rax,r9                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c1}
 0360h add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0367h ret                                     ; RET || C3 || encoded[1]{c3}
-0368h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb 40 44 ff}
+0368h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b 51 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte bitseg<byte>(in Block256<byte> src, int firstidx, int lastidx)
-; bitseg_g[8u](b256x8u~in,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 08 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 08 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 08 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 08 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 b8 01 00 00 c3 e8 31 3d 44 ff}
+; bitseg_g[8u](b256x8u~in,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 08 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 08 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 08 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 08 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 08 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 08 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 08 7e 0a b8 ff 00 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 08 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b6 0c 09 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b6 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b6 0c 11 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b6 c1 41 8b c8 d3 e0 0f b6 c0 41 8b d1 0b c2 0f b6 c0 48 81 c4 b8 01 00 00 c3 e8 71 4d 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -8321,10 +8321,10 @@
 0367h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 036ah add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0371h ret                                     ; RET || C3 || encoded[1]{c3}
-0372h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 3d 44 ff}
+0372h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 4d 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort bitseg<ushort>(in Block256<ushort> src, int firstidx, int lastidx)
-; bitseg_g[16u](b256x16u~in,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 10 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 10 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 10 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 10 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 b8 01 00 00 c3 e8 71 39 44 ff}
+; bitseg_g[16u](b256x16u~in,32i,32i)[887] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 10 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 10 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 10 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 10 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 10 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 10 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 14 01 00 00 ff c0 83 f8 10 7e 0a b8 ff ff 00 00 e9 fb 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 10 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 0f b7 0c 49 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 45 0f b7 c9 85 d2 74 05 41 8b c1 eb 56 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 0f b7 0c 51 c1 e0 08 0f b7 c0 c4 e2 78 f7 c9 0f b7 c1 41 8b c8 d3 e0 0f b7 c0 41 8b d1 0b c2 0f b7 c0 48 81 c4 b8 01 00 00 c3 e8 b1 49 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -8486,10 +8486,10 @@
 0367h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 036ah add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0371h ret                                     ; RET || C3 || encoded[1]{c3}
-0372h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 39 44 ff}
+0372h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b1 49 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint bitseg<uint>(in Block256<uint> src, int firstidx, int lastidx)
-; bitseg_g[32u](b256x32u~in,32i,32i)[870] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 20 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 20 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 20 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 20 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 b8 01 00 00 c3 e8 c2 35 44 ff}
+; bitseg_g[32u](b256x32u~in,32i,32i)[870] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 20 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 20 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 20 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 20 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 20 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 20 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 03 01 00 00 ff c0 83 f8 20 7e 0a b8 ff ff ff ff e9 ea 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 20 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 46 8b 0c 89 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 28 f7 c9 85 d2 74 05 41 8b c1 eb 4a 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 8b 0c 91 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 41 8b c8 d3 e0 41 0b c1 48 81 c4 b8 01 00 00 c3 e8 02 46 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -8646,10 +8646,10 @@
 0356h or eax,r9d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c1}
 0359h add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0360h ret                                     ; RET || C3 || encoded[1]{c3}
-0361h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c2 35 44 ff}
+0361h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 46 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong bitseg<ulong>(in Block256<ulong> src, int firstidx, int lastidx)
-; bitseg_g[64u](b256x64u~in,32i,32i)[877] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 40 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 40 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 40 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 40 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 b8 01 00 00 c3 e8 0b 32 44 ff}
+; bitseg_g[64u](b256x64u~in,32i,32i)[877] = {48 81 ec b8 01 00 00 c5 f8 77 44 8b ca 48 8b 09 c7 84 24 54 01 00 00 40 00 00 00 44 0f b6 94 24 54 01 00 00 41 8b c1 33 d2 41 f7 f2 89 84 24 50 01 00 00 44 0f b7 94 24 50 01 00 00 c7 84 24 4c 01 00 00 40 00 00 00 44 0f b6 9c 24 4c 01 00 00 41 8b c1 33 d2 41 f7 f3 89 94 24 48 01 00 00 48 8d 84 24 58 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 48 01 00 00 66 44 89 94 24 58 01 00 00 66 89 84 24 5a 01 00 00 c5 fa 6f 84 24 58 01 00 00 c5 fa 7f 84 24 98 01 00 00 c5 fa 6f 84 24 68 01 00 00 c5 fa 7f 84 24 a8 01 00 00 c7 84 24 24 01 00 00 40 00 00 00 44 0f b6 8c 24 24 01 00 00 41 8b c0 33 d2 41 f7 f1 89 84 24 20 01 00 00 44 0f b7 8c 24 20 01 00 00 c7 84 24 1c 01 00 00 40 00 00 00 44 0f b6 94 24 1c 01 00 00 41 8b c0 33 d2 41 f7 f2 89 94 24 18 01 00 00 48 8d 84 24 28 01 00 00 c5 f8 57 c0 c5 fa 7f 00 c5 fa 7f 40 10 0f b6 84 24 18 01 00 00 66 44 89 8c 24 28 01 00 00 66 89 84 24 2a 01 00 00 c5 fa 6f 84 24 28 01 00 00 c5 fa 7f 84 24 78 01 00 00 c5 fa 6f 84 24 38 01 00 00 c5 fa 7f 84 24 88 01 00 00 c5 fa 6f 84 24 98 01 00 00 c5 fa 7f 84 24 d8 00 00 00 c5 fa 6f 84 24 a8 01 00 00 c5 fa 7f 84 24 e8 00 00 00 c5 fa 6f 84 24 78 01 00 00 c5 fa 7f 84 24 f8 00 00 00 c5 fa 6f 84 24 88 01 00 00 c5 fa 7f 84 24 08 01 00 00 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 84 24 b8 00 00 00 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 84 24 c8 00 00 00 c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 84 24 98 00 00 00 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 84 24 a8 00 00 00 c5 fa 6f 84 24 98 00 00 00 c5 fa 7f 44 24 78 c5 fa 6f 84 24 a8 00 00 00 c5 fa 7f 84 24 88 00 00 00 8b 84 24 b8 00 00 00 0f b7 c0 c7 44 24 74 40 00 00 00 0f b6 54 24 74 0f af c2 8b 94 24 ba 00 00 00 0f b7 d2 03 c2 8b 54 24 78 0f b7 d2 c7 44 24 70 40 00 00 00 44 0f b6 44 24 70 41 0f af d0 44 8b 44 24 7a 45 0f b7 c0 41 03 d0 2b c2 85 c0 7d 0a f7 d8 85 c0 0f 8c 0a 01 00 00 ff c0 83 f8 40 7e 0f 48 b8 ff ff ff ff ff ff ff ff e9 ec 00 00 00 8b 94 24 d8 00 00 00 0f b7 d2 44 8b 84 24 f8 00 00 00 45 0f b7 c0 41 3b d0 0f 94 c2 0f b6 d2 85 d2 75 15 44 8b 84 24 da 00 00 00 45 0f b7 c0 41 f7 d8 41 83 c0 40 eb 03 44 8b c0 44 89 44 24 6c 44 0f b6 44 24 6c c5 fa 6f 84 24 d8 00 00 00 c5 fa 7f 44 24 48 c5 fa 6f 84 24 e8 00 00 00 c5 fa 7f 44 24 58 44 8b 4c 24 48 45 0f b7 c9 4d 63 c9 4e 8b 0c c9 44 8b 94 24 da 00 00 00 45 0f b7 d2 45 0f b6 d2 45 8b d8 41 c1 e3 08 45 0b d3 45 0f b7 d2 c4 42 a8 f7 c9 85 d2 74 05 49 8b c1 eb 4c 41 2b c0 89 44 24 44 0f b6 44 24 44 c5 fa 6f 84 24 f8 00 00 00 c5 fa 7f 44 24 20 c5 fa 6f 84 24 08 01 00 00 c5 fa 7f 44 24 30 8b 54 24 20 0f b7 d2 48 63 d2 48 8b 0c d1 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 41 8b c8 48 d3 e0 49 0b c1 48 81 c4 b8 01 00 00 c3 e8 4b 42 45 ff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,1b8h                            ; SUB r/m64, imm32 || REX.W 81 /5 id || encoded[7]{48 81 ec b8 01 00 00}
 0007h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -8806,24 +8806,24 @@
 035dh or rax,r9                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c1}
 0360h add rsp,1b8h                            ; ADD r/m64, imm32 || REX.W 81 /0 id || encoded[7]{48 81 c4 b8 01 00 00}
 0367h ret                                     ; RET || C3 || encoded[1]{c3}
-0368h call 7ff7c63b1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b 32 44 ff}
+0368h call 7ff7c63a1f68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b 42 45 ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<byte> storeseq<byte>(byte src)
-; storeseq_g[8u](8u)[89] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 08 00 00 00 e8 21 80 f3 5e 48 8d 50 10 40 0f b6 cf c1 e1 03 48 63 c9 49 b8 a5 64 fc e8 95 01 00 00 49 03 c8 48 8b 09 48 89 0a 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; storeseq_g[8u](8u)[89] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 08 00 00 00 e8 61 90 f5 5e 48 8d 50 10 40 0f b6 cf c1 e1 03 48 63 c9 49 b8 29 5a d5 6e 2f 02 00 00 49 03 c8 48 8b 09 48 89 0a 48 83 c0 10 ba 08 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0009h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-000bh mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+000bh mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0015h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 80 f3 5e}
+001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 90 f5 5e}
 001fh lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 0023h movzx ecx,dil                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{40 0f b6 cf}
 0027h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 002ah movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002dh mov r8,195e8fc64a5h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 a5 64 fc e8 95 01 00 00}
+002dh mov r8,22f6ed55a29h                     ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 29 5a d5 6e 2f 02 00 00}
 0037h add rcx,r8                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 c8}
 003ah mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 003dh mov [rdx],rcx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 0a}
@@ -8838,23 +8838,23 @@
 0058h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<byte> storeseq<ushort>(ushort src)
-; storeseq_g[16u](16u)[121] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 10 00 00 00 e8 a1 7b f3 5e 48 8d 50 10 0f b7 cf 4c 8b c2 44 0f b6 c9 41 c1 e1 03 4d 63 c9 49 ba a5 64 fc e8 95 01 00 00 4d 03 ca 4d 8b 09 4d 89 08 48 83 c2 08 c1 f9 08 0f b6 c9 c1 e1 03 48 63 c9 49 03 ca 48 8b 09 48 89 0a 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; storeseq_g[16u](16u)[121] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 10 00 00 00 e8 e1 8f f5 5e 48 8d 50 10 0f b7 cf 4c 8b c2 44 0f b6 c9 41 c1 e1 03 4d 63 c9 49 ba 29 5a d5 6e 2f 02 00 00 4d 03 ca 4d 8b 09 4d 89 08 48 83 c2 08 c1 f9 08 0f b6 c9 c1 e1 03 48 63 c9 49 03 ca 48 8b 09 48 89 0a 48 83 c0 10 ba 10 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0009h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-000bh mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+000bh mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0015h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 7b f3 5e}
+001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 8f f5 5e}
 001fh lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 0023h movzx ecx,di                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 cf}
 0026h mov r8,rdx                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c2}
 0029h movzx r9d,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c9}
 002dh shl r9d,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e1 03}
 0031h movsxd r9,r9d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c9}
-0034h mov r10,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba a5 64 fc e8 95 01 00 00}
+0034h mov r10,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 29 5a d5 6e 2f 02 00 00}
 003eh add r9,r10                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 ca}
 0041h mov r9,[r9]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 09}
 0044h mov [r8],r9                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 08}
@@ -8877,16 +8877,16 @@
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<byte> storeseq<uint>(uint src)
-; storeseq_g[32u](32u)[125] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 20 00 00 00 e8 01 7b f3 5e 48 8d 50 10 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 ca 41 8b c8 c1 e1 03 44 8b d7 41 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba a5 64 fc e8 95 01 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 04 7c c2 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; storeseq_g[32u](32u)[125] = {57 56 48 83 ec 28 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 20 00 00 00 e8 41 8b f5 5e 48 8d 50 10 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 ca 41 8b c8 c1 e1 03 44 8b d7 41 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 29 5a d5 6e 2f 02 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 04 7c c2 48 83 c0 10 ba 20 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0009h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-000bh mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+000bh mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0015h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 01 7b f3 5e}
+001ah call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 41 8b f5 5e}
 001fh lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 0023h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
 0026h mov ecx,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c8}
@@ -8900,7 +8900,7 @@
 003eh movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0042h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 0045h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0048h mov r10,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba a5 64 fc e8 95 01 00 00}
+0048h mov r10,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 29 5a d5 6e 2f 02 00 00}
 0052h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0055h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 0058h mov [r9],rcx                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 09}
@@ -8918,16 +8918,16 @@
 007ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ReadOnlySpan<byte> storeseq<ulong>(ulong src)
-; storeseq_g[64u](64u)[126] = {57 56 48 83 ec 28 48 8b f1 48 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 40 00 00 00 e8 60 7a f3 5e 48 8d 50 10 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 ca 41 8b c8 c1 e1 03 4c 8b d7 49 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba a5 64 fc e8 95 01 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 08 7c c2 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
+; storeseq_g[64u](64u)[126] = {57 56 48 83 ec 28 48 8b f1 48 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 40 00 00 00 e8 a0 8a f5 5e 48 8d 50 10 45 33 c0 41 8b c8 c1 e1 03 4c 63 c9 4c 03 ca 41 8b c8 c1 e1 03 4c 8b d7 49 d3 ea 41 0f b6 ca c1 e1 03 48 63 c9 49 ba 29 5a d5 6e 2f 02 00 00 49 03 ca 48 8b 09 49 89 09 41 ff c0 41 83 f8 08 7c c2 48 83 c0 10 ba 40 00 00 00 48 89 06 89 56 08 48 8b c6 48 83 c4 28 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0006h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0009h mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-000ch mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+000ch mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0016h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-001bh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 60 7a f3 5e}
+001bh call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a0 8a f5 5e}
 0020h lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 0024h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
 0027h mov ecx,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c8}
@@ -8941,7 +8941,7 @@
 003fh movzx ecx,r10b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 ca}
 0043h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 0046h movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-0049h mov r10,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba a5 64 fc e8 95 01 00 00}
+0049h mov r10,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 29 5a d5 6e 2f 02 00 00}
 0053h add rcx,r10                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 ca}
 0056h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 0059h mov [r9],rcx                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 09}
@@ -8959,7 +8959,7 @@
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void storeseq<byte>(byte src, Span<byte> dst, int offset)
-; storeseq_g[8u](8u,span8u,32i)[43] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 49 63 c8 48 03 c1 c1 e2 03 48 63 d2 48 b9 a5 64 fc e8 95 01 00 00 48 03 d1 48 8b 12 48 89 10 c3}
+; storeseq_g[8u](8u,span8u,32i)[43] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 49 63 c8 48 03 c1 c1 e2 03 48 63 d2 48 b9 29 5a d5 6e 2f 02 00 00 48 03 d1 48 8b 12 48 89 10 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -8968,14 +8968,14 @@
 000eh add rax,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c1}
 0011h shl edx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e2 03}
 0014h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-0017h mov rcx,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 a5 64 fc e8 95 01 00 00}
+0017h mov rcx,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 29 5a d5 6e 2f 02 00 00}
 0021h add rdx,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 d1}
 0024h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
 0027h mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void storeseq<ushort>(ushort src, Span<byte> dst, int offset)
-; storeseq_g[16u](16u,span8u,32i)[79] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 49 63 c8 48 03 c8 44 0f b6 ca 41 c1 e1 03 4d 63 c9 49 ba a5 64 fc e8 95 01 00 00 4d 03 ca 4d 8b 09 4c 89 09 41 83 c0 08 49 63 c8 48 03 c1 c1 fa 08 0f b6 d2 c1 e2 03 48 63 d2 49 03 d2 48 8b 12 48 89 10 c3}
+; storeseq_g[16u](16u,span8u,32i)[79] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 49 63 c8 48 03 c8 44 0f b6 ca 41 c1 e1 03 4d 63 c9 49 ba 29 5a d5 6e 2f 02 00 00 4d 03 ca 4d 8b 09 4c 89 09 41 83 c0 08 49 63 c8 48 03 c1 c1 fa 08 0f b6 d2 c1 e2 03 48 63 d2 49 03 d2 48 8b 12 48 89 10 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -8985,7 +8985,7 @@
 0011h movzx r9d,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 ca}
 0015h shl r9d,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e1 03}
 0019h movsxd r9,r9d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c9}
-001ch mov r10,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba a5 64 fc e8 95 01 00 00}
+001ch mov r10,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 ba 29 5a d5 6e 2f 02 00 00}
 0026h add r9,r10                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 ca}
 0029h mov r9,[r9]                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4d 8b 09}
 002ch mov [rcx],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4c 89 09}
@@ -9002,7 +9002,7 @@
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void storeseq<uint>(uint src, Span<byte> dst, int offset)
-; storeseq_g[32u](32u,span8u,32i)[74] = {0f 1f 44 00 00 48 8b 02 8b d1 45 33 c9 41 8b c9 c1 e1 03 45 8d 14 08 4d 63 d2 4c 03 d0 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 03 48 63 c9 49 bb a5 64 fc e8 95 01 00 00 49 03 cb 48 8b 09 49 89 0a 41 ff c1 41 83 f9 04 7c c4 c3}
+; storeseq_g[32u](32u,span8u,32i)[74] = {0f 1f 44 00 00 48 8b 02 8b d1 45 33 c9 41 8b c9 c1 e1 03 45 8d 14 08 4d 63 d2 4c 03 d0 44 8b da 41 d3 eb 41 0f b6 cb c1 e1 03 48 63 c9 49 bb 29 5a d5 6e 2f 02 00 00 49 03 cb 48 8b 09 49 89 0a 41 ff c1 41 83 f9 04 7c c4 c3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -9018,7 +9018,7 @@
 0023h movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0027h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 002ah movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002dh mov r11,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb a5 64 fc e8 95 01 00 00}
+002dh mov r11,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 29 5a d5 6e 2f 02 00 00}
 0037h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 003ah mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 003dh mov [r10],rcx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 0a}
@@ -9028,7 +9028,7 @@
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; void storeseq<ulong>(ulong src, Span<byte> dst, int offset)
-; storeseq_g[64u](64u,span8u,32i)[75] = {0f 1f 44 00 00 48 8b 02 48 8b d1 45 33 c9 41 8b c9 c1 e1 03 45 8d 14 08 4d 63 d2 4c 03 d0 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 03 48 63 c9 49 bb a5 64 fc e8 95 01 00 00 49 03 cb 48 8b 09 49 89 0a 41 ff c1 41 83 f9 08 7c c4 c3}
+; storeseq_g[64u](64u,span8u,32i)[75] = {0f 1f 44 00 00 48 8b 02 48 8b d1 45 33 c9 41 8b c9 c1 e1 03 45 8d 14 08 4d 63 d2 4c 03 d0 4c 8b da 49 d3 eb 41 0f b6 cb c1 e1 03 48 63 c9 49 bb 29 5a d5 6e 2f 02 00 00 49 03 cb 48 8b 09 49 89 0a 41 ff c1 41 83 f9 08 7c c4 c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -9044,7 +9044,7 @@
 0024h movzx ecx,r11b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 cb}
 0028h shl ecx,3                               ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[3]{c1 e1 03}
 002bh movsxd rcx,ecx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 c9}
-002eh mov r11,195e8fc64a5h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb a5 64 fc e8 95 01 00 00}
+002eh mov r11,22f6ed55a29h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 bb 29 5a d5 6e 2f 02 00 00}
 0038h add rcx,r11                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{49 03 cb}
 003bh mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
 003eh mov [r10],rcx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 0a}
@@ -9054,7 +9054,7 @@
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<byte>(byte src, Span<byte> dst, int offset)
-; bitseq_g[8u](8u,span8u,32i)[72] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 0f b6 d2 4d 63 d1 4c 03 d0 44 8b da 41 8b c9 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 08 7c e1 48 8b fb 49 8b f0 e8 f1 68 f3 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; bitseq_g[8u](8u,span8u,32i)[72] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 0f b6 d2 4d 63 d1 4c 03 d0 44 8b da 41 8b c9 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 08 7c e1 48 8b fb 49 8b f0 e8 31 79 f5 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9077,7 +9077,7 @@
 0032h jl short 0015h                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
 0034h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0037h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-003ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 68 f3 5e}
+003ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 79 f5 5e}
 003fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0041h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0044h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -9086,7 +9086,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ushort>(ushort src, Span<byte> dst, int offset)
-; bitseq_g[16u](16u,span8u,32i)[72] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 0f b7 d2 4d 63 d1 4c 03 d0 44 8b da 41 8b c9 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 10 7c e1 48 8b fb 49 8b f0 e8 91 68 f3 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; bitseq_g[16u](16u,span8u,32i)[72] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 0f b7 d2 4d 63 d1 4c 03 d0 44 8b da 41 8b c9 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 10 7c e1 48 8b fb 49 8b f0 e8 d1 78 f5 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9109,7 +9109,7 @@
 0032h jl short 0015h                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
 0034h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0037h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-003ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 68 f3 5e}
+003ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 78 f5 5e}
 003fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0041h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0044h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -9118,7 +9118,7 @@
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<uint>(uint src, Span<byte> dst, int offset)
-; bitseq_g[32u](32u,span8u,32i)[69] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 4d 63 d1 4c 03 d0 41 8b c9 44 8b da 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 20 7c e1 48 8b fb 49 8b f0 e8 34 68 f3 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; bitseq_g[32u](32u,span8u,32i)[69] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 4d 63 d1 4c 03 d0 41 8b c9 44 8b da 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c1 41 83 f9 20 7c e1 48 8b fb 49 8b f0 e8 74 78 f5 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9140,7 +9140,7 @@
 002fh jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
 0031h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0034h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0037h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 68 f3 5e}
+0037h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 78 f5 5e}
 003ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 003eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0041h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -9149,7 +9149,7 @@
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ulong>(ulong src, Span<byte> dst, int offset)
-; bitseq_g[64u](64u,span8u,32i)[71] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 4d 63 d1 4c 03 d0 41 8b c9 4c 8b da 49 d3 eb 41 8b cb 83 e1 01 41 88 0a 41 ff c1 41 83 f9 40 7c df 48 8b fb 49 8b f0 e8 d2 67 f3 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; bitseq_g[64u](64u,span8u,32i)[71] = {57 56 53 48 8b d9 49 8b 00 4d 63 c9 49 03 c1 45 33 c9 4d 63 d1 4c 03 d0 41 8b c9 4c 8b da 49 d3 eb 41 8b cb 83 e1 01 41 88 0a 41 ff c1 41 83 f9 40 7c df 48 8b fb 49 8b f0 e8 12 78 f5 5e 48 a5 48 8b c3 5b 5e 5f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9172,7 +9172,7 @@
 0031h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c df}
 0033h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0036h mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-0039h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 67 f3 5e}
+0039h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 78 f5 5e}
 003eh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0040h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0043h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -9181,7 +9181,7 @@
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<byte>(byte src)
-; bitseq_g[8u](8u)[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 08 00 00 00 e8 d5 76 f3 5e 48 83 c0 10 ba 08 00 00 00 45 33 c0 44 0f b6 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 08 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g[8u](8u)[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 08 00 00 00 e8 15 87 f5 5e 48 83 c0 10 ba 08 00 00 00 45 33 c0 44 0f b6 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 08 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9191,9 +9191,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0021h mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 76 f3 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 87 f5 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -9219,7 +9219,7 @@
 0072h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ushort>(ushort src)
-; bitseq_g[16u](16u)[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 10 00 00 00 e8 45 76 f3 5e 48 83 c0 10 ba 10 00 00 00 45 33 c0 44 0f b7 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 10 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g[16u](16u)[115] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 10 00 00 00 e8 85 86 f5 5e 48 83 c0 10 ba 10 00 00 00 45 33 c0 44 0f b7 cf 4d 63 d0 4c 03 d0 45 8b d9 41 8b c8 41 d3 eb 41 83 e3 01 45 88 1a 41 ff c0 41 83 f8 10 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9229,9 +9229,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0021h mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 76 f3 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 86 f5 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,10h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 10 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -9257,7 +9257,7 @@
 0072h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<uint>(uint src)
-; bitseq_g[32u](32u)[111] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 20 00 00 00 e8 b5 75 f3 5e 48 83 c0 10 ba 20 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 44 8b d7 41 d3 ea 41 83 e2 01 45 88 11 41 ff c0 41 83 f8 20 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g[32u](32u)[111] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 20 00 00 00 e8 f5 85 f5 5e 48 83 c0 10 ba 20 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 44 8b d7 41 d3 ea 41 83 e2 01 45 88 11 41 ff c0 41 83 f8 20 7c e1 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9267,9 +9267,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov edi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b fa}
-0017h mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+0017h mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0021h mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
-0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 75 f3 5e}
+0026h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 85 f5 5e}
 002bh add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 002fh mov edx,20h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 20 00 00 00}
 0034h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
@@ -9294,7 +9294,7 @@
 006eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> bitseq<ulong>(ulong src)
-; bitseq_g[64u](64u)[114] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 48 8b fa 48 b9 10 ea 35 c6 f7 7f 00 00 ba 40 00 00 00 e8 24 75 f3 5e 48 83 c0 10 ba 40 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 4c 8b d7 49 d3 ea 41 8b ca 83 e1 01 41 88 09 41 ff c0 41 83 f8 40 7c df 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
+; bitseq_g[64u](64u)[114] = {57 56 48 83 ec 38 33 c0 48 89 44 24 28 48 89 44 24 30 48 8b f1 48 8b fa 48 b9 10 ea 34 c6 f7 7f 00 00 ba 40 00 00 00 e8 64 85 f5 5e 48 83 c0 10 ba 40 00 00 00 45 33 c0 4d 63 c8 4c 03 c8 41 8b c8 4c 8b d7 49 d3 ea 41 8b ca 83 e1 01 41 88 09 41 ff c0 41 83 f8 40 7c df 48 89 44 24 28 89 54 24 30 48 89 06 89 56 08 48 8b c6 48 83 c4 38 5e 5f c3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -9304,9 +9304,9 @@
 000dh mov [rsp+30h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 30}
 0012h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0015h mov rdi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fa}
-0018h mov rcx,7ff7c635ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 35 c6 f7 7f 00 00}
+0018h mov rcx,7ff7c634ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 34 c6 f7 7f 00 00}
 0022h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
-0027h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 75 f3 5e}
+0027h call 7ff825ea6de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 64 85 f5 5e}
 002ch add rax,10h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c0 10}
 0030h mov edx,40h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 40 00 00 00}
 0035h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}

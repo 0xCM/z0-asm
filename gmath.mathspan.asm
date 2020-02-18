@@ -8889,7 +8889,7 @@
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<float> pow<float>(ReadOnlySpan<float> src, uint exp, Span<float> dst)
-; pow_g[32f](uspan32f,32u,span32f)[120] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 33 41 8b c0 c5 f8 57 c0 c4 e1 fb 2a c0 c5 cb 5a f0 49 63 c6 4c 8d 3c 87 c5 fa 10 44 85 00 c5 f8 28 ce e8 11 b0 74 5f c4 c1 7a 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; pow_g[32f](uspan32f,32u,span32f)[120] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 33 41 8b c0 c5 f8 57 c0 c4 e1 fb 2a c0 c5 cb 5a f0 49 63 c6 4c 8d 3c 87 c5 fa 10 44 85 00 c5 f8 28 ce e8 51 b2 77 5f c4 c1 7a 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -8915,7 +8915,7 @@
 003ch lea r15,[rdi+rax*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 3c 87}
 0040h vmovss xmm0,dword ptr [rbp+rax*4]       ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 44 85 00}
 0046h vmovaps xmm1,xmm6                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ce}
-004ah call 7ff8260f8d20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 11 b0 74 5f}
+004ah call 7ff8260f8d20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 51 b2 77 5f}
 004fh vmovss dword ptr [r15],xmm0             ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[5]{c4 c1 7a 11 07}
 0054h inc r14d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c6}
 0057h cmp r14d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b f3}
@@ -8934,7 +8934,7 @@
 0077h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<double> pow<double>(ReadOnlySpan<double> src, uint exp, Span<double> dst)
-; pow_g[64f](uspan64f,32u,span64f)[116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 25 b1 74 5f c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
+; pow_g[64f](uspan64f,32u,span64f)[116] = {41 57 41 56 57 56 55 53 48 83 ec 38 c5 f8 77 c5 f8 29 74 24 20 48 8b f1 49 8b 39 41 8b 59 08 48 8b 2a 45 33 f6 85 db 7e 2f 41 8b c0 c5 c8 57 f6 c4 e1 cb 2a f0 49 63 c6 4c 8d 3c c7 c5 fb 10 44 c5 00 c5 f8 28 ce e8 65 b3 77 5f c4 c1 7b 11 07 41 ff c6 44 3b f3 7c dd 48 89 3e 89 5e 08 48 8b c6 c5 f8 28 74 24 20 48 83 c4 38 5b 5d 5e 5f 41 5e 41 5f c3}
 ; TermCode = CTC_RET_INTR
 0000h push r15                                ; PUSH r64 || 50+ro || encoded[2]{41 57}
 0002h push r14                                ; PUSH r64 || 50+ro || encoded[2]{41 56}
@@ -8959,7 +8959,7 @@
 0038h lea r15,[rdi+rax*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4c 8d 3c c7}
 003ch vmovsd xmm0,qword ptr [rbp+rax*8]       ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c5 fb 10 44 c5 00}
 0042h vmovaps xmm1,xmm6                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ce}
-0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 25 b1 74 5f}
+0046h call 7ff8260f8ee0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 b3 77 5f}
 004bh vmovsd qword ptr [r15],xmm0             ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[5]{c4 c1 7b 11 07}
 0050h inc r14d                                ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c6}
 0053h cmp r14d,ebx                            ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b f3}
@@ -8978,7 +8978,7 @@
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte avg<byte>(ReadOnlySpan<byte> src)
-; avg_g[8u](uspan8u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b6 0c 08 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff 00 00 00 77 05 48 83 c4 28 c3 e8 b3 19 62 5f cc 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[8u](uspan8u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b6 0c 08 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff 00 00 00 77 05 48 83 c4 28 c3 e8 f3 1b 65 5f cc 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9006,7 +9006,7 @@
 0041h ja short 0048h                          ; JA rel8 || 77 cb || encoded[2]{77 05}
 0043h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
-0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 19 62 5f}
+0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 1b 65 5f}
 004dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 004eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0050h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
@@ -9015,7 +9015,7 @@
 0058h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; sbyte avg<sbyte>(ReadOnlySpan<sbyte> src)
-; avg_g[8i](uspan8i)[97] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1b 4d 63 c8 4e 0f be 0c 08 4d 63 c9 49 03 c9 70 27 41 83 c0 01 70 21 44 3b c2 7c e5 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 f8 7f 7f 0b 48 83 f8 80 7c 05 48 83 c4 28 c3 e8 40 19 62 5f cc 00 00 00 19 04 01 00 04 42 00 00 40 00 00 00 02}
+; avg_g[8i](uspan8i)[93] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1b 4d 63 c8 4e 0f be 0c 08 4d 63 c9 49 03 c9 70 27 41 83 c0 01 70 21 44 3b c2 7c e5 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 f8 7f 7f 0b 48 83 f8 80 7c 05 48 83 c4 28 c3 e8 80 17 65 5f cc 00 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9044,18 +9044,17 @@
 0044h jl short 004bh                          ; JL rel8 || 7C cb || encoded[2]{7c 05}
 0046h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
-004bh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 19 62 5f}
+004bh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 80 17 65 5f}
 0050h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0051h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0053h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
 0055h add al,1                                ; ADD AL, imm8 || 04 ib || encoded[2]{04 01}
 0057h add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
 005ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-005ch add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
-005fh add [rdx],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 02}
+005ch (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; ushort avg<ushort>(ReadOnlySpan<ushort> src)
-; avg_g[16u](uspan16u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b7 0c 48 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff ff 00 00 77 05 48 83 c4 28 c3 e8 d3 14 62 5f cc 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[16u](uspan16u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 18 4d 63 c8 46 0f b7 0c 48 49 03 c9 72 27 41 83 c0 01 70 21 44 3b c2 7c e8 85 d2 7c 18 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 3d ff ff 00 00 77 05 48 83 c4 28 c3 e8 13 17 65 5f cc 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9083,7 +9082,7 @@
 0041h ja short 0048h                          ; JA rel8 || 77 cb || encoded[2]{77 05}
 0043h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
-0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 14 62 5f}
+0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 13 17 65 5f}
 004dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 004eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0050h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
@@ -9092,7 +9091,7 @@
 0058h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; short avg<short>(ReadOnlySpan<short> src)
-; avg_g[16i](uspan16i)[97] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1b 4d 63 c8 4e 0f bf 0c 48 4d 63 c9 49 03 c9 70 2b 41 83 c0 01 70 25 44 3b c2 7c e5 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 3d ff 7f 00 00 7f 0d 48 3d 00 80 ff ff 7c 05 48 83 c4 28 c3 e8 5c 14 62 5f cc 00 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[16i](uspan16i)[97] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1b 4d 63 c8 4e 0f bf 0c 48 4d 63 c9 49 03 c9 70 2b 41 83 c0 01 70 25 44 3b c2 7c e5 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 3d ff 7f 00 00 7f 0d 48 3d 00 80 ff ff 7c 05 48 83 c4 28 c3 e8 9c 16 65 5f cc 00 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9121,7 +9120,7 @@
 0048h jl short 004fh                          ; JL rel8 || 7C cb || encoded[2]{7c 05}
 004ah add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 004eh ret                                     ; RET || C3 || encoded[1]{c3}
-004fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 14 62 5f}
+004fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c 16 65 5f}
 0054h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0055h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0057h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -9131,7 +9130,7 @@
 0060h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; uint avg<uint>(ReadOnlySpan<uint> src)
-; avg_g[32u](uspan32u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 17 4d 63 c8 46 8b 0c 88 49 03 c9 72 28 41 83 c0 01 70 22 44 3b c2 7c e9 85 d2 7c 19 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 8b d0 48 c1 ea 20 75 05 48 83 c4 28 c3 e8 f3 13 62 5f cc 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[32u](uspan32u)[89] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 17 4d 63 c8 46 8b 0c 88 49 03 c9 72 28 41 83 c0 01 70 22 44 3b c2 7c e9 85 d2 7c 19 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 8b d0 48 c1 ea 20 75 05 48 83 c4 28 c3 e8 33 16 65 5f cc 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9160,7 +9159,7 @@
 0041h jne short 0048h                         ; JNE rel8 || 75 cb || encoded[2]{75 05}
 0043h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0047h ret                                     ; RET || C3 || encoded[1]{c3}
-0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f3 13 62 5f}
+0048h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 33 16 65 5f}
 004dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 004eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0050h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
@@ -9169,7 +9168,7 @@
 0058h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; int avg<int>(ReadOnlySpan<int> src)
-; avg_g[32i](uspan32i)[93] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1a 4d 63 c8 46 8b 0c 88 4d 63 c9 49 03 c9 70 2b 41 83 c0 01 70 25 44 3b c2 7c e6 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 3d ff ff ff 7f 7f 0d 48 3d 00 00 00 80 7c 05 48 83 c4 28 c3 e8 7d 13 62 5f cc 19 04 01 00 04 42 00 00 40}
+; avg_g[32i](uspan32i)[93] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 1a 4d 63 c8 46 8b 0c 88 4d 63 c9 49 03 c9 70 2b 41 83 c0 01 70 25 44 3b c2 7c e6 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 3d ff ff ff 7f 7f 0d 48 3d 00 00 00 80 7c 05 48 83 c4 28 c3 e8 bd 11 65 5f cc 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9198,7 +9197,7 @@
 0047h jl short 004eh                          ; JL rel8 || 7C cb || encoded[2]{7c 05}
 0049h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
-004eh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 13 62 5f}
+004eh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 11 65 5f}
 0053h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0054h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
 0057h add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
@@ -9206,7 +9205,7 @@
 005ch (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong avg<ulong>(ReadOnlySpan<ulong> src)
-; avg_g[64u](uspan64u)[77] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 72 1f 41 83 c0 01 70 19 44 3b c2 7c ec 85 d2 7c 10 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 83 c4 28 c3 e8 1f 13 62 5f cc 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[64u](uspan64u)[77] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 72 1f 41 83 c0 01 70 19 44 3b c2 7c ec 85 d2 7c 10 44 8b c2 48 8b c1 33 d2 49 f7 f0 48 83 c4 28 c3 e8 5f 11 65 5f cc 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9231,7 +9230,7 @@
 0034h div r8                                  ; DIV r/m64 || REX.W F7 /6 || encoded[3]{49 f7 f0}
 0037h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 003bh ret                                     ; RET || C3 || encoded[1]{c3}
-003ch call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1f 13 62 5f}
+003ch call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 11 65 5f}
 0041h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0042h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0044h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
@@ -9240,7 +9239,7 @@
 004ch (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; long avg<long>(ReadOnlySpan<long> src)
-; avg_g[64i](uspan64i)[73] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 70 1b 41 83 c0 01 70 15 44 3b c2 7c ec 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 c4 28 c3 e8 c3 12 62 5f cc 00 00 19 04 01 00 04 42 00 00 40}
+; avg_g[64i](uspan64i)[73] = {48 83 ec 28 90 48 8b 01 8b 51 08 33 c9 45 33 c0 85 d2 7e 14 4d 63 c8 4a 03 0c c8 70 1b 41 83 c0 01 70 15 44 3b c2 7c ec 4c 63 c2 48 8b c1 48 99 49 f7 f8 48 83 c4 28 c3 e8 03 11 65 5f cc 00 00 19 04 01 00 04 42 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
@@ -9263,7 +9262,7 @@
 0030h idiv r8                                 ; IDIV r/m64 || REX.W F7 /7 || encoded[3]{49 f7 f8}
 0033h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
-0038h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 12 62 5f}
+0038h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 11 65 5f}
 003dh int 3                                   ; INT3 || CC || encoded[1]{cc}
 003eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0040h sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
@@ -9272,7 +9271,7 @@
 0048h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; float avg<float>(ReadOnlySpan<float> src)
-; avg_g[32f](uspan32f)[65] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 4f 7b d3 ff 90 48 83 c4 38 c3 e8 6c 0e 62 5f cc 00 00 00 19 04 01 00 04 62 00 00 40}
+; avg_g[32f](uspan32f)[65] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 8f 7d d5 ff 90 48 83 c4 38 c3 e8 ac 10 65 5f cc 00 00 00 19 04 01 00 04 62 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -9284,11 +9283,11 @@
 0019h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 001ch mov [rdx+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 4a 08}
 001fh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-0024h call 7ff7c66e68f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f 7b d3 ff}
+0024h call 7ff7c66d68f8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8f 7d d5 ff}
 0029h nop                                     ; NOP || o32 90 || encoded[1]{90}
 002ah add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
-002fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c 0e 62 5f}
+002fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 10 65 5f}
 0034h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0035h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0037h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
@@ -9298,7 +9297,7 @@
 0040h (bad)                                   ; <invalid> || <invalid> || encoded[1]{40}
 ------------------------------------------------------------------------------------------------------------------------
 ; double avg<double>(ReadOnlySpan<double> src)
-; avg_g[64f](uspan64f)[65] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 07 7b d3 ff 90 48 83 c4 38 c3 e8 1c 0e 62 5f cc 00 00 00 19 04 01 00 04 62 00 00 40}
+; avg_g[64f](uspan64f)[65] = {48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b 01 8b 49 08 48 8d 54 24 28 48 89 02 89 4a 08 48 8d 4c 24 28 e8 47 7d d5 ff 90 48 83 c4 38 c3 e8 5c 10 65 5f cc 00 00 00 19 04 01 00 04 62 00 00 40}
 ; TermCode = CTC_Zx7
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -9310,11 +9309,11 @@
 0019h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 001ch mov [rdx+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 4a 08}
 001fh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-0024h call 7ff7c66e6900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 7b d3 ff}
+0024h call 7ff7c66d6900h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 7d d5 ff}
 0029h nop                                     ; NOP || o32 90 || encoded[1]{90}
 002ah add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
-002fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c 0e 62 5f}
+002fh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 10 65 5f}
 0034h int 3                                   ; INT3 || CC || encoded[1]{cc}
 0035h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
 0037h add [rcx],bl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 19}
