@@ -1,0 +1,81 @@
+Sequence  | Length  | TermCode            | Uri                                                                   | Data
+0         | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsU8#AsU8_g[8u](8u)                              | 0f 1f 44 00 00 0f b6 c1 c3
+1         | 10      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU8#AsU8_g[8i](8i)                              | 0f 1f 44 00 00 48 0f be c1 c3
+2         | 22      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU8#AsU8_g[16u](16u)                            | 50 0f 1f 40 00 0f b7 c1 89 44 24 04 0f b6 44 24 04 48 83 c4 08 c3
+3         | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU8#AsU8_g[16i](16i)                            | 50 0f 1f 40 00 48 0f bf c1 89 44 24 04 0f b6 44 24 04 48 83 c4 08 c3
+4         | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU8#AsU8_g[32u](32u)                            | 50 0f 1f 40 00 89 4c 24 04 0f b6 44 24 04 48 83 c4 08 c3
+5         | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU8#AsU8_g[32i](32i)                            | 50 0f 1f 40 00 89 4c 24 04 0f b6 44 24 04 48 83 c4 08 c3
+6         | 18      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU8#AsU8_g[64u](64u)                            | 50 0f 1f 40 00 48 89 0c 24 0f b6 04 24 48 83 c4 08 c3
+7         | 18      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU8#AsU8_g[64i](64i)                            | 50 0f 1f 40 00 48 89 0c 24 0f b6 04 24 48 83 c4 08 c3
+8         | 21      | CTC_RET_INTR        | hex://root/AsNumeric?AsU8#AsU8_g[32f](32f)                            | 50 c5 f8 77 90 c5 fa 11 44 24 04 0f b6 44 24 04 48 83 c4 08 c3
+9         | 19      | CTC_RET_INTR        | hex://root/AsNumeric?AsU8#AsU8_g[64f](64f)                            | 50 c5 f8 77 90 c5 fb 11 04 24 0f b6 04 24 48 83 c4 08 c3
+10        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsI8#AsI8_g[8u](8u)                              | 0f 1f 44 00 00 0f b6 c1 c3
+11        | 10      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI8#AsI8_g[8i](8i)                              | 0f 1f 44 00 00 48 0f be c1 c3
+12        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI8#AsI8_g[16u](16u)                            | 50 0f 1f 40 00 0f b7 c1 89 44 24 04 48 0f be 44 24 04 48 83 c4 08 c3
+13        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsI8#AsI8_g[16i](16i)                            | 50 0f 1f 40 00 48 0f bf c1 89 44 24 04 48 0f be 44 24 04 48 83 c4 08 c3
+14        | 20      | CTC_RET_SBB         | hex://root/AsNumeric?AsI8#AsI8_g[32u](32u)                            | 50 0f 1f 40 00 89 4c 24 04 48 0f be 44 24 04 48 83 c4 08 c3
+15        | 20      | CTC_RET_SBB         | hex://root/AsNumeric?AsI8#AsI8_g[32i](32i)                            | 50 0f 1f 40 00 89 4c 24 04 48 0f be 44 24 04 48 83 c4 08 c3
+16        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI8#AsI8_g[64u](64u)                            | 50 0f 1f 40 00 48 89 0c 24 48 0f be 04 24 48 83 c4 08 c3
+17        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI8#AsI8_g[64i](64i)                            | 50 0f 1f 40 00 48 89 0c 24 48 0f be 04 24 48 83 c4 08 c3
+18        | 22      | CTC_RET_INTR        | hex://root/AsNumeric?AsI8#AsI8_g[32f](32f)                            | 50 c5 f8 77 90 c5 fa 11 44 24 04 48 0f be 44 24 04 48 83 c4 08 c3
+19        | 20      | CTC_RET_INTR        | hex://root/AsNumeric?AsI8#AsI8_g[64f](64f)                            | 50 c5 f8 77 90 c5 fb 11 04 24 48 0f be 04 24 48 83 c4 08 c3
+20        | 22      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU16#AsU16_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 0f b7 44 24 04 48 83 c4 08 c3
+21        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU16#AsU16_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 0f b7 44 24 04 48 83 c4 08 c3
+22        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsU16#AsU16_g[16u](16u)                          | 0f 1f 44 00 00 0f b7 c1 c3
+23        | 10      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU16#AsU16_g[16i](16i)                          | 0f 1f 44 00 00 48 0f bf c1 c3
+24        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU16#AsU16_g[32u](32u)                          | 50 0f 1f 40 00 89 4c 24 04 0f b7 44 24 04 48 83 c4 08 c3
+25        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU16#AsU16_g[32i](32i)                          | 50 0f 1f 40 00 89 4c 24 04 0f b7 44 24 04 48 83 c4 08 c3
+26        | 18      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU16#AsU16_g[64u](64u)                          | 50 0f 1f 40 00 48 89 0c 24 0f b7 04 24 48 83 c4 08 c3
+27        | 18      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU16#AsU16_g[64i](64i)                          | 50 0f 1f 40 00 48 89 0c 24 0f b7 04 24 48 83 c4 08 c3
+28        | 21      | CTC_RET_INTR        | hex://root/AsNumeric?AsU16#AsU16_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 0f b7 44 24 04 48 83 c4 08 c3
+29        | 19      | CTC_RET_INTR        | hex://root/AsNumeric?AsU16#AsU16_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 0f b7 04 24 48 83 c4 08 c3
+30        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI16#AsI16_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3
+31        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsI16#AsI16_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3
+32        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsI16#AsI16_g[16u](16u)                          | 0f 1f 44 00 00 0f b7 c1 c3
+33        | 10      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI16#AsI16_g[16i](16i)                          | 0f 1f 44 00 00 48 0f bf c1 c3
+34        | 20      | CTC_RET_SBB         | hex://root/AsNumeric?AsI16#AsI16_g[32u](32u)                          | 50 0f 1f 40 00 89 4c 24 04 48 0f bf 44 24 04 48 83 c4 08 c3
+35        | 20      | CTC_RET_SBB         | hex://root/AsNumeric?AsI16#AsI16_g[32i](32i)                          | 50 0f 1f 40 00 89 4c 24 04 48 0f bf 44 24 04 48 83 c4 08 c3
+36        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI16#AsI16_g[64u](64u)                          | 50 0f 1f 40 00 48 89 0c 24 48 0f bf 04 24 48 83 c4 08 c3
+37        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI16#AsI16_g[64i](64i)                          | 50 0f 1f 40 00 48 89 0c 24 48 0f bf 04 24 48 83 c4 08 c3
+38        | 22      | CTC_RET_INTR        | hex://root/AsNumeric?AsI16#AsI16_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 48 0f bf 44 24 04 48 83 c4 08 c3
+39        | 20      | CTC_RET_INTR        | hex://root/AsNumeric?AsI16#AsI16_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 48 0f bf 04 24 48 83 c4 08 c3
+40        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsI32#AsI32_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 8b 44 24 04 0f b6 c0 48 83 c4 08 c3
+41        | 26      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI32#AsI32_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 8b 44 24 04 48 0f be c0 48 83 c4 08 c3
+42        | 25      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI32#AsI32_g[16u](16u)                          | 50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 8b 44 24 04 0f b7 c0 48 83 c4 08 c3
+43        | 27      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI32#AsI32_g[16i](16i)                          | 50 0f 1f 40 00 48 0f bf c1 66 89 44 24 04 8b 44 24 04 48 0f bf c0 48 83 c4 08 c3
+44        | 8       | CTC_RET_SBB         | hex://root/AsNumeric?AsI32#AsI32_g[32u](32u)                          | 0f 1f 44 00 00 8b c1 c3
+45        | 8       | CTC_RET_SBB         | hex://root/AsNumeric?AsI32#AsI32_g[32i](32i)                          | 0f 1f 44 00 00 8b c1 c3
+46        | 17      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI32#AsI32_g[64u](64u)                          | 50 0f 1f 40 00 48 89 0c 24 8b 04 24 48 83 c4 08 c3
+47        | 17      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI32#AsI32_g[64i](64i)                          | 50 0f 1f 40 00 48 89 0c 24 8b 04 24 48 83 c4 08 c3
+48        | 20      | CTC_RET_INTR        | hex://root/AsNumeric?AsI32#AsI32_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 48 83 c4 08 c3
+49        | 18      | CTC_RET_INTR        | hex://root/AsNumeric?AsI32#AsI32_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 8b 04 24 48 83 c4 08 c3
+50        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsU32#AsU32_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 8b 44 24 04 0f b6 c0 48 83 c4 08 c3
+51        | 26      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU32#AsU32_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 8b 44 24 04 48 0f be c0 48 83 c4 08 c3
+52        | 25      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU32#AsU32_g[16u](16u)                          | 50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 8b 44 24 04 0f b7 c0 48 83 c4 08 c3
+53        | 27      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU32#AsU32_g[16i](16i)                          | 50 0f 1f 40 00 48 0f bf c1 66 89 44 24 04 8b 44 24 04 48 0f bf c0 48 83 c4 08 c3
+54        | 8       | CTC_RET_SBB         | hex://root/AsNumeric?AsU32#AsU32_g[32u](32u)                          | 0f 1f 44 00 00 8b c1 c3
+55        | 8       | CTC_RET_SBB         | hex://root/AsNumeric?AsU32#AsU32_g[32i](32i)                          | 0f 1f 44 00 00 8b c1 c3
+56        | 17      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU32#AsU32_g[64u](64u)                          | 50 0f 1f 40 00 48 89 0c 24 8b 04 24 48 83 c4 08 c3
+57        | 17      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU32#AsU32_g[64i](64i)                          | 50 0f 1f 40 00 48 89 0c 24 8b 04 24 48 83 c4 08 c3
+58        | 20      | CTC_RET_INTR        | hex://root/AsNumeric?AsU32#AsU32_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 8b 44 24 04 48 83 c4 08 c3
+59        | 18      | CTC_RET_INTR        | hex://root/AsNumeric?AsU32#AsU32_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 8b 04 24 48 83 c4 08 c3
+60        | 22      | CTC_RET_Zx3         | hex://root/AsNumeric?AsI64#AsI64_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+61        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI64#AsI64_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+62        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI64#AsI64_g[16u](16u)                          | 50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+63        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsI64#AsI64_g[16i](16i)                          | 50 0f 1f 40 00 48 0f bf c1 66 89 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+64        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI64#AsI64_g[32u](32u)                          | 50 0f 1f 40 00 89 4c 24 04 48 8b 44 24 04 48 83 c4 08 c3
+65        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsI64#AsI64_g[32i](32i)                          | 50 0f 1f 40 00 89 4c 24 04 48 8b 44 24 04 48 83 c4 08 c3
+66        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsI64#AsI64_g[64u](64u)                          | 0f 1f 44 00 00 48 8b c1 c3
+67        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsI64#AsI64_g[64i](64i)                          | 0f 1f 44 00 00 48 8b c1 c3
+68        | 21      | CTC_RET_INTR        | hex://root/AsNumeric?AsI64#AsI64_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+69        | 19      | CTC_RET_INTR        | hex://root/AsNumeric?AsI64#AsI64_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 48 83 c4 08 c3
+70        | 22      | CTC_RET_Zx3         | hex://root/AsNumeric?AsU64#AsU64_g[8u](8u)                            | 50 0f 1f 40 00 0f b6 c1 88 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+71        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU64#AsU64_g[8i](8i)                            | 50 0f 1f 40 00 48 0f be c1 88 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+72        | 23      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU64#AsU64_g[16u](16u)                          | 50 0f 1f 40 00 0f b7 c1 66 89 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+73        | 24      | CTC_RET_SBB         | hex://root/AsNumeric?AsU64#AsU64_g[16i](16i)                          | 50 0f 1f 40 00 48 0f bf c1 66 89 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+74        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU64#AsU64_g[32u](32u)                          | 50 0f 1f 40 00 89 4c 24 04 48 8b 44 24 04 48 83 c4 08 c3
+75        | 19      | CTC_RET_ZED_SBB     | hex://root/AsNumeric?AsU64#AsU64_g[32i](32i)                          | 50 0f 1f 40 00 89 4c 24 04 48 8b 44 24 04 48 83 c4 08 c3
+76        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsU64#AsU64_g[64u](64u)                          | 0f 1f 44 00 00 48 8b c1 c3
+77        | 9       | CTC_RET_Zx3         | hex://root/AsNumeric?AsU64#AsU64_g[64i](64i)                          | 0f 1f 44 00 00 48 8b c1 c3
+78        | 21      | CTC_RET_INTR        | hex://root/AsNumeric?AsU64#AsU64_g[32f](32f)                          | 50 c5 f8 77 90 c5 fa 11 44 24 04 48 8b 44 24 04 48 83 c4 08 c3
+79        | 19      | CTC_RET_INTR        | hex://root/AsNumeric?AsU64#AsU64_g[64f](64f)                          | 50 c5 f8 77 90 c5 fb 11 04 24 48 8b 04 24 48 83 c4 08 c3
