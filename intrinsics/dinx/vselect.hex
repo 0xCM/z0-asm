@@ -1,8 +1,0 @@
-vselect_(v128x8u,v128x8u,v128x8u)     c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 db ca c4 c1 79 10 11 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vselect_(v128x16u,v128x16u,v128x16u)  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 db ca c4 c1 79 10 11 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vselect_(v128x32u,v128x32u,v128x32u)  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 db ca c4 c1 79 10 11 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vselect_(v128x64u,v128x64u,v128x64u)  c5 f8 77 66 90 c5 f9 10 02 c5 f8 28 c8 c4 c1 79 10 10 c5 f1 db ca c4 c1 79 10 11 c5 f9 df c2 c5 f1 eb c0 c5 f9 11 01 48 8b c1 c3
-vselect_(v256x8u,v256x8u,v256x8u)     c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 db ca c4 c1 7d 10 11 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vselect_(v256x16u,v256x16u,v256x16u)  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 db ca c4 c1 7d 10 11 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vselect_(v256x32u,v256x32u,v256x32u)  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 db ca c4 c1 7d 10 11 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vselect_(v256x64u,v256x64u,v256x64u)  c5 f8 77 66 90 c5 fd 10 02 c5 fc 28 c8 c4 c1 7d 10 10 c5 f5 db ca c4 c1 7d 10 11 c5 fd df c2 c5 f5 eb c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,4 +1,0 @@
-nlz_(8u)   0f 1f 44 00 00 0f b6 c1 f3 0f bd c0 83 c0 e8 c3
-nlz_(16u)  0f 1f 44 00 00 0f b7 c1 f3 0f bd c0 83 c0 f0 c3
-nlz_(32u)  0f 1f 44 00 00 33 c0 f3 0f bd c1 c3
-nlz_(64u)  0f 1f 44 00 00 33 c0 f3 48 0f bd c1 c3

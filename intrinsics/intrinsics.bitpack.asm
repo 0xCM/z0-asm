@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack<byte>(Span<bit> src, byte t)
-; pack_g[8u](8u)[149] = {48 83 ec 28 c5 f8 77 48 8b 01 8b 51 08 48 83 fa 08 0f 82 79 00 00 00 c5 ff f0 00 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 24 ff ff 00 00 48 8d 44 24 24 c4 e2 79 58 54 24 24 c5 f1 db ca c5 f9 db c2 c4 e2 71 2b c0 c5 f0 57 c9 c7 44 24 20 ff 00 00 00 48 8d 44 24 20 c4 e2 79 79 54 24 20 c5 f9 db c2 c5 f1 db ca c5 f9 67 c1 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 0f b6 c0 c5 f8 77 48 83 c4 28 c3 e8 f0 c3 ed 5e e8 23 1e 2b ff}
+; byte pack<byte>(Span<bit> src, byte t), hex://intrinsics/bitpack?pack#pack_g[8u](8u)
+; pack_g[8u](8u)[149] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x8b,0x51,0x08,0x48,0x83,0xfa,0x08,0x0f,0x82,0x79,0x00,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc4,0xe3,0x7d,0x19,0xc1,0x00,0xc4,0xe3,0x7d,0x19,0xc0,0x01,0xc7,0x44,0x24,0x24,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x24,0xc4,0xe2,0x79,0x58,0x54,0x24,0x24,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0xdb,0xc2,0xc4,0xe2,0x71,0x2b,0xc0,0xc5,0xf0,0x57,0xc9,0xc7,0x44,0x24,0x20,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x20,0xc4,0xe2,0x79,0x79,0x54,0x24,0x20,0xc5,0xf9,0xdb,0xc2,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0x67,0xc1,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0x0f,0xb6,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x30,0x79,0xd8,0x5e,0xe8,0xa3,0xd3,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -33,11 +33,11 @@
 0083h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0086h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 008ah ret                                     ; RET || C3 || encoded[1]{c3}
-008bh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f0 c3 ed 5e}
-0090h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 1e 2b ff}
+008bh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 79 d8 5e}
+0090h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 d3 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack<ushort>(Span<bit> src, ushort t)
-; pack_g[16u](16u)[159] = {48 83 ec 28 c5 f8 77 48 8b 01 8b 51 08 48 83 fa 10 0f 82 83 00 00 00 48 8b d0 c5 ff f0 02 48 83 c0 20 c5 ff f0 08 c7 44 24 24 ff ff 00 00 48 8d 44 24 24 c4 e2 7d 58 54 24 24 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 20 ff 00 00 00 48 8d 44 24 20 c4 e2 79 79 54 24 20 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c5 f8 77 48 83 c4 28 c3 e8 26 c3 ed 5e e8 59 1d 2b ff}
+; ushort pack<ushort>(Span<bit> src, ushort t), hex://intrinsics/bitpack?pack#pack_g[16u](16u)
+; pack_g[16u](16u)[159] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x8b,0x51,0x08,0x48,0x83,0xfa,0x10,0x0f,0x82,0x83,0x00,0x00,0x00,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0x48,0x83,0xc0,0x20,0xc5,0xff,0xf0,0x08,0xc7,0x44,0x24,0x24,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x24,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x24,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xc4,0xe3,0x7d,0x19,0xc1,0x00,0xc4,0xe3,0x7d,0x19,0xc0,0x01,0xc7,0x44,0x24,0x20,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x20,0xc4,0xe2,0x79,0x79,0x54,0x24,0x20,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0xdb,0xc2,0xc5,0xf1,0x67,0xc0,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x66,0x78,0xd8,0x5e,0xe8,0xd9,0xd2,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -72,11 +72,11 @@
 008dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0090h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0094h ret                                     ; RET || C3 || encoded[1]{c3}
-0095h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 c3 ed 5e}
-009ah call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 59 1d 2b ff}
+0095h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 78 d8 5e}
+009ah call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d9 d2 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack<uint>(Span<bit> src, uint t)
-; pack_g[32u](32u)[205] = {48 83 ec 38 c5 f8 77 48 8b 01 8b 51 08 48 83 fa 20 0f 82 b1 00 00 00 48 8b d0 c5 ff f0 02 48 8d 50 20 c5 ff f0 0a c7 44 24 34 ff ff 00 00 48 8d 54 24 34 c4 e2 7d 58 54 24 34 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 48 8d 50 40 c5 ff f0 0a 48 83 c0 60 c5 ff f0 10 c7 44 24 30 ff ff 00 00 48 8d 44 24 30 c4 e2 7d 58 5c 24 30 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 44 24 2c ff 00 00 00 48 8d 44 24 2c c4 e2 7d 79 54 24 2c c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 48 83 c4 38 c3 e8 38 c2 ed 5e e8 6b 1c 2b ff}
+; uint pack<uint>(Span<bit> src, uint t), hex://intrinsics/bitpack?pack#pack_g[32u](32u)
+; pack_g[32u](32u)[205] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x8b,0x51,0x08,0x48,0x83,0xfa,0x20,0x0f,0x82,0xb1,0x00,0x00,0x00,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0x48,0x8d,0x50,0x20,0xc5,0xff,0xf0,0x0a,0xc7,0x44,0x24,0x34,0xff,0xff,0x00,0x00,0x48,0x8d,0x54,0x24,0x34,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x34,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x50,0x40,0xc5,0xff,0xf0,0x0a,0x48,0x83,0xc0,0x60,0xc5,0xff,0xf0,0x10,0xc7,0x44,0x24,0x30,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x30,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x30,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x44,0x24,0x2c,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x2c,0xc4,0xe2,0x7d,0x79,0x54,0x24,0x2c,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3,0xe8,0x78,0x77,0xd8,0x5e,0xe8,0xeb,0xd1,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -120,11 +120,11 @@
 00bbh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 00beh add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 00c2h ret                                     ; RET || C3 || encoded[1]{c3}
-00c3h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 c2 ed 5e}
-00c8h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b 1c 2b ff}
+00c3h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 78 77 d8 5e}
+00c8h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb d1 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack<ulong>(Span<bit> src, ulong t)
-; pack_g[64u](64u)[395] = {48 83 ec 38 c5 f8 77 48 8b 01 8b 51 08 48 83 fa 40 0f 82 6f 01 00 00 48 8b d0 c5 ff f0 02 48 8d 50 20 c5 ff f0 0a c7 44 24 34 ff ff 00 00 48 8d 54 24 34 c4 e2 7d 58 54 24 34 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 48 8d 50 40 c5 ff f0 0a 48 8d 50 60 c5 ff f0 12 c7 44 24 30 ff ff 00 00 48 8d 54 24 30 c4 e2 7d 58 5c 24 30 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 44 24 2c ff 00 00 00 48 8d 54 24 2c c4 e2 7d 79 54 24 2c c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 ba 07 00 00 00 c5 f9 6e ca c5 fd f3 c1 c5 fd d7 d0 8b d2 48 8d 88 80 00 00 00 c5 ff f0 09 48 8d 88 a0 00 00 00 c5 ff f0 11 c7 44 24 28 ff ff 00 00 48 8d 4c 24 28 c4 e2 7d 58 44 24 28 c5 f5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 48 8d 88 c0 00 00 00 c5 ff f0 09 48 05 e0 00 00 00 c5 ff f0 10 c7 44 24 24 ff ff 00 00 48 8d 44 24 24 c4 e2 7d 58 5c 24 24 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 44 24 20 ff 00 00 00 48 8d 44 24 20 c4 e2 7d 79 54 24 20 c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 48 83 c4 38 c3 e8 8a c0 ed 5e e8 bd 1a 2b ff}
+; ulong pack<ulong>(Span<bit> src, ulong t), hex://intrinsics/bitpack?pack#pack_g[64u](64u)
+; pack_g[64u](64u)[395] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x8b,0x51,0x08,0x48,0x83,0xfa,0x40,0x0f,0x82,0x6f,0x01,0x00,0x00,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0x48,0x8d,0x50,0x20,0xc5,0xff,0xf0,0x0a,0xc7,0x44,0x24,0x34,0xff,0xff,0x00,0x00,0x48,0x8d,0x54,0x24,0x34,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x34,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x50,0x40,0xc5,0xff,0xf0,0x0a,0x48,0x8d,0x50,0x60,0xc5,0xff,0xf0,0x12,0xc7,0x44,0x24,0x30,0xff,0xff,0x00,0x00,0x48,0x8d,0x54,0x24,0x30,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x30,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x44,0x24,0x2c,0xff,0x00,0x00,0x00,0x48,0x8d,0x54,0x24,0x2c,0xc4,0xe2,0x7d,0x79,0x54,0x24,0x2c,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xba,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xca,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x8d,0x88,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x09,0x48,0x8d,0x88,0xa0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x11,0xc7,0x44,0x24,0x28,0xff,0xff,0x00,0x00,0x48,0x8d,0x4c,0x24,0x28,0xc4,0xe2,0x7d,0x58,0x44,0x24,0x28,0xc5,0xf5,0xdb,0xc8,0xc5,0xed,0xdb,0xc0,0xc4,0xe2,0x75,0x2b,0xc0,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x88,0xc0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x09,0x48,0x05,0xe0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x10,0xc7,0x44,0x24,0x24,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x24,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x24,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x44,0x24,0x20,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x20,0xc4,0xe2,0x7d,0x79,0x54,0x24,0x20,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3,0xe8,0xca,0x75,0xd8,0x5e,0xe8,0x3d,0xd0,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -206,11 +206,11 @@
 0179h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 017ch add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0180h ret                                     ; RET || C3 || encoded[1]{c3}
-0181h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a c0 ed 5e}
-0186h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 1a 2b ff}
+0181h call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca 75 d8 5e}
+0186h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d d0 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<byte>(in Block32<byte> src, int block)
-; pack8_g[8u](b32x8u~in,32i)[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<byte>(in Block32<byte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8u](b32x8u~in,32i)
+; pack8_g[8u](b32x8u~in,32i)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x8b,0x04,0x10,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -222,8 +222,8 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<sbyte>(in Block32<sbyte> src, int block)
-; pack8_g[8i](b32x8i~in,32i)[31] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 8b 04 10 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<sbyte>(in Block32<sbyte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8i](b32x8i~in,32i)
+; pack8_g[8i](b32x8i~in,32i)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x8b,0x04,0x10,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -235,8 +235,8 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<ushort>(in Block32<ushort> src, int block)
-; pack8_g[16u](b32x16u~in,32i)[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<ushort>(in Block32<ushort> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16u](b32x16u~in,32i)
+; pack8_g[16u](b32x16u~in,32i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x8b,0x04,0x50,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -248,8 +248,8 @@
 001ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<short>(in Block32<short> src, int block)
-; pack8_g[16i](b32x16i~in,32i)[30] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 50 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<short>(in Block32<short> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16i](b32x16i~in,32i)
+; pack8_g[16i](b32x16i~in,32i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x8b,0x04,0x50,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -261,8 +261,8 @@
 001ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<uint>(in Block32<uint> src, int block)
-; pack8_g[32u](b32x32u~in,32i)[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<uint>(in Block32<uint> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32u](b32x32u~in,32i)
+; pack8_g[32u](b32x32u~in,32i)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x8b,0x04,0x90,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -273,8 +273,8 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<int>(in Block32<int> src, int block)
-; pack8_g[32i](b32x32i~in,32i)[28] = {0f 1f 44 00 00 48 8b 01 48 63 d2 8b 04 90 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<int>(in Block32<int> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32i](b32x32i~in,32i)
+; pack8_g[32i](b32x32i~in,32i)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x8b,0x04,0x90,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -285,8 +285,8 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<ulong>(in Block32<ulong> src, int block)
-; pack8_g[64u](b32x64u~in,32i)[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<ulong>(in Block32<ulong> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64u](b32x64u~in,32i)
+; pack8_g[64u](b32x64u~in,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x8b,0x00,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -296,8 +296,8 @@
 0014h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<long>(in Block32<long> src, int block)
-; pack8_g[64i](b32x64i~in,32i)[24] = {0f 1f 44 00 00 48 8b 01 8b 00 ba 01 01 01 01 c4 e2 7a f5 c2 0f b6 c0 c3}
+; byte pack8<long>(in Block32<long> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64i](b32x64i~in,32i)
+; pack8_g[64i](b32x64i~in,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x8b,0x00,0xba,0x01,0x01,0x01,0x01,0xc4,0xe2,0x7a,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -307,8 +307,8 @@
 0014h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<byte>(in Block64<byte> src, int block)
-; pack8_g[8u](b64x8u~in,32i)[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 0f b6 04 10 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<byte>(in Block64<byte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8u](b64x8u~in,32i)
+; pack8_g[8u](b64x8u~in,32i)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x0f,0xb6,0x04,0x10,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -320,8 +320,8 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<sbyte>(in Block64<sbyte> src, int block)
-; pack8_g[8i](b64x8i~in,32i)[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 03 48 63 d2 48 0f be 04 10 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<sbyte>(in Block64<sbyte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8i](b64x8i~in,32i)
+; pack8_g[8i](b64x8i~in,32i)[41] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x0f,0xbe,0x04,0x10,0x48,0x63,0xc0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -334,8 +334,8 @@
 0025h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<ushort>(in Block64<ushort> src, int block)
-; pack8_g[16u](b64x16u~in,32i)[37] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 0f b7 04 50 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<ushort>(in Block64<ushort> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16u](b64x16u~in,32i)
+; pack8_g[16u](b64x16u~in,32i)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x0f,0xb7,0x04,0x50,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -347,8 +347,8 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<short>(in Block64<short> src, int block)
-; pack8_g[16i](b64x16i~in,32i)[41] = {0f 1f 44 00 00 48 8b 01 c1 e2 02 48 63 d2 48 0f bf 04 50 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<short>(in Block64<short> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16i](b64x16i~in,32i)
+; pack8_g[16i](b64x16i~in,32i)[41] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x48,0x0f,0xbf,0x04,0x50,0x48,0x63,0xc0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -361,8 +361,8 @@
 0025h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<uint>(in Block64<uint> src, int block)
-; pack8_g[32u](b64x32u~in,32i)[35] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<uint>(in Block64<uint> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32u](b64x32u~in,32i)
+; pack8_g[32u](b64x32u~in,32i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x8b,0x04,0x90,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -374,8 +374,8 @@
 001fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<int>(in Block64<int> src, int block)
-; pack8_g[32i](b64x32i~in,32i)[38] = {0f 1f 44 00 00 48 8b 01 d1 e2 48 63 d2 8b 04 90 48 63 c0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<int>(in Block64<int> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32i](b64x32i~in,32i)
+; pack8_g[32i](b64x32i~in,32i)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x8b,0x04,0x90,0x48,0x63,0xc0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -388,8 +388,8 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<ulong>(in Block64<ulong> src, int block)
-; pack8_g[64u](b64x64u~in,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<ulong>(in Block64<ulong> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64u](b64x64u~in,32i)
+; pack8_g[64u](b64x64u~in,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0xd0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -400,8 +400,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8<long>(in Block64<long> src, int block)
-; pack8_g[64i](b64x64i~in,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8<long>(in Block64<long> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64i](b64x64i~in,32i)
+; pack8_g[64i](b64x64i~in,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0xd0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -412,8 +412,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<byte>(in Block128<byte> src, int block)
-; pack8_g[8u](b128x8u~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<byte>(in Block128<byte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8u](b128x8u~in,32i)
+; pack8_g[8u](b128x8u~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -427,8 +427,8 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<sbyte>(in Block128<sbyte> src, int block)
-; pack8_g[8i](b128x8i~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<sbyte>(in Block128<sbyte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8i](b128x8i~in,32i)
+; pack8_g[8i](b128x8i~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -442,8 +442,8 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<ushort>(in Block128<ushort> src, int block)
-; pack8_g[16u](b128x16u~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<ushort>(in Block128<ushort> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16u](b128x16u~in,32i)
+; pack8_g[16u](b128x16u~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -457,8 +457,8 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<short>(in Block128<short> src, int block)
-; pack8_g[16i](b128x16i~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<short>(in Block128<short> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16i](b128x16i~in,32i)
+; pack8_g[16i](b128x16i~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -472,8 +472,8 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<uint>(in Block128<uint> src, int block)
-; pack8_g[32u](b128x32u~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<uint>(in Block128<uint> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32u](b128x32u~in,32i)
+; pack8_g[32u](b128x32u~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -487,8 +487,8 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<int>(in Block128<int> src, int block)
-; pack8_g[32i](b128x32i~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<int>(in Block128<int> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32i](b128x32i~in,32i)
+; pack8_g[32i](b128x32i~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -502,8 +502,8 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<ulong>(in Block128<ulong> src, int block)
-; pack8_g[64u](b128x64u~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<ulong>(in Block128<ulong> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64u](b128x64u~in,32i)
+; pack8_g[64u](b128x64u~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -517,8 +517,8 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<long>(in Block128<long> src, int block)
-; pack8_g[64i](b128x64i~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 d1 e2 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<long>(in Block128<long> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64i](b128x64i~in,32i)
+; pack8_g[64i](b128x64i~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xd1,0xe2,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -532,8 +532,8 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<byte>(in Block256<byte> src, int block)
-; pack8_g[8u](b256x8u~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<byte>(in Block256<byte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8u](b256x8u~in,32i)
+; pack8_g[8u](b256x8u~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x05,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -547,8 +547,8 @@
 001eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<sbyte>(in Block256<sbyte> src, int block)
-; pack8_g[8i](b256x8i~in,32i)[34] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<sbyte>(in Block256<sbyte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8i](b256x8i~in,32i)
+; pack8_g[8i](b256x8i~in,32i)[34] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x05,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -562,8 +562,8 @@
 001eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<ushort>(in Block256<ushort> src, int block)
-; pack8_g[16u](b256x16u~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<ushort>(in Block256<ushort> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16u](b256x16u~in,32i)
+; pack8_g[16u](b256x16u~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -577,8 +577,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<short>(in Block256<short> src, int block)
-; pack8_g[16i](b256x16i~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<short>(in Block256<short> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16i](b256x16i~in,32i)
+; pack8_g[16i](b256x16i~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -592,8 +592,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<uint>(in Block256<uint> src, int block)
-; pack8_g[32u](b256x32u~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<uint>(in Block256<uint> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32u](b256x32u~in,32i)
+; pack8_g[32u](b256x32u~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -607,8 +607,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<int>(in Block256<int> src, int block)
-; pack8_g[32i](b256x32i~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<int>(in Block256<int> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32i](b256x32i~in,32i)
+; pack8_g[32i](b256x32i~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -622,8 +622,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<ulong>(in Block256<ulong> src, int block)
-; pack8_g[64u](b256x64u~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<ulong>(in Block256<ulong> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64u](b256x64u~in,32i)
+; pack8_g[64u](b256x64u~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -637,8 +637,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<long>(in Block256<long> src, int block)
-; pack8_g[64i](b256x64i~in,32i)[35] = {c5 f8 77 66 90 48 8b 01 c1 e2 02 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<long>(in Block256<long> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64i](b256x64i~in,32i)
+; pack8_g[64i](b256x64i~in,32i)[35] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x02,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -652,8 +652,8 @@
 001fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<byte>(in Block512<byte> src, int block)
-; pack8_g[8u](b512x8u~in,32i)[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<byte>(in Block512<byte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8u](b512x8u~in,32i)
+; pack8_g[8u](b512x8u~in,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x06,0x48,0x63,0xd2,0x48,0x03,0xc2,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -677,8 +677,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<sbyte>(in Block512<sbyte> src, int block)
-; pack8_g[8i](b512x8i~in,32i)[68] = {c5 f8 77 66 90 48 8b 01 c1 e2 06 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<sbyte>(in Block512<sbyte> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[8i](b512x8i~in,32i)
+; pack8_g[8i](b512x8i~in,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x06,0x48,0x63,0xd2,0x48,0x03,0xc2,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -702,8 +702,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<ushort>(in Block512<ushort> src, int block)
-; pack8_g[16u](b512x16u~in,32i)[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<ushort>(in Block512<ushort> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16u](b512x16u~in,32i)
+; pack8_g[16u](b512x16u~in,32i)[69] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x05,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x40,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -727,8 +727,8 @@
 0041h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<short>(in Block512<short> src, int block)
-; pack8_g[16i](b512x16i~in,32i)[69] = {c5 f8 77 66 90 48 8b 01 c1 e2 05 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<short>(in Block512<short> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[16i](b512x16i~in,32i)
+; pack8_g[16i](b512x16i~in,32i)[69] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x05,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x40,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -752,8 +752,8 @@
 0041h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0044h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<uint>(in Block512<uint> src, int block)
-; pack8_g[32u](b512x32u~in,32i)[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<uint>(in Block512<uint> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32u](b512x32u~in,32i)
+; pack8_g[32u](b512x32u~in,32i)[71] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -777,8 +777,8 @@
 0043h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<int>(in Block512<int> src, int block)
-; pack8_g[32i](b512x32i~in,32i)[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 04 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<int>(in Block512<int> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[32i](b512x32i~in,32i)
+; pack8_g[32i](b512x32i~in,32i)[71] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x04,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -802,8 +802,8 @@
 0043h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<ulong>(in Block512<ulong> src, int block)
-; pack8_g[64u](b512x64u~in,32i)[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<ulong>(in Block512<ulong> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64u](b512x64u~in,32i)
+; pack8_g[64u](b512x64u~in,32i)[71] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x00,0x01,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -827,8 +827,8 @@
 0043h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack8<long>(in Block512<long> src, int block)
-; pack8_g[64i](b512x64i~in,32i)[71] = {c5 f8 77 66 90 48 8b 01 c1 e2 03 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack8<long>(in Block512<long> src, int block), hex://intrinsics/bitpack?pack8#pack8_g[64i](b512x64i~in,32i)
+; pack8_g[64i](b512x64i~in,32i)[71] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0xc1,0xe2,0x03,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x00,0x01,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -852,8 +852,8 @@
 0043h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0046h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<byte>(ReadOnlySpan<byte> src, int offset)
-; pack8x8_g[8u](uspan8u,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 10 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<byte>(ReadOnlySpan<byte> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[8u](uspan8u,32i)
+; pack8x8_g[8u](uspan8u,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x10,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -864,8 +864,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<sbyte>(ReadOnlySpan<sbyte> src, int offset)
-; pack8x8_g[8i](uspan8i,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 10 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<sbyte>(ReadOnlySpan<sbyte> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[8i](uspan8i,32i)
+; pack8x8_g[8i](uspan8i,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x10,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -876,8 +876,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<ushort>(ReadOnlySpan<ushort> src, int offset)
-; pack8x8_g[16u](uspan16u,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 50 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<ushort>(ReadOnlySpan<ushort> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[16u](uspan16u,32i)
+; pack8x8_g[16u](uspan16u,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x50,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -888,8 +888,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<short>(ReadOnlySpan<short> src, int offset)
-; pack8x8_g[16i](uspan16i,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 50 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<short>(ReadOnlySpan<short> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[16i](uspan16i,32i)
+; pack8x8_g[16i](uspan16i,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x50,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -900,8 +900,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<uint>(ReadOnlySpan<uint> src, int offset)
-; pack8x8_g[32u](uspan32u,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 90 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<uint>(ReadOnlySpan<uint> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[32u](uspan32u,32i)
+; pack8x8_g[32u](uspan32u,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x90,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -912,8 +912,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<int>(ReadOnlySpan<int> src, int offset)
-; pack8x8_g[32i](uspan32i,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 90 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<int>(ReadOnlySpan<int> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[32i](uspan32i,32i)
+; pack8x8_g[32i](uspan32i,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0x90,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -924,8 +924,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<ulong>(ReadOnlySpan<ulong> src, int offset)
-; pack8x8_g[64u](uspan64u,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<ulong>(ReadOnlySpan<ulong> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[64u](uspan64u,32i)
+; pack8x8_g[64u](uspan64u,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0xd0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -936,8 +936,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack8x8<long>(ReadOnlySpan<long> src, int offset)
-; pack8x8_g[64i](uspan64i,32i)[34] = {0f 1f 44 00 00 48 8b 01 48 63 d2 48 8b 04 d0 48 ba 01 01 01 01 01 01 01 01 c4 e2 fa f5 c2 0f b6 c0 c3}
+; byte pack8x8<long>(ReadOnlySpan<long> src, int offset), hex://intrinsics/bitpack?pack8x8#pack8x8_g[64i](uspan64i,32i)
+; pack8x8_g[64i](uspan64i,32i)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8b,0x04,0xd0,0x48,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfa,0xf5,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -948,8 +948,8 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<byte>(ReadOnlySpan<byte> src, int offset)
-; pack16x8_g[8u](uspan8u,32i)[31] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<byte>(ReadOnlySpan<byte> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[8u](uspan8u,32i)
+; pack16x8_g[8u](uspan8u,32i)[31] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -962,8 +962,8 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<sbyte>(ReadOnlySpan<sbyte> src, int offset)
-; pack16x8_g[8i](uspan8i,32i)[31] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<sbyte>(ReadOnlySpan<sbyte> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[8i](uspan8i,32i)
+; pack16x8_g[8i](uspan8i,32i)[31] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -976,8 +976,8 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<ushort>(ReadOnlySpan<ushort> src, int offset)
-; pack16x8_g[16u](uspan16u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<ushort>(ReadOnlySpan<ushort> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[16u](uspan16u,32i)
+; pack16x8_g[16u](uspan16u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -990,8 +990,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<short>(ReadOnlySpan<short> src, int offset)
-; pack16x8_g[16i](uspan16i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<short>(ReadOnlySpan<short> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[16i](uspan16i,32i)
+; pack16x8_g[16i](uspan16i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1004,8 +1004,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<uint>(ReadOnlySpan<uint> src, int offset)
-; pack16x8_g[32u](uspan32u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<uint>(ReadOnlySpan<uint> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[32u](uspan32u,32i)
+; pack16x8_g[32u](uspan32u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1018,8 +1018,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<int>(ReadOnlySpan<int> src, int offset)
-; pack16x8_g[32i](uspan32i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<int>(ReadOnlySpan<int> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[32i](uspan32i,32i)
+; pack16x8_g[32i](uspan32i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1032,8 +1032,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<ulong>(ReadOnlySpan<ulong> src, int offset)
-; pack16x8_g[64u](uspan64u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<ulong>(ReadOnlySpan<ulong> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[64u](uspan64u,32i)
+; pack16x8_g[64u](uspan64u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1046,8 +1046,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack16x8<long>(ReadOnlySpan<long> src, int offset)
-; pack16x8_g[64i](uspan64i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 c5 fb f0 00 c5 f9 73 f0 07 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack16x8<long>(ReadOnlySpan<long> src, int offset), hex://intrinsics/bitpack?pack16x8#pack16x8_g[64i](uspan64i,32i)
+; pack16x8_g[64i](uspan64i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xfb,0xf0,0x00,0xc5,0xf9,0x73,0xf0,0x07,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1060,8 +1060,8 @@
 001ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<byte>(ReadOnlySpan<byte> src, int offset)
-; pack32x8_g[8u](uspan8u,32i)[31] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<byte>(ReadOnlySpan<byte> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[8u](uspan8u,32i)
+; pack32x8_g[8u](uspan8u,32i)[31] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1074,8 +1074,8 @@
 001bh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<sbyte>(ReadOnlySpan<sbyte> src, int offset)
-; pack32x8_g[8i](uspan8i,32i)[31] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<sbyte>(ReadOnlySpan<sbyte> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[8i](uspan8i,32i)
+; pack32x8_g[8i](uspan8i,32i)[31] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1088,8 +1088,8 @@
 001bh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<ushort>(ReadOnlySpan<ushort> src, int offset)
-; pack32x8_g[16u](uspan16u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<ushort>(ReadOnlySpan<ushort> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[16u](uspan16u,32i)
+; pack32x8_g[16u](uspan16u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1102,8 +1102,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<short>(ReadOnlySpan<short> src, int offset)
-; pack32x8_g[16i](uspan16i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<short>(ReadOnlySpan<short> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[16i](uspan16i,32i)
+; pack32x8_g[16i](uspan16i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1116,8 +1116,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<uint>(ReadOnlySpan<uint> src, int offset)
-; pack32x8_g[32u](uspan32u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<uint>(ReadOnlySpan<uint> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[32u](uspan32u,32i)
+; pack32x8_g[32u](uspan32u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1130,8 +1130,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<int>(ReadOnlySpan<int> src, int offset)
-; pack32x8_g[32i](uspan32i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<int>(ReadOnlySpan<int> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[32i](uspan32i,32i)
+; pack32x8_g[32i](uspan32i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1144,8 +1144,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<ulong>(ReadOnlySpan<ulong> src, int offset)
-; pack32x8_g[64u](uspan64u,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<ulong>(ReadOnlySpan<ulong> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[64u](uspan64u,32i)
+; pack32x8_g[64u](uspan64u,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1158,8 +1158,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32x8<long>(ReadOnlySpan<long> src, int offset)
-; pack32x8_g[64i](uspan64i,32i)[32] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack32x8<long>(ReadOnlySpan<long> src, int offset), hex://intrinsics/bitpack?pack32x8#pack32x8_g[64i](uspan64i,32i)
+; pack32x8_g[64i](uspan64i,32i)[32] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1172,8 +1172,8 @@
 001ch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<byte>(ReadOnlySpan<byte> src, int offset)
-; pack64x8_g[8u](uspan8u,32i)[65] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<byte>(ReadOnlySpan<byte> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[8u](uspan8u,32i)
+; pack64x8_g[8u](uspan8u,32i)[65] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1196,8 +1196,8 @@
 003dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<sbyte>(ReadOnlySpan<sbyte> src, int offset)
-; pack64x8_g[8i](uspan8i,32i)[65] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 03 c2 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 20 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<sbyte>(ReadOnlySpan<sbyte> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[8i](uspan8i,32i)
+; pack64x8_g[8i](uspan8i,32i)[65] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1220,8 +1220,8 @@
 003dh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0040h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<ushort>(ReadOnlySpan<ushort> src, int offset)
-; pack64x8_g[16u](uspan16u,32i)[66] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<ushort>(ReadOnlySpan<ushort> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[16u](uspan16u,32i)
+; pack64x8_g[16u](uspan16u,32i)[66] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x40,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1244,8 +1244,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<short>(ReadOnlySpan<short> src, int offset)
-; pack64x8_g[16i](uspan16i,32i)[66] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 50 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 83 c0 40 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<short>(ReadOnlySpan<short> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[16i](uspan16i,32i)
+; pack64x8_g[16i](uspan16i,32i)[66] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x50,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x83,0xc0,0x40,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1268,8 +1268,8 @@
 003eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0041h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<uint>(ReadOnlySpan<uint> src, int offset)
-; pack64x8_g[32u](uspan32u,32i)[68] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<uint>(ReadOnlySpan<uint> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[32u](uspan32u,32i)
+; pack64x8_g[32u](uspan32u,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1292,8 +1292,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<int>(ReadOnlySpan<int> src, int offset)
-; pack64x8_g[32i](uspan32i,32i)[68] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 90 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 80 00 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<int>(ReadOnlySpan<int> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[32i](uspan32i,32i)
+; pack64x8_g[32i](uspan32i,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0x90,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1316,8 +1316,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<ulong>(ReadOnlySpan<ulong> src, int offset)
-; pack64x8_g[64u](uspan64u,32i)[68] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<ulong>(ReadOnlySpan<ulong> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[64u](uspan64u,32i)
+; pack64x8_g[64u](uspan64u,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x00,0x01,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1340,8 +1340,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack64x8<long>(ReadOnlySpan<long> src, int offset)
-; pack64x8_g[64i](uspan64i,32i)[68] = {c5 f8 77 66 90 48 8b 01 48 63 d2 48 8d 04 d0 48 8b d0 c5 ff f0 02 c5 fd 73 f0 07 c5 fd d7 d0 8b d2 48 05 00 01 00 00 c5 ff f0 00 c5 fd 73 f0 07 c5 fd d7 c0 8b c0 48 c1 e0 20 48 0b d0 48 8b c2 c5 f8 77 c3}
+; ulong pack64x8<long>(ReadOnlySpan<long> src, int offset), hex://intrinsics/bitpack?pack64x8#pack64x8_g[64i](uspan64i,32i)
+; pack64x8_g[64i](uspan64i,32i)[68] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x8d,0x04,0xd0,0x48,0x8b,0xd0,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0x05,0x00,0x01,0x00,0x00,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x73,0xf0,0x07,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0xc1,0xe0,0x20,0x48,0x0b,0xd0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1364,8 +1364,8 @@
 0040h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<byte>(Vector128<byte> src, byte index)
-; pack8_g[8u](v128x8u,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<byte>(Vector128<byte> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[8u](v128x8u,8u)
+; pack8_g[8u](v128x8u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1380,8 +1380,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<sbyte>(Vector128<sbyte> src, byte index)
-; pack8_g[8i](v128x8i,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<sbyte>(Vector128<sbyte> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[8i](v128x8i,8u)
+; pack8_g[8i](v128x8i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1396,8 +1396,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<ushort>(Vector128<ushort> src, byte index)
-; pack8_g[16u](v128x16u,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<ushort>(Vector128<ushort> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[16u](v128x16u,8u)
+; pack8_g[16u](v128x16u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1412,8 +1412,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<short>(Vector128<short> src, byte index)
-; pack8_g[16i](v128x16i,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<short>(Vector128<short> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[16i](v128x16i,8u)
+; pack8_g[16i](v128x16i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1428,8 +1428,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<uint>(Vector128<uint> src, byte index)
-; pack8_g[32u](v128x32u,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<uint>(Vector128<uint> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[32u](v128x32u,8u)
+; pack8_g[32u](v128x32u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1444,8 +1444,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<int>(Vector128<int> src, byte index)
-; pack8_g[32i](v128x32i,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<int>(Vector128<int> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[32i](v128x32i,8u)
+; pack8_g[32i](v128x32i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1460,8 +1460,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<ulong>(Vector128<ulong> src, byte index)
-; pack8_g[64u](v128x64u,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<ulong>(Vector128<ulong> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[64u](v128x64u,8u)
+; pack8_g[64u](v128x64u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1476,8 +1476,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack8<long>(Vector128<long> src, byte index)
-; pack8_g[64i](v128x64i,8u)[36] = {c5 f8 77 66 90 c5 f9 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort pack8<long>(Vector128<long> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[64i](v128x64i,8u)
+; pack8_g[64i](v128x64i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1492,8 +1492,8 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<byte>(Vector256<byte> src, byte index)
-; pack8_g[8u](v256x8u,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<byte>(Vector256<byte> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[8u](v256x8u,8u)
+; pack8_g[8u](v256x8u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1508,8 +1508,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<sbyte>(Vector256<sbyte> src, byte index)
-; pack8_g[8i](v256x8i,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<sbyte>(Vector256<sbyte> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[8i](v256x8i,8u)
+; pack8_g[8i](v256x8i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1524,8 +1524,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<ushort>(Vector256<ushort> src, byte index)
-; pack8_g[16u](v256x16u,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<ushort>(Vector256<ushort> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[16u](v256x16u,8u)
+; pack8_g[16u](v256x16u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1540,8 +1540,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<short>(Vector256<short> src, byte index)
-; pack8_g[16i](v256x16i,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<short>(Vector256<short> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[16i](v256x16i,8u)
+; pack8_g[16i](v256x16i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1556,8 +1556,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<uint>(Vector256<uint> src, byte index)
-; pack8_g[32u](v256x32u,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<uint>(Vector256<uint> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[32u](v256x32u,8u)
+; pack8_g[32u](v256x32u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1572,8 +1572,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<int>(Vector256<int> src, byte index)
-; pack8_g[32i](v256x32i,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<int>(Vector256<int> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[32i](v256x32i,8u)
+; pack8_g[32i](v256x32i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1588,8 +1588,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<ulong>(Vector256<ulong> src, byte index)
-; pack8_g[64u](v256x64u,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<ulong>(Vector256<ulong> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[64u](v256x64u,8u)
+; pack8_g[64u](v256x64u,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1604,8 +1604,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack8<long>(Vector256<long> src, byte index)
-; pack8_g[64i](v256x64i,8u)[36] = {c5 f8 77 66 90 c5 fd 10 01 0f b6 c2 f7 d8 83 c0 07 0f b6 c0 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint pack8<long>(Vector256<long> src, byte index), hex://intrinsics/bitpack?pack8#pack8_g[64i](v256x64i,8u)
+; pack8_g[64i](v256x64i,8u)[36] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0x0f,0xb6,0xc2,0xf7,0xd8,0x83,0xc0,0x07,0x0f,0xb6,0xc0,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1620,8 +1620,8 @@
 0020h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<byte>(Vector128<byte> src)
-; packmsb8_g[8u](v128x8u)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<byte>(Vector128<byte> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[8u](v128x8u)
+; packmsb8_g[8u](v128x8u)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1630,8 +1630,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<sbyte>(Vector128<sbyte> src)
-; packmsb8_g[8i](v128x8i)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<sbyte>(Vector128<sbyte> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[8i](v128x8i)
+; packmsb8_g[8i](v128x8i)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1640,8 +1640,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<ushort>(Vector128<ushort> src)
-; packmsb8_g[16u](v128x16u)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<ushort>(Vector128<ushort> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[16u](v128x16u)
+; packmsb8_g[16u](v128x16u)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1650,8 +1650,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<short>(Vector128<short> src)
-; packmsb8_g[16i](v128x16i)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<short>(Vector128<short> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[16i](v128x16i)
+; packmsb8_g[16i](v128x16i)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1660,8 +1660,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<uint>(Vector128<uint> src)
-; packmsb8_g[32u](v128x32u)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<uint>(Vector128<uint> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[32u](v128x32u)
+; packmsb8_g[32u](v128x32u)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1670,8 +1670,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<int>(Vector128<int> src)
-; packmsb8_g[32i](v128x32i)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<int>(Vector128<int> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[32i](v128x32i)
+; packmsb8_g[32i](v128x32i)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1680,8 +1680,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<ulong>(Vector128<ulong> src)
-; packmsb8_g[64u](v128x64u)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<ulong>(Vector128<ulong> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[64u](v128x64u)
+; packmsb8_g[64u](v128x64u)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1690,8 +1690,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packmsb8<long>(Vector128<long> src)
-; packmsb8_g[64i](v128x64i)[17] = {c5 f8 77 66 90 c5 f9 10 01 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packmsb8<long>(Vector128<long> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[64i](v128x64i)
+; packmsb8_g[64i](v128x64i)[17] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1700,8 +1700,8 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<byte>(Vector256<byte> src)
-; packmsb8_g[8u](v256x8u)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<byte>(Vector256<byte> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[8u](v256x8u)
+; packmsb8_g[8u](v256x8u)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1711,8 +1711,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<sbyte>(Vector256<sbyte> src)
-; packmsb8_g[8i](v256x8i)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<sbyte>(Vector256<sbyte> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[8i](v256x8i)
+; packmsb8_g[8i](v256x8i)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1722,8 +1722,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<ushort>(Vector256<ushort> src)
-; packmsb8_g[16u](v256x16u)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<ushort>(Vector256<ushort> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[16u](v256x16u)
+; packmsb8_g[16u](v256x16u)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1733,8 +1733,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<short>(Vector256<short> src)
-; packmsb8_g[16i](v256x16i)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<short>(Vector256<short> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[16i](v256x16i)
+; packmsb8_g[16i](v256x16i)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1744,8 +1744,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<uint>(Vector256<uint> src)
-; packmsb8_g[32u](v256x32u)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<uint>(Vector256<uint> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[32u](v256x32u)
+; packmsb8_g[32u](v256x32u)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1755,8 +1755,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<int>(Vector256<int> src)
-; packmsb8_g[32i](v256x32i)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<int>(Vector256<int> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[32i](v256x32i)
+; packmsb8_g[32i](v256x32i)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1766,8 +1766,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<ulong>(Vector256<ulong> src)
-; packmsb8_g[64u](v256x64u)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<ulong>(Vector256<ulong> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[64u](v256x64u)
+; packmsb8_g[64u](v256x64u)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1777,8 +1777,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong packmsb8<long>(Vector256<long> src)
-; packmsb8_g[64i](v256x64i)[19] = {c5 f8 77 66 90 c5 fd 10 01 c5 fd d7 c0 8b c0 c5 f8 77 c3}
+; ulong packmsb8<long>(Vector256<long> src), hex://intrinsics/bitpack?packmsb8#packmsb8_g[64i](v256x64i)
+; packmsb8_g[64i](v256x64i)[19] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1788,8 +1788,8 @@
 000fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<byte>(Vector128<byte> src)
-; packlsb8_g[8u](v128x8u)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<byte>(Vector128<byte> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[8u](v128x8u)
+; packlsb8_g[8u](v128x8u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1801,8 +1801,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<sbyte>(Vector128<sbyte> src)
-; packlsb8_g[8i](v128x8i)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<sbyte>(Vector128<sbyte> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[8i](v128x8i)
+; packlsb8_g[8i](v128x8i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1814,8 +1814,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<ushort>(Vector128<ushort> src)
-; packlsb8_g[16u](v128x16u)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<ushort>(Vector128<ushort> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[16u](v128x16u)
+; packlsb8_g[16u](v128x16u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1827,8 +1827,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<short>(Vector128<short> src)
-; packlsb8_g[16i](v128x16i)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<short>(Vector128<short> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[16i](v128x16i)
+; packlsb8_g[16i](v128x16i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1840,8 +1840,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<uint>(Vector128<uint> src)
-; packlsb8_g[32u](v128x32u)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<uint>(Vector128<uint> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[32u](v128x32u)
+; packlsb8_g[32u](v128x32u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1853,8 +1853,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<int>(Vector128<int> src)
-; packlsb8_g[32i](v128x32i)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<int>(Vector128<int> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[32i](v128x32i)
+; packlsb8_g[32i](v128x32i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1866,8 +1866,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<ulong>(Vector128<ulong> src)
-; packlsb8_g[64u](v128x64u)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<ulong>(Vector128<ulong> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[64u](v128x64u)
+; packlsb8_g[64u](v128x64u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1879,8 +1879,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort packlsb8<long>(Vector128<long> src)
-; packlsb8_g[64i](v128x64i)[30] = {c5 f8 77 66 90 c5 f9 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c3}
+; ushort packlsb8<long>(Vector128<long> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[64i](v128x64i)
+; packlsb8_g[64i](v128x64i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf9,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1892,8 +1892,8 @@
 001ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<byte>(Vector256<byte> src)
-; packlsb8_g[8u](v256x8u)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<byte>(Vector256<byte> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[8u](v256x8u)
+; packlsb8_g[8u](v256x8u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1905,8 +1905,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<sbyte>(Vector256<sbyte> src)
-; packlsb8_g[8i](v256x8i)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<sbyte>(Vector256<sbyte> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[8i](v256x8i)
+; packlsb8_g[8i](v256x8i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1918,8 +1918,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<ushort>(Vector256<ushort> src)
-; packlsb8_g[16u](v256x16u)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<ushort>(Vector256<ushort> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[16u](v256x16u)
+; packlsb8_g[16u](v256x16u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1931,8 +1931,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<short>(Vector256<short> src)
-; packlsb8_g[16i](v256x16i)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<short>(Vector256<short> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[16i](v256x16i)
+; packlsb8_g[16i](v256x16i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1944,8 +1944,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<uint>(Vector256<uint> src)
-; packlsb8_g[32u](v256x32u)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<uint>(Vector256<uint> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[32u](v256x32u)
+; packlsb8_g[32u](v256x32u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1957,8 +1957,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<int>(Vector256<int> src)
-; packlsb8_g[32i](v256x32i)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<int>(Vector256<int> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[32i](v256x32i)
+; packlsb8_g[32i](v256x32i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1970,8 +1970,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<ulong>(Vector256<ulong> src)
-; packlsb8_g[64u](v256x64u)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<ulong>(Vector256<ulong> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[64u](v256x64u)
+; packlsb8_g[64u](v256x64u)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1983,8 +1983,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint packlsb8<long>(Vector256<long> src)
-; packlsb8_g[64i](v256x64i)[30] = {c5 f8 77 66 90 c5 fd 10 01 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 c3}
+; uint packlsb8<long>(Vector256<long> src), hex://intrinsics/bitpack?packlsb8#packlsb8_g[64i](v256x64i)
+; packlsb8_g[64i](v256x64i)[30] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfd,0x10,0x01,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1996,229 +1996,8 @@
 001ah vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack32<byte>(ReadOnlySpan<byte> src, in Block256<uint> dst)
-; unpack32_g[8u](uspan8u,b256x32u~in)[169] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 28 8b 42 08 44 8b c0 41 c1 f8 1f 41 83 e0 07 41 03 c0 c1 f8 03 48 8b 09 45 33 c0 85 c0 7e 62 4d 63 c8 46 0f b6 0c 09 45 8b d0 41 c1 e2 03 45 8b da 49 83 c3 08 8b 72 08 4c 3b de 77 4d 4c 8b 1a 4d 63 d2 4f 8d 14 93 45 33 db 4c 89 5c 24 28 4c 89 5c 24 28 4c 8d 5c 24 28 45 0f b6 c9 48 be 01 01 01 01 01 01 01 01 c4 62 b3 f5 ce 4d 89 0b c4 c2 7d 31 03 c4 c1 7e 7f 02 41 ff c0 44 3b c0 7c 9e c5 f8 77 48 83 c4 30 5e c3 e8 2b cf 2a ff cc 00 00 19 05 02 00 05 52 01 60 40}
-; TermCode = CTC_Zx7
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
-0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0008h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-000ah mov [rsp+28h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 28}
-000fh mov eax,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 42 08}
-0012h mov r8d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c0}
-0015h sar r8d,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[4]{41 c1 f8 1f}
-0019h and r8d,7                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[4]{41 83 e0 07}
-001dh add eax,r8d                             ; ADD r32, r/m32 || o32 03 /r || encoded[3]{41 03 c0}
-0020h sar eax,3                               ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 03}
-0023h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
-0026h xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-0029h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-002bh jle short 008fh                         ; JLE rel8 || 7E cb || encoded[2]{7e 62}
-002dh movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0030h movzx r9d,byte ptr [rcx+r9]             ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{46 0f b6 0c 09}
-0035h mov r10d,r8d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d0}
-0038h shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
-003ch mov r11d,r10d                           ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b da}
-003fh add r11,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{49 83 c3 08}
-0043h mov esi,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 72 08}
-0046h cmp r11,rsi                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{4c 3b de}
-0049h ja short 0098h                          ; JA rel8 || 77 cb || encoded[2]{77 4d}
-004bh mov r11,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 1a}
-004eh movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
-0051h lea r10,[r11+r10*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 93}
-0055h xor r11d,r11d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 db}
-0058h mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-005dh mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0062h lea r11,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 5c 24 28}
-0067h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-006bh mov rsi,101010101010101h                ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 be 01 01 01 01 01 01 01 01}
-0075h pdep r9,r9,rsi                          ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 62 b3 f5 ce}
-007ah mov [r11],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0b}
-007dh vpmovzxbd ymm0,qword ptr [r11]          ; VPMOVZXBD ymm1, xmm2/m64 || VEX.256.66.0F38.WIG 31 /r || encoded[5]{c4 c2 7d 31 03}
-0082h vmovdqu ymmword ptr [r10],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[5]{c4 c1 7e 7f 02}
-0087h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-008ah cmp r8d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c0}
-008dh jl short 002dh                          ; JL rel8 || 7C cb || encoded[2]{7c 9e}
-008fh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0092h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
-0096h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-0097h ret                                     ; RET || C3 || encoded[1]{c3}
-0098h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2b cf 2a ff}
-009dh int 3                                   ; INT3 || CC || encoded[1]{cc}
-009eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-00a0h sbb [rip+52050002h],eax                 ; SBB r/m32, r32 || o32 19 /r || encoded[6]{19 05 02 00 05 52}
-00a6h add [rax+40h],esp                       ; ADD r/m32, r32 || o32 01 /r || encoded[3]{01 60 40}
-------------------------------------------------------------------------------------------------------------------------
-; void unpack32<ushort>(ReadOnlySpan<ushort> src, in Block256<uint> dst)
-; unpack32_g[16u](uspan16u,b256x32u~in)[177] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 28 8b 42 08 44 8b c0 41 c1 f8 1f 41 83 e0 07 41 03 c0 c1 f8 03 4c 8b 01 8b 49 08 6b c9 02 70 6f 33 c9 85 c0 7e 60 4c 63 c9 47 0f b6 0c 08 44 8b d1 41 c1 e2 03 45 8b da 49 83 c3 08 8b 72 08 4c 3b de 77 50 4c 8b 1a 4d 63 d2 4f 8d 14 93 45 33 db 4c 89 5c 24 28 4c 89 5c 24 28 4c 8d 5c 24 28 45 0f b6 c9 48 be 01 01 01 01 01 01 01 01 c4 62 b3 f5 ce 4d 89 0b c4 c2 7d 31 03 c4 c1 7e 7f 02 ff c1 3b c8 7c a0 c5 f8 77 48 83 c4 30 5e c3 e8 2e 74 ed 5e e8 61 ce 2a ff cc 19 05 02 00 05 52 01 60 40}
-; TermCode = CTC_Zx7
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
-0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0008h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-000ah mov [rsp+28h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 28}
-000fh mov eax,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 42 08}
-0012h mov r8d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c0}
-0015h sar r8d,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[4]{41 c1 f8 1f}
-0019h and r8d,7                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[4]{41 83 e0 07}
-001dh add eax,r8d                             ; ADD r32, r/m32 || o32 03 /r || encoded[3]{41 03 c0}
-0020h sar eax,3                               ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 03}
-0023h mov r8,[rcx]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 01}
-0026h mov ecx,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 49 08}
-0029h imul ecx,2                              ; IMUL r32, r/m32, imm8 || o32 6B /r ib || encoded[3]{6b c9 02}
-002ch jo short 009dh                          ; JO rel8 || 70 cb || encoded[2]{70 6f}
-002eh xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}
-0030h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0032h jle short 0094h                         ; JLE rel8 || 7E cb || encoded[2]{7e 60}
-0034h movsxd r9,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c9}
-0037h movzx r9d,byte ptr [r8+r9]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{47 0f b6 0c 08}
-003ch mov r10d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d1}
-003fh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
-0043h mov r11d,r10d                           ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b da}
-0046h add r11,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{49 83 c3 08}
-004ah mov esi,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 72 08}
-004dh cmp r11,rsi                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{4c 3b de}
-0050h ja short 00a2h                          ; JA rel8 || 77 cb || encoded[2]{77 50}
-0052h mov r11,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 1a}
-0055h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
-0058h lea r10,[r11+r10*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 93}
-005ch xor r11d,r11d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 db}
-005fh mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0064h mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0069h lea r11,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 5c 24 28}
-006eh movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0072h mov rsi,101010101010101h                ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 be 01 01 01 01 01 01 01 01}
-007ch pdep r9,r9,rsi                          ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 62 b3 f5 ce}
-0081h mov [r11],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0b}
-0084h vpmovzxbd ymm0,qword ptr [r11]          ; VPMOVZXBD ymm1, xmm2/m64 || VEX.256.66.0F38.WIG 31 /r || encoded[5]{c4 c2 7d 31 03}
-0089h vmovdqu ymmword ptr [r10],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[5]{c4 c1 7e 7f 02}
-008eh inc ecx                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c1}
-0090h cmp ecx,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c8}
-0092h jl short 0034h                          ; JL rel8 || 7C cb || encoded[2]{7c a0}
-0094h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0097h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
-009bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-009ch ret                                     ; RET || C3 || encoded[1]{c3}
-009dh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2e 74 ed 5e}
-00a2h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 61 ce 2a ff}
-00a7h int 3                                   ; INT3 || CC || encoded[1]{cc}
-00a8h sbb [rip+52050002h],eax                 ; SBB r/m32, r32 || o32 19 /r || encoded[6]{19 05 02 00 05 52}
-00aeh add [rax+40h],esp                       ; ADD r/m32, r32 || o32 01 /r || encoded[3]{01 60 40}
-------------------------------------------------------------------------------------------------------------------------
-; void unpack32<uint>(ReadOnlySpan<uint> src, in Block256<uint> dst)
-; unpack32_g[32u](uspan32u,b256x32u~in)[177] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 28 8b 42 08 44 8b c0 41 c1 f8 1f 41 83 e0 07 41 03 c0 c1 f8 03 4c 8b 01 8b 49 08 6b c9 04 70 6f 33 c9 85 c0 7e 60 4c 63 c9 47 0f b6 0c 08 44 8b d1 41 c1 e2 03 45 8b da 49 83 c3 08 8b 72 08 4c 3b de 77 50 4c 8b 1a 4d 63 d2 4f 8d 14 93 45 33 db 4c 89 5c 24 28 4c 89 5c 24 28 4c 8d 5c 24 28 45 0f b6 c9 48 be 01 01 01 01 01 01 01 01 c4 62 b3 f5 ce 4d 89 0b c4 c2 7d 31 03 c4 c1 7e 7f 02 ff c1 3b c8 7c a0 c5 f8 77 48 83 c4 30 5e c3 e8 6e 73 ed 5e e8 a1 cd 2a ff cc 19 05 02 00 05 52 01 60 40}
-; TermCode = CTC_Zx7
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
-0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0008h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-000ah mov [rsp+28h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 28}
-000fh mov eax,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 42 08}
-0012h mov r8d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c0}
-0015h sar r8d,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[4]{41 c1 f8 1f}
-0019h and r8d,7                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[4]{41 83 e0 07}
-001dh add eax,r8d                             ; ADD r32, r/m32 || o32 03 /r || encoded[3]{41 03 c0}
-0020h sar eax,3                               ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 03}
-0023h mov r8,[rcx]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 01}
-0026h mov ecx,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 49 08}
-0029h imul ecx,4                              ; IMUL r32, r/m32, imm8 || o32 6B /r ib || encoded[3]{6b c9 04}
-002ch jo short 009dh                          ; JO rel8 || 70 cb || encoded[2]{70 6f}
-002eh xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}
-0030h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0032h jle short 0094h                         ; JLE rel8 || 7E cb || encoded[2]{7e 60}
-0034h movsxd r9,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c9}
-0037h movzx r9d,byte ptr [r8+r9]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{47 0f b6 0c 08}
-003ch mov r10d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d1}
-003fh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
-0043h mov r11d,r10d                           ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b da}
-0046h add r11,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{49 83 c3 08}
-004ah mov esi,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 72 08}
-004dh cmp r11,rsi                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{4c 3b de}
-0050h ja short 00a2h                          ; JA rel8 || 77 cb || encoded[2]{77 50}
-0052h mov r11,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 1a}
-0055h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
-0058h lea r10,[r11+r10*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 93}
-005ch xor r11d,r11d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 db}
-005fh mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0064h mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0069h lea r11,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 5c 24 28}
-006eh movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0072h mov rsi,101010101010101h                ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 be 01 01 01 01 01 01 01 01}
-007ch pdep r9,r9,rsi                          ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 62 b3 f5 ce}
-0081h mov [r11],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0b}
-0084h vpmovzxbd ymm0,qword ptr [r11]          ; VPMOVZXBD ymm1, xmm2/m64 || VEX.256.66.0F38.WIG 31 /r || encoded[5]{c4 c2 7d 31 03}
-0089h vmovdqu ymmword ptr [r10],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[5]{c4 c1 7e 7f 02}
-008eh inc ecx                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c1}
-0090h cmp ecx,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c8}
-0092h jl short 0034h                          ; JL rel8 || 7C cb || encoded[2]{7c a0}
-0094h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0097h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
-009bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-009ch ret                                     ; RET || C3 || encoded[1]{c3}
-009dh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6e 73 ed 5e}
-00a2h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a1 cd 2a ff}
-00a7h int 3                                   ; INT3 || CC || encoded[1]{cc}
-00a8h sbb [rip+52050002h],eax                 ; SBB r/m32, r32 || o32 19 /r || encoded[6]{19 05 02 00 05 52}
-00aeh add [rax+40h],esp                       ; ADD r/m32, r32 || o32 01 /r || encoded[3]{01 60 40}
-------------------------------------------------------------------------------------------------------------------------
-; void unpack32<ulong>(ReadOnlySpan<ulong> src, in Block256<uint> dst)
-; unpack32_g[64u](uspan64u,b256x32u~in)[177] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 28 8b 42 08 44 8b c0 41 c1 f8 1f 41 83 e0 07 41 03 c0 c1 f8 03 4c 8b 01 8b 49 08 6b c9 08 70 6f 33 c9 85 c0 7e 60 4c 63 c9 47 0f b6 0c 08 44 8b d1 41 c1 e2 03 45 8b da 49 83 c3 08 8b 72 08 4c 3b de 77 50 4c 8b 1a 4d 63 d2 4f 8d 14 93 45 33 db 4c 89 5c 24 28 4c 89 5c 24 28 4c 8d 5c 24 28 45 0f b6 c9 48 be 01 01 01 01 01 01 01 01 c4 62 b3 f5 ce 4d 89 0b c4 c2 7d 31 03 c4 c1 7e 7f 02 ff c1 3b c8 7c a0 c5 f8 77 48 83 c4 30 5e c3 e8 ae 72 ed 5e e8 e1 cc 2a ff cc 19 05 02 00 05 52 01 60 40}
-; TermCode = CTC_Zx7
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
-0005h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0008h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-000ah mov [rsp+28h],rax                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{48 89 44 24 28}
-000fh mov eax,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 42 08}
-0012h mov r8d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c0}
-0015h sar r8d,1fh                             ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[4]{41 c1 f8 1f}
-0019h and r8d,7                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[4]{41 83 e0 07}
-001dh add eax,r8d                             ; ADD r32, r/m32 || o32 03 /r || encoded[3]{41 03 c0}
-0020h sar eax,3                               ; SAR r/m32, imm8 || o32 C1 /7 ib || encoded[3]{c1 f8 03}
-0023h mov r8,[rcx]                            ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 01}
-0026h mov ecx,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 49 08}
-0029h imul ecx,8                              ; IMUL r32, r/m32, imm8 || o32 6B /r ib || encoded[3]{6b c9 08}
-002ch jo short 009dh                          ; JO rel8 || 70 cb || encoded[2]{70 6f}
-002eh xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}
-0030h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0032h jle short 0094h                         ; JLE rel8 || 7E cb || encoded[2]{7e 60}
-0034h movsxd r9,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c9}
-0037h movzx r9d,byte ptr [r8+r9]              ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{47 0f b6 0c 08}
-003ch mov r10d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d1}
-003fh shl r10d,3                              ; SHL r/m32, imm8 || o32 C1 /4 ib || encoded[4]{41 c1 e2 03}
-0043h mov r11d,r10d                           ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b da}
-0046h add r11,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{49 83 c3 08}
-004ah mov esi,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 72 08}
-004dh cmp r11,rsi                             ; CMP r64, r/m64 || REX.W 3B /r || encoded[3]{4c 3b de}
-0050h ja short 00a2h                          ; JA rel8 || 77 cb || encoded[2]{77 50}
-0052h mov r11,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b 1a}
-0055h movsxd r10,r10d                         ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d2}
-0058h lea r10,[r11+r10*4]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 93}
-005ch xor r11d,r11d                           ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 db}
-005fh mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0064h mov [rsp+28h],r11                       ; MOV r/m64, r64 || REX.W 89 /r || encoded[5]{4c 89 5c 24 28}
-0069h lea r11,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 5c 24 28}
-006eh movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0072h mov rsi,101010101010101h                ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 be 01 01 01 01 01 01 01 01}
-007ch pdep r9,r9,rsi                          ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 62 b3 f5 ce}
-0081h mov [r11],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0b}
-0084h vpmovzxbd ymm0,qword ptr [r11]          ; VPMOVZXBD ymm1, xmm2/m64 || VEX.256.66.0F38.WIG 31 /r || encoded[5]{c4 c2 7d 31 03}
-0089h vmovdqu ymmword ptr [r10],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[5]{c4 c1 7e 7f 02}
-008eh inc ecx                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c1}
-0090h cmp ecx,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c8}
-0092h jl short 0034h                          ; JL rel8 || 7C cb || encoded[2]{7c a0}
-0094h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0097h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
-009bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-009ch ret                                     ; RET || C3 || encoded[1]{c3}
-009dh call 7ff825fcfc20h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ae 72 ed 5e}
-00a2h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e1 cc 2a ff}
-00a7h int 3                                   ; INT3 || CC || encoded[1]{cc}
-00a8h sbb [rip+52050002h],eax                 ; SBB r/m32, r32 || o32 19 /r || encoded[6]{19 05 02 00 05 52}
-00aeh add [rax+40h],esp                       ; ADD r/m32, r32 || o32 01 /r || encoded[3]{01 60 40}
-------------------------------------------------------------------------------------------------------------------------
-; ref Block256<uint> unpack32<byte>(ReadOnlySpan<byte> src, in Block256<uint> dst, int block)
-; unpack32_g[8u](uspan8u,b256x32u~in,32i)[113] = {48 83 ec 28 c5 f8 77 48 8b 01 49 63 c8 0f b6 04 08 41 c1 e0 03 41 8b c8 48 83 c1 08 44 8b 4a 08 49 3b c9 77 47 48 8b 0a 4d 63 c0 4a 8d 0c 81 0f b6 c0 45 33 c0 4c 89 44 24 20 4c 89 44 24 20 4c 8d 44 24 20 8b c0 49 b9 01 01 01 01 01 01 01 01 c4 c2 fb f5 c1 49 89 00 c4 c2 7d 31 00 c5 fe 7f 01 48 8b c2 c5 f8 77 48 83 c4 28 c3 e8 57 cc 2a ff}
+; ref Block256<uint> unpack32<byte>(ReadOnlySpan<byte> src, in Block256<uint> dst, int block), hex://intrinsics/bitpack?unpack32#unpack32_g[8u](uspan8u,b256x32u~in,32i)
+; unpack32_g[8u](uspan8u,b256x32u~in,32i)[113] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x63,0xc8,0x0f,0xb6,0x04,0x08,0x41,0xc1,0xe0,0x03,0x41,0x8b,0xc8,0x48,0x83,0xc1,0x08,0x44,0x8b,0x4a,0x08,0x49,0x3b,0xc9,0x77,0x47,0x48,0x8b,0x0a,0x4d,0x63,0xc0,0x4a,0x8d,0x0c,0x81,0x0f,0xb6,0xc0,0x45,0x33,0xc0,0x4c,0x89,0x44,0x24,0x20,0x4c,0x89,0x44,0x24,0x20,0x4c,0x8d,0x44,0x24,0x20,0x8b,0xc0,0x49,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xc2,0xfb,0xf5,0xc1,0x49,0x89,0x00,0xc4,0xc2,0x7d,0x31,0x00,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x07,0x8a,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2249,10 +2028,10 @@
 0064h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0067h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
-006ch call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 cc 2a ff}
+006ch call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 8a 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Block256<uint> unpack32<ushort>(ReadOnlySpan<ushort> src, in Block256<uint> dst, int block)
-; unpack32_g[16u](uspan16u,b256x32u~in,32i)[149] = {48 83 ec 28 c5 f8 77 48 8b 01 49 63 c8 0f b7 04 48 41 c1 e0 03 41 8b c8 48 83 c1 08 44 8b 4a 08 49 3b c9 77 6b 48 8b 0a 4d 63 c0 4a 8d 0c 81 0f b7 c0 45 33 c0 4c 89 44 24 20 4c 89 44 24 20 4c 8d 44 24 20 44 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8b c9 c4 c1 7e 7f 01 c1 f8 08 0f b6 c0 c4 c2 fb f5 c2 49 89 00 c4 c2 7d 31 00 48 83 c1 20 c5 fe 7f 01 48 8b c2 c5 f8 77 48 83 c4 28 c3 e8 a3 cb 2a ff}
+; ref Block256<uint> unpack32<ushort>(ReadOnlySpan<ushort> src, in Block256<uint> dst, int block), hex://intrinsics/bitpack?unpack32#unpack32_g[16u](uspan16u,b256x32u~in,32i)
+; unpack32_g[16u](uspan16u,b256x32u~in,32i)[149] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x63,0xc8,0x0f,0xb7,0x04,0x48,0x41,0xc1,0xe0,0x03,0x41,0x8b,0xc8,0x48,0x83,0xc1,0x08,0x44,0x8b,0x4a,0x08,0x49,0x3b,0xc9,0x77,0x6b,0x48,0x8b,0x0a,0x4d,0x63,0xc0,0x4a,0x8d,0x0c,0x81,0x0f,0xb7,0xc0,0x45,0x33,0xc0,0x4c,0x89,0x44,0x24,0x20,0x4c,0x89,0x44,0x24,0x20,0x4c,0x8d,0x44,0x24,0x20,0x44,0x0f,0xb6,0xc8,0x49,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8b,0xc9,0xc4,0xc1,0x7e,0x7f,0x01,0xc1,0xf8,0x08,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc2,0x49,0x89,0x00,0xc4,0xc2,0x7d,0x31,0x00,0x48,0x83,0xc1,0x20,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x53,0x89,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2292,10 +2071,10 @@
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 008bh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 008fh ret                                     ; RET || C3 || encoded[1]{c3}
-0090h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 cb 2a ff}
+0090h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 53 89 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Block256<uint> unpack32<uint>(ReadOnlySpan<uint> src, in Block256<uint> dst, int block)
-; unpack32_g[32u](uspan32u,b256x32u~in,32i)[221] = {48 83 ec 28 c5 f8 77 48 8b 01 49 63 c8 8b 04 88 41 c1 e0 03 41 8b c8 48 83 c1 08 44 8b 4a 08 49 3b c9 0f 87 b0 00 00 00 48 8b 0a 4d 63 c0 4a 8d 0c 81 45 33 c0 4c 89 44 24 20 4c 89 44 24 20 4c 8d 44 24 20 44 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8b c9 c4 c1 7e 7f 01 44 8b c8 41 c1 e9 08 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 49 20 c4 c1 7e 7f 01 44 8b c8 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 49 40 c4 c1 7e 7f 01 c1 e8 18 0f b6 c0 c4 c2 fb f5 c2 49 89 00 c4 c2 7d 31 00 48 83 c1 60 c5 fe 7f 01 48 8b c2 c5 f8 77 48 83 c4 28 c3 e8 ab ca 2a ff}
+; ref Block256<uint> unpack32<uint>(ReadOnlySpan<uint> src, in Block256<uint> dst, int block), hex://intrinsics/bitpack?unpack32#unpack32_g[32u](uspan32u,b256x32u~in,32i)
+; unpack32_g[32u](uspan32u,b256x32u~in,32i)[221] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x63,0xc8,0x8b,0x04,0x88,0x41,0xc1,0xe0,0x03,0x41,0x8b,0xc8,0x48,0x83,0xc1,0x08,0x44,0x8b,0x4a,0x08,0x49,0x3b,0xc9,0x0f,0x87,0xb0,0x00,0x00,0x00,0x48,0x8b,0x0a,0x4d,0x63,0xc0,0x4a,0x8d,0x0c,0x81,0x45,0x33,0xc0,0x4c,0x89,0x44,0x24,0x20,0x4c,0x89,0x44,0x24,0x20,0x4c,0x8d,0x44,0x24,0x20,0x44,0x0f,0xb6,0xc8,0x49,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8b,0xc9,0xc4,0xc1,0x7e,0x7f,0x01,0x44,0x8b,0xc8,0x41,0xc1,0xe9,0x08,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x49,0x20,0xc4,0xc1,0x7e,0x7f,0x01,0x44,0x8b,0xc8,0x41,0xc1,0xe9,0x10,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x49,0x40,0xc4,0xc1,0x7e,0x7f,0x01,0xc1,0xe8,0x18,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc2,0x49,0x89,0x00,0xc4,0xc2,0x7d,0x31,0x00,0x48,0x83,0xc1,0x60,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x5b,0x88,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2352,10 +2131,10 @@
 00d0h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 00d3h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 00d7h ret                                     ; RET || C3 || encoded[1]{c3}
-00d8h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab ca 2a ff}
+00d8h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b 88 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref Block256<uint> unpack32<ulong>(ReadOnlySpan<ulong> src, in Block256<uint> dst, int block)
-; unpack32_g[64u](uspan64u,b256x32u~in,32i)[379] = {48 83 ec 28 c5 f8 77 48 8b 01 49 63 c8 48 8b 04 c8 41 c1 e0 03 41 8b c8 48 83 c1 08 44 8b 4a 08 49 3b c9 0f 87 4d 01 00 00 48 8b 0a 4d 63 c0 4a 8d 0c 81 45 33 c0 4c 89 44 24 20 4c 89 44 24 20 4c 8d 44 24 20 44 0f b6 c8 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8b c9 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 08 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 49 20 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 49 40 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 18 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 49 60 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 20 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 89 80 00 00 00 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 28 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 89 a0 00 00 00 c4 c1 7e 7f 01 4c 8b c8 49 c1 e9 30 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4d 8b c8 c4 c2 7d 31 01 4c 8d 89 c0 00 00 00 c4 c1 7e 7f 01 48 c1 e8 38 0f b6 c0 c4 c2 fb f5 c2 49 89 00 c4 c2 7d 31 00 48 81 c1 e0 00 00 00 c5 fe 7f 01 48 8b c2 c5 f8 77 48 83 c4 28 c3 e8 0d c9 2a ff}
+; ref Block256<uint> unpack32<ulong>(ReadOnlySpan<ulong> src, in Block256<uint> dst, int block), hex://intrinsics/bitpack?unpack32#unpack32_g[64u](uspan64u,b256x32u~in,32i)
+; unpack32_g[64u](uspan64u,b256x32u~in,32i)[379] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x63,0xc8,0x48,0x8b,0x04,0xc8,0x41,0xc1,0xe0,0x03,0x41,0x8b,0xc8,0x48,0x83,0xc1,0x08,0x44,0x8b,0x4a,0x08,0x49,0x3b,0xc9,0x0f,0x87,0x4d,0x01,0x00,0x00,0x48,0x8b,0x0a,0x4d,0x63,0xc0,0x4a,0x8d,0x0c,0x81,0x45,0x33,0xc0,0x4c,0x89,0x44,0x24,0x20,0x4c,0x89,0x44,0x24,0x20,0x4c,0x8d,0x44,0x24,0x20,0x44,0x0f,0xb6,0xc8,0x49,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8b,0xc9,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x08,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x49,0x20,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x10,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x49,0x40,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x18,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x49,0x60,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x20,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x89,0x80,0x00,0x00,0x00,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x28,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x89,0xa0,0x00,0x00,0x00,0xc4,0xc1,0x7e,0x7f,0x01,0x4c,0x8b,0xc8,0x49,0xc1,0xe9,0x30,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4d,0x8b,0xc8,0xc4,0xc2,0x7d,0x31,0x01,0x4c,0x8d,0x89,0xc0,0x00,0x00,0x00,0xc4,0xc1,0x7e,0x7f,0x01,0x48,0xc1,0xe8,0x38,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc2,0x49,0x89,0x00,0xc4,0xc2,0x7d,0x31,0x00,0x48,0x81,0xc1,0xe0,0x00,0x00,0x00,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xbd,0x86,0x14,0xff}
 ; TermCode = CTC_INTRx2
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2448,10 +2227,10 @@
 016eh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0171h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0175h ret                                     ; RET || C3 || encoded[1]{c3}
-0176h call 7ff7c63a5658h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d c9 2a ff}
+0176h call 7ff7c6395698h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 86 14 ff}
 ------------------------------------------------------------------------------------------------------------------------
-; byte pack32(in uint src, N8 n)
-; pack32_(32u~in,n8)[118] = {50 c5 f8 77 90 c5 ff f0 01 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 79 58 54 24 04 c5 f1 db ca c5 f9 db c2 c4 e2 71 2b c0 c5 f0 57 c9 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f9 db c2 c5 f1 db ca c5 f9 67 c1 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 0f b6 c0 c5 f8 77 48 83 c4 08 c3}
+; byte pack32(in uint src, N8 n), hex://intrinsics/bitpack?pack32#pack32_(32u~in,n8)
+; pack32_(32u~in,n8)[118] = {0x50,0xc5,0xf8,0x77,0x90,0xc5,0xff,0xf0,0x01,0xc4,0xe3,0x7d,0x19,0xc1,0x00,0xc4,0xe3,0x7d,0x19,0xc0,0x01,0xc7,0x44,0x24,0x04,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x04,0xc4,0xe2,0x79,0x58,0x54,0x24,0x04,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0xdb,0xc2,0xc4,0xe2,0x71,0x2b,0xc0,0xc5,0xf0,0x57,0xc9,0xc7,0x04,0x24,0xff,0x00,0x00,0x00,0x48,0x8d,0x04,0x24,0xc4,0xe2,0x79,0x79,0x14,0x24,0xc5,0xf9,0xdb,0xc2,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0x67,0xc1,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0x0f,0xb6,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2482,8 +2261,8 @@
 0071h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0075h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort pack32(in uint src, N16 n)
-; pack32_(32u~in,n16)[128] = {50 c5 f8 77 90 48 8b c1 c5 ff f0 00 48 83 c1 20 c5 ff f0 09 c7 44 24 04 ff ff 00 00 48 8d 44 24 04 c4 e2 7d 58 54 24 04 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 c4 e3 7d 19 c1 00 c4 e3 7d 19 c0 01 c7 04 24 ff 00 00 00 48 8d 04 24 c4 e2 79 79 14 24 c5 f1 db ca c5 f9 db c2 c5 f1 67 c0 b8 07 00 00 00 c5 f9 6e c8 c5 f9 f3 c1 c5 f9 d7 c0 0f b7 c0 c5 f8 77 48 83 c4 08 c3}
+; ushort pack32(in uint src, N16 n), hex://intrinsics/bitpack?pack32#pack32_(32u~in,n16)
+; pack32_(32u~in,n16)[128] = {0x50,0xc5,0xf8,0x77,0x90,0x48,0x8b,0xc1,0xc5,0xff,0xf0,0x00,0x48,0x83,0xc1,0x20,0xc5,0xff,0xf0,0x09,0xc7,0x44,0x24,0x04,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x04,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x04,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xc4,0xe3,0x7d,0x19,0xc1,0x00,0xc4,0xe3,0x7d,0x19,0xc0,0x01,0xc7,0x04,0x24,0xff,0x00,0x00,0x00,0x48,0x8d,0x04,0x24,0xc4,0xe2,0x79,0x79,0x14,0x24,0xc5,0xf1,0xdb,0xca,0xc5,0xf9,0xdb,0xc2,0xc5,0xf1,0x67,0xc0,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xf9,0xf3,0xc1,0xc5,0xf9,0xd7,0xc0,0x0f,0xb7,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2516,8 +2295,8 @@
 007bh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 007fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint pack32(in uint src, N32 n)
-; pack32_(32u~in,n32)[179] = {48 83 ec 18 c5 f8 77 48 8b c1 c5 ff f0 00 48 8d 41 20 c5 ff f0 08 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 54 24 14 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 48 8d 41 40 c5 ff f0 08 48 83 c1 60 c5 ff f0 11 c7 44 24 10 ff ff 00 00 48 8d 44 24 10 c4 e2 7d 58 5c 24 10 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 54 24 0c c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 c5 f8 77 48 83 c4 18 c3}
+; uint pack32(in uint src, N32 n), hex://intrinsics/bitpack?pack32#pack32_(32u~in,n32)
+; pack32_(32u~in,n32)[179] = {0x48,0x83,0xec,0x18,0xc5,0xf8,0x77,0x48,0x8b,0xc1,0xc5,0xff,0xf0,0x00,0x48,0x8d,0x41,0x20,0xc5,0xff,0xf0,0x08,0xc7,0x44,0x24,0x14,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x14,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x14,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x41,0x40,0xc5,0xff,0xf0,0x08,0x48,0x83,0xc1,0x60,0xc5,0xff,0xf0,0x11,0xc7,0x44,0x24,0x10,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x10,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x10,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x44,0x24,0x0c,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x0c,0xc4,0xe2,0x7d,0x79,0x54,0x24,0x0c,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x18,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2558,8 +2337,8 @@
 00aeh add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 00b2h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong pack32(in uint src, N64 n)
-; pack32_(32u~in,n64)[364] = {48 83 ec 18 c5 f8 77 48 8b c1 c5 ff f0 00 48 8d 41 20 c5 ff f0 08 c7 44 24 14 ff ff 00 00 48 8d 44 24 14 c4 e2 7d 58 54 24 14 c5 fd db c2 c5 f5 db ca c4 e2 7d 2b c1 c4 e3 fd 00 c0 d8 48 8d 41 40 c5 ff f0 08 48 8d 41 60 c5 ff f0 10 c7 44 24 10 ff ff 00 00 48 8d 44 24 10 c4 e2 7d 58 5c 24 10 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 44 24 0c ff 00 00 00 48 8d 44 24 0c c4 e2 7d 79 54 24 0c c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 b8 07 00 00 00 c5 f9 6e c8 c5 fd f3 c1 c5 fd d7 c0 8b c0 48 8d 91 80 00 00 00 c5 ff f0 0a 48 8d 91 a0 00 00 00 c5 ff f0 12 c7 44 24 08 ff ff 00 00 48 8d 54 24 08 c4 e2 7d 58 44 24 08 c5 f5 db c8 c5 ed db c0 c4 e2 75 2b c0 c4 e3 fd 00 c0 d8 48 8d 91 c0 00 00 00 c5 ff f0 0a 48 81 c1 e0 00 00 00 c5 ff f0 11 c7 44 24 04 ff ff 00 00 48 8d 54 24 04 c4 e2 7d 58 5c 24 04 c5 f5 db cb c5 ed db d3 c4 e2 75 2b ca c4 e3 fd 00 c9 d8 c7 04 24 ff 00 00 00 48 8d 14 24 c4 e2 7d 79 14 24 c5 fd db c2 c5 f5 db ca c5 fd 67 c1 c4 e3 fd 00 c0 d8 ba 07 00 00 00 c5 f9 6e ca c5 fd f3 c1 c5 fd d7 d0 8b d2 48 c1 e2 20 48 0b c2 c5 f8 77 48 83 c4 18 c3}
+; ulong pack32(in uint src, N64 n), hex://intrinsics/bitpack?pack32#pack32_(32u~in,n64)
+; pack32_(32u~in,n64)[364] = {0x48,0x83,0xec,0x18,0xc5,0xf8,0x77,0x48,0x8b,0xc1,0xc5,0xff,0xf0,0x00,0x48,0x8d,0x41,0x20,0xc5,0xff,0xf0,0x08,0xc7,0x44,0x24,0x14,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x14,0xc4,0xe2,0x7d,0x58,0x54,0x24,0x14,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc4,0xe2,0x7d,0x2b,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x41,0x40,0xc5,0xff,0xf0,0x08,0x48,0x8d,0x41,0x60,0xc5,0xff,0xf0,0x10,0xc7,0x44,0x24,0x10,0xff,0xff,0x00,0x00,0x48,0x8d,0x44,0x24,0x10,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x10,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x44,0x24,0x0c,0xff,0x00,0x00,0x00,0x48,0x8d,0x44,0x24,0x0c,0xc4,0xe2,0x7d,0x79,0x54,0x24,0x0c,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xb8,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xc8,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xc0,0x8b,0xc0,0x48,0x8d,0x91,0x80,0x00,0x00,0x00,0xc5,0xff,0xf0,0x0a,0x48,0x8d,0x91,0xa0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x12,0xc7,0x44,0x24,0x08,0xff,0xff,0x00,0x00,0x48,0x8d,0x54,0x24,0x08,0xc4,0xe2,0x7d,0x58,0x44,0x24,0x08,0xc5,0xf5,0xdb,0xc8,0xc5,0xed,0xdb,0xc0,0xc4,0xe2,0x75,0x2b,0xc0,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0x48,0x8d,0x91,0xc0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x0a,0x48,0x81,0xc1,0xe0,0x00,0x00,0x00,0xc5,0xff,0xf0,0x11,0xc7,0x44,0x24,0x04,0xff,0xff,0x00,0x00,0x48,0x8d,0x54,0x24,0x04,0xc4,0xe2,0x7d,0x58,0x5c,0x24,0x04,0xc5,0xf5,0xdb,0xcb,0xc5,0xed,0xdb,0xd3,0xc4,0xe2,0x75,0x2b,0xca,0xc4,0xe3,0xfd,0x00,0xc9,0xd8,0xc7,0x04,0x24,0xff,0x00,0x00,0x00,0x48,0x8d,0x14,0x24,0xc4,0xe2,0x7d,0x79,0x14,0x24,0xc5,0xfd,0xdb,0xc2,0xc5,0xf5,0xdb,0xca,0xc5,0xfd,0x67,0xc1,0xc4,0xe3,0xfd,0x00,0xc0,0xd8,0xba,0x07,0x00,0x00,0x00,0xc5,0xf9,0x6e,0xca,0xc5,0xfd,0xf3,0xc1,0xc5,0xfd,0xd7,0xd0,0x8b,0xd2,0x48,0xc1,0xe2,0x20,0x48,0x0b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x18,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,18h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 18}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2637,8 +2416,8 @@
 0167h add rsp,18h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 18}
 016bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack32(in byte src, int count, ref uint target)
-; unpack32_(8u~in,32i,32u~ref)[96] = {50 c5 f8 77 33 c0 48 89 04 24 33 c0 48 89 04 24 48 8d 04 24 45 33 c9 85 d2 7e 3d 4d 63 d1 46 0f b6 14 11 49 bb 01 01 01 01 01 01 01 01 c4 42 ab f5 d3 4c 89 10 4c 8b d0 c4 c2 7d 31 02 45 8b d1 41 c1 e2 03 4d 63 d2 4f 8d 14 90 c4 c1 7e 7f 02 41 ff c1 44 3b ca 7c c3 c5 f8 77 48 83 c4 08 c3}
+; void unpack32(in byte src, int count, ref uint target), hex://intrinsics/bitpack?unpack32#unpack32_(8u~in,32i,32u~ref)
+; unpack32_(8u~in,32i,32u~ref)[96] = {0x50,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x04,0x24,0x33,0xc0,0x48,0x89,0x04,0x24,0x48,0x8d,0x04,0x24,0x45,0x33,0xc9,0x85,0xd2,0x7e,0x3d,0x4d,0x63,0xd1,0x46,0x0f,0xb6,0x14,0x11,0x49,0xbb,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xab,0xf5,0xd3,0x4c,0x89,0x10,0x4c,0x8b,0xd0,0xc4,0xc2,0x7d,0x31,0x02,0x45,0x8b,0xd1,0x41,0xc1,0xe2,0x03,0x4d,0x63,0xd2,0x4f,0x8d,0x14,0x90,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc1,0x44,0x3b,0xca,0x7c,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2669,8 +2448,8 @@
 005bh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 005fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack32(in byte src, int blocks, in Block256<uint> target)
-; unpack32_(8u~in,32i,b256x32u~in)[99] = {50 c5 f8 77 33 c0 48 89 04 24 33 c0 48 89 04 24 48 8d 04 24 45 33 c9 85 d2 7e 40 4d 63 d1 46 0f b6 14 11 49 bb 01 01 01 01 01 01 01 01 c4 42 ab f5 d3 4c 89 10 4c 8b d0 c4 c2 7d 31 02 4d 8b 10 45 8b d9 41 c1 e3 03 4d 63 db 4f 8d 14 9a c4 c1 7e 7f 02 41 ff c1 44 3b ca 7c c0 c5 f8 77 48 83 c4 08 c3}
+; void unpack32(in byte src, int blocks, in Block256<uint> target), hex://intrinsics/bitpack?unpack32#unpack32_(8u~in,32i,b256x32u~in)
+; unpack32_(8u~in,32i,b256x32u~in)[99] = {0x50,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x04,0x24,0x33,0xc0,0x48,0x89,0x04,0x24,0x48,0x8d,0x04,0x24,0x45,0x33,0xc9,0x85,0xd2,0x7e,0x40,0x4d,0x63,0xd1,0x46,0x0f,0xb6,0x14,0x11,0x49,0xbb,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xab,0xf5,0xd3,0x4c,0x89,0x10,0x4c,0x8b,0xd0,0xc4,0xc2,0x7d,0x31,0x02,0x4d,0x8b,0x10,0x45,0x8b,0xd9,0x41,0xc1,0xe3,0x03,0x4d,0x63,0xdb,0x4f,0x8d,0x14,0x9a,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc1,0x44,0x3b,0xca,0x7c,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
 0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2702,8 +2481,8 @@
 005eh add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0062h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(byte packed, ref byte unpacked)
-; unpack8_(8u,8u~ref)[27] = {0f 1f 44 00 00 0f b6 c1 48 b9 01 01 01 01 01 01 01 01 c4 e2 fb f5 c1 48 89 02 c3}
+; void unpack8(byte packed, ref byte unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(8u,8u~ref)
+; unpack8_(8u,8u~ref)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x48,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xfb,0xf5,0xc1,0x48,0x89,0x02,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -2712,8 +2491,8 @@
 0017h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(ushort packed, ref byte unpacked)
-; unpack8_(16u,8u~ref)[48] = {0f 1f 44 00 00 0f b7 c1 0f b6 c8 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 0a 48 83 c2 08 c1 f8 08 0f b6 c0 c4 c2 fb f5 c0 48 89 02 c3}
+; void unpack8(ushort packed, ref byte unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(16u,8u~ref)
+; unpack8_(16u,8u~ref)[48] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xc8,0x49,0xb8,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xc2,0xf3,0xf5,0xc8,0x48,0x89,0x0a,0x48,0x83,0xc2,0x08,0xc1,0xf8,0x08,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc0,0x48,0x89,0x02,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
@@ -2728,8 +2507,8 @@
 002ch mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(uint packed, ref byte unpacked)
-; unpack8_(32u,8u~ref)[101] = {0f 1f 44 00 00 0f b6 c1 49 b8 01 01 01 01 01 01 01 01 c4 c2 fb f5 c0 48 89 02 48 8d 42 08 44 8b c1 41 c1 e8 08 45 0f b6 c0 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 00 48 8d 42 10 44 8b c1 41 c1 e8 10 45 0f b6 c0 c4 42 bb f5 c1 4c 89 00 48 83 c2 18 c1 e9 18 0f b6 c1 c4 c2 fb f5 c1 48 89 02 c3}
+; void unpack8(uint packed, ref byte unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(32u,8u~ref)
+; unpack8_(32u,8u~ref)[101] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x49,0xb8,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xc2,0xfb,0xf5,0xc0,0x48,0x89,0x02,0x48,0x8d,0x42,0x08,0x44,0x8b,0xc1,0x41,0xc1,0xe8,0x08,0x45,0x0f,0xb6,0xc0,0x49,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xbb,0xf5,0xc1,0x4c,0x89,0x00,0x48,0x8d,0x42,0x10,0x44,0x8b,0xc1,0x41,0xc1,0xe8,0x10,0x45,0x0f,0xb6,0xc0,0xc4,0x42,0xbb,0xf5,0xc1,0x4c,0x89,0x00,0x48,0x83,0xc2,0x18,0xc1,0xe9,0x18,0x0f,0xb6,0xc1,0xc4,0xc2,0xfb,0xf5,0xc1,0x48,0x89,0x02,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
@@ -2756,8 +2535,8 @@
 0061h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(ulong packed, ref byte unpacked)
-; unpack8_(64u,8u~ref)[189] = {0f 1f 44 00 00 8b c1 44 0f b6 c0 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 02 4c 8d 42 08 44 8b c8 41 c1 e9 08 45 0f b6 c9 49 ba 01 01 01 01 01 01 01 01 c4 42 b3 f5 ca 4d 89 08 4c 8d 42 10 44 8b c8 41 c1 e9 10 45 0f b6 c9 c4 42 b3 f5 ca 4d 89 08 4c 8d 42 18 c1 e8 18 0f b6 c0 c4 c2 fb f5 c2 49 89 00 48 c1 e9 20 8b c1 48 83 c2 20 0f b6 c8 c4 c2 f3 f5 ca 48 89 0a 48 8d 4a 08 44 8b c0 41 c1 e8 08 45 0f b6 c0 c4 42 bb f5 c2 4c 89 01 48 8d 4a 10 44 8b c0 41 c1 e8 10 45 0f b6 c0 c4 42 bb f5 c2 4c 89 01 48 83 c2 18 c1 e8 18 0f b6 c0 c4 c2 fb f5 c2 48 89 02 c3}
+; void unpack8(ulong packed, ref byte unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(64u,8u~ref)
+; unpack8_(64u,8u~ref)[189] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x44,0x0f,0xb6,0xc0,0x49,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xbb,0xf5,0xc1,0x4c,0x89,0x02,0x4c,0x8d,0x42,0x08,0x44,0x8b,0xc8,0x41,0xc1,0xe9,0x08,0x45,0x0f,0xb6,0xc9,0x49,0xba,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4c,0x8d,0x42,0x10,0x44,0x8b,0xc8,0x41,0xc1,0xe9,0x10,0x45,0x0f,0xb6,0xc9,0xc4,0x42,0xb3,0xf5,0xca,0x4d,0x89,0x08,0x4c,0x8d,0x42,0x18,0xc1,0xe8,0x18,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc2,0x49,0x89,0x00,0x48,0xc1,0xe9,0x20,0x8b,0xc1,0x48,0x83,0xc2,0x20,0x0f,0xb6,0xc8,0xc4,0xc2,0xf3,0xf5,0xca,0x48,0x89,0x0a,0x48,0x8d,0x4a,0x08,0x44,0x8b,0xc0,0x41,0xc1,0xe8,0x08,0x45,0x0f,0xb6,0xc0,0xc4,0x42,0xbb,0xf5,0xc2,0x4c,0x89,0x01,0x48,0x8d,0x4a,0x10,0x44,0x8b,0xc0,0x41,0xc1,0xe8,0x10,0x45,0x0f,0xb6,0xc0,0xc4,0x42,0xbb,0xf5,0xc2,0x4c,0x89,0x01,0x48,0x83,0xc2,0x18,0xc1,0xe8,0x18,0x0f,0xb6,0xc0,0xc4,0xc2,0xfb,0xf5,0xc2,0x48,0x89,0x02,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
@@ -2808,8 +2587,8 @@
 00b9h mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 00bch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(byte packed, Span<byte> unpacked)
-; unpack8_(8u,span8u)[30] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 48 b9 01 01 01 01 01 01 01 01 c4 e2 eb f5 d1 48 89 10 c3}
+; void unpack8(byte packed, Span<byte> unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(8u,span8u)
+; unpack8_(8u,span8u)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x0f,0xb6,0xd1,0x48,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xe2,0xeb,0xf5,0xd1,0x48,0x89,0x10,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -2819,8 +2598,8 @@
 001ah mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(ushort packed, Span<byte> unpacked)
-; unpack8_(16u,span8u)[51] = {0f 1f 44 00 00 48 8b 02 0f b7 d1 0f b6 ca 49 b8 01 01 01 01 01 01 01 01 c4 c2 f3 f5 c8 48 89 08 48 83 c0 08 c1 fa 08 0f b6 d2 c4 c2 eb f5 d0 48 89 10 c3}
+; void unpack8(ushort packed, Span<byte> unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(16u,span8u)
+; unpack8_(16u,span8u)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x0f,0xb7,0xd1,0x0f,0xb6,0xca,0x49,0xb8,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xc2,0xf3,0xf5,0xc8,0x48,0x89,0x08,0x48,0x83,0xc0,0x08,0xc1,0xfa,0x08,0x0f,0xb6,0xd2,0xc4,0xc2,0xeb,0xf5,0xd0,0x48,0x89,0x10,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -2836,8 +2615,8 @@
 002fh mov [rax],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 10}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; void unpack8(uint packed, Span<byte> unpacked)
-; unpack8_(32u,span8u)[104] = {0f 1f 44 00 00 48 8b 02 0f b6 d1 49 b8 01 01 01 01 01 01 01 01 c4 c2 eb f5 d0 48 89 10 48 8d 50 08 44 8b c1 41 c1 e8 08 45 0f b6 c0 49 b9 01 01 01 01 01 01 01 01 c4 42 bb f5 c1 4c 89 02 48 8d 50 10 44 8b c1 41 c1 e8 10 45 0f b6 c0 c4 42 bb f5 c1 4c 89 02 48 83 c0 18 c1 e9 18 0f b6 d1 c4 c2 eb f5 d1 48 89 10 c3}
+; void unpack8(uint packed, Span<byte> unpacked), hex://intrinsics/bitpack?unpack8#unpack8_(32u,span8u)
+; unpack8_(32u,span8u)[104] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x0f,0xb6,0xd1,0x49,0xb8,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0xc2,0xeb,0xf5,0xd0,0x48,0x89,0x10,0x48,0x8d,0x50,0x08,0x44,0x8b,0xc1,0x41,0xc1,0xe8,0x08,0x45,0x0f,0xb6,0xc0,0x49,0xb9,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0x01,0xc4,0x42,0xbb,0xf5,0xc1,0x4c,0x89,0x02,0x48,0x8d,0x50,0x10,0x44,0x8b,0xc1,0x41,0xc1,0xe8,0x10,0x45,0x0f,0xb6,0xc0,0xc4,0x42,0xbb,0xf5,0xc1,0x4c,0x89,0x02,0x48,0x83,0xc0,0x18,0xc1,0xe9,0x18,0x0f,0xb6,0xd1,0xc4,0xc2,0xeb,0xf5,0xd1,0x48,0x89,0x10,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}

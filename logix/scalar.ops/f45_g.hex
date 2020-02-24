@@ -1,8 +1,0 @@
-f45_g[8u](8u,8u,8u)      0f 1f 44 00 00 41 0f b6 c0 f7 d0 0f b6 c0 0f b6 c9 81 f1 ff 00 00 00 0f b6 c9 0f b6 d2 0b d1 0f b6 d2 0f b6 c0 23 c2 0f b6 c0 c3
-f45_g[8i](8i,8i,8i)      57 56 48 83 ec 28 8b f2 49 0f be c0 f7 d0 48 0f be f8 48 0f be c9 e8 d5 ab fe ff 48 0f be c0 48 0f be d6 0b c2 48 0f be c0 48 0f be d7 23 c2 48 0f be c0 48 83 c4 28 5e 5f c3
-f45_g[16u](16u,16u,16u)  50 0f 1f 40 00 41 0f b7 c0 f7 d0 0f b7 c0 0f b7 c9 81 f1 ff ff 00 00 89 4c 24 04 0f b7 4c 24 04 0f b7 d2 0b d1 0f b7 d2 0f b7 c0 23 c2 0f b7 c0 48 83 c4 08 c3
-f45_g[16i](16i,16i,16i)  57 56 48 83 ec 28 8b f2 49 0f bf c0 f7 d0 48 0f bf f8 48 0f bf c9 e8 95 cc fe ff 48 0f bf c0 48 0f bf d6 0b c2 48 0f bf c0 48 0f bf d7 23 c2 48 0f bf c0 48 83 c4 28 5e 5f c3
-f45_g[32u](32u,32u,32u)  0f 1f 44 00 00 41 8b c0 f7 d0 f7 d1 0b d1 23 c2 c3
-f45_g[32i](32i,32i,32i)  57 56 48 83 ec 28 8b f2 41 8b f8 f7 d7 e8 ce ec fe ff 0b c6 23 c7 48 83 c4 28 5e 5f c3
-f45_g[64u](64u,64u,64u)  0f 1f 44 00 00 49 8b c0 48 f7 d0 48 f7 d1 48 0b d1 48 23 c2 c3
-f45_g[64i](64i,64i,64i)  57 56 48 83 ec 28 48 8b f2 49 8b f8 48 f7 d7 e8 04 09 ff ff 48 0b c6 48 23 c7 48 83 c4 28 5e 5f c3

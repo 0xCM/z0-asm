@@ -1,4 +1,0 @@
-rank_g[8u](8u,32i)    0f 1f 44 00 00 0f b6 c1 0f b6 d2 ff c2 0f b6 d2 c1 e2 08 0f b7 d2 c4 e2 68 f7 c0 0f b6 c0 f3 0f b8 c0 c3
-rank_g[16u](16u,32i)  0f 1f 44 00 00 0f b7 c1 0f b6 d2 ff c2 0f b6 d2 c1 e2 08 0f b7 d2 c4 e2 68 f7 c0 0f b7 c0 f3 0f b8 c0 c3
-rank_g[32u](32u,32i)  0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 c4 e2 78 f7 c1 f3 0f b8 c0 c3
-rank_g[64u](64u,32i)  0f 1f 44 00 00 0f b6 c2 ff c0 0f b6 c0 c1 e0 08 0f b7 c0 c4 e2 f8 f7 c1 f3 48 0f b8 c0 c3

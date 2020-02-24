@@ -1,4 +1,0 @@
-nlz_g[8u](8u)    0f 1f 44 00 00 89 4c 24 08 0f b6 44 24 08 f3 0f bd c0 83 c0 e8 c3
-nlz_g[16u](16u)  0f 1f 44 00 00 89 4c 24 08 0f b7 44 24 08 f3 0f bd c0 83 c0 f0 c3
-nlz_g[32u](32u)  0f 1f 44 00 00 33 c0 f3 0f bd c1 c3
-nlz_g[64u](64u)  0f 1f 44 00 00 33 c0 f3 48 0f bd c1 c3

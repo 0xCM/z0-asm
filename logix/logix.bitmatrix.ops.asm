@@ -1,34 +1,34 @@
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> false<byte>()
-; false_g[8u]()[18] = {0f 1f 44 00 00 48 b8 38 fe 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<byte> false<byte>(), hex://logix/BitMatrixOps?false#false_g[8u]()
+; false_g[8u]()[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x28,0x8a,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733fe38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 38 fe 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8a28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 8a ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> false<ushort>()
-; false_g[16u]()[18] = {0f 1f 44 00 00 48 b8 28 ff 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ushort> false<ushort>(), hex://logix/BitMatrixOps?false#false_g[16u]()
+; false_g[16u]()[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x18,0x8b,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733ff28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 ff 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8b18h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 8b ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> false<uint>()
-; false_g[32u]()[18] = {0f 1f 44 00 00 48 b8 18 00 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<uint> false<uint>(), hex://logix/BitMatrixOps?false#false_g[32u]()
+; false_g[32u]()[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x88,0x8c,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340018h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 00 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8c88h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 88 8c ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> false<ulong>()
-; false_g[64u]()[18] = {0f 1f 44 00 00 48 b8 60 06 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ulong> false<ulong>(), hex://logix/BitMatrixOps?false#false_g[64u]()
+; false_g[64u]()[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x70,0x92,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340660h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 60 06 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee9270h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 70 92 ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> true<byte>()
-; true_g[8u]()[39] = {56 48 83 ec 30 48 8b f1 b9 ff 00 00 00 88 4c 24 28 48 8b ce 0f b6 54 24 28 e8 ca ee ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<byte> true<byte>(), hex://logix/BitMatrixOps?true#true_g[8u]()
+; true_g[8u]()[39] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0x00,0x00,0x00,0x88,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb6,0x54,0x24,0x28,0xe8,0xd2,0xfb,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -37,14 +37,14 @@
 000dh mov [rsp+28h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 28}
 0011h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0014h movzx edx,byte ptr [rsp+28h]            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{0f b6 54 24 28}
-0019h call 7ff7c734cdf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca ee ff ff}
+0019h call 7ff7c7295f60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 fb ff ff}
 001eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0021h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0025h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> true<ushort>()
-; true_g[16u]()[40] = {56 48 83 ec 30 48 8b f1 b9 ff ff 00 00 66 89 4c 24 28 48 8b ce 0f b7 54 24 28 e8 a9 ed ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<ushort> true<ushort>(), hex://logix/BitMatrixOps?true#true_g[16u]()
+; true_g[16u]()[40] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0xff,0x00,0x00,0x66,0x89,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb7,0x54,0x24,0x28,0xe8,0x91,0xfe,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -53,70 +53,70 @@
 000dh mov [rsp+28h],cx                        ; MOV r/m16, r16 || o16 89 /r || encoded[5]{66 89 4c 24 28}
 0012h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0015h movzx edx,word ptr [rsp+28h]            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{0f b7 54 24 28}
-001ah call 7ff7c734ce68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a9 ed ff ff}
+001ah call 7ff7c7296260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 fe ff ff}
 001fh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0022h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0026h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> true<uint>()
-; true_g[32u]()[30] = {56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 73 ec ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<uint> true<uint>(), hex://logix/BitMatrixOps?true#true_g[32u]()
+; true_g[32u]()[30] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0xba,0xff,0xff,0xff,0xff,0xe8,0x5b,0xfd,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov edx,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff ff ff ff}
-0010h call 7ff7c734ceb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 ec ff ff}
+0010h call 7ff7c72962b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b fd ff ff}
 0015h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0018h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> true<ulong>()
-; true_g[64u]()[35] = {56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 46 fd ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<ulong> true<ulong>(), hex://logix/BitMatrixOps?true#true_g[64u]()
+; true_g[64u]()[35] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0x48,0xba,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xe8,0x16,0xfc,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov rdx,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ff ff ff ff ff ff ff ff}
-0015h call 7ff7c734e3d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 fd ff ff}
+0015h call 7ff7c7296300h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 fc ff ff}
 001ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0021h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> false<byte>(in BitMatrix<byte> A)
-; false_g[8u](bm8x8u~in)[18] = {0f 1f 44 00 00 48 b8 38 fe 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<byte> false<byte>(in BitMatrix<byte> A), hex://logix/BitMatrixOps?false#false_g[8u](bm8x8u~in)
+; false_g[8u](bm8x8u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x28,0x8a,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733fe38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 38 fe 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8a28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 8a ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A)
-; false_g[16u](bm16x16u~in)[18] = {0f 1f 44 00 00 48 b8 28 ff 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A), hex://logix/BitMatrixOps?false#false_g[16u](bm16x16u~in)
+; false_g[16u](bm16x16u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x18,0x8b,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733ff28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 ff 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8b18h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 8b ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> false<uint>(in BitMatrix<uint> A)
-; false_g[32u](bm32x32u~in)[18] = {0f 1f 44 00 00 48 b8 18 00 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<uint> false<uint>(in BitMatrix<uint> A), hex://logix/BitMatrixOps?false#false_g[32u](bm32x32u~in)
+; false_g[32u](bm32x32u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x88,0x8c,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340018h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 00 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8c88h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 88 8c ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A)
-; false_g[64u](bm64x64u~in)[18] = {0f 1f 44 00 00 48 b8 60 06 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A), hex://logix/BitMatrixOps?false#false_g[64u](bm64x64u~in)
+; false_g[64u](bm64x64u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x70,0x92,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340660h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 60 06 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee9270h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 70 92 ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> true<byte>(in BitMatrix<byte> A)
-; true_g[8u](bm8x8u~in)[39] = {56 48 83 ec 30 48 8b f1 b9 ff 00 00 00 88 4c 24 28 48 8b ce 0f b6 54 24 28 e8 6a e2 ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<byte> true<byte>(in BitMatrix<byte> A), hex://logix/BitMatrixOps?true#true_g[8u](bm8x8u~in)
+; true_g[8u](bm8x8u~in)[39] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0x00,0x00,0x00,0x88,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb6,0x54,0x24,0x28,0xe8,0x72,0xf3,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -125,14 +125,14 @@
 000dh mov [rsp+28h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 28}
 0011h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0014h movzx edx,byte ptr [rsp+28h]            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{0f b6 54 24 28}
-0019h call 7ff7c734cdf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a e2 ff ff}
+0019h call 7ff7c7295f60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 f3 ff ff}
 001eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0021h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0025h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A)
-; true_g[16u](bm16x16u~in)[40] = {56 48 83 ec 30 48 8b f1 b9 ff ff 00 00 66 89 4c 24 28 48 8b ce 0f b7 54 24 28 e8 99 e2 ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A), hex://logix/BitMatrixOps?true#true_g[16u](bm16x16u~in)
+; true_g[16u](bm16x16u~in)[40] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0xff,0x00,0x00,0x66,0x89,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb7,0x54,0x24,0x28,0xe8,0x31,0xf6,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -141,42 +141,42 @@
 000dh mov [rsp+28h],cx                        ; MOV r/m16, r16 || o16 89 /r || encoded[5]{66 89 4c 24 28}
 0012h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0015h movzx edx,word ptr [rsp+28h]            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{0f b7 54 24 28}
-001ah call 7ff7c734ce68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 e2 ff ff}
+001ah call 7ff7c7296260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 31 f6 ff ff}
 001fh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0022h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0026h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> true<uint>(in BitMatrix<uint> A)
-; true_g[32u](bm32x32u~in)[30] = {56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 b3 e2 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<uint> true<uint>(in BitMatrix<uint> A), hex://logix/BitMatrixOps?true#true_g[32u](bm32x32u~in)
+; true_g[32u](bm32x32u~in)[30] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0xba,0xff,0xff,0xff,0xff,0xe8,0x4b,0xf6,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov edx,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff ff ff ff}
-0010h call 7ff7c734ceb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 e2 ff ff}
+0010h call 7ff7c72962b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4b f6 ff ff}
 0015h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0018h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A)
-; true_g[64u](bm64x64u~in)[35] = {56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 86 f7 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A), hex://logix/BitMatrixOps?true#true_g[64u](bm64x64u~in)
+; true_g[64u](bm64x64u~in)[35] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0x48,0xba,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xe8,0x56,0xf6,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov rdx,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ff ff ff ff ff ff ff ff}
-0015h call 7ff7c734e3d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 f7 ff ff}
+0015h call 7ff7c7296300h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 f6 ff ff}
 001ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0021h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> not<byte>(in BitMatrix<byte> A)
-; not_g[8u](bm8x8u~in)[92] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 9a 0d ff ff 48 8b 06 48 8d 54 24 20 48 8b 12 48 8b 00 48 f7 d0 48 89 02 48 8b fb 48 8d 74 24 20 e8 d1 6d b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> not<byte>(in BitMatrix<byte> A), hex://logix/BitMatrixOps?not#not_g[8u](bm8x8u~in)
+; not_g[8u](bm8x8u~in)[92] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x2a,0x19,0xc5,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x20,0x48,0x8b,0x12,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x71,0xed,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -191,7 +191,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 0d ff ff}
+0029h call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2a 19 c5 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -200,7 +200,7 @@
 003fh mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 0042h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0045h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 6d b5 5e}
+004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 71 ed c0 5e}
 004fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0051h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0054h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -209,8 +209,8 @@
 005ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A)
-; not_g[16u](bm16x16u~in)[124] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 0a 0e ff ff 48 8b 06 48 8d 54 24 50 48 8b 12 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 48 8b fb 48 8d 74 24 50 e8 34 6d b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A), hex://logix/BitMatrixOps?not#not_g[16u](bm16x16u~in)
+; not_g[16u](bm16x16u~in)[124] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x9a,0x19,0xc5,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0xd4,0xec,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -225,7 +225,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 0e ff ff}
+0029h call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 19 c5 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -239,7 +239,7 @@
 005bh vmovdqu ymmword ptr [rdx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 02}
 005fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0062h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 6d b5 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 ec c0 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -249,8 +249,8 @@
 007ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 007bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> not<uint>(in BitMatrix<uint> A)
-; not_g[32u](bm32x32u~in)[156] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 5a 0e ff ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 02 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 76 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 08 83 f9 04 7c bf 48 8b fb 48 8d 74 24 50 e8 74 6c b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<uint> not<uint>(in BitMatrix<uint> A), hex://logix/BitMatrixOps?not#not_g[32u](bm32x32u~in)
+; not_g[32u](bm32x32u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x5a,0x16,0xc5,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x02,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x08,0x83,0xf9,0x04,0x7c,0xbf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x04,0xe8,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -265,7 +265,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 0e ff ff}
+0029h call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 16 c5 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -289,7 +289,7 @@
 007dh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c bf}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 6c b5 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 e8 c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -299,8 +299,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A)
-; not_g[64u](bm64x64u~in)[157] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 e2 13 ff ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 03 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 04 83 f9 10 7c be 48 8b fb 48 8d 74 24 50 e8 b3 6b b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A), hex://logix/BitMatrixOps?not#not_g[64u](bm64x64u~in)
+; not_g[64u](bm64x64u~in)[157] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x82,0x1b,0xc5,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x03,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x04,0x83,0xf9,0x10,0x7c,0xbe,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x43,0xe7,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -315,7 +315,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 13 ff ff}
+0029h call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 82 1b c5 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -339,7 +339,7 @@
 007eh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c be}
 0080h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0083h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 6b b5 5e}
+0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 e7 c0 5e}
 008dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0092h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -349,8 +349,8 @@
 009bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> not<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z)
-; not_g[8u](bm8x8u~in,bm8x8u~ref)[24] = {0f 1f 44 00 00 48 8b 01 48 8b 0a 48 8b 00 48 f7 d0 48 89 01 48 8b c2 c3}
+; ref BitMatrix<byte> not<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?not#not_g[8u](bm8x8u~in,bm8x8u~ref)
+; not_g[8u](bm8x8u~in,bm8x8u~ref)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x0a,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x01,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -361,8 +361,8 @@
 0014h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
-; not_g[16u](bm16x16u~in,bm16x16u~ref)[59] = {48 83 ec 38 c5 f8 77 48 8b 01 48 8b 0a c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 48 8b c2 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ushort> not<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?not#not_g[16u](bm16x16u~in,bm16x16u~ref)
+; not_g[16u](bm16x16u~in,bm16x16u~ref)[59] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x0a,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -381,8 +381,8 @@
 0036h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> not<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z)
-; not_g[32u](bm32x32u~in,bm32x32u~ref)[94] = {48 83 ec 38 c5 f8 77 48 8b 01 48 8b 0a 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 76 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c0 48 8b c2 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<uint> not<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?not#not_g[32u](bm32x32u~in,bm32x32u~ref)
+; not_g[32u](bm32x32u~in,bm32x32u~ref)[94] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x0a,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xc0,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -411,8 +411,8 @@
 0059h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z)
-; not_g[64u](bm64x64u~in,bm64x64u~ref)[95] = {48 83 ec 38 c5 f8 77 48 8b 01 48 8b 0a 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c bf 48 8b c2 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ulong> not<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?not#not_g[64u](bm64x64u~in,bm64x64u~ref)
+; not_g[64u](bm64x64u~in,bm64x64u~ref)[95] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x0a,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xbf,0x48,0x8b,0xc2,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -441,8 +441,8 @@
 005ah add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> identity<byte>(in BitMatrix<byte> A)
-; identity_g[8u](bm8x8u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 cd 65 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<byte> identity<byte>(in BitMatrix<byte> A), hex://logix/BitMatrixOps?identity#identity_g[8u](bm8x8u~in)
+; identity_g[8u](bm8x8u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0x6d,0xe1,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -451,7 +451,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 65 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d e1 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -459,8 +459,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> identity<ushort>(in BitMatrix<ushort> A)
-; identity_g[16u](bm16x16u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 8d 65 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ushort> identity<ushort>(in BitMatrix<ushort> A), hex://logix/BitMatrixOps?identity#identity_g[16u](bm16x16u~in)
+; identity_g[16u](bm16x16u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0x2d,0xe1,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -469,7 +469,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 65 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d e1 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -477,8 +477,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> identity<uint>(in BitMatrix<uint> A)
-; identity_g[32u](bm32x32u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 4d 65 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<uint> identity<uint>(in BitMatrix<uint> A), hex://logix/BitMatrixOps?identity#identity_g[32u](bm32x32u~in)
+; identity_g[32u](bm32x32u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0xed,0xe0,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -487,7 +487,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 65 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed e0 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -495,8 +495,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> identity<ulong>(in BitMatrix<ulong> A)
-; identity_g[64u](bm64x64u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 0d 61 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ulong> identity<ulong>(in BitMatrix<ulong> A), hex://logix/BitMatrixOps?identity#identity_g[64u](bm64x64u~in)
+; identity_g[64u](bm64x64u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0xad,0xe0,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -505,7 +505,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d 61 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad e0 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -513,8 +513,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> identity<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z)
-; identity_g[8u](bm8x8u~in,bm8x8u~ref)[96] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 4e 91 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 50 58 05 ff}
+; ref BitMatrix<byte> identity<byte>(in BitMatrix<byte> A, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?identity#identity_g[8u](bm8x8u~in,bm8x8u~ref)
+; identity_g[8u](bm8x8u~in,bm8x8u~ref)[96] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xf2,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x48,0x8d,0x4c,0x24,0x30,0x48,0x8b,0x11,0x8b,0x49,0x08,0x4c,0x8d,0x44,0x24,0x20,0x49,0x8b,0x00,0x45,0x8b,0x40,0x08,0x41,0x3b,0xc8,0x77,0x14,0x4c,0x63,0xc1,0x48,0x8b,0xc8,0xe8,0xee,0x0c,0xa6,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x30,0xd4,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -537,15 +537,15 @@
 0045h ja short 005bh                          ; JA rel8 || 77 cb || encoded[2]{77 14}
 0047h movsxd r8,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c1}
 004ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 91 9a 4f}
+004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee 0c a6 4f}
 0052h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0055h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0059h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-005bh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 50 58 05 ff}
+005bh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 d4 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> identity<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z)
-; identity_g[16u](bm16x16u~in,bm16x16u~ref)[99] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 cb 90 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 cd 57 05 ff}
+; ref BitMatrix<ushort> identity<ushort>(in BitMatrix<ushort> A, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?identity#identity_g[16u](bm16x16u~in,bm16x16u~ref)
+; identity_g[16u](bm16x16u~in,bm16x16u~ref)[99] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xf2,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x17,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xd1,0xe0,0xe8,0x6b,0x0c,0xa6,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xad,0xd3,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -569,15 +569,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cb 90 9a 4f}
+0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b 0c a6 4f}
 0055h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0058h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
-005eh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 57 05 ff}
+005eh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad d3 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> identity<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z)
-; identity_g[32u](bm32x32u~in,bm32x32u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 4a 90 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 4c 57 05 ff}
+; ref BitMatrix<uint> identity<uint>(in BitMatrix<uint> A, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?identity#identity_g[32u](bm32x32u~in,bm32x32u~ref)
+; identity_g[32u](bm32x32u~in,bm32x32u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xf2,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x02,0xe8,0xea,0x0b,0xa6,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x2c,0xd3,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -601,15 +601,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,2                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 02}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a 90 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 0b a6 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c 57 05 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c d3 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> identity<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z)
-; identity_g[64u](bm64x64u~in,bm64x64u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 48 8b f2 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 ba 8b 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 bc 52 05 ff}
+; ref BitMatrix<ulong> identity<ulong>(in BitMatrix<ulong> A, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?identity#identity_g[64u](bm64x64u~in,bm64x64u~ref)
+; identity_g[64u](bm64x64u~in,bm64x64u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xf2,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x03,0xe8,0x6a,0x0b,0xa6,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xac,0xd2,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -633,43 +633,43 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba 8b 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a 0b a6 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 52 05 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac d2 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> false<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; false_g[8u](bm8x8u~in,bm8x8u~in)[18] = {0f 1f 44 00 00 48 b8 38 fe 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<byte> false<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?false#false_g[8u](bm8x8u~in,bm8x8u~in)
+; false_g[8u](bm8x8u~in,bm8x8u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x28,0x8a,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733fe38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 38 fe 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8a28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 8a ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; false_g[16u](bm16x16u~in,bm16x16u~in)[18] = {0f 1f 44 00 00 48 b8 28 ff 33 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?false#false_g[16u](bm16x16u~in,bm16x16u~in)
+; false_g[16u](bm16x16u~in,bm16x16u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x18,0x8b,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c733ff28h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 28 ff 33 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8b18h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 8b ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> false<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; false_g[32u](bm32x32u~in,bm32x32u~in)[18] = {0f 1f 44 00 00 48 b8 18 00 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<uint> false<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?false#false_g[32u](bm32x32u~in,bm32x32u~in)
+; false_g[32u](bm32x32u~in,bm32x32u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x88,0x8c,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340018h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 18 00 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee8c88h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 88 8c ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; false_g[64u](bm64x64u~in,bm64x64u~in)[18] = {0f 1f 44 00 00 48 b8 60 06 34 c7 f7 7f 00 00 48 ff e0}
+; BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?false#false_g[64u](bm64x64u~in,bm64x64u~in)
+; false_g[64u](bm64x64u~in,bm64x64u~in)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0x70,0x92,0xee,0xc6,0xf7,0x7f,0x00,0x00,0x48,0xff,0xe0}
 ; TermCode = CTC_JMP_RAX
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7ff7c7340660h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 60 06 34 c7 f7 7f 00 00}
+0005h mov rax,7ff7c6ee9270h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 70 92 ee c6 f7 7f 00 00}
 000fh jmp rax                                 ; JMP r/m64 || FF /4 || encoded[3]{48 ff e0}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> false<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; false_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[67] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 36 87 30 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<byte> false<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?false#false_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; false_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[67] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0x33,0xd2,0xe8,0x36,0x90,0x3b,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -686,14 +686,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h xor edx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d2}
-0035h call 7ff7c6658ff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 87 30 ff}
+0035h call 7ff7c6651950h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 90 3b ff}
 003ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0041h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0042h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; false_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[67] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 86 32 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<ushort> false<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?false#false_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; false_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[67] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0x33,0xd2,0xe8,0x26,0x32,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -710,14 +710,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h xor edx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d2}
-0035h call 7ff7c6a53ba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 32 70 ff}
+0035h call 7ff7c665bba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 32 3c ff}
 003ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0041h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0042h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> false<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; false_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[67] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 36 34 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<uint> false<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?false#false_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; false_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[67] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0x33,0xd2,0xe8,0xd6,0x33,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -734,14 +734,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h xor edx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d2}
-0035h call 7ff7c6a53db0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 34 70 ff}
+0035h call 7ff7c665bdb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 33 3c ff}
 003ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0041h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0042h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; false_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[67] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 33 d2 e8 d6 36 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<ulong> false<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?false#false_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; false_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[67] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0x33,0xd2,0xe8,0x66,0x32,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -758,14 +758,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h xor edx,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 d2}
-0035h call 7ff7c6a540b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 36 70 ff}
+0035h call 7ff7c665c0b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 32 3c ff}
 003ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 003dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0041h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0042h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> true<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; true_g[8u](bm8x8u~in,bm8x8u~in)[39] = {56 48 83 ec 30 48 8b f1 b9 ff 00 00 00 88 4c 24 28 48 8b ce 0f b6 54 24 28 e8 da c3 ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<byte> true<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?true#true_g[8u](bm8x8u~in,bm8x8u~in)
+; true_g[8u](bm8x8u~in,bm8x8u~in)[39] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0x00,0x00,0x00,0x88,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb6,0x54,0x24,0x28,0xe8,0xd2,0xd0,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -774,14 +774,14 @@
 000dh mov [rsp+28h],cl                        ; MOV r/m8, r8 || 88 /r || encoded[4]{88 4c 24 28}
 0011h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0014h movzx edx,byte ptr [rsp+28h]            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{0f b6 54 24 28}
-0019h call 7ff7c734cdf8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da c3 ff ff}
+0019h call 7ff7c7295f60h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d2 d0 ff ff}
 001eh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0021h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0025h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; true_g[16u](bm16x16u~in,bm16x16u~in)[40] = {56 48 83 ec 30 48 8b f1 b9 ff ff 00 00 66 89 4c 24 28 48 8b ce 0f b7 54 24 28 e8 09 c4 ff ff 48 8b c6 48 83 c4 30 5e c3}
+; BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?true#true_g[16u](bm16x16u~in,bm16x16u~in)
+; true_g[16u](bm16x16u~in,bm16x16u~in)[40] = {0x56,0x48,0x83,0xec,0x30,0x48,0x8b,0xf1,0xb9,0xff,0xff,0x00,0x00,0x66,0x89,0x4c,0x24,0x28,0x48,0x8b,0xce,0x0f,0xb7,0x54,0x24,0x28,0xe8,0x91,0xd3,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -790,42 +790,42 @@
 000dh mov [rsp+28h],cx                        ; MOV r/m16, r16 || o16 89 /r || encoded[5]{66 89 4c 24 28}
 0012h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 0015h movzx edx,word ptr [rsp+28h]            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{0f b7 54 24 28}
-001ah call 7ff7c734ce68h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 c4 ff ff}
+001ah call 7ff7c7296260h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 d3 ff ff}
 001fh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0022h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0026h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> true<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; true_g[32u](bm32x32u~in,bm32x32u~in)[30] = {56 48 83 ec 20 48 8b f1 48 8b ce ba ff ff ff ff e8 23 c4 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<uint> true<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?true#true_g[32u](bm32x32u~in,bm32x32u~in)
+; true_g[32u](bm32x32u~in,bm32x32u~in)[30] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0xba,0xff,0xff,0xff,0xff,0xe8,0xab,0xd3,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov edx,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff ff ff ff}
-0010h call 7ff7c734ceb8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 23 c4 ff ff}
+0010h call 7ff7c72962b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ab d3 ff ff}
 0015h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0018h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; true_g[64u](bm64x64u~in,bm64x64u~in)[35] = {56 48 83 ec 20 48 8b f1 48 8b ce 48 ba ff ff ff ff ff ff ff ff e8 f6 d8 ff ff 48 8b c6 48 83 c4 20 5e c3}
+; BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?true#true_g[64u](bm64x64u~in,bm64x64u~in)
+; true_g[64u](bm64x64u~in,bm64x64u~in)[35] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x8b,0xce,0x48,0xba,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xe8,0xb6,0xd3,0xff,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h mov rcx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ce}
 000bh mov rdx,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ff ff ff ff ff ff ff ff}
-0015h call 7ff7c734e3d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 d8 ff ff}
+0015h call 7ff7c7296300h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 d3 ff ff}
 001ah mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 001dh add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0021h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> true<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; true_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[70] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 ba ff 00 00 00 e8 b3 80 30 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<byte> true<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?true#true_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; true_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[70] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0xba,0xff,0x00,0x00,0x00,0xe8,0xa3,0x85,0x3b,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -842,14 +842,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h mov edx,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff 00 00 00}
-0038h call 7ff7c6658ff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 80 30 ff}
+0038h call 7ff7c6651950h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a3 85 3b ff}
 003dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0040h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; true_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[70] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 ba ff ff 00 00 e8 03 2c 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<ushort> true<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?true#true_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; true_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[70] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0xba,0xff,0xff,0x00,0x00,0xe8,0x93,0x27,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -866,14 +866,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h mov edx,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff ff 00 00}
-0038h call 7ff7c6a53ba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 2c 70 ff}
+0038h call 7ff7c665bba0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 93 27 3c ff}
 003dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0040h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> true<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; true_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[70] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 ba ff ff ff ff e8 b3 2d 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<uint> true<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?true#true_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; true_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[70] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0xba,0xff,0xff,0xff,0xff,0xe8,0x43,0x29,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -890,14 +890,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h mov edx,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba ff ff ff ff}
-0038h call 7ff7c6a53db0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 2d 70 ff}
+0038h call 7ff7c665bdb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 43 29 3c ff}
 003dh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0040h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0044h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0045h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; true_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[75] = {56 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8b 0e 48 89 4c 24 20 8b 4e 08 89 4c 24 28 48 8d 4c 24 20 48 ba ff ff ff ff ff ff ff ff e8 4e 30 70 ff 48 8b c6 48 83 c4 30 5e c3}
+; ref BitMatrix<ulong> true<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?true#true_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; true_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[75] = {0x56,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8b,0x0e,0x48,0x89,0x4c,0x24,0x20,0x8b,0x4e,0x08,0x89,0x4c,0x24,0x28,0x48,0x8d,0x4c,0x24,0x20,0x48,0xba,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xe8,0xde,0x2b,0x3c,0xff,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x30,0x5e,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,30h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 30}
@@ -914,14 +914,14 @@
 002ah mov [rsp+28h],ecx                       ; MOV r/m32, r32 || o32 89 /r || encoded[4]{89 4c 24 28}
 002eh lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0033h mov rdx,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 ba ff ff ff ff ff ff ff ff}
-003dh call 7ff7c6a540b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 30 70 ff}
+003dh call 7ff7c665c0b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 de 2b 3c ff}
 0042h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0045h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
 0049h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; and_g[8u](bm8x8u~in,bm8x8u~in)[101] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 77 e9 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 23 c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 a8 49 b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?and#and_g[8u](bm8x8u~in,bm8x8u~in)
+; and_g[8u](bm8x8u~in,bm8x8u~in)[101] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xf7,0xf4,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x23,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x38,0xc9,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -937,7 +937,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 e9 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 f4 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -948,7 +948,7 @@
 0048h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004bh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 004eh lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 49 b5 5e}
+0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 38 c9 c0 5e}
 0058h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 005dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -957,8 +957,8 @@
 0063h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; and_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 e7 e9 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd db c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 24 49 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?and#and_g[16u](bm16x16u~in,bm16x16u~in)
+; and_g[16u](bm16x16u~in,bm16x16u~in)[108] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x67,0xf5,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdb,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xb4,0xc8,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -974,7 +974,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 e9 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 f5 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -985,7 +985,7 @@
 004bh vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 004fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0052h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 49 b5 5e}
+0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b4 c8 c0 5e}
 005ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0061h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -995,8 +995,8 @@
 006ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; and_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 47 ea fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd db c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c cf 48 8b fb 48 8d 74 24 20 e8 6d 48 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?and#and_g[32u](bm32x32u~in,bm32x32u~in)
+; and_g[32u](bm32x32u~in,bm32x32u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x47,0xf6,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xfd,0xc7,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1012,7 +1012,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 ea fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 f6 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1034,7 +1034,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d 48 b5 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd c7 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1044,8 +1044,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; and_g[64u](bm64x64u~in,bm64x64u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 df ef fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd db c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c cf 48 8b fb 48 8d 74 24 20 e8 bd 47 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?and#and_g[64u](bm64x64u~in,bm64x64u~in)
+; and_g[64u](bm64x64u~in,bm64x64u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x7f,0xfb,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x4d,0xc7,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1061,7 +1061,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 df ef fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f fb c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1083,7 +1083,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 47 b5 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d c7 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1093,8 +1093,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; and_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 23 c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> and<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?and#and_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; and_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x23,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -1107,8 +1107,8 @@
 001ah mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; and_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd db c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> and<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?and#and_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; and_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdb,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1123,8 +1123,8 @@
 0021h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; and_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd db c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> and<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?and#and_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; and_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1153,8 +1153,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; and_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd db c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> and<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?and#and_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; and_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1183,8 +1183,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> nand<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; nand_g[8u](bm8x8u~in,bm8x8u~in)[104] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 b7 e1 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 23 c2 48 f7 d0 48 89 01 48 8b fb 48 8d 74 24 20 e8 e5 41 b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> nand<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?nand#nand_g[8u](bm8x8u~in,bm8x8u~in)
+; nand_g[8u](bm8x8u~in,bm8x8u~in)[104] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x27,0xe9,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x23,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x65,0xbd,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1200,7 +1200,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 e1 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 e9 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1212,7 +1212,7 @@
 004bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0051h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 41 b5 5e}
+0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 bd c0 5e}
 005bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0060h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -1221,8 +1221,8 @@
 0066h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> nand<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; nand_g[16u](bm16x16u~in,bm16x16u~in)[116] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 17 e2 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 4c 41 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> nand<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?nand#nand_g[16u](bm16x16u~in,bm16x16u~in)
+; nand_g[16u](bm16x16u~in,bm16x16u~in)[116] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x87,0xe9,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdb,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xcc,0xbc,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1238,7 +1238,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 e2 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 e9 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1251,7 +1251,7 @@
 0053h vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 0057h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005ah lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c 41 b5 5e}
+005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc bc c0 5e}
 0064h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0066h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0069h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1261,8 +1261,8 @@
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> nand<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; nand_g[32u](bm32x32u~in,bm32x32u~in)[155] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 67 e2 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 85 40 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> nand<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?nand#nand_g[32u](bm32x32u~in,bm32x32u~in)
+; nand_g[32u](bm32x32u~in,bm32x32u~in)[155] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x57,0xea,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdb,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xc7,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x05,0xbc,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1278,7 +1278,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 e2 fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 ea c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1302,7 +1302,7 @@
 007ch jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c7}
 007eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0081h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 40 b5 5e}
+0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 05 bc c0 5e}
 008bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0090h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1312,8 +1312,8 @@
 0099h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> nand<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; nand_g[64u](bm64x64u~in,bm64x64u~in)[156] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 ef e7 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 c4 3f b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> nand<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?nand#nand_g[64u](bm64x64u~in,bm64x64u~in)
+; nand_g[64u](bm64x64u~in,bm64x64u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x7f,0xef,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdb,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xc6,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x44,0xbb,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1329,7 +1329,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef e7 fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f ef c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1353,7 +1353,7 @@
 007dh jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c6}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 3f b5 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 bb c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1363,8 +1363,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> nand<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; nand_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 23 c2 48 f7 d0 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> nand<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?nand#nand_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; nand_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x23,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -1378,8 +1378,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> nand<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; nand_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd db c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> nand<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?nand#nand_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; nand_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdb,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -1396,8 +1396,8 @@
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> nand<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; nand_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd db c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> nand<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?nand#nand_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; nand_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdb,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xc8,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1428,8 +1428,8 @@
 0053h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> nand<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; nand_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd db c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> nand<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?nand#nand_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; nand_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdb,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xc7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1460,8 +1460,8 @@
 0054h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> or<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; or_g[8u](bm8x8u~in,bm8x8u~in)[101] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 77 d5 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 0b c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 a8 35 b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> or<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?or#or_g[8u](bm8x8u~in,bm8x8u~in)
+; or_g[8u](bm8x8u~in,bm8x8u~in)[101] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xe7,0xdc,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x0b,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x28,0xb1,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1477,7 +1477,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 d5 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 dc c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1488,7 +1488,7 @@
 0048h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004bh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 004eh lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a8 35 b5 5e}
+0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 28 b1 c0 5e}
 0058h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 005dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -1497,8 +1497,8 @@
 0063h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> or<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; or_g[16u](bm16x16u~in,bm16x16u~in)[158] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 e4 d5 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 40 c5 ff f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 70 e8 f5 34 b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<ushort> or<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?or#or_g[16u](bm16x16u~in,bm16x16u~in)
+; or_g[16u](bm16x16u~in,bm16x16u~in)[158] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0x54,0xdd,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x75,0xb0,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1514,7 +1514,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 d5 fe ff}
+002fh call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 dd c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1533,7 +1533,7 @@
 007ah vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 007eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0081h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 34 b5 5e}
+0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 b0 c0 5e}
 008bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0090h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1543,8 +1543,8 @@
 009ch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> or<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; or_g[32u](bm32x32u~in,bm32x32u~in)[197] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 04 d2 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 44 24 40 c5 ff f0 06 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c a3 48 8b fb 48 8d 74 24 70 e8 fe 2f b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<uint> or<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?or#or_g[32u](bm32x32u~in,bm32x32u~in)
+; or_g[32u](bm32x32u~in,bm32x32u~in)[197] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0xf4,0xdd,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xa3,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x7e,0xaf,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1560,7 +1560,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 04 d2 fe ff}
+002fh call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 dd c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1590,7 +1590,7 @@
 00a3h jl short 0048h                          ; JL rel8 || 7C cb || encoded[2]{7c a3}
 00a5h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00a8h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-00adh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe 2f b5 5e}
+00adh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7e af c0 5e}
 00b2h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00b4h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00b7h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1600,8 +1600,8 @@
 00c3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c4h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> or<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; or_g[64u](bm64x64u~in,bm64x64u~in)[197] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 5c d7 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 44 24 40 c5 ff f0 06 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c a3 48 8b fb 48 8d 74 24 70 e8 0e 2f b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<ulong> or<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?or#or_g[64u](bm64x64u~in,bm64x64u~in)
+; or_g[64u](bm64x64u~in,bm64x64u~in)[197] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0xec,0xe2,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xa3,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x8e,0xae,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1617,7 +1617,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c d7 fe ff}
+002fh call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec e2 c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1647,7 +1647,7 @@
 00a3h jl short 0048h                          ; JL rel8 || 7C cb || encoded[2]{7c a3}
 00a5h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00a8h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-00adh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0e 2f b5 5e}
+00adh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e ae c0 5e}
 00b2h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00b4h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00b7h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1657,8 +1657,8 @@
 00c3h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00c4h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> or<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; or_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 0b c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> or<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?or#or_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; or_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x0b,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -1671,8 +1671,8 @@
 001ah mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> or<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; or_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[84] = {48 83 ec 58 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 02 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c5 fe 7f 01 49 8b c0 c5 f8 77 48 83 c4 58 c3}
+; ref BitMatrix<ushort> or<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?or#or_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; or_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[84] = {0x48,0x83,0xec,0x58,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x58,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1696,8 +1696,8 @@
 004fh add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 0053h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> or<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; or_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[126] = {57 56 48 83 ec 48 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 06 c5 fd 11 44 24 20 c5 ff f0 07 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c a7 49 8b c0 c5 f8 77 48 83 c4 48 5e 5f c3}
+; ref BitMatrix<uint> or<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?or#or_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; or_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[126] = {0x57,0x56,0x48,0x83,0xec,0x48,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xa7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x48,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1736,8 +1736,8 @@
 007ch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> or<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; or_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[126] = {57 56 48 83 ec 48 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 06 c5 fd 11 44 24 20 c5 ff f0 07 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c a7 49 8b c0 c5 f8 77 48 83 c4 48 5e 5f c3}
+; ref BitMatrix<ulong> or<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?or#or_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; or_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[126] = {0x57,0x56,0x48,0x83,0xec,0x48,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xa7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x48,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1776,8 +1776,8 @@
 007ch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> nor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; nor_g[8u](bm8x8u~in,bm8x8u~in)[104] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 37 c8 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 0b c2 48 f7 d0 48 89 01 48 8b fb 48 8d 74 24 20 e8 65 28 b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> nor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?nor#nor_g[8u](bm8x8u~in,bm8x8u~in)
+; nor_g[8u](bm8x8u~in,bm8x8u~in)[104] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x97,0xcf,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x0b,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xd5,0xa3,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1793,7 +1793,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 c8 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 cf c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -1805,7 +1805,7 @@
 004bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0051h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 28 b5 5e}
+0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 a3 c0 5e}
 005bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0060h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -1814,8 +1814,8 @@
 0066h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> nor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; nor_g[16u](bm16x16u~in,bm16x16u~in)[166] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 94 c8 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 40 c5 ff f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 70 e8 9d 27 b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<ushort> nor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?nor#nor_g[16u](bm16x16u~in,bm16x16u~in)
+; nor_g[16u](bm16x16u~in,bm16x16u~in)[166] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0xf4,0xcf,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x0d,0xa3,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1831,7 +1831,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 c8 fe ff}
+002fh call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 cf c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1852,7 +1852,7 @@
 0082h vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 0086h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0089h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-008eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9d 27 b5 5e}
+008eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d a3 c0 5e}
 0093h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0095h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0098h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1862,8 +1862,8 @@
 00a4h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00a5h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> nor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; nor_g[32u](bm32x32u~in,bm32x32u~in)[205] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 a4 c4 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 44 24 40 c5 ff f0 06 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c 9b 48 8b fb 48 8d 74 24 70 e8 96 22 b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<uint> nor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?nor#nor_g[32u](bm32x32u~in,bm32x32u~in)
+; nor_g[32u](bm32x32u~in,bm32x32u~in)[205] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0x94,0xd0,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0x9b,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x16,0xa2,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1879,7 +1879,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 c4 fe ff}
+002fh call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 d0 c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1911,7 +1911,7 @@
 00abh jl short 0048h                          ; JL rel8 || 7C cb || encoded[2]{7c 9b}
 00adh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00b0h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-00b5h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 22 b5 5e}
+00b5h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 16 a2 c0 5e}
 00bah movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00bch mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00bfh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1921,8 +1921,8 @@
 00cbh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00cch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> nor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; nor_g[64u](bm64x64u~in,bm64x64u~in)[206] = {57 56 53 48 81 ec 80 00 00 00 c5 f8 77 33 c0 48 89 44 24 70 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 70 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 70 e8 ec c9 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 70 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 03 c5 fd 11 44 24 40 c5 ff f0 06 c5 fd 11 44 24 20 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c 9a 48 8b fb 48 8d 74 24 70 e8 95 21 b5 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 80 00 00 00 5b 5e 5f c3}
+; BitMatrix<ulong> nor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?nor#nor_g[64u](bm64x64u~in,bm64x64u~in)
+; nor_g[64u](bm64x64u~in,bm64x64u~in)[206] = {0x57,0x56,0x53,0x48,0x81,0xec,0x80,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x70,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x70,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x70,0xe8,0x7c,0xd5,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x70,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0xeb,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0x9a,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x70,0xe8,0x15,0xa1,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x80,0x00,0x00,0x00,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -1938,7 +1938,7 @@
 0022h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0026h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
-002fh call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec c9 fe ff}
+002fh call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c d5 c4 ff}
 0034h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0037h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003ah lea rcx,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 70}
@@ -1970,7 +1970,7 @@
 00ach jl short 0048h                          ; JL rel8 || 7C cb || encoded[2]{7c 9a}
 00aeh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00b1h lea rsi,[rsp+70h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 70}
-00b6h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 21 b5 5e}
+00b6h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 a1 c0 5e}
 00bbh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00bdh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00c0h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -1980,8 +1980,8 @@
 00cch pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00cdh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> nor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; nor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 0b c2 48 f7 d0 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> nor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?nor#nor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; nor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x0b,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -1995,8 +1995,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> nor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; nor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[92] = {48 83 ec 58 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 20 c5 ff f0 02 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 49 8b c0 c5 f8 77 48 83 c4 58 c3}
+; ref BitMatrix<ushort> nor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?nor#nor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; nor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[92] = {0x48,0x83,0xec,0x58,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x58,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,58h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 58}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2022,8 +2022,8 @@
 0057h add rsp,58h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 58}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> nor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; nor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[134] = {57 56 48 83 ec 48 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 06 c5 fd 11 44 24 20 c5 ff f0 07 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c 9f 49 8b c0 c5 f8 77 48 83 c4 48 5e 5f c3}
+; ref BitMatrix<uint> nor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?nor#nor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; nor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[134] = {0x57,0x56,0x48,0x83,0xec,0x48,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0x9f,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x48,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2064,8 +2064,8 @@
 0084h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0085h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> nor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; nor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[135] = {57 56 48 83 ec 48 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 06 c5 fd 11 44 24 20 c5 ff f0 07 c5 fd 11 04 24 c5 fd 10 44 24 20 c5 fd 10 0c 24 c5 fd eb c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c 9e 49 8b c0 c5 f8 77 48 83 c4 48 5e 5f c3}
+; ref BitMatrix<ulong> nor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?nor#nor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; nor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[135] = {0x57,0x56,0x48,0x83,0xec,0x48,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x10,0x0c,0x24,0xc5,0xfd,0xeb,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0x9e,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x48,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2106,8 +2106,8 @@
 0085h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0086h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> xor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; xor_g[8u](bm8x8u~in,bm8x8u~in)[101] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 a7 ba fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 33 c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 d8 1a b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> xor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?xor#xor_g[8u](bm8x8u~in,bm8x8u~in)
+; xor_g[8u](bm8x8u~in,bm8x8u~in)[101] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x07,0xc2,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x33,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x48,0x96,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2123,7 +2123,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 ba fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 c2 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2134,7 +2134,7 @@
 0048h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004bh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 004eh lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d8 1a b5 5e}
+0053h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 48 96 c0 5e}
 0058h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005ah mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 005dh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -2143,8 +2143,8 @@
 0063h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0064h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> xor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; xor_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 07 b7 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd ef c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 44 16 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> xor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?xor#xor_g[16u](bm16x16u~in,bm16x16u~in)
+; xor_g[16u](bm16x16u~in,bm16x16u~in)[108] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x77,0xc2,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xc4,0x95,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2160,7 +2160,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 b7 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 c2 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2171,7 +2171,7 @@
 004bh vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 004fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0052h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 16 b5 5e}
+0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 95 c0 5e}
 005ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0061h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2181,8 +2181,8 @@
 006ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> xor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; xor_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 67 b7 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c cf 48 8b fb 48 8d 74 24 20 e8 8d 15 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> xor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?xor#xor_g[32u](bm32x32u~in,bm32x32u~in)
+; xor_g[32u](bm32x32u~in,bm32x32u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x57,0xc3,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x0d,0x95,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2198,7 +2198,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 b7 fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 c3 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2220,7 +2220,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 15 b5 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d 95 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2230,8 +2230,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> xor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; xor_g[64u](bm64x64u~in,bm64x64u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 ff bc fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c cf 48 8b fb 48 8d 74 24 20 e8 dd 14 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> xor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?xor#xor_g[64u](bm64x64u~in,bm64x64u~in)
+; xor_g[64u](bm64x64u~in,bm64x64u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x8f,0xc8,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x5d,0x94,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2247,7 +2247,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff bc fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8f c8 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2269,7 +2269,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd 14 b5 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d 94 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2279,8 +2279,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> xor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; xor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 33 c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> xor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?xor#xor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; xor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x33,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -2293,8 +2293,8 @@
 001ah mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> xor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; xor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd ef c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> xor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?xor#xor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; xor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2309,8 +2309,8 @@
 0021h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> xor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; xor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> xor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?xor#xor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; xor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2339,8 +2339,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> xor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; xor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> xor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?xor#xor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; xor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2369,8 +2369,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> xnor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; xnor_g[8u](bm8x8u~in,bm8x8u~in)[104] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 c7 aa fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 33 c2 48 f7 d0 48 89 01 48 8b fb 48 8d 74 24 20 e8 f5 0a b5 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> xnor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?xnor#xnor_g[8u](bm8x8u~in,bm8x8u~in)
+; xnor_g[8u](bm8x8u~in,bm8x8u~in)[104] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x37,0xb6,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x33,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x75,0x8a,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2386,7 +2386,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 aa fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 b6 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2398,7 +2398,7 @@
 004bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0051h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 0a b5 5e}
+0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 8a c0 5e}
 005bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0060h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -2407,8 +2407,8 @@
 0066h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> xnor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; xnor_g[16u](bm16x16u~in,bm16x16u~in)[116] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 27 ab fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 5c 0a b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> xnor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?xnor#xnor_g[16u](bm16x16u~in,bm16x16u~in)
+; xnor_g[16u](bm16x16u~in,bm16x16u~in)[116] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x97,0xb6,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xef,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xdc,0x89,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2424,7 +2424,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 ab fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 b6 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2437,7 +2437,7 @@
 0053h vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 0057h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005ah lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 0a b5 5e}
+005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 89 c0 5e}
 0064h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0066h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0069h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2447,8 +2447,8 @@
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> xnor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; xnor_g[32u](bm32x32u~in,bm32x32u~in)[155] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 77 ab fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 95 09 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> xnor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?xnor#xnor_g[32u](bm32x32u~in,bm32x32u~in)
+; xnor_g[32u](bm32x32u~in,bm32x32u~in)[155] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x67,0xb7,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xef,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xc7,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x15,0x89,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2464,7 +2464,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 ab fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 b7 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2488,7 +2488,7 @@
 007ch jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c7}
 007eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0081h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 09 b5 5e}
+0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 89 c0 5e}
 008bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0090h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2498,8 +2498,8 @@
 0099h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> xnor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; xnor_g[64u](bm64x64u~in,bm64x64u~in)[156] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 ff b0 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 d4 08 b5 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> xnor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?xnor#xnor_g[64u](bm64x64u~in,bm64x64u~in)
+; xnor_g[64u](bm64x64u~in,bm64x64u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x7f,0xb8,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xef,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xc6,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x44,0x84,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2515,7 +2515,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ff b0 fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f b8 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -2539,7 +2539,7 @@
 007dh jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c6}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d4 08 b5 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 84 c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -2549,8 +2549,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> xnor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; xnor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 33 c2 48 f7 d0 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> xnor<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?xnor#xnor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; xnor_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x33,0xc2,0x48,0xf7,0xd0,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -2564,8 +2564,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> xnor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; xnor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd ef c1 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> xnor<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?xnor#xnor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; xnor_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xef,0xc1,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -2582,8 +2582,8 @@
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> xnor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; xnor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 c5 fd 76 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> xnor<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?xnor#xnor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; xnor_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xef,0xc1,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xc8,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2614,8 +2614,8 @@
 0053h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> xnor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; xnor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd ef c1 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> xnor<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?xnor#xnor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; xnor_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xef,0xc1,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xc7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2646,8 +2646,8 @@
 0054h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> left<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; left_g[8u](bm8x8u~in,bm8x8u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 0d 03 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<byte> left<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?left#left_g[8u](bm8x8u~in,bm8x8u~in)
+; left_g[8u](bm8x8u~in,bm8x8u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0x7d,0x7e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2656,7 +2656,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d 03 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 7e c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2664,8 +2664,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> left<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; left_g[16u](bm16x16u~in,bm16x16u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 cd 02 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ushort> left<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?left#left_g[16u](bm16x16u~in,bm16x16u~in)
+; left_g[16u](bm16x16u~in,bm16x16u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0x3d,0x7e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2674,7 +2674,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd 02 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3d 7e c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2682,8 +2682,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> left<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; left_g[32u](bm32x32u~in,bm32x32u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 8d 02 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<uint> left<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?left#left_g[32u](bm32x32u~in,bm32x32u~in)
+; left_g[32u](bm32x32u~in,bm32x32u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0xfd,0x7d,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2692,7 +2692,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d 02 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd 7d c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2700,8 +2700,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> left<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; left_g[64u](bm64x64u~in,bm64x64u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 48 8b f2 e8 4d 02 b5 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ulong> left<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?left#left_g[64u](bm64x64u~in,bm64x64u~in)
+; left_g[64u](bm64x64u~in,bm64x64u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x48,0x8b,0xf2,0xe8,0xbd,0x7d,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2710,7 +2710,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 02 b5 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 7d c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2718,8 +2718,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> left<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; left_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[96] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 8e 2e 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 90 f5 04 ff}
+; ref BitMatrix<byte> left<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?left#left_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; left_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[96] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x48,0x8d,0x4c,0x24,0x30,0x48,0x8b,0x11,0x8b,0x49,0x08,0x4c,0x8d,0x44,0x24,0x20,0x49,0x8b,0x00,0x45,0x8b,0x40,0x08,0x41,0x3b,0xc8,0x77,0x14,0x4c,0x63,0xc1,0x48,0x8b,0xc8,0xe8,0xfe,0xad,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x40,0x75,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2742,15 +2742,15 @@
 0045h ja short 005bh                          ; JA rel8 || 77 cb || encoded[2]{77 14}
 0047h movsxd r8,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c1}
 004ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 2e 9a 4f}
+004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fe ad a5 4f}
 0052h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0055h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0059h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-005bh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 f5 04 ff}
+005bh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 40 75 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> left<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; left_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[99] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 0b 2e 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 0d f5 04 ff}
+; ref BitMatrix<ushort> left<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?left#left_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; left_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[99] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x17,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xd1,0xe0,0xe8,0x7b,0xad,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xbd,0x74,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2774,15 +2774,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b 2e 9a 4f}
+0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7b ad a5 4f}
 0055h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0058h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
-005eh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d f5 04 ff}
+005eh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd 74 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> left<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; left_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 8a 2d 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 8c f4 04 ff}
+; ref BitMatrix<uint> left<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?left#left_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; left_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x02,0xe8,0xfa,0xac,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x3c,0x74,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2806,15 +2806,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,2                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 02}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 2d 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fa ac a5 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c f4 04 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c 74 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> left<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; left_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 01 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 0a 2d 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 0c f4 04 ff}
+; ref BitMatrix<ulong> left<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?left#left_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; left_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x01,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x03,0xe8,0x7a,0xac,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xbc,0x73,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2838,15 +2838,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 2d 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7a ac a5 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c f4 04 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 73 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> right<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; right_g[8u](bm8x8u~in,bm8x8u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 49 8b f0 e8 0d fc b4 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<byte> right<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?right#right_g[8u](bm8x8u~in,bm8x8u~in)
+; right_g[8u](bm8x8u~in,bm8x8u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x49,0x8b,0xf0,0xe8,0x6d,0x77,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2855,7 +2855,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d fc b4 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6d 77 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2863,8 +2863,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> right<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; right_g[16u](bm16x16u~in,bm16x16u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 49 8b f0 e8 cd fb b4 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ushort> right<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?right#right_g[16u](bm16x16u~in,bm16x16u~in)
+; right_g[16u](bm16x16u~in,bm16x16u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x49,0x8b,0xf0,0xe8,0x2d,0x77,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2873,7 +2873,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cd fb b4 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 77 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2881,8 +2881,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> right<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; right_g[32u](bm32x32u~in,bm32x32u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 49 8b f0 e8 8d fb b4 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<uint> right<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?right#right_g[32u](bm32x32u~in,bm32x32u~in)
+; right_g[32u](bm32x32u~in,bm32x32u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x49,0x8b,0xf0,0xe8,0xed,0x76,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2891,7 +2891,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8d fb b4 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ed 76 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2899,8 +2899,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> right<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; right_g[64u](bm64x64u~in,bm64x64u~in)[28] = {57 56 53 66 90 48 8b d9 48 8b fb 49 8b f0 e8 4d fb b4 5e 48 a5 48 8b c3 5b 5e 5f c3}
+; BitMatrix<ulong> right<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?right#right_g[64u](bm64x64u~in,bm64x64u~in)
+; right_g[64u](bm64x64u~in,bm64x64u~in)[28] = {0x57,0x56,0x53,0x66,0x90,0x48,0x8b,0xd9,0x48,0x8b,0xfb,0x49,0x8b,0xf0,0xe8,0xad,0x76,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -2909,7 +2909,7 @@
 0005h mov rbx,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d9}
 0008h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 000bh mov rsi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f0}
-000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d fb b4 5e}
+000eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad 76 c0 5e}
 0013h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0015h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0018h pop rbx                                 ; POP r64 || 58+ro || encoded[1]{5b}
@@ -2917,8 +2917,8 @@
 001ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> right<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; right_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[96] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 48 8d 4c 24 30 48 8b 11 8b 49 08 4c 8d 44 24 20 49 8b 00 45 8b 40 08 41 3b c8 77 14 4c 63 c1 48 8b c8 e8 8e 27 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 90 ee 04 ff}
+; ref BitMatrix<byte> right<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?right#right_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; right_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[96] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x02,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x48,0x8d,0x4c,0x24,0x30,0x48,0x8b,0x11,0x8b,0x49,0x08,0x4c,0x8d,0x44,0x24,0x20,0x49,0x8b,0x00,0x45,0x8b,0x40,0x08,0x41,0x3b,0xc8,0x77,0x14,0x4c,0x63,0xc1,0x48,0x8b,0xc8,0xe8,0xee,0xa6,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x30,0x6e,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2941,15 +2941,15 @@
 0045h ja short 005bh                          ; JA rel8 || 77 cb || encoded[2]{77 14}
 0047h movsxd r8,ecx                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c1}
 004ah mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
-004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8e 27 9a 4f}
+004dh call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee a6 a5 4f}
 0052h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0055h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0059h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
-005bh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 90 ee 04 ff}
+005bh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 30 6e 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> right<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; right_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[99] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 17 48 8b c8 4d 63 c0 49 d1 e0 e8 0b 27 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 0d ee 04 ff}
+; ref BitMatrix<ushort> right<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?right#right_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; right_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[99] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x02,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x17,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xd1,0xe0,0xe8,0x6b,0xa6,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xad,0x6d,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -2973,15 +2973,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,1                                ; SHL r/m64, 1 || REX.W D1 /4 || encoded[3]{49 d1 e0}
-0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0b 27 9a 4f}
+0050h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6b a6 a5 4f}
 0055h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0058h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005ch pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005dh ret                                     ; RET || C3 || encoded[1]{c3}
-005eh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d ee 04 ff}
+005eh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad 6d 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> right<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; right_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 02 e8 8a 26 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 8c ed 04 ff}
+; ref BitMatrix<uint> right<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?right#right_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; right_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x02,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x02,0xe8,0xea,0xa5,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0x2c,0x6d,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -3005,15 +3005,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,2                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 02}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8a 26 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea a5 a5 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c ed 04 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c 6d 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> right<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; right_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[100] = {56 48 83 ec 40 c5 f8 77 33 c0 48 89 44 24 30 48 89 44 24 20 49 8b f0 c5 fa 6f 06 c5 fa 7f 44 24 20 c5 fa 6f 02 c5 fa 7f 44 24 30 4c 8d 44 24 30 49 8b 10 45 8b 40 08 48 8d 4c 24 20 48 8b 01 8b 49 08 44 3b c1 77 18 48 8b c8 4d 63 c0 49 c1 e0 03 e8 0a 26 9a 4f 48 8b c6 48 83 c4 40 5e c3 e8 0c ed 04 ff}
+; ref BitMatrix<ulong> right<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?right#right_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; right_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[100] = {0x56,0x48,0x83,0xec,0x40,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x30,0x48,0x89,0x44,0x24,0x20,0x49,0x8b,0xf0,0xc5,0xfa,0x6f,0x06,0xc5,0xfa,0x7f,0x44,0x24,0x20,0xc5,0xfa,0x6f,0x02,0xc5,0xfa,0x7f,0x44,0x24,0x30,0x4c,0x8d,0x44,0x24,0x30,0x49,0x8b,0x10,0x45,0x8b,0x40,0x08,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x01,0x8b,0x49,0x08,0x44,0x3b,0xc1,0x77,0x18,0x48,0x8b,0xc8,0x4d,0x63,0xc0,0x49,0xc1,0xe0,0x03,0xe8,0x6a,0xa5,0xa5,0x4f,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x40,0x5e,0xc3,0xe8,0xac,0x6c,0x0f,0xff}
 ; TermCode = CTC_INTRx2
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,40h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 40}
@@ -3037,15 +3037,15 @@
 0047h mov rcx,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c8}
 004ah movsxd r8,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c0}
 004dh shl r8,3                                ; SHL r/m64, imm8 || REX.W C1 /4 ib || encoded[4]{49 c1 e0 03}
-0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 26 9a 4f}
+0051h call 7ff816cf8f50h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a a5 a5 4f}
 0056h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0059h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 005dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 005eh ret                                     ; RET || C3 || encoded[1]{c3}
-005fh call 7ff7c63a5660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c ed 04 ff}
+005fh call 7ff7c63956a0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 6c 0f ff}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> lnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; lnot_g[8u](bm8x8u~in,bm8x8u~in)[92] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 9a 94 fe ff 48 8b 06 48 8d 54 24 20 48 8b 12 48 8b 00 48 f7 d0 48 89 02 48 8b fb 48 8d 74 24 20 e8 d1 f4 b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> lnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?lnot#lnot_g[8u](bm8x8u~in,bm8x8u~in)
+; lnot_g[8u](bm8x8u~in,bm8x8u~in)[92] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xda,0x9b,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x20,0x48,0x8b,0x12,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x21,0x70,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3060,7 +3060,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9a 94 fe ff}
+0029h call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 da 9b c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3069,7 +3069,7 @@
 003fh mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 0042h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0045h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d1 f4 b4 5e}
+004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 21 70 c0 5e}
 004fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0051h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0054h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -3078,8 +3078,8 @@
 005ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> lnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; lnot_g[16u](bm16x16u~in,bm16x16u~in)[124] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 0a 95 fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 48 8b fb 48 8d 74 24 50 e8 34 f4 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ushort> lnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?lnot#lnot_g[16u](bm16x16u~in,bm16x16u~in)
+; lnot_g[16u](bm16x16u~in,bm16x16u~in)[124] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x4a,0x9c,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x84,0x6f,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3094,7 +3094,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0a 95 fe ff}
+0029h call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4a 9c c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3108,7 +3108,7 @@
 005bh vmovdqu ymmword ptr [rdx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 02}
 005fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0062h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 f4 b4 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 6f c0 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3118,8 +3118,8 @@
 007ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 007bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> lnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; lnot_g[32u](bm32x32u~in,bm32x32u~in)[156] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 5a 95 fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 02 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 76 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 08 83 f9 04 7c bf 48 8b fb 48 8d 74 24 50 e8 74 f3 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<uint> lnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?lnot#lnot_g[32u](bm32x32u~in,bm32x32u~in)
+; lnot_g[32u](bm32x32u~in,bm32x32u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x1a,0x9d,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x02,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x08,0x83,0xf9,0x04,0x7c,0xbf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0xc4,0x6e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3134,7 +3134,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 95 fe ff}
+0029h call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 9d c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3158,7 +3158,7 @@
 007dh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c bf}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 f3 b4 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 6e c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3168,8 +3168,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> lnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; lnot_g[64u](bm64x64u~in,bm64x64u~in)[157] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 48 8b f2 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 e2 9a fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 03 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 04 83 f9 10 7c be 48 8b fb 48 8d 74 24 50 e8 b3 f2 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ulong> lnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?lnot#lnot_g[64u](bm64x64u~in,bm64x64u~in)
+; lnot_g[64u](bm64x64u~in,bm64x64u~in)[157] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x42,0xa2,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x03,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x04,0x83,0xf9,0x10,0x7c,0xbe,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x03,0x6e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3184,7 +3184,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e2 9a fe ff}
+0029h call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 a2 c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3208,7 +3208,7 @@
 007eh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c be}
 0080h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0083h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b3 f2 b4 5e}
+0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 03 6e c0 5e}
 008dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0092h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3218,8 +3218,8 @@
 009bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> lnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; lnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[24] = {0f 1f 44 00 00 48 8b 01 49 8b 10 48 8b 00 48 f7 d0 48 89 02 49 8b c0 c3}
+; ref BitMatrix<byte> lnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?lnot#lnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; lnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x49,0x8b,0x10,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x02,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -3230,8 +3230,8 @@
 0014h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> lnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; lnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[59] = {48 83 ec 38 c5 f8 77 48 8b 01 49 8b 10 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ushort> lnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?lnot#lnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; lnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[59] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x8b,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x02,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3250,8 +3250,8 @@
 0036h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> lnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; lnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[91] = {48 83 ec 38 c5 f8 77 48 8b 01 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 76 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 08 83 f9 04 7c c2 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<uint> lnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?lnot#lnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; lnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[91] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x8b,0x10,0x33,0xc9,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd2,0xc4,0xc1,0x7e,0x7f,0x02,0xff,0xc1,0x41,0x83,0xc1,0x08,0x83,0xf9,0x04,0x7c,0xc2,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3280,8 +3280,8 @@
 0056h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> lnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; lnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[92] = {48 83 ec 38 c5 f8 77 48 8b 01 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 04 83 f9 10 7c c1 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ulong> lnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?lnot#lnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; lnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[92] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x49,0x8b,0x10,0x33,0xc9,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd2,0xc4,0xc1,0x7e,0x7f,0x02,0xff,0xc1,0x41,0x83,0xc1,0x04,0x83,0xf9,0x10,0x7c,0xc1,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3310,8 +3310,8 @@
 0057h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; rnot_g[8u](bm8x8u~in,bm8x8u~in)[92] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 49 8b f0 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 5a 8c fe ff 48 8b 06 48 8d 54 24 20 48 8b 12 48 8b 00 48 f7 d0 48 89 02 48 8b fb 48 8d 74 24 20 e8 91 ec b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?rnot#rnot_g[8u](bm8x8u~in,bm8x8u~in)
+; rnot_g[8u](bm8x8u~in,bm8x8u~in)[92] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xaa,0x93,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x20,0x48,0x8b,0x12,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xf1,0x67,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3326,7 +3326,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-0029h call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5a 8c fe ff}
+0029h call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 aa 93 c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3335,7 +3335,7 @@
 003fh mov [rdx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 02}
 0042h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0045h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 ec b4 5e}
+004ah call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f1 67 c0 5e}
 004fh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0051h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0054h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -3344,8 +3344,8 @@
 005ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; rnot_g[16u](bm16x16u~in,bm16x16u~in)[124] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 ca 8c fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 48 8b fb 48 8d 74 24 50 e8 f4 eb b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?rnot#rnot_g[16u](bm16x16u~in,bm16x16u~in)
+; rnot_g[16u](bm16x16u~in,bm16x16u~in)[124] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x1a,0x94,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x02,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x54,0x67,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3360,7 +3360,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ca 8c fe ff}
+0029h call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 94 c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3374,7 +3374,7 @@
 005bh vmovdqu ymmword ptr [rdx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 02}
 005fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0062h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 eb b4 5e}
+0067h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 54 67 c0 5e}
 006ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0071h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3384,8 +3384,8 @@
 007ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 007bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; rnot_g[32u](bm32x32u~in,bm32x32u~in)[156] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 1a 8d fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 02 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c5 fd 76 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 08 83 f9 04 7c bf 48 8b fb 48 8d 74 24 50 e8 34 eb b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?rnot#rnot_g[32u](bm32x32u~in,bm32x32u~in)
+; rnot_g[32u](bm32x32u~in,bm32x32u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0xea,0x94,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x02,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x08,0x83,0xf9,0x04,0x7c,0xbf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0x94,0x66,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3400,7 +3400,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1a 8d fe ff}
+0029h call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 94 c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3424,7 +3424,7 @@
 007dh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c bf}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 34 eb b4 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 66 c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3434,8 +3434,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; rnot_g[64u](bm64x64u~in,bm64x64u~in)[157] = {57 56 53 48 83 ec 60 c5 f8 77 33 c0 48 89 44 24 50 48 8b d9 49 8b f0 48 8d 4c 24 50 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 50 e8 a2 92 fe ff 48 8b 06 48 8d 54 24 50 48 8b 12 33 c9 45 33 c0 4d 63 c8 49 c1 e1 03 4e 8d 14 08 c5 fc 57 c0 c5 fd 11 44 24 20 c4 c1 7f f0 02 c5 fd 11 44 24 20 c5 fd 10 44 24 20 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 ca c4 c1 7e 7f 01 ff c1 41 83 c0 04 83 f9 10 7c be 48 8b fb 48 8d 74 24 50 e8 73 ea b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 60 5b 5e 5f c3}
+; BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?rnot#rnot_g[64u](bm64x64u~in,bm64x64u~in)
+; rnot_g[64u](bm64x64u~in,bm64x64u~in)[157] = {0x57,0x56,0x53,0x48,0x83,0xec,0x60,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x50,0x48,0x8b,0xd9,0x49,0x8b,0xf0,0x48,0x8d,0x4c,0x24,0x50,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x50,0xe8,0x12,0x9a,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8d,0x54,0x24,0x50,0x48,0x8b,0x12,0x33,0xc9,0x45,0x33,0xc0,0x4d,0x63,0xc8,0x49,0xc1,0xe1,0x03,0x4e,0x8d,0x14,0x08,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc4,0xc1,0x7f,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x20,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xca,0xc4,0xc1,0x7e,0x7f,0x01,0xff,0xc1,0x41,0x83,0xc0,0x04,0x83,0xf9,0x10,0x7c,0xbe,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x50,0xe8,0xd3,0x65,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x60,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3450,7 +3450,7 @@
 001ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0020h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0024h lea rcx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 50}
-0029h call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a2 92 fe ff}
+0029h call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 12 9a c4 ff}
 002eh mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0031h lea rdx,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 50}
 0036h mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
@@ -3474,7 +3474,7 @@
 007eh jl short 003eh                          ; JL rel8 || 7C cb || encoded[2]{7c be}
 0080h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0083h lea rsi,[rsp+50h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 50}
-0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 73 ea b4 5e}
+0088h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d3 65 c0 5e}
 008dh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008fh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0092h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3484,8 +3484,8 @@
 009bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; rnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[24] = {0f 1f 44 00 00 48 8b 02 49 8b 10 48 8b 00 48 f7 d0 48 89 02 49 8b c0 c3}
+; ref BitMatrix<byte> rnot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?rnot#rnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; rnot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x49,0x8b,0x10,0x48,0x8b,0x00,0x48,0xf7,0xd0,0x48,0x89,0x02,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
@@ -3496,8 +3496,8 @@
 0014h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; rnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[59] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 75 c8 c5 fd ef c1 c5 fe 7f 02 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ushort> rnot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?rnot#rnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; rnot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[59] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x02,0x49,0x8b,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x75,0xc8,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x02,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3516,8 +3516,8 @@
 0036h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; rnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[91] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c5 fd 76 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 08 83 f9 04 7c c2 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<uint> rnot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?rnot#rnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; rnot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[91] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x02,0x49,0x8b,0x10,0x33,0xc9,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc5,0xfd,0x76,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd2,0xc4,0xc1,0x7e,0x7f,0x02,0xff,0xc1,0x41,0x83,0xc1,0x08,0x83,0xf9,0x04,0x7c,0xc2,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3546,8 +3546,8 @@
 0056h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; rnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[92] = {48 83 ec 38 c5 f8 77 48 8b 02 49 8b 10 33 c9 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 c5 fc 57 c0 c5 fd 11 04 24 c4 c1 7f f0 03 c5 fd 11 04 24 c5 fd 10 04 24 c4 e2 7d 29 c8 c5 fd ef c1 4c 03 d2 c4 c1 7e 7f 02 ff c1 41 83 c1 04 83 f9 10 7c c1 49 8b c0 c5 f8 77 48 83 c4 38 c3}
+; ref BitMatrix<ulong> rnot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?rnot#rnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; rnot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[92] = {0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x48,0x8b,0x02,0x49,0x8b,0x10,0x33,0xc9,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x04,0x24,0xc4,0xe2,0x7d,0x29,0xc8,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd2,0xc4,0xc1,0x7e,0x7f,0x02,0xff,0xc1,0x41,0x83,0xc1,0x04,0x83,0xf9,0x10,0x7c,0xc1,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x38,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,38h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 38}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3576,8 +3576,8 @@
 0057h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 005bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> impl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; impl_g[8u](bm8x8u~in,bm8x8u~in)[104] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 17 84 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 f7 d2 48 0b c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 45 e4 b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> impl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?impl#impl_g[8u](bm8x8u~in,bm8x8u~in)
+; impl_g[8u](bm8x8u~in,bm8x8u~in)[104] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x77,0x8b,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0xf7,0xd2,0x48,0x0b,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xb5,0x5f,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3593,7 +3593,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 84 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 8b c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3605,7 +3605,7 @@
 004bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0051h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 e4 b4 5e}
+0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 5f c0 5e}
 005bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0060h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -3614,8 +3614,8 @@
 0066h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> impl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; impl_g[16u](bm16x16u~in,bm16x16u~in)[116] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 77 84 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 ac e3 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> impl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?impl#impl_g[16u](bm16x16u~in,bm16x16u~in)
+; impl_g[16u](bm16x16u~in,bm16x16u~in)[116] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xd7,0x8b,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0x75,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x1c,0x5f,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3631,7 +3631,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 84 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 8b c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3644,7 +3644,7 @@
 0053h vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 0057h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005ah lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac e3 b4 5e}
+005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c 5f c0 5e}
 0064h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0066h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0069h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3654,8 +3654,8 @@
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> impl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; impl_g[32u](bm32x32u~in,bm32x32u~in)[155] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 c7 84 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 e5 e2 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> impl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?impl#impl_g[32u](bm32x32u~in,bm32x32u~in)
+; impl_g[32u](bm32x32u~in,bm32x32u~in)[155] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xa7,0x8c,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xf5,0x76,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xc7,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x55,0x5e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3671,7 +3671,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c7 84 fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 8c c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3695,7 +3695,7 @@
 007ch jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c7}
 007eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0081h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 e2 b4 5e}
+0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 5e c0 5e}
 008bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0090h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3705,8 +3705,8 @@
 0099h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> impl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; impl_g[64u](bm64x64u~in,bm64x64u~in)[156] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 4f 8a fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 24 e2 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> impl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?impl#impl_g[64u](bm64x64u~in,bm64x64u~in)
+; impl_g[64u](bm64x64u~in,bm64x64u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xcf,0x91,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc4,0xe2,0x75,0x29,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xc6,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x94,0x5d,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3722,7 +3722,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4f 8a fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 91 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3746,7 +3746,7 @@
 007dh jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c6}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 e2 b4 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 5d c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3756,8 +3756,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> impl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; impl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 f7 d2 48 0b c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> impl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?impl#impl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; impl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0xf7,0xd2,0x48,0x0b,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -3771,8 +3771,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> impl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; impl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 f5 75 d1 c5 f5 ef ca c5 fd eb c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> impl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?impl#impl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; impl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0x75,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -3789,8 +3789,8 @@
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> impl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; impl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 f5 76 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> impl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?impl#impl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; impl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xf5,0x76,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xc8,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3821,8 +3821,8 @@
 0053h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> impl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; impl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c4 e2 75 29 d1 c5 f5 ef ca c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> impl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?impl#impl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; impl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc4,0xe2,0x75,0x29,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xc7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3853,8 +3853,8 @@
 0054h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> nonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; nonimpl_g[8u](bm8x8u~in,bm8x8u~in)[103] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 d7 77 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 c4 e2 f8 f2 c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 06 d8 b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> nonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[8u](bm8x8u~in,bm8x8u~in)
+; nonimpl_g[8u](bm8x8u~in,bm8x8u~in)[103] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x47,0x83,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0xc4,0xe2,0xf8,0xf2,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x86,0x57,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3870,7 +3870,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 77 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 83 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3881,7 +3881,7 @@
 004ah mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004dh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0050h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0055h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 d8 b4 5e}
+0055h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 57 c0 5e}
 005ah movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005ch mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 005fh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -3890,8 +3890,8 @@
 0065h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0066h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> nonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; nonimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 37 78 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 fd df c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 74 d7 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> nonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[16u](bm16x16u~in,bm16x16u~in)
+; nonimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xa7,0x83,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdf,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xf4,0x56,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3907,7 +3907,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 78 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 83 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3918,7 +3918,7 @@
 004bh vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 004fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0052h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 74 d7 b4 5e}
+0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f4 56 c0 5e}
 005ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0061h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3928,8 +3928,8 @@
 006ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> nonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; nonimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 97 78 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd df c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c cf 48 8b fb 48 8d 74 24 20 e8 bd d6 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> nonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[32u](bm32x32u~in,bm32x32u~in)
+; nonimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x77,0x80,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdf,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x2d,0x52,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3945,7 +3945,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 97 78 fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 80 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -3967,7 +3967,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bd d6 b4 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 52 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -3977,8 +3977,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> nonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; nonimpl_g[64u](bm64x64u~in,bm64x64u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 2f 7e fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 fd df c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c cf 48 8b fb 48 8d 74 24 20 e8 0d d6 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> nonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[64u](bm64x64u~in,bm64x64u~in)
+; nonimpl_g[64u](bm64x64u~in,bm64x64u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xaf,0x85,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xfd,0xdf,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x7d,0x51,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -3994,7 +3994,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2f 7e fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 af 85 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4016,7 +4016,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0d d6 b4 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7d 51 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4026,8 +4026,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> nonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; nonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[32] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 c4 e2 f8 f2 c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> nonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; nonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0xc4,0xe2,0xf8,0xf2,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -4040,8 +4040,8 @@
 001ch mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> nonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; nonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd df c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> nonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; nonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0xdf,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4056,8 +4056,8 @@
 0021h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> nonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; nonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd df c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> nonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; nonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdf,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4086,8 +4086,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> nonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; nonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd df c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> nonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?nonimpl#nonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; nonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0xdf,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4116,8 +4116,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> cimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; cimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 f7 d0 48 0b c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> cimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?cimpl#cimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; cimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -4131,8 +4131,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> cimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; cimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 fd 75 d0 c5 fd ef c2 c5 fd eb c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> cimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?cimpl#cimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; cimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xfd,0x75,0xd0,0xc5,0xfd,0xef,0xc2,0xc5,0xfd,0xeb,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4149,8 +4149,8 @@
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> cimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; cimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 fd 76 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> cimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?cimpl#cimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; cimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xfd,0x76,0xd0,0xc5,0xfd,0xef,0xc2,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xc8,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4181,8 +4181,8 @@
 0053h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> cimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; cimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c4 e2 7d 29 d0 c5 fd ef c2 c5 fd eb c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> cimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?cimpl#cimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; cimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc4,0xe2,0x7d,0x29,0xd0,0xc5,0xfd,0xef,0xc2,0xc5,0xfd,0xeb,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xc7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4213,8 +4213,8 @@
 0054h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> cnonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; cnonimpl_g[8u](bm8x8u~in,bm8x8u~in)[103] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 77 6a fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 c4 e2 e8 f2 c0 48 89 01 48 8b fb 48 8d 74 24 20 e8 a6 ca b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> cnonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[8u](bm8x8u~in,bm8x8u~in)
+; cnonimpl_g[8u](bm8x8u~in,bm8x8u~in)[103] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0xe7,0x75,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0xc4,0xe2,0xe8,0xf2,0xc0,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x26,0x4a,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4230,7 +4230,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 6a fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 75 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4241,7 +4241,7 @@
 004ah mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004dh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0050h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0055h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 ca b4 5e}
+0055h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 4a c0 5e}
 005ah movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005ch mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 005fh add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -4250,8 +4250,8 @@
 0065h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0066h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> cnonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; cnonimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 d7 6a fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 f5 df c0 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 14 ca b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> cnonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[16u](bm16x16u~in,bm16x16u~in)
+; cnonimpl_g[16u](bm16x16u~in,bm16x16u~in)[108] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x47,0x76,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0xdf,0xc0,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x94,0x49,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4267,7 +4267,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d7 6a fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 76 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4278,7 +4278,7 @@
 004bh vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 004fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0052h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 14 ca b4 5e}
+0057h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 94 49 c0 5e}
 005ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0061h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4288,8 +4288,8 @@
 006ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 006bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> cnonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; cnonimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 37 6b fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 f5 df c0 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c cf 48 8b fb 48 8d 74 24 20 e8 5d c9 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> cnonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[32u](bm32x32u~in,bm32x32u~in)
+; cnonimpl_g[32u](bm32x32u~in,bm32x32u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x27,0x77,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xf5,0xdf,0xc0,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xdd,0x48,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4305,7 +4305,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 6b fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 27 77 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4327,7 +4327,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5d c9 b4 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dd 48 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4337,8 +4337,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> cnonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; cnonimpl_g[64u](bm64x64u~in,bm64x64u~in)[147] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 cf 70 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 f5 df c0 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c cf 48 8b fb 48 8d 74 24 20 e8 ad c8 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> cnonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[64u](bm64x64u~in,bm64x64u~in)
+; cnonimpl_g[64u](bm64x64u~in,bm64x64u~in)[147] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x5f,0x7c,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xf5,0xdf,0xc0,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xcf,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x2d,0x48,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4354,7 +4354,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 70 fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 7c c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4376,7 +4376,7 @@
 0074h jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c cf}
 0076h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0079h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ad c8 b4 5e}
+007eh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2d 48 c0 5e}
 0083h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0085h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0088h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4386,8 +4386,8 @@
 0091h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0092h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> cnonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; cnonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[32] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 c4 e2 e8 f2 c0 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> cnonimpl<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; cnonimpl_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0xc4,0xe2,0xe8,0xf2,0xc0,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -4400,8 +4400,8 @@
 001ch mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> cnonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; cnonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 f5 df c0 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> cnonimpl<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; cnonimpl_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[37] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0xdf,0xc0,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4416,8 +4416,8 @@
 0021h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> cnonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; cnonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 f5 df c0 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> cnonimpl<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; cnonimpl_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xf5,0xdf,0xc0,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4446,8 +4446,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> cnonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; cnonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 f5 df c0 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c d0 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> cnonimpl<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?cnonimpl#cnonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; cnonimpl_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[77] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xf5,0xdf,0xc0,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xd0,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4476,8 +4476,8 @@
 004bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 004ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> xornot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B)
-; xornot_g[8u](bm8x8u~in,bm8x8u~in)[104] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 a7 62 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 48 8b 00 48 8b 12 48 f7 d2 48 33 c2 48 89 01 48 8b fb 48 8d 74 24 20 e8 d5 c2 b4 5e 48 a5 48 8b c3 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<byte> xornot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B), hex://logix/BitMatrixOps?xornot#xornot_g[8u](bm8x8u~in,bm8x8u~in)
+; xornot_g[8u](bm8x8u~in,bm8x8u~in)[104] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x07,0x6a,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0xf7,0xd2,0x48,0x33,0xc2,0x48,0x89,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x45,0x3e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4493,7 +4493,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 62 fe ff}
+002ch call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 6a c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4505,7 +4505,7 @@
 004bh mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
 004eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0051h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 c2 b4 5e}
+0056h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 3e c0 5e}
 005bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 005dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0060h add rsp,30h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 30}
@@ -4514,8 +4514,8 @@
 0066h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0067h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> xornot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B)
-; xornot_g[16u](bm16x16u~in,bm16x16u~in)[116] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 07 63 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 c5 ff f0 00 c5 ff f0 0a c5 f5 75 d1 c5 f5 ef ca c5 fd ef c1 c5 fe 7f 01 48 8b fb 48 8d 74 24 20 e8 3c c2 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ushort> xornot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B), hex://logix/BitMatrixOps?xornot#xornot_g[16u](bm16x16u~in,bm16x16u~in)
+; xornot_g[16u](bm16x16u~in,bm16x16u~in)[116] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x67,0x6a,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0x75,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xac,0x3d,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4531,7 +4531,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 63 fe ff}
+002ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 6a c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4544,7 +4544,7 @@
 0053h vmovdqu ymmword ptr [rcx],ymm0          ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[4]{c5 fe 7f 01}
 0057h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 005ah lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c c2 b4 5e}
+005fh call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 3d c0 5e}
 0064h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 0066h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0069h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4554,8 +4554,8 @@
 0072h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0073h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> xornot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B)
-; xornot_g[32u](bm32x32u~in,bm32x32u~in)[155] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 57 63 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 02 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c5 f5 76 d1 c5 f5 ef ca c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 08 41 83 f8 04 7c c7 48 8b fb 48 8d 74 24 20 e8 75 c1 b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<uint> xornot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B), hex://logix/BitMatrixOps?xornot#xornot_g[32u](bm32x32u~in,bm32x32u~in)
+; xornot_g[32u](bm32x32u~in,bm32x32u~in)[155] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x37,0x6b,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x02,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc5,0xf5,0x76,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x08,0x41,0x83,0xf8,0x04,0x7c,0xc7,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0xe5,0x3c,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4571,7 +4571,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 57 63 fe ff}
+002ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 37 6b c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4595,7 +4595,7 @@
 007ch jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c7}
 007eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0081h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 c1 b4 5e}
+0086h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e5 3c c0 5e}
 008bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0090h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4605,8 +4605,8 @@
 0099h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> xornot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B)
-; xornot_g[64u](bm64x64u~in,bm64x64u~in)[156] = {57 56 53 48 83 ec 30 c5 f8 77 33 c0 48 89 44 24 20 48 8b d9 48 8b f2 49 8b f8 48 8d 4c 24 20 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 20 e8 cf 64 fe ff 48 8b 06 48 8b 17 48 8d 4c 24 20 48 8b 09 45 33 c0 45 33 c9 4d 63 d1 49 c1 e2 03 4e 8d 1c 10 4a 8d 34 12 c4 c1 7f f0 03 c5 ff f0 0e c4 e2 75 29 d1 c5 f5 ef ca c5 fd ef c1 4c 03 d1 c4 c1 7e 7f 02 41 ff c0 41 83 c1 04 41 83 f8 10 7c c6 48 8b fb 48 8d 74 24 20 e8 a4 bc b4 5e 48 a5 48 8b c3 c5 f8 77 48 83 c4 30 5b 5e 5f c3}
+; BitMatrix<ulong> xornot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B), hex://logix/BitMatrixOps?xornot#xornot_g[64u](bm64x64u~in,bm64x64u~in)
+; xornot_g[64u](bm64x64u~in,bm64x64u~in)[156] = {0x57,0x56,0x53,0x48,0x83,0xec,0x30,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x20,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0x8d,0x4c,0x24,0x20,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x20,0xe8,0x5f,0x70,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8d,0x4c,0x24,0x20,0x48,0x8b,0x09,0x45,0x33,0xc0,0x45,0x33,0xc9,0x4d,0x63,0xd1,0x49,0xc1,0xe2,0x03,0x4e,0x8d,0x1c,0x10,0x4a,0x8d,0x34,0x12,0xc4,0xc1,0x7f,0xf0,0x03,0xc5,0xff,0xf0,0x0e,0xc4,0xe2,0x75,0x29,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd1,0xc4,0xc1,0x7e,0x7f,0x02,0x41,0xff,0xc0,0x41,0x83,0xc1,0x04,0x41,0x83,0xf8,0x10,0x7c,0xc6,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x20,0xe8,0x24,0x3c,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x30,0x5b,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4622,7 +4622,7 @@
 001fh vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0023h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0027h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
-002ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cf 64 fe ff}
+002ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5f 70 c4 ff}
 0031h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0034h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0037h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
@@ -4646,7 +4646,7 @@
 007dh jl short 0045h                          ; JL rel8 || 7C cb || encoded[2]{7c c6}
 007fh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0082h lea rsi,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 20}
-0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a4 bc b4 5e}
+0087h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 3c c0 5e}
 008ch movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 008eh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0091h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4656,8 +4656,8 @@
 009ah pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 009bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> xornot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z)
-; xornot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 48 8b 00 48 8b 12 48 f7 d2 48 33 c2 48 89 01 49 8b c0 c3}
+; ref BitMatrix<byte> xornot<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?xornot#xornot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; xornot_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0xf7,0xd2,0x48,0x33,0xc2,0x48,0x89,0x01,0x49,0x8b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -4671,8 +4671,8 @@
 001dh mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> xornot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z)
-; xornot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {c5 f8 77 66 90 48 8b 01 48 8b 12 49 8b 08 c5 ff f0 00 c5 ff f0 0a c5 f5 75 d1 c5 f5 ef ca c5 fd ef c1 c5 fe 7f 01 49 8b c0 c5 f8 77 c3}
+; ref BitMatrix<ushort> xornot<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?xornot#xornot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; xornot_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~ref)[45] = {0xc5,0xf8,0x77,0x66,0x90,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0xc5,0xff,0xf0,0x00,0xc5,0xff,0xf0,0x0a,0xc5,0xf5,0x75,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0xc5,0xfe,0x7f,0x01,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
@@ -4689,8 +4689,8 @@
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> xornot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z)
-; xornot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c5 f5 76 d1 c5 f5 ef ca c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 7c c8 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<uint> xornot<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?xornot#xornot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; xornot_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~ref)[85] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc5,0xf5,0x76,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x7c,0xc8,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4721,8 +4721,8 @@
 0053h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0054h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> xornot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z)
-; xornot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {57 56 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a c5 ff f0 06 c5 ff f0 0f c4 e2 75 29 d1 c5 f5 ef ca c5 fd ef c1 4c 03 d9 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 7c c7 49 8b c0 c5 f8 77 5e 5f c3}
+; ref BitMatrix<ulong> xornot<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?xornot#xornot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; xornot_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~ref)[86] = {0x57,0x56,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0xc5,0xff,0xf0,0x06,0xc5,0xff,0xf0,0x0f,0xc4,0xe2,0x75,0x29,0xd1,0xc5,0xf5,0xef,0xca,0xc5,0xfd,0xef,0xc1,0x4c,0x03,0xd9,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x7c,0xc7,0x49,0x8b,0xc0,0xc5,0xf8,0x77,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4753,8 +4753,8 @@
 0054h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0055h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<byte> select<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, in BitMatrix<byte> C)
-; select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in)[121] = {57 56 55 53 48 83 ec 38 c5 f8 77 33 c0 48 89 44 24 28 48 8b d9 48 8b f2 49 8b f8 49 8b e9 48 8d 4c 24 28 c5 f8 57 c0 c5 fa 7f 01 48 8d 4c 24 28 e8 63 56 fe ff 48 8b 06 48 8b 17 48 8b 4d 00 4c 8d 44 24 28 4d 8b 00 48 8b 00 48 8b 12 48 8b 09 48 23 d0 c4 e2 f8 f2 c1 48 0b c2 49 89 00 48 8b fb 48 8d 74 24 28 e8 85 b6 b4 5e 48 a5 48 8b c3 48 83 c4 38 5b 5d 5e 5f c3}
+; BitMatrix<byte> select<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, in BitMatrix<byte> C), hex://logix/BitMatrixOps?select#select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in)
+; select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in)[121] = {0x57,0x56,0x55,0x53,0x48,0x83,0xec,0x38,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x44,0x24,0x28,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x49,0x8b,0xe9,0x48,0x8d,0x4c,0x24,0x28,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x4c,0x24,0x28,0xe8,0xc3,0x5d,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8b,0x4d,0x00,0x4c,0x8d,0x44,0x24,0x28,0x4d,0x8b,0x00,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x8b,0x09,0x48,0x23,0xd0,0xc4,0xe2,0xf8,0xf2,0xc1,0x48,0x0b,0xc2,0x49,0x89,0x00,0x48,0x8b,0xfb,0x48,0x8d,0x74,0x24,0x28,0xe8,0xf5,0x31,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0x48,0x83,0xc4,0x38,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4772,7 +4772,7 @@
 0023h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0027h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 002bh lea rcx,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 28}
-0030h call 7ff7c733fe38h                      ; CALL rel32 || E8 cd || encoded[5]{e8 63 56 fe ff}
+0030h call 7ff7c6ee8a28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c3 5d c4 ff}
 0035h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0038h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 003bh mov rcx,[rbp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 4d 00}
@@ -4787,7 +4787,7 @@
 005bh mov [r8],rax                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{49 89 00}
 005eh mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 0061h lea rsi,[rsp+28h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 74 24 28}
-0066h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 b6 b4 5e}
+0066h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 31 c0 5e}
 006bh movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 006dh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 0070h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
@@ -4797,8 +4797,8 @@
 0077h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0078h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, in BitMatrix<ushort> C)
-; select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in)[221] = {57 56 55 53 48 81 ec 98 00 00 00 c5 f8 77 33 c0 48 89 84 24 88 00 00 00 48 8b d9 48 8b f2 49 8b f8 49 8b e9 48 8d 8c 24 88 00 00 00 c5 f8 57 c0 c5 fa 7f 01 48 8d 8c 24 88 00 00 00 e8 a7 56 fe ff 48 8b 06 48 8b 17 48 8b 4d 00 4c 8d 84 24 88 00 00 00 4d 8b 00 c5 fc 57 c0 c5 fd 11 44 24 60 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 00 c5 fd 11 44 24 60 c5 ff f0 02 c5 fd 11 44 24 40 c5 ff f0 01 c5 fd 11 44 24 20 c5 fd 10 44 24 60 c5 fd 10 4c 24 40 c5 fd 10 54 24 20 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 c4 c1 7e 7f 00 48 8b fb 48 8d b4 24 88 00 00 00 e8 87 b5 b4 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 98 00 00 00 5b 5d 5e 5f c3}
+; BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, in BitMatrix<ushort> C), hex://logix/BitMatrixOps?select#select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in)
+; select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in)[221] = {0x57,0x56,0x55,0x53,0x48,0x81,0xec,0x98,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x84,0x24,0x88,0x00,0x00,0x00,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x49,0x8b,0xe9,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xe8,0x07,0x5e,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8b,0x4d,0x00,0x4c,0x8d,0x84,0x24,0x88,0x00,0x00,0x00,0x4d,0x8b,0x00,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x01,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x60,0xc5,0xfd,0x10,0x4c,0x24,0x40,0xc5,0xfd,0x10,0x54,0x24,0x20,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0xc4,0xc1,0x7e,0x7f,0x00,0x48,0x8b,0xfb,0x48,0x8d,0xb4,0x24,0x88,0x00,0x00,0x00,0xe8,0xf7,0x30,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x98,0x00,0x00,0x00,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4816,7 +4816,7 @@
 002ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0030h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0034h lea rcx,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 88 00 00 00}
-003ch call 7ff7c733ff28h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a7 56 fe ff}
+003ch call 7ff7c6ee8b18h                      ; CALL rel32 || E8 cd || encoded[5]{e8 07 5e c4 ff}
 0041h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0044h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0047h mov rcx,[rbp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 4d 00}
@@ -4844,7 +4844,7 @@
 00b4h vmovdqu ymmword ptr [r8],ymm0           ; VMOVDQU ymm2/m256, ymm1 || VEX.256.F3.0F.WIG 7F /r || encoded[5]{c4 c1 7e 7f 00}
 00b9h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00bch lea rsi,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d b4 24 88 00 00 00}
-00c4h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 b5 b4 5e}
+00c4h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f7 30 c0 5e}
 00c9h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00cbh mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00ceh vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4855,8 +4855,8 @@
 00dbh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00dch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<uint> select<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, in BitMatrix<uint> C)
-; select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in)[267] = {57 56 55 53 48 81 ec 98 00 00 00 c5 f8 77 33 c0 48 89 84 24 88 00 00 00 48 8b d9 48 8b f2 49 8b f8 49 8b e9 48 8d 8c 24 88 00 00 00 c5 f8 57 c0 c5 fa 7f 01 48 8d 8c 24 88 00 00 00 e8 77 52 fe ff 48 8b 06 48 8b 17 48 8b 4d 00 4c 8d 84 24 88 00 00 00 4d 8b 00 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 02 4a 8d 34 18 4a 8d 3c 1a 4a 8d 2c 19 c5 fc 57 c0 c5 fd 11 44 24 60 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 06 c5 fd 11 44 24 60 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 45 00 c5 fd 11 44 24 20 c5 fd 10 44 24 60 c5 fd 10 4c 24 40 c5 fd 10 54 24 20 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 4d 03 d8 c4 c1 7e 7f 03 41 ff c1 41 83 c2 08 41 83 f9 04 0f 8c 75 ff ff ff 48 8b fb 48 8d b4 24 88 00 00 00 e8 39 b0 b4 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 98 00 00 00 5b 5d 5e 5f c3}
+; BitMatrix<uint> select<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, in BitMatrix<uint> C), hex://logix/BitMatrixOps?select#select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in)
+; select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in)[267] = {0x57,0x56,0x55,0x53,0x48,0x81,0xec,0x98,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x84,0x24,0x88,0x00,0x00,0x00,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x49,0x8b,0xe9,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xe8,0x67,0x5e,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8b,0x4d,0x00,0x4c,0x8d,0x84,0x24,0x88,0x00,0x00,0x00,0x4d,0x8b,0x00,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x02,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0x4a,0x8d,0x2c,0x19,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x45,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x60,0xc5,0xfd,0x10,0x4c,0x24,0x40,0xc5,0xfd,0x10,0x54,0x24,0x20,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0x4d,0x03,0xd8,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x08,0x41,0x83,0xf9,0x04,0x0f,0x8c,0x75,0xff,0xff,0xff,0x48,0x8b,0xfb,0x48,0x8d,0xb4,0x24,0x88,0x00,0x00,0x00,0xe8,0xb9,0x2f,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x98,0x00,0x00,0x00,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4874,7 +4874,7 @@
 002ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0030h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0034h lea rcx,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 88 00 00 00}
-003ch call 7ff7c7340018h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 52 fe ff}
+003ch call 7ff7c6ee8c88h                      ; CALL rel32 || E8 cd || encoded[5]{e8 67 5e c4 ff}
 0041h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0044h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0047h mov rcx,[rbp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 4d 00}
@@ -4914,7 +4914,7 @@
 00e1h jl near ptr 005ch                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 75 ff ff ff}
 00e7h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00eah lea rsi,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d b4 24 88 00 00 00}
-00f2h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 39 b0 b4 5e}
+00f2h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b9 2f c0 5e}
 00f7h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00f9h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00fch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4925,8 +4925,8 @@
 0109h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 010ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; BitMatrix<ulong> select<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, in BitMatrix<ulong> C)
-; select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in)[267] = {57 56 55 53 48 81 ec 98 00 00 00 c5 f8 77 33 c0 48 89 84 24 88 00 00 00 48 8b d9 48 8b f2 49 8b f8 49 8b e9 48 8d 8c 24 88 00 00 00 c5 f8 57 c0 c5 fa 7f 01 48 8d 8c 24 88 00 00 00 e8 7f 57 fe ff 48 8b 06 48 8b 17 48 8b 4d 00 4c 8d 84 24 88 00 00 00 4d 8b 00 45 33 c9 45 33 d2 4d 63 da 49 c1 e3 03 4a 8d 34 18 4a 8d 3c 1a 4a 8d 2c 19 c5 fc 57 c0 c5 fd 11 44 24 60 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 ff f0 06 c5 fd 11 44 24 60 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 45 00 c5 fd 11 44 24 20 c5 fd 10 44 24 60 c5 fd 10 4c 24 40 c5 fd 10 54 24 20 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 4d 03 d8 c4 c1 7e 7f 03 41 ff c1 41 83 c2 04 41 83 f9 10 0f 8c 75 ff ff ff 48 8b fb 48 8d b4 24 88 00 00 00 e8 f9 ae b4 5e 48 a5 48 8b c3 c5 f8 77 48 81 c4 98 00 00 00 5b 5d 5e 5f c3}
+; BitMatrix<ulong> select<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, in BitMatrix<ulong> C), hex://logix/BitMatrixOps?select#select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in)
+; select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in)[267] = {0x57,0x56,0x55,0x53,0x48,0x81,0xec,0x98,0x00,0x00,0x00,0xc5,0xf8,0x77,0x33,0xc0,0x48,0x89,0x84,0x24,0x88,0x00,0x00,0x00,0x48,0x8b,0xd9,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x49,0x8b,0xe9,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xc5,0xf8,0x57,0xc0,0xc5,0xfa,0x7f,0x01,0x48,0x8d,0x8c,0x24,0x88,0x00,0x00,0x00,0xe8,0x0f,0x63,0xc4,0xff,0x48,0x8b,0x06,0x48,0x8b,0x17,0x48,0x8b,0x4d,0x00,0x4c,0x8d,0x84,0x24,0x88,0x00,0x00,0x00,0x4d,0x8b,0x00,0x45,0x33,0xc9,0x45,0x33,0xd2,0x4d,0x63,0xda,0x49,0xc1,0xe3,0x03,0x4a,0x8d,0x34,0x18,0x4a,0x8d,0x3c,0x1a,0x4a,0x8d,0x2c,0x19,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x06,0xc5,0xfd,0x11,0x44,0x24,0x60,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x45,0x00,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfd,0x10,0x44,0x24,0x60,0xc5,0xfd,0x10,0x4c,0x24,0x40,0xc5,0xfd,0x10,0x54,0x24,0x20,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0x4d,0x03,0xd8,0xc4,0xc1,0x7e,0x7f,0x03,0x41,0xff,0xc1,0x41,0x83,0xc2,0x04,0x41,0x83,0xf9,0x10,0x0f,0x8c,0x75,0xff,0xff,0xff,0x48,0x8b,0xfb,0x48,0x8d,0xb4,0x24,0x88,0x00,0x00,0x00,0xe8,0x79,0x2e,0xc0,0x5e,0x48,0xa5,0x48,0x8b,0xc3,0xc5,0xf8,0x77,0x48,0x81,0xc4,0x98,0x00,0x00,0x00,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -4944,7 +4944,7 @@
 002ch vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
 0030h vmovdqu xmmword ptr [rcx],xmm0          ; VMOVDQU xmm2/m128, xmm1 || VEX.128.F3.0F.WIG 7F /r || encoded[4]{c5 fa 7f 01}
 0034h lea rcx,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d 8c 24 88 00 00 00}
-003ch call 7ff7c7340660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7f 57 fe ff}
+003ch call 7ff7c6ee9270h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0f 63 c4 ff}
 0041h mov rax,[rsi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 06}
 0044h mov rdx,[rdi]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 17}
 0047h mov rcx,[rbp]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{48 8b 4d 00}
@@ -4984,7 +4984,7 @@
 00e1h jl near ptr 005ch                       ; JL rel32 || 0F 8C cd || encoded[6]{0f 8c 75 ff ff ff}
 00e7h mov rdi,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b fb}
 00eah lea rsi,[rsp+88h]                       ; LEA r64, m || REX.W 8D /r || encoded[8]{48 8d b4 24 88 00 00 00}
-00f2h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f9 ae b4 5e}
+00f2h call 7ff825ea5e90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 2e c0 5e}
 00f7h movsq                                   ; MOVSQ || REX.W A5 || encoded[2]{48 a5}
 00f9h mov rax,rbx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c3}
 00fch vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -4995,8 +4995,8 @@
 0109h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 010ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<byte> select<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, in BitMatrix<byte> C, ref BitMatrix<byte> Z)
-; select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in,bm8x8u~ref)[44] = {0f 1f 44 00 00 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 48 8b 00 48 8b 12 48 8b 09 48 23 d0 c4 e2 f8 f2 c1 48 0b c2 49 89 00 49 8b c1 c3}
+; ref BitMatrix<byte> select<byte>(in BitMatrix<byte> A, in BitMatrix<byte> B, in BitMatrix<byte> C, ref BitMatrix<byte> Z), hex://logix/BitMatrixOps?select#select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in,bm8x8u~ref)
+; select_g[8u](bm8x8u~in,bm8x8u~in,bm8x8u~in,bm8x8u~ref)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x4d,0x8b,0x01,0x48,0x8b,0x00,0x48,0x8b,0x12,0x48,0x8b,0x09,0x48,0x23,0xd0,0xc4,0xe2,0xf8,0xf2,0xc1,0x48,0x0b,0xc2,0x49,0x89,0x00,0x49,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
@@ -5013,8 +5013,8 @@
 0028h mov rax,r9                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c1}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, in BitMatrix<ushort> C, ref BitMatrix<ushort> Z)
-; select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in,bm16x16u~ref)[126] = {48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 00 c5 fd 11 44 24 40 c5 ff f0 02 c5 fd 11 44 24 20 c5 ff f0 01 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 c4 c1 7e 7f 00 49 8b c1 c5 f8 77 48 83 c4 78 c3}
+; ref BitMatrix<ushort> select<ushort>(in BitMatrix<ushort> A, in BitMatrix<ushort> B, in BitMatrix<ushort> C, ref BitMatrix<ushort> Z), hex://logix/BitMatrixOps?select#select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in,bm16x16u~ref)
+; select_g[16u](bm16x16u~in,bm16x16u~in,bm16x16u~in,bm16x16u~ref)[126] = {0x48,0x83,0xec,0x78,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x4d,0x8b,0x01,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x00,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x02,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x01,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0x10,0x14,0x24,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0xc4,0xc1,0x7e,0x7f,0x00,0x49,0x8b,0xc1,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x78,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,78h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 78}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
@@ -5047,8 +5047,8 @@
 0079h add rsp,78h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 78}
 007dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<uint> select<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, in BitMatrix<uint> C, ref BitMatrix<uint> Z)
-; select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in,bm32x32u~ref)[179] = {57 56 55 53 48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 45 33 d2 45 33 db 49 63 f3 48 c1 e6 02 48 8d 3c 30 48 8d 1c 32 48 8d 2c 31 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 03 c5 fd 11 44 24 20 c5 ff f0 45 00 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 08 41 83 fa 04 0f 8c 79 ff ff ff 49 8b c1 c5 f8 77 48 83 c4 78 5b 5d 5e 5f c3}
+; ref BitMatrix<uint> select<uint>(in BitMatrix<uint> A, in BitMatrix<uint> B, in BitMatrix<uint> C, ref BitMatrix<uint> Z), hex://logix/BitMatrixOps?select#select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in,bm32x32u~ref)
+; select_g[32u](bm32x32u~in,bm32x32u~in,bm32x32u~in,bm32x32u~ref)[179] = {0x57,0x56,0x55,0x53,0x48,0x83,0xec,0x78,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x4d,0x8b,0x01,0x45,0x33,0xd2,0x45,0x33,0xdb,0x49,0x63,0xf3,0x48,0xc1,0xe6,0x02,0x48,0x8d,0x3c,0x30,0x48,0x8d,0x1c,0x32,0x48,0x8d,0x2c,0x31,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x45,0x00,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0x10,0x14,0x24,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0x49,0x03,0xf0,0xc5,0xfe,0x7f,0x06,0x41,0xff,0xc2,0x41,0x83,0xc3,0x08,0x41,0x83,0xfa,0x04,0x0f,0x8c,0x79,0xff,0xff,0xff,0x49,0x8b,0xc1,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x78,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -5101,8 +5101,8 @@
 00b1h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 00b2h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref BitMatrix<ulong> select<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, in BitMatrix<ulong> C, ref BitMatrix<ulong> Z)
-; select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in,bm64x64u~ref)[179] = {57 56 55 53 48 83 ec 78 c5 f8 77 48 8b 01 48 8b 12 49 8b 08 4d 8b 01 45 33 d2 45 33 db 49 63 f3 48 c1 e6 03 48 8d 3c 30 48 8d 1c 32 48 8d 2c 31 c5 fc 57 c0 c5 fd 11 44 24 40 c5 fc 57 c0 c5 fd 11 44 24 20 c5 fc 57 c0 c5 fd 11 04 24 c5 ff f0 07 c5 fd 11 44 24 40 c5 ff f0 03 c5 fd 11 44 24 20 c5 ff f0 45 00 c5 fd 11 04 24 c5 fd 10 44 24 40 c5 fd 10 4c 24 20 c5 fd 10 14 24 c5 fc 28 d8 c5 e5 db c9 c5 fd df c2 c5 f5 eb c0 49 03 f0 c5 fe 7f 06 41 ff c2 41 83 c3 04 41 83 fa 10 0f 8c 79 ff ff ff 49 8b c1 c5 f8 77 48 83 c4 78 5b 5d 5e 5f c3}
+; ref BitMatrix<ulong> select<ulong>(in BitMatrix<ulong> A, in BitMatrix<ulong> B, in BitMatrix<ulong> C, ref BitMatrix<ulong> Z), hex://logix/BitMatrixOps?select#select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in,bm64x64u~ref)
+; select_g[64u](bm64x64u~in,bm64x64u~in,bm64x64u~in,bm64x64u~ref)[179] = {0x57,0x56,0x55,0x53,0x48,0x83,0xec,0x78,0xc5,0xf8,0x77,0x48,0x8b,0x01,0x48,0x8b,0x12,0x49,0x8b,0x08,0x4d,0x8b,0x01,0x45,0x33,0xd2,0x45,0x33,0xdb,0x49,0x63,0xf3,0x48,0xc1,0xe6,0x03,0x48,0x8d,0x3c,0x30,0x48,0x8d,0x1c,0x32,0x48,0x8d,0x2c,0x31,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xfc,0x57,0xc0,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xff,0xf0,0x07,0xc5,0xfd,0x11,0x44,0x24,0x40,0xc5,0xff,0xf0,0x03,0xc5,0xfd,0x11,0x44,0x24,0x20,0xc5,0xff,0xf0,0x45,0x00,0xc5,0xfd,0x11,0x04,0x24,0xc5,0xfd,0x10,0x44,0x24,0x40,0xc5,0xfd,0x10,0x4c,0x24,0x20,0xc5,0xfd,0x10,0x14,0x24,0xc5,0xfc,0x28,0xd8,0xc5,0xe5,0xdb,0xc9,0xc5,0xfd,0xdf,0xc2,0xc5,0xf5,0xeb,0xc0,0x49,0x03,0xf0,0xc5,0xfe,0x7f,0x06,0x41,0xff,0xc2,0x41,0x83,0xc3,0x04,0x41,0x83,0xfa,0x10,0x0f,0x8c,0x79,0xff,0xff,0xff,0x49,0x8b,0xc1,0xc5,0xf8,0x77,0x48,0x83,0xc4,0x78,0x5b,0x5d,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}

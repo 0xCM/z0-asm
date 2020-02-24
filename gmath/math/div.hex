@@ -1,8 +1,0 @@
-div_(8i,8i)    0f 1f 44 00 00 48 0f be c1 48 0f be ca 99 f7 f9 48 0f be c0 c3
-div_(8u,8u)    0f 1f 44 00 00 0f b6 c1 0f b6 ca 99 f7 f9 0f b6 c0 c3
-div_(16i,16i)  0f 1f 44 00 00 48 0f bf c1 48 0f bf ca 99 f7 f9 48 0f bf c0 c3
-div_(16u,16u)  0f 1f 44 00 00 0f b7 c1 0f b7 ca 99 f7 f9 0f b7 c0 c3
-div_(32i,32i)  0f 1f 44 00 00 44 8b c2 8b c1 99 41 f7 f8 c3
-div_(32u,32u)  0f 1f 44 00 00 44 8b c2 8b c1 33 d2 41 f7 f0 c3
-div_(64i,64i)  0f 1f 44 00 00 4c 8b c2 48 8b c1 48 99 49 f7 f8 c3
-div_(64u,64u)  0f 1f 44 00 00 4c 8b c2 48 8b c1 33 d2 49 f7 f0 c3

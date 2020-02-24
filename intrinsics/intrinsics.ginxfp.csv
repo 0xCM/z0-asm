@@ -1,0 +1,45 @@
+Sequence  | Length  | TermCode            | Uri                                                                   | Data
+0         | 21      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vadd#vadd_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c5 f8 58 c0 c5 f9 11 01 48 8b c1 c3
+1         | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vadd#vadd_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 58 c1 c5 f9 11 01 48 8b c1 c3
+2         | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vadd#vadd_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 58 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+3         | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vadd#vadd_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 58 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+4         | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vsub#vsub_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 5c c1 c5 f9 11 01 48 8b c1 c3
+5         | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vsub#vsub_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 5c c1 c5 f9 11 01 48 8b c1 c3
+6         | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vsub#vsub_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+7         | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vsub#vsub_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 5c c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+8         | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vhadd#vhadd_g[32f](v128x32f,v128x32f)         | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 fb 7c c1 c5 f9 11 01 48 8b c1 c3
+9         | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vhadd#vhadd_g[64f](v128x64f,v128x64f)         | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 7c c1 c5 f9 11 01 48 8b c1 c3
+10        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vhadd#vhadd_g[32f](v256x32f,v256x32f)         | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 ff 7c c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+11        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vhadd#vhadd_g[64f](v256x64f,v256x64f)         | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 7c c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+12        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vdiv#vdiv_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 5e c1 c5 f9 11 01 48 8b c1 c3
+13        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vdiv#vdiv_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 5e c1 c5 f9 11 01 48 8b c1 c3
+14        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vdiv#vdiv_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 5e c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+15        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vdiv#vdiv_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 5e c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+16        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vand#vand_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 54 c1 c5 f9 11 01 48 8b c1 c3
+17        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vand#vand_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 54 c1 c5 f9 11 01 48 8b c1 c3
+18        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vand#vand_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 54 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+19        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vand#vand_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 54 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+20        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vor#vor_g[32f](v128x32f,v128x32f)             | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 56 c1 c5 f9 11 01 48 8b c1 c3
+21        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vor#vor_g[64f](v128x64f,v128x64f)             | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 56 c1 c5 f9 11 01 48 8b c1 c3
+22        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vor#vor_g[32f](v256x32f,v256x32f)             | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 56 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+23        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vor#vor_g[64f](v256x64f,v256x64f)             | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 56 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+24        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxor#vxor_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 57 c1 c5 f9 11 01 48 8b c1 c3
+25        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxor#vxor_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 57 c1 c5 f9 11 01 48 8b c1 c3
+26        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxor#vxor_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 57 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+27        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxor#vxor_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 57 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+28        | 35      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxornot#vxornot_g[32f](v128x32f,v128x32f)     | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f0 c2 d1 00 c5 f0 57 ca c5 f8 57 c1 c5 f9 11 01 48 8b c1 c3
+29        | 35      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxornot#vxornot_g[64f](v128x64f,v128x64f)     | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f1 c2 d1 00 c5 f1 57 ca c5 f9 57 c1 c5 f9 11 01 48 8b c1 c3
+30        | 38      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxornot#vxornot_g[32f](v256x32f,v256x32f)     | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f4 c2 d1 00 c5 f4 57 ca c5 fc 57 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+31        | 38      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vxornot#vxornot_g[64f](v256x64f,v256x64f)     | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 f5 c2 d1 00 c5 f5 57 ca c5 fd 57 c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+32        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmin#vmin_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 5d c1 c5 f9 11 01 48 8b c1 c3
+33        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmin#vmin_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 5d c1 c5 f9 11 01 48 8b c1 c3
+34        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmin#vmin_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 5d c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+35        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmin#vmin_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 5d c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+36        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmax#vmax_g[32f](v128x32f,v128x32f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f8 5f c1 c5 f9 11 01 48 8b c1 c3
+37        | 26      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmax#vmax_g[64f](v128x64f,v128x64f)           | c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 10 08 c5 f9 5f c1 c5 f9 11 01 48 8b c1 c3
+38        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmax#vmax_g[32f](v256x32f,v256x32f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fc 5f c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+39        | 29      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vmax#vmax_g[64f](v256x64f,v256x64f)           | c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d 10 08 c5 fd 5f c1 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+40        | 25      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vnegate#vnegate_g[32f](v128x32f)              | c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f0 5c c0 c5 f9 11 01 48 8b c1 c3
+41        | 25      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vnegate#vnegate_g[64f](v128x64f)              | c5 f8 77 66 90 c5 f9 10 02 c5 f0 57 c9 c5 f1 5c c0 c5 f9 11 01 48 8b c1 c3
+42        | 28      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vnegate#vnegate_g[32f](v256x32f)              | c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f4 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3
+43        | 28      | CTC_RET_INTR        | hex://intrinsics/ginxfp?vnegate#vnegate_g[64f](v256x64f)              | c5 f8 77 66 90 c5 fd 10 02 c5 f4 57 c9 c5 f5 5c c0 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,8 +1,0 @@
-eval_vector_expr128_g[8u]()   0f 1f 44 00 00 48 b8 68 66 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[8i]()   0f 1f 44 00 00 48 b8 98 66 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[16u]()  0f 1f 44 00 00 48 b8 b8 66 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[16i]()  0f 1f 44 00 00 48 b8 d8 66 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[32u]()  0f 1f 44 00 00 48 b8 f8 66 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[32i]()  0f 1f 44 00 00 48 b8 18 67 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[64u]()  0f 1f 44 00 00 48 b8 a8 67 6e c8 f7 7f 00 00 48 ff e0
-eval_vector_expr128_g[64i]()  0f 1f 44 00 00 48 b8 c8 67 6e c8 f7 7f 00 00 48 ff e0

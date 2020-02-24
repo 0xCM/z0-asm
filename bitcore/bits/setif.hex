@@ -1,4 +1,0 @@
-setif_(8u,32i,8u,32i)    0f 1f 44 00 00 0f b6 c1 8b ca d3 e8 83 e0 01 85 c0 74 19 41 0f b6 c0 41 b8 01 00 00 00 8b ca 41 d3 e0 41 0f b6 d0 0b c2 0f b6 c0 c3 41 0f b6 c0 c3
-setif_(16u,32i,16u,32i)  0f 1f 44 00 00 0f b7 c1 8b ca d3 e8 83 e0 01 85 c0 74 1a 41 0f b7 c0 41 b8 01 00 00 00 41 8b c9 41 d3 e0 41 0f b7 d0 0b c2 0f b7 c0 c3 41 0f b7 c0 c3
-setif_(32u,32i,32u,32i)  0f 1f 44 00 00 8b c1 8b ca d3 e8 83 e0 01 85 c0 74 0e b8 01 00 00 00 41 8b c9 d3 e0 41 0b c0 c3 41 8b c0 c3
-setif_(64u,32i,64u,32i)  0f 1f 44 00 00 48 8b c1 8b ca 48 d3 e8 8b c8 83 e1 01 85 c9 74 0f b8 01 00 00 00 41 8b c9 48 d3 e0 49 0b c0 c3 49 8b c0 c3

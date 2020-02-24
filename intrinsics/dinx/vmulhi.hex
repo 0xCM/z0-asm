@@ -1,4 +1,0 @@
-vmulhi_(v128x16i,v128x16i)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e5 00 c5 f9 11 01 48 8b c1 c3
-vmulhi_(v128x16u,v128x16u)  c5 f8 77 66 90 c5 f9 10 02 c4 c1 79 e4 00 c5 f9 11 01 48 8b c1 c3
-vmulhi_(v256x16i,v256x16i)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e5 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vmulhi_(v256x16u,v256x16u)  c5 f8 77 66 90 c5 fd 10 02 c4 c1 7d e4 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

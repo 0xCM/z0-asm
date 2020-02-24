@@ -1,8 +1,0 @@
-dot_g[8u](8u,8u)     0f 1f 44 00 00 0f b6 c1 0f b6 d2 23 c2 0f b6 c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[8i](8i,8i)     0f 1f 44 00 00 48 0f be c1 48 0f be d2 23 c2 48 0f be c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[16u](16u,16u)  0f 1f 44 00 00 0f b7 c1 0f b7 d2 23 c2 0f b7 c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[16i](16i,16i)  0f 1f 44 00 00 48 0f bf c1 48 0f bf d2 23 c2 48 0f bf c0 f3 0f b8 c0 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[32u](32u,32u)  0f 1f 44 00 00 23 d1 33 c0 f3 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[32i](32i,32i)  0f 1f 44 00 00 23 d1 33 c0 f3 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[64u](64u,64u)  0f 1f 44 00 00 48 23 d1 33 c0 f3 48 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3
-dot_g[64i](64i,64i)  0f 1f 44 00 00 48 23 d1 33 c0 f3 48 0f b8 c2 a8 01 0f 95 c0 0f b6 c0 c3

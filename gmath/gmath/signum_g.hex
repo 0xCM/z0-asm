@@ -1,8 +1,0 @@
-signum_g[8u](8u)    0f 1f 44 00 00 0f b6 c1 85 c0 75 07 b8 ff ff ff ff eb 05 b8 01 00 00 00 c3
-signum_g[8i](8i)    0f 1f 44 00 00 48 0f be c1 8b d0 f7 d2 ff c2 c1 ea 1f c1 f8 1f 0b c2 c3
-signum_g[16u](16u)  0f 1f 44 00 00 0f b7 c1 85 c0 75 07 b8 ff ff ff ff eb 05 b8 01 00 00 00 c3
-signum_g[16i](16i)  0f 1f 44 00 00 48 0f bf c1 8b d0 f7 d2 ff c2 c1 ea 1f c1 f8 1f 0b c2 c3
-signum_g[32u](32u)  0f 1f 44 00 00 85 c9 75 07 b8 ff ff ff ff eb 05 b8 01 00 00 00 c3
-signum_g[32i](32i)  0f 1f 44 00 00 8b c1 f7 d0 ff c0 c1 e8 1f c1 f9 1f 0b c1 c3
-signum_g[64u](64u)  0f 1f 44 00 00 48 85 c9 75 07 b8 ff ff ff ff eb 05 b8 01 00 00 00 c3
-signum_g[64i](64i)  0f 1f 44 00 00 48 8b c1 48 f7 d0 48 ff c0 48 c1 e8 3f 48 c1 f9 3f 8b d1 0b c2 c3

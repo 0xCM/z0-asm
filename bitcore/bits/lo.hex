@@ -1,4 +1,0 @@
-lo_(8u)   0f 1f 44 00 00 0f b6 c1 83 e0 0f c3
-lo_(16u)  0f 1f 44 00 00 0f b7 c1 0f b6 c0 c3
-lo_(32u)  0f 1f 44 00 00 0f b7 c1 c3
-lo_(64u)  0f 1f 44 00 00 8b c1 c3

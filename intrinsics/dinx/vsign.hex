@@ -1,6 +1,0 @@
-vsign_(v128x8i,v128x8i)    c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 08 00 c5 f9 11 01 48 8b c1 c3
-vsign_(v128x16i,v128x16i)  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 09 00 c5 f9 11 01 48 8b c1 c3
-vsign_(v128x32i,v128x32i)  c5 f8 77 66 90 c5 f9 10 02 c4 c2 79 0a 00 c5 f9 11 01 48 8b c1 c3
-vsign_(v256x8i,v256x8i)    c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 08 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsign_(v256x16i,v256x16i)  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 09 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3
-vsign_(v256x32i,v256x32i)  c5 f8 77 66 90 c5 fd 10 02 c4 c2 7d 0a 00 c5 fd 11 01 48 8b c1 c5 f8 77 c3

@@ -1,8 +1,0 @@
-xors_(8u,8u)   0f 1f 44 00 00 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 c3
-xors_(8i,8u)   0f 1f 44 00 00 48 0f be c9 0f b6 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b6 c0 48 0f be c0 c3
-xors_(16u,8u)  0f 1f 44 00 00 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 c3
-xors_(16i,8u)  0f 1f 44 00 00 48 0f bf c9 0f b7 c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 0f b7 c0 48 0f bf c0 c3
-xors_(32u,8u)  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 e8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
-xors_(32i,8u)  0f 1f 44 00 00 8b c1 0f b6 d2 83 e2 1f 8b ca 44 8b c0 41 d3 f8 8b ca 44 8b c8 41 d3 e1 41 33 c1 41 33 c0 c3
-xors_(64i,8u)  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 f8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3
-xors_(64u,8u)  0f 1f 44 00 00 48 8b c1 0f b6 d2 83 e2 3f 8b ca 4c 8b c0 49 d3 e8 8b ca 4c 8b c8 49 d3 e1 49 33 c1 49 33 c0 c3
