@@ -1,423 +1,423 @@
 Sequence  | Length  | TermCode            | Uri                                                                   | Data
-0         | 12      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[8u](8u~ref,32i)                           | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-1         | 12      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[8i](8i~ref,32i)                           | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-2         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[16u](16u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-3         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[16i](16i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-4         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[32u](32u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-5         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[32i](32i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-6         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[64u](64u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-7         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[64i](64i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-8         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[32f](32f~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-9         | 13      | CTC_RET_Zx3         | hex://root/Refs?seek#seek_g[64f](64f~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-10        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[8u](8u~in)                          | 0f 1f 44 00 00 48 8b c1 c3
-11        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[8i](8i~in)                          | 0f 1f 44 00 00 48 8b c1 c3
-12        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[16u](16u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-13        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[16i](16i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-14        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[32u](32u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-15        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[32i](32i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-16        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[64u](64u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-17        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[64i](64i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-18        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[32f](32f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-19        | 9       | CTC_RET_Zx3         | hex://root/Refs?mutable#mutable_g[64f](64f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-20        | 12      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[8u](8u~in,32i)                            | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-21        | 12      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[8i](8i~in,32i)                            | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-22        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[16u](16u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-23        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[16i](16i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-24        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[32u](32u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-25        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[32i](32i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-26        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[64u](64u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-27        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[64i](64i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-28        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[32f](32f~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-29        | 13      | CTC_RET_Zx3         | hex://root/Refs?skip#skip_g[64f](64f~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-30        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[8u](8u~ref)                       | 0f 1f 44 00 00 48 8b c1 c3
-31        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[8i](8i~ref)                       | 0f 1f 44 00 00 48 8b c1 c3
-32        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[16u](16u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-33        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[16i](16i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-34        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[32u](32u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-35        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[32i](32i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-36        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[64u](64u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-37        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[64i](64i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-38        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[32f](32f~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-39        | 9       | CTC_RET_Zx3         | hex://root/Refs?byterefR#byterefR_g[64f](64f~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
-40        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[8u](8u~in)                          | 0f 1f 44 00 00 48 8b c1 c3
-41        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[8i](8i~in)                          | 0f 1f 44 00 00 48 8b c1 c3
-42        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[16u](16u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-43        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[16i](16i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-44        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[32u](32u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-45        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[32i](32i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-46        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[64u](64u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-47        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[64i](64i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-48        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[32f](32f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-49        | 9       | CTC_RET_Zx3         | hex://root/Refs?byteref#byteref_g[64f](64f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
-50        | 18      | CTC_RET_Zx3         | hex://root/Refs?swap#swap_g[8u](8u~ref,8u~ref)                        | 0f 1f 44 00 00 0f b6 01 44 0f b6 02 44 88 01 88 02 c3
-51        | 19      | CTC_RET_ZED_SBB     | hex://root/Refs?swap#swap_g[8i](8i~ref,8i~ref)                        | 0f 1f 44 00 00 48 0f be 01 4c 0f be 02 44 88 01 88 02 c3
-52        | 20      | CTC_RET_SBB         | hex://root/Refs?swap#swap_g[16u](16u~ref,16u~ref)                     | 0f 1f 44 00 00 0f b7 01 44 0f b7 02 66 44 89 01 66 89 02 c3
-53        | 21      | CTC_RET_Zx3         | hex://root/Refs?swap#swap_g[16i](16i~ref,16i~ref)                     | 0f 1f 44 00 00 48 0f bf 01 4c 0f bf 02 66 44 89 01 66 89 02 c3
-54        | 16      | CTC_RET_SBB         | hex://root/Refs?swap#swap_g[32u](32u~ref,32u~ref)                     | 0f 1f 44 00 00 8b 01 44 8b 02 44 89 01 89 02 c3
-55        | 16      | CTC_RET_SBB         | hex://root/Refs?swap#swap_g[32i](32i~ref,32i~ref)                     | 0f 1f 44 00 00 8b 01 44 8b 02 44 89 01 89 02 c3
-56        | 18      | CTC_RET_Zx3         | hex://root/Refs?swap#swap_g[64u](64u~ref,64u~ref)                     | 0f 1f 44 00 00 48 8b 01 4c 8b 02 4c 89 01 48 89 02 c3
-57        | 18      | CTC_RET_Zx3         | hex://root/Refs?swap#swap_g[64i](64i~ref,64i~ref)                     | 0f 1f 44 00 00 48 8b 01 4c 8b 02 4c 89 01 48 89 02 c3
-58        | 22      | CTC_RET_INTR        | hex://root/Refs?swap#swap_g[32f](32f~ref,32f~ref)                     | c5 f8 77 66 90 c5 fa 10 01 c5 fa 10 0a c5 fa 11 09 c5 fa 11 02 c3
-59        | 22      | CTC_RET_INTR        | hex://root/Refs?swap#swap_g[64f](64f~ref,64f~ref)                     | c5 f8 77 66 90 c5 fb 10 01 c5 fb 10 0a c5 fb 11 09 c5 fb 11 02 c3
-60        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[8u](8u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-61        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[8i](8i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-62        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[16u](16u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-63        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[16i](16i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-64        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[32u](32u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-65        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[32i](32i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-66        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[64u](64u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-67        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[64i](64i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-68        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[32f](32f~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-69        | 12      | CTC_RET_SBB         | hex://root/Refs?seek8#seek8_g[64f](64f~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-70        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-71        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-72        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-73        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-74        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-75        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-76        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-77        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-78        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-79        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek16#seek16_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-80        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-81        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-82        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-83        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-84        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-85        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-86        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-87        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-88        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-89        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek32#seek32_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-90        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-91        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-92        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-93        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-94        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-95        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-96        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-97        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-98        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-99        | 13      | CTC_RET_Zx3         | hex://root/Refs?seek64#seek64_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-100       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[8u](8u~ref,64i)                         | 0f 1f 44 00 00 48 8d 04 11 c3
-101       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[8i](8i~ref,64i)                         | 0f 1f 44 00 00 48 8d 04 11 c3
-102       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[16u](16u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-103       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[16i](16i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-104       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[32u](32u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-105       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[32i](32i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-106       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[64u](64u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-107       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[64i](64i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-108       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[32f](32f~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-109       | 10      | CTC_RET_Zx3         | hex://root/Refs?seekb#seekb_g[64f](64f~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
-110       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[8u](8u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-111       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[8i](8i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-112       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[16u](16u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-113       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[16i](16i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-114       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[32u](32u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-115       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[32i](32i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-116       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[64u](64u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-117       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[64i](64i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-118       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[32f](32f~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-119       | 12      | CTC_RET_SBB         | hex://root/Refs?skip8#skip8_g[64f](64f~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
-120       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-121       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-122       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-123       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-124       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-125       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-126       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-127       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-128       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-129       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip16#skip16_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
-130       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-131       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-132       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-133       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-134       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-135       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-136       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-137       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-138       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-139       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip32#skip32_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
-140       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-141       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-142       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-143       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-144       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-145       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-146       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-147       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-148       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-149       | 13      | CTC_RET_Zx3         | hex://root/Refs?skip64#skip64_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
-150       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[8u](8u~in,64i)                          | 0f 1f 44 00 00 48 8d 04 11 c3
-151       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[8i](8i~in,64i)                          | 0f 1f 44 00 00 48 8d 04 11 c3
-152       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[16u](16u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 51 c3
-153       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[16i](16i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 51 c3
-154       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32u](32u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
-155       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32i](32i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
-156       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64u](64u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
-157       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64i](64i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
-158       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32f](32f~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
-159       | 10      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64f](64f~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
-160       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[8u](span8u)                               | 0f 1f 44 00 00 48 8b 01 c3
-161       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[8i](span8i)                               | 0f 1f 44 00 00 48 8b 01 c3
-162       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[16u](span16u)                             | 0f 1f 44 00 00 48 8b 01 c3
-163       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[16i](span16i)                             | 0f 1f 44 00 00 48 8b 01 c3
-164       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32u](span32u)                             | 0f 1f 44 00 00 48 8b 01 c3
-165       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32i](span32i)                             | 0f 1f 44 00 00 48 8b 01 c3
-166       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64u](span64u)                             | 0f 1f 44 00 00 48 8b 01 c3
-167       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64i](span64i)                             | 0f 1f 44 00 00 48 8b 01 c3
-168       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32f](span32f)                             | 0f 1f 44 00 00 48 8b 01 c3
-169       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64f](span64f)                             | 0f 1f 44 00 00 48 8b 01 c3
-170       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?head#head_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-171       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?head#head_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-172       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-173       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-174       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-175       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-176       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-177       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-178       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-179       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-180       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[8u](uspan8u)                              | 0f 1f 44 00 00 48 8b 01 c3
-181       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[8i](uspan8i)                              | 0f 1f 44 00 00 48 8b 01 c3
-182       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[16u](uspan16u)                            | 0f 1f 44 00 00 48 8b 01 c3
-183       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[16i](uspan16i)                            | 0f 1f 44 00 00 48 8b 01 c3
-184       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32u](uspan32u)                            | 0f 1f 44 00 00 48 8b 01 c3
-185       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32i](uspan32i)                            | 0f 1f 44 00 00 48 8b 01 c3
-186       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64u](uspan64u)                            | 0f 1f 44 00 00 48 8b 01 c3
-187       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64i](uspan64i)                            | 0f 1f 44 00 00 48 8b 01 c3
-188       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[32f](uspan32f)                            | 0f 1f 44 00 00 48 8b 01 c3
-189       | 9       | CTC_RET_Zx3         | hex://root/Refs?head#head_g[64f](uspan64f)                            | 0f 1f 44 00 00 48 8b 01 c3
-190       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?head#head_g[8u](uspan8u,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-191       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?head#head_g[8i](uspan8i,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-192       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[16u](uspan16u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-193       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[16i](uspan16i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-194       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32u](uspan32u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-195       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32i](uspan32i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-196       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64u](uspan64u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-197       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64i](uspan64i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-198       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[32f](uspan32f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-199       | 16      | CTC_RET_SBB         | hex://root/Refs?head#head_g[64f](uspan64f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-200       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip#skip_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-201       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip#skip_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-202       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-203       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-204       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-205       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-206       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-207       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-208       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-209       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-210       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip#skip_g[8u](uspan8u,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-211       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip#skip_g[8i](uspan8i,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-212       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[16u](uspan16u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-213       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[16i](uspan16i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-214       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32u](uspan32u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-215       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32i](uspan32i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-216       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64u](uspan64u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-217       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64i](uspan64i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-218       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[32f](uspan32f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-219       | 16      | CTC_RET_SBB         | hex://root/Refs?skip#skip_g[64f](uspan64f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-220       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[8u]()                                     |  
-221       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[8i]()                                     |  
-222       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[16u]()                                    |  
-223       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[16i]()                                    |  
-224       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[32u]()                                    |  
-225       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[32i]()                                    |  
-226       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[64u]()                                    |  
-227       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[64i]()                                    |  
-228       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[32f]()                                    |  
-229       | 0       | CTC_Zx7             | hex://root/Refs?head#head_g[64f]()                                    |  
-230       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek#seek_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-231       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek#seek_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-232       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-233       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-234       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-235       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-236       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-237       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-238       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-239       | 16      | CTC_RET_SBB         | hex://root/Refs?seek#seek_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-240       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[8u](span8u)                             | 0f 1f 44 00 00 48 8b 01 c3
-241       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[8i](span8i)                             | 0f 1f 44 00 00 48 8b 01 c3
-242       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[16u](span16u)                           | 0f 1f 44 00 00 48 8b 01 c3
-243       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[16i](span16i)                           | 0f 1f 44 00 00 48 8b 01 c3
-244       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32u](span32u)                           | 0f 1f 44 00 00 48 8b 01 c3
-245       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32i](span32i)                           | 0f 1f 44 00 00 48 8b 01 c3
-246       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64u](span64u)                           | 0f 1f 44 00 00 48 8b 01 c3
-247       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64i](span64i)                           | 0f 1f 44 00 00 48 8b 01 c3
-248       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32f](span32f)                           | 0f 1f 44 00 00 48 8b 01 c3
-249       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64f](span64f)                           | 0f 1f 44 00 00 48 8b 01 c3
-250       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[8u](span8u)                           | 0f 1f 44 00 00 48 8b 01 c3
-251       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[8i](span8i)                           | 0f 1f 44 00 00 48 8b 01 c3
-252       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[16u](span16u)                         | 0f 1f 44 00 00 48 8b 01 c3
-253       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[16i](span16i)                         | 0f 1f 44 00 00 48 8b 01 c3
-254       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32u](span32u)                         | 0f 1f 44 00 00 48 8b 01 c3
-255       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32i](span32i)                         | 0f 1f 44 00 00 48 8b 01 c3
-256       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64u](span64u)                         | 0f 1f 44 00 00 48 8b 01 c3
-257       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64i](span64i)                         | 0f 1f 44 00 00 48 8b 01 c3
-258       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32f](span32f)                         | 0f 1f 44 00 00 48 8b 01 c3
-259       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64f](span64f)                         | 0f 1f 44 00 00 48 8b 01 c3
-260       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[8u](span8u)                           | 0f 1f 44 00 00 48 8b 01 c3
-261       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[8i](span8i)                           | 0f 1f 44 00 00 48 8b 01 c3
-262       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[16u](span16u)                         | 0f 1f 44 00 00 48 8b 01 c3
-263       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[16i](span16i)                         | 0f 1f 44 00 00 48 8b 01 c3
-264       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32u](span32u)                         | 0f 1f 44 00 00 48 8b 01 c3
-265       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32i](span32i)                         | 0f 1f 44 00 00 48 8b 01 c3
-266       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64u](span64u)                         | 0f 1f 44 00 00 48 8b 01 c3
-267       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64i](span64i)                         | 0f 1f 44 00 00 48 8b 01 c3
-268       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32f](span32f)                         | 0f 1f 44 00 00 48 8b 01 c3
-269       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64f](span64f)                         | 0f 1f 44 00 00 48 8b 01 c3
-270       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[8u](uspan8u)                            | 0f 1f 44 00 00 48 8b 01 c3
-271       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[8i](uspan8i)                            | 0f 1f 44 00 00 48 8b 01 c3
-272       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[16u](uspan16u)                          | 0f 1f 44 00 00 48 8b 01 c3
-273       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[16i](uspan16i)                          | 0f 1f 44 00 00 48 8b 01 c3
-274       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32u](uspan32u)                          | 0f 1f 44 00 00 48 8b 01 c3
-275       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32i](uspan32i)                          | 0f 1f 44 00 00 48 8b 01 c3
-276       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64u](uspan64u)                          | 0f 1f 44 00 00 48 8b 01 c3
-277       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64i](uspan64i)                          | 0f 1f 44 00 00 48 8b 01 c3
-278       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[32f](uspan32f)                          | 0f 1f 44 00 00 48 8b 01 c3
-279       | 9       | CTC_RET_Zx3         | hex://root/Refs?head8#head8_g[64f](uspan64f)                          | 0f 1f 44 00 00 48 8b 01 c3
-280       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
-281       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
-282       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
-283       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
-284       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
-285       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
-286       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
-287       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
-288       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
-289       | 9       | CTC_RET_Zx3         | hex://root/Refs?head16#head16_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
-290       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[8u](span8u)                           |  
-291       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[8i](span8i)                           |  
-292       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[16u](span16u)                         |  
-293       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[16i](span16i)                         |  
-294       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[32u](span32u)                         |  
-295       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[32i](span32i)                         |  
-296       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[64u](span64u)                         |  
-297       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[64i](span64i)                         |  
-298       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[32f](span32f)                         |  
-299       | 0       | CTC_Zx7             | hex://root/Refs?head64#head64_g[64f](span64f)                         |  
-300       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
-301       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
-302       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
-303       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
-304       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
-305       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
-306       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
-307       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
-308       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
-309       | 9       | CTC_RET_Zx3         | hex://root/Refs?head32#head32_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
-310       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
-311       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
-312       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
-313       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
-314       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
-315       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
-316       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
-317       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
-318       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
-319       | 9       | CTC_RET_Zx3         | hex://root/Refs?head64#head64_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
-320       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[8u](span8u,64i)                         | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-321       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[8i](span8i,64i)                         | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-322       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[16u](span16u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-323       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[16i](span16i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-324       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[32u](span32u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-325       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[32i](span32i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-326       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[64u](span64u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-327       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[64i](span64i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-328       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[32f](span32f,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-329       | 12      | CTC_RET_SBB         | hex://root/Refs?seekb#seekb_g[64f](span64f,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-330       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[8u](span8u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-331       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[8i](span8i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-332       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[16u](span16u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-333       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[16i](span16i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-334       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[32u](span32u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-335       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[32i](span32i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-336       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[64u](span64u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-337       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[64i](span64i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-338       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[32f](span32f,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-339       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?seek8#seek8_g[64f](span64f,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-340       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-341       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-342       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-343       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-344       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-345       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-346       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-347       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-348       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-349       | 16      | CTC_RET_SBB         | hex://root/Refs?seek16#seek16_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-350       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-351       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-352       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-353       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-354       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-355       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-356       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-357       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-358       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-359       | 16      | CTC_RET_SBB         | hex://root/Refs?seek32#seek32_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-360       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-361       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-362       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-363       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-364       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-365       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-366       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-367       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-368       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-369       | 16      | CTC_RET_SBB         | hex://root/Refs?seek64#seek64_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-370       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[8u](uspan8u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-371       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[8i](uspan8i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-372       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[16u](uspan16u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-373       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[16i](uspan16i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-374       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[32u](uspan32u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-375       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[32i](uspan32i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-376       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[64u](uspan64u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-377       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[64i](uspan64i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-378       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[32f](uspan32f,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-379       | 15      | CTC_RET_ZED_SBB     | hex://root/Refs?skip8#skip8_g[64f](uspan64f,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
-380       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-381       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-382       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-383       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-384       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-385       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-386       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-387       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-388       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-389       | 16      | CTC_RET_SBB         | hex://root/Refs?skip16#skip16_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
-390       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-391       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-392       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-393       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-394       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-395       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-396       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-397       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-398       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-399       | 16      | CTC_RET_SBB         | hex://root/Refs?skip32#skip32_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
-400       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-401       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-402       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-403       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-404       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-405       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-406       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-407       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-408       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-409       | 16      | CTC_RET_SBB         | hex://root/Refs?skip64#skip64_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
-410       | 12      | CTC_RET_SBB         | hex://root/Refs?skipb#skipb_g[8u](uspan8u,64i)                        | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-411       | 12      | CTC_RET_SBB         | hex://root/Refs?skipb#skipb_g[8i](uspan8i,64i)                        | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
-412       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[16u](uspan16u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 50 c3
-413       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[16i](uspan16i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 50 c3
-414       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32u](uspan32u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
-415       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32i](uspan32i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
-416       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64u](uspan64u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
-417       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64i](uspan64i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
-418       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[32f](uspan32f,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
-419       | 13      | CTC_RET_Zx3         | hex://root/Refs?skipb#skipb_g[64f](uspan64f,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
-420       | 0       | CTC_Zx7             | hex://root/Refs?head32i#head32i_(uspan8u)                             |  
-421       | 0       | CTC_Zx7             | hex://root/Refs?head64i#head64i_(uspan8u)                             |  
+0         | 12      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[8u](8u~ref,32i)                           | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+1         | 12      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[8i](8i~ref,32i)                           | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+2         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[16u](16u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+3         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[16i](16i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+4         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[32u](32u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+5         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[32i](32i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+6         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[64u](64u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+7         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[64i](64i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+8         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[32f](32f~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+9         | 13      | CTC_RET_Zx3         | hex://root/refs?seek#seek_g[64f](64f~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+10        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[8u](8u~in)                          | 0f 1f 44 00 00 48 8b c1 c3
+11        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[8i](8i~in)                          | 0f 1f 44 00 00 48 8b c1 c3
+12        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[16u](16u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+13        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[16i](16i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+14        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[32u](32u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+15        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[32i](32i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+16        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[64u](64u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+17        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[64i](64i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+18        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[32f](32f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+19        | 9       | CTC_RET_Zx3         | hex://root/refs?mutable#mutable_g[64f](64f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+20        | 12      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[8u](8u~in,32i)                            | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+21        | 12      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[8i](8i~in,32i)                            | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+22        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[16u](16u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+23        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[16i](16i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+24        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[32u](32u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+25        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[32i](32i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+26        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[64u](64u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+27        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[64i](64i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+28        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[32f](32f~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+29        | 13      | CTC_RET_Zx3         | hex://root/refs?skip#skip_g[64f](64f~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+30        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[8u](8u~ref)                       | 0f 1f 44 00 00 48 8b c1 c3
+31        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[8i](8i~ref)                       | 0f 1f 44 00 00 48 8b c1 c3
+32        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[16u](16u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+33        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[16i](16i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+34        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[32u](32u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+35        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[32i](32i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+36        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[64u](64u~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+37        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[64i](64i~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+38        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[32f](32f~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+39        | 9       | CTC_RET_Zx3         | hex://root/refs?byterefR#byterefR_g[64f](64f~ref)                     | 0f 1f 44 00 00 48 8b c1 c3
+40        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[8u](8u~in)                          | 0f 1f 44 00 00 48 8b c1 c3
+41        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[8i](8i~in)                          | 0f 1f 44 00 00 48 8b c1 c3
+42        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[16u](16u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+43        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[16i](16i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+44        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[32u](32u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+45        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[32i](32i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+46        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[64u](64u~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+47        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[64i](64i~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+48        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[32f](32f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+49        | 9       | CTC_RET_Zx3         | hex://root/refs?byteref#byteref_g[64f](64f~in)                        | 0f 1f 44 00 00 48 8b c1 c3
+50        | 18      | CTC_RET_Zx3         | hex://root/refs?swap#swap_g[8u](8u~ref,8u~ref)                        | 0f 1f 44 00 00 0f b6 01 44 0f b6 02 44 88 01 88 02 c3
+51        | 19      | CTC_RET_ZED_SBB     | hex://root/refs?swap#swap_g[8i](8i~ref,8i~ref)                        | 0f 1f 44 00 00 48 0f be 01 4c 0f be 02 44 88 01 88 02 c3
+52        | 20      | CTC_RET_SBB         | hex://root/refs?swap#swap_g[16u](16u~ref,16u~ref)                     | 0f 1f 44 00 00 0f b7 01 44 0f b7 02 66 44 89 01 66 89 02 c3
+53        | 21      | CTC_RET_Zx3         | hex://root/refs?swap#swap_g[16i](16i~ref,16i~ref)                     | 0f 1f 44 00 00 48 0f bf 01 4c 0f bf 02 66 44 89 01 66 89 02 c3
+54        | 16      | CTC_RET_SBB         | hex://root/refs?swap#swap_g[32u](32u~ref,32u~ref)                     | 0f 1f 44 00 00 8b 01 44 8b 02 44 89 01 89 02 c3
+55        | 16      | CTC_RET_SBB         | hex://root/refs?swap#swap_g[32i](32i~ref,32i~ref)                     | 0f 1f 44 00 00 8b 01 44 8b 02 44 89 01 89 02 c3
+56        | 18      | CTC_RET_Zx3         | hex://root/refs?swap#swap_g[64u](64u~ref,64u~ref)                     | 0f 1f 44 00 00 48 8b 01 4c 8b 02 4c 89 01 48 89 02 c3
+57        | 18      | CTC_RET_Zx3         | hex://root/refs?swap#swap_g[64i](64i~ref,64i~ref)                     | 0f 1f 44 00 00 48 8b 01 4c 8b 02 4c 89 01 48 89 02 c3
+58        | 22      | CTC_RET_INTR        | hex://root/refs?swap#swap_g[32f](32f~ref,32f~ref)                     | c5 f8 77 66 90 c5 fa 10 01 c5 fa 10 0a c5 fa 11 09 c5 fa 11 02 c3
+59        | 22      | CTC_RET_INTR        | hex://root/refs?swap#swap_g[64f](64f~ref,64f~ref)                     | c5 f8 77 66 90 c5 fb 10 01 c5 fb 10 0a c5 fb 11 09 c5 fb 11 02 c3
+60        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[8u](8u~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+61        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[8i](8i~ref,32i)                         | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+62        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[16u](16u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+63        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[16i](16i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+64        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[32u](32u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+65        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[32i](32i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+66        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[64u](64u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+67        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[64i](64i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+68        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[32f](32f~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+69        | 12      | CTC_RET_SBB         | hex://root/refs?seek8#seek8_g[64f](64f~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+70        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+71        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+72        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+73        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+74        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+75        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+76        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+77        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+78        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+79        | 13      | CTC_RET_Zx3         | hex://root/refs?seek16#seek16_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+80        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+81        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+82        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+83        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+84        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+85        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+86        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+87        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+88        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+89        | 13      | CTC_RET_Zx3         | hex://root/refs?seek32#seek32_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+90        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[8u](8u~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+91        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[8i](8i~ref,32i)                       | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+92        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[16u](16u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+93        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[16i](16i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+94        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[32u](32u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+95        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[32i](32i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+96        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[64u](64u~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+97        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[64i](64i~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+98        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[32f](32f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+99        | 13      | CTC_RET_Zx3         | hex://root/refs?seek64#seek64_g[64f](64f~ref,32i)                     | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+100       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[8u](8u~ref,64i)                         | 0f 1f 44 00 00 48 8d 04 11 c3
+101       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[8i](8i~ref,64i)                         | 0f 1f 44 00 00 48 8d 04 11 c3
+102       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[16u](16u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+103       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[16i](16i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+104       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[32u](32u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+105       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[32i](32i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+106       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[64u](64u~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+107       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[64i](64i~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+108       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[32f](32f~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+109       | 10      | CTC_RET_Zx3         | hex://root/refs?seekb#seekb_g[64f](64f~ref,64i)                       | 0f 1f 44 00 00 48 8d 04 11 c3
+110       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[8u](8u~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+111       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[8i](8i~in,32i)                          | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+112       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[16u](16u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+113       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[16i](16i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+114       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[32u](32u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+115       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[32i](32i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+116       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[64u](64u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+117       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[64i](64i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+118       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[32f](32f~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+119       | 12      | CTC_RET_SBB         | hex://root/refs?skip8#skip8_g[64f](64f~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 03 c1 c3
+120       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+121       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+122       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+123       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+124       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+125       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+126       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+127       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+128       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+129       | 13      | CTC_RET_Zx3         | hex://root/refs?skip16#skip16_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 41 c3
+130       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+131       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+132       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+133       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+134       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+135       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+136       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+137       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+138       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+139       | 13      | CTC_RET_Zx3         | hex://root/refs?skip32#skip32_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 81 c3
+140       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[8u](8u~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+141       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[8i](8i~in,32i)                        | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+142       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[16u](16u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+143       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[16i](16i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+144       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[32u](32u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+145       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[32i](32i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+146       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[64u](64u~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+147       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[64i](64i~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+148       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[32f](32f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+149       | 13      | CTC_RET_Zx3         | hex://root/refs?skip64#skip64_g[64f](64f~in,32i)                      | 0f 1f 44 00 00 48 63 c2 48 8d 04 c1 c3
+150       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[8u](8u~in,64i)                          | 0f 1f 44 00 00 48 8d 04 11 c3
+151       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[8i](8i~in,64i)                          | 0f 1f 44 00 00 48 8d 04 11 c3
+152       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[16u](16u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 51 c3
+153       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[16i](16i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 51 c3
+154       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32u](32u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
+155       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32i](32i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
+156       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64u](64u~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
+157       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64i](64i~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
+158       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32f](32f~in,64i)                        | 0f 1f 44 00 00 48 8d 04 91 c3
+159       | 10      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64f](64f~in,64i)                        | 0f 1f 44 00 00 48 8d 04 d1 c3
+160       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[8u](span8u)                               | 0f 1f 44 00 00 48 8b 01 c3
+161       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[8i](span8i)                               | 0f 1f 44 00 00 48 8b 01 c3
+162       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[16u](span16u)                             | 0f 1f 44 00 00 48 8b 01 c3
+163       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[16i](span16i)                             | 0f 1f 44 00 00 48 8b 01 c3
+164       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32u](span32u)                             | 0f 1f 44 00 00 48 8b 01 c3
+165       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32i](span32i)                             | 0f 1f 44 00 00 48 8b 01 c3
+166       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64u](span64u)                             | 0f 1f 44 00 00 48 8b 01 c3
+167       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64i](span64i)                             | 0f 1f 44 00 00 48 8b 01 c3
+168       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32f](span32f)                             | 0f 1f 44 00 00 48 8b 01 c3
+169       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64f](span64f)                             | 0f 1f 44 00 00 48 8b 01 c3
+170       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?head#head_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+171       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?head#head_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+172       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+173       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+174       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+175       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+176       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+177       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+178       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+179       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+180       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[8u](uspan8u)                              | 0f 1f 44 00 00 48 8b 01 c3
+181       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[8i](uspan8i)                              | 0f 1f 44 00 00 48 8b 01 c3
+182       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[16u](uspan16u)                            | 0f 1f 44 00 00 48 8b 01 c3
+183       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[16i](uspan16i)                            | 0f 1f 44 00 00 48 8b 01 c3
+184       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32u](uspan32u)                            | 0f 1f 44 00 00 48 8b 01 c3
+185       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32i](uspan32i)                            | 0f 1f 44 00 00 48 8b 01 c3
+186       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64u](uspan64u)                            | 0f 1f 44 00 00 48 8b 01 c3
+187       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64i](uspan64i)                            | 0f 1f 44 00 00 48 8b 01 c3
+188       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[32f](uspan32f)                            | 0f 1f 44 00 00 48 8b 01 c3
+189       | 9       | CTC_RET_Zx3         | hex://root/refs?head#head_g[64f](uspan64f)                            | 0f 1f 44 00 00 48 8b 01 c3
+190       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?head#head_g[8u](uspan8u,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+191       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?head#head_g[8i](uspan8i,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+192       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[16u](uspan16u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+193       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[16i](uspan16i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+194       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32u](uspan32u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+195       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32i](uspan32i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+196       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64u](uspan64u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+197       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64i](uspan64i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+198       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[32f](uspan32f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+199       | 16      | CTC_RET_SBB         | hex://root/refs?head#head_g[64f](uspan64f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+200       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip#skip_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+201       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip#skip_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+202       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+203       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+204       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+205       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+206       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+207       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+208       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+209       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+210       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip#skip_g[8u](uspan8u,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+211       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip#skip_g[8i](uspan8i,32i)                          | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+212       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[16u](uspan16u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+213       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[16i](uspan16i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+214       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32u](uspan32u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+215       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32i](uspan32i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+216       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64u](uspan64u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+217       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64i](uspan64i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+218       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[32f](uspan32f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+219       | 16      | CTC_RET_SBB         | hex://root/refs?skip#skip_g[64f](uspan64f,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+220       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[8u]()                                     |  
+221       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[8i]()                                     |  
+222       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[16u]()                                    |  
+223       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[16i]()                                    |  
+224       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[32u]()                                    |  
+225       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[32i]()                                    |  
+226       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[64u]()                                    |  
+227       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[64i]()                                    |  
+228       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[32f]()                                    |  
+229       | 0       | CTC_Zx7             | hex://root/refs?head#head_g[64f]()                                    |  
+230       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek#seek_g[8u](span8u,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+231       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek#seek_g[8i](span8i,32i)                           | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+232       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[16u](span16u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+233       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[16i](span16i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+234       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[32u](span32u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+235       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[32i](span32i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+236       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[64u](span64u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+237       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[64i](span64i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+238       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[32f](span32f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+239       | 16      | CTC_RET_SBB         | hex://root/refs?seek#seek_g[64f](span64f,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+240       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[8u](span8u)                             | 0f 1f 44 00 00 48 8b 01 c3
+241       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[8i](span8i)                             | 0f 1f 44 00 00 48 8b 01 c3
+242       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[16u](span16u)                           | 0f 1f 44 00 00 48 8b 01 c3
+243       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[16i](span16i)                           | 0f 1f 44 00 00 48 8b 01 c3
+244       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32u](span32u)                           | 0f 1f 44 00 00 48 8b 01 c3
+245       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32i](span32i)                           | 0f 1f 44 00 00 48 8b 01 c3
+246       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64u](span64u)                           | 0f 1f 44 00 00 48 8b 01 c3
+247       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64i](span64i)                           | 0f 1f 44 00 00 48 8b 01 c3
+248       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32f](span32f)                           | 0f 1f 44 00 00 48 8b 01 c3
+249       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64f](span64f)                           | 0f 1f 44 00 00 48 8b 01 c3
+250       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[8u](span8u)                           | 0f 1f 44 00 00 48 8b 01 c3
+251       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[8i](span8i)                           | 0f 1f 44 00 00 48 8b 01 c3
+252       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[16u](span16u)                         | 0f 1f 44 00 00 48 8b 01 c3
+253       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[16i](span16i)                         | 0f 1f 44 00 00 48 8b 01 c3
+254       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32u](span32u)                         | 0f 1f 44 00 00 48 8b 01 c3
+255       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32i](span32i)                         | 0f 1f 44 00 00 48 8b 01 c3
+256       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64u](span64u)                         | 0f 1f 44 00 00 48 8b 01 c3
+257       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64i](span64i)                         | 0f 1f 44 00 00 48 8b 01 c3
+258       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32f](span32f)                         | 0f 1f 44 00 00 48 8b 01 c3
+259       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64f](span64f)                         | 0f 1f 44 00 00 48 8b 01 c3
+260       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[8u](span8u)                           | 0f 1f 44 00 00 48 8b 01 c3
+261       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[8i](span8i)                           | 0f 1f 44 00 00 48 8b 01 c3
+262       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[16u](span16u)                         | 0f 1f 44 00 00 48 8b 01 c3
+263       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[16i](span16i)                         | 0f 1f 44 00 00 48 8b 01 c3
+264       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32u](span32u)                         | 0f 1f 44 00 00 48 8b 01 c3
+265       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32i](span32i)                         | 0f 1f 44 00 00 48 8b 01 c3
+266       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64u](span64u)                         | 0f 1f 44 00 00 48 8b 01 c3
+267       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64i](span64i)                         | 0f 1f 44 00 00 48 8b 01 c3
+268       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32f](span32f)                         | 0f 1f 44 00 00 48 8b 01 c3
+269       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64f](span64f)                         | 0f 1f 44 00 00 48 8b 01 c3
+270       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[8u](uspan8u)                            | 0f 1f 44 00 00 48 8b 01 c3
+271       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[8i](uspan8i)                            | 0f 1f 44 00 00 48 8b 01 c3
+272       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[16u](uspan16u)                          | 0f 1f 44 00 00 48 8b 01 c3
+273       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[16i](uspan16i)                          | 0f 1f 44 00 00 48 8b 01 c3
+274       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32u](uspan32u)                          | 0f 1f 44 00 00 48 8b 01 c3
+275       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32i](uspan32i)                          | 0f 1f 44 00 00 48 8b 01 c3
+276       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64u](uspan64u)                          | 0f 1f 44 00 00 48 8b 01 c3
+277       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64i](uspan64i)                          | 0f 1f 44 00 00 48 8b 01 c3
+278       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[32f](uspan32f)                          | 0f 1f 44 00 00 48 8b 01 c3
+279       | 9       | CTC_RET_Zx3         | hex://root/refs?head8#head8_g[64f](uspan64f)                          | 0f 1f 44 00 00 48 8b 01 c3
+280       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
+281       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
+282       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
+283       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
+284       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
+285       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
+286       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
+287       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
+288       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
+289       | 9       | CTC_RET_Zx3         | hex://root/refs?head16#head16_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
+290       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[8u](span8u)                           |  
+291       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[8i](span8i)                           |  
+292       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[16u](span16u)                         |  
+293       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[16i](span16i)                         |  
+294       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[32u](span32u)                         |  
+295       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[32i](span32i)                         |  
+296       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[64u](span64u)                         |  
+297       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[64i](span64i)                         |  
+298       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[32f](span32f)                         |  
+299       | 0       | CTC_Zx7             | hex://root/refs?head64#head64_g[64f](span64f)                         |  
+300       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
+301       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
+302       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
+303       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
+304       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
+305       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
+306       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
+307       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
+308       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
+309       | 9       | CTC_RET_Zx3         | hex://root/refs?head32#head32_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
+310       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[8u](uspan8u)                          | 0f 1f 44 00 00 48 8b 01 c3
+311       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[8i](uspan8i)                          | 0f 1f 44 00 00 48 8b 01 c3
+312       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[16u](uspan16u)                        | 0f 1f 44 00 00 48 8b 01 c3
+313       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[16i](uspan16i)                        | 0f 1f 44 00 00 48 8b 01 c3
+314       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[32u](uspan32u)                        | 0f 1f 44 00 00 48 8b 01 c3
+315       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[32i](uspan32i)                        | 0f 1f 44 00 00 48 8b 01 c3
+316       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[64u](uspan64u)                        | 0f 1f 44 00 00 48 8b 01 c3
+317       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[64i](uspan64i)                        | 0f 1f 44 00 00 48 8b 01 c3
+318       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[32f](uspan32f)                        | 0f 1f 44 00 00 48 8b 01 c3
+319       | 9       | CTC_RET_Zx3         | hex://root/refs?head64#head64_g[64f](uspan64f)                        | 0f 1f 44 00 00 48 8b 01 c3
+320       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[8u](span8u,64i)                         | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+321       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[8i](span8i,64i)                         | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+322       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[16u](span16u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+323       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[16i](span16i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+324       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[32u](span32u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+325       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[32i](span32i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+326       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[64u](span64u,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+327       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[64i](span64i,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+328       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[32f](span32f,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+329       | 12      | CTC_RET_SBB         | hex://root/refs?seekb#seekb_g[64f](span64f,64i)                       | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+330       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[8u](span8u,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+331       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[8i](span8i,32i)                         | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+332       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[16u](span16u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+333       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[16i](span16i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+334       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[32u](span32u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+335       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[32i](span32i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+336       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[64u](span64u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+337       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[64i](span64i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+338       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[32f](span32f,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+339       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?seek8#seek8_g[64f](span64f,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+340       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+341       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+342       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+343       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+344       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+345       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+346       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+347       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+348       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+349       | 16      | CTC_RET_SBB         | hex://root/refs?seek16#seek16_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+350       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+351       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+352       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+353       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+354       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+355       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+356       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+357       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+358       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+359       | 16      | CTC_RET_SBB         | hex://root/refs?seek32#seek32_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+360       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[8u](span8u,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+361       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[8i](span8i,32i)                       | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+362       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[16u](span16u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+363       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[16i](span16i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+364       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[32u](span32u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+365       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[32i](span32i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+366       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[64u](span64u,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+367       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[64i](span64i,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+368       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[32f](span32f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+369       | 16      | CTC_RET_SBB         | hex://root/refs?seek64#seek64_g[64f](span64f,32i)                     | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+370       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[8u](uspan8u,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+371       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[8i](uspan8i,32i)                        | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+372       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[16u](uspan16u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+373       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[16i](uspan16i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+374       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[32u](uspan32u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+375       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[32i](uspan32i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+376       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[64u](uspan64u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+377       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[64i](uspan64i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+378       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[32f](uspan32f,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+379       | 15      | CTC_RET_ZED_SBB     | hex://root/refs?skip8#skip8_g[64f](uspan64f,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 03 c2 c3
+380       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+381       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+382       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+383       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+384       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+385       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+386       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+387       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+388       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+389       | 16      | CTC_RET_SBB         | hex://root/refs?skip16#skip16_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 50 c3
+390       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+391       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+392       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+393       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+394       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+395       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+396       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+397       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+398       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+399       | 16      | CTC_RET_SBB         | hex://root/refs?skip32#skip32_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 90 c3
+400       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[8u](uspan8u,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+401       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[8i](uspan8i,32i)                      | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+402       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[16u](uspan16u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+403       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[16i](uspan16i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+404       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[32u](uspan32u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+405       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[32i](uspan32i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+406       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[64u](uspan64u,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+407       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[64i](uspan64i,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+408       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[32f](uspan32f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+409       | 16      | CTC_RET_SBB         | hex://root/refs?skip64#skip64_g[64f](uspan64f,32i)                    | 0f 1f 44 00 00 48 8b 01 48 63 d2 48 8d 04 d0 c3
+410       | 12      | CTC_RET_SBB         | hex://root/refs?skipb#skipb_g[8u](uspan8u,64i)                        | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+411       | 12      | CTC_RET_SBB         | hex://root/refs?skipb#skipb_g[8i](uspan8i,64i)                        | 0f 1f 44 00 00 48 8b 01 48 03 c2 c3
+412       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[16u](uspan16u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 50 c3
+413       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[16i](uspan16i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 50 c3
+414       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32u](uspan32u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
+415       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32i](uspan32i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
+416       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64u](uspan64u,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
+417       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64i](uspan64i,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
+418       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[32f](uspan32f,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 90 c3
+419       | 13      | CTC_RET_Zx3         | hex://root/refs?skipb#skipb_g[64f](uspan64f,64i)                      | 0f 1f 44 00 00 48 8b 01 48 8d 04 d0 c3
+420       | 0       | CTC_Zx7             | hex://root/refs?head32i#head32i_(uspan8u)                             |  
+421       | 0       | CTC_Zx7             | hex://root/refs?head64i#head64i_(uspan8u)                             |  
