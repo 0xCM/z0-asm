@@ -21,8 +21,8 @@ Sequence  | Length  | TermCode            | Uri                                 
 19        | 18      | CTC_RET_INTR        | hex://gmath/gfp?negate#negate_g[64f](64f)                             | c5 f8 77 66 90 c5 fb 10 0d 0b 00 00 00 c5 f8 57 c1 c3
 20        | 25      | CTC_RET_INTR        | hex://gmath/gfp?nonzero#nonzero_g[32f](32f)                           | c5 f8 77 66 90 c5 f0 57 c9 c5 f8 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3
 21        | 25      | CTC_RET_INTR        | hex://gmath/gfp?nonzero#nonzero_g[64f](64f)                           | c5 f8 77 66 90 c5 f0 57 c9 c5 f9 2e c1 0f 9a c0 7a 03 0f 95 c0 0f b6 c0 c3
-22        | 18      | CTC_RET_Zx3         | hex://gmath/gfp?signum#signum_g[32f](32f)                             | 48 83 ec 28 c5 f8 77 e8 54 27 7b ff 90 48 83 c4 28 c3
-23        | 18      | CTC_RET_Zx3         | hex://gmath/gfp?signum#signum_g[64f](64f)                             | 48 83 ec 28 c5 f8 77 e8 fc 26 7b ff 90 48 83 c4 28 c3
+22        | 18      | CTC_RET_Zx3         | hex://gmath/gfp?signum#signum_g[32f](32f)                             | 48 83 ec 28 c5 f8 77 e8 94 2b 7b ff 90 48 83 c4 28 c3
+23        | 18      | CTC_RET_Zx3         | hex://gmath/gfp?signum#signum_g[64f](64f)                             | 48 83 ec 28 c5 f8 77 e8 3c 2b 7b ff 90 48 83 c4 28 c3
 24        | 10      | CTC_RET_INTR        | hex://gmath/gfp?square#square_g[32f](32f)                             | c5 f8 77 66 90 c5 fa 59 c0 c3
 25        | 10      | CTC_RET_INTR        | hex://gmath/gfp?square#square_g[64f](64f)                             | c5 f8 77 66 90 c5 fb 59 c0 c3
 26        | 10      | CTC_RET_INTR        | hex://gmath/gfp?sub#sub_g[32f](32f,32f)                               | c5 f8 77 66 90 c5 fa 5c c1 c3
