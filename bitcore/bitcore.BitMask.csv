@@ -1,150 +1,150 @@
-Sequence  | Length  | TermCode            | Uri                                                                   | Data
-0         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n2,8u)                 | 0f 1f 44 00 00 b8 18 00 00 00 c3
-1         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n2,16u)               | 0f 1f 44 00 00 b8 18 18 00 00 c3
-2         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n2,32u)               | 0f 1f 44 00 00 b8 18 18 18 18 c3
-3         | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n2,64u)               | 0f 1f 44 00 00 48 b8 18 18 18 18 18 18 18 18 c3
-4         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n4,8u)                 | 0f 1f 44 00 00 b8 3c 00 00 00 c3
-5         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n4,16u)               | 0f 1f 44 00 00 b8 3c 3c 00 00 c3
-6         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n4,32u)               | 0f 1f 44 00 00 b8 3c 3c 3c 3c c3
-7         | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n4,64u)               | 0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c c3
-8         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n6,8u)                 | 0f 1f 44 00 00 b8 7e 00 00 00 c3
-9         | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n6,16u)               | 0f 1f 44 00 00 b8 7e 7e 00 00 c3
-10        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n6,32u)               | 0f 1f 44 00 00 b8 7e 7e 7e 7e c3
-11        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n6,64u)               | 0f 1f 44 00 00 48 b8 7e 7e 7e 7e 7e 7e 7e 7e c3
-12        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n1,8u)                    | 0f 1f 44 00 00 b8 99 00 00 00 c3
-13        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n1,16u)                  | 0f 1f 44 00 00 b8 99 99 00 00 c3
-14        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n1,32u)                  | 0f 1f 44 00 00 b8 99 99 99 99 c3
-15        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n2,n1,64u)                  | 0f 1f 44 00 00 48 b8 99 99 99 99 99 99 99 99 c3
-16        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n2,8u)                    | 0f 1f 44 00 00 b8 db 00 00 00 c3
-17        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n2,16u)                  | 0f 1f 44 00 00 b8 db db 00 00 c3
-18        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n2,32u)                  | 0f 1f 44 00 00 b8 db db db db c3
-19        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n2,n2,64u)                  | 0f 1f 44 00 00 48 b8 db db db db db db db db c3
-20        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n4,n1,8u)                    | 0f 1f 44 00 00 b8 bd 00 00 00 c3
-21        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n4,n1,16u)                  | 0f 1f 44 00 00 b8 bd 99 00 00 c3
-22        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n4,n1,32u)                  | 0f 1f 44 00 00 b8 bd 99 99 99 c3
-23        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n4,n1,64u)                  | 0f 1f 44 00 00 48 b8 bd 99 99 99 99 99 99 99 c3
-24        | 45      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[8u](8u,8u)                      | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 f0 f3 d2 0f b6 d1 0f b6 c8 d3 e2 0f b6 c2 35 ff 00 00 00 0f b6 c0 c3
-25        | 45      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[16u](8u,8u)                     | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 f0 f3 d2 0f b7 d1 0f b6 c8 d3 e2 0f b7 c2 35 ff ff 00 00 0f b7 c0 c3
-26        | 35      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[32u](8u,8u)                     | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 e8 f3 d2 0f b6 c8 d3 e2 8b c2 f7 d0 c3
-27        | 38      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[64u](8u,8u)                     | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 e8 f3 d2 0f b6 c8 48 d3 e2 48 8b c2 48 f7 d0 c3
-28        | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[8u](32i,8u)                             | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 08 48 d3 e2 0f b6 c2 c3
-29        | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[16u](32i,16u)                           | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 10 48 d3 e2 0f b7 c2 c3
-30        | 35      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[32u](32i,32u)                           | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 20 48 d3 e2 8b c2 c3
-31        | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[64u](32i,64u)                           | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 40 48 d3 e2 48 8b c2 c3
-32        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n1,8u)                         | 0f 1f 44 00 00 b8 81 00 00 00 c3
-33        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n1,16u)                       | 0f 1f 44 00 00 b8 81 81 00 00 c3
-34        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n1,32u)                       | 0f 1f 44 00 00 b8 81 81 81 81 c3
-35        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n1,64u)                       | 0f 1f 44 00 00 48 b8 81 81 81 81 81 81 81 81 c3
-36        | 7       | CTC_RET_Zx3         | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n2,8u)                         | 0f 1f 44 00 00 b8 c3
-37        | 8       | CTC_RET_Zx3         | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n2,16u)                       | 0f 1f 44 00 00 b8 c3 c3
-38        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n2,32u)                       | 0f 1f 44 00 00 b8 c3 c3 c3 c3 c3
-39        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n2,64u)                       | 0f 1f 44 00 00 48 b8 c3 c3 c3 c3 c3 c3 c3 c3 c3
-40        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n3,8u)                         | 0f 1f 44 00 00 b8 e7 00 00 00 c3
-41        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n3,16u)                       | 0f 1f 44 00 00 b8 e7 e7 00 00 c3
-42        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n3,32u)                       | 0f 1f 44 00 00 b8 e7 e7 e7 e7 c3
-43        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n3,64u)                       | 0f 1f 44 00 00 48 b8 e7 e7 e7 e7 e7 e7 e7 e7 c3
-44        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 81 00 00 00 c3
-45        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 81 81 00 00 c3
-46        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 81 81 81 81 c3
-47        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 81 81 81 81 81 81 81 81 c3
-48        | 7       | CTC_RET_Zx3         | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 c3
-49        | 8       | CTC_RET_Zx3         | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 c3 c3
-50        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 c3 c3 c3 c3 c3
-51        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 c3 c3 c3 c3 c3 c3 c3 c3 c3
-52        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 e7 00 00 00 c3
-53        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 e7 e7 00 00 c3
-54        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 e7 e7 e7 e7 c3
-55        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 e7 e7 e7 e7 e7 e7 e7 e7 c3
-56        | 22      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[8u](32i,8u)                             | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 0f b6 c0 c3
-57        | 22      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[16u](32i,16u)                           | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 0f b7 c0 c3
-58        | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[32u](32i,32u)                           | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
-59        | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[64u](32i,64u)                           | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
-60        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n1,n1,8u)                         | 0f 1f 44 00 00 b8 01 00 00 00 c3
-61        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n1,n1,16u)                       | 0f 1f 44 00 00 b8 01 00 00 00 c3
-62        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n1,n1,32u)                       | 0f 1f 44 00 00 b8 01 00 00 00 c3
-63        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[64u](n1,n1,64u)                       | 0f 1f 44 00 00 b8 01 00 00 00 c3
-64        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n2,n1,8u)                         | 0f 1f 44 00 00 b8 55 00 00 00 c3
-65        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n2,n1,16u)                       | 0f 1f 44 00 00 b8 55 55 00 00 c3
-66        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n2,n1,32u)                       | 0f 1f 44 00 00 b8 55 55 55 55 c3
-67        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n2,n1,64u)                       | 0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3
-68        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n4,n1,8u)                         | 0f 1f 44 00 00 b8 11 00 00 00 c3
-69        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n4,n1,16u)                       | 0f 1f 44 00 00 b8 11 11 00 00 c3
-70        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n4,n1,32u)                       | 0f 1f 44 00 00 b8 11 11 11 11 c3
-71        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n4,n1,64u)                       | 0f 1f 44 00 00 48 b8 11 11 11 11 11 11 11 11 c3
-72        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n1,8u)                         | 0f 1f 44 00 00 b8 01 00 00 00 c3
-73        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n1,16u)                       | 0f 1f 44 00 00 b8 01 01 00 00 c3
-74        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n1,32u)                       | 0f 1f 44 00 00 b8 01 01 01 01 c3
-75        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n1,64u)                       | 0f 1f 44 00 00 48 b8 01 01 01 01 01 01 01 01 c3
-76        | 8       | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[8u](n16,n1,8u)                        | 0f 1f 44 00 00 33 c0 c3
-77        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n16,n1,16u)                      | 0f 1f 44 00 00 b8 01 00 00 00 c3
-78        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n16,n1,32u)                      | 0f 1f 44 00 00 b8 01 00 01 00 c3
-79        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n16,n1,64u)                      | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
-80        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n2,8u)                         | 0f 1f 44 00 00 b8 03 00 00 00 c3
-81        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n2,16u)                       | 0f 1f 44 00 00 b8 03 03 00 00 c3
-82        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n2,32u)                       | 0f 1f 44 00 00 b8 03 03 03 03 c3
-83        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n2,64u)                       | 0f 1f 44 00 00 48 b8 03 03 03 03 03 03 03 03 c3
-84        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n3,8u)                         | 0f 1f 44 00 00 b8 07 00 00 00 c3
-85        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n3,16u)                       | 0f 1f 44 00 00 b8 07 07 00 00 c3
-86        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n3,32u)                       | 0f 1f 44 00 00 b8 07 07 07 07 c3
-87        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n3,64u)                       | 0f 1f 44 00 00 48 b8 07 07 07 07 07 07 07 07 c3
-88        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n4,8u)                         | 0f 1f 44 00 00 b8 0f 00 00 00 c3
-89        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n4,16u)                       | 0f 1f 44 00 00 b8 0f 0f 00 00 c3
-90        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n4,32u)                       | 0f 1f 44 00 00 b8 0f 0f 0f 0f c3
-91        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n4,64u)                       | 0f 1f 44 00 00 48 b8 0f 0f 0f 0f 0f 0f 0f 0f c3
-92        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n5,8u)                         | 0f 1f 44 00 00 b8 1f 00 00 00 c3
-93        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n5,16u)                       | 0f 1f 44 00 00 b8 1f 1f 00 00 c3
-94        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n5,32u)                       | 0f 1f 44 00 00 b8 1f 1f 1f 1f c3
-95        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n5,64u)                       | 0f 1f 44 00 00 48 b8 1f 1f 1f 1f 1f 1f 1f 1f c3
-96        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n6,8u)                         | 0f 1f 44 00 00 b8 3f 00 00 00 c3
-97        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n6,16u)                       | 0f 1f 44 00 00 b8 3f 3f 00 00 c3
-98        | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n6,32u)                       | 0f 1f 44 00 00 b8 3f 3f 3f 3f c3
-99        | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n6,64u)                       | 0f 1f 44 00 00 48 b8 3f 3f 3f 3f 3f 3f 3f 3f c3
-100       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n7,8u)                         | 0f 1f 44 00 00 b8 7f 00 00 00 c3
-101       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n7,16u)                       | 0f 1f 44 00 00 b8 7f 7f 00 00 c3
-102       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n7,32u)                       | 0f 1f 44 00 00 b8 7f 7f 7f 7f c3
-103       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n7,64u)                       | 0f 1f 44 00 00 48 b8 7f 7f 7f 7f 7f 7f 7f 7f c3
-104       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 01 00 00 00 c3
-105       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 01 00 00 00 c3
-106       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 01 00 00 00 c3
-107       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 b8 01 00 00 00 c3
-108       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 55 00 00 00 c3
-109       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 55 55 00 00 c3
-110       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 55 55 55 55 c3
-111       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3
-112       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 11 00 00 00 c3
-113       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 11 11 00 00 c3
-114       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 11 11 11 11 c3
-115       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 11 11 11 11 11 11 11 11 c3
-116       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 01 00 00 00 c3
-117       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 01 01 00 00 c3
-118       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 01 01 01 01 c3
-119       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 01 01 01 01 01 01 01 01 c3
-120       | 8       | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 33 c0 c3
-121       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 01 00 00 00 c3
-122       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 01 00 01 00 c3
-123       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
-124       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 07 00 00 00 c3
-125       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 07 07 00 00 c3
-126       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 07 07 07 07 c3
-127       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 07 07 07 07 07 07 07 07 c3
-128       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 0f 00 00 00 c3
-129       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 0f 0f 00 00 c3
-130       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 0f 0f 0f 0f c3
-131       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 0f 0f 0f 0f 0f 0f 0f 0f c3
-132       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 1f 00 00 00 c3
-133       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 1f 1f 00 00 c3
-134       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 1f 1f 1f 1f c3
-135       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 1f 1f 1f 1f 1f 1f 1f 1f c3
-136       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 3f 00 00 00 c3
-137       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 3f 3f 00 00 c3
-138       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 3f 3f 3f 3f c3
-139       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 3f 3f 3f 3f 3f 3f 3f 3f c3
-140       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                               | 0f 1f 44 00 00 b8 7f 00 00 00 c3
-141       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                              | 0f 1f 44 00 00 b8 7f 7f 00 00 c3
-142       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                              | 0f 1f 44 00 00 b8 7f 7f 7f 7f c3
-143       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                              | 0f 1f 44 00 00 48 b8 7f 7f 7f 7f 7f 7f 7f 7f c3
-144       | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo64#lo64_(32i)                                 | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
-145       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb64#lsb64_(n16,n1)                            | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
-146       | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_(n32,n1,32u)                            | 0f 1f 44 00 00 b8 01 00 00 00 c3
-147       | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb64#lsb64_(n32,n1,64u)                        | 0f 1f 44 00 00 48 b8 01 00 00 00 01 00 00 00 c3
-148       | 24      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb8f#lsb8f_(8u)                                | 0f 1f 44 00 00 0f b6 c9 f7 d9 83 c1 08 b8 ff 00 00 00 d3 f8 0f b6 c0 c3
+Sequence  | Address         | Length  | TermCode            | Uri                                                                                       | Data
+0         | 7ff7c80fe330h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n2,8u)                                     | 0f 1f 44 00 00 b8 18 00 00 00 c3
+1         | 7ff7c80fe350h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n2,16u)                                   | 0f 1f 44 00 00 b8 18 18 00 00 c3
+2         | 7ff7c80fe370h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n2,32u)                                   | 0f 1f 44 00 00 b8 18 18 18 18 c3
+3         | 7ff7c80fe390h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n2,64u)                                   | 0f 1f 44 00 00 48 b8 18 18 18 18 18 18 18 18 c3
+4         | 7ff7c80fe3b0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n4,8u)                                     | 0f 1f 44 00 00 b8 3c 00 00 00 c3
+5         | 7ff7c80fe3d0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n4,16u)                                   | 0f 1f 44 00 00 b8 3c 3c 00 00 c3
+6         | 7ff7c80fe3f0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n4,32u)                                   | 0f 1f 44 00 00 b8 3c 3c 3c 3c c3
+7         | 7ff7c80fe410h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n4,64u)                                   | 0f 1f 44 00 00 48 b8 3c 3c 3c 3c 3c 3c 3c 3c c3
+8         | 7ff7c80fe430h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[8u](n8,n6,8u)                                     | 0f 1f 44 00 00 b8 7e 00 00 00 c3
+9         | 7ff7c80fe470h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[16u](n8,n6,16u)                                   | 0f 1f 44 00 00 b8 7e 7e 00 00 c3
+10        | 7ff7c80fe490h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?central#central_g[32u](n8,n6,32u)                                   | 0f 1f 44 00 00 b8 7e 7e 7e 7e c3
+11        | 7ff7c80fe4b0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?central#central_g[64u](n8,n6,64u)                                   | 0f 1f 44 00 00 48 b8 7e 7e 7e 7e 7e 7e 7e 7e c3
+12        | 7ff7c80fe4d0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n1,8u)                                        | 0f 1f 44 00 00 b8 99 00 00 00 c3
+13        | 7ff7c80fe4f0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n1,16u)                                      | 0f 1f 44 00 00 b8 99 99 00 00 c3
+14        | 7ff7c80fe510h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n1,32u)                                      | 0f 1f 44 00 00 b8 99 99 99 99 c3
+15        | 7ff7c80fe530h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n2,n1,64u)                                      | 0f 1f 44 00 00 48 b8 99 99 99 99 99 99 99 99 c3
+16        | 7ff7c80fe550h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n2,8u)                                        | 0f 1f 44 00 00 b8 db 00 00 00 c3
+17        | 7ff7c80fe570h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n2,16u)                                      | 0f 1f 44 00 00 b8 db db 00 00 c3
+18        | 7ff7c80fe590h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n2,32u)                                      | 0f 1f 44 00 00 b8 db db db db c3
+19        | 7ff7c80fe5b0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n2,n2,64u)                                      | 0f 1f 44 00 00 48 b8 db db db db db db db db c3
+20        | 7ff7c80fe9e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n4,n1,8u)                                        | 0f 1f 44 00 00 b8 bd 00 00 00 c3
+21        | 7ff7c80fea00h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n4,n1,16u)                                      | 0f 1f 44 00 00 b8 bd 99 00 00 c3
+22        | 7ff7c80fea20h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n4,n1,32u)                                      | 0f 1f 44 00 00 b8 bd 99 99 99 c3
+23        | 7ff7c80fea40h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n4,n1,64u)                                      | 0f 1f 44 00 00 48 b8 bd 99 99 99 99 99 99 99 c3
+24        | 7ff7c80fea60h   | 45      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[8u](8u,8u)                                          | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 f0 f3 d2 0f b6 d1 0f b6 c8 d3 e2 0f b6 c2 35 ff 00 00 00 0f b6 c0 c3
+25        | 7ff7c80feaa0h   | 45      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[16u](8u,8u)                                         | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 f0 f3 d2 0f b7 d1 0f b6 c8 d3 e2 0f b7 c2 35 ff ff 00 00 0f b7 c0 c3
+26        | 7ff7c80feae0h   | 35      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[32u](8u,8u)                                         | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 e8 f3 d2 0f b6 c8 d3 e2 8b c2 f7 d0 c3
+27        | 7ff7c80feb20h   | 38      | CTC_RET_INTR        | hex://bitcore/BitMask?eraser#eraser_g[64u](8u,8u)                                         | 0f 1f 44 00 00 8b c1 0f b6 ca ff c9 ba 01 00 00 00 48 d3 e2 c4 e2 e8 f3 d2 0f b6 c8 48 d3 e2 48 8b c2 48 f7 d0 c3
+28        | 7ff7c80feb60h   | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[8u](32i,8u)                                                 | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 08 48 d3 e2 0f b6 c2 c3
+29        | 7ff7c80feba0h   | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[16u](32i,16u)                                               | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 10 48 d3 e2 0f b7 c2 c3
+30        | 7ff7c80febe0h   | 35      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[32u](32i,32u)                                               | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 20 48 d3 e2 8b c2 c3
+31        | 7ff7c80fec20h   | 36      | CTC_RET_INTR        | hex://bitcore/BitMask?hi#hi_g[64u](32i,64u)                                               | 0f 1f 44 00 00 8b c1 ba 01 00 00 00 8b c8 48 d3 e2 c4 e2 e8 f3 d2 8b c8 f7 d9 83 c1 40 48 d3 e2 48 8b c2 c3
+32        | 7ff7c80fec60h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n1,8u)                                             | 0f 1f 44 00 00 b8 81 00 00 00 c3
+33        | 7ff7c80fec80h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n1,16u)                                           | 0f 1f 44 00 00 b8 81 81 00 00 c3
+34        | 7ff7c80feca0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n1,32u)                                           | 0f 1f 44 00 00 b8 81 81 81 81 c3
+35        | 7ff7c80fecc0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n1,64u)                                           | 0f 1f 44 00 00 48 b8 81 81 81 81 81 81 81 81 c3
+36        | 7ff7c80fece0h   | 7       | CTC_RET_Zx3         | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n2,8u)                                             | 0f 1f 44 00 00 b8 c3
+37        | 7ff7c80fed00h   | 8       | CTC_RET_Zx3         | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n2,16u)                                           | 0f 1f 44 00 00 b8 c3 c3
+38        | 7ff7c80fed20h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n2,32u)                                           | 0f 1f 44 00 00 b8 c3 c3 c3 c3 c3
+39        | 7ff7c80fed40h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n2,64u)                                           | 0f 1f 44 00 00 48 b8 c3 c3 c3 c3 c3 c3 c3 c3 c3
+40        | 7ff7c80fed60h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[8u](n8,n3,8u)                                             | 0f 1f 44 00 00 b8 e7 00 00 00 c3
+41        | 7ff7c80fed80h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[16u](n8,n3,16u)                                           | 0f 1f 44 00 00 b8 e7 e7 00 00 c3
+42        | 7ff7c80feda0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?jsb#jsb_g[32u](n8,n3,32u)                                           | 0f 1f 44 00 00 b8 e7 e7 e7 e7 c3
+43        | 7ff7c80fedc0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?jsb#jsb_g[64u](n8,n3,64u)                                           | 0f 1f 44 00 00 48 b8 e7 e7 e7 e7 e7 e7 e7 e7 c3
+44        | 7ff7c80ff1f0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 81 00 00 00 c3
+45        | 7ff7c80ff210h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 81 81 00 00 c3
+46        | 7ff7c80ff230h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 81 81 81 81 c3
+47        | 7ff7c80ff250h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 81 81 81 81 81 81 81 81 c3
+48        | 7ff7c80ff680h   | 7       | CTC_RET_Zx3         | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 c3
+49        | 7ff7c80ff800h   | 8       | CTC_RET_Zx3         | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 c3 c3
+50        | 7ff7c80ff820h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 c3 c3 c3 c3 c3
+51        | 7ff7c80ffc50h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 c3 c3 c3 c3 c3 c3 c3 c3 c3
+52        | 7ff7c80ffc70h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 e7 00 00 00 c3
+53        | 7ff7c80ffc90h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 e7 e7 00 00 c3
+54        | 7ff7c80ffcb0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 e7 e7 e7 e7 c3
+55        | 7ff7c81000e0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 e7 e7 e7 e7 e7 e7 e7 e7 c3
+56        | 7ff7c8100100h   | 22      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[8u](32i,8u)                                                 | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 0f b6 c0 c3
+57        | 7ff7c8100130h   | 22      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[16u](32i,16u)                                               | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 0f b7 c0 c3
+58        | 7ff7c8100160h   | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[32u](32i,32u)                                               | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
+59        | 7ff7c8100190h   | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo#lo_g[64u](32i,64u)                                               | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
+60        | 7ff7c81001c0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n1,n1,8u)                                             | 0f 1f 44 00 00 b8 01 00 00 00 c3
+61        | 7ff7c81001e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n1,n1,16u)                                           | 0f 1f 44 00 00 b8 01 00 00 00 c3
+62        | 7ff7c8100200h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n1,n1,32u)                                           | 0f 1f 44 00 00 b8 01 00 00 00 c3
+63        | 7ff7c8100220h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[64u](n1,n1,64u)                                           | 0f 1f 44 00 00 b8 01 00 00 00 c3
+64        | 7ff7c8100240h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n2,n1,8u)                                             | 0f 1f 44 00 00 b8 55 00 00 00 c3
+65        | 7ff7c8100260h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n2,n1,16u)                                           | 0f 1f 44 00 00 b8 55 55 00 00 c3
+66        | 7ff7c8100280h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n2,n1,32u)                                           | 0f 1f 44 00 00 b8 55 55 55 55 c3
+67        | 7ff7c81002a0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n2,n1,64u)                                           | 0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3
+68        | 7ff7c81002c0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n4,n1,8u)                                             | 0f 1f 44 00 00 b8 11 00 00 00 c3
+69        | 7ff7c81002e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n4,n1,16u)                                           | 0f 1f 44 00 00 b8 11 11 00 00 c3
+70        | 7ff7c8100300h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n4,n1,32u)                                           | 0f 1f 44 00 00 b8 11 11 11 11 c3
+71        | 7ff7c8100320h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n4,n1,64u)                                           | 0f 1f 44 00 00 48 b8 11 11 11 11 11 11 11 11 c3
+72        | 7ff7c8100340h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n1,8u)                                             | 0f 1f 44 00 00 b8 01 00 00 00 c3
+73        | 7ff7c8100360h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n1,16u)                                           | 0f 1f 44 00 00 b8 01 01 00 00 c3
+74        | 7ff7c8100380h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n1,32u)                                           | 0f 1f 44 00 00 b8 01 01 01 01 c3
+75        | 7ff7c81003a0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n1,64u)                                           | 0f 1f 44 00 00 48 b8 01 01 01 01 01 01 01 01 c3
+76        | 7ff7c81003c0h   | 8       | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[8u](n16,n1,8u)                                            | 0f 1f 44 00 00 33 c0 c3
+77        | 7ff7c81003e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n16,n1,16u)                                          | 0f 1f 44 00 00 b8 01 00 00 00 c3
+78        | 7ff7c8100400h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n16,n1,32u)                                          | 0f 1f 44 00 00 b8 01 00 01 00 c3
+79        | 7ff7c8100420h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n16,n1,64u)                                          | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
+80        | 7ff7c8100440h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n2,8u)                                             | 0f 1f 44 00 00 b8 03 00 00 00 c3
+81        | 7ff7c8100460h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n2,16u)                                           | 0f 1f 44 00 00 b8 03 03 00 00 c3
+82        | 7ff7c8100480h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n2,32u)                                           | 0f 1f 44 00 00 b8 03 03 03 03 c3
+83        | 7ff7c81004a0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n2,64u)                                           | 0f 1f 44 00 00 48 b8 03 03 03 03 03 03 03 03 c3
+84        | 7ff7c81004c0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n3,8u)                                             | 0f 1f 44 00 00 b8 07 00 00 00 c3
+85        | 7ff7c81004e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n3,16u)                                           | 0f 1f 44 00 00 b8 07 07 00 00 c3
+86        | 7ff7c8100500h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n3,32u)                                           | 0f 1f 44 00 00 b8 07 07 07 07 c3
+87        | 7ff7c8100520h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n3,64u)                                           | 0f 1f 44 00 00 48 b8 07 07 07 07 07 07 07 07 c3
+88        | 7ff7c8100950h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n4,8u)                                             | 0f 1f 44 00 00 b8 0f 00 00 00 c3
+89        | 7ff7c8100970h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n4,16u)                                           | 0f 1f 44 00 00 b8 0f 0f 00 00 c3
+90        | 7ff7c8100990h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n4,32u)                                           | 0f 1f 44 00 00 b8 0f 0f 0f 0f c3
+91        | 7ff7c81009b0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n4,64u)                                           | 0f 1f 44 00 00 48 b8 0f 0f 0f 0f 0f 0f 0f 0f c3
+92        | 7ff7c81009d0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n5,8u)                                             | 0f 1f 44 00 00 b8 1f 00 00 00 c3
+93        | 7ff7c81009f0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n5,16u)                                           | 0f 1f 44 00 00 b8 1f 1f 00 00 c3
+94        | 7ff7c8100a10h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n5,32u)                                           | 0f 1f 44 00 00 b8 1f 1f 1f 1f c3
+95        | 7ff7c8100a30h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n5,64u)                                           | 0f 1f 44 00 00 48 b8 1f 1f 1f 1f 1f 1f 1f 1f c3
+96        | 7ff7c8100a50h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n6,8u)                                             | 0f 1f 44 00 00 b8 3f 00 00 00 c3
+97        | 7ff7c8100a70h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n6,16u)                                           | 0f 1f 44 00 00 b8 3f 3f 00 00 c3
+98        | 7ff7c8100a90h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n6,32u)                                           | 0f 1f 44 00 00 b8 3f 3f 3f 3f c3
+99        | 7ff7c8100ab0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n6,64u)                                           | 0f 1f 44 00 00 48 b8 3f 3f 3f 3f 3f 3f 3f 3f c3
+100       | 7ff7c8100ad0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[8u](n8,n7,8u)                                             | 0f 1f 44 00 00 b8 7f 00 00 00 c3
+101       | 7ff7c8100b10h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[16u](n8,n7,16u)                                           | 0f 1f 44 00 00 b8 7f 7f 00 00 c3
+102       | 7ff7c8100b30h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_g[32u](n8,n7,32u)                                           | 0f 1f 44 00 00 b8 7f 7f 7f 7f c3
+103       | 7ff7c8100b50h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb#lsb_g[64u](n8,n7,64u)                                           | 0f 1f 44 00 00 48 b8 7f 7f 7f 7f 7f 7f 7f 7f c3
+104       | 7ff7c8100b70h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 01 00 00 00 c3
+105       | 7ff7c8100fa0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 01 00 00 00 c3
+106       | 7ff7c8100fc0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 01 00 00 00 c3
+107       | 7ff7c8100fe0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 b8 01 00 00 00 c3
+108       | 7ff7c8101000h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 55 00 00 00 c3
+109       | 7ff7c8101430h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 55 55 00 00 c3
+110       | 7ff7c8101450h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 55 55 55 55 c3
+111       | 7ff7c8101470h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 55 55 55 55 55 55 55 55 c3
+112       | 7ff7c8101490h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 11 00 00 00 c3
+113       | 7ff7c81014b0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 11 11 00 00 c3
+114       | 7ff7c81018e0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 11 11 11 11 c3
+115       | 7ff7c8101900h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 11 11 11 11 11 11 11 11 c3
+116       | 7ff7c8101920h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 01 00 00 00 c3
+117       | 7ff7c8101940h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 01 01 00 00 c3
+118       | 7ff7c8101d70h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 01 01 01 01 c3
+119       | 7ff7c8101d90h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 01 01 01 01 01 01 01 01 c3
+120       | 7ff7c8101db0h   | 8       | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 33 c0 c3
+121       | 7ff7c8101dd0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 01 00 00 00 c3
+122       | 7ff7c8101df0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 01 00 01 00 c3
+123       | 7ff7c8102220h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
+124       | 7ff7c8102240h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 07 00 00 00 c3
+125       | 7ff7c8102260h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 07 07 00 00 c3
+126       | 7ff7c8102280h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 07 07 07 07 c3
+127       | 7ff7c81026b0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 07 07 07 07 07 07 07 07 c3
+128       | 7ff7c81026d0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 0f 00 00 00 c3
+129       | 7ff7c81026f0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 0f 0f 00 00 c3
+130       | 7ff7c8102710h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 0f 0f 0f 0f c3
+131       | 7ff7c8102b40h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 0f 0f 0f 0f 0f 0f 0f 0f c3
+132       | 7ff7c8102b60h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 1f 00 00 00 c3
+133       | 7ff7c8102b80h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 1f 1f 00 00 c3
+134       | 7ff7c8102ba0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 1f 1f 1f 1f c3
+135       | 7ff7c8102bc0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 1f 1f 1f 1f 1f 1f 1f 1f c3
+136       | 7ff7c8102ff0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 3f 00 00 00 c3
+137       | 7ff7c8103010h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 3f 3f 00 00 c3
+138       | 7ff7c8103030h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 3f 3f 3f 3f c3
+139       | 7ff7c8103050h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 3f 3f 3f 3f 3f 3f 3f 3f c3
+140       | 7ff7c8103480h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[8u]()                                                   | 0f 1f 44 00 00 b8 7f 00 00 00 c3
+141       | 7ff7c81034a0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[16u]()                                                  | 0f 1f 44 00 00 b8 7f 7f 00 00 c3
+142       | 7ff7c81034c0h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?mask#mask_g[32u]()                                                  | 0f 1f 44 00 00 b8 7f 7f 7f 7f c3
+143       | 7ff7c81034e0h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?mask#mask_g[64u]()                                                  | 0f 1f 44 00 00 48 b8 7f 7f 7f 7f 7f 7f 7f 7f c3
+144       | 7ff7c8103500h   | 19      | CTC_RET_INTR        | hex://bitcore/BitMask?lo64#lo64_(32i)                                                     | 0f 1f 44 00 00 b8 01 00 00 00 48 d3 e0 c4 e2 f8 f3 d0 c3
+145       | 7ff7c8103530h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb64#lsb64_(n16,n1)                                                | 0f 1f 44 00 00 48 b8 01 00 01 00 01 00 01 00 c3
+146       | 7ff7c8103550h   | 11      | CTC_RET_ZED_SBB     | hex://bitcore/BitMask?lsb#lsb_(n32,n1,32u)                                                | 0f 1f 44 00 00 b8 01 00 00 00 c3
+147       | 7ff7c8103570h   | 16      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb64#lsb64_(n32,n1,64u)                                            | 0f 1f 44 00 00 48 b8 01 00 00 00 01 00 00 00 c3
+148       | 7ff7c8103590h   | 24      | CTC_RET_SBB         | hex://bitcore/BitMask?lsb8f#lsb8f_(8u)                                                    | 0f 1f 44 00 00 0f b6 c9 f7 d9 83 c1 08 b8 ff 00 00 00 d3 f8 0f b6 c0 c3
