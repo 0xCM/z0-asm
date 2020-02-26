@@ -1534,7 +1534,7 @@
 0046h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 004bh lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
 0050h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0054h call 7ff7c77296d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef b8 19 ff}
+0054h call 7ff7c77496d8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ef b8 19 ff}
 0059h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 005ch add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0060h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -1564,7 +1564,7 @@
 0046h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 004bh lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
 0050h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0054h call 7ff7c77296e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 b8 19 ff}
+0054h call 7ff7c77496e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 77 b8 19 ff}
 0059h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 005ch add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 0060h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -1594,7 +1594,7 @@
 004ch lea rdx,[rsp+40h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 40}
 0051h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
 0056h movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-005ah call 7ff7c7729d80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 be 19 ff}
+005ah call 7ff7c7749d80h                      ; CALL rel32 || E8 cd || encoded[5]{e8 91 be 19 ff}
 005fh mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0062h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0065h add rsp,70h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 70}
@@ -2340,7 +2340,7 @@
 0023h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 0028h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
 002dh movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0031h call 7ff7c7728748h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 9b 19 ff}
+0031h call 7ff7c7748748h                      ; CALL rel32 || E8 cd || encoded[5]{e8 02 9b 19 ff}
 0036h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0039h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 003dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -2361,7 +2361,7 @@
 0023h lea rdx,[rsp+30h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 30}
 0028h lea r8,[rsp+20h]                        ; LEA r64, m || REX.W 8D /r || encoded[5]{4c 8d 44 24 20}
 002dh movzx r9d,r9b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c9}
-0031h call 7ff7c7728a90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 9d 19 ff}
+0031h call 7ff7c7748a90h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ea 9d 19 ff}
 0036h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0039h add rsp,40h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 40}
 003dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
@@ -2543,7 +2543,7 @@
 000bh vmovapd [rsp+20h],xmm0                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 44 24 20}
 0011h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0016h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-0019h call 7ff7c7729700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 a7 19 ff}
+0019h call 7ff7c7749700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 22 a7 19 ff}
 001eh nop                                     ; NOP || o32 90 || encoded[1]{90}
 001fh add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
@@ -2560,7 +2560,7 @@
 0012h vmovupd [rsp+20h],ymm0                  ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[6]{c5 fd 11 44 24 20}
 0018h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 001dh movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
-0021h call 7ff7c7729de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba ad 19 ff}
+0021h call 7ff7c7749de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba ad 19 ff}
 0026h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch add rsp,50h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 50}
@@ -2579,7 +2579,7 @@
 0012h vmovupd [rsp+20h],ymm0                  ; VMOVUPD ymm2/m256, ymm1 || VEX.256.66.0F.WIG 11 /r || encoded[6]{c5 fd 11 44 24 20}
 0018h lea rdx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 54 24 20}
 001dh movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
-0021h call 7ff7c7729de8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 ad 19 ff}
+0021h call 7ff7c7749de8h                      ; CALL rel32 || E8 cd || encoded[5]{e8 72 ad 19 ff}
 0026h mov rax,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c6}
 0029h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 002ch add rsp,50h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 50}
@@ -2595,7 +2595,7 @@
 000bh vmovapd [rsp+20h],xmm0                  ; VMOVAPD xmm2/m128, xmm1 || VEX.128.66.0F.WIG 29 /r || encoded[6]{c5 f9 29 44 24 20}
 0011h lea rcx,[rsp+20h]                       ; LEA r64, m || REX.W 8D /r || encoded[5]{48 8d 4c 24 20}
 0016h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-0019h call 7ff7c7729700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 a6 19 ff}
+0019h call 7ff7c7749700h                      ; CALL rel32 || E8 cd || encoded[5]{e8 42 a6 19 ff}
 001eh nop                                     ; NOP || o32 90 || encoded[1]{90}
 001fh add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
@@ -2616,7 +2616,7 @@
 0026h add rsp,38h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 38}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 002bh mov ecx,15h                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b9 15 00 00 00}
-0030h call 7ff7c77351c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b 5c 1a ff}
+0030h call 7ff7c77551c0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9b 5c 1a ff}
 ------------------------------------------------------------------------------------------------------------------------
 ; Vector128<float> vmaskload(ref float src, Vector128<float> mask), hex://intrinsics/dinxfp?vmaskload#vmaskload_(32f~ref,v128x32f)
 ; vmaskload_(32f~ref,v128x32f)[23] = {0xc5,0xf8,0x77,0x66,0x90,0xc4,0xc1,0x79,0x10,0x00,0xc4,0xe2,0x79,0x2c,0x02,0xc5,0xf9,0x11,0x01,0x48,0x8b,0xc1,0xc3}
