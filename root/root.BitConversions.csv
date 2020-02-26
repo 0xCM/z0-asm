@@ -1,9 +1,0 @@
-Sequence  | Address         | Length  | TermCode            | Uri                                                                                       | Data
-0         | 7ff7c8655e90h   | 9       | CTC_RET_Zx3         | hex://root/BitConversions?convert#convert_g[8u](1u)                                       | 0f 1f 44 00 00 0f b6 c1 c3
-1         | 7ff7c8655eb0h   | 9       | CTC_RET_Zx3         | hex://root/BitConversions?convert#convert_g[16u](1u)                                      | 0f 1f 44 00 00 0f b7 c1 c3
-2         | 7ff7c8655ed0h   | 8       | CTC_RET_SBB         | hex://root/BitConversions?convert#convert_g[32u](1u)                                      | 0f 1f 44 00 00 8b c1 c3
-3         | 7ff7c86562f0h   | 8       | CTC_RET_SBB         | hex://root/BitConversions?convert#convert_g[64u](1u)                                      | 0f 1f 44 00 00 8b c1 c3
-4         | 7ff7c8656310h   | 12      | CTC_RET_SBB         | hex://root/BitConversions?convert#convert_g[8u](8u)                                       | 0f 1f 44 00 00 0f b6 c1 83 e0 01 c3
-5         | 7ff7c8656330h   | 12      | CTC_RET_SBB         | hex://root/BitConversions?convert#convert_g[16u](16u)                                     | 0f 1f 44 00 00 0f b7 c1 83 e0 01 c3
-6         | 7ff7c8656350h   | 11      | CTC_RET_ZED_SBB     | hex://root/BitConversions?convert#convert_g[32u](32u)                                     | 0f 1f 44 00 00 83 e1 01 8b c1 c3
-7         | 7ff7c8656370h   | 11      | CTC_RET_ZED_SBB     | hex://root/BitConversions?convert#convert_g[64u](64u)                                     | 0f 1f 44 00 00 83 e1 01 8b c1 c3
