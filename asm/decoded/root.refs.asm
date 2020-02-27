@@ -1751,34 +1751,6 @@
 000bh lea rax,[rax+rdx*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 d0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ref double head<double>(Double[] src), hex://root/refs?head#head_g[64f]()
-; head_g[64f]()[63] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x17,0xd0,0xce,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x40,0xba,0xc1,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
-0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
-0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
-000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
-000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
-0013h ret                                     ; RET || C3 || encoded[1]{c3}
-0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 d0 ce 5e}
-0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
-001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
-001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
-0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
-0027h add [rax-46h],al                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 40 ba}
-002ah ror eax,0f7h                            ; ROR r/m32, imm8 || o32 C1 /1 ib || encoded[3]{c1 c8 f7}
-002dh jg short 002fh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
-002fh add [rdi],cl                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 0f}
-0031h (bad)                                   ; <invalid> || <invalid> || encoded[2]{1f 44}
-0033h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
-0035h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
-0038h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-003bh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
-003eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; ref byte seek<byte>(Span<byte> src, int count), hex://root/refs?seek#seek_g[8u](span8u,32i)
 ; seek_g[8u](span8u,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
