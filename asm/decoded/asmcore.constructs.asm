@@ -1,13 +1,13 @@
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<byte> alloc<byte>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[8u](32i)
-; alloc_g[8u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x10,0xea,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x36,0xca,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[8u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x10,0xea,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xb6,0x5a,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c772ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 72 c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 ca 41 5f}
+000bh mov rcx,7ff7c770ea10h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 ea 70 c7 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 5a 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -18,14 +18,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<sbyte> alloc<sbyte>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[8i](32i)
-; alloc_g[8i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x98,0xf0,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xe6,0x9e,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[8i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x98,0xf0,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x76,0x2f,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c772f098h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 98 f0 72 c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 9e 41 5f}
+000bh mov rcx,7ff7c770f098h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 98 f0 70 c7 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 76 2f 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -36,14 +36,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ushort> alloc<ushort>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[16u](32i)
-; alloc_g[16u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xd8,0x6d,0x05,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x96,0x9e,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[16u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x38,0x5e,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x26,0x2f,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c8056dd8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 6d 05 c8 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 96 9e 41 5f}
+000bh mov rcx,7ff7c8155e38h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 5e 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 2f 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -54,14 +54,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<short> alloc<short>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[16i](32i)
-; alloc_g[16i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xd8,0x73,0x05,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x46,0x9e,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[16i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x38,0x64,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0xd6,0x2e,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c80573d8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d8 73 05 c8 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 46 9e 41 5f}
+000bh mov rcx,7ff7c8156438h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 38 64 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 2e 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -72,14 +72,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<uint> alloc<uint>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[32u](32i)
-; alloc_g[32u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xb8,0x76,0x05,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0xf6,0x99,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[32u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x18,0x67,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x86,0x2e,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c80576b8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 b8 76 05 c8 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f6 99 41 5f}
+000bh mov rcx,7ff7c8156718h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 18 67 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 2e 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -90,14 +90,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<int> alloc<int>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[32i](32i)
-; alloc_g[32i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x48,0x5f,0x7f,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x86,0x98,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[32i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x48,0x5f,0x7d,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x06,0x29,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c77f5f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 5f 7f c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 86 98 41 5f}
+000bh mov rcx,7ff7c77d5f48h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 5f 7d c7 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 06 29 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -108,14 +108,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<ulong> alloc<ulong>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[64u](32i)
-; alloc_g[64u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xd0,0xf6,0xa1,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x36,0x98,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[64u](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x20,0x0f,0xa8,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xb6,0x28,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c7a1f6d0h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 d0 f6 a1 c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 36 98 41 5f}
+000bh mov rcx,7ff7c7a80f20h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 20 0f a8 c7 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b6 28 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -126,14 +126,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<long> alloc<long>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[64i](32i)
-; alloc_g[64i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x58,0x7f,0x05,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0xa6,0x95,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[64i](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xb8,0x6f,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x26,0x26,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c8057f58h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 7f 05 c8 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a6 95 41 5f}
+000bh mov rcx,7ff7c8156fb8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 b8 6f 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 26 26 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -144,14 +144,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<float> alloc<float>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[32f](32i)
-; alloc_g[32f](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x40,0x32,0xb9,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x56,0x94,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[32f](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0xb8,0x75,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0xd6,0x24,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c7b93240h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 40 32 b9 c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 56 94 41 5f}
+000bh mov rcx,7ff7c81575b8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 b8 75 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d6 24 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -162,14 +162,14 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Span<double> alloc<double>(int len), hex://asmcore/AsmConstructs?alloc#alloc_g[64f](32i)
-; alloc_g[64f](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x48,0x34,0xb9,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xe6,0x8e,0x41,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; alloc_g[64f](32i)[48] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0x63,0xd2,0x48,0xb9,0x18,0x7c,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x66,0x1f,0x19,0x5f,0x48,0x8d,0x50,0x10,0x8b,0x40,0x08,0x48,0x89,0x16,0x89,0x46,0x08,0x48,0x8b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
 0005h mov rsi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f1}
 0008h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
-000bh mov rcx,7ff7c7b93448h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 48 34 b9 c7 f7 7f 00 00}
-0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e6 8e 41 5f}
+000bh mov rcx,7ff7c8157c18h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 18 7c 15 c8 f7 7f 00 00}
+0015h call 7ff827266de0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 1f 19 5f}
 001ah lea rdx,[rax+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 50 10}
 001eh mov eax,[rax+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 40 08}
 0021h mov [rsi],rdx                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 16}
@@ -180,111 +180,111 @@
 002fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<byte>(), hex://asmcore/AsmConstructs?type#type_g[8u]()
-; type_g[8u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xec,0x0e,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[8u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x6c,0x9f,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 0e 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c 9f 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<sbyte>(), hex://asmcore/AsmConstructs?type#type_g[8i]()
-; type_g[8i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xac,0x0a,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[8i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x2c,0x9b,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 0a 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c 9b 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<ushort>(), hex://asmcore/AsmConstructs?type#type_g[16u]()
-; type_g[16u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x7c,0x0a,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[16u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xfc,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 7c 0a 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<short>(), hex://asmcore/AsmConstructs?type#type_g[16i]()
-; type_g[16i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x4c,0x0a,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[16i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xcc,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c 0a 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<uint>(), hex://asmcore/AsmConstructs?type#type_g[32u]()
-; type_g[32u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x1c,0x0a,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[32u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x9c,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c 0a 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9c 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<int>(), hex://asmcore/AsmConstructs?type#type_g[32i]()
-; type_g[32i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xec,0x09,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[32i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x6c,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec 09 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<ulong>(), hex://asmcore/AsmConstructs?type#type_g[64u]()
-; type_g[64u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xbc,0x09,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[64u]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x3c,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 09 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<long>(), hex://asmcore/AsmConstructs?type#type_g[64i]()
-; type_g[64i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x8c,0x09,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[64i]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x0c,0x9a,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8c 09 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 0c 9a 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<float>(), hex://asmcore/AsmConstructs?type#type_g[32f]()
-; type_g[32f]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x5c,0x09,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[32f]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xdc,0x99,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5c 09 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc 99 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Type type<double>(), hex://asmcore/AsmConstructs?type#type_g[64f]()
-; type_g[64f]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x72,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x2c,0x09,0x3c,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; type_g[64f]()[26] = {0x48,0x83,0xec,0x28,0x90,0x48,0xb9,0xf8,0x25,0x70,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xac,0x99,0x13,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
-0005h mov rcx,7ff7c77225f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 72 c7 f7 7f 00 00}
-000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 2c 09 3c 5f}
+0005h mov rcx,7ff7c77025f8h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 f8 25 70 c7 f7 7f 00 00}
+000fh call 7ff82720eff0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac 99 13 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
@@ -315,28 +315,28 @@
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; int for_min_max(), hex://asmcore/AsmConstructs?for_min_max#for_min_max_()
-; for_min_max_()[98] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0xb9,0x58,0x61,0xc1,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0xdb,0x7a,0x41,0x5f,0x48,0x8b,0xf0,0x33,0xc9,0x89,0x4e,0x08,0x48,0xb9,0x10,0x97,0x05,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0xc4,0x7a,0x41,0x5f,0x48,0x8b,0xf8,0x48,0x8d,0x4f,0x08,0x48,0x8b,0xd6,0xe8,0xf5,0x6b,0x41,0x5f,0x49,0xb8,0xd8,0xb9,0xa3,0xc7,0xf7,0x7f,0x00,0x00,0x4c,0x89,0x47,0x18,0x4c,0x8b,0xc7,0x33,0xc9,0xba,0x08,0x00,0x00,0x00,0xe8,0xf8,0xf7,0xff,0xff,0x8b,0x46,0x08,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; for_min_max_()[98] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0xb9,0x20,0x8b,0xbf,0xc7,0xf7,0x7f,0x00,0x00,0xe8,0x5b,0x0b,0x19,0x5f,0x48,0x8b,0xf0,0x33,0xc9,0x89,0x4e,0x08,0x48,0xb9,0x80,0x8b,0x15,0xc8,0xf7,0x7f,0x00,0x00,0xe8,0x44,0x0b,0x19,0x5f,0x48,0x8b,0xf8,0x48,0x8d,0x4f,0x08,0x48,0x8b,0xd6,0xe8,0x75,0xfc,0x18,0x5f,0x49,0xb8,0xd0,0xc4,0xa1,0xc7,0xf7,0x7f,0x00,0x00,0x4c,0x89,0x47,0x18,0x4c,0x8b,0xc7,0x33,0xc9,0xba,0x08,0x00,0x00,0x00,0xe8,0xf8,0xf7,0xff,0xff,0x8b,0x46,0x08,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0002h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
-0006h mov rcx,7ff7c7c16158h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 58 61 c1 c7 f7 7f 00 00}
-0010h call 7ff827266cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 db 7a 41 5f}
+0006h mov rcx,7ff7c7bf8b20h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 20 8b bf c7 f7 7f 00 00}
+0010h call 7ff827266cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 5b 0b 19 5f}
 0015h mov rsi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f0}
 0018h xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}
 001ah mov [rsi+8],ecx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 4e 08}
-001dh mov rcx,7ff7c8059710h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 10 97 05 c8 f7 7f 00 00}
-0027h call 7ff827266cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c4 7a 41 5f}
+001dh mov rcx,7ff7c8158b80h                   ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b9 80 8b 15 c8 f7 7f 00 00}
+0027h call 7ff827266cb0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 44 0b 19 5f}
 002ch mov rdi,rax                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f8}
 002fh lea rcx,[rdi+8]                         ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 4f 08}
 0033h mov rdx,rsi                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b d6}
-0036h call 7ff827265df0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 6b 41 5f}
-003bh mov r8,7ff7c7a3b9d8h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 d8 b9 a3 c7 f7 7f 00 00}
+0036h call 7ff827265df0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 fc 18 5f}
+003bh mov r8,7ff7c7a1c4d0h                    ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{49 b8 d0 c4 a1 c7 f7 7f 00 00}
 0045h mov [rdi+18h],r8                        ; MOV r/m64, r64 || REX.W 89 /r || encoded[4]{4c 89 47 18}
 0049h mov r8,rdi                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b c7}
 004ch xor ecx,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c9}
 004eh mov edx,8                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{ba 08 00 00 00}
-0053h call 7ff7c7e4ea10h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 f7 ff ff}
+0053h call 7ff7c80d5990h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f8 f7 ff ff}
 0058h mov eax,[rsi+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 46 08}
 005bh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 005fh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
