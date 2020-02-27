@@ -1,4 +1,25 @@
 ------------------------------------------------------------------------------------------------------------------------
+; byte cjsb<byte>(N8 f, N2 cd, N2 jsbd, byte t), hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n2,8u)
+; cjsb_g[8u](n8,n2,n2,8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0x00,0x00,0x00,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,0dbh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db 00 00 00}
+000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort cjsb<ushort>(N8 f, N2 cd, N2 jsbd, ushort t), hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n2,16u)
+; cjsb_g[16u](n8,n2,n2,16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0xdb,0x00,0x00,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,0dbdbh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db db 00 00}
+000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint cjsb<uint>(N8 f, N2 cd, N2 jsbd, uint t), hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n2,32u)
+; cjsb_g[32u](n8,n2,n2,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0xdb,0xdb,0xdb,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,0dbdbdbdbh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db db db db}
+000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
 ; byte central<byte>(N8 f, N2 d, byte t), hex://bitcore/BitMask?central#central_g[8u](n8,n2,8u)
 ; central_g[8u](n8,n2,8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x18,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
@@ -110,27 +131,6 @@
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,9999999999999999h               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 99 99 99 99 99 99 99 99}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte cjsb<byte>(N8 f, N2 cd, N2 jsbd, byte t), hex://bitcore/BitMask?cjsb#cjsb_g[8u](n8,n2,n2,8u)
-; cjsb_g[8u](n8,n2,n2,8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0dbh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort cjsb<ushort>(N8 f, N2 cd, N2 jsbd, ushort t), hex://bitcore/BitMask?cjsb#cjsb_g[16u](n8,n2,n2,16u)
-; cjsb_g[16u](n8,n2,n2,16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0xdb,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0dbdbh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db db 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint cjsb<uint>(N8 f, N2 cd, N2 jsbd, uint t), hex://bitcore/BitMask?cjsb#cjsb_g[32u](n8,n2,n2,32u)
-; cjsb_g[32u](n8,n2,n2,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xdb,0xdb,0xdb,0xdb,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0dbdbdbdbh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 db db db db}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ulong cjsb<ulong>(N8 f, N2 cd, N2 jsbd, ulong t), hex://bitcore/BitMask?cjsb#cjsb_g[64u](n8,n2,n2,64u)
 ; cjsb_g[64u](n8,n2,n2,64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xdb,0xdb,0xdb,0xdb,0xdb,0xdb,0xdb,0xdb,0xc3}
