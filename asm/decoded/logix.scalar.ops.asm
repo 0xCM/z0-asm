@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------------------------------------
-; byte f50<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f50#f50_g[8u](8u,8u,8u)
+; byte f50<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f50#f50_g[8u](8u,8u,8u)
 ; f50_g[8u](8u,8u,8u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9,7 +9,7 @@
 0011h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f50<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f50#f50_g[8i](8i,8i,8i)
+; sbyte f50<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f50#f50_g[8i](8i,8i,8i)
 ; f50_g[8i](8i,8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -19,7 +19,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f50<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f50#f50_g[16u](16u,16u,16u)
+; ushort f50<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f50#f50_g[16u](16u,16u,16u)
 ; f50_g[16u](16u,16u,16u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -29,7 +29,7 @@
 0011h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f50<short>(short a, short b, short c), hex://logix/ScalarOps?f50#f50_g[16i](16i,16i,16i)
+; short f50<short>(short a, short b, short c), hex://logix/scalar.ops?f50#f50_g[16i](16i,16i,16i)
 ; f50_g[16i](16i,16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -39,35 +39,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f50<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f50#f50_g[32u](32u,32u,32u)
+; uint f50<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f50#f50_g[32u](32u,32u,32u)
 ; f50_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x38,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,r8d,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 38 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f50<int>(int a, int b, int c), hex://logix/ScalarOps?f50#f50_g[32i](32i,32i,32i)
+; int f50<int>(int a, int b, int c), hex://logix/scalar.ops?f50#f50_g[32i](32i,32i,32i)
 ; f50_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x38,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,r8d,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 38 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f50<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f50#f50_g[64u](64u,64u,64u)
+; ulong f50<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f50#f50_g[64u](64u,64u,64u)
 ; f50_g[64u](64u,64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xb8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,r8,rcx                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 b8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f50<long>(long a, long b, long c), hex://logix/ScalarOps?f50#f50_g[64i](64i,64i,64i)
+; long f50<long>(long a, long b, long c), hex://logix/scalar.ops?f50#f50_g[64i](64i,64i,64i)
 ; f50_g[64i](64i,64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xb8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,r8,rcx                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 b8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f51<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f51#f51_g[8u](8u,8u,8u)
+; byte f51<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f51#f51_g[8u](8u,8u,8u)
 ; f51_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x81,0xf2,0xff,0x00,0x00,0x00,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -85,8 +85,8 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f51<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f51#f51_g[8i](8i,8i,8i)
-; f51_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x49,0x0f,0xbe,0xc8,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0x45,0xfc,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; sbyte f51<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f51#f51_g[8i](8i,8i,8i)
+; f51_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x49,0x0f,0xbe,0xc8,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0x95,0xfc,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -96,7 +96,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 0012h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-0016h call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 45 fc ff ff}
+0016h call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 95 fc ff ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -109,7 +109,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f51<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f51#f51_g[16u](16u,16u,16u)
+; ushort f51<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f51#f51_g[16u](16u,16u,16u)
 ; f51_g[16u](16u,16u,16u)[53] = {0x50,0x0f,0x1f,0x40,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x81,0xf2,0xff,0xff,0x00,0x00,0x89,0x54,0x24,0x04,0x0f,0xb7,0x54,0x24,0x04,0x0f,0xb7,0xc9,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -130,8 +130,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f51<short>(short a, short b, short c), hex://logix/ScalarOps?f51#f51_g[16i](16i,16i,16i)
-; f51_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x49,0x0f,0xbf,0xc8,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0x85,0xfc,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; short f51<short>(short a, short b, short c), hex://logix/scalar.ops?f51#f51_g[16i](16i,16i,16i)
+; f51_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x49,0x0f,0xbf,0xc8,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0xd5,0xfc,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -141,7 +141,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f9}
 0012h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-0016h call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 85 fc ff ff}
+0016h call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 d5 fc ff ff}
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -154,7 +154,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f51<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f51#f51_g[32u](32u,32u,32u)
+; uint f51<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f51#f51_g[32u](32u,32u,32u)
 ; f51_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd2,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -165,8 +165,8 @@
 000eh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f51<int>(int a, int b, int c), hex://logix/ScalarOps?f51#f51_g[32i](32i,32i,32i)
-; f51_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x41,0x8b,0xf8,0xf7,0xd7,0x8b,0xca,0xe8,0xcc,0xfc,0xff,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; int f51<int>(int a, int b, int c), hex://logix/scalar.ops?f51#f51_g[32i](32i,32i,32i)
+; f51_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x41,0x8b,0xf8,0xf7,0xd7,0x8b,0xca,0xe8,0x1c,0xfd,0xff,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -175,7 +175,7 @@
 0008h mov edi,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b f8}
 000bh not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
 000dh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000fh call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 cc fc ff ff}
+000fh call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1c fd ff ff}
 0014h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0016h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0018h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -183,7 +183,7 @@
 001dh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f51<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f51#f51_g[64u](64u,64u,64u)
+; ulong f51<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f51#f51_g[64u](64u,64u,64u)
 ; f51_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -194,8 +194,8 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f51<long>(long a, long b, long c), hex://logix/ScalarOps?f51#f51_g[64i](64i,64i,64i)
-; f51_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf1,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0x29,0xfd,0xff,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; long f51<long>(long a, long b, long c), hex://logix/scalar.ops?f51#f51_g[64i](64i,64i,64i)
+; f51_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf1,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0x79,0xfd,0xff,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -204,7 +204,7 @@
 0009h mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
 000fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
-0012h call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 29 fd ff ff}
+0012h call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 79 fd ff ff}
 0017h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 001ah and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -212,7 +212,7 @@
 0022h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f52<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f52#f52_g[8u](8u,8u,8u)
+; byte f52<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f52#f52_g[8u](8u,8u,8u)
 ; f52_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -231,7 +231,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f52<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f52#f52_g[8i](8i,8i,8i)
+; sbyte f52<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f52#f52_g[8i](8i,8i,8i)
 ; f52_g[8i](8i,8i,8i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -250,7 +250,7 @@
 002dh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f52<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f52#f52_g[16u](16u,16u,16u)
+; ushort f52<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f52#f52_g[16u](16u,16u,16u)
 ; f52_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -269,7 +269,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f52<short>(short a, short b, short c), hex://logix/ScalarOps?f52#f52_g[16i](16i,16i,16i)
+; short f52<short>(short a, short b, short c), hex://logix/scalar.ops?f52#f52_g[16i](16i,16i,16i)
 ; f52_g[16i](16i,16i,16i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -288,7 +288,7 @@
 002dh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f52<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f52#f52_g[32u](32u,32u,32u)
+; uint f52<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f52#f52_g[32u](32u,32u,32u)
 ; f52_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xd0,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -299,7 +299,7 @@
 000fh and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f52<int>(int a, int b, int c), hex://logix/ScalarOps?f52#f52_g[32i](32i,32i,32i)
+; int f52<int>(int a, int b, int c), hex://logix/scalar.ops?f52#f52_g[32i](32i,32i,32i)
 ; f52_g[32i](32i,32i,32i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xd0,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -310,7 +310,7 @@
 000fh and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f52<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f52#f52_g[64u](64u,64u,64u)
+; ulong f52<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f52#f52_g[64u](64u,64u,64u)
 ; f52_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -321,7 +321,7 @@
 0011h and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f52<long>(long a, long b, long c), hex://logix/ScalarOps?f52#f52_g[64i](64i,64i,64i)
+; long f52<long>(long a, long b, long c), hex://logix/scalar.ops?f52#f52_g[64i](64i,64i,64i)
 ; f52_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -332,7 +332,7 @@
 0011h and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f53<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f53#f53_g[8u](8u,8u,8u)
+; byte f53<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f53#f53_g[8u](8u,8u,8u)
 ; f53_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0xf7,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -352,7 +352,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f53<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f53#f53_g[8i](8i,8i,8i)
+; sbyte f53<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f53#f53_g[8i](8i,8i,8i)
 ; f53_g[8i](8i,8i,8i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x4c,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -374,7 +374,7 @@
 003bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f53<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f53#f53_g[16u](16u,16u,16u)
+; ushort f53<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f53#f53_g[16u](16u,16u,16u)
 ; f53_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0xf7,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -394,7 +394,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f53<short>(short a, short b, short c), hex://logix/ScalarOps?f53#f53_g[16i](16i,16i,16i)
+; short f53<short>(short a, short b, short c), hex://logix/scalar.ops?f53#f53_g[16i](16i,16i,16i)
 ; f53_g[16i](16i,16i,16i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x4c,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -416,7 +416,7 @@
 003bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f53<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f53#f53_g[32u](32u,32u,32u)
+; uint f53<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f53#f53_g[32u](32u,32u,32u)
 ; f53_g[32u](32u,32u,32u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd2,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -428,7 +428,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f53<int>(int a, int b, int c), hex://logix/ScalarOps?f53#f53_g[32i](32i,32i,32i)
+; int f53<int>(int a, int b, int c), hex://logix/scalar.ops?f53#f53_g[32i](32i,32i,32i)
 ; f53_g[32i](32i,32i,32i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd2,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -440,7 +440,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f53<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f53#f53_g[64u](64u,64u,64u)
+; ulong f53<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f53#f53_g[64u](64u,64u,64u)
 ; f53_g[64u](64u,64u,64u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -452,7 +452,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f53<long>(long a, long b, long c), hex://logix/ScalarOps?f53#f53_g[64i](64i,64i,64i)
+; long f53<long>(long a, long b, long c), hex://logix/scalar.ops?f53#f53_g[64i](64i,64i,64i)
 ; f53_g[64i](64i,64i,64i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -464,7 +464,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f54<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f54#f54_g[8u](8u,8u,8u)
+; byte f54<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f54#f54_g[8u](8u,8u,8u)
 ; f54_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -480,7 +480,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f54<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f54#f54_g[8i](8i,8i,8i)
+; sbyte f54<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f54#f54_g[8i](8i,8i,8i)
 ; f54_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -496,7 +496,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f54<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f54#f54_g[16u](16u,16u,16u)
+; ushort f54<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f54#f54_g[16u](16u,16u,16u)
 ; f54_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -512,7 +512,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f54<short>(short a, short b, short c), hex://logix/ScalarOps?f54#f54_g[16i](16i,16i,16i)
+; short f54<short>(short a, short b, short c), hex://logix/scalar.ops?f54#f54_g[16i](16i,16i,16i)
 ; f54_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -528,7 +528,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f54<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f54#f54_g[32u](32u,32u,32u)
+; uint f54<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f54#f54_g[32u](32u,32u,32u)
 ; f54_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -538,7 +538,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f54<int>(int a, int b, int c), hex://logix/ScalarOps?f54#f54_g[32i](32i,32i,32i)
+; int f54<int>(int a, int b, int c), hex://logix/scalar.ops?f54#f54_g[32i](32i,32i,32i)
 ; f54_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -548,7 +548,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f54<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f54#f54_g[64u](64u,64u,64u)
+; ulong f54<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f54#f54_g[64u](64u,64u,64u)
 ; f54_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -558,7 +558,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f54<long>(long a, long b, long c), hex://logix/ScalarOps?f54#f54_g[64i](64i,64i,64i)
+; long f54<long>(long a, long b, long c), hex://logix/scalar.ops?f54#f54_g[64i](64i,64i,64i)
 ; f54_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -568,7 +568,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f55<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f55#f55_g[8u](8u,8u,8u)
+; byte f55<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f55#f55_g[8u](8u,8u,8u)
 ; f55_g[8u](8u,8u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -577,7 +577,7 @@
 000bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f55<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f55#f55_g[8i](8i,8i,8i)
+; sbyte f55<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f55#f55_g[8i](8i,8i,8i)
 ; f55_g[8i](8i,8i,8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -586,7 +586,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f55<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f55#f55_g[16u](16u,16u,16u)
+; ushort f55<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f55#f55_g[16u](16u,16u,16u)
 ; f55_g[16u](16u,16u,16u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -595,7 +595,7 @@
 000bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f55<short>(short a, short b, short c), hex://logix/ScalarOps?f55#f55_g[16i](16i,16i,16i)
+; short f55<short>(short a, short b, short c), hex://logix/scalar.ops?f55#f55_g[16i](16i,16i,16i)
 ; f55_g[16i](16i,16i,16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -604,7 +604,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f55<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f55#f55_g[32u](32u,32u,32u)
+; uint f55<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f55#f55_g[32u](32u,32u,32u)
 ; f55_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -612,7 +612,7 @@
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f55<int>(int a, int b, int c), hex://logix/ScalarOps?f55#f55_g[32i](32i,32i,32i)
+; int f55<int>(int a, int b, int c), hex://logix/scalar.ops?f55#f55_g[32i](32i,32i,32i)
 ; f55_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -620,7 +620,7 @@
 0008h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f55<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f55#f55_g[64u](64u,64u,64u)
+; ulong f55<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f55#f55_g[64u](64u,64u,64u)
 ; f55_g[64u](64u,64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -628,7 +628,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f55<long>(long a, long b, long c), hex://logix/ScalarOps?f55#f55_g[64i](64i,64i,64i)
+; long f55<long>(long a, long b, long c), hex://logix/scalar.ops?f55#f55_g[64i](64i,64i,64i)
 ; f55_g[64i](64i,64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -636,7 +636,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f56<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f56#f56_g[8u](8u,8u,8u)
+; byte f56<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f56#f56_g[8u](8u,8u,8u)
 ; f56_g[8u](8u,8u,8u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -649,7 +649,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f56<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f56#f56_g[8i](8i,8i,8i)
+; sbyte f56<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f56#f56_g[8i](8i,8i,8i)
 ; f56_g[8i](8i,8i,8i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -662,7 +662,7 @@
 0019h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f56<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f56#f56_g[16u](16u,16u,16u)
+; ushort f56<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f56#f56_g[16u](16u,16u,16u)
 ; f56_g[16u](16u,16u,16u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -675,7 +675,7 @@
 0016h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f56<short>(short a, short b, short c), hex://logix/ScalarOps?f56#f56_g[16i](16i,16i,16i)
+; short f56<short>(short a, short b, short c), hex://logix/scalar.ops?f56#f56_g[16i](16i,16i,16i)
 ; f56_g[16i](16i,16i,16i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -688,7 +688,7 @@
 0019h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f56<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f56#f56_g[32u](32u,32u,32u)
+; uint f56<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f56#f56_g[32u](32u,32u,32u)
 ; f56_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x33,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -697,7 +697,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f56<int>(int a, int b, int c), hex://logix/ScalarOps?f56#f56_g[32i](32i,32i,32i)
+; int f56<int>(int a, int b, int c), hex://logix/scalar.ops?f56#f56_g[32i](32i,32i,32i)
 ; f56_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x33,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -706,7 +706,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f56<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f56#f56_g[64u](64u,64u,64u)
+; ulong f56<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f56#f56_g[64u](64u,64u,64u)
 ; f56_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x33,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -715,7 +715,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f56<long>(long a, long b, long c), hex://logix/ScalarOps?f56#f56_g[64i](64i,64i,64i)
+; long f56<long>(long a, long b, long c), hex://logix/scalar.ops?f56#f56_g[64i](64i,64i,64i)
 ; f56_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x33,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -724,7 +724,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f57<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f57#f57_g[8u](8u,8u,8u)
+; byte f57<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f57#f57_g[8u](8u,8u,8u)
 ; f57_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -738,7 +738,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f57<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f57#f57_g[8i](8i,8i,8i)
+; sbyte f57<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f57#f57_g[8i](8i,8i,8i)
 ; f57_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -752,7 +752,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f57<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f57#f57_g[16u](16u,16u,16u)
+; ushort f57<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f57#f57_g[16u](16u,16u,16u)
 ; f57_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -766,7 +766,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f57<short>(short a, short b, short c), hex://logix/ScalarOps?f57#f57_g[16i](16i,16i,16i)
+; short f57<short>(short a, short b, short c), hex://logix/scalar.ops?f57#f57_g[16i](16i,16i,16i)
 ; f57_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -780,7 +780,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f57<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f57#f57_g[32u](32u,32u,32u)
+; uint f57<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f57#f57_g[32u](32u,32u,32u)
 ; f57_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -790,7 +790,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f57<int>(int a, int b, int c), hex://logix/ScalarOps?f57#f57_g[32i](32i,32i,32i)
+; int f57<int>(int a, int b, int c), hex://logix/scalar.ops?f57#f57_g[32i](32i,32i,32i)
 ; f57_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -800,7 +800,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f57<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f57#f57_g[64u](64u,64u,64u)
+; ulong f57<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f57#f57_g[64u](64u,64u,64u)
 ; f57_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -810,7 +810,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f57<long>(long a, long b, long c), hex://logix/ScalarOps?f57#f57_g[64i](64i,64i,64i)
+; long f57<long>(long a, long b, long c), hex://logix/scalar.ops?f57#f57_g[64i](64i,64i,64i)
 ; f57_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -820,7 +820,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f58<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f58#f58_g[8u](8u,8u,8u)
+; byte f58<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f58#f58_g[8u](8u,8u,8u)
 ; f58_g[8u](8u,8u,8u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -837,7 +837,7 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f58<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f58#f58_g[8i](8i,8i,8i)
+; sbyte f58<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f58#f58_g[8i](8i,8i,8i)
 ; f58_g[8i](8i,8i,8i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -854,7 +854,7 @@
 0027h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f58<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f58#f58_g[16u](16u,16u,16u)
+; ushort f58<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f58#f58_g[16u](16u,16u,16u)
 ; f58_g[16u](16u,16u,16u)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xc8,0x0f,0xb7,0xd2,0x0b,0xd1,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -871,7 +871,7 @@
 0020h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f58<short>(short a, short b, short c), hex://logix/ScalarOps?f58#f58_g[16i](16i,16i,16i)
+; short f58<short>(short a, short b, short c), hex://logix/scalar.ops?f58#f58_g[16i](16i,16i,16i)
 ; f58_g[16i](16i,16i,16i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -888,7 +888,7 @@
 0027h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f58<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f58#f58_g[32u](32u,32u,32u)
+; uint f58<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f58#f58_g[32u](32u,32u,32u)
 ; f58_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -898,7 +898,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f58<int>(int a, int b, int c), hex://logix/ScalarOps?f58#f58_g[32i](32i,32i,32i)
+; int f58<int>(int a, int b, int c), hex://logix/scalar.ops?f58#f58_g[32i](32i,32i,32i)
 ; f58_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -908,7 +908,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f58<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f58#f58_g[64u](64u,64u,64u)
+; ulong f58<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f58#f58_g[64u](64u,64u,64u)
 ; f58_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -918,7 +918,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f58<long>(long a, long b, long c), hex://logix/ScalarOps?f58#f58_g[64i](64i,64i,64i)
+; long f58<long>(long a, long b, long c), hex://logix/scalar.ops?f58#f58_g[64i](64i,64i,64i)
 ; f58_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -928,7 +928,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f59<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f59#f59_g[8u](8u,8u,8u)
+; byte f59<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f59#f59_g[8u](8u,8u,8u)
 ; f59_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -943,7 +943,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f59<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f59#f59_g[8i](8i,8i,8i)
+; sbyte f59<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f59#f59_g[8i](8i,8i,8i)
 ; f59_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -958,7 +958,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f59<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f59#f59_g[16u](16u,16u,16u)
+; ushort f59<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f59#f59_g[16u](16u,16u,16u)
 ; f59_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -973,7 +973,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f59<short>(short a, short b, short c), hex://logix/ScalarOps?f59#f59_g[16i](16i,16i,16i)
+; short f59<short>(short a, short b, short c), hex://logix/scalar.ops?f59#f59_g[16i](16i,16i,16i)
 ; f59_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -988,7 +988,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f59<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f59#f59_g[32u](32u,32u,32u)
+; uint f59<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f59#f59_g[32u](32u,32u,32u)
 ; f59_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x0b,0xc1,0x41,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -998,7 +998,7 @@
 000bh xor eax,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f59<int>(int a, int b, int c), hex://logix/ScalarOps?f59#f59_g[32i](32i,32i,32i)
+; int f59<int>(int a, int b, int c), hex://logix/scalar.ops?f59#f59_g[32i](32i,32i,32i)
 ; f59_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x0b,0xc1,0x41,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1008,7 +1008,7 @@
 000bh xor eax,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{41 33 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f59<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f59#f59_g[64u](64u,64u,64u)
+; ulong f59<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f59#f59_g[64u](64u,64u,64u)
 ; f59_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0x49,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1018,7 +1018,7 @@
 000eh xor rax,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f59<long>(long a, long b, long c), hex://logix/ScalarOps?f59#f59_g[64i](64i,64i,64i)
+; long f59<long>(long a, long b, long c), hex://logix/scalar.ops?f59#f59_g[64i](64i,64i,64i)
 ; f59_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0x49,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1028,7 +1028,7 @@
 000eh xor rax,r8                              ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{49 33 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5a#f5a_g[8u](8u,8u,8u)
+; byte f5a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5a#f5a_g[8u](8u,8u,8u)
 ; f5a_g[8u](8u,8u,8u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1038,7 +1038,7 @@
 000eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5a#f5a_g[8i](8i,8i,8i)
+; sbyte f5a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5a#f5a_g[8i](8i,8i,8i)
 ; f5a_g[8i](8i,8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1048,7 +1048,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5a#f5a_g[16u](16u,16u,16u)
+; ushort f5a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5a#f5a_g[16u](16u,16u,16u)
 ; f5a_g[16u](16u,16u,16u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1058,7 +1058,7 @@
 000eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5a<short>(short a, short b, short c), hex://logix/ScalarOps?f5a#f5a_g[16i](16i,16i,16i)
+; short f5a<short>(short a, short b, short c), hex://logix/scalar.ops?f5a#f5a_g[16i](16i,16i,16i)
 ; f5a_g[16i](16i,16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1068,7 +1068,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5a#f5a_g[32u](32u,32u,32u)
+; uint f5a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5a#f5a_g[32u](32u,32u,32u)
 ; f5a_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1076,7 +1076,7 @@
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5a<int>(int a, int b, int c), hex://logix/ScalarOps?f5a#f5a_g[32i](32i,32i,32i)
+; int f5a<int>(int a, int b, int c), hex://logix/scalar.ops?f5a#f5a_g[32i](32i,32i,32i)
 ; f5a_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1084,7 +1084,7 @@
 0008h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5a#f5a_g[64u](64u,64u,64u)
+; ulong f5a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5a#f5a_g[64u](64u,64u,64u)
 ; f5a_g[64u](64u,64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1092,7 +1092,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5a<long>(long a, long b, long c), hex://logix/ScalarOps?f5a#f5a_g[64i](64i,64i,64i)
+; long f5a<long>(long a, long b, long c), hex://logix/scalar.ops?f5a#f5a_g[64i](64i,64i,64i)
 ; f5a_g[64i](64i,64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1100,7 +1100,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5b#f5b_g[8u](8u,8u,8u)
+; byte f5b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5b#f5b_g[8u](8u,8u,8u)
 ; f5b_g[8u](8u,8u,8u)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x45,0x0f,0xb6,0xc0,0x41,0x33,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xd2,0x81,0xf2,0xff,0x00,0x00,0x00,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1120,7 +1120,7 @@
 002eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5b#f5b_g[8i](8i,8i,8i)
+; sbyte f5b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5b#f5b_g[8i](8i,8i,8i)
 ; f5b_g[8i](8i,8i,8i)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x4d,0x0f,0xbe,0xc0,0x41,0x33,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xd2,0x83,0xf2,0x7f,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1140,7 +1140,7 @@
 0033h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5b#f5b_g[16u](16u,16u,16u)
+; ushort f5b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5b#f5b_g[16u](16u,16u,16u)
 ; f5b_g[16u](16u,16u,16u)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x45,0x0f,0xb7,0xc0,0x41,0x33,0xc0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xd2,0x81,0xf2,0xff,0xff,0x00,0x00,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1160,7 +1160,7 @@
 002eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5b<short>(short a, short b, short c), hex://logix/ScalarOps?f5b#f5b_g[16i](16i,16i,16i)
+; short f5b<short>(short a, short b, short c), hex://logix/scalar.ops?f5b#f5b_g[16i](16i,16i,16i)
 ; f5b_g[16i](16i,16i,16i)[59] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x4d,0x0f,0xbf,0xc0,0x41,0x33,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xd2,0x81,0xf2,0xff,0x7f,0x00,0x00,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1180,7 +1180,7 @@
 0036h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5b#f5b_g[32u](32u,32u,32u)
+; uint f5b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5b#f5b_g[32u](32u,32u,32u)
 ; f5b_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x33,0xc1,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x0b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1191,7 +1191,7 @@
 000eh or eax,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5b<int>(int a, int b, int c), hex://logix/ScalarOps?f5b#f5b_g[32i](32i,32i,32i)
+; int f5b<int>(int a, int b, int c), hex://logix/scalar.ops?f5b#f5b_g[32i](32i,32i,32i)
 ; f5b_g[32i](32i,32i,32i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x33,0xc1,0x0b,0xd1,0x81,0xf2,0xff,0xff,0xff,0x7f,0x41,0x0b,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1202,7 +1202,7 @@
 0013h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5b#f5b_g[64u](64u,64u,64u)
+; ulong f5b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5b#f5b_g[64u](64u,64u,64u)
 ; f5b_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x33,0xc1,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x0b,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1213,7 +1213,7 @@
 0011h or rax,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5b<long>(long a, long b, long c), hex://logix/ScalarOps?f5b#f5b_g[64i](64i,64i,64i)
+; long f5b<long>(long a, long b, long c), hex://logix/scalar.ops?f5b#f5b_g[64i](64i,64i,64i)
 ; f5b_g[64i](64i,64i,64i)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x33,0xc1,0x48,0x0b,0xd1,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0x48,0x33,0xc2,0x49,0x0b,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1224,7 +1224,7 @@
 0018h or rax,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5c#f5c_g[8u](8u,8u,8u)
+; byte f5c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5c#f5c_g[8u](8u,8u,8u)
 ; f5c_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1241,7 +1241,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5c#f5c_g[8i](8i,8i,8i)
+; sbyte f5c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5c#f5c_g[8i](8i,8i,8i)
 ; f5c_g[8i](8i,8i,8i)[54] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x4c,0x0f,0xbe,0xc1,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1260,7 +1260,7 @@
 0031h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5c#f5c_g[16u](16u,16u,16u)
+; ushort f5c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5c#f5c_g[16u](16u,16u,16u)
 ; f5c_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1277,7 +1277,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5c<short>(short a, short b, short c), hex://logix/ScalarOps?f5c#f5c_g[16i](16i,16i,16i)
+; short f5c<short>(short a, short b, short c), hex://logix/scalar.ops?f5c#f5c_g[16i](16i,16i,16i)
 ; f5c_g[16i](16i,16i,16i)[54] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x4c,0x0f,0xbf,0xc1,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1296,7 +1296,7 @@
 0031h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5c#f5c_g[32u](32u,32u,32u)
+; uint f5c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5c#f5c_g[32u](32u,32u,32u)
 ; f5c_g[32u](32u,32u,32u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1307,7 +1307,7 @@
 0011h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5c<int>(int a, int b, int c), hex://logix/ScalarOps?f5c#f5c_g[32i](32i,32i,32i)
+; int f5c<int>(int a, int b, int c), hex://logix/scalar.ops?f5c#f5c_g[32i](32i,32i,32i)
 ; f5c_g[32i](32i,32i,32i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1318,7 +1318,7 @@
 0011h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5c#f5c_g[64u](64u,64u,64u)
+; ulong f5c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5c#f5c_g[64u](64u,64u,64u)
 ; f5c_g[64u](64u,64u,64u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1329,7 +1329,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5c<long>(long a, long b, long c), hex://logix/ScalarOps?f5c#f5c_g[64i](64i,64i,64i)
+; long f5c<long>(long a, long b, long c), hex://logix/scalar.ops?f5c#f5c_g[64i](64i,64i,64i)
 ; f5c_g[64i](64i,64i,64i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1340,7 +1340,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5d#f5d_g[8u](8u,8u,8u)
+; byte f5d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5d#f5d_g[8u](8u,8u,8u)
 ; f5d_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0xf7,0xd1,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1358,7 +1358,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5d#f5d_g[8i](8i,8i,8i)
+; sbyte f5d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5d#f5d_g[8i](8i,8i,8i)
 ; f5d_g[8i](8i,8i,8i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x23,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1376,7 +1376,7 @@
 0029h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5d#f5d_g[16u](16u,16u,16u)
+; ushort f5d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5d#f5d_g[16u](16u,16u,16u)
 ; f5d_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0xf7,0xd1,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1394,7 +1394,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5d<short>(short a, short b, short c), hex://logix/ScalarOps?f5d#f5d_g[16i](16i,16i,16i)
+; short f5d<short>(short a, short b, short c), hex://logix/scalar.ops?f5d#f5d_g[16i](16i,16i,16i)
 ; f5d_g[16i](16i,16i,16i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x23,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1412,7 +1412,7 @@
 0029h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5d#f5d_g[32u](32u,32u,32u)
+; uint f5d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5d#f5d_g[32u](32u,32u,32u)
 ; f5d_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd1,0x23,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1423,7 +1423,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5d<int>(int a, int b, int c), hex://logix/ScalarOps?f5d#f5d_g[32i](32i,32i,32i)
+; int f5d<int>(int a, int b, int c), hex://logix/scalar.ops?f5d#f5d_g[32i](32i,32i,32i)
 ; f5d_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd1,0x23,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1434,7 +1434,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5d#f5d_g[64u](64u,64u,64u)
+; ulong f5d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5d#f5d_g[64u](64u,64u,64u)
 ; f5d_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd1,0x48,0x23,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1445,7 +1445,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5d<long>(long a, long b, long c), hex://logix/ScalarOps?f5d#f5d_g[64i](64i,64i,64i)
+; long f5d<long>(long a, long b, long c), hex://logix/scalar.ops?f5d#f5d_g[64i](64i,64i,64i)
 ; f5d_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd1,0x48,0x23,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1456,7 +1456,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5e#f5e_g[8u](8u,8u,8u)
+; byte f5e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5e#f5e_g[8u](8u,8u,8u)
 ; f5e_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1475,7 +1475,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5e#f5e_g[8i](8i,8i,8i)
+; sbyte f5e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5e#f5e_g[8i](8i,8i,8i)
 ; f5e_g[8i](8i,8i,8i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1494,7 +1494,7 @@
 002dh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5e#f5e_g[16u](16u,16u,16u)
+; ushort f5e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5e#f5e_g[16u](16u,16u,16u)
 ; f5e_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1513,7 +1513,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5e<short>(short a, short b, short c), hex://logix/ScalarOps?f5e#f5e_g[16i](16i,16i,16i)
+; short f5e<short>(short a, short b, short c), hex://logix/scalar.ops?f5e#f5e_g[16i](16i,16i,16i)
 ; f5e_g[16i](16i,16i,16i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1532,7 +1532,7 @@
 002dh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5e#f5e_g[32u](32u,32u,32u)
+; uint f5e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5e#f5e_g[32u](32u,32u,32u)
 ; f5e_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc2,0x41,0x33,0xc8,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1543,7 +1543,7 @@
 000fh or eax,ecx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5e<int>(int a, int b, int c), hex://logix/ScalarOps?f5e#f5e_g[32i](32i,32i,32i)
+; int f5e<int>(int a, int b, int c), hex://logix/scalar.ops?f5e#f5e_g[32i](32i,32i,32i)
 ; f5e_g[32i](32i,32i,32i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc2,0x41,0x33,0xc8,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1554,7 +1554,7 @@
 000fh or eax,ecx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5e#f5e_g[64u](64u,64u,64u)
+; ulong f5e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5e#f5e_g[64u](64u,64u,64u)
 ; f5e_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc2,0x49,0x33,0xc8,0x48,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1565,7 +1565,7 @@
 0011h or rax,rcx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5e<long>(long a, long b, long c), hex://logix/ScalarOps?f5e#f5e_g[64i](64i,64i,64i)
+; long f5e<long>(long a, long b, long c), hex://logix/scalar.ops?f5e#f5e_g[64i](64i,64i,64i)
 ; f5e_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc2,0x49,0x33,0xc8,0x48,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1576,7 +1576,7 @@
 0011h or rax,rcx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f5f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f5f#f5f_g[8u](8u,8u,8u)
+; byte f5f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f5f#f5f_g[8u](8u,8u,8u)
 ; f5f_g[8u](8u,8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1587,7 +1587,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f5f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f5f#f5f_g[8i](8i,8i,8i)
+; sbyte f5f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f5f#f5f_g[8i](8i,8i,8i)
 ; f5f_g[8i](8i,8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1598,7 +1598,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f5f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f5f#f5f_g[16u](16u,16u,16u)
+; ushort f5f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f5f#f5f_g[16u](16u,16u,16u)
 ; f5f_g[16u](16u,16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1609,7 +1609,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f5f<short>(short a, short b, short c), hex://logix/ScalarOps?f5f#f5f_g[16i](16i,16i,16i)
+; short f5f<short>(short a, short b, short c), hex://logix/scalar.ops?f5f#f5f_g[16i](16i,16i,16i)
 ; f5f_g[16i](16i,16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1620,7 +1620,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f5f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f5f#f5f_g[32u](32u,32u,32u)
+; uint f5f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f5f#f5f_g[32u](32u,32u,32u)
 ; f5f_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1629,7 +1629,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f5f<int>(int a, int b, int c), hex://logix/ScalarOps?f5f#f5f_g[32i](32i,32i,32i)
+; int f5f<int>(int a, int b, int c), hex://logix/scalar.ops?f5f#f5f_g[32i](32i,32i,32i)
 ; f5f_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1638,7 +1638,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f5f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f5f#f5f_g[64u](64u,64u,64u)
+; ulong f5f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f5f#f5f_g[64u](64u,64u,64u)
 ; f5f_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1647,7 +1647,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f5f<long>(long a, long b, long c), hex://logix/ScalarOps?f5f#f5f_g[64i](64i,64i,64i)
+; long f5f<long>(long a, long b, long c), hex://logix/scalar.ops?f5f#f5f_g[64i](64i,64i,64i)
 ; f5f_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1656,7 +1656,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f97<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f97#f97_g[8u](8u,8u,8u)
+; byte f97<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f97#f97_g[8u](8u,8u,8u)
 ; f97_g[8u](8u,8u,8u)[58] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x8b,0xd0,0x41,0x0f,0xb6,0xc8,0x44,0x8b,0xc1,0x41,0x33,0xd0,0xf7,0xd2,0x0f,0xb6,0xd2,0x44,0x8b,0xc1,0x41,0x23,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1680,7 +1680,7 @@
 0036h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f97<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f97#f97_g[8i](8i,8i,8i)
+; sbyte f97<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f97#f97_g[8i](8i,8i,8i)
 ; f97_g[8i](8i,8i,8i)[75] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xc8,0x44,0x8b,0xc1,0x41,0x33,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x44,0x8b,0xc1,0x41,0x23,0xd0,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x44,0x8b,0xc1,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1706,7 +1706,7 @@
 0046h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f97<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f97#f97_g[16u](16u,16u,16u)
+; ushort f97<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f97#f97_g[16u](16u,16u,16u)
 ; f97_g[16u](16u,16u,16u)[58] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x41,0x0f,0xb7,0xc8,0x44,0x8b,0xc1,0x41,0x33,0xd0,0xf7,0xd2,0x0f,0xb7,0xd2,0x44,0x8b,0xc1,0x41,0x23,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1730,7 +1730,7 @@
 0036h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f97<short>(short a, short b, short c), hex://logix/ScalarOps?f97#f97_g[16i](16i,16i,16i)
+; short f97<short>(short a, short b, short c), hex://logix/scalar.ops?f97#f97_g[16i](16i,16i,16i)
 ; f97_g[16i](16i,16i,16i)[75] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xc8,0x44,0x8b,0xc1,0x41,0x33,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x44,0x8b,0xc1,0x41,0x23,0xd0,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x44,0x8b,0xc1,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1756,7 +1756,7 @@
 0046h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f97<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f97#f97_g[32u](32u,32u,32u)
+; uint f97<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f97#f97_g[32u](32u,32u,32u)
 ; f97_g[32u](32u,32u,32u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x33,0xc0,0xf7,0xd0,0x41,0x23,0xd0,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1770,7 +1770,7 @@
 0019h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f97<int>(int a, int b, int c), hex://logix/ScalarOps?f97#f97_g[32i](32i,32i,32i)
+; int f97<int>(int a, int b, int c), hex://logix/scalar.ops?f97#f97_g[32i](32i,32i,32i)
 ; f97_g[32i](32i,32i,32i)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x33,0xc0,0xf7,0xd0,0x41,0x23,0xd0,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1784,7 +1784,7 @@
 0019h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f97<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f97#f97_g[64u](64u,64u,64u)
+; ulong f97<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f97#f97_g[64u](64u,64u,64u)
 ; f97_g[64u](64u,64u,64u)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x33,0xc0,0x48,0xf7,0xd0,0x49,0x23,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1798,7 +1798,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f97<long>(long a, long b, long c), hex://logix/ScalarOps?f97#f97_g[64i](64i,64i,64i)
+; long f97<long>(long a, long b, long c), hex://logix/scalar.ops?f97#f97_g[64i](64i,64i,64i)
 ; f97_g[64i](64i,64i,64i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x33,0xc0,0x48,0xf7,0xd0,0x49,0x23,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1812,7 +1812,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f10<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f10#f10_g[8u](8u,8u,8u)
+; byte f10<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f10#f10_g[8u](8u,8u,8u)
 ; f10_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1826,7 +1826,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f10<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f10#f10_g[8i](8i,8i,8i)
+; sbyte f10<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f10#f10_g[8i](8i,8i,8i)
 ; f10_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1840,7 +1840,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f10<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f10#f10_g[16u](16u,16u,16u)
+; ushort f10<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f10#f10_g[16u](16u,16u,16u)
 ; f10_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1854,7 +1854,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f10<short>(short a, short b, short c), hex://logix/ScalarOps?f10#f10_g[16i](16i,16i,16i)
+; short f10<short>(short a, short b, short c), hex://logix/scalar.ops?f10#f10_g[16i](16i,16i,16i)
 ; f10_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1868,7 +1868,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f10<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f10#f10_g[32u](32u,32u,32u)
+; uint f10<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f10#f10_g[32u](32u,32u,32u)
 ; f10_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1878,7 +1878,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f10<int>(int a, int b, int c), hex://logix/ScalarOps?f10#f10_g[32i](32i,32i,32i)
+; int f10<int>(int a, int b, int c), hex://logix/scalar.ops?f10#f10_g[32i](32i,32i,32i)
 ; f10_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1888,7 +1888,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f10<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f10#f10_g[64u](64u,64u,64u)
+; ulong f10<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f10#f10_g[64u](64u,64u,64u)
 ; f10_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1898,7 +1898,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f10<long>(long a, long b, long c), hex://logix/ScalarOps?f10#f10_g[64i](64i,64i,64i)
+; long f10<long>(long a, long b, long c), hex://logix/scalar.ops?f10#f10_g[64i](64i,64i,64i)
 ; f10_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1908,7 +1908,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f11<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f11#f11_g[8u](8u,8u,8u)
+; byte f11<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f11#f11_g[8u](8u,8u,8u)
 ; f11_g[8u](8u,8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1919,7 +1919,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f11<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f11#f11_g[8i](8i,8i,8i)
+; sbyte f11<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f11#f11_g[8i](8i,8i,8i)
 ; f11_g[8i](8i,8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1930,7 +1930,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f11<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f11#f11_g[16u](16u,16u,16u)
+; ushort f11<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f11#f11_g[16u](16u,16u,16u)
 ; f11_g[16u](16u,16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1941,7 +1941,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f11<short>(short a, short b, short c), hex://logix/ScalarOps?f11#f11_g[16i](16i,16i,16i)
+; short f11<short>(short a, short b, short c), hex://logix/scalar.ops?f11#f11_g[16i](16i,16i,16i)
 ; f11_g[16i](16i,16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1952,7 +1952,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f11<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f11#f11_g[32u](32u,32u,32u)
+; uint f11<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f11#f11_g[32u](32u,32u,32u)
 ; f11_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1961,7 +1961,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f11<int>(int a, int b, int c), hex://logix/ScalarOps?f11#f11_g[32i](32i,32i,32i)
+; int f11<int>(int a, int b, int c), hex://logix/scalar.ops?f11#f11_g[32i](32i,32i,32i)
 ; f11_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1970,7 +1970,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f11<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f11#f11_g[64u](64u,64u,64u)
+; ulong f11<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f11#f11_g[64u](64u,64u,64u)
 ; f11_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1979,7 +1979,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f11<long>(long a, long b, long c), hex://logix/ScalarOps?f11#f11_g[64i](64i,64i,64i)
+; long f11<long>(long a, long b, long c), hex://logix/scalar.ops?f11#f11_g[64i](64i,64i,64i)
 ; f11_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -1988,7 +1988,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f12<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f12#f12_g[8u](8u,8u,8u)
+; byte f12<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f12#f12_g[8u](8u,8u,8u)
 ; f12_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2004,7 +2004,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f12<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f12#f12_g[8i](8i,8i,8i)
+; sbyte f12<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f12#f12_g[8i](8i,8i,8i)
 ; f12_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2020,7 +2020,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f12<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f12#f12_g[16u](16u,16u,16u)
+; ushort f12<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f12#f12_g[16u](16u,16u,16u)
 ; f12_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2036,7 +2036,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f12<short>(short a, short b, short c), hex://logix/ScalarOps?f12#f12_g[16i](16i,16i,16i)
+; short f12<short>(short a, short b, short c), hex://logix/scalar.ops?f12#f12_g[16i](16i,16i,16i)
 ; f12_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2052,7 +2052,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f12<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f12#f12_g[32u](32u,32u,32u)
+; uint f12<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f12#f12_g[32u](32u,32u,32u)
 ; f12_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2062,7 +2062,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f12<int>(int a, int b, int c), hex://logix/ScalarOps?f12#f12_g[32i](32i,32i,32i)
+; int f12<int>(int a, int b, int c), hex://logix/scalar.ops?f12#f12_g[32i](32i,32i,32i)
 ; f12_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2072,7 +2072,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f12<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f12#f12_g[64u](64u,64u,64u)
+; ulong f12<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f12#f12_g[64u](64u,64u,64u)
 ; f12_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2082,7 +2082,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f12<long>(long a, long b, long c), hex://logix/ScalarOps?f12#f12_g[64i](64i,64i,64i)
+; long f12<long>(long a, long b, long c), hex://logix/scalar.ops?f12#f12_g[64i](64i,64i,64i)
 ; f12_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2092,7 +2092,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f13<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f13#f13_g[8u](8u,8u,8u)
+; byte f13<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f13#f13_g[8u](8u,8u,8u)
 ; f13_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x23,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2106,7 +2106,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f13<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f13#f13_g[8i](8i,8i,8i)
+; sbyte f13<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f13#f13_g[8i](8i,8i,8i)
 ; f13_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2120,7 +2120,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f13<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f13#f13_g[16u](16u,16u,16u)
+; ushort f13<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f13#f13_g[16u](16u,16u,16u)
 ; f13_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x23,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2134,7 +2134,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f13<short>(short a, short b, short c), hex://logix/ScalarOps?f13#f13_g[16i](16i,16i,16i)
+; short f13<short>(short a, short b, short c), hex://logix/scalar.ops?f13#f13_g[16i](16i,16i,16i)
 ; f13_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2148,7 +2148,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f13<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f13#f13_g[32u](32u,32u,32u)
+; uint f13<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f13#f13_g[32u](32u,32u,32u)
 ; f13_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2158,7 +2158,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f13<int>(int a, int b, int c), hex://logix/ScalarOps?f13#f13_g[32i](32i,32i,32i)
+; int f13<int>(int a, int b, int c), hex://logix/scalar.ops?f13#f13_g[32i](32i,32i,32i)
 ; f13_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2168,7 +2168,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f13<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f13#f13_g[64u](64u,64u,64u)
+; ulong f13<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f13#f13_g[64u](64u,64u,64u)
 ; f13_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2178,7 +2178,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f13<long>(long a, long b, long c), hex://logix/ScalarOps?f13#f13_g[64i](64i,64i,64i)
+; long f13<long>(long a, long b, long c), hex://logix/scalar.ops?f13#f13_g[64i](64i,64i,64i)
 ; f13_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2188,7 +2188,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f14<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f14#f14_g[8u](8u,8u,8u)
+; byte f14<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f14#f14_g[8u](8u,8u,8u)
 ; f14_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2204,7 +2204,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f14<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f14#f14_g[8i](8i,8i,8i)
+; sbyte f14<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f14#f14_g[8i](8i,8i,8i)
 ; f14_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2220,7 +2220,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f14<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f14#f14_g[16u](16u,16u,16u)
+; ushort f14<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f14#f14_g[16u](16u,16u,16u)
 ; f14_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2236,7 +2236,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f14<short>(short a, short b, short c), hex://logix/ScalarOps?f14#f14_g[16i](16i,16i,16i)
+; short f14<short>(short a, short b, short c), hex://logix/scalar.ops?f14#f14_g[16i](16i,16i,16i)
 ; f14_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2252,7 +2252,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f14<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f14#f14_g[32u](32u,32u,32u)
+; uint f14<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f14#f14_g[32u](32u,32u,32u)
 ; f14_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2262,7 +2262,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f14<int>(int a, int b, int c), hex://logix/ScalarOps?f14#f14_g[32i](32i,32i,32i)
+; int f14<int>(int a, int b, int c), hex://logix/scalar.ops?f14#f14_g[32i](32i,32i,32i)
 ; f14_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2272,7 +2272,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f14<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f14#f14_g[64u](64u,64u,64u)
+; ulong f14<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f14#f14_g[64u](64u,64u,64u)
 ; f14_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2282,7 +2282,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f14<long>(long a, long b, long c), hex://logix/ScalarOps?f14#f14_g[64i](64i,64i,64i)
+; long f14<long>(long a, long b, long c), hex://logix/scalar.ops?f14#f14_g[64i](64i,64i,64i)
 ; f14_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2292,7 +2292,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f15<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f15#f15_g[8u](8u,8u,8u)
+; byte f15<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f15#f15_g[8u](8u,8u,8u)
 ; f15_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2306,7 +2306,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f15<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f15#f15_g[8i](8i,8i,8i)
+; sbyte f15<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f15#f15_g[8i](8i,8i,8i)
 ; f15_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2320,7 +2320,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f15<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f15#f15_g[16u](16u,16u,16u)
+; ushort f15<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f15#f15_g[16u](16u,16u,16u)
 ; f15_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2334,7 +2334,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f15<short>(short a, short b, short c), hex://logix/ScalarOps?f15#f15_g[16i](16i,16i,16i)
+; short f15<short>(short a, short b, short c), hex://logix/scalar.ops?f15#f15_g[16i](16i,16i,16i)
 ; f15_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2348,7 +2348,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f15<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f15#f15_g[32u](32u,32u,32u)
+; uint f15<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f15#f15_g[32u](32u,32u,32u)
 ; f15_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2358,7 +2358,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f15<int>(int a, int b, int c), hex://logix/ScalarOps?f15#f15_g[32i](32i,32i,32i)
+; int f15<int>(int a, int b, int c), hex://logix/scalar.ops?f15#f15_g[32i](32i,32i,32i)
 ; f15_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2368,7 +2368,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f15<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f15#f15_g[64u](64u,64u,64u)
+; ulong f15<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f15#f15_g[64u](64u,64u,64u)
 ; f15_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2378,7 +2378,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f15<long>(long a, long b, long c), hex://logix/ScalarOps?f15#f15_g[64i](64i,64i,64i)
+; long f15<long>(long a, long b, long c), hex://logix/scalar.ops?f15#f15_g[64i](64i,64i,64i)
 ; f15_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2388,7 +2388,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f16<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f16#f16_g[8u](8u,8u,8u)
+; byte f16<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f16#f16_g[8u](8u,8u,8u)
 ; f16_g[8u](8u,8u,8u)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x8b,0xd0,0x45,0x0f,0xb6,0xc0,0x45,0x8b,0xc8,0x41,0x0b,0xd1,0xf7,0xd2,0x0f,0xb6,0xd2,0x41,0x33,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2411,7 +2411,7 @@
 0034h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f16<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f16#f16_g[8i](8i,8i,8i)
+; sbyte f16<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f16#f16_g[8i](8i,8i,8i)
 ; f16_g[8i](8i,8i,8i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc8,0x41,0x0b,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x4d,0x0f,0xbe,0xc0,0x41,0x33,0xd0,0x48,0x0f,0xbe,0xd2,0x4c,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2436,7 +2436,7 @@
 0047h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f16<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f16#f16_g[16u](16u,16u,16u)
+; ushort f16<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f16#f16_g[16u](16u,16u,16u)
 ; f16_g[16u](16u,16u,16u)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x45,0x0f,0xb7,0xc0,0x45,0x8b,0xc8,0x41,0x0b,0xd1,0xf7,0xd2,0x0f,0xb7,0xd2,0x41,0x33,0xc0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2459,7 +2459,7 @@
 0034h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f16<short>(short a, short b, short c), hex://logix/ScalarOps?f16#f16_g[16i](16i,16i,16i)
+; short f16<short>(short a, short b, short c), hex://logix/scalar.ops?f16#f16_g[16i](16i,16i,16i)
 ; f16_g[16i](16i,16i,16i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc8,0x41,0x0b,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x4d,0x0f,0xbf,0xc0,0x41,0x33,0xd0,0x48,0x0f,0xbf,0xd2,0x4c,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2484,7 +2484,7 @@
 0047h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f16<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f16#f16_g[32u](32u,32u,32u)
+; uint f16<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f16#f16_g[32u](32u,32u,32u)
 ; f16_g[32u](32u,32u,32u)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x0b,0xc0,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2497,7 +2497,7 @@
 0016h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f16<int>(int a, int b, int c), hex://logix/ScalarOps?f16#f16_g[32i](32i,32i,32i)
+; int f16<int>(int a, int b, int c), hex://logix/scalar.ops?f16#f16_g[32i](32i,32i,32i)
 ; f16_g[32i](32i,32i,32i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x0b,0xc0,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2510,7 +2510,7 @@
 0016h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f16<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f16#f16_g[64u](64u,64u,64u)
+; ulong f16<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f16#f16_g[64u](64u,64u,64u)
 ; f16_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x0b,0xc0,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2523,7 +2523,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f16<long>(long a, long b, long c), hex://logix/ScalarOps?f16#f16_g[64i](64i,64i,64i)
+; long f16<long>(long a, long b, long c), hex://logix/scalar.ops?f16#f16_g[64i](64i,64i,64i)
 ; f16_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x0b,0xc0,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2536,7 +2536,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f17<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f17#f17_g[8u](8u,8u,8u)
+; byte f17<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f17#f17_g[8u](8u,8u,8u)
 ; f17_g[8u](8u,8u,8u)[59] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x8b,0xd0,0x45,0x0f,0xb6,0xc0,0x45,0x8b,0xc8,0x41,0x0b,0xd1,0x0f,0xb6,0xd2,0x41,0x23,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2560,7 +2560,7 @@
 0037h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f17<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f17#f17_g[8i](8i,8i,8i)
+; sbyte f17<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f17#f17_g[8i](8i,8i,8i)
 ; f17_g[8i](8i,8i,8i)[80] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc8,0x41,0x0b,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x4d,0x0f,0xbe,0xc0,0x41,0x23,0xd0,0x48,0x0f,0xbe,0xd2,0x4c,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2586,7 +2586,7 @@
 004bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f17<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f17#f17_g[16u](16u,16u,16u)
+; ushort f17<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f17#f17_g[16u](16u,16u,16u)
 ; f17_g[16u](16u,16u,16u)[59] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x45,0x0f,0xb7,0xc0,0x45,0x8b,0xc8,0x41,0x0b,0xd1,0x0f,0xb7,0xd2,0x41,0x23,0xc0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2610,7 +2610,7 @@
 0037h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f17<short>(short a, short b, short c), hex://logix/ScalarOps?f17#f17_g[16i](16i,16i,16i)
+; short f17<short>(short a, short b, short c), hex://logix/scalar.ops?f17#f17_g[16i](16i,16i,16i)
 ; f17_g[16i](16i,16i,16i)[80] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc8,0x41,0x0b,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x4d,0x0f,0xbf,0xc0,0x41,0x23,0xd0,0x48,0x0f,0xbf,0xd2,0x4c,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2636,7 +2636,7 @@
 004bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f17<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f17#f17_g[32u](32u,32u,32u)
+; uint f17<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f17#f17_g[32u](32u,32u,32u)
 ; f17_g[32u](32u,32u,32u)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x0b,0xc0,0x41,0x23,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2649,7 +2649,7 @@
 0016h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f17<int>(int a, int b, int c), hex://logix/ScalarOps?f17#f17_g[32i](32i,32i,32i)
+; int f17<int>(int a, int b, int c), hex://logix/scalar.ops?f17#f17_g[32i](32i,32i,32i)
 ; f17_g[32i](32i,32i,32i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x0b,0xc0,0x41,0x23,0xd0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2662,7 +2662,7 @@
 0016h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f17<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f17#f17_g[64u](64u,64u,64u)
+; ulong f17<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f17#f17_g[64u](64u,64u,64u)
 ; f17_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x0b,0xc0,0x49,0x23,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2675,7 +2675,7 @@
 0019h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f17<long>(long a, long b, long c), hex://logix/ScalarOps?f17#f17_g[64i](64i,64i,64i)
+; long f17<long>(long a, long b, long c), hex://logix/scalar.ops?f17#f17_g[64i](64i,64i,64i)
 ; f17_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x0b,0xc0,0x49,0x23,0xd0,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2688,7 +2688,7 @@
 0019h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f18<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f18#f18_g[8u](8u,8u,8u)
+; byte f18<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f18#f18_g[8u](8u,8u,8u)
 ; f18_g[8u](8u,8u,8u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x33,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2705,7 +2705,7 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f18<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f18#f18_g[8i](8i,8i,8i)
+; sbyte f18<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f18#f18_g[8i](8i,8i,8i)
 ; f18_g[8i](8i,8i,8i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2722,7 +2722,7 @@
 0027h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f18<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f18#f18_g[16u](16u,16u,16u)
+; ushort f18<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f18#f18_g[16u](16u,16u,16u)
 ; f18_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2739,7 +2739,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f18<short>(short a, short b, short c), hex://logix/ScalarOps?f18#f18_g[16i](16i,16i,16i)
+; short f18<short>(short a, short b, short c), hex://logix/scalar.ops?f18#f18_g[16i](16i,16i,16i)
 ; f18_g[16i](16i,16i,16i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2756,7 +2756,7 @@
 0027h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f18<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f18#f18_g[32u](32u,32u,32u)
+; uint f18<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f18#f18_g[32u](32u,32u,32u)
 ; f18_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2766,7 +2766,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f18<int>(int a, int b, int c), hex://logix/ScalarOps?f18#f18_g[32i](32i,32i,32i)
+; int f18<int>(int a, int b, int c), hex://logix/scalar.ops?f18#f18_g[32i](32i,32i,32i)
 ; f18_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2776,7 +2776,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f18<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f18#f18_g[64u](64u,64u,64u)
+; ulong f18<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f18#f18_g[64u](64u,64u,64u)
 ; f18_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2786,7 +2786,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f18<long>(long a, long b, long c), hex://logix/ScalarOps?f18#f18_g[64i](64i,64i,64i)
+; long f18<long>(long a, long b, long c), hex://logix/scalar.ops?f18#f18_g[64i](64i,64i,64i)
 ; f18_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2796,7 +2796,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f19<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f19#f19_g[8u](8u,8u,8u)
+; byte f19<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f19#f19_g[8u](8u,8u,8u)
 ; f19_g[8u](8u,8u,8u)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x45,0x0f,0xb6,0xc8,0x41,0x33,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x45,0x0f,0xb6,0xc0,0x41,0x23,0xd0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x23,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x33,0xc2,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2818,7 +2818,7 @@
 0031h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f19<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f19#f19_g[8i](8i,8i,8i)
+; sbyte f19<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f19#f19_g[8i](8i,8i,8i)
 ; f19_g[8i](8i,8i,8i)[62] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc8,0x41,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x4d,0x0f,0xbe,0xc0,0x41,0x23,0xd0,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x23,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2840,7 +2840,7 @@
 0039h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f19<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f19#f19_g[16u](16u,16u,16u)
+; ushort f19<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f19#f19_g[16u](16u,16u,16u)
 ; f19_g[16u](16u,16u,16u)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x45,0x0f,0xb7,0xc8,0x41,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x45,0x0f,0xb7,0xc0,0x41,0x23,0xd0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x23,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x33,0xc2,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2862,7 +2862,7 @@
 0031h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f19<short>(short a, short b, short c), hex://logix/ScalarOps?f19#f19_g[16i](16i,16i,16i)
+; short f19<short>(short a, short b, short c), hex://logix/scalar.ops?f19#f19_g[16i](16i,16i,16i)
 ; f19_g[16i](16i,16i,16i)[62] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc8,0x41,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x4d,0x0f,0xbf,0xc0,0x41,0x23,0xd0,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x23,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2884,7 +2884,7 @@
 0039h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f19<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f19#f19_g[32u](32u,32u,32u)
+; uint f19<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f19#f19_g[32u](32u,32u,32u)
 ; f19_g[32u](32u,32u,32u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x33,0xc0,0x41,0x23,0xd0,0x23,0xd1,0x33,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2896,7 +2896,7 @@
 0011h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f19<int>(int a, int b, int c), hex://logix/ScalarOps?f19#f19_g[32i](32i,32i,32i)
+; int f19<int>(int a, int b, int c), hex://logix/scalar.ops?f19#f19_g[32i](32i,32i,32i)
 ; f19_g[32i](32i,32i,32i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x41,0x33,0xc0,0x41,0x23,0xd0,0x23,0xd1,0x33,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2908,7 +2908,7 @@
 0011h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f19<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f19#f19_g[64u](64u,64u,64u)
+; ulong f19<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f19#f19_g[64u](64u,64u,64u)
 ; f19_g[64u](64u,64u,64u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x33,0xc0,0x49,0x23,0xd0,0x48,0x23,0xd1,0x48,0x33,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2920,7 +2920,7 @@
 0014h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f19<long>(long a, long b, long c), hex://logix/ScalarOps?f19#f19_g[64i](64i,64i,64i)
+; long f19<long>(long a, long b, long c), hex://logix/scalar.ops?f19#f19_g[64i](64i,64i,64i)
 ; f19_g[64i](64i,64i,64i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x49,0x33,0xc0,0x49,0x23,0xd0,0x48,0x23,0xd1,0x48,0x33,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2932,7 +2932,7 @@
 0014h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1a#f1a_g[8u](8u,8u,8u)
+; byte f1a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1a#f1a_g[8u](8u,8u,8u)
 ; f1a_g[8u](8u,8u,8u)[42] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2951,7 +2951,7 @@
 0026h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1a#f1a_g[8i](8i,8i,8i)
+; sbyte f1a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1a#f1a_g[8i](8i,8i,8i)
 ; f1a_g[8i](8i,8i,8i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2970,7 +2970,7 @@
 002dh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1a#f1a_g[16u](16u,16u,16u)
+; ushort f1a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1a#f1a_g[16u](16u,16u,16u)
 ; f1a_g[16u](16u,16u,16u)[42] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -2989,7 +2989,7 @@
 0026h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1a<short>(short a, short b, short c), hex://logix/ScalarOps?f1a#f1a_g[16i](16i,16i,16i)
+; short f1a<short>(short a, short b, short c), hex://logix/scalar.ops?f1a#f1a_g[16i](16i,16i,16i)
 ; f1a_g[16i](16i,16i,16i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3008,7 +3008,7 @@
 002dh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1a#f1a_g[32u](32u,32u,32u)
+; uint f1a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1a#f1a_g[32u](32u,32u,32u)
 ; f1a_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3019,7 +3019,7 @@
 000eh and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1a<int>(int a, int b, int c), hex://logix/ScalarOps?f1a#f1a_g[32i](32i,32i,32i)
+; int f1a<int>(int a, int b, int c), hex://logix/scalar.ops?f1a#f1a_g[32i](32i,32i,32i)
 ; f1a_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x33,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3030,7 +3030,7 @@
 000eh and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1a#f1a_g[64u](64u,64u,64u)
+; ulong f1a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1a#f1a_g[64u](64u,64u,64u)
 ; f1a_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3041,7 +3041,7 @@
 0011h and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1a<long>(long a, long b, long c), hex://logix/ScalarOps?f1a#f1a_g[64i](64i,64i,64i)
+; long f1a<long>(long a, long b, long c), hex://logix/scalar.ops?f1a#f1a_g[64i](64i,64i,64i)
 ; f1a_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x33,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3052,7 +3052,7 @@
 0011h and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1b#f1b_g[8u](8u,8u,8u)
+; byte f1b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1b#f1b_g[8u](8u,8u,8u)
 ; f1b_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0xf7,0xd2,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3072,7 +3072,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1b#f1b_g[8i](8i,8i,8i)
+; sbyte f1b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1b#f1b_g[8i](8i,8i,8i)
 ; f1b_g[8i](8i,8i,8i)[63] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x48,0x0f,0xbe,0xc0,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3094,7 +3094,7 @@
 003ah movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1b#f1b_g[16u](16u,16u,16u)
+; ushort f1b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1b#f1b_g[16u](16u,16u,16u)
 ; f1b_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0xf7,0xd2,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3114,7 +3114,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1b<short>(short a, short b, short c), hex://logix/ScalarOps?f1b#f1b_g[16i](16i,16i,16i)
+; short f1b<short>(short a, short b, short c), hex://logix/scalar.ops?f1b#f1b_g[16i](16i,16i,16i)
 ; f1b_g[16i](16i,16i,16i)[63] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x48,0x0f,0xbf,0xc0,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3136,7 +3136,7 @@
 003ah movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1b#f1b_g[32u](32u,32u,32u)
+; uint f1b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1b#f1b_g[32u](32u,32u,32u)
 ; f1b_g[32u](32u,32u,32u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3148,7 +3148,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1b<int>(int a, int b, int c), hex://logix/ScalarOps?f1b#f1b_g[32i](32i,32i,32i)
+; int f1b<int>(int a, int b, int c), hex://logix/scalar.ops?f1b#f1b_g[32i](32i,32i,32i)
 ; f1b_g[32i](32i,32i,32i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3160,7 +3160,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1b#f1b_g[64u](64u,64u,64u)
+; ulong f1b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1b#f1b_g[64u](64u,64u,64u)
 ; f1b_g[64u](64u,64u,64u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3172,7 +3172,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1b<long>(long a, long b, long c), hex://logix/ScalarOps?f1b#f1b_g[64i](64i,64i,64i)
+; long f1b<long>(long a, long b, long c), hex://logix/scalar.ops?f1b#f1b_g[64i](64i,64i,64i)
 ; f1b_g[64i](64i,64i,64i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3184,7 +3184,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1c#f1c_g[8u](8u,8u,8u)
+; byte f1c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1c#f1c_g[8u](8u,8u,8u)
 ; f1c_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x45,0x0f,0xb6,0xc0,0x41,0x23,0xc0,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3203,7 +3203,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1c#f1c_g[8i](8i,8i,8i)
+; sbyte f1c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1c#f1c_g[8i](8i,8i,8i)
 ; f1c_g[8i](8i,8i,8i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x4d,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3222,7 +3222,7 @@
 002eh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1c#f1c_g[16u](16u,16u,16u)
+; ushort f1c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1c#f1c_g[16u](16u,16u,16u)
 ; f1c_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x45,0x0f,0xb7,0xc0,0x41,0x23,0xc0,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3241,7 +3241,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1c<short>(short a, short b, short c), hex://logix/ScalarOps?f1c#f1c_g[16i](16i,16i,16i)
+; short f1c<short>(short a, short b, short c), hex://logix/scalar.ops?f1c#f1c_g[16i](16i,16i,16i)
 ; f1c_g[16i](16i,16i,16i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x4d,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3260,7 +3260,7 @@
 002eh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1c#f1c_g[32u](32u,32u,32u)
+; uint f1c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1c#f1c_g[32u](32u,32u,32u)
 ; f1c_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x23,0xc1,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3271,7 +3271,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1c<int>(int a, int b, int c), hex://logix/ScalarOps?f1c#f1c_g[32i](32i,32i,32i)
+; int f1c<int>(int a, int b, int c), hex://logix/scalar.ops?f1c#f1c_g[32i](32i,32i,32i)
 ; f1c_g[32i](32i,32i,32i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x23,0xc1,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3282,7 +3282,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1c#f1c_g[64u](64u,64u,64u)
+; ulong f1c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1c#f1c_g[64u](64u,64u,64u)
 ; f1c_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x23,0xc1,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3293,7 +3293,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1c<long>(long a, long b, long c), hex://logix/ScalarOps?f1c#f1c_g[64i](64i,64i,64i)
+; long f1c<long>(long a, long b, long c), hex://logix/scalar.ops?f1c#f1c_g[64i](64i,64i,64i)
 ; f1c_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x23,0xc1,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3304,7 +3304,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1d#f1d_g[8u](8u,8u,8u)
+; byte f1d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1d#f1d_g[8u](8u,8u,8u)
 ; f1d_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0xf7,0xd1,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3324,7 +3324,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1d#f1d_g[8i](8i,8i,8i)
+; sbyte f1d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1d#f1d_g[8i](8i,8i,8i)
 ; f1d_g[8i](8i,8i,8i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x4c,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3346,7 +3346,7 @@
 003bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1d#f1d_g[16u](16u,16u,16u)
+; ushort f1d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1d#f1d_g[16u](16u,16u,16u)
 ; f1d_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0xf7,0xd1,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3366,7 +3366,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1d<short>(short a, short b, short c), hex://logix/ScalarOps?f1d#f1d_g[16i](16i,16i,16i)
+; short f1d<short>(short a, short b, short c), hex://logix/scalar.ops?f1d#f1d_g[16i](16i,16i,16i)
 ; f1d_g[16i](16i,16i,16i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x4c,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3388,7 +3388,7 @@
 003bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1d#f1d_g[32u](32u,32u,32u)
+; uint f1d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1d#f1d_g[32u](32u,32u,32u)
 ; f1d_g[32u](32u,32u,32u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x8b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3401,7 +3401,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1d<int>(int a, int b, int c), hex://logix/ScalarOps?f1d#f1d_g[32i](32i,32i,32i)
+; int f1d<int>(int a, int b, int c), hex://logix/scalar.ops?f1d#f1d_g[32i](32i,32i,32i)
 ; f1d_g[32i](32i,32i,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x8b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3414,7 +3414,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1d#f1d_g[64u](64u,64u,64u)
+; ulong f1d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1d#f1d_g[64u](64u,64u,64u)
 ; f1d_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x8b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3427,7 +3427,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1d<long>(long a, long b, long c), hex://logix/ScalarOps?f1d#f1d_g[64i](64i,64i,64i)
+; long f1d<long>(long a, long b, long c), hex://logix/scalar.ops?f1d#f1d_g[64i](64i,64i,64i)
 ; f1d_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x8b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3440,7 +3440,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1e#f1e_g[8u](8u,8u,8u)
+; byte f1e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1e#f1e_g[8u](8u,8u,8u)
 ; f1e_g[8u](8u,8u,8u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3453,7 +3453,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1e#f1e_g[8i](8i,8i,8i)
+; sbyte f1e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1e#f1e_g[8i](8i,8i,8i)
 ; f1e_g[8i](8i,8i,8i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3466,7 +3466,7 @@
 0019h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1e#f1e_g[16u](16u,16u,16u)
+; ushort f1e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1e#f1e_g[16u](16u,16u,16u)
 ; f1e_g[16u](16u,16u,16u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3479,7 +3479,7 @@
 0016h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1e<short>(short a, short b, short c), hex://logix/ScalarOps?f1e#f1e_g[16i](16i,16i,16i)
+; short f1e<short>(short a, short b, short c), hex://logix/scalar.ops?f1e#f1e_g[16i](16i,16i,16i)
 ; f1e_g[16i](16i,16i,16i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3492,7 +3492,7 @@
 0019h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1e#f1e_g[32u](32u,32u,32u)
+; uint f1e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1e#f1e_g[32u](32u,32u,32u)
 ; f1e_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3501,7 +3501,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1e<int>(int a, int b, int c), hex://logix/ScalarOps?f1e#f1e_g[32i](32i,32i,32i)
+; int f1e<int>(int a, int b, int c), hex://logix/scalar.ops?f1e#f1e_g[32i](32i,32i,32i)
 ; f1e_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3510,7 +3510,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1e#f1e_g[64u](64u,64u,64u)
+; ulong f1e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1e#f1e_g[64u](64u,64u,64u)
 ; f1e_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3519,7 +3519,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1e<long>(long a, long b, long c), hex://logix/ScalarOps?f1e#f1e_g[64i](64i,64i,64i)
+; long f1e<long>(long a, long b, long c), hex://logix/scalar.ops?f1e#f1e_g[64i](64i,64i,64i)
 ; f1e_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3528,7 +3528,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f1f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f1f#f1f_g[8u](8u,8u,8u)
+; byte f1f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f1f#f1f_g[8u](8u,8u,8u)
 ; f1f_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3542,7 +3542,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f1f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f1f#f1f_g[8i](8i,8i,8i)
+; sbyte f1f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f1f#f1f_g[8i](8i,8i,8i)
 ; f1f_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3556,7 +3556,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f1f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f1f#f1f_g[16u](16u,16u,16u)
+; ushort f1f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f1f#f1f_g[16u](16u,16u,16u)
 ; f1f_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3570,7 +3570,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f1f<short>(short a, short b, short c), hex://logix/ScalarOps?f1f#f1f_g[16i](16i,16i,16i)
+; short f1f<short>(short a, short b, short c), hex://logix/scalar.ops?f1f#f1f_g[16i](16i,16i,16i)
 ; f1f_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3584,7 +3584,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f1f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f1f#f1f_g[32u](32u,32u,32u)
+; uint f1f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f1f#f1f_g[32u](32u,32u,32u)
 ; f1f_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3594,7 +3594,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f1f<int>(int a, int b, int c), hex://logix/ScalarOps?f1f#f1f_g[32i](32i,32i,32i)
+; int f1f<int>(int a, int b, int c), hex://logix/scalar.ops?f1f#f1f_g[32i](32i,32i,32i)
 ; f1f_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3604,7 +3604,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f1f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f1f#f1f_g[64u](64u,64u,64u)
+; ulong f1f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f1f#f1f_g[64u](64u,64u,64u)
 ; f1f_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3614,7 +3614,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f1f<long>(long a, long b, long c), hex://logix/ScalarOps?f1f#f1f_g[64i](64i,64i,64i)
+; long f1f<long>(long a, long b, long c), hex://logix/scalar.ops?f1f#f1f_g[64i](64i,64i,64i)
 ; f1f_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3624,7 +3624,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f20<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f20#f20_g[8u](8u,8u,8u)
+; byte f20<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f20#f20_g[8u](8u,8u,8u)
 ; f20_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x23,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3639,7 +3639,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f20<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f20#f20_g[8i](8i,8i,8i)
+; sbyte f20<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f20#f20_g[8i](8i,8i,8i)
 ; f20_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3654,7 +3654,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f20<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f20#f20_g[16u](16u,16u,16u)
+; ushort f20<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f20#f20_g[16u](16u,16u,16u)
 ; f20_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x23,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3669,7 +3669,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f20<short>(short a, short b, short c), hex://logix/ScalarOps?f20#f20_g[16i](16i,16i,16i)
+; short f20<short>(short a, short b, short c), hex://logix/scalar.ops?f20#f20_g[16i](16i,16i,16i)
 ; f20_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3684,7 +3684,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f20<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f20#f20_g[32u](32u,32u,32u)
+; uint f20<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f20#f20_g[32u](32u,32u,32u)
 ; f20_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3694,7 +3694,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f20<int>(int a, int b, int c), hex://logix/ScalarOps?f20#f20_g[32i](32i,32i,32i)
+; int f20<int>(int a, int b, int c), hex://logix/scalar.ops?f20#f20_g[32i](32i,32i,32i)
 ; f20_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3704,7 +3704,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f20<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f20#f20_g[64u](64u,64u,64u)
+; ulong f20<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f20#f20_g[64u](64u,64u,64u)
 ; f20_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3714,7 +3714,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f20<long>(long a, long b, long c), hex://logix/ScalarOps?f20#f20_g[64i](64i,64i,64i)
+; long f20<long>(long a, long b, long c), hex://logix/scalar.ops?f20#f20_g[64i](64i,64i,64i)
 ; f20_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3724,7 +3724,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f21<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f21#f21_g[8u](8u,8u,8u)
+; byte f21<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f21#f21_g[8u](8u,8u,8u)
 ; f21_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x33,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3738,7 +3738,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f21<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f21#f21_g[8i](8i,8i,8i)
+; sbyte f21<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f21#f21_g[8i](8i,8i,8i)
 ; f21_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3752,7 +3752,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f21<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f21#f21_g[16u](16u,16u,16u)
+; ushort f21<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f21#f21_g[16u](16u,16u,16u)
 ; f21_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3766,7 +3766,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f21<short>(short a, short b, short c), hex://logix/ScalarOps?f21#f21_g[16i](16i,16i,16i)
+; short f21<short>(short a, short b, short c), hex://logix/scalar.ops?f21#f21_g[16i](16i,16i,16i)
 ; f21_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3780,7 +3780,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f21<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f21#f21_g[32u](32u,32u,32u)
+; uint f21<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f21#f21_g[32u](32u,32u,32u)
 ; f21_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3790,7 +3790,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f21<int>(int a, int b, int c), hex://logix/ScalarOps?f21#f21_g[32i](32i,32i,32i)
+; int f21<int>(int a, int b, int c), hex://logix/scalar.ops?f21#f21_g[32i](32i,32i,32i)
 ; f21_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3800,7 +3800,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f21<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f21#f21_g[64u](64u,64u,64u)
+; ulong f21<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f21#f21_g[64u](64u,64u,64u)
 ; f21_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3810,7 +3810,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f21<long>(long a, long b, long c), hex://logix/ScalarOps?f21#f21_g[64i](64i,64i,64i)
+; long f21<long>(long a, long b, long c), hex://logix/scalar.ops?f21#f21_g[64i](64i,64i,64i)
 ; f21_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3820,7 +3820,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f22<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f22#f22_g[8u](8u,8u,8u)
+; byte f22<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f22#f22_g[8u](8u,8u,8u)
 ; f22_g[8u](8u,8u,8u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3830,7 +3830,7 @@
 0011h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f22<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f22#f22_g[8i](8i,8i,8i)
+; sbyte f22<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f22#f22_g[8i](8i,8i,8i)
 ; f22_g[8i](8i,8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3840,7 +3840,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f22<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f22#f22_g[16u](16u,16u,16u)
+; ushort f22<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f22#f22_g[16u](16u,16u,16u)
 ; f22_g[16u](16u,16u,16u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3850,7 +3850,7 @@
 0011h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f22<short>(short a, short b, short c), hex://logix/ScalarOps?f22#f22_g[16i](16i,16i,16i)
+; short f22<short>(short a, short b, short c), hex://logix/scalar.ops?f22#f22_g[16i](16i,16i,16i)
 ; f22_g[16i](16i,16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3860,35 +3860,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f22<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f22#f22_g[32u](32u,32u,32u)
+; uint f22<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f22#f22_g[32u](32u,32u,32u)
 ; f22_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xc2,0x68,0xf2,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,r8d                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 c2 68 f2 c0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f22<int>(int a, int b, int c), hex://logix/ScalarOps?f22#f22_g[32i](32i,32i,32i)
+; int f22<int>(int a, int b, int c), hex://logix/scalar.ops?f22#f22_g[32i](32i,32i,32i)
 ; f22_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xc2,0x68,0xf2,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,r8d                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 c2 68 f2 c0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f22<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f22#f22_g[64u](64u,64u,64u)
+; ulong f22<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f22#f22_g[64u](64u,64u,64u)
 ; f22_g[64u](64u,64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xc2,0xe8,0xf2,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,r8                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 c2 e8 f2 c0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f22<long>(long a, long b, long c), hex://logix/ScalarOps?f22#f22_g[64i](64i,64i,64i)
+; long f22<long>(long a, long b, long c), hex://logix/scalar.ops?f22#f22_g[64i](64i,64i,64i)
 ; f22_g[64i](64i,64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xc2,0xe8,0xf2,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,r8                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 c2 e8 f2 c0}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f23<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f23#f23_g[8u](8u,8u,8u)
+; byte f23<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f23#f23_g[8u](8u,8u,8u)
 ; f23_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0xf7,0xd2,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3906,7 +3906,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f23<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f23#f23_g[8i](8i,8i,8i)
+; sbyte f23<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f23#f23_g[8i](8i,8i,8i)
 ; f23_g[8i](8i,8i,8i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3924,7 +3924,7 @@
 0029h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f23<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f23#f23_g[16u](16u,16u,16u)
+; ushort f23<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f23#f23_g[16u](16u,16u,16u)
 ; f23_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0xf7,0xd2,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3942,7 +3942,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f23<short>(short a, short b, short c), hex://logix/ScalarOps?f23#f23_g[16i](16i,16i,16i)
+; short f23<short>(short a, short b, short c), hex://logix/scalar.ops?f23#f23_g[16i](16i,16i,16i)
 ; f23_g[16i](16i,16i,16i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3960,7 +3960,7 @@
 0029h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f23<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f23#f23_g[32u](32u,32u,32u)
+; uint f23<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f23#f23_g[32u](32u,32u,32u)
 ; f23_g[32u](32u,32u,32u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x8b,0xd1,0xf7,0xd2,0x41,0x0b,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3972,7 +3972,7 @@
 0010h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f23<int>(int a, int b, int c), hex://logix/ScalarOps?f23#f23_g[32i](32i,32i,32i)
+; int f23<int>(int a, int b, int c), hex://logix/scalar.ops?f23#f23_g[32i](32i,32i,32i)
 ; f23_g[32i](32i,32i,32i)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x8b,0xd1,0xf7,0xd2,0x41,0x0b,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3984,7 +3984,7 @@
 0010h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f23<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f23#f23_g[64u](64u,64u,64u)
+; ulong f23<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f23#f23_g[64u](64u,64u,64u)
 ; f23_g[64u](64u,64u,64u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x8b,0xd1,0x48,0xf7,0xd2,0x49,0x0b,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -3996,7 +3996,7 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f23<long>(long a, long b, long c), hex://logix/ScalarOps?f23#f23_g[64i](64i,64i,64i)
+; long f23<long>(long a, long b, long c), hex://logix/scalar.ops?f23#f23_g[64i](64i,64i,64i)
 ; f23_g[64i](64i,64i,64i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x8b,0xd1,0x48,0xf7,0xd2,0x49,0x0b,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4008,7 +4008,7 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f24<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f24#f24_g[8u](8u,8u,8u)
+; byte f24<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f24#f24_g[8u](8u,8u,8u)
 ; f24_g[8u](8u,8u,8u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0x33,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4025,7 +4025,7 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f24<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f24#f24_g[8i](8i,8i,8i)
+; sbyte f24<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f24#f24_g[8i](8i,8i,8i)
 ; f24_g[8i](8i,8i,8i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xca,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4042,7 +4042,7 @@
 0027h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f24<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f24#f24_g[16u](16u,16u,16u)
+; ushort f24<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f24#f24_g[16u](16u,16u,16u)
 ; f24_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xca,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4059,7 +4059,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f24<short>(short a, short b, short c), hex://logix/ScalarOps?f24#f24_g[16i](16i,16i,16i)
+; short f24<short>(short a, short b, short c), hex://logix/scalar.ops?f24#f24_g[16i](16i,16i,16i)
 ; f24_g[16i](16i,16i,16i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xca,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4076,7 +4076,7 @@
 0027h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f24<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f24#f24_g[32u](32u,32u,32u)
+; uint f24<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f24#f24_g[32u](32u,32u,32u)
 ; f24_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xca,0x41,0x33,0xd0,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4086,7 +4086,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f24<int>(int a, int b, int c), hex://logix/ScalarOps?f24#f24_g[32i](32i,32i,32i)
+; int f24<int>(int a, int b, int c), hex://logix/scalar.ops?f24#f24_g[32i](32i,32i,32i)
 ; f24_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xca,0x41,0x33,0xd0,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4096,7 +4096,7 @@
 000ch mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f24<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f24#f24_g[64u](64u,64u,64u)
+; ulong f24<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f24#f24_g[64u](64u,64u,64u)
 ; f24_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xca,0x49,0x33,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4106,7 +4106,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f24<long>(long a, long b, long c), hex://logix/ScalarOps?f24#f24_g[64i](64i,64i,64i)
+; long f24<long>(long a, long b, long c), hex://logix/scalar.ops?f24#f24_g[64i](64i,64i,64i)
 ; f24_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xca,0x49,0x33,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4116,7 +4116,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f25<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f25#f25_g[8u](8u,8u,8u)
+; byte f25<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f25#f25_g[8u](8u,8u,8u)
 ; f25_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0xf7,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4137,7 +4137,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f25<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f25#f25_g[8i](8i,8i,8i)
+; sbyte f25<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f25#f25_g[8i](8i,8i,8i)
 ; f25_g[8i](8i,8i,8i)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4158,7 +4158,7 @@
 0033h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f25<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f25#f25_g[16u](16u,16u,16u)
+; ushort f25<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f25#f25_g[16u](16u,16u,16u)
 ; f25_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0xf7,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4179,7 +4179,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f25<short>(short a, short b, short c), hex://logix/ScalarOps?f25#f25_g[16i](16i,16i,16i)
+; short f25<short>(short a, short b, short c), hex://logix/scalar.ops?f25#f25_g[16i](16i,16i,16i)
 ; f25_g[16i](16i,16i,16i)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4200,7 +4200,7 @@
 0033h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f25<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f25#f25_g[32u](32u,32u,32u)
+; uint f25<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f25#f25_g[32u](32u,32u,32u)
 ; f25_g[32u](32u,32u,32u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4213,7 +4213,7 @@
 0012h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f25<int>(int a, int b, int c), hex://logix/ScalarOps?f25#f25_g[32i](32i,32i,32i)
+; int f25<int>(int a, int b, int c), hex://logix/scalar.ops?f25#f25_g[32i](32i,32i,32i)
 ; f25_g[32i](32i,32i,32i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4226,7 +4226,7 @@
 0012h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f25<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f25#f25_g[64u](64u,64u,64u)
+; ulong f25<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f25#f25_g[64u](64u,64u,64u)
 ; f25_g[64u](64u,64u,64u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4239,7 +4239,7 @@
 0017h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f25<long>(long a, long b, long c), hex://logix/ScalarOps?f25#f25_g[64i](64i,64i,64i)
+; long f25<long>(long a, long b, long c), hex://logix/scalar.ops?f25#f25_g[64i](64i,64i,64i)
 ; f25_g[64i](64i,64i,64i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4252,7 +4252,7 @@
 0017h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f26<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f26#f26_g[8u](8u,8u,8u)
+; byte f26<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f26#f26_g[8u](8u,8u,8u)
 ; f26_g[8u](8u,8u,8u)[42] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0x23,0xc1,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4271,7 +4271,7 @@
 0026h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f26<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f26#f26_g[8i](8i,8i,8i)
+; sbyte f26<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f26#f26_g[8i](8i,8i,8i)
 ; f26_g[8i](8i,8i,8i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xca,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4290,7 +4290,7 @@
 002dh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f26<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f26#f26_g[16u](16u,16u,16u)
+; ushort f26<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f26#f26_g[16u](16u,16u,16u)
 ; f26_g[16u](16u,16u,16u)[42] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xca,0x23,0xc1,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4309,7 +4309,7 @@
 0026h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0029h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f26<short>(short a, short b, short c), hex://logix/ScalarOps?f26#f26_g[16i](16i,16i,16i)
+; short f26<short>(short a, short b, short c), hex://logix/scalar.ops?f26#f26_g[16i](16i,16i,16i)
 ; f26_g[16i](16i,16i,16i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xca,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4328,7 +4328,7 @@
 002dh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f26<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f26#f26_g[32u](32u,32u,32u)
+; uint f26<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f26#f26_g[32u](32u,32u,32u)
 ; f26_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xca,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4339,7 +4339,7 @@
 000eh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f26<int>(int a, int b, int c), hex://logix/ScalarOps?f26#f26_g[32i](32i,32i,32i)
+; int f26<int>(int a, int b, int c), hex://logix/scalar.ops?f26#f26_g[32i](32i,32i,32i)
 ; f26_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xca,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4350,7 +4350,7 @@
 000eh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f26<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f26#f26_g[64u](64u,64u,64u)
+; ulong f26<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f26#f26_g[64u](64u,64u,64u)
 ; f26_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xca,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4361,7 +4361,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f26<long>(long a, long b, long c), hex://logix/ScalarOps?f26#f26_g[64i](64i,64i,64i)
+; long f26<long>(long a, long b, long c), hex://logix/scalar.ops?f26#f26_g[64i](64i,64i,64i)
 ; f26_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xca,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4372,7 +4372,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f27<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f27#f27_g[8u](8u,8u,8u)
+; byte f27<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f27#f27_g[8u](8u,8u,8u)
 ; f27_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0xf7,0xd2,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4392,7 +4392,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f27<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f27#f27_g[8i](8i,8i,8i)
+; sbyte f27<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f27#f27_g[8i](8i,8i,8i)
 ; f27_g[8i](8i,8i,8i)[63] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x48,0x0f,0xbe,0xc0,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4414,7 +4414,7 @@
 003ah movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f27<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f27#f27_g[16u](16u,16u,16u)
+; ushort f27<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f27#f27_g[16u](16u,16u,16u)
 ; f27_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0xf7,0xd2,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4434,7 +4434,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f27<short>(short a, short b, short c), hex://logix/ScalarOps?f27#f27_g[16i](16i,16i,16i)
+; short f27<short>(short a, short b, short c), hex://logix/scalar.ops?f27#f27_g[16i](16i,16i,16i)
 ; f27_g[16i](16i,16i,16i)[63] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x48,0x0f,0xbf,0xc0,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4456,7 +4456,7 @@
 003ah movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f27<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f27#f27_g[32u](32u,32u,32u)
+; uint f27<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f27#f27_g[32u](32u,32u,32u)
 ; f27_g[32u](32u,32u,32u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x8b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4469,7 +4469,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f27<int>(int a, int b, int c), hex://logix/ScalarOps?f27#f27_g[32i](32i,32i,32i)
+; int f27<int>(int a, int b, int c), hex://logix/scalar.ops?f27#f27_g[32i](32i,32i,32i)
 ; f27_g[32i](32i,32i,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x8b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4482,7 +4482,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f27<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f27#f27_g[64u](64u,64u,64u)
+; ulong f27<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f27#f27_g[64u](64u,64u,64u)
 ; f27_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x8b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4495,7 +4495,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f27<long>(long a, long b, long c), hex://logix/ScalarOps?f27#f27_g[64i](64i,64i,64i)
+; long f27<long>(long a, long b, long c), hex://logix/scalar.ops?f27#f27_g[64i](64i,64i,64i)
 ; f27_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x8b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4508,7 +4508,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f28<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f28#f28_g[8u](8u,8u,8u)
+; byte f28<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f28#f28_g[8u](8u,8u,8u)
 ; f28_g[8u](8u,8u,8u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4521,7 +4521,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f28<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f28#f28_g[8i](8i,8i,8i)
+; sbyte f28<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f28#f28_g[8i](8i,8i,8i)
 ; f28_g[8i](8i,8i,8i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4534,7 +4534,7 @@
 0019h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f28<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f28#f28_g[16u](16u,16u,16u)
+; ushort f28<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f28#f28_g[16u](16u,16u,16u)
 ; f28_g[16u](16u,16u,16u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4547,7 +4547,7 @@
 0016h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f28<short>(short a, short b, short c), hex://logix/ScalarOps?f28#f28_g[16i](16i,16i,16i)
+; short f28<short>(short a, short b, short c), hex://logix/scalar.ops?f28#f28_g[16i](16i,16i,16i)
 ; f28_g[16i](16i,16i,16i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4560,7 +4560,7 @@
 0019h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f28<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f28#f28_g[32u](32u,32u,32u)
+; uint f28<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f28#f28_g[32u](32u,32u,32u)
 ; f28_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4569,7 +4569,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f28<int>(int a, int b, int c), hex://logix/ScalarOps?f28#f28_g[32i](32i,32i,32i)
+; int f28<int>(int a, int b, int c), hex://logix/scalar.ops?f28#f28_g[32i](32i,32i,32i)
 ; f28_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4578,7 +4578,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f28<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f28#f28_g[64u](64u,64u,64u)
+; ulong f28<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f28#f28_g[64u](64u,64u,64u)
 ; f28_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4587,7 +4587,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f28<long>(long a, long b, long c), hex://logix/ScalarOps?f28#f28_g[64i](64i,64i,64i)
+; long f28<long>(long a, long b, long c), hex://logix/scalar.ops?f28#f28_g[64i](64i,64i,64i)
 ; f28_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4596,7 +4596,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f29<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f29#f29_g[8u](8u,8u,8u)
+; byte f29<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f29#f29_g[8u](8u,8u,8u)
 ; f29_g[8u](8u,8u,8u)[55] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x8b,0xd0,0x0f,0xb6,0xc9,0x44,0x8b,0xc9,0x41,0x33,0xd1,0x0f,0xb6,0xd2,0x0b,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4619,7 +4619,7 @@
 0033h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f29<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f29#f29_g[8i](8i,8i,8i)
+; sbyte f29<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f29#f29_g[8i](8i,8i,8i)
 ; f29_g[8i](8i,8i,8i)[74] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4c,0x0f,0xbe,0xc9,0x41,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x48,0x0f,0xbe,0xc0,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4644,7 +4644,7 @@
 0045h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f29<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f29#f29_g[16u](16u,16u,16u)
+; ushort f29<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f29#f29_g[16u](16u,16u,16u)
 ; f29_g[16u](16u,16u,16u)[55] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x0f,0xb7,0xc9,0x44,0x8b,0xc9,0x41,0x33,0xd1,0x0f,0xb7,0xd2,0x0b,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4667,7 +4667,7 @@
 0033h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0036h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f29<short>(short a, short b, short c), hex://logix/ScalarOps?f29#f29_g[16i](16i,16i,16i)
+; short f29<short>(short a, short b, short c), hex://logix/scalar.ops?f29#f29_g[16i](16i,16i,16i)
 ; f29_g[16i](16i,16i,16i)[74] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4c,0x0f,0xbf,0xc9,0x41,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x48,0x0f,0xbf,0xc0,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4692,7 +4692,7 @@
 0045h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0049h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f29<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f29#f29_g[32u](32u,32u,32u)
+; uint f29<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f29#f29_g[32u](32u,32u,32u)
 ; f29_g[32u](32u,32u,32u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x33,0xc1,0x0b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4705,7 +4705,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f29<int>(int a, int b, int c), hex://logix/ScalarOps?f29#f29_g[32i](32i,32i,32i)
+; int f29<int>(int a, int b, int c), hex://logix/scalar.ops?f29#f29_g[32i](32i,32i,32i)
 ; f29_g[32i](32i,32i,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x33,0xc1,0x0b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4718,7 +4718,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f29<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f29#f29_g[64u](64u,64u,64u)
+; ulong f29<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f29#f29_g[64u](64u,64u,64u)
 ; f29_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0x33,0xc1,0x48,0x0b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4731,7 +4731,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f29<long>(long a, long b, long c), hex://logix/ScalarOps?f29#f29_g[64i](64i,64i,64i)
+; long f29<long>(long a, long b, long c), hex://logix/scalar.ops?f29#f29_g[64i](64i,64i,64i)
 ; f29_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0x33,0xc1,0x48,0x0b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4744,7 +4744,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2a#f2a_g[8u](8u,8u,8u)
+; byte f2a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2a#f2a_g[8u](8u,8u,8u)
 ; f2a_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4758,7 +4758,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2a#f2a_g[8i](8i,8i,8i)
+; sbyte f2a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2a#f2a_g[8i](8i,8i,8i)
 ; f2a_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4772,7 +4772,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2a#f2a_g[16u](16u,16u,16u)
+; ushort f2a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2a#f2a_g[16u](16u,16u,16u)
 ; f2a_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4786,7 +4786,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2a<short>(short a, short b, short c), hex://logix/ScalarOps?f2a#f2a_g[16i](16i,16i,16i)
+; short f2a<short>(short a, short b, short c), hex://logix/scalar.ops?f2a#f2a_g[16i](16i,16i,16i)
 ; f2a_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4800,7 +4800,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2a#f2a_g[32u](32u,32u,32u)
+; uint f2a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2a#f2a_g[32u](32u,32u,32u)
 ; f2a_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4810,7 +4810,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2a<int>(int a, int b, int c), hex://logix/ScalarOps?f2a#f2a_g[32i](32i,32i,32i)
+; int f2a<int>(int a, int b, int c), hex://logix/scalar.ops?f2a#f2a_g[32i](32i,32i,32i)
 ; f2a_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4820,7 +4820,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2a#f2a_g[64u](64u,64u,64u)
+; ulong f2a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2a#f2a_g[64u](64u,64u,64u)
 ; f2a_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4830,7 +4830,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2a<long>(long a, long b, long c), hex://logix/ScalarOps?f2a#f2a_g[64i](64i,64i,64i)
+; long f2a<long>(long a, long b, long c), hex://logix/scalar.ops?f2a#f2a_g[64i](64i,64i,64i)
 ; f2a_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4840,7 +4840,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2b#f2b_g[8u](8u,8u,8u)
+; byte f2b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2b#f2b_g[8u](8u,8u,8u)
 ; f2b_g[8u](8u,8u,8u)[57] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x8b,0xd0,0x0f,0xb6,0xc9,0x44,0x8b,0xc9,0x41,0x23,0xd1,0xf7,0xd2,0x0f,0xb6,0xd2,0x0b,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4864,7 +4864,7 @@
 0035h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2b#f2b_g[8i](8i,8i,8i)
+; sbyte f2b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2b#f2b_g[8i](8i,8i,8i)
 ; f2b_g[8i](8i,8i,8i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4c,0x0f,0xbe,0xc9,0x41,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x48,0x0f,0xbe,0xc0,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4890,7 +4890,7 @@
 0047h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2b#f2b_g[16u](16u,16u,16u)
+; ushort f2b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2b#f2b_g[16u](16u,16u,16u)
 ; f2b_g[16u](16u,16u,16u)[57] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x0f,0xb7,0xc9,0x44,0x8b,0xc9,0x41,0x23,0xd1,0xf7,0xd2,0x0f,0xb7,0xd2,0x0b,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x23,0xd1,0xc4,0xe2,0x70,0xf2,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4914,7 +4914,7 @@
 0035h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0038h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2b<short>(short a, short b, short c), hex://logix/ScalarOps?f2b#f2b_g[16i](16i,16i,16i)
+; short f2b<short>(short a, short b, short c), hex://logix/scalar.ops?f2b#f2b_g[16i](16i,16i,16i)
 ; f2b_g[16i](16i,16i,16i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4c,0x0f,0xbf,0xc9,0x41,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x48,0x0f,0xbf,0xc0,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4940,7 +4940,7 @@
 0047h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2b#f2b_g[32u](32u,32u,32u)
+; uint f2b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2b#f2b_g[32u](32u,32u,32u)
 ; f2b_g[32u](32u,32u,32u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x23,0xc1,0xf7,0xd0,0x0b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4954,7 +4954,7 @@
 0017h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2b<int>(int a, int b, int c), hex://logix/ScalarOps?f2b#f2b_g[32i](32i,32i,32i)
+; int f2b<int>(int a, int b, int c), hex://logix/scalar.ops?f2b#f2b_g[32i](32i,32i,32i)
 ; f2b_g[32i](32i,32i,32i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0x23,0xc1,0xf7,0xd0,0x0b,0xd1,0xf7,0xd2,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4968,7 +4968,7 @@
 0017h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2b#f2b_g[64u](64u,64u,64u)
+; ulong f2b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2b#f2b_g[64u](64u,64u,64u)
 ; f2b_g[64u](64u,64u,64u)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0x23,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4982,7 +4982,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2b<long>(long a, long b, long c), hex://logix/ScalarOps?f2b#f2b_g[64i](64i,64i,64i)
+; long f2b<long>(long a, long b, long c), hex://logix/scalar.ops?f2b#f2b_g[64i](64i,64i,64i)
 ; f2b_g[64i](64i,64i,64i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0x23,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xd1,0x48,0xf7,0xd2,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -4996,7 +4996,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2c#f2c_g[8u](8u,8u,8u)
+; byte f2c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2c#f2c_g[8u](8u,8u,8u)
 ; f2c_g[8u](8u,8u,8u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x45,0x0f,0xb6,0xc0,0x41,0x0b,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5013,7 +5013,7 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2c#f2c_g[8i](8i,8i,8i)
+; sbyte f2c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2c#f2c_g[8i](8i,8i,8i)
 ; f2c_g[8i](8i,8i,8i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5030,7 +5030,7 @@
 0028h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2c#f2c_g[16u](16u,16u,16u)
+; ushort f2c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2c#f2c_g[16u](16u,16u,16u)
 ; f2c_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x45,0x0f,0xb7,0xc0,0x41,0x0b,0xd0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5047,7 +5047,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2c<short>(short a, short b, short c), hex://logix/ScalarOps?f2c#f2c_g[16i](16i,16i,16i)
+; short f2c<short>(short a, short b, short c), hex://logix/scalar.ops?f2c#f2c_g[16i](16i,16i,16i)
 ; f2c_g[16i](16i,16i,16i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5064,7 +5064,7 @@
 0028h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2c#f2c_g[32u](32u,32u,32u)
+; uint f2c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2c#f2c_g[32u](32u,32u,32u)
 ; f2c_g[32u](32u,32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc2,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5074,7 +5074,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2c<int>(int a, int b, int c), hex://logix/ScalarOps?f2c#f2c_g[32i](32i,32i,32i)
+; int f2c<int>(int a, int b, int c), hex://logix/scalar.ops?f2c#f2c_g[32i](32i,32i,32i)
 ; f2c_g[32i](32i,32i,32i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc2,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5084,7 +5084,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2c#f2c_g[64u](64u,64u,64u)
+; ulong f2c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2c#f2c_g[64u](64u,64u,64u)
 ; f2c_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc2,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5094,7 +5094,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2c<long>(long a, long b, long c), hex://logix/ScalarOps?f2c#f2c_g[64i](64i,64i,64i)
+; long f2c<long>(long a, long b, long c), hex://logix/scalar.ops?f2c#f2c_g[64i](64i,64i,64i)
 ; f2c_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc2,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5104,7 +5104,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2d#f2d_g[8u](8u,8u,8u)
+; byte f2d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2d#f2d_g[8u](8u,8u,8u)
 ; f2d_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5119,7 +5119,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2d#f2d_g[8i](8i,8i,8i)
+; sbyte f2d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2d#f2d_g[8i](8i,8i,8i)
 ; f2d_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5134,7 +5134,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2d#f2d_g[16u](16u,16u,16u)
+; ushort f2d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2d#f2d_g[16u](16u,16u,16u)
 ; f2d_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5149,7 +5149,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2d<short>(short a, short b, short c), hex://logix/ScalarOps?f2d#f2d_g[16i](16i,16i,16i)
+; short f2d<short>(short a, short b, short c), hex://logix/scalar.ops?f2d#f2d_g[16i](16i,16i,16i)
 ; f2d_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5164,7 +5164,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2d#f2d_g[32u](32u,32u,32u)
+; uint f2d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2d#f2d_g[32u](32u,32u,32u)
 ; f2d_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xc2,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5174,7 +5174,7 @@
 000ch xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2d<int>(int a, int b, int c), hex://logix/ScalarOps?f2d#f2d_g[32i](32i,32i,32i)
+; int f2d<int>(int a, int b, int c), hex://logix/scalar.ops?f2d#f2d_g[32i](32i,32i,32i)
 ; f2d_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xc2,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5184,7 +5184,7 @@
 000ch xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2d#f2d_g[64u](64u,64u,64u)
+; ulong f2d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2d#f2d_g[64u](64u,64u,64u)
 ; f2d_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5194,7 +5194,7 @@
 000eh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2d<long>(long a, long b, long c), hex://logix/ScalarOps?f2d#f2d_g[64i](64i,64i,64i)
+; long f2d<long>(long a, long b, long c), hex://logix/scalar.ops?f2d#f2d_g[64i](64i,64i,64i)
 ; f2d_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5204,7 +5204,7 @@
 000eh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2e#f2e_g[8u](8u,8u,8u)
+; byte f2e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2e#f2e_g[8u](8u,8u,8u)
 ; f2e_g[8u](8u,8u,8u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x45,0x0f,0xb6,0xc0,0x41,0x0b,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x23,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5221,7 +5221,7 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2e#f2e_g[8i](8i,8i,8i)
+; sbyte f2e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2e#f2e_g[8i](8i,8i,8i)
 ; f2e_g[8i](8i,8i,8i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x23,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5238,7 +5238,7 @@
 0028h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2e#f2e_g[16u](16u,16u,16u)
+; ushort f2e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2e#f2e_g[16u](16u,16u,16u)
 ; f2e_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x8b,0xd0,0x45,0x0f,0xb7,0xc0,0x41,0x0b,0xd0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x23,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5255,7 +5255,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2e<short>(short a, short b, short c), hex://logix/ScalarOps?f2e#f2e_g[16i](16i,16i,16i)
+; short f2e<short>(short a, short b, short c), hex://logix/scalar.ops?f2e#f2e_g[16i](16i,16i,16i)
 ; f2e_g[16i](16i,16i,16i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x23,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5272,7 +5272,7 @@
 0028h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2e#f2e_g[32u](32u,32u,32u)
+; uint f2e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2e#f2e_g[32u](32u,32u,32u)
 ; f2e_g[32u](32u,32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc2,0x23,0xd1,0x41,0x33,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5282,7 +5282,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2e<int>(int a, int b, int c), hex://logix/ScalarOps?f2e#f2e_g[32i](32i,32i,32i)
+; int f2e<int>(int a, int b, int c), hex://logix/scalar.ops?f2e#f2e_g[32i](32i,32i,32i)
 ; f2e_g[32i](32i,32i,32i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc2,0x23,0xd1,0x41,0x33,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5292,7 +5292,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2e#f2e_g[64u](64u,64u,64u)
+; ulong f2e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2e#f2e_g[64u](64u,64u,64u)
 ; f2e_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc2,0x48,0x23,0xd1,0x49,0x33,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5302,7 +5302,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2e<long>(long a, long b, long c), hex://logix/ScalarOps?f2e#f2e_g[64i](64i,64i,64i)
+; long f2e<long>(long a, long b, long c), hex://logix/scalar.ops?f2e#f2e_g[64i](64i,64i,64i)
 ; f2e_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc2,0x48,0x23,0xd1,0x49,0x33,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5312,7 +5312,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f2f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f2f#f2f_g[8u](8u,8u,8u)
+; byte f2f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f2f#f2f_g[8u](8u,8u,8u)
 ; f2f_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0xf7,0xd2,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x23,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5330,7 +5330,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f2f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f2f#f2f_g[8i](8i,8i,8i)
+; sbyte f2f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f2f#f2f_g[8i](8i,8i,8i)
 ; f2f_g[8i](8i,8i,8i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x23,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5348,7 +5348,7 @@
 0029h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f2f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f2f#f2f_g[16u](16u,16u,16u)
+; ushort f2f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f2f#f2f_g[16u](16u,16u,16u)
 ; f2f_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0xf7,0xd2,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x23,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5366,7 +5366,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f2f<short>(short a, short b, short c), hex://logix/ScalarOps?f2f#f2f_g[16i](16i,16i,16i)
+; short f2f<short>(short a, short b, short c), hex://logix/scalar.ops?f2f#f2f_g[16i](16i,16i,16i)
 ; f2f_g[16i](16i,16i,16i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x23,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5384,7 +5384,7 @@
 0029h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f2f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f2f#f2f_g[32u](32u,32u,32u)
+; uint f2f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f2f#f2f_g[32u](32u,32u,32u)
 ; f2f_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xf7,0xd2,0x41,0x23,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5395,7 +5395,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f2f<int>(int a, int b, int c), hex://logix/ScalarOps?f2f#f2f_g[32i](32i,32i,32i)
+; int f2f<int>(int a, int b, int c), hex://logix/scalar.ops?f2f#f2f_g[32i](32i,32i,32i)
 ; f2f_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xf7,0xd2,0x41,0x23,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5406,7 +5406,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f2f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f2f#f2f_g[64u](64u,64u,64u)
+; ulong f2f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f2f#f2f_g[64u](64u,64u,64u)
 ; f2f_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5417,7 +5417,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f2f<long>(long a, long b, long c), hex://logix/ScalarOps?f2f#f2f_g[64i](64i,64i,64i)
+; long f2f<long>(long a, long b, long c), hex://logix/scalar.ops?f2f#f2f_g[64i](64i,64i,64i)
 ; f2f_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x49,0x23,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5428,7 +5428,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f30<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f30#f30_g[8u](8u,8u,8u)
+; byte f30<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f30#f30_g[8u](8u,8u,8u)
 ; f30_g[8u](8u,8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5438,7 +5438,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f30<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f30#f30_g[8i](8i,8i,8i)
+; sbyte f30<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f30#f30_g[8i](8i,8i,8i)
 ; f30_g[8i](8i,8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5448,7 +5448,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f30<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f30#f30_g[16u](16u,16u,16u)
+; ushort f30<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f30#f30_g[16u](16u,16u,16u)
 ; f30_g[16u](16u,16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5458,7 +5458,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f30<short>(short a, short b, short c), hex://logix/ScalarOps?f30#f30_g[16i](16i,16i,16i)
+; short f30<short>(short a, short b, short c), hex://logix/scalar.ops?f30#f30_g[16i](16i,16i,16i)
 ; f30_g[16i](16i,16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5468,35 +5468,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f30<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f30#f30_g[32u](32u,32u,32u)
+; uint f30<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f30#f30_g[32u](32u,32u,32u)
 ; f30_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x68,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f30<int>(int a, int b, int c), hex://logix/ScalarOps?f30#f30_g[32i](32i,32i,32i)
+; int f30<int>(int a, int b, int c), hex://logix/scalar.ops?f30#f30_g[32i](32i,32i,32i)
 ; f30_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x68,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f30<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f30#f30_g[64u](64u,64u,64u)
+; ulong f30<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f30#f30_g[64u](64u,64u,64u)
 ; f30_g[64u](64u,64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xe8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f30<long>(long a, long b, long c), hex://logix/ScalarOps?f30#f30_g[64i](64i,64i,64i)
+; long f30<long>(long a, long b, long c), hex://logix/scalar.ops?f30#f30_g[64i](64i,64i,64i)
 ; f30_g[64i](64i,64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xe8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f31<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f31#f31_g[8u](8u,8u,8u)
+; byte f31<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f31#f31_g[8u](8u,8u,8u)
 ; f31_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0xf7,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5514,7 +5514,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f31<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f31#f31_g[8i](8i,8i,8i)
+; sbyte f31<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f31#f31_g[8i](8i,8i,8i)
 ; f31_g[8i](8i,8i,8i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5532,7 +5532,7 @@
 0029h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f31<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f31#f31_g[16u](16u,16u,16u)
+; ushort f31<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f31#f31_g[16u](16u,16u,16u)
 ; f31_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0xf7,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5550,7 +5550,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f31<short>(short a, short b, short c), hex://logix/ScalarOps?f31#f31_g[16i](16i,16i,16i)
+; short f31<short>(short a, short b, short c), hex://logix/scalar.ops?f31#f31_g[16i](16i,16i,16i)
 ; f31_g[16i](16i,16i,16i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5568,7 +5568,7 @@
 0029h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f31<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f31#f31_g[32u](32u,32u,32u)
+; uint f31<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f31#f31_g[32u](32u,32u,32u)
 ; f31_g[32u](32u,32u,32u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5580,7 +5580,7 @@
 0010h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f31<int>(int a, int b, int c), hex://logix/ScalarOps?f31#f31_g[32i](32i,32i,32i)
+; int f31<int>(int a, int b, int c), hex://logix/scalar.ops?f31#f31_g[32i](32i,32i,32i)
 ; f31_g[32i](32i,32i,32i)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5592,7 +5592,7 @@
 0010h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f31<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f31#f31_g[64u](64u,64u,64u)
+; ulong f31<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f31#f31_g[64u](64u,64u,64u)
 ; f31_g[64u](64u,64u,64u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5604,7 +5604,7 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f31<long>(long a, long b, long c), hex://logix/ScalarOps?f31#f31_g[64i](64i,64i,64i)
+; long f31<long>(long a, long b, long c), hex://logix/scalar.ops?f31#f31_g[64i](64i,64i,64i)
 ; f31_g[64i](64i,64i,64i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5616,7 +5616,7 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f32<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f32#f32_g[8u](8u,8u,8u)
+; byte f32<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f32#f32_g[8u](8u,8u,8u)
 ; f32_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5632,7 +5632,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f32<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f32#f32_g[8i](8i,8i,8i)
+; sbyte f32<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f32#f32_g[8i](8i,8i,8i)
 ; f32_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5648,7 +5648,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f32<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f32#f32_g[16u](16u,16u,16u)
+; ushort f32<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f32#f32_g[16u](16u,16u,16u)
 ; f32_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5664,7 +5664,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f32<short>(short a, short b, short c), hex://logix/ScalarOps?f32#f32_g[16i](16i,16i,16i)
+; short f32<short>(short a, short b, short c), hex://logix/scalar.ops?f32#f32_g[16i](16i,16i,16i)
 ; f32_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5680,7 +5680,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f32<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f32#f32_g[32u](32u,32u,32u)
+; uint f32<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f32#f32_g[32u](32u,32u,32u)
 ; f32_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x0b,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5690,7 +5690,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f32<int>(int a, int b, int c), hex://logix/ScalarOps?f32#f32_g[32i](32i,32i,32i)
+; int f32<int>(int a, int b, int c), hex://logix/scalar.ops?f32#f32_g[32i](32i,32i,32i)
 ; f32_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x0b,0xc8,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5700,7 +5700,7 @@
 000ch and eax,ecx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f32<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f32#f32_g[64u](64u,64u,64u)
+; ulong f32<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f32#f32_g[64u](64u,64u,64u)
 ; f32_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x0b,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5710,7 +5710,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f32<long>(long a, long b, long c), hex://logix/ScalarOps?f32#f32_g[64i](64i,64i,64i)
+; long f32<long>(long a, long b, long c), hex://logix/scalar.ops?f32#f32_g[64i](64i,64i,64i)
 ; f32_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x0b,0xc8,0x48,0x23,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5720,7 +5720,7 @@
 000eh and rax,rcx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f33<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f33#f33_g[8u](8u,8u,8u)
+; byte f33<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f33#f33_g[8u](8u,8u,8u)
 ; f33_g[8u](8u,8u,8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5729,7 +5729,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f33<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f33#f33_g[8i](8i,8i,8i)
+; sbyte f33<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f33#f33_g[8i](8i,8i,8i)
 ; f33_g[8i](8i,8i,8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5738,7 +5738,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f33<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f33#f33_g[16u](16u,16u,16u)
+; ushort f33<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f33#f33_g[16u](16u,16u,16u)
 ; f33_g[16u](16u,16u,16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5747,7 +5747,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f33<short>(short a, short b, short c), hex://logix/ScalarOps?f33#f33_g[16i](16i,16i,16i)
+; short f33<short>(short a, short b, short c), hex://logix/scalar.ops?f33#f33_g[16i](16i,16i,16i)
 ; f33_g[16i](16i,16i,16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5756,7 +5756,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f33<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f33#f33_g[32u](32u,32u,32u)
+; uint f33<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f33#f33_g[32u](32u,32u,32u)
 ; f33_g[32u](32u,32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5764,7 +5764,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f33<int>(int a, int b, int c), hex://logix/ScalarOps?f33#f33_g[32i](32i,32i,32i)
+; int f33<int>(int a, int b, int c), hex://logix/scalar.ops?f33#f33_g[32i](32i,32i,32i)
 ; f33_g[32i](32i,32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5772,7 +5772,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f33<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f33#f33_g[64u](64u,64u,64u)
+; ulong f33<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f33#f33_g[64u](64u,64u,64u)
 ; f33_g[64u](64u,64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5780,7 +5780,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f33<long>(long a, long b, long c), hex://logix/ScalarOps?f33#f33_g[64i](64i,64i,64i)
+; long f33<long>(long a, long b, long c), hex://logix/scalar.ops?f33#f33_g[64i](64i,64i,64i)
 ; f33_g[64i](64i,64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5788,7 +5788,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f34<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f34#f34_g[8u](8u,8u,8u)
+; byte f34<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f34#f34_g[8u](8u,8u,8u)
 ; f34_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x45,0x0f,0xb6,0xc0,0x41,0x23,0xc0,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5807,7 +5807,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f34<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f34#f34_g[8i](8i,8i,8i)
+; sbyte f34<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f34#f34_g[8i](8i,8i,8i)
 ; f34_g[8i](8i,8i,8i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x4d,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5826,7 +5826,7 @@
 002eh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f34<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f34#f34_g[16u](16u,16u,16u)
+; ushort f34<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f34#f34_g[16u](16u,16u,16u)
 ; f34_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x45,0x0f,0xb7,0xc0,0x41,0x23,0xc0,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5845,7 +5845,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f34<short>(short a, short b, short c), hex://logix/ScalarOps?f34#f34_g[16i](16i,16i,16i)
+; short f34<short>(short a, short b, short c), hex://logix/scalar.ops?f34#f34_g[16i](16i,16i,16i)
 ; f34_g[16i](16i,16i,16i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x4d,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5864,7 +5864,7 @@
 002eh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f34<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f34#f34_g[32u](32u,32u,32u)
+; uint f34<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f34#f34_g[32u](32u,32u,32u)
 ; f34_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x23,0xc2,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5875,7 +5875,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f34<int>(int a, int b, int c), hex://logix/ScalarOps?f34#f34_g[32i](32i,32i,32i)
+; int f34<int>(int a, int b, int c), hex://logix/scalar.ops?f34#f34_g[32i](32i,32i,32i)
 ; f34_g[32i](32i,32i,32i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x23,0xc2,0x41,0x8b,0xc0,0xf7,0xd0,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5886,7 +5886,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f34<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f34#f34_g[64u](64u,64u,64u)
+; ulong f34<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f34#f34_g[64u](64u,64u,64u)
 ; f34_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x23,0xc2,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5897,7 +5897,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f34<long>(long a, long b, long c), hex://logix/ScalarOps?f34#f34_g[64i](64i,64i,64i)
+; long f34<long>(long a, long b, long c), hex://logix/scalar.ops?f34#f34_g[64i](64i,64i,64i)
 ; f34_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x23,0xc2,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5908,7 +5908,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f35<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f35#f35_g[8u](8u,8u,8u)
+; byte f35<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f35#f35_g[8u](8u,8u,8u)
 ; f35_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0xf7,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5928,7 +5928,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f35<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f35#f35_g[8i](8i,8i,8i)
+; sbyte f35<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f35#f35_g[8i](8i,8i,8i)
 ; f35_g[8i](8i,8i,8i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x4c,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5950,7 +5950,7 @@
 003bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f35<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f35#f35_g[16u](16u,16u,16u)
+; ushort f35<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f35#f35_g[16u](16u,16u,16u)
 ; f35_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0xf7,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5970,7 +5970,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f35<short>(short a, short b, short c), hex://logix/ScalarOps?f35#f35_g[16i](16i,16i,16i)
+; short f35<short>(short a, short b, short c), hex://logix/scalar.ops?f35#f35_g[16i](16i,16i,16i)
 ; f35_g[16i](16i,16i,16i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x4c,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -5992,7 +5992,7 @@
 003bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f35<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f35#f35_g[32u](32u,32u,32u)
+; uint f35<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f35#f35_g[32u](32u,32u,32u)
 ; f35_g[32u](32u,32u,32u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6005,7 +6005,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f35<int>(int a, int b, int c), hex://logix/ScalarOps?f35#f35_g[32i](32i,32i,32i)
+; int f35<int>(int a, int b, int c), hex://logix/scalar.ops?f35#f35_g[32i](32i,32i,32i)
 ; f35_g[32i](32i,32i,32i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x8b,0xd0,0xf7,0xd2,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6018,7 +6018,7 @@
 0015h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f35<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f35#f35_g[64u](64u,64u,64u)
+; ulong f35<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f35#f35_g[64u](64u,64u,64u)
 ; f35_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6031,7 +6031,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f35<long>(long a, long b, long c), hex://logix/ScalarOps?f35#f35_g[64i](64i,64i,64i)
+; long f35<long>(long a, long b, long c), hex://logix/scalar.ops?f35#f35_g[64i](64i,64i,64i)
 ; f35_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x8b,0xd0,0x48,0xf7,0xd2,0x48,0x23,0xc1,0xc4,0xe2,0xf0,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6044,7 +6044,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f36<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f36#f36_g[8u](8u,8u,8u)
+; byte f36<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f36#f36_g[8u](8u,8u,8u)
 ; f36_g[8u](8u,8u,8u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x0b,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6057,7 +6057,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f36<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f36#f36_g[8i](8i,8i,8i)
+; sbyte f36<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f36#f36_g[8i](8i,8i,8i)
 ; f36_g[8i](8i,8i,8i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x0b,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6070,7 +6070,7 @@
 0019h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f36<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f36#f36_g[16u](16u,16u,16u)
+; ushort f36<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f36#f36_g[16u](16u,16u,16u)
 ; f36_g[16u](16u,16u,16u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x0b,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6083,7 +6083,7 @@
 0016h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f36<short>(short a, short b, short c), hex://logix/ScalarOps?f36#f36_g[16i](16i,16i,16i)
+; short f36<short>(short a, short b, short c), hex://logix/scalar.ops?f36#f36_g[16i](16i,16i,16i)
 ; f36_g[16i](16i,16i,16i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x0b,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6096,7 +6096,7 @@
 0019h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f36<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f36#f36_g[32u](32u,32u,32u)
+; uint f36<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f36#f36_g[32u](32u,32u,32u)
 ; f36_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6105,7 +6105,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f36<int>(int a, int b, int c), hex://logix/ScalarOps?f36#f36_g[32i](32i,32i,32i)
+; int f36<int>(int a, int b, int c), hex://logix/scalar.ops?f36#f36_g[32i](32i,32i,32i)
 ; f36_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6114,7 +6114,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f36<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f36#f36_g[64u](64u,64u,64u)
+; ulong f36<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f36#f36_g[64u](64u,64u,64u)
 ; f36_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6123,7 +6123,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f36<long>(long a, long b, long c), hex://logix/ScalarOps?f36#f36_g[64i](64i,64i,64i)
+; long f36<long>(long a, long b, long c), hex://logix/scalar.ops?f36#f36_g[64i](64i,64i,64i)
 ; f36_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6132,7 +6132,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f37<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f37#f37_g[8u](8u,8u,8u)
+; byte f37<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f37#f37_g[8u](8u,8u,8u)
 ; f37_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x0b,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6146,7 +6146,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f37<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f37#f37_g[8i](8i,8i,8i)
+; sbyte f37<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f37#f37_g[8i](8i,8i,8i)
 ; f37_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x0b,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6160,7 +6160,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f37<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f37#f37_g[16u](16u,16u,16u)
+; ushort f37<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f37#f37_g[16u](16u,16u,16u)
 ; f37_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x0b,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6174,7 +6174,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f37<short>(short a, short b, short c), hex://logix/ScalarOps?f37#f37_g[16i](16i,16i,16i)
+; short f37<short>(short a, short b, short c), hex://logix/scalar.ops?f37#f37_g[16i](16i,16i,16i)
 ; f37_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x0b,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6188,7 +6188,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f37<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f37#f37_g[32u](32u,32u,32u)
+; uint f37<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f37#f37_g[32u](32u,32u,32u)
 ; f37_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6198,7 +6198,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f37<int>(int a, int b, int c), hex://logix/ScalarOps?f37#f37_g[32i](32i,32i,32i)
+; int f37<int>(int a, int b, int c), hex://logix/scalar.ops?f37#f37_g[32i](32i,32i,32i)
 ; f37_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6208,7 +6208,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f37<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f37#f37_g[64u](64u,64u,64u)
+; ulong f37<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f37#f37_g[64u](64u,64u,64u)
 ; f37_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6218,7 +6218,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f37<long>(long a, long b, long c), hex://logix/ScalarOps?f37#f37_g[64i](64i,64i,64i)
+; long f37<long>(long a, long b, long c), hex://logix/scalar.ops?f37#f37_g[64i](64i,64i,64i)
 ; f37_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6228,7 +6228,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f38<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f38#f38_g[8u](8u,8u,8u)
+; byte f38<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f38#f38_g[8u](8u,8u,8u)
 ; f38_g[8u](8u,8u,8u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x45,0x0f,0xb6,0xc0,0x41,0x0b,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6245,7 +6245,7 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f38<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f38#f38_g[8i](8i,8i,8i)
+; sbyte f38<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f38#f38_g[8i](8i,8i,8i)
 ; f38_g[8i](8i,8i,8i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x4d,0x0f,0xbe,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6262,7 +6262,7 @@
 0028h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f38<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f38#f38_g[16u](16u,16u,16u)
+; ushort f38<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f38#f38_g[16u](16u,16u,16u)
 ; f38_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xc8,0x45,0x0f,0xb7,0xc0,0x41,0x0b,0xc8,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6279,7 +6279,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f38<short>(short a, short b, short c), hex://logix/ScalarOps?f38#f38_g[16i](16i,16i,16i)
+; short f38<short>(short a, short b, short c), hex://logix/scalar.ops?f38#f38_g[16i](16i,16i,16i)
 ; f38_g[16i](16i,16i,16i)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x4d,0x0f,0xbf,0xc0,0x41,0x0b,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6296,7 +6296,7 @@
 0028h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f38<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f38#f38_g[32u](32u,32u,32u)
+; uint f38<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f38#f38_g[32u](32u,32u,32u)
 ; f38_g[32u](32u,32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc1,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6306,7 +6306,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f38<int>(int a, int b, int c), hex://logix/ScalarOps?f38#f38_g[32i](32i,32i,32i)
+; int f38<int>(int a, int b, int c), hex://logix/scalar.ops?f38#f38_g[32i](32i,32i,32i)
 ; f38_g[32i](32i,32i,32i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x0b,0xc1,0x33,0xd1,0x41,0x23,0xd0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6316,7 +6316,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f38<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f38#f38_g[64u](64u,64u,64u)
+; ulong f38<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f38#f38_g[64u](64u,64u,64u)
 ; f38_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc1,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6326,7 +6326,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f38<long>(long a, long b, long c), hex://logix/ScalarOps?f38#f38_g[64i](64i,64i,64i)
+; long f38<long>(long a, long b, long c), hex://logix/scalar.ops?f38#f38_g[64i](64i,64i,64i)
 ; f38_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x0b,0xc1,0x48,0x33,0xd1,0x49,0x23,0xd0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6336,7 +6336,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f39<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f39#f39_g[8u](8u,8u,8u)
+; byte f39<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f39#f39_g[8u](8u,8u,8u)
 ; f39_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0b,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6351,7 +6351,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f39<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f39#f39_g[8i](8i,8i,8i)
+; sbyte f39<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f39#f39_g[8i](8i,8i,8i)
 ; f39_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x0b,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6366,7 +6366,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f39<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f39#f39_g[16u](16u,16u,16u)
+; ushort f39<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f39#f39_g[16u](16u,16u,16u)
 ; f39_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0b,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6381,7 +6381,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f39<short>(short a, short b, short c), hex://logix/ScalarOps?f39#f39_g[16i](16i,16i,16i)
+; short f39<short>(short a, short b, short c), hex://logix/scalar.ops?f39#f39_g[16i](16i,16i,16i)
 ; f39_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x0b,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6396,7 +6396,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f39<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f39#f39_g[32u](32u,32u,32u)
+; uint f39<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f39#f39_g[32u](32u,32u,32u)
 ; f39_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xc1,0x33,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6406,7 +6406,7 @@
 000ch xor eax,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f39<int>(int a, int b, int c), hex://logix/ScalarOps?f39#f39_g[32i](32i,32i,32i)
+; int f39<int>(int a, int b, int c), hex://logix/scalar.ops?f39#f39_g[32i](32i,32i,32i)
 ; f39_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x0b,0xc1,0x33,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6416,7 +6416,7 @@
 000ch xor eax,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f39<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f39#f39_g[64u](64u,64u,64u)
+; ulong f39<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f39#f39_g[64u](64u,64u,64u)
 ; f39_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0x48,0x33,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6426,7 +6426,7 @@
 000eh xor rax,rdx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f39<long>(long a, long b, long c), hex://logix/ScalarOps?f39#f39_g[64i](64i,64i,64i)
+; long f39<long>(long a, long b, long c), hex://logix/scalar.ops?f39#f39_g[64i](64i,64i,64i)
 ; f39_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0x48,0x33,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6436,7 +6436,7 @@
 000eh xor rax,rdx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3a#f3a_g[8u](8u,8u,8u)
+; byte f3a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3a#f3a_g[8u](8u,8u,8u)
 ; f3a_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6453,7 +6453,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3a#f3a_g[8i](8i,8i,8i)
+; sbyte f3a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3a#f3a_g[8i](8i,8i,8i)
 ; f3a_g[8i](8i,8i,8i)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6472,7 +6472,7 @@
 0030h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3a#f3a_g[16u](16u,16u,16u)
+; ushort f3a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3a#f3a_g[16u](16u,16u,16u)
 ; f3a_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6489,7 +6489,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3a<short>(short a, short b, short c), hex://logix/ScalarOps?f3a#f3a_g[16i](16i,16i,16i)
+; short f3a<short>(short a, short b, short c), hex://logix/scalar.ops?f3a#f3a_g[16i](16i,16i,16i)
 ; f3a_g[16i](16i,16i,16i)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6508,7 +6508,7 @@
 0030h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3a#f3a_g[32u](32u,32u,32u)
+; uint f3a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3a#f3a_g[32u](32u,32u,32u)
 ; f3a_g[32u](32u,32u,32u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0xc4,0xc2,0x70,0xf2,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6519,7 +6519,7 @@
 0010h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3a<int>(int a, int b, int c), hex://logix/ScalarOps?f3a#f3a_g[32i](32i,32i,32i)
+; int f3a<int>(int a, int b, int c), hex://logix/scalar.ops?f3a#f3a_g[32i](32i,32i,32i)
 ; f3a_g[32i](32i,32i,32i)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x23,0xc1,0xc4,0xc2,0x70,0xf2,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6530,7 +6530,7 @@
 0010h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3a#f3a_g[64u](64u,64u,64u)
+; ulong f3a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3a#f3a_g[64u](64u,64u,64u)
 ; f3a_g[64u](64u,64u,64u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc4,0xc2,0xf0,0xf2,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6541,7 +6541,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3a<long>(long a, long b, long c), hex://logix/ScalarOps?f3a#f3a_g[64i](64i,64i,64i)
+; long f3a<long>(long a, long b, long c), hex://logix/scalar.ops?f3a#f3a_g[64i](64i,64i,64i)
 ; f3a_g[64i](64i,64i,64i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x23,0xc1,0xc4,0xc2,0xf0,0xf2,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6552,7 +6552,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3b#f3b_g[8u](8u,8u,8u)
+; byte f3b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3b#f3b_g[8u](8u,8u,8u)
 ; f3b_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0x23,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x81,0xf2,0xff,0x00,0x00,0x00,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6570,8 +6570,8 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3b#f3b_g[8i](8i,8i,8i)
-; f3b_g[8i](8i,8i,8i)[54] = {0x56,0x48,0x83,0xec,0x20,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x49,0x0f,0xbe,0xc0,0x23,0xc8,0x48,0x0f,0xbe,0xf1,0x48,0x0f,0xbe,0xca,0xe8,0x4e,0x6f,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; sbyte f3b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3b#f3b_g[8i](8i,8i,8i)
+; f3b_g[8i](8i,8i,8i)[54] = {0x56,0x48,0x83,0xec,0x20,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x49,0x0f,0xbe,0xc0,0x23,0xc8,0x48,0x0f,0xbe,0xf1,0x48,0x0f,0xbe,0xca,0xe8,0x9e,0x6f,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -6582,7 +6582,7 @@
 0013h and ecx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c8}
 0015h movsx rsi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f1}
 0019h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-001dh call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4e 6f ff ff}
+001dh call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 6f ff ff}
 0022h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0026h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 002ah or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -6591,7 +6591,7 @@
 0034h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3b#f3b_g[16u](16u,16u,16u)
+; ushort f3b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3b#f3b_g[16u](16u,16u,16u)
 ; f3b_g[16u](16u,16u,16u)[53] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x23,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x81,0xf2,0xff,0xff,0x00,0x00,0x89,0x54,0x24,0x04,0x0f,0xb7,0x54,0x24,0x04,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -6612,8 +6612,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3b<short>(short a, short b, short c), hex://logix/ScalarOps?f3b#f3b_g[16i](16i,16i,16i)
-; f3b_g[16i](16i,16i,16i)[54] = {0x56,0x48,0x83,0xec,0x20,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x49,0x0f,0xbf,0xc0,0x23,0xc8,0x48,0x0f,0xbf,0xf1,0x48,0x0f,0xbf,0xca,0xe8,0x9e,0x6f,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; short f3b<short>(short a, short b, short c), hex://logix/scalar.ops?f3b#f3b_g[16i](16i,16i,16i)
+; f3b_g[16i](16i,16i,16i)[54] = {0x56,0x48,0x83,0xec,0x20,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x49,0x0f,0xbf,0xc0,0x23,0xc8,0x48,0x0f,0xbf,0xf1,0x48,0x0f,0xbf,0xca,0xe8,0xee,0x6f,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -6624,7 +6624,7 @@
 0013h and ecx,eax                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c8}
 0015h movsx rsi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f1}
 0019h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-001dh call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 6f ff ff}
+001dh call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee 6f ff ff}
 0022h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0026h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 002ah or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -6633,7 +6633,7 @@
 0034h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 0035h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3b#f3b_g[32u](32u,32u,32u)
+; uint f3b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3b#f3b_g[32u](32u,32u,32u)
 ; f3b_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0xf7,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6644,8 +6644,8 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3b<int>(int a, int b, int c), hex://logix/ScalarOps?f3b#f3b_g[32i](32i,32i,32i)
-; f3b_g[32i](32i,32i,32i)[27] = {0x56,0x48,0x83,0xec,0x20,0x8b,0xf1,0xf7,0xd6,0x41,0x23,0xf0,0x8b,0xca,0xe8,0xfd,0x6f,0xff,0xff,0x0b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; int f3b<int>(int a, int b, int c), hex://logix/scalar.ops?f3b#f3b_g[32i](32i,32i,32i)
+; f3b_g[32i](32i,32i,32i)[27] = {0x56,0x48,0x83,0xec,0x20,0x8b,0xf1,0xf7,0xd6,0x41,0x23,0xf0,0x8b,0xca,0xe8,0x4d,0x70,0xff,0xff,0x0b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -6653,13 +6653,13 @@
 0007h not esi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d6}
 0009h and esi,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 f0}
 000ch mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000eh call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fd 6f ff ff}
+000eh call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4d 70 ff ff}
 0013h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0015h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 0019h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3b#f3b_g[64u](64u,64u,64u)
+; ulong f3b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3b#f3b_g[64u](64u,64u,64u)
 ; f3b_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0x48,0xf7,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6670,8 +6670,8 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3b<long>(long a, long b, long c), hex://logix/ScalarOps?f3b#f3b_g[64i](64i,64i,64i)
-; f3b_g[64i](64i,64i,64i)[31] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0xf7,0xd6,0x49,0x23,0xf0,0x48,0x8b,0xca,0xe8,0x6a,0x70,0xff,0xff,0x48,0x0b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
+; long f3b<long>(long a, long b, long c), hex://logix/scalar.ops?f3b#f3b_g[64i](64i,64i,64i)
+; f3b_g[64i](64i,64i,64i)[31] = {0x56,0x48,0x83,0xec,0x20,0x48,0x8b,0xf1,0x48,0xf7,0xd6,0x49,0x23,0xf0,0x48,0x8b,0xca,0xe8,0xba,0x70,0xff,0xff,0x48,0x0b,0xc6,0x48,0x83,0xc4,0x20,0x5e,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
 0001h sub rsp,20h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 20}
@@ -6679,13 +6679,13 @@
 0008h not rsi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d6}
 000bh and rsi,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 f0}
 000eh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
-0011h call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6a 70 ff ff}
+0011h call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ba 70 ff ff}
 0016h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 0019h add rsp,20h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 20}
 001dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3c#f3c_g[8u](8u,8u,8u)
+; byte f3c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3c#f3c_g[8u](8u,8u,8u)
 ; f3c_g[8u](8u,8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6695,7 +6695,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3c#f3c_g[8i](8i,8i,8i)
+; sbyte f3c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3c#f3c_g[8i](8i,8i,8i)
 ; f3c_g[8i](8i,8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6705,7 +6705,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3c#f3c_g[16u](16u,16u,16u)
+; ushort f3c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3c#f3c_g[16u](16u,16u,16u)
 ; f3c_g[16u](16u,16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6715,7 +6715,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3c<short>(short a, short b, short c), hex://logix/ScalarOps?f3c#f3c_g[16i](16i,16i,16i)
+; short f3c<short>(short a, short b, short c), hex://logix/scalar.ops?f3c#f3c_g[16i](16i,16i,16i)
 ; f3c_g[16i](16i,16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6725,7 +6725,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3c#f3c_g[32u](32u,32u,32u)
+; uint f3c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3c#f3c_g[32u](32u,32u,32u)
 ; f3c_g[32u](32u,32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6733,7 +6733,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3c<int>(int a, int b, int c), hex://logix/ScalarOps?f3c#f3c_g[32i](32i,32i,32i)
+; int f3c<int>(int a, int b, int c), hex://logix/scalar.ops?f3c#f3c_g[32i](32i,32i,32i)
 ; f3c_g[32i](32i,32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6741,7 +6741,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3c#f3c_g[64u](64u,64u,64u)
+; ulong f3c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3c#f3c_g[64u](64u,64u,64u)
 ; f3c_g[64u](64u,64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6749,7 +6749,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3c<long>(long a, long b, long c), hex://logix/ScalarOps?f3c#f3c_g[64i](64i,64i,64i)
+; long f3c<long>(long a, long b, long c), hex://logix/scalar.ops?f3c#f3c_g[64i](64i,64i,64i)
 ; f3c_g[64i](64i,64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6757,7 +6757,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3d#f3d_g[8u](8u,8u,8u)
+; byte f3d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3d#f3d_g[8u](8u,8u,8u)
 ; f3d_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x0b,0xd1,0xf7,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6775,7 +6775,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3d#f3d_g[8i](8i,8i,8i)
+; sbyte f3d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3d#f3d_g[8i](8i,8i,8i)
 ; f3d_g[8i](8i,8i,8i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6793,7 +6793,7 @@
 0029h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3d#f3d_g[16u](16u,16u,16u)
+; ushort f3d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3d#f3d_g[16u](16u,16u,16u)
 ; f3d_g[16u](16u,16u,16u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x8b,0xca,0x33,0xc1,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x0b,0xd1,0xf7,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6811,7 +6811,7 @@
 0022h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3d<short>(short a, short b, short c), hex://logix/ScalarOps?f3d#f3d_g[16i](16i,16i,16i)
+; short f3d<short>(short a, short b, short c), hex://logix/scalar.ops?f3d#f3d_g[16i](16i,16i,16i)
 ; f3d_g[16i](16i,16i,16i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x0b,0xd1,0xf7,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6829,7 +6829,7 @@
 0029h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3d#f3d_g[32u](32u,32u,32u)
+; uint f3d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3d#f3d_g[32u](32u,32u,32u)
 ; f3d_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6840,7 +6840,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3d<int>(int a, int b, int c), hex://logix/ScalarOps?f3d#f3d_g[32i](32i,32i,32i)
+; int f3d<int>(int a, int b, int c), hex://logix/scalar.ops?f3d#f3d_g[32i](32i,32i,32i)
 ; f3d_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6851,7 +6851,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3d#f3d_g[64u](64u,64u,64u)
+; ulong f3d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3d#f3d_g[64u](64u,64u,64u)
 ; f3d_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6862,7 +6862,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3d<long>(long a, long b, long c), hex://logix/ScalarOps?f3d#f3d_g[64i](64i,64i,64i)
+; long f3d<long>(long a, long b, long c), hex://logix/scalar.ops?f3d#f3d_g[64i](64i,64i,64i)
 ; f3d_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6873,7 +6873,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3e#f3e_g[8u](8u,8u,8u)
+; byte f3e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3e#f3e_g[8u](8u,8u,8u)
 ; f3e_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x45,0x0f,0xb6,0xc0,0x41,0x23,0xc0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6892,7 +6892,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3e#f3e_g[8i](8i,8i,8i)
+; sbyte f3e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3e#f3e_g[8i](8i,8i,8i)
 ; f3e_g[8i](8i,8i,8i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x4d,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x48,0x0f,0xbe,0xd2,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6911,7 +6911,7 @@
 002eh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3e#f3e_g[16u](16u,16u,16u)
+; ushort f3e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3e#f3e_g[16u](16u,16u,16u)
 ; f3e_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x45,0x0f,0xb7,0xc0,0x41,0x23,0xc0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6930,7 +6930,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3e<short>(short a, short b, short c), hex://logix/ScalarOps?f3e#f3e_g[16i](16i,16i,16i)
+; short f3e<short>(short a, short b, short c), hex://logix/scalar.ops?f3e#f3e_g[16i](16i,16i,16i)
 ; f3e_g[16i](16i,16i,16i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x4d,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x48,0x0f,0xbf,0xd2,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6949,7 +6949,7 @@
 002eh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0032h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3e#f3e_g[32u](32u,32u,32u)
+; uint f3e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3e#f3e_g[32u](32u,32u,32u)
 ; f3e_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0x33,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6960,7 +6960,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3e<int>(int a, int b, int c), hex://logix/ScalarOps?f3e#f3e_g[32i](32i,32i,32i)
+; int f3e<int>(int a, int b, int c), hex://logix/scalar.ops?f3e#f3e_g[32i](32i,32i,32i)
 ; f3e_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0x33,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6971,7 +6971,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3e#f3e_g[64u](64u,64u,64u)
+; ulong f3e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3e#f3e_g[64u](64u,64u,64u)
 ; f3e_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0x48,0x33,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6982,7 +6982,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3e<long>(long a, long b, long c), hex://logix/ScalarOps?f3e#f3e_g[64i](64i,64i,64i)
+; long f3e<long>(long a, long b, long c), hex://logix/scalar.ops?f3e#f3e_g[64i](64i,64i,64i)
 ; f3e_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0x48,0x33,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -6993,7 +6993,7 @@
 0011h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f3f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f3f#f3f_g[8u](8u,8u,8u)
+; byte f3f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f3f#f3f_g[8u](8u,8u,8u)
 ; f3f_g[8u](8u,8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7004,7 +7004,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f3f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f3f#f3f_g[8i](8i,8i,8i)
+; sbyte f3f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f3f#f3f_g[8i](8i,8i,8i)
 ; f3f_g[8i](8i,8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7015,7 +7015,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f3f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f3f#f3f_g[16u](16u,16u,16u)
+; ushort f3f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f3f#f3f_g[16u](16u,16u,16u)
 ; f3f_g[16u](16u,16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7026,7 +7026,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f3f<short>(short a, short b, short c), hex://logix/ScalarOps?f3f#f3f_g[16i](16i,16i,16i)
+; short f3f<short>(short a, short b, short c), hex://logix/scalar.ops?f3f#f3f_g[16i](16i,16i,16i)
 ; f3f_g[16i](16i,16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7037,7 +7037,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f3f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f3f#f3f_g[32u](32u,32u,32u)
+; uint f3f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f3f#f3f_g[32u](32u,32u,32u)
 ; f3f_g[32u](32u,32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7046,7 +7046,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f3f<int>(int a, int b, int c), hex://logix/ScalarOps?f3f#f3f_g[32i](32i,32i,32i)
+; int f3f<int>(int a, int b, int c), hex://logix/scalar.ops?f3f#f3f_g[32i](32i,32i,32i)
 ; f3f_g[32i](32i,32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7055,7 +7055,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f3f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f3f#f3f_g[64u](64u,64u,64u)
+; ulong f3f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f3f#f3f_g[64u](64u,64u,64u)
 ; f3f_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7064,7 +7064,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f3f<long>(long a, long b, long c), hex://logix/ScalarOps?f3f#f3f_g[64i](64i,64i,64i)
+; long f3f<long>(long a, long b, long c), hex://logix/scalar.ops?f3f#f3f_g[64i](64i,64i,64i)
 ; f3f_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7073,7 +7073,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f40<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f40#f40_g[8u](8u,8u,8u)
+; byte f40<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f40#f40_g[8u](8u,8u,8u)
 ; f40_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x23,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7088,7 +7088,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f40<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f40#f40_g[8i](8i,8i,8i)
+; sbyte f40<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f40#f40_g[8i](8i,8i,8i)
 ; f40_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7103,7 +7103,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f40<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f40#f40_g[16u](16u,16u,16u)
+; ushort f40<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f40#f40_g[16u](16u,16u,16u)
 ; f40_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x23,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7118,7 +7118,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f40<short>(short a, short b, short c), hex://logix/ScalarOps?f40#f40_g[16i](16i,16i,16i)
+; short f40<short>(short a, short b, short c), hex://logix/scalar.ops?f40#f40_g[16i](16i,16i,16i)
 ; f40_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7133,7 +7133,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f40<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f40#f40_g[32u](32u,32u,32u)
+; uint f40<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f40#f40_g[32u](32u,32u,32u)
 ; f40_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7143,7 +7143,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f40<int>(int a, int b, int c), hex://logix/ScalarOps?f40#f40_g[32i](32i,32i,32i)
+; int f40<int>(int a, int b, int c), hex://logix/scalar.ops?f40#f40_g[32i](32i,32i,32i)
 ; f40_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0x23,0xc1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7153,7 +7153,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f40<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f40#f40_g[64u](64u,64u,64u)
+; ulong f40<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f40#f40_g[64u](64u,64u,64u)
 ; f40_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7163,7 +7163,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f40<long>(long a, long b, long c), hex://logix/ScalarOps?f40#f40_g[64i](64i,64i,64i)
+; long f40<long>(long a, long b, long c), hex://logix/scalar.ops?f40#f40_g[64i](64i,64i,64i)
 ; f40_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0x23,0xc1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7173,7 +7173,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f41<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f41#f41_g[8u](8u,8u,8u)
+; byte f41<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f41#f41_g[8u](8u,8u,8u)
 ; f41_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7187,7 +7187,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f41<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f41#f41_g[8i](8i,8i,8i)
+; sbyte f41<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f41#f41_g[8i](8i,8i,8i)
 ; f41_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7201,7 +7201,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f41<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f41#f41_g[16u](16u,16u,16u)
+; ushort f41<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f41#f41_g[16u](16u,16u,16u)
 ; f41_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7215,7 +7215,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f41<short>(short a, short b, short c), hex://logix/ScalarOps?f41#f41_g[16i](16i,16i,16i)
+; short f41<short>(short a, short b, short c), hex://logix/scalar.ops?f41#f41_g[16i](16i,16i,16i)
 ; f41_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7229,7 +7229,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f41<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f41#f41_g[32u](32u,32u,32u)
+; uint f41<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f41#f41_g[32u](32u,32u,32u)
 ; f41_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7239,7 +7239,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f41<int>(int a, int b, int c), hex://logix/ScalarOps?f41#f41_g[32i](32i,32i,32i)
+; int f41<int>(int a, int b, int c), hex://logix/scalar.ops?f41#f41_g[32i](32i,32i,32i)
 ; f41_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x41,0x0b,0xd0,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7249,7 +7249,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f41<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f41#f41_g[64u](64u,64u,64u)
+; ulong f41<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f41#f41_g[64u](64u,64u,64u)
 ; f41_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7259,7 +7259,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f41<long>(long a, long b, long c), hex://logix/ScalarOps?f41#f41_g[64i](64i,64i,64i)
+; long f41<long>(long a, long b, long c), hex://logix/scalar.ops?f41#f41_g[64i](64i,64i,64i)
 ; f41_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x49,0x0b,0xd0,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7269,7 +7269,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f42<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f42#f42_g[8u](8u,8u,8u)
+; byte f42<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f42#f42_g[8u](8u,8u,8u)
 ; f42_g[8u](8u,8u,8u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x33,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7286,7 +7286,7 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f42<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f42#f42_g[8i](8i,8i,8i)
+; sbyte f42<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f42#f42_g[8i](8i,8i,8i)
 ; f42_g[8i](8i,8i,8i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7303,7 +7303,7 @@
 0027h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f42<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f42#f42_g[16u](16u,16u,16u)
+; ushort f42<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f42#f42_g[16u](16u,16u,16u)
 ; f42_g[16u](16u,16u,16u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7320,7 +7320,7 @@
 0022h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f42<short>(short a, short b, short c), hex://logix/ScalarOps?f42#f42_g[16i](16i,16i,16i)
+; short f42<short>(short a, short b, short c), hex://logix/scalar.ops?f42#f42_g[16i](16i,16i,16i)
 ; f42_g[16i](16i,16i,16i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7337,7 +7337,7 @@
 0027h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f42<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f42#f42_g[32u](32u,32u,32u)
+; uint f42<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f42#f42_g[32u](32u,32u,32u)
 ; f42_g[32u](32u,32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x41,0x33,0xd0,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7347,7 +7347,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f42<int>(int a, int b, int c), hex://logix/ScalarOps?f42#f42_g[32i](32i,32i,32i)
+; int f42<int>(int a, int b, int c), hex://logix/scalar.ops?f42#f42_g[32i](32i,32i,32i)
 ; f42_g[32i](32i,32i,32i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x41,0x33,0xd0,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7357,7 +7357,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f42<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f42#f42_g[64u](64u,64u,64u)
+; ulong f42<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f42#f42_g[64u](64u,64u,64u)
 ; f42_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x49,0x33,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7367,7 +7367,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f42<long>(long a, long b, long c), hex://logix/ScalarOps?f42#f42_g[64i](64i,64i,64i)
+; long f42<long>(long a, long b, long c), hex://logix/scalar.ops?f42#f42_g[64i](64i,64i,64i)
 ; f42_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x49,0x33,0xd0,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7377,7 +7377,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f43<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f43#f43_g[8u](8u,8u,8u)
+; byte f43<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f43#f43_g[8u](8u,8u,8u)
 ; f43_g[8u](8u,8u,8u)[52] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x45,0x0f,0xb6,0xc0,0x41,0x23,0xc0,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x81,0xf2,0xff,0x00,0x00,0x00,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7398,8 +7398,8 @@
 0030h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0033h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f43<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f43#f43_g[8i](8i,8i,8i)
-; f43_g[8i](8i,8i,8i)[68] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x48,0x0f,0xbe,0xce,0x49,0x0f,0xbe,0xc0,0x23,0xc8,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0x8b,0x5e,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; sbyte f43<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f43#f43_g[8i](8i,8i,8i)
+; f43_g[8i](8i,8i,8i)[68] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x48,0x0f,0xbe,0xce,0x49,0x0f,0xbe,0xc0,0x23,0xc8,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0xeb,0x5e,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7412,7 +7412,7 @@
 0016h not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 0018h movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 001ch movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-0020h call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 8b 5e ff ff}
+0020h call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 eb 5e ff ff}
 0025h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0029h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 002dh xor eax,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c2}
@@ -7425,7 +7425,7 @@
 0042h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f43<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f43#f43_g[16u](16u,16u,16u)
+; ushort f43<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f43#f43_g[16u](16u,16u,16u)
 ; f43_g[16u](16u,16u,16u)[62] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0x45,0x0f,0xb7,0xc0,0x41,0x23,0xc0,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x81,0xf2,0xff,0xff,0x00,0x00,0x89,0x54,0x24,0x04,0x0f,0xb7,0x54,0x24,0x04,0x0f,0xb7,0xc9,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -7449,8 +7449,8 @@
 0039h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 003dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f43<short>(short a, short b, short c), hex://logix/ScalarOps?f43#f43_g[16i](16i,16i,16i)
-; f43_g[16i](16i,16i,16i)[68] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x48,0x0f,0xbf,0xce,0x49,0x0f,0xbf,0xc0,0x23,0xc8,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0xbb,0x5e,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; short f43<short>(short a, short b, short c), hex://logix/scalar.ops?f43#f43_g[16i](16i,16i,16i)
+; f43_g[16i](16i,16i,16i)[68] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x48,0x0f,0xbf,0xce,0x49,0x0f,0xbf,0xc0,0x23,0xc8,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0x1b,0x5f,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7463,7 +7463,7 @@
 0016h not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 0018h movsx rdi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f9}
 001ch movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-0020h call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bb 5e ff ff}
+0020h call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 1b 5f ff ff}
 0025h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0029h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 002dh xor eax,edx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c2}
@@ -7476,7 +7476,7 @@
 0042h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0043h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f43<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f43#f43_g[32u](32u,32u,32u)
+; uint f43<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f43#f43_g[32u](32u,32u,32u)
 ; f43_g[32u](32u,32u,32u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x23,0xc1,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd2,0x33,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7488,8 +7488,8 @@
 0011h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f43<int>(int a, int b, int c), hex://logix/ScalarOps?f43#f43_g[32i](32i,32i,32i)
-; f43_g[32i](32i,32i,32i)[34] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x44,0x23,0xc6,0x41,0x8b,0xf8,0xf7,0xd7,0x8b,0xca,0xe8,0x09,0x5f,0xff,0xff,0x33,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; int f43<int>(int a, int b, int c), hex://logix/scalar.ops?f43#f43_g[32i](32i,32i,32i)
+; f43_g[32i](32i,32i,32i)[34] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf1,0x44,0x23,0xc6,0x41,0x8b,0xf8,0xf7,0xd7,0x8b,0xca,0xe8,0x69,0x5f,0xff,0xff,0x33,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7499,7 +7499,7 @@
 000bh mov edi,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b f8}
 000eh not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
 0010h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-0012h call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 5f ff ff}
+0012h call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 69 5f ff ff}
 0017h xor eax,esi                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c6}
 0019h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 001bh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -7507,7 +7507,7 @@
 0020h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f43<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f43#f43_g[64u](64u,64u,64u)
+; ulong f43<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f43#f43_g[64u](64u,64u,64u)
 ; f43_g[64u](64u,64u,64u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x23,0xc1,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x48,0x33,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7519,8 +7519,8 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f43<long>(long a, long b, long c), hex://logix/ScalarOps?f43#f43_g[64i](64i,64i,64i)
-; f43_g[64i](64i,64i,64i)[39] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf1,0x4c,0x23,0xc6,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0x66,0x5f,0xff,0xff,0x48,0x33,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; long f43<long>(long a, long b, long c), hex://logix/scalar.ops?f43#f43_g[64i](64i,64i,64i)
+; f43_g[64i](64i,64i,64i)[39] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf1,0x4c,0x23,0xc6,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0xc6,0x5f,0xff,0xff,0x48,0x33,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7530,7 +7530,7 @@
 000ch mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 000fh not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
 0012h mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
-0015h call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 66 5f ff ff}
+0015h call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c6 5f ff ff}
 001ah xor rax,rsi                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c6}
 001dh and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 0020h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -7538,7 +7538,7 @@
 0025h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f44<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f44#f44_g[8u](8u,8u,8u)
+; byte f44<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f44#f44_g[8u](8u,8u,8u)
 ; f44_g[8u](8u,8u,8u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7548,7 +7548,7 @@
 0011h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f44<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f44#f44_g[8i](8i,8i,8i)
+; sbyte f44<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f44#f44_g[8i](8i,8i,8i)
 ; f44_g[8i](8i,8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7558,7 +7558,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f44<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f44#f44_g[16u](16u,16u,16u)
+; ushort f44<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f44#f44_g[16u](16u,16u,16u)
 ; f44_g[16u](16u,16u,16u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7568,7 +7568,7 @@
 0011h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f44<short>(short a, short b, short c), hex://logix/ScalarOps?f44#f44_g[16i](16i,16i,16i)
+; short f44<short>(short a, short b, short c), hex://logix/scalar.ops?f44#f44_g[16i](16i,16i,16i)
 ; f44_g[16i](16i,16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7578,35 +7578,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f44<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f44#f44_g[32u](32u,32u,32u)
+; uint f44<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f44#f44_g[32u](32u,32u,32u)
 ; f44_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x38,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,r8d,edx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 38 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f44<int>(int a, int b, int c), hex://logix/ScalarOps?f44#f44_g[32i](32i,32i,32i)
+; int f44<int>(int a, int b, int c), hex://logix/scalar.ops?f44#f44_g[32i](32i,32i,32i)
 ; f44_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x38,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,r8d,edx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 38 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f44<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f44#f44_g[64u](64u,64u,64u)
+; ulong f44<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f44#f44_g[64u](64u,64u,64u)
 ; f44_g[64u](64u,64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xb8,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,r8,rdx                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 b8 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f44<long>(long a, long b, long c), hex://logix/ScalarOps?f44#f44_g[64i](64i,64i,64i)
+; long f44<long>(long a, long b, long c), hex://logix/scalar.ops?f44#f44_g[64i](64i,64i,64i)
 ; f44_g[64i](64i,64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xb8,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,r8,rdx                         ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 b8 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f45<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f45#f45_g[8u](8u,8u,8u)
+; byte f45<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f45#f45_g[8u](8u,8u,8u)
 ; f45_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0x81,0xf1,0xff,0x00,0x00,0x00,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7624,8 +7624,8 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f45<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f45#f45_g[8i](8i,8i,8i)
-; f45_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xf8,0x48,0x0f,0xbe,0xc9,0xe8,0x15,0x5b,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; sbyte f45<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f45#f45_g[8i](8i,8i,8i)
+; f45_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xf8,0x48,0x0f,0xbe,0xc9,0xe8,0x75,0x5b,0xff,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7635,7 +7635,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh movsx rdi,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f8}
 0012h movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
-0016h call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 15 5b ff ff}
+0016h call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 75 5b ff ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -7648,7 +7648,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f45<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f45#f45_g[16u](16u,16u,16u)
+; ushort f45<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f45#f45_g[16u](16u,16u,16u)
 ; f45_g[16u](16u,16u,16u)[53] = {0x50,0x0f,0x1f,0x40,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x81,0xf1,0xff,0xff,0x00,0x00,0x89,0x4c,0x24,0x04,0x0f,0xb7,0x4c,0x24,0x04,0x0f,0xb7,0xd2,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -7669,8 +7669,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f45<short>(short a, short b, short c), hex://logix/ScalarOps?f45#f45_g[16i](16i,16i,16i)
-; f45_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xf8,0x48,0x0f,0xbf,0xc9,0xe8,0x55,0x5b,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; short f45<short>(short a, short b, short c), hex://logix/scalar.ops?f45#f45_g[16i](16i,16i,16i)
+; f45_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xf8,0x48,0x0f,0xbf,0xc9,0xe8,0xa5,0x57,0xff,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7680,7 +7680,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh movsx rdi,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f8}
 0012h movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
-0016h call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 55 5b ff ff}
+0016h call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 57 ff ff}
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -7693,7 +7693,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f45<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f45#f45_g[32u](32u,32u,32u)
+; uint f45<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f45#f45_g[32u](32u,32u,32u)
 ; f45_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd1,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7704,8 +7704,8 @@
 000eh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f45<int>(int a, int b, int c), hex://logix/ScalarOps?f45#f45_g[32i](32i,32i,32i)
-; f45_g[32i](32i,32i,32i)[29] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x41,0x8b,0xf8,0xf7,0xd7,0xe8,0x9e,0x5b,0xff,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; int f45<int>(int a, int b, int c), hex://logix/scalar.ops?f45#f45_g[32i](32i,32i,32i)
+; f45_g[32i](32i,32i,32i)[29] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x41,0x8b,0xf8,0xf7,0xd7,0xe8,0xee,0x57,0xff,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7713,7 +7713,7 @@
 0006h mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
 0008h mov edi,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b f8}
 000bh not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
-000dh call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 9e 5b ff ff}
+000dh call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ee 57 ff ff}
 0012h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0014h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0016h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -7721,7 +7721,7 @@
 001bh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f45<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f45#f45_g[64u](64u,64u,64u)
+; ulong f45<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f45#f45_g[64u](64u,64u,64u)
 ; f45_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd1,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7732,8 +7732,8 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f45<long>(long a, long b, long c), hex://logix/ScalarOps?f45#f45_g[64i](64i,64i,64i)
-; f45_g[64i](64i,64i,64i)[33] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0xe8,0xfc,0x5b,0xff,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; long f45<long>(long a, long b, long c), hex://logix/scalar.ops?f45#f45_g[64i](64i,64i,64i)
+; f45_g[64i](64i,64i,64i)[33] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf2,0x49,0x8b,0xf8,0x48,0xf7,0xd7,0xe8,0x4c,0x58,0xff,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -7741,7 +7741,7 @@
 0006h mov rsi,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f2}
 0009h mov rdi,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b f8}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
-000fh call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 5b ff ff}
+000fh call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 4c 58 ff ff}
 0014h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 0017h and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001ah add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -7749,7 +7749,7 @@
 001fh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f46<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f46#f46_g[8u](8u,8u,8u)
+; byte f46<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f46#f46_g[8u](8u,8u,8u)
 ; f46_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x23,0xc1,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7768,7 +7768,7 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f46<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f46#f46_g[8i](8i,8i,8i)
+; sbyte f46<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f46#f46_g[8i](8i,8i,8i)
 ; f46_g[8i](8i,8i,8i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7787,7 +7787,7 @@
 002dh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f46<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f46#f46_g[16u](16u,16u,16u)
+; ushort f46<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f46#f46_g[16u](16u,16u,16u)
 ; f46_g[16u](16u,16u,16u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x23,0xc1,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7806,7 +7806,7 @@
 0027h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f46<short>(short a, short b, short c), hex://logix/ScalarOps?f46#f46_g[16i](16i,16i,16i)
+; short f46<short>(short a, short b, short c), hex://logix/scalar.ops?f46#f46_g[16i](16i,16i,16i)
 ; f46_g[16i](16i,16i,16i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7825,7 +7825,7 @@
 002dh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0031h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f46<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f46#f46_g[32u](32u,32u,32u)
+; uint f46<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f46#f46_g[32u](32u,32u,32u)
 ; f46_g[32u](32u,32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7836,7 +7836,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f46<int>(int a, int b, int c), hex://logix/ScalarOps?f46#f46_g[32i](32i,32i,32i)
+; int f46<int>(int a, int b, int c), hex://logix/scalar.ops?f46#f46_g[32i](32i,32i,32i)
 ; f46_g[32i](32i,32i,32i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7847,7 +7847,7 @@
 000fh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f46<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f46#f46_g[64u](64u,64u,64u)
+; ulong f46<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f46#f46_g[64u](64u,64u,64u)
 ; f46_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7858,7 +7858,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f46<long>(long a, long b, long c), hex://logix/ScalarOps?f46#f46_g[64i](64i,64i,64i)
+; long f46<long>(long a, long b, long c), hex://logix/scalar.ops?f46#f46_g[64i](64i,64i,64i)
 ; f46_g[64i](64i,64i,64i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7869,7 +7869,7 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f47<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f47#f47_g[8u](8u,8u,8u)
+; byte f47<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f47#f47_g[8u](8u,8u,8u)
 ; f47_g[8u](8u,8u,8u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xc9,0xf7,0xd1,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7889,7 +7889,7 @@
 002bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f47<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f47#f47_g[8i](8i,8i,8i)
+; sbyte f47<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f47#f47_g[8i](8i,8i,8i)
 ; f47_g[8i](8i,8i,8i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x4c,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7911,7 +7911,7 @@
 003bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f47<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f47#f47_g[16u](16u,16u,16u)
+; ushort f47<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f47#f47_g[16u](16u,16u,16u)
 ; f47_g[16u](16u,16u,16u)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0xf7,0xd1,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7931,7 +7931,7 @@
 002bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f47<short>(short a, short b, short c), hex://logix/ScalarOps?f47#f47_g[16i](16i,16i,16i)
+; short f47<short>(short a, short b, short c), hex://logix/scalar.ops?f47#f47_g[16i](16i,16i,16i)
 ; f47_g[16i](16i,16i,16i)[64] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x4c,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7953,7 +7953,7 @@
 003bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 003fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f47<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f47#f47_g[32u](32u,32u,32u)
+; uint f47<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f47#f47_g[32u](32u,32u,32u)
 ; f47_g[32u](32u,32u,32u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7965,7 +7965,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f47<int>(int a, int b, int c), hex://logix/ScalarOps?f47#f47_g[32i](32i,32i,32i)
+; int f47<int>(int a, int b, int c), hex://logix/scalar.ops?f47#f47_g[32i](32i,32i,32i)
 ; f47_g[32i](32i,32i,32i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x8b,0xc0,0xf7,0xd0,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7977,7 +7977,7 @@
 0013h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f47<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f47#f47_g[64u](64u,64u,64u)
+; ulong f47<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f47#f47_g[64u](64u,64u,64u)
 ; f47_g[64u](64u,64u,64u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -7989,7 +7989,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f47<long>(long a, long b, long c), hex://logix/ScalarOps?f47#f47_g[64i](64i,64i,64i)
+; long f47<long>(long a, long b, long c), hex://logix/scalar.ops?f47#f47_g[64i](64i,64i,64i)
 ; f47_g[64i](64i,64i,64i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x8b,0xc0,0x48,0xf7,0xd0,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8001,7 +8001,7 @@
 0016h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f48<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f48#f48_g[8u](8u,8u,8u)
+; byte f48<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f48#f48_g[8u](8u,8u,8u)
 ; f48_g[8u](8u,8u,8u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x33,0xc1,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8014,7 +8014,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f48<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f48#f48_g[8i](8i,8i,8i)
+; sbyte f48<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f48#f48_g[8i](8i,8i,8i)
 ; f48_g[8i](8i,8i,8i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8027,7 +8027,7 @@
 0019h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f48<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f48#f48_g[16u](16u,16u,16u)
+; ushort f48<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f48#f48_g[16u](16u,16u,16u)
 ; f48_g[16u](16u,16u,16u)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x33,0xc1,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8040,7 +8040,7 @@
 0016h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f48<short>(short a, short b, short c), hex://logix/ScalarOps?f48#f48_g[16i](16i,16i,16i)
+; short f48<short>(short a, short b, short c), hex://logix/scalar.ops?f48#f48_g[16i](16i,16i,16i)
 ; f48_g[16i](16i,16i,16i)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8053,7 +8053,7 @@
 0019h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f48<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f48#f48_g[32u](32u,32u,32u)
+; uint f48<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f48#f48_g[32u](32u,32u,32u)
 ; f48_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8062,7 +8062,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f48<int>(int a, int b, int c), hex://logix/ScalarOps?f48#f48_g[32i](32i,32i,32i)
+; int f48<int>(int a, int b, int c), hex://logix/scalar.ops?f48#f48_g[32i](32i,32i,32i)
 ; f48_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8071,7 +8071,7 @@
 000ah mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f48<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f48#f48_g[64u](64u,64u,64u)
+; ulong f48<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f48#f48_g[64u](64u,64u,64u)
 ; f48_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8080,7 +8080,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f48<long>(long a, long b, long c), hex://logix/ScalarOps?f48#f48_g[64i](64i,64i,64i)
+; long f48<long>(long a, long b, long c), hex://logix/scalar.ops?f48#f48_g[64i](64i,64i,64i)
 ; f48_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8089,7 +8089,7 @@
 000bh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f49<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f49#f49_g[8u](8u,8u,8u)
+; byte f49<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f49#f49_g[8u](8u,8u,8u)
 ; f49_g[8u](8u,8u,8u)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x8b,0xc8,0x45,0x0f,0xb6,0xc0,0x45,0x8b,0xc8,0x41,0x33,0xc9,0x0f,0xb6,0xc9,0x41,0x0b,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x23,0xca,0xc4,0xe2,0x68,0xf2,0xc0,0x0b,0xc1,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8112,7 +8112,7 @@
 0034h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f49<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f49#f49_g[8i](8i,8i,8i)
+; sbyte f49<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f49#f49_g[8i](8i,8i,8i)
 ; f49_g[8i](8i,8i,8i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x4d,0x0f,0xbe,0xc8,0x41,0x33,0xc1,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x4d,0x0f,0xbe,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x4c,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8137,7 +8137,7 @@
 0047h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f49<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f49#f49_g[16u](16u,16u,16u)
+; ushort f49<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f49#f49_g[16u](16u,16u,16u)
 ; f49_g[16u](16u,16u,16u)[56] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xc8,0x45,0x0f,0xb7,0xc0,0x45,0x8b,0xc8,0x41,0x33,0xc9,0x0f,0xb7,0xc9,0x41,0x0b,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x23,0xca,0xc4,0xe2,0x68,0xf2,0xc0,0x0b,0xc1,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8160,7 +8160,7 @@
 0034h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0037h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f49<short>(short a, short b, short c), hex://logix/ScalarOps?f49#f49_g[16i](16i,16i,16i)
+; short f49<short>(short a, short b, short c), hex://logix/scalar.ops?f49#f49_g[16i](16i,16i,16i)
 ; f49_g[16i](16i,16i,16i)[76] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x4d,0x0f,0xbf,0xc8,0x41,0x33,0xc1,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x4d,0x0f,0xbf,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x4c,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8185,7 +8185,7 @@
 0047h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f49<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f49#f49_g[32u](32u,32u,32u)
+; uint f49<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f49#f49_g[32u](32u,32u,32u)
 ; f49_g[32u](32u,32u,32u)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x41,0x33,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8198,7 +8198,7 @@
 0016h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f49<int>(int a, int b, int c), hex://logix/ScalarOps?f49#f49_g[32i](32i,32i,32i)
+; int f49<int>(int a, int b, int c), hex://logix/scalar.ops?f49#f49_g[32i](32i,32i,32i)
 ; f49_g[32i](32i,32i,32i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x41,0x33,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8211,7 +8211,7 @@
 0016h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f49<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f49#f49_g[64u](64u,64u,64u)
+; ulong f49<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f49#f49_g[64u](64u,64u,64u)
 ; f49_g[64u](64u,64u,64u)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x49,0x33,0xc0,0x49,0x0b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8224,7 +8224,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f49<long>(long a, long b, long c), hex://logix/ScalarOps?f49#f49_g[64i](64i,64i,64i)
+; long f49<long>(long a, long b, long c), hex://logix/scalar.ops?f49#f49_g[64i](64i,64i,64i)
 ; f49_g[64i](64i,64i,64i)[29] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x49,0x33,0xc0,0x49,0x0b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8237,7 +8237,7 @@
 0019h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4a#f4a_g[8u](8u,8u,8u)
+; byte f4a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4a#f4a_g[8u](8u,8u,8u)
 ; f4a_g[8u](8u,8u,8u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8254,7 +8254,7 @@
 0022h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4a#f4a_g[8i](8i,8i,8i)
+; sbyte f4a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4a#f4a_g[8i](8i,8i,8i)
 ; f4a_g[8i](8i,8i,8i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8271,7 +8271,7 @@
 0027h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4a#f4a_g[16u](16u,16u,16u)
+; ushort f4a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4a#f4a_g[16u](16u,16u,16u)
 ; f4a_g[16u](16u,16u,16u)[38] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x44,0x8b,0xc2,0x41,0x0b,0xc0,0x0f,0xb7,0xc0,0x0f,0xb7,0xc9,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8288,7 +8288,7 @@
 0022h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0025h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4a<short>(short a, short b, short c), hex://logix/ScalarOps?f4a#f4a_g[16i](16i,16i,16i)
+; short f4a<short>(short a, short b, short c), hex://logix/scalar.ops?f4a#f4a_g[16i](16i,16i,16i)
 ; f4a_g[16i](16i,16i,16i)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8305,7 +8305,7 @@
 0027h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4a#f4a_g[32u](32u,32u,32u)
+; uint f4a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4a#f4a_g[32u](32u,32u,32u)
 ; f4a_g[32u](32u,32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8315,7 +8315,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4a<int>(int a, int b, int c), hex://logix/ScalarOps?f4a#f4a_g[32i](32i,32i,32i)
+; int f4a<int>(int a, int b, int c), hex://logix/scalar.ops?f4a#f4a_g[32i](32i,32i,32i)
 ; f4a_g[32i](32i,32i,32i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x41,0x33,0xc8,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8325,7 +8325,7 @@
 000dh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4a#f4a_g[64u](64u,64u,64u)
+; ulong f4a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4a#f4a_g[64u](64u,64u,64u)
 ; f4a_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8335,7 +8335,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4a<long>(long a, long b, long c), hex://logix/ScalarOps?f4a#f4a_g[64i](64i,64i,64i)
+; long f4a<long>(long a, long b, long c), hex://logix/scalar.ops?f4a#f4a_g[64i](64i,64i,64i)
 ; f4a_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x49,0x33,0xc8,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8345,7 +8345,7 @@
 000eh mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4b#f4b_g[8u](8u,8u,8u)
+; byte f4b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4b#f4b_g[8u](8u,8u,8u)
 ; f4b_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8360,7 +8360,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4b#f4b_g[8i](8i,8i,8i)
+; sbyte f4b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4b#f4b_g[8i](8i,8i,8i)
 ; f4b_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8375,7 +8375,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4b#f4b_g[16u](16u,16u,16u)
+; ushort f4b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4b#f4b_g[16u](16u,16u,16u)
 ; f4b_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8390,7 +8390,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4b<short>(short a, short b, short c), hex://logix/ScalarOps?f4b#f4b_g[16i](16i,16i,16i)
+; short f4b<short>(short a, short b, short c), hex://logix/scalar.ops?f4b#f4b_g[16i](16i,16i,16i)
 ; f4b_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8405,7 +8405,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4b#f4b_g[32u](32u,32u,32u)
+; uint f4b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4b#f4b_g[32u](32u,32u,32u)
 ; f4b_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x0b,0xc0,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8415,7 +8415,7 @@
 000ch xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4b<int>(int a, int b, int c), hex://logix/ScalarOps?f4b#f4b_g[32i](32i,32i,32i)
+; int f4b<int>(int a, int b, int c), hex://logix/scalar.ops?f4b#f4b_g[32i](32i,32i,32i)
 ; f4b_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x41,0x0b,0xc0,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8425,7 +8425,7 @@
 000ch xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4b#f4b_g[64u](64u,64u,64u)
+; ulong f4b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4b#f4b_g[64u](64u,64u,64u)
 ; f4b_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x0b,0xc0,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8435,7 +8435,7 @@
 000eh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4b<long>(long a, long b, long c), hex://logix/ScalarOps?f4b#f4b_g[64i](64i,64i,64i)
+; long f4b<long>(long a, long b, long c), hex://logix/scalar.ops?f4b#f4b_g[64i](64i,64i,64i)
 ; f4b_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x0b,0xc0,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8445,7 +8445,7 @@
 000eh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4c#f4c_g[8u](8u,8u,8u)
+; byte f4c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4c#f4c_g[8u](8u,8u,8u)
 ; f4c_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x23,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8459,7 +8459,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4c#f4c_g[8i](8i,8i,8i)
+; sbyte f4c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4c#f4c_g[8i](8i,8i,8i)
 ; f4c_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8473,7 +8473,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4c#f4c_g[16u](16u,16u,16u)
+; ushort f4c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4c#f4c_g[16u](16u,16u,16u)
 ; f4c_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x23,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8487,7 +8487,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4c<short>(short a, short b, short c), hex://logix/ScalarOps?f4c#f4c_g[16i](16i,16i,16i)
+; short f4c<short>(short a, short b, short c), hex://logix/scalar.ops?f4c#f4c_g[16i](16i,16i,16i)
 ; f4c_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8501,7 +8501,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4c#f4c_g[32u](32u,32u,32u)
+; uint f4c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4c#f4c_g[32u](32u,32u,32u)
 ; f4c_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8511,7 +8511,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4c<int>(int a, int b, int c), hex://logix/ScalarOps?f4c#f4c_g[32i](32i,32i,32i)
+; int f4c<int>(int a, int b, int c), hex://logix/scalar.ops?f4c#f4c_g[32i](32i,32i,32i)
 ; f4c_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xc8,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8521,7 +8521,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4c#f4c_g[64u](64u,64u,64u)
+; ulong f4c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4c#f4c_g[64u](64u,64u,64u)
 ; f4c_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8531,7 +8531,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4c<long>(long a, long b, long c), hex://logix/ScalarOps?f4c#f4c_g[64i](64i,64i,64i)
+; long f4c<long>(long a, long b, long c), hex://logix/scalar.ops?f4c#f4c_g[64i](64i,64i,64i)
 ; f4c_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8541,7 +8541,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4d#f4d_g[8u](8u,8u,8u)
+; byte f4d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4d#f4d_g[8u](8u,8u,8u)
 ; f4d_g[8u](8u,8u,8u)[58] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x8b,0xc8,0x45,0x0f,0xb6,0xc0,0x45,0x8b,0xc8,0x41,0x23,0xc9,0xf7,0xd1,0x0f,0xb6,0xc9,0x41,0x0b,0xc0,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x23,0xca,0xc4,0xe2,0x68,0xf2,0xc0,0x0b,0xc1,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8565,7 +8565,7 @@
 0036h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4d#f4d_g[8i](8i,8i,8i)
+; sbyte f4d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4d#f4d_g[8i](8i,8i,8i)
 ; f4d_g[8i](8i,8i,8i)[78] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x4d,0x0f,0xbe,0xc8,0x41,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xc9,0x4d,0x0f,0xbe,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x48,0x0f,0xbe,0xc9,0x4c,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8591,7 +8591,7 @@
 0049h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4d#f4d_g[16u](16u,16u,16u)
+; ushort f4d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4d#f4d_g[16u](16u,16u,16u)
 ; f4d_g[16u](16u,16u,16u)[58] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xc8,0x45,0x0f,0xb7,0xc0,0x45,0x8b,0xc8,0x41,0x23,0xc9,0xf7,0xd1,0x0f,0xb7,0xc9,0x41,0x0b,0xc0,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x23,0xca,0xc4,0xe2,0x68,0xf2,0xc0,0x0b,0xc1,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8615,7 +8615,7 @@
 0036h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4d<short>(short a, short b, short c), hex://logix/ScalarOps?f4d#f4d_g[16i](16i,16i,16i)
+; short f4d<short>(short a, short b, short c), hex://logix/scalar.ops?f4d#f4d_g[16i](16i,16i,16i)
 ; f4d_g[16i](16i,16i,16i)[78] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x4d,0x0f,0xbf,0xc8,0x41,0x23,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xc9,0x4d,0x0f,0xbf,0xc0,0x41,0x0b,0xc8,0xf7,0xd1,0x48,0x0f,0xbf,0xc9,0x4c,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xc0,0x41,0x23,0xc0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8641,7 +8641,7 @@
 0049h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 004dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4d#f4d_g[32u](32u,32u,32u)
+; uint f4d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4d#f4d_g[32u](32u,32u,32u)
 ; f4d_g[32u](32u,32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x41,0x23,0xc0,0xf7,0xd0,0x41,0x0b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8655,7 +8655,7 @@
 0018h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4d<int>(int a, int b, int c), hex://logix/ScalarOps?f4d#f4d_g[32i](32i,32i,32i)
+; int f4d<int>(int a, int b, int c), hex://logix/scalar.ops?f4d#f4d_g[32i](32i,32i,32i)
 ; f4d_g[32i](32i,32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x41,0x23,0xc0,0xf7,0xd0,0x41,0x0b,0xc8,0xf7,0xd1,0x23,0xc2,0xc4,0xe2,0x68,0xf2,0xd1,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8669,7 +8669,7 @@
 0018h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4d#f4d_g[64u](64u,64u,64u)
+; ulong f4d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4d#f4d_g[64u](64u,64u,64u)
 ; f4d_g[64u](64u,64u,64u)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x49,0x23,0xc0,0x48,0xf7,0xd0,0x49,0x0b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8683,7 +8683,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4d<long>(long a, long b, long c), hex://logix/ScalarOps?f4d#f4d_g[64i](64i,64i,64i)
+; long f4d<long>(long a, long b, long c), hex://logix/scalar.ops?f4d#f4d_g[64i](64i,64i,64i)
 ; f4d_g[64i](64i,64i,64i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x49,0x23,0xc0,0x48,0xf7,0xd0,0x49,0x0b,0xc8,0x48,0xf7,0xd1,0x48,0x23,0xc2,0xc4,0xe2,0xe8,0xf2,0xd1,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8697,7 +8697,7 @@
 001ch or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4e#f4e_g[8u](8u,8u,8u)
+; byte f4e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4e#f4e_g[8u](8u,8u,8u)
 ; f4e_g[8u](8u,8u,8u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x0f,0xb6,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8714,7 +8714,7 @@
 0023h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4e#f4e_g[8i](8i,8i,8i)
+; sbyte f4e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4e#f4e_g[8i](8i,8i,8i)
 ; f4e_g[8i](8i,8i,8i)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0x23,0xc1,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xc8,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8733,7 +8733,7 @@
 0030h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4e#f4e_g[16u](16u,16u,16u)
+; ushort f4e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4e#f4e_g[16u](16u,16u,16u)
 ; f4e_g[16u](16u,16u,16u)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x0f,0xb7,0xc0,0x23,0xc1,0xc4,0xe2,0x70,0xf2,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8750,7 +8750,7 @@
 0023h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4e<short>(short a, short b, short c), hex://logix/ScalarOps?f4e#f4e_g[16i](16i,16i,16i)
+; short f4e<short>(short a, short b, short c), hex://logix/scalar.ops?f4e#f4e_g[16i](16i,16i,16i)
 ; f4e_g[16i](16i,16i,16i)[53] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0x23,0xc1,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xc8,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8769,7 +8769,7 @@
 0030h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4e#f4e_g[32u](32u,32u,32u)
+; uint f4e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4e#f4e_g[32u](32u,32u,32u)
 ; f4e_g[32u](32u,32u,32u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8780,7 +8780,7 @@
 0011h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4e<int>(int a, int b, int c), hex://logix/ScalarOps?f4e#f4e_g[32i](32i,32i,32i)
+; int f4e<int>(int a, int b, int c), hex://logix/scalar.ops?f4e#f4e_g[32i](32i,32i,32i)
 ; f4e_g[32i](32i,32i,32i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8791,7 +8791,7 @@
 0011h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4e#f4e_g[64u](64u,64u,64u)
+; ulong f4e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4e#f4e_g[64u](64u,64u,64u)
 ; f4e_g[64u](64u,64u,64u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8802,7 +8802,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4e<long>(long a, long b, long c), hex://logix/ScalarOps?f4e#f4e_g[64i](64i,64i,64i)
+; long f4e<long>(long a, long b, long c), hex://logix/scalar.ops?f4e#f4e_g[64i](64i,64i,64i)
 ; f4e_g[64i](64i,64i,64i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8813,7 +8813,7 @@
 0013h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f4f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f4f#f4f_g[8u](8u,8u,8u)
+; byte f4f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f4f#f4f_g[8u](8u,8u,8u)
 ; f4f_g[8u](8u,8u,8u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8829,7 +8829,7 @@
 0021h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f4f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f4f#f4f_g[8i](8i,8i,8i)
+; sbyte f4f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f4f#f4f_g[8i](8i,8i,8i)
 ; f4f_g[8i](8i,8i,8i)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8845,7 +8845,7 @@
 0026h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f4f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f4f#f4f_g[16u](16u,16u,16u)
+; ushort f4f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f4f#f4f_g[16u](16u,16u,16u)
 ; f4f_g[16u](16u,16u,16u)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8861,7 +8861,7 @@
 0021h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0024h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f4f<short>(short a, short b, short c), hex://logix/ScalarOps?f4f#f4f_g[16i](16i,16i,16i)
+; short f4f<short>(short a, short b, short c), hex://logix/scalar.ops?f4f#f4f_g[16i](16i,16i,16i)
 ; f4f_g[16i](16i,16i,16i)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x70,0xf2,0xd2,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8877,7 +8877,7 @@
 0026h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f4f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f4f#f4f_g[32u](32u,32u,32u)
+; uint f4f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f4f#f4f_g[32u](32u,32u,32u)
 ; f4f_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8887,7 +8887,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f4f<int>(int a, int b, int c), hex://logix/ScalarOps?f4f#f4f_g[32i](32i,32i,32i)
+; int f4f<int>(int a, int b, int c), hex://logix/scalar.ops?f4f#f4f_g[32i](32i,32i,32i)
 ; f4f_g[32i](32i,32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc4,0xe2,0x38,0xf2,0xd2,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8897,7 +8897,7 @@
 000eh or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f4f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f4f#f4f_g[64u](64u,64u,64u)
+; ulong f4f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f4f#f4f_g[64u](64u,64u,64u)
 ; f4f_g[64u](64u,64u,64u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8907,7 +8907,7 @@
 0010h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f4f<long>(long a, long b, long c), hex://logix/ScalarOps?f4f#f4f_g[64i](64i,64i,64i)
+; long f4f<long>(long a, long b, long c), hex://logix/scalar.ops?f4f#f4f_g[64i](64i,64i,64i)
 ; f4f_g[64i](64i,64i,64i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc4,0xe2,0xb8,0xf2,0xd2,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -8917,567 +8917,567 @@
 0010h or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte identity<byte>(byte a), hex://logix/ScalarOps?identity#identity_g[8u](8u)
+; byte identity<byte>(byte a), hex://logix/scalar.ops?identity#identity_g[8u](8u)
 ; identity_g[8u](8u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte identity<sbyte>(sbyte a), hex://logix/ScalarOps?identity#identity_g[8i](8i)
+; sbyte identity<sbyte>(sbyte a), hex://logix/scalar.ops?identity#identity_g[8i](8i)
 ; identity_g[8i](8i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort identity<ushort>(ushort a), hex://logix/ScalarOps?identity#identity_g[16u](16u)
+; ushort identity<ushort>(ushort a), hex://logix/scalar.ops?identity#identity_g[16u](16u)
 ; identity_g[16u](16u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short identity<short>(short a), hex://logix/ScalarOps?identity#identity_g[16i](16i)
+; short identity<short>(short a), hex://logix/scalar.ops?identity#identity_g[16i](16i)
 ; identity_g[16i](16i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint identity<uint>(uint a), hex://logix/ScalarOps?identity#identity_g[32u](32u)
+; uint identity<uint>(uint a), hex://logix/scalar.ops?identity#identity_g[32u](32u)
 ; identity_g[32u](32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int identity<int>(int a), hex://logix/ScalarOps?identity#identity_g[32i](32i)
+; int identity<int>(int a), hex://logix/scalar.ops?identity#identity_g[32i](32i)
 ; identity_g[32i](32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong identity<ulong>(ulong a), hex://logix/ScalarOps?identity#identity_g[64u](64u)
+; ulong identity<ulong>(ulong a), hex://logix/scalar.ops?identity#identity_g[64u](64u)
 ; identity_g[64u](64u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long identity<long>(long a), hex://logix/ScalarOps?identity#identity_g[64i](64i)
+; long identity<long>(long a), hex://logix/scalar.ops?identity#identity_g[64i](64i)
 ; identity_g[64i](64i)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte ones<byte>(), hex://logix/ScalarOps?ones#ones_g[8u]()
+; byte ones<byte>(), hex://logix/scalar.ops?ones#ones_g[8u]()
 ; ones_g[8u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte ones<sbyte>(), hex://logix/ScalarOps?ones#ones_g[8i]()
+; sbyte ones<sbyte>(), hex://logix/scalar.ops?ones#ones_g[8i]()
 ; ones_g[8i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort ones<ushort>(), hex://logix/ScalarOps?ones#ones_g[16u]()
+; ushort ones<ushort>(), hex://logix/scalar.ops?ones#ones_g[16u]()
 ; ones_g[16u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short ones<short>(), hex://logix/ScalarOps?ones#ones_g[16i]()
+; short ones<short>(), hex://logix/scalar.ops?ones#ones_g[16i]()
 ; ones_g[16i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint ones<uint>(), hex://logix/ScalarOps?ones#ones_g[32u]()
+; uint ones<uint>(), hex://logix/scalar.ops?ones#ones_g[32u]()
 ; ones_g[32u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int ones<int>(), hex://logix/ScalarOps?ones#ones_g[32i]()
+; int ones<int>(), hex://logix/scalar.ops?ones#ones_g[32i]()
 ; ones_g[32i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong ones<ulong>(), hex://logix/ScalarOps?ones#ones_g[64u]()
+; ulong ones<ulong>(), hex://logix/scalar.ops?ones#ones_g[64u]()
 ; ones_g[64u]()[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long ones<long>(), hex://logix/ScalarOps?ones#ones_g[64i]()
+; long ones<long>(), hex://logix/scalar.ops?ones#ones_g[64i]()
 ; ones_g[64i]()[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte false<byte>(), hex://logix/ScalarOps?false#false_g[8u]()
+; byte false<byte>(), hex://logix/scalar.ops?false#false_g[8u]()
 ; false_g[8u]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte false<sbyte>(), hex://logix/ScalarOps?false#false_g[8i]()
+; sbyte false<sbyte>(), hex://logix/scalar.ops?false#false_g[8i]()
 ; false_g[8i]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort false<ushort>(), hex://logix/ScalarOps?false#false_g[16u]()
+; ushort false<ushort>(), hex://logix/scalar.ops?false#false_g[16u]()
 ; false_g[16u]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short false<short>(), hex://logix/ScalarOps?false#false_g[16i]()
+; short false<short>(), hex://logix/scalar.ops?false#false_g[16i]()
 ; false_g[16i]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint false<uint>(), hex://logix/ScalarOps?false#false_g[32u]()
+; uint false<uint>(), hex://logix/scalar.ops?false#false_g[32u]()
 ; false_g[32u]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int false<int>(), hex://logix/ScalarOps?false#false_g[32i]()
+; int false<int>(), hex://logix/scalar.ops?false#false_g[32i]()
 ; false_g[32i]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong false<ulong>(), hex://logix/ScalarOps?false#false_g[64u]()
+; ulong false<ulong>(), hex://logix/scalar.ops?false#false_g[64u]()
 ; false_g[64u]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long false<long>(), hex://logix/ScalarOps?false#false_g[64i]()
+; long false<long>(), hex://logix/scalar.ops?false#false_g[64i]()
 ; false_g[64i]()[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte false<byte>(byte a), hex://logix/ScalarOps?false#false_g[8u](8u)
+; byte false<byte>(byte a), hex://logix/scalar.ops?false#false_g[8u](8u)
 ; false_g[8u](8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte false<sbyte>(sbyte a), hex://logix/ScalarOps?false#false_g[8i](8i)
+; sbyte false<sbyte>(sbyte a), hex://logix/scalar.ops?false#false_g[8i](8i)
 ; false_g[8i](8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort false<ushort>(ushort a), hex://logix/ScalarOps?false#false_g[16u](16u)
+; ushort false<ushort>(ushort a), hex://logix/scalar.ops?false#false_g[16u](16u)
 ; false_g[16u](16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short false<short>(short a), hex://logix/ScalarOps?false#false_g[16i](16i)
+; short false<short>(short a), hex://logix/scalar.ops?false#false_g[16i](16i)
 ; false_g[16i](16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint false<uint>(uint a), hex://logix/ScalarOps?false#false_g[32u](32u)
+; uint false<uint>(uint a), hex://logix/scalar.ops?false#false_g[32u](32u)
 ; false_g[32u](32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int false<int>(int a), hex://logix/ScalarOps?false#false_g[32i](32i)
+; int false<int>(int a), hex://logix/scalar.ops?false#false_g[32i](32i)
 ; false_g[32i](32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong false<ulong>(ulong a), hex://logix/ScalarOps?false#false_g[64u](64u)
+; ulong false<ulong>(ulong a), hex://logix/scalar.ops?false#false_g[64u](64u)
 ; false_g[64u](64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long false<long>(long a), hex://logix/ScalarOps?false#false_g[64i](64i)
+; long false<long>(long a), hex://logix/scalar.ops?false#false_g[64i](64i)
 ; false_g[64i](64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte false<byte>(byte a, byte b), hex://logix/ScalarOps?false#false_g[8u](8u,8u)
+; byte false<byte>(byte a, byte b), hex://logix/scalar.ops?false#false_g[8u](8u,8u)
 ; false_g[8u](8u,8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte false<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?false#false_g[8i](8i,8i)
+; sbyte false<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?false#false_g[8i](8i,8i)
 ; false_g[8i](8i,8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort false<ushort>(ushort a, ushort b), hex://logix/ScalarOps?false#false_g[16u](16u,16u)
+; ushort false<ushort>(ushort a, ushort b), hex://logix/scalar.ops?false#false_g[16u](16u,16u)
 ; false_g[16u](16u,16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short false<short>(short a, short b), hex://logix/ScalarOps?false#false_g[16i](16i,16i)
+; short false<short>(short a, short b), hex://logix/scalar.ops?false#false_g[16i](16i,16i)
 ; false_g[16i](16i,16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint false<uint>(uint a, uint b), hex://logix/ScalarOps?false#false_g[32u](32u,32u)
+; uint false<uint>(uint a, uint b), hex://logix/scalar.ops?false#false_g[32u](32u,32u)
 ; false_g[32u](32u,32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int false<int>(int a, int b), hex://logix/ScalarOps?false#false_g[32i](32i,32i)
+; int false<int>(int a, int b), hex://logix/scalar.ops?false#false_g[32i](32i,32i)
 ; false_g[32i](32i,32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong false<ulong>(ulong a, ulong b), hex://logix/ScalarOps?false#false_g[64u](64u,64u)
+; ulong false<ulong>(ulong a, ulong b), hex://logix/scalar.ops?false#false_g[64u](64u,64u)
 ; false_g[64u](64u,64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long false<long>(long a, long b), hex://logix/ScalarOps?false#false_g[64i](64i,64i)
+; long false<long>(long a, long b), hex://logix/scalar.ops?false#false_g[64i](64i,64i)
 ; false_g[64i](64i,64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte false<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?false#false_g[8u](8u,8u,8u)
+; byte false<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?false#false_g[8u](8u,8u,8u)
 ; false_g[8u](8u,8u,8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte false<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?false#false_g[8i](8i,8i,8i)
+; sbyte false<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?false#false_g[8i](8i,8i,8i)
 ; false_g[8i](8i,8i,8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort false<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?false#false_g[16u](16u,16u,16u)
+; ushort false<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?false#false_g[16u](16u,16u,16u)
 ; false_g[16u](16u,16u,16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short false<short>(short a, short b, short c), hex://logix/ScalarOps?false#false_g[16i](16i,16i,16i)
+; short false<short>(short a, short b, short c), hex://logix/scalar.ops?false#false_g[16i](16i,16i,16i)
 ; false_g[16i](16i,16i,16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint false<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?false#false_g[32u](32u,32u,32u)
+; uint false<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?false#false_g[32u](32u,32u,32u)
 ; false_g[32u](32u,32u,32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int false<int>(int a, int b, int c), hex://logix/ScalarOps?false#false_g[32i](32i,32i,32i)
+; int false<int>(int a, int b, int c), hex://logix/scalar.ops?false#false_g[32i](32i,32i,32i)
 ; false_g[32i](32i,32i,32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong false<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?false#false_g[64u](64u,64u,64u)
+; ulong false<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?false#false_g[64u](64u,64u,64u)
 ; false_g[64u](64u,64u,64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long false<long>(long a, long b, long c), hex://logix/ScalarOps?false#false_g[64i](64i,64i,64i)
+; long false<long>(long a, long b, long c), hex://logix/scalar.ops?false#false_g[64i](64i,64i,64i)
 ; false_g[64i](64i,64i,64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte true<byte>(), hex://logix/ScalarOps?true#true_g[8u]()
+; byte true<byte>(), hex://logix/scalar.ops?true#true_g[8u]()
 ; true_g[8u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte true<sbyte>(), hex://logix/ScalarOps?true#true_g[8i]()
+; sbyte true<sbyte>(), hex://logix/scalar.ops?true#true_g[8i]()
 ; true_g[8i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort true<ushort>(), hex://logix/ScalarOps?true#true_g[16u]()
+; ushort true<ushort>(), hex://logix/scalar.ops?true#true_g[16u]()
 ; true_g[16u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short true<short>(), hex://logix/ScalarOps?true#true_g[16i]()
+; short true<short>(), hex://logix/scalar.ops?true#true_g[16i]()
 ; true_g[16i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint true<uint>(), hex://logix/ScalarOps?true#true_g[32u]()
+; uint true<uint>(), hex://logix/scalar.ops?true#true_g[32u]()
 ; true_g[32u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int true<int>(), hex://logix/ScalarOps?true#true_g[32i]()
+; int true<int>(), hex://logix/scalar.ops?true#true_g[32i]()
 ; true_g[32i]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong true<ulong>(), hex://logix/ScalarOps?true#true_g[64u]()
+; ulong true<ulong>(), hex://logix/scalar.ops?true#true_g[64u]()
 ; true_g[64u]()[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long true<long>(), hex://logix/ScalarOps?true#true_g[64i]()
+; long true<long>(), hex://logix/scalar.ops?true#true_g[64i]()
 ; true_g[64i]()[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte true<byte>(byte a), hex://logix/ScalarOps?true#true_g[8u](8u)
+; byte true<byte>(byte a), hex://logix/scalar.ops?true#true_g[8u](8u)
 ; true_g[8u](8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte true<sbyte>(sbyte a), hex://logix/ScalarOps?true#true_g[8i](8i)
+; sbyte true<sbyte>(sbyte a), hex://logix/scalar.ops?true#true_g[8i](8i)
 ; true_g[8i](8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort true<ushort>(ushort a), hex://logix/ScalarOps?true#true_g[16u](16u)
+; ushort true<ushort>(ushort a), hex://logix/scalar.ops?true#true_g[16u](16u)
 ; true_g[16u](16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short true<short>(short a), hex://logix/ScalarOps?true#true_g[16i](16i)
+; short true<short>(short a), hex://logix/scalar.ops?true#true_g[16i](16i)
 ; true_g[16i](16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint true<uint>(uint a), hex://logix/ScalarOps?true#true_g[32u](32u)
+; uint true<uint>(uint a), hex://logix/scalar.ops?true#true_g[32u](32u)
 ; true_g[32u](32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int true<int>(int a), hex://logix/ScalarOps?true#true_g[32i](32i)
+; int true<int>(int a), hex://logix/scalar.ops?true#true_g[32i](32i)
 ; true_g[32i](32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong true<ulong>(ulong a), hex://logix/ScalarOps?true#true_g[64u](64u)
+; ulong true<ulong>(ulong a), hex://logix/scalar.ops?true#true_g[64u](64u)
 ; true_g[64u](64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long true<long>(long a), hex://logix/ScalarOps?true#true_g[64i](64i)
+; long true<long>(long a), hex://logix/scalar.ops?true#true_g[64i](64i)
 ; true_g[64i](64i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte true<byte>(byte a, byte b), hex://logix/ScalarOps?true#true_g[8u](8u,8u)
+; byte true<byte>(byte a, byte b), hex://logix/scalar.ops?true#true_g[8u](8u,8u)
 ; true_g[8u](8u,8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte true<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?true#true_g[8i](8i,8i)
+; sbyte true<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?true#true_g[8i](8i,8i)
 ; true_g[8i](8i,8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort true<ushort>(ushort a, ushort b), hex://logix/ScalarOps?true#true_g[16u](16u,16u)
+; ushort true<ushort>(ushort a, ushort b), hex://logix/scalar.ops?true#true_g[16u](16u,16u)
 ; true_g[16u](16u,16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short true<short>(short a, short b), hex://logix/ScalarOps?true#true_g[16i](16i,16i)
+; short true<short>(short a, short b), hex://logix/scalar.ops?true#true_g[16i](16i,16i)
 ; true_g[16i](16i,16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint true<uint>(uint a, uint b), hex://logix/ScalarOps?true#true_g[32u](32u,32u)
+; uint true<uint>(uint a, uint b), hex://logix/scalar.ops?true#true_g[32u](32u,32u)
 ; true_g[32u](32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int true<int>(int a, int b), hex://logix/ScalarOps?true#true_g[32i](32i,32i)
+; int true<int>(int a, int b), hex://logix/scalar.ops?true#true_g[32i](32i,32i)
 ; true_g[32i](32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong true<ulong>(ulong a, ulong b), hex://logix/ScalarOps?true#true_g[64u](64u,64u)
+; ulong true<ulong>(ulong a, ulong b), hex://logix/scalar.ops?true#true_g[64u](64u,64u)
 ; true_g[64u](64u,64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long true<long>(long a, long b), hex://logix/ScalarOps?true#true_g[64i](64i,64i)
+; long true<long>(long a, long b), hex://logix/scalar.ops?true#true_g[64i](64i,64i)
 ; true_g[64i](64i,64i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte true<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?true#true_g[8u](8u,8u,8u)
+; byte true<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?true#true_g[8u](8u,8u,8u)
 ; true_g[8u](8u,8u,8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte true<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?true#true_g[8i](8i,8i,8i)
+; sbyte true<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?true#true_g[8i](8i,8i,8i)
 ; true_g[8i](8i,8i,8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort true<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?true#true_g[16u](16u,16u,16u)
+; ushort true<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?true#true_g[16u](16u,16u,16u)
 ; true_g[16u](16u,16u,16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short true<short>(short a, short b, short c), hex://logix/ScalarOps?true#true_g[16i](16i,16i,16i)
+; short true<short>(short a, short b, short c), hex://logix/scalar.ops?true#true_g[16i](16i,16i,16i)
 ; true_g[16i](16i,16i,16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint true<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?true#true_g[32u](32u,32u,32u)
+; uint true<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?true#true_g[32u](32u,32u,32u)
 ; true_g[32u](32u,32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int true<int>(int a, int b, int c), hex://logix/ScalarOps?true#true_g[32i](32i,32i,32i)
+; int true<int>(int a, int b, int c), hex://logix/scalar.ops?true#true_g[32i](32i,32i,32i)
 ; true_g[32i](32i,32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong true<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?true#true_g[64u](64u,64u,64u)
+; ulong true<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?true#true_g[64u](64u,64u,64u)
 ; true_g[64u](64u,64u,64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long true<long>(long a, long b, long c), hex://logix/ScalarOps?true#true_g[64i](64i,64i,64i)
+; long true<long>(long a, long b, long c), hex://logix/scalar.ops?true#true_g[64i](64i,64i,64i)
 ; true_g[64i](64i,64i,64i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte not<byte>(byte a), hex://logix/ScalarOps?not#not_g[8u](8u)
+; byte not<byte>(byte a), hex://logix/scalar.ops?not#not_g[8u](8u)
 ; not_g[8u](8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9486,7 +9486,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte not<sbyte>(sbyte a), hex://logix/ScalarOps?not#not_g[8i](8i)
+; sbyte not<sbyte>(sbyte a), hex://logix/scalar.ops?not#not_g[8i](8i)
 ; not_g[8i](8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9495,7 +9495,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort not<ushort>(ushort a), hex://logix/ScalarOps?not#not_g[16u](16u)
+; ushort not<ushort>(ushort a), hex://logix/scalar.ops?not#not_g[16u](16u)
 ; not_g[16u](16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9504,7 +9504,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short not<short>(short a), hex://logix/ScalarOps?not#not_g[16i](16i)
+; short not<short>(short a), hex://logix/scalar.ops?not#not_g[16i](16i)
 ; not_g[16i](16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9513,7 +9513,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint not<uint>(uint a), hex://logix/ScalarOps?not#not_g[32u](32u)
+; uint not<uint>(uint a), hex://logix/scalar.ops?not#not_g[32u](32u)
 ; not_g[32u](32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9521,7 +9521,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int not<int>(int a), hex://logix/ScalarOps?not#not_g[32i](32i)
+; int not<int>(int a), hex://logix/scalar.ops?not#not_g[32i](32i)
 ; not_g[32i](32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9529,7 +9529,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong not<ulong>(ulong a), hex://logix/ScalarOps?not#not_g[64u](64u)
+; ulong not<ulong>(ulong a), hex://logix/scalar.ops?not#not_g[64u](64u)
 ; not_g[64u](64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9537,7 +9537,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long not<long>(long a), hex://logix/ScalarOps?not#not_g[64i](64i)
+; long not<long>(long a), hex://logix/scalar.ops?not#not_g[64i](64i)
 ; not_g[64i](64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9545,7 +9545,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte xor1<byte>(byte a), hex://logix/ScalarOps?xor1#xor1_g[8u](8u)
+; byte xor1<byte>(byte a), hex://logix/scalar.ops?xor1#xor1_g[8u](8u)
 ; xor1_g[8u](8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x35,0xff,0x00,0x00,0x00,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9554,7 +9554,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort xor1<ushort>(ushort a), hex://logix/ScalarOps?xor1#xor1_g[16u](16u)
+; ushort xor1<ushort>(ushort a), hex://logix/scalar.ops?xor1#xor1_g[16u](16u)
 ; xor1_g[16u](16u)[27] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0x35,0xff,0xff,0x00,0x00,0x89,0x44,0x24,0x04,0x0f,0xb7,0x44,0x24,0x04,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -9566,7 +9566,7 @@
 0016h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint xor1<uint>(uint a), hex://logix/ScalarOps?xor1#xor1_g[32u](32u)
+; uint xor1<uint>(uint a), hex://logix/scalar.ops?xor1#xor1_g[32u](32u)
 ; xor1_g[32u](32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9574,7 +9574,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong xor1<ulong>(ulong a), hex://logix/ScalarOps?xor1#xor1_g[64u](64u)
+; ulong xor1<ulong>(ulong a), hex://logix/scalar.ops?xor1#xor1_g[64u](64u)
 ; xor1_g[64u](64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9582,7 +9582,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte promote<byte>(bit src), hex://logix/ScalarOps?promote#promote_g[8u](1u)
+; byte promote<byte>(bit src), hex://logix/scalar.ops?promote#promote_g[8u](1u)
 ; promote_g[8u](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9593,7 +9593,7 @@
 000ch mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte promote<sbyte>(bit src), hex://logix/ScalarOps?promote#promote_g[8i](1u)
+; sbyte promote<sbyte>(bit src), hex://logix/scalar.ops?promote#promote_g[8i](1u)
 ; promote_g[8i](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9604,7 +9604,7 @@
 000ch mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort promote<ushort>(bit src), hex://logix/ScalarOps?promote#promote_g[16u](1u)
+; ushort promote<ushort>(bit src), hex://logix/scalar.ops?promote#promote_g[16u](1u)
 ; promote_g[16u](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9615,7 +9615,7 @@
 000ch mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short promote<short>(bit src), hex://logix/ScalarOps?promote#promote_g[16i](1u)
+; short promote<short>(bit src), hex://logix/scalar.ops?promote#promote_g[16i](1u)
 ; promote_g[16i](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9626,7 +9626,7 @@
 000ch mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint promote<uint>(bit src), hex://logix/ScalarOps?promote#promote_g[32u](1u)
+; uint promote<uint>(bit src), hex://logix/scalar.ops?promote#promote_g[32u](1u)
 ; promote_g[32u](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9637,7 +9637,7 @@
 000ch mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int promote<int>(bit src), hex://logix/ScalarOps?promote#promote_g[32i](1u)
+; int promote<int>(bit src), hex://logix/scalar.ops?promote#promote_g[32i](1u)
 ; promote_g[32i](1u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9648,7 +9648,7 @@
 000ch mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong promote<ulong>(bit src), hex://logix/ScalarOps?promote#promote_g[64u](1u)
+; ulong promote<ulong>(bit src), hex://logix/scalar.ops?promote#promote_g[64u](1u)
 ; promote_g[64u](1u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9659,7 +9659,7 @@
 000ch mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long promote<long>(bit src), hex://logix/ScalarOps?promote#promote_g[64i](1u)
+; long promote<long>(bit src), hex://logix/scalar.ops?promote#promote_g[64i](1u)
 ; promote_g[64i](1u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x85,0xc9,0x75,0x03,0x33,0xc0,0xc3,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9670,7 +9670,7 @@
 000ch mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<byte>(byte a), hex://logix/ScalarOps?testc#testc_g[8u](8u)
+; bit testc<byte>(byte a), hex://logix/scalar.ops?testc#testc_g[8u](8u)
 ; testc_g[8u](8u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf3,0x0f,0xb8,0xc0,0x48,0x83,0xf8,0x08,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9681,7 +9681,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<sbyte>(sbyte a), hex://logix/ScalarOps?testc#testc_g[8i](8i)
+; bit testc<sbyte>(sbyte a), hex://logix/scalar.ops?testc#testc_g[8i](8i)
 ; testc_g[8i](8i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf3,0x0f,0xb8,0xc0,0x48,0x83,0xf8,0x08,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9692,7 +9692,7 @@
 0014h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<ushort>(ushort a), hex://logix/ScalarOps?testc#testc_g[16u](16u)
+; bit testc<ushort>(ushort a), hex://logix/scalar.ops?testc#testc_g[16u](16u)
 ; testc_g[16u](16u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf3,0x0f,0xb8,0xc0,0x48,0x83,0xf8,0x10,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9703,7 +9703,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<short>(short a), hex://logix/ScalarOps?testc#testc_g[16i](16i)
+; bit testc<short>(short a), hex://logix/scalar.ops?testc#testc_g[16i](16i)
 ; testc_g[16i](16i)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf3,0x0f,0xb8,0xc0,0x48,0x83,0xf8,0x10,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9714,7 +9714,7 @@
 0014h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<uint>(uint a), hex://logix/ScalarOps?testc#testc_g[32u](32u)
+; bit testc<uint>(uint a), hex://logix/scalar.ops?testc#testc_g[32u](32u)
 ; testc_g[32u](32u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xf3,0x0f,0xb8,0xc1,0x48,0x83,0xf8,0x20,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9725,7 +9725,7 @@
 0012h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<int>(int a), hex://logix/ScalarOps?testc#testc_g[32i](32i)
+; bit testc<int>(int a), hex://logix/scalar.ops?testc#testc_g[32i](32i)
 ; testc_g[32i](32i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xf3,0x0f,0xb8,0xc1,0x48,0x83,0xf8,0x20,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9736,7 +9736,7 @@
 0012h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<ulong>(ulong a), hex://logix/ScalarOps?testc#testc_g[64u](64u)
+; bit testc<ulong>(ulong a), hex://logix/scalar.ops?testc#testc_g[64u](64u)
 ; testc_g[64u](64u)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xf3,0x48,0x0f,0xb8,0xc1,0x8b,0xc0,0x48,0x83,0xf8,0x40,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9748,7 +9748,7 @@
 0015h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit testc<long>(long a), hex://logix/ScalarOps?testc#testc_g[64i](64i)
+; bit testc<long>(long a), hex://logix/scalar.ops?testc#testc_g[64i](64i)
 ; testc_g[64i](64i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xf3,0x48,0x0f,0xb8,0xc1,0x8b,0xc0,0x48,0x83,0xf8,0x40,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9760,7 +9760,7 @@
 0015h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte and<byte>(byte a, byte b), hex://logix/ScalarOps?and#and_g[8u](8u,8u)
+; byte and<byte>(byte a, byte b), hex://logix/scalar.ops?and#and_g[8u](8u,8u)
 ; and_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9770,7 +9770,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte and<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?and#and_g[8i](8i,8i)
+; sbyte and<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?and#and_g[8i](8i,8i)
 ; and_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9780,7 +9780,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort and<ushort>(ushort a, ushort b), hex://logix/ScalarOps?and#and_g[16u](16u,16u)
+; ushort and<ushort>(ushort a, ushort b), hex://logix/scalar.ops?and#and_g[16u](16u,16u)
 ; and_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9790,7 +9790,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short and<short>(short a, short b), hex://logix/ScalarOps?and#and_g[16i](16i,16i)
+; short and<short>(short a, short b), hex://logix/scalar.ops?and#and_g[16i](16i,16i)
 ; and_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9800,7 +9800,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint and<uint>(uint a, uint b), hex://logix/ScalarOps?and#and_g[32u](32u,32u)
+; uint and<uint>(uint a, uint b), hex://logix/scalar.ops?and#and_g[32u](32u,32u)
 ; and_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9808,7 +9808,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int and<int>(int a, int b), hex://logix/ScalarOps?and#and_g[32i](32i,32i)
+; int and<int>(int a, int b), hex://logix/scalar.ops?and#and_g[32i](32i,32i)
 ; and_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9816,7 +9816,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong and<ulong>(ulong a, ulong b), hex://logix/ScalarOps?and#and_g[64u](64u,64u)
+; ulong and<ulong>(ulong a, ulong b), hex://logix/scalar.ops?and#and_g[64u](64u,64u)
 ; and_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9824,7 +9824,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long and<long>(long a, long b), hex://logix/ScalarOps?and#and_g[64i](64i,64i)
+; long and<long>(long a, long b), hex://logix/scalar.ops?and#and_g[64i](64i,64i)
 ; and_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9832,7 +9832,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte nand<byte>(byte a, byte b), hex://logix/ScalarOps?nand#nand_g[8u](8u,8u)
+; byte nand<byte>(byte a, byte b), hex://logix/scalar.ops?nand#nand_g[8u](8u,8u)
 ; nand_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9843,7 +9843,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte nand<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?nand#nand_g[8i](8i,8i)
+; sbyte nand<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?nand#nand_g[8i](8i,8i)
 ; nand_g[8i](8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9854,7 +9854,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort nand<ushort>(ushort a, ushort b), hex://logix/ScalarOps?nand#nand_g[16u](16u,16u)
+; ushort nand<ushort>(ushort a, ushort b), hex://logix/scalar.ops?nand#nand_g[16u](16u,16u)
 ; nand_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x23,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9865,7 +9865,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short nand<short>(short a, short b), hex://logix/ScalarOps?nand#nand_g[16i](16i,16i)
+; short nand<short>(short a, short b), hex://logix/scalar.ops?nand#nand_g[16i](16i,16i)
 ; nand_g[16i](16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9876,7 +9876,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint nand<uint>(uint a, uint b), hex://logix/ScalarOps?nand#nand_g[32u](32u,32u)
+; uint nand<uint>(uint a, uint b), hex://logix/scalar.ops?nand#nand_g[32u](32u,32u)
 ; nand_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9885,7 +9885,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int nand<int>(int a, int b), hex://logix/ScalarOps?nand#nand_g[32i](32i,32i)
+; int nand<int>(int a, int b), hex://logix/scalar.ops?nand#nand_g[32i](32i,32i)
 ; nand_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9894,7 +9894,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong nand<ulong>(ulong a, ulong b), hex://logix/ScalarOps?nand#nand_g[64u](64u,64u)
+; ulong nand<ulong>(ulong a, ulong b), hex://logix/scalar.ops?nand#nand_g[64u](64u,64u)
 ; nand_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9903,7 +9903,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long nand<long>(long a, long b), hex://logix/ScalarOps?nand#nand_g[64i](64i,64i)
+; long nand<long>(long a, long b), hex://logix/scalar.ops?nand#nand_g[64i](64i,64i)
 ; nand_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9912,7 +9912,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte or<byte>(byte a, byte b), hex://logix/ScalarOps?or#or_g[8u](8u,8u)
+; byte or<byte>(byte a, byte b), hex://logix/scalar.ops?or#or_g[8u](8u,8u)
 ; or_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9922,7 +9922,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte or<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?or#or_g[8i](8i,8i)
+; sbyte or<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?or#or_g[8i](8i,8i)
 ; or_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9932,7 +9932,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort or<ushort>(ushort a, ushort b), hex://logix/ScalarOps?or#or_g[16u](16u,16u)
+; ushort or<ushort>(ushort a, ushort b), hex://logix/scalar.ops?or#or_g[16u](16u,16u)
 ; or_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9942,7 +9942,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short or<short>(short a, short b), hex://logix/ScalarOps?or#or_g[16i](16i,16i)
+; short or<short>(short a, short b), hex://logix/scalar.ops?or#or_g[16i](16i,16i)
 ; or_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9952,7 +9952,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint or<uint>(uint a, uint b), hex://logix/ScalarOps?or#or_g[32u](32u,32u)
+; uint or<uint>(uint a, uint b), hex://logix/scalar.ops?or#or_g[32u](32u,32u)
 ; or_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9960,7 +9960,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int or<int>(int a, int b), hex://logix/ScalarOps?or#or_g[32i](32i,32i)
+; int or<int>(int a, int b), hex://logix/scalar.ops?or#or_g[32i](32i,32i)
 ; or_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9968,7 +9968,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong or<ulong>(ulong a, ulong b), hex://logix/ScalarOps?or#or_g[64u](64u,64u)
+; ulong or<ulong>(ulong a, ulong b), hex://logix/scalar.ops?or#or_g[64u](64u,64u)
 ; or_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9976,7 +9976,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long or<long>(long a, long b), hex://logix/ScalarOps?or#or_g[64i](64i,64i)
+; long or<long>(long a, long b), hex://logix/scalar.ops?or#or_g[64i](64i,64i)
 ; or_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9984,7 +9984,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte nor<byte>(byte a, byte b), hex://logix/ScalarOps?nor#nor_g[8u](8u,8u)
+; byte nor<byte>(byte a, byte b), hex://logix/scalar.ops?nor#nor_g[8u](8u,8u)
 ; nor_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -9995,7 +9995,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte nor<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?nor#nor_g[8i](8i,8i)
+; sbyte nor<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?nor#nor_g[8i](8i,8i)
 ; nor_g[8i](8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10006,7 +10006,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort nor<ushort>(ushort a, ushort b), hex://logix/ScalarOps?nor#nor_g[16u](16u,16u)
+; ushort nor<ushort>(ushort a, ushort b), hex://logix/scalar.ops?nor#nor_g[16u](16u,16u)
 ; nor_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10017,7 +10017,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short nor<short>(short a, short b), hex://logix/ScalarOps?nor#nor_g[16i](16i,16i)
+; short nor<short>(short a, short b), hex://logix/scalar.ops?nor#nor_g[16i](16i,16i)
 ; nor_g[16i](16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10028,7 +10028,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint nor<uint>(uint a, uint b), hex://logix/ScalarOps?nor#nor_g[32u](32u,32u)
+; uint nor<uint>(uint a, uint b), hex://logix/scalar.ops?nor#nor_g[32u](32u,32u)
 ; nor_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10037,7 +10037,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int nor<int>(int a, int b), hex://logix/ScalarOps?nor#nor_g[32i](32i,32i)
+; int nor<int>(int a, int b), hex://logix/scalar.ops?nor#nor_g[32i](32i,32i)
 ; nor_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10046,7 +10046,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong nor<ulong>(ulong a, ulong b), hex://logix/ScalarOps?nor#nor_g[64u](64u,64u)
+; ulong nor<ulong>(ulong a, ulong b), hex://logix/scalar.ops?nor#nor_g[64u](64u,64u)
 ; nor_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10055,7 +10055,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long nor<long>(long a, long b), hex://logix/ScalarOps?nor#nor_g[64i](64i,64i)
+; long nor<long>(long a, long b), hex://logix/scalar.ops?nor#nor_g[64i](64i,64i)
 ; nor_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10064,7 +10064,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte xor<byte>(byte a, byte b), hex://logix/ScalarOps?xor#xor_g[8u](8u,8u)
+; byte xor<byte>(byte a, byte b), hex://logix/scalar.ops?xor#xor_g[8u](8u,8u)
 ; xor_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10074,7 +10074,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte xor<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?xor#xor_g[8i](8i,8i)
+; sbyte xor<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?xor#xor_g[8i](8i,8i)
 ; xor_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10084,7 +10084,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort xor<ushort>(ushort a, ushort b), hex://logix/ScalarOps?xor#xor_g[16u](16u,16u)
+; ushort xor<ushort>(ushort a, ushort b), hex://logix/scalar.ops?xor#xor_g[16u](16u,16u)
 ; xor_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10094,7 +10094,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short xor<short>(short a, short b), hex://logix/ScalarOps?xor#xor_g[16i](16i,16i)
+; short xor<short>(short a, short b), hex://logix/scalar.ops?xor#xor_g[16i](16i,16i)
 ; xor_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10104,7 +10104,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint xor<uint>(uint a, uint b), hex://logix/ScalarOps?xor#xor_g[32u](32u,32u)
+; uint xor<uint>(uint a, uint b), hex://logix/scalar.ops?xor#xor_g[32u](32u,32u)
 ; xor_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10112,7 +10112,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int xor<int>(int a, int b), hex://logix/ScalarOps?xor#xor_g[32i](32i,32i)
+; int xor<int>(int a, int b), hex://logix/scalar.ops?xor#xor_g[32i](32i,32i)
 ; xor_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10120,7 +10120,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong xor<ulong>(ulong a, ulong b), hex://logix/ScalarOps?xor#xor_g[64u](64u,64u)
+; ulong xor<ulong>(ulong a, ulong b), hex://logix/scalar.ops?xor#xor_g[64u](64u,64u)
 ; xor_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10128,7 +10128,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long xor<long>(long a, long b), hex://logix/ScalarOps?xor#xor_g[64i](64i,64i)
+; long xor<long>(long a, long b), hex://logix/scalar.ops?xor#xor_g[64i](64i,64i)
 ; xor_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10136,7 +10136,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte xnor<byte>(byte a, byte b), hex://logix/ScalarOps?xnor#xnor_g[8u](8u,8u)
+; byte xnor<byte>(byte a, byte b), hex://logix/scalar.ops?xnor#xnor_g[8u](8u,8u)
 ; xnor_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x33,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10147,7 +10147,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte xnor<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?xnor#xnor_g[8i](8i,8i)
+; sbyte xnor<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?xnor#xnor_g[8i](8i,8i)
 ; xnor_g[8i](8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x33,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10158,7 +10158,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort xnor<ushort>(ushort a, ushort b), hex://logix/ScalarOps?xnor#xnor_g[16u](16u,16u)
+; ushort xnor<ushort>(ushort a, ushort b), hex://logix/scalar.ops?xnor#xnor_g[16u](16u,16u)
 ; xnor_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x33,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10169,7 +10169,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short xnor<short>(short a, short b), hex://logix/ScalarOps?xnor#xnor_g[16i](16i,16i)
+; short xnor<short>(short a, short b), hex://logix/scalar.ops?xnor#xnor_g[16i](16i,16i)
 ; xnor_g[16i](16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x33,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10180,7 +10180,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint xnor<uint>(uint a, uint b), hex://logix/ScalarOps?xnor#xnor_g[32u](32u,32u)
+; uint xnor<uint>(uint a, uint b), hex://logix/scalar.ops?xnor#xnor_g[32u](32u,32u)
 ; xnor_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10189,7 +10189,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int xnor<int>(int a, int b), hex://logix/ScalarOps?xnor#xnor_g[32i](32i,32i)
+; int xnor<int>(int a, int b), hex://logix/scalar.ops?xnor#xnor_g[32i](32i,32i)
 ; xnor_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10198,7 +10198,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong xnor<ulong>(ulong a, ulong b), hex://logix/ScalarOps?xnor#xnor_g[64u](64u,64u)
+; ulong xnor<ulong>(ulong a, ulong b), hex://logix/scalar.ops?xnor#xnor_g[64u](64u,64u)
 ; xnor_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10207,7 +10207,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long xnor<long>(long a, long b), hex://logix/ScalarOps?xnor#xnor_g[64i](64i,64i)
+; long xnor<long>(long a, long b), hex://logix/scalar.ops?xnor#xnor_g[64i](64i,64i)
 ; xnor_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x33,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10216,119 +10216,119 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte left<byte>(byte a, byte b), hex://logix/ScalarOps?left#left_g[8u](8u,8u)
+; byte left<byte>(byte a, byte b), hex://logix/scalar.ops?left#left_g[8u](8u,8u)
 ; left_g[8u](8u,8u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte left<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?left#left_g[8i](8i,8i)
+; sbyte left<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?left#left_g[8i](8i,8i)
 ; left_g[8i](8i,8i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort left<ushort>(ushort a, ushort b), hex://logix/ScalarOps?left#left_g[16u](16u,16u)
+; ushort left<ushort>(ushort a, ushort b), hex://logix/scalar.ops?left#left_g[16u](16u,16u)
 ; left_g[16u](16u,16u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short left<short>(short a, short b), hex://logix/ScalarOps?left#left_g[16i](16i,16i)
+; short left<short>(short a, short b), hex://logix/scalar.ops?left#left_g[16i](16i,16i)
 ; left_g[16i](16i,16i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint left<uint>(uint a, uint b), hex://logix/ScalarOps?left#left_g[32u](32u,32u)
+; uint left<uint>(uint a, uint b), hex://logix/scalar.ops?left#left_g[32u](32u,32u)
 ; left_g[32u](32u,32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int left<int>(int a, int b), hex://logix/ScalarOps?left#left_g[32i](32i,32i)
+; int left<int>(int a, int b), hex://logix/scalar.ops?left#left_g[32i](32i,32i)
 ; left_g[32i](32i,32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong left<ulong>(ulong a, ulong b), hex://logix/ScalarOps?left#left_g[64u](64u,64u)
+; ulong left<ulong>(ulong a, ulong b), hex://logix/scalar.ops?left#left_g[64u](64u,64u)
 ; left_g[64u](64u,64u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long left<long>(long a, long b), hex://logix/ScalarOps?left#left_g[64i](64i,64i)
+; long left<long>(long a, long b), hex://logix/scalar.ops?left#left_g[64i](64i,64i)
 ; left_g[64i](64i,64i)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte right<byte>(byte a, byte b), hex://logix/ScalarOps?right#right_g[8u](8u,8u)
+; byte right<byte>(byte a, byte b), hex://logix/scalar.ops?right#right_g[8u](8u,8u)
 ; right_g[8u](8u,8u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte right<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?right#right_g[8i](8i,8i)
+; sbyte right<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?right#right_g[8i](8i,8i)
 ; right_g[8i](8i,8i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort right<ushort>(ushort a, ushort b), hex://logix/ScalarOps?right#right_g[16u](16u,16u)
+; ushort right<ushort>(ushort a, ushort b), hex://logix/scalar.ops?right#right_g[16u](16u,16u)
 ; right_g[16u](16u,16u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short right<short>(short a, short b), hex://logix/ScalarOps?right#right_g[16i](16i,16i)
+; short right<short>(short a, short b), hex://logix/scalar.ops?right#right_g[16i](16i,16i)
 ; right_g[16i](16i,16i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h movsx rax,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint right<uint>(uint a, uint b), hex://logix/ScalarOps?right#right_g[32u](32u,32u)
+; uint right<uint>(uint a, uint b), hex://logix/scalar.ops?right#right_g[32u](32u,32u)
 ; right_g[32u](32u,32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int right<int>(int a, int b), hex://logix/ScalarOps?right#right_g[32i](32i,32i)
+; int right<int>(int a, int b), hex://logix/scalar.ops?right#right_g[32i](32i,32i)
 ; right_g[32i](32i,32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong right<ulong>(ulong a, ulong b), hex://logix/ScalarOps?right#right_g[64u](64u,64u)
+; ulong right<ulong>(ulong a, ulong b), hex://logix/scalar.ops?right#right_g[64u](64u,64u)
 ; right_g[64u](64u,64u)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long right<long>(long a, long b), hex://logix/ScalarOps?right#right_g[64i](64i,64i)
+; long right<long>(long a, long b), hex://logix/scalar.ops?right#right_g[64i](64i,64i)
 ; right_g[64i](64i,64i)[9] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0008h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte lnot<byte>(byte a, byte b), hex://logix/ScalarOps?lnot#lnot_g[8u](8u,8u)
+; byte lnot<byte>(byte a, byte b), hex://logix/scalar.ops?lnot#lnot_g[8u](8u,8u)
 ; lnot_g[8u](8u,8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10337,7 +10337,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte lnot<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?lnot#lnot_g[8i](8i,8i)
+; sbyte lnot<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?lnot#lnot_g[8i](8i,8i)
 ; lnot_g[8i](8i,8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10346,7 +10346,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort lnot<ushort>(ushort a, ushort b), hex://logix/ScalarOps?lnot#lnot_g[16u](16u,16u)
+; ushort lnot<ushort>(ushort a, ushort b), hex://logix/scalar.ops?lnot#lnot_g[16u](16u,16u)
 ; lnot_g[16u](16u,16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10355,7 +10355,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short lnot<short>(short a, short b), hex://logix/ScalarOps?lnot#lnot_g[16i](16i,16i)
+; short lnot<short>(short a, short b), hex://logix/scalar.ops?lnot#lnot_g[16i](16i,16i)
 ; lnot_g[16i](16i,16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10364,7 +10364,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint lnot<uint>(uint a, uint b), hex://logix/ScalarOps?lnot#lnot_g[32u](32u,32u)
+; uint lnot<uint>(uint a, uint b), hex://logix/scalar.ops?lnot#lnot_g[32u](32u,32u)
 ; lnot_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10372,7 +10372,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int lnot<int>(int a, int b), hex://logix/ScalarOps?lnot#lnot_g[32i](32i,32i)
+; int lnot<int>(int a, int b), hex://logix/scalar.ops?lnot#lnot_g[32i](32i,32i)
 ; lnot_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10380,7 +10380,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong lnot<ulong>(ulong a, ulong b), hex://logix/ScalarOps?lnot#lnot_g[64u](64u,64u)
+; ulong lnot<ulong>(ulong a, ulong b), hex://logix/scalar.ops?lnot#lnot_g[64u](64u,64u)
 ; lnot_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10388,7 +10388,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long lnot<long>(long a, long b), hex://logix/ScalarOps?lnot#lnot_g[64i](64i,64i)
+; long lnot<long>(long a, long b), hex://logix/scalar.ops?lnot#lnot_g[64i](64i,64i)
 ; lnot_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10396,7 +10396,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte rnot<byte>(byte a, byte b), hex://logix/ScalarOps?rnot#rnot_g[8u](8u,8u)
+; byte rnot<byte>(byte a, byte b), hex://logix/scalar.ops?rnot#rnot_g[8u](8u,8u)
 ; rnot_g[8u](8u,8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10405,7 +10405,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte rnot<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?rnot#rnot_g[8i](8i,8i)
+; sbyte rnot<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?rnot#rnot_g[8i](8i,8i)
 ; rnot_g[8i](8i,8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10414,7 +10414,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort rnot<ushort>(ushort a, ushort b), hex://logix/ScalarOps?rnot#rnot_g[16u](16u,16u)
+; ushort rnot<ushort>(ushort a, ushort b), hex://logix/scalar.ops?rnot#rnot_g[16u](16u,16u)
 ; rnot_g[16u](16u,16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10423,7 +10423,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short rnot<short>(short a, short b), hex://logix/ScalarOps?rnot#rnot_g[16i](16i,16i)
+; short rnot<short>(short a, short b), hex://logix/scalar.ops?rnot#rnot_g[16i](16i,16i)
 ; rnot_g[16i](16i,16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10432,7 +10432,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint rnot<uint>(uint a, uint b), hex://logix/ScalarOps?rnot#rnot_g[32u](32u,32u)
+; uint rnot<uint>(uint a, uint b), hex://logix/scalar.ops?rnot#rnot_g[32u](32u,32u)
 ; rnot_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10440,7 +10440,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int rnot<int>(int a, int b), hex://logix/ScalarOps?rnot#rnot_g[32i](32i,32i)
+; int rnot<int>(int a, int b), hex://logix/scalar.ops?rnot#rnot_g[32i](32i,32i)
 ; rnot_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10448,7 +10448,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong rnot<ulong>(ulong a, ulong b), hex://logix/ScalarOps?rnot#rnot_g[64u](64u,64u)
+; ulong rnot<ulong>(ulong a, ulong b), hex://logix/scalar.ops?rnot#rnot_g[64u](64u,64u)
 ; rnot_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10456,7 +10456,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long rnot<long>(long a, long b), hex://logix/ScalarOps?rnot#rnot_g[64i](64i,64i)
+; long rnot<long>(long a, long b), hex://logix/scalar.ops?rnot#rnot_g[64i](64i,64i)
 ; rnot_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10464,7 +10464,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte impl<byte>(byte a, byte b), hex://logix/ScalarOps?impl#impl_g[8u](8u,8u)
+; byte impl<byte>(byte a, byte b), hex://logix/scalar.ops?impl#impl_g[8u](8u,8u)
 ; impl_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0xf7,0xd2,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10475,7 +10475,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte impl<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?impl#impl_g[8i](8i,8i)
+; sbyte impl<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?impl#impl_g[8i](8i,8i)
 ; impl_g[8i](8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0xf7,0xd2,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10486,7 +10486,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort impl<ushort>(ushort a, ushort b), hex://logix/ScalarOps?impl#impl_g[16u](16u,16u)
+; ushort impl<ushort>(ushort a, ushort b), hex://logix/scalar.ops?impl#impl_g[16u](16u,16u)
 ; impl_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0xf7,0xd2,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10497,7 +10497,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short impl<short>(short a, short b), hex://logix/ScalarOps?impl#impl_g[16i](16i,16i)
+; short impl<short>(short a, short b), hex://logix/scalar.ops?impl#impl_g[16i](16i,16i)
 ; impl_g[16i](16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0xf7,0xd2,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10508,7 +10508,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint impl<uint>(uint a, uint b), hex://logix/ScalarOps?impl#impl_g[32u](32u,32u)
+; uint impl<uint>(uint a, uint b), hex://logix/scalar.ops?impl#impl_g[32u](32u,32u)
 ; impl_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10517,7 +10517,7 @@
 0009h or eax,ecx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int impl<int>(int a, int b), hex://logix/ScalarOps?impl#impl_g[32i](32i,32i)
+; int impl<int>(int a, int b), hex://logix/scalar.ops?impl#impl_g[32i](32i,32i)
 ; impl_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10526,7 +10526,7 @@
 0009h or eax,ecx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong impl<ulong>(ulong a, ulong b), hex://logix/ScalarOps?impl#impl_g[64u](64u,64u)
+; ulong impl<ulong>(ulong a, ulong b), hex://logix/scalar.ops?impl#impl_g[64u](64u,64u)
 ; impl_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10535,7 +10535,7 @@
 000bh or rax,rcx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long impl<long>(long a, long b), hex://logix/ScalarOps?impl#impl_g[64i](64i,64i)
+; long impl<long>(long a, long b), hex://logix/scalar.ops?impl#impl_g[64i](64i,64i)
 ; impl_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x0b,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10544,7 +10544,7 @@
 000bh or rax,rcx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte nonimpl<byte>(byte a, byte b), hex://logix/ScalarOps?nonimpl#nonimpl_g[8u](8u,8u)
+; byte nonimpl<byte>(byte a, byte b), hex://logix/scalar.ops?nonimpl#nonimpl_g[8u](8u,8u)
 ; nonimpl_g[8u](8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0xc4,0xe2,0x78,0xf2,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10554,7 +10554,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte nonimpl<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?nonimpl#nonimpl_g[8i](8i,8i)
+; sbyte nonimpl<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?nonimpl#nonimpl_g[8i](8i,8i)
 ; nonimpl_g[8i](8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x78,0xf2,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10564,7 +10564,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort nonimpl<ushort>(ushort a, ushort b), hex://logix/ScalarOps?nonimpl#nonimpl_g[16u](16u,16u)
+; ushort nonimpl<ushort>(ushort a, ushort b), hex://logix/scalar.ops?nonimpl#nonimpl_g[16u](16u,16u)
 ; nonimpl_g[16u](16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0xc4,0xe2,0x78,0xf2,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10574,7 +10574,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short nonimpl<short>(short a, short b), hex://logix/ScalarOps?nonimpl#nonimpl_g[16i](16i,16i)
+; short nonimpl<short>(short a, short b), hex://logix/scalar.ops?nonimpl#nonimpl_g[16i](16i,16i)
 ; nonimpl_g[16i](16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x78,0xf2,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10584,35 +10584,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint nonimpl<uint>(uint a, uint b), hex://logix/ScalarOps?nonimpl#nonimpl_g[32u](32u,32u)
+; uint nonimpl<uint>(uint a, uint b), hex://logix/scalar.ops?nonimpl#nonimpl_g[32u](32u,32u)
 ; nonimpl_g[32u](32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x70,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,ecx,edx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 70 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int nonimpl<int>(int a, int b), hex://logix/ScalarOps?nonimpl#nonimpl_g[32i](32i,32i)
+; int nonimpl<int>(int a, int b), hex://logix/scalar.ops?nonimpl#nonimpl_g[32i](32i,32i)
 ; nonimpl_g[32i](32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x70,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,ecx,edx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 70 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong nonimpl<ulong>(ulong a, ulong b), hex://logix/ScalarOps?nonimpl#nonimpl_g[64u](64u,64u)
+; ulong nonimpl<ulong>(ulong a, ulong b), hex://logix/scalar.ops?nonimpl#nonimpl_g[64u](64u,64u)
 ; nonimpl_g[64u](64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf0,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rcx,rdx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 f0 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long nonimpl<long>(long a, long b), hex://logix/ScalarOps?nonimpl#nonimpl_g[64i](64i,64i)
+; long nonimpl<long>(long a, long b), hex://logix/scalar.ops?nonimpl#nonimpl_g[64i](64i,64i)
 ; nonimpl_g[64i](64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf0,0xf2,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rcx,rdx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 f0 f2 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte cimpl<byte>(byte a, byte b), hex://logix/ScalarOps?cimpl#cimpl_g[8u](8u,8u)
+; byte cimpl<byte>(byte a, byte b), hex://logix/scalar.ops?cimpl#cimpl_g[8u](8u,8u)
 ; cimpl_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0xf7,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10623,7 +10623,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte cimpl<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?cimpl#cimpl_g[8i](8i,8i)
+; sbyte cimpl<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?cimpl#cimpl_g[8i](8i,8i)
 ; cimpl_g[8i](8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0xf7,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10634,7 +10634,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort cimpl<ushort>(ushort a, ushort b), hex://logix/ScalarOps?cimpl#cimpl_g[16u](16u,16u)
+; ushort cimpl<ushort>(ushort a, ushort b), hex://logix/scalar.ops?cimpl#cimpl_g[16u](16u,16u)
 ; cimpl_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0xf7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10645,7 +10645,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short cimpl<short>(short a, short b), hex://logix/ScalarOps?cimpl#cimpl_g[16i](16i,16i)
+; short cimpl<short>(short a, short b), hex://logix/scalar.ops?cimpl#cimpl_g[16i](16i,16i)
 ; cimpl_g[16i](16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0xf7,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10656,7 +10656,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint cimpl<uint>(uint a, uint b), hex://logix/ScalarOps?cimpl#cimpl_g[32u](32u,32u)
+; uint cimpl<uint>(uint a, uint b), hex://logix/scalar.ops?cimpl#cimpl_g[32u](32u,32u)
 ; cimpl_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10665,7 +10665,7 @@
 0009h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int cimpl<int>(int a, int b), hex://logix/ScalarOps?cimpl#cimpl_g[32i](32i,32i)
+; int cimpl<int>(int a, int b), hex://logix/scalar.ops?cimpl#cimpl_g[32i](32i,32i)
 ; cimpl_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10674,7 +10674,7 @@
 0009h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong cimpl<ulong>(ulong a, ulong b), hex://logix/ScalarOps?cimpl#cimpl_g[64u](64u,64u)
+; ulong cimpl<ulong>(ulong a, ulong b), hex://logix/scalar.ops?cimpl#cimpl_g[64u](64u,64u)
 ; cimpl_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10683,7 +10683,7 @@
 000bh or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long cimpl<long>(long a, long b), hex://logix/ScalarOps?cimpl#cimpl_g[64i](64i,64i)
+; long cimpl<long>(long a, long b), hex://logix/scalar.ops?cimpl#cimpl_g[64i](64i,64i)
 ; cimpl_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10692,7 +10692,7 @@
 000bh or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte cnonimpl<byte>(byte a, byte b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[8u](8u,8u)
+; byte cnonimpl<byte>(byte a, byte b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[8u](8u,8u)
 ; cnonimpl_g[8u](8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10702,7 +10702,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte cnonimpl<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[8i](8i,8i)
+; sbyte cnonimpl<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[8i](8i,8i)
 ; cnonimpl_g[8i](8i,8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10712,7 +10712,7 @@
 0012h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort cnonimpl<ushort>(ushort a, ushort b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[16u](16u,16u)
+; ushort cnonimpl<ushort>(ushort a, ushort b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[16u](16u,16u)
 ; cnonimpl_g[16u](16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10722,7 +10722,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short cnonimpl<short>(short a, short b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[16i](16i,16i)
+; short cnonimpl<short>(short a, short b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[16i](16i,16i)
 ; cnonimpl_g[16i](16i,16i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0xc4,0xe2,0x68,0xf2,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10732,35 +10732,35 @@
 0012h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint cnonimpl<uint>(uint a, uint b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[32u](32u,32u)
+; uint cnonimpl<uint>(uint a, uint b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[32u](32u,32u)
 ; cnonimpl_g[32u](32u,32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x68,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int cnonimpl<int>(int a, int b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[32i](32i,32i)
+; int cnonimpl<int>(int a, int b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[32i](32i,32i)
 ; cnonimpl_g[32i](32i,32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0x68,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn eax,edx,ecx                        ; ANDN r32a, r32b, r/m32 || VEX.LZ.0F38.W0 F2 /r || encoded[5]{c4 e2 68 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong cnonimpl<ulong>(ulong a, ulong b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[64u](64u,64u)
+; ulong cnonimpl<ulong>(ulong a, ulong b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[64u](64u,64u)
 ; cnonimpl_g[64u](64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xe8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long cnonimpl<long>(long a, long b), hex://logix/ScalarOps?cnonimpl#cnonimpl_g[64i](64i,64i)
+; long cnonimpl<long>(long a, long b), hex://logix/scalar.ops?cnonimpl#cnonimpl_g[64i](64i,64i)
 ; cnonimpl_g[64i](64i,64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xe8,0xf2,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h andn rax,rdx,rcx                        ; ANDN r64a, r64b, r/m64 || VEX.LZ.0F38.W1 F2 /r || encoded[5]{c4 e2 e8 f2 c1}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte xornot<byte>(byte a, byte b), hex://logix/ScalarOps?xornot#xornot_g[8u](8u,8u)
+; byte xornot<byte>(byte a, byte b), hex://logix/scalar.ops?xornot#xornot_g[8u](8u,8u)
 ; xornot_g[8u](8u,8u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x33,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10772,7 +10772,7 @@
 0012h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte xornot<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?xornot#xornot_g[8i](8i,8i)
+; sbyte xornot<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?xornot#xornot_g[8i](8i,8i)
 ; xornot_g[8i](8i,8i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10784,7 +10784,7 @@
 0015h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort xornot<ushort>(ushort a, ushort b), hex://logix/ScalarOps?xornot#xornot_g[16u](16u,16u)
+; ushort xornot<ushort>(ushort a, ushort b), hex://logix/scalar.ops?xornot#xornot_g[16u](16u,16u)
 ; xornot_g[16u](16u,16u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x33,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10796,7 +10796,7 @@
 0012h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short xornot<short>(short a, short b), hex://logix/ScalarOps?xornot#xornot_g[16i](16i,16i)
+; short xornot<short>(short a, short b), hex://logix/scalar.ops?xornot#xornot_g[16i](16i,16i)
 ; xornot_g[16i](16i,16i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10808,7 +10808,7 @@
 0015h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint xornot<uint>(uint a, uint b), hex://logix/ScalarOps?xornot#xornot_g[32u](32u,32u)
+; uint xornot<uint>(uint a, uint b), hex://logix/scalar.ops?xornot#xornot_g[32u](32u,32u)
 ; xornot_g[32u](32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10817,7 +10817,7 @@
 0009h xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int xornot<int>(int a, int b), hex://logix/ScalarOps?xornot#xornot_g[32i](32i,32i)
+; int xornot<int>(int a, int b), hex://logix/scalar.ops?xornot#xornot_g[32i](32i,32i)
 ; xornot_g[32i](32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc2,0xf7,0xd0,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10826,7 +10826,7 @@
 0009h xor eax,ecx                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong xornot<ulong>(ulong a, ulong b), hex://logix/ScalarOps?xornot#xornot_g[64u](64u,64u)
+; ulong xornot<ulong>(ulong a, ulong b), hex://logix/scalar.ops?xornot#xornot_g[64u](64u,64u)
 ; xornot_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10835,7 +10835,7 @@
 000bh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long xornot<long>(long a, long b), hex://logix/ScalarOps?xornot#xornot_g[64i](64i,64i)
+; long xornot<long>(long a, long b), hex://logix/scalar.ops?xornot#xornot_g[64i](64i,64i)
 ; xornot_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x48,0x33,0xc1,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10844,7 +10844,7 @@
 000bh xor rax,rcx                             ; XOR r64, r/m64 || REX.W 33 /r || encoded[3]{48 33 c1}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte equals<byte>(byte a, byte b), hex://logix/ScalarOps?equals#equals_g[8u](8u,8u)
+; byte equals<byte>(byte a, byte b), hex://logix/scalar.ops?equals#equals_g[8u](8u,8u)
 ; equals_g[8u](8u,8u)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10861,7 +10861,7 @@
 001eh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte equals<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?equals#equals_g[8i](8i,8i)
+; sbyte equals<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?equals#equals_g[8i](8i,8i)
 ; equals_g[8i](8i,8i)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10878,7 +10878,7 @@
 0021h mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort equals<ushort>(ushort a, ushort b), hex://logix/ScalarOps?equals#equals_g[16u](16u,16u)
+; ushort equals<ushort>(ushort a, ushort b), hex://logix/scalar.ops?equals#equals_g[16u](16u,16u)
 ; equals_g[16u](16u,16u)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10895,7 +10895,7 @@
 001eh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short equals<short>(short a, short b), hex://logix/ScalarOps?equals#equals_g[16i](16i,16i)
+; short equals<short>(short a, short b), hex://logix/scalar.ops?equals#equals_g[16i](16i,16i)
 ; equals_g[16i](16i,16i)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10912,7 +10912,7 @@
 0021h mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint equals<uint>(uint a, uint b), hex://logix/ScalarOps?equals#equals_g[32u](32u,32u)
+; uint equals<uint>(uint a, uint b), hex://logix/scalar.ops?equals#equals_g[32u](32u,32u)
 ; equals_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10926,7 +10926,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int equals<int>(int a, int b), hex://logix/ScalarOps?equals#equals_g[32i](32i,32i)
+; int equals<int>(int a, int b), hex://logix/scalar.ops?equals#equals_g[32i](32i,32i)
 ; equals_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10940,7 +10940,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong equals<ulong>(ulong a, ulong b), hex://logix/ScalarOps?equals#equals_g[64u](64u,64u)
+; ulong equals<ulong>(ulong a, ulong b), hex://logix/scalar.ops?equals#equals_g[64u](64u,64u)
 ; equals_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10954,7 +10954,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long equals<long>(long a, long b), hex://logix/ScalarOps?equals#equals_g[64i](64i,64i)
+; long equals<long>(long a, long b), hex://logix/scalar.ops?equals#equals_g[64i](64i,64i)
 ; equals_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10968,7 +10968,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte neq<byte>(byte a, byte b), hex://logix/ScalarOps?neq#neq_g[8u](8u,8u)
+; byte neq<byte>(byte a, byte b), hex://logix/scalar.ops?neq#neq_g[8u](8u,8u)
 ; neq_g[8u](8u,8u)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x3b,0xc2,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -10985,7 +10985,7 @@
 001eh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte neq<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?neq#neq_g[8i](8i,8i)
+; sbyte neq<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?neq#neq_g[8i](8i,8i)
 ; neq_g[8i](8i,8i)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x3b,0xc2,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11002,7 +11002,7 @@
 0021h mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort neq<ushort>(ushort a, ushort b), hex://logix/ScalarOps?neq#neq_g[16u](16u,16u)
+; ushort neq<ushort>(ushort a, ushort b), hex://logix/scalar.ops?neq#neq_g[16u](16u,16u)
 ; neq_g[16u](16u,16u)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x3b,0xc2,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11019,7 +11019,7 @@
 001eh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short neq<short>(short a, short b), hex://logix/ScalarOps?neq#neq_g[16i](16i,16i)
+; short neq<short>(short a, short b), hex://logix/scalar.ops?neq#neq_g[16i](16i,16i)
 ; neq_g[16i](16i,16i)[39] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x3b,0xc2,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11036,7 +11036,7 @@
 0021h mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0026h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint neq<uint>(uint a, uint b), hex://logix/ScalarOps?neq#neq_g[32u](32u,32u)
+; uint neq<uint>(uint a, uint b), hex://logix/scalar.ops?neq#neq_g[32u](32u,32u)
 ; neq_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11050,7 +11050,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int neq<int>(int a, int b), hex://logix/ScalarOps?neq#neq_g[32i](32i,32i)
+; int neq<int>(int a, int b), hex://logix/scalar.ops?neq#neq_g[32i](32i,32i)
 ; neq_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11064,7 +11064,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong neq<ulong>(ulong a, ulong b), hex://logix/ScalarOps?neq#neq_g[64u](64u,64u)
+; ulong neq<ulong>(ulong a, ulong b), hex://logix/scalar.ops?neq#neq_g[64u](64u,64u)
 ; neq_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11078,7 +11078,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long neq<long>(long a, long b), hex://logix/ScalarOps?neq#neq_g[64i](64i,64i)
+; long neq<long>(long a, long b), hex://logix/scalar.ops?neq#neq_g[64i](64i,64i)
 ; neq_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x95,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11092,7 +11092,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte lt<byte>(byte a, byte b), hex://logix/ScalarOps?lt#lt_g[8u](8u,8u)
+; byte lt<byte>(byte a, byte b), hex://logix/scalar.ops?lt#lt_g[8u](8u,8u)
 ; lt_g[8u](8u,8u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x3b,0xc2,0x0f,0x92,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11108,7 +11108,7 @@
 001bh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte lt<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?lt#lt_g[8i](8i,8i)
+; sbyte lt<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?lt#lt_g[8i](8i,8i)
 ; lt_g[8i](8i,8i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x3b,0xc2,0x0f,0x9c,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11124,7 +11124,7 @@
 001dh mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort lt<ushort>(ushort a, ushort b), hex://logix/ScalarOps?lt#lt_g[16u](16u,16u)
+; ushort lt<ushort>(ushort a, ushort b), hex://logix/scalar.ops?lt#lt_g[16u](16u,16u)
 ; lt_g[16u](16u,16u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x3b,0xc2,0x0f,0x92,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11140,7 +11140,7 @@
 001bh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short lt<short>(short a, short b), hex://logix/ScalarOps?lt#lt_g[16i](16i,16i)
+; short lt<short>(short a, short b), hex://logix/scalar.ops?lt#lt_g[16i](16i,16i)
 ; lt_g[16i](16i,16i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x3b,0xc2,0x0f,0x9c,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11156,7 +11156,7 @@
 001dh mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint lt<uint>(uint a, uint b), hex://logix/ScalarOps?lt#lt_g[32u](32u,32u)
+; uint lt<uint>(uint a, uint b), hex://logix/scalar.ops?lt#lt_g[32u](32u,32u)
 ; lt_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x92,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11170,7 +11170,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int lt<int>(int a, int b), hex://logix/ScalarOps?lt#lt_g[32i](32i,32i)
+; int lt<int>(int a, int b), hex://logix/scalar.ops?lt#lt_g[32i](32i,32i)
 ; lt_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x9c,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11184,7 +11184,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong lt<ulong>(ulong a, ulong b), hex://logix/ScalarOps?lt#lt_g[64u](64u,64u)
+; ulong lt<ulong>(ulong a, ulong b), hex://logix/scalar.ops?lt#lt_g[64u](64u,64u)
 ; lt_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x92,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11198,7 +11198,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long lt<long>(long a, long b), hex://logix/ScalarOps?lt#lt_g[64i](64i,64i)
+; long lt<long>(long a, long b), hex://logix/scalar.ops?lt#lt_g[64i](64i,64i)
 ; lt_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x9c,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11212,7 +11212,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte lteq<byte>(byte a, byte b), hex://logix/ScalarOps?lteq#lteq_g[8u](8u,8u)
+; byte lteq<byte>(byte a, byte b), hex://logix/scalar.ops?lteq#lteq_g[8u](8u,8u)
 ; lteq_g[8u](8u,8u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x3b,0xc2,0x0f,0x96,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11228,7 +11228,7 @@
 001bh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte lteq<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?lteq#lteq_g[8i](8i,8i)
+; sbyte lteq<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?lteq#lteq_g[8i](8i,8i)
 ; lteq_g[8i](8i,8i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x3b,0xc2,0x0f,0x9e,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11244,7 +11244,7 @@
 001dh mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort lteq<ushort>(ushort a, ushort b), hex://logix/ScalarOps?lteq#lteq_g[16u](16u,16u)
+; ushort lteq<ushort>(ushort a, ushort b), hex://logix/scalar.ops?lteq#lteq_g[16u](16u,16u)
 ; lteq_g[16u](16u,16u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x3b,0xc2,0x0f,0x96,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11260,7 +11260,7 @@
 001bh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short lteq<short>(short a, short b), hex://logix/ScalarOps?lteq#lteq_g[16i](16i,16i)
+; short lteq<short>(short a, short b), hex://logix/scalar.ops?lteq#lteq_g[16i](16i,16i)
 ; lteq_g[16i](16i,16i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x3b,0xc2,0x0f,0x9e,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11276,7 +11276,7 @@
 001dh mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint lteq<uint>(uint a, uint b), hex://logix/ScalarOps?lteq#lteq_g[32u](32u,32u)
+; uint lteq<uint>(uint a, uint b), hex://logix/scalar.ops?lteq#lteq_g[32u](32u,32u)
 ; lteq_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x96,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11290,7 +11290,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int lteq<int>(int a, int b), hex://logix/ScalarOps?lteq#lteq_g[32i](32i,32i)
+; int lteq<int>(int a, int b), hex://logix/scalar.ops?lteq#lteq_g[32i](32i,32i)
 ; lteq_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x9e,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11304,7 +11304,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong lteq<ulong>(ulong a, ulong b), hex://logix/ScalarOps?lteq#lteq_g[64u](64u,64u)
+; ulong lteq<ulong>(ulong a, ulong b), hex://logix/scalar.ops?lteq#lteq_g[64u](64u,64u)
 ; lteq_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x96,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11318,7 +11318,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long lteq<long>(long a, long b), hex://logix/ScalarOps?lteq#lteq_g[64i](64i,64i)
+; long lteq<long>(long a, long b), hex://logix/scalar.ops?lteq#lteq_g[64i](64i,64i)
 ; lteq_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x9e,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11332,7 +11332,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte gt<byte>(byte a, byte b), hex://logix/ScalarOps?gt#gt_g[8u](8u,8u)
+; byte gt<byte>(byte a, byte b), hex://logix/scalar.ops?gt#gt_g[8u](8u,8u)
 ; gt_g[8u](8u,8u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x3b,0xc2,0x0f,0x97,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11348,7 +11348,7 @@
 001bh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte gt<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?gt#gt_g[8i](8i,8i)
+; sbyte gt<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?gt#gt_g[8i](8i,8i)
 ; gt_g[8i](8i,8i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x3b,0xc2,0x0f,0x9f,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11364,7 +11364,7 @@
 001dh mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort gt<ushort>(ushort a, ushort b), hex://logix/ScalarOps?gt#gt_g[16u](16u,16u)
+; ushort gt<ushort>(ushort a, ushort b), hex://logix/scalar.ops?gt#gt_g[16u](16u,16u)
 ; gt_g[16u](16u,16u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x3b,0xc2,0x0f,0x97,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11380,7 +11380,7 @@
 001bh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short gt<short>(short a, short b), hex://logix/ScalarOps?gt#gt_g[16i](16i,16i)
+; short gt<short>(short a, short b), hex://logix/scalar.ops?gt#gt_g[16i](16i,16i)
 ; gt_g[16i](16i,16i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x3b,0xc2,0x0f,0x9f,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11396,7 +11396,7 @@
 001dh mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint gt<uint>(uint a, uint b), hex://logix/ScalarOps?gt#gt_g[32u](32u,32u)
+; uint gt<uint>(uint a, uint b), hex://logix/scalar.ops?gt#gt_g[32u](32u,32u)
 ; gt_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x97,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11410,7 +11410,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int gt<int>(int a, int b), hex://logix/ScalarOps?gt#gt_g[32i](32i,32i)
+; int gt<int>(int a, int b), hex://logix/scalar.ops?gt#gt_g[32i](32i,32i)
 ; gt_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x9f,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11424,7 +11424,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong gt<ulong>(ulong a, ulong b), hex://logix/ScalarOps?gt#gt_g[64u](64u,64u)
+; ulong gt<ulong>(ulong a, ulong b), hex://logix/scalar.ops?gt#gt_g[64u](64u,64u)
 ; gt_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x97,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11438,7 +11438,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long gt<long>(long a, long b), hex://logix/ScalarOps?gt#gt_g[64i](64i,64i)
+; long gt<long>(long a, long b), hex://logix/scalar.ops?gt#gt_g[64i](64i,64i)
 ; gt_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x9f,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11452,7 +11452,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte gteq<byte>(byte a, byte b), hex://logix/ScalarOps?gteq#gteq_g[8u](8u,8u)
+; byte gteq<byte>(byte a, byte b), hex://logix/scalar.ops?gteq#gteq_g[8u](8u,8u)
 ; gteq_g[8u](8u,8u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x3b,0xc2,0x0f,0x93,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11468,7 +11468,7 @@
 001bh mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte gteq<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?gteq#gteq_g[8i](8i,8i)
+; sbyte gteq<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?gteq#gteq_g[8i](8i,8i)
 ; gteq_g[8i](8i,8i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x3b,0xc2,0x0f,0x9d,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0x7f,0x00,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11484,7 +11484,7 @@
 001dh mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort gteq<ushort>(ushort a, ushort b), hex://logix/ScalarOps?gteq#gteq_g[16u](16u,16u)
+; ushort gteq<ushort>(ushort a, ushort b), hex://logix/scalar.ops?gteq#gteq_g[16u](16u,16u)
 ; gteq_g[16u](16u,16u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x3b,0xc2,0x0f,0x93,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11500,7 +11500,7 @@
 001bh mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short gteq<short>(short a, short b), hex://logix/ScalarOps?gteq#gteq_g[16i](16i,16i)
+; short gteq<short>(short a, short b), hex://logix/scalar.ops?gteq#gteq_g[16i](16i,16i)
 ; gteq_g[16i](16i,16i)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x3b,0xc2,0x0f,0x9d,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0x7f,0x00,0x00,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11516,7 +11516,7 @@
 001dh mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint gteq<uint>(uint a, uint b), hex://logix/ScalarOps?gteq#gteq_g[32u](32u,32u)
+; uint gteq<uint>(uint a, uint b), hex://logix/scalar.ops?gteq#gteq_g[32u](32u,32u)
 ; gteq_g[32u](32u,32u)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x93,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11530,7 +11530,7 @@
 0015h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int gteq<int>(int a, int b), hex://logix/ScalarOps?gteq#gteq_g[32i](32i,32i)
+; int gteq<int>(int a, int b), hex://logix/scalar.ops?gteq#gteq_g[32i](32i,32i)
 ; gteq_g[32i](32i,32i)[27] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x9d,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x05,0xb8,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11544,7 +11544,7 @@
 0015h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
 001ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong gteq<ulong>(ulong a, ulong b), hex://logix/ScalarOps?gteq#gteq_g[64u](64u,64u)
+; ulong gteq<ulong>(ulong a, ulong b), hex://logix/scalar.ops?gteq#gteq_g[64u](64u,64u)
 ; gteq_g[64u](64u,64u)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x93,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11558,7 +11558,7 @@
 0016h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long gteq<long>(long a, long b), hex://logix/ScalarOps?gteq#gteq_g[64i](64i,64i)
+; long gteq<long>(long a, long b), hex://logix/scalar.ops?gteq#gteq_g[64i](64i,64i)
 ; gteq_g[64i](64i,64i)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x9d,0xc0,0x0f,0xb6,0xc0,0x85,0xc0,0x75,0x04,0x33,0xc0,0xeb,0x0a,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11572,7 +11572,7 @@
 0016h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
 0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<byte>(byte a, byte b), hex://logix/ScalarOps?same#same_g[8u](8u,8u)
+; bit same<byte>(byte a, byte b), hex://logix/scalar.ops?same#same_g[8u](8u,8u)
 ; same_g[8u](8u,8u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11584,7 +11584,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?same#same_g[8i](8i,8i)
+; bit same<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?same#same_g[8i](8i,8i)
 ; same_g[8i](8i,8i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11596,7 +11596,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<ushort>(ushort a, ushort b), hex://logix/ScalarOps?same#same_g[16u](16u,16u)
+; bit same<ushort>(ushort a, ushort b), hex://logix/scalar.ops?same#same_g[16u](16u,16u)
 ; same_g[16u](16u,16u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11608,7 +11608,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<short>(short a, short b), hex://logix/ScalarOps?same#same_g[16i](16i,16i)
+; bit same<short>(short a, short b), hex://logix/scalar.ops?same#same_g[16i](16i,16i)
 ; same_g[16i](16i,16i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x3b,0xc2,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11620,7 +11620,7 @@
 0016h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<uint>(uint a, uint b), hex://logix/ScalarOps?same#same_g[32u](32u,32u)
+; bit same<uint>(uint a, uint b), hex://logix/scalar.ops?same#same_g[32u](32u,32u)
 ; same_g[32u](32u,32u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11629,7 +11629,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<int>(int a, int b), hex://logix/ScalarOps?same#same_g[32i](32i,32i)
+; bit same<int>(int a, int b), hex://logix/scalar.ops?same#same_g[32i](32i,32i)
 ; same_g[32i](32i,32i)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11638,7 +11638,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<ulong>(ulong a, ulong b), hex://logix/ScalarOps?same#same_g[64u](64u,64u)
+; bit same<ulong>(ulong a, ulong b), hex://logix/scalar.ops?same#same_g[64u](64u,64u)
 ; same_g[64u](64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11647,7 +11647,7 @@
 000bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; bit same<long>(long a, long b), hex://logix/ScalarOps?same#same_g[64i](64i,64i)
+; bit same<long>(long a, long b), hex://logix/scalar.ops?same#same_g[64i](64i,64i)
 ; same_g[64i](64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x3b,0xca,0x0f,0x94,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11656,7 +11656,7 @@
 000bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte sll<byte>(byte a, byte count), hex://logix/ScalarOps?sll#sll_g[8u](8u,8u)
+; byte sll<byte>(byte a, byte count), hex://logix/scalar.ops?sll#sll_g[8u](8u,8u)
 ; sll_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11666,7 +11666,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort sll<ushort>(ushort a, byte count), hex://logix/ScalarOps?sll#sll_g[16u](16u,8u)
+; ushort sll<ushort>(ushort a, byte count), hex://logix/scalar.ops?sll#sll_g[16u](16u,8u)
 ; sll_g[16u](16u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11676,7 +11676,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint sll<uint>(uint a, byte count), hex://logix/ScalarOps?sll#sll_g[32u](32u,8u)
+; uint sll<uint>(uint a, byte count), hex://logix/scalar.ops?sll#sll_g[32u](32u,8u)
 ; sll_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11685,7 +11685,7 @@
 000ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong sll<ulong>(ulong a, byte count), hex://logix/ScalarOps?sll#sll_g[64u](64u,8u)
+; ulong sll<ulong>(ulong a, byte count), hex://logix/scalar.ops?sll#sll_g[64u](64u,8u)
 ; sll_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11694,7 +11694,7 @@
 000bh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte srl<byte>(byte a, byte count), hex://logix/ScalarOps?srl#srl_g[8u](8u,8u)
+; byte srl<byte>(byte a, byte count), hex://logix/scalar.ops?srl#srl_g[8u](8u,8u)
 ; srl_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0xd3,0xe8,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11704,7 +11704,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort srl<ushort>(ushort a, byte count), hex://logix/ScalarOps?srl#srl_g[16u](16u,8u)
+; ushort srl<ushort>(ushort a, byte count), hex://logix/scalar.ops?srl#srl_g[16u](16u,8u)
 ; srl_g[16u](16u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xca,0xd3,0xe8,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11714,7 +11714,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint srl<uint>(uint a, byte count), hex://logix/ScalarOps?srl#srl_g[32u](32u,8u)
+; uint srl<uint>(uint a, byte count), hex://logix/scalar.ops?srl#srl_g[32u](32u,8u)
 ; srl_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe8,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11723,7 +11723,7 @@
 000ah shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong srl<ulong>(ulong a, byte count), hex://logix/ScalarOps?srl#srl_g[64u](64u,8u)
+; ulong srl<ulong>(ulong a, byte count), hex://logix/scalar.ops?srl#srl_g[64u](64u,8u)
 ; srl_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe8,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11732,7 +11732,7 @@
 000bh shr rax,cl                              ; SHR r/m64, CL || REX.W D3 /5 || encoded[3]{48 d3 e8}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte rotl<byte>(byte a, byte count), hex://logix/ScalarOps?rotl#rotl_g[8u](8u,8u)
+; byte rotl<byte>(byte a, byte count), hex://logix/scalar.ops?rotl#rotl_g[8u](8u,8u)
 ; rotl_g[8u](8u,8u)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x8b,0xca,0x44,0x8b,0xc0,0x41,0xd3,0xe0,0x8b,0xca,0xf7,0xd9,0x83,0xc1,0x08,0xd3,0xf8,0x41,0x0b,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11749,7 +11749,7 @@
 001fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort rotl<ushort>(ushort a, byte count), hex://logix/ScalarOps?rotl#rotl_g[16u](16u,8u)
+; ushort rotl<ushort>(ushort a, byte count), hex://logix/scalar.ops?rotl#rotl_g[16u](16u,8u)
 ; rotl_g[16u](16u,8u)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xd2,0x8b,0xca,0x44,0x8b,0xc0,0x41,0xd3,0xe0,0x8b,0xca,0xf7,0xd9,0x83,0xc1,0x10,0xd3,0xf8,0x41,0x0b,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11766,7 +11766,7 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint rotl<uint>(uint a, byte count), hex://logix/ScalarOps?rotl#rotl_g[32u](32u,8u)
+; uint rotl<uint>(uint a, byte count), hex://logix/scalar.ops?rotl#rotl_g[32u](32u,8u)
 ; rotl_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11775,7 +11775,7 @@
 000ah rol eax,cl                              ; ROL r/m32, CL || o32 D3 /0 || encoded[2]{d3 c0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong rotl<ulong>(ulong a, byte count), hex://logix/ScalarOps?rotl#rotl_g[64u](64u,8u)
+; ulong rotl<ulong>(ulong a, byte count), hex://logix/scalar.ops?rotl#rotl_g[64u](64u,8u)
 ; rotl_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11784,7 +11784,7 @@
 000bh rol rax,cl                              ; ROL r/m64, CL || REX.W D3 /0 || encoded[3]{48 d3 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte rotr<byte>(byte a, byte count), hex://logix/ScalarOps?rotr#rotr_g[8u](8u,8u)
+; byte rotr<byte>(byte a, byte count), hex://logix/scalar.ops?rotr#rotr_g[8u](8u,8u)
 ; rotr_g[8u](8u,8u)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x8b,0xca,0x44,0x8b,0xc0,0x41,0xd3,0xf8,0x8b,0xca,0xf7,0xd9,0x83,0xc1,0x08,0xd3,0xe0,0x41,0x0b,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11801,7 +11801,7 @@
 001fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort rotr<ushort>(ushort a, byte count), hex://logix/ScalarOps?rotr#rotr_g[16u](16u,8u)
+; ushort rotr<ushort>(ushort a, byte count), hex://logix/scalar.ops?rotr#rotr_g[16u](16u,8u)
 ; rotr_g[16u](16u,8u)[35] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xd2,0x8b,0xca,0x44,0x8b,0xc0,0x41,0xd3,0xf8,0x8b,0xca,0xf7,0xd9,0x83,0xc1,0x10,0xd3,0xe0,0x41,0x0b,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11818,7 +11818,7 @@
 001fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0022h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint rotr<uint>(uint a, byte count), hex://logix/ScalarOps?rotr#rotr_g[32u](32u,8u)
+; uint rotr<uint>(uint a, byte count), hex://logix/scalar.ops?rotr#rotr_g[32u](32u,8u)
 ; rotr_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xc8,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11827,7 +11827,7 @@
 000ah ror eax,cl                              ; ROR r/m32, CL || o32 D3 /1 || encoded[2]{d3 c8}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong rotr<ulong>(ulong a, byte count), hex://logix/ScalarOps?rotr#rotr_g[64u](64u,8u)
+; ulong rotr<ulong>(ulong a, byte count), hex://logix/scalar.ops?rotr#rotr_g[64u](64u,8u)
 ; rotr_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xc8,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11836,7 +11836,7 @@
 000bh ror rax,cl                              ; ROR r/m64, CL || REX.W D3 /1 || encoded[3]{48 d3 c8}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte add<byte>(byte a, byte b), hex://logix/ScalarOps?add#add_g[8u](8u,8u)
+; byte add<byte>(byte a, byte b), hex://logix/scalar.ops?add#add_g[8u](8u,8u)
 ; add_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x03,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11846,7 +11846,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte add<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?add#add_g[8i](8i,8i)
+; sbyte add<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?add#add_g[8i](8i,8i)
 ; add_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x03,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11856,7 +11856,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort add<ushort>(ushort a, ushort b), hex://logix/ScalarOps?add#add_g[16u](16u,16u)
+; ushort add<ushort>(ushort a, ushort b), hex://logix/scalar.ops?add#add_g[16u](16u,16u)
 ; add_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x03,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11866,7 +11866,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short add<short>(short a, short b), hex://logix/ScalarOps?add#add_g[16i](16i,16i)
+; short add<short>(short a, short b), hex://logix/scalar.ops?add#add_g[16i](16i,16i)
 ; add_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x03,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11876,7 +11876,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint add<uint>(uint a, uint b), hex://logix/ScalarOps?add#add_g[32u](32u,32u)
+; uint add<uint>(uint a, uint b), hex://logix/scalar.ops?add#add_g[32u](32u,32u)
 ; add_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x03,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11884,7 +11884,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int add<int>(int a, int b), hex://logix/ScalarOps?add#add_g[32i](32i,32i)
+; int add<int>(int a, int b), hex://logix/scalar.ops?add#add_g[32i](32i,32i)
 ; add_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x03,0xd1,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11892,7 +11892,7 @@
 0007h mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong add<ulong>(ulong a, ulong b), hex://logix/ScalarOps?add#add_g[64u](64u,64u)
+; ulong add<ulong>(ulong a, ulong b), hex://logix/scalar.ops?add#add_g[64u](64u,64u)
 ; add_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x03,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11900,7 +11900,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long add<long>(long a, long b), hex://logix/ScalarOps?add#add_g[64i](64i,64i)
+; long add<long>(long a, long b), hex://logix/scalar.ops?add#add_g[64i](64i,64i)
 ; add_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x03,0xd1,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11908,7 +11908,7 @@
 0008h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte sub<byte>(byte a, byte b), hex://logix/ScalarOps?sub#sub_g[8u](8u,8u)
+; byte sub<byte>(byte a, byte b), hex://logix/scalar.ops?sub#sub_g[8u](8u,8u)
 ; sub_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x2b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11918,7 +11918,7 @@
 000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte sub<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?sub#sub_g[8i](8i,8i)
+; sbyte sub<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?sub#sub_g[8i](8i,8i)
 ; sub_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x2b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11928,7 +11928,7 @@
 000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort sub<ushort>(ushort a, ushort b), hex://logix/ScalarOps?sub#sub_g[16u](16u,16u)
+; ushort sub<ushort>(ushort a, ushort b), hex://logix/scalar.ops?sub#sub_g[16u](16u,16u)
 ; sub_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x2b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11938,7 +11938,7 @@
 000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short sub<short>(short a, short b), hex://logix/ScalarOps?sub#sub_g[16i](16i,16i)
+; short sub<short>(short a, short b), hex://logix/scalar.ops?sub#sub_g[16i](16i,16i)
 ; sub_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x2b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11948,7 +11948,7 @@
 000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint sub<uint>(uint a, uint b), hex://logix/ScalarOps?sub#sub_g[32u](32u,32u)
+; uint sub<uint>(uint a, uint b), hex://logix/scalar.ops?sub#sub_g[32u](32u,32u)
 ; sub_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11956,7 +11956,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int sub<int>(int a, int b), hex://logix/ScalarOps?sub#sub_g[32i](32i,32i)
+; int sub<int>(int a, int b), hex://logix/scalar.ops?sub#sub_g[32i](32i,32i)
 ; sub_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11964,7 +11964,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong sub<ulong>(ulong a, ulong b), hex://logix/ScalarOps?sub#sub_g[64u](64u,64u)
+; ulong sub<ulong>(ulong a, ulong b), hex://logix/scalar.ops?sub#sub_g[64u](64u,64u)
 ; sub_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11972,7 +11972,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long sub<long>(long a, long b), hex://logix/ScalarOps?sub#sub_g[64i](64i,64i)
+; long sub<long>(long a, long b), hex://logix/scalar.ops?sub#sub_g[64i](64i,64i)
 ; sub_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11980,7 +11980,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte div<byte>(byte a, byte b), hex://logix/ScalarOps?div#div_g[8u](8u,8u)
+; byte div<byte>(byte a, byte b), hex://logix/scalar.ops?div#div_g[8u](8u,8u)
 ; div_g[8u](8u,8u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0x0f,0xb6,0xc0,0x99,0xf7,0xf9,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -11992,7 +11992,7 @@
 0011h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte div<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?div#div_g[8i](8i,8i)
+; sbyte div<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?div#div_g[8i](8i,8i)
 ; div_g[8i](8i,8i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xca,0x48,0x0f,0xbe,0xc0,0x99,0xf7,0xf9,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12004,7 +12004,7 @@
 0014h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort div<ushort>(ushort a, ushort b), hex://logix/ScalarOps?div#div_g[16u](16u,16u)
+; ushort div<ushort>(ushort a, ushort b), hex://logix/scalar.ops?div#div_g[16u](16u,16u)
 ; div_g[16u](16u,16u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xca,0x0f,0xb7,0xc0,0x99,0xf7,0xf9,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12016,7 +12016,7 @@
 0011h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short div<short>(short a, short b), hex://logix/ScalarOps?div#div_g[16i](16i,16i)
+; short div<short>(short a, short b), hex://logix/scalar.ops?div#div_g[16i](16i,16i)
 ; div_g[16i](16i,16i)[25] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xca,0x48,0x0f,0xbf,0xc0,0x99,0xf7,0xf9,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12028,7 +12028,7 @@
 0014h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint div<uint>(uint a, uint b), hex://logix/ScalarOps?div#div_g[32u](32u,32u)
+; uint div<uint>(uint a, uint b), hex://logix/scalar.ops?div#div_g[32u](32u,32u)
 ; div_g[32u](32u,32u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x8b,0xc2,0x8b,0xc1,0x33,0xd2,0x41,0xf7,0xf0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12038,7 +12038,7 @@
 000ch div r8d                                 ; DIV r/m32 || o32 F7 /6 || encoded[3]{41 f7 f0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int div<int>(int a, int b), hex://logix/ScalarOps?div#div_g[32i](32i,32i)
+; int div<int>(int a, int b), hex://logix/scalar.ops?div#div_g[32i](32i,32i)
 ; div_g[32i](32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x8b,0xc2,0x8b,0xc1,0x99,0x41,0xf7,0xf8,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12048,7 +12048,7 @@
 000bh idiv r8d                                ; IDIV r/m32 || o32 F7 /7 || encoded[3]{41 f7 f8}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong div<ulong>(ulong a, ulong b), hex://logix/ScalarOps?div#div_g[64u](64u,64u)
+; ulong div<ulong>(ulong a, ulong b), hex://logix/scalar.ops?div#div_g[64u](64u,64u)
 ; div_g[64u](64u,64u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x8b,0xc2,0x48,0x8b,0xc1,0x33,0xd2,0x49,0xf7,0xf0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12058,7 +12058,7 @@
 000dh div r8                                  ; DIV r/m64 || REX.W F7 /6 || encoded[3]{49 f7 f0}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long div<long>(long a, long b), hex://logix/ScalarOps?div#div_g[64i](64i,64i)
+; long div<long>(long a, long b), hex://logix/scalar.ops?div#div_g[64i](64i,64i)
 ; div_g[64i](64i,64i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x8b,0xc2,0x48,0x8b,0xc1,0x48,0x99,0x49,0xf7,0xf8,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12068,7 +12068,7 @@
 000dh idiv r8                                 ; IDIV r/m64 || REX.W F7 /7 || encoded[3]{49 f7 f8}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte mod<byte>(byte a, byte b), hex://logix/ScalarOps?mod#mod_g[8u](8u,8u)
+; byte mod<byte>(byte a, byte b), hex://logix/scalar.ops?mod#mod_g[8u](8u,8u)
 ; mod_g[8u](8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0x33,0xd2,0xf7,0xf1,0x0f,0xb6,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12079,7 +12079,7 @@
 000fh movzx eax,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte mod<sbyte>(sbyte a, sbyte b), hex://logix/ScalarOps?mod#mod_g[8i](8i,8i)
+; sbyte mod<sbyte>(sbyte a, sbyte b), hex://logix/scalar.ops?mod#mod_g[8i](8i,8i)
 ; mod_g[8i](8i,8i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xca,0x99,0xf7,0xf9,0x48,0x0f,0xbe,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12090,7 +12090,7 @@
 0010h movsx rax,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort mod<ushort>(ushort a, ushort b), hex://logix/ScalarOps?mod#mod_g[16u](16u,16u)
+; ushort mod<ushort>(ushort a, ushort b), hex://logix/scalar.ops?mod#mod_g[16u](16u,16u)
 ; mod_g[16u](16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xca,0x33,0xd2,0xf7,0xf1,0x0f,0xb7,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12101,7 +12101,7 @@
 000fh movzx eax,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short mod<short>(short a, short b), hex://logix/ScalarOps?mod#mod_g[16i](16i,16i)
+; short mod<short>(short a, short b), hex://logix/scalar.ops?mod#mod_g[16i](16i,16i)
 ; mod_g[16i](16i,16i)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xca,0x99,0xf7,0xf9,0x48,0x0f,0xbf,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12112,7 +12112,7 @@
 0010h movsx rax,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint mod<uint>(uint a, uint b), hex://logix/ScalarOps?mod#mod_g[32u](32u,32u)
+; uint mod<uint>(uint a, uint b), hex://logix/scalar.ops?mod#mod_g[32u](32u,32u)
 ; mod_g[32u](32u,32u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x8b,0xc2,0x8b,0xc1,0x33,0xd2,0x41,0xf7,0xf0,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12123,7 +12123,7 @@
 000fh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int mod<int>(int a, int b), hex://logix/ScalarOps?mod#mod_g[32i](32i,32i)
+; int mod<int>(int a, int b), hex://logix/scalar.ops?mod#mod_g[32i](32i,32i)
 ; mod_g[32i](32i,32i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x44,0x8b,0xc2,0x8b,0xc1,0x99,0x41,0xf7,0xf8,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12134,7 +12134,7 @@
 000eh mov eax,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong mod<ulong>(ulong a, ulong b), hex://logix/ScalarOps?mod#mod_g[64u](64u,64u)
+; ulong mod<ulong>(ulong a, ulong b), hex://logix/scalar.ops?mod#mod_g[64u](64u,64u)
 ; mod_g[64u](64u,64u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x8b,0xc2,0x48,0x8b,0xc1,0x33,0xd2,0x49,0xf7,0xf0,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12145,7 +12145,7 @@
 0010h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long mod<long>(long a, long b), hex://logix/ScalarOps?mod#mod_g[64i](64i,64i)
+; long mod<long>(long a, long b), hex://logix/scalar.ops?mod#mod_g[64i](64i,64i)
 ; mod_g[64i](64i,64i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x4c,0x8b,0xc2,0x48,0x8b,0xc1,0x48,0x99,0x49,0xf7,0xf8,0x48,0x8b,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12156,7 +12156,7 @@
 0010h mov rax,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c2}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte negate<byte>(byte a), hex://logix/ScalarOps?negate#negate_g[8u](8u)
+; byte negate<byte>(byte a), hex://logix/scalar.ops?negate#negate_g[8u](8u)
 ; negate_g[8u](8u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0xff,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12166,7 +12166,7 @@
 000ch movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte negate<sbyte>(sbyte a), hex://logix/ScalarOps?negate#negate_g[8i](8i)
+; sbyte negate<sbyte>(sbyte a), hex://logix/scalar.ops?negate#negate_g[8i](8i)
 ; negate_g[8i](8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd8,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12175,7 +12175,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort negate<ushort>(ushort a), hex://logix/ScalarOps?negate#negate_g[16u](16u)
+; ushort negate<ushort>(ushort a), hex://logix/scalar.ops?negate#negate_g[16u](16u)
 ; negate_g[16u](16u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0xff,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12185,7 +12185,7 @@
 000ch movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short negate<short>(short a), hex://logix/ScalarOps?negate#negate_g[16i](16i)
+; short negate<short>(short a), hex://logix/scalar.ops?negate#negate_g[16i](16i)
 ; negate_g[16i](16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd8,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12194,7 +12194,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint negate<uint>(uint a), hex://logix/ScalarOps?negate#negate_g[32u](32u)
+; uint negate<uint>(uint a), hex://logix/scalar.ops?negate#negate_g[32u](32u)
 ; negate_g[32u](32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xff,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12203,7 +12203,7 @@
 0009h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int negate<int>(int a), hex://logix/ScalarOps?negate#negate_g[32i](32i)
+; int negate<int>(int a), hex://logix/scalar.ops?negate#negate_g[32i](32i)
 ; negate_g[32i](32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd8,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12211,7 +12211,7 @@
 0007h neg eax                                 ; NEG r/m32 || o32 F7 /3 || encoded[2]{f7 d8}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong negate<ulong>(ulong a), hex://logix/ScalarOps?negate#negate_g[64u](64u)
+; ulong negate<ulong>(ulong a), hex://logix/scalar.ops?negate#negate_g[64u](64u)
 ; negate_g[64u](64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xff,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12220,7 +12220,7 @@
 000bh inc rax                                 ; INC r/m64 || REX.W FF /0 || encoded[3]{48 ff c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long negate<long>(long a), hex://logix/ScalarOps?negate#negate_g[64i](64i)
+; long negate<long>(long a), hex://logix/scalar.ops?negate#negate_g[64i](64i)
 ; negate_g[64i](64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd8,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12228,7 +12228,7 @@
 0008h neg rax                                 ; NEG r/m64 || REX.W F7 /3 || encoded[3]{48 f7 d8}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte inc<byte>(byte a), hex://logix/ScalarOps?inc#inc_g[8u](8u)
+; byte inc<byte>(byte a), hex://logix/scalar.ops?inc#inc_g[8u](8u)
 ; inc_g[8u](8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xff,0xc0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12237,7 +12237,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte inc<sbyte>(sbyte a), hex://logix/ScalarOps?inc#inc_g[8i](8i)
+; sbyte inc<sbyte>(sbyte a), hex://logix/scalar.ops?inc#inc_g[8i](8i)
 ; inc_g[8i](8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xff,0xc0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12246,7 +12246,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort inc<ushort>(ushort a), hex://logix/ScalarOps?inc#inc_g[16u](16u)
+; ushort inc<ushort>(ushort a), hex://logix/scalar.ops?inc#inc_g[16u](16u)
 ; inc_g[16u](16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xff,0xc0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12255,7 +12255,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short inc<short>(short a), hex://logix/ScalarOps?inc#inc_g[16i](16i)
+; short inc<short>(short a), hex://logix/scalar.ops?inc#inc_g[16i](16i)
 ; inc_g[16i](16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xff,0xc0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12264,7 +12264,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint inc<uint>(uint a), hex://logix/ScalarOps?inc#inc_g[32u](32u)
+; uint inc<uint>(uint a), hex://logix/scalar.ops?inc#inc_g[32u](32u)
 ; inc_g[32u](32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0xff,0xc1,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12272,7 +12272,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int inc<int>(int a), hex://logix/ScalarOps?inc#inc_g[32i](32i)
+; int inc<int>(int a), hex://logix/scalar.ops?inc#inc_g[32i](32i)
 ; inc_g[32i](32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0xff,0xc1,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12280,7 +12280,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong inc<ulong>(ulong a), hex://logix/ScalarOps?inc#inc_g[64u](64u)
+; ulong inc<ulong>(ulong a), hex://logix/scalar.ops?inc#inc_g[64u](64u)
 ; inc_g[64u](64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xff,0xc1,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12288,7 +12288,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long inc<long>(long a), hex://logix/ScalarOps?inc#inc_g[64i](64i)
+; long inc<long>(long a), hex://logix/scalar.ops?inc#inc_g[64i](64i)
 ; inc_g[64i](64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xff,0xc1,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12296,7 +12296,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte dec<byte>(byte a), hex://logix/ScalarOps?dec#dec_g[8u](8u)
+; byte dec<byte>(byte a), hex://logix/scalar.ops?dec#dec_g[8u](8u)
 ; dec_g[8u](8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xff,0xc8,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12305,7 +12305,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte dec<sbyte>(sbyte a), hex://logix/ScalarOps?dec#dec_g[8i](8i)
+; sbyte dec<sbyte>(sbyte a), hex://logix/scalar.ops?dec#dec_g[8i](8i)
 ; dec_g[8i](8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xff,0xc8,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12314,7 +12314,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort dec<ushort>(ushort a), hex://logix/ScalarOps?dec#dec_g[16u](16u)
+; ushort dec<ushort>(ushort a), hex://logix/scalar.ops?dec#dec_g[16u](16u)
 ; dec_g[16u](16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xff,0xc8,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12323,7 +12323,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short dec<short>(short a), hex://logix/ScalarOps?dec#dec_g[16i](16i)
+; short dec<short>(short a), hex://logix/scalar.ops?dec#dec_g[16i](16i)
 ; dec_g[16i](16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xff,0xc8,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12332,7 +12332,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint dec<uint>(uint a), hex://logix/ScalarOps?dec#dec_g[32u](32u)
+; uint dec<uint>(uint a), hex://logix/scalar.ops?dec#dec_g[32u](32u)
 ; dec_g[32u](32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0xff,0xc9,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12340,7 +12340,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int dec<int>(int a), hex://logix/ScalarOps?dec#dec_g[32i](32i)
+; int dec<int>(int a), hex://logix/scalar.ops?dec#dec_g[32i](32i)
 ; dec_g[32i](32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0xff,0xc9,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12348,7 +12348,7 @@
 0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong dec<ulong>(ulong a), hex://logix/ScalarOps?dec#dec_g[64u](64u)
+; ulong dec<ulong>(ulong a), hex://logix/scalar.ops?dec#dec_g[64u](64u)
 ; dec_g[64u](64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xff,0xc9,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12356,7 +12356,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long dec<long>(long a), hex://logix/ScalarOps?dec#dec_g[64i](64i)
+; long dec<long>(long a), hex://logix/scalar.ops?dec#dec_g[64i](64i)
 ; dec_g[64i](64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xff,0xc9,0x48,0x8b,0xc1,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12364,7 +12364,7 @@
 0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte select<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?select#select_g[8u](8u,8u,8u)
+; byte select<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?select#select_g[8u](8u,8u,8u)
 ; select_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xd0,0xc4,0xe2,0x78,0xf2,0xc1,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12379,7 +12379,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte select<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?select#select_g[8i](8i,8i,8i)
+; sbyte select<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?select#select_g[8i](8i,8i,8i)
 ; select_g[8i](8i,8i,8i)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x49,0x0f,0xbe,0xc8,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12396,7 +12396,7 @@
 002ah movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort select<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?select#select_g[16u](16u,16u,16u)
+; ushort select<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?select#select_g[16u](16u,16u,16u)
 ; select_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xd0,0xc4,0xe2,0x78,0xf2,0xc1,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12411,7 +12411,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short select<short>(short a, short b, short c), hex://logix/ScalarOps?select#select_g[16i](16i,16i,16i)
+; short select<short>(short a, short b, short c), hex://logix/scalar.ops?select#select_g[16i](16i,16i,16i)
 ; select_g[16i](16i,16i,16i)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x49,0x0f,0xbf,0xc8,0xc4,0xe2,0x68,0xf2,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12428,7 +12428,7 @@
 002ah movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 002eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint select<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?select#select_g[32u](32u,32u,32u)
+; uint select<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?select#select_g[32u](32u,32u,32u)
 ; select_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0xc4,0xc2,0x70,0xf2,0xc0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12437,7 +12437,7 @@
 000ch or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int select<int>(int a, int b, int c), hex://logix/ScalarOps?select#select_g[32i](32i,32i,32i)
+; int select<int>(int a, int b, int c), hex://logix/scalar.ops?select#select_g[32i](32i,32i,32i)
 ; select_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x23,0xd1,0xc4,0xc2,0x70,0xf2,0xc0,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12446,7 +12446,7 @@
 000ch or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong select<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?select#select_g[64u](64u,64u,64u)
+; ulong select<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?select#select_g[64u](64u,64u,64u)
 ; select_g[64u](64u,64u,64u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0xc4,0xc2,0xf0,0xf2,0xc0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12455,7 +12455,7 @@
 000dh or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long select<long>(long a, long b, long c), hex://logix/ScalarOps?select#select_g[64i](64i,64i,64i)
+; long select<long>(long a, long b, long c), hex://logix/scalar.ops?select#select_g[64i](64i,64i,64i)
 ; select_g[64i](64i,64i,64i)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x23,0xd1,0xc4,0xc2,0xf0,0xf2,0xc0,0x48,0x0b,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12464,63 +12464,63 @@
 000dh or rax,rdx                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f00<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f00#f00_g[8u](8u,8u,8u)
+; byte f00<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f00#f00_g[8u](8u,8u,8u)
 ; f00_g[8u](8u,8u,8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f00<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f00#f00_g[8i](8i,8i,8i)
+; sbyte f00<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f00#f00_g[8i](8i,8i,8i)
 ; f00_g[8i](8i,8i,8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f00<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f00#f00_g[16u](16u,16u,16u)
+; ushort f00<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f00#f00_g[16u](16u,16u,16u)
 ; f00_g[16u](16u,16u,16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f00<short>(short a, short b, short c), hex://logix/ScalarOps?f00#f00_g[16i](16i,16i,16i)
+; short f00<short>(short a, short b, short c), hex://logix/scalar.ops?f00#f00_g[16i](16i,16i,16i)
 ; f00_g[16i](16i,16i,16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f00<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f00#f00_g[32u](32u,32u,32u)
+; uint f00<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f00#f00_g[32u](32u,32u,32u)
 ; f00_g[32u](32u,32u,32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f00<int>(int a, int b, int c), hex://logix/ScalarOps?f00#f00_g[32i](32i,32i,32i)
+; int f00<int>(int a, int b, int c), hex://logix/scalar.ops?f00#f00_g[32i](32i,32i,32i)
 ; f00_g[32i](32i,32i,32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f00<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f00#f00_g[64u](64u,64u,64u)
+; ulong f00<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f00#f00_g[64u](64u,64u,64u)
 ; f00_g[64u](64u,64u,64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f00<long>(long a, long b, long c), hex://logix/ScalarOps?f00#f00_g[64i](64i,64i,64i)
+; long f00<long>(long a, long b, long c), hex://logix/scalar.ops?f00#f00_g[64i](64i,64i,64i)
 ; f00_g[64i](64i,64i,64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
 0007h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f01<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f01#f01_g[8u](8u,8u,8u)
+; byte f01<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f01#f01_g[8u](8u,8u,8u)
 ; f01_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12534,7 +12534,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f01<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f01#f01_g[8i](8i,8i,8i)
+; sbyte f01<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f01#f01_g[8i](8i,8i,8i)
 ; f01_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12548,7 +12548,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f01<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f01#f01_g[16u](16u,16u,16u)
+; ushort f01<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f01#f01_g[16u](16u,16u,16u)
 ; f01_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12562,7 +12562,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f01<short>(short a, short b, short c), hex://logix/ScalarOps?f01#f01_g[16i](16i,16i,16i)
+; short f01<short>(short a, short b, short c), hex://logix/scalar.ops?f01#f01_g[16i](16i,16i,16i)
 ; f01_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12576,7 +12576,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f01<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f01#f01_g[32u](32u,32u,32u)
+; uint f01<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f01#f01_g[32u](32u,32u,32u)
 ; f01_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12586,7 +12586,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f01<int>(int a, int b, int c), hex://logix/ScalarOps?f01#f01_g[32i](32i,32i,32i)
+; int f01<int>(int a, int b, int c), hex://logix/scalar.ops?f01#f01_g[32i](32i,32i,32i)
 ; f01_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12596,7 +12596,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f01<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f01#f01_g[64u](64u,64u,64u)
+; ulong f01<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f01#f01_g[64u](64u,64u,64u)
 ; f01_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12606,7 +12606,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f01<long>(long a, long b, long c), hex://logix/ScalarOps?f01#f01_g[64i](64i,64i,64i)
+; long f01<long>(long a, long b, long c), hex://logix/scalar.ops?f01#f01_g[64i](64i,64i,64i)
 ; f01_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12616,7 +12616,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f02<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f02#f02_g[8u](8u,8u,8u)
+; byte f02<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f02#f02_g[8u](8u,8u,8u)
 ; f02_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12630,7 +12630,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f02<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f02#f02_g[8i](8i,8i,8i)
+; sbyte f02<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f02#f02_g[8i](8i,8i,8i)
 ; f02_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12644,7 +12644,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f02<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f02#f02_g[16u](16u,16u,16u)
+; ushort f02<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f02#f02_g[16u](16u,16u,16u)
 ; f02_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12658,7 +12658,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f02<short>(short a, short b, short c), hex://logix/ScalarOps?f02#f02_g[16i](16i,16i,16i)
+; short f02<short>(short a, short b, short c), hex://logix/scalar.ops?f02#f02_g[16i](16i,16i,16i)
 ; f02_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12672,7 +12672,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f02<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f02#f02_g[32u](32u,32u,32u)
+; uint f02<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f02#f02_g[32u](32u,32u,32u)
 ; f02_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12682,7 +12682,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f02<int>(int a, int b, int c), hex://logix/ScalarOps?f02#f02_g[32i](32i,32i,32i)
+; int f02<int>(int a, int b, int c), hex://logix/scalar.ops?f02#f02_g[32i](32i,32i,32i)
 ; f02_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12692,7 +12692,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f02<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f02#f02_g[64u](64u,64u,64u)
+; ulong f02<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f02#f02_g[64u](64u,64u,64u)
 ; f02_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12702,7 +12702,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f02<long>(long a, long b, long c), hex://logix/ScalarOps?f02#f02_g[64i](64i,64i,64i)
+; long f02<long>(long a, long b, long c), hex://logix/scalar.ops?f02#f02_g[64i](64i,64i,64i)
 ; f02_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12712,7 +12712,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f03<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f03#f03_g[8u](8u,8u,8u)
+; byte f03<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f03#f03_g[8u](8u,8u,8u)
 ; f03_g[8u](8u,8u,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12723,7 +12723,7 @@
 000fh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f03<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f03#f03_g[8i](8i,8i,8i)
+; sbyte f03<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f03#f03_g[8i](8i,8i,8i)
 ; f03_g[8i](8i,8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12734,7 +12734,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f03<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f03#f03_g[16u](16u,16u,16u)
+; ushort f03<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f03#f03_g[16u](16u,16u,16u)
 ; f03_g[16u](16u,16u,16u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12745,7 +12745,7 @@
 000fh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f03<short>(short a, short b, short c), hex://logix/ScalarOps?f03#f03_g[16i](16i,16i,16i)
+; short f03<short>(short a, short b, short c), hex://logix/scalar.ops?f03#f03_g[16i](16i,16i,16i)
 ; f03_g[16i](16i,16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12756,7 +12756,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f03<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f03#f03_g[32u](32u,32u,32u)
+; uint f03<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f03#f03_g[32u](32u,32u,32u)
 ; f03_g[32u](32u,32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12765,7 +12765,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f03<int>(int a, int b, int c), hex://logix/ScalarOps?f03#f03_g[32i](32i,32i,32i)
+; int f03<int>(int a, int b, int c), hex://logix/scalar.ops?f03#f03_g[32i](32i,32i,32i)
 ; f03_g[32i](32i,32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12774,7 +12774,7 @@
 0009h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f03<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f03#f03_g[64u](64u,64u,64u)
+; ulong f03<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f03#f03_g[64u](64u,64u,64u)
 ; f03_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12783,7 +12783,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f03<long>(long a, long b, long c), hex://logix/ScalarOps?f03#f03_g[64i](64i,64i,64i)
+; long f03<long>(long a, long b, long c), hex://logix/scalar.ops?f03#f03_g[64i](64i,64i,64i)
 ; f03_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12792,7 +12792,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f04<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f04#f04_g[8u](8u,8u,8u)
+; byte f04<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f04#f04_g[8u](8u,8u,8u)
 ; f04_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x41,0x0f,0xb6,0xc8,0x0b,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12806,7 +12806,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f04<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f04#f04_g[8i](8i,8i,8i)
+; sbyte f04<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f04#f04_g[8i](8i,8i,8i)
 ; f04_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x49,0x0f,0xbe,0xc8,0x0b,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12820,7 +12820,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f04<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f04#f04_g[16u](16u,16u,16u)
+; ushort f04<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f04#f04_g[16u](16u,16u,16u)
 ; f04_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x41,0x0f,0xb7,0xc8,0x0b,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12834,7 +12834,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f04<short>(short a, short b, short c), hex://logix/ScalarOps?f04#f04_g[16i](16i,16i,16i)
+; short f04<short>(short a, short b, short c), hex://logix/scalar.ops?f04#f04_g[16i](16i,16i,16i)
 ; f04_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x49,0x0f,0xbf,0xc8,0x0b,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12848,7 +12848,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f04<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f04#f04_g[32u](32u,32u,32u)
+; uint f04<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f04#f04_g[32u](32u,32u,32u)
 ; f04_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12858,7 +12858,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f04<int>(int a, int b, int c), hex://logix/ScalarOps?f04#f04_g[32i](32i,32i,32i)
+; int f04<int>(int a, int b, int c), hex://logix/scalar.ops?f04#f04_g[32i](32i,32i,32i)
 ; f04_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12868,7 +12868,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f04<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f04#f04_g[64u](64u,64u,64u)
+; ulong f04<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f04#f04_g[64u](64u,64u,64u)
 ; f04_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12878,7 +12878,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f04<long>(long a, long b, long c), hex://logix/ScalarOps?f04#f04_g[64i](64i,64i,64i)
+; long f04<long>(long a, long b, long c), hex://logix/scalar.ops?f04#f04_g[64i](64i,64i,64i)
 ; f04_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12888,7 +12888,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f05<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f05#f05_g[8u](8u,8u,8u)
+; byte f05<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f05#f05_g[8u](8u,8u,8u)
 ; f05_g[8u](8u,8u,8u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12899,7 +12899,7 @@
 0010h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f05<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f05#f05_g[8i](8i,8i,8i)
+; sbyte f05<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f05#f05_g[8i](8i,8i,8i)
 ; f05_g[8i](8i,8i,8i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12910,7 +12910,7 @@
 0011h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f05<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f05#f05_g[16u](16u,16u,16u)
+; ushort f05<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f05#f05_g[16u](16u,16u,16u)
 ; f05_g[16u](16u,16u,16u)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12921,7 +12921,7 @@
 0010h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0013h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f05<short>(short a, short b, short c), hex://logix/ScalarOps?f05#f05_g[16i](16i,16i,16i)
+; short f05<short>(short a, short b, short c), hex://logix/scalar.ops?f05#f05_g[16i](16i,16i,16i)
 ; f05_g[16i](16i,16i,16i)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12932,7 +12932,7 @@
 0011h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f05<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f05#f05_g[32u](32u,32u,32u)
+; uint f05<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f05#f05_g[32u](32u,32u,32u)
 ; f05_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12941,7 +12941,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f05<int>(int a, int b, int c), hex://logix/ScalarOps?f05#f05_g[32i](32i,32i,32i)
+; int f05<int>(int a, int b, int c), hex://logix/scalar.ops?f05#f05_g[32i](32i,32i,32i)
 ; f05_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x0b,0xc8,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12950,7 +12950,7 @@
 000ah not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f05<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f05#f05_g[64u](64u,64u,64u)
+; ulong f05<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f05#f05_g[64u](64u,64u,64u)
 ; f05_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12959,7 +12959,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f05<long>(long a, long b, long c), hex://logix/ScalarOps?f05#f05_g[64i](64i,64i,64i)
+; long f05<long>(long a, long b, long c), hex://logix/scalar.ops?f05#f05_g[64i](64i,64i,64i)
 ; f05_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x0b,0xc8,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12968,7 +12968,7 @@
 000bh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f06<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f06#f06_g[8u](8u,8u,8u)
+; byte f06<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f06#f06_g[8u](8u,8u,8u)
 ; f06_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x33,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -12984,7 +12984,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f06<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f06#f06_g[8i](8i,8i,8i)
+; sbyte f06<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f06#f06_g[8i](8i,8i,8i)
 ; f06_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x33,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13000,7 +13000,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f06<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f06#f06_g[16u](16u,16u,16u)
+; ushort f06<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f06#f06_g[16u](16u,16u,16u)
 ; f06_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x33,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13016,7 +13016,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f06<short>(short a, short b, short c), hex://logix/ScalarOps?f06#f06_g[16i](16i,16i,16i)
+; short f06<short>(short a, short b, short c), hex://logix/scalar.ops?f06#f06_g[16i](16i,16i,16i)
 ; f06_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x33,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13032,7 +13032,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f06<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f06#f06_g[32u](32u,32u,32u)
+; uint f06<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f06#f06_g[32u](32u,32u,32u)
 ; f06_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13042,7 +13042,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f06<int>(int a, int b, int c), hex://logix/ScalarOps?f06#f06_g[32i](32i,32i,32i)
+; int f06<int>(int a, int b, int c), hex://logix/scalar.ops?f06#f06_g[32i](32i,32i,32i)
 ; f06_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x33,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13052,7 +13052,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f06<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f06#f06_g[64u](64u,64u,64u)
+; ulong f06<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f06#f06_g[64u](64u,64u,64u)
 ; f06_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13062,7 +13062,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f06<long>(long a, long b, long c), hex://logix/ScalarOps?f06#f06_g[64i](64i,64i,64i)
+; long f06<long>(long a, long b, long c), hex://logix/scalar.ops?f06#f06_g[64i](64i,64i,64i)
 ; f06_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x33,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13072,7 +13072,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f07<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f07#f07_g[8u](8u,8u,8u)
+; byte f07<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f07#f07_g[8u](8u,8u,8u)
 ; f07_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13086,7 +13086,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f07<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f07#f07_g[8i](8i,8i,8i)
+; sbyte f07<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f07#f07_g[8i](8i,8i,8i)
 ; f07_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13100,7 +13100,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f07<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f07#f07_g[16u](16u,16u,16u)
+; ushort f07<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f07#f07_g[16u](16u,16u,16u)
 ; f07_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13114,7 +13114,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f07<short>(short a, short b, short c), hex://logix/ScalarOps?f07#f07_g[16i](16i,16i,16i)
+; short f07<short>(short a, short b, short c), hex://logix/scalar.ops?f07#f07_g[16i](16i,16i,16i)
 ; f07_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13128,7 +13128,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f07<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f07#f07_g[32u](32u,32u,32u)
+; uint f07<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f07#f07_g[32u](32u,32u,32u)
 ; f07_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13138,7 +13138,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f07<int>(int a, int b, int c), hex://logix/ScalarOps?f07#f07_g[32i](32i,32i,32i)
+; int f07<int>(int a, int b, int c), hex://logix/scalar.ops?f07#f07_g[32i](32i,32i,32i)
 ; f07_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x23,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13148,7 +13148,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f07<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f07#f07_g[64u](64u,64u,64u)
+; ulong f07<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f07#f07_g[64u](64u,64u,64u)
 ; f07_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13158,7 +13158,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f07<long>(long a, long b, long c), hex://logix/ScalarOps?f07#f07_g[64i](64i,64i,64i)
+; long f07<long>(long a, long b, long c), hex://logix/scalar.ops?f07#f07_g[64i](64i,64i,64i)
 ; f07_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x23,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13168,7 +13168,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f08<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f08#f08_g[8u](8u,8u,8u)
+; byte f08<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f08#f08_g[8u](8u,8u,8u)
 ; f08_g[8u](8u,8u,8u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13183,7 +13183,7 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f08<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f08#f08_g[8i](8i,8i,8i)
+; sbyte f08<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f08#f08_g[8i](8i,8i,8i)
 ; f08_g[8i](8i,8i,8i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13198,7 +13198,7 @@
 001fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f08<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f08#f08_g[16u](16u,16u,16u)
+; ushort f08<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f08#f08_g[16u](16u,16u,16u)
 ; f08_g[16u](16u,16u,16u)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13213,7 +13213,7 @@
 001bh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f08<short>(short a, short b, short c), hex://logix/ScalarOps?f08#f08_g[16i](16i,16i,16i)
+; short f08<short>(short a, short b, short c), hex://logix/scalar.ops?f08#f08_g[16i](16i,16i,16i)
 ; f08_g[16i](16i,16i,16i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13228,7 +13228,7 @@
 001fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f08<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f08#f08_g[32u](32u,32u,32u)
+; uint f08<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f08#f08_g[32u](32u,32u,32u)
 ; f08_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13238,7 +13238,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f08<int>(int a, int b, int c), hex://logix/ScalarOps?f08#f08_g[32i](32i,32i,32i)
+; int f08<int>(int a, int b, int c), hex://logix/scalar.ops?f08#f08_g[32i](32i,32i,32i)
 ; f08_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13248,7 +13248,7 @@
 000bh and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f08<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f08#f08_g[64u](64u,64u,64u)
+; ulong f08<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f08#f08_g[64u](64u,64u,64u)
 ; f08_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13258,7 +13258,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f08<long>(long a, long b, long c), hex://logix/ScalarOps?f08#f08_g[64i](64i,64i,64i)
+; long f08<long>(long a, long b, long c), hex://logix/scalar.ops?f08#f08_g[64i](64i,64i,64i)
 ; f08_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13268,7 +13268,7 @@
 000eh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f09<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f09#f09_g[8u](8u,8u,8u)
+; byte f09<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f09#f09_g[8u](8u,8u,8u)
 ; f09_g[8u](8u,8u,8u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc2,0x41,0x0f,0xb6,0xd0,0x33,0xc2,0x0f,0xb6,0xc0,0x0f,0xb6,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13282,7 +13282,7 @@
 0018h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f09<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f09#f09_g[8i](8i,8i,8i)
+; sbyte f09<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f09#f09_g[8i](8i,8i,8i)
 ; f09_g[8i](8i,8i,8i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc2,0x49,0x0f,0xbe,0xd0,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13296,7 +13296,7 @@
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f09<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f09#f09_g[16u](16u,16u,16u)
+; ushort f09<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f09#f09_g[16u](16u,16u,16u)
 ; f09_g[16u](16u,16u,16u)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc2,0x41,0x0f,0xb7,0xd0,0x33,0xc2,0x0f,0xb7,0xc0,0x0f,0xb7,0xd1,0x0b,0xc2,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13310,7 +13310,7 @@
 0018h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f09<short>(short a, short b, short c), hex://logix/ScalarOps?f09#f09_g[16i](16i,16i,16i)
+; short f09<short>(short a, short b, short c), hex://logix/scalar.ops?f09#f09_g[16i](16i,16i,16i)
 ; f09_g[16i](16i,16i,16i)[32] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc2,0x49,0x0f,0xbf,0xd0,0x33,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd1,0x0b,0xc2,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13324,7 +13324,7 @@
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f09<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f09#f09_g[32u](32u,32u,32u)
+; uint f09<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f09#f09_g[32u](32u,32u,32u)
 ; f09_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13334,7 +13334,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f09<int>(int a, int b, int c), hex://logix/ScalarOps?f09#f09_g[32i](32i,32i,32i)
+; int f09<int>(int a, int b, int c), hex://logix/scalar.ops?f09#f09_g[32i](32i,32i,32i)
 ; f09_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x41,0x33,0xd0,0x0b,0xd1,0x8b,0xc2,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13344,7 +13344,7 @@
 000ch not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f09<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f09#f09_g[64u](64u,64u,64u)
+; ulong f09<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f09#f09_g[64u](64u,64u,64u)
 ; f09_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13354,7 +13354,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f09<long>(long a, long b, long c), hex://logix/ScalarOps?f09#f09_g[64i](64i,64i,64i)
+; long f09<long>(long a, long b, long c), hex://logix/scalar.ops?f09#f09_g[64i](64i,64i,64i)
 ; f09_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x49,0x33,0xd0,0x48,0x0b,0xd1,0x48,0x8b,0xc2,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13364,7 +13364,7 @@
 000eh not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0a<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0a#f0a_g[8u](8u,8u,8u)
+; byte f0a<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0a#f0a_g[8u](8u,8u,8u)
 ; f0a_g[8u](8u,8u,8u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xd0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13376,7 +13376,7 @@
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0a#f0a_g[8i](8i,8i,8i)
+; sbyte f0a<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0a#f0a_g[8i](8i,8i,8i)
 ; f0a_g[8i](8i,8i,8i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x49,0x0f,0xbe,0xd0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13388,7 +13388,7 @@
 0015h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0a<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0a#f0a_g[16u](16u,16u,16u)
+; ushort f0a<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0a#f0a_g[16u](16u,16u,16u)
 ; f0a_g[16u](16u,16u,16u)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xd0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13400,7 +13400,7 @@
 0013h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0a<short>(short a, short b, short c), hex://logix/ScalarOps?f0a#f0a_g[16i](16i,16i,16i)
+; short f0a<short>(short a, short b, short c), hex://logix/scalar.ops?f0a#f0a_g[16i](16i,16i,16i)
 ; f0a_g[16i](16i,16i,16i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x49,0x0f,0xbf,0xd0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13412,7 +13412,7 @@
 0015h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0a<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0a#f0a_g[32u](32u,32u,32u)
+; uint f0a<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0a#f0a_g[32u](32u,32u,32u)
 ; f0a_g[32u](32u,32u,32u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13421,7 +13421,7 @@
 0009h and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0a<int>(int a, int b, int c), hex://logix/ScalarOps?f0a#f0a_g[32i](32i,32i,32i)
+; int f0a<int>(int a, int b, int c), hex://logix/scalar.ops?f0a#f0a_g[32i](32i,32i,32i)
 ; f0a_g[32i](32i,32i,32i)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13430,7 +13430,7 @@
 0009h and eax,r8d                             ; AND r32, r/m32 || o32 23 /r || encoded[3]{41 23 c0}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0a<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0a#f0a_g[64u](64u,64u,64u)
+; ulong f0a<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0a#f0a_g[64u](64u,64u,64u)
 ; f0a_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13439,7 +13439,7 @@
 000bh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0a<long>(long a, long b, long c), hex://logix/ScalarOps?f0a#f0a_g[64i](64i,64i,64i)
+; long f0a<long>(long a, long b, long c), hex://logix/scalar.ops?f0a#f0a_g[64i](64i,64i,64i)
 ; f0a_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x23,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13448,7 +13448,7 @@
 000bh and rax,r8                              ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{49 23 c0}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0b<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0b#f0b_g[8u](8u,8u,8u)
+; byte f0b<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0b#f0b_g[8u](8u,8u,8u)
 ; f0b_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x81,0xf2,0xff,0x00,0x00,0x00,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13466,8 +13466,8 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0b#f0b_g[8i](8i,8i,8i)
-; f0b_g[8i](8i,8i,8i)[59] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0xe4,0xde,0xfe,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; sbyte f0b<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0b#f0b_g[8i](8i,8i,8i)
+; f0b_g[8i](8i,8i,8i)[59] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x48,0x0f,0xbe,0xca,0xe8,0x24,0xdf,0xfe,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13477,7 +13477,7 @@
 000dh not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000fh movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 0013h movsx rcx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be ca}
-0017h call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 de fe ff}
+0017h call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 df fe ff}
 001ch movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0020h movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0024h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -13490,7 +13490,7 @@
 0039h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0b<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0b#f0b_g[16u](16u,16u,16u)
+; ushort f0b<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0b#f0b_g[16u](16u,16u,16u)
 ; f0b_g[16u](16u,16u,16u)[53] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x81,0xf2,0xff,0xff,0x00,0x00,0x89,0x54,0x24,0x04,0x0f,0xb7,0x54,0x24,0x04,0x41,0x0f,0xb7,0xc8,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -13511,8 +13511,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0b<short>(short a, short b, short c), hex://logix/ScalarOps?f0b#f0b_g[16i](16i,16i,16i)
-; f0b_g[16i](16i,16i,16i)[59] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0x24,0xdf,0xfe,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; short f0b<short>(short a, short b, short c), hex://logix/scalar.ops?f0b#f0b_g[16i](16i,16i,16i)
+; f0b_g[16i](16i,16i,16i)[59] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x48,0x0f,0xbf,0xca,0xe8,0x64,0xdf,0xfe,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13522,7 +13522,7 @@
 000dh not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000fh movsx rdi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f9}
 0013h movsx rcx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf ca}
-0017h call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 24 df fe ff}
+0017h call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 64 df fe ff}
 001ch movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0020h movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0024h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -13535,7 +13535,7 @@
 0039h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 003ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0b<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0b#f0b_g[32u](32u,32u,32u)
+; uint f0b<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0b#f0b_g[32u](32u,32u,32u)
 ; f0b_g[32u](32u,32u,32u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xf7,0xd2,0x41,0x0b,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13546,8 +13546,8 @@
 000eh and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0010h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0b<int>(int a, int b, int c), hex://logix/ScalarOps?f0b#f0b_g[32i](32i,32i,32i)
-; f0b_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x8b,0xf9,0xf7,0xd7,0x8b,0xca,0xe8,0x6c,0xdf,0xfe,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; int f0b<int>(int a, int b, int c), hex://logix/scalar.ops?f0b#f0b_g[32i](32i,32i,32i)
+; f0b_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x41,0x8b,0xf0,0x8b,0xf9,0xf7,0xd7,0x8b,0xca,0xe8,0xac,0xdf,0xfe,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13556,7 +13556,7 @@
 0009h mov edi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f9}
 000bh not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
 000dh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000fh call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 6c df fe ff}
+000fh call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ac df fe ff}
 0014h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0016h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0018h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -13564,7 +13564,7 @@
 001dh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0b<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0b#f0b_g[64u](64u,64u,64u)
+; ulong f0b<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0b#f0b_g[64u](64u,64u,64u)
 ; f0b_g[64u](64u,64u,64u)[21] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0xf7,0xd2,0x49,0x0b,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13575,8 +13575,8 @@
 0011h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0b<long>(long a, long b, long c), hex://logix/ScalarOps?f0b#f0b_g[64i](64i,64i,64i)
-; f0b_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x49,0x8b,0xf0,0x48,0x8b,0xf9,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0xc9,0xdf,0xfe,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; long f0b<long>(long a, long b, long c), hex://logix/scalar.ops?f0b#f0b_g[64i](64i,64i,64i)
+; f0b_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x49,0x8b,0xf0,0x48,0x8b,0xf9,0x48,0xf7,0xd7,0x48,0x8b,0xca,0xe8,0x09,0xe0,0xfe,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13585,7 +13585,7 @@
 0009h mov rdi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f9}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
 000fh mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
-0012h call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 c9 df fe ff}
+0012h call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 09 e0 fe ff}
 0017h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 001ah and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -13593,7 +13593,7 @@
 0022h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0c<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0c#f0c_g[8u](8u,8u,8u)
+; byte f0c<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0c#f0c_g[8u](8u,8u,8u)
 ; f0c_g[8u](8u,8u,8u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13605,7 +13605,7 @@
 0012h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0c#f0c_g[8i](8i,8i,8i)
+; sbyte f0c<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0c#f0c_g[8i](8i,8i,8i)
 ; f0c_g[8i](8i,8i,8i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13617,7 +13617,7 @@
 0015h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0c<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0c#f0c_g[16u](16u,16u,16u)
+; ushort f0c<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0c#f0c_g[16u](16u,16u,16u)
 ; f0c_g[16u](16u,16u,16u)[22] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13629,7 +13629,7 @@
 0012h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0015h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0c<short>(short a, short b, short c), hex://logix/ScalarOps?f0c#f0c_g[16i](16i,16i,16i)
+; short f0c<short>(short a, short b, short c), hex://logix/scalar.ops?f0c#f0c_g[16i](16i,16i,16i)
 ; f0c_g[16i](16i,16i,16i)[26] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13641,7 +13641,7 @@
 0015h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0c<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0c#f0c_g[32u](32u,32u,32u)
+; uint f0c<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0c#f0c_g[32u](32u,32u,32u)
 ; f0c_g[32u](32u,32u,32u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13650,7 +13650,7 @@
 0009h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0c<int>(int a, int b, int c), hex://logix/ScalarOps?f0c#f0c_g[32i](32i,32i,32i)
+; int f0c<int>(int a, int b, int c), hex://logix/scalar.ops?f0c#f0c_g[32i](32i,32i,32i)
 ; f0c_g[32i](32i,32i,32i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13659,7 +13659,7 @@
 0009h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0c<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0c#f0c_g[64u](64u,64u,64u)
+; ulong f0c<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0c#f0c_g[64u](64u,64u,64u)
 ; f0c_g[64u](64u,64u,64u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13668,7 +13668,7 @@
 000bh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0c<long>(long a, long b, long c), hex://logix/ScalarOps?f0c#f0c_g[64i](64i,64i,64i)
+; long f0c<long>(long a, long b, long c), hex://logix/scalar.ops?f0c#f0c_g[64i](64i,64i,64i)
 ; f0c_g[64i](64i,64i,64i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13677,7 +13677,7 @@
 000bh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0d<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0d#f0d_g[8u](8u,8u,8u)
+; byte f0d<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0d#f0d_g[8u](8u,8u,8u)
 ; f0d_g[8u](8u,8u,8u)[43] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x41,0x0f,0xb6,0xc8,0x81,0xf1,0xff,0x00,0x00,0x00,0x0f,0xb6,0xc9,0x0f,0xb6,0xd2,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13695,8 +13695,8 @@
 0027h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 002ah ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0d#f0d_g[8i](8i,8i,8i)
-; f0d_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x49,0x0f,0xbe,0xc8,0xe8,0x65,0xd7,0xfe,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; sbyte f0d<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0d#f0d_g[8i](8i,8i,8i)
+; f0d_g[8i](8i,8i,8i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x48,0x0f,0xbe,0xc9,0xf7,0xd1,0x48,0x0f,0xbe,0xf9,0x49,0x0f,0xbe,0xc8,0xe8,0xb5,0xd7,0xfe,0xff,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd6,0x0b,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd7,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13706,7 +13706,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be f9}
 0012h movsx rcx,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{49 0f be c8}
-0016h call 7ff7c8613220h                      ; CALL rel32 || E8 cd || encoded[5]{e8 65 d7 fe ff}
+0016h call 7ff7c8634ef0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b5 d7 fe ff}
 001bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 001fh movsx rdx,sil                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -13719,7 +13719,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0d<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0d#f0d_g[16u](16u,16u,16u)
+; ushort f0d<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0d#f0d_g[16u](16u,16u,16u)
 ; f0d_g[16u](16u,16u,16u)[53] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x41,0x0f,0xb7,0xc8,0x81,0xf1,0xff,0xff,0x00,0x00,0x89,0x4c,0x24,0x04,0x0f,0xb7,0x4c,0x24,0x04,0x0f,0xb7,0xd2,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0x48,0x83,0xc4,0x08,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
@@ -13740,8 +13740,8 @@
 0030h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
 0034h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0d<short>(short a, short b, short c), hex://logix/ScalarOps?f0d#f0d_g[16i](16i,16i,16i)
-; f0d_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x49,0x0f,0xbf,0xc8,0xe8,0xa5,0xd7,0xfe,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; short f0d<short>(short a, short b, short c), hex://logix/scalar.ops?f0d#f0d_g[16i](16i,16i,16i)
+; f0d_g[16i](16i,16i,16i)[58] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x48,0x0f,0xbf,0xc9,0xf7,0xd1,0x48,0x0f,0xbf,0xf9,0x49,0x0f,0xbf,0xc8,0xe8,0xf5,0xd7,0xfe,0xff,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd6,0x0b,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd7,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13751,7 +13751,7 @@
 000ch not ecx                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d1}
 000eh movsx rdi,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf f9}
 0012h movsx rcx,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{49 0f bf c8}
-0016h call 7ff7c8613310h                      ; CALL rel32 || E8 cd || encoded[5]{e8 a5 d7 fe ff}
+0016h call 7ff7c8634fe0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 f5 d7 fe ff}
 001bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 001fh movsx rdx,si                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d6}
 0023h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
@@ -13764,7 +13764,7 @@
 0038h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0039h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0d<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0d#f0d_g[32u](32u,32u,32u)
+; uint f0d<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0d#f0d_g[32u](32u,32u,32u)
 ; f0d_g[32u](32u,32u,32u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x8b,0xc8,0xf7,0xd1,0x0b,0xd1,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13776,8 +13776,8 @@
 0010h and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0d<int>(int a, int b, int c), hex://logix/ScalarOps?f0d#f0d_g[32i](32i,32i,32i)
-; f0d_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x8b,0xf9,0xf7,0xd7,0x41,0x8b,0xc8,0xe8,0xec,0xd7,0xfe,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; int f0d<int>(int a, int b, int c), hex://logix/scalar.ops?f0d#f0d_g[32i](32i,32i,32i)
+; f0d_g[32i](32i,32i,32i)[31] = {0x57,0x56,0x48,0x83,0xec,0x28,0x8b,0xf2,0x8b,0xf9,0xf7,0xd7,0x41,0x8b,0xc8,0xe8,0x3c,0xd8,0xfe,0xff,0x0b,0xc6,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13786,7 +13786,7 @@
 0008h mov edi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f9}
 000ah not edi                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d7}
 000ch mov ecx,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c8}
-000fh call 7ff7c86133e0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 ec d7 fe ff}
+000fh call 7ff7c86350b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c d8 fe ff}
 0014h or eax,esi                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c6}
 0016h and eax,edi                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c7}
 0018h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -13794,7 +13794,7 @@
 001dh pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0d<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0d#f0d_g[64u](64u,64u,64u)
+; ulong f0d<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0d#f0d_g[64u](64u,64u,64u)
 ; f0d_g[64u](64u,64u,64u)[24] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x8b,0xc8,0x48,0xf7,0xd1,0x48,0x0b,0xd1,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13806,8 +13806,8 @@
 0014h and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0017h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0d<long>(long a, long b, long c), hex://logix/ScalarOps?f0d#f0d_g[64i](64i,64i,64i)
-; f0d_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf2,0x48,0x8b,0xf9,0x48,0xf7,0xd7,0x49,0x8b,0xc8,0xe8,0x49,0xd8,0xfe,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
+; long f0d<long>(long a, long b, long c), hex://logix/scalar.ops?f0d#f0d_g[64i](64i,64i,64i)
+; f0d_g[64i](64i,64i,64i)[36] = {0x57,0x56,0x48,0x83,0xec,0x28,0x48,0x8b,0xf2,0x48,0x8b,0xf9,0x48,0xf7,0xd7,0x49,0x8b,0xc8,0xe8,0x99,0xd8,0xfe,0xff,0x48,0x0b,0xc6,0x48,0x23,0xc7,0x48,0x83,0xc4,0x28,0x5e,0x5f,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h push rdi                                ; PUSH r64 || 50+ro || encoded[1]{57}
 0001h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
@@ -13816,7 +13816,7 @@
 0009h mov rdi,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b f9}
 000ch not rdi                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d7}
 000fh mov rcx,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c8}
-0012h call 7ff7c86134b0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 49 d8 fe ff}
+0012h call 7ff7c8635180h                      ; CALL rel32 || E8 cd || encoded[5]{e8 99 d8 fe ff}
 0017h or rax,rsi                              ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{48 0b c6}
 001ah and rax,rdi                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c7}
 001dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
@@ -13824,7 +13824,7 @@
 0022h pop rdi                                 ; POP r64 || 58+ro || encoded[1]{5f}
 0023h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0e<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0e#f0e_g[8u](8u,8u,8u)
+; byte f0e<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0e#f0e_g[8u](8u,8u,8u)
 ; f0e_g[8u](8u,8u,8u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0b,0xd1,0x0f,0xb6,0xd2,0x0f,0xb6,0xc0,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13840,7 +13840,7 @@
 001eh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0e#f0e_g[8i](8i,8i,8i)
+; sbyte f0e<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0e#f0e_g[8i](8i,8i,8i)
 ; f0e_g[8i](8i,8i,8i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0x48,0x0f,0xbe,0xd2,0x49,0x0f,0xbe,0xc8,0x0b,0xd1,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc0,0x23,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13856,7 +13856,7 @@
 0023h movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0e<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0e#f0e_g[16u](16u,16u,16u)
+; ushort f0e<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0e#f0e_g[16u](16u,16u,16u)
 ; f0e_g[16u](16u,16u,16u)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0x0f,0xb7,0xd2,0x41,0x0f,0xb7,0xc8,0x0b,0xd1,0x0f,0xb7,0xd2,0x0f,0xb7,0xc0,0x23,0xc2,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13872,7 +13872,7 @@
 001eh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 0021h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0e<short>(short a, short b, short c), hex://logix/ScalarOps?f0e#f0e_g[16i](16i,16i,16i)
+; short f0e<short>(short a, short b, short c), hex://logix/scalar.ops?f0e#f0e_g[16i](16i,16i,16i)
 ; f0e_g[16i](16i,16i,16i)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0x48,0x0f,0xbf,0xd2,0x49,0x0f,0xbf,0xc8,0x0b,0xd1,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc0,0x23,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13888,7 +13888,7 @@
 0023h movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0e<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0e#f0e_g[32u](32u,32u,32u)
+; uint f0e<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0e#f0e_g[32u](32u,32u,32u)
 ; f0e_g[32u](32u,32u,32u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x0b,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13898,7 +13898,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0e<int>(int a, int b, int c), hex://logix/ScalarOps?f0e#f0e_g[32i](32i,32i,32i)
+; int f0e<int>(int a, int b, int c), hex://logix/scalar.ops?f0e#f0e_g[32i](32i,32i,32i)
 ; f0e_g[32i](32i,32i,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0x41,0x0b,0xd0,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13908,7 +13908,7 @@
 000ch and eax,edx                             ; AND r32, r/m32 || o32 23 /r || encoded[2]{23 c2}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0e<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0e#f0e_g[64u](64u,64u,64u)
+; ulong f0e<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0e#f0e_g[64u](64u,64u,64u)
 ; f0e_g[64u](64u,64u,64u)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x0b,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13918,7 +13918,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0e<long>(long a, long b, long c), hex://logix/ScalarOps?f0e#f0e_g[64i](64i,64i,64i)
+; long f0e<long>(long a, long b, long c), hex://logix/scalar.ops?f0e#f0e_g[64i](64i,64i,64i)
 ; f0e_g[64i](64i,64i,64i)[18] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0x49,0x0b,0xd0,0x48,0x23,0xc2,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13928,7 +13928,7 @@
 000eh and rax,rdx                             ; AND r64, r/m64 || REX.W 23 /r || encoded[3]{48 23 c2}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte f0f<byte>(byte a, byte b, byte c), hex://logix/ScalarOps?f0f#f0f_g[8u](8u,8u,8u)
+; byte f0f<byte>(byte a, byte b, byte c), hex://logix/scalar.ops?f0f#f0f_g[8u](8u,8u,8u)
 ; f0f_g[8u](8u,8u,8u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0xf7,0xd0,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13937,7 +13937,7 @@
 000ah movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte f0f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/ScalarOps?f0f#f0f_g[8i](8i,8i,8i)
+; sbyte f0f<sbyte>(sbyte a, sbyte b, sbyte c), hex://logix/scalar.ops?f0f#f0f_g[8i](8i,8i,8i)
 ; f0f_g[8i](8i,8i,8i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0xf7,0xd0,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13946,7 +13946,7 @@
 000bh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ushort f0f<ushort>(ushort a, ushort b, ushort c), hex://logix/ScalarOps?f0f#f0f_g[16u](16u,16u,16u)
+; ushort f0f<ushort>(ushort a, ushort b, ushort c), hex://logix/scalar.ops?f0f#f0f_g[16u](16u,16u,16u)
 ; f0f_g[16u](16u,16u,16u)[14] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0xf7,0xd0,0x0f,0xb7,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13955,7 +13955,7 @@
 000ah movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
 000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short f0f<short>(short a, short b, short c), hex://logix/ScalarOps?f0f#f0f_g[16i](16i,16i,16i)
+; short f0f<short>(short a, short b, short c), hex://logix/scalar.ops?f0f#f0f_g[16i](16i,16i,16i)
 ; f0f_g[16i](16i,16i,16i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0xf7,0xd0,0x48,0x0f,0xbf,0xc0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13964,7 +13964,7 @@
 000bh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint f0f<uint>(uint a, uint b, uint c), hex://logix/ScalarOps?f0f#f0f_g[32u](32u,32u,32u)
+; uint f0f<uint>(uint a, uint b, uint c), hex://logix/scalar.ops?f0f#f0f_g[32u](32u,32u,32u)
 ; f0f_g[32u](32u,32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13972,7 +13972,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int f0f<int>(int a, int b, int c), hex://logix/ScalarOps?f0f#f0f_g[32i](32i,32i,32i)
+; int f0f<int>(int a, int b, int c), hex://logix/scalar.ops?f0f#f0f_g[32i](32i,32i,32i)
 ; f0f_g[32i](32i,32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13980,7 +13980,7 @@
 0007h not eax                                 ; NOT r/m32 || o32 F7 /2 || encoded[2]{f7 d0}
 0009h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong f0f<ulong>(ulong a, ulong b, ulong c), hex://logix/ScalarOps?f0f#f0f_g[64u](64u,64u,64u)
+; ulong f0f<ulong>(ulong a, ulong b, ulong c), hex://logix/scalar.ops?f0f#f0f_g[64u](64u,64u,64u)
 ; f0f_g[64u](64u,64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
@@ -13988,7 +13988,7 @@
 0008h not rax                                 ; NOT r/m64 || REX.W F7 /2 || encoded[3]{48 f7 d0}
 000bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long f0f<long>(long a, long b, long c), hex://logix/ScalarOps?f0f#f0f_g[64i](64i,64i,64i)
+; long f0f<long>(long a, long b, long c), hex://logix/scalar.ops?f0f#f0f_g[64i](64i,64i,64i)
 ; f0f_g[64i](64i,64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x48,0xf7,0xd0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
