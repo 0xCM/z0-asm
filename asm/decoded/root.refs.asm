@@ -1751,6 +1751,310 @@
 000bh lea rax,[rax+rdx*8]                     ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 04 d0}
 000fh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
+; ref int head<int>(Int32[] src), hex://root/refs?head#head_g[32i]()
+; head_g[32i]()[255] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x47,0x98,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x58,0xa9,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x17,0x98,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0xc0,0xa9,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xe7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x28,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xb7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x90,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x87,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x38,0xac,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 47 98 cc 5e}
+0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
+001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0027h add [rax-57h],bl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 58 a9}
+002ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+002eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0030h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0034h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0035h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0039h jbe short 0044h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+003bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+003fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0043h ret                                     ; RET || C3 || encoded[1]{c3}
+0044h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 98 cc 5e}
+0049h int 3                                   ; INT3 || CC || encoded[1]{cc}
+004ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+004ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+004fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0052h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0054h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0057h add al,al                               ; ADD r/m8, r8 || 00 /r || encoded[2]{00 c0}
+0059h test eax,7ff7c8c5h                      ; TEST EAX, imm32 || o32 A9 id || encoded[5]{a9 c5 c8 f7 7f}
+005eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0060h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0064h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0065h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0069h jbe short 0074h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+006bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+006fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0073h ret                                     ; RET || C3 || encoded[1]{c3}
+0074h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 97 cc 5e}
+0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
+007ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+007ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+007fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0082h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0084h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0087h add [rax],ch                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 28}
+0089h stosb                                   ; STOSB || AA || encoded[1]{aa}
+008ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+008eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0090h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0094h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0095h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0099h jbe short 00a4h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+009bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+009fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+00a3h ret                                     ; RET || C3 || encoded[1]{c3}
+00a4h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 97 cc 5e}
+00a9h int 3                                   ; INT3 || CC || encoded[1]{cc}
+00aah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00ach sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+00afh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+00b2h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00b4h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+00b7h add [rax-8373a56h],dl                   ; ADD r/m8, r8 || 00 /r || encoded[6]{00 90 aa c5 c8 f7}
+00bdh jg short 00bfh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
+00bfh add [rax-7dh],cl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 48 83}
+00c2h in al,dx                                ; IN AL, DX || EC || encoded[1]{ec}
+00c3h sub [rax+87983h],dl                     ; SUB r/m8, r8 || 28 /r || encoded[6]{28 90 83 79 08 00}
+00c9h jbe short 00d4h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+00cbh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+00cfh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+00d3h ret                                     ; RET || C3 || encoded[1]{c3}
+00d4h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 97 cc 5e}
+00d9h int 3                                   ; INT3 || CC || encoded[1]{cc}
+00dah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00dch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+00dfh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+00e2h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00e4h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+00e7h add [rax],bh                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 38}
+00e9h lodsb                                   ; LODSB || AC || encoded[1]{ac}
+00eah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+00eeh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00f0h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+00f5h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
+00f8h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
+00fbh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
+00feh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ref ulong head<ulong>(UInt64[] src), hex://root/refs?head#head_g[64u]()
+; head_g[64u]()[207] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x17,0x98,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0xc0,0xa9,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xe7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x28,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xb7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x90,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x87,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x38,0xac,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 17 98 cc 5e}
+0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
+001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0027h add al,al                               ; ADD r/m8, r8 || 00 /r || encoded[2]{00 c0}
+0029h test eax,7ff7c8c5h                      ; TEST EAX, imm32 || o32 A9 id || encoded[5]{a9 c5 c8 f7 7f}
+002eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0030h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0034h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0035h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0039h jbe short 0044h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+003bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+003fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0043h ret                                     ; RET || C3 || encoded[1]{c3}
+0044h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 97 cc 5e}
+0049h int 3                                   ; INT3 || CC || encoded[1]{cc}
+004ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+004ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+004fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0052h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0054h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0057h add [rax],ch                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 28}
+0059h stosb                                   ; STOSB || AA || encoded[1]{aa}
+005ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+005eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0060h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0064h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0065h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0069h jbe short 0074h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+006bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+006fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0073h ret                                     ; RET || C3 || encoded[1]{c3}
+0074h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 97 cc 5e}
+0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
+007ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+007ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+007fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0082h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0084h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0087h add [rax-8373a56h],dl                   ; ADD r/m8, r8 || 00 /r || encoded[6]{00 90 aa c5 c8 f7}
+008dh jg short 008fh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
+008fh add [rax-7dh],cl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 48 83}
+0092h in al,dx                                ; IN AL, DX || EC || encoded[1]{ec}
+0093h sub [rax+87983h],dl                     ; SUB r/m8, r8 || 28 /r || encoded[6]{28 90 83 79 08 00}
+0099h jbe short 00a4h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+009bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+009fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+00a3h ret                                     ; RET || C3 || encoded[1]{c3}
+00a4h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 97 cc 5e}
+00a9h int 3                                   ; INT3 || CC || encoded[1]{cc}
+00aah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00ach sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+00afh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+00b2h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00b4h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+00b7h add [rax],bh                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 38}
+00b9h lodsb                                   ; LODSB || AC || encoded[1]{ac}
+00bah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+00beh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+00c0h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+00c5h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
+00c8h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
+00cbh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
+00ceh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ref long head<long>(Int64[] src), hex://root/refs?head#head_g[64i]()
+; head_g[64i]()[159] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xe7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x28,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xb7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x90,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x87,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x38,0xac,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e7 97 cc 5e}
+0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
+001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0027h add [rax],ch                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 28}
+0029h stosb                                   ; STOSB || AA || encoded[1]{aa}
+002ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+002eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0030h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0034h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0035h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0039h jbe short 0044h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+003bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+003fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0043h ret                                     ; RET || C3 || encoded[1]{c3}
+0044h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 97 cc 5e}
+0049h int 3                                   ; INT3 || CC || encoded[1]{cc}
+004ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+004ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+004fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0052h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0054h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0057h add [rax-8373a56h],dl                   ; ADD r/m8, r8 || 00 /r || encoded[6]{00 90 aa c5 c8 f7}
+005dh jg short 005fh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
+005fh add [rax-7dh],cl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 48 83}
+0062h in al,dx                                ; IN AL, DX || EC || encoded[1]{ec}
+0063h sub [rax+87983h],dl                     ; SUB r/m8, r8 || 28 /r || encoded[6]{28 90 83 79 08 00}
+0069h jbe short 0074h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+006bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+006fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0073h ret                                     ; RET || C3 || encoded[1]{c3}
+0074h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 97 cc 5e}
+0079h int 3                                   ; INT3 || CC || encoded[1]{cc}
+007ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+007ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+007fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0082h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0084h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0087h add [rax],bh                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 38}
+0089h lodsb                                   ; LODSB || AC || encoded[1]{ac}
+008ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+008eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0090h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0095h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
+0098h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
+009bh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
+009eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ref float head<float>(Single[] src), hex://root/refs?head#head_g[32f]()
+; head_g[32f]()[111] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0xb7,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x90,0xaa,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x87,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x38,0xac,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 b7 97 cc 5e}
+0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
+001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0027h add [rax-8373a56h],dl                   ; ADD r/m8, r8 || 00 /r || encoded[6]{00 90 aa c5 c8 f7}
+002dh jg short 002fh                          ; JG rel8 || 7F cb || encoded[2]{7f 00}
+002fh add [rax-7dh],cl                        ; ADD r/m8, r8 || 00 /r || encoded[3]{00 48 83}
+0032h in al,dx                                ; IN AL, DX || EC || encoded[1]{ec}
+0033h sub [rax+87983h],dl                     ; SUB r/m8, r8 || 28 /r || encoded[6]{28 90 83 79 08 00}
+0039h jbe short 0044h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+003bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+003fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0043h ret                                     ; RET || C3 || encoded[1]{c3}
+0044h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 97 cc 5e}
+0049h int 3                                   ; INT3 || CC || encoded[1]{cc}
+004ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+004ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+004fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0052h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0054h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0057h add [rax],bh                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 38}
+0059h lodsb                                   ; LODSB || AC || encoded[1]{ac}
+005ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+005eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0060h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0065h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
+0068h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
+006bh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
+006eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ref double head<double>(Double[] src), hex://root/refs?head#head_g[64f]()
+; head_g[64f]()[63] = {0x48,0x83,0xec,0x28,0x90,0x83,0x79,0x08,0x00,0x76,0x09,0x48,0x8d,0x41,0x10,0x48,0x83,0xc4,0x28,0xc3,0xe8,0x87,0x97,0xcc,0x5e,0xcc,0x00,0x00,0x19,0x04,0x01,0x00,0x04,0x42,0x00,0x00,0x40,0x00,0x00,0x00,0x38,0xac,0xc5,0xc8,0xf7,0x7f,0x00,0x00,0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h cmp dword ptr [rcx+8],0                 ; CMP r/m32, imm8 || o32 83 /7 ib || encoded[4]{83 79 08 00}
+0009h jbe short 0014h                         ; JBE rel8 || 76 cb || encoded[2]{76 09}
+000bh lea rax,[rcx+10h]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{48 8d 41 10}
+000fh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0014h call 7ff82738fdd0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 87 97 cc 5e}
+0019h int 3                                   ; INT3 || CC || encoded[1]{cc}
+001ah add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+001ch sbb [rcx+rax],eax                       ; SBB r/m32, r32 || o32 19 /r || encoded[3]{19 04 01}
+001fh add [rdx+rax*2],al                      ; ADD r/m8, r8 || 00 /r || encoded[3]{00 04 42}
+0022h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0024h add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[3]{40 00 00}
+0027h add [rax],bh                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 38}
+0029h lodsb                                   ; LODSB || AC || encoded[1]{ac}
+002ah (bad)                                   ; <invalid> || <invalid> || encoded[4]{c5 c8 f7 7f}
+002eh add [rax],al                            ; ADD r/m8, r8 || 00 /r || encoded[2]{00 00}
+0030h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0035h mov rax,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 01}
+0038h movsxd rdx,edx                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{48 63 d2}
+003bh add rax,rdx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{48 03 c2}
+003eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
 ; ref byte seek<byte>(Span<byte> src, int count), hex://root/refs?seek#seek_g[8u](span8u,32i)
 ; seek_g[8u](span8u,32i)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x01,0x48,0x63,0xd2,0x48,0x03,0xc2,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
