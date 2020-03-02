@@ -1,97 +1,4 @@
 ------------------------------------------------------------------------------------------------------------------------
-; ulong project(ulong src, ulong spec), hex://bitcore/bits?project#project_(64u,64u)
-; project_(64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf3,0xf5,0xc2,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h pdep rax,rcx,rdx                        ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 e2 f3 f5 c2}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong select(ulong src, ulong spec), hex://bitcore/bits?select#select_(64u,64u)
-; select_(64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf2,0xf5,0xc2,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h pext rax,rcx,rdx                        ; PEXT r64a, r64b, r/m64 || VEX.LZ.F3.0F38.W1 F5 /r || encoded[5]{c4 e2 f2 f5 c2}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte setif(byte src, int srcpos, byte dst, int dstpos), hex://bitcore/bits?setif#setif_(8u,32i,8u,32i)
-; setif_(8u,32i,8u,32i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x19,0x41,0x0f,0xb6,0xc0,0x41,0xb8,0x01,0x00,0x00,0x00,0x8b,0xca,0x41,0xd3,0xe0,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3,0x41,0x0f,0xb6,0xc0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
-0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000ah shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
-000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
-000fh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0011h je short 002ch                          ; JE rel8 || 74 cb || encoded[2]{74 19}
-0013h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
-0017h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
-001dh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-001fh shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
-0022h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
-0026h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
-0028h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
-002bh ret                                     ; RET || C3 || encoded[1]{c3}
-002ch movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
-0030h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort setif(ushort src, int srcpos, ushort dst, int dstpos), hex://bitcore/bits?setif#setif_(16u,32i,16u,32i)
-; setif_(16u,32i,16u,32i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x1a,0x41,0x0f,0xb7,0xc0,0x41,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0x41,0xd3,0xe0,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3,0x41,0x0f,0xb7,0xc0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
-0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000ah shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
-000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
-000fh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0011h je short 002dh                          ; JE rel8 || 74 cb || encoded[2]{74 1a}
-0013h movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
-0017h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
-001dh mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
-0020h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
-0023h movzx edx,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 d0}
-0027h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
-0029h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
-002ch ret                                     ; RET || C3 || encoded[1]{c3}
-002dh movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
-0031h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint setif(uint src, int srcpos, uint dst, int dstpos), hex://bitcore/bits?setif#setif_(32u,32i,32u,32i)
-; setif_(32u,32i,32u,32i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x0e,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0xd3,0xe0,0x41,0x0b,0xc0,0xc3,0x41,0x8b,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
-0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-0009h shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
-000bh and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
-000eh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
-0010h je short 0020h                          ; JE rel8 || 74 cb || encoded[2]{74 0e}
-0012h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-0017h mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
-001ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-001ch or eax,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c0}
-001fh ret                                     ; RET || C3 || encoded[1]{c3}
-0020h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
-0023h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong setif(ulong src, int srcpos, ulong dst, int dstpos), hex://bitcore/bits?setif#setif_(64u,32i,64u,32i)
-; setif_(64u,32i,64u,32i)[41] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x8b,0xca,0x48,0xd3,0xe8,0x8b,0xc8,0x83,0xe1,0x01,0x85,0xc9,0x74,0x0f,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0x48,0xd3,0xe0,0x49,0x0b,0xc0,0xc3,0x49,0x8b,0xc0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
-000ah shr rax,cl                              ; SHR r/m64, CL || REX.W D3 /5 || encoded[3]{48 d3 e8}
-000dh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
-000fh and ecx,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e1 01}
-0012h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0014h je short 0025h                          ; JE rel8 || 74 cb || encoded[2]{74 0f}
-0016h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-001bh mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
-001eh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
-0021h or rax,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c0}
-0024h ret                                     ; RET || C3 || encoded[1]{c3}
-0025h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
-0028h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; void split(ushort src, out byte x0, out byte x1), hex://bitcore/bits?split#split_(16u,8u~out,8u~out)
 ; split_(16u,8u~out,8u~out)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x88,0x0a,0x0f,0xb7,0xc1,0xc1,0xf8,0x08,0x41,0x88,0x00,0xc3}
 ; TermCode = CTC_RET_Zx3
@@ -2164,6 +2071,99 @@
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
 0005h pext eax,ecx,edx                        ; PEXT r32a, r32b, r/m32 || VEX.LZ.F3.0F38.W0 F5 /r || encoded[5]{c4 e2 72 f5 c2}
 000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong project(ulong src, ulong spec), hex://bitcore/bits?project#project_(64u,64u)
+; project_(64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf3,0xf5,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h pdep rax,rcx,rdx                        ; PDEP r64a, r64b, r/m64 || VEX.LZ.F2.0F38.W1 F5 /r || encoded[5]{c4 e2 f3 f5 c2}
+000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong select(ulong src, ulong spec), hex://bitcore/bits?select#select_(64u,64u)
+; select_(64u,64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xc4,0xe2,0xf2,0xf5,0xc2,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h pext rax,rcx,rdx                        ; PEXT r64a, r64b, r/m64 || VEX.LZ.F3.0F38.W1 F5 /r || encoded[5]{c4 e2 f2 f5 c2}
+000ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; byte setif(byte src, int srcpos, byte dst, int dstpos), hex://bitcore/bits?setif#setif_(8u,32i,8u,32i)
+; setif_(8u,32i,8u,32i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x19,0x41,0x0f,0xb6,0xc0,0x41,0xb8,0x01,0x00,0x00,0x00,0x8b,0xca,0x41,0xd3,0xe0,0x41,0x0f,0xb6,0xd0,0x0b,0xc2,0x0f,0xb6,0xc0,0xc3,0x41,0x0f,0xb6,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
+0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+000ah shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
+000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
+000fh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0011h je short 002ch                          ; JE rel8 || 74 cb || encoded[2]{74 19}
+0013h movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
+0017h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+001dh mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+001fh shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0022h movzx edx,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 d0}
+0026h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+0028h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+002bh ret                                     ; RET || C3 || encoded[1]{c3}
+002ch movzx eax,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{41 0f b6 c0}
+0030h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort setif(ushort src, int srcpos, ushort dst, int dstpos), hex://bitcore/bits?setif#setif_(16u,32i,16u,32i)
+; setif_(16u,32i,16u,32i)[50] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x1a,0x41,0x0f,0xb7,0xc0,0x41,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0x41,0xd3,0xe0,0x41,0x0f,0xb7,0xd0,0x0b,0xc2,0x0f,0xb7,0xc0,0xc3,0x41,0x0f,0xb7,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
+0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+000ah shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
+000ch and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
+000fh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0011h je short 002dh                          ; JE rel8 || 74 cb || encoded[2]{74 1a}
+0013h movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
+0017h mov r8d,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[6]{41 b8 01 00 00 00}
+001dh mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
+0020h shl r8d,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[3]{41 d3 e0}
+0023h movzx edx,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 d0}
+0027h or eax,edx                              ; OR r32, r/m32 || o32 0B /r || encoded[2]{0b c2}
+0029h movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+002ch ret                                     ; RET || C3 || encoded[1]{c3}
+002dh movzx eax,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{41 0f b7 c0}
+0031h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint setif(uint src, int srcpos, uint dst, int dstpos), hex://bitcore/bits?setif#setif_(32u,32i,32u,32i)
+; setif_(32u,32i,32u,32i)[36] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x8b,0xca,0xd3,0xe8,0x83,0xe0,0x01,0x85,0xc0,0x74,0x0e,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0xd3,0xe0,0x41,0x0b,0xc0,0xc3,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0007h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+0009h shr eax,cl                              ; SHR r/m32, CL || o32 D3 /5 || encoded[2]{d3 e8}
+000bh and eax,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e0 01}
+000eh test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0010h je short 0020h                          ; JE rel8 || 74 cb || encoded[2]{74 0e}
+0012h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
+0017h mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
+001ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+001ch or eax,r8d                              ; OR r32, r/m32 || o32 0B /r || encoded[3]{41 0b c0}
+001fh ret                                     ; RET || C3 || encoded[1]{c3}
+0020h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0023h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong setif(ulong src, int srcpos, ulong dst, int dstpos), hex://bitcore/bits?setif#setif_(64u,32i,64u,32i)
+; setif_(64u,32i,64u,32i)[41] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x8b,0xca,0x48,0xd3,0xe8,0x8b,0xc8,0x83,0xe1,0x01,0x85,0xc9,0x74,0x0f,0xb8,0x01,0x00,0x00,0x00,0x41,0x8b,0xc9,0x48,0xd3,0xe0,0x49,0x0b,0xc0,0xc3,0x49,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0008h mov ecx,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b ca}
+000ah shr rax,cl                              ; SHR r/m64, CL || REX.W D3 /5 || encoded[3]{48 d3 e8}
+000dh mov ecx,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c8}
+000fh and ecx,1                               ; AND r/m32, imm8 || o32 83 /4 ib || encoded[3]{83 e1 01}
+0012h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0014h je short 0025h                          ; JE rel8 || 74 cb || encoded[2]{74 0f}
+0016h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
+001bh mov ecx,r9d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c9}
+001eh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
+0021h or rax,r8                               ; OR r64, r/m64 || REX.W 0B /r || encoded[3]{49 0b c0}
+0024h ret                                     ; RET || C3 || encoded[1]{c3}
+0025h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
+0028h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; ConstPair<byte> split(ushort src, N2 n), hex://bitcore/bits?split#split_(16u,n2)
 ; split_(16u,n2)[49] = {0x50,0x0f,0x1f,0x40,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xd0,0xc1,0xf8,0x08,0x0f,0xb6,0xc0,0xc6,0x04,0x24,0x00,0xc6,0x44,0x24,0x01,0x00,0x0f,0xb6,0xd2,0x88,0x14,0x24,0x0f,0xb6,0xc0,0x88,0x44,0x24,0x01,0x48,0x0f,0xbf,0x04,0x24,0x48,0x83,0xc4,0x08,0xc3}

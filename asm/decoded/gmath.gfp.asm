@@ -205,21 +205,21 @@
 0018h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Sign:int signum<float>(float src), hex://gmath/gfp?signum#signum_g[32f](32f)
-; signum_g[32f](32f)[18] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xe8,0x3c,0x1f,0x6a,0xff,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; signum_g[32f](32f)[18] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xe8,0xdc,0xaa,0x6c,0xff,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0007h call 7ff7c7abb878h                      ; CALL rel32 || E8 cd || encoded[5]{e8 3c 1f 6a ff}
+0007h call 7ff7c7adb518h                      ; CALL rel32 || E8 cd || encoded[5]{e8 dc aa 6c ff}
 000ch nop                                     ; NOP || o32 90 || encoded[1]{90}
 000dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; Sign:int signum<double>(double src), hex://gmath/gfp?signum#signum_g[64f](64f)
-; signum_g[64f](64f)[18] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xe8,0xe4,0x1e,0x6a,0xff,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; signum_g[64f](64f)[18] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xe8,0x84,0xaa,0x6c,0xff,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0007h call 7ff7c7abb850h                      ; CALL rel32 || E8 cd || encoded[5]{e8 e4 1e 6a ff}
+0007h call 7ff7c7adb4f0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 84 aa 6c ff}
 000ch nop                                     ; NOP || o32 90 || encoded[1]{90}
 000dh add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0011h ret                                     ; RET || C3 || encoded[1]{c3}
