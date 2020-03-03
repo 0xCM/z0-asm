@@ -1,824 +1,4 @@
 ------------------------------------------------------------------------------------------------------------------------
-; void decrements<byte>(int count, ref byte dst), hex://gmath/gmath?decrements#decrements_g[8u](32i,8u~ref)
-; decrements_g[8u](32i,8u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x44,0x0f,0xb6,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
-0011h movzx r9d,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c8}
-0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<sbyte>(int count, ref sbyte dst), hex://gmath/gmath?decrements#decrements_g[8i](32i,8i~ref)
-; decrements_g[8i](32i,8i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x4c,0x0f,0xbe,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
-0011h movsx r9,al                             ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c8}
-0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<ushort>(int count, ref ushort dst), hex://gmath/gmath?decrements#decrements_g[16u](32i,16u~ref)
-; decrements_g[16u](32i,16u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x44,0x0f,0xb7,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
-0012h movzx r9d,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c8}
-0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
-001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0020h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<short>(int count, ref short dst), hex://gmath/gmath?decrements#decrements_g[16i](32i,16i~ref)
-; decrements_g[16i](32i,16i~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x4c,0x0f,0xbf,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
-0012h movsx r9,ax                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c8}
-0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
-001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0020h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<uint>(int count, ref uint dst), hex://gmath/gmath?decrements#decrements_g[32u](32i,32u~ref)
-; decrements_g[32u](32i,32u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
-0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
-0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<int>(int count, ref int dst), hex://gmath/gmath?decrements#decrements_g[32i](32i,32i~ref)
-; decrements_g[32i](32i,32i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
-0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
-0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<ulong>(int count, ref ulong dst), hex://gmath/gmath?decrements#decrements_g[64u](32i,64u~ref)
-; decrements_g[64u](32i,64u~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
-0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
-0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
-001bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<long>(int count, ref long dst), hex://gmath/gmath?decrements#decrements_g[64i](32i,64i~ref)
-; decrements_g[64i](32i,64i~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
-0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
-0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
-001bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<byte>(byte first, int count, ref byte dst), hex://gmath/gmath?decrements#decrements_g[8u](8u,32i,8u~ref)
-; decrements_g[8u](8u,32i,8u~ref)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x20,0x0f,0xb6,0xc9,0x4c,0x63,0xc8,0x4d,0x03,0xc8,0x44,0x0f,0xb6,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x0f,0xb6,0xd3,0x45,0x88,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe3,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 002bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 20}
-000bh movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
-000eh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-0011h add r9,r8                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c8}
-0014h movzx r10d,al                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 d0}
-0018h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-001bh sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-001eh movzx r10d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 d3}
-0022h mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
-0025h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0027h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-0029h jl short 000eh                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
-002bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<sbyte>(sbyte first, int count, ref sbyte dst), hex://gmath/gmath?decrements#decrements_g[8i](8i,32i,8i~ref)
-; decrements_g[8i](8i,32i,8i~ref)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x21,0x48,0x0f,0xbe,0xc9,0x4c,0x63,0xc8,0x4d,0x03,0xc8,0x4c,0x0f,0xbe,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x4d,0x0f,0xbe,0xd3,0x45,0x88,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe3,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 002ch                         ; JLE rel8 || 7E cb || encoded[2]{7e 21}
-000bh movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
-000fh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-0012h add r9,r8                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c8}
-0015h movsx r10,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be d0}
-0019h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-001ch sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-001fh movsx r10,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be d3}
-0023h mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
-0026h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0028h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-002ah jl short 000fh                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
-002ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<ushort>(ushort first, int count, ref ushort dst), hex://gmath/gmath?decrements#decrements_g[16u](16u,32i,16u~ref)
-; decrements_g[16u](16u,32i,16u~ref)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x22,0x0f,0xb7,0xc9,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x48,0x44,0x0f,0xb7,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x0f,0xb7,0xd3,0x66,0x45,0x89,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 002dh                         ; JLE rel8 || 7E cb || encoded[2]{7e 22}
-000bh movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
-000eh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-0011h lea r9,[r8+r9*2]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 48}
-0015h movzx r10d,ax                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 d0}
-0019h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-001ch sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-001fh movzx r10d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 d3}
-0023h mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
-0027h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0029h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-002bh jl short 000eh                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
-002dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<short>(short first, int count, ref short dst), hex://gmath/gmath?decrements#decrements_g[16i](16i,32i,16i~ref)
-; decrements_g[16i](16i,32i,16i~ref)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x23,0x48,0x0f,0xbf,0xc9,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x48,0x4c,0x0f,0xbf,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x4d,0x0f,0xbf,0xd3,0x66,0x45,0x89,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe1,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 002eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 23}
-000bh movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
-000fh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-0012h lea r9,[r8+r9*2]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 48}
-0016h movsx r10,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf d0}
-001ah mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-001dh sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-0020h movsx r10,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf d3}
-0024h mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
-0028h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-002ah cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-002ch jl short 000fh                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
-002eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<uint>(uint first, int count, ref uint dst), hex://gmath/gmath?decrements#decrements_g[32u](32u,32i,32u~ref)
-; decrements_g[32u](32u,32i,32u~ref)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x19,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x88,0x44,0x8b,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x89,0x19,0xff,0xc0,0x3b,0xc2,0x7c,0xe7,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 19}
-000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-000eh lea r9,[r8+r9*4]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 88}
-0012h mov r10d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d0}
-0015h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-0018h sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-001bh mov [r9],r11d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 19}
-001eh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0020h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-0022h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c e7}
-0024h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<int>(int first, int count, ref int dst), hex://gmath/gmath?decrements#decrements_g[32i](32i,32i,32i~ref)
-; decrements_g[32i](32i,32i,32i~ref)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x19,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x88,0x44,0x8b,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x89,0x19,0xff,0xc0,0x3b,0xc2,0x7c,0xe7,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 19}
-000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-000eh lea r9,[r8+r9*4]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 88}
-0012h mov r10d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d0}
-0015h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
-0018h sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
-001bh mov [r9],r11d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 19}
-001eh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0020h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-0022h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c e7}
-0024h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<ulong>(ulong first, int count, ref ulong dst), hex://gmath/gmath?decrements#decrements_g[64u](64u,32i,64u~ref)
-; decrements_g[64u](64u,32i,64u~ref)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x16,0x4c,0x63,0xc8,0x4f,0x8d,0x14,0xc8,0x4c,0x8b,0xd9,0x4d,0x2b,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x3b,0xc2,0x7c,0xea,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 0021h                         ; JLE rel8 || 7E cb || encoded[2]{7e 16}
-000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-000eh lea r10,[r8+r9*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 c8}
-0012h mov r11,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b d9}
-0015h sub r11,r9                              ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{4d 2b d9}
-0018h mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
-001bh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001dh cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-001fh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ea}
-0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void decrements<long>(long first, int count, ref long dst), hex://gmath/gmath?decrements#decrements_g[64i](64i,32i,64i~ref)
-; decrements_g[64i](64i,32i,64i~ref)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x16,0x4c,0x63,0xc8,0x4f,0x8d,0x14,0xc8,0x4c,0x8b,0xd9,0x4d,0x2b,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x3b,0xc2,0x7c,0xea,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0009h jle short 0021h                         ; JLE rel8 || 7E cb || encoded[2]{7e 16}
-000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
-000eh lea r10,[r8+r9*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 c8}
-0012h mov r11,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b d9}
-0015h sub r11,r9                              ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{4d 2b d9}
-0018h mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
-001bh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001dh cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
-001fh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ea}
-0021h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<byte>(int count, ref byte dst), hex://gmath/gmath?increments#increments_g[8u](32i,8u~ref)
-; increments_g[8u](32i,8u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x44,0x0f,0xb6,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
-0011h movzx r9d,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c8}
-0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<sbyte>(int count, ref sbyte dst), hex://gmath/gmath?increments#increments_g[8i](32i,8i~ref)
-; increments_g[8i](32i,8i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x4c,0x0f,0xbe,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
-0011h movsx r9,al                             ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c8}
-0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<ushort>(int count, ref ushort dst), hex://gmath/gmath?increments#increments_g[16u](32i,16u~ref)
-; increments_g[16u](32i,16u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x44,0x0f,0xb7,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
-0012h movzx r9d,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c8}
-0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
-001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0020h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<short>(int count, ref short dst), hex://gmath/gmath?increments#increments_g[16i](32i,16i~ref)
-; increments_g[16i](32i,16i~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x4c,0x0f,0xbf,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
-0012h movsx r9,ax                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c8}
-0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
-001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0020h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<uint>(int count, ref uint dst), hex://gmath/gmath?increments#increments_g[32u](32i,32u~ref)
-; increments_g[32u](32i,32u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
-0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
-0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<int>(int count, ref int dst), hex://gmath/gmath?increments#increments_g[32i](32i,32i~ref)
-; increments_g[32i](32i,32i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
-0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
-0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
-0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
-001eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<ulong>(int count, ref ulong dst), hex://gmath/gmath?increments#increments_g[64u](32i,64u~ref)
-; increments_g[64u](32i,64u~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
-0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
-0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
-001bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void increments<long>(int count, ref long dst), hex://gmath/gmath?increments#increments_g[64i](32i,64i~ref)
-; increments_g[64i](32i,64i~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
-0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
-000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
-000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
-0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
-0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
-0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
-001bh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<byte> increments<byte>(Span<byte> dst), hex://gmath/gmath?increments#increments_g[8u](span8u)
-; increments_g[8u](span8u)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4c,0x03,0xc8,0x45,0x0f,0xb6,0xd0,0x45,0x88,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h add r9,rax                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c8}
-0018h movzx r10d,r8b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 d0}
-001ch mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
-001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0030h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<sbyte> increments<sbyte>(Span<sbyte> dst), hex://gmath/gmath?increments#increments_g[8i](span8i)
-; increments_g[8i](span8i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4c,0x03,0xc8,0x4d,0x0f,0xbe,0xd0,0x45,0x88,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h add r9,rax                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c8}
-0018h movsx r10,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be d0}
-001ch mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
-001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0030h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<ushort> increments<ushort>(Span<ushort> dst), hex://gmath/gmath?increments#increments_g[16u](span16u)
-; increments_g[16u](span16u)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x17,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x48,0x45,0x0f,0xb7,0xd0,0x66,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xe9,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0029h                         ; JLE rel8 || 7E cb || encoded[2]{7e 17}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
-0019h movzx r10d,r8w                          ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 d0}
-001dh mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
-0021h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0024h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0027h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c e9}
-0029h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ch mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0032h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<short> increments<short>(Span<short> dst), hex://gmath/gmath?increments#increments_g[16i](span16i)
-; increments_g[16i](span16i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x17,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x48,0x4d,0x0f,0xbf,0xd0,0x66,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xe9,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0029h                         ; JLE rel8 || 7E cb || encoded[2]{7e 17}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
-0019h movsx r10,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf d0}
-001dh mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
-0021h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0024h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0027h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c e9}
-0029h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ch mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0032h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<uint> increments<uint>(Span<uint> dst), hex://gmath/gmath?increments#increments_g[32u](span32u)
-; increments_g[32u](span32u)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x88,0x45,0x8b,0xd0,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r9,[rax+r9*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 88}
-0019h mov r10d,r8d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d0}
-001ch mov [r9],r10d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 11}
-001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0030h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<int> increments<int>(Span<int> dst), hex://gmath/gmath?increments#increments_g[32i](span32i)
-; increments_g[32i](span32i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x88,0x45,0x8b,0xd0,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r9,[rax+r9*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 88}
-0019h mov r10d,r8d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d0}
-001ch mov [r9],r10d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 11}
-001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
-0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0030h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<ulong> increments<ulong>(Span<ulong> dst), hex://gmath/gmath?increments#increments_g[64u](span64u)
-; increments_g[64u](span64u)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x12,0x4d,0x63,0xc8,0x4e,0x8d,0x14,0xc8,0x4d,0x89,0x0a,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xee,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 12}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r10,[rax+r9*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 14 c8}
-0019h mov [r10],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0a}
-001ch inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-001fh cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0022h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c ee}
-0024h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-0027h mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-002dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; Span<long> increments<long>(Span<long> dst), hex://gmath/gmath?increments#increments_g[64i](span64i)
-; increments_g[64i](span64i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x12,0x4d,0x63,0xc8,0x4e,0x8d,0x14,0xc8,0x4d,0x89,0x0a,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xee,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
-0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
-000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
-000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
-0010h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 12}
-0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
-0015h lea r10,[rax+r9*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 14 c8}
-0019h mov [r10],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0a}
-001ch inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
-001fh cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
-0022h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c ee}
-0024h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
-0027h mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
-002ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-002dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<byte>(byte first, byte step, int count, ref byte dst), hex://gmath/gmath?steps#steps_g[8u](8u,8u,32i,8u~ref)
-; steps_g[8u](8u,8u,32i,8u~ref)[59] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2d,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x4c,0x63,0xd0,0x4d,0x03,0xd1,0x44,0x0f,0xb6,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x45,0x0f,0xb6,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x45,0x0f,0xb6,0xdb,0x45,0x88,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd9,0x5e,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 0039h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2d}
-000ch movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-000fh movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
-0012h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-0015h add r10,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 d1}
-0018h movzx r11d,al                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 d8}
-001ch mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
-001eh imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
-0022h movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
-0026h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
-0028h add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
-002bh movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
-002fh mov [r10],r11b                          ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 1a}
-0032h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0034h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0037h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c d9}
-0039h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-003ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst), hex://gmath/gmath?steps#steps_g[8i](8i,8i,32i,8i~ref)
-; steps_g[8i](8i,8i,32i,8i~ref)[61] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2f,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x4c,0x63,0xd0,0x4d,0x03,0xd1,0x4c,0x0f,0xbe,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x4d,0x0f,0xbe,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x4d,0x0f,0xbe,0xdb,0x45,0x88,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd9,0x5e,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 003bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 2f}
-000ch movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
-0010h movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
-0014h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-0017h add r10,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 d1}
-001ah movsx r11,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be d8}
-001eh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
-0020h imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
-0024h movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
-0028h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
-002ah add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
-002dh movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
-0031h mov [r10],r11b                          ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 1a}
-0034h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0036h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0039h jl short 0014h                          ; JL rel8 || 7C cb || encoded[2]{7c d9}
-003bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-003ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<ushort>(ushort first, ushort step, int count, ref ushort dst), hex://gmath/gmath?steps#steps_g[16u](16u,16u,32i,16u~ref)
-; steps_g[16u](16u,16u,32i,16u~ref)[61] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2f,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x51,0x44,0x0f,0xb7,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x45,0x0f,0xb7,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x45,0x0f,0xb7,0xdb,0x66,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd7,0x5e,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 003bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 2f}
-000ch movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
-000fh movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
-0012h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-0015h lea r10,[r9+r10*2]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 51}
-0019h movzx r11d,ax                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 d8}
-001dh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
-001fh imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
-0023h movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
-0027h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
-0029h add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
-002ch movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
-0030h mov [r10],r11w                          ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 1a}
-0034h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0036h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0039h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c d7}
-003bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-003ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<short>(short first, short step, int count, ref short dst), hex://gmath/gmath?steps#steps_g[16i](16i,16i,32i,16i~ref)
-; steps_g[16i](16i,16i,32i,16i~ref)[63] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x31,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x51,0x4c,0x0f,0xbf,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x4d,0x0f,0xbf,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x4d,0x0f,0xbf,0xdb,0x66,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd7,0x5e,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
-0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 003dh                         ; JLE rel8 || 7E cb || encoded[2]{7e 31}
-000ch movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
-0010h movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
-0014h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-0017h lea r10,[r9+r10*2]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 51}
-001bh movsx r11,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf d8}
-001fh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
-0021h imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
-0025h movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
-0029h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
-002bh add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
-002eh movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
-0032h mov [r10],r11w                          ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 1a}
-0036h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0038h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-003bh jl short 0014h                          ; JL rel8 || 7C cb || encoded[2]{7c d7}
-003dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
-003eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<uint>(uint first, uint step, int count, ref uint dst), hex://gmath/gmath?steps#steps_g[32u](32u,32u,32i,32u~ref)
-; steps_g[32u](32u,32u,32i,32u~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x91,0x44,0x8b,0xd8,0x44,0x0f,0xaf,0xda,0x44,0x03,0xd9,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
-000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-000fh lea r10,[r9+r10*4]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 91}
-0013h mov r11d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d8}
-0016h imul r11d,edx                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af da}
-001ah add r11d,ecx                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 d9}
-001dh mov [r10],r11d                          ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 1a}
-0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
-0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<int>(int first, int step, int count, ref int dst), hex://gmath/gmath?steps#steps_g[32i](32i,32i,32i,32i~ref)
-; steps_g[32i](32i,32i,32i,32i~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x91,0x44,0x8b,0xd8,0x44,0x0f,0xaf,0xda,0x44,0x03,0xd9,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
-000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-000fh lea r10,[r9+r10*4]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 91}
-0013h mov r11d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d8}
-0016h imul r11d,edx                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af da}
-001ah add r11d,ecx                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 d9}
-001dh mov [r10],r11d                          ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 1a}
-0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
-0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<ulong>(ulong first, ulong step, int count, ref ulong dst), hex://gmath/gmath?steps#steps_g[64u](64u,64u,32i,64u~ref)
-; steps_g[64u](64u,64u,32i,64u~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0xd1,0x4c,0x63,0xd8,0x4c,0x0f,0xaf,0xda,0x4c,0x03,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
-000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-000fh lea r10,[r9+r10*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 d1}
-0013h movsxd r11,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d8}
-0016h imul r11,rdx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4c 0f af da}
-001ah add r11,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 d9}
-001dh mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
-0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
-0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; void steps<long>(long first, long step, int count, ref long dst), hex://gmath/gmath?steps#steps_g[64i](64i,64i,32i,64i~ref)
-; steps_g[64i](64i,64i,32i,64i~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0xd1,0x4c,0x63,0xd8,0x4c,0x0f,0xaf,0xda,0x4c,0x03,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
-000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
-000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
-000fh lea r10,[r9+r10*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 d1}
-0013h movsxd r11,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d8}
-0016h imul r11,rdx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4c 0f af da}
-001ah add r11,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 d9}
-001dh mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
-0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
-0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
-0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
-0027h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte sll<byte>(byte a, byte count), hex://gmath/gmath?sll#sll_g[8u](8u,8u)
-; sll_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb6,0xc0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
-0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000bh shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
-0010h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte sll<sbyte>(sbyte a, byte count), hex://gmath/gmath?sll#sll_g[8i](8i,8u)
-; sll_g[8i](8i,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x48,0x0f,0xbe,0xc0,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
-0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000ch shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000eh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
-0012h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort sll<ushort>(ushort a, byte count), hex://gmath/gmath?sll#sll_g[16u](16u,8u)
-; sll_g[16u](16u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb7,0xc0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
-0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000bh shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
-0010h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short sll<short>(short a, byte count), hex://gmath/gmath?sll#sll_g[16i](16i,8u)
-; sll_g[16i](16i,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x48,0x0f,0xbf,0xc0,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
-0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000ch shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000eh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
-0012h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint sll<uint>(uint a, byte count), hex://gmath/gmath?sll#sll_g[32u](32u,8u)
-; sll_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
-0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int sll<int>(int a, byte count), hex://gmath/gmath?sll#sll_g[32i](32i,8u)
-; sll_g[32i](32i,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0xc3}
-; TermCode = CTC_RET_Zx3
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
-0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
-000ch ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong sll<ulong>(ulong a, byte count), hex://gmath/gmath?sll#sll_g[64u](64u,8u)
-; sll_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe0,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000bh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
-000eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long sll<long>(long a, byte count), hex://gmath/gmath?sll#sll_g[64i](64i,8u)
-; sll_g[64i](64i,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe0,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
-000bh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
-000eh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
 ; byte srl<byte>(byte a, byte count), hex://gmath/gmath?srl#srl_g[8u](8u,8u)
 ; srl_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0xd3,0xe8,0x0f,0xb6,0xc0,0xc3}
 ; TermCode = CTC_RET_Zx3
@@ -2609,77 +1789,749 @@
 001bh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 001eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; byte sub<byte>(byte a, byte b), hex://gmath/gmath?sub#sub_g[8u](8u,8u)
-; sub_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x2b,0xc2,0x0f,0xb6,0xc0,0xc3}
+; void decrements<byte>(int count, ref byte dst), hex://gmath/gmath?decrements#decrements_g[8u](32i,8u~ref)
+; decrements_g[8u](32i,8u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x44,0x0f,0xb6,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
+0011h movzx r9d,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c8}
+0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<sbyte>(int count, ref sbyte dst), hex://gmath/gmath?decrements#decrements_g[8i](32i,8i~ref)
+; decrements_g[8i](32i,8i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x4c,0x0f,0xbe,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
+0011h movsx r9,al                             ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c8}
+0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<ushort>(int count, ref ushort dst), hex://gmath/gmath?decrements#decrements_g[16u](32i,16u~ref)
+; decrements_g[16u](32i,16u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x44,0x0f,0xb7,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
-0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
-000bh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
-000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
-0010h ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
+0012h movzx r9d,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c8}
+0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
+001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; sbyte sub<sbyte>(sbyte a, sbyte b), hex://gmath/gmath?sub#sub_g[8i](8i,8i)
-; sub_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x2b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
-0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
-000dh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
-000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
-0013h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort sub<ushort>(ushort a, ushort b), hex://gmath/gmath?sub#sub_g[16u](16u,16u)
-; sub_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x2b,0xc2,0x0f,0xb7,0xc0,0xc3}
+; void decrements<short>(int count, ref short dst), hex://gmath/gmath?decrements#decrements_g[16i](32i,16i~ref)
+; decrements_g[16i](32i,16i~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x4c,0x0f,0xbf,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
-0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
-000bh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
-000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
-0010h ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
+0012h movsx r9,ax                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c8}
+0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
+001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0020h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; short sub<short>(short a, short b), hex://gmath/gmath?sub#sub_g[16i](16i,16i)
-; sub_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x2b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
+; void decrements<uint>(int count, ref uint dst), hex://gmath/gmath?decrements#decrements_g[32u](32i,32u~ref)
+; decrements_g[32u](32i,32u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
+0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
+0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<int>(int count, ref int dst), hex://gmath/gmath?decrements#decrements_g[32i](32i,32i~ref)
+; decrements_g[32i](32i,32i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
+0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
+0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<ulong>(int count, ref ulong dst), hex://gmath/gmath?decrements#decrements_g[64u](32i,64u~ref)
+; decrements_g[64u](32i,64u~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
-0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
-000dh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
-000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
-0013h ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
+0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
+0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
+001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; uint sub<uint>(uint a, uint b), hex://gmath/gmath?sub#sub_g[32u](32u,32u)
-; sub_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
+; void decrements<long>(int count, ref long dst), hex://gmath/gmath?decrements#decrements_g[64i](32i,64i~ref)
+; decrements_g[64i](32i,64i~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
+0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
+0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
+001bh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<byte>(byte first, int count, ref byte dst), hex://gmath/gmath?decrements#decrements_g[8u](8u,32i,8u~ref)
+; decrements_g[8u](8u,32i,8u~ref)[44] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x20,0x0f,0xb6,0xc9,0x4c,0x63,0xc8,0x4d,0x03,0xc8,0x44,0x0f,0xb6,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x0f,0xb6,0xd3,0x45,0x88,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe3,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 002bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 20}
+000bh movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
+000eh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+0011h add r9,r8                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c8}
+0014h movzx r10d,al                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 d0}
+0018h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+001bh sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+001eh movzx r10d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 d3}
+0022h mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
+0025h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0027h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+0029h jl short 000eh                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
+002bh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<sbyte>(sbyte first, int count, ref sbyte dst), hex://gmath/gmath?decrements#decrements_g[8i](8i,32i,8i~ref)
+; decrements_g[8i](8i,32i,8i~ref)[45] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x21,0x48,0x0f,0xbe,0xc9,0x4c,0x63,0xc8,0x4d,0x03,0xc8,0x4c,0x0f,0xbe,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x4d,0x0f,0xbe,0xd3,0x45,0x88,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe3,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h sub ecx,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b ca}
-0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 002ch                         ; JLE rel8 || 7E cb || encoded[2]{7e 21}
+000bh movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
+000fh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+0012h add r9,r8                               ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c8}
+0015h movsx r10,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be d0}
+0019h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+001ch sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+001fh movsx r10,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be d3}
+0023h mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
+0026h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0028h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+002ah jl short 000fh                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
+002ch ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; int sub<int>(int a, int b), hex://gmath/gmath?sub#sub_g[32i](32i,32i)
-; sub_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
+; void decrements<ushort>(ushort first, int count, ref ushort dst), hex://gmath/gmath?decrements#decrements_g[16u](16u,32i,16u~ref)
+; decrements_g[16u](16u,32i,16u~ref)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x22,0x0f,0xb7,0xc9,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x48,0x44,0x0f,0xb7,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x0f,0xb7,0xd3,0x66,0x45,0x89,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe1,0xc3}
 ; TermCode = CTC_RET_Zx3
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h sub ecx,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b ca}
-0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 002dh                         ; JLE rel8 || 7E cb || encoded[2]{7e 22}
+000bh movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
+000eh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+0011h lea r9,[r8+r9*2]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 48}
+0015h movzx r10d,ax                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 d0}
+0019h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+001ch sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+001fh movzx r10d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 d3}
+0023h mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
+0027h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0029h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+002bh jl short 000eh                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
+002dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; ulong sub<ulong>(ulong a, ulong b), hex://gmath/gmath?sub#sub_g[64u](64u,64u)
-; sub_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
+; void decrements<short>(short first, int count, ref short dst), hex://gmath/gmath?decrements#decrements_g[16i](16i,32i,16i~ref)
+; decrements_g[16i](16i,32i,16i~ref)[47] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x23,0x48,0x0f,0xbf,0xc9,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x48,0x4c,0x0f,0xbf,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x4d,0x0f,0xbf,0xd3,0x66,0x45,0x89,0x11,0xff,0xc0,0x3b,0xc2,0x7c,0xe1,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 002eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 23}
+000bh movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
+000fh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+0012h lea r9,[r8+r9*2]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 48}
+0016h movsx r10,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf d0}
+001ah mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+001dh sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+0020h movsx r10,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf d3}
+0024h mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
+0028h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+002ah cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+002ch jl short 000fh                          ; JL rel8 || 7C cb || encoded[2]{7c e1}
+002eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<uint>(uint first, int count, ref uint dst), hex://gmath/gmath?decrements#decrements_g[32u](32u,32i,32u~ref)
+; decrements_g[32u](32u,32i,32u~ref)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x19,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x88,0x44,0x8b,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x89,0x19,0xff,0xc0,0x3b,0xc2,0x7c,0xe7,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 19}
+000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+000eh lea r9,[r8+r9*4]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 88}
+0012h mov r10d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d0}
+0015h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+0018h sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+001bh mov [r9],r11d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 19}
+001eh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0020h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+0022h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c e7}
+0024h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<int>(int first, int count, ref int dst), hex://gmath/gmath?decrements#decrements_g[32i](32i,32i,32i~ref)
+; decrements_g[32i](32i,32i,32i~ref)[37] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x19,0x4c,0x63,0xc8,0x4f,0x8d,0x0c,0x88,0x44,0x8b,0xd0,0x44,0x8b,0xd9,0x45,0x2b,0xda,0x45,0x89,0x19,0xff,0xc0,0x3b,0xc2,0x7c,0xe7,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 19}
+000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+000eh lea r9,[r8+r9*4]                        ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 0c 88}
+0012h mov r10d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d0}
+0015h mov r11d,ecx                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d9}
+0018h sub r11d,r10d                           ; SUB r32, r/m32 || o32 2B /r || encoded[3]{45 2b da}
+001bh mov [r9],r11d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 19}
+001eh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0020h cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+0022h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c e7}
+0024h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<ulong>(ulong first, int count, ref ulong dst), hex://gmath/gmath?decrements#decrements_g[64u](64u,32i,64u~ref)
+; decrements_g[64u](64u,32i,64u~ref)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x16,0x4c,0x63,0xc8,0x4f,0x8d,0x14,0xc8,0x4c,0x8b,0xd9,0x4d,0x2b,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x3b,0xc2,0x7c,0xea,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 0021h                         ; JLE rel8 || 7E cb || encoded[2]{7e 16}
+000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+000eh lea r10,[r8+r9*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 c8}
+0012h mov r11,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b d9}
+0015h sub r11,r9                              ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{4d 2b d9}
+0018h mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
+001bh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001dh cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+001fh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ea}
+0021h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void decrements<long>(long first, int count, ref long dst), hex://gmath/gmath?decrements#decrements_g[64i](64i,32i,64i~ref)
+; decrements_g[64i](64i,32i,64i~ref)[34] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xd2,0x7e,0x16,0x4c,0x63,0xc8,0x4f,0x8d,0x14,0xc8,0x4c,0x8b,0xd9,0x4d,0x2b,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x3b,0xc2,0x7c,0xea,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0009h jle short 0021h                         ; JLE rel8 || 7E cb || encoded[2]{7e 16}
+000bh movsxd r9,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c8}
+000eh lea r10,[r8+r9*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 c8}
+0012h mov r11,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{4c 8b d9}
+0015h sub r11,r9                              ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{4d 2b d9}
+0018h mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
+001bh inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001dh cmp eax,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c2}
+001fh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ea}
+0021h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<byte>(int count, ref byte dst), hex://gmath/gmath?increments#increments_g[8u](32i,8u~ref)
+; increments_g[8u](32i,8u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x44,0x0f,0xb6,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
+0011h movzx r9d,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 c8}
+0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<sbyte>(int count, ref sbyte dst), hex://gmath/gmath?increments#increments_g[8i](32i,8i~ref)
+; increments_g[8i](32i,8i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4c,0x03,0xc2,0x4c,0x0f,0xbe,0xc8,0x45,0x88,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh add r8,rdx                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c2}
+0011h movsx r9,al                             ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be c8}
+0015h mov [r8],r9b                            ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<ushort>(int count, ref ushort dst), hex://gmath/gmath?increments#increments_g[16u](32i,16u~ref)
+; increments_g[16u](32i,16u~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x44,0x0f,0xb7,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
+0012h movzx r9d,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 c8}
+0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
+001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0020h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<short>(int count, ref short dst), hex://gmath/gmath?increments#increments_g[16i](32i,16i~ref)
+; increments_g[16i](32i,16i~ref)[33] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x15,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x42,0x4c,0x0f,0xbf,0xc8,0x66,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xeb,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 0020h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 42}
+0012h movsx r9,ax                             ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf c8}
+0016h mov [r8],r9w                            ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 08}
+001ah inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ch cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001eh jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0020h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<uint>(int count, ref uint dst), hex://gmath/gmath?increments#increments_g[32u](32i,32u~ref)
+; increments_g[32u](32i,32u~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
+0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
+0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<int>(int count, ref int dst), hex://gmath/gmath?increments#increments_g[32i](32i,32i~ref)
+; increments_g[32i](32i,32i~ref)[31] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x13,0x4c,0x63,0xc0,0x4e,0x8d,0x04,0x82,0x44,0x8b,0xc8,0x45,0x89,0x08,0xff,0xc0,0x3b,0xc1,0x7c,0xed,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001eh                         ; JLE rel8 || 7E cb || encoded[2]{7e 13}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r8,[rdx+r8*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 04 82}
+0012h mov r9d,eax                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b c8}
+0015h mov [r8],r9d                            ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 08}
+0018h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+001ah cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+001ch jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c ed}
+001eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void increments<ulong>(int count, ref ulong dst), hex://gmath/gmath?increments#increments_g[64u](32i,64u~ref)
+; increments_g[64u](32i,64u~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h sub rcx,rdx                             ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{48 2b ca}
-0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-000bh ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
+0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
+0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
+001bh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
-; long sub<long>(long a, long b), hex://gmath/gmath?sub#sub_g[64i](64i,64i)
-; sub_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
+; void increments<long>(int count, ref long dst), hex://gmath/gmath?increments#increments_g[64i](32i,64i~ref)
+; increments_g[64i](32i,64i~ref)[28] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x85,0xc9,0x7e,0x10,0x4c,0x63,0xc0,0x4e,0x8d,0x0c,0xc2,0x4d,0x89,0x01,0xff,0xc0,0x3b,0xc1,0x7c,0xf0,0xc3}
 ; TermCode = CTC_RET_SBB
 0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h sub rcx,rdx                             ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{48 2b ca}
-0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
-000bh ret                                     ; RET || C3 || encoded[1]{c3}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test ecx,ecx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c9}
+0009h jle short 001bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 10}
+000bh movsxd r8,eax                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 c0}
+000eh lea r9,[rdx+r8*8]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c c2}
+0012h mov [r9],r8                             ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 01}
+0015h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0017h cmp eax,ecx                             ; CMP r32, r/m32 || o32 3B /r || encoded[2]{3b c1}
+0019h jl short 000bh                          ; JL rel8 || 7C cb || encoded[2]{7c f0}
+001bh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<byte> increments<byte>(Span<byte> dst), hex://gmath/gmath?increments#increments_g[8u](span8u)
+; increments_g[8u](span8u)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4c,0x03,0xc8,0x45,0x0f,0xb6,0xd0,0x45,0x88,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h add r9,rax                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c8}
+0018h movzx r10d,r8b                          ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 d0}
+001ch mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
+001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0030h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<sbyte> increments<sbyte>(Span<sbyte> dst), hex://gmath/gmath?increments#increments_g[8i](span8i)
+; increments_g[8i](span8i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4c,0x03,0xc8,0x4d,0x0f,0xbe,0xd0,0x45,0x88,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h add r9,rax                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 c8}
+0018h movsx r10,r8b                           ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be d0}
+001ch mov [r9],r10b                           ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 11}
+001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0030h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<ushort> increments<ushort>(Span<ushort> dst), hex://gmath/gmath?increments#increments_g[16u](span16u)
+; increments_g[16u](span16u)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x17,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x48,0x45,0x0f,0xb7,0xd0,0x66,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xe9,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0029h                         ; JLE rel8 || 7E cb || encoded[2]{7e 17}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
+0019h movzx r10d,r8w                          ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 d0}
+001dh mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
+0021h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0024h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0027h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c e9}
+0029h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ch mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0032h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<short> increments<short>(Span<short> dst), hex://gmath/gmath?increments#increments_g[16i](span16i)
+; increments_g[16i](span16i)[51] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x17,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x48,0x4d,0x0f,0xbf,0xd0,0x66,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xe9,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0029h                         ; JLE rel8 || 7E cb || encoded[2]{7e 17}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r9,[rax+r9*2]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 48}
+0019h movsx r10,r8w                           ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf d0}
+001dh mov [r9],r10w                           ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 11}
+0021h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0024h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0027h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c e9}
+0029h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ch mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0032h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<uint> increments<uint>(Span<uint> dst), hex://gmath/gmath?increments#increments_g[32u](span32u)
+; increments_g[32u](span32u)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x88,0x45,0x8b,0xd0,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r9,[rax+r9*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 88}
+0019h mov r10d,r8d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d0}
+001ch mov [r9],r10d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 11}
+001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0030h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<int> increments<int>(Span<int> dst), hex://gmath/gmath?increments#increments_g[32i](span32i)
+; increments_g[32i](span32i)[49] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x15,0x4d,0x63,0xc8,0x4e,0x8d,0x0c,0x88,0x45,0x8b,0xd0,0x45,0x89,0x11,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xeb,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 15}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r9,[rax+r9*4]                       ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 0c 88}
+0019h mov r10d,r8d                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{45 8b d0}
+001ch mov [r9],r10d                           ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 11}
+001fh inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+0022h cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0025h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c eb}
+0027h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+002ah mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002dh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0030h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<ulong> increments<ulong>(Span<ulong> dst), hex://gmath/gmath?increments#increments_g[64u](span64u)
+; increments_g[64u](span64u)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x12,0x4d,0x63,0xc8,0x4e,0x8d,0x14,0xc8,0x4d,0x89,0x0a,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xee,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 12}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r10,[rax+r9*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 14 c8}
+0019h mov [r10],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0a}
+001ch inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+001fh cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0022h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c ee}
+0024h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+0027h mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+002dh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; Span<long> increments<long>(Span<long> dst), hex://gmath/gmath?increments#increments_g[64i](span64i)
+; increments_g[64i](span64i)[46] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0x02,0x8b,0x52,0x08,0x45,0x33,0xc0,0x85,0xd2,0x7e,0x12,0x4d,0x63,0xc8,0x4e,0x8d,0x14,0xc8,0x4d,0x89,0x0a,0x41,0xff,0xc0,0x44,0x3b,0xc2,0x7c,0xee,0x48,0x89,0x01,0x89,0x51,0x08,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 02}
+0008h mov edx,[rdx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 52 08}
+000bh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+000eh test edx,edx                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 d2}
+0010h jle short 0024h                         ; JLE rel8 || 7E cb || encoded[2]{7e 12}
+0012h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+0015h lea r10,[rax+r9*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4e 8d 14 c8}
+0019h mov [r10],r9                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 0a}
+001ch inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+001fh cmp r8d,edx                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c2}
+0022h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c ee}
+0024h mov [rcx],rax                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{48 89 01}
+0027h mov [rcx+8],edx                         ; MOV r/m32, r32 || o32 89 /r || encoded[3]{89 51 08}
+002ah mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+002dh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<byte>(byte first, byte step, int count, ref byte dst), hex://gmath/gmath?steps#steps_g[8u](8u,8u,32i,8u~ref)
+; steps_g[8u](8u,8u,32i,8u~ref)[59] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2d,0x0f,0xb6,0xd2,0x0f,0xb6,0xc9,0x4c,0x63,0xd0,0x4d,0x03,0xd1,0x44,0x0f,0xb6,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x45,0x0f,0xb6,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x45,0x0f,0xb6,0xdb,0x45,0x88,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd9,0x5e,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
+0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0039h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2d}
+000ch movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
+000fh movzx ecx,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c9}
+0012h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+0015h add r10,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 d1}
+0018h movzx r11d,al                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{44 0f b6 d8}
+001ch mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
+001eh imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
+0022h movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
+0026h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
+0028h add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
+002bh movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
+002fh mov [r10],r11b                          ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 1a}
+0032h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0034h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0037h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c d9}
+0039h pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+003ah ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<sbyte>(sbyte first, sbyte step, int count, ref sbyte dst), hex://gmath/gmath?steps#steps_g[8i](8i,8i,32i,8i~ref)
+; steps_g[8i](8i,8i,32i,8i~ref)[61] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2f,0x48,0x0f,0xbe,0xd2,0x48,0x0f,0xbe,0xc9,0x4c,0x63,0xd0,0x4d,0x03,0xd1,0x4c,0x0f,0xbe,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x4d,0x0f,0xbe,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x4d,0x0f,0xbe,0xdb,0x45,0x88,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd9,0x5e,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
+0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 003bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 2f}
+000ch movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
+0010h movsx rcx,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c9}
+0014h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+0017h add r10,r9                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 d1}
+001ah movsx r11,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4c 0f be d8}
+001eh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
+0020h imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
+0024h movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
+0028h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
+002ah add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
+002dh movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
+0031h mov [r10],r11b                          ; MOV r/m8, r8 || 88 /r || encoded[3]{45 88 1a}
+0034h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0036h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0039h jl short 0014h                          ; JL rel8 || 7C cb || encoded[2]{7c d9}
+003bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+003ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<ushort>(ushort first, ushort step, int count, ref ushort dst), hex://gmath/gmath?steps#steps_g[16u](16u,16u,32i,16u~ref)
+; steps_g[16u](16u,16u,32i,16u~ref)[61] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x2f,0x0f,0xb7,0xd2,0x0f,0xb7,0xc9,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x51,0x44,0x0f,0xb7,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x45,0x0f,0xb7,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x45,0x0f,0xb7,0xdb,0x66,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd7,0x5e,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
+0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 003bh                         ; JLE rel8 || 7E cb || encoded[2]{7e 2f}
+000ch movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
+000fh movzx ecx,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c9}
+0012h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+0015h lea r10,[r9+r10*2]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 51}
+0019h movzx r11d,ax                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{44 0f b7 d8}
+001dh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
+001fh imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
+0023h movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
+0027h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
+0029h add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
+002ch movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
+0030h mov [r10],r11w                          ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 1a}
+0034h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0036h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0039h jl short 0012h                          ; JL rel8 || 7C cb || encoded[2]{7c d7}
+003bh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+003ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<short>(short first, short step, int count, ref short dst), hex://gmath/gmath?steps#steps_g[16i](16i,16i,32i,16i~ref)
+; steps_g[16i](16i,16i,32i,16i~ref)[63] = {0x56,0x0f,0x1f,0x40,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x31,0x48,0x0f,0xbf,0xd2,0x48,0x0f,0xbf,0xc9,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x51,0x4c,0x0f,0xbf,0xd8,0x8b,0xf2,0x44,0x0f,0xaf,0xde,0x4d,0x0f,0xbf,0xdb,0x8b,0xf1,0x44,0x03,0xde,0x4d,0x0f,0xbf,0xdb,0x66,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xd7,0x5e,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h push rsi                                ; PUSH r64 || 50+ro || encoded[1]{56}
+0001h nop dword ptr [rax]                     ; NOP r/m32 || o32 0F 1F /0 || encoded[4]{0f 1f 40 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 003dh                         ; JLE rel8 || 7E cb || encoded[2]{7e 31}
+000ch movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
+0010h movsx rcx,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c9}
+0014h movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+0017h lea r10,[r9+r10*2]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 51}
+001bh movsx r11,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4c 0f bf d8}
+001fh mov esi,edx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f2}
+0021h imul r11d,esi                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af de}
+0025h movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
+0029h mov esi,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b f1}
+002bh add r11d,esi                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 de}
+002eh movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
+0032h mov [r10],r11w                          ; MOV r/m16, r16 || o16 89 /r || encoded[4]{66 45 89 1a}
+0036h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0038h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+003bh jl short 0014h                          ; JL rel8 || 7C cb || encoded[2]{7c d7}
+003dh pop rsi                                 ; POP r64 || 58+ro || encoded[1]{5e}
+003eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<uint>(uint first, uint step, int count, ref uint dst), hex://gmath/gmath?steps#steps_g[32u](32u,32u,32i,32u~ref)
+; steps_g[32u](32u,32u,32i,32u~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x91,0x44,0x8b,0xd8,0x44,0x0f,0xaf,0xda,0x44,0x03,0xd9,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
+000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+000fh lea r10,[r9+r10*4]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 91}
+0013h mov r11d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d8}
+0016h imul r11d,edx                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af da}
+001ah add r11d,ecx                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 d9}
+001dh mov [r10],r11d                          ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 1a}
+0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<int>(int first, int step, int count, ref int dst), hex://gmath/gmath?steps#steps_g[32i](32i,32i,32i,32i~ref)
+; steps_g[32i](32i,32i,32i,32i~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0x91,0x44,0x8b,0xd8,0x44,0x0f,0xaf,0xda,0x44,0x03,0xd9,0x45,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
+000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+000fh lea r10,[r9+r10*4]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 91}
+0013h mov r11d,eax                            ; MOV r32, r/m32 || o32 8B /r || encoded[3]{44 8b d8}
+0016h imul r11d,edx                           ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{44 0f af da}
+001ah add r11d,ecx                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{44 03 d9}
+001dh mov [r10],r11d                          ; MOV r/m32, r32 || o32 89 /r || encoded[3]{45 89 1a}
+0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<ulong>(ulong first, ulong step, int count, ref ulong dst), hex://gmath/gmath?steps#steps_g[64u](64u,64u,32i,64u~ref)
+; steps_g[64u](64u,64u,32i,64u~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0xd1,0x4c,0x63,0xd8,0x4c,0x0f,0xaf,0xda,0x4c,0x03,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
+000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+000fh lea r10,[r9+r10*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 d1}
+0013h movsxd r11,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d8}
+0016h imul r11,rdx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4c 0f af da}
+001ah add r11,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 d9}
+001dh mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
+0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; void steps<long>(long first, long step, int count, ref long dst), hex://gmath/gmath?steps#steps_g[64i](64i,64i,32i,64i~ref)
+; steps_g[64i](64i,64i,32i,64i~ref)[40] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0x45,0x85,0xc0,0x7e,0x1b,0x4c,0x63,0xd0,0x4f,0x8d,0x14,0xd1,0x4c,0x63,0xd8,0x4c,0x0f,0xaf,0xda,0x4c,0x03,0xd9,0x4d,0x89,0x1a,0xff,0xc0,0x41,0x3b,0xc0,0x7c,0xe5,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
+0007h test r8d,r8d                            ; TEST r/m32, r32 || o32 85 /r || encoded[3]{45 85 c0}
+000ah jle short 0027h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1b}
+000ch movsxd r10,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d0}
+000fh lea r10,[r9+r10*8]                      ; LEA r64, m || REX.W 8D /r || encoded[4]{4f 8d 14 d1}
+0013h movsxd r11,eax                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4c 63 d8}
+0016h imul r11,rdx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4c 0f af da}
+001ah add r11,rcx                             ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4c 03 d9}
+001dh mov [r10],r11                           ; MOV r/m64, r64 || REX.W 89 /r || encoded[3]{4d 89 1a}
+0020h inc eax                                 ; INC r/m32 || o32 FF /0 || encoded[2]{ff c0}
+0022h cmp eax,r8d                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{41 3b c0}
+0025h jl short 000ch                          ; JL rel8 || 7C cb || encoded[2]{7c e5}
+0027h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte and<byte>(byte a, byte b), hex://gmath/gmath?and#and_g[8u](8u,8u)
 ; and_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x23,0xc2,0x0f,0xb6,0xc0,0xc3}
@@ -4921,6 +4773,82 @@
 000bh sar rax,cl                              ; SAR r/m64, CL || REX.W D3 /7 || encoded[3]{48 d3 f8}
 000eh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
+; byte sll<byte>(byte a, byte count), hex://gmath/gmath?sll#sll_g[8u](8u,8u)
+; sll_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb6,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
+0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000bh shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+0010h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; sbyte sll<sbyte>(sbyte a, byte count), hex://gmath/gmath?sll#sll_g[8i](8i,8u)
+; sll_g[8i](8i,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x48,0x0f,0xbe,0xc0,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
+0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000ch shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000eh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+0012h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort sll<ushort>(ushort a, byte count), hex://gmath/gmath?sll#sll_g[16u](16u,8u)
+; sll_g[16u](16u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x0f,0xb7,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
+0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000bh shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+0010h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; short sll<short>(short a, byte count), hex://gmath/gmath?sll#sll_g[16i](16i,8u)
+; sll_g[16i](16i,8u)[19] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0x48,0x0f,0xbf,0xc0,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
+0009h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000ch shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000eh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
+0012h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint sll<uint>(uint a, byte count), hex://gmath/gmath?sll#sll_g[32u](32u,8u)
+; sll_g[32u](32u,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; int sll<int>(int a, byte count), hex://gmath/gmath?sll#sll_g[32i](32i,8u)
+; sll_g[32i](32i,8u)[13] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0xc1,0x0f,0xb6,0xca,0xd3,0xe0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0007h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000ah shl eax,cl                              ; SHL r/m32, CL || o32 D3 /4 || encoded[2]{d3 e0}
+000ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong sll<ulong>(ulong a, byte count), hex://gmath/gmath?sll#sll_g[64u](64u,8u)
+; sll_g[64u](64u,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe0,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000bh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
+000eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; long sll<long>(long a, byte count), hex://gmath/gmath?sll#sll_g[64i](64i,8u)
+; sll_g[64i](64i,8u)[15] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x8b,0xc1,0x0f,0xb6,0xca,0x48,0xd3,0xe0,0xc3}
+; TermCode = CTC_RET_ZED_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+0008h movzx ecx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 ca}
+000bh shl rax,cl                              ; SHL r/m64, CL || REX.W D3 /4 || encoded[3]{48 d3 e0}
+000eh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
 ; sbyte abs<sbyte>(sbyte src), hex://gmath/gmath?abs#abs_g[8i](8i)
 ; abs_g[8i](8i)[23] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x8b,0xd0,0xc1,0xfa,0x07,0x03,0xc2,0x33,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
 ; TermCode = CTC_RET_ZED_SBB
@@ -5132,350 +5060,6 @@
 000ch mov rcx,rdx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b ca}
 000fh mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 0012h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte zero<byte>(byte t), hex://gmath/gmath?zero#zero_g[8u](8u)
-; zero_g[8u](8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte zero<sbyte>(sbyte t), hex://gmath/gmath?zero#zero_g[8i](8i)
-; zero_g[8i](8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort zero<ushort>(ushort t), hex://gmath/gmath?zero#zero_g[16u](16u)
-; zero_g[16u](16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short zero<short>(short t), hex://gmath/gmath?zero#zero_g[16i](16i)
-; zero_g[16i](16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint zero<uint>(uint t), hex://gmath/gmath?zero#zero_g[32u](32u)
-; zero_g[32u](32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int zero<int>(int t), hex://gmath/gmath?zero#zero_g[32i](32i)
-; zero_g[32i](32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong zero<ulong>(ulong t), hex://gmath/gmath?zero#zero_g[64u](64u)
-; zero_g[64u](64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long zero<long>(long t), hex://gmath/gmath?zero#zero_g[64i](64i)
-; zero_g[64i](64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; float zero<float>(float t), hex://gmath/gmath?zero#zero_g[32f](32f)
-; zero_g[32f](32f)[10] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf8,0x57,0xc0,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; double zero<double>(double t), hex://gmath/gmath?zero#zero_g[64f](64f)
-; zero_g[64f](64f)[10] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf8,0x57,0xc0,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte one<byte>(byte t), hex://gmath/gmath?one#one_g[8u](8u)
-; one_g[8u](8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte one<sbyte>(sbyte t), hex://gmath/gmath?one#one_g[8i](8i)
-; one_g[8i](8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort one<ushort>(ushort t), hex://gmath/gmath?one#one_g[16u](16u)
-; one_g[16u](16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short one<short>(short t), hex://gmath/gmath?one#one_g[16i](16i)
-; one_g[16i](16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint one<uint>(uint t), hex://gmath/gmath?one#one_g[32u](32u)
-; one_g[32u](32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int one<int>(int t), hex://gmath/gmath?one#one_g[32i](32i)
-; one_g[32i](32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong one<ulong>(ulong t), hex://gmath/gmath?one#one_g[64u](64u)
-; one_g[64u](64u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long one<long>(long t), hex://gmath/gmath?one#one_g[64i](64i)
-; one_g[64i](64i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x01,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,1                               ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 01 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; float one<float>(float t), hex://gmath/gmath?one#one_g[32f](32f)
-; one_g[32f](32f)[14] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfa,0x10,0x05,0x03,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vmovss xmm0,dword ptr [rip+3]           ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[8]{c5 fa 10 05 03 00 00 00}
-000dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; double one<double>(double t), hex://gmath/gmath?one#one_g[64f](64f)
-; one_g[64f](64f)[14] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfb,0x10,0x05,0x03,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vmovsd xmm0,qword ptr [rip+3]           ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[8]{c5 fb 10 05 03 00 00 00}
-000dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte ones<byte>(byte t), hex://gmath/gmath?ones#ones_g[8u](8u)
-; ones_g[8u](8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte ones<sbyte>(sbyte t), hex://gmath/gmath?ones#ones_g[8i](8i)
-; ones_g[8i](8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort ones<ushort>(ushort t), hex://gmath/gmath?ones#ones_g[16u](16u)
-; ones_g[16u](16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short ones<short>(short t), hex://gmath/gmath?ones#ones_g[16i](16i)
-; ones_g[16i](16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint ones<uint>(uint t), hex://gmath/gmath?ones#ones_g[32u](32u)
-; ones_g[32u](32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int ones<int>(int t), hex://gmath/gmath?ones#ones_g[32i](32i)
-; ones_g[32i](32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong ones<ulong>(ulong t), hex://gmath/gmath?ones#ones_g[64u](64u)
-; ones_g[64u](64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
-000fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long ones<long>(long t), hex://gmath/gmath?ones#ones_g[64i](64i)
-; ones_g[64i](64i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
-000fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte minval<byte>(byte t), hex://gmath/gmath?minval#minval_g[8u](8u)
-; minval_g[8u](8u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte minval<sbyte>(sbyte t), hex://gmath/gmath?minval#minval_g[8i](8i)
-; minval_g[8i](8i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort minval<ushort>(ushort t), hex://gmath/gmath?minval#minval_g[16u](16u)
-; minval_g[16u](16u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short minval<short>(short t), hex://gmath/gmath?minval#minval_g[16i](16i)
-; minval_g[16i](16i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint minval<uint>(uint t), hex://gmath/gmath?minval#minval_g[32u](32u)
-; minval_g[32u](32u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int minval<int>(int t), hex://gmath/gmath?minval#minval_g[32i](32i)
-; minval_g[32i](32i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong minval<ulong>(ulong t), hex://gmath/gmath?minval#minval_g[64u](64u)
-; minval_g[64u](64u)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long minval<long>(long t), hex://gmath/gmath?minval#minval_g[64i](64i)
-; minval_g[64i](64i)[8] = {0x0f,0x1f,0x44,0x00,0x00,0x33,0xc0,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h xor eax,eax                             ; XOR r32, r/m32 || o32 33 /r || encoded[2]{33 c0}
-0007h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; float minval<float>(float t), hex://gmath/gmath?minval#minval_g[32f](32f)
-; minval_g[32f](32f)[10] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf8,0x57,0xc0,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; double minval<double>(double t), hex://gmath/gmath?minval#minval_g[64f](64f)
-; minval_g[64f](64f)[10] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xf8,0x57,0xc0,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vxorps xmm0,xmm0,xmm0                   ; VXORPS xmm1, xmm2, xmm3/m128 || VEX.128.0F.WIG 57 /r || encoded[4]{c5 f8 57 c0}
-0009h ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; byte maxval<byte>(byte t), hex://gmath/gmath?maxval#maxval_g[8u](8u)
-; maxval_g[8u](8u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffh                            ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; sbyte maxval<sbyte>(sbyte t), hex://gmath/gmath?maxval#maxval_g[8i](8i)
-; maxval_g[8i](8i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x7f,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,7fh                             ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 7f 00 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ushort maxval<ushort>(ushort t), hex://gmath/gmath?maxval#maxval_g[16u](16u)
-; maxval_g[16u](16u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffh                          ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; short maxval<short>(short t), hex://gmath/gmath?maxval#maxval_g[16i](16i)
-; maxval_g[16i](16i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0x7f,0x00,0x00,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,7fffh                           ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff 7f 00 00}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; uint maxval<uint>(uint t), hex://gmath/gmath?maxval#maxval_g[32u](32u)
-; maxval_g[32u](32u)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,0ffffffffh                      ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff ff}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; int maxval<int>(int t), hex://gmath/gmath?maxval#maxval_g[32i](32i)
-; maxval_g[32i](32i)[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0xff,0xff,0xff,0x7f,0xc3}
-; TermCode = CTC_RET_ZED_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov eax,7fffffffh                       ; MOV r32, imm32 || o32 B8+rd id || encoded[5]{b8 ff ff ff 7f}
-000ah ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; ulong maxval<ulong>(ulong t), hex://gmath/gmath?maxval#maxval_g[64u](64u)
-; maxval_g[64u](64u)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,0ffffffffffffffffh              ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff ff}
-000fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; long maxval<long>(long t), hex://gmath/gmath?maxval#maxval_g[64i](64i)
-; maxval_g[64i](64i)[16] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0xb8,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x7f,0xc3}
-; TermCode = CTC_RET_SBB
-0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
-0005h mov rax,7fffffffffffffffh               ; MOV r64, imm64 || REX.W B8+ro io || encoded[10]{48 b8 ff ff ff ff ff ff ff 7f}
-000fh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; float maxval<float>(float t), hex://gmath/gmath?maxval#maxval_g[32f](32f)
-; maxval_g[32f](32f)[14] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfa,0x10,0x05,0x03,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vmovss xmm0,dword ptr [rip+3]           ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[8]{c5 fa 10 05 03 00 00 00}
-000dh ret                                     ; RET || C3 || encoded[1]{c3}
-------------------------------------------------------------------------------------------------------------------------
-; double maxval<double>(double t), hex://gmath/gmath?maxval#maxval_g[64f](64f)
-; maxval_g[64f](64f)[14] = {0xc5,0xf8,0x77,0x66,0x90,0xc5,0xfb,0x10,0x05,0x03,0x00,0x00,0x00,0xc3}
-; TermCode = CTC_RET_INTR
-0000h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
-0003h xchg ax,ax                              ; NOP || o16 90 || encoded[2]{66 90}
-0005h vmovsd xmm0,qword ptr [rip+3]           ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[8]{c5 fb 10 05 03 00 00 00}
-000dh ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte altodd<byte>(), hex://gmath/gmath?altodd#altodd_g[8u]()
 ; altodd_g[8u]()[11] = {0x0f,0x1f,0x44,0x00,0x00,0xb8,0x55,0x00,0x00,0x00,0xc3}
@@ -5922,6 +5506,252 @@
 0010h sete al                                 ; SETE r/m8 || 0F 94 /r || encoded[3]{0f 94 c0}
 0013h movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
 0016h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; byte dot<byte>(ReadOnlySpan<byte> lhs, ReadOnlySpan<byte> rhs), hex://gmath/gmath?dot#dot_g[8u](uspan8u,uspan8u)
+; dot_g[8u](uspan8u,uspan8u)[72] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x2c,0x4d,0x63,0xd1,0x46,0x0f,0xb6,0x1c,0x11,0x46,0x0f,0xb6,0x14,0x12,0x45,0x0f,0xb6,0xdb,0x45,0x0f,0xb6,0xdb,0x45,0x0f,0xb6,0xd2,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x45,0x0f,0xb6,0xc0,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xd4,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0044h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2c}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh movzx r11d,byte ptr [rcx+r10]           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{46 0f b6 1c 11}
+0020h movzx r10d,byte ptr [rdx+r10]           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[5]{46 0f b6 14 12}
+0025h movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
+0029h movzx r11d,r11b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 db}
+002dh movzx r10d,r10b                         ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 d2}
+0031h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0035h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+0038h movzx r8d,r8b                           ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[4]{45 0f b6 c0}
+003ch inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+003fh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0042h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c d4}
+0044h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0047h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; sbyte dot<sbyte>(ReadOnlySpan<sbyte> lhs, ReadOnlySpan<sbyte> rhs), hex://gmath/gmath?dot#dot_g[8i](uspan8i,uspan8i)
+; dot_g[8i](uspan8i,uspan8i)[72] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x2c,0x4d,0x63,0xd1,0x4e,0x0f,0xbe,0x1c,0x11,0x4e,0x0f,0xbe,0x14,0x12,0x4d,0x0f,0xbe,0xdb,0x4d,0x0f,0xbe,0xdb,0x4d,0x0f,0xbe,0xd2,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x4d,0x0f,0xbe,0xc0,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xd4,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0044h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2c}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh movsx r11,byte ptr [rcx+r10]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[5]{4e 0f be 1c 11}
+0020h movsx r10,byte ptr [rdx+r10]            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[5]{4e 0f be 14 12}
+0025h movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
+0029h movsx r11,r11b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be db}
+002dh movsx r10,r10b                          ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be d2}
+0031h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0035h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+0038h movsx r8,r8b                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{4d 0f be c0}
+003ch inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+003fh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0042h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c d4}
+0044h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0047h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort dot<ushort>(ReadOnlySpan<ushort> lhs, ReadOnlySpan<ushort> rhs), hex://gmath/gmath?dot#dot_g[16u](uspan16u,uspan16u)
+; dot_g[16u](uspan16u,uspan16u)[72] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x2c,0x4d,0x63,0xd1,0x46,0x0f,0xb7,0x1c,0x51,0x46,0x0f,0xb7,0x14,0x52,0x45,0x0f,0xb7,0xdb,0x45,0x0f,0xb7,0xdb,0x45,0x0f,0xb7,0xd2,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x45,0x0f,0xb7,0xc0,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xd4,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0044h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2c}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh movzx r11d,word ptr [rcx+r10*2]         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{46 0f b7 1c 51}
+0020h movzx r10d,word ptr [rdx+r10*2]         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[5]{46 0f b7 14 52}
+0025h movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
+0029h movzx r11d,r11w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 db}
+002dh movzx r10d,r10w                         ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 d2}
+0031h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0035h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+0038h movzx r8d,r8w                           ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[4]{45 0f b7 c0}
+003ch inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+003fh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0042h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c d4}
+0044h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0047h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; short dot<short>(ReadOnlySpan<short> lhs, ReadOnlySpan<short> rhs), hex://gmath/gmath?dot#dot_g[16i](uspan16i,uspan16i)
+; dot_g[16i](uspan16i,uspan16i)[72] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x2c,0x4d,0x63,0xd1,0x4e,0x0f,0xbf,0x1c,0x51,0x4e,0x0f,0xbf,0x14,0x52,0x4d,0x0f,0xbf,0xdb,0x4d,0x0f,0xbf,0xdb,0x4d,0x0f,0xbf,0xd2,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x4d,0x0f,0xbf,0xc0,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xd4,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0044h                         ; JLE rel8 || 7E cb || encoded[2]{7e 2c}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh movsx r11,word ptr [rcx+r10*2]          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[5]{4e 0f bf 1c 51}
+0020h movsx r10,word ptr [rdx+r10*2]          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[5]{4e 0f bf 14 52}
+0025h movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
+0029h movsx r11,r11w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf db}
+002dh movsx r10,r10w                          ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf d2}
+0031h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0035h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+0038h movsx r8,r8w                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{4d 0f bf c0}
+003ch inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+003fh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0042h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c d4}
+0044h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0047h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint dot<uint>(ReadOnlySpan<uint> lhs, ReadOnlySpan<uint> rhs), hex://gmath/gmath?dot#dot_g[32u](uspan32u,uspan32u)
+; dot_g[32u](uspan32u,uspan32u)[54] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x1a,0x4d,0x63,0xd1,0x46,0x8b,0x1c,0x91,0x46,0x8b,0x14,0x92,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xe6,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0032h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1a}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh mov r11d,[rcx+r10*4]                    ; MOV r32, r/m32 || o32 8B /r || encoded[4]{46 8b 1c 91}
+001fh mov r10d,[rdx+r10*4]                    ; MOV r32, r/m32 || o32 8B /r || encoded[4]{46 8b 14 92}
+0023h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0027h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+002ah inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+002dh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0030h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c e6}
+0032h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0035h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; int dot<int>(ReadOnlySpan<int> lhs, ReadOnlySpan<int> rhs), hex://gmath/gmath?dot#dot_g[32i](uspan32i,uspan32i)
+; dot_g[32i](uspan32i,uspan32i)[54] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x1a,0x4d,0x63,0xd1,0x46,0x8b,0x1c,0x91,0x46,0x8b,0x14,0x92,0x45,0x0f,0xaf,0xd3,0x45,0x03,0xc2,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xe6,0x41,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0032h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1a}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh mov r11d,[rcx+r10*4]                    ; MOV r32, r/m32 || o32 8B /r || encoded[4]{46 8b 1c 91}
+001fh mov r10d,[rdx+r10*4]                    ; MOV r32, r/m32 || o32 8B /r || encoded[4]{46 8b 14 92}
+0023h imul r10d,r11d                          ; IMUL r32, r/m32 || o32 0F AF /r || encoded[4]{45 0f af d3}
+0027h add r8d,r10d                            ; ADD r32, r/m32 || o32 03 /r || encoded[3]{45 03 c2}
+002ah inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+002dh cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0030h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c e6}
+0032h mov eax,r8d                             ; MOV r32, r/m32 || o32 8B /r || encoded[3]{41 8b c0}
+0035h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong dot<ulong>(ReadOnlySpan<ulong> lhs, ReadOnlySpan<ulong> rhs), hex://gmath/gmath?dot#dot_g[64u](uspan64u,uspan64u)
+; dot_g[64u](uspan64u,uspan64u)[57] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x1d,0x4d,0x63,0xd1,0x4e,0x8b,0x14,0xd1,0x4d,0x63,0xd9,0x4e,0x8b,0x1c,0xda,0x4d,0x0f,0xaf,0xd3,0x4d,0x03,0xc2,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xe3,0x49,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0035h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1d}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh mov r10,[rcx+r10*8]                     ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4e 8b 14 d1}
+001fh movsxd r11,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d9}
+0022h mov r11,[rdx+r11*8]                     ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4e 8b 1c da}
+0026h imul r10,r11                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4d 0f af d3}
+002ah add r8,r10                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c2}
+002dh inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+0030h cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0033h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
+0035h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
+0038h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; long dot<long>(ReadOnlySpan<long> lhs, ReadOnlySpan<long> rhs), hex://gmath/gmath?dot#dot_g[64i](uspan64i,uspan64i)
+; dot_g[64i](uspan64i,uspan64i)[57] = {0x0f,0x1f,0x44,0x00,0x00,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x45,0x33,0xc9,0x85,0xc0,0x7e,0x1d,0x4d,0x63,0xd1,0x4e,0x8b,0x14,0xd1,0x4d,0x63,0xd9,0x4e,0x8b,0x1c,0xda,0x4d,0x0f,0xaf,0xd3,0x4d,0x03,0xc2,0x41,0xff,0xc1,0x44,0x3b,0xc8,0x7c,0xe3,0x49,0x8b,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h xor r9d,r9d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c9}
+0014h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0016h jle short 0035h                         ; JLE rel8 || 7E cb || encoded[2]{7e 1d}
+0018h movsxd r10,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d1}
+001bh mov r10,[rcx+r10*8]                     ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4e 8b 14 d1}
+001fh movsxd r11,r9d                          ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 d9}
+0022h mov r11,[rdx+r11*8]                     ; MOV r64, r/m64 || REX.W 8B /r || encoded[4]{4e 8b 1c da}
+0026h imul r10,r11                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{4d 0f af d3}
+002ah add r8,r10                              ; ADD r64, r/m64 || REX.W 03 /r || encoded[3]{4d 03 c2}
+002dh inc r9d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c1}
+0030h cmp r9d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c8}
+0033h jl short 0018h                          ; JL rel8 || 7C cb || encoded[2]{7c e3}
+0035h mov rax,r8                              ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{49 8b c0}
+0038h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; float dot<float>(ReadOnlySpan<float> lhs, ReadOnlySpan<float> rhs), hex://gmath/gmath?dot#dot_g[32f](uspan32f,uspan32f)
+; dot_g[32f](uspan32f,uspan32f)[77] = {0x50,0xc5,0xf8,0x77,0x90,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x44,0x89,0x44,0x24,0x04,0x85,0xc0,0x7e,0x28,0x4d,0x63,0xc8,0xc4,0xa1,0x7a,0x10,0x04,0x89,0xc4,0xa1,0x7a,0x10,0x0c,0x8a,0xc5,0xfa,0x10,0x54,0x24,0x04,0xc4,0xe2,0x71,0xa9,0xc2,0xc5,0xfa,0x11,0x44,0x24,0x04,0x41,0xff,0xc0,0x44,0x3b,0xc0,0x7c,0xd8,0xc5,0xfa,0x10,0x44,0x24,0x04,0x48,0x83,0xc4,0x08,0xc3}
+; TermCode = CTC_RET_INTR
+0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
+0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h mov [rsp+4],r8d                         ; MOV r/m32, r32 || o32 89 /r || encoded[5]{44 89 44 24 04}
+0016h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0018h jle short 0042h                         ; JLE rel8 || 7E cb || encoded[2]{7e 28}
+001ah movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+001dh vmovss xmm0,dword ptr [rcx+r9*4]        ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c4 a1 7a 10 04 89}
+0023h vmovss xmm1,dword ptr [rdx+r9*4]        ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c4 a1 7a 10 0c 8a}
+0029h vmovss xmm2,dword ptr [rsp+4]           ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 54 24 04}
+002fh vfmadd213ss xmm0,xmm1,xmm2              ; VFMADD213SS xmm1, xmm2, xmm3/m32 || VEX.LIG.66.0F38.W0 A9 /r || encoded[5]{c4 e2 71 a9 c2}
+0034h vmovss dword ptr [rsp+4],xmm0           ; VMOVSS m32, xmm1 || VEX.LIG.F3.0F.WIG 11 /r || encoded[6]{c5 fa 11 44 24 04}
+003ah inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+003dh cmp r8d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c0}
+0040h jl short 001ah                          ; JL rel8 || 7C cb || encoded[2]{7c d8}
+0042h vmovss xmm0,dword ptr [rsp+4]           ; VMOVSS xmm1, m32 || VEX.LIG.F3.0F.WIG 10 /r || encoded[6]{c5 fa 10 44 24 04}
+0048h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
+004ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; double dot<double>(ReadOnlySpan<double> lhs, ReadOnlySpan<double> rhs), hex://gmath/gmath?dot#dot_g[64f](uspan64f,uspan64f)
+; dot_g[64f](uspan64f,uspan64f)[73] = {0x50,0xc5,0xf8,0x77,0x90,0x8b,0x41,0x08,0x48,0x8b,0x09,0x48,0x8b,0x12,0x45,0x33,0xc0,0x4c,0x89,0x04,0x24,0x85,0xc0,0x7e,0x26,0x4d,0x63,0xc8,0xc4,0xa1,0x7b,0x10,0x04,0xc9,0xc4,0xa1,0x7b,0x10,0x0c,0xca,0xc5,0xfb,0x10,0x14,0x24,0xc4,0xe2,0xf1,0xa9,0xc2,0xc5,0xfb,0x11,0x04,0x24,0x41,0xff,0xc0,0x44,0x3b,0xc0,0x7c,0xda,0xc5,0xfb,0x10,0x04,0x24,0x48,0x83,0xc4,0x08,0xc3}
+; TermCode = CTC_RET_INTR
+0000h push rax                                ; PUSH r64 || 50+ro || encoded[1]{50}
+0001h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
+0004h nop                                     ; NOP || o32 90 || encoded[1]{90}
+0005h mov eax,[rcx+8]                         ; MOV r32, r/m32 || o32 8B /r || encoded[3]{8b 41 08}
+0008h mov rcx,[rcx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 09}
+000bh mov rdx,[rdx]                           ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b 12}
+000eh xor r8d,r8d                             ; XOR r32, r/m32 || o32 33 /r || encoded[3]{45 33 c0}
+0011h mov [rsp],r8                            ; MOV r/m64, r64 || REX.W 89 /r || encoded[4]{4c 89 04 24}
+0015h test eax,eax                            ; TEST r/m32, r32 || o32 85 /r || encoded[2]{85 c0}
+0017h jle short 003fh                         ; JLE rel8 || 7E cb || encoded[2]{7e 26}
+0019h movsxd r9,r8d                           ; MOVSXD r64, r/m32 || REX.W 63 /r || encoded[3]{4d 63 c8}
+001ch vmovsd xmm0,qword ptr [rcx+r9*8]        ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c4 a1 7b 10 04 c9}
+0022h vmovsd xmm1,qword ptr [rdx+r9*8]        ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[6]{c4 a1 7b 10 0c ca}
+0028h vmovsd xmm2,qword ptr [rsp]             ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[5]{c5 fb 10 14 24}
+002dh vfmadd213sd xmm0,xmm1,xmm2              ; VFMADD213SD xmm1, xmm2, xmm3/m64 || VEX.LIG.66.0F38.W1 A9 /r || encoded[5]{c4 e2 f1 a9 c2}
+0032h vmovsd qword ptr [rsp],xmm0             ; VMOVSD m64, xmm1 || VEX.LIG.F2.0F.WIG 11 /r || encoded[5]{c5 fb 11 04 24}
+0037h inc r8d                                 ; INC r/m32 || o32 FF /0 || encoded[3]{41 ff c0}
+003ah cmp r8d,eax                             ; CMP r32, r/m32 || o32 3B /r || encoded[3]{44 3b c0}
+003dh jl short 0019h                          ; JL rel8 || 7C cb || encoded[2]{7c da}
+003fh vmovsd xmm0,qword ptr [rsp]             ; VMOVSD xmm1, m64 || VEX.LIG.F2.0F.WIG 10 /r || encoded[5]{c5 fb 10 04 24}
+0044h add rsp,8                               ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 08}
+0048h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; byte fma<byte>(byte x, byte y, byte z), hex://gmath/gmath?fma#fma_g[8u](8u,8u,8u)
 ; fma_g[8u](8u,8u,8u)[30] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x41,0x0f,0xb6,0xc8,0x0f,0xb6,0xc0,0x0f,0xb6,0xd2,0x0f,0xaf,0xc2,0x03,0xc1,0x0f,0xb6,0xc0,0xc3}
@@ -6929,3 +6759,75 @@
 0005h imul rcx,rcx                            ; IMUL r64, r/m64 || REX.W 0F AF /r || encoded[4]{48 0f af c9}
 0009h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
 000ch ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; byte sub<byte>(byte a, byte b), hex://gmath/gmath?sub#sub_g[8u](8u,8u)
+; sub_g[8u](8u,8u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb6,0xc1,0x0f,0xb6,0xd2,0x2b,0xc2,0x0f,0xb6,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c1}
+0008h movzx edx,dl                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 d2}
+000bh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
+000dh movzx eax,al                            ; MOVZX r32, r/m8 || o32 0F B6 /r || encoded[3]{0f b6 c0}
+0010h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; sbyte sub<sbyte>(sbyte a, sbyte b), hex://gmath/gmath?sub#sub_g[8i](8i,8i)
+; sub_g[8i](8i,8i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbe,0xc1,0x48,0x0f,0xbe,0xd2,0x2b,0xc2,0x48,0x0f,0xbe,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movsx rax,cl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c1}
+0009h movsx rdx,dl                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be d2}
+000dh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
+000fh movsx rax,al                            ; MOVSX r64, r/m8 || REX.W 0F BE /r || encoded[4]{48 0f be c0}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ushort sub<ushort>(ushort a, ushort b), hex://gmath/gmath?sub#sub_g[16u](16u,16u)
+; sub_g[16u](16u,16u)[17] = {0x0f,0x1f,0x44,0x00,0x00,0x0f,0xb7,0xc1,0x0f,0xb7,0xd2,0x2b,0xc2,0x0f,0xb7,0xc0,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movzx eax,cx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c1}
+0008h movzx edx,dx                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 d2}
+000bh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
+000dh movzx eax,ax                            ; MOVZX r32, r/m16 || o32 0F B7 /r || encoded[3]{0f b7 c0}
+0010h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; short sub<short>(short a, short b), hex://gmath/gmath?sub#sub_g[16i](16i,16i)
+; sub_g[16i](16i,16i)[20] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x0f,0xbf,0xc1,0x48,0x0f,0xbf,0xd2,0x2b,0xc2,0x48,0x0f,0xbf,0xc0,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h movsx rax,cx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c1}
+0009h movsx rdx,dx                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf d2}
+000dh sub eax,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b c2}
+000fh movsx rax,ax                            ; MOVSX r64, r/m16 || REX.W 0F BF /r || encoded[4]{48 0f bf c0}
+0013h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; uint sub<uint>(uint a, uint b), hex://gmath/gmath?sub#sub_g[32u](32u,32u)
+; sub_g[32u](32u,32u)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h sub ecx,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b ca}
+0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0009h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; int sub<int>(int a, int b), hex://gmath/gmath?sub#sub_g[32i](32i,32i)
+; sub_g[32i](32i,32i)[10] = {0x0f,0x1f,0x44,0x00,0x00,0x2b,0xca,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_Zx3
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h sub ecx,edx                             ; SUB r32, r/m32 || o32 2B /r || encoded[2]{2b ca}
+0007h mov eax,ecx                             ; MOV r32, r/m32 || o32 8B /r || encoded[2]{8b c1}
+0009h ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; ulong sub<ulong>(ulong a, ulong b), hex://gmath/gmath?sub#sub_g[64u](64u,64u)
+; sub_g[64u](64u,64u)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h sub rcx,rdx                             ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{48 2b ca}
+0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+000bh ret                                     ; RET || C3 || encoded[1]{c3}
+------------------------------------------------------------------------------------------------------------------------
+; long sub<long>(long a, long b), hex://gmath/gmath?sub#sub_g[64i](64i,64i)
+; sub_g[64i](64i,64i)[12] = {0x0f,0x1f,0x44,0x00,0x00,0x48,0x2b,0xca,0x48,0x8b,0xc1,0xc3}
+; TermCode = CTC_RET_SBB
+0000h nop dword ptr [rax+rax]                 ; NOP r/m32 || o32 0F 1F /0 || encoded[5]{0f 1f 44 00 00}
+0005h sub rcx,rdx                             ; SUB r64, r/m64 || REX.W 2B /r || encoded[3]{48 2b ca}
+0008h mov rax,rcx                             ; MOV r64, r/m64 || REX.W 8B /r || encoded[3]{48 8b c1}
+000bh ret                                     ; RET || C3 || encoded[1]{c3}
