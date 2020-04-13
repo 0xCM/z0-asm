@@ -4831,25 +4831,25 @@
 0014h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; float modmul(float a, float b, float m), hex://math/math?modmul#modmul_(32f,32f,32f)
-; modmul_(32f,32f,32f)[26] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xc5,0xfa,0x59,0xc1,0xc5,0xf8,0x28,0xca,0xe8,0xbc,0x27,0x31,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; modmul_(32f,32f,32f)[26] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xc5,0xfa,0x59,0xc1,0xc5,0xf8,0x28,0xca,0xe8,0xbc,0x2b,0x33,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmulss xmm0,xmm0,xmm1                   ; VMULSS xmm1, xmm2, xmm3/m32 || VEX.LIG.F3.0F.WIG 59 /r || encoded[4]{c5 fa 59 c1}
 000bh vmovaps xmm1,xmm2                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ca}
-000fh call 7ff827391660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 27 31 5f}
+000fh call 7ff827391660h                      ; CALL rel32 || E8 cd || encoded[5]{e8 bc 2b 33 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
 ------------------------------------------------------------------------------------------------------------------------
 ; double modmul(double a, double b, double m), hex://math/math?modmul#modmul_(64f,64f,64f)
-; modmul_(64f,64f,64f)[26] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xc5,0xfb,0x59,0xc1,0xc5,0xf8,0x28,0xca,0xe8,0xfc,0x26,0x31,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
+; modmul_(64f,64f,64f)[26] = {0x48,0x83,0xec,0x28,0xc5,0xf8,0x77,0xc5,0xfb,0x59,0xc1,0xc5,0xf8,0x28,0xca,0xe8,0xfc,0x2a,0x33,0x5f,0x90,0x48,0x83,0xc4,0x28,0xc3}
 ; TermCode = CTC_RET_INTR
 0000h sub rsp,28h                             ; SUB r/m64, imm8 || REX.W 83 /5 ib || encoded[4]{48 83 ec 28}
 0004h vzeroupper                              ; VZEROUPPER || VEX.128.0F.WIG 77 || encoded[3]{c5 f8 77}
 0007h vmulsd xmm0,xmm0,xmm1                   ; VMULSD xmm1, xmm2, xmm3/m64 || VEX.LIG.F2.0F.WIG 59 /r || encoded[4]{c5 fb 59 c1}
 000bh vmovaps xmm1,xmm2                       ; VMOVAPS xmm1, xmm2/m128 || VEX.128.0F.WIG 28 /r || encoded[4]{c5 f8 28 ca}
-000fh call 7ff8273915d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 26 31 5f}
+000fh call 7ff8273915d0h                      ; CALL rel32 || E8 cd || encoded[5]{e8 fc 2a 33 5f}
 0014h nop                                     ; NOP || o32 90 || encoded[1]{90}
 0015h add rsp,28h                             ; ADD r/m64, imm8 || REX.W 83 /0 ib || encoded[4]{48 83 c4 28}
 0019h ret                                     ; RET || C3 || encoded[1]{c3}
